@@ -27,6 +27,8 @@ set /p race="Enter race info: " %=%
 
 set /p model="Enter target model info: " %=%
 
+set /p color="Enter target color info: " %=%
+
 echo --------------------------------------------------------------------
 
 grunt --race=%race% --model=%model% & pause > nul

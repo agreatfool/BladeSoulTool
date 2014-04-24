@@ -1,2 +1,2 @@
 #!/bin/sh
-grunt --race=LynM --model=65025_LynM
+grunt --race=LynM --model=65025_LynM --color=col1
