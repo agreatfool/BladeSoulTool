@@ -15,18 +15,22 @@ module.exports = function(grunt) {
 
     var raceInputted = grunt.option('race');
     var modelInputted = grunt.option('model');
-    var colorInputted = grunt.option('color');
+    var colorInputted = grunt.option('mt-col');
 
     var Util = function() {};
 
-    Util.prototype.utf8ToHex = function(str) {
-        return new Buffer(str).toString('hex')
+    Util.prototype.strUtf8ToHex = function(str) {
+        return new Buffer(str).toString('hex');
+    };
+
+    Util.prototype.checkFileExists = function(path) {
+        if (!grunt.file.exists(path)) {
+            grunt.fail.fatal('File not found, path: ' + path);
+        }
     };
 
     Util.prototype.readHexFile = function(path, callback) {
-        if (!grunt.file.exists(path)) {
-            grunt.fail.fatal('Target file not found, path: ' + path);
-        }
+        this.checkFileExists(path);
 
         var data = '';
 

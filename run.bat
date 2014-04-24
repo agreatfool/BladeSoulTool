@@ -27,8 +27,8 @@ set /p race="Enter race info: " %=%
 
 set /p model="Enter target model info: " %=%
 
-set /p color="Enter target color info: " %=%
+set /p color="Enter target material col info: " %=%
 
 echo --------------------------------------------------------------------
 
-grunt --race=%race% --model=%model% & pause > nul
+grunt --race=%race% --model=%model% --mt-col=%color% & pause > nul
