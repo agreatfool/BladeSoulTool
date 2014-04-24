@@ -1,40 +1,90 @@
-const RACE_KUN = 'KunN';
-const RACE_JIN = 'Jin';
-const RACE_GON = 'Gon';
-const RACE_LYN = 'Lyn';
+"use strict";
 
-const GENDER_MALE   = 'M';
-const GENDER_FEMALE = 'F';
+var RACE_KUN = 'KunN';
+var RACE_JIN = 'Jin';
+var RACE_GON = 'Gon';
+var RACE_LYN = 'Lyn';
+
+var GENDER_MALE   = 'M';
+var GENDER_FEMALE = 'F';
 
 var fs = require('fs');
-var os = require('os').platform();
 var path = require('path');
 
 module.exports = function(grunt) {
 
-    var race = grunt.option('race');
-    var model = grunt.option('model');
+    var raceInputted = grunt.option('race');
+    var modelInputted = grunt.option('model');
+    var colorInputted = grunt.option('color');
 
+    var Util = function() {};
+
+    Util.prototype.utf8ToHex = function(str) {
+        return new Buffer(str).toString('hex')
+    };
+
+    Util.prototype.readHexFile = function(path, callback) {
+        if (!grunt.file.exists(path)) {
+            grunt.fail.fatal('Target file not found, path: ' + path);
+        }
+
+        var data = '';
+
+        var rs = fs.createReadStream(path, {encoding: 'hex', bufferSize: 11});
+
+        rs.on('data', function(trunk) {
+            data += trunk;
+        });
+        rs.on('end', function() {
+            callback(null, data);
+        });
+    };
 
     var Task_Default = function () {
 
-        grunt.log.writeln('Target race is: ' + race);
-        grunt.log.writeln('Target model is: ' + model);
+        var done = this.async();
+        var util = new Util();
 
-//        var done = this.async();
-//
-//        var filePath = path.join('resources', '00012442.upk');
-//
-//        var rs = fs.createReadStream(filePath, {encoding: 'hex', bufferSize: 11});
-//
-//        var data = '';
-//        rs.on("data", function(trunk) {
-//            data += trunk;
-//        });
-//        rs.on("end", function() {
-//            console.log(data);
-//            done();
-//        });
+        grunt.log.writeln('Target race is: ' + raceInputted);
+        grunt.log.writeln('Target model is: ' + modelInputted);
+        grunt.log.writeln('Target color is: ' + colorInputted);
+
+        // 01. 读取对应种族的洪门道服配置信息
+        var baseConf = grunt.file.readJSON(path.join('database', 'base.json'));
+        if (!baseConf.hasOwnProperty(raceInputted)) {
+            grunt.fail.fatal('Corresponding conf of race [' + raceInputted + '] cannot be found in config: base.json');
+        } else {
+            baseConf = baseConf[raceInputted];
+            grunt.log.writeln('Source model conf found: ' + JSON.stringify(baseConf));
+        }
+
+        // 02. 读取目标服装的配置信息
+        var targetConf = null;
+        var raceConfs = grunt.file.readJSON(path.join('database', raceInputted + '.json'));
+        for (var modelName in raceConfs) {
+            if (!raceConfs.hasOwnProperty(modelName)) {
+                continue;
+            }
+            if (modelName == modelInputted) {
+                targetConf = raceConfs[modelName];
+            }
+        }
+        if (targetConf === null) {
+            grunt.fail.fatal('Target model conf cannot be found in config: ' + raceInputted + '.json');
+        } else {
+            grunt.log.writeln('Target model conf found: ' + JSON.stringify(targetConf));
+        }
+
+        // 03. 检查目标服装的配置信息中，对应的颜色配置是否存在
+        if (!targetConf['Material'].hasOwnProperty(colorInputted)
+            || targetConf['Material'][colorInputted] === '') {
+            grunt.fail.fatal('Target model conf has no corresponding material color [' + colorInputted + '] info: ' + JSON.stringify(targetConf));
+        }
+
+        // 04. 在bns下查找目标服装的配置是否存在
+        var texture = targetConf['Texture'];
+        var material = targetConf['Material'][colorInputted];
+        var skeleton = targetConf['Skeleton'];
 
     };
 
