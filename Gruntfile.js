@@ -16,8 +16,6 @@ module.exports = function(grunt) {
 
         var done = this.async();
 
-        var fs = require('fs');
-
         var filePath = path.join('resources', '00012442.upk');
 
         var rs = fs.createReadStream(filePath, {encoding: 'hex', bufferSize: 11});
