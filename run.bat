@@ -1,7 +1,6 @@
 @echo off
 
-REM --------------------------------------------------------------------
-echo [Phase I] Detect the script env:
+echo [PHASE] Detect the script env:
 
 set NODE_FOUND=
 for %%X in (node.exe) do (set NODE_FOUND=%%~$PATH:X)
@@ -16,14 +15,18 @@ set GRUNT_FOUND=
 for %%X in (grunt) do (set GRUNT_FOUND=%%~$PATH:X)
 if "%GRUNT_FOUND%" == "" (
     echo Command grunt not found, Install it:
-    npm install -g grunt-cli
+    npm install -g grunt-cli & pause > nul
 ) else (
     echo Command grunt detected!
 )
 
-REM --------------------------------------------------------------------
-echo [Phase II] Run the script:
-grunt
+echo --------------------------------------------------------------------
 
-REM --------------------------------------------------------------------
-pause > nul
+echo [PHASE] Collect data:
+set /p race="Enter race info: " %=%
+
+set /p model="Enter target model info: " %=%
+
+echo --------------------------------------------------------------------
+
+grunt --race=%race% --model=%model% & pause > nul
