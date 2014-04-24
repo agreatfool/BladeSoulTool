@@ -12,22 +12,29 @@ var path = require('path');
 
 module.exports = function(grunt) {
 
+    var race = grunt.option('race');
+    var model = grunt.option('model');
+
+
     var Task_Default = function () {
 
-        var done = this.async();
+        grunt.log.writeln('Target race is: ' + race);
+        grunt.log.writeln('Target model is: ' + model);
 
-        var filePath = path.join('resources', '00012442.upk');
-
-        var rs = fs.createReadStream(filePath, {encoding: 'hex', bufferSize: 11});
-
-        var data = '';
-        rs.on("data", function(trunk) {
-            data += trunk;
-        });
-        rs.on("end", function() {
-            console.log(data);
-            done();
-        });
+//        var done = this.async();
+//
+//        var filePath = path.join('resources', '00012442.upk');
+//
+//        var rs = fs.createReadStream(filePath, {encoding: 'hex', bufferSize: 11});
+//
+//        var data = '';
+//        rs.on("data", function(trunk) {
+//            data += trunk;
+//        });
+//        rs.on("end", function() {
+//            console.log(data);
+//            done();
+//        });
 
     };
 
