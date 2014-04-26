@@ -85,7 +85,7 @@
 * 进游戏，看服装
 
 ## 4. 贡献配置
-* 暂时配置项还比较少，因为是我一个人填写测试的，希望使用过该工具的玩家能贡献自己的配置，我会纳入版本库中，方便后续的玩家
+* 暂时可以直接选用的配置项还比较少，因为是我一个人填写测试的，希望使用过该工具的玩家能贡献自己的配置，我会纳入版本库中，方便后续的玩家（越多玩家贡献配置，越多后续玩家就不用自己编写配置项了）
 * 如何贡献：
     * 有github账号的，给我发pull request那是最好了
     * 没有的话，在[工具首页](https://github.com/agreatfool/BladeSoulTool)右上角，找
@@ -98,6 +98,13 @@
         * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/issues-04.png)
 
 ## 4. 附带工具及资源介绍
+* `resources\剑灵UPK文件解包工具 V2.0_2013新年版`：解包工具，一般用来查色指定upk名
+    * 仅从这个功能点上来说，它没有`resources\剑灵模型识别器 V1.0.13.1226 by 纯粹之伤\umodelGUI.exe`好用
+* `resources\剑灵模型识别器 V1.0.13.1226 by 纯粹之伤`：客户端更新后，找不到最新的模型截图库的话，可以使用这个工具自行导出
+* `resources\解包_BiG_mat_2014-01-25-用来查多色.txt`：主要用来查多色upk名，我的青狼红狼异色配置就是这里找到的
+* `resources\mesh目录-用来查多色material的upk号.xml`：也是一个查异色upk名的文件
+* `resources\解包文件列表_2014-03-11.txt`：主力资源查询文件
+* 2个nodejs安装文件
 
 ## 5. 后续功能制作列表
 关于这部分，可以查看文档：[TODO.md](https://github.com/agreatfool/BladeSoulTool/blob/master/documents/TODO.md)
