@@ -3,12 +3,21 @@
 var fs = require('fs');
 var path = require('path');
 
+// Array Remove - By John Resig (MIT Licensed)
+Array.prototype.remove = function(from, to) {
+    var rest = this.slice((to || from) + 1 || this.length);
+    this.length = from < 0 ? this.length + from : from;
+    return this.push.apply(this, rest);
+};
+
 module.exports = function(grunt) {
 
     //-------------------------------------------------------------------------------------------
     // 工具
     //-------------------------------------------------------------------------------------------
-    var Util = function() {};
+    var Util = function() {
+        this.asyncList = [];
+    };
 
     Util.prototype.strUtf8ToHex = function(str) {
         return new Buffer(str).toString('hex');
@@ -63,6 +72,33 @@ module.exports = function(grunt) {
         return str.substr(0, str.lastIndexOf(fromStr)) + toStr + str.substr(str.lastIndexOf(fromStr) + fromStr.length);
     };
 
+    Util.prototype.registerAsyncEvent = function(eventName) {
+        if (this.asyncList.indexOf(eventName) === -1) {
+            grunt.log.writeln('Async event registered: ' + eventName);
+            this.asyncList.push(eventName);
+        }
+    };
+
+    Util.prototype.cancelAsyncEvent = function(eventName) {
+        var index = this.asyncList.indexOf(eventName);
+        if (index !== -1) {
+            grunt.log.writeln('Async event cancelled: ' + eventName);
+            this.asyncList.remove(index);
+        }
+    };
+
+    Util.prototype.startToListenAsyncList = function(callback) {
+        var self = this;
+        var timer = setInterval(function() {
+            if (self.asyncList.length == 0) { // all done
+                grunt.log.writeln('Async event list done.');
+                clearInterval(timer);
+                self.asyncList = [];
+                callback();
+            }
+        }, 50);
+    };
+
     var util = new Util();
 
     // 读取游戏路径配置信息
@@ -77,7 +113,7 @@ module.exports = function(grunt) {
     //-------------------------------------------------------------------------------------------
     var Task_Default = function () {
 
-        this.async(); // prevent program exit before any async action done
+        this.async(); // 防止grunt在异步事件完成之前就退出
 
         // 00. 读取命令行输入的信息
         grunt.log.writeln('-------------------------------------------------------------------------------');
@@ -168,65 +204,73 @@ module.exports = function(grunt) {
         grunt.log.writeln('-------------------------------------------------------------------------------');
         var fromModelStr = util.strUtf8ToHex(modelInputted); // 拷贝过来的文件内原来的：目标服装模型名
         var toModelStr = util.strUtf8ToHex(baseConf['Model']); // 改为洪门道服的模型名
-        for (var editPart in workingFiles) {
+        for (var editPart in workingFiles) { // Texture, Material, Skeleton
             if (!workingFiles.hasOwnProperty(editPart)) {
                 continue;
             }
+            util.registerAsyncEvent(workingFiles[editPart]['working']);
             util.readHexFile(workingFiles[editPart]['working'], function(data, path) {
                 util.writeHexFile(path, util.replaceStrAll(data, fromModelStr, toModelStr));
+                util.cancelAsyncEvent(path);
             });
         }
 
-        // 06. 修改色指定文件，如果colorInputted不是col1的话
-        grunt.log.writeln('-------------------------------------------------------------------------------');
-        grunt.log.writeln('06. Fix material info in material upk (if necessary): ');
-        grunt.log.writeln('-------------------------------------------------------------------------------');
-        if (colorInputted !== 'col1') {
-            util.readHexFile(workingFiles['Material']['working'], function(data, path) {
-                util.writeHexFile(path, util.replaceStrLast(
-                    data,
-                    util.strUtf8ToHex(colorInputted), // 原始：colorInputted
-                    util.strUtf8ToHex('col1') // 目标：洪门道服永远是 col1
-                ));
-            });
-        } else {
-            grunt.log.writeln('Default col1, nothing to do.');
-        }
-
-        // 07. 备份文件，如果在backup里已经有同名文件的话，则忽略（因为最早已备份肯定是未被污染的）
-        grunt.log.writeln('-------------------------------------------------------------------------------');
-        grunt.log.writeln('07. Backup source model resources to backup dir: ');
-        grunt.log.writeln('-------------------------------------------------------------------------------');
-        /**
-         * 因为目前的换装构造，只允许替换洪门道服，所以不会有额外的upk文件添加到tencent下（都被重命名为洪门道服的upk了）
-         * 所以备份的时候只要检查该种族的洪门道服有没有被备份就OK
-         */
-        for (var key in baseConf) {
-            if (!baseConf.hasOwnProperty(key)
-                || ['Texture', 'Material', 'Skeleton'].indexOf(key) === -1) {
-                continue;
-            }
-            var upkName = ((key === 'Material') ? baseConf[key]['col1'] : baseConf[key]) + '.upk';
-            var backupPath = path.join('backup', upkName);
-            // 洪门道服只会在bns下才有，备份的时候将其拷贝到backup下，复原的时候只要删除tencent下对应的文件就好了
-            if (!grunt.file.exists(backupPath)) {
-                util.copyFile(path.join(bnsPath, upkName), backupPath);
+        util.startToListenAsyncList(function() { // 所有working目录下的upk内的模型名都替换完成后
+            // 06. 修改色指定文件，如果colorInputted不是col1的话
+            grunt.log.writeln('-------------------------------------------------------------------------------');
+            grunt.log.writeln('06. Fix material info in material upk (if necessary): ');
+            grunt.log.writeln('-------------------------------------------------------------------------------');
+            if (colorInputted !== 'col1') {
+                util.registerAsyncEvent(workingFiles['Material']['working']);
+                util.readHexFile(workingFiles['Material']['working'], function(data, path) {
+                    util.writeHexFile(path, util.replaceStrLast(
+                        data,
+                        util.strUtf8ToHex(colorInputted), // 原始：colorInputted
+                        util.strUtf8ToHex('col1') // 目标：洪门道服永远是 col1
+                    ));
+                    util.cancelAsyncEvent(path);
+                });
             } else {
-                grunt.log.writeln('Backup file already exists: ' + backupPath);
+                grunt.log.writeln('Default col1, nothing to do.');
             }
-        }
 
-        // 08. 拷贝修改后的文件到tencent下，然后将working文件夹清空
-        grunt.log.writeln('-------------------------------------------------------------------------------');
-        grunt.log.writeln('08. Clear working dir: ');
-        grunt.log.writeln('-------------------------------------------------------------------------------');
-        grunt.file.recurse('working', function(abspath, rootdir, subdir, filename) {
-            /**
-             * 因为只有一层文件夹结构，所以不用担心多层嵌套问题，注意要忽略 working_dir 这个占位文件
-             */
-            if (filename === 'working_dir') { return; }
-            util.copyFile(abspath, path.join(localPath, filename));
-            util.deleteFile(abspath);
+            util.startToListenAsyncList(function() { // 色指定文件修改完成
+                // 07. 备份文件，如果在backup里已经有同名文件的话，则忽略（因为最早已备份肯定是未被污染的）
+                grunt.log.writeln('-------------------------------------------------------------------------------');
+                grunt.log.writeln('07. Backup source model resources to backup dir: ');
+                grunt.log.writeln('-------------------------------------------------------------------------------');
+                /**
+                 * 因为目前的换装构造，只允许替换洪门道服，所以不会有额外的upk文件添加到tencent下（都被重命名为洪门道服的upk了）
+                 * 所以备份的时候只要检查该种族的洪门道服有没有被备份就OK
+                 */
+                for (var key in baseConf) {
+                    if (!baseConf.hasOwnProperty(key)
+                        || ['Texture', 'Material', 'Skeleton'].indexOf(key) === -1) {
+                        continue;
+                    }
+                    var upkName = ((key === 'Material') ? baseConf[key]['col1'] : baseConf[key]) + '.upk';
+                    var backupPath = path.join('backup', upkName);
+                    // 洪门道服只会在bns下才有，备份的时候将其拷贝到backup下，复原的时候只要删除tencent下对应的文件就好了
+                    if (!grunt.file.exists(backupPath)) {
+                        util.copyFile(path.join(bnsPath, upkName), backupPath);
+                    } else {
+                        grunt.log.writeln('Backup file already exists: ' + backupPath);
+                    }
+                }
+
+                // 08. 拷贝修改后的文件到tencent下，然后将working文件夹清空
+                grunt.log.writeln('-------------------------------------------------------------------------------');
+                grunt.log.writeln('08. Copy finished model resources to tencent dir & clear working dir: ');
+                grunt.log.writeln('-------------------------------------------------------------------------------');
+                grunt.file.recurse('working', function(abspath, rootdir, subdir, filename) {
+                    /**
+                     * 因为只有一层文件夹结构，所以不用担心多层嵌套问题，注意要忽略 working_dir 这个占位文件
+                     */
+                    if (filename === 'working_dir') { return; }
+                    util.copyFile(abspath, path.join(localPath, filename));
+                    util.deleteFile(abspath);
+                });
+            });
         });
 
     };
