@@ -8,6 +8,20 @@
 * 最新的发布版本（这个版本永远是最新的）：[下载链接](https://github.com/agreatfool/BladeSoulTool/archive/master.zip)
 * 分流版本（可能滞后）：[百度网盘](http://pan.baidu.com/s/1hq63NzY)
 
+### 1.3 效果图
+* 搞定配置：
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-x1.png)
+* 现在还没有local的洪门道服upk文件：
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-x2.png)
+* 运行脚本：
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-x3.1.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-x3.2.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-x3.3.png)
+* 生成local的upk文件：
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-x4.png)
+* 进游戏看效果：
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-x5.png)
+
 ### 1.3 功能
 执行脚本自动化：
 
