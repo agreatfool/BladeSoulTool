@@ -134,9 +134,9 @@ module.exports = function(grunt) {
         grunt.log.writeln('-------------------------------------------------------------------------------');
         grunt.log.writeln('01. Read source model conf info: ');
         grunt.log.writeln('-------------------------------------------------------------------------------');
-        var baseConf = grunt.file.readJSON(path.join('database', 'base.json'));
+        var baseConf = grunt.file.readJSON(path.join('database', 'body.json'));
         if (!baseConf.hasOwnProperty(raceInputted)) {
-            grunt.fail.fatal('Corresponding conf of race [' + raceInputted + '] cannot be found in config: base.json');
+            grunt.fail.fatal('Corresponding conf of race [' + raceInputted + '] cannot be found in config: body.json');
         } else {
             baseConf = baseConf[raceInputted];
             grunt.log.writeln('Source model conf found: ' + JSON.stringify(baseConf));
@@ -302,7 +302,7 @@ module.exports = function(grunt) {
          * 将tencent文件夹下的所有种族的洪门道服全部删除，因为洪门道服本来应该是在bns下的，
          * 所以tencent下的都是因为修改才拷贝过来的，全部删除就是全部还原
          */
-        var baseConfs = grunt.file.readJSON(path.join('database', 'base.json'));
+        var baseConfs = grunt.file.readJSON(path.join('database', 'body.json'));
 
         grunt.file.setBase(localPath); // 将当前工作目录转换到tencent文件夹
 
