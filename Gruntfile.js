@@ -119,10 +119,10 @@ module.exports = function(grunt) {
         grunt.log.writeln('-------------------------------------------------------------------------------');
         grunt.log.writeln('00. Start to read params from command line: ');
         grunt.log.writeln('-------------------------------------------------------------------------------');
-        var raceInputted = grunt.option('race');
         var modelInputted = grunt.option('model');
+        var raceInputted = modelInputted.split('_')[1]; // 从模型名中获得种族：70006_KunN => KunN
         var colorInputted = grunt.option('mt-col');
-        if (colorInputted == 'undefined' || colorInputted == '' || colorInputted == null) {
+        if (typeof colorInputted == 'undefined' || colorInputted == '' || colorInputted == null) {
             colorInputted = 'col1'; // 默认设定为 col1 基础配色
         }
 
@@ -147,7 +147,11 @@ module.exports = function(grunt) {
         grunt.log.writeln('02. Read target model conf info: ');
         grunt.log.writeln('-------------------------------------------------------------------------------');
         var targetConf = null;
-        var raceConfs = grunt.file.readJSON(path.join('database', raceInputted + '.json'));
+        var raceConfPath = path.join('database', raceInputted + '.json');
+        if (!grunt.file.exists(raceConfPath)) {
+            grunt.fail.fatal('Race conf of [' + raceInputted + '] under database dir not found: ' + raceConfPath);
+        }
+        var raceConfs = grunt.file.readJSON(raceConfPath);
         for (var modelName in raceConfs) {
             if (!raceConfs.hasOwnProperty(modelName)) {
                 continue;

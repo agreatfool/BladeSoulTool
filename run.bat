@@ -23,7 +23,6 @@ if "%GRUNT_FOUND%" == "" (
 echo --------------------------------------------------------------------
 
 echo [PHASE] Collect data:
-set /p race="Enter race info: " %=%
 
 set /p model="Enter target model info: " %=%
 
@@ -31,4 +30,4 @@ set /p color="Enter target material col info: " %=%
 
 echo --------------------------------------------------------------------
 
-grunt --race=%race% --model=%model% --mt-col=%color% & pause > nul
+grunt --model=%model% --mt-col=%color% & pause > nul
