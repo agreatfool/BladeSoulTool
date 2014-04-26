@@ -131,7 +131,7 @@ module.exports = function(grunt) {
                 'bns': path.join(bnsPath, texture + '.upk'), 'working': path.join('working', baseConf['Texture'] + '.upk')
             },
             'Material': {
-                'bns': path.join(bnsPath, material + '.upk'), 'working': path.join('working', baseConf['Material'] + '.upk')
+                'bns': path.join(bnsPath, material + '.upk'), 'working': path.join('working', baseConf['Material']['col1'] + '.upk')
             },
             'Skeleton': {
                 'bns': path.join(bnsPath, skeleton + '.upk'), 'working': path.join('working', baseConf['Skeleton'] + '.upk')
