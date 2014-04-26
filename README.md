@@ -88,7 +88,10 @@
 * 暂时配置项还比较少，因为是我一个人填写测试的，希望使用过该工具的玩家能贡献自己的配置，我会纳入版本库中，方便后续的玩家
 * 如何贡献：
     * 有github账号的，给我发pull request那是最好了
-    *　没有的话，在[工具首页](https://github.com/agreatfool/BladeSoulTool)右上角，找![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/issues-01.png)
+    * 没有的话，在[工具首页](https://github.com/agreatfool/BladeSoulTool)右上角，找![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/issues-01.png)
+    * 然后点击进入issues列表，点击![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/issues-02.png)
+    * 按图片格式填写配置标题：![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/issues-03.png)
+    * 及内容：![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/issues-04.png)
 
 ## 4. 附带工具及资源介绍
 
