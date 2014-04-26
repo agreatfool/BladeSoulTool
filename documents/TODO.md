@@ -11,7 +11,7 @@
 ## 待整理的服装配置项：
     http://cha.17173.com/bns/fashion/910327.html 黑太阳
     http://cha.17173.com/bns/fashion/910260.html 决胜千里
-    http://cha.17173.com/bns/fashion/2090902.html
+    http://cha.17173.com/bns/fashion/2090902.html 祈福
     http://cha.17173.com/bns/fashion/2090598.html
     http://cha.17173.com/bns/fashion/2090594.html
     http://cha.17173.com/bns/fashion/2090672.html
