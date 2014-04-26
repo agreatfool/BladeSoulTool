@@ -285,6 +285,8 @@ module.exports = function(grunt) {
          */
         var baseConfs = grunt.file.readJSON(path.join('database', 'base.json'));
 
+        grunt.file.setBase(localPath); // 将当前工作目录转换到tencent文件夹
+
         for (var raceName in baseConfs) { // 种族层级
             if (!baseConfs.hasOwnProperty(raceName)) {
                 continue;
