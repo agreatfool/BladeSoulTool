@@ -9,8 +9,6 @@
 * 且在default task里要有手段进行辨别是否是头饰修改，还是服装修改，maybe在database配置中添加新项？
 
 ## 待整理的服装配置项：
-    http://cha.17173.com/bns/fashion/2090568.html
-    http://cha.17173.com/bns/fashion/2090923.html
     http://cha.17173.com/bns/fashion/910330.html
     http://cha.17173.com/bns/fashion/910327.html
     http://cha.17173.com/bns/fashion/910260.html
