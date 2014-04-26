@@ -182,20 +182,30 @@ module.exports = function(grunt) {
         var skeleton = targetConf['Skeleton'];
         var workingFiles = {
             'Texture': {
-                'bns': path.join(bnsPath, texture + '.upk'), 'working': path.join('working', baseConf['Texture'] + '.upk')
+                'bns': path.join(bnsPath, texture + '.upk'),
+                'local': path.join(localPath, texture + '.upk'),
+                'working': path.join('working', baseConf['Texture'] + '.upk')
             },
             'Material': {
-                'bns': path.join(bnsPath, material + '.upk'), 'working': path.join('working', baseConf['Material']['col1'] + '.upk')
+                'bns': path.join(bnsPath, material + '.upk'),
+                'local': path.join(localPath, material + '.upk'),
+                'working': path.join('working', baseConf['Material']['col1'] + '.upk')
             },
             'Skeleton': {
-                'bns': path.join(bnsPath, skeleton + '.upk'), 'working': path.join('working', baseConf['Skeleton'] + '.upk')
+                'bns': path.join(bnsPath, skeleton + '.upk'),
+                'local': path.join(localPath, skeleton + '.upk'),
+                'working': path.join('working', baseConf['Skeleton'] + '.upk')
             }
         };
         for (var copyPart in workingFiles) {
             if (!workingFiles.hasOwnProperty(copyPart)) {
                 continue;
             }
-            util.copyFile(workingFiles[copyPart]['bns'], workingFiles[copyPart]['working']);
+            if (!grunt.file.exists(workingFiles[copyPart]['bns'])) {
+                util.copyFile(workingFiles[copyPart]['local'], workingFiles[copyPart]['working']); // 不在bns下，则去查找tencent下
+            } else {
+                util.copyFile(workingFiles[copyPart]['bns'], workingFiles[copyPart]['working']); // 一般来说，资源都在bns下
+            }
         }
 
         // 05. 修改文件内模型名
