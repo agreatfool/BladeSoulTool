@@ -5,7 +5,8 @@
 * 下面的教程及说明中涉及到系列特殊名词，这里不会一一解释，情参阅外部教程链接里的教程
 
 ### 1.2 下载包
-稳定发布版本：[下载链接](https://github.com/agreatfool/BladeSoulTool/archive/master.zip)
+* 最新的发布版本（这个版本永远是最新的）：[下载链接](https://github.com/agreatfool/BladeSoulTool/archive/master.zip)
+* 分流版本（可能滞后）：[百度网盘](http://pan.baidu.com/s/1hq63NzY)
 
 ### 1.3 功能
 执行脚本自动化：
