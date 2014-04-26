@@ -80,9 +80,9 @@ module.exports = function(grunt) {
         this.async(); // prevent program exit before any async action done
 
         // 00. 读取命令行输入的信息
-        grunt.log.writeln('---------------------------------------------------------------------------------');
+        grunt.log.writeln('-------------------------------------------------------------------------------');
         grunt.log.writeln('00. Start to read params from command line: ');
-        grunt.log.writeln('---------------------------------------------------------------------------------');
+        grunt.log.writeln('-------------------------------------------------------------------------------');
         var raceInputted = grunt.option('race');
         var modelInputted = grunt.option('model');
         var colorInputted = grunt.option('mt-col');
@@ -95,9 +95,9 @@ module.exports = function(grunt) {
         grunt.log.writeln('Target color is: ' + colorInputted);
 
         // 01. 读取对应种族的洪门道服配置信息
-        grunt.log.writeln('---------------------------------------------------------------------------------');
+        grunt.log.writeln('-------------------------------------------------------------------------------');
         grunt.log.writeln('01. Read source model conf info: ');
-        grunt.log.writeln('---------------------------------------------------------------------------------');
+        grunt.log.writeln('-------------------------------------------------------------------------------');
         var baseConf = grunt.file.readJSON(path.join('database', 'base.json'));
         if (!baseConf.hasOwnProperty(raceInputted)) {
             grunt.fail.fatal('Corresponding conf of race [' + raceInputted + '] cannot be found in config: base.json');
@@ -107,9 +107,9 @@ module.exports = function(grunt) {
         }
 
         // 02. 读取目标服装的配置信息
-        grunt.log.writeln('---------------------------------------------------------------------------------');
+        grunt.log.writeln('-------------------------------------------------------------------------------');
         grunt.log.writeln('02. Read target model conf info: ');
-        grunt.log.writeln('---------------------------------------------------------------------------------');
+        grunt.log.writeln('-------------------------------------------------------------------------------');
         var targetConf = null;
         var raceConfs = grunt.file.readJSON(path.join('database', raceInputted + '.json'));
         for (var modelName in raceConfs) {
@@ -127,9 +127,9 @@ module.exports = function(grunt) {
         }
 
         // 03. 检查目标服装的配置信息中，对应的颜色配置是否存在
-        grunt.log.writeln('---------------------------------------------------------------------------------');
+        grunt.log.writeln('-------------------------------------------------------------------------------');
         grunt.log.writeln('03. Check the material conf of the target model conf: ');
-        grunt.log.writeln('---------------------------------------------------------------------------------');
+        grunt.log.writeln('-------------------------------------------------------------------------------');
         if (!targetConf['Material'].hasOwnProperty(colorInputted)
             || targetConf['Material'][colorInputted] === '') {
             grunt.fail.fatal('Target model conf has no corresponding material color [' + colorInputted + '] info: ' + JSON.stringify(targetConf));
@@ -138,9 +138,9 @@ module.exports = function(grunt) {
         }
 
         // 04. 在bns下查找目标服装的资源文件是否存在，并拷贝到working文件夹下，顺便改名为对应种族的洪门道服的名称
-        grunt.log.writeln('---------------------------------------------------------------------------------');
+        grunt.log.writeln('-------------------------------------------------------------------------------');
         grunt.log.writeln('04. Copy & rename source model resources from bns to working dir: ');
-        grunt.log.writeln('---------------------------------------------------------------------------------');
+        grunt.log.writeln('-------------------------------------------------------------------------------');
         var texture = targetConf['Texture'];
         var material = targetConf['Material'][colorInputted];
         var skeleton = targetConf['Skeleton'];
@@ -163,9 +163,9 @@ module.exports = function(grunt) {
         }
 
         // 05. 修改文件内模型名
-        grunt.log.writeln('---------------------------------------------------------------------------------');
+        grunt.log.writeln('-------------------------------------------------------------------------------');
         grunt.log.writeln('05. Modify the model names of model resources in working dir: ');
-        grunt.log.writeln('---------------------------------------------------------------------------------');
+        grunt.log.writeln('-------------------------------------------------------------------------------');
         var fromModelStr = util.strUtf8ToHex(modelInputted); // 拷贝过来的文件内原来的：目标服装模型名
         var toModelStr = util.strUtf8ToHex(baseConf['Model']); // 改为洪门道服的模型名
         for (var editPart in workingFiles) {
@@ -178,9 +178,9 @@ module.exports = function(grunt) {
         }
 
         // 06. 修改色指定文件，如果colorInputted不是col1的话
-        grunt.log.writeln('---------------------------------------------------------------------------------');
+        grunt.log.writeln('-------------------------------------------------------------------------------');
         grunt.log.writeln('06. Fix material info in material upk (if necessary): ');
-        grunt.log.writeln('---------------------------------------------------------------------------------');
+        grunt.log.writeln('-------------------------------------------------------------------------------');
         if (colorInputted !== 'col1') {
             util.readHexFile(workingFiles['Material']['working'], function(data, path) {
                 util.writeHexFile(path, util.replaceStrLast(
@@ -194,9 +194,9 @@ module.exports = function(grunt) {
         }
 
         // 07. 备份文件，如果在backup里已经有同名文件的话，则忽略（因为最早已备份肯定是未被污染的）
-        grunt.log.writeln('---------------------------------------------------------------------------------');
+        grunt.log.writeln('-------------------------------------------------------------------------------');
         grunt.log.writeln('07. Backup source model resources to backup dir: ');
-        grunt.log.writeln('---------------------------------------------------------------------------------');
+        grunt.log.writeln('-------------------------------------------------------------------------------');
         /**
          * 因为目前的换装构造，只允许替换洪门道服，所以不会有额外的upk文件添加到tencent下（都被重命名为洪门道服的upk了）
          * 所以备份的时候只要检查该种族的洪门道服有没有被备份就OK
@@ -217,9 +217,9 @@ module.exports = function(grunt) {
         }
 
         // 08. 拷贝修改后的文件到tencent下，然后将working文件夹清空
-        grunt.log.writeln('---------------------------------------------------------------------------------');
+        grunt.log.writeln('-------------------------------------------------------------------------------');
         grunt.log.writeln('08. Clear working dir: ');
-        grunt.log.writeln('---------------------------------------------------------------------------------');
+        grunt.log.writeln('-------------------------------------------------------------------------------');
         grunt.file.recurse('working', function(abspath, rootdir, subdir, filename) {
             /**
              * 因为只有一层文件夹结构，所以不用担心多层嵌套问题，注意要忽略 working_dir 这个占位文件
