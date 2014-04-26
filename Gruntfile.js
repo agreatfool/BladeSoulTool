@@ -77,7 +77,7 @@ module.exports = function(grunt) {
     //-------------------------------------------------------------------------------------------
     var Task_Default = function () {
 
-        this.async();
+        this.async(); // prevent program exit before any async action done
 
         var raceInputted = grunt.option('race');
         var modelInputted = grunt.option('model');
