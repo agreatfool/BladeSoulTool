@@ -208,19 +208,24 @@ module.exports = function(grunt) {
             }
         }
 
-        // 05. 修改文件内模型名
+        // 05. 修改文件内 模型名 及 UPK名
         grunt.log.writeln('-------------------------------------------------------------------------------');
         grunt.log.writeln('05. Modify the model names of model resources in working dir: ');
         grunt.log.writeln('-------------------------------------------------------------------------------');
-        var fromModelStr = util.strUtf8ToHex(modelInputted); // 拷贝过来的文件内原来的：目标服装模型名
-        var toModelStr = util.strUtf8ToHex(baseConf['Model']); // 改为洪门道服的模型名
         for (var editPart in workingFiles) { // Texture, Material, Skeleton
             if (!workingFiles.hasOwnProperty(editPart)) {
                 continue;
             }
             util.registerAsyncEvent(workingFiles[editPart]['working']);
             util.readHexFile(workingFiles[editPart]['working'], function(data, path) {
-                util.writeHexFile(path, util.replaceStrAll(data, fromModelStr, toModelStr));
+                // 拷贝过来的文件内原来的：目标服装模型名 => 改为洪门道服的模型名
+                data = util.replaceStrAll(data, util.strUtf8ToHex(modelInputted), util.strUtf8ToHex(baseConf['Model']));
+                // 替换各UPK名字，包括Texture，Material，Skeleton
+                data = util.replaceStrAll(data, util.strUtf8ToHex(texture), util.strUtf8ToHex(baseConf['Texture']));
+                data = util.replaceStrAll(data, util.strUtf8ToHex(material), util.strUtf8ToHex(baseConf['Material']['col1']));
+                data = util.replaceStrAll(data, util.strUtf8ToHex(skeleton), util.strUtf8ToHex(baseConf['Skeleton']));
+                // 写入到working文件内
+                util.writeHexFile(path, data);
                 util.cancelAsyncEvent(path);
             });
         }
