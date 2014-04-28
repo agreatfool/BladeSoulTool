@@ -20,8 +20,8 @@ var BstCrawler = function(grunt) {
 
     // 设置状态
     this.part = null; // 当前在爬取的数据是哪个部分的：body、face、hair
-    this.maxListEdge = -1; // 最后一页是第几页，暂时未知，初始为-1
-    this.maxWorkingListPageNum = 1; // 已开始爬取的最大的列表页id，初始是1，因为总是从第一页开始爬的
+    this.maxListEdge = -1; // 列表页面的最后一页是第几页，初始时未知，赋值为-1
+    this.maxWorkingListPageNum = 1; // 已开始爬取的所有列表页中页面number的最大值，初始是1，因为总是从第一页开始爬的
     this.totalItemsOnListPage = 0; // 记录17173页面上显示出来的物品有多少个
     this.duplicatedListItem = 0; // 记录从17173上爬取的物品有多少是重名重复的
     /**
