@@ -9,6 +9,10 @@ var BstUtil = function(grunt) {
     this.asyncList = [];
 };
 
+BstUtil.prototype.printHr = function() {
+    this.grunt.log.writeln('-------------------------------------------------------------------------------');
+};
+
 BstUtil.prototype.strUtf8ToHex = function(str) {
     var result = new Buffer(str).toString('hex');
     this.grunt.log.writeln('[BstUtil] Convert UTF8 to HEX, FROM: ' + str + ' , TO: ' + result);
