@@ -78,11 +78,16 @@ BstCrawler.PART_HAIR = 'hair';
 BstCrawler.WORKING_TYPE_LIST   = 'list';
 BstCrawler.WORKING_TYPE_DETAIL = 'detail';
 
+BstCrawler.DB_ROOT_OF_17173 = 'http://cha.17173.com';
+
 BstCrawler.prototype.start = function(part) {
+    this.util.printHr();
     if ([BstCrawler.PART_BODY, BstCrawler.PART_FACE, BstCrawler.PART_HAIR].indexOf(part) === -1) {
         this.grunt.fail.fatal('[BstCrawler] Invalid start part specified: ' + part);
     }
     this.grunt.log.writeln('[BstCrawler] Start to crawl list pages of part: ' + part);
+    this.util.printHr();
+
     this.part = part;
     var indexUrl = this.conf[part];
 
@@ -110,7 +115,10 @@ BstCrawler.prototype.start = function(part) {
         if (self.workingList.length == 0 // 所有列表工作完成
             && self.maxListEdge !== -1) { // 最初的列表页解析完成了，已经知道一部分的页面id
             clearInterval(listTimer);
-            self.util.writeFile('./database/crawler/' + self.part + '/list.json'); // 使用grunt的write API，所以需要相对于Gruntfile.js的路径
+            self.util.writeFile(
+                './database/crawler/' + self.part + '/list.json', // 使用grunt的write API，所以需要相对于Gruntfile.js的路径
+                JSON.stringify(self.collectdLinks[self.part], null, 4)
+            );
             self.util.printHr();
             self.grunt.log.writeln('[BstCrawler] All list pages done, start to crawl detail pages of part: ' + part);
             funcDetailWorkStart();
@@ -194,10 +202,10 @@ BstCrawler.prototype.parseListPage = function(body, pageNumber) {
     } else {
         trOfTbodyList.each(function(index, element) {
             var tdWithNameAndLink = $(element).find('td')[1]; // 0号td里的是图片 + 链接，1号才是名字 + 链接
-            var link = $(tdWithNameAndLink).find('a').attr('href');
+            var link = BstCrawler.DB_ROOT_OF_17173 + $(tdWithNameAndLink).find('a').attr('href');
             var name = $(tdWithNameAndLink).find('span').text().trim();
-            self.collectdLinks[name] = link;
-            self.grunt.log.writeln('[BstCrawler] List info got: ' + name + ': ' + link);
+            self.collectdLinks[self.part][name] = link;
+//            self.grunt.log.writeln('[BstCrawler] List info got: ' + name + ': ' + link);
 
             if (index == (trOfTbodyList.length - 1)) { // 当前列表页面的最后一项物品
                 funcFinishListPageCrawl();
