@@ -109,9 +109,10 @@ BstCrawler.prototype.start = function(part) {
         // 检查完成度
         if (self.workingList.length == 0 // 所有列表工作完成
             && self.maxListEdge !== -1) { // 最初的列表页解析完成了，已经知道一部分的页面id
+            clearInterval(listTimer);
+            self.util.writeFile('./database/crawler/' + self.part + '/list.json'); // 使用grunt的write API，所以需要相对于Gruntfile.js的路径
             self.util.printHr();
             self.grunt.log.writeln('[BstCrawler] All list pages done, start to crawl detail pages of part: ' + part);
-            clearInterval(listTimer);
             funcDetailWorkStart();
         }
     }, 500);

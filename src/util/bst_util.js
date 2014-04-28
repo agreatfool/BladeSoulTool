@@ -38,6 +38,11 @@ BstUtil.prototype.deleteFile = function(path) {
     this.grunt.log.writeln('[BstUtil] Delete file: ' + path);
 };
 
+BstUtil.prototype.writeFile = function(path, content) {
+    this.grunt.file.write(path, content);
+    this.grunt.log.writeln('[BstUtil] Write file: ' + path);
+};
+
 BstUtil.prototype.writeHexFile = function(path, data) {
     var buff = new Buffer(data, 'hex');
 
