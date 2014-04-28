@@ -1,8 +1,12 @@
+"use strict";
+
 var fs = require('fs');
 
 var BstUtil = function(grunt) {
-    this.asyncList = [];
+    /** @type {grunt} */
     this.grunt = grunt;
+
+    this.asyncList = [];
 };
 
 BstUtil.prototype.strUtf8ToHex = function(str) {
@@ -80,7 +84,11 @@ BstUtil.prototype.startToListenAsyncList = function(callback) {
             self.grunt.log.writeln('Async event list done.');
             clearInterval(timer);
             self.asyncList = [];
-            callback();
+            if (typeof callback === 'function') {
+                callback();
+            } else {
+                self.grunt.fail.fatal('Async callback type is invalid: ' + (typeof callback));
+            }
         }
     }, 50);
 };
