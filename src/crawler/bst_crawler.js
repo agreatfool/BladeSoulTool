@@ -145,9 +145,16 @@ BstCrawler.prototype.fetchPage = function(url, pageNumber, workingType) {
 
     self.grunt.log.writeln('[BstCrawler] Start to fetch list page of number: ' + pageNumber);
 
-    self.workingList.push(pageNumber);
+    // 向工作队列中添加标识位
+    if (workingType == BstCrawler.WORKING_TYPE_LIST) {
+        self.workingList.push(pageNumber);
+        url += '&page=' + pageNumber; // 列表页面要加上页号
+    } else if (workingType == BstCrawler.WORKING_TYPE_DETAIL) {
+        self.workingDetail.push(url);
+    }
 
-    request(url + '&page=' + pageNumber, function (error, response, body) {
+    // 拉取页面数据
+    request(url, function (error, response, body) {
         if (error) {
             self.grunt.fail.warn('[BstCrawler] Error in fetching url: ' + url); return;
         }
