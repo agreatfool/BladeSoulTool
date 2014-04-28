@@ -21,6 +21,7 @@ var BstCrawler = function(grunt) {
     // 设置状态
     this.part = null; // 当前在爬取的数据是哪个部分的：body、face、hair
     this.maxListEdge = -1; // 最后一页是第几页，暂时未知，初始为-1
+    this.maxWorkingListPageNum = -1; // 已开始爬取的最大列表页id，初始是-1
     /**
      * 进程工作状态：
      * working：正在工作
@@ -81,7 +82,7 @@ BstCrawler.prototype.start = function(part) {
     if ([BstCrawler.PART_BODY, BstCrawler.PART_FACE, BstCrawler.PART_HAIR].indexOf(part) === -1) {
         this.grunt.fail.fatal('[BstCrawler] Invalid start part specified: ' + part);
     }
-    self.grunt.log.writeln('[BstCrawler] Start to crawl list pages of part: ' + part);
+    this.grunt.log.writeln('[BstCrawler] Start to crawl list pages of part: ' + part);
     this.part = part;
     var indexUrl = this.conf[part];
 
@@ -97,28 +98,43 @@ BstCrawler.prototype.start = function(part) {
      * 当上述两者同时满足，则表示列表爬取结束了，可以开始后续的细节爬取
      */
     var listTimer = setInterval(function() {
+        // 向队列内添加列表页获取的工作条目
+        for (var num = (self.maxWorkingListPageNum + 1); num <= self.maxListEdge; num++) {
+            self.fetchPage(indexUrl, num, BstCrawler.WORKING_TYPE_LIST);
+            if (self.maxWorkingListPageNum < num) {
+                self.maxWorkingListPageNum = num;
+            }
+        }
+
+        // 检查完成度
         if (self.workingList.length == 0 // 所有列表工作完成
             && self.maxListEdge !== -1) { // 最初的列表页解析完成了，已经知道一部分的页面id
             self.util.printHr();
             self.grunt.log.writeln('[BstCrawler] All list pages done, start to crawl detail pages of part: ' + part);
             clearInterval(listTimer);
-
-            // TODO
+            funcDetailWorkStart();
         }
-    }, 50);
+    }, 500);
+
+    var funcDetailWorkStart = function() {
+        self.util.printHr();
+        self.grunt.log.writeln('funcDetailWorkStart');
+    };
 };
 
 BstCrawler.prototype.fetchPage = function(url, pageNumber, workingType) {
     var self = this;
 
+    self.grunt.log.writeln('[BstCrawler] Start to fetch list page of number: ' + pageNumber);
+
     self.workingList.push(pageNumber);
 
-    request(url, function (error, response, body) {
+    request(url + '&page=' + pageNumber, function (error, response, body) {
         if (error) {
             self.grunt.fail.warn('[BstCrawler] Error in fetching url: ' + url); return;
         }
         if (response.statusCode != 200) {
-            self.grunt.fail.warn('[BstCrawler] Wrong code "' + response.statusCode + '" in fetching url: ' + url); return;
+            self.grunt.fail.warn('[BstCrawler] Wrong code "' + response.statusCode + '" while fetching url: ' + url); return;
         }
         switch (workingType) {
             case BstCrawler.WORKING_TYPE_LIST:
@@ -136,6 +152,8 @@ BstCrawler.prototype.fetchPage = function(url, pageNumber, workingType) {
 
 BstCrawler.prototype.parseListPage = function(body, pageNumber) {
     var self = this;
+
+    self.grunt.log.writeln('[BstCrawler] Start to parse list page of number: ' + pageNumber);
 
     var $ = cheerio.load(body);
 
