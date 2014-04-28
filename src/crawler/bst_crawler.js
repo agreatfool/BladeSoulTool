@@ -22,6 +22,8 @@ var BstCrawler = function(grunt) {
     this.part = null; // 当前在爬取的数据是哪个部分的：body、face、hair
     this.maxListEdge = -1; // 最后一页是第几页，暂时未知，初始为-1
     this.maxWorkingListPageNum = -1; // 已开始爬取的最大列表页id，初始是-1
+    this.totalItemsOnListPage = 0; // 记录17173页面上显示出来的物品有多少个
+    this.duplicatedListItem = 0; // 记录从17173上爬取的物品有多少是重名重复的
     /**
      * 进程工作状态：
      * working：正在工作
@@ -120,13 +122,20 @@ BstCrawler.prototype.start = function(part) {
                 JSON.stringify(self.collectdLinks[self.part], null, 4)
             );
             self.util.printHr();
-            self.grunt.log.writeln('[BstCrawler] All list pages done, start to crawl detail pages of part: ' + part);
+            self.grunt.log.writeln('[BstCrawler] All list pages done, status:');
+            self.grunt.log.writeln('[BstCrawler] Pages crawled: ' + self.maxListEdge);
+            self.grunt.log.writeln('[BstCrawler] Total items on page: ' + self.totalItemsOnListPage);
+            self.grunt.log.writeln('[BstCrawler] Duplicated items: ' + self.duplicatedListItem);
+            self.grunt.log.writeln('[BstCrawler] Links collected: ' + Object.keys(self.collectdLinks[self.part]).length);
             funcDetailWorkStart();
         }
     }, 500);
 
     var funcDetailWorkStart = function() {
         self.util.printHr();
+        self.grunt.log.writeln('[BstCrawler] Start to crawl detail pages of part: ' + part);
+        self.util.printHr();
+
         self.grunt.log.writeln('funcDetailWorkStart');
     };
 };
@@ -200,12 +209,17 @@ BstCrawler.prototype.parseListPage = function(body, pageNumber) {
         self.grunt.fail.warn('[BstCrawler] List page has no item list, pageNumber: ' + pageNumber);
         funcFinishListPageCrawl();
     } else {
+        self.totalItemsOnListPage += trOfTbodyList.length;
         trOfTbodyList.each(function(index, element) {
             var tdWithNameAndLink = $(element).find('td')[1]; // 0号td里的是图片 + 链接，1号才是名字 + 链接
             var link = BstCrawler.DB_ROOT_OF_17173 + $(tdWithNameAndLink).find('a').attr('href');
             var name = $(tdWithNameAndLink).find('span').text().trim();
+            if (self.collectdLinks[self.part].hasOwnProperty(name)) {
+                self.duplicatedListItem += 1;
+                // self.grunt.log.writeln('[BstCrawler] Duplicate item on page: ' + name); // Too many info
+            }
             self.collectdLinks[self.part][name] = link;
-//            self.grunt.log.writeln('[BstCrawler] List info got: ' + name + ': ' + link);
+            // self.grunt.log.writeln('[BstCrawler] List info got: ' + name + ': ' + link); // Too many info
 
             if (index == (trOfTbodyList.length - 1)) { // 当前列表页面的最后一项物品
                 funcFinishListPageCrawl();
