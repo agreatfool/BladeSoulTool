@@ -10,25 +10,28 @@ var BstUtil = function(grunt) {
 };
 
 BstUtil.prototype.strUtf8ToHex = function(str) {
-    return new Buffer(str).toString('hex');
+    var result = new Buffer(str).toString('hex');
+    this.grunt.log.writeln('[BstUtil] Convert UTF8 to HEX, FROM: ' + str + ' , TO: ' + result);
+
+    return result;
 };
 
 BstUtil.prototype.checkFileExists = function(path) {
     if (!this.grunt.file.exists(path)) {
-        this.grunt.fail.fatal('File not found, path: ' + path);
+        this.grunt.fail.fatal('[BstUtil] File not found, path: ' + path);
     }
 };
 
 BstUtil.prototype.copyFile = function(fromPath, toPath) {
     this.checkFileExists(fromPath);
     this.grunt.file.copy(fromPath, toPath);
-    this.grunt.log.writeln('Copy file FROM: ' + fromPath + ' , TO: ' + toPath);
+    this.grunt.log.writeln('[BstUtil] Copy file FROM: ' + fromPath + ' , TO: ' + toPath);
 };
 
 BstUtil.prototype.deleteFile = function(path) {
     this.checkFileExists(path);
     this.grunt.file.delete(path);
-    this.grunt.log.writeln('Delete file: ' + path);
+    this.grunt.log.writeln('[BstUtil] Delete file: ' + path);
 };
 
 BstUtil.prototype.writeHexFile = function(path, data) {
@@ -36,7 +39,7 @@ BstUtil.prototype.writeHexFile = function(path, data) {
 
     this.grunt.file.write(path, buff, {encoding: 'hex'});
 
-    this.grunt.log.writeln('Write file: ' + path);
+    this.grunt.log.writeln('[BstUtil] Write file: ' + path);
 };
 
 BstUtil.prototype.readHexFile = function(path, callback) {
@@ -64,7 +67,7 @@ BstUtil.prototype.replaceStrLast = function(str, fromStr, toStr) {
 
 BstUtil.prototype.registerAsyncEvent = function(eventName) {
     if (this.asyncList.indexOf(eventName) === -1) {
-        this.grunt.log.writeln('Async event registered: ' + eventName);
+        this.grunt.log.writeln('[BstUtil] Async event registered: ' + eventName);
         this.asyncList.push(eventName);
     }
 };
@@ -72,7 +75,7 @@ BstUtil.prototype.registerAsyncEvent = function(eventName) {
 BstUtil.prototype.cancelAsyncEvent = function(eventName) {
     var index = this.asyncList.indexOf(eventName);
     if (index !== -1) {
-        this.grunt.log.writeln('Async event cancelled: ' + eventName);
+        this.grunt.log.writeln('[BstUtil] Async event cancelled: ' + eventName);
         this.asyncList.remove(index);
     }
 };
@@ -81,13 +84,13 @@ BstUtil.prototype.startToListenAsyncList = function(callback) {
     var self = this;
     var timer = setInterval(function() {
         if (self.asyncList.length == 0) { // all done
-            self.grunt.log.writeln('Async event list done.');
+            self.grunt.log.writeln('[BstUtil] Async event list done.');
             clearInterval(timer);
             self.asyncList = [];
             if (typeof callback === 'function') {
                 callback();
             } else {
-                self.grunt.fail.fatal('Async callback type is invalid: ' + (typeof callback));
+                self.grunt.fail.fatal('[BstUtil] Async callback type is invalid: ' + (typeof callback));
             }
         }
     }, 50);
