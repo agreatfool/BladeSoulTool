@@ -12,6 +12,21 @@ Array.prototype.remove = function(from, to) {
     return this.push.apply(this, rest);
 };
 
+Object.prototype.findByVal = function(val) {
+    var result = null;
+    for (var key in this) {
+        if (!this.hasOwnProperty(key)) {
+            continue;
+        }
+        if (val == this[key]) {
+            result = {};
+            result[key] = val;
+            break;
+        }
+    }
+    return result;
+};
+
 module.exports = function(grunt) {
 
     var Task_Default = function() {
