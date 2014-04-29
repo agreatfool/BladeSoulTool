@@ -26,7 +26,6 @@ module.exports = function(grunt) {
 
     var Task_Default = function() {
         this.async();
-
     };
 
     var Task_Crawler = function() { // --part=body
