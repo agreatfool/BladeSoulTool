@@ -174,8 +174,8 @@ BstCrawler.prototype.fetchPage = function(url, pageNumber, workingType) {
     if (workingType == BstCrawler.WORKING_TYPE_LIST) {
         self.grunt.log.writeln('[BstCrawler] Start to fetch list page of number: ' + pageNumber);
     } else if (workingType == BstCrawler.WORKING_TYPE_DETAIL) {
-        self.grunt.log.writeln('[BstCrawler] Start to fetch detail page of: ' +
-            _.keys(self.collectdLinks[self.part].findByVal(url))[0]);
+        var urlName = _.keys(self.collectdLinks[self.part].findByVal(url))[0];
+        self.grunt.log.writeln('[BstCrawler] Start to fetch detail page of: ' + urlName);
     }
 
     // 向工作队列中添加标识位，只有列表页面需要，细节页面在总控中已经添加过了
@@ -199,7 +199,7 @@ BstCrawler.prototype.fetchPage = function(url, pageNumber, workingType) {
             if (workingType == BstCrawler.WORKING_TYPE_LIST) {
                 self.finishListPageCrawl(pageNumber);
             } else if (workingType == BstCrawler.WORKING_TYPE_DETAIL) {
-                self.finishDetailPageCrawl(url);
+                self.finishDetailPageCrawl(url, urlName);
             }
             return;
         }
@@ -208,7 +208,7 @@ BstCrawler.prototype.fetchPage = function(url, pageNumber, workingType) {
         if (workingType == BstCrawler.WORKING_TYPE_LIST) {
             self.parseListPage(body, pageNumber); // 列表页面需要页面id进行标识
         } else if (workingType == BstCrawler.WORKING_TYPE_DETAIL) {
-            self.parseDetailPage(body, url); // 细节页面不需要页面id来标识，每张页面的地址都不同
+            self.parseDetailPage(body, url, urlName); // 细节页面不需要页面id来标识，每张页面的地址都不同
         }
     })
 };
@@ -272,16 +272,53 @@ BstCrawler.prototype.finishListPageCrawl = function(pageNumber) {
         '" done. Current max page number of list pages is: ' + this.statusMaxListEdge);
 };
 
-BstCrawler.prototype.parseDetailPage = function(body, url) {
-    // TODO
-    this.finishDetailPageCrawl(url);
+BstCrawler.prototype.parseDetailPage = function(body, url, urlName) {
+    this.grunt.log.writeln('[BstCrawler] Start to parse detail page of: ' + urlName);
+
+    var $ = cheerio.load(body);
+
+    // 找到细节页面上的信息展示块
+    var box = $('#content .main .panel-btm .panel-top');
+
+    // 收集需要的信息
+    var name = box.find('h2').text();
+    var piclink = box.find('.icon img').attr('src');
+    var pic = piclink.substr(piclink.lastIndexOf('/') + 1);
+    var pk = pic.slice(pic.indexOf('_') + 1, pic.indexOf('.'));
+    var code = pic.match(/\d+/);
+    if (code == null) {
+        this.grunt.log.error('[BstCrawler] Error in parsing code from "' + urlName + '", null found from pic: ' + pic);
+        if (name == '洪门道服') { // 17173的洪门道服的图片是个特例，不带短码的
+            code = '60054';
+        }
+    } else {
+        code = code.shift(); // ["60094"] => "60094"
+    }
+    var col = pic.match(/col\d+/);
+    if (col == null) {
+        this.grunt.log.error('[BstCrawler] Error in parsing col from "' + urlName + '", null found from pic: ' + pic);
+    } else {
+        col = col.shift(); // ["col1"] => "col1"
+    }
+
+    this.collectedData[this.part][pk] = {
+        "name": name, // 红宝石
+        "code": code, // 60094
+        "col": col, // col1
+        "class": this.part, // body
+        "require": box.find('.focus').text(), // 龙女专用
+        "pic": pic, // Costume_60094_GonF_col1.png
+        "piclink": piclink, // http://i1.17173cdn.com/z6po4a/YWxqaGBf/images/data/fashion/big/Costume_60094_GonF_col1.png
+        "link": url // http://cha.17173.com/bns/fashion/90046.html
+    };
+
+    this.finishDetailPageCrawl(url, urlName);
 };
 
-BstCrawler.prototype.finishDetailPageCrawl = function(url) {
+BstCrawler.prototype.finishDetailPageCrawl = function(url, urlName) {
     this.statusFinishedDetailCount++;
 
-    this.grunt.log.writeln('[BstCrawler] Crawl work of detail page "' +
-        _.keys(this.collectdLinks[this.part].findByVal(url))[0] +
+    this.grunt.log.writeln('[BstCrawler] Crawl work of detail page "' + urlName +
         '" done, progress: ' + this.statusFinishedDetailCount + ' / ' + this.statusTotalDetailCount);
 };
 
