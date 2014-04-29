@@ -105,4 +105,8 @@ BstUtil.prototype.startToListenAsyncList = function(callback) {
     }, 50);
 };
 
+BstUtil.prototype.printJson = function(json) {
+    console.log(JSON.stringify(json, null, 4));
+};
+
 module.exports = BstUtil;
