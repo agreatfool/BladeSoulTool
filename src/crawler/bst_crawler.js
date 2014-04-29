@@ -295,7 +295,7 @@ BstCrawler.prototype.parseDetailPage = function(body, url, urlName) {
     } else {
         code = code.shift(); // ["60094"] => "60094"
     }
-    var col = pic.match(/col\d+/);
+    var col = pic.match(/(col\d+|Col\d+)/);
     if (col == null) {
         col = 'all';
         this.grunt.log.error('[BstCrawler] Error in parsing col from "' + urlName + '", null found from pic: ' + pic);
