@@ -287,9 +287,10 @@ BstCrawler.prototype.parseDetailPage = function(body, url, urlName) {
     var pk = pic.slice(pic.indexOf('_') + 1, pic.indexOf('.'));
     var code = pic.match(/\d+/);
     if (code == null) {
-        this.grunt.fail.fatal('[BstCrawler] Error in parsing code from "' + urlName + '", null found from pic: ' + pic);
         if (name == '洪门道服') { // 17173的洪门道服的图片是个特例，不带短码的
             code = '60054';
+        } else {
+            this.grunt.fail.fatal('[BstCrawler] Error in parsing code from "' + urlName + '", null found from pic: ' + pic);
         }
     } else {
         code = code.shift(); // ["60094"] => "60094"
