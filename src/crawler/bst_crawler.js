@@ -281,7 +281,7 @@ BstCrawler.prototype.finishDetailPageCrawl = function(url) {
     this.statusFinishedDetailCount++;
 
     this.grunt.log.writeln('[BstCrawler] Crawl work of detail page "' +
-        _.keys(self.collectdLinks[self.part].findByVal(url))[0] +
+        _.keys(this.collectdLinks[this.part].findByVal(url))[0] +
         '" done, progress: ' + this.statusFinishedDetailCount + ' / ' + this.statusTotalDetailCount);
 };
 
