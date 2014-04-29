@@ -2,6 +2,7 @@
 
 var cheerio = require('cheerio');
 var request = require('request');
+var _ = require('underscore');
 /**
  * @type {BstUtil|exports}
  */
@@ -125,7 +126,7 @@ BstCrawler.prototype.start = function(part) {
             self.grunt.log.writeln('[BstCrawler] Pages crawled: ' + self.statusMaxListEdge);
             self.grunt.log.writeln('[BstCrawler] Total items on page: ' + self.statusTotalItemsOnListPage);
             self.grunt.log.writeln('[BstCrawler] Duplicated items: ' + self.statusDuplicatedListItem);
-            self.grunt.log.writeln('[BstCrawler] Links collected: ' + Object.keys(self.collectdLinks[self.part]).length);
+            self.grunt.log.writeln('[BstCrawler] Links collected: ' + _.keys(self.collectdLinks[self.part]).length);
             funcDetailWorkStart();
         }
     }, 500);
@@ -135,7 +136,9 @@ BstCrawler.prototype.start = function(part) {
         self.grunt.log.writeln('[BstCrawler] Start to crawl detail pages of part: ' + part);
         self.util.printHr();
 
-        self.workingDetail = Object.values(self.collectdLinks[self.part]); // {"name": "url", ...} => ["url", ...]
+        self.workingDetail = _.values(self.collectdLinks[self.part]); // {"name": "url", ...} => ["url", ...]
+        self.statusTotalDetailCount = self.workingDetail.length;
+        // 发送爬取请求
         var detailStartTimer = setInterval(function() {
             for (var i = 0; i < 10; i++) { // 每个时间间隔内，发送10个请求
                 if (self.workingDetail.length == 0) {
@@ -146,6 +149,7 @@ BstCrawler.prototype.start = function(part) {
             }
         }, 50);
 
+        // 等待所有爬取请求结束
         var detailProgressTimer = setInterval(function() {
             if (self.statusFinishedDetailCount == self.statusTotalDetailCount) {
                 clearInterval(detailProgressTimer);
@@ -167,7 +171,12 @@ BstCrawler.prototype.fetchPage = function(url, pageNumber, workingType) {
     if ([BstCrawler.WORKING_TYPE_LIST, BstCrawler.WORKING_TYPE_DETAIL].indexOf(workingType) === -1) {
         self.grunt.fail.warn('[BstCrawler] Invalid fetch working type, type: ' + workingType);
     }
-    self.grunt.log.writeln('[BstCrawler] Start to fetch list page of number: ' + pageNumber);
+    if (workingType == BstCrawler.WORKING_TYPE_LIST) {
+        self.grunt.log.writeln('[BstCrawler] Start to fetch list page of number: ' + pageNumber);
+    } else if (workingType == BstCrawler.WORKING_TYPE_DETAIL) {
+        self.grunt.log.writeln('[BstCrawler] Start to fetch detail page of: ' +
+            _.keys(self.collectdLinks[self.part].findByVal(url))[0]);
+    }
 
     // 向工作队列中添加标识位，只有列表页面需要，细节页面在总控中已经添加过了
     if (workingType == BstCrawler.WORKING_TYPE_LIST) {
@@ -259,7 +268,7 @@ BstCrawler.prototype.finishListPageCrawl = function(pageNumber) {
     } else {
         this.grunt.fail.warn('[BstCrawler] Finished list page info cannot be found in this.workingList, pageNumber: ' + pageNumber);
     }
-    this.grunt.log.writeln('[BstCrawler] Crawl work of page "' + pageNumber +
+    this.grunt.log.writeln('[BstCrawler] Crawl work of list page "' + pageNumber +
         '" done. Current max page number of list pages is: ' + this.statusMaxListEdge);
 };
 
@@ -270,11 +279,9 @@ BstCrawler.prototype.parseDetailPage = function(body, url) {
 
 BstCrawler.prototype.finishDetailPageCrawl = function(url) {
     this.statusFinishedDetailCount++;
-    var names = Object.keys(this.collectdLinks[this.part]);
-    var urls = Object.values(this.collectdLinks[this.part]);
-    var index = urls.indexOf(url);
-    var name = names[index];
-    this.grunt.log.writeln('[BstCrawler] Crawl work of detail page "' + name +
+
+    this.grunt.log.writeln('[BstCrawler] Crawl work of detail page "' +
+        _.keys(self.collectdLinks[self.part].findByVal(url))[0] +
         '" done, progress: ' + this.statusFinishedDetailCount + ' / ' + this.statusTotalDetailCount);
 };
 
