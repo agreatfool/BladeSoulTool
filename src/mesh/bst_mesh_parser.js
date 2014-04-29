@@ -2,12 +2,22 @@
 
 var fs = require('fs');
 var xml2js = require('xml2js');
+var _ = require('underscore');
+/**
+ * @type {BstUtil|exports}
+ */
+var Util = require('../util/bst_util.js');
 
 var BstMeshParser = function(grunt) {
-    this.grunt = grunt;
+    this.grunt  = grunt;
+    this.util   = new Util(grunt);
     this.parser = new xml2js.Parser();
+
     this.part = null; // 当前在爬取的数据是哪个部分的：body、face、hair
-    this.xml = null; // 读取出来的mesh.xml的record列表：<table>[xml => <record></record>]</table>
+    this.xml  = null; // 读取出来的mesh.xml的record列表：<table>[xml => <record></record>]</table>
+    this.body = null; // 过滤出所有 type-mesh 是 body-mesh 的数据
+    this.face = null; // 过滤出所有 type-mesh 是 accessory-mesh 的数据
+    this.hair = null; // 过滤出所有 type-mesh 是 hair-mesh 的数据
 };
 
 BstMeshParser.PART_BODY = 'body-mesh';
@@ -34,11 +44,11 @@ BstMeshParser.prototype.start = function(part) {
 
     var self = this;
     fs.readFile('./resources/mesh.xml', function(readErr, data) {
-        if (!readErr) {
+        if (readErr) {
             self.grunt.fail.fatal('[BstMeshParser] Error in reading mesh.xml: ' + readErr.stack);
         }
         self.parser.parseString(data, function(parseErr, result) {
-            if (!parseErr) {
+            if (parseErr) {
                 self.grunt.fail.fatal('[BstMeshParser] Error in parsing mesh.xml: ' + parseErr.stack);
             }
             self.xml = result['table']['record'];
@@ -65,7 +75,11 @@ BstMeshParser.prototype.process = function() {
 };
 
 BstMeshParser.prototype.processBody = function() {
-
+    this.body = _.filter(this.xml, function(element) {
+        return element['$']['type-mesh'] == BstMeshParser.PART_BODY;
+    });
+    this.grunt.log.writeln('[BstMeshParser] body-mesh parsed, "' + this.body.length + '" lines of record read.');
+    this.util.printJson(this.body);
 };
 
 BstMeshParser.prototype.processFace = function() {
