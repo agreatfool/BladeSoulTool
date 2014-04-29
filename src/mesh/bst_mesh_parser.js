@@ -49,6 +49,30 @@ BstMeshParser.prototype.start = function(part) {
 };
 
 BstMeshParser.prototype.process = function() {
+    switch (this.part) {
+        case BstMeshParser.PART_BODY:
+            this.processBody();
+            break;
+        case BstMeshParser.PART_FACE:
+            this.processFace();
+            break;
+        case BstMeshParser.PART_HAIR:
+            this.processHair();
+            break;
+        default:
+            break;
+    }
+};
+
+BstMeshParser.prototype.processBody = function() {
+
+};
+
+BstMeshParser.prototype.processFace = function() {
+
+};
+
+BstMeshParser.prototype.processHair = function() {
 
 };
 
