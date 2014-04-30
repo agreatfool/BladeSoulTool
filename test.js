@@ -1,6 +1,7 @@
 "use strict";
 
 var fs = require('fs');
+var path = require('path');
 var request = require('request');
 
 // stack-trace
@@ -28,6 +29,7 @@ console.log('strLc.ucfirst(): ' + strLc.ucfirst());
 // download image
 var url = 'https://www.google.com.hk/images/srpr/logo11w.png';
 var filepath = './database/crawler/pics/dummy/google.png';
+console.log('dirname: ' + path.dirname(filepath));
 request.head(url, function(err, res, body){
     console.log('content-type:', res.headers['content-type']);
     console.log('content-length:', res.headers['content-length']);
