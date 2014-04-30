@@ -51,6 +51,23 @@ BstUtil.prototype.writeHexFile = function(path, data) {
     this.grunt.log.writeln('[BstUtil] Write file: ' + path);
 };
 
+BstUtil.prototype.readJsonFile = function(path) {
+    this.checkFileExists(path);
+
+    return this.grunt.file.readJSON(path);
+};
+
+BstUtil.prototype.readFile = function(path, callback) {
+    this.checkFileExists(path);
+
+    fs.readFile(path, function(err, data) {
+        if (err) {
+            self.grunt.fail.fatal('[BstUtil] Error in reading file: ' + path);
+        }
+        callback(data, path);
+    });
+};
+
 BstUtil.prototype.readHexFile = function(path, callback) {
     this.checkFileExists(path);
 
