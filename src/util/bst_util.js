@@ -1,6 +1,8 @@
 "use strict";
 
 var fs = require('fs');
+var path = require('path');
+var request = require('request');
 
 var BstUtil = function(grunt) {
     /** @type {grunt} */
@@ -124,6 +126,33 @@ BstUtil.prototype.startToListenAsyncList = function(callback) {
 
 BstUtil.prototype.printJson = function(json) {
     console.log(JSON.stringify(json, null, 4));
+};
+
+BstUtil.prototype.fileDownload = function(url, filepath, callback) {
+    var self = this;
+    self.grunt.log.writeln('[BstUtil] Start to download file: ' + url);
+
+    var errReport = function(err) {
+        self.grunt.log.error('[BstUtil] Error in downloading: ' + url);
+        self.grunt.log.error(err);
+    };
+
+    var dir = path.dirname(filepath);
+    if (!self.grunt.file.exists(dir)) {
+        self.grunt.file.mkdir(dir);
+    }
+
+    request.head(url, function(err, res){
+        if (err) { errReport(err); }
+
+        var ws = fs.createWriteStream(filepath);
+        ws.on('error', function(err) { errReport(err); });
+
+        request(url).pipe(ws).on('close', function() {
+            self.grunt.log.writeln('[BstUtil] File "' + url + '" downloaded: size: ' + res.headers['content-length']);
+            callback();
+        });
+    });
 };
 
 module.exports = BstUtil;
