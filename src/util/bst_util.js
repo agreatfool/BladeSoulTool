@@ -3,6 +3,7 @@
 var fs = require('fs');
 var path = require('path');
 var request = require('request');
+var _ = require('underscore');
 
 var BstUtil = function(grunt) {
     /** @type {grunt} */
@@ -128,7 +129,7 @@ BstUtil.prototype.printJson = function(json) {
     console.log(JSON.stringify(json, null, 4));
 };
 
-BstUtil.prototype.fileDownload = function(url, filepath, callback) {
+BstUtil.prototype.fileDownload = function(url, filepath, callback, headers) {
     var self = this;
     self.grunt.log.writeln('[BstUtil] Start to download file: ' + url);
 
@@ -142,16 +143,16 @@ BstUtil.prototype.fileDownload = function(url, filepath, callback) {
         self.grunt.file.mkdir(dir);
     }
 
-    request.head(url, function(err, res){
-        if (err) { errReport(err); }
+    var ws = fs.createWriteStream(filepath);
+    ws.on('error', function(err) { errReport(err); });
 
-        var ws = fs.createWriteStream(filepath);
-        ws.on('error', function(err) { errReport(err); });
-
-        request(url).pipe(ws).on('close', function() {
-            self.grunt.log.writeln('[BstUtil] File "' + url + '" downloaded: size: ' + res.headers['content-length']);
-            callback();
-        });
+    var options = {"url": url};
+    if (typeof headers !== 'undefined' && _.keys(headers).length != 0) {
+        options['headers'] = headers;
+    }
+    request(options).pipe(ws).on('close', function() {
+        console.log('File "' + url + '" downloaded');
+        callback();
     });
 };
 
