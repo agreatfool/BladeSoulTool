@@ -1,5 +1,6 @@
 "use strict";
 
+var path = require('path');
 var cheerio = require('cheerio');
 var request = require('request');
 var _ = require('underscore');
@@ -7,6 +8,23 @@ var _ = require('underscore');
  * @type {BstUtil|exports}
  */
 var Util = require('../util/bst_util.js');
+
+// FIXME
+/**
+ * 自检查发现爬取的208个目标页(list.json)里有8个没去爬，或者没爬到结果(data.json)，待查：
+ Running "default" task
+ Total: 200 , exists: 200 , not exists: 0
+ ----------------------------
+ >> Link "时间旅行者" not found in data.json
+ >> Link "白色冬季" not found in data.json
+ >> Link "航海王" not found in data.json
+ >> Link "冲角团军服" not found in data.json
+ >> Link "白色玫瑰" not found in data.json
+ >> Link "比武大会银蛇" not found in data.json
+ >> Link "比武大会赤蛇" not found in data.json
+ >> Link "丰年" not found in data.json
+ Total: 208 , found: 200 , not found: 8
+ */
 
 var BstCrawler = function(grunt) {
     // 准备工具
@@ -283,7 +301,7 @@ BstCrawler.prototype.parseDetailPage = function(body, url, urlName) {
     // 收集需要的信息
     var name = box.find('h2').text();
     var piclink = box.find('.icon img').attr('src');
-    var pic = piclink.substr(piclink.lastIndexOf('/') + 1);
+    var pic = piclink.substr(piclink.lastIndexOf('/') + 1).lcfist();
     var pk = pic.slice(pic.indexOf('_') + 1, pic.indexOf('.'));
     var code = pic.match(/\d+/);
     if (code == null) {
@@ -303,18 +321,33 @@ BstCrawler.prototype.parseDetailPage = function(body, url, urlName) {
         col = col.shift(); // ["col1"] => "col1"
     }
 
+    // 存储信息到内存
     this.collectedData[this.part][pk] = {
         "name": name, // 红宝石
         "code": code, // 60094
         "col": col, // col1
         "class": this.part, // body
         "require": box.find('.focus').text(), // 龙女专用
-        "pic": pic, // Costume_60094_GonF_col1.png
+        "pic": pic, // costume_60094_GonF_col1.png
         "piclink": piclink, // http://i1.17173cdn.com/z6po4a/YWxqaGBf/images/data/fashion/big/Costume_60094_GonF_col1.png
         "link": url // http://cha.17173.com/bns/fashion/90046.html
     };
 
-    this.finishDetailPageCrawl(url, urlName);
+    // 下载图片
+    var self = this;
+    self.util.fileDownload(piclink, path.join('./database/crawler/pics', self.part, pic), function() {
+        self.finishDetailPageCrawl(url, urlName);
+    }, {
+        'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Accept-Encoding':'gzip,deflate,sdch',
+        'Accept-Language':'zh-CN,zh;q=0.8,zh-TW;q=0.6,en;q=0.4,it;q=0.2,ja;q=0.2,ko;q=0.2',
+        'Cache-Control':'no-cache',
+        'Connection':'keep-alive',
+        'Host':'i1.17173cdn.com',
+        'Pragma':'no-cache',
+        'Referer': 'http://cha.17173.com/bns/fashion/910000.html',
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36'
+    });
 };
 
 BstCrawler.prototype.finishDetailPageCrawl = function(url, urlName) {
@@ -322,6 +355,47 @@ BstCrawler.prototype.finishDetailPageCrawl = function(url, urlName) {
 
     this.grunt.log.writeln('[BstCrawler] Crawl work of detail page "' + urlName +
         '" done, progress: ' + this.statusFinishedDetailCount + ' / ' + this.statusTotalDetailCount);
+};
+
+BstCrawler.prototype.matchCheck = function() {
+    // 检查爬取目标列表（list.json）的数目 和 爬取结果列表（data.json） 是否一致
+    var self = this;
+
+    var data = self.grunt.file.readJSON('./database/crawler/body/data.json');
+    var totalCount = _.keys(data).length;
+    var exists = 0;
+    var notExist = 0;
+    self.grunt.log.writeln('[BstCrawler] Check Images count equals to data.json or not:');
+    _.each(data, function(element) {
+        if (self.grunt.file.exists('./database/crawler/pics/body/' + element['pic'])) {
+            // self.grunt.log.writeln('Image of "' + element['name'] + '" exists!');
+            exists++;
+        } else {
+            self.grunt.log.error('[BstCrawler] Image of "' + element['name'] + '" does not exist! url: ' + element['piclink']);
+            notExist++;
+        }
+    });
+    self.grunt.log.writeln('[BstCrawler] Total: ' + totalCount + ' , exists: ' + exists + ' , not exists: ' + notExist);
+    self.util.printHr();
+
+    var links = self.grunt.file.readJSON('./database/crawler/body/list.json');
+    var linkNames = _.keys(links);
+    var totalLinks = linkNames.length;
+    var foundLinks = 0;
+    var notFoundLinks = 0;
+    self.grunt.log.writeln('[BstCrawler] Check data.json count equals to list.json or not:');
+    _.each(linkNames, function(linkName) {
+        var found = _.find(data, function(element) {
+            return element['name'] == linkName;
+        });
+        if (!found) {
+            notFoundLinks++;
+            self.grunt.log.error('[BstCrawler] Link "' + linkName + '" not found in data.json');
+        } else {
+            foundLinks++;
+        }
+    });
+    self.grunt.log.writeln('[BstCrawler] Total: ' + totalLinks + ' , found: ' + foundLinks + ' , not found: ' + notFoundLinks);
 };
 
 module.exports = BstCrawler;
