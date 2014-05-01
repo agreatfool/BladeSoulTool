@@ -8,6 +8,9 @@
 * 整理所有数据文件文件夹位置，现在database文件夹下只有一层结构，都是服装，接下来还要添加饰品之类的，都需要分开
 * 制作脚本过滤charactertoolappearance_mesh.xml，将有用的信息取出来，制作成脚本需要的配置文件格式，并附加上从17173爬取过来的图片链接、中文名字等信息
 
+## dropbox爬虫：
+针对dropbox的数据，制作一个专门的爬虫
+
 ## 新思路：
 * 之前收到的mesh.xml还是有问题，有很多衣服只有skeleton的upk id，而没有关联的UPK id
 * 网上有一个dropbox仓库里有公开页，里面有两个页面，一个是服装的一个是武器的具体upk列表和模型截图
@@ -20,6 +23,12 @@
     * 仔细观察、解析umodel.exe解析出来的资源，查找upk关联id
     * 编写一个grunt task来处理这种umodel的解析
     * 尝试拆解数据库查找mesh.xml
+
+## 关于模型截图：
+我现在猜测dropbox上分享的这个模型截图库里的截图，是作者在修改upk：
+将默认的materialInstance改成col2、3的配色之后，重新另存为skeleton_material.upk这样的文件
+然后再进行umodel的图像输出和截图
+http://dl.dropboxusercontent.com/u/18196592/plaync/bns/dobok.htm
 
 ## 数据配置结构：
     "60076_KunN_col1": {
