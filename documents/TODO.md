@@ -30,6 +30,16 @@ http://dl.dropboxusercontent.com/u/18196592/plaync/bns/dobok.htm
     * 在解析mesh.xml的时候，遇到有异色的mesh
     * 将skeleton拷贝到working下，将其内所有的col1的material的upk，替换成col2...的material的upk id
     * 查看效果，如果正常显示col2的衣服，则完美解决，可以直接截图制作，否则需要制作dropbox的爬虫
+尝试：
+    * 修改Skeleton文件里的material upk文件id到col2的文件id
+    * Loading package: 00019614.upk Ver: 573/1 Engine: 4205 Names: 94 Exports: 2 Imports: 22 Game: 801A
+      WARNING: Import(col1) was not found in package 00019614
+    * 尝试结束，成功。以 60077_JinF 人女青狼为例，将 00015491 skeleton，00015486 texture，
+      00019613 col1，00019614 col2，00019615 col3 复制到 resources/umodel 下，
+      将00015491 skeleton的内容进行修改：
+        * 将默认的 material 值 从 col1 的 00019613 替换成 00019614
+        * 将默认的 material 选项 col1 替换成成 col3
+        * 完成
 
 ## dropbox爬虫：
 针对dropbox的数据，制作一个专门的爬虫
