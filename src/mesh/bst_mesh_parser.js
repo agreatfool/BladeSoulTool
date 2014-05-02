@@ -166,12 +166,14 @@ BstMeshParser.prototype.processBody = function() {
 };
 
 BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
-    var codeWithRace = this.utilFormatRawCode(element['$']['alias']);
-    var code = codeWithRace.match(/\d+_(KunN|JinF|JinM|GonF|GonM|LynF|LynM)/);
-    console.log(codeWithRace + ' : ' + code);
-    if (code == null) {
-        console.log(element);
+    var parsedCode = this.utilParseRawCode(element['$']['alias']);
+    if (parsedCode === null) {
+        this.grunt.log.error('[BstMeshParser] Invalid body-mesh format, alias: ' + element['$']['alias']);
+        return; // 这不是一个常规的body mesh数据，忽略它
     }
+
+    // TODO
+    console.log(parsedCode);
 };
 
 BstMeshParser.prototype.processFace = function() {
@@ -183,7 +185,23 @@ BstMeshParser.prototype.processHair = function() {
 };
 
 BstMeshParser.prototype.utilParseRawCode = function(rawCode) {
+    rawCode = this.utilFormatRawCode(rawCode);
 
+    var match = rawCode.match(/\d+_(KunN|JinF|JinM|GonF|GonM|LynF|LynM)/);
+
+    if (match === null) {
+        return null;
+    }
+
+    var codeWithRace = match[0]; // 40013_GonM
+    var code = codeWithRace.substr(0, codeWithRace.indexOf('_'));
+    var race = match[1];
+
+    return {
+        "codeWithRace": codeWithRace,
+        "code": code,
+        "race": race
+    };
 };
 
 BstMeshParser.prototype.utilFormatRawCode = function(rawCode) {
