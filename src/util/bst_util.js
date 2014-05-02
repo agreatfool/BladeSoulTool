@@ -151,7 +151,7 @@ BstUtil.prototype.fileDownload = function(url, filepath, callback, headers) {
         options['headers'] = headers;
     }
     request(options).pipe(ws).on('close', function() {
-        console.log('File "' + url + '" downloaded');
+        self.grunt.log.writeln('File "' + url + '" downloaded');
         callback();
     });
 };
