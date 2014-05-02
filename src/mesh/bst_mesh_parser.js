@@ -161,7 +161,17 @@ BstMeshParser.prototype.processBody = function() {
             && BstMeshParser.RACE_VALID.indexOf(element['$']['race']) !== -1);
     });
     this.grunt.log.writeln('[BstMeshParser] body-mesh parsed, "' + this.body.length + '" lines of record read.');
-    this.util.printJson(this.body);
+
+    _.each(this.body, this.parseBodyElement, this);
+};
+
+BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
+    var codeWithRace = this.utilFormatRawCode(element['$']['alias']);
+    var code = codeWithRace.match(/\d+_(KunN|JinF|JinM|GonF|GonM|LynF|LynM)/);
+    console.log(codeWithRace + ' : ' + code);
+    if (code == null) {
+        console.log(element);
+    }
 };
 
 BstMeshParser.prototype.processFace = function() {
@@ -170,6 +180,37 @@ BstMeshParser.prototype.processFace = function() {
 
 BstMeshParser.prototype.processHair = function() {
 
+};
+
+BstMeshParser.prototype.utilParseRawCode = function(rawCode) {
+
+};
+
+BstMeshParser.prototype.utilFormatRawCode = function(rawCode) {
+    /**
+     * rawCode：基本上应该是 "数字短码_种族性别" 这样的格式，e.g：20002_KunN，
+     * 但事实上mesh.xml里有大量的大小写错误，或者拼写错误之类的不符合规律的地方，
+     * 为了方便后续的逻辑处理，我们这里会把 "种族性别" 这个字符串格式化为：
+     * KunN | JinF | JinM | GonF | GonM | LynF | LynM
+     */
+    // 处理：_Kun
+    if (rawCode.substr(rawCode.indexOf('_')).toLowerCase() === '_kun') {
+        // 捕获从 "_" 开始到rawCode结束，匹配 "_Kun" | "_kun"，替换成 "_KunN"
+        rawCode = rawCode.replace(new RegExp('kun', 'i'), 'KunN');
+    }
+
+    // 处理：_jiM
+    rawCode = rawCode.replace(new RegExp('jim', 'i'), 'JinM');
+
+    // 处理：批量替换大小写错误
+    return rawCode.
+        replace(new RegExp('kunn', 'i'), 'KunN').
+        replace(new RegExp('jinf', 'i'), 'JinF').
+        replace(new RegExp('jinm', 'i'), 'JinM').
+        replace(new RegExp('gonf', 'i'), 'GonF').
+        replace(new RegExp('gonm', 'i'), 'GonM').
+        replace(new RegExp('lynf', 'i'), 'LynF').
+        replace(new RegExp('lynm', 'i'), 'LynM');
 };
 
 module.exports = BstMeshParser;
