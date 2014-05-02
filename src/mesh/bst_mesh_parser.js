@@ -16,7 +16,7 @@ var BstMeshParser = function(grunt) {
 
     this.conf = this.util.readJsonFile('./config/setting.json');
 
-    this.part = null; // 当前在爬取的数据是哪个部分的：body、face、hair
+    this.part = null; // 当前在解析的数据是哪个部分的：body、face、hair
     this.xml  = null; // 读取出来的mesh xml的record列表：<table>[xml => <record></record>]</table>
     this.body = null; // 过滤出所有 type-mesh 是 body-mesh 的数据
     this.face = null; // 过滤出所有 type-mesh 是 accessory-mesh 的数据
