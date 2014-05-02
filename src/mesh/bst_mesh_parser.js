@@ -27,10 +27,12 @@ BstMeshParser.PART_BODY = 'body-mesh';
 BstMeshParser.PART_FACE = 'accessory-mesh'; // FIXME 是这么分类的么？ accessory-mesh 应该是 attach 配件的意思
 BstMeshParser.PART_HAIR = 'hair-mesh';
 
-BstMeshParser.RACE_GON = '곤';
-BstMeshParser.RACE_KUN = '건';
-BstMeshParser.RACE_JIN = '진';
-BstMeshParser.RACE_LYN = '린';
+BstMeshParser.RACE_GON   = '곤';
+BstMeshParser.RACE_KUN   = '건';
+BstMeshParser.RACE_JIN   = '진';
+BstMeshParser.RACE_LYN   = '린';
+BstMeshParser.RACE_VALID = ['곤', '건', '진', '린'];
+BstMeshParser.RACE_NONE  = 'race-none';
 
 BstMeshParser.GENDER_M = '남';
 BstMeshParser.GENDER_F = '여';
@@ -122,9 +124,41 @@ BstMeshParser.prototype.process = function() {
     }
 };
 
+/**
+ {
+     "$": {
+         "alias": "60089_JinF",
+         "data-version": "2",
+         "description": "",
+         "id": "160",
+         "name": "60089_수묵의 color vari.",
+         "race": "진",
+         "resource-name": "00019786.60089_JinF",
+         "sex": "여",
+         "sub-material-name-1": "00019785.col1",
+         "sub-material-name-2": "00019811.col2",
+         "type-mesh": "body-mesh"
+     }
+ },
+ {
+     "$": {
+         "alias": "65070_JinF",
+         "data-version": "2",
+         "description": "",
+         "id": "161",
+         "name": "65070_하오방 기녀",
+         "race": "진",
+         "resource-name": "00020425.65070_JinF",
+         "sex": "여",
+         "type-mesh": "body-mesh"
+     }
+ },
+ */
+
 BstMeshParser.prototype.processBody = function() {
     this.body = _.filter(this.xml, function(element) {
-        return element['$']['type-mesh'] == BstMeshParser.PART_BODY;
+        return (element['$']['type-mesh'] == BstMeshParser.PART_BODY
+            && BstMeshParser.RACE_VALID.indexOf(element['$']['race']) !== -1);
     });
     this.grunt.log.writeln('[BstMeshParser] body-mesh parsed, "' + this.body.length + '" lines of record read.');
     this.util.printJson(this.body);
