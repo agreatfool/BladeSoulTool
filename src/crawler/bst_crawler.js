@@ -9,23 +9,31 @@ var _ = require('underscore');
  */
 var Util = require('../util/bst_util.js');
 
-// FIXME
 /**
- * 自检查发现爬取的208个目标页(list.json)里有8个没去爬，或者没爬到结果(data.json)，待查：
- Running "default" task
- Total: 200 , exists: 200 , not exists: 0
- ----------------------------
- >> Link "时间旅行者" not found in data.json
- >> Link "白色冬季" not found in data.json
- >> Link "航海王" not found in data.json
- >> Link "冲角团军服" not found in data.json
- >> Link "白色玫瑰" not found in data.json
- >> Link "比武大会银蛇" not found in data.json
- >> Link "比武大会赤蛇" not found in data.json
- >> Link "丰年" not found in data.json
- Total: 208 , found: 200 , not found: 8
+ * 检查爬取的数据，你会发现data.json会比list.json少几个项。照理来说这两者应该是数量一致的。
+ * 这里不一致的原因是因为在17173的数据库中，有些完全一样的衣服，其命名是不同的。
+ * 而我们的list.json则使用衣服的名字来作为主键，所以其实list.json里有一部分数据是重复的。
+ * 举例来说：
+ * list.json里有两件衣服：
+ * 白色玫瑰：http://cha.17173.com/bns/fashion/90099.html
+ * 和
+ * 白玫瑰：http://cha.17173.com/bns/fashion/2090880.html
+ * 这两件衣服你点开链接看，其实是一个东西，
+ * 而且它们用来存储到data.json里的键值都是 60055_JinM_col2，
+ * 所以发生了 白色玫瑰 被 白玫瑰 覆盖的情况
+ * -------------------------------------------------------
+ * 这种情况现在已发现的有（可使用BstCrawler.prototype.matchCheck来检查）：
+ * Running "default" task
+ * >> Link "时间旅行者" not found in data.json
+ * >> Link "白色冬季" not found in data.json
+ * >> Link "航海王" not found in data.json
+ * >> Link "冲角团军服" not found in data.json
+ * >> Link "白色玫瑰" not found in data.json
+ * >> Link "比武大会银蛇" not found in data.json
+ * >> Link "比武大会赤蛇" not found in data.json
+ * >> Link "丰年" not found in data.json
+ * Total: 208 , found: 200 , not found: 8
  */
-
 var BstCrawler = function(grunt) {
     // 准备工具
     /** @type {grunt} */
@@ -296,7 +304,7 @@ BstCrawler.prototype.parseDetailPage = function(body, url, urlName) {
     var $ = cheerio.load(body);
 
     // 找到细节页面上的信息展示块
-    var box = $('#content .main .panel-btm .panel-top');
+    var box = $('#content').find('.main .panel-btm .panel-top');
 
     // 收集需要的信息
     var name = box.find('h2').text();
@@ -357,18 +365,26 @@ BstCrawler.prototype.finishDetailPageCrawl = function(url, urlName) {
         '" done, progress: ' + this.statusFinishedDetailCount + ' / ' + this.statusTotalDetailCount);
 };
 
-BstCrawler.prototype.matchCheck = function() {
-    // 检查爬取目标列表（list.json）的数目 和 爬取结果列表（data.json） 是否一致
+BstCrawler.prototype.matchCheck = function(part) {
+    this.util.printHr();
+    if ([BstCrawler.PART_BODY, BstCrawler.PART_FACE, BstCrawler.PART_HAIR].indexOf(part) === -1) {
+        this.grunt.fail.fatal('[BstCrawler] Invalid check part specified: ' + part);
+    }
+    this.grunt.log.writeln('[BstCrawler] Start to check data consistence of part: ' + part);
+    this.util.printHr();
+
+    this.part = part;
     var self = this;
 
-    var data = self.grunt.file.readJSON('./database/crawler/body/data.json');
+    // 检查爬取结果列表（data.json）和下载图片列表是否一致
+    var data = self.grunt.file.readJSON('./database/crawler/' + this.part + '/data.json');
     var totalCount = _.keys(data).length;
     var exists = 0;
     var notExist = 0;
     self.grunt.log.writeln('[BstCrawler] Check Images count equals to data.json or not:');
     _.each(data, function(element) {
         if (self.grunt.file.exists('./database/crawler/pics/body/' + element['pic'])) {
-            // self.grunt.log.writeln('Image of "' + element['name'] + '" exists!');
+            // self.grunt.log.writeln('Image of "' + element['name'] + '" exists!'); // Too many info
             exists++;
         } else {
             self.grunt.log.error('[BstCrawler] Image of "' + element['name'] + '" does not exist! url: ' + element['piclink']);
@@ -378,7 +394,8 @@ BstCrawler.prototype.matchCheck = function() {
     self.grunt.log.writeln('[BstCrawler] Total: ' + totalCount + ' , exists: ' + exists + ' , not exists: ' + notExist);
     self.util.printHr();
 
-    var links = self.grunt.file.readJSON('./database/crawler/body/list.json');
+    // 检查爬取目标列表（list.json）的数目 和 爬取结果列表（data.json） 是否一致
+    var links = self.grunt.file.readJSON('./database/crawler/' + this.part + '/list.json');
     var linkNames = _.keys(links);
     var totalLinks = linkNames.length;
     var foundLinks = 0;
