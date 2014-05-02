@@ -212,7 +212,8 @@ BstMeshParser.prototype.utilFormatRawCode = function(rawCode) {
      * KunN | JinF | JinM | GonF | GonM | LynF | LynM
      */
     // 处理：_Kun
-    if (rawCode.substr(rawCode.indexOf('_')).toLowerCase() === '_kun') {
+    if (rawCode.indexOf('_') !== -1
+        && rawCode.substr(rawCode.indexOf('_')).toLowerCase() === '_kun') {
         // 捕获从 "_" 开始到rawCode结束，匹配 "_Kun" | "_kun"，替换成 "_KunN"
         rawCode = rawCode.replace(new RegExp('kun', 'i'), 'KunN');
     }
