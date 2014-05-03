@@ -180,9 +180,6 @@ BstMeshParser.prototype.processBody = function() {
  */
 
 BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
-    if (index !== 0) {
-        return; // FIXME for test
-    }
     var self = this;
 
     self.util.printHr();
