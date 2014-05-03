@@ -255,7 +255,9 @@ BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
         if (index == (list.length - 1)) {
             // 当前处理完的元素已经是最后一个了：
             // 删除之前的工作目录
-            self.util.deleteFile('./resources/umodel/output');
+            setTimeout(function() {
+                self.util.deleteFile('./resources/umodel/output');
+            }, 1000); // 延迟1秒后进行删除，因为当前最后一组单元可能正在运行，直接删除会出错
             // 存储数据
             var dataFilePath = './database/costume/' + self.part + '/data.json'; // 使用grunt的write API，所以需要相对于Gruntfile.js的路径
             self.util.printHr();
