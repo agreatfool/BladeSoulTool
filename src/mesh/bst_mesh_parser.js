@@ -137,7 +137,7 @@ BstMeshParser.prototype.processBody = function() {
 
     var self = this;
     var timer = setInterval(function() {
-        if (self.workingCount < 5) {
+        if (self.workingCount < 5) { // 同时并发进程数
             // 进程数有空余，推送任务
             self.parseBodyElement(self.body.shift());
         }
