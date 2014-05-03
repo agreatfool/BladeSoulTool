@@ -129,7 +129,7 @@ BstMeshParser.prototype.processBody = function() {
 
     this.crawledData = this.util.readJsonFile('./database/crawler/body/data.json');
     this.grunt.log.writeln('[BstMeshParser] body crawled data loaded, "' + _.keys(this.crawledData).length + '" lines of record read.');
-    self.util.printHr();
+    this.util.printHr();
 
     _.each(this.body, this.parseBodyElement, this);
 };
@@ -139,13 +139,13 @@ BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
 
     self.grunt.log.writeln('[BstMeshParser] Parsing "' + element['$']['alias'] + '", ' +
         'progress: ' + (index + 1) + ' / ' + list.length + ' ...');
-    self.util.printHr();
 
     var parsedCode = self.utilParseRawCode(element['$']['alias']);
     if (parsedCode === null) {
         self.grunt.log.error('[BstMeshParser] Invalid body-mesh format, alias: ' + element['$']['alias']);
         return; // 这不是一个常规的body mesh数据，忽略它
     }
+    self.util.printHr();
 
     // 01. 找到skeleton的upk id
     var skeleton = element['$']['resource-name'].substr(0, element['$']['resource-name'].indexOf('.'));
@@ -157,11 +157,18 @@ BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
     if (!self.grunt.file.exists(skeletonPath)) {
         self.grunt.log.error('[BstMeshParser] Code: "' + parsedCode['codeWithRace'] + '", Info: skeleton upk not found in bns dir: ' + skeletonPath);
         skeletonPath = path.join(self.conf['path']['game'], self.conf['path']['tencent'], skeleton + '.upk');
-        self.util.checkFileExists(skeletonPath); // 保证文件存在
+        if (!self.grunt.file.exists(skeletonPath)) {
+            self.grunt.log.error('[BstMeshParser] Code: "' + parsedCode['codeWithRace'] + '", Info: skeleton upk not found in tencent dir: ' + skeletonPath);
+            return; // 两个位置upk文件都不存在，只能跳过该mesh配置
+        }
     }
 
     // 03. 启动子进程拆包skeleton upk
-    var worker = cp.exec('umodel.exe -export -path=' + path.dirname(skeletonPath) + ' -game=bns -out=output ' + skeleton, {"cwd": './resources/umodel/'});
+    var worker = cp.exec(
+        'umodel.exe -export -path=' + path.dirname(skeletonPath) + ' ' +
+            '-game=bns -out=' + path.join('output', skeleton) + ' ' + skeleton,
+        {"cwd": './resources/umodel/'}
+    );
     worker.stdout.on('data', function (data) {
         // self.grunt.log.writeln('[BstMeshParser] umodel process: stdout: ' + data); // Too many info
     });
@@ -177,10 +184,10 @@ BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
 
     // 04. 找出texture和col1的upk id
     var funcLoopUmodelOutput = function() {
-        self.grunt.file.recurse('./resources/umodel/output', function(abspath, rootdir, subdir, filename) {
+        self.grunt.file.recurse('./resources/umodel/output/' + skeleton, function(abspath, rootdir, subdir) {
             /**
-             * abspath: resources/umodel/output/00002704/Texture2D/XLM000_d.tga
-             * rootdir: ./resources/umodel/output
+             * abspath: resources/umodel/output/00002706/00002704/Texture2D/XLM000_d.tga
+             * rootdir: ./resources/umodel/output/00002706
              * subdir: 00002704/Texture2D
              * filename: XLM000_d.tga
              */
@@ -190,13 +197,11 @@ BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
                 material = subdir.match(/\d+/)[0];
             }
         });
-        self.util.deleteFile('./resources/umodel/output');
-        self.util.mkdir('./resources/umodel/output');
         funcCollectData();
     };
 
     // 05. 组织数据，进行存储
-    var funcCollectData = function() { console.log('here1');
+    var funcCollectData = function() {
         // loop查看当前的mesh.xml配置里是否有多色配置项
         var hasMultiMaterial = false; // 是否多色的标识位
         for (var key in element['$']) {
@@ -214,7 +219,7 @@ BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
         }
     };
 
-    var funcProcessData = function(colId, colUpkId) { console.log('here2');
+    var funcProcessData = function(colId, colUpkId) {
         var col = 'col' + colId;
         var pk = parsedCode['codeWithRace'] + '_' + col;
 
@@ -246,9 +251,12 @@ BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
         funcSaveCollectedData();
     };
 
-    var funcSaveCollectedData = function() { console.log('here3');
+    var funcSaveCollectedData = function() {
         if (index == (list.length - 1)) {
-            // 当前处理完的元素已经是最后一个了，存储数据
+            // 当前处理完的元素已经是最后一个了：
+            // 删除之前的工作目录
+            self.util.deleteFile('./resources/umodel/output');
+            // 存储数据
             var dataFilePath = './database/costume/' + self.part + '/data.json'; // 使用grunt的write API，所以需要相对于Gruntfile.js的路径
             self.util.printHr();
             self.grunt.log.writeln('[BstMeshParser] All parsing done, start to save file: ' + dataFilePath);
