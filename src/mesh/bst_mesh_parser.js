@@ -62,21 +62,6 @@ BstMeshParser.prototype.start = function(part) {
     this.dedat();
 };
 
-/**
- * 流程：
- * 1. 解包xml.dat文件
- * 2. 找出mesh.xml
- * 3. 解析，轮询所有项
- * 4. 如果是多色的，xml里有描述
- * 5. 如果是单色的，则需要umodel，分解，再查看单色的色指定文件
- *
- * 截图解决思路：
- * 1. 使用umodel.exe -view功能，启动展示窗，sleep 1秒，将UE Viewer窗口缩小，移动到屏幕0,0点，使用第三方软件截屏
- * http://www.nirsoft.net/utils/nircmd.html
- * http://stackoverflow.com/questions/10392620/how-can-a-batch-file-run-a-program-and-set-the-position-and-size-of-the-window
- * 2. 使用剑灵模型识别器，来批量导出图片，时候取用
- */
-
 BstMeshParser.prototype.dedat = function() {
     var self = this;
 
@@ -144,45 +129,14 @@ BstMeshParser.prototype.processBody = function() {
 
     this.crawledData = this.util.readJsonFile('./database/crawler/body/data.json');
     this.grunt.log.writeln('[BstMeshParser] body crawled data loaded, "' + _.keys(this.crawledData).length + '" lines of record read.');
+    self.util.printHr();
 
     _.each(this.body, this.parseBodyElement, this);
 };
 
-/**
- {
-     "$": {
-         "alias": "60089_JinF",
-         "data-version": "2",
-         "description": "",
-         "id": "160",
-         "name": "60089_수묵의 color vari.",
-         "race": "진",
-         "resource-name": "00019786.60089_JinF",
-         "sex": "여",
-         "sub-material-name-1": "00019785.col1",
-         "sub-material-name-2": "00019811.col2",
-         "type-mesh": "body-mesh"
-     }
- },
- {
-     "$": {
-         "alias": "65070_JinF",
-         "data-version": "2",
-         "description": "",
-         "id": "161",
-         "name": "65070_하오방 기녀",
-         "race": "진",
-         "resource-name": "00020425.65070_JinF",
-         "sex": "여",
-         "type-mesh": "body-mesh"
-     }
- },
- */
-
 BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
     var self = this;
 
-    self.util.printHr();
     self.grunt.log.writeln('[BstMeshParser] Parsing "' + element['$']['alias'] + '", ' +
         'progress: ' + (index + 1) + ' / ' + list.length + ' ...');
     self.util.printHr();

@@ -41,35 +41,18 @@ http://dl.dropboxusercontent.com/u/18196592/plaync/bns/dobok.htm
         * 将默认的 material 选项 col1 替换成成 col3
         * 完成
 
+思路：
+ * 截图解决思路：
+ * 1. 使用umodel.exe -view功能，启动展示窗，sleep 1秒，将UE Viewer窗口缩小，移动到屏幕0,0点，使用第三方软件截屏
+ * http://www.nirsoft.net/utils/nircmd.html
+ * http://stackoverflow.com/questions/10392620/how-can-a-batch-file-run-a-program-and-set-the-position-and-size-of-the-window
+ * 2. 使用剑灵模型识别器，来批量导出图片，时候取用
+
 ## dropbox爬虫：
 针对dropbox的数据，制作一个专门的爬虫
 
 ## 找到客户端内对于所有服装的命名的xml
 找得到的话，就可以不用再去爬17173的数据库了
-
-## 数据配置结构：
-    "60076_KunN_col1": {
-        "Texture": "00018544",
-        "Material": "00018543",
-        "Skeleton": "00018542",
-        "Model": "60076_KunN",
-        "Name": "红狼",
-        "Class": "costume",
-        "Col": "col1",
-        "Pic": "costume_60076_KunN_col1.png",
-        "Link": "http://cha.17173.com/bns/fashion/910192.html"
-    },
-    "60076_KunN_col2": {
-        "Texture": "00018544",
-        "Material": "00019612",
-        "Skeleton": "00018542",
-        "Model": "60076_KunN",
-        "Name": "诱惑红狼",
-        "Class": "costume",
-        "Col": "col2",
-        "Pic": "costume_60076_KunN_col2.png",
-        "Link": "http://cha.17173.com/bns/fashion/910227.html"
-    }
 
 ## 头饰修改：
 * 搞清楚头部两个栏位的差别，头发、头饰、眼镜
