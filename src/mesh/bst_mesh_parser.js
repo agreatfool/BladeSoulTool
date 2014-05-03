@@ -53,6 +53,8 @@ BstMeshParser.GENDER_F = '여';
 
 BstMeshParser.MESH_NAME = 'charactertoolappearance_mesh.xml';
 
+BstMeshParser.CONCURRENCY_NUM = 15;
+
 BstMeshParser.prototype.start = function(part) {
     this.util.printHr();
     if ([BstMeshParser.PART_BODY, BstMeshParser.PART_FACE, BstMeshParser.PART_HAIR].indexOf(part) === -1) {
@@ -140,7 +142,7 @@ BstMeshParser.prototype.processBody = function() {
 
     var self = this;
     var timer = setInterval(function() {
-        if (self.statusWorkingCount < 5 // 同时并发进程数
+        if (self.statusWorkingCount < BstMeshParser.CONCURRENCY_NUM // 同时并发进程数
             && self.body.length > 0) { // 仍旧还有任务需要安排
             // 进程数有空余，推送任务
             self.parseBodyElement(self.body.shift());
