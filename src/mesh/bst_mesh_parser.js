@@ -21,6 +21,8 @@ var BstMeshParser = function(grunt) {
     this.body = null; // 过滤出所有 type-mesh 是 body-mesh 的数据
     this.face = null; // 过滤出所有 type-mesh 是 accessory-mesh 的数据
     this.hair = null; // 过滤出所有 type-mesh 是 hair-mesh 的数据
+
+    this.crawledData = null; // 从17173站点上爬取到的数据，根据当前的part不同，可能从不同的文件读入
 };
 
 BstMeshParser.PART_BODY = 'body-mesh';
@@ -162,18 +164,23 @@ BstMeshParser.prototype.processBody = function() {
     });
     this.grunt.log.writeln('[BstMeshParser] body-mesh parsed, "' + this.body.length + '" lines of record read.');
 
+    this.crawledData = this.util.readJsonFile('./database/crawler/body/data.json');
+    this.grunt.log.writeln('[BstMeshParser] body crawled data loaded, "' + this.crawledData.length + '" lines of record read.');
+
     _.each(this.body, this.parseBodyElement, this);
 };
 
-BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
+BstMeshParser.prototype.parseBodyElement = function(element) {
+    // this.grunt.log.writeln('[BstMeshParser] Parsing "' + element['$']['alias'] + '" ...');
+
     var parsedCode = this.utilParseRawCode(element['$']['alias']);
     if (parsedCode === null) {
         this.grunt.log.error('[BstMeshParser] Invalid body-mesh format, alias: ' + element['$']['alias']);
         return; // 这不是一个常规的body mesh数据，忽略它
     }
 
-    // TODO
-    console.log(parsedCode);
+    var searched = this.utilSearchCrawledData(parsedCode, 'col1'); // FIXME 色指定不能写死
+    console.log(parsedCode['codeWithRace'] + ' : ' + JSON.stringify(searched));
 };
 
 BstMeshParser.prototype.processFace = function() {
@@ -185,7 +192,7 @@ BstMeshParser.prototype.processHair = function() {
 };
 
 BstMeshParser.prototype.utilParseRawCode = function(rawCode) {
-    rawCode = this.utilFormatRawCode(rawCode);
+    rawCode = this.util.formatRawCode(rawCode);
 
     var match = rawCode.match(/\d+_(KunN|JinF|JinM|GonF|GonM|LynF|LynM)/);
 
@@ -194,8 +201,8 @@ BstMeshParser.prototype.utilParseRawCode = function(rawCode) {
     }
 
     var codeWithRace = match[0]; // 40013_GonM
-    var code = codeWithRace.substr(0, codeWithRace.indexOf('_'));
-    var race = match[1];
+    var code = codeWithRace.substr(0, codeWithRace.indexOf('_')); // 40013
+    var race = match[1]; // GonM
 
     return {
         "codeWithRace": codeWithRace,
@@ -204,32 +211,43 @@ BstMeshParser.prototype.utilParseRawCode = function(rawCode) {
     };
 };
 
-BstMeshParser.prototype.utilFormatRawCode = function(rawCode) {
-    /**
-     * rawCode：基本上应该是 "数字短码_种族性别" 这样的格式，e.g：20002_KunN，
-     * 但事实上mesh.xml里有大量的大小写错误，或者拼写错误之类的不符合规律的地方，
-     * 为了方便后续的逻辑处理，我们这里会把 "种族性别" 这个字符串格式化为：
-     * KunN | JinF | JinM | GonF | GonM | LynF | LynM
-     */
-    // 处理：_Kun
-    if (rawCode.indexOf('_') !== -1
-        && rawCode.substr(rawCode.indexOf('_')).toLowerCase() === '_kun') {
-        // 捕获从 "_" 开始到rawCode结束，匹配 "_Kun" | "_kun"，替换成 "_KunN"
-        rawCode = rawCode.replace(new RegExp('kun', 'i'), 'KunN');
-    }
+BstMeshParser.prototype.utilSearchCrawledData = function(parsedCode, col) {
+    var searched;
 
-    // 处理：_jiM
-    rawCode = rawCode.replace(new RegExp('jim', 'i'), 'JinM');
+    // 完全匹配格式：40013_GonM_col1 || 40013_col1_GonM
+    searched = _.find(this.crawledData, function(element, key) {
+        return (
+            key.match(new RegExp(parsedCode['codeWithRace'] + '_' + col)) !== null
+            || key.match(new RegExp(parsedCode['code'] + '_' + col + '_' + parsedCode['race'])) !== null
+        );
+    });
+    if (searched !== undefined) { return searched; }
 
-    // 处理：批量替换大小写错误
-    return rawCode.
-        replace(new RegExp('kunn', 'i'), 'KunN').
-        replace(new RegExp('jinf', 'i'), 'JinF').
-        replace(new RegExp('jinm', 'i'), 'JinM').
-        replace(new RegExp('gonf', 'i'), 'GonF').
-        replace(new RegExp('gonm', 'i'), 'GonM').
-        replace(new RegExp('lynf', 'i'), 'LynF').
-        replace(new RegExp('lynm', 'i'), 'LynM');
+    // 种族不匹配格式：40013_(.*)_col1 || 40013_col1
+    searched = _.find(this.crawledData, function(element, key) {
+        return (
+            key.match(new RegExp(parsedCode['code'] + '_(.*)_' + col)) !== null
+                || key.match(new RegExp(parsedCode['code'] + '_' + col)) !== null
+            );
+    });
+    if (searched !== undefined) { return searched; }
+
+    // 色指定不匹配：40013_GonM || 40013_(.*)_GonM
+    searched = _.find(this.crawledData, function(element, key) {
+        return (
+            key.match(new RegExp(parsedCode['codeWithRace'] + '_' + col)) !== null
+                || key.match(new RegExp(parsedCode['code'] + '_' + col + '_' + parsedCode['race'])) !== null
+            );
+    });
+    if (searched !== undefined) { return searched; }
+
+    // 种族 & 色指定都不匹配：40013
+    searched = _.find(this.crawledData, function(element, key) {
+        return key.match(new RegExp(parsedCode['code']));
+    });
+    if (searched !== undefined) { return searched; }
+
+    return null; // 什么都没找到
 };
 
 module.exports = BstMeshParser;
