@@ -1,3 +1,3 @@
 #!/bin/bash
 
-grunt parser
+grunt parser --stack
