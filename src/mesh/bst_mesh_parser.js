@@ -98,10 +98,10 @@ BstMeshParser.prototype.dedat = function() {
         });
         worker.stderr.on('data', function (data) {
             if (data) {
-                self.grunt.log.writeln('[BstMeshParser] Dedat process: stderr: ' + data);
+                self.grunt.log.error('[BstMeshParser] Dedat process: stderr: ' + data);
             }
         });
-        worker.on('close', function (code) {
+        worker.on('exit', function (code) {
             self.grunt.log.writeln('[BstMeshParser] Dedat process exit with code: ' + code);
             funcReadMeshXml();
         });
@@ -124,6 +124,19 @@ BstMeshParser.prototype.process = function() {
         default:
             break;
     }
+};
+
+BstMeshParser.prototype.processBody = function() {
+    this.body = _.filter(this.xml, function(element) {
+        return (element['$']['type-mesh'] == BstMeshParser.PART_BODY
+            && BstMeshParser.RACE_VALID.indexOf(element['$']['race']) !== -1);
+    });
+    this.grunt.log.writeln('[BstMeshParser] body-mesh parsed, "' + this.body.length + '" lines of record read.');
+
+    this.crawledData = this.util.readJsonFile('./database/crawler/body/data.json');
+    this.grunt.log.writeln('[BstMeshParser] body crawled data loaded, "' + _.keys(this.crawledData).length + '" lines of record read.');
+
+    _.each(this.body, this.parseBodyElement, this);
 };
 
 /**
@@ -157,30 +170,78 @@ BstMeshParser.prototype.process = function() {
  },
  */
 
-BstMeshParser.prototype.processBody = function() {
-    this.body = _.filter(this.xml, function(element) {
-        return (element['$']['type-mesh'] == BstMeshParser.PART_BODY
-            && BstMeshParser.RACE_VALID.indexOf(element['$']['race']) !== -1);
-    });
-    this.grunt.log.writeln('[BstMeshParser] body-mesh parsed, "' + this.body.length + '" lines of record read.');
+BstMeshParser.prototype.parseBodyElement = function(element, index) {
+    if (index !== 0) {
+        return; // FIXME for test
+    }
+    var self = this;
 
-    this.crawledData = this.util.readJsonFile('./database/crawler/body/data.json');
-    this.grunt.log.writeln('[BstMeshParser] body crawled data loaded, "' + this.crawledData.length + '" lines of record read.');
+    self.util.printHr();
+    self.grunt.log.writeln('[BstMeshParser] Parsing "' + element['$']['alias'] + '" ...');
+    self.util.printHr();
 
-    _.each(this.body, this.parseBodyElement, this);
-};
-
-BstMeshParser.prototype.parseBodyElement = function(element) {
-    // this.grunt.log.writeln('[BstMeshParser] Parsing "' + element['$']['alias'] + '" ...');
-
-    var parsedCode = this.utilParseRawCode(element['$']['alias']);
+    var parsedCode = self.utilParseRawCode(element['$']['alias']);
     if (parsedCode === null) {
-        this.grunt.log.error('[BstMeshParser] Invalid body-mesh format, alias: ' + element['$']['alias']);
+        self.grunt.log.error('[BstMeshParser] Invalid body-mesh format, alias: ' + element['$']['alias']);
         return; // 这不是一个常规的body mesh数据，忽略它
     }
 
-    var searched = this.utilSearchCrawledData(parsedCode, 'col1'); // FIXME 色指定不能写死
-    console.log(parsedCode['codeWithRace'] + ' : ' + JSON.stringify(searched));
+    // 01. 找到skeleton的upk id
+    var skeleton = element['$']['resource-name'].substr(0, element['$']['resource-name'].indexOf('.'));
+    var texture;
+    var col1;
+
+    // 02. 检查skeleton upk是否存在
+    var skeletonPath = path.join(self.conf['path']['game'], self.conf['path']['bns'], skeleton + '.upk');
+    if (!self.grunt.file.exists(skeletonPath)) {
+        self.grunt.log.error('[BstMeshParser] Code: "' + parsedCode['codeWithRace'] + '", Info: skeleton upk not found in bns dir: ' + skeletonPath);
+        skeletonPath = path.join(self.conf['path']['game'], self.conf['path']['tencent'], skeleton + '.upk');
+        self.util.checkFileExists(skeletonPath); // 保证文件存在
+    }
+
+    // 03. 启动子进程拆包skeleton upk
+    var worker = cp.exec('umodel.exe -export -path=' + path.dirname(skeletonPath) + ' -game=bns -out=output ' + skeleton, {"cwd": './resources/umodel/'});
+    worker.stdout.on('data', function (data) {
+        self.grunt.log.writeln('[BstMeshParser] umodel process: stdout: ' + data);
+    });
+    worker.stderr.on('data', function (data) {
+        if (data) {
+            self.grunt.log.error('[BstMeshParser] umodel process: stderr: ' + data);
+        }
+    });
+    worker.on('exit', function (code) {
+        self.grunt.log.writeln('[BstMeshParser] umodel processing "' + skeleton + '" exit with code: ' + code);
+        funcLoopUmodelOutput();
+    });
+
+    // 04. 找出texture和col1的upk id
+    // Texture2D
+    // MaterialInstanceConstant
+    var funcLoopUmodelOutput = function() {
+        self.grunt.file.recurse('./resources/umodel/output', function(abspath, rootdir, subdir, filename) {
+            /**
+             * abspath: resources/umodel/output/00002704/Texture2D/XLM000_d.tga
+             * rootdir: ./resources/umodel/output
+             * subdir: 00002704/Texture2D
+             * filename: XLM000_d.tga
+             */
+            if (abspath.match(/Texture2D/)) {
+                texture = subdir.match(/\d+/)[0];
+            } else if (abspath.match(/MaterialInstanceConstant/)) {
+                col1 = subdir.match(/\d+/)[0];
+            }
+        });
+        self.util.deleteFile('./resources/umodel/output');
+        self.util.mkdir('./resources/umodel/output');
+        funcCollectData();
+    };
+
+    // 05. 组织数据，进行存储
+    var funcCollectData = function() {
+
+    };
+
+//    var searched = this.utilSearchCrawledData(parsedCode, 'col1');
 };
 
 BstMeshParser.prototype.processFace = function() {
