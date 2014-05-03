@@ -143,9 +143,9 @@ BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
     var parsedCode = self.utilParseRawCode(element['$']['alias']);
     if (parsedCode === null) {
         self.grunt.log.error('[BstMeshParser] Invalid body-mesh format, alias: ' + element['$']['alias']);
+        self.util.printHr();
         return; // 这不是一个常规的body mesh数据，忽略它
     }
-    self.util.printHr();
 
     // 01. 找到skeleton的upk id
     var skeleton = element['$']['resource-name'].substr(0, element['$']['resource-name'].indexOf('.'));
@@ -254,10 +254,6 @@ BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
     var funcSaveCollectedData = function() {
         if (index == (list.length - 1)) {
             // 当前处理完的元素已经是最后一个了：
-            // 删除之前的工作目录
-            setTimeout(function() {
-                self.util.deleteFile('./resources/umodel/output');
-            }, 1000); // 延迟1秒后进行删除，因为当前最后一组单元可能正在运行，直接删除会出错
             // 存储数据
             var dataFilePath = './database/costume/' + self.part + '/data.json'; // 使用grunt的write API，所以需要相对于Gruntfile.js的路径
             self.util.printHr();
