@@ -54,6 +54,7 @@ BstMeshParser.GENDER_F = '여';
 BstMeshParser.MESH_NAME = 'charactertoolappearance_mesh.xml';
 
 BstMeshParser.CONCURRENCY_NUM = 15;
+BstMeshParser.CYCLE_INTERVAL = 200;
 
 BstMeshParser.prototype.start = function(part) {
     this.util.printHr();
@@ -157,7 +158,7 @@ BstMeshParser.prototype.processBody = function() {
             self.util.printHr();
             self.grunt.log.writeln('[BstMeshParser] All "' + self.part + '" mesh xml parsed.');
         }
-    }, 500);
+    }, BstMeshParser.CYCLE_INTERVAL);
 };
 
 BstMeshParser.prototype.parseBodyElement = function(element) {
