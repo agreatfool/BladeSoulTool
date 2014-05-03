@@ -41,6 +41,15 @@ BstUtil.prototype.deleteFile = function(path) {
     this.grunt.log.writeln('[BstUtil] Delete file: ' + path);
 };
 
+BstUtil.prototype.mkdir = function(path) {
+    if (!this.grunt.file.exists(path)) {
+        this.grunt.file.mkdir(path);
+        this.grunt.log.writeln('[BstUtil] mkdir: ' + path);
+    } else {
+        this.grunt.log.error('[BstUtil] mkdir not work, since dir already exists: ' + path);
+    }
+};
+
 BstUtil.prototype.writeFile = function(path, content) {
     this.grunt.file.write(path, content);
     this.grunt.log.writeln('[BstUtil] Write file: ' + path);
