@@ -126,9 +126,9 @@ BstMeshParser.prototype.process = function() {
 BstMeshParser.prototype.processBody = function() {
     this.body = _.filter(this.xml, function(element) {
         return (
-            element['$']['type-mesh'] == BstMeshParser.PART_BODY
-            && BstMeshParser.RACE_VALID.indexOf(element['$']['race']) !== -1
-            && element['$']['resource-name'].match(/\d+\..*/) !== null
+            element['$']['type-mesh'] == BstMeshParser.PART_BODY // type-mesh 必须是 body-mesh
+            && BstMeshParser.RACE_VALID.indexOf(element['$']['race']) !== -1 // race 种族字符串必须是4大种族中的一个
+            && element['$']['resource-name'].match(/\d+\..*/) !== null // resource-name 这一项"."之前必须是一串数字，匹配skeleton upk名字
         );
     });
     this.totoalCount = this.body.length;
