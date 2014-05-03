@@ -44,6 +44,9 @@ http://dl.dropboxusercontent.com/u/18196592/plaync/bns/dobok.htm
 ## dropbox爬虫：
 针对dropbox的数据，制作一个专门的爬虫
 
+## 找到客户端内对于所有服装的命名的xml
+找得到的话，就可以不用再去爬17173的数据库了
+
 ## 数据配置结构：
     "60076_KunN_col1": {
         "Texture": "00018544",
