@@ -32,7 +32,9 @@ var BstMeshParser = function(grunt) {
         "LynF": {},
         "LynM": {}
     };
-    this.finishedCount = 0; // 工作状态计数
+    this.totoalCount = 0; // 总共需要处理的工作计数
+    this.workingCount = 0; // 正在进行的子进程数
+    this.finishedCount = 0; // 完成的工作计数
 };
 
 BstMeshParser.PART_BODY = 'body-mesh';
@@ -126,26 +128,38 @@ BstMeshParser.prototype.processBody = function() {
         return (element['$']['type-mesh'] == BstMeshParser.PART_BODY
             && BstMeshParser.RACE_VALID.indexOf(element['$']['race']) !== -1);
     });
+    this.totoalCount = this.body.length;
     this.grunt.log.writeln('[BstMeshParser] body-mesh parsed, "' + this.body.length + '" lines of record read.');
 
     this.crawledData = this.util.readJsonFile('./database/crawler/body/data.json');
     this.grunt.log.writeln('[BstMeshParser] body crawled data loaded, "' + _.keys(this.crawledData).length + '" lines of record read.');
     this.util.printHr();
 
-    _.each(this.body, this.parseBodyElement, this);
+    var self = this;
+    var timer = setInterval(function() {
+        if (self.workingCount < 5) {
+            // 进程数有空余，推送任务
+            self.parseBodyElement(self.body.shift());
+        }
+        if (self.finishedCount == self.totoalCount) {
+            // 任务全部完成
+            clearInterval(timer);
+            self.finishBodyProcessing();
+        }
+    }, 500);
 };
 
-BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
+BstMeshParser.prototype.parseBodyElement = function(element) {
     var self = this;
 
-    self.grunt.log.writeln('[BstMeshParser] Parsing "' + element['$']['alias'] + '", ' +
-        'progress: ' + (index + 1) + ' / ' + list.length + ' ...');
+    self.grunt.log.writeln('[BstMeshParser] Parsing "' + element['$']['alias'] + '" ... ');
 
     var parsedCode = self.utilParseRawCode(element['$']['alias']);
     if (parsedCode === null) {
         self.grunt.log.error('[BstMeshParser] Invalid body-mesh format, alias: ' + element['$']['alias']);
         return; // 这不是一个常规的body mesh数据，忽略它
     }
+    self.workingCount++;
 
     // 01. 找到skeleton的upk id
     var skeleton = element['$']['resource-name'].substr(0, element['$']['resource-name'].indexOf('.'));
@@ -217,6 +231,10 @@ BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
         if (!hasMultiMaterial) { // 表示当前服装为单色，给默认配置
             funcProcessData(1, material);
         }
+        self.finishedCount++;
+        self.workingCount--;
+        self.grunt.log.writeln('[BstMeshParser] Parsing of "' + element['$']['alias'] + '" done, ' +
+            'progress: ' + self.finishedCount + ' / ' + self.totoalCount);
     };
 
     var funcProcessData = function(colId, colUpkId) {
@@ -248,22 +266,16 @@ BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
         }
 
         self.tmpData[parsedCode['race']][pk] = data;
-        self.finishedCount++;
-        funcSaveCollectedData();
     };
+};
 
-    var funcSaveCollectedData = function() {
-        if (self.finishedCount == list.length) {
-            // 当前处理完的元素已经是最后一个了：
-            // 存储数据
-            var dataFilePath = './database/costume/' + self.part + '/data.json'; // 使用grunt的write API，所以需要相对于Gruntfile.js的路径
-            self.util.printHr();
-            self.grunt.log.writeln('[BstMeshParser] All parsing done, start to save file: ' + dataFilePath);
-            self.util.writeFile(dataFilePath, JSON.stringify(self.tmpData, null, 4));
-            self.util.printHr();
-            self.grunt.log.writeln('[BstMeshParser] All "' + self.part + '" mesh xml parsed.');
-        }
-    };
+BstMeshParser.prototype.finishBodyProcessing = function() {
+    var dataFilePath = './database/costume/' + this.part + '/data.json'; // 使用grunt的write API，所以需要相对于Gruntfile.js的路径
+    this.util.printHr();
+    this.grunt.log.writeln('[BstMeshParser] All parsing done, start to save file: ' + dataFilePath);
+    this.util.writeFile(dataFilePath, JSON.stringify(this.tmpData, null, 4));
+    this.util.printHr();
+    this.grunt.log.writeln('[BstMeshParser] All "' + this.part + '" mesh xml parsed.');
 };
 
 BstMeshParser.prototype.processFace = function() {
