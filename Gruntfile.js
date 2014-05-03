@@ -36,7 +36,6 @@ module.exports = function(grunt) {
 
     require('logfile-grunt')(grunt, {
         "filePath": './logs/grunt_' + moment().format('YYYY-MM-DD') + '.log',
-        "keepColors": true,
         "clearLogFile": true
     });
 
