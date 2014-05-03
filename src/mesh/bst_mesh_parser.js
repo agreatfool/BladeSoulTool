@@ -23,6 +23,15 @@ var BstMeshParser = function(grunt) {
     this.hair = null; // 过滤出所有 type-mesh 是 hair-mesh 的数据
 
     this.crawledData = null; // 从17173站点上爬取到的数据，根据当前的part不同，可能从不同的文件读入
+    this.tmpData = { // 正在处理收集的数据
+        "KunN": {},
+        "JinF": {},
+        "JinM": {},
+        "GonF": {},
+        "GonM": {},
+        "LynF": {},
+        "LynM": {}
+    };
 };
 
 BstMeshParser.PART_BODY = 'body-mesh';
@@ -170,14 +179,15 @@ BstMeshParser.prototype.processBody = function() {
  },
  */
 
-BstMeshParser.prototype.parseBodyElement = function(element, index) {
+BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
     if (index !== 0) {
         return; // FIXME for test
     }
     var self = this;
 
     self.util.printHr();
-    self.grunt.log.writeln('[BstMeshParser] Parsing "' + element['$']['alias'] + '" ...');
+    self.grunt.log.writeln('[BstMeshParser] Parsing "' + element['$']['alias'] + '", ' +
+        'progress: ' + (index + 1) + ' / ' + list.length + ' ...');
     self.util.printHr();
 
     var parsedCode = self.utilParseRawCode(element['$']['alias']);
@@ -189,7 +199,7 @@ BstMeshParser.prototype.parseBodyElement = function(element, index) {
     // 01. 找到skeleton的upk id
     var skeleton = element['$']['resource-name'].substr(0, element['$']['resource-name'].indexOf('.'));
     var texture;
-    var col1;
+    var material;
 
     // 02. 检查skeleton upk是否存在
     var skeletonPath = path.join(self.conf['path']['game'], self.conf['path']['bns'], skeleton + '.upk');
@@ -202,7 +212,7 @@ BstMeshParser.prototype.parseBodyElement = function(element, index) {
     // 03. 启动子进程拆包skeleton upk
     var worker = cp.exec('umodel.exe -export -path=' + path.dirname(skeletonPath) + ' -game=bns -out=output ' + skeleton, {"cwd": './resources/umodel/'});
     worker.stdout.on('data', function (data) {
-        self.grunt.log.writeln('[BstMeshParser] umodel process: stdout: ' + data);
+        // self.grunt.log.writeln('[BstMeshParser] umodel process: stdout: ' + data); // Too many info
     });
     worker.stderr.on('data', function (data) {
         if (data) {
@@ -228,7 +238,7 @@ BstMeshParser.prototype.parseBodyElement = function(element, index) {
             if (abspath.match(/Texture2D/)) {
                 texture = subdir.match(/\d+/)[0];
             } else if (abspath.match(/MaterialInstanceConstant/)) {
-                col1 = subdir.match(/\d+/)[0];
+                material = subdir.match(/\d+/)[0];
             }
         });
         self.util.deleteFile('./resources/umodel/output');
@@ -238,10 +248,66 @@ BstMeshParser.prototype.parseBodyElement = function(element, index) {
 
     // 05. 组织数据，进行存储
     var funcCollectData = function() {
-
+        // loop查看当前的mesh.xml配置里是否有多色配置项
+        var hasMultiMaterial = false; // 是否多色的标识位
+        for (var key in element['$']) {
+            if (!element['$'].hasOwnProperty(key)) {
+                continue;
+            }
+            var match = key.match(/sub-material-name-(\d+)/);
+            if (match !== null) {
+                hasMultiMaterial = true;
+                funcProcessData(match[1], element['$'][key].substr(0, element['$'][key].indexOf('.')));
+            }
+        }
+        if (!hasMultiMaterial) { // 表示当前服装为单色，给默认配置
+            funcProcessData(1, material);
+        }
     };
 
-//    var searched = this.utilSearchCrawledData(parsedCode, 'col1');
+    var funcProcessData = function(colId, colUpkId) {
+        var col = 'col' + colId;
+        var pk = parsedCode['codeWithRace'] + '_' + col;
+
+        var data = {
+            "skeleton": skeleton,
+            "texture": texture,
+            "material": colUpkId,
+            "col1Material": material,
+            "col": col,
+            "codeWithRace": parsedCode['codeWithRace'],
+            "code": parsedCode['code'],
+            "race": parsedCode['race'],
+            "name": element['$']['name'],
+            "pic": null,
+            "piclink": null,
+            "link": null
+        };
+
+        // 如果找到从17173上抓取的数据的话
+        var crawledData = self.utilSearchCrawledData(parsedCode, col);
+        if (crawledData !== null) {
+            data['name'] = crawledData['name'];
+            data['pic'] = crawledData['pic'];
+            data['piclink'] = crawledData['piclink'];
+            data['link'] = crawledData['link'];
+        }
+
+        self.tmpData[parsedCode['race']][pk] = data;
+        funcSaveCollectedData();
+    };
+
+    var funcSaveCollectedData = function() {
+        if (index == (list.length - 1)) {
+            // 当前处理完的元素已经是最后一个了，存储数据
+            self.util.writeFile(
+                './database/costume/' + self.part + '/data.json', // 使用grunt的write API，所以需要相对于Gruntfile.js的路径
+                JSON.stringify(self.tmpData, null, 4)
+            );
+            self.util.printHr();
+            self.grunt.log.writeln('[BstMeshParser] All "' + self.part + '" mesh xml parsed.');
+        }
+    };
 };
 
 BstMeshParser.prototype.processFace = function() {
@@ -272,7 +338,7 @@ BstMeshParser.prototype.utilParseRawCode = function(rawCode) {
     };
 };
 
-BstMeshParser.prototype.utilSearchCrawledData = function(parsedCode, col) {
+BstMeshParser.prototype.utilSearchCrawledData = function(parsedCode, col) { // col => col1 | col2 ...
     var searched;
 
     // 完全匹配格式：40013_GonM_col1 || 40013_col1_GonM
