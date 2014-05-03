@@ -37,9 +37,9 @@ var BstMeshParser = function(grunt) {
     this.finishedCount = 0; // 完成的工作计数
 };
 
-BstMeshParser.PART_BODY = 'body-mesh';
-BstMeshParser.PART_FACE = 'accessory-mesh'; // FIXME 是这么分类的么？ accessory-mesh 应该是 attach 配件的意思
-BstMeshParser.PART_HAIR = 'hair-mesh';
+BstMeshParser.PART_BODY = 'body'; // body-mesh
+BstMeshParser.PART_FACE = 'face'; // accessory-mesh FIXME 是这么分类的么？ accessory-mesh 应该是 attach 配件的意思
+BstMeshParser.PART_HAIR = 'hair'; // hair-mesh
 
 BstMeshParser.RACE_GON   = '곤';
 BstMeshParser.RACE_KUN   = '건';
@@ -126,7 +126,7 @@ BstMeshParser.prototype.process = function() {
 BstMeshParser.prototype.processBody = function() {
     this.body = _.filter(this.xml, function(element) {
         return (
-            element['$']['type-mesh'] == BstMeshParser.PART_BODY // type-mesh 必须是 body-mesh
+            element['$']['type-mesh'] == 'body-mesh' // type-mesh 必须是 body-mesh
             && BstMeshParser.RACE_VALID.indexOf(element['$']['race']) !== -1 // race 种族字符串必须是4大种族中的一个
             && element['$']['resource-name'].match(/\d+\..*/) !== null // resource-name 这一项"."之前必须是一串数字，匹配skeleton upk名字
         );

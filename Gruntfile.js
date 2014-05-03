@@ -41,9 +41,6 @@ module.exports = function(grunt) {
 
     var Task_Default = function() {
         this.async();
-        var Crawler = require('./src/crawler/bst_crawler.js');
-        var crawler = new Crawler(grunt);
-        crawler.matchCheck();
     };
 
     var Task_Crawler = function() { // --part=body
@@ -76,7 +73,7 @@ module.exports = function(grunt) {
         crawler.matchCheck(part);
     };
 
-    var Task_MeshParser = function() { // --part=body-mesh
+    var Task_MeshParser = function() { // --part=body
         var Parser = require('./src/mesh/bst_mesh_parser.js');
 
         this.async();
