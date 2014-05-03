@@ -155,6 +155,10 @@ BstMeshParser.prototype.processBody = function() {
 BstMeshParser.prototype.parseBodyElement = function(element) {
     var self = this;
 
+    if (!element.hasOwnProperty('$')) {
+        self.grunt.log.error('[BstMeshParser] Got invalid parsing element: ' + JSON.stringify(element));
+        return; // xml2js读出来的每个元素都应该有"$"根节点，没有的话就是非法的
+    }
     self.grunt.log.writeln('[BstMeshParser] Parsing "' + element['$']['alias'] + '" ... ');
 
     var parsedCode = self.utilParseRawCode(element['$']['alias']);
