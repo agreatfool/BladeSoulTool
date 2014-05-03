@@ -314,6 +314,7 @@ BstCrawler.prototype.parseDetailPage = function(body, url, urlName) {
     var code = pic.match(/\d+/);
     if (code == null) {
         if (name == '洪门道服') { // 17173的洪门道服的图片是个特例，不带短码的
+            pk = '60054_all';
             code = '60054';
         } else {
             this.grunt.fail.fatal('[BstCrawler] Error in parsing code from "' + urlName + '", null found from pic: ' + pic);
