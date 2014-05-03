@@ -310,7 +310,7 @@ BstCrawler.prototype.parseDetailPage = function(body, url, urlName) {
     var name = box.find('h2').text();
     var piclink = box.find('.icon img').attr('src');
     var pic = piclink.substr(piclink.lastIndexOf('/') + 1).lcfist();
-    var pk = pic.slice(pic.indexOf('_') + 1, pic.indexOf('.'));
+    var pk = this.util.formatRawCode(pic.slice(pic.indexOf('_') + 1, pic.indexOf('.')));
     var code = pic.match(/\d+/);
     if (code == null) {
         if (name == '洪门道服') { // 17173的洪门道服的图片是个特例，不带短码的
