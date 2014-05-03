@@ -32,6 +32,7 @@ var BstMeshParser = function(grunt) {
         "LynF": {},
         "LynM": {}
     };
+    this.finishedCount = 0; // 工作状态计数
 };
 
 BstMeshParser.PART_BODY = 'body-mesh';
@@ -143,7 +144,6 @@ BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
     var parsedCode = self.utilParseRawCode(element['$']['alias']);
     if (parsedCode === null) {
         self.grunt.log.error('[BstMeshParser] Invalid body-mesh format, alias: ' + element['$']['alias']);
-        self.util.printHr();
         return; // 这不是一个常规的body mesh数据，忽略它
     }
 
@@ -248,11 +248,12 @@ BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
         }
 
         self.tmpData[parsedCode['race']][pk] = data;
+        self.finishedCount++;
         funcSaveCollectedData();
     };
 
     var funcSaveCollectedData = function() {
-        if (index == (list.length - 1)) {
+        if (self.finishedCount == list.length) {
             // 当前处理完的元素已经是最后一个了：
             // 存储数据
             var dataFilePath = './database/costume/' + self.part + '/data.json'; // 使用grunt的write API，所以需要相对于Gruntfile.js的路径
