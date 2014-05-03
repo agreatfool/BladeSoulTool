@@ -206,9 +206,19 @@ BstMeshParser.prototype.parseBodyElement = function(element) {
              * filename: XLM000_d.tga
              */
             if (abspath.match(/Texture2D/)) {
-                texture = subdir.match(/\d+/)[0];
+                var dirMatch = subdir.match(/\d+/);
+                if (dirMatch == null) {
+                    self.grunt.log.error('[BstMeshParser] No Texture2D match when parsing umodel unpacked files: "' + element['$']['alias'] + '" ' + skeleton + '.upk');
+                } else {
+                    texture = dirMatch[0];
+                }
             } else if (abspath.match(/MaterialInstanceConstant/)) {
-                material = subdir.match(/\d+/)[0];
+                var dirMatch = subdir.match(/\d+/);
+                if (dirMatch == null) {
+                    self.grunt.log.error('[BstMeshParser] No MaterialInstanceConstant match when parsing umodel unpacked files: "' + element['$']['alias'] + '" ' + skeleton + '.upk');
+                } else {
+                    material = dirMatch[0];
+                }
             }
         });
         funcCollectData();
