@@ -32,9 +32,9 @@ var BstMeshParser = function(grunt) {
         "LynF": {},
         "LynM": {}
     };
-    this.totoalCount = 0; // 总共需要处理的工作计数
-    this.workingCount = 0; // 正在进行的子进程数
-    this.finishedCount = 0; // 完成的工作计数
+    this.statusTotoalCount = 0; // 总共需要处理的工作计数
+    this.statusWorkingCount = 0; // 正在工作的子进程数
+    this.statusFinishedCount = 0; // 完成的工作计数
 };
 
 BstMeshParser.PART_BODY = 'body'; // body-mesh
@@ -131,7 +131,7 @@ BstMeshParser.prototype.processBody = function() {
             && element['$']['resource-name'].match(/\d+\..*/) !== null // resource-name 这一项"."之前必须是一串数字，匹配skeleton upk名字
         );
     });
-    this.totoalCount = this.body.length;
+    this.statusTotoalCount = this.body.length;
     this.grunt.log.writeln('[BstMeshParser] body-mesh parsed, "' + this.body.length + '" lines of record read.');
 
     this.crawledData = this.util.readJsonFile('./database/crawler/body/data.json');
@@ -140,15 +140,20 @@ BstMeshParser.prototype.processBody = function() {
 
     var self = this;
     var timer = setInterval(function() {
-        if (self.workingCount < 5 // 同时并发进程数
+        if (self.statusWorkingCount < 5 // 同时并发进程数
             && self.body.length > 0) { // 仍旧还有任务需要安排
             // 进程数有空余，推送任务
             self.parseBodyElement(self.body.shift());
         }
-        if (self.finishedCount == self.totoalCount) {
+        if (self.statusFinishedCount == self.statusTotoalCount) {
             // 任务全部完成
             clearInterval(timer);
-            self.finishBodyProcessing();
+            var dataFilePath = './database/costume/' + self.part + '/data.json'; // 使用grunt的write API，所以需要相对于Gruntfile.js的路径
+            self.util.printHr();
+            self.grunt.log.writeln('[BstMeshParser] All parsing done, start to save file: ' + dataFilePath);
+            self.util.writeFile(dataFilePath, JSON.stringify(self.tmpData, null, 4));
+            self.util.printHr();
+            self.grunt.log.writeln('[BstMeshParser] All "' + self.part + '" mesh xml parsed.');
         }
     }, 500);
 };
@@ -156,14 +161,15 @@ BstMeshParser.prototype.processBody = function() {
 BstMeshParser.prototype.parseBodyElement = function(element) {
     var self = this;
 
+    self.utilStartChildProcess();
     self.grunt.log.writeln('[BstMeshParser] Parsing "' + element['$']['alias'] + '" ... ');
 
     var parsedCode = self.utilParseRawCode(element['$']['alias']);
     if (parsedCode === null) {
         self.grunt.log.error('[BstMeshParser] Invalid body-mesh format, alias: ' + element['$']['alias']);
+        self.utilFinishProcessing(element['$']['alias']); // 因为这条数据在总的this.body内也是占位的，所以也需要标记为完成
         return; // 这不是一个常规的body mesh数据，忽略它
     }
-    self.workingCount++;
 
     // 01. 找到skeleton的upk id
     var skeleton = element['$']['resource-name'].substr(0, element['$']['resource-name'].indexOf('.'));
@@ -177,6 +183,7 @@ BstMeshParser.prototype.parseBodyElement = function(element) {
         skeletonPath = path.join(self.conf['path']['game'], self.conf['path']['tencent'], skeleton + '.upk');
         if (!self.grunt.file.exists(skeletonPath)) {
             self.grunt.log.error('[BstMeshParser] Code: "' + parsedCode['codeWithRace'] + '", Info: skeleton upk not found in tencent dir: ' + skeletonPath);
+            self.utilFinishProcessing(element['$']['alias']); // 即便文件不存在，也要将其标记为完成
             return; // 两个位置upk文件都不存在，只能跳过该mesh配置
         }
     }
@@ -246,10 +253,7 @@ BstMeshParser.prototype.parseBodyElement = function(element) {
         if (!hasMultiMaterial) { // 表示当前服装为单色，给默认配置
             funcProcessData(1, material);
         }
-        self.finishedCount++;
-        self.workingCount--;
-        self.grunt.log.writeln('[BstMeshParser] Parsing of "' + element['$']['alias'] + '" done, ' +
-            'progress: ' + self.finishedCount + ' / ' + self.totoalCount);
+        self.utilFinishProcessing(element['$']['alias']);
     };
 
     var funcProcessData = function(colId, colUpkId) {
@@ -284,21 +288,28 @@ BstMeshParser.prototype.parseBodyElement = function(element) {
     };
 };
 
-BstMeshParser.prototype.finishBodyProcessing = function() {
-    var dataFilePath = './database/costume/' + this.part + '/data.json'; // 使用grunt的write API，所以需要相对于Gruntfile.js的路径
-    this.util.printHr();
-    this.grunt.log.writeln('[BstMeshParser] All parsing done, start to save file: ' + dataFilePath);
-    this.util.writeFile(dataFilePath, JSON.stringify(this.tmpData, null, 4));
-    this.util.printHr();
-    this.grunt.log.writeln('[BstMeshParser] All "' + this.part + '" mesh xml parsed.');
-};
-
 BstMeshParser.prototype.processFace = function() {
 
 };
 
 BstMeshParser.prototype.processHair = function() {
 
+};
+
+BstMeshParser.prototype.utilStartChildProcess = function() {
+    this.statusWorkingCount++;
+};
+
+BstMeshParser.prototype.utilStopChildProcess = function() {
+    this.statusWorkingCount--;
+};
+
+BstMeshParser.prototype.utilFinishProcessing = function(name) {
+    this.utilStopChildProcess();
+    this.statusFinishedCount++;
+
+    this.grunt.log.writeln('[BstMeshParser] Parsing of "' + name + '" done, ' +
+        'progress: ' + this.statusFinishedCount + ' / ' + this.statusTotoalCount);
 };
 
 BstMeshParser.prototype.utilParseRawCode = function(rawCode) {
