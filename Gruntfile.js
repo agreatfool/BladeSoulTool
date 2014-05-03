@@ -30,7 +30,15 @@ String.prototype.lcfist = function() {
     return this.charAt(0).toLowerCase() + this.slice(1);
 };
 
+var moment = require('moment');
+
 module.exports = function(grunt) {
+
+    require('logfile-grunt')(grunt, {
+        "filePath": './logs/grunt_' + moment().format('YYYY-MM-DD') + '.log',
+        "keepColors": true,
+        "clearLogFile": true
+    });
 
     var Task_Default = function() {
         this.async();
