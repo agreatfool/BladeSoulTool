@@ -225,8 +225,6 @@ BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
     });
 
     // 04. 找出texture和col1的upk id
-    // Texture2D
-    // MaterialInstanceConstant
     var funcLoopUmodelOutput = function() {
         self.grunt.file.recurse('./resources/umodel/output', function(abspath, rootdir, subdir, filename) {
             /**
@@ -247,7 +245,7 @@ BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
     };
 
     // 05. 组织数据，进行存储
-    var funcCollectData = function() {
+    var funcCollectData = function() { console.log('here1');
         // loop查看当前的mesh.xml配置里是否有多色配置项
         var hasMultiMaterial = false; // 是否多色的标识位
         for (var key in element['$']) {
@@ -265,7 +263,7 @@ BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
         }
     };
 
-    var funcProcessData = function(colId, colUpkId) {
+    var funcProcessData = function(colId, colUpkId) { console.log('here2');
         var col = 'col' + colId;
         var pk = parsedCode['codeWithRace'] + '_' + col;
 
@@ -297,13 +295,13 @@ BstMeshParser.prototype.parseBodyElement = function(element, index, list) {
         funcSaveCollectedData();
     };
 
-    var funcSaveCollectedData = function() {
+    var funcSaveCollectedData = function() { console.log('here3');
         if (index == (list.length - 1)) {
             // 当前处理完的元素已经是最后一个了，存储数据
-            self.util.writeFile(
-                './database/costume/' + self.part + '/data.json', // 使用grunt的write API，所以需要相对于Gruntfile.js的路径
-                JSON.stringify(self.tmpData, null, 4)
-            );
+            var dataFilePath = './database/costume/' + self.part + '/data.json'; // 使用grunt的write API，所以需要相对于Gruntfile.js的路径
+            self.util.printHr();
+            self.grunt.log.writeln('[BstMeshParser] All parsing done, start to save file: ' + dataFilePath);
+            self.util.writeFile(dataFilePath, JSON.stringify(self.tmpData, null, 4));
             self.util.printHr();
             self.grunt.log.writeln('[BstMeshParser] All "' + self.part + '" mesh xml parsed.');
         }
