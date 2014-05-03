@@ -125,8 +125,11 @@ BstMeshParser.prototype.process = function() {
 
 BstMeshParser.prototype.processBody = function() {
     this.body = _.filter(this.xml, function(element) {
-        return (element['$']['type-mesh'] == BstMeshParser.PART_BODY
-            && BstMeshParser.RACE_VALID.indexOf(element['$']['race']) !== -1);
+        return (
+            element['$']['type-mesh'] == BstMeshParser.PART_BODY
+            && BstMeshParser.RACE_VALID.indexOf(element['$']['race']) !== -1
+            && element['$']['resource-name'].match(/\d+\..*/) !== null
+        );
     });
     this.totoalCount = this.body.length;
     this.grunt.log.writeln('[BstMeshParser] body-mesh parsed, "' + this.body.length + '" lines of record read.');
