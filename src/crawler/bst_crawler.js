@@ -309,8 +309,13 @@ BstCrawler.prototype.parseDetailPage = function(body, url, urlName) {
     // 收集需要的信息
     var name = box.find('h2').text();
     var piclink = box.find('.icon img').attr('src');
-    var pic = piclink.substr(piclink.lastIndexOf('/') + 1).lcfist();
-    var pk = this.util.formatRawCode(pic.slice(pic.indexOf('_') + 1, pic.indexOf('.')));
+    var pic = piclink.substr(
+        piclink.lastIndexOf('/') + 1 // 从地址栏的最后一个"/"开始，获取文件名
+    ).lcfist(). // 将图片第一位的字母小写 "Costume_" => "costume_"
+        replace(new RegExp('col', 'i'), 'col'); // 将文件名里的 "Col" 都转成小写 "col"
+    var pk = this.util.formatRawCode( // 将种族名字都转成工整的 "GonF | JinF | ..."
+        pic.slice(pic.indexOf('_') + 1, pic.indexOf('.')) // 去掉开头的 "costume_"
+    );
     var code = pic.match(/\d+/);
     if (code == null) {
         if (name == '洪门道服') { // 17173的洪门道服的图片是个特例，不带短码的
