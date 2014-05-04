@@ -250,17 +250,17 @@ BstMeshParser.prototype.parseBodyElement = function(element) {
             var match = key.match(/sub-material-name-(\d+)/);
             if (match !== null) {
                 hasMultiMaterial = true;
-                funcProcessData(match[1], element['$'][key].substr(0, element['$'][key].indexOf('.')));
+                var split = element['$'][key].split('.');
+                funcProcessData(split[1], split[0]);
             }
         }
         if (!hasMultiMaterial) { // 表示当前服装为单色，给默认配置
-            funcProcessData(1, material);
+            funcProcessData('col1', material);
         }
         self.utilFinishProcessing(element['$']['alias']);
     };
 
-    var funcProcessData = function(colId, colUpkId) {
-        var col = 'col' + colId;
+    var funcProcessData = function(col, colUpkId) {
         var pk = parsedCode['codeWithRace'] + '_' + col;
 
         var data = {
