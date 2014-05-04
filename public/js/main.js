@@ -1,10 +1,15 @@
 "use strict";
 
+var $html = angular.element(document.getElementsByTagName('html')[0]);
+angular.element().ready(function() {
+    angular.bootstrap($html, ['BstApp']);
+});
+
 //-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 //- APP
 //-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 var app = angular.module("BstApp", [
-    "ngAnimate", "ngRoute", "ui.bootstrap",
+    "ngRoute", "ui.bootstrap",
     "route-segment", "view-segment",
     "BstApp.Controllers", "BstApp.Services"
 ]);

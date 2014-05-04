@@ -1,24 +1,9 @@
 <div class="row">
 
-    <!-- sidebar module starts -->
     <div class="col-md-2">
         <div class="list-group titled-list-group">
             <span class="list-group-item">功能模块</span>
-            <a ng-repeat="module in modules"
-               ng-class="{active: segment.startsWith('api.apis') && segment.$routeParams.moduleName == module}"
-               href="#/api/module/{{ module }}" class="list-group-item">
-                {{ module }}
-            </a>
         </div>
     </div>
-    <!-- sidebar module ends -->
-
-    <!-- sidebar api starts -->
-    <div class="col-md-3" app-view-segment="1"></div>
-    <!-- sidebar api ends -->
-
-    <!-- content starts -->
-    <div class="col-md-7" app-view-segment="2"></div>
-    <!-- content ends -->
 
 </div>
