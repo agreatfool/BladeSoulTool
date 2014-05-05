@@ -1,3 +1,3 @@
 @echo off
 
-umodel.exe & pause > nul
+screenshot-cmd.exe -wt "test.bat\ -\ ¼ÇÊÂ±¾" -o screen.png  & pause > nul
