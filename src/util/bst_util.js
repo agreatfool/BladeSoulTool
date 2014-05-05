@@ -18,7 +18,7 @@ BstUtil.prototype.printHr = function() {
 
 BstUtil.prototype.strUtf8ToHex = function(str) {
     var result = new Buffer(str).toString('hex');
-    this.grunt.log.writeln('[BstUtil] Convert UTF8 to HEX, FROM: ' + str + ' , TO: ' + result);
+    this.grunt.log.writeln('[BstUtil] Convert UTF8 to HEX, FROM: ' + str + ', TO: ' + result);
 
     return result;
 };
