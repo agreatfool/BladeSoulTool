@@ -15,6 +15,8 @@ var BstMeshParser = function(grunt) {
     this.parser = new xml2js.Parser();
 
     this.conf = this.util.readJsonFile('./config/setting.json');
+    this.tencentPath = path.join(this.conf['path']['game'], this.conf['game']['tencent']);
+    this.bnsPath = path.join(this.conf['path']['game'], this.conf['game']['bns']);
 
     this.part = null; // 当前在解析的数据是哪个部分的：body、face、hair
     this.xml  = null; // 读取出来的mesh xml的record列表：<table>[xml => <record></record>]</table>
@@ -32,7 +34,7 @@ var BstMeshParser = function(grunt) {
         "LynF": {},
         "LynM": {}
     };
-    this.statusTotoalCount = 0; // 总共需要处理的工作计数
+    this.statusTotalCount = 0; // 总共需要处理的工作计数
     this.statusWorkingCount = 0; // 正在工作的子进程数
     this.statusFinishedCount = 0; // 完成的工作计数
 };
@@ -134,7 +136,7 @@ BstMeshParser.prototype.processBody = function() {
             && element['$']['resource-name'].match(/\d+\..*/) !== null // resource-name 这一项"."之前必须是一串数字，匹配skeleton upk名字
         );
     });
-    this.statusTotoalCount = this.body.length;
+    this.statusTotalCount = this.body.length;
     this.grunt.log.writeln('[BstMeshParser] body-mesh parsed, "' + this.body.length + '" lines of record read.');
 
     this.crawledData = this.util.readJsonFile('./database/crawler/body/data.json');
@@ -148,7 +150,7 @@ BstMeshParser.prototype.processBody = function() {
             // 进程数有空余，推送任务
             self.parseBodyElement(self.body.shift());
         }
-        if (self.statusFinishedCount == self.statusTotoalCount) {
+        if (self.statusFinishedCount == self.statusTotalCount) {
             // 任务全部完成
             clearInterval(timer);
             var dataFilePath = './database/costume/' + self.part + '/data.json'; // 使用grunt的write API，所以需要相对于Gruntfile.js的路径
@@ -180,10 +182,10 @@ BstMeshParser.prototype.parseBodyElement = function(element) {
     var material;
 
     // 02. 检查skeleton upk是否存在
-    var skeletonPath = path.join(self.conf['path']['game'], self.conf['path']['bns'], skeleton + '.upk');
+    var skeletonPath = path.join(self.bnsPath, skeleton + '.upk');
     if (!self.grunt.file.exists(skeletonPath)) {
         self.grunt.log.error('[BstMeshParser] Code: "' + parsedCode['codeWithRace'] + '", Info: skeleton upk not found in bns dir: ' + skeletonPath);
-        skeletonPath = path.join(self.conf['path']['game'], self.conf['path']['tencent'], skeleton + '.upk');
+        skeletonPath = path.join(self.tencentPath, skeleton + '.upk');
         if (!self.grunt.file.exists(skeletonPath)) {
             self.grunt.log.error('[BstMeshParser] Code: "' + parsedCode['codeWithRace'] + '", Info: skeleton upk not found in tencent dir: ' + skeletonPath);
             self.utilFinishProcessing(element['$']['alias']); // 即便文件不存在，也要将其标记为完成
@@ -312,7 +314,8 @@ BstMeshParser.prototype.utilFinishProcessing = function(name) {
     this.statusFinishedCount++;
 
     this.grunt.log.writeln('[BstMeshParser] Parsing of "' + name + '" done, ' +
-        'progress: ' + this.statusFinishedCount + ' / ' + this.statusTotoalCount);
+        'progress: ' + this.statusFinishedCount + ' / ' + this.statusTotalCount);
+    this.util.printHr();
 };
 
 BstMeshParser.prototype.utilParseRawCode = function(rawCode) {
