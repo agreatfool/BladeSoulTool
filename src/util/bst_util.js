@@ -32,7 +32,7 @@ BstUtil.prototype.checkFileExists = function(path) {
 BstUtil.prototype.copyFile = function(fromPath, toPath) {
     this.checkFileExists(fromPath);
     this.grunt.file.copy(fromPath, toPath);
-    this.grunt.log.writeln('[BstUtil] Copy file FROM: ' + fromPath + ' , TO: ' + toPath);
+    this.grunt.log.writeln('[BstUtil] Copy file FROM: ' + fromPath + ', TO: ' + toPath);
 };
 
 BstUtil.prototype.deleteFile = function(path) {
