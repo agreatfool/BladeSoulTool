@@ -135,6 +135,7 @@ BstScreenShooter.prototype.processSingle = function(element) {
         hasBackupToRestore = true;
         // 备份源文件
         self.util.copyFile(skeletonPath, backupPath);
+        self.grunt.log.error('[BstScreenShooter] Backup file generated: ' + backupPath);
         self.util.readHexFile(skeletonPath, function(data, path) {
             // 将col1的配色upk名 替换成 非col1的配色upk名
             data = self.util.replaceStrAll(data, self.util.strUtf8ToHex(element['col1Material']), self.util.strUtf8ToHex(element['material']));
@@ -142,6 +143,7 @@ BstScreenShooter.prototype.processSingle = function(element) {
             data = self.util.replaceStrAll(data, self.util.strUtf8ToHex('col1'), self.util.strUtf8ToHex(element['col']));
             // 储存文件到 skeletonPath
             self.util.writeHexFile(path, data);
+            self.grunt.log.error('[BstScreenShooter] Skeleton file edited: ' + skeletonPath);
             // 执行下一步
             handleUmodel();
         });
@@ -155,10 +157,10 @@ BstScreenShooter.prototype.processSingle = function(element) {
         );
         worker.stdout.on('data', function (data) { logStdout(data) });
         worker.stderr.on('data', function (data) { logStderr(data) });
-        worker.on('exit', function (code) {
-            logExit('umodel', code);
+        worker.on('exit', function (code) { logExit('umodel', code); });
+        setTimeout(function() {
             handleWinSize();
-        });
+        }, 100); // 间隔100ms启动下一个工作，因为在umodel窗口打开期间，worker子进程是不会退出的，流程无法继续执行下去
     };
 
     var xPos = 100, yPos = 0, width = 500, height = 600;
@@ -213,6 +215,7 @@ BstScreenShooter.prototype.processSingle = function(element) {
             self.grunt.file.setBase(path.dirname(backupPath));
             self.util.deleteFile(backupPath);
             self.grunt.file.setBase(gruntCwd);
+            self.grunt.log.error('[BstScreenShooter] Skeleton file restored: ' + skeletonPath);
         }
         self.finishSingle(name);
     };
