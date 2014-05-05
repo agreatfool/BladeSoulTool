@@ -14,8 +14,8 @@ var BstScreenShooter = function(grunt) {
     this.util   = new Util(grunt);
 
     this.conf = this.util.readJsonFile('./config/setting.json');
-    this.tencentPath = path.join(this.conf['path']['game'], this.conf['game']['tencent']);
-    this.bnsPath = path.join(this.conf['path']['game'], this.conf['game']['bns']);
+    this.tencentPath = path.join(this.conf['path']['game'], this.conf['path']['tencent']);
+    this.bnsPath = path.join(this.conf['path']['game'], this.conf['path']['bns']);
 
     this.part = null; // 当前抓的是哪个部分的图：body、face、hair
 

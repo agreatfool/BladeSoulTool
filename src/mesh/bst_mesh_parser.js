@@ -15,8 +15,8 @@ var BstMeshParser = function(grunt) {
     this.parser = new xml2js.Parser();
 
     this.conf = this.util.readJsonFile('./config/setting.json');
-    this.tencentPath = path.join(this.conf['path']['game'], this.conf['game']['tencent']);
-    this.bnsPath = path.join(this.conf['path']['game'], this.conf['game']['bns']);
+    this.tencentPath = path.join(this.conf['path']['game'], this.conf['path']['tencent']);
+    this.bnsPath = path.join(this.conf['path']['game'], this.conf['path']['bns']);
 
     this.part = null; // 当前在解析的数据是哪个部分的：body、face、hair
     this.xml  = null; // 读取出来的mesh xml的record列表：<table>[xml => <record></record>]</table>
