@@ -1,3 +1,3 @@
 #!/bin/bash
 
-grunt parser --stack
+grunt shooter --stack
