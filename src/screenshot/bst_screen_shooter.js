@@ -213,6 +213,7 @@ BstScreenShooter.prototype.processSingle = function(element) {
             // 恢复文件
             self.util.copyFile(backupPath, skeletonPath);
             // 删除旧的备份文件
+            // FIXME 之后应该需要一个统一删除备份文件的处理函数
 //            var gruntCwd = process.cwd();
 //            self.grunt.file.setBase(path.dirname(backupPath));
 //            self.util.deleteFile(backupPath);
