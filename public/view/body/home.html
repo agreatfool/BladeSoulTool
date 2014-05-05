@@ -31,7 +31,7 @@
                         <td>预览</td>
                         <td>名称</td>
                         <td>短码</td>
-                        <td>是否选中</td>
+                        <td>选中</td>
                     </tr>
                 </thead>
                 <tbody>
@@ -41,11 +41,21 @@
                         ng-class="{highlight: selectedModel == key}"
                         style="cursor: pointer;"
                     >
-                        <td ng-show="data.pic"><img src="database/crawler/pics/body/{{ data.pic }}" /></td>
-                        <td ng-show="!data.pic">N/A</td>
-                        <td>{{ data.name }}</td>
-                        <td>{{ key }}</td>
-                        <td><span ng-show="selectedModel == key" class="glyphicon glyphicon-ok"></span></td>
+                        <td ng-show="data.pic" style="width: 90px;">
+                            <img src="database/crawler/pics/body/{{ data.pic }}" />
+                        </td>
+                        <td ng-show="!data.pic" style="width: 90px;">
+                            N/A
+                        </td>
+                        <td>
+                            {{ data.name }}
+                        </td>
+                        <td style="width: 180px;">
+                            {{ key }}
+                        </td>
+                        <td style="width: 50px;">
+                            <span ng-show="selectedModel == key" class="glyphicon glyphicon-ok"></span>
+                        </td>
                     </tr>
                 </tbody>
             </table>
