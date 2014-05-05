@@ -230,6 +230,7 @@ BstScreenShooter.prototype.processSingle = function(element) {
 
 BstScreenShooter.prototype.finishSingle = function(name) {
     this.statusIsWorking = false;
+    this.statusFinishedCount++;
 
     this.grunt.log.writeln('[BstScreenShooter] Processing of "' + name + '" done, ' +
         'progress: ' + this.statusFinishedCount + ' / ' + this.statusTotalCount);
