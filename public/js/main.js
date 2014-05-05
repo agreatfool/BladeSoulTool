@@ -76,7 +76,6 @@ function ($scope, $routeSegment, service) {
     $scope.selectedModel = null; // 选中的目标模型id
 
     $scope.changeRace = function() {
-        console.log('selected: ' + $scope.raceSelected);
         $scope.raceDisplay = racesDisplay[$scope.raceSelected];
         $scope.displayData = bodyData[$scope.raceSelected];
         $scope.selectedModel = null;
