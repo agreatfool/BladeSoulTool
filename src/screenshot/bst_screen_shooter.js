@@ -85,7 +85,7 @@ BstScreenShooter.prototype.processBody = function(rawData) {
             self.util.printHr();
             self.grunt.log.writeln('[BstScreenShooter] All "' + self.part + '" photo shot.');
         }
-    }, 50);
+    }, 500);
 };
 
 BstScreenShooter.prototype.processFace = function(rawData) {
@@ -135,7 +135,7 @@ BstScreenShooter.prototype.processSingle = function(element) {
         hasBackupToRestore = true;
         // 备份源文件
         self.util.copyFile(skeletonPath, backupPath);
-        self.grunt.log.error('[BstScreenShooter] Backup file generated: ' + backupPath);
+        self.grunt.log.writeln('[BstScreenShooter] Backup file generated: ' + backupPath);
         self.util.readHexFile(skeletonPath, function(data, path) {
             // 将col1的配色upk名 替换成 非col1的配色upk名
             data = self.util.replaceStrAll(data, self.util.strUtf8ToHex(element['col1Material']), self.util.strUtf8ToHex(element['material']));
@@ -143,7 +143,7 @@ BstScreenShooter.prototype.processSingle = function(element) {
             data = self.util.replaceStrAll(data, self.util.strUtf8ToHex('col1'), self.util.strUtf8ToHex(element['col']));
             // 储存文件到 skeletonPath
             self.util.writeHexFile(path, data);
-            self.grunt.log.error('[BstScreenShooter] Skeleton file edited: ' + skeletonPath);
+            self.grunt.log.writeln('[BstScreenShooter] Skeleton file edited: ' + skeletonPath);
             // 执行下一步
             handleUmodel();
         });
@@ -160,7 +160,7 @@ BstScreenShooter.prototype.processSingle = function(element) {
         worker.on('exit', function (code) { logExit('umodel', code); });
         setTimeout(function() {
             handleWinSize();
-        }, 100); // 间隔100ms启动下一个工作，因为在umodel窗口打开期间，worker子进程是不会退出的，流程无法继续执行下去
+        }, 2000); // 间隔300ms启动下一个工作，因为在umodel窗口打开期间，worker子进程是不会退出的，流程无法继续执行下去
     };
 
     var xPos = 100, yPos = 0, width = 500, height = 600;
@@ -210,12 +210,14 @@ BstScreenShooter.prototype.processSingle = function(element) {
     // 恢复之前备份的文件，如果有的话
     var handleBackup = function() {
         if (hasBackupToRestore) {
-            var gruntCwd = process.cwd();
+            // 恢复文件
             self.util.copyFile(backupPath, skeletonPath);
-            self.grunt.file.setBase(path.dirname(backupPath));
-            self.util.deleteFile(backupPath);
-            self.grunt.file.setBase(gruntCwd);
-            self.grunt.log.error('[BstScreenShooter] Skeleton file restored: ' + skeletonPath);
+            // 删除旧的备份文件
+//            var gruntCwd = process.cwd();
+//            self.grunt.file.setBase(path.dirname(backupPath));
+//            self.util.deleteFile(backupPath);
+//            self.grunt.file.setBase(gruntCwd);
+            self.grunt.log.writeln('[BstScreenShooter] Skeleton file restored: ' + skeletonPath);
         }
         self.finishSingle(name);
     };
