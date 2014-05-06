@@ -19,7 +19,16 @@
             <div style="margin-top: 10px;">
                 <span class="pull-left" style="font-size: 18px; line-height: 34px;">目标模型：</span>
                 <span class="pull-left" style="width: 200px; font-size: 18px; line-height: 34px;">{{ selectedModel }}</span>
-                <button ng-disabled="selectedModel == null" class="btn btn-primary pull-left">替换</button>
+                <button
+                    ng-disabled="selectedModel == null"
+                    ng-click="replaceModel()"
+                    class="btn btn-primary pull-left"
+                >替换</button>
+                <button
+                    style="margin-left: 10px;"
+                    ng-click="restoreModel()"
+                    class="btn btn-primary pull-left"
+                >恢复</button>
             </div>
         </div>
     </div>

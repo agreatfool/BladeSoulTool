@@ -53,7 +53,7 @@ var controllers = angular.module("BstApp.Controllers", []);
 controllers.controller("BstNavCtrl", [
     "$scope", "$routeSegment",
 function ($scope, $routeSegment) {
-    console.log("BstNavCtrl loaded!");
+    logger.log("BstNavCtrl loaded!");
     $scope.segment = $routeSegment;
 }]);
 
@@ -61,7 +61,7 @@ function ($scope, $routeSegment) {
 controllers.controller("BstBodyCtrl", [
     "$scope", "$routeSegment", "BstService",
 function ($scope, $routeSegment, service) {
-    console.log("BstBodyCtrl loaded!");
+    logger.log("BstBodyCtrl loaded!");
     $scope.segment = $routeSegment;
 
     var bodyData = {}; // database/costume/body/data.json
@@ -75,17 +75,33 @@ function ($scope, $routeSegment, service) {
     $scope.displayData = {}; // 用于显示在页面列表里的模型数据
     $scope.selectedModel = null; // 选中的目标模型id
 
-    $scope.changeRace = function() {
+    $scope.changeRace = function() { // 选择种族
         $scope.raceDisplay = racesDisplay[$scope.raceSelected];
         $scope.displayData = bodyData[$scope.raceSelected];
         $scope.selectedModel = null;
     };
 
-    $scope.selectTableLine = function(modelKey){
+    $scope.selectTableLine = function(modelKey) { // 选中某个模型
         $scope.selectedModel = modelKey;
     };
 
-    service.loadBodyData().then(function(data) {
+    $scope.replaceModel = function() { // 替换身体衣服模型
+        if (confirm('确认需要将"洪门道服" 替换成 "' + $scope.selectedModel + '" 吗？')) {
+            service.replaceBodyModel($scope.selectedModel).then(function(data) {
+                logger.log(data);
+            });
+        }
+    };
+
+    $scope.restoreModel = function() { // 恢复身体衣服模型
+        if (confirm('确认要将之前替换的服装换回"洪门道服"吗？')) {
+            service.restoreBodyModel().then(function(data) {
+                logger.log(data);
+            });
+        }
+    };
+
+    service.loadBodyData().then(function(data) { // 初始化数据读取
         bodyData = data;
         $scope.races = _.keys(bodyData);
         $scope.raceSelected = $scope.races[0];
@@ -97,7 +113,7 @@ function ($scope, $routeSegment, service) {
 controllers.controller("BstFaceCtrl", [
     "$scope", "$routeSegment", "BstService",
 function ($scope, $routeSegment, service) {
-    console.log("BstFaceCtrl loaded!");
+    logger.log("BstFaceCtrl loaded!");
     $scope.segment = $routeSegment;
 }]);
 
@@ -105,7 +121,7 @@ function ($scope, $routeSegment, service) {
 controllers.controller("BstHairCtrl", [
     "$scope", "$routeSegment", "BstService",
 function ($scope, $routeSegment, service) {
-    console.log("BstHairCtrl loaded!");
+    logger.log("BstHairCtrl loaded!");
     $scope.segment = $routeSegment;
 }]);
 
@@ -117,10 +133,45 @@ var services = angular.module("BstApp.Services", []);
 // BstService
 services.factory("BstService", ["$http", "$q", function($http, $q) {
 
+    var bodyData = {};
+
     var loadBodyData = function() {
         var deferred = $q.defer();
         $http({
             method: 'GET', url: 'database/costume/body/data.json'
+        }).success(function(data) {
+            bodyData = data;
+            deferred.resolve(data);
+        }).error(function() {
+            deferred.reject();
+        });
+        return spin.run(deferred.promise);
+    };
+
+    var getBodyData = function() {
+        return bodyData;
+    };
+
+    var replaceBodyModel = function(modelId) {
+        var deferred = $q.defer();
+        $http({
+            method: "GET",
+            url: 'http://127.0.0.1:35642/body/replace/' + modelId,
+            headers: {"Content-type": "application/x-www-form-urlencoded"}
+        }).success(function(data) {
+            deferred.resolve(data);
+        }).error(function() {
+            deferred.reject();
+        });
+        return spin.run(deferred.promise);
+    };
+
+    var restoreBodyModel = function() {
+        var deferred = $q.defer();
+        $http({
+            method: "GET",
+            url: 'http://127.0.0.1:35642/body/restore',
+            headers: {"Content-type": "application/x-www-form-urlencoded"}
         }).success(function(data) {
             deferred.resolve(data);
         }).error(function() {
@@ -130,7 +181,10 @@ services.factory("BstService", ["$http", "$q", function($http, $q) {
     };
 
     return {
-        "loadBodyData": loadBodyData
+        "loadBodyData": loadBodyData,
+        "getBodyData": getBodyData,
+        "replaceBodyModel": replaceBodyModel,
+        "restoreBodyModel": restoreBodyModel
     };
 }]);
 
@@ -211,3 +265,13 @@ MsgBox.prototype.hideMsgMask = function() {
 };
 
 var msgBox = new MsgBox();
+
+var Logger = function() {};
+
+Logger.prototype.log = function(msg) {
+    if (typeof console === 'object') {
+        console.log(msg);
+    }
+};
+
+var logger = new Logger();
