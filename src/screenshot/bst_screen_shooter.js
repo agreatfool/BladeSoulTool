@@ -104,7 +104,7 @@ BstScreenShooter.prototype.processSingle = function(element) {
     self.grunt.log.writeln('[BstScreenShooter] Start to process: ' + name);
 
     // 确保当前元素的格式是规范的
-    if (!self.util.meshDataCheck(element)) {
+    if (self.util.meshDataCheck(element)) { // true返回表示有异常键值
         self.finishSingle(name); // 格式不规范，停止执行
         return;
     }
@@ -167,7 +167,7 @@ BstScreenShooter.prototype.processSingle = function(element) {
         worker.on('exit', function (code) { logExit('umodel', code); });
         setTimeout(function() {
             handleWinSize();
-        }, 2000); // 间隔300ms启动下一个工作，因为在umodel窗口打开期间，worker子进程是不会退出的，流程无法继续执行下去
+        }, 1000); // 间隔1s启动下一个工作，因为在umodel窗口打开期间，worker子进程是不会退出的，流程无法继续执行下去
     };
 
     var xPos = 100, yPos = 0, width = 500, height = 600;
