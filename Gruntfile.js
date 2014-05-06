@@ -88,6 +88,15 @@ module.exports = function(grunt) {
         parser.start(part);
     };
 
+    var Task_MeshParser_Prepare = function() {
+        var Parser = require('./src/mesh/bst_mesh_parser.js');
+
+        this.async();
+
+        var parser = new Parser(grunt);
+        parser.dataPrepare();
+    };
+
     var Task_MeshParser_Check = function() { // --part=body
         var Parser = require('./src/mesh/bst_mesh_parser.js');
 
@@ -125,6 +134,7 @@ module.exports = function(grunt) {
     grunt.registerTask('crawler', Task_Crawler);
     grunt.registerTask('crawler_check', Task_Crawler_MatchCheck);
     grunt.registerTask('parser', Task_MeshParser);
+    grunt.registerTask('parser_prepare', Task_MeshParser_Prepare);
     grunt.registerTask('parser_check', Task_MeshParser_Check);
     grunt.registerTask('shooter', Task_ScreenShooter);
 

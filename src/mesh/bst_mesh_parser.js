@@ -377,6 +377,25 @@ BstMeshParser.prototype.utilSearchCrawledData = function(parsedCode, col) { // c
     return null; // 什么都没找到
 };
 
+BstMeshParser.prototype.dataPrepare = function() {
+    var self = this;
+    /**
+     * 在分析mesh.xml的upk信息的时候，我们需要对upk进行解包，
+     * 而umodel在执行的时候，需要对应的所有关联upk的信息，因为有一部分是放在tencentPath下，不再bnsPath下，
+     * 所以会出现读取不到的问题，这里需要我们预先把tencentPath下的upk拷贝到bnsPath下
+     */
+    self.grunt.file.recurse(self.tencentPath, function(abspath, rootdir, subdir, filename) {
+        var targetPath = path.join(self.bnsPath, filename);
+        if (!self.grunt.file.exists(targetPath)) {
+            // 目标不存在，直接拷贝
+            self.util.copyFile(abspath, targetPath);
+        } else {
+            // 目标已存在，忽略
+            self.grunt.log.error('[BstMeshParser] Target upk already exists in bns dir: ' + targetPath);
+        }
+    });
+};
+
 BstMeshParser.prototype.dataCheck = function(part) {
     this.util.printHr();
     if ([BstMeshParser.PART_BODY, BstMeshParser.PART_FACE, BstMeshParser.PART_HAIR].indexOf(part) === -1) {
