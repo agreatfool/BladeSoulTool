@@ -9,7 +9,12 @@ var BstUtil = function(grunt) {
     /** @type {grunt} */
     this.grunt = grunt;
 
-    this.asyncList = [];
+    this.asyncList = []; // 异步工作控制器的注册列表
+
+    this.requiredMeshDataKeys = [ // 从mesh.xml中解析出来的数据必须有的键值
+        "skeleton", "texture", "material", "col1Material", "col",
+        "codeWithRace", "code", "race", "name", "pic", "piclink", "link"
+    ];
 };
 
 BstUtil.prototype.printHr = function() {
@@ -191,6 +196,23 @@ BstUtil.prototype.formatRawCode = function(rawCode) {
         replace(new RegExp('gonm', 'i'), 'GonM').
         replace(new RegExp('lynf', 'i'), 'LynF').
         replace(new RegExp('lynm', 'i'), 'LynM');
+};
+
+BstUtil.prototype.meshDataCheck = function(element) {
+    var self = this;
+
+    var hasInvalidKey = false;
+    var elementKeys = _.keys(element);
+    _.each(self.requiredMeshDataKeys, function(requiredKey) {
+        if (elementKeys.indexOf(requiredKey) === -1) { // 必须的键值在当前元素中未找到
+            hasInvalidKey = true;
+            self.grunt.log.error('[BstUtil] Required mesh element key "' + requiredKey + '"' +
+                ' not found in element: ' +
+                '"' + element['codeWithRace'] + '_' + element['col'] + '"');
+        }
+    });
+
+    return hasInvalidKey;
 };
 
 module.exports = BstUtil;

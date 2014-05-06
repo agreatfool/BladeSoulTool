@@ -389,21 +389,10 @@ BstMeshParser.prototype.dataCheck = function(part) {
     var self = this;
 
     // 检查所有解析出来的数据中，结构是否是我们预期的，有没有缺失的键值
-    var requiredKeys = [
-        "skeleton", "texture", "material", "col1Material", "col",
-        "codeWithRace", "code", "race", "name", "pic", "piclink", "link"
-    ];
     var data = self.grunt.file.readJSON('./database/costume/' + this.part + '/data.json');
     _.each(data, function(raceData) { // 种族键值，这一层直接循环过掉
-        _.each(raceData, function(element, key) { // 具体的数据键值和数据内容
-            var hasInvalidKey = false;
-            var elementKeys = _.keys(element);
-            _.each(requiredKeys, function(requiredKey) {
-                if (elementKeys.indexOf(requiredKey) === -1) { // 必须的键值在当前元素中未找到
-                    hasInvalidKey = true;
-                    self.grunt.log.error('[BstMeshParser] Required key "' + requiredKey + '" not found in element: "' + key + '"');
-                }
-            });
+        _.each(raceData, function(element) { // 具体的数据键值和数据内容
+            var hasInvalidKey = self.util.meshDataCheck(element);
             if (hasInvalidKey) {
                 self.util.printHr();
             }

@@ -102,6 +102,12 @@ BstScreenShooter.prototype.processSingle = function(element) {
     var name = element['codeWithRace'] + '_' + element['col'];
     self.grunt.log.writeln('[BstScreenShooter] Start to process: ' + name);
 
+    // 确保当前元素的格式是规范的
+    if (!self.util.meshDataCheck(element)) {
+        self.finishSingle(name); // 格式不规范，停止执行
+        return;
+    }
+
     // 确保skeleton文件存在
     var skeletonPath = path.join(self.bnsPath, element['skeleton'] + '.upk');
     if (!self.grunt.file.exists(skeletonPath)) {
