@@ -1,3 +1,3 @@
 #!/bin/bash
 
-grunt shooter --stack
+grunt crawler_check --stack
