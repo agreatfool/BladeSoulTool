@@ -1,3 +1,3 @@
 #!/bin/bash
 
-grunt crawler_check --stack
+grunt parser_prepare --stack

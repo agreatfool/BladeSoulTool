@@ -74,7 +74,7 @@ BstScreenShooter.prototype.processBody = function(rawData) {
     self.util.printHr();
 
     var timer = setInterval(function() {
-        if (!self.statusIsWorking) {
+        if (!self.statusIsWorking && self.workingList.length > 0) {
             // 目前没有运行中的任务，安排任务
             self.statusIsWorking = true;
             self.processSingle(self.data[self.workingList.shift()]);
@@ -84,6 +84,7 @@ BstScreenShooter.prototype.processBody = function(rawData) {
             clearInterval(timer);
             self.util.printHr();
             self.grunt.log.writeln('[BstScreenShooter] All "' + self.part + '" photo shot.');
+            // TODO 最后应该添上压缩图片，和统一删除所有备份文件的功能
         }
     }, 500);
 };
