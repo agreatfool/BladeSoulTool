@@ -58,14 +58,14 @@ module.exports = function(grunt) {
         crawler.start(part);
     };
 
-    var Task_CrawlerMatchCheck = function() { // --part=body
+    var Task_Crawler_MatchCheck = function() { // --part=body
         var Crawler = require('./src/crawler/bst_crawler.js');
 
         this.async();
 
         var part = grunt.option('part');
         if (typeof part === 'undefined' || part == null || part == '') {
-            grunt.log.error('[Grunt Task_CrawlerMatchCheck] Command line option "--part" not given, use default value: "body".');
+            grunt.log.error('[Grunt Task_Crawler_MatchCheck] Command line option "--part" not given, use default value: "body".');
             part = Crawler.PART_BODY;
         }
 
@@ -88,6 +88,21 @@ module.exports = function(grunt) {
         parser.start(part);
     };
 
+    var Task_MeshParser_Check = function() { // --part=body
+        var Parser = require('./src/mesh/bst_mesh_parser.js');
+
+        this.async();
+
+        var part = grunt.option('part');
+        if (typeof part === 'undefined' || part == null || part == '') {
+            grunt.log.error('[Grunt Task_MeshParser_Check] Command line option "--part" not given, use default value: "body-mesh".');
+            part = Parser.PART_BODY;
+        }
+
+        var parser = new Parser(grunt);
+        parser.dataCheck(part);
+    };
+
     var Task_ScreenShooter = function() { // --part=body
         var Shooter = require('./src/screenshot/bst_screen_shooter.js');
 
@@ -108,8 +123,9 @@ module.exports = function(grunt) {
     //-------------------------------------------------------------------------------------------
     grunt.registerTask('default', Task_Default);
     grunt.registerTask('crawler', Task_Crawler);
-    grunt.registerTask('crawler_check', Task_CrawlerMatchCheck);
+    grunt.registerTask('crawler_check', Task_Crawler_MatchCheck);
     grunt.registerTask('parser', Task_MeshParser);
+    grunt.registerTask('parser_check', Task_MeshParser_Check);
     grunt.registerTask('shooter', Task_ScreenShooter);
 
 };
