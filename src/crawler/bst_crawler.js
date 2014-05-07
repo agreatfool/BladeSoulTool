@@ -45,9 +45,7 @@ var BstCrawler = function(grunt) {
     this.util = new BstUtil(grunt);
 
     // 读取配置
-    var confPath = './config/crawler/crawler.json'; // 使用grunt读取的文件，位置必须相对于Gruntfile.js
-    this.util.checkFileExists(confPath);
-    this.conf = this.grunt.file.readJSON(confPath);
+    this.conf = this.util.readJsonFile('./config/crawler/crawler.json');
 
     this.part = null; // 当前在爬取的数据是哪个部分的：body、face、hair
 
@@ -236,7 +234,7 @@ BstCrawler.prototype.fetchPage = function(url, pageNumber, workingType) {
         } else if (workingType == BstCrawler.WORKING_TYPE_DETAIL) {
             self.parseDetailPage(body, url, urlName); // 细节页面不需要页面id来标识，每张页面的地址都不同
         }
-    })
+    });
 };
 
 BstCrawler.prototype.parseListPage = function(body, pageNumber) {
@@ -383,7 +381,7 @@ BstCrawler.prototype.matchCheck = function(part) {
     var self = this;
 
     // 检查爬取结果列表（data.json）和下载图片列表是否一致
-    var data = self.grunt.file.readJSON('./database/crawler/' + this.part + '/data.json');
+    var data = self.util.readJsonFile('./database/crawler/' + this.part + '/data.json');
     var totalCount = _.keys(data).length;
     var exists = 0;
     var notExist = 0;
@@ -401,7 +399,7 @@ BstCrawler.prototype.matchCheck = function(part) {
     self.util.printHr();
 
     // 检查爬取目标列表（list.json）的数目 和 爬取结果列表（data.json） 是否一致
-    var links = self.grunt.file.readJSON('./database/crawler/' + this.part + '/list.json');
+    var links = self.util.readJsonFile('./database/crawler/' + this.part + '/list.json');
     var linkNames = _.keys(links);
     var totalLinks = linkNames.length;
     var foundLinks = 0;

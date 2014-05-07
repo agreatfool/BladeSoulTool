@@ -192,15 +192,11 @@ BstMeshParser.prototype.parseBodyElement = function(element) {
     var material;
 
     // 02. 检查skeleton upk是否存在
-    var skeletonPath = path.join(self.bnsPath, skeleton + '.upk');
-    if (!self.grunt.file.exists(skeletonPath)) {
-        self.grunt.log.error('[BstMeshParser] Code: "' + parsedCode['codeWithRace'] + '", Info: skeleton upk not found in bns dir: ' + skeletonPath);
-        skeletonPath = path.join(self.tencentPath, skeleton + '.upk');
-        if (!self.grunt.file.exists(skeletonPath)) {
-            self.grunt.log.error('[BstMeshParser] Code: "' + parsedCode['codeWithRace'] + '", Info: skeleton upk not found in tencent dir: ' + skeletonPath);
-            self.utilFinishProcessing(element['$']['alias']); // 即便文件不存在，也要将其标记为完成
-            return; // 两个位置upk文件都不存在，只能跳过该mesh配置
-        }
+    var skeletonPath = self.util.findUpkPath(element['skeleton'], function() {
+        self.utilFinishProcessing(element['$']['alias']); // 即便文件不存在，也要将其标记为完成
+    });
+    if (skeletonPath === null) {
+        return; // 两个位置upk文件都不存在，只能跳过该mesh配置
     }
 
     // 03. 启动子进程拆包skeleton upk
@@ -445,7 +441,7 @@ BstMeshParser.prototype.dataCheck = function(part) {
     var self = this;
 
     // 检查所有解析出来的数据中，结构是否是我们预期的，有没有缺失的键值
-    var data = self.grunt.file.readJSON('./database/costume/' + this.part + '/data.json');
+    var data = self.util.readJsonFile('./database/costume/' + this.part + '/data.json');
     _.each(data, function(raceData) { // 种族键值，这一层直接循环过掉
         _.each(raceData, function(element) { // 具体的数据键值和数据内容
             var hasInvalidKey = self.util.meshDataCheck(element);

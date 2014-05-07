@@ -9,6 +9,10 @@ var BstUtil = function(grunt) {
     /** @type {grunt} */
     this.grunt = grunt;
 
+    this.conf = this.readJsonFile('../../config/setting.json');
+    this.tencentPath = path.join(this.conf['path']['game'], this.conf['path']['tencent']);
+    this.bnsPath = path.join(this.conf['path']['game'], this.conf['path']['bns']);
+
     this.asyncList = []; // 异步工作控制器的注册列表
 
     this.requiredMeshDataKeys = [ // 从mesh.xml中解析出来的数据必须有的键值
@@ -168,6 +172,25 @@ BstUtil.prototype.fileDownload = function(url, filepath, callback, headers) {
         self.grunt.log.writeln('File "' + url + '" downloaded');
         callback();
     });
+};
+
+BstUtil.prototype.findUpkPath = function(upkId, errCallback) {
+    var upkName = upkId + '.upk';
+    var upkPath = path.join(this.bnsPath, upkName);
+
+    if (!this.grunt.file.exists(upkPath)) {
+        this.grunt.log.error('[BstUtil] Upk file not found in bns dir: ' + upkPath);
+        upkPath = path.join(this.tencentPath, upkName);
+        if (!this.grunt.file.exists(upkPath)) {
+            this.grunt.log.error('[BstUtil] Upk file not found in tencent dir: ' + upkPath);
+            if (typeof errCallback === 'function') {
+                errCallback();
+            }
+            return null;
+        }
+    }
+
+    return upkPath;
 };
 
 BstUtil.prototype.formatRawCode = function(rawCode) {

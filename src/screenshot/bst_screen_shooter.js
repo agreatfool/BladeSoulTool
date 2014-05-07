@@ -19,12 +19,9 @@ var BstScreenShooter = function(grunt) {
     this.util   = new BstUtil(grunt);
 
     this.conf = this.util.readJsonFile('./config/setting.json');
-    this.tencentPath = path.join(this.conf['path']['game'], this.conf['path']['tencent']);
-    this.bnsPath = path.join(this.conf['path']['game'], this.conf['path']['bns']);
+    this.shotInterval = this.conf['shooter']['interval'];
 
     this.part = null; // 当前抓的是哪个部分的图：body、face、hair
-
-    this.shotInterval = this.conf['shooter']['interval'];
 
     this.data = {}; // 需要处理的数据：database/costume/[this.part]/data.json, etc...
     this.workingList = null; // 需要处理的数据的键数组：_.keys(this.data)
@@ -113,15 +110,11 @@ BstScreenShooter.prototype.processSingle = function(element) {
     }
 
     // 确保skeleton文件存在
-    var skeletonPath = path.join(self.bnsPath, element['skeleton'] + '.upk');
-    if (!self.grunt.file.exists(skeletonPath)) {
-        self.grunt.log.error('[BstScreenShooter] Item: "' + name + '", Info: skeleton upk not found in bns dir: ' + skeletonPath);
-        skeletonPath = path.join(self.tencentPath, element['skeleton'] + '.upk');
-        if (!self.grunt.file.exists(skeletonPath)) {
-            self.grunt.log.error('[BstScreenShooter] Item: "' + name + '", Info: skeleton upk not found in tencent dir: ' + skeletonPath);
-            self.finishSingle(name); // 即便文件不存在，也要将其标记为完成
-            return; // 两个位置upk文件都不存在，只能跳过该项
-        }
+    var skeletonPath = self.util.findUpkPath(element['skeleton'], function() {
+        self.finishSingle(name); // 即便文件不存在，也要将其标记为完成
+    });
+    if (skeletonPath === null) {
+        return; // 两个位置upk文件都不存在，只能跳过该项
     }
 
     var hasBackupToRestore = false;
