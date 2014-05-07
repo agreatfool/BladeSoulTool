@@ -18,6 +18,9 @@ var BstMeshParser = function(grunt) {
     this.tencentPath = path.join(this.conf['path']['game'], this.conf['path']['tencent']);
     this.bnsPath = path.join(this.conf['path']['game'], this.conf['path']['bns']);
 
+    this.childProcess = this.conf['parser']['childProcess'];
+    this.cycleInterval = this.conf['parser']['cycleInterval'];
+
     this.part = null; // 当前在解析的数据是哪个部分的：body、face、hair
     this.xml  = null; // 读取出来的mesh xml的record列表：<table>[xml => <record></record>]</table>
     this.body = null; // 过滤出所有 type-mesh 是 body-mesh 的数据
@@ -55,8 +58,6 @@ BstMeshParser.GENDER_F = '여';
 
 BstMeshParser.MESH_NAME = 'charactertoolappearance_mesh.xml';
 
-BstMeshParser.CONCURRENCY_NUM = 15;
-BstMeshParser.CYCLE_INTERVAL = 200;
 
 BstMeshParser.prototype.start = function(part) {
     this.util.printHr();
@@ -145,7 +146,7 @@ BstMeshParser.prototype.processBody = function() {
 
     var self = this;
     var timer = setInterval(function() {
-        if (self.statusWorkingCount < BstMeshParser.CONCURRENCY_NUM // 同时并发进程数
+        if (self.statusWorkingCount < self.childProcess // 同时并发进程数
             && self.body.length > 0) { // 仍旧还有任务需要安排
             // 进程数有空余，推送任务
             self.parseBodyElement(self.body.shift());
@@ -160,7 +161,7 @@ BstMeshParser.prototype.processBody = function() {
             self.util.printHr();
             self.grunt.log.writeln('[BstMeshParser] All "' + self.part + '" mesh xml parsed.');
         }
-    }, BstMeshParser.CYCLE_INTERVAL);
+    }, self.cycleInterval);
 };
 
 BstMeshParser.prototype.parseBodyElement = function(element) {

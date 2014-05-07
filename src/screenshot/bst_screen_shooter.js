@@ -19,6 +19,8 @@ var BstScreenShooter = function(grunt) {
 
     this.part = null; // 当前抓的是哪个部分的图：body、face、hair
 
+    this.shotInterval = this.conf['shooter']['interval'];
+
     this.data = {}; // 需要处理的数据：database/costume/[this.part]/data.json, etc...
     this.workingList = null; // 需要处理的数据的键数组：_.keys(this.data)
 
@@ -167,7 +169,7 @@ BstScreenShooter.prototype.processSingle = function(element) {
         worker.on('exit', function (code) { logExit('umodel', code); });
         setTimeout(function() {
             handleWinSize();
-        }, 1000); // 间隔1s启动下一个工作，因为在umodel窗口打开期间，worker子进程是不会退出的，流程无法继续执行下去
+        }, self.shotInterval); // 间隔启动下一个工作，因为在umodel窗口打开期间，worker子进程是不会退出的，流程无法继续执行下去
     };
 
     var xPos = 100, yPos = 0, width = 500, height = 600;
