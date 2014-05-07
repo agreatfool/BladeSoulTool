@@ -275,9 +275,7 @@ BstMeshParser.prototype.parseBodyElement = function(element) {
                 } else {
                     splitUpkId = split[0];
                 }
-                if (split.length > 2) { // 如果字段个数多于2，则选取最后一个作为col，e.g 00014113.Cloth_60018_JinM_col1.col11
-                    splitCol = split[split.length - 1];
-                }
+                splitCol = split[split.length - 1]; // 选取最后一段作为col，e.g 00014113.Cloth_60018_JinM_col1.col11
                 if (splitCol.match(/col\d+$|Col\d+$/) === null) {
                     continue; // 如果col不是：col数字 或 Col数字 的格式的话，退出，e.g 00019714.col1_Fur
                 }
