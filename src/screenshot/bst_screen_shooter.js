@@ -1,5 +1,6 @@
 "use strict";
 
+var fs = require('fs');
 var cp = require('child_process');
 var path = require('path');
 var _ = require('underscore');
@@ -247,6 +248,27 @@ BstScreenShooter.prototype.finishSingle = function(name) {
     this.grunt.log.writeln('[BstScreenShooter] Processing of "' + name + '" done, ' +
         'progress: ' + this.statusFinishedCount + ' / ' + this.statusTotalCount);
     this.util.printHr();
+};
+
+BstScreenShooter.prototype.checkShotResult = function(logPath) {
+    var self = this;
+
+    this.util.checkFileExists(logPath);
+    var logLines = fs.readFileSync(logPath).toString().split("\r\n");
+
+    var errorModelCodes = [];
+    var currentWorkingCode = null;
+    _.each(logLines, function(line) {
+        var match = line.match(/\[BstScreenShooter\] Start to process: (.+)/);
+        if (match !== null) {
+            currentWorkingCode = match[1];
+        }
+        match = line.match(/\>\> \[BstScreenShooter\] process: stderr:.+/);
+        if (match !== null) {
+            errorModelCodes.push(currentWorkingCode);
+        }
+    });
+    self.grunt.log.writeln(self.util.printJson(errorModelCodes));
 };
 
 module.exports = BstScreenShooter;

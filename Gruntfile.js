@@ -127,6 +127,15 @@ module.exports = function(grunt) {
         shooter.start(part);
     };
 
+    var Task_ScreenShooter_Check = function() {
+        var Shooter = require('./src/screenshot/bst_screen_shooter.js');
+
+        this.async();
+
+        var shooter = new Shooter(grunt);
+        shooter.checkShotResult('./logs/05_shooter-grunt_2014-05-06_20-49-25.log');
+    };
+
     //-------------------------------------------------------------------------------------------
     // Tasks
     //-------------------------------------------------------------------------------------------
@@ -137,5 +146,6 @@ module.exports = function(grunt) {
     grunt.registerTask('parser_prepare', Task_MeshParser_Prepare);
     grunt.registerTask('parser_check', Task_MeshParser_Check);
     grunt.registerTask('shooter', Task_ScreenShooter);
+    grunt.registerTask('shooter_check', Task_ScreenShooter_Check);
 
 };
