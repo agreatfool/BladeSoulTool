@@ -1,3 +1,3 @@
 @echo off
 
-grunt parser_check --stack & pause > nul
+grunt parser --stack & pause > nul
