@@ -150,6 +150,17 @@ BstScreenShooter.prototype.processSingle = function(element) {
             self.util.logChildProcessStderr(data);
             // 取消之后的截图工作，因为umodel出错了，骨骼预览根本没出来
             clearTimeout(timer);
+            if (element['col'] !== 'col1') {
+                // 出错了，而且当前material并非col1，则直接将col1的图拷贝过来
+                var imgBasePath = path.join('database/costume/pics', self.part);
+                var col1ImgPath = path.join(imgBasePath, element['codeWithRace'] + '_col1.png');
+                if (self.grunt.file.exists(col1ImgPath)) {
+                    self.util.copyFile(
+                        col1ImgPath,
+                        path.join(imgBasePath, name + '.png')
+                    );
+                }
+            }
             handleBackup();
         });
         worker.on('exit', function (code) { self.util.logChildProcessExit('umodel', code); });
