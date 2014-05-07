@@ -21,6 +21,14 @@ var BstUtil = function(grunt) {
     ];
 };
 
+BstUtil.prototype.getBnsPath = function() {
+    return this.bnsPath;
+};
+
+BstUtil.prototype.getTencentPath = function() {
+    return this.tencentPath;
+};
+
 BstUtil.prototype.printHr = function() {
     this.grunt.log.writeln('-------------------------------------------------------------------------------');
 };
@@ -194,11 +202,11 @@ BstUtil.prototype.fileDownload = function(url, filepath, callback, headers) {
 
 BstUtil.prototype.findUpkPath = function(upkId, errCallback) {
     var upkName = upkId + '.upk';
-    var upkPath = path.join(this.bnsPath, upkName);
+    var upkPath = path.join(this.getBnsPath(), upkName);
 
     if (!this.grunt.file.exists(upkPath)) {
         this.grunt.log.error('[BstUtil] Upk file not found in bns dir: ' + upkPath);
-        upkPath = path.join(this.tencentPath, upkName);
+        upkPath = path.join(this.getTencentPath(), upkName);
         if (!this.grunt.file.exists(upkPath)) {
             this.grunt.log.error('[BstUtil] Upk file not found in tencent dir: ' + upkPath);
             if (typeof errCallback === 'function') {
