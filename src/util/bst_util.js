@@ -153,9 +153,9 @@ BstUtil.prototype.backupFile = function(originPath) { // 这里的path是需要�
     if (this.grunt.file.exists(originPath) // 备份的原始文件存在
         && !this.grunt.file.exists(backupPath)) { // 目标备份文件不存在
         this.copyFile(originPath, backupPath);
-        this.grunt.log.writeln('[BstUtil] Backup file generated, FROM: ' +
-            originPath + ', TO: ' + backupPath);
+        this.grunt.log.writeln('[BstUtil] Backup file generated: ' + backupPath);
     }
+    return backupPath; // 用来保存到backup.json，或者马上恢复文件
 };
 
 BstUtil.prototype.restoreFile = function(backupPath) { // 这里的path是带后缀名的已备份文件
@@ -165,8 +165,7 @@ BstUtil.prototype.restoreFile = function(backupPath) { // 这里的path是带后
     var originPath = path.join(dir, originName);
     if (this.grunt.file.exists(backupPath)) { // 备份文件存在
         this.copyFile(backupPath, originPath);
-        this.grunt.log.writeln('[BstUtil] Backup file restored, FROM: ' +
-            backupPath + ', TO: ' + originPath);
+        this.grunt.log.writeln('[BstUtil] Original file restored: ' + originPath);
     }
 };
 

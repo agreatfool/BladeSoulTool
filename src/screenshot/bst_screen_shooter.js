@@ -118,14 +118,13 @@ BstScreenShooter.prototype.processSingle = function(element) {
     }
 
     var hasBackupToRestore = false;
-    var backupPath = path.join(path.dirname(skeletonPath), element['skeleton'] + '.upk.bak');
+    var backupPath = null;
 
     // 修改skeleton骨骼upk里的值，调整成非默认配色
     var handleUpk = function() {
         hasBackupToRestore = true;
         // 备份源文件
-        self.util.copyFile(skeletonPath, backupPath);
-        self.grunt.log.writeln('[BstScreenShooter] Backup file generated: ' + backupPath);
+        backupPath = self.util.backupFile(skeletonPath);
         self.util.readHexFile(skeletonPath, function(data, path) {
             // 将col1的配色upk名 替换成 非col1的配色upk名
             data = self.util.replaceStrAll(data, self.util.strUtf8ToHex(element['col1Material']), self.util.strUtf8ToHex(element['material']));
@@ -217,7 +216,7 @@ BstScreenShooter.prototype.processSingle = function(element) {
     var handleBackup = function() {
         if (hasBackupToRestore) {
             // 恢复文件
-            self.util.copyFile(backupPath, skeletonPath);
+            self.util.restoreFile(backupPath);
             // 删除旧的备份文件
             // FIXME 之后应该需要一个统一删除备份文件的处理函数
 //            var gruntCwd = process.cwd();
