@@ -4,10 +4,7 @@
             <div>
                 <span class="pull-left" style="font-size: 18px; line-height: 34px;">选择种族：</span>
                 <span class="pull-left" style="line-height: 34px;">
-                    <select style="width: 150px; font-size: 18px;"
-                        ng-model="raceSelected"
-                        ng-change="changeRace()"
-                    >
+                    <select ng-model="raceSelected" ng-change="changeRace()" style="width: 150px; font-size: 18px;">
                         <option ng-repeat="race in races">{{ race }}</option>
                     </select>
                 </span>
@@ -19,16 +16,10 @@
             <div style="margin-top: 10px;">
                 <span class="pull-left" style="font-size: 18px; line-height: 34px;">目标模型：</span>
                 <span class="pull-left" style="width: 200px; font-size: 18px; line-height: 34px;">{{ selectedModel }}</span>
-                <button
-                    ng-disabled="selectedModel == null"
-                    ng-click="replaceModel()"
-                    class="btn btn-primary pull-left"
-                >替换</button>
-                <button
-                    style="margin-left: 10px;"
-                    ng-click="restoreModel()"
-                    class="btn btn-primary pull-left"
-                >恢复</button>
+                <button ng-disabled="selectedModel == null" ng-click="replaceModel()"
+                    class="btn btn-primary pull-left">替换</button>
+                <button ng-click="restoreModel()" class="btn btn-primary pull-left"
+                    style="margin-left: 10px;">恢复</button>
             </div>
         </div>
     </div>
@@ -44,12 +35,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-cloak
-                        ng-repeat="(key, data) in displayData"
-                        ng-click="selectTableLine(key)"
-                        ng-class="{highlight: selectedModel == key}"
-                        style="cursor: pointer;"
-                    >
+                    <tr ng-cloak ng-repeat="(key, data) in displayData" ng-click="selectTableLine(key)"
+                        ng-class="{highlight: selectedModel == key}" style="cursor: pointer;">
                         <td ng-show="data.pic" style="width: 90px;">
                             <img src="database/crawler/pics/body/{{ data.pic }}" />
                         </td>
@@ -72,8 +59,17 @@
     </div>
 </div>
 
-<div class="col-md-6">
-    <div class="list-group titled-list-group">
-        <span class="list-group-item">功能模块</span>
+<div class="col-md-6" ng-show="selectedModel !== null">
+    <div class="affix" style="min-width:20%;top:65px;">
+        <div>短码：{{ selectedModel }}</div>
+        <div style="margin-top: 5px;">
+            <img src="database/costume/pics/body/{{ selectedModel }}.png">
+        </div>
+        <div style="margin-top: 5px;">
+            <button ng-click="replaceModel()"
+                class="btn btn-primary pull-left">替换</button>
+            <button ng-click="restoreModel()" class="btn btn-primary pull-left"
+                style="margin-left: 10px;">恢复</button>
+        </div>
     </div>
 </div>
