@@ -143,7 +143,7 @@ BstCrawler.prototype.start = function(part) {
             clearInterval(listTimer);
             self.util.writeFile(
                 './database/crawler/' + self.part + '/list.json', // 使用grunt的write API，所以需要相对于Gruntfile.js的路径
-                JSON.stringify(self.collectdLinks[self.part], null, 4)
+                self.util.formatJson(self.collectdLinks[self.part])
             );
             self.util.printHr();
             self.grunt.log.writeln('[BstCrawler] All list pages done, status:');
@@ -179,7 +179,7 @@ BstCrawler.prototype.start = function(part) {
                 clearInterval(detailProgressTimer);
                 self.util.writeFile(
                     './database/crawler/' + self.part + '/data.json', // 使用grunt的write API，所以需要相对于Gruntfile.js的路径
-                    JSON.stringify(self.collectedData[self.part], null, 4)
+                    self.util.formatJson(self.collectedData[self.part])
                 );
                 self.util.printHr();
                 self.grunt.log.writeln('[BstCrawler] All detail pages done, status:');

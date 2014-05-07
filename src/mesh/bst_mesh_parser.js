@@ -160,7 +160,7 @@ BstMeshParser.prototype.processBody = function() {
             var dataFilePath = './database/costume/' + self.part + '/data.json'; // 使用grunt的write API，所以需要相对于Gruntfile.js的路径
             self.util.printHr();
             self.grunt.log.writeln('[BstMeshParser] All parsing done, start to save file: ' + dataFilePath);
-            self.util.writeFile(dataFilePath, JSON.stringify(self.tmpData, null, 4));
+            self.util.writeFile(dataFilePath, self.util.formatJson(self.tmpData));
             self.util.printHr();
             self.grunt.log.writeln('[BstMeshParser] All "' + self.part + '" mesh xml parsed.');
         }

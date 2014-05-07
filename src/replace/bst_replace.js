@@ -69,10 +69,10 @@ BstReplace.prototype.processBody = function() {
 
     // 读取目标模型配置
     var element = self.data[self.modelId];
-    self.grunt.log.writeln('[BstReplace] Target conf read: ' + JSON.stringify(element));
+    self.grunt.log.writeln('[BstReplace] Target conf read: ' + self.util.formatJson(element));
     // 读取基本模型配置
     var base = self.base[element['race']];
-    self.grunt.log.writeln('[BstReplace] Base conf read: ' + JSON.stringify(base));
+    self.grunt.log.writeln('[BstReplace] Base conf read: ' + self.util.formatJson(base));
 
     // 准备upk路径，并验证存在
     var paths = {
@@ -89,7 +89,7 @@ BstReplace.prototype.processBody = function() {
             self.grunt.fail.fatal('[BstReplace] Target upk not found: ' + base[checkKey] + '.upk');
         }
     }
-    self.grunt.log.writeln('[BstReplace] Base upk path found: ' + JSON.stringify(paths));
+    self.grunt.log.writeln('[BstReplace] Base upk path found: ' + self.util.formatJson(paths));
 
     // 拷贝目标upk到working路径下
     _.each(paths, function(copyPath, copyKey) {

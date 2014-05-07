@@ -157,8 +157,12 @@ BstUtil.prototype.startToListenAsyncList = function(callback) {
     }, 50);
 };
 
+BstUtil.prototype.formatJson = function(json) {
+    return JSON.stringify(json, null, 4);
+};
+
 BstUtil.prototype.printJson = function(json) {
-    console.log(JSON.stringify(json, null, 4));
+    console.log(this.formatJson(json));
 };
 
 BstUtil.prototype.fileDownload = function(url, filepath, callback, headers) {
