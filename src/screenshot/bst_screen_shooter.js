@@ -8,11 +8,15 @@ var _ = require('underscore');
 /**
  * @type {BstUtil|exports}
  */
-var Util = require('../util/bst_util.js');
+var BstUtil = require('../util/bst_util.js');
+/**
+ * @type {BstConst|exports}
+ */
+var BstConst = require('../const/bst_const.js');
 
 var BstScreenShooter = function(grunt) {
     this.grunt  = grunt;
-    this.util   = new Util(grunt);
+    this.util   = new BstUtil(grunt);
 
     this.conf = this.util.readJsonFile('./config/setting.json');
     this.tencentPath = path.join(this.conf['path']['game'], this.conf['path']['tencent']);
@@ -30,13 +34,9 @@ var BstScreenShooter = function(grunt) {
     this.statusIsWorking = false; // 因为需要截图，必须单进程，这里存储是否在工作的状态
 };
 
-BstScreenShooter.PART_BODY = 'body';
-BstScreenShooter.PART_FACE = 'face';
-BstScreenShooter.PART_HAIR = 'hair';
-
 BstScreenShooter.prototype.start = function(part) {
     this.util.printHr();
-    if ([BstScreenShooter.PART_BODY, BstScreenShooter.PART_FACE, BstScreenShooter.PART_HAIR].indexOf(part) === -1) {
+    if ([BstConst.PART_BODY, BstConst.PART_FACE, BstConst.PART_HAIR].indexOf(part) === -1) {
         this.grunt.fail.fatal('[BstScreenShooter] Invalid start part specified: ' + part);
     }
     this.grunt.log.writeln('[BstScreenShooter] Start to take screenshot of part: ' + part);
@@ -50,13 +50,13 @@ BstScreenShooter.prototype.start = function(part) {
 BstScreenShooter.prototype.process = function() {
     var rawData = this.util.readJsonFile('./database/costume/' + this.part + '/data.json');
     switch (this.part) {
-        case BstScreenShooter.PART_BODY:
+        case BstConst.PART_BODY:
             this.processBody(rawData);
             break;
-        case BstScreenShooter.PART_FACE:
+        case BstConst.PART_FACE:
             this.processFace(rawData);
             break;
-        case BstScreenShooter.PART_HAIR:
+        case BstConst.PART_HAIR:
             this.processHair(rawData);
             break;
         default:

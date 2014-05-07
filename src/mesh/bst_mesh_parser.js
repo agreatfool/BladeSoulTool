@@ -7,11 +7,15 @@ var _ = require('underscore');
 /**
  * @type {BstUtil|exports}
  */
-var Util = require('../util/bst_util.js');
+var BstUtil = require('../util/bst_util.js');
+/**
+ * @type {BstConst|exports}
+ */
+var BstConst = require('../const/bst_const.js');
 
 var BstMeshParser = function(grunt) {
     this.grunt  = grunt;
-    this.util   = new Util(grunt);
+    this.util   = new BstUtil(grunt);
     this.parser = new xml2js.Parser();
 
     this.conf = this.util.readJsonFile('./config/setting.json');
@@ -28,6 +32,24 @@ var BstMeshParser = function(grunt) {
     this.hair = null; // 过滤出所有 type-mesh 是 hair-mesh 的数据
 
     this.crawledData = null; // 从17173站点上爬取到的数据，根据当前的part不同，可能从不同的文件读入
+    /**
+     * 格式：
+     * "65029_LynM_col1": {
+     *     "skeleton": "00015031",
+     *     "texture": "00015029",
+     *     "material": "00015030",
+     *     "col1Material": "00015030",
+     *     "col": "col1",
+     *     "codeWithRace": "65029_LynM",
+     *     "code": "65029",
+     *     "race": "LynM",
+     *     "name": "风客",
+     *     "pic": "costume_65029_JinM_col1.png",
+     *     "piclink": "http://i1.17173cdn.com/z6po4a/YWxqaGBf/images/data/fashion/big/Costume_65029_JinM_Col1.png",
+     *     "link": "http://cha.17173.com/bns/fashion/910270.html"
+     * },
+     * ...
+     */
     this.tmpData = { // 正在处理收集的数据
         "KunN": {},
         "JinF": {},
@@ -42,26 +64,13 @@ var BstMeshParser = function(grunt) {
     this.statusFinishedCount = 0; // 完成的工作计数
 };
 
-BstMeshParser.PART_BODY = 'body'; // body-mesh
-BstMeshParser.PART_FACE = 'face'; // accessory-mesh FIXME 是这么分类的么？ accessory-mesh 应该是 attach 配件的意思
-BstMeshParser.PART_HAIR = 'hair'; // hair-mesh
-
-BstMeshParser.RACE_GON   = '곤';
-BstMeshParser.RACE_KUN   = '건';
-BstMeshParser.RACE_JIN   = '진';
-BstMeshParser.RACE_LYN   = '린';
 BstMeshParser.RACE_VALID = ['곤', '건', '진', '린'];
-BstMeshParser.RACE_NONE  = 'race-none';
-
-BstMeshParser.GENDER_M = '남';
-BstMeshParser.GENDER_F = '여';
 
 BstMeshParser.MESH_NAME = 'charactertoolappearance_mesh.xml';
 
-
 BstMeshParser.prototype.start = function(part) {
     this.util.printHr();
-    if ([BstMeshParser.PART_BODY, BstMeshParser.PART_FACE, BstMeshParser.PART_HAIR].indexOf(part) === -1) {
+    if ([BstConst.PART_BODY, BstConst.PART_FACE, BstConst.PART_HAIR].indexOf(part) === -1) {
         this.grunt.fail.fatal('[BstMeshParser] Invalid start part specified: ' + part);
     }
     this.grunt.log.writeln('[BstMeshParser] Start to parse mesh xml of part: ' + part);
@@ -115,13 +124,13 @@ BstMeshParser.prototype.dedat = function() {
 
 BstMeshParser.prototype.process = function() {
     switch (this.part) {
-        case BstMeshParser.PART_BODY:
+        case BstConst.PART_BODY:
             this.processBody();
             break;
-        case BstMeshParser.PART_FACE:
+        case BstConst.PART_FACE:
             this.processFace();
             break;
-        case BstMeshParser.PART_HAIR:
+        case BstConst.PART_HAIR:
             this.processHair();
             break;
         default:
@@ -426,7 +435,7 @@ BstMeshParser.prototype.dataPrepare = function() {
 
 BstMeshParser.prototype.dataCheck = function(part) {
     this.util.printHr();
-    if ([BstMeshParser.PART_BODY, BstMeshParser.PART_FACE, BstMeshParser.PART_HAIR].indexOf(part) === -1) {
+    if ([BstConst.PART_BODY, BstConst.PART_FACE, BstConst.PART_HAIR].indexOf(part) === -1) {
         this.grunt.fail.fatal('[BstMeshParser] Invalid check part specified: ' + part);
     }
     this.grunt.log.writeln('[BstMeshParser] Start to check data keys of part: ' + part);

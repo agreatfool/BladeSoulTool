@@ -7,7 +7,11 @@ var _ = require('underscore');
 /**
  * @type {BstUtil|exports}
  */
-var Util = require('../util/bst_util.js');
+var BstUtil = require('../util/bst_util.js');
+/**
+ * @type {BstConst|exports}
+ */
+var BstConst = require('../const/bst_const.js');
 
 /**
  * 检查爬取的数据，你会发现data.json会比list.json少几个项。照理来说这两者应该是数量一致的。
@@ -38,15 +42,15 @@ var BstCrawler = function(grunt) {
     // 准备工具
     /** @type {grunt} */
     this.grunt = grunt;
-    this.util = new Util(grunt);
+    this.util = new BstUtil(grunt);
 
     // 读取配置
     var confPath = './config/crawler/crawler.json'; // 使用grunt读取的文件，位置必须相对于Gruntfile.js
     this.util.checkFileExists(confPath);
     this.conf = this.grunt.file.readJSON(confPath);
 
-    // 设置状态
     this.part = null; // 当前在爬取的数据是哪个部分的：body、face、hair
+
     // 列表页状态
     this.statusMaxListEdge = -1; // 列表页面的最后一页是第几页，初始时未知，赋值为-1
     this.statusMaxWorkingListPageNum = 1; // 已开始爬取的所有列表页中页面number的最大值，初始是1，因为总是从第一页开始爬的
@@ -99,10 +103,6 @@ var BstCrawler = function(grunt) {
     };
 };
 
-BstCrawler.PART_BODY = 'body';
-BstCrawler.PART_FACE = 'face';
-BstCrawler.PART_HAIR = 'hair';
-
 BstCrawler.WORKING_TYPE_LIST   = 'list';
 BstCrawler.WORKING_TYPE_DETAIL = 'detail';
 
@@ -110,7 +110,7 @@ BstCrawler.DB_ROOT_OF_17173 = 'http://cha.17173.com';
 
 BstCrawler.prototype.start = function(part) {
     this.util.printHr();
-    if ([BstCrawler.PART_BODY, BstCrawler.PART_FACE, BstCrawler.PART_HAIR].indexOf(part) === -1) {
+    if ([BstConst.PART_BODY, BstConst.PART_FACE, BstConst.PART_HAIR].indexOf(part) === -1) {
         this.grunt.fail.fatal('[BstCrawler] Invalid start part specified: ' + part);
     }
     this.grunt.log.writeln('[BstCrawler] Start to crawl list pages of part: ' + part);
@@ -373,7 +373,7 @@ BstCrawler.prototype.finishDetailPageCrawl = function(url, urlName) {
 
 BstCrawler.prototype.matchCheck = function(part) {
     this.util.printHr();
-    if ([BstCrawler.PART_BODY, BstCrawler.PART_FACE, BstCrawler.PART_HAIR].indexOf(part) === -1) {
+    if ([BstConst.PART_BODY, BstConst.PART_FACE, BstConst.PART_HAIR].indexOf(part) === -1) {
         this.grunt.fail.fatal('[BstCrawler] Invalid check part specified: ' + part);
     }
     this.grunt.log.writeln('[BstCrawler] Start to check data consistence of part: ' + part);
