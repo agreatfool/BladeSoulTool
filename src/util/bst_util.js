@@ -153,6 +153,8 @@ BstUtil.prototype.backupFile = function(originPath) { // 这里的path是需要�
     if (this.grunt.file.exists(originPath) // 备份的原始文件存在
         && !this.grunt.file.exists(backupPath)) { // 目标备份文件不存在
         this.copyFile(originPath, backupPath);
+        this.grunt.log.writeln('[BstUtil] Backup file generated, FROM: ' +
+            originPath + ', TO: ' + backupPath);
     }
 };
 
@@ -160,8 +162,11 @@ BstUtil.prototype.restoreFile = function(backupPath) { // 这里的path是带后
     var dir = path.dirname(backupPath);
     var backupName = path.dirname(backupPath);
     var originName = backupName.substr(0, backupName.indexOf(BstConst.BACKUP_TAIL) - 1);
+    var originPath = path.join(dir, originName);
     if (this.grunt.file.exists(backupPath)) { // 备份文件存在
-        this.copyFile(backupPath, path.join(dir, originName));
+        this.copyFile(backupPath, originPath);
+        this.grunt.log.writeln('[BstUtil] Backup file restored, FROM: ' +
+            backupPath + ', TO: ' + originPath);
     }
 };
 
