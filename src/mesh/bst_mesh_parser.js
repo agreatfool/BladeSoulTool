@@ -177,7 +177,7 @@ BstMeshParser.prototype.parseBodyElement = function(element) {
         return; // 这不是一个常规的body mesh数据，忽略它
     }
 
-    // 01. 找到skeleton的upk id
+    // 01. 找到skeleton的upk id，并预先定义好默认的texture和material字段
     var skeleton = element['$']['resource-name'].substr(0, element['$']['resource-name'].indexOf('.'));
     var texture;
     var material;
@@ -252,9 +252,38 @@ BstMeshParser.prototype.parseBodyElement = function(element) {
             }
             var match = key.match(/sub-material-name-(\d+)/);
             if (match !== null) {
+                /**
+                 * 一般来说 sub-material-name-x 字段里的内容都是工整的：00017534.col14 这样的格式
+                 * 但是也会有例外：
+                 * 00014113.Cloth_60018_JinM_col1.col11
+                 * 00019714.col1_Fur
+                 * 00010543.Col3
+                 * INTRO_PK.DochunPung_Wet_INST
+                 * 60002_GonM_col3
+                 * 这样奇怪的格式，所以这里要处理
+                 */
                 hasMultiMaterial = true;
                 var split = element['$'][key].split('.');
-                funcProcessData(split[1], split[0]);
+                var splitUpkId = null; // 解析出来的upk文件名
+                var splitCol = null; // 解析出来的col名
+
+                if (split.length < 2) {
+                    continue; // 字段个数都不对，直接退出，e.g 60002_GonM_col3
+                }
+                if (split[0].match(/\d+/) === null) {
+                    continue; // 第一段理论上应该是upk id，如果不是，也不正常，退出，e.g INTRO_PK.DochunPung_Wet_INST
+                } else {
+                    splitUpkId = split[0];
+                }
+                if (split.length > 2) { // 如果字段个数多于2，则选取最后一个作为col，e.g 00014113.Cloth_60018_JinM_col1.col11
+                    splitCol = split[split.length - 1];
+                }
+                if (splitCol.match(/col\d+$|Col\d+$/) === null) {
+                    continue; // 如果col不是：col数字 或 Col数字 的格式的话，退出，e.g 00019714.col1_Fur
+                }
+                splitCol.lcfist(); // 将可能的大写首字母转为小写，e.g 00010543.Col3
+
+                funcProcessData(splitCol, splitUpkId);
             }
         }
         if (!hasMultiMaterial) { // 表示当前服装为单色，给默认配置
