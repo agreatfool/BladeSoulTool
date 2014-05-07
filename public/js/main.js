@@ -65,10 +65,7 @@ function ($scope, $routeSegment, service) {
     $scope.segment = $routeSegment;
 
     var bodyData = {}; // database/costume/body/data.json
-    var racesDisplay = {
-        "KunN": "天女", "JinF": "人女", "JinM": "人男",
-        "GonF": "龙女", "GonM": "龙男", "LynF": "灵女", "LynM": "灵男"
-    };
+    var racesDisplay = service.getRaceDisplay();
     $scope.races = []; // 所有的种族名称：['KunN', 'JinF', ...]
     $scope.raceSelected = null; // 选中的种族
     $scope.raceDisplay = null; // 选中的种族的展示名
@@ -133,6 +130,15 @@ var services = angular.module("BstApp.Services", []);
 // BstService
 services.factory("BstService", ["$http", "$q", function($http, $q) {
 
+    var racesDisplay = {
+        "KunN": "天女", "JinF": "人女", "JinM": "人男",
+        "GonF": "龙女", "GonM": "龙男", "LynF": "灵女", "LynM": "灵男"
+    };
+
+    var getRaceDisplay = function() {
+        return racesDisplay;
+    };
+
     var bodyData = {};
 
     var loadBodyData = function() {
@@ -156,11 +162,13 @@ services.factory("BstService", ["$http", "$q", function($http, $q) {
         var deferred = $q.defer();
         $http({
             method: "GET",
-            url: 'http://127.0.0.1:35642/body/replace/' + modelId,
+            url: '/body/replace/' + modelId,
             headers: {"Content-type": "application/x-www-form-urlencoded"}
         }).success(function(data) {
+            msgBox.showMessageBox("请求完成");
             deferred.resolve(data);
         }).error(function() {
+            msgBox.showMessageBox("请求失败", "alert-danger");
             deferred.reject();
         });
         return spin.run(deferred.promise);
@@ -170,17 +178,20 @@ services.factory("BstService", ["$http", "$q", function($http, $q) {
         var deferred = $q.defer();
         $http({
             method: "GET",
-            url: 'http://127.0.0.1:35642/body/restore',
+            url: '/body/restore',
             headers: {"Content-type": "application/x-www-form-urlencoded"}
         }).success(function(data) {
+            msgBox.showMessageBox("请求完成");
             deferred.resolve(data);
         }).error(function() {
+            msgBox.showMessageBox("请求失败", "alert-danger");
             deferred.reject();
         });
         return spin.run(deferred.promise);
     };
 
     return {
+        "getRaceDisplay": getRaceDisplay,
         "loadBodyData": loadBodyData,
         "getBodyData": getBodyData,
         "replaceBodyModel": replaceBodyModel,
