@@ -444,7 +444,7 @@ BstMeshParser.prototype.dataCheck = function(part) {
     var data = self.util.readJsonFile('./database/costume/' + this.part + '/data.json');
     _.each(data, function(raceData) { // 种族键值，这一层直接循环过掉
         _.each(raceData, function(element) { // 具体的数据键值和数据内容
-            var hasInvalidKey = self.util.meshDataCheck(element);
+            var hasInvalidKey = self.util.meshDataKeyCheck(element);
             if (hasInvalidKey) {
                 self.util.printHr();
             }

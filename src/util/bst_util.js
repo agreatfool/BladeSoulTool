@@ -221,7 +221,7 @@ BstUtil.prototype.formatRawCode = function(rawCode) {
         replace(new RegExp('lynm', 'i'), 'LynM');
 };
 
-BstUtil.prototype.meshDataCheck = function(element) {
+BstUtil.prototype.meshDataKeyCheck = function(element) {
     var self = this;
 
     var hasInvalidKey = false;

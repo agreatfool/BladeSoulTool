@@ -104,7 +104,7 @@ BstScreenShooter.prototype.processSingle = function(element) {
     self.grunt.log.writeln('[BstScreenShooter] Start to process: ' + name);
 
     // 确保当前元素的格式是规范的
-    if (self.util.meshDataCheck(element)) { // true返回表示有异常键值
+    if (self.util.meshDataKeyCheck(element)) { // true返回表示有异常键值
         self.finishSingle(name); // 格式不规范，停止执行
         return;
     }
