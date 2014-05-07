@@ -5,6 +5,11 @@ var path = require('path');
 var request = require('request');
 var _ = require('underscore');
 
+/**
+ * @type {BstConst|exports}
+ */
+var BstConst = require('../const/bst_const.js');
+
 var BstUtil = function(grunt) {
     /** @type {grunt} */
     this.grunt = grunt;
@@ -138,6 +143,25 @@ BstUtil.prototype.registerAsyncEvent = function(eventName) {
     if (this.asyncList.indexOf(eventName) === -1) {
         this.grunt.log.writeln('[BstUtil] Async event registered: ' + eventName);
         this.asyncList.push(eventName);
+    }
+};
+
+BstUtil.prototype.backupFile = function(originPath) { // 这里的path是需要备份的原始文件
+    var dir = path.dirname(originPath);
+    var backupName = path.basename(originPath) + BstConst.BACKUP_TAIL;
+    var backupPath = path.join(dir, backupName);
+    if (this.grunt.file.exists(originPath) // 备份的原始文件存在
+        && !this.grunt.file.exists(backupPath)) { // 目标备份文件不存在
+        this.copyFile(originPath, backupPath);
+    }
+};
+
+BstUtil.prototype.restoreFile = function(backupPath) { // 这里的path是带后缀名的已备份文件
+    var dir = path.dirname(backupPath);
+    var backupName = path.dirname(backupPath);
+    var originName = backupName.substr(0, backupName.indexOf(BstConst.BACKUP_TAIL) - 1);
+    if (this.grunt.file.exists(backupPath)) { // 备份文件存在
+        this.copyFile(backupPath, path.join(dir, originName));
     }
 };
 
