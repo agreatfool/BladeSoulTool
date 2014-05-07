@@ -9,7 +9,7 @@ var BstUtil = function(grunt) {
     /** @type {grunt} */
     this.grunt = grunt;
 
-    this.conf = this.readJsonFile('../../config/setting.json');
+    this.conf = this.readJsonFile('./config/setting.json');
     this.tencentPath = path.join(this.conf['path']['game'], this.conf['path']['tencent']);
     this.bnsPath = path.join(this.conf['path']['game'], this.conf['path']['bns']);
 
