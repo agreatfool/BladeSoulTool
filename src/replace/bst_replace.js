@@ -16,9 +16,7 @@ var BstReplace = function(grunt) {
     this.grunt = grunt;
     this.util = new BstUtil(grunt);
 
-    this.conf = this.util.readJsonFile('./config/setting.json');
-    this.tencentPath = path.join(this.conf['path']['game'], this.conf['path']['tencent']);
-    this.bnsPath = path.join(this.conf['path']['game'], this.conf['path']['bns']);
+    this.backup = this.util.readJsonFile('./config/backup.json');
 
     this.part = null; // 当前替换的是哪个部分的模型：body、face、hair
 
@@ -117,7 +115,7 @@ BstReplace.prototype.processBody = function() {
 
     // 所有working目录下的upk内的模型名都替换完成后
     self.util.startToListenAsyncList(function() {
-        // 修改色指定文件，如果colorInputted不是col1的话
+        // 修改色指定文件，如果当前模型的col不是col1的话
         if (element['col'] !== 'col1') {
             self.util.registerAsyncEvent(paths['material']);
             self.util.readHexFile(paths['material'], function(data, colPath) {
@@ -133,39 +131,27 @@ BstReplace.prototype.processBody = function() {
         }
 
         self.util.startToListenAsyncList(function() { // 色指定文件修改完成
-            // 备份文件，如果在backup里已经有同名文件的话，则忽略（因为最早已备份肯定是未被污染的）
-            // TODO
             /**
-             * 因为目前的换装构造，只允许替换洪门道服，所以不会有额外的upk文件添加到tencent下（都被重命名为洪门道服的upk了）
-             * 所以备份的时候只要检查该种族的洪门道服有没有被备份就OK
+             * 目前的换装构造，只允许替换洪门道服。
+             * 洪门道服原本只存在bns文件夹下，而我们的换装永远是向tencent目录下放东西，
+             * 即不会有文件被覆盖，只会有文件创建到tencent目录下，
+             * 所以备份的时候只要写好backup.json配置文件就好
              */
-            for (var key in baseConf) {
-                if (!baseConf.hasOwnProperty(key)
-                    || ['Texture', 'Material', 'Skeleton'].indexOf(key) === -1) {
-                    continue;
-                }
-                var upkName = ((key === 'Material') ? baseConf[key]['col1'] : baseConf[key]) + '.upk';
-                var backupPath = path.join('backup', upkName);
-                // 洪门道服只会在bns下才有，备份的时候将其拷贝到backup下，复原的时候只要删除tencent下对应的文件就好了
-                if (!grunt.file.exists(backupPath)) {
-                    self.util.copyFile(path.join(bnsPath, upkName), backupPath);
-                } else {
-                    self.grunt.log.writeln('Backup file already exists: ' + backupPath);
-                }
-            }
-
-            // 08. 拷贝修改后的文件到tencent下，然后将working文件夹清空
-            self.grunt.log.writeln('-------------------------------------------------------------------------------');
-            self.grunt.log.writeln('08. Copy finished model resources to tencent dir & clear working dir: ');
-            self.grunt.log.writeln('-------------------------------------------------------------------------------');
+            // 拷贝修改后的文件到tencent下，同时编辑备份列表，最后将working文件夹清空
             self.grunt.file.recurse('working', function(abspath, rootdir, subdir, filename) {
                 /**
-                 * 因为只有一层文件夹结构，所以不用担心多层嵌套问题，注意要忽略 working_dir 这个占位文件
+                 * 因为只有一层文件夹结构，所以不用担心多层嵌套问题
                  */
-                if (filename === 'working_dir') { return; }
-                self.util.copyFile(abspath, path.join(localPath, filename));
+                if (filename === 'working_dir') { return; } // 忽略文件夹占位文件
+                var targetTencentPath = path.join(self.util.getTencentPath(), filename);
+                self.util.copyFile(abspath, targetTencentPath);
                 self.util.deleteFile(abspath);
+                if (self.backup['delete'].indexOf(abspath) === -1) { // 未存在于备份列表中
+                    self.backup['delete'].push(abspath);
+                }
             });
+            // 将更新过的备份列表重新写回文件
+            self.util.writeFile('./config/backup.json', self.util.formatJson(self.backup));
         });
     });
 };
