@@ -1,10 +1,23 @@
 # 后续工作列表
 ============
+## 页面功能增强
+* 在页面上的静态预览图下面的按钮最右边再添加一个按钮，点击后可以打开对应的UE Viewer，3D观察图形
+
+## 替换和恢复
+* 将express和grunt的替换和恢复功能连起来
+* 测试express的child process能不能读到grunt的stdout和stderr
+* 测试替换脚本效果
+
+## 截图
+仍旧有一部分的upk使用UE Viewer截图之后是有贴图错误的，需要找原因
 
 ## 优化
 * mesh paser 结束后output文件夹的善后
-* parser prepare要在backup文件夹里建一个json，存储拷贝过来的文件列表，后续恢复的时候有用，删除拷贝过来的local文件
-* shot的备份文件也要处理，*.bak都要删掉，此外，图片要压缩
+* parser prepare要在backup.json里存储拷贝过来的文件列表，后续恢复的时候有用，删除拷贝过来的local文件
+* shot的备份文件也要处理，*.bst_bak都要删掉，此外，图片要压缩
+
+## 测试
+* 全面测试
 
 ## 找到客户端内对于所有服装的命名的xml
 找得到的话，就可以不用再去爬17173的数据库了
@@ -15,12 +28,6 @@
 * 因为头饰修改的不是洪门道服，所以需要单独的逻辑进行处理
 * 在default task里添加头饰相关的工作逻辑（或者可以开一个单独的task）
 * 且在default task里要有手段进行辨别是否是头饰修改，还是服装修改，maybe在database配置中添加新项？
-
-## GUI：
-* 学习使用node-webkit
-* 制作GUI界面
-* 浏览所有可替换的服装列表
-* 点击可以进行替换
 
 ## 文档：
 * 在README的使用阶段，需要说明下config的setting.json下的path设置，否则一开始就跑不起来
