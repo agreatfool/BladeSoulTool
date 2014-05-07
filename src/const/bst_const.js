@@ -1,3 +1,5 @@
+"use strict";
+
 var BstConst = function() {};
 
 BstConst.PART_BODY = 'body';

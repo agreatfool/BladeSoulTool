@@ -31,6 +31,10 @@ String.prototype.lcfist = function() {
 };
 
 var moment = require('moment');
+/**
+ * @type {BstConst|exports}
+ */
+var BstConst = require('./src/const/bst_const.js');
 
 module.exports = function(grunt) {
 
@@ -51,7 +55,7 @@ module.exports = function(grunt) {
         var part = grunt.option('part');
         if (typeof part === 'undefined' || part == null || part == '') {
             grunt.log.error('[Grunt Task_Crawler] Command line option "--part" not given, use default value: "body".');
-            part = Crawler.PART_BODY;
+            part = BstConst.PART_BODY;
         }
 
         var crawler = new Crawler(grunt);
@@ -66,7 +70,7 @@ module.exports = function(grunt) {
         var part = grunt.option('part');
         if (typeof part === 'undefined' || part == null || part == '') {
             grunt.log.error('[Grunt Task_Crawler_MatchCheck] Command line option "--part" not given, use default value: "body".');
-            part = Crawler.PART_BODY;
+            part = BstConst.PART_BODY;
         }
 
         var crawler = new Crawler(grunt);
@@ -81,7 +85,7 @@ module.exports = function(grunt) {
         var part = grunt.option('part');
         if (typeof part === 'undefined' || part == null || part == '') {
             grunt.log.error('[Grunt Task_MeshParser] Command line option "--part" not given, use default value: "body-mesh".');
-            part = Parser.PART_BODY;
+            part = BstConst.PART_BODY;
         }
 
         var parser = new Parser(grunt);
@@ -105,7 +109,7 @@ module.exports = function(grunt) {
         var part = grunt.option('part');
         if (typeof part === 'undefined' || part == null || part == '') {
             grunt.log.error('[Grunt Task_MeshParser_Check] Command line option "--part" not given, use default value: "body-mesh".');
-            part = Parser.PART_BODY;
+            part = BstConst.PART_BODY;
         }
 
         var parser = new Parser(grunt);
@@ -119,8 +123,8 @@ module.exports = function(grunt) {
 
         var part = grunt.option('part');
         if (typeof part === 'undefined' || part == null || part == '') {
-            grunt.log.error('[Grunt Task_ScreenShooter] Command line option "--part" not given, use default value: "body-mesh".');
-            part = Shooter.PART_BODY;
+            grunt.log.error('[Grunt Task_ScreenShooter] Command line option "--part" not given, use default value: "body".');
+            part = BstConst.PART_BODY;
         }
 
         var shooter = new Shooter(grunt);
@@ -136,6 +140,31 @@ module.exports = function(grunt) {
         shooter.checkShotResult('./logs/05_shooter-grunt_2014-05-06_20-49-25.log');
     };
 
+    var Task_Replace = function() { // --part=body --model=:modelId
+        var Replace = require('./src/replace/bst_replace.js');
+
+        this.async();
+
+        var part = grunt.option('part');
+        if (typeof part === 'undefined' || part == null || part == '') {
+            grunt.log.error('[Grunt Task_Replace] Command line option "--part" not given, use default value: "body".');
+            part = BstConst.PART_BODY;
+        }
+        var modelId = grunt.option('model');
+
+        var replace = new Replace(grunt);
+        replace.start(part, modelId);
+    };
+
+    var Task_Restore = function() {
+        var Restore = require('./src/restore/bst_restore.js');
+
+        this.async();
+
+        var restore = new Restore(grunt);
+        restore.start();
+    };
+
     //-------------------------------------------------------------------------------------------
     // Tasks
     //-------------------------------------------------------------------------------------------
@@ -147,5 +176,7 @@ module.exports = function(grunt) {
     grunt.registerTask('parser_check', Task_MeshParser_Check);
     grunt.registerTask('shooter', Task_ScreenShooter);
     grunt.registerTask('shooter_check', Task_ScreenShooter_Check);
+    grunt.registerTask('replace', Task_Replace);
+    grunt.registerTask('restore', Task_Restore);
 
 };
