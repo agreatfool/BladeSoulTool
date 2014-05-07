@@ -103,18 +103,12 @@ BstMeshParser.prototype.dedat = function() {
     if (!this.grunt.file.exists(meshXmlPath)) { // 没有已经被解包的dat文件内容，需要现场解包
         var xmlDatPath = path.join(this.conf['path']['game'], this.conf['path']['data'], 'xml.dat');
         this.grunt.log.writeln('[BstMeshParser] Start to dedat xml.dat: ' + xmlDatPath);
-        var worker = cp.spawn('dated_from208.exe', [xmlDatPath, '--', 'output', '--', 'd'], {"cwd": './resources/dedat/'});
 
-        worker.stdout.on('data', function (data) {
-            self.grunt.log.writeln('[BstMeshParser] Dedat process: stdout: ' + data);
-        });
-        worker.stderr.on('data', function (data) {
-            if (data) {
-                self.grunt.log.error('[BstMeshParser] Dedat process: stderr: ' + data);
-            }
-        });
+        var worker = cp.spawn('dated_from208.exe', [xmlDatPath, '--', 'output', '--', 'd'], {"cwd": './resources/dedat/'});
+        worker.stdout.on('data', function (data) { self.util.logChildProcessStdout(data); });
+        worker.stderr.on('data', function (data) { self.util.logChildProcessStderr(data); });
         worker.on('exit', function (code) {
-            self.grunt.log.writeln('[BstMeshParser] Dedat process exit with code: ' + code);
+            self.util.logChildProcessExit('dedat', code);
             funcReadMeshXml();
         });
     } else {
@@ -205,16 +199,10 @@ BstMeshParser.prototype.parseBodyElement = function(element) {
             '-game=bns -out=' + path.join('output', skeleton) + ' ' + skeleton,
         {"cwd": './resources/umodel/'}
     );
-    worker.stdout.on('data', function (data) {
-        // self.grunt.log.writeln('[BstMeshParser] umodel process: stdout: ' + data); // Too many info
-    });
-    worker.stderr.on('data', function (data) {
-        if (data) {
-            self.grunt.log.error('[BstMeshParser] umodel process: stderr: ' + data);
-        }
-    });
+    worker.stdout.on('data', function (data) { self.util.logChildProcessStdout(data); });
+    worker.stderr.on('data', function (data) { self.util.logChildProcessStderr(data); });
     worker.on('exit', function (code) {
-        self.grunt.log.writeln('[BstMeshParser] umodel processing "' + skeleton + '" exit with code: ' + code);
+        self.util.logChildProcessExit('umodel', code);
         funcLoopUmodelOutput();
     });
 

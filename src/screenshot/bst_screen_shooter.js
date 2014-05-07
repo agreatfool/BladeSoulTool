@@ -120,19 +120,6 @@ BstScreenShooter.prototype.processSingle = function(element) {
     var hasBackupToRestore = false;
     var backupPath = path.join(path.dirname(skeletonPath), element['skeleton'] + '.upk.bak');
 
-    // 记录共组子进程日志信息
-    var logStdout = function(data) {
-        // self.grunt.log.writeln('[BstScreenShooter] process: stdout: ' + data); // Too many info
-    };
-    var logStderr = function(data) {
-        if (data) {
-            self.grunt.log.error('[BstScreenShooter] process: stderr: ' + data);
-        }
-    };
-    var logExit = function(task, code) {
-        self.grunt.log.writeln('[BstScreenShooter] process "' + task + '" of "' + name + '" exit with code: ' + code);
-    };
-
     // 修改skeleton骨骼upk里的值，调整成非默认配色
     var handleUpk = function() {
         hasBackupToRestore = true;
@@ -158,10 +145,15 @@ BstScreenShooter.prototype.processSingle = function(element) {
             'umodel.exe -view -meshes -path=' + path.dirname(skeletonPath) + ' -game=bns ' + element['skeleton'],
             {"cwd": './resources/umodel/'}
         );
-        worker.stdout.on('data', function (data) { logStdout(data) });
-        worker.stderr.on('data', function (data) { logStderr(data) });
-        worker.on('exit', function (code) { logExit('umodel', code); });
-        setTimeout(function() {
+        worker.stdout.on('data', function (data) { self.util.logChildProcessStdout(data); });
+        worker.stderr.on('data', function (data) {
+            self.util.logChildProcessStderr(data);
+            // 取消之后的截图工作，因为umodel出错了，骨骼预览根本没出来
+            clearTimeout(timer);
+            handleBackup();
+        });
+        worker.on('exit', function (code) { self.util.logChildProcessExit('umodel', code); });
+        var timer = setTimeout(function() {
             handleWinSize();
         }, self.shotInterval); // 间隔启动下一个工作，因为在umodel窗口打开期间，worker子进程是不会退出的，流程无法继续执行下去
     };
@@ -173,10 +165,10 @@ BstScreenShooter.prototype.processSingle = function(element) {
             'nircmd win setsize stitle "UE Viewer" ' + xPos + ' ' + yPos + ' ' + width + ' ' + height,
             {"cwd": './resources/nircmd/'}
         );
-        worker.stdout.on('data', function (data) { logStdout(data) });
-        worker.stderr.on('data', function (data) { logStderr(data) });
+        worker.stdout.on('data', function (data) { self.util.logChildProcessStdout(data); });
+        worker.stderr.on('data', function (data) { self.util.logChildProcessStderr(data); });
         worker.on('exit', function (code) {
-            logExit('nircmd win setsize', code);
+            self.util.logChildProcessExit('nircmd win setsize', code);
             handleScreenShot();
         });
     };
@@ -188,10 +180,10 @@ BstScreenShooter.prototype.processSingle = function(element) {
                 ' -o ' + '../../database/costume/pics/' + self.part + '/' + name + '.png',
             {"cwd": './resources/screenshot/'}
         );
-        worker.stdout.on('data', function (data) { logStdout(data) });
-        worker.stderr.on('data', function (data) { logStderr(data) });
+        worker.stdout.on('data', function (data) { self.util.logChildProcessStdout(data); });
+        worker.stderr.on('data', function (data) { self.util.logChildProcessStderr(data); });
         worker.on('exit', function (code) {
-            logExit('screenshot-cmd', code);
+            self.util.logChildProcessExit('screenshot-cmd', code);
             handleWinClose();
         });
     };
@@ -202,10 +194,10 @@ BstScreenShooter.prototype.processSingle = function(element) {
             'nircmd win close stitle "UE Viewer"',
             {"cwd": './resources/nircmd/'}
         );
-        worker.stdout.on('data', function (data) { logStdout(data) });
-        worker.stderr.on('data', function (data) { logStderr(data) });
+        worker.stdout.on('data', function (data) { self.util.logChildProcessStdout(data); });
+        worker.stderr.on('data', function (data) { self.util.logChildProcessStderr(data); });
         worker.on('exit', function (code) {
-            logExit('nircmd win close', code);
+            self.util.logChildProcessExit('nircmd win close', code);
             handleBackup();
         });
     };

@@ -59,6 +59,20 @@ BstUtil.prototype.mkdir = function(path) {
     }
 };
 
+BstUtil.prototype.logChildProcessStdout = function(data) {
+    // this.grunt.log.writeln('[BstUtil] process: stdout: ' + data); // Too many info
+};
+
+BstUtil.prototype.logChildProcessStderr = function(data) {
+    if (data) {
+        this.grunt.log.error('[BstUtil] process: stderr: ' + data);
+    }
+};
+
+BstUtil.prototype.logChildProcessExit = function(task, code) {
+    this.grunt.log.writeln('[BstUtil] process "' + task + '" exited with code: ' + code);
+};
+
 BstUtil.prototype.writeFile = function(path, content) {
     this.grunt.file.write(path, content);
     this.grunt.log.writeln('[BstUtil] Write file: ' + path);
