@@ -279,7 +279,7 @@ BstMeshParser.prototype.parseBodyElement = function(element) {
                 if (splitCol.match(/col\d+$|Col\d+$/) === null) {
                     continue; // 如果col不是：col数字 或 Col数字 的格式的话，退出，e.g 00019714.col1_Fur
                 }
-                splitCol.lcfist(); // 将可能的大写首字母转为小写，e.g 00010543.Col3
+                splitCol = splitCol.lcfist(); // 将可能的大写首字母转为小写，e.g 00010543.Col3
 
                 funcProcessData(splitCol, splitUpkId);
             }
