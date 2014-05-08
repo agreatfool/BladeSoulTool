@@ -2,6 +2,7 @@
 
 var path = require('path');
 var express = require('express');
+var cp = require('child_process');
 var app = express();
 
 //noinspection FunctionWithInconsistentReturnsJS
@@ -18,14 +19,33 @@ app.use('/bower_components', express.static(path.join(__dirname, '../bower_compo
 app.use('/database', express.static(path.join(__dirname, '../database')));
 
 app.get('/body/replace/:id', function(req, res) {
-    console.log(req);
-    console.log(req.param('id'));
-    res.send(200, 'replace done!');
+    cp.exec(
+        'grunt replace --part=body --model=' + req.param('id'),
+        {"cwd": '../'},
+        function (error, stdout) {
+            if (error !== null) {
+                console.log('grunt process, stdout: ' + stdout);
+                res.send(500, stdout);
+            } else {
+                res.send(200, 'done!');
+            }
+        }
+    );
 });
 
 app.get('/body/restore', function(req, res) {
-    console.log(req);
-    res.send(200, 'restore done!');
+    cp.exec(
+        'grunt restore',
+        {"cwd": '../'},
+        function (error, stdout) {
+            if (error !== null) {
+                console.log('grunt process, stdout: ' + stdout);
+                res.send(500, stdout);
+            } else {
+                res.send(200, 'done!');
+            }
+        }
+    );
 });
 
 var server = app.listen(35642, function() {

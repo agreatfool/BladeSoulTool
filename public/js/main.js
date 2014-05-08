@@ -167,8 +167,8 @@ services.factory("BstService", ["$http", "$q", function($http, $q) {
         }).success(function(data) {
             msgBox.showMessageBox("请求完成");
             deferred.resolve(data);
-        }).error(function() {
-            msgBox.showMessageBox("请求失败", "alert-danger");
+        }).error(function(data) {
+            msgBox.showMessageBox("请求失败" + (data ? ': ' + data : ''), "alert-danger");
             deferred.reject();
         });
         return spin.run(deferred.promise);
