@@ -20,9 +20,18 @@ BstRestore.prototype.start = function() {
     this.grunt.log.writeln('[BstRestore] Start to restore models');
     this.util.printHr();
 
+    this.grunt.log.writeln('[BstRestore] Backup info read: ' + this.util.formatJson(this.backup));
+
+    var backupPath = path.join(process.cwd(), 'config', 'backup.json'); // 因为后面cwd会变动，这里需要暂存
+
     // 需要先处理restore，因为delete必须要改变当前grunt运行的CWD
     this.processRestore();
     this.processDelete();
+
+    // 重置backup.json文件
+    this.util.writeFile(backupPath, this.util.formatJson({
+        'delete': [], 'restore': []
+    }));
 };
 
 BstRestore.prototype.processRestore = function() {

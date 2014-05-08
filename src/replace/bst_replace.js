@@ -65,33 +65,40 @@ BstReplace.prototype.process = function() {
 BstReplace.prototype.processBody = function() {
     var self = this;
 
+    var raceMatch = self.modelId.match(/(KunN|JinF|JinM|GonF|GonM|LynF|LynM)/);
+    if (raceMatch === null) {
+        self.grunt.fail.fatal('[BstReplace] Invalid modelId, no race info found in it: ' + self.modelId);
+    }
+    var race = raceMatch[0];
+
     // 读取目标模型配置
-    var element = self.data[self.modelId];
+    var element = self.data[race][self.modelId];
     self.grunt.log.writeln('[BstReplace] Target conf read: ' + self.util.formatJson(element));
     // 读取基本模型配置
     var base = self.base[element['race']];
     self.grunt.log.writeln('[BstReplace] Base conf read: ' + self.util.formatJson(base));
 
-    // 准备upk路径，并验证存在
+    // 准备目标模型upk路径，并验证存在
     var paths = {
-        "skeleton": self.util.findUpkPath(base['skeleton']),
-        "texture":  self.util.findUpkPath(base['texture']),
-        "material": self.util.findUpkPath(base['material'])
+        "skeleton": self.util.findUpkPath(element['skeleton']),
+        "texture":  self.util.findUpkPath(element['texture']),
+        "material": self.util.findUpkPath(element['material'])
     };
     for (var checkKey in paths) {
         if (!paths.hasOwnProperty(checkKey)) {
             continue;
         }
-        if (paths[checkKey] === null) {
-            // 如果upk没找到，直接失败，并报错给子进程，这样才能返回信息给客户端
+        if (paths[checkKey] === null) { // 如果upk没找到，直接失败，并报错给子进程，这样才能返回信息给客户端
             self.grunt.fail.fatal('[BstReplace] Target upk not found: ' + base[checkKey] + '.upk');
         }
     }
     self.grunt.log.writeln('[BstReplace] Base upk path found: ' + self.util.formatJson(paths));
 
-    // 拷贝目标upk到working路径下
+    // 拷贝目标upk到working路径下，并重命名为洪门道服的upk名
     _.each(paths, function(copyPath, copyKey) {
-        self.util.copyFile(copyPath, path.join('working', base[copyKey] + '.upk'));
+        var workingPath = path.join('working', base[copyKey] + '.upk');
+        self.util.copyFile(copyPath, workingPath);
+        paths[copyKey] = workingPath;
     });
 
     // 修改内容
@@ -107,6 +114,15 @@ BstReplace.prototype.processBody = function() {
             data = self.util.replaceStrAll(data, self.util.strUtf8ToHex(element['texture']), self.util.strUtf8ToHex(base['texture']));
             data = self.util.replaceStrAll(data, self.util.strUtf8ToHex(element['material']), self.util.strUtf8ToHex(base['material']));
             data = self.util.replaceStrAll(data, self.util.strUtf8ToHex(element['skeleton']), self.util.strUtf8ToHex(base['skeleton']));
+            // 如果是多色模型的material的话，还需要修改当前模型的col
+            var editPart = _.keys(paths.findByVal(editPath)).shift();
+            if (editPart == 'material' && 'col1' !== element['col']) {
+                data = self.util.replaceStrLast(
+                    data,
+                    self.util.strUtf8ToHex(element['col']), // 原始：替换目标模型的col
+                    self.util.strUtf8ToHex('col1') // 目标：洪门道服永远是 col1
+                );
+            }
             // 写入到working文件内
             self.util.writeHexFile(editPath, data);
             self.util.cancelAsyncEvent(editPath);
@@ -115,44 +131,27 @@ BstReplace.prototype.processBody = function() {
 
     // 所有working目录下的upk内的模型名都替换完成后
     self.util.startToListenAsyncList(function() {
-        // 修改色指定文件，如果当前模型的col不是col1的话
-        if (element['col'] !== 'col1') {
-            self.util.registerAsyncEvent(paths['material']);
-            self.util.readHexFile(paths['material'], function(data, colPath) {
-                self.util.writeHexFile(colPath, self.util.replaceStrLast(
-                    data,
-                    self.util.strUtf8ToHex(element['col']), // 原始：替换目标模型的col
-                    self.util.strUtf8ToHex('col1') // 目标：洪门道服永远是 col1
-                ));
-                self.util.cancelAsyncEvent(colPath);
-            });
-        } else {
-            self.grunt.log.writeln('[BstReplace] Default material is col1, nothing to do.');
-        }
-
-        self.util.startToListenAsyncList(function() { // 色指定文件修改完成
+        /**
+         * 目前的换装构造，只允许替换洪门道服。
+         * 洪门道服原本只存在bns文件夹下，而我们的换装永远是向tencent目录下放东西，
+         * 即不会有文件被覆盖，只会有文件创建到tencent目录下，
+         * 所以备份的时候只要写好backup.json配置文件就好
+         */
+        // 拷贝修改后的文件到tencent下，同时编辑备份列表，最后将working文件夹清空
+        self.grunt.file.recurse('working', function(abspath, rootdir, subdir, filename) {
             /**
-             * 目前的换装构造，只允许替换洪门道服。
-             * 洪门道服原本只存在bns文件夹下，而我们的换装永远是向tencent目录下放东西，
-             * 即不会有文件被覆盖，只会有文件创建到tencent目录下，
-             * 所以备份的时候只要写好backup.json配置文件就好
+             * 因为只有一层文件夹结构，所以不用担心多层嵌套问题
              */
-            // 拷贝修改后的文件到tencent下，同时编辑备份列表，最后将working文件夹清空
-            self.grunt.file.recurse('working', function(abspath, rootdir, subdir, filename) {
-                /**
-                 * 因为只有一层文件夹结构，所以不用担心多层嵌套问题
-                 */
-                if (filename === 'working_dir') { return; } // 忽略文件夹占位文件
-                var targetTencentPath = path.join(self.util.getTencentPath(), filename);
-                self.util.copyFile(abspath, targetTencentPath);
-                self.util.deleteFile(abspath);
-                if (self.backup['delete'].indexOf(abspath) === -1) { // 未存在于备份列表中
-                    self.backup['delete'].push(abspath);
-                }
-            });
-            // 将更新过的备份列表重新写回文件
-            self.util.writeFile('./config/backup.json', self.util.formatJson(self.backup));
+            if (filename === 'working_dir') { return; } // 忽略文件夹占位文件
+            var targetTencentPath = path.join(self.util.getTencentPath(), filename);
+            self.util.copyFile(abspath, targetTencentPath);
+            self.util.deleteFile(abspath);
+            if (self.backup['delete'].indexOf(targetTencentPath) === -1) { // 未存在于备份列表中
+                self.backup['delete'].push(targetTencentPath);
+            }
         });
+        // 将更新过的备份列表重新写回文件
+        self.util.writeFile('./config/backup.json', self.util.formatJson(self.backup));
     });
 };
 
