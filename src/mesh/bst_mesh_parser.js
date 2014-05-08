@@ -183,7 +183,7 @@ BstMeshParser.prototype.parseBodyElement = function(element) {
     var material;
 
     // 02. 检查skeleton upk是否存在
-    var skeletonPath = self.util.findUpkPath(element['skeleton'], function() {
+    var skeletonPath = self.util.findUpkPath(skeleton, function() {
         self.utilFinishProcessing(element['$']['alias']); // 即便文件不存在，也要将其标记为完成
     });
     if (skeletonPath === null) {
