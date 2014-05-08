@@ -30,6 +30,7 @@ String.prototype.lcfist = function() {
     return this.charAt(0).toLowerCase() + this.slice(1);
 };
 
+var path = require('path');
 var moment = require('moment');
 /**
  * @type {BstConst|exports}
@@ -39,7 +40,7 @@ var BstConst = require('./src/const/bst_const.js');
 module.exports = function(grunt) {
 
     require('logfile-grunt')(grunt, {
-        "filePath": './logs/grunt_' + moment().format('YYYY-MM-DD_HH-mm-ss') + '.log',
+        "filePath": path.join(process.cwd(), 'logs', 'grunt_' + moment().format('YYYY-MM-DD_HH-mm-ss') + '.log'),
         "clearLogFile": true
     });
 
