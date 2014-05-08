@@ -20,7 +20,7 @@ app.use('/database', express.static(path.join(__dirname, '../database')));
 
 app.get('/body/replace/:id', function(req, res) {
     cp.exec(
-        'grunt replace --part=body --model=' + req.param('id'),
+        'grunt replace --part=body --model=' + req.param('id') + ' --stack',
         {"cwd": '../'},
         function (error, stdout) {
             if (error !== null) {
@@ -35,7 +35,7 @@ app.get('/body/replace/:id', function(req, res) {
 
 app.get('/body/restore', function(req, res) {
     cp.exec(
-        'grunt restore',
+        'grunt restore --stack',
         {"cwd": '../'},
         function (error, stdout) {
             if (error !== null) {
