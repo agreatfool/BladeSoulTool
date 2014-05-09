@@ -160,7 +160,7 @@ BstUtil.prototype.backupFile = function(originPath) { // 这里的path是需要�
 
 BstUtil.prototype.restoreFile = function(backupPath) { // 这里的path是带后缀名的已备份文件
     var dir = path.dirname(backupPath);
-    var backupName = path.dirname(backupPath);
+    var backupName = path.basename(backupPath);
     var originName = backupName.substr(0, backupName.indexOf(BstConst.BACKUP_TAIL) - 1);
     var originPath = path.join(dir, originName);
     if (this.grunt.file.exists(backupPath)) { // 备份文件存在
