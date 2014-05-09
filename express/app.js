@@ -49,5 +49,5 @@ app.get('/body/restore', function(req, res) {
 });
 
 var server = app.listen(35642, function() {
-    console.log('Listening on port %d', server.address().port);
+    console.log('BladeSoulTool server started on port %d ...', server.address().port);
 });

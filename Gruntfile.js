@@ -44,15 +44,6 @@ module.exports = function(grunt) {
         "clearLogFile": true
     });
 
-    grunt.initConfig({
-        open: {
-            dev: {
-                path: 'http://127.0.0.1:35642'
-            }
-        }
-    });
-    grunt.loadNpmTasks('grunt-open');
-
     var Task_Default = function() {
         this.async();
     };
@@ -188,7 +179,5 @@ module.exports = function(grunt) {
     grunt.registerTask('shooter_check', Task_ScreenShooter_Check);
     grunt.registerTask('replace', Task_Replace);
     grunt.registerTask('restore', Task_Restore);
-
-    grunt.registerTask('open_browser', 'open');
 
 };
