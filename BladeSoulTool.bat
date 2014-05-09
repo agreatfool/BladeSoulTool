@@ -1,3 +1,4 @@
 @echo off
 
-node express/app.js
+cd express
+node app.js
