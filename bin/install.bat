@@ -9,4 +9,4 @@ if "%NODE_FOUND%" == "" (
     echo Command node detected!
 )
 
-npm install -g grunt-cli forever & pause > nul
+npm install -g grunt-cli & pause > nul
