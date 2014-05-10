@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BladeSoulTool</title>
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" ng-controller="BstNavCtrl">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/body">BladeSoulTool</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li ng-class="{active: segment.startsWith('body')}"><a href="#/body">服装</a></li>
+                <li ng-class="{active: segment.startsWith('face')}"><a href="#/face">面饰</a></li>
+                <li ng-class="{active: segment.startsWith('hair')}"><a href="#/hair">发饰</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="system" class="container">
+    <div class="row" app-view-segment="0"></div>
+</div>
+
+<!-- footer scripts -->
+<script src="../bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+<script src="../bower_components/jquery.cookie/jquery.cookie.js" type="text/javascript"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../bower_components/moment/min/moment.min.js" type="text/javascript"></script>
+<script src="../bower_components/underscore/underscore.js" type="text/javascript"></script>
+<script src="../bower_components/spin.js/spin.js" type="text/javascript"></script>
+<script src="../bower_components/angular/angular.min.js" type="text/javascript"></script>
+<script src="../bower_components/angular-route/angular-route.min.js" type="text/javascript"></script>
+<script src="../bower_components/angular-route-segment/build/angular-route-segment.min.js" type="text/javascript"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
