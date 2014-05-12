@@ -1,15 +1,27 @@
 # BladeSoulTool
 ## 1. 效果
+* 界面：
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-x1.png)
+* 换装：
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-x2.png)
+* 提示成功：
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-x3.png)
+* 进游戏看效果：
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-x4.png)
 
-## 2. 安装
+## 2. 下载包
+* 最新的发布版本（这个版本永远是最新的）：[下载链接](https://github.com/agreatfool/BladeSoulTool/archive/master.zip)
+* 分流版本（可能滞后）：[百度网盘](http://pan.baidu.com/s/1o6obuHG)
 
-## 3. 使用
+## 3. 安装
 
-## 4. bin及工具
+## 4. 使用
 
-## 5. 理论资料
+## 5. bin及工具
 
-## 6. 问题及后续工作
+## 6. 理论资料
+
+## 7. 问题及后续工作
 
 ## 1. 写在最前面
 ### 1.1 申明
@@ -18,7 +30,7 @@
 
 ### 1.2 下载包
 * 最新的发布版本（这个版本永远是最新的）：[下载链接](https://github.com/agreatfool/BladeSoulTool/archive/master.zip)
-* 分流版本（可能滞后）：[百度网盘](http://pan.baidu.com/s/1hq63NzY)
+* 分流版本（可能滞后）：[百度网盘](http://pan.baidu.com/s/1o6obuHG)
 
 ### 1.3 效果图
 * 搞定配置：
