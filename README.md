@@ -14,8 +14,15 @@
 * 分流版本（可能滞后）：[百度网盘](http://pan.baidu.com/s/1o6obuHG)
 
 ## 3. 安装
+* 解压缩下载的压缩包
+* 安装nodejs：执行`resources/nodejs/node-v0.10.26-x*.msi`，如果你是32位操作系统，就执行`x86`，如果是64位就执行`x64`，一路默认
+* 执行安装脚本：执行`resources/nodejs/install.bat`，当窗口停止滚动，且无红色报错信息，就安装完成了
 
 ## 4. 使用
+* 执行根目录下的`BladeSoulTool.bat`，这个脚本会打开一个窗口，请不要关闭（当你不再需要换装浏览的时候就可以关掉了）
+* 打开url快捷方式`BladeSoulTool`，请尽量使用现代浏览器：Chrome、FireFox、Safari
+* 在界面上操作
+    * 这里注意：还原会还原所有被修改的内容，包括所有种族已换的衣服
 
 ## 5. bin及工具
 
