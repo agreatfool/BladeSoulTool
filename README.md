@@ -6,7 +6,7 @@
     * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-x2.png)
 * 提示成功：
     * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-x3.png)
-* 进游戏看效果：
+* 进游戏看效果（这里的截图是老的，我懒得换了，所以和上面的对不上，别在意，实际上是正确的）：
     * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-x4.png)
 
 ## 2. 下载包
