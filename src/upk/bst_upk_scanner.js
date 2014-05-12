@@ -67,7 +67,7 @@ BstUpkScanner.prototype.process = function() {
             && self.workingList.length > 0) { // 队列中仍旧有任务需要安排
             self.processSingle(self.workingList.shift());
         }
-        if (self.statusFinishedCount == self.statusTotalCount) {
+        if (self.statusFinishedCount >= self.statusTotalCount) {
             clearInterval(workingTimer);
             self.util.printHr();
             self.grunt.log.writeln('[BstUpkScanner] All works done ...');
