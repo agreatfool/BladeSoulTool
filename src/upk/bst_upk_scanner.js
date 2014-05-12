@@ -22,12 +22,17 @@ var BstUpkScanner = function(grunt) {
     this.childProcess = this.conf['scanner']['childProcess'];
     this.cycleInterval = this.conf['scanner']['cycleInterval'];
 
-    this.workingListTencent = [];
-    this.workingListBns = [];
-    this.duplicateUpkNames = [];
+    this.workingList = [];
 
+    this.gruntWorkingPath = process.cwd();
+
+    this.statusTotalCount = 0;
+    this.statusFinishedCount = 0;
     this.statusWorkingChildProcess = 0;
 };
+
+BstUpkScanner.NO_OBJ_ERROR = 'Specified package(s) has no supported objects';
+BstUpkScanner.UNKNOWN_MEMBER_ERROR = '*** unknown member';
 
 BstUpkScanner.prototype.start = function() {
     var self = this;
@@ -36,57 +41,85 @@ BstUpkScanner.prototype.start = function() {
     self.grunt.log.writeln('[BstUpkScanner] Start to scan upk files ...');
     self.util.printHr();
 
-    // 收集tencent目录下的upk文件path
-    self.grunt.file.recurse(self.util.getTencentPath(), function(abspath, rootdir, subdir, filename) {
-        if (filename.match(/\d+.upk/) !== null) {
-            self.workingListTencent.push(abspath);
-        }
-    });
-
+    /**
+     * 扫描只会扫bns目录下的upk，因为umodel无法指定两个工作目录，所以先要运行parser_prepare，
+     * 将所有不重复的upk复制到bns下，然后再开始跑scanner脚本
+     */
     // 收集bns目录下的upk文件path
     self.grunt.file.recurse(self.util.getBnsPath(), function(abspath, rootdir, subdir, filename) {
-        if (filename.match(/\d+.upk/) !== null) {
-            self.workingListBns.push(abspath);
+        if (filename.match(/\d+.upk$/) !== null) {
+            self.workingList.push(abspath);
         }
     });
 
-    // 取出所有tencent目录下upk的文件名
-    var tencentUpkFileNames = [];
-    _.each(self.workingListTencent, function(tencentUpkPath) {
-        tencentUpkFileNames.push(path.basename(tencentUpkPath));
-    });
-    // 查找重复的upk文件名
-    _.each(self.workingListBns, function(bnsUpkPath) {
-        var bnsUpkFileName = path.basename(bnsUpkPath);
-        if (tencentUpkFileNames.indexOf(bnsUpkFileName) !== -1) {
-            self.duplicateUpkNames.push(bnsUpkFileName);
-        }
-    });
-    self.grunt.log.writeln('[BstUpkScanner] Duplicated file names: ' + self.util.formatJson(self.duplicateUpkNames));
+    self.statusTotalCount = self.workingList.length;
+    self.grunt.log.writeln('[BstUpkScanner] Total upk files count: ' + self.workingList.length);
     self.util.printHr();
 
     self.process();
 };
 
 BstUpkScanner.prototype.process = function() {
+    var self = this;
 
-    if () {
-
-    }
-
+    var workingTimer = setInterval(function() {
+        if (self.statusWorkingChildProcess < self.childProcess // 有空余的进程数
+            && self.workingList.length > 0) { // 队列中仍旧有任务需要安排
+            self.processSingle(self.workingList.shift());
+        }
+        if (self.statusFinishedCount == self.statusTotalCount) {
+            clearInterval(workingTimer);
+            self.util.printHr();
+            self.grunt.log.writeln('[BstUpkScanner] All works done ...');
+        }
+    }, self.cycleInterval);
 };
 
 BstUpkScanner.prototype.processSingle = function(upkPath) {
-    this.grunt.log.writeln('[BstUpkScanner] Start to handle file ' + path.basename(upkPath));
+    var self = this;
+
+    self.startProcess(upkPath);
+
+    if (!self.grunt.file.exists(upkPath)) {
+        self.finishProcess(upkPath);
+        return;
+    }
+
+    var upkFileName = path.basename(upkPath);
+    var upkId = upkFileName.substr(0, upkFileName.indexOf('.'));
+    cp.exec(
+        'umodel.exe -dump -path=' + path.dirname(upkPath) + ' -game=bns ' + upkId,
+        {"cwd": './resources/umodel', "maxBuffer": 5*1024*1024}, // max buff 5M
+        function(error, stdout) {
+            if (error !== null) {
+                if (stdout.indexOf(BstUpkScanner.NO_OBJ_ERROR) !== -1) {
+                    // 目标upk没有可用的objects
+                    self.grunt.log.error('[BstUpkScanner] Error in scanning file: ' + upkId + ', upk has no supported objects ... ');
+                } else if (error.stack.indexOf(BstUpkScanner.UNKNOWN_MEMBER_ERROR) !== -1) {
+                    // 目标upk含有未知的成员
+                    self.grunt.log.error('[BstUpkScanner] Error in scanning file: ' + upkId + ', upk has unknown member ... ');
+                } else {
+                    // 普通的错误
+                    self.grunt.log.error('[BstUpkScanner] Error in scanning file: ' + upkId + ', error: ' + error.stack);
+                }
+                self.finishProcess(upkPath);
+            }
+            self.util.writeFile(path.join(self.gruntWorkingPath, 'database/costume/upk', upkId + '.log'), stdout.toString());
+            self.finishProcess(upkPath);
+        }
+    );
 };
 
 BstUpkScanner.prototype.startProcess = function(upkPath) {
+    this.grunt.log.writeln('[BstUpkScanner] Start to handle file ' + path.basename(upkPath));
     this.statusWorkingChildProcess++;
 };
 
 BstUpkScanner.prototype.finishProcess = function(upkPath) {
     this.statusWorkingChildProcess--;
-    this.grunt.log.writeln('[BstUpkScanner] File ' + path.basename(upkPath) + ' done ...');
+    this.statusFinishedCount++;
+    this.grunt.log.writeln('[BstUpkScanner] File ' + path.basename(upkPath) + ' done, progress: ' +
+        this.statusFinishedCount + ' / ' + this.statusTotalCount);
     this.util.printHr();
 };
 

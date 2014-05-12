@@ -141,6 +141,15 @@ module.exports = function(grunt) {
         shooter.checkShotResult('./logs/05_shooter-grunt_2014-05-06_20-49-25.log');
     };
 
+    var Task_UpkScanner = function() {
+        var Scanner = require('./src/upk/bst_upk_scanner.js');
+
+        this.async();
+
+        var scanner = new Scanner(grunt);
+        scanner.start();
+    };
+
     var Task_Replace = function() { // --part=body --model=:modelId
         var Replace = require('./src/replace/bst_replace.js');
 
@@ -177,6 +186,8 @@ module.exports = function(grunt) {
     grunt.registerTask('parser_check', Task_MeshParser_Check);
     grunt.registerTask('shooter', Task_ScreenShooter);
     grunt.registerTask('shooter_check', Task_ScreenShooter_Check);
+    grunt.registerTask('scanner', Task_UpkScanner);
+
     grunt.registerTask('replace', Task_Replace);
     grunt.registerTask('restore', Task_Restore);
 
