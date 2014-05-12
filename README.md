@@ -9,7 +9,7 @@
 * 进游戏看效果（这里的截图是老的，我懒得换了，所以和上面的对不上，别在意，实际上是正确的）：
     * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-x4.png)
 
-## 2. 下载包
+## 2. 下载
 * 最新的发布版本（这个版本永远是最新的）：[下载链接](https://github.com/agreatfool/BladeSoulTool/archive/master.zip)
 * 分流版本（可能滞后）：[百度网盘](http://pan.baidu.com/s/1o6obuHG)
 
