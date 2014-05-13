@@ -47,7 +47,7 @@ BstUpkScanner.prototype.start = function() {
      */
     // 收集bns目录下的upk文件path
     self.grunt.file.recurse(self.util.getBnsPath(), function(abspath, rootdir, subdir, filename) {
-        if (filename.match(/\d+.upk$/) !== null) {
+        if (filename.match(/^\d+.upk$/) !== null) {
             self.workingList.push(abspath);
         }
     });
