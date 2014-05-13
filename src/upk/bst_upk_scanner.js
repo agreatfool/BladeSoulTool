@@ -102,10 +102,12 @@ BstUpkScanner.prototype.processSingle = function(upkPath) {
                     // 普通的错误
                     self.grunt.log.error('[BstUpkScanner] Error in scanning file: ' + upkId + ', error: ' + error.stack);
                 }
+                self.util.writeFile(path.join(self.gruntWorkingPath, 'database/costume/upk', upkId + '.log'), stdout.toString());
+                self.finishProcess(upkPath);
+            } else {
+                self.util.writeFile(path.join(self.gruntWorkingPath, 'database/costume/upk', upkId + '.log'), stdout.toString());
                 self.finishProcess(upkPath);
             }
-            self.util.writeFile(path.join(self.gruntWorkingPath, 'database/costume/upk', upkId + '.log'), stdout.toString());
-            self.finishProcess(upkPath);
         }
     );
 };
