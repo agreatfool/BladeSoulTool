@@ -47,7 +47,7 @@ BstUpkScanner.prototype.start = function() {
      */
     // 收集bns目录下的upk文件path
     self.grunt.file.recurse(self.util.getBnsPath(), function(abspath, rootdir, subdir, filename) {
-        if (filename.match(/\d+.upk$/) !== null) {
+        if (filename.match(/^\d+.upk$/) !== null) {
             self.workingList.push(abspath);
         }
     });
@@ -102,7 +102,6 @@ BstUpkScanner.prototype.processSingle = function(upkPath) {
                     // 普通的错误
                     self.grunt.log.error('[BstUpkScanner] Error in scanning file: ' + upkId + ', error: ' + error.stack);
                 }
-                self.finishProcess(upkPath);
             }
             self.util.writeFile(path.join(self.gruntWorkingPath, 'database/costume/upk', upkId + '.log'), stdout.toString());
             self.finishProcess(upkPath);
