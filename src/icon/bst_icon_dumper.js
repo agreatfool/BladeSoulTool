@@ -34,8 +34,8 @@ var BstIconDumper = function(grunt) {
 BstIconDumper.ICON_UPK_ID = '00008758';
 
 BstIconDumper.PATH_ICON_BASE = 'database/icon';
-BstIconDumper.PATH_ICON_TGA = path.join(BstIconDumper.PATH_ICON_BASE, 'tga');
-BstIconDumper.PATH_ICON_PNG = path.join(BstIconDumper.PATH_ICON_BASE, 'png');
+BstIconDumper.PATH_ICON_TGA = path.join(process.cwd(), BstIconDumper.PATH_ICON_BASE, 'tga');
+BstIconDumper.PATH_ICON_PNG = path.join(process.cwd(), BstIconDumper.PATH_ICON_BASE, 'png');
 
 BstIconDumper.prototype.start = function() {
     var self = this;
@@ -47,7 +47,7 @@ BstIconDumper.prototype.start = function() {
     // 解包icon的upk
     self.grunt.log.writeln('[BstIconDumper] Umodel exporting ' + BstIconDumper.ICON_UPK_ID + '.upk ...');
     cp.exec('umodel.exe -export -path=' + self.util.getBnsPath() + ' -game=bns -out=output ' + BstIconDumper.ICON_UPK_ID,
-        {"cwd": './resources/umodel'},
+        {"cwd": './resources/umodel', "maxBuffer": 5 * 1024 * 1024}, // max buff 5M
         function(error) {
             if (error) {
                 self.grunt.fail.fatal('[BstIconDumper] Error in umodel exporting ' + BstIconDumper.ICON_UPK_ID + '.upk: ' + error.stack);
@@ -70,6 +70,7 @@ BstIconDumper.prototype.process = function() {
             self.util.copyFile(abspath, path.join(BstIconDumper.PATH_ICON_TGA, filename));
         }
     );
+    self.statusTotalCount = self.workingList.length;
     self.grunt.log.writeln('[BstIconDumper] Copying all tga done ...');
 
     // 开始将tga转成png，方便预览
