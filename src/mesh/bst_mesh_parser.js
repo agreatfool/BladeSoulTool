@@ -84,15 +84,14 @@ BstMeshParser.prototype.dedat = function() {
 
     // 处理mesh xml的函数，需要在确定其存在（解包完成后），才会被调用
     var funcReadMeshXml = function() {
-        self.util.readFile(meshXmlPath, function(data) {
-            self.parser.parseString(data, function(err, result) {
-                if (err) {
-                    self.grunt.fail.fatal('[BstMeshParser] Error in parsing mesh.xml: ' + err.stack);
-                }
-                self.xml = result['table']['record'];
-                self.grunt.log.writeln('[BstMeshParser] mesh.xml parsed, "' + self.xml.length + '" lines of records read.');
-                self.process();
-            });
+        var data = self.util.readFile(meshXmlPath);
+        self.parser.parseString(data, function(err, result) {
+            if (err) {
+                self.grunt.fail.fatal('[BstMeshParser] Error in parsing mesh.xml: ' + err.stack);
+            }
+            self.xml = result['table']['record'];
+            self.grunt.log.writeln('[BstMeshParser] mesh.xml parsed, "' + self.xml.length + '" lines of records read.');
+            self.process();
         });
     };
 

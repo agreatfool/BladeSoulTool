@@ -105,15 +105,10 @@ BstUtil.prototype.readJsonFile = function(path) {
     return this.grunt.file.readJSON(path);
 };
 
-BstUtil.prototype.readFile = function(path, callback) {
+BstUtil.prototype.readFile = function(path) {
     this.checkFileExists(path);
 
-    fs.readFile(path, function(err, data) {
-        if (err) {
-            self.grunt.fail.fatal('[BstUtil] Error in reading file: ' + path);
-        }
-        callback(data, path);
-    });
+    return this.grunt.file.read(path);
 };
 
 BstUtil.prototype.readHexFile = function(path, callback) {
