@@ -66,7 +66,6 @@ BstUpkScanner.prototype.process = function() {
         }
         if (self.statusFinishedCount >= self.statusTotalCount) {
             clearInterval(workingTimer);
-            self.util.printHr();
             self.grunt.log.writeln('[BstUpkScanner] All works done ...');
         }
     }, self.cycleInterval);
