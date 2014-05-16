@@ -20,6 +20,8 @@ var BstUpkParser = function(grunt) {
 
     // upk列表数据，格式皆为 { upkLogFileName : upkLogContentLineThree, ... }
     this.upkListSkeleton = {};
+    this.upkListSkeleton_body = {};
+    this.upkListSkeleton_unrecognized = {};
     this.upkListTexture = {};
     this.upkListMaterial = {};
     this.upkListUnrecognized = {}; // BstUpkParser.UPK_TYPE_* 可识别的upk类型之外的upk
@@ -50,6 +52,8 @@ BstUpkParser.prototype.start = function() {
 
     // 写入各分类的列表信息
     self.util.writeFile(path.join(BstUpkParser.PATH_UPK_DATA, 'list_skeleton.json'), self.util.formatJson(self.upkListSkeleton));
+    self.util.writeFile(path.join(BstUpkParser.PATH_UPK_DATA, 'list_skeleton_body.json'), self.util.formatJson(self.upkListSkeleton_body));
+    self.util.writeFile(path.join(BstUpkParser.PATH_UPK_DATA, 'list_skeleton_unrecognized.json'), self.util.formatJson(self.upkListSkeleton_unrecognized));
     self.util.writeFile(path.join(BstUpkParser.PATH_UPK_DATA, 'list_texture.json'), self.util.formatJson(self.upkListTexture));
     self.util.writeFile(path.join(BstUpkParser.PATH_UPK_DATA, 'list_material.json'), self.util.formatJson(self.upkListMaterial));
     self.util.writeFile(path.join(BstUpkParser.PATH_UPK_DATA, 'list_unrecognized.json'), self.util.formatJson(self.upkListUnrecognized));
@@ -74,7 +78,14 @@ BstUpkParser.prototype.process = function(filename, logPath) {
 };
 
 BstUpkParser.prototype.processSkeleton = function(filename, logPath, content) {
-
+    var category = null;
+    if (content[2].match(/\d+_(KunN|JinF|JinM|GonF|GonM|LynF|LynM)/i) !== null) {
+        category = 'body';
+        this.upkListSkeleton_body[filename] = content[2];
+    } else {
+        category = 'unrecognized';
+        this.upkListSkeleton_unrecognized[filename] = content[2];
+    }
 };
 
 BstUpkParser.prototype.processTexture = function(filename, logPath, content) {
