@@ -39,11 +39,50 @@ var BstConst = require('./src/const/bst_const.js');
 
 module.exports = function(grunt) {
 
+    //------------------------------------------------------------------------------------------------
+    //- UTILITY
+    //------------------------------------------------------------------------------------------------
+    // 拷贝文件夹
+    grunt.file.copyDir = function(src, dest, fileFilter, dirFilter) {
+        grunt.log.writeln('Copying dir from: ' + src + ', to: ' + dest);
+
+        grunt.file.recurse(src, function(abspath, rootdir, subdir, filename) {
+            if (dirFilter) {
+                for (var dfKey in dirFilter) {
+                    if (!dirFilter.hasOwnProperty(dfKey)) {
+                        continue;
+                    }
+                    if (abspath.indexOf(dirFilter[dfKey]) !== -1) {
+                        return;
+                    }
+                }
+            }
+            if (fileFilter) {
+                for (var ffKey in fileFilter) {
+                    if (!fileFilter.hasOwnProperty(ffKey)) {
+                        continue;
+                    }
+                    if (filename.indexOf(fileFilter[ffKey]) !== -1) {
+                        return;
+                    }
+                }
+            }
+
+            var targetPath = subdir ? path.join(dest, subdir, filename) : path.join(dest, filename);
+
+            grunt.file.copy(abspath, targetPath);
+        });
+    };
+
+    // 记录grunt运行日志
     require('logfile-grunt')(grunt, {
         "filePath": path.join(process.cwd(), 'logs', 'grunt_' + moment().format('YYYY-MM-DD_HH-mm-ss') + '.log'),
         "clearLogFile": true
     });
 
+    //------------------------------------------------------------------------------------------------
+    //- TASK
+    //------------------------------------------------------------------------------------------------
     var Task_Default = function() {
         this.async();
     };
@@ -141,6 +180,15 @@ module.exports = function(grunt) {
         shooter.checkShotResult('./logs/05_shooter-grunt_2014-05-06_20-49-25.log');
     };
 
+    var Task_IconDumper = function() {
+        var Dumper = require('./src/icon/bst_icon_dumper.js');
+
+        this.async();
+
+        var dumper = new Dumper(grunt);
+        dumper.start();
+    };
+
     var Task_UpkScanner = function() {
         var Scanner = require('./src/upk/bst_upk_scanner.js');
 
@@ -195,6 +243,7 @@ module.exports = function(grunt) {
     grunt.registerTask('parser_check', Task_MeshParser_Check);
     grunt.registerTask('shooter', Task_ScreenShooter);
     grunt.registerTask('shooter_check', Task_ScreenShooter_Check);
+    grunt.registerTask('icon_dumper', Task_IconDumper);
     grunt.registerTask('upk_scanner', Task_UpkScanner);
     grunt.registerTask('upk_parser', Task_UpkParser);
 
