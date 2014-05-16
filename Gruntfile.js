@@ -150,6 +150,15 @@ module.exports = function(grunt) {
         scanner.start();
     };
 
+    var Task_UpkParser = function() {
+        var Scanner = require('./src/upk/bst_upk_parser.js');
+
+        this.async();
+
+        var scanner = new Scanner(grunt);
+        scanner.start();
+    };
+
     var Task_Replace = function() { // --part=body --model=:modelId
         var Replace = require('./src/replace/bst_replace.js');
 
@@ -186,7 +195,8 @@ module.exports = function(grunt) {
     grunt.registerTask('parser_check', Task_MeshParser_Check);
     grunt.registerTask('shooter', Task_ScreenShooter);
     grunt.registerTask('shooter_check', Task_ScreenShooter_Check);
-    grunt.registerTask('scanner', Task_UpkScanner);
+    grunt.registerTask('upk_scanner', Task_UpkScanner);
+    grunt.registerTask('upk_parser', Task_UpkParser);
 
     grunt.registerTask('replace', Task_Replace);
     grunt.registerTask('restore', Task_Restore);
