@@ -22,9 +22,9 @@ var BstUpkScanner = function(grunt) {
     this.childProcess = this.conf['upk_scanner']['childProcess'];
     this.cycleInterval = this.conf['upk_scanner']['cycleInterval'];
 
-    this.workingList = [];
-
     this.gruntWorkingPath = process.cwd();
+
+    this.workingList = [];
 
     this.statusTotalCount = 0;
     this.statusFinishedCount = 0;
