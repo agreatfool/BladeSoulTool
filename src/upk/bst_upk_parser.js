@@ -42,7 +42,7 @@ BstUpkParser.prototype.start = function() {
     self.grunt.log.writeln('[BstUpkParser] Start to parse upk files ...');
     self.util.printHr();
 
-    self.grunt.file.recurse('database/costume/upk_log', function(abspath, rootdir, subdir, filename) {
+    self.grunt.file.recurse(BstUpkParser.PATH_UPK_LOG, function(abspath, rootdir, subdir, filename) {
         if (filename !== 'upk_dir') {
             self.process(filename, abspath);
         }
