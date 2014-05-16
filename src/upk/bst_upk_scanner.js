@@ -85,7 +85,7 @@ BstUpkScanner.prototype.processSingle = function(upkPath) {
     var upkId = upkFileName.substr(0, upkFileName.indexOf('.'));
     cp.exec(
         'umodel.exe -dump -path=' + path.dirname(upkPath) + ' -game=bns ' + upkId,
-        {"cwd": './resources/umodel', "maxBuffer": 5*1024*1024}, // max buff 5M
+        {"cwd": './resources/umodel', "maxBuffer": 5 * 1024 * 1024}, // max buff 5M
         function(error, stdout) {
             if (error !== null) {
                 if (stdout.indexOf(BstConst.NO_OBJ_ERROR) !== -1) {
