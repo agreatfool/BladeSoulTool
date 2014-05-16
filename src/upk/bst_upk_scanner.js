@@ -98,6 +98,7 @@ BstUpkScanner.prototype.processSingle = function(upkPath) {
                 } else if (error.stack.indexOf(BstUpkScanner.UNKNOWN_MEMBER_ERROR) !== -1) {
                     // 目标upk含有未知的成员
                     self.grunt.log.error('[BstUpkScanner] Error in scanning file: ' + upkId + ', upk has unknown member ... ');
+                    stdout += error.stack; // 将错误信息附加到stdout中，一同写入文件
                 } else {
                     // 普通的错误
                     self.grunt.log.error('[BstUpkScanner] Error in scanning file: ' + upkId + ', error: ' + error.stack);
