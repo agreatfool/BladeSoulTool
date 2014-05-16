@@ -19,7 +19,7 @@ var BstScreenShooter = function(grunt) {
     this.util   = new BstUtil(grunt);
 
     this.conf = this.util.readJsonFile('./config/setting.json');
-    this.shotInterval = this.conf['shooter']['interval'];
+    this.shotInterval = this.conf['umodel_shooter']['interval'];
 
     this.part = null; // 当前抓的是哪个部分的图：body、face、hair
 

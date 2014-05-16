@@ -19,8 +19,8 @@ var BstUpkScanner = function(grunt) {
     this.util   = new BstUtil(grunt);
 
     this.conf = this.util.readJsonFile('./config/setting.json');
-    this.childProcess = this.conf['scanner']['childProcess'];
-    this.cycleInterval = this.conf['scanner']['cycleInterval'];
+    this.childProcess = this.conf['upk_scanner']['childProcess'];
+    this.cycleInterval = this.conf['upk_scanner']['cycleInterval'];
 
     this.workingList = [];
 

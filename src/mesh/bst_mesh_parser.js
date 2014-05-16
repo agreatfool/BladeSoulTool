@@ -19,8 +19,8 @@ var BstMeshParser = function(grunt) {
     this.parser = new xml2js.Parser();
 
     this.conf = this.util.readJsonFile('./config/setting.json');
-    this.childProcess = this.conf['parser']['childProcess'];
-    this.cycleInterval = this.conf['parser']['cycleInterval'];
+    this.childProcess = this.conf['mesh_parser']['childProcess'];
+    this.cycleInterval = this.conf['mesh_parser']['cycleInterval'];
 
     this.part = null; // 当前在解析的数据是哪个部分的：body、face、hair
     this.xml  = null; // 读取出来的mesh xml的record列表：<table>[xml => <record></record>]</table>
