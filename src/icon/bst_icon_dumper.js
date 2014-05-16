@@ -34,8 +34,8 @@ var BstIconDumper = function(grunt) {
 BstIconDumper.ICON_UPK_ID = '00008758';
 
 BstIconDumper.PATH_ICON_BASE = 'database/icon';
-BstIconDumper.PATH_ICON_TGA = path.join(BstIconDumper.PATH_UPK_BASE, 'tga');
-BstIconDumper.PATH_ICON_PNG = path.join(BstIconDumper.PATH_UPK_BASE, 'png');
+BstIconDumper.PATH_ICON_TGA = path.join(BstIconDumper.PATH_ICON_BASE, 'tga');
+BstIconDumper.PATH_ICON_PNG = path.join(BstIconDumper.PATH_ICON_BASE, 'png');
 
 BstIconDumper.prototype.start = function() {
     var self = this;
