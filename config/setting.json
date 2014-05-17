@@ -23,12 +23,17 @@
     "png_optimizer": {
         "options": {
             "childProcess": 15,
-            "cycleInterval": 500
+            "cycleInterval": 300
         },
         "tasks": {
             "icon": {
                 "src": "database/icon/png",
                 "dest": "database/icon/png-cps",
+                "level": 7
+            },
+            "costume": {
+                "src": "database/costume/pics",
+                "dest": "database/costume/pics-cps",
                 "level": 7
             }
         }
