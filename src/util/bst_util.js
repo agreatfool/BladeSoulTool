@@ -57,10 +57,20 @@ BstUtil.prototype.copyFile = function(fromPath, toPath) {
     this.grunt.log.writeln('[BstUtil] Copy file FROM: ' + fromPath + ', TO: ' + toPath);
 };
 
-BstUtil.prototype.deleteDir = function(path) {
-    this.checkFileExists(path);
-    this.grunt.file.delete(path);
-    this.grunt.log.writeln('[BstUtil] Delete dir: ' + path);
+BstUtil.prototype.deleteDir = function(path, check) {
+    if (typeof check === 'undefined') {
+        check = true; // 默认会检查删除目标是否存在
+    }
+    if (check) {
+        this.checkFileExists(path);
+        this.grunt.file.delete(path);
+        this.grunt.log.writeln('[BstUtil] Delete dir: ' + path);
+    } else {
+        if (this.grunt.file.exists(path)) {
+            this.grunt.file.delete(path);
+            this.grunt.log.writeln('[BstUtil] Delete dir: ' + path);
+        }
+    }
 };
 
 BstUtil.prototype.deleteFile = function(path) {
