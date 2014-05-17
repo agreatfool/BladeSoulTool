@@ -95,9 +95,11 @@ BstIconDumper.prototype.processTgaConvert = function(tgaFileName) {
     cp.exec(
         'tga2pngcmd.exe -c ' + tgaFilePath + ' ' + BstIconDumper.PATH_ICON_PNG,
         {"cwd": './resources/tga2png'},
-        function(error) {
+        function(error, stdout) {
             if (error) {
                 self.grunt.log.error('[BstIconDumper] Error in converting tga file ' + tgaFileName + ': ' + error.stack);
+            } else if (stdout === '') {
+                self.grunt.log.error('[BstIconDumper] Error in converting tga file ' + tgaFileName + ', empty output ...');
             }
             self.finishConvert(tgaFileName);
         }
