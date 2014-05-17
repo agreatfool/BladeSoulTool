@@ -14,7 +14,7 @@ var BstUtil = require('../util/bst_util.js');
  */
 var BstConst = require('../const/bst_const.js');
 
-var BstPngOptimizer = function(grunt, Imagemin, optipng) {
+var BstPngOptimizer = function(grunt) {
     this.grunt  = grunt;
     this.util   = new BstUtil(grunt);
 
