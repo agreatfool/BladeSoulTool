@@ -29,9 +29,10 @@ Object.prototype.shift = function() {
             continue;
         }
         result = [key, this[key]];
+        delete this[key];
         break;
     }
-    return result;
+    return (result.length > 0) ? result : false;
 };
 
 String.prototype.ucfirst = function() {
