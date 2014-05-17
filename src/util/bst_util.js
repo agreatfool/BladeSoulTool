@@ -57,6 +57,12 @@ BstUtil.prototype.copyFile = function(fromPath, toPath) {
     this.grunt.log.writeln('[BstUtil] Copy file FROM: ' + fromPath + ', TO: ' + toPath);
 };
 
+BstUtil.prototype.deleteDir = function(path) {
+    this.checkFileExists(path);
+    this.grunt.file.delete(path);
+    this.grunt.log.writeln('[BstUtil] Delete dir: ' + path);
+};
+
 BstUtil.prototype.deleteFile = function(path) {
     this.checkFileExists(path);
     this.grunt.file.delete(path);

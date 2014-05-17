@@ -20,5 +20,17 @@
         "childProcess": 5,
         "cycleInterval": 1500
     },
+    "png_optimizer": {
+        "options": {
+            "childProcess": 15,
+            "cycleInterval": 500
+        },
+        "tasks": {
+            "icon": {
+                "src": "database/icon/png",
+                "dest": "database/icon/png-cps",
+                "level": 7
+            }
+        }
     }
 }

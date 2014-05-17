@@ -22,6 +22,18 @@ Object.prototype.findByVal = function(val) {
     return result;
 };
 
+Object.prototype.shift = function() {
+    var result = [];
+    for (var key in this) {
+        if (!this.hasOwnProperty(key)) {
+            continue;
+        }
+        result = [key, this[key]];
+        break;
+    }
+    return result;
+};
+
 String.prototype.ucfirst = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
 };
@@ -189,6 +201,15 @@ module.exports = function(grunt) {
         dumper.start();
     };
 
+    var Task_PngOptimizer = function() {
+        var Optimizer = require('./src/png/bst_png_optimizer.js');
+
+        this.async();
+
+        var optimizer = new Optimizer(grunt);
+        optimizer.start();
+    };
+
     var Task_UpkScanner = function() {
         var Scanner = require('./src/upk/bst_upk_scanner.js');
 
@@ -244,6 +265,7 @@ module.exports = function(grunt) {
     grunt.registerTask('shooter', Task_ScreenShooter);
     grunt.registerTask('shooter_check', Task_ScreenShooter_Check);
     grunt.registerTask('icon_dumper', Task_IconDumper);
+    grunt.registerTask('png_optimizer', Task_PngOptimizer);
     grunt.registerTask('upk_scanner', Task_UpkScanner);
     grunt.registerTask('upk_parser', Task_UpkParser);
 
