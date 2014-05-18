@@ -27,16 +27,6 @@ var BstUpkParser = function(grunt) {
     this.upkListUnrecognized = {}; // BstUpkParser.UPK_TYPE_* 可识别的upk类型之外的upk
 };
 
-BstUpkParser.PATH_UPK_BASE = 'database/upk';
-BstUpkParser.PATH_UPK_LOG = path.join(BstUpkParser.PATH_UPK_BASE, 'log');
-BstUpkParser.PATH_UPK_DATA = path.join(BstUpkParser.PATH_UPK_BASE, 'data');
-
-BstUpkParser.ENTRANCE_LINE_NO = 2; // 一般来说，log的第三行里的内容是关键信息
-
-BstUpkParser.UPK_TYPE_SKELETON = 'SkeletalMesh3';
-BstUpkParser.UPK_TYPE_TEXTURE  = 'Texture2D';
-BstUpkParser.UPK_TYPE_MATERIAL = 'MaterialInstanceConstant';
-
 BstUpkParser.prototype.start = function() {
     var self = this;
 
@@ -44,32 +34,32 @@ BstUpkParser.prototype.start = function() {
     self.grunt.log.writeln('[BstUpkParser] Start to parse upk files ...');
     self.util.printHr();
 
-    self.grunt.file.recurse(BstUpkParser.PATH_UPK_LOG, function(abspath, rootdir, subdir, filename) {
+    self.grunt.file.recurse(BstConst.PATH_UPK_LOG, function(abspath, rootdir, subdir, filename) {
         if (filename !== 'upk_dir') {
             self.process(filename, abspath);
         }
     });
 
     // 写入各分类的列表信息
-    self.util.writeFile(path.join(BstUpkParser.PATH_UPK_DATA, 'list_skeleton.json'), self.util.formatJson(self.upkListSkeleton));
-    self.util.writeFile(path.join(BstUpkParser.PATH_UPK_DATA, 'list_skeleton_body.json'), self.util.formatJson(self.upkListSkeleton_body));
-    self.util.writeFile(path.join(BstUpkParser.PATH_UPK_DATA, 'list_skeleton_unrecognized.json'), self.util.formatJson(self.upkListSkeleton_unrecognized));
-    self.util.writeFile(path.join(BstUpkParser.PATH_UPK_DATA, 'list_texture.json'), self.util.formatJson(self.upkListTexture));
-    self.util.writeFile(path.join(BstUpkParser.PATH_UPK_DATA, 'list_material.json'), self.util.formatJson(self.upkListMaterial));
-    self.util.writeFile(path.join(BstUpkParser.PATH_UPK_DATA, 'list_unrecognized.json'), self.util.formatJson(self.upkListUnrecognized));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA, 'list_skeleton.json'), self.util.formatJson(self.upkListSkeleton));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA, 'list_skeleton_body.json'), self.util.formatJson(self.upkListSkeleton_body));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA, 'list_skeleton_unrecognized.json'), self.util.formatJson(self.upkListSkeleton_unrecognized));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA, 'list_texture.json'), self.util.formatJson(self.upkListTexture));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA, 'list_material.json'), self.util.formatJson(self.upkListMaterial));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA, 'list_unrecognized.json'), self.util.formatJson(self.upkListUnrecognized));
 };
 
 BstUpkParser.prototype.process = function(filename, logPath) {
     this.grunt.log.writeln('[BstUpkParser] Start to parse upk file: ' + logPath);
     var content = this.util.readFile(logPath).toString().split("\r\n");
 
-    if (content[2].match(new RegExp(BstUpkParser.UPK_TYPE_SKELETON)) !== null) {
+    if (content[2].match(new RegExp(BstConst.UPK_TYPE_SKELETON)) !== null) {
         this.upkListSkeleton[filename] = content[2];
         this.processSkeleton(filename, logPath, content);
-    } else if (content[2].match(new RegExp(BstUpkParser.UPK_TYPE_TEXTURE)) !== null) {
+    } else if (content[2].match(new RegExp(BstConst.UPK_TYPE_TEXTURE)) !== null) {
         this.upkListTexture[filename] = content[2];
         this.processTexture(filename, logPath, content);
-    } else if (content[2].match(new RegExp(BstUpkParser.UPK_TYPE_MATERIAL)) !== null) {
+    } else if (content[2].match(new RegExp(BstConst.UPK_TYPE_MATERIAL)) !== null) {
         this.upkListMaterial[filename] = content[2];
         this.processMaterial(filename, logPath, content);
     } else {
