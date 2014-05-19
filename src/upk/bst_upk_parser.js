@@ -42,16 +42,16 @@ var BstUpkParser = function(grunt) {
 
     /**
      * {
-     *     010051: {
-     *         code: 010051,
-     *         races: [JinM, JinF, ...], // 当前code能找到的所有race信息
-     *         col: [col1, col2] // 当前code能找到的所有col信息
-     *         colIcons: {
-     *             GonM_col1: "Attach_010022_GonM_col1.png", // 有带种族信息的话，完整放入一份，然后再在colX里也放一份
-     *             GonM_col2: "Attach_010022_GonM_col2.png",
-     *             col1: ["Attach_010022_GonM_col1.png", ...],
-     *             col2: ["Attach_010022_GonM_col2.png", ...],
-     *             GonM: "Attach_010022_GonM.png" // 这张图片其实并不存在，这里仅举例
+     *     "010051": {
+     *         "code": "010051",
+     *         "races": [JinM, JinF, ...], // 当前code能找到的所有race信息
+     *         "col": ["col1", "col2"] // 当前code能找到的所有col信息
+     *         "colIcons": {
+     *             "GonM_col1": "Attach_010022_GonM_col1.png", // 有带种族信息的话，完整放入一份，然后再在colX里也放一份
+     *             "GonM_col2": "Attach_010022_GonM_col2.png",
+     *             "col1": ["Attach_010022_GonM_col1.png", ...],
+     *             "col2": ["Attach_010022_GonM_col2.png", ...],
+     *             "GonM": "Attach_010022_GonM.png" // 这张图片其实并不存在，这里仅举例
      *         } // 首先选择种族、col都符合的，其次选择符合col的、再次选择符合种族的
      *     },
      *     ...
@@ -65,13 +65,13 @@ var BstUpkParser = function(grunt) {
 
     /**
      * {
-     *    00010868: {
-     *         upkId: 00010868
-     *         code: 65045,
-     *         race: JinF,
-     *         col1Material: 00010867,
-     *         texture: 00010866,
-     *         textureObjs: [65045_JinF_N, 65045_JinF_M, 65045_JinF_D, 65045_JinF_S],
+     *    "00010868": {
+     *         "upkId": "00010868",
+     *         "code": "65045",
+     *         "race": "JinF",
+     *         "col1Material": "00010867",
+     *         "texture": "00010866",
+     *         "textureObjs": ["65045_JinF_N", "65045_JinF_M", "65045_JinF_D", "65045_JinF_S"],
      *     }, ...
      * }
      */
@@ -79,13 +79,13 @@ var BstUpkParser = function(grunt) {
 
     /**
      * {
-     *     00010866: {
-     *         upkId: 00010866,
-     *         objs: [
-     *             65045_JinF_D, 65045_JinF_M, 65045_JinF_N, 65045_JinF_S,
-     *             65045_JinF_col2_D, 65045_JinF_col2_M, 65045_JinF_col2_N, 65045_JinF_col2_S
+     *     "00010866": {
+     *         "upkId": "00010866",
+     *         "objs": [
+     *             "65045_JinF_D", "65045_JinF_M", "65045_JinF_N", "65045_JinF_S",
+     *             "65045_JinF_col2_D", "65045_JinF_col2_M", "65045_JinF_col2_N", "65045_JinF_col2_S"
      *         ],
-     *         materials: {col1: 00010867, col2: 00019801}
+     *         "materials": {"col1": "00010867", "col2": "00019801"}
      *     }, ...
      * }
      */
@@ -93,15 +93,15 @@ var BstUpkParser = function(grunt) {
 
     /**
      * {
-     *     00010867: {
-     *         upkId: 00010867,
-     *         col: col1,
-     *         objs: [65045_JinF_N, 65045_JinF_M, 65045_JinF_D, 65045_JinF_S]
+     *     "00010867": {
+     *         "upkId": "00010867",
+     *         "col": "col1",
+     *         "objs": ["65045_JinF_N", "65045_JinF_M", "65045_JinF_D", "65045_JinF_S"]
      *     },
-     *     00019801: {
-     *         upkId: 00019801,
-     *         col: col2,
-     *         objs: [65045_JinF_col2_N, 65045_JinF_col2_M, 65045_JinF_col2_D, 65045_JinF_col2_S]
+     *     "00019801": {
+     *         "upkId": "00019801",
+     *         "col": "col2",
+     *         "objs": ["65045_JinF_col2_N", "65045_JinF_col2_M", "65045_JinF_col2_D", "65045_JinF_col2_S"]
      *     }
      * }
      */
