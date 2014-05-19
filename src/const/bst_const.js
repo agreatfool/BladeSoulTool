@@ -29,7 +29,7 @@ BstConst.PATH_UPK_LOG = path.join(process.cwd(), BstConst.PATH_UPK_BASE, 'log');
 BstConst.PATH_UPK_DATA_LIST = path.join(process.cwd(), BstConst.PATH_UPK_BASE, 'data/list');
 BstConst.PATH_UPK_DATA_RAW = path.join(process.cwd(), BstConst.PATH_UPK_BASE, 'data/raw');
 
-BstConst.LIST_FILE_SKELETON_COSTUME_WITH_ATTACHMENT = 'list_skeleton_costume_with_attachmen.json';
+BstConst.LIST_FILE_SKELETON_COSTUME_WITH_ATTACHMENT = 'list_skeleton_costume_with_attachment.json';
 BstConst.LIST_FILE_SKELETON_WEAPON = 'list_skeleton_weapon.json';
 BstConst.LIST_FILE_SKELETON_HAIR = 'list_skeleton_hair.json';
 BstConst.LIST_FILE_SKELETON_UNRECOGNIZED = 'list_skeleton_unrecognized.json';

@@ -94,6 +94,23 @@ var BstUpkParser = function(grunt) {
      *     }
      * }
      *
+     * 06.根据icon滤出来的列表，搜集信息，制作database，结构：
+     * {
+     *     "65045_JinF_col1": {
+     *         "skeleton": "00010868",
+     *         "texture": "00010866",
+     *         "material": "00010867",
+     *         "col1Material": "00010867",
+     *         "col": "col1",
+     *         "codeWithRace": "65045_JinF",
+     *         "code": "65045",
+     *         "race": "JinF",
+     *         "pic": "costume_65045_JinM_col2.png",
+     *      },
+     *      ...
+     * }
+     * 武器等可能不同
+     *
      * 此外，几点怀疑：
      * skeleton里 SkeletalMesh3 JinM_029 表示的是发型
      * keletalMesh3 060041_Autoscale 表示的是武器，参考：http://dl.dropboxusercontent.com/u/18196592/plaync/bns/weapon.htm
@@ -107,7 +124,13 @@ BstUpkParser.prototype.start = function() {
     self.grunt.log.writeln('[BstUpkParser] Start to parse upk files ...');
     self.util.printHr();
 
-    self.preProcess();
+    self.preProcess(); // 准备list数据，参考：database/upk/data/list/*
+
+    self.preProcessIcon();
+    self.preProcessCostumeAndAttachment();
+    self.preProcessWeapon();
+    self.preProcessTexture();
+    self.preProcessMaterial();
 
 };
 
@@ -168,6 +191,26 @@ BstUpkParser.prototype.preProcess = function() {
     self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_TEXTURE), self.util.formatJson(upkListTexture));
     self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_MATERIAL), self.util.formatJson(upkListMaterial));
     self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_UNRECOGNIZED), self.util.formatJson(upkListUnrecognized));
+
+};
+
+BstUpkParser.prototype.preProcessIcon = function() {
+
+};
+
+BstUpkParser.prototype.preProcessCostumeAndAttachment = function() {
+
+};
+
+BstUpkParser.prototype.preProcessWeapon = function() {
+
+};
+
+BstUpkParser.prototype.preProcessTexture = function() {
+
+};
+
+BstUpkParser.prototype.preProcessMaterial = function() {
 
 };
 
