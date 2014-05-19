@@ -73,7 +73,7 @@ var BstUpkParser = function(grunt) {
      *         "texture": "00010866",
      *         "textureObjs": ["65045_JinF_N", "65045_JinF_M", "65045_JinF_D", "65045_JinF_S"],
      *     },
-      *    ...
+     *     ...
      * }
      */
     this.upkDataSkeleton = {};
