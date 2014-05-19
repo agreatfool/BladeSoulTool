@@ -41,8 +41,8 @@ var BstUpkParser = function(grunt) {
     };
 
     /**
-     * [
-     *     {
+     * {
+     *     010051: {
      *         code: 010051,
      *         races: [JinM, JinF, ...], // 当前code能找到的所有race信息
      *         col: [col1, col2] // 当前code能找到的所有col信息
@@ -55,17 +55,17 @@ var BstUpkParser = function(grunt) {
      *         } // 首先选择种族、col都符合的，其次选择符合col的、再次选择符合种族的
      *     },
      *     ...
-     * ]
+     * }
      */
     this.iconData = {
-        "costume": [],
-        "attach": [],
-        "weapon": []
+        "costume": {},
+        "attach": {},
+        "weapon": {}
     };
 
     /**
-     * [
-     *    {
+     * {
+     *    00010868: {
      *         upkId: 00010868
      *         code: 65045,
      *         race: JinF,
@@ -73,13 +73,13 @@ var BstUpkParser = function(grunt) {
      *         texture: 00010866,
      *         textureObjs: [65045_JinF_N, 65045_JinF_M, 65045_JinF_D, 65045_JinF_S],
      *     }, ...
-     * ]
+     * }
      */
     this.upkDataSkeleton = {};
 
     /**
-     * [
-     *     {
+     * {
+     *     00010866: {
      *         upkId: 00010866,
      *         objs: [
      *             65045_JinF_D, 65045_JinF_M, 65045_JinF_N, 65045_JinF_S,
@@ -87,22 +87,23 @@ var BstUpkParser = function(grunt) {
      *         ],
      *         materials: {col1: 00010867, col2: 00019801}
      *     }, ...
-     * ]
+     * }
      */
     this.upkDataTexture = {};
 
     /**
-     * [
-     *     {
+     * {
+     *     00010867: {
      *         upkId: 00010867,
      *         col: col1,
      *         objs: [65045_JinF_N, 65045_JinF_M, 65045_JinF_D, 65045_JinF_S]
-     *     }, {
+     *     },
+     *     00019801: {
      *         upkId: 00019801,
      *         col: col2,
      *         objs: [65045_JinF_col2_N, 65045_JinF_col2_M, 65045_JinF_col2_D, 65045_JinF_col2_S]
      *     }
-     * ]
+     * }
      */
     this.upkDataMaterial = {};
 
