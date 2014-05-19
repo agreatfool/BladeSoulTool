@@ -161,13 +161,13 @@ BstUpkParser.prototype.preProcess = function() {
         }
     });
 
-    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, 'list_skeleton_costume_with_attachmen.json'), self.util.formatJson(upkListSkeletonCostumeWithAttachment))
-    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, 'list_skeleton_weapon.json'), self.util.formatJson(upkListSkeletonWeapon));
-    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, 'list_skeleton_hair.json'), self.util.formatJson(upkListSkeletonHair));
-    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, 'list_skeleton_unrecognized.json'), self.util.formatJson(upkListSkeletonUnrecognized));
-    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, 'list_texture.json'), self.util.formatJson(upkListTexture));
-    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, 'list_material.json'), self.util.formatJson(upkListMaterial));
-    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, 'list_unrecognized.json'), self.util.formatJson(upkListUnrecognized));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_SKELETON_COSTUME_WITH_ATTACHMENT), self.util.formatJson(upkListSkeletonCostumeWithAttachment))
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_SKELETON_WEAPON), self.util.formatJson(upkListSkeletonWeapon));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_SKELETON_HAIR), self.util.formatJson(upkListSkeletonHair));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_SKELETON_UNRECOGNIZED), self.util.formatJson(upkListSkeletonUnrecognized));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_TEXTURE), self.util.formatJson(upkListTexture));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_MATERIAL), self.util.formatJson(upkListMaterial));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_UNRECOGNIZED), self.util.formatJson(upkListUnrecognized));
 
 };
 
