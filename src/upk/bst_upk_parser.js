@@ -19,12 +19,28 @@ var BstUpkParser = function(grunt) {
     this.util   = new BstUtil(grunt);
 
     /**
-     * 01.过滤并整理icon文件夹：
-     * 找出
-     * attach_：(头饰、面饰、身体饰品)
-     * costume_：(时装)
-     * weapon_：(武器)
-     * 开头的icon文件，组装成下述结构：
+     * {
+     *     "65045_JinF_col1": {
+     *         "skeleton": "00010868",
+     *         "texture": "00010866",
+     *         "material": "00010867",
+     *         "col1Material": "00010867",
+     *         "col": "col1",
+     *         "codeWithRace": "65045_JinF",
+     *         "code": "65045",
+     *         "race": "JinF",
+     *         "pic": "costume_65045_JinM_col2.png",
+     *      },
+     *      ...
+     * }
+     */
+    this.db = {
+        "costume": {},
+        "attach": {},
+        "weapon": {}
+    };
+
+    /**
      * [
      *     {
      *         code: 010051,
@@ -40,6 +56,62 @@ var BstUpkParser = function(grunt) {
      *     },
      *     ...
      * ]
+     */
+    this.iconData = {
+        "costume": [],
+        "attach": [],
+        "weapon": []
+    };
+
+    /**
+     * [
+     *    {
+     *         upkId: 00010868
+     *         code: 65045,
+     *         race: JinF,
+     *         col1Material: 00010867,
+     *         texture: 00010866,
+     *         textureObjs: [65045_JinF_N, 65045_JinF_M, 65045_JinF_D, 65045_JinF_S],
+     *     }, ...
+     * ]
+     */
+    this.upkDataSkeleton = {};
+
+    /**
+     * [
+     *     {
+     *         upkId: 00010866,
+     *         objs: [
+     *             65045_JinF_D, 65045_JinF_M, 65045_JinF_N, 65045_JinF_S,
+     *             65045_JinF_col2_D, 65045_JinF_col2_M, 65045_JinF_col2_N, 65045_JinF_col2_S
+     *         ],
+     *         materials: {col1: 00010867, col2: 00019801}
+     *     }, ...
+     * ]
+     */
+    this.upkDataTexture = {};
+
+    /**
+     * [
+     *     {
+     *         upkId: 00010867,
+     *         col: col1,
+     *         objs: [65045_JinF_N, 65045_JinF_M, 65045_JinF_D, 65045_JinF_S]
+     *     }, {
+     *         upkId: 00019801,
+     *         col: col2,
+     *         objs: [65045_JinF_col2_N, 65045_JinF_col2_M, 65045_JinF_col2_D, 65045_JinF_col2_S]
+     *     }
+     * ]
+     */
+    this.upkDataMaterial = {};
+
+    /**
+     * 01.过滤并整理icon文件夹：
+     * 找出
+     * attach_：(头饰、面饰、身体饰品)
+     * costume_：(时装)
+     * weapon_：(武器)
      *
      * icon里有相当多的图片，其实两张都一样的，但是背景不同，会多带一个_X的后缀，举例：
      * Costume_50004_JinF.png
@@ -55,60 +127,14 @@ var BstUpkParser = function(grunt) {
      *
      * 03.过list_skeleton.json
      * 组织成结构：
-     * {
-     *     00010868: {
-     *         upkId: 00010868
-     *         code: 65045,
-     *         race: JinF,
-     *         col1Material: 00010867,
-     *         texture: 00010866,
-     *         textureObjs: [65045_JinF_N, 65045_JinF_M, 65045_JinF_D, 65045_JinF_S],
-     *     }
-     * }
      *
      * 04.过list_texture.json
      * 组织成结构：
-     * {
-     *     00010866: {
-     *         upkId: 00010866,
-     *         objs: [
-     *             65045_JinF_D, 65045_JinF_M, 65045_JinF_N, 65045_JinF_S,
-     *             65045_JinF_col2_D, 65045_JinF_col2_M, 65045_JinF_col2_N, 65045_JinF_col2_S
-     *         ],
-     *         materials: [00010867, 00019801]
-     *     }
-     * }
      *
      * 05.过list_material.json
      * 组织成结构：
-     * {
-     *     00010867: {
-     *         upkId: 00010867,
-     *         col: col1,
-     *         objs: [65045_JinF_N, 65045_JinF_M, 65045_JinF_D, 65045_JinF_S]
-     *     },
-     *     00010867: {
-     *         upkId: 00019801,
-     *         col: col2,
-     *         objs: [65045_JinF_col2_N, 65045_JinF_col2_M, 65045_JinF_col2_D, 65045_JinF_col2_S]
-     *     }
-     * }
      *
      * 06.根据icon滤出来的列表，搜集信息，制作database，结构：
-     * {
-     *     "65045_JinF_col1": {
-     *         "skeleton": "00010868",
-     *         "texture": "00010866",
-     *         "material": "00010867",
-     *         "col1Material": "00010867",
-     *         "col": "col1",
-     *         "codeWithRace": "65045_JinF",
-     *         "code": "65045",
-     *         "race": "JinF",
-     *         "pic": "costume_65045_JinM_col2.png",
-     *      },
-     *      ...
-     * }
      * 武器等可能不同
      *
      * 此外，几点怀疑：
