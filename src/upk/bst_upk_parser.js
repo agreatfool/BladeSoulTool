@@ -72,7 +72,8 @@ var BstUpkParser = function(grunt) {
      *         "col1Material": "00010867",
      *         "texture": "00010866",
      *         "textureObjs": ["65045_JinF_N", "65045_JinF_M", "65045_JinF_D", "65045_JinF_S"],
-     *     }, ...
+     *     },
+      *    ...
      * }
      */
     this.upkDataSkeleton = {};
@@ -86,7 +87,8 @@ var BstUpkParser = function(grunt) {
      *             "65045_JinF_col2_D", "65045_JinF_col2_M", "65045_JinF_col2_N", "65045_JinF_col2_S"
      *         ],
      *         "materials": {"col1": "00010867", "col2": "00019801"}
-     *     }, ...
+     *     },
+     *     ...
      * }
      */
     this.upkDataTexture = {};
