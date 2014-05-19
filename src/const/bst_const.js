@@ -4,12 +4,18 @@ var path = require('path');
 
 var BstConst = function() {};
 
+//------------------------------------------------------------------------
+//- GLOBAL
+//------------------------------------------------------------------------
 BstConst.PART_BODY = 'body';
 BstConst.PART_FACE = 'face';
 BstConst.PART_HAIR = 'hair';
 
 BstConst.BACKUP_TAIL = '.bst_bak';
 
+//------------------------------------------------------------------------
+//- UPK
+//------------------------------------------------------------------------
 BstConst.UPK_NO_OBJ_ERROR = 'Specified package(s) has no supported objects';
 BstConst.UPK_UNKNOWN_MEMBER_ERROR = '*** unknown member';
 
@@ -20,8 +26,12 @@ BstConst.UPK_TYPE_MATERIAL = 'MaterialInstanceConstant';
 
 BstConst.PATH_UPK_BASE = 'database/upk';
 BstConst.PATH_UPK_LOG = path.join(process.cwd(), BstConst.PATH_UPK_BASE, 'log');
-BstConst.PATH_UPK_DATA = path.join(process.cwd(), BstConst.PATH_UPK_BASE, 'data');
+BstConst.PATH_UPK_DATA_LIST = path.join(process.cwd(), BstConst.PATH_UPK_BASE, 'data/list');
+BstConst.PATH_UPK_DATA_RAW = path.join(process.cwd(), BstConst.PATH_UPK_BASE, 'data/raw');
 
+//------------------------------------------------------------------------
+//- ICON
+//------------------------------------------------------------------------
 BstConst.ICON_UPK_ID = '00008758';
 BstConst.PATH_ICON_BASE = 'database/icon';
 BstConst.PATH_ICON_TGA = path.join(process.cwd(), BstConst.PATH_ICON_BASE, 'tga');
