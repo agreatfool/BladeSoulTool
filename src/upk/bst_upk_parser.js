@@ -47,7 +47,7 @@ var BstUpkParser = function(grunt) {
      * 这里需要忽略这些完全一样只有背景不一样的图片，只取用不带后缀的版本
      *
      * 02.过滤upk logs粗分类为：
-     * list/list_skeleton.json
+     * list/list_skeleton_costume_with_attachmen.json
      * list/list_skeleton_unrecognized.json
      * list/list_unrecognized.json
      * list/list_material.json
@@ -107,25 +107,68 @@ BstUpkParser.prototype.start = function() {
     self.grunt.log.writeln('[BstUpkParser] Start to parse upk files ...');
     self.util.printHr();
 
-};
-
-BstUpkParser.prototype.process = function(filename, logPath) {
+    self.preProcess();
 
 };
 
-BstUpkParser.prototype.processSkeleton = function(filename, logPath, content) {
+BstUpkParser.prototype.preProcess = function() {
+    var self = this;
 
-};
+    var upkListSkeletonCostumeWithAttachment = {};
+    var upkListSkeletonWeapon = {};
+    var upkListSkeletonHair = {};
+    var upkListSkeletonUnrecognized = {};
+    var upkListTexture = {};
+    var upkListMaterial = {};
+    var upkListUnrecognized = {};
 
-BstUpkParser.prototype.processTexture = function(filename, logPath, content) {
+    self.grunt.log.writeln('[BstUpkParser] Pre process, prepare list data ...');
+    self.util.printHr();
 
-};
+    self.grunt.file.recurse(BstConst.PATH_UPK_LOG, function(abspath, rootdir, subdir, filename) {
+        if (filename !== 'upk_dir') {
+            var upkId = filename.substr(0, filename.indexOf('.'));
+            var content = self.util.readFile(abspath).toString().split("\r\n");
+            var coreLineOfContent = content[BstConst.UPK_ENTRANCE_LINE_NO];
 
-BstUpkParser.prototype.processMaterial = function(filename, logPath, content) {
+            if (coreLineOfContent.match(new RegExp(BstConst.UPK_TYPE_SKELETON)) !== null) {
+                // skeleton
+                if (coreLineOfContent.match(/\d+_(KunN|JinF|JinM|GonF|GonM|LynF|LynM)/i) !== null) {
+                    // costume & attachment
+                    upkListSkeletonCostumeWithAttachment[upkId] = coreLineOfContent;
+                } else if (coreLineOfContent.match(/\d+_Autoscale/i) !== null) {
+                    // weapon with autoscale
+                    upkListSkeletonWeapon[upkId] = coreLineOfContent;
+                } else if (coreLineOfContent.match(/Loading\sSkeletalMesh3\s(\d+)\sfrom\spackage\s\d+.upk/) !== null) {
+                    // weapon with numeric id
+                    upkListSkeletonWeapon[upkId] = coreLineOfContent;
+                } else if (coreLineOfContent.match(/(KunN|JinF|JinM|GonF|GonM|LynF|LynM)_\d+/i) !== null) {
+                    // hair
+                    upkListSkeletonHair[upkId] = coreLineOfContent;
+                } else {
+                    upkListSkeletonUnrecognized[upkId] = coreLineOfContent;
+                }
+            } else if (coreLineOfContent.match(new RegExp(BstConst.UPK_TYPE_TEXTURE)) !== null) {
+                // texture
+                upkListTexture[upkId] = coreLineOfContent;
+            } else if (coreLineOfContent.match(new RegExp(BstConst.UPK_TYPE_MATERIAL)) !== null) {
+                // material
+                upkListMaterial[upkId] = coreLineOfContent;
+            } else {
+                // unrecognized
+                upkListUnrecognized[upkId] = coreLineOfContent;
+            }
+        }
+    });
 
-};
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, 'list_skeleton_costume_with_attachmen.json'), self.util.formatJson(upkListSkeletonCostumeWithAttachment))
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, 'list_skeleton_weapon.json'), self.util.formatJson(upkListSkeletonWeapon));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, 'list_skeleton_hair.json'), self.util.formatJson(upkListSkeletonHair));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, 'list_skeleton_unrecognized.json'), self.util.formatJson(upkListSkeletonUnrecognized));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, 'list_texture.json'), self.util.formatJson(upkListTexture));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, 'list_material.json'), self.util.formatJson(upkListMaterial));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, 'list_unrecognized.json'), self.util.formatJson(upkListUnrecognized));
 
-BstUpkParser.prototype.finishProcess = function(logPath) {
 };
 
 module.exports = BstUpkParser;
