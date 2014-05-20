@@ -288,6 +288,10 @@ BstUtil.prototype.formatRawCode = function(rawCode) {
         replace(new RegExp('lynm', 'i'), 'LynM');
 };
 
+BstUtil.prototype.formatCol = function(colInfo) {
+    return colInfo.replace(new RegExp('col', 'i'), 'col');
+};
+
 BstUtil.prototype.meshDataKeyCheck = function(element) {
     var self = this;
 
