@@ -116,16 +116,31 @@ var BstUpkParser = function(grunt) {
      *     "00010867": {
      *         "upkId": "00010867",
      *         "col": "col1",
+     *         "texture": "00010866",
      *         "objs": ["65045_JinF_N", "65045_JinF_M", "65045_JinF_D", "65045_JinF_S"]
      *     },
      *     "00019801": {
      *         "upkId": "00019801",
      *         "col": "col2",
+     *         "texture": "00010866",
      *         "objs": ["65045_JinF_col2_N", "65045_JinF_col2_M", "65045_JinF_col2_D", "65045_JinF_col2_S"]
      *     }
      * }
      */
     this.upkDataMaterial = {};
+    /**
+     * {
+     *     "00021612": {
+     *         "upkId": "00021612",
+     *         "notFound": ["texture", "col"]
+     *         "invalid": {
+     *             "col": "Acc_990097_GuardianShield_INST"
+     *         }
+     *     },
+     *     ...
+     * }
+     */
+    this.upkDataMaterialInvalid = {};
 
     /**
      * 01.过滤并整理icon文件夹：
@@ -243,6 +258,7 @@ BstUpkParser.prototype.preProcess = function() {
     self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_TEXTURE), self.util.formatJson(upkListTexture));
     self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_MATERIAL), self.util.formatJson(upkListMaterial));
     self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_UNRECOGNIZED), self.util.formatJson(upkListUnrecognized));
+    self.util.printHr();
 
 };
 
@@ -312,7 +328,7 @@ BstUpkParser.prototype.preProcessSkeleton = function() {
         }
 
         var textureId = null; // 真正的贴图upk的id
-        var textures = {}; // upkId => [object, object, ...]
+        var textureObjs = {}; // upkId => [object, object, ...]
         _.each(upkLog, function(line) {
             var textureMatch = line.match(/Loading\sTexture2D\s(.+)\sfrom\spackage\s(\d+).upk/);
             if (textureMatch !== null) {
@@ -321,15 +337,15 @@ BstUpkParser.prototype.preProcessSkeleton = function() {
                 if (textureId === null) {
                     textureId = textureUpkId; // 只记录第一个出现的Texture2D的upk id，这个一般来说是真正的贴图upk
                 }
-                if (!textures.hasOwnProperty(textureUpkId)) {
-                    textures[textureUpkId] = [];
+                if (!textureObjs.hasOwnProperty(textureUpkId)) {
+                    textureObjs[textureUpkId] = [];
                 }
-                textures[textureUpkId].push(textureObjId);
+                textureObjs[textureUpkId].push(textureObjId);
             }
         });
-        textures = textures[textureId]; // 取出真正的贴图upk的objs
+        textureObjs = textureObjs[textureId]; // 取出真正的贴图upk的objs
         if (textureId === null) {
-            self.upkDataSkeletonInvalid[upkId]['notFound'].push('texture');
+            self.utilAddSkeletonNotFoundInfo(upkId, 'texture');
             self.grunt.log.error('[BstUpkParser] Texture info not found in skeleton upk data: ' + upkId);
         }
 
@@ -340,7 +356,7 @@ BstUpkParser.prototype.preProcessSkeleton = function() {
             "race": race,
             "col1Material": col1Material,
             "texture": textureId,
-            "textureObjs": textures
+            "textureObjs": textureObjs
         };
         finishedCount++;
 
@@ -354,11 +370,119 @@ BstUpkParser.prototype.preProcessSkeleton = function() {
 };
 
 BstUpkParser.prototype.preProcessTexture = function() {
+    var self = this;
 
+    self.grunt.log.writeln('[BstUpkParser] Pre process texture upk data ...');
+    self.util.printHr();
+
+    if (self.upkIdsTexture.length == 0) {
+        return;
+    }
+
+    var finishedCount = 0;
+
+    _.each(self.upkIdsTexture, function(upkId) {
+        self.grunt.log.writeln('[BstUpkParser] Pre process skeleton upk: ' + upkId);
+
+        var upkLog = self.util.readFile(path.join(BstConst.PATH_UPK_LOG, upkId + '.log')).split("\r\n");
+
+        var objs = [];
+        _.each(upkLog, function(line) {
+            var textureMatch = line.match(/Loading\sTexture2D\s(.+)\sfrom\spackage\s\d+.upk/);
+            if (textureMatch !== null) {
+                objs.push(textureMatch[1]);
+            }
+        });
+        if (objs.length == 0) {
+            self.grunt.log.error('[BstUpkParser] Texture objs not found in texture upk data: ' + upkId);
+        }
+
+        self.upkDataTexture[upkId] = {
+            "upkId": upkId,
+            "objs": objs,
+            "materials": {}
+        };
+        finishedCount++;
+
+        self.grunt.log.writeln('[BstUpkParser] Pre process texture upk: ' + upkId + ' done, progress: ' +
+            finishedCount + ' / ' + self.upkIdsTexture.length);
+        self.util.printHr();
+    });
+
+    // 不要在这里写入文件，因为我们还没收集到material信息，需要在material那步收集
 };
 
 BstUpkParser.prototype.preProcessMaterial = function() {
+    var self = this;
 
+    self.grunt.log.writeln('[BstUpkParser] Pre process material upk data ...');
+    self.util.printHr();
+
+    if (self.upkIdsMaterial.length == 0) {
+        return;
+    }
+
+    var finishedCount = 0;
+
+    _.each(self.upkIdsMaterial, function(upkId) {
+        self.grunt.log.writeln('[BstUpkParser] Pre process material upk: ' + upkId);
+
+        var upkLog = self.util.readFile(path.join(BstConst.PATH_UPK_LOG, upkId + '.log')).split("\r\n");
+
+        var colInfo = self.util.formatCol(
+            upkLog[BstConst.UPK_ENTRANCE_LINE_NO].match(/Loading\sMaterialInstanceConstant\s(.+)\sfrom\spackage\s\d+.upk/)[1]
+        );
+        if (colInfo.match(/col\d+/) === null) { // 会有很多情况下col信息是一个非"colX"的格式，这里我们仅打日志，不做处理
+            self.utilAddMaterialInvalidInfo(upkId, 'col', colInfo);
+            self.grunt.log.error('[BstUpkParser] Material info got with invalid format: ' + colInfo);
+        }
+
+        var textureId = null; // 真正的贴图upk的id
+        var textureObjs = {}; // upkId => [object, object, ...]
+        _.each(upkLog, function(line) {
+            var textureMatch = line.match(/Loading\sTexture2D\s(.+)\sfrom\spackage\s(\d+).upk/);
+            if (textureMatch !== null) {
+                var textureObjId = textureMatch[1];
+                var textureUpkId = textureMatch[2];
+                if (textureId === null) {
+                    textureId = textureUpkId; // 只记录第一个出现的Texture2D的upk id，这个一般来说是真正的贴图upk
+                }
+                if (!textureObjs.hasOwnProperty(textureUpkId)) {
+                    textureObjs[textureUpkId] = [];
+                }
+                textureObjs[textureUpkId].push(textureObjId);
+            }
+        });
+        textureObjs = textureObjs[textureId]; // 取出真正的贴图upk的objs
+        if (textureId === null) {
+            self.utilAddMaterialNotFoundInfo(upkId, 'texture');
+            self.grunt.log.error('[BstUpkParser] Texture info not found in material upk data: ' + upkId);
+        }
+
+        self.upkDataMaterial[upkId] = {
+            "upkId": upkId,
+            "col": colInfo,
+            "texture": textureId,
+            "objs": textureObjs
+        };
+        if (textureId && self.upkDataTexture.hasOwnProperty(textureId)) {
+            // 同时为对应的texture数据添加material信息
+            self.upkDataTexture[textureId]['materials'][colInfo] = upkId;
+        } else if (!self.upkDataTexture.hasOwnProperty(textureId)) {
+            // 没有找到对应的texture数据
+            self.utilAddMaterialNoTexture(upkId, textureId);
+            self.grunt.log.error('[BstUpkParser] Corresponding texture data of upk "' + textureId + '" not found, material upk: ' + upkId);
+        }
+        finishedCount++;
+
+        self.grunt.log.writeln('[BstUpkParser] Pre process material upk: ' + upkId + ' done, progress: ' +
+            finishedCount + ' / ' + self.upkIdsMaterial.length);
+        self.util.printHr();
+    });
+
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_RAW, BstConst.RAW_FILE_TEXTURE), self.util.formatJson(self.upkDataTexture));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_RAW, BstConst.RAW_FILE_MATERIAL), self.util.formatJson(self.upkDataMaterial));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_RAW, BstConst.RAW_FILE_MATERIAL_INVALID), self.util.formatJson(self.upkDataMaterialInvalid));
 };
 
 BstUpkParser.prototype.utilAddSkeletonNotFoundInfo = function(upkId, notFoundVal) {
@@ -373,6 +497,27 @@ BstUpkParser.prototype.utilAddSkeletonInvalidInfo = function(upkId, invalidKey, 
         this.upkDataSkeletonInvalid[upkId] = {"upkId": upkId, "notFound": [], "invalid": {}};
     }
     this.upkDataSkeletonInvalid[upkId]['invalid'][invalidKey] = invalidVal;
+};
+
+BstUpkParser.prototype.utilAddMaterialNotFoundInfo = function(upkId, notFoundVal) {
+    if (!this.upkDataMaterialInvalid.hasOwnProperty(upkId)) {
+        this.upkDataMaterialInvalid[upkId] = {"upkId": upkId, "notFound": [], "invalid": {}, "noTexture": null};
+    }
+    this.upkDataMaterialInvalid[upkId]['notFound'].push(notFoundVal);
+};
+
+BstUpkParser.prototype.utilAddMaterialInvalidInfo = function(upkId, invalidKey, invalidVal) {
+    if (!this.upkDataMaterialInvalid.hasOwnProperty(upkId)) {
+        this.upkDataMaterialInvalid[upkId] = {"upkId": upkId, "notFound": [], "invalid": {}, "noTexture": null};
+    }
+    this.upkDataMaterialInvalid[upkId]['invalid'][invalidKey] = invalidVal;
+};
+
+BstUpkParser.prototype.utilAddMaterialNoTexture = function(upkId, textureId) {
+    if (!this.upkDataMaterialInvalid.hasOwnProperty(upkId)) {
+        this.upkDataMaterialInvalid[upkId] = {"upkId": upkId, "notFound": [], "invalid": {}, "noTexture": null};
+    }
+    this.upkDataMaterialInvalid[upkId]['noTexture'] = textureId;
 };
 
 module.exports = BstUpkParser;

@@ -39,6 +39,9 @@ BstConst.LIST_FILE_UNRECOGNIZED = 'list_unrecognized.json';
 
 BstConst.RAW_FILE_SKELETON = 'raw_skeleton.json';
 BstConst.RAW_FILE_SKELETON_INVALID = 'raw_skeleton_invalid.json';
+BstConst.RAW_FILE_TEXTURE = 'raw_texture.json';
+BstConst.RAW_FILE_MATERIAL = 'raw_material.json';
+BstConst.RAW_FILE_MATERIAL_INVALID = 'raw_material_invalid.json';
 
 //------------------------------------------------------------------------
 //- ICON
