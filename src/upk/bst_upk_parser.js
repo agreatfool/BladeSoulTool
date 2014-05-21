@@ -287,7 +287,7 @@ BstUpkParser.prototype.preProcessIcon = function() {
 
         var col = filename.match(/(col\d+)/i);
         if (col !== null) {
-            col = col[1];
+            col = self.util.formatCol(col[1]);
         } else {
             self.utilBuildIconInvalidInfo(iconType, filename);
             self.iconDataInvalid[iconType][filename]["notFound"].push('col');
