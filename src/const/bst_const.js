@@ -37,6 +37,8 @@ BstConst.LIST_FILE_TEXTURE = 'list_texture.json';
 BstConst.LIST_FILE_MATERIAL = 'list_material.json';
 BstConst.LIST_FILE_UNRECOGNIZED = 'list_unrecognized.json';
 
+BstConst.RAW_FILE_ICON = 'raw_icon.json';
+BstConst.RAW_FILE_ICON_INVALID = 'raw_icon_invalid.json';
 BstConst.RAW_FILE_SKELETON = 'raw_skeleton.json';
 BstConst.RAW_FILE_SKELETON_INVALID = 'raw_skeleton_invalid.json';
 BstConst.RAW_FILE_TEXTURE = 'raw_texture.json';
@@ -50,5 +52,6 @@ BstConst.ICON_UPK_ID = '00008758';
 BstConst.PATH_ICON_BASE = 'database/icon';
 BstConst.PATH_ICON_TGA = path.join(process.cwd(), BstConst.PATH_ICON_BASE, 'tga');
 BstConst.PATH_ICON_PNG = path.join(process.cwd(), BstConst.PATH_ICON_BASE, 'png');
+BstConst.PATH_ICON_PNG_CPS = path.join(process.cwd(), BstConst.PATH_ICON_BASE, 'png-cps');
 
 module.exports = BstConst;

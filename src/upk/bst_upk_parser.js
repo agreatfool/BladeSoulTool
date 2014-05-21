@@ -49,7 +49,7 @@ var BstUpkParser = function(grunt) {
      *     "010051": {
      *         "code": "010051",
      *         "races": [JinM, JinF, ...], // 当前code能找到的所有race信息
-     *         "col": ["col1", "col2"] // 当前code能找到的所有col信息
+     *         "col": ["col1", "col2"], // 当前code能找到的所有col信息
      *         "colIcons": {
      *             "GonM_col1": "Attach_010022_GonM_col1.png", // 有带种族信息的话，完整放入一份，然后再在colX里也放一份
      *             "GonM_col2": "Attach_010022_GonM_col2.png",
@@ -62,6 +62,19 @@ var BstUpkParser = function(grunt) {
      * }
      */
     this.iconData = {
+        "costume": {},
+        "attach": {},
+        "weapon": {}
+    };
+    /**
+     * {
+     *     "Attach_010002_JInM_col1": {
+     *         "filename": "Attach_010002_JInM_col1",
+     *         "notFound": ["code", "race", "col"]
+     *     }
+     * }
+     */
+    this.iconDataInvalid = {
         "costume": {},
         "attach": {},
         "weapon": {}
@@ -247,23 +260,6 @@ BstUpkParser.prototype.preProcess = function() {
 };
 
 BstUpkParser.prototype.preProcessIcon = function() {
-    /**
-     * {
-     *     "010051": {
-     *         "code": "010051",
-     *         "races": [JinM, JinF, ...], // 当前code能找到的所有race信息
-     *         "col": ["col1", "col2"] // 当前code能找到的所有col信息
-     *         "colIcons": {
-     *             "GonM_col1": "Attach_010022_GonM_col1.png", // 有带种族信息的话，完整放入一份，然后再在colX里也放一份
-     *             "GonM_col2": "Attach_010022_GonM_col2.png",
-     *             "col1": ["Attach_010022_GonM_col1.png", ...],
-     *             "col2": ["Attach_010022_GonM_col2.png", ...],
-     *             "GonM": "Attach_010022_GonM.png" // 这张图片其实并不存在，这里仅举例
-     *         } // 首先选择种族、col都符合的，其次选择符合col的、再次选择符合种族的
-     *     },
-     *     ...
-     * }
-     */
     var self = this;
 
     self.grunt.log.writeln('[BstUpkParser] Pre process icon files ...');
@@ -281,15 +277,88 @@ BstUpkParser.prototype.preProcessIcon = function() {
             return; // 不是我们需要的icon，直接忽略
         }
 
+        if (filename.match(/_\d+.png$/)) {
+            return; // 当前icon文件是..._2.png这样的格式，这种格式一般是无意义的，忽略
+        }
+
+        // 准备数据
         var code = filename.match(/(\d+)/);
         if (code !== null) {
             code = code[1];
         } else {
-
+            self.utilBuildIconInvalidInfo(iconType, filename);
+            self.iconDataInvalid[iconType][filename]["notFound"].push('code');
+            self.grunt.log.error('[BstUpkParser] Code not found in icon filename: ' + filename);
         }
 
+        var race = filename.match(/(KunN|JinF|JinM|GonF|GonM|LynF|LynM|All)/i);
+        if (race !== null) {
+            race = self.util.formatRawCode(race[1]); // 转换大小写
+        } else if (iconType !== 'weapon') { // 武器肯定是没有race信息的
+            self.utilBuildIconInvalidInfo(iconType, filename);
+            self.iconDataInvalid[iconType][filename]["notFound"].push('race');
+            self.grunt.log.error('[BstUpkParser] Race not found in icon filename: ' + filename);
+        }
 
+        var col = filename.match(/(col\d+)/i);
+        if (col !== null) {
+            col = col[1];
+        } else {
+            self.utilBuildIconInvalidInfo(iconType, filename);
+            self.iconDataInvalid[iconType][filename]["notFound"].push('col');
+            self.grunt.log.error('[BstUpkParser] Col not found in icon filename: ' + filename);
+        }
+
+        if (code === null) {
+            return; // 连code都没有的icon无法辨识，忽略
+        }
+
+        // 开始处理最终存储数据
+        var iconData = null;
+        if (self.iconData[iconType].hasOwnProperty(code)) {
+            iconData = self.iconData[iconType][code];
+        } else {
+            iconData = {
+                "code": code,
+                "races": [],
+                "col": [],
+                "colIcons": {}
+            };
+        }
+        if (race !== null && iconData['races'].indexOf(race) === -1) {
+            iconData['races'].push(race);
+        }
+        if (col !== null && iconData['col'].indexOf(col) === -1) {
+            iconData['col'].push(col);
+        }
+        // 处理带种族的icon数据
+        if (race !== null && col !== null) {
+            var iconKey = race + '_' + col;
+            if (!iconData['colIcons'].hasOwnProperty(iconKey)) {
+                iconData['colIcons'][iconKey] = filename;
+            }
+        }
+        // 处理col的icon数据
+        if (col !== null && !iconData['colIcons'].hasOwnProperty(col)) {
+            iconData['colIcons'][col] = [];
+        }
+        if (col !== null && iconData['colIcons'][col].indexOf(filename) === -1) {
+            iconData['colIcons'][col].push(filename);
+        }
+        // 处理race的icon数据
+        if (race !== null && !iconData['colIcons'].hasOwnProperty(race)) {
+            iconData['colIcons'][race] = filename;
+        }
+
+        // 重新赋值回去
+        self.iconData[iconType][code] = iconData;
+
+        self.grunt.log.writeln('[BstUpkParser] Pre process icon file: ' + filename + ' done');
+        self.util.printHr();
     });
+
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_RAW, BstConst.RAW_FILE_ICON), self.util.formatJson(self.iconData));
+    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_RAW, BstConst.RAW_FILE_ICON_INVALID), self.util.formatJson(self.iconDataInvalid));
 };
 
 BstUpkParser.prototype.preProcessSkeleton = function() {
@@ -537,6 +606,15 @@ BstUpkParser.prototype.utilBuildMaterialInvalidInfo = function(upkId) {
             "invalid": {},
             "noTexture": null
         };
+    }
+};
+
+BstUpkParser.prototype.utilBuildIconInvalidInfo = function(iconType, filename) {
+    if (!this.iconDataInvalid[iconType].hasOwnProperty(filename)) {
+        this.iconDataInvalid[iconType][filename] = {
+            "filename": filename,
+            "notFound": []
+        }
     }
 };
 
