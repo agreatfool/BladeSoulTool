@@ -154,22 +154,6 @@ var BstUpkParser = function(grunt) {
      * Costume_50004_JinF_2.png
      * 这里需要忽略这些完全一样只有背景不一样的图片，只取用不带后缀的版本
      *
-     * 02.过滤upk logs粗分类为：
-     * list/list_skeleton_costume_with_attachmen.json
-     * list/list_skeleton_unrecognized.json
-     * list/list_unrecognized.json
-     * list/list_material.json
-     * list/list_texture.json
-     *
-     * 03.过list_skeleton.json
-     * 组织成结构：
-     *
-     * 04.过list_texture.json
-     * 组织成结构：
-     *
-     * 05.过list_material.json
-     * 组织成结构：
-     *
      * 06.根据icon滤出来的列表，搜集信息，制作database，结构：
      * 武器等可能不同
      *
@@ -263,7 +247,49 @@ BstUpkParser.prototype.preProcess = function() {
 };
 
 BstUpkParser.prototype.preProcessIcon = function() {
+    /**
+     * {
+     *     "010051": {
+     *         "code": "010051",
+     *         "races": [JinM, JinF, ...], // 当前code能找到的所有race信息
+     *         "col": ["col1", "col2"] // 当前code能找到的所有col信息
+     *         "colIcons": {
+     *             "GonM_col1": "Attach_010022_GonM_col1.png", // 有带种族信息的话，完整放入一份，然后再在colX里也放一份
+     *             "GonM_col2": "Attach_010022_GonM_col2.png",
+     *             "col1": ["Attach_010022_GonM_col1.png", ...],
+     *             "col2": ["Attach_010022_GonM_col2.png", ...],
+     *             "GonM": "Attach_010022_GonM.png" // 这张图片其实并不存在，这里仅举例
+     *         } // 首先选择种族、col都符合的，其次选择符合col的、再次选择符合种族的
+     *     },
+     *     ...
+     * }
+     */
+    var self = this;
 
+    self.grunt.log.writeln('[BstUpkParser] Pre process icon files ...');
+    self.util.printHr();
+
+    self.grunt.file.recurse(BstConst.PATH_ICON_PNG_CPS, function(abspath, rootdir, subdir, filename) {
+        var iconType = null;
+        if (filename.match(/^attach.+/i)) {
+            iconType = 'attach';
+        } else if (filename.match(/^costume.+/i)) {
+            iconType = 'costume';
+        } else if (filename.match(/^weapon.+/i)) {
+            iconType = 'weapon';
+        } else {
+            return; // 不是我们需要的icon，直接忽略
+        }
+
+        var code = filename.match(/(\d+)/);
+        if (code !== null) {
+            code = code[1];
+        } else {
+
+        }
+
+
+    });
 };
 
 BstUpkParser.prototype.preProcessSkeleton = function() {
@@ -293,7 +319,8 @@ BstUpkParser.prototype.preProcessSkeleton = function() {
         if (code !== null) {
             code = code[1];
         } else {
-            self.utilAddSkeletonNotFoundInfo(upkId, 'code');
+            self.utilBuildSkeletonInvalidInfo(upkId);
+            self.upkDataSkeletonInvalid[upkId]['notFound'].push('code');
             self.grunt.log.error('[BstUpkParser] Code not found in skeleton upk data: ' + upkId);
         }
 
@@ -305,7 +332,8 @@ BstUpkParser.prototype.preProcessSkeleton = function() {
                 || upkLog[BstConst.UPK_ENTRANCE_LINE_NO].match(/Loading\sSkeletalMesh3\s(\d+)\sfrom\spackage\s\d+.upk/) !== null) {
                 // 是武器upk，core信息里不包含race，正常
             } else {
-                self.utilAddSkeletonNotFoundInfo(upkId, 'race');
+                self.utilBuildSkeletonInvalidInfo(upkId);
+                self.upkDataSkeletonInvalid[upkId]['notFound'].push('race');
                 self.grunt.log.error('[BstUpkParser] Race not found in skeleton upk data: ' + upkId);
             }
         }
@@ -317,13 +345,15 @@ BstUpkParser.prototype.preProcessSkeleton = function() {
                 var colInfo = self.util.formatCol(colMatch[1]);
                 col1Material = colInfo;
                 if (colInfo.match(/col\d+/) === null) { // 会有很多情况下col信息是一个非"colX"的格式，这里我们仅打日志，不做处理
-                    self.utilAddSkeletonInvalidInfo(upkId, 'col1Material', colInfo);
+                    self.utilBuildSkeletonInvalidInfo(upkId);
+                    self.upkDataSkeletonInvalid[upkId]['invalid']['col1Material'] = colInfo;
                     self.grunt.log.error('[BstUpkParser] Material info got with invalid format: ' + colInfo);
                 }
             }
         });
         if (col1Material === null) {
-            self.utilAddSkeletonNotFoundInfo(upkId, 'col1Material');
+            self.utilBuildSkeletonInvalidInfo(upkId);
+            self.upkDataSkeletonInvalid[upkId]['notFound'].push('col1Material');
             self.grunt.log.error('[BstUpkParser] Material info not found in skeleton upk data: ' + upkId);
         }
 
@@ -345,7 +375,8 @@ BstUpkParser.prototype.preProcessSkeleton = function() {
         });
         textureObjs = textureObjs[textureId]; // 取出真正的贴图upk的objs
         if (textureId === null) {
-            self.utilAddSkeletonNotFoundInfo(upkId, 'texture');
+            self.utilBuildSkeletonInvalidInfo(upkId);
+            self.upkDataSkeletonInvalid[upkId]['notFound'].push('texture');
             self.grunt.log.error('[BstUpkParser] Texture info not found in skeleton upk data: ' + upkId);
         }
 
@@ -433,7 +464,8 @@ BstUpkParser.prototype.preProcessMaterial = function() {
             upkLog[BstConst.UPK_ENTRANCE_LINE_NO].match(/Loading\sMaterialInstanceConstant\s(.+)\sfrom\spackage\s\d+.upk/)[1]
         );
         if (colInfo.match(/col\d+/) === null) { // 会有很多情况下col信息是一个非"colX"的格式，这里我们仅打日志，不做处理
-            self.utilAddMaterialInvalidInfo(upkId, 'col', colInfo);
+            self.utilBuildMaterialInvalidInfo(upkId);
+            self.upkDataMaterialInvalid[upkId]['invalid']['col'] = colInfo;
             self.grunt.log.error('[BstUpkParser] Material info got with invalid format: ' + colInfo);
         }
 
@@ -455,7 +487,8 @@ BstUpkParser.prototype.preProcessMaterial = function() {
         });
         textureObjs = textureObjs[textureId]; // 取出真正的贴图upk的objs
         if (textureId === null) {
-            self.utilAddMaterialNotFoundInfo(upkId, 'texture');
+            self.utilBuildMaterialInvalidInfo(upkId);
+            self.upkDataMaterialInvalid[upkId]['notFound'].push('texture');
             self.grunt.log.error('[BstUpkParser] Texture info not found in material upk data: ' + upkId);
         }
 
@@ -470,7 +503,8 @@ BstUpkParser.prototype.preProcessMaterial = function() {
             self.upkDataTexture[textureId]['materials'][colInfo] = upkId;
         } else if (!self.upkDataTexture.hasOwnProperty(textureId)) {
             // 没有找到对应的texture数据
-            self.utilAddMaterialNoTexture(upkId, textureId);
+            self.utilBuildMaterialInvalidInfo(upkId);
+            self.upkDataMaterialInvalid[upkId]['noTexture'] = textureId;
             self.grunt.log.error('[BstUpkParser] Corresponding texture data of upk "' + textureId + '" not found, material upk: ' + upkId);
         }
         finishedCount++;
@@ -485,39 +519,25 @@ BstUpkParser.prototype.preProcessMaterial = function() {
     self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_RAW, BstConst.RAW_FILE_MATERIAL_INVALID), self.util.formatJson(self.upkDataMaterialInvalid));
 };
 
-BstUpkParser.prototype.utilAddSkeletonNotFoundInfo = function(upkId, notFoundVal) {
+BstUpkParser.prototype.utilBuildSkeletonInvalidInfo = function(upkId) {
     if (!this.upkDataSkeletonInvalid.hasOwnProperty(upkId)) {
-        this.upkDataSkeletonInvalid[upkId] = {"upkId": upkId, "notFound": [], "invalid": {}};
+        this.upkDataSkeletonInvalid[upkId] = {
+            "upkId": upkId,
+            "notFound": [],
+            "invalid": {}
+        };
     }
-    this.upkDataSkeletonInvalid[upkId]['notFound'].push(notFoundVal);
 };
 
-BstUpkParser.prototype.utilAddSkeletonInvalidInfo = function(upkId, invalidKey, invalidVal) {
-    if (!this.upkDataSkeletonInvalid.hasOwnProperty(upkId)) {
-        this.upkDataSkeletonInvalid[upkId] = {"upkId": upkId, "notFound": [], "invalid": {}};
-    }
-    this.upkDataSkeletonInvalid[upkId]['invalid'][invalidKey] = invalidVal;
-};
-
-BstUpkParser.prototype.utilAddMaterialNotFoundInfo = function(upkId, notFoundVal) {
+BstUpkParser.prototype.utilBuildMaterialInvalidInfo = function(upkId) {
     if (!this.upkDataMaterialInvalid.hasOwnProperty(upkId)) {
-        this.upkDataMaterialInvalid[upkId] = {"upkId": upkId, "notFound": [], "invalid": {}, "noTexture": null};
+        this.upkDataMaterialInvalid[upkId] = {
+            "upkId": upkId,
+            "notFound": [],
+            "invalid": {},
+            "noTexture": null
+        };
     }
-    this.upkDataMaterialInvalid[upkId]['notFound'].push(notFoundVal);
-};
-
-BstUpkParser.prototype.utilAddMaterialInvalidInfo = function(upkId, invalidKey, invalidVal) {
-    if (!this.upkDataMaterialInvalid.hasOwnProperty(upkId)) {
-        this.upkDataMaterialInvalid[upkId] = {"upkId": upkId, "notFound": [], "invalid": {}, "noTexture": null};
-    }
-    this.upkDataMaterialInvalid[upkId]['invalid'][invalidKey] = invalidVal;
-};
-
-BstUpkParser.prototype.utilAddMaterialNoTexture = function(upkId, textureId) {
-    if (!this.upkDataMaterialInvalid.hasOwnProperty(upkId)) {
-        this.upkDataMaterialInvalid[upkId] = {"upkId": upkId, "notFound": [], "invalid": {}, "noTexture": null};
-    }
-    this.upkDataMaterialInvalid[upkId]['noTexture'] = textureId;
 };
 
 module.exports = BstUpkParser;
