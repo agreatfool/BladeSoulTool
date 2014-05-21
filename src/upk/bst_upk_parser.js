@@ -394,10 +394,10 @@ BstUpkParser.prototype.preProcessSkeleton = function() {
 
         var col1Material = null;
         _.each(upkLog, function(line) {
-            var colMatch = line.match(/Loading\sMaterialInstanceConstant\s(.+)\sfrom\spackage\s\d+.upk/);
-            if (colMatch !== null && col1Material === null) { // 只记录第一个出现的sMaterialInstanceConstant的col信息
+            var colMatch = line.match(/Loading\sMaterialInstanceConstant\s(.+)\sfrom\spackage\s(\d+).upk/);
+            if (colMatch !== null && col1Material === null) { // 只记录第一个出现的sMaterialInstanceConstant的col id信息
                 var colInfo = self.util.formatCol(colMatch[1]);
-                col1Material = colInfo;
+                col1Material = colMatch[2];
                 if (colInfo.match(/col\d+/) === null) { // 会有很多情况下col信息是一个非"colX"的格式，这里我们仅打日志，不做处理
                     self.utilBuildSkeletonInvalidInfo(upkId);
                     self.upkDataSkeletonInvalid[upkId]['invalid']['col1Material'] = colInfo;
