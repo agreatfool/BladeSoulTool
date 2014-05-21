@@ -156,23 +156,8 @@ var BstUpkParser = function(grunt) {
     this.upkDataMaterialInvalid = {};
 
     /**
-     * 01.过滤并整理icon文件夹：
-     * 找出
-     * attach_：(头饰、面饰、身体饰品)
-     * costume_：(时装)
-     * weapon_：(武器)
-     *
-     * icon里有相当多的图片，其实两张都一样的，但是背景不同，会多带一个_X的后缀，举例：
-     * Costume_50004_JinF.png
-     * Costume_50004_JinF_2.png
-     * 这里需要忽略这些完全一样只有背景不一样的图片，只取用不带后缀的版本
-     *
      * 06.根据icon滤出来的列表，搜集信息，制作database，结构：
      * 武器等可能不同
-     *
-     * 此外，几点怀疑：
-     * skeleton里 SkeletalMesh3 JinM_029 表示的是发型
-     * keletalMesh3 060041_Autoscale 表示的是武器，参考：http://dl.dropboxusercontent.com/u/18196592/plaync/bns/weapon.htm
      */
 };
 
