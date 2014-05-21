@@ -292,6 +292,25 @@ BstUtil.prototype.formatCol = function(colInfo) {
     return colInfo.replace(new RegExp('col', 'i'), 'col');
 };
 
+BstUtil.prototype.formatCode = function(code) { // 删掉code开头的0字符串，方便匹配相等
+    var result = code;
+
+    if (code !== null) {
+        code = code.split(''); // "0041003" => ["0", "0", "4", "1", "0", "0", "3"]
+        var notDone = true;
+        while (notDone) {
+            if (code[0] === '0') {
+                code.shift();
+            } else {
+                notDone = false;
+            }
+        }
+        result = code.join('');
+    }
+
+    return result;
+};
+
 BstUtil.prototype.meshDataKeyCheck = function(element) {
     var self = this;
 
