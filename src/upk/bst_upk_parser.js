@@ -30,7 +30,7 @@ var BstUpkParser = function(grunt) {
      *         "material": "00010867",
      *         "col1Material": "00010867",
      *         "col": "col1",
-     *         "codeWithRace": "65045_JinF",
+     *         "core": "65045_JinF",
      *         "code": "65045",
      *         "race": "JinF",
      *         "pic": "costume_65045_JinM_col2.png",
@@ -39,6 +39,20 @@ var BstUpkParser = function(grunt) {
      * }
      */
     this.db = {
+        "costume": {},
+        "attach": {},
+        "weapon": {}
+    };
+    /**
+     * {
+     *     "65045": {
+     *         "code": "65045",
+     *         "notFound": ["skeleton", "texture", "material"],
+     *         "invalid": ["skeleton", "material"]
+     *     }
+     * }
+     */
+    this.dbInvalid = {
         "costume": {},
         "attach": {},
         "weapon": {}
@@ -175,6 +189,7 @@ BstUpkParser.prototype.start = function() {
     self.preProcessTexture();
     self.preProcessMaterial();
 
+    self.buildDatabase();
 };
 
 BstUpkParser.prototype.preProcess = function() {
@@ -573,6 +588,135 @@ BstUpkParser.prototype.preProcessMaterial = function() {
     self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_RAW, BstConst.RAW_FILE_MATERIAL_INVALID), self.util.formatJson(self.upkDataMaterialInvalid));
 };
 
+BstUpkParser.prototype.buildDatabase = function() {
+    var self = this;
+
+    self.grunt.log.writeln('[BstUpkParser] Start to build database ...');
+    self.util.printHr();
+
+    var buildTypeOfDatabase = function(type) {
+        self.grunt.log.writeln('[BstUpkParser] Start to build ' + type + ' database ...');
+        self.util.printHr();
+        var totalCount = _.keys(self.iconData[type]).length;
+        var finishedCount = 0;
+        if (totalCount > 0) {
+            _.each(self.iconData[type], function(data, code) {
+                self.grunt.log.writeln('[BstUpkParser] Build ' + type + ' data: ' + code);
+                self.buildData(type, code, data);
+                finishedCount++;
+                self.grunt.log.writeln('[BstUpkParser] Finish ' + type + ' data: ' + code +
+                    ', progress: ' + finishedCount + ' / ' + totalCount);
+                self.util.printHr();
+            });
+        }
+        //TODO 打结束日志，并写入data文件
+    };
+
+    var types = ["costume", "attach", "weapon"];
+    _.each(types, function(type) {
+        buildTypeOfDatabase(type);
+    });
+};
+
+BstUpkParser.prototype.buildData = function(type, code, iconData) {
+    var self = this;
+
+    // 根据code，滤出skeleton数据
+    var skeletons = [];
+    _.each(self.upkDataSkeleton, function(data) {
+        if (data['code'] == code) {
+            skeletons.push(data);
+        }
+    });
+    if (skeletons.length === 0) {
+        self.utilBuildDataInvalidInfo(type, code);
+        self.dbInvalid[type][code]['notFound'].push('skeleton');
+        self.grunt.log.error('[BstUpkParser] Skeleton data not found, code: ' + code);
+        return; // 没必要继续处理下去了
+    } else {
+        _.each(skeletons, function(data) {
+            if (self.upkDataSkeletonInvalid.hasOwnProperty(data['upkId'])) {
+                // 这个skeleton有错误数据，记录下
+                self.utilBuildDataInvalidInfo(type, code);
+                self.dbInvalid[type][code]['invalid'].push('skeleton');
+                self.grunt.log.error('[BstUpkParser] Skeleton has invalid data, code: ' + code + ', upkId: ' + data['upkId']);
+            }
+        });
+    }
+
+    _.each(skeletons, function(skeletonData) { // 轮询所有查询到的skeleton数据
+        var skeletonId = skeletonData['upkId'];
+        // 根据skeleton数据，获得texture数据
+        var textureId = skeletonData['texture'];
+        var textureData = null;
+        if (self.upkDataTexture.hasOwnProperty(textureId)) {
+            textureData = self.upkDataTexture[textureId];
+        } else {
+            self.utilBuildDataInvalidInfo(type, code);
+            self.dbInvalid[type][code]['notFound'].push('skeleton:' + skeletonId + ',texture:' + textureId);
+            self.grunt.log.error('[BstUpkParser] Texture data not found, code: ' + code +
+                ', skeleton: ' + skeletonId + ', texture: ' + textureId);
+            return; // 这个skeleton没必要处理下去了，因为缺失texture
+        }
+
+        // 检查texture数据
+        if (_.keys(textureData['materials']).length == 0) {
+            self.utilBuildDataInvalidInfo(type, code);
+            self.dbInvalid[type][code]['invalid'].push('skeleton:' + skeletonId + ',texture:' + textureId);
+            self.grunt.log.error('[BstUpkParser] Texture has invalid data, code: ' + code +
+                ', skeleton: ' + skeletonId + ', texture: ' + textureId);
+            return; // 当前的texture没有对应的material
+        }
+
+        // 根据texture数据，获得相关的materials列表和数据
+        var materials = textureData['materials']; // colX : upkId
+
+        // 组装数据
+        _.each(materials, function(col, materialId) { // 轮询所有的materials数据
+            // 检查material数据
+            if (self.upkDataMaterialInvalid.hasOwnProperty(materialId)) {
+                self.utilBuildDataInvalidInfo(type, code);
+                self.dbInvalid[type][code]['invalid'].push('skeleton:' + skeletonId + ',texture:' + textureId + ',material:' + materialId);
+                self.grunt.log.error('[BstUpkParser] Material has invalid data, code: ' + code +
+                    ', skeleton: ' + skeletonId + ', texture: ' + textureId + ', material: ' + materialId);
+                return; // 当前的material有错误数据
+            }
+//TODO
+            // 选取图片
+            var pic = null;
+
+            // 写入数据
+            self.db[type][skeletonData['core'] + '_' + col] = {
+                "skeleton": skeletonId,
+                "texture": textureId,
+                "material": materialId,
+                "col1Material": skeletonData['col1Material'],
+                "col": col,
+                "core": skeletonData['core'],
+                "code": code,
+                "race": skeletonData['race'],
+                "pic": pic
+            };
+        });
+    });
+};
+/**
+ * {
+ *     "65045_JinF_col1": {
+ *         "skeleton": "00010868",
+ *         "texture": "00010866",
+ *         "material": "00010867",
+ *         "col1Material": "00010867",
+ *         "col": "col1",
+ *         "core": "65045_JinF",
+ *         "code": "65045",
+ *         "race": "JinF",
+ *         "pic": "costume_65045_JinM_col2.png",
+ *      },
+ *      ...
+ * }
+ */
+
 BstUpkParser.prototype.utilBuildSkeletonInvalidInfo = function(upkId) {
     if (!this.upkDataSkeletonInvalid.hasOwnProperty(upkId)) {
         this.upkDataSkeletonInvalid[upkId] = {
@@ -600,6 +744,16 @@ BstUpkParser.prototype.utilBuildIconInvalidInfo = function(iconType, filename) {
             "filename": filename,
             "notFound": []
         }
+    }
+};
+
+BstUpkParser.prototype.utilBuildDataInvalidInfo = function(dataType, code) {
+    if (!this.dbInvalid[dataType].hasOwnProperty(code)) {
+        this.dbInvalid[dataType][code] = {
+            "code": code,
+            "notFound": [],
+            "invalid": []
+        };
     }
 };
 
