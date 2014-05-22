@@ -60,8 +60,12 @@ BstIconDumper.prototype.process = function() {
     self.grunt.file.recurse(
         './resources/umodel/output/' + BstConst.ICON_UPK_ID + '/Texture2D',
         function(abspath, rootdir, subdir, filename) {
-            self.workingList.push(filename);
-            self.util.copyFile(abspath, path.join(BstConst.PATH_ICON_TGA, filename));
+            if (filename.match(/^attach.+/i) !== null // 装饰品icon
+                || filename.match(/^costume.+/i) !== null // 时装icon
+                || (filename.match(/^weapon.+/i) !== null && filename.match(/^Weapon_Lock.+/i) === null)) { // 有效的武器icon
+                self.workingList.push(filename);
+                self.util.copyFile(abspath, path.join(BstConst.PATH_ICON_TGA, filename));
+            }
         }
     );
     self.statusTotalCount = self.workingList.length;
