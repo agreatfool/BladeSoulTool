@@ -349,6 +349,22 @@ BstUpkParser.prototype.preProcessIcon = function() {
         if (race !== null && !iconData['colIcons'].hasOwnProperty(race)) {
             iconData['colIcons'][race] = filename;
         }
+        // 处理洪门道服的icon，因为洪门道服的默认icon是"costume_startzone_jeja.png"，格式不是标准格式，需要特殊处理
+        if (code === '60054') {
+            var defaultIconName = 'costume_startzone_jeja.png';
+            if (!iconData['colIcons'].hasOwnProperty('All_col1')) {
+                iconData['colIcons']['All_col1'] = defaultIconName;
+            }
+            if (!iconData['colIcons'].hasOwnProperty('All')) {
+                iconData['colIcons']['All'] = defaultIconName;
+            }
+            if (!iconData['colIcons'].hasOwnProperty('col1')) {
+                iconData['colIcons']['col1'] = [defaultIconName];
+            } else if (iconData['colIcons'].hasOwnProperty('col1')
+                && iconData['colIcons']['col1'].indexOf(defaultIconName) === -1) {
+                iconData['colIcons']['col1'].push(defaultIconName);
+            }
+        }
 
         // 重新赋值回去
         self.iconData[iconType][code] = iconData;
