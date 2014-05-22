@@ -19,7 +19,8 @@
 * 反和谐
 * 备份
 * parser_prepare 将tencent内容放入bns，写入backup.json（将这个脚本改名
-* icon_dumper 解包icon
+* icon_dumper 解包icon，将解包的tga文件过滤、拷贝到指定位置，转化png，并压缩
+    * 现在tga转png转化的成功率有问题，需要有重试机制，转化失败的计数，并再次尝试
 * png_optimizer 压缩png
 * upk_scanner 输出所有upk的
 * upk_parser 解析并生成数据库
