@@ -265,7 +265,7 @@ BstUtil.prototype.formatRawCode = function(rawCode) {
      * rawCode：基本上应该是 "数字短码_种族性别" 这样的格式，e.g：20002_KunN，
      * 但事实上mesh.xml里有大量的大小写错误，或者拼写错误之类的不符合规律的地方，
      * 为了方便后续的逻辑处理，我们这里会把 "种族性别" 这个字符串格式化为：
-     * KunN | JinF | JinM | GonF | GonM | LynF | LynM
+     * KunN | JinF | JinM | GonF | GonM | LynF | LynM | All
      */
     // 处理：_Kun
     if (rawCode.indexOf('_') !== -1
@@ -285,7 +285,8 @@ BstUtil.prototype.formatRawCode = function(rawCode) {
         replace(new RegExp('gonf', 'i'), 'GonF').
         replace(new RegExp('gonm', 'i'), 'GonM').
         replace(new RegExp('lynf', 'i'), 'LynF').
-        replace(new RegExp('lynm', 'i'), 'LynM');
+        replace(new RegExp('lynm', 'i'), 'LynM').
+        replace(new RegExp('all', 'i'), 'All');
 };
 
 BstUtil.prototype.formatCol = function(colInfo) {
