@@ -50,7 +50,7 @@ BstConst.RAW_FILE_MATERIAL_INVALID = 'raw_material_invalid.json';
 BstConst.UPK_INVALID_TEXTURE = [
     '00002620', // 常见于costume类型数据中：core：Material3 Basic
     '00005708', // 常见于attach类型数据中：obj：D, S, glasses3_m
-    '00008613'  // 常见于attach类型数据中：core：NothingMAT
+    '00008613'  // 常见于attach, weapon类型数据中：core：NothingMAT
 ];
 
 //------------------------------------------------------------------------
