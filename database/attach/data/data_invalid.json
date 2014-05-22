@@ -1,51 +1,15 @@
 {
     "010002": {
         "code": "010002",
-        "notFound": [
-            "texture:[skeleton:00005710,texture:00008613]",
-            "texture:[skeleton:00006959,texture:00008613]",
-            "texture:[skeleton:00006960,texture:00008613]",
-            "texture:[skeleton:00006961,texture:00008613]",
-            "texture:[skeleton:00006962,texture:00008613]",
-            "texture:[skeleton:00006964,texture:00008613]"
-        ],
-        "invalid": []
-    },
-    "010006": {
-        "code": "010006",
-        "notFound": [
-            "texture:[skeleton:00009187,texture:00008613]",
-            "texture:[skeleton:00009188,texture:00008613]",
-            "texture:[skeleton:00009196,texture:00008613]",
-            "texture:[skeleton:00009199,texture:00008613]",
-            "texture:[skeleton:00009200,texture:00008613]",
-            "texture:[skeleton:00009201,texture:00008613]"
-        ],
-        "invalid": []
-    },
-    "010007": {
-        "code": "010007",
-        "notFound": [
-            "texture:[skeleton:00009192,texture:00008613]",
-            "texture:[skeleton:00009194,texture:00008613]",
-            "texture:[skeleton:00009197,texture:00008613]",
-            "texture:[skeleton:00009202,texture:00008613]",
-            "texture:[skeleton:00009203,texture:00008613]",
-            "texture:[skeleton:00009204,texture:00008613]"
-        ],
-        "invalid": []
-    },
-    "010008": {
-        "code": "010008",
-        "notFound": [
-            "texture:[skeleton:00009193,texture:00008613]",
-            "texture:[skeleton:00009195,texture:00008613]",
-            "texture:[skeleton:00009198,texture:00008613]",
-            "texture:[skeleton:00009207,texture:00008613]",
-            "texture:[skeleton:00009208,texture:00008613]",
-            "texture:[skeleton:00009209,texture:00008613]"
-        ],
-        "invalid": []
+        "notFound": [],
+        "invalid": [
+            "material:[skeleton:00005710,texture:00012963,material:00008613]",
+            "material:[skeleton:00006959,texture:00012963,material:00008613]",
+            "material:[skeleton:00006960,texture:00012963,material:00008613]",
+            "material:[skeleton:00006961,texture:00012963,material:00008613]",
+            "material:[skeleton:00006962,texture:00012963,material:00008613]",
+            "material:[skeleton:00006964,texture:00012963,material:00008613]"
+        ]
     },
     "010036": {
         "code": "010036",
@@ -77,30 +41,6 @@
             "texture:[skeleton:00017548,texture:00017519]",
             "texture:[skeleton:00017549,texture:00017519]"
         ]
-    },
-    "010047": {
-        "code": "010047",
-        "notFound": [
-            "texture:[skeleton:00019465,texture:00008613]",
-            "texture:[skeleton:00019494,texture:00008613]",
-            "texture:[skeleton:00019500,texture:00008613]",
-            "texture:[skeleton:00019505,texture:00008613]",
-            "texture:[skeleton:00019508,texture:00008613]",
-            "texture:[skeleton:00019512,texture:00008613]"
-        ],
-        "invalid": []
-    },
-    "010057": {
-        "code": "010057",
-        "notFound": [
-            "texture:[skeleton:00021941,texture:00008613]",
-            "texture:[skeleton:00021943,texture:00008613]",
-            "texture:[skeleton:00021945,texture:00008613]",
-            "texture:[skeleton:00021947,texture:00008613]",
-            "texture:[skeleton:00021949,texture:00008613]",
-            "texture:[skeleton:00021951,texture:00008613]"
-        ],
-        "invalid": []
     },
     "010068": {
         "code": "010068",
@@ -264,6 +204,13 @@
             "skeleton:[code:040151]"
         ],
         "invalid": []
+    },
+    "060003": {
+        "code": "060003",
+        "notFound": [],
+        "invalid": [
+            "material:[skeleton:00009857,texture:00012963,material:00008613]"
+        ]
     },
     "070097": {
         "code": "070097",
