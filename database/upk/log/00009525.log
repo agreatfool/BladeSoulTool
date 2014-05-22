@@ -1,0 +1,164 @@
+Found 16187 game files (144 skipped)
+Loading package: 00009525.upk Ver: 573/1 Engine: 4205 Names: 292 Exports: 415 Imports: 99 Game: 801A
+Loading Material3 030104_Trail_Balance from package 00009525.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00009520.upk Ver: 573/1 Engine: 4205 Names: 313 Exports: 488 Imports: 106 Game: 801A
+Loading Material3 Weapon_030104_Aura_Trail_Mat from package 00009525.upk
+Loading Material3 Weapon_030109_Aura_Trail_Mat from package 00009525.upk
+Loading MaterialInstanceConstant Weapon_030104 from package 00009525.upk
+Loading Texture2D 030104_Trail_Balance from package 00009525.upk
+Loading Texture2D 18 from package 00009525.upk
+Loading Texture2D Weapon_030104__A from package 00009525.upk
+Loading Texture2D Weapon_030104__d from package 00009525.upk
+Loading Texture2D Smoke_Cloud_005 from package 00012963.upk
+Loading Texture2D Gradient_001_Left from package 00012963.upk
+Loading Texture2D JinSuYoun_Alpha_Tex3 from package 00009520.upk
+Loading Texture2D JinSuYoun_Alpha_Tex from package 00009520.upk
+Loading Texture2D Smoke_Cloud_006 from package 00012963.upk
+Loading Texture2D Aura_Tail_001 from package 00012963.upk
+Loading Material3 Weapon_030008_Aura_Trail_Mat from package 00009520.upk
+Loading Texture2D Weapon_030008_col1_d_trail_Tex from package 00009520.upk
+Loaded in 0.058 sec, 2177 allocs, 0.59 MBytes serialized in 46693 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: 030104_Trail_Balance
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'Smoke_Cloud_005'
+        ReferencedTextures[1] = Texture2D'Gradient_001_Left'
+        ReferencedTextures[2] = Texture2D'030104_Trail_Balance'
+        ReferencedTextures[3] = Texture2D'JinSuYoun_Alpha_Tex3'
+        ReferencedTextures[4] = Texture2D'JinSuYoun_Alpha_Tex'
+        ReferencedTextures[5] = Texture2D'Smoke_Cloud_006'
+        ReferencedTextures[6] = Texture2D'Aura_Tail_001'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Weapon_030104_Aura_Trail_Mat
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[0] = {}
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Weapon_030109_Aura_Trail_Mat
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[0] = {}
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Weapon_030104
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[2] =
+    {
+        TextureParameterValues[0] = { ParameterName=Opacity, ParameterValue=Texture2D'Weapon_030104__A' }
+        TextureParameterValues[1] = { ParameterName=Diffuse, ParameterValue=Texture2D'18' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Weapon_030008_Aura_Trail_Mat'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 030104_Trail_Balance
+
+    SizeX = 1024
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 18
+
+    SizeX = 1024
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Weapon_030104__A
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_G8 (3)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Weapon_030104__d
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }

@@ -1,0 +1,123 @@
+Found 16187 game files (144 skipped)
+Loading package: 00005601.upk Ver: 573/1 Engine: 4205 Names: 99 Exports: 2 Imports: 22 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00005601.upk
+Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
+Loading package: 00005600.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 6 Imports: 9 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading MaterialInstanceConstant Opa from package 00005601.upk
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading Texture2D Nothing_A_n from package 00008613.upk
+Loading Texture2D glasses1_m from package 00005600.upk
+Loading Texture2D D from package 00005600.upk
+Loading Texture2D S from package 00005600.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D Lens_n from package 00002620.upk
+Loading TextureCube mirror2 from package 00002640.upk
+Loading TextureCube eye_s from package 00002640.upk
+Loading Material3 Lens from package 00002620.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.12 sec, 2895 allocs, 0.81 MBytes serialized in 147118 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Glossiness1, ParameterValue=100 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness2, ParameterValue=100 }
+        ScalarParameterValues[2] = { ParameterName=Specular_value, ParameterValue=1 }
+    }
+    TextureParameterValues[4] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'Nothing_A_n' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'glasses1_m' }
+        TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'D' }
+        TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'S' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Basic'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Opa
+
+    ScalarParameterValues[4] =
+    {
+        ScalarParameterValues[0] = { ParameterName=High-Opacity, ParameterValue=0.2 }
+        ScalarParameterValues[1] = { ParameterName=Low-Opacity, ParameterValue=0.1 }
+        ScalarParameterValues[2] = { ParameterName=Lens_spec_Power, ParameterValue=3 }
+        ScalarParameterValues[3] = { ParameterName=Refracion, ParameterValue=0 }
+    }
+    TextureParameterValues[3] =
+    {
+        TextureParameterValues[0] = { ParameterName=Lens-Normal, ParameterValue=Texture2D'Lens_n' }
+        TextureParameterValues[1] = { ParameterName=Lens_cube, ParameterValue=TextureCube'mirror2' }
+        TextureParameterValues[2] = { ParameterName=Lens_spec_cube, ParameterValue=TextureCube'eye_s' }
+    }
+    VectorParameterValues[6] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = High-Diffuse
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Low-Diffuse
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = High-RF
+            ParameterValue = { R=0.163641, G=0.163641, B=0.163641, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Low-RF
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+    }
+    Parent = Material3'Lens'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

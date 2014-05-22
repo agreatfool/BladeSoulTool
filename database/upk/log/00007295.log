@@ -1,0 +1,39 @@
+Found 16187 game files (144 skipped)
+Loading package: 00007295.upk Ver: 573/1 Engine: 4205 Names: 304 Exports: 2158 Imports: 136 Game: 801A
+Loading StaticMesh3 Arc000_Mes from package 00007295.upk
+Loaded in 0.006 sec, 340 allocs, 0.17 MBytes serialized in 42086 calls.
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Arc000_Mes
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=-24.3236, Z=37.2512 }
+        BoxExtent = { X=1.25, Y=43.4189, Z=37.6519 }
+        SphereRadius = 57.4842
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=None, FirstIndex=0, NumFaces=48 }
+            }
+            NumVerts = 100
+            IndexCount = 144
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1

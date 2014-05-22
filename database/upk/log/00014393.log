@@ -1,0 +1,70 @@
+Found 16187 game files (144 skipped)
+Loading package: 00014393.upk Ver: 573/1 Engine: 4205 Names: 223 Exports: 334 Imports: 26 Game: 801A
+Loading AnimSet Fx_Anim from package 00014393.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+Loading AnimSequence AnimSequence_0 from package 00014393.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_1 from package 00014393.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading SkeletalMesh3 FX_Mesh_Saliva from package 00014393.upk
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 886 Exports: 4211 Imports: 257 Game: 801A
+Loading SkeletalMesh3 Seamonster from package 00014393.upk
+WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PlayParticleSet" was not found
+WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
+Loading package: 00014392.upk Ver: 573/1 Engine: 4205 Names: 173 Exports: 150 Imports: 46 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_106 from package 00014393.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_107 from package 00014393.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_108 from package 00014393.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_109 from package 00014393.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_110 from package 00014393.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_111 from package 00014393.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_112 from package 00014393.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_98 from package 00014393.upk
+Loading StaticMesh3 FX_StaticMesh_Saliva_polySurface1Mesh from package 00014393.upk
+Loading Material3 001_Mesh_Invisible_MatM from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading MaterialInstanceConstant col1 from package 00014392.upk
+Loading package: 00014391.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 8 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Texture2D Beast_SeaMonster_N from package 00014391.upk
+Loading Texture2D Beast_SeaMonster_M from package 00014391.upk
+Loading Texture2D Beast_SeaMonster_D from package 00014391.upk
+Loading Texture2D Beast_SeaMonster_S from package 00014391.upk
+Loading TextureCube Cube_D from package 00002640.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Beast_SeaMonster_S_FX_Line from package 00014391.upk
+Loading Texture2D Beast_SeaMonster_S_FX_Line_B from package 00014391.upk
+Loading Material3 Basic_SeaMonster from package 00014392.upk
+Loading Texture2D Cube000_Tex from package 00012892.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Error: Command failed: ******** 00014393 ********
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** ERROR: Unknown rotation compression method: 255
+UAnimSet::ConvertAnims <- PostLoad:Fx_Anim <- UObject::EndLoad <- LoadWholePackage:00014393 <- Main
+
+
+    at ChildProcess.exithandler (child_process.js:637:15)
+    at ChildProcess.EventEmitter.emit (events.js:98:17)
+    at maybeClose (child_process.js:743:16)
+    at Socket.<anonymous> (child_process.js:956:11)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at Pipe.close (net.js:465:12)

@@ -1,0 +1,91 @@
+Found 16187 game files (144 skipped)
+Loading package: 00001461.upk Ver: 573/1 Engine: 4205 Names: 395 Exports: 133 Imports: 35 Game: 801A
+Loading SkeletalMesh3 AnimTree_mesh from package 00001461.upk
+Loading package: 00002748.upk Ver: 573/1 Engine: 4205 Names: 79 Exports: 3 Imports: 19 Game: 801A
+Loading package: 00002624.upk Ver: 573/1 Engine: 4205 Names: 54 Exports: 2 Imports: 18 Game: 801A
+Loading package: 00002692.upk Ver: 573/1 Engine: 4205 Names: 122 Exports: 5 Imports: 34 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00002748.upk
+Loading package: 00002745.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00002624.upk
+Loading package: 00002617.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 6 Imports: 4 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00002692.upk
+Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
+Loading package: 00008530.upk Ver: 573/1 Engine: 4205 Names: 30 Exports: 9 Imports: 2 Game: 801A
+Loading package: 00002688.upk Ver: 573/1 Engine: 4205 Names: 45 Exports: 16 Imports: 4 Game: 801A
+Loading Texture2D MF001_n from package 00002745.upk
+Loading Texture2D MF001_m1 from package 00002745.upk
+Loading Texture2D MF001_d from package 00002745.upk
+Loading Texture2D MF001_S from package 00002745.upk
+Loading Material3 Body from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D JinF_001_col1_D from package 00002617.upk
+Loading Texture2D JinF_001_col1_N from package 00002617.upk
+Loading Material3 Beard_Ac from package 00002620.upk
+Loading Texture2D Nothing_A from package 00008613.upk
+Loading Texture2D JinF_face_brow01 from package 00008530.upk
+Loading Texture2D Nothing_A_n from package 00008613.upk
+Loading Texture2D Normal_001 from package 00002688.upk
+Loading Texture2D Diffuse_001 from package 00002688.upk
+Loading Texture2D Mask from package 00002688.upk
+Loading Texture2D Specular from package 00002688.upk
+Loading Material3 Face-F from package 00002620.upk
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 69 Imports: 11 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D DefaultTexture from package EngineResources.upk
+Loaded in 0.18 sec, 3446 allocs, 3.43 MBytes serialized in 452312 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: AnimTree_mesh
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[4] = { true, true, true, true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[4] =
+    {
+        Materials[0] = None
+        Materials[1] = MaterialInstanceConstant'col1'
+        Materials[2] = MaterialInstanceConstant'col1'
+        Materials[3] = MaterialInstanceConstant'col1'
+    }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[4] =
+            {
+                Sections[0] = { Material=None, FirstIndex=0, NumFaces=639 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=1917, NumFaces=7574 }
+                Sections[2] = { Material=MaterialInstanceConstant'col1', FirstIndex=24639, NumFaces=1950 }
+                Sections[3] = { Material=MaterialInstanceConstant'col1', FirstIndex=30489, NumFaces=2388 }
+            }
+            NumVerts = 8661
+            IndexCount = 37653
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=-16384, Pitch=0, Roll=0 }
+    BoneCount = 94

@@ -1,0 +1,94 @@
+Found 16187 game files (144 skipped)
+Loading package: 00014424.upk Ver: 573/1 Engine: 4205 Names: 122 Exports: 30 Imports: 11 Game: 801A
+Loading SkeletalMesh3 Face_0001 from package 00014424.upk
+Loading package: 00014426.upk Ver: 573/1 Engine: 4205 Names: 121 Exports: 6 Imports: 30 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00014426.upk
+Loading package: 00014425.upk Ver: 573/1 Engine: 4205 Names: 112 Exports: 80 Imports: 19 Game: 801A
+Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading MaterialInstanceConstant eye from package 00014426.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00007428.upk Ver: 573/1 Engine: 4205 Names: 130 Exports: 48 Imports: 19 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading MaterialInstanceConstant Cap from package 00014426.upk
+Loading Texture2D Face_0001_Col1_N from package 00014425.upk
+Loading Texture2D Face_0001_Col2_S from package 00014425.upk
+Loading Texture2D Face_0001_Col2_D from package 00014425.upk
+Loading Texture2D Face_0001_Col1_M from package 00014425.upk
+Loading Texture2D Nothing_A from package 00008613.upk
+Loading Texture2D Nothing_A_n from package 00008613.upk
+Loading Material3 Summon_Body from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D eye0_cat001 from package 00014425.upk
+Loading Texture2D eye0_N from package 00007428.upk
+Loading TextureCube eye_s from package 00002640.upk
+Loading TextureCube eye1 from package 00002640.upk
+Loading Material3 Summon_eye from package 00002620.upk
+Loading Material3 Summon_rf from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D Sclera from package 00007428.upk
+Loaded in 0.15 sec, 3431 allocs, 1.90 MBytes serialized in 209987 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: Face_0001
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[3] = { true, true, true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[3] =
+    {
+        Materials[0] = MaterialInstanceConstant'col1'
+        Materials[1] = MaterialInstanceConstant'eye'
+        Materials[2] = MaterialInstanceConstant'Cap'
+    }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[3] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1714 }
+                Sections[1] = { Material=MaterialInstanceConstant'eye', FirstIndex=5142, NumFaces=200 }
+                Sections[2] = { Material=MaterialInstanceConstant'Cap', FirstIndex=5742, NumFaces=200 }
+            }
+            NumVerts = 1404
+            IndexCount = 6342
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 45

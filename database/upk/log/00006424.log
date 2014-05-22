@@ -1,0 +1,106 @@
+Found 16187 game files (144 skipped)
+Loading package: 00006424.upk Ver: 573/1 Engine: 4205 Names: 176 Exports: 229 Imports: 20 Game: 801A
+Loading SkeletalMesh3 Sanho from package 00006424.upk
+WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PlayParticleSet" was not found
+WARNING: FloatProperty "USkeletalMesh3::AddFootOffsetValue" was not found
+WARNING: FloatProperty "USkeletalMesh3::AddFootOffsetValue2" was not found
+WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
+Loading package: 00006423.upk Ver: 573/1 Engine: 4205 Names: 178 Exports: 114 Imports: 51 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_41 from package 00006424.upk
+Loading MaterialInstanceConstant col1 from package 00006423.upk
+Loading package: 00006422.upk Ver: 573/1 Engine: 4205 Names: 44 Exports: 16 Imports: 4 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading MaterialInstanceConstant col1_A1 from package 00006423.upk
+Loading Texture2D Monster_Beast_Sanho_N from package 00006422.upk
+Loading Texture2D Monster_Beast_Sanho_col1_m1 from package 00006422.upk
+Loading Texture2D Monster_Beast_Sanho_col1_D from package 00006422.upk
+Loading Texture2D Monster_Beast_Sanho_col1_S from package 00006422.upk
+Loading TextureCube cube_orb from package 00002640.upk
+Loading Texture2D Monster_Beast_Sanho_col1_em from package 00006422.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Material3 Basic_Sanho_Tail from package 00006423.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.1 sec, 3013 allocs, 1.44 MBytes serialized in 293368 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: Sanho
+
+    LODInfo[2] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[2] = { true, true }
+        }
+        LODInfo[1] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[2] = { 0, 1 }
+            bEnableShadowCasting[2] = { true, true }
+        }
+    }
+    Sockets[1] = { SkeletalMeshSocket'Sanho.SkeletalMeshSocket_41' }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'col1_A1' }
+
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1822 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1_A1', FirstIndex=5466, NumFaces=1654 }
+            }
+            NumVerts = 2809
+            IndexCount = 10428
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=693 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1_A1', FirstIndex=2079, NumFaces=342 }
+            }
+            NumVerts = 1106
+            IndexCount = 3105
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 64
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_41
+
+    SocketName = target_high
+    BoneName = Bip01Head
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }

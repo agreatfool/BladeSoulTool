@@ -1,0 +1,222 @@
+Found 16187 game files (144 skipped)
+Loading package: 00019559.upk Ver: 573/1 Engine: 4205 Names: 240 Exports: 396 Imports: 27 Game: 801A
+Loading SkeletalMesh3 PigTribeC2 from package 00019559.upk
+WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PlayParticleSet" was not found
+WARNING: FloatProperty "USkeletalMesh3::AddFootOffsetValue" was not found
+WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
+Loading package: 00018863.upk Ver: 573/1 Engine: 4205 Names: 102 Exports: 4 Imports: 30 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_47 from package 00019559.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::PreviewSkelMesh" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_49 from package 00019559.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_50 from package 00019559.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_51 from package 00019559.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_52 from package 00019559.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_53 from package 00019559.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_54 from package 00019559.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_55 from package 00019559.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_56 from package 00019559.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_57 from package 00019559.upk
+Loading MaterialInstanceConstant col1 from package 00018863.upk
+Loading package: 00014348.upk Ver: 573/1 Engine: 4205 Names: 45 Exports: 17 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading MaterialInstanceConstant col1_ac from package 00018863.upk
+Loading package: 00014550.upk Ver: 573/1 Engine: 4205 Names: 43 Exports: 15 Imports: 2 Game: 801A
+Loading Texture2D PigTribeC_N from package 00014348.upk
+Loading Texture2D Monster_Human_PigTribeC_col3_M from package 00014348.upk
+Loading Texture2D Monster_Human_PigTribeC_col3_D from package 00014348.upk
+Loading Texture2D Monster_Human_PigTribeC_col3_S from package 00014348.upk
+Loading TextureCube lenscube_a from package 00002640.upk
+Loading Texture2D Monster_Human_PigTribeC_col3_E from package 00014348.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D Monster_Human_PigTribeB_col1_N from package 00014550.upk
+Loading Texture2D Monster_Human_PigTribeB_col3_M from package 00014550.upk
+Loading Texture2D Monster_Human_PigTribeB_col3_D from package 00014550.upk
+Loading Texture2D Monster_Human_PigTribeB_col3_S from package 00014550.upk
+Loading TextureCube lenscube from package 00002640.upk
+Loading Texture2D Monster_Human_PigTribeB_col1_E from package 00014550.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.2 sec, 3348 allocs, 3.55 MBytes serialized in 464032 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: PigTribeC2
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[2] = { true, true }
+        }
+    }
+    Sockets[10] =
+    {
+        Sockets[0] = SkeletalMeshSocket'PigTribeC2.SkeletalMeshSocket_47'
+        Sockets[1] = SkeletalMeshSocket'PigTribeC2.SkeletalMeshSocket_49'
+        Sockets[2] = SkeletalMeshSocket'PigTribeC2.SkeletalMeshSocket_50'
+        Sockets[3] = SkeletalMeshSocket'PigTribeC2.SkeletalMeshSocket_51'
+        Sockets[4] = SkeletalMeshSocket'PigTribeC2.SkeletalMeshSocket_52'
+        Sockets[5] = SkeletalMeshSocket'PigTribeC2.SkeletalMeshSocket_53'
+        Sockets[6] = SkeletalMeshSocket'PigTribeC2.SkeletalMeshSocket_54'
+        Sockets[7] = SkeletalMeshSocket'PigTribeC2.SkeletalMeshSocket_55'
+        Sockets[8] = SkeletalMeshSocket'PigTribeC2.SkeletalMeshSocket_56'
+        Sockets[9] = SkeletalMeshSocket'PigTribeC2.SkeletalMeshSocket_57'
+    }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[2] =
+    {
+        Materials[0] = MaterialInstanceConstant'col1'
+        Materials[1] = MaterialInstanceConstant'Monster_Human_PigTribeB_col1.col1_ac'
+    }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] =
+                {
+                    Material = MaterialInstanceConstant'Monster_Human_PigTribeB_col1.col1_ac'
+                    FirstIndex = 0
+                    NumFaces = 4064
+                }
+                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=12192, NumFaces=7026 }
+            }
+            NumVerts = 8357
+            IndexCount = 33270
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 118
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_47
+
+    SocketName = WeaponR
+    BoneName = WeaponR
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_49
+
+    SocketName = ATTACH_EFFECT
+    BoneName = Bip01
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_50
+
+    SocketName = Catch_Neck
+    BoneName = Bip01Neck
+    RelativeLocation = { X=31.9531, Y=-27.2192, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_51
+
+    SocketName = Decap_Socket
+    BoneName = Bip01Neck
+    RelativeLocation = { X=-11.3981, Y=13.0797, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_52
+
+    SocketName = Catch_Back
+    BoneName = Bip01Spine2
+    RelativeLocation = { X=0, Y=41.3964, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_53
+
+    SocketName = socket_force
+    BoneName = Root
+    RelativeLocation = { X=100, Y=55.5129, Z=-16.75 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_54
+
+    SocketName = target_high
+    BoneName = Bip01Head
+    RelativeLocation = { X=10, Y=-16, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_55
+
+    SocketName = Mount_Socket
+    BoneName = Bip01Spine1
+    RelativeLocation = { X=18.7035, Y=-31.189, Z=0 }
+    RelativeRotation = { Yaw=1274, Pitch=0, Roll=-16384 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_56
+
+    SocketName = Mount_Ambar_Socket
+    BoneName = Bip01LClavicle
+    RelativeLocation = { X=2, Y=-14, Z=-21 }
+    RelativeRotation = { Yaw=-285, Pitch=9970, Roll=22850 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_57
+
+    SocketName = Mount_Choke_Socket
+    BoneName = Root
+    RelativeLocation = { X=37.026, Y=1.15813, Z=26 }
+    RelativeRotation = { Yaw=32768, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }

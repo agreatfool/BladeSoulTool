@@ -1,0 +1,634 @@
+Found 16187 game files (144 skipped)
+Loading package: 00009220.upk Ver: 573/1 Engine: 4205 Names: 90 Exports: 25 Imports: 14 Game: 801A
+Loading MaterialInstanceConstant lens-basic from package 00009220.upk
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading MaterialInstanceConstant lens-basic1 from package 00009220.upk
+Loading MaterialInstanceConstant lens-basic2 from package 00009220.upk
+Loading MaterialInstanceConstant Lens-Sunglasses from package 00009220.upk
+Loading MaterialInstanceConstant Lens-Sunglasses1 from package 00009220.upk
+Loading MaterialInstanceConstant Lens-Sunglasses2 from package 00009220.upk
+Loading MaterialInstanceConstant Lens-Sunglasses3 from package 00009220.upk
+Loading MaterialInstanceConstant Lens-Sunglasses4 from package 00009220.upk
+Loading MaterialInstanceConstant Lens-Sunglasses5 from package 00009220.upk
+Loading Texture2D glasses1_mglasses1_m from package 00009220.upk
+Loading Texture2D glasses2_mglasses1_m from package 00009220.upk
+Loading Texture2D glasses3_mglasses1_m from package 00009220.upk
+Loading Texture2D glasses4_mglasses1_m from package 00009220.upk
+Loading Texture2D glasses5_mglasses1_m from package 00009220.upk
+Loading Texture2D lens8 from package 00009220.upk
+Loading Texture2D Lensmap from package 00009220.upk
+Loading Texture2D Lensmap1 from package 00009220.upk
+Loading Texture2D lensmap_r1 from package 00009220.upk
+Loading Texture2D lensmap_r2 from package 00009220.upk
+Loading TextureCube mirror2 from package 00002640.upk
+Loading TextureCube eye_s from package 00002640.upk
+Loading Material3 Lens from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading TextureCube lenscube from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.17 sec, 3016 allocs, 0.96 MBytes serialized in 150345 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: lens-basic
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=High-Opacity, ParameterValue=0.4 }
+        ScalarParameterValues[1] = { ParameterName=Low-Opacity, ParameterValue=0.1 }
+        ScalarParameterValues[2] = { ParameterName=Lens_spec_Power, ParameterValue=3 }
+    }
+    TextureParameterValues[3] =
+    {
+        TextureParameterValues[0] = { ParameterName=Lens-Normal, ParameterValue=Texture2D'Lensmap' }
+        TextureParameterValues[1] = { ParameterName=Lens_cube, ParameterValue=TextureCube'mirror2' }
+        TextureParameterValues[2] = { ParameterName=Lens_spec_cube, ParameterValue=TextureCube'eye_s' }
+    }
+    VectorParameterValues[4] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = High-Diffuse
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Low-Diffuse
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = High-RF
+            ParameterValue = { R=0.163641, G=0.163641, B=0.163641, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Low-RF
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+    }
+    Parent = Material3'Lens'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: lens-basic1
+
+    ScalarParameterValues[4] =
+    {
+        ScalarParameterValues[0] = { ParameterName=High-Opacity, ParameterValue=0.3 }
+        ScalarParameterValues[1] = { ParameterName=Low-Opacity, ParameterValue=0.1 }
+        ScalarParameterValues[2] = { ParameterName=Lens_spec_Power, ParameterValue=5 }
+        ScalarParameterValues[3] = { ParameterName=Refracion, ParameterValue=0.5 }
+    }
+    TextureParameterValues[3] =
+    {
+        TextureParameterValues[0] = { ParameterName=Lens-Normal, ParameterValue=Texture2D'lensmap_r1' }
+        TextureParameterValues[1] = { ParameterName=Lens_cube, ParameterValue=TextureCube'lenscube' }
+        TextureParameterValues[2] = { ParameterName=Lens_spec_cube, ParameterValue=TextureCube'eye_s' }
+    }
+    VectorParameterValues[4] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = High-Diffuse
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Low-Diffuse
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = High-RF
+            ParameterValue = { R=0.353741, G=0.325037, B=0.20836, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Low-RF
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+    }
+    Parent = Material3'Lens'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: lens-basic2
+
+    ScalarParameterValues[4] =
+    {
+        ScalarParameterValues[0] = { ParameterName=High-Opacity, ParameterValue=0.1 }
+        ScalarParameterValues[1] = { ParameterName=Low-Opacity, ParameterValue=0.5 }
+        ScalarParameterValues[2] = { ParameterName=Lens_spec_Power, ParameterValue=2 }
+        ScalarParameterValues[3] = { ParameterName=Refracion, ParameterValue=0.22 }
+    }
+    TextureParameterValues[3] =
+    {
+        TextureParameterValues[0] = { ParameterName=Lens-Normal, ParameterValue=Texture2D'lensmap_r2' }
+        TextureParameterValues[1] = { ParameterName=Lens_cube, ParameterValue=TextureCube'lenscube' }
+        TextureParameterValues[2] = { ParameterName=Lens_spec_cube, ParameterValue=TextureCube'eye_s' }
+    }
+    VectorParameterValues[4] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = High-Diffuse
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Low-Diffuse
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = High-RF
+            ParameterValue = { R=0.95737, G=0.95737, B=0.95737, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Low-RF
+            ParameterValue = { R=0.201096, G=0.201096, B=0.201096, A=1 }
+        }
+    }
+    Parent = Material3'Lens'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Lens-Sunglasses
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=High-Opacity, ParameterValue=0.6 }
+        ScalarParameterValues[1] = { ParameterName=Low-Opacity, ParameterValue=1 }
+        ScalarParameterValues[2] = { ParameterName=Lens_spec_Power, ParameterValue=3 }
+    }
+    TextureParameterValues[3] =
+    {
+        TextureParameterValues[0] = { ParameterName=Lens-Normal, ParameterValue=Texture2D'Lensmap' }
+        TextureParameterValues[1] = { ParameterName=Lens_cube, ParameterValue=TextureCube'lenscube' }
+        TextureParameterValues[2] = { ParameterName=Lens_spec_cube, ParameterValue=TextureCube'eye_s' }
+    }
+    VectorParameterValues[4] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = High-Diffuse
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Low-Diffuse
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = High-RF
+            ParameterValue = { R=2, G=1, B=0.5, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Low-RF
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+    }
+    Parent = Material3'Lens'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Lens-Sunglasses1
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=High-Opacity, ParameterValue=1 }
+        ScalarParameterValues[1] = { ParameterName=Low-Opacity, ParameterValue=0.8 }
+        ScalarParameterValues[2] = { ParameterName=Lens_spec_Power, ParameterValue=3 }
+    }
+    TextureParameterValues[3] =
+    {
+        TextureParameterValues[0] = { ParameterName=Lens-Normal, ParameterValue=Texture2D'Lensmap' }
+        TextureParameterValues[1] = { ParameterName=Lens_cube, ParameterValue=TextureCube'mirror2' }
+        TextureParameterValues[2] = { ParameterName=Lens_spec_cube, ParameterValue=TextureCube'eye_s' }
+    }
+    VectorParameterValues[4] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = High-Diffuse
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Low-Diffuse
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = High-RF
+            ParameterValue = { R=0.201096, G=0.201096, B=0.267358, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Low-RF
+            ParameterValue = { R=0.032876, G=0.012664, B=5.7e-005, A=1 }
+        }
+    }
+    Parent = Material3'Lens'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Lens-Sunglasses2
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=High-Opacity, ParameterValue=0.9 }
+        ScalarParameterValues[1] = { ParameterName=Low-Opacity, ParameterValue=0.8 }
+        ScalarParameterValues[2] = { ParameterName=Lens_spec_Power, ParameterValue=3 }
+    }
+    TextureParameterValues[3] =
+    {
+        TextureParameterValues[0] = { ParameterName=Lens-Normal, ParameterValue=Texture2D'Lensmap' }
+        TextureParameterValues[1] = { ParameterName=Lens_cube, ParameterValue=TextureCube'lenscube' }
+        TextureParameterValues[2] = { ParameterName=Lens_spec_cube, ParameterValue=TextureCube'eye_s' }
+    }
+    VectorParameterValues[4] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = High-Diffuse
+            ParameterValue = { R=0.259027, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Low-Diffuse
+            ParameterValue = { R=0.028991, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = High-RF
+            ParameterValue = { R=1, G=0.625345, B=0.234895, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Low-RF
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+    }
+    Parent = Material3'Lens'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Lens-Sunglasses3
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=High-Opacity, ParameterValue=0.4 }
+        ScalarParameterValues[1] = { ParameterName=Low-Opacity, ParameterValue=0.1 }
+        ScalarParameterValues[2] = { ParameterName=Lens_spec_Power, ParameterValue=10 }
+    }
+    TextureParameterValues[3] =
+    {
+        TextureParameterValues[0] = { ParameterName=Lens-Normal, ParameterValue=Texture2D'Lensmap1' }
+        TextureParameterValues[1] = { ParameterName=Lens_cube, ParameterValue=TextureCube'lenscube' }
+        TextureParameterValues[2] = { ParameterName=Lens_spec_cube, ParameterValue=TextureCube'eye_s' }
+    }
+    VectorParameterValues[4] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = High-Diffuse
+            ParameterValue = { R=0.047776, G=0.049433, B=0.139022, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Low-Diffuse
+            ParameterValue = { R=0.006585, G=5e-006, B=0.023104, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = High-RF
+            ParameterValue = { R=0.084642, G=0.625345, B=0, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Low-RF
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+    }
+    Parent = Material3'Lens'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Lens-Sunglasses4
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=High-Opacity, ParameterValue=0.15 }
+        ScalarParameterValues[1] = { ParameterName=Low-Opacity, ParameterValue=0.1 }
+        ScalarParameterValues[2] = { ParameterName=Lens_spec_Power, ParameterValue=10 }
+    }
+    TextureParameterValues[3] =
+    {
+        TextureParameterValues[0] = { ParameterName=Lens-Normal, ParameterValue=Texture2D'Lensmap1' }
+        TextureParameterValues[1] = { ParameterName=Lens_cube, ParameterValue=TextureCube'lenscube' }
+        TextureParameterValues[2] = { ParameterName=Lens_spec_cube, ParameterValue=TextureCube'eye_s' }
+    }
+    VectorParameterValues[4] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = High-Diffuse
+            ParameterValue = { R=0.827726, G=0.060032, B=2.3e-005, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Low-Diffuse
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = High-RF
+            ParameterValue = { R=1, G=0.63878, B=0.121986, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Low-RF
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+    }
+    Parent = Material3'Lens'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Lens-Sunglasses5
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=High-Opacity, ParameterValue=0.1 }
+        ScalarParameterValues[1] = { ParameterName=Low-Opacity, ParameterValue=0.1 }
+        ScalarParameterValues[2] = { ParameterName=Lens_spec_Power, ParameterValue=10 }
+    }
+    TextureParameterValues[3] =
+    {
+        TextureParameterValues[0] = { ParameterName=Lens-Normal, ParameterValue=Texture2D'Lensmap1' }
+        TextureParameterValues[1] = { ParameterName=Lens_cube, ParameterValue=TextureCube'lenscube' }
+        TextureParameterValues[2] = { ParameterName=Lens_spec_cube, ParameterValue=TextureCube'eye_s' }
+    }
+    VectorParameterValues[4] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = High-Diffuse
+            ParameterValue = { R=0.180144, G=0.605484, B=5e-006, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Low-Diffuse
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = High-RF
+            ParameterValue = { R=1, G=0.982826, B=0.505433, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Low-RF
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+    }
+    Parent = Material3'Lens'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Texture2D ObjectName: glasses1_mglasses1_m
+
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: glasses2_mglasses1_m
+
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: glasses3_mglasses1_m
+
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: glasses4_mglasses1_m
+
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: glasses5_mglasses1_m
+
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: lens8
+
+    SizeX = 128
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 7
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Lensmap
+
+    SizeX = 128
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 7
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Lensmap1
+
+    SizeX = 128
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 7
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: lensmap_r1
+
+    SizeX = 128
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 7
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: lensmap_r2
+
+    SizeX = 128
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 7
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }

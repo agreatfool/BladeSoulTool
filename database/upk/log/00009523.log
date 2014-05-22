@@ -1,0 +1,85 @@
+Found 16187 game files (144 skipped)
+Loading package: 00009523.upk Ver: 573/1 Engine: 4205 Names: 282 Exports: 372 Imports: 99 Game: 801A
+Loading Material3 Weapon_030006_Aura_Trail_Mat from package 00009523.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading MaterialInstanceConstant Weapon_03006 from package 00009523.upk
+Loading package: 00009520.upk Ver: 573/1 Engine: 4205 Names: 313 Exports: 488 Imports: 106 Game: 801A
+Loading Texture2D 27-1 from package 00009523.upk
+Loading Texture2D 27-2 from package 00009523.upk
+Loading Texture2D Gradient_001_Left from package 00012963.upk
+Loading Texture2D Weapon_030008_col1_d_trail_Tex from package 00009520.upk
+Loading Material3 Weapon_030008_Aura_Trail_Mat from package 00009520.upk
+Loading Texture2D Smoke_Cloud_005 from package 00012963.upk
+Loading Texture2D JinSuYoun_Alpha_Tex3 from package 00009520.upk
+Loading Texture2D JinSuYoun_Alpha_Tex from package 00009520.upk
+Loading Texture2D Smoke_Cloud_006 from package 00012963.upk
+Loading Texture2D Aura_Tail_001 from package 00012963.upk
+Loaded in 0.046 sec, 2098 allocs, 0.44 MBytes serialized in 45316 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Weapon_030006_Aura_Trail_Mat
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Gradient_001_Left' }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Weapon_03006
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[2] =
+    {
+        TextureParameterValues[0] = { ParameterName=Opacity, ParameterValue=Texture2D'Weapon_030008_col1_d_trail_Tex' }
+        TextureParameterValues[1] = { ParameterName=Diffuse, ParameterValue=Texture2D'27-1' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Weapon_030008_Aura_Trail_Mat'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 27-1
+
+    SizeX = 1024
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 27-2
+
+    SizeX = 512
+    SizeY = 64
+    Format = PF_DXT1 (5)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }

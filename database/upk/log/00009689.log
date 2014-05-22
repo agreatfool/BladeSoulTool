@@ -1,0 +1,45 @@
+Found 16187 game files (144 skipped)
+Loading package: 00009689.upk Ver: 573/1 Engine: 4205 Names: 77 Exports: 2 Imports: 19 Game: 801A
+Loading MaterialInstanceConstant col5 from package 00009689.upk
+Loading package: 00008172.upk Ver: 573/1 Engine: 4205 Names: 49 Exports: 21 Imports: 2 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D Cloth_60006_GonF_col1_D5 from package 00008172.upk
+Loading Texture2D Cloth_60006_GonF_col1_S5 from package 00008172.upk
+Loading Texture2D Cloth_60006_GonF_col1_M from package 00008172.upk
+Loading Texture2D Cloth_60006_GonF_col1_n5 from package 00008172.upk
+Loading Material3 Body from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loaded in 0.064 sec, 2167 allocs, 1.30 MBytes serialized in 133243 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col5
+
+    ScalarParameterValues[2] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Wear_glossiness1, ParameterValue=6 }
+        ScalarParameterValues[1] = { ParameterName=Skin_glossiness, ParameterValue=10 }
+    }
+    TextureParameterValues[4] =
+    {
+        TextureParameterValues[0] = { ParameterName=Body_diffuse, ParameterValue=Texture2D'Cloth_60006_GonF_col1_D5' }
+        TextureParameterValues[1] = { ParameterName=Body_specular, ParameterValue=Texture2D'Cloth_60006_GonF_col1_S5' }
+        TextureParameterValues[2] = { ParameterName=Body_mask_RGB, ParameterValue=Texture2D'Cloth_60006_GonF_col1_M' }
+        TextureParameterValues[3] = { ParameterName=Body_normal, ParameterValue=Texture2D'Cloth_60006_GonF_col1_n5' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Body'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

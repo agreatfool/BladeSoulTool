@@ -1,0 +1,72 @@
+Found 16187 game files (144 skipped)
+Loading package: 00012845.upk Ver: 573/1 Engine: 4205 Names: 86 Exports: 1 Imports: 19 Game: 801A
+Loading MaterialInstanceConstant Col9 from package 00012845.upk
+Loading package: 00010898.upk Ver: 573/1 Engine: 4205 Names: 84 Exports: 55 Imports: 4 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D Cloth_60018_JinM_col9_n from package 00010898.upk
+Loading Texture2D Cloth_60018_JinM_col9_m from package 00010898.upk
+Loading Texture2D Cloth_60018_JinM_col9_d from package 00010898.upk
+Loading Texture2D Cloth_60018_JinM_col9_s from package 00010898.upk
+Loading TextureCube lenscube_a from package 00002640.upk
+Loading Material3 Body from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loaded in 0.1 sec, 2721 allocs, 1.40 MBytes serialized in 146386 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Col9
+
+    ScalarParameterValues[8] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Skin_glossiness, ParameterValue=3.5 }
+        ScalarParameterValues[1] = { ParameterName=Wear_glossiness1, ParameterValue=3 }
+        ScalarParameterValues[2] = { ParameterName=Wear_glossiness2, ParameterValue=100 }
+        ScalarParameterValues[3] = { ParameterName=Skin_Spec_value, ParameterValue=1 }
+        ScalarParameterValues[4] = { ParameterName=HighLight_Value, ParameterValue=1.5 }
+        ScalarParameterValues[5] = { ParameterName=HighLight_glossiness, ParameterValue=5 }
+        ScalarParameterValues[6] = { ParameterName=Emissive_value2, ParameterValue=0 }
+        ScalarParameterValues[7] = { ParameterName=Specular_value, ParameterValue=1.5 }
+    }
+    TextureParameterValues[5] =
+    {
+        TextureParameterValues[0] = { ParameterName=Body_normal, ParameterValue=Texture2D'Cloth_60018_JinM_col9_n' }
+        TextureParameterValues[1] = { ParameterName=Body_mask_RGB, ParameterValue=Texture2D'Cloth_60018_JinM_col9_m' }
+        TextureParameterValues[2] = { ParameterName=Body_diffuse, ParameterValue=Texture2D'Cloth_60018_JinM_col9_d' }
+        TextureParameterValues[3] = { ParameterName=Body_specular, ParameterValue=Texture2D'Cloth_60018_JinM_col9_s' }
+        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'lenscube_a' }
+    }
+    VectorParameterValues[2] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=2, G=2, B=2, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = HighLight_Color
+            ParameterValue = { R=0.774227, G=0.659224, B=0.481952, A=1 }
+        }
+    }
+    Parent = Material3'Body'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

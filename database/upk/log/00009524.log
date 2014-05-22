@@ -1,0 +1,101 @@
+Found 16187 game files (144 skipped)
+Loading package: 00009524.upk Ver: 573/1 Engine: 4205 Names: 288 Exports: 221 Imports: 99 Game: 801A
+Loading Material3 Weapon_030007_Aura_Trail_Mat from package 00009524.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00009520.upk Ver: 573/1 Engine: 4205 Names: 313 Exports: 488 Imports: 106 Game: 801A
+Loading package: 00008334.upk Ver: 573/1 Engine: 4205 Names: 452 Exports: 329 Imports: 103 Game: 801A
+Loading MaterialInstanceConstant Weapon_030007 from package 00009524.upk
+Loading Texture2D Weapon_030007__A from package 00009524.upk
+Loading Texture2D Weapon_030007__D from package 00009524.upk
+Loading Texture2D Smoke_Cloud_005 from package 00012963.upk
+Loading Texture2D Gradient_001_Left from package 00012963.upk
+Loading Texture2D Weapon_030008_col1_s_trail_Tex from package 00009520.upk
+Loading Texture2D JinSuYoun_Alpha_Tex3 from package 00008334.upk
+Loading Texture2D JinSuYoun_Alpha_Tex from package 00008334.upk
+Loading Texture2D Smoke_Cloud_006 from package 00012963.upk
+Loading Texture2D Aura_Tail_001 from package 00012963.upk
+Loading Material3 Weapon_030008_Aura_Trail_Mat from package 00009520.upk
+Loading Texture2D Weapon_030008_col1_d_trail_Tex from package 00009520.upk
+Loading Texture2D JinSuYoun_Alpha_Tex3 from package 00009520.upk
+Loading Texture2D JinSuYoun_Alpha_Tex from package 00009520.upk
+Loaded in 0.058 sec, 2648 allocs, 0.50 MBytes serialized in 51226 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Weapon_030007_Aura_Trail_Mat
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[9] =
+    {
+        ReferencedTextures[0] = Texture2D'Smoke_Cloud_005'
+        ReferencedTextures[1] = Texture2D'Gradient_001_Left'
+        ReferencedTextures[2] = Texture2D'Weapon_030007__D'
+        ReferencedTextures[3] = Texture2D'Weapon_030008_col1_s_trail_Tex'
+        ReferencedTextures[4] = Texture2D'Weapon_030007__A'
+        ReferencedTextures[5] = Texture2D'JinSuYoun_Alpha_Tex3'
+        ReferencedTextures[6] = Texture2D'JinSuYoun_Alpha_Tex'
+        ReferencedTextures[7] = Texture2D'Smoke_Cloud_006'
+        ReferencedTextures[8] = Texture2D'Aura_Tail_001'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Weapon_030007
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[2] =
+    {
+        TextureParameterValues[0] = { ParameterName=Opacity, ParameterValue=Texture2D'Weapon_030007__A' }
+        TextureParameterValues[1] = { ParameterName=Diffuse, ParameterValue=Texture2D'Weapon_030007__D' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Weapon_030008_Aura_Trail_Mat'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Weapon_030007__A
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_G8 (3)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Weapon_030007__D
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }

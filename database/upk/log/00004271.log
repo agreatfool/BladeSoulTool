@@ -1,0 +1,77 @@
+Found 16187 game files (144 skipped)
+Loading package: 00004271.upk Ver: 573/1 Engine: 4205 Names: 60 Exports: 1 Imports: 15 Game: 801A
+Loading MaterialInstanceConstant col2 from package 00004271.upk
+Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
+Loading package: 00002688.upk Ver: 573/1 Engine: 4205 Names: 45 Exports: 16 Imports: 4 Game: 801A
+Loading package: 00008530.upk Ver: 573/1 Engine: 4205 Names: 30 Exports: 9 Imports: 2 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D Nothing_A from package 00008613.upk
+Loading Texture2D Diffuse_001 from package 00002688.upk
+Loading Texture2D JinF_face_brow01 from package 00008530.upk
+Loading Texture2D Mask from package 00002688.upk
+Loading Texture2D Specular from package 00002688.upk
+Loading Texture2D Normal_001 from package 00002688.upk
+Loading Texture2D Nothing_A_n from package 00008613.upk
+Loading Material3 Blend_add_Face from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loaded in 0.049 sec, 982 allocs, 0.85 MBytes serialized in 109007 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col2
+
+    ScalarParameterValues[6] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Opacity, ParameterValue=0.5 }
+        ScalarParameterValues[1] = { ParameterName=Lip, ParameterValue=0.5 }
+        ScalarParameterValues[2] = { ParameterName=Skin_Spec_value, ParameterValue=2 }
+        ScalarParameterValues[3] = { ParameterName=Lip_Glossiness, ParameterValue=100 }
+        ScalarParameterValues[4] = { ParameterName=Skin_glossiness1, ParameterValue=3.5 }
+        ScalarParameterValues[5] = { ParameterName=Skin_glossiness2, ParameterValue=50 }
+    }
+    TextureParameterValues[12] =
+    {
+        TextureParameterValues[0] = { ParameterName=Face_Mask_RGB, ParameterValue=None }
+        TextureParameterValues[1] = { ParameterName=Decal_Diffuse, ParameterValue=Texture2D'Nothing_A' }
+        TextureParameterValues[2] = { ParameterName=Face_Diffuse, ParameterValue=Texture2D'Diffuse_001' }
+        TextureParameterValues[3] = { ParameterName=makeup_mask, ParameterValue=Texture2D'Nothing_A' }
+        TextureParameterValues[4] = { ParameterName=eyebrow_mask, ParameterValue=Texture2D'JinF_face_brow01' }
+        TextureParameterValues[5] = { ParameterName=Beard_mask, ParameterValue=Texture2D'JinF_face_brow01' }
+        TextureParameterValues[6] = { ParameterName=Face_Mask, ParameterValue=Texture2D'Mask' }
+        TextureParameterValues[7] = { ParameterName=Face_Specular, ParameterValue=Texture2D'Specular' }
+        TextureParameterValues[8] = { ParameterName=old_Mask, ParameterValue=Texture2D'Nothing_A' }
+        TextureParameterValues[9] = { ParameterName=Face_Normal, ParameterValue=Texture2D'Normal_001' }
+        TextureParameterValues[10] = { ParameterName=old_Normal, ParameterValue=Texture2D'Nothing_A_n' }
+        TextureParameterValues[11] = { ParameterName=Decal_Normal, ParameterValue=Texture2D'Nothing_A_n' }
+    }
+    VectorParameterValues[4] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = eyebrow_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Lip_color
+            ParameterValue = { R=0.000107, G=0.000175, B=0.001433, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = skin_color
+            ParameterValue = { R=0.147998, G=0.197516, B=0.499505, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Skin_Specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+    }
+    Parent = Material3'Blend_add_Face'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

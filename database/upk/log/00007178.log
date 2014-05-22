@@ -1,0 +1,121 @@
+Found 16187 game files (144 skipped)
+Loading package: 00007178.upk Ver: 573/1 Engine: 4205 Names: 251 Exports: 1 Imports: 98 Game: 801A
+Loading AnimSet GonF_Facial_AnimSet from package 00007178.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::UseMovementBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+Loaded in 0.001 sec, 273 allocs, 0.01 MBytes serialized in 1719 calls.
+
+Object info:
+============
+ClassName: AnimSet ObjectName: GonF_Facial_AnimSet
+
+    bAnimRotationOnly = true
+    TrackBoneNames[95] =
+    {
+        TrackBoneNames[0] = Root
+        TrackBoneNames[1] = Bip01
+        TrackBoneNames[2] = Bip01Pelvis
+        TrackBoneNames[3] = Bip01Spine
+        TrackBoneNames[4] = Bip01Spine1
+        TrackBoneNames[5] = Bip01Spine2
+        TrackBoneNames[6] = Bip01Neck
+        TrackBoneNames[7] = Bip01Neck1
+        TrackBoneNames[8] = Bip01Head
+        TrackBoneNames[9] = Face_Root
+        TrackBoneNames[10] = mouth_jaw_DWN
+        TrackBoneNames[11] = mouth_DWN_MID
+        TrackBoneNames[12] = mouth_DWN_R
+        TrackBoneNames[13] = mouth_DWN_L
+        TrackBoneNames[14] = tongue_01
+        TrackBoneNames[15] = tongue_02
+        TrackBoneNames[16] = mouth_jaw_UP
+        TrackBoneNames[17] = mouth_UP_MID
+        TrackBoneNames[18] = mouth_UP_R
+        TrackBoneNames[19] = mouth_UP_L
+        TrackBoneNames[20] = nose_MID
+        TrackBoneNames[21] = nose_R
+        TrackBoneNames[22] = nose_L
+        TrackBoneNames[23] = Lear
+        TrackBoneNames[24] = Rear
+        TrackBoneNames[25] = mouth_MID_L
+        TrackBoneNames[26] = mouth_MID_R
+        TrackBoneNames[27] = Reye_UP
+        TrackBoneNames[28] = Reye_DWN
+        TrackBoneNames[29] = Leye_UP
+        TrackBoneNames[30] = Leye_DWN
+        TrackBoneNames[31] = Reyebrows_OUT
+        TrackBoneNames[32] = Reyebrows_IN
+        TrackBoneNames[33] = Leyebrows_IN
+        TrackBoneNames[34] = Leyebrows_OUT
+        TrackBoneNames[35] = Reye_OUT
+        TrackBoneNames[36] = Reye_IN
+        TrackBoneNames[37] = Leye_IN
+        TrackBoneNames[38] = Leye_OUT
+        TrackBoneNames[39] = Reye
+        TrackBoneNames[40] = Leye
+        TrackBoneNames[41] = cheek_L
+        TrackBoneNames[42] = cheek_R
+        TrackBoneNames[43] = cheekUp_L
+        TrackBoneNames[44] = cheekUp_R
+        TrackBoneNames[45] = Bip01LClavicle
+        TrackBoneNames[46] = Bip01LUpperArm
+        TrackBoneNames[47] = Bip01LForeArm
+        TrackBoneNames[48] = Bip01LHand
+        TrackBoneNames[49] = Bip01LFinger0
+        TrackBoneNames[50] = Bip01LFinger01
+        TrackBoneNames[51] = Bip01LFinger02
+        TrackBoneNames[52] = Bip01LFinger1
+        TrackBoneNames[53] = Bip01LFinger11
+        TrackBoneNames[54] = Bip01LFinger12
+        TrackBoneNames[55] = Bip01LFinger2
+        TrackBoneNames[56] = Bip01LFinger21
+        TrackBoneNames[57] = Bip01LFinger22
+        TrackBoneNames[58] = Bip01LFinger3
+        TrackBoneNames[59] = Bip01LFinger31
+        TrackBoneNames[60] = Bip01LFinger32
+        TrackBoneNames[61] = Bip01LFinger4
+        TrackBoneNames[62] = Bip01LFinger41
+        TrackBoneNames[63] = Bip01LFinger42
+        TrackBoneNames[64] = BoneArmTwistL01
+        TrackBoneNames[65] = BoneShoulderTwistL01
+        TrackBoneNames[66] = Bip01RClavicle
+        TrackBoneNames[67] = Bip01RUpperArm
+        TrackBoneNames[68] = Bip01RForeArm
+        TrackBoneNames[69] = Bip01RHand
+        TrackBoneNames[70] = Bip01RFinger0
+        TrackBoneNames[71] = Bip01RFinger01
+        TrackBoneNames[72] = Bip01RFinger02
+        TrackBoneNames[73] = Bip01RFinger1
+        TrackBoneNames[74] = Bip01RFinger11
+        TrackBoneNames[75] = Bip01RFinger12
+        TrackBoneNames[76] = Bip01RFinger2
+        TrackBoneNames[77] = Bip01RFinger21
+        TrackBoneNames[78] = Bip01RFinger22
+        TrackBoneNames[79] = Bip01RFinger3
+        TrackBoneNames[80] = Bip01RFinger31
+        TrackBoneNames[81] = Bip01RFinger32
+        TrackBoneNames[82] = Bip01RFinger4
+        TrackBoneNames[83] = Bip01RFinger41
+        TrackBoneNames[84] = Bip01RFinger42
+        TrackBoneNames[85] = BoneArmTwistR01
+        TrackBoneNames[86] = BoneShoulderTwistR01
+        TrackBoneNames[87] = Bip01LThigh
+        TrackBoneNames[88] = Bip01LCalf
+        TrackBoneNames[89] = Bip01LFoot
+        TrackBoneNames[90] = Bip01LToe0
+        TrackBoneNames[91] = Bip01RThigh
+        TrackBoneNames[92] = Bip01RCalf
+        TrackBoneNames[93] = Bip01RFoot
+        TrackBoneNames[94] = Bip01RToe0
+    }
+    Sequences[0] = {}
+    UseTranslationBoneNames[0] = {}
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00002678.GonF_001
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None

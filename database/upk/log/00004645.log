@@ -1,0 +1,86 @@
+Found 16187 game files (144 skipped)
+Loading package: 00004645.upk Ver: 573/1 Engine: 4205 Names: 87 Exports: 2 Imports: 23 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00004645.upk
+Loading package: 00004644.upk Ver: 573/1 Engine: 4205 Names: 36 Exports: 8 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D Cloth_Job_LynM_ShooterHG_N from package 00004644.upk
+Loading Texture2D Cloth_Job_LynM_ShooterHG_M from package 00004644.upk
+Loading Texture2D Cloth_Job_LynM_ShooterHG_D from package 00004644.upk
+Loading Texture2D Cloth_Job_LynM_ShooterHG_S from package 00004644.upk
+Loading TextureCube cube_orb from package 00002640.upk
+Loading Material3 Body from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loaded in 0.1 sec, 2674 allocs, 1.34 MBytes serialized in 145386 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[5] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=2 }
+        ScalarParameterValues[1] = { ParameterName=Skin_glossiness, ParameterValue=3.5 }
+        ScalarParameterValues[2] = { ParameterName=Wear_glossiness1, ParameterValue=4 }
+        ScalarParameterValues[3] = { ParameterName=Wear_glossiness2, ParameterValue=30 }
+        ScalarParameterValues[4] = { ParameterName=Skin_Spec_value, ParameterValue=1 }
+    }
+    TextureParameterValues[5] =
+    {
+        TextureParameterValues[0] = { ParameterName=Body_normal, ParameterValue=Texture2D'Cloth_Job_LynM_ShooterHG_N' }
+        TextureParameterValues[1] =
+        {
+            ParameterName = Body_mask_RGB
+            ParameterValue = Texture2D'Cloth_Job_LynM_ShooterHG_M'
+        }
+        TextureParameterValues[2] =
+        {
+            ParameterName = Body_diffuse
+            ParameterValue = Texture2D'Cloth_Job_LynM_ShooterHG_D'
+        }
+        TextureParameterValues[3] =
+        {
+            ParameterName = Body_specular
+            ParameterValue = Texture2D'Cloth_Job_LynM_ShooterHG_S'
+        }
+        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'cube_orb' }
+    }
+    VectorParameterValues[3] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Skin_Specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=0.991393, G=0.982826, B=0.56681, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = skin_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+    }
+    Parent = Material3'Body'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

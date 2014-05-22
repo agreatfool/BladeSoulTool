@@ -1,0 +1,24 @@
+Found 16187 game files (144 skipped)
+Loading package: 00008504.upk Ver: 573/1 Engine: 4205 Names: 196 Exports: 1 Imports: 122 Game: 801A
+Loading AnimSet Kun_Facial_AnimSet from package 00008504.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+WARNING: AnimSet Kun_Facial_AnimSet has 0 sequences, but empty TrackBoneNames
+Loaded in 0.001 sec, 216 allocs, 0.01 MBytes serialized in 1519 calls.
+
+Object info:
+============
+ClassName: AnimSet ObjectName: Kun_Facial_AnimSet
+
+    bAnimRotationOnly = true
+    TrackBoneNames[0] = {}
+    Sequences[0] = {}
+    UseTranslationBoneNames[0] = {}
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00003438.KunN_001
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None

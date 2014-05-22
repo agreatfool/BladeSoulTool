@@ -1,0 +1,145 @@
+Found 16187 game files (144 skipped)
+Loading package: 00021740.upk Ver: 573/1 Engine: 4205 Names: 60 Exports: 8 Imports: 9 Game: 801A
+Loading AnimSet IceFireMarble_AnimSet from package 00021740.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::PhysicalHitBoneNames" was not found
+Loading AnimSequence AnimSequence_0 from package 00021740.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_0 from package 00021740.upk
+Loading AnimSequence AnimSequence_1 from package 00021740.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_0 from package 00021740.upk
+Loading AnimSequence AnimSequence_2 from package 00021740.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loaded in 0.002 sec, 105 allocs, 0.00 MBytes serialized in 714 calls.
+
+Object info:
+============
+ClassName: AnimNotify_Sound ObjectName: AnimNotify_Sound_0
+
+    Sound = None
+    Volume = 1
+    Radius = 0
+    Random = 0
+    DefaultWalkSound[3] = { None, None, None }
+    DefaultRunSound[3] = { None, None, None }
+    GrassWalkSound[3] = { None, None, None }
+    GrassRunSound[3] = { None, None, None }
+    WaterWalkSound[3] = { None, None, None }
+    WaterRunSound[3] = { None, None, None }
+    DefaultActorWalkSound[3] = { None, None, None }
+    DefaultActorRunSound[3] = { None, None, None }
+
+Object info:
+============
+ClassName: AnimSequence ObjectName: AnimSequence_0
+
+    SequenceName = BK_B_None_Mov_Idle
+    SequenceLength = 2
+    NumFrames = 60
+    RateScale = 1
+    bNoLoopingInterpolation = false
+    RawAnimData[0] = {}
+    TranslationCompressionFormat = ACF_None (0)
+    RotationCompressionFormat = <unknown> (255)
+    KeyEncodingFormat = AKF_ConstantKeyLerp (0)
+    CompressedTrackOffsets[4] = { 0, 1, 12, 1 }
+    bIsAdditive = false
+    AdditiveRefName = None
+    KeyFrameData[0] = {}
+    m_pBioAnimSetData = None
+    CompressedTrackTimeOffsets[0] = {}
+    Tracks[0] = {}
+    TrackOffsets[0] = {}
+
+Object info:
+============
+ClassName: AnimSet ObjectName: IceFireMarble_AnimSet
+
+    bAnimRotationOnly = true
+    TrackBoneNames[1] = { Root }
+    Sequences[3] =
+    {
+        Sequences[0] = AnimSequence'IceFireMarble_AnimSet.AnimSequence_0'
+        Sequences[1] = AnimSequence'IceFireMarble_AnimSet.AnimSequence_1'
+        Sequences[2] = AnimSequence'IceFireMarble_AnimSet.AnimSequence_2'
+    }
+    UseTranslationBoneNames[0] = {}
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00020719.Monster_Etc_IceFireMarble_col1
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None
+
+Object info:
+============
+ClassName: AnimNotify_Sound ObjectName: AnimNotify_Sound_0
+
+    Sound = None
+    Volume = 1
+    Radius = 0
+    Random = 0
+    DefaultWalkSound[3] = { None, None, None }
+    DefaultRunSound[3] = { None, None, None }
+    GrassWalkSound[3] = { None, None, None }
+    GrassRunSound[3] = { None, None, None }
+    WaterWalkSound[3] = { None, None, None }
+    WaterRunSound[3] = { None, None, None }
+    DefaultActorWalkSound[3] = { None, None, None }
+    DefaultActorRunSound[3] = { None, None, None }
+
+Object info:
+============
+ClassName: AnimSequence ObjectName: AnimSequence_1
+
+    SequenceName = BK_B_None_Mov_Idle1
+    SequenceLength = 2
+    NumFrames = 60
+    RateScale = 1
+    bNoLoopingInterpolation = false
+    RawAnimData[0] = {}
+    TranslationCompressionFormat = ACF_None (0)
+    RotationCompressionFormat = <unknown> (255)
+    KeyEncodingFormat = AKF_ConstantKeyLerp (0)
+    CompressedTrackOffsets[4] = { 0, 1, 12, 1 }
+    bIsAdditive = false
+    AdditiveRefName = None
+    KeyFrameData[0] = {}
+    m_pBioAnimSetData = None
+    CompressedTrackTimeOffsets[0] = {}
+    Tracks[0] = {}
+    TrackOffsets[0] = {}
+
+Object info:
+============
+ClassName: AnimSequence ObjectName: AnimSequence_2
+
+    SequenceName = BK_P_None_Mov_Idle
+    SequenceLength = 2
+    NumFrames = 60
+    RateScale = 1
+    bNoLoopingInterpolation = false
+    RawAnimData[0] = {}
+    TranslationCompressionFormat = ACF_None (0)
+    RotationCompressionFormat = <unknown> (255)
+    KeyEncodingFormat = AKF_ConstantKeyLerp (0)
+    CompressedTrackOffsets[4] = { 0, 1, 12, 1 }
+    bIsAdditive = false
+    AdditiveRefName = None
+    KeyFrameData[0] = {}
+    m_pBioAnimSetData = None
+    CompressedTrackTimeOffsets[0] = {}
+    Tracks[0] = {}
+    TrackOffsets[0] = {}

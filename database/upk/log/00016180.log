@@ -1,0 +1,180 @@
+Found 16187 game files (144 skipped)
+Loading package: 00016180.upk Ver: 573/1 Engine: 4205 Names: 181 Exports: 254 Imports: 51 Game: 801A
+Loading Material3 Dokebi_FX from package 00016180.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading MaterialInstanceConstant col3 from package 00016180.upk
+Loading package: 00014554.upk Ver: 573/1 Engine: 4205 Names: 59 Exports: 30 Imports: 4 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D Monster_Human_DokkebiGon_n from package 00014554.upk
+Loading Texture2D Monster_Human_DokkebiGon_m3 from package 00014554.upk
+Loading Texture2D Monster_Human_DokkebiGon_d3 from package 00014554.upk
+Loading Texture2D Monster_Human_DokkebiGon_s3 from package 00014554.upk
+Loading TextureCube lenscube from package 00002640.upk
+Loading Texture2D Monster_Human_DokkebiGon_FX from package 00014554.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.11 sec, 2823 allocs, 1.60 MBytes serialized in 151673 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Dokebi_FX
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'check_n'
+        ReferencedTextures[1] = Texture2D'check'
+        ReferencedTextures[2] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[4] = Texture2D'Noise_Glass_000'
+        ReferencedTextures[5] = Texture2D'Gradient_Wipe_BurnOut_Mask_TEST'
+        ReferencedTextures[6] = Texture2D'Gradient_Wipe_BurnOut_Mask'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col3
+
+    ScalarParameterValues[13] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=0 }
+        ScalarParameterValues[1] = { ParameterName=Skin_glossiness, ParameterValue=3 }
+        ScalarParameterValues[2] = { ParameterName=Wear_glossiness1, ParameterValue=3 }
+        ScalarParameterValues[3] = { ParameterName=Wear_glossiness2, ParameterValue=20 }
+        ScalarParameterValues[4] = { ParameterName=Skin_Spec_value, ParameterValue=1.3 }
+        ScalarParameterValues[5] = { ParameterName=HighLight_Value, ParameterValue=2 }
+        ScalarParameterValues[6] = { ParameterName=HighLight_glossiness, ParameterValue=100 }
+        ScalarParameterValues[7] = { ParameterName=Emissive_value, ParameterValue=2 }
+        ScalarParameterValues[8] = { ParameterName=Emissive_value2, ParameterValue=0 }
+        ScalarParameterValues[9] = { ParameterName=Fresnel Value, ParameterValue=1 }
+        ScalarParameterValues[10] = { ParameterName=Fresnel exponent, ParameterValue=30 }
+        ScalarParameterValues[11] = { ParameterName=Specular_value, ParameterValue=5 }
+        ScalarParameterValues[12] = { ParameterName=Skin_Spec_value_X, ParameterValue=1 }
+    }
+    TextureParameterValues[8] =
+    {
+        TextureParameterValues[0] = { ParameterName=Body_normal, ParameterValue=Texture2D'Monster_Human_DokkebiGon_n' }
+        TextureParameterValues[1] =
+        {
+            ParameterName = Body_mask_RGB
+            ParameterValue = Texture2D'Monster_Human_DokkebiGon_m3'
+        }
+        TextureParameterValues[2] =
+        {
+            ParameterName = Body_diffuse
+            ParameterValue = Texture2D'Monster_Human_DokkebiGon_d3'
+        }
+        TextureParameterValues[3] =
+        {
+            ParameterName = Body_specular
+            ParameterValue = Texture2D'Monster_Human_DokkebiGon_s3'
+        }
+        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'lenscube' }
+        TextureParameterValues[5] = { ParameterName=Emissive, ParameterValue=Texture2D'check' }
+        TextureParameterValues[6] = { ParameterName=Mask_FX_Texture, ParameterValue=Texture2D'Smoke_Pattern_001' }
+        TextureParameterValues[7] = { ParameterName=FX_Add, ParameterValue=Texture2D'Monster_Human_DokkebiGon_FX' }
+    }
+    VectorParameterValues[14] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Skin_Specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=0.95737, G=0.982826, B=0.70117, A=2 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = HighLight_Color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = skin_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = Burn_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = Fx_Glow_color_A
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = Glow_Trangition_A
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[10] =
+        {
+            ParameterName = Fx_Glow_power_A
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[11] =
+        {
+            ParameterName = Fx_Glow_color_B
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[12] =
+        {
+            ParameterName = Glow_Trangition_B
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[13] =
+        {
+            ParameterName = Fx_Glow_power_B
+            ParameterValue = { R=12, G=0, B=0, A=1 }
+        }
+    }
+    Parent = Material3'Dokebi_FX'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

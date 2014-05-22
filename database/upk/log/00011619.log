@@ -1,0 +1,87 @@
+Found 16187 game files (144 skipped)
+Loading package: 00011619.upk Ver: 573/1 Engine: 4205 Names: 114 Exports: 55 Imports: 20 Game: 801A
+Loading SkeletalMesh3 GeneralWorldBTreeA from package 00011619.upk
+WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::ImpactEffect" was not found
+WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
+Loading package: 00011618.upk Ver: 573/1 Engine: 4205 Names: 76 Exports: 1 Imports: 16 Game: 801A
+Loading package: tree_004.upk Ver: 573/1 Engine: 4205 Names: 400 Exports: 153 Imports: 36 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00011618.upk
+Loading package: 00011617.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading MaterialInstanceConstant Tree_004_04_Mat4 from package tree_004.upk
+Loading package: parent_normal.upk Ver: 573/1 Engine: 4205 Names: 1079 Exports: 9486 Imports: 96 Game: 801A
+WARNING: BoolProperty "UMaterialInstanceConstant::bAcceptRenderDecal" was not found
+Loading MaterialInstanceConstant Tree_004_03_Mat4 from package tree_004.upk
+WARNING: BoolProperty "UMaterialInstanceConstant::bAcceptRenderDecal" was not found
+Loading Texture2D Monster_Etc_GeneralWorldBTreeA_col1_n from package 00011617.upk
+Loading Texture2D Monster_Etc_GeneralWorldBTreeA_col1_M from package 00011617.upk
+Loading Texture2D Monster_Etc_GeneralWorldBTreeA_col1_d from package 00011617.upk
+Loading Texture2D Monster_Etc_GeneralWorldBTreeA_col1_s from package 00011617.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D Tree_004_04_D4 from package tree_004.upk
+Loading Material3 Parent_Grass from package parent_normal.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D Parent_diffuse from package parent_normal.upk
+Loaded in 0.11 sec, 3834 allocs, 3.45 MBytes serialized in 470725 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: GeneralWorldBTreeA
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[3] = { true, true, true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[3] =
+    {
+        Materials[0] = MaterialInstanceConstant'col1'
+        Materials[1] = MaterialInstanceConstant'Tree_004_04_Mat4'
+        Materials[2] = MaterialInstanceConstant'Tree_004_03_Mat4'
+    }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[3] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'Tree_004_04_Mat4', FirstIndex=0, NumFaces=200 }
+                Sections[1] =
+                {
+                    Material = MaterialInstanceConstant'Tree_004_03_Mat4'
+                    FirstIndex = 600
+                    NumFaces = 1331
+                }
+                Sections[2] = { Material=MaterialInstanceConstant'col1', FirstIndex=4593, NumFaces=4186 }
+            }
+            NumVerts = 4655
+            IndexCount = 17151
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 18

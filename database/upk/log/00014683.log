@@ -1,0 +1,252 @@
+Found 16187 game files (144 skipped)
+Loading package: 00014683.upk Ver: 573/1 Engine: 4205 Names: 684 Exports: 2410 Imports: 227 Game: 801A
+Loading Material3 Login_Assassin_Suriken_M from package 00014683.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00012512.upk Ver: 573/1 Engine: 4205 Names: 565 Exports: 1552 Imports: 174 Game: 801A
+Loading Material3 Login_JinF_assasin_leaf_M from package 00014683.upk
+Loading Material3 login_Leaf_M from package 00014683.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00007928.upk Ver: 573/1 Engine: 4205 Names: 887 Exports: 646 Imports: 112 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 69 Imports: 11 Game: 801A
+Loading Material3 Rain_Fall_New from package 00014683.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Material3 Rain_Fall_New2 from package 00014683.upk
+Loading Material3 Fencer_RRR_Slash from package 00014683.upk
+Loading Material3 Fencer_RRR_Slash2 from package 00014683.upk
+Loading Material3 Login_LinF_Trail_M from package 00014683.upk
+Loading Texture2D Noise_009 from package 00014683.upk
+Loading Texture2D T_Camera_Water_Normal from package 00014683.upk
+Loading Texture2D Assassin_Suriken_N_Tex from package 00012512.upk
+Loading Texture2D Assassin_Suriken_D_Tex from package 00012512.upk
+Loading Texture2D Assassin_Suriken_S_Tex from package 00012512.upk
+Loading Texture2D Leaf000_Tex from package 00007928.upk
+Loading Texture2D DefaultTexture from package EngineResources.upk
+Loading Texture2D Gradient_Beam_004 from package 00012963.upk
+Loading Texture2D Smoke_Dust_001 from package 00012963.upk
+Loading Texture2D Gradient_001_Left from package 00012963.upk
+Loading Texture2D Normal_Noise_002 from package 00012963.upk
+Loading Texture2D Gradient_Color_BlueToPurple_000 from package 00012963.upk
+Loading Texture2D Gradient_Trail_002 from package 00012963.upk
+Loading Texture2D Gradient_Slash_001_Tex from package 00012963.upk
+Loading Texture2D Gradient_Trail_001 from package 00012963.upk
+Loading Texture2D Gradient_Color_PtoP001_Tex from package 00012963.upk
+Loading Texture2D Sparkle_Ink_007 from package 00012963.upk
+Loading Texture2D Gradient_Beam_007 from package 00012963.upk
+Loading Texture2D Glow_008 from package 00012963.upk
+Loading Texture2D Gradient_Color_BtoS000_Tex from package 00012963.upk
+Loaded in 0.12 sec, 4069 allocs, 0.93 MBytes serialized in 123318 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Login_Assassin_Suriken_M
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Assassin_Suriken_N_Tex'
+        ReferencedTextures[1] = Texture2D'Assassin_Suriken_D_Tex'
+        ReferencedTextures[2] = Texture2D'Assassin_Suriken_S_Tex'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Login_JinF_assasin_leaf_M
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[0] = {}
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: login_Leaf_M
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[2] = { Texture2D'Material.Leaf000_Tex', Texture2D'DefaultTexture' }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Rain_Fall_New
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Beam_004'
+        ReferencedTextures[1] = Texture2D'Noise_009'
+        ReferencedTextures[2] = Texture2D'T_Camera_Water_Normal'
+        ReferencedTextures[3] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Rain_Fall_New2
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'Smoke_Dust_001'
+        ReferencedTextures[1] = Texture2D'Gradient_Beam_004'
+        ReferencedTextures[2] = Texture2D'Noise_009'
+        ReferencedTextures[3] = Texture2D'T_Camera_Water_Normal'
+        ReferencedTextures[4] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Fencer_RRR_Slash
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_001_Left'
+        ReferencedTextures[1] = Texture2D'Normal_Noise_002'
+        ReferencedTextures[2] = Texture2D'Gradient_Color_BlueToPurple_000'
+        ReferencedTextures[3] = Texture2D'Gradient_Trail_002'
+        ReferencedTextures[4] = Texture2D'Gradient_Slash_001_Tex'
+        ReferencedTextures[5] = Texture2D'Gradient_Trail_001'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Fencer_RRR_Slash2
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_001_Left'
+        ReferencedTextures[1] = Texture2D'Normal_Noise_002'
+        ReferencedTextures[2] = Texture2D'Gradient_Color_BlueToPurple_000'
+        ReferencedTextures[3] = Texture2D'Gradient_Trail_002'
+        ReferencedTextures[4] = Texture2D'Gradient_Slash_001_Tex'
+        ReferencedTextures[5] = Texture2D'Gradient_Trail_001'
+        ReferencedTextures[6] = Texture2D'Gradient_Color_PtoP001_Tex'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Login_LinF_Trail_M
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Sparkle_Ink_007'
+        ReferencedTextures[1] = Texture2D'Gradient_Beam_007'
+        ReferencedTextures[2] = Texture2D'Glow_008'
+        ReferencedTextures[3] = Texture2D'Gradient_Color_BtoS000_Tex'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Noise_009
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_G8 (3)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_Camera_Water_Normal
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }

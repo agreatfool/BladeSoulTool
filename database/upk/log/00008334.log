@@ -1,0 +1,220 @@
+Found 16187 game files (144 skipped)
+Loading package: 00008334.upk Ver: 573/1 Engine: 4205 Names: 452 Exports: 329 Imports: 103 Game: 801A
+Loading Material3 JinSuYoun_mat2 from package 00008334.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading MaterialInstanceConstant JinSuYoun_mat2_INST from package 00008334.upk
+Loading SkeletalMesh3 65013_KunN from package 00008334.upk
+WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
+WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
+WARNING: FloatProperty "USkeletalMesh3::AddFootOffsetValue" was not found
+WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
+WARNING: ArrayProperty "USkeletalMesh3::NameplateMeshScaleRatio" was not found
+WARNING: StructProperty "USkeletalMesh3::NameplateHeightRatio" was not found
+WARNING: ArrayProperty "USkeletalMesh3::MeshScaleRatio" was not found
+WARNING: StructProperty "USkeletalMesh3::HeightRatio" was not found
+WARNING: StructProperty "USkeletalMesh3::HandRatio" was not found
+WARNING: ByteProperty "USkeletalMesh3::CommonPhysicsUseFlag" was not found
+Loading package: 00008333.upk Ver: 573/1 Engine: 4205 Names: 86 Exports: 1 Imports: 21 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_303 from package 00008334.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_304 from package 00008334.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading Texture2D JinSuYoun_Alpha_Tex from package 00008334.upk
+Loading Texture2D JinSuYoun_Alpha_Tex3 from package 00008334.upk
+Loading Texture2D Smoke_Cloud_006 from package 00012963.upk
+Loading Texture2D Smoke_Cloud_005 from package 00012963.upk
+Loading Texture2D Aura_Tail_002 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading MaterialInstanceConstant col1 from package 00008333.upk
+Loading package: 00008332.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 8 Imports: 4 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D Nm from package 00008332.upk
+Loading Texture2D Mm from package 00008332.upk
+Loading Texture2D Dm from package 00008332.upk
+Loading Texture2D SM from package 00008332.upk
+Loading TextureCube cube_orb from package 00002640.upk
+Loading Texture2D Em from package 00008332.upk
+Loading Material3 body_kUN from package 00002620.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loaded in 0.19 sec, 3368 allocs, 4.93 MBytes serialized in 651991 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: JinSuYoun_mat2
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'JinSuYoun_Alpha_Tex'
+        ReferencedTextures[1] = Texture2D'Smoke_Cloud_006'
+        ReferencedTextures[2] = Texture2D'Smoke_Cloud_005'
+        ReferencedTextures[3] = Texture2D'Aura_Tail_002'
+        ReferencedTextures[4] = Texture2D'JinSuYoun_Alpha_Tex3'
+        ReferencedTextures[5] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[6] = Texture2D'Gradient_Line_003'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: JinSuYoun_mat2_INST
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[0] = {}
+    VectorParameterValues[0] = {}
+    Parent = Material3'JinSuYoun_mat2'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 65013_KunN
+
+    LODInfo[2] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[2] = { true, true }
+        }
+        LODInfo[1] =
+        {
+            DisplayFactor = 0.25
+            LODHysteresis = 0.02
+            LODMaterialMap[2] = { 0, 1 }
+            bEnableShadowCasting[2] = { true, true }
+        }
+    }
+    Sockets[2] =
+    {
+        Sockets[0] = SkeletalMeshSocket'65013_KunN.SkeletalMeshSocket_303'
+        Sockets[1] = SkeletalMeshSocket'65013_KunN.SkeletalMeshSocket_304'
+    }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'JinSuYoun_mat2_INST' }
+
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=10765 }
+                Sections[1] =
+                {
+                    Material = MaterialInstanceConstant'JinSuYoun_mat2_INST'
+                    FirstIndex = 32295
+                    NumFaces = 104
+                }
+            }
+            NumVerts = 9466
+            IndexCount = 32607
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=3249 }
+                Sections[1] =
+                {
+                    Material = MaterialInstanceConstant'JinSuYoun_mat2_INST'
+                    FirstIndex = 9747
+                    NumFaces = 40
+                }
+            }
+            NumVerts = 3593
+            IndexCount = 9867
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 99
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_303
+
+    SocketName = Particle01
+    BoneName = Bone_LCalf_B_02
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_304
+
+    SocketName = Particle02
+    BoneName = Bone_RCalf_B_02
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: JinSuYoun_Alpha_Tex
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: JinSuYoun_Alpha_Tex3
+
+    SizeX = 256
+    SizeY = 64
+    Format = PF_G8 (3)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }

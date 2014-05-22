@@ -1,0 +1,118 @@
+Found 16187 game files (144 skipped)
+Loading package: 00006423.upk Ver: 573/1 Engine: 4205 Names: 178 Exports: 114 Imports: 51 Game: 801A
+Loading Material3 Basic_Sanho_Tail from package 00006423.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00006423.upk
+Loading package: 00006422.upk Ver: 573/1 Engine: 4205 Names: 44 Exports: 16 Imports: 4 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading MaterialInstanceConstant col1_A1 from package 00006423.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Monster_Beast_Sanho_N from package 00006422.upk
+Loading Texture2D Monster_Beast_Sanho_col1_m1 from package 00006422.upk
+Loading Texture2D Monster_Beast_Sanho_col1_D from package 00006422.upk
+Loading Texture2D Monster_Beast_Sanho_col1_S from package 00006422.upk
+Loading TextureCube cube_orb from package 00002640.upk
+Loading Texture2D Monster_Beast_Sanho_col1_em from package 00006422.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.091 sec, 2775 allocs, 0.98 MBytes serialized in 148455 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Basic_Sanho_Tail
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[2] = { Texture2D'check_n', Texture2D'check' }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[6] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=7 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness1, ParameterValue=3 }
+        ScalarParameterValues[2] = { ParameterName=Glossiness2, ParameterValue=20 }
+        ScalarParameterValues[3] = { ParameterName=Specular_value, ParameterValue=2 }
+        ScalarParameterValues[4] = { ParameterName=Emissive_value, ParameterValue=6 }
+        ScalarParameterValues[5] = { ParameterName=Emissive_value2, ParameterValue=0 }
+    }
+    TextureParameterValues[6] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'Monster_Beast_Sanho_N' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'Monster_Beast_Sanho_col1_m1' }
+        TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'Monster_Beast_Sanho_col1_D' }
+        TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'Monster_Beast_Sanho_col1_S' }
+        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'cube_orb' }
+        TextureParameterValues[5] = { ParameterName=Emissive, ParameterValue=Texture2D'Monster_Beast_Sanho_col1_em' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Basic'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1_A1
+
+    ScalarParameterValues[6] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=7 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness1, ParameterValue=3 }
+        ScalarParameterValues[2] = { ParameterName=Glossiness2, ParameterValue=20 }
+        ScalarParameterValues[3] = { ParameterName=Specular_value, ParameterValue=2 }
+        ScalarParameterValues[4] = { ParameterName=Emissive_value, ParameterValue=6 }
+        ScalarParameterValues[5] = { ParameterName=Emissive_value2, ParameterValue=0 }
+    }
+    TextureParameterValues[6] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'Monster_Beast_Sanho_N' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'Monster_Beast_Sanho_col1_m1' }
+        TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'Monster_Beast_Sanho_col1_D' }
+        TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'Monster_Beast_Sanho_col1_S' }
+        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'cube_orb' }
+        TextureParameterValues[5] = { ParameterName=Emissive, ParameterValue=Texture2D'Monster_Beast_Sanho_col1_em' }
+    }
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Fox_Tail_trangition
+            ParameterValue = { R=0, G=18, B=0, A=1 }
+        }
+    }
+    Parent = Material3'Basic_Sanho_Tail'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

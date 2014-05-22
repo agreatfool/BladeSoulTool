@@ -1,0 +1,65 @@
+Found 16187 game files (144 skipped)
+Loading package: 00011416.upk Ver: 573/1 Engine: 4205 Names: 293 Exports: 589 Imports: 109 Game: 801A
+Loading Material3 Dust_LoginStage_01 from package 00011416.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Material3 Dust_LoginStage_02 from package 00011416.upk
+Loading Material3 M_SamplerInfo_Mat from package 00011416.upk
+Loading Texture2D Noise_Fractal_006 from package 00012963.upk
+Loading Texture2D Noise_Fractal_006_Blur from package 00012963.upk
+Loading Texture2D Noise_Fractal_007 from package 00012963.upk
+Loading Texture2D Noise_Fractal_007_Blur from package 00012963.upk
+Loaded in 0.019 sec, 1603 allocs, 0.17 MBytes serialized in 37591 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Dust_LoginStage_01
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'Noise_Fractal_006', Texture2D'Noise_Fractal_006_Blur' }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Dust_LoginStage_02
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'Noise_Fractal_007', Texture2D'Noise_Fractal_007_Blur' }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: M_SamplerInfo_Mat
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[0] = {}
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

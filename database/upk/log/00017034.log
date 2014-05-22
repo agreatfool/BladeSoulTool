@@ -1,0 +1,76 @@
+Found 16187 game files (144 skipped)
+Loading package: 00017034.upk Ver: 573/1 Engine: 4205 Names: 50 Exports: 1 Imports: 14 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00017034.upk
+Loading package: 00017033.upk Ver: 573/1 Engine: 4205 Names: 28 Exports: 2 Imports: 2 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D 020010_LynM_col1_N from package 00017033.upk
+Loading Texture2D 020010_LynM_col1_D from package 00017033.upk
+Loading Material3 Beard_Fur from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loaded in 0.055 sec, 2050 allocs, 0.73 MBytes serialized in 132486 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[5] =
+    {
+        ScalarParameterValues[0] = { ParameterName=long, ParameterValue=0.8 }
+        ScalarParameterValues[1] = { ParameterName=Hair_Glossiness, ParameterValue=20 }
+        ScalarParameterValues[2] = { ParameterName=Fresnel Value, ParameterValue=1.5 }
+        ScalarParameterValues[3] = { ParameterName=Fresnel exponent, ParameterValue=15 }
+        ScalarParameterValues[4] = { ParameterName=Specular_value, ParameterValue=0.6 }
+    }
+    TextureParameterValues[2] =
+    {
+        TextureParameterValues[0] = { ParameterName=Hair_normal, ParameterValue=Texture2D'020010_LynM_col1_N' }
+        TextureParameterValues[1] = { ParameterName=Hair_Diffuse, ParameterValue=Texture2D'020010_LynM_col1_D' }
+    }
+    VectorParameterValues[6] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = hair_color_S
+            ParameterValue = { R=0.442323, G=0.378676, B=0.334458, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = hair_color_L
+            ParameterValue = { R=0.032876, G=0.025371, B=0.014311, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = hair_color_D
+            ParameterValue = { R=0.001687, G=0.001963, B=0.009696, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+    }
+    Parent = Material3'Beard_Fur'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

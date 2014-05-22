@@ -1,0 +1,73 @@
+Found 16187 game files (144 skipped)
+Loading package: 00010354.upk Ver: 573/1 Engine: 4205 Names: 1137 Exports: 24682 Imports: 475 Game: 801A
+Loading Material3 M_BladeMaster_Ascension_Hit from package 00010354.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Material3 M_BladeMaster_CancleSlash_Hit from package 00010354.upk
+Loading Material3 Test from package 00010354.upk
+Loading Texture2D Noise_003 from package 00012963.upk
+Loading Texture2D Noise_001 from package 00012963.upk
+Loading Texture2D Fire_004 from package 00012963.upk
+Loading Texture2D Noise_010 from package 00012963.upk
+Loading Texture2D Gradient_Beam_007 from package 00012963.upk
+Loading Texture2D Gradient_001 from package 00012963.upk
+Loaded in 0.088 sec, 2523 allocs, 1.98 MBytes serialized in 476784 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: M_BladeMaster_Ascension_Hit
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'Noise_003', Texture2D'Noise_001' }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: M_BladeMaster_CancleSlash_Hit
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[0] = {}
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Test
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Fire_004'
+        ReferencedTextures[1] = Texture2D'Noise_010'
+        ReferencedTextures[2] = Texture2D'Gradient_Beam_007'
+        ReferencedTextures[3] = Texture2D'Gradient_001'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

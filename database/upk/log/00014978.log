@@ -1,0 +1,92 @@
+Found 16187 game files (144 skipped)
+Loading package: 00014978.upk Ver: 573/1 Engine: 4205 Names: 218 Exports: 150 Imports: 22 Game: 801A
+Loading SkeletalMesh3 40019_JinM from package 00014978.upk
+WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
+WARNING: FloatProperty "USkeletalMesh3::AddFootOffsetValue" was not found
+WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
+WARNING: ArrayProperty "USkeletalMesh3::NameplateMeshScaleRatio" was not found
+WARNING: StructProperty "USkeletalMesh3::NameplateHeightRatio" was not found
+WARNING: ArrayProperty "USkeletalMesh3::MeshScaleRatio" was not found
+WARNING: StructProperty "USkeletalMesh3::HeightRatio" was not found
+WARNING: StructProperty "USkeletalMesh3::HandRatio" was not found
+WARNING: ByteProperty "USkeletalMesh3::CommonPhysicsUseFlag" was not found
+Loading package: 00014976.upk Ver: 573/1 Engine: 4205 Names: 77 Exports: 1 Imports: 13 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00014976.upk
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00014977.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
+Loading TextureCube Cube_D from package 00002640.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D 40019_JinM_col1_D from package 00014977.upk
+Loading Texture2D 40019_JinM_col1_S from package 00014977.upk
+Loading Texture2D 40019_JinM_col1_M from package 00014977.upk
+Loading Texture2D 40019_JinM_col1_N from package 00014977.upk
+Loading Material3 body_bk from package 00002620.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loaded in 0.088 sec, 1563 allocs, 1.89 MBytes serialized in 350869 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 40019_JinM
+
+    LODInfo[2] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+        LODInfo[1] =
+        {
+            DisplayFactor = 0.25
+            LODHysteresis = 0.02
+            LODMaterialMap[1] = { 0 }
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=5766 }
+            }
+            NumVerts = 4250
+            IndexCount = 17298
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1738 }
+            }
+            NumVerts = 1588
+            IndexCount = 5214
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 96

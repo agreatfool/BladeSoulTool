@@ -1,0 +1,179 @@
+Found 16187 game files (144 skipped)
+Loading package: 00005917.upk Ver: 573/1 Engine: 4205 Names: 190 Exports: 96 Imports: 23 Game: 801A
+Loading Material3 wildgoose1_mat from package 00005917.upk
+Loading Material3 wildgoose2_mat from package 00005917.upk
+Loading Material3 wildgoose3_mat from package 00005917.upk
+Loading Material3 wildgoose4_mat from package 00005917.upk
+Loading SkeletalMesh3 WildGoose from package 00005917.upk
+Loading SkeletalMesh3 WildGooseXXX from package 00005917.upk
+Loaded in 0.002 sec, 280 allocs, 0.03 MBytes serialized in 9538 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: wildgoose1_mat
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[0] = {}
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: wildgoose2_mat
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[0] = {}
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: wildgoose3_mat
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[0] = {}
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: wildgoose4_mat
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[0] = {}
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: WildGoose
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[4] = { true, true, true, true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[4] =
+    {
+        Materials[0] = Material3'wildgoose2_mat'
+        Materials[1] = Material3'wildgoose2_mat'
+        Materials[2] = Material3'wildgoose2_mat'
+        Materials[3] = Material3'wildgoose4_mat'
+    }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[4] =
+            {
+                Sections[0] = { Material=Material3'wildgoose2_mat', FirstIndex=0, NumFaces=16 }
+                Sections[1] = { Material=Material3'wildgoose2_mat', FirstIndex=48, NumFaces=8 }
+                Sections[2] = { Material=Material3'wildgoose2_mat', FirstIndex=72, NumFaces=40 }
+                Sections[3] = { Material=Material3'wildgoose4_mat', FirstIndex=192, NumFaces=6 }
+            }
+            NumVerts = 90
+            IndexCount = 210
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 15
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: WildGooseXXX
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[4] = { true, true, true, true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[4] =
+    {
+        Materials[0] = Material3'wildgoose1_mat'
+        Materials[1] = Material3'wildgoose3_mat'
+        Materials[2] = Material3'wildgoose1_mat'
+        Materials[3] = Material3'wildgoose4_mat'
+    }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[4] =
+            {
+                Sections[0] = { Material=Material3'wildgoose1_mat', FirstIndex=0, NumFaces=16 }
+                Sections[1] = { Material=Material3'wildgoose3_mat', FirstIndex=48, NumFaces=8 }
+                Sections[2] = { Material=Material3'wildgoose1_mat', FirstIndex=72, NumFaces=40 }
+                Sections[3] = { Material=Material3'wildgoose4_mat', FirstIndex=192, NumFaces=6 }
+            }
+            NumVerts = 90
+            IndexCount = 210
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 15

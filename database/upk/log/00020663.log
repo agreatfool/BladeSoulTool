@@ -1,0 +1,367 @@
+Found 16187 game files (144 skipped)
+Loading package: 00020663.upk Ver: 573/1 Engine: 4205 Names: 199 Exports: 830 Imports: 52 Game: 801A
+Loading Material3 Basic_FatManGold from package 00020663.upk
+Loading package: 00020664.upk Ver: 573/1 Engine: 4205 Names: 40 Exports: 10 Imports: 2 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Material3 Fatman_FX_InvincibleMaterialG from package 00020663.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Fatman_FX_InvincibleMaterialG1 from package 00020663.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Fatman_FX_InvincibleMaterialG2 from package 00020663.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Fatman_FX_InvincibleMaterialG3 from package 00020663.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Fatman_FX_InvincibleMaterialG_temp from package 00020663.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading MaterialInstanceConstant col1 from package 00020663.upk
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading MaterialInstanceConstant Fatman_FX_InvincibleMaterialG_INST from package 00020663.upk
+Loading Texture2D FatManGold_N from package 00020664.upk
+Loading Texture2D FatMan_Em_NRM2 from package 00020664.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D FX_Fatman_Invincible_N from package 00020664.upk
+Loading Texture2D FX_Fatman_Invincible_S from package 00020664.upk
+Loading Texture2D FatMan_Em_NRM from package 00020664.upk
+Loading Texture2D FatManGold_M from package 00020664.upk
+Loading Texture2D FatManGold_D from package 00020664.upk
+Loading Texture2D FatManGold_FX_Line from package 00020664.upk
+Loading Texture2D FatManGold_S from package 00020664.upk
+Loading TextureCube cube_orb from package 00002640.upk
+Loading Texture2D FatManGold_E from package 00020664.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.15 sec, 2964 allocs, 3.86 MBytes serialized in 163368 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Basic_FatManGold
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'FatManGold_N'
+        ReferencedTextures[1] = Texture2D'FatMan_Em_NRM2'
+        ReferencedTextures[2] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[4] = Texture2D'check'
+        ReferencedTextures[5] = Texture2D'Gradient_Wipe_BurnOut_Mask_TEST'
+        ReferencedTextures[6] = Texture2D'Gradient_Wipe_BurnOut_Mask'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Fatman_FX_InvincibleMaterialG
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'FX_Fatman_Invincible_N'
+        ReferencedTextures[1] = Texture2D'FX_Fatman_Invincible_S'
+        ReferencedTextures[2] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[4] = Texture2D'check'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Fatman_FX_InvincibleMaterialG1
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'FX_Fatman_Invincible_N'
+        ReferencedTextures[1] = Texture2D'FX_Fatman_Invincible_S'
+        ReferencedTextures[2] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[4] = Texture2D'check'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Fatman_FX_InvincibleMaterialG2
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'FX_Fatman_Invincible_N'
+        ReferencedTextures[1] = Texture2D'FX_Fatman_Invincible_S'
+        ReferencedTextures[2] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[4] = Texture2D'check'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Fatman_FX_InvincibleMaterialG3
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'FatMan_Em_NRM'
+        ReferencedTextures[1] = Texture2D'FX_Fatman_Invincible_S'
+        ReferencedTextures[2] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[4] = Texture2D'check'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Fatman_FX_InvincibleMaterialG_temp
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'FatMan_Em_NRM'
+        ReferencedTextures[1] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[2] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[3] = Texture2D'check'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[12] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=0 }
+        ScalarParameterValues[1] = { ParameterName=HighLight_Value_gold, ParameterValue=7.5 }
+        ScalarParameterValues[2] = { ParameterName=HighLight_glossiness_gold, ParameterValue=15 }
+        ScalarParameterValues[3] = { ParameterName=Glossiness1, ParameterValue=3 }
+        ScalarParameterValues[4] = { ParameterName=Glossiness2, ParameterValue=20 }
+        ScalarParameterValues[5] = { ParameterName=Specular_value, ParameterValue=1.7 }
+        ScalarParameterValues[6] = { ParameterName=HighLight_Value, ParameterValue=2 }
+        ScalarParameterValues[7] = { ParameterName=HighLight_glossiness, ParameterValue=50 }
+        ScalarParameterValues[8] = { ParameterName=Emissive_value, ParameterValue=3 }
+        ScalarParameterValues[9] = { ParameterName=Emissive_value2, ParameterValue=0 }
+        ScalarParameterValues[10] = { ParameterName=Fresnel Value, ParameterValue=1 }
+        ScalarParameterValues[11] = { ParameterName=Fresnel exponent, ParameterValue=30 }
+    }
+    TextureParameterValues[9] =
+    {
+        TextureParameterValues[0] = { ParameterName=Mask_FX_Texture, ParameterValue=Texture2D'Smoke_Pattern_001' }
+        TextureParameterValues[1] = { ParameterName=Normal_gold, ParameterValue=Texture2D'FatMan_Em_NRM2' }
+        TextureParameterValues[2] = { ParameterName=Normal, ParameterValue=Texture2D'FatManGold_N' }
+        TextureParameterValues[3] = { ParameterName=Mask_GB, ParameterValue=Texture2D'FatManGold_M' }
+        TextureParameterValues[4] = { ParameterName=Diffuse, ParameterValue=Texture2D'FatManGold_D' }
+        TextureParameterValues[5] = { ParameterName=FX_Add, ParameterValue=Texture2D'FatManGold_FX_Line' }
+        TextureParameterValues[6] = { ParameterName=Specular, ParameterValue=Texture2D'FatManGold_S' }
+        TextureParameterValues[7] = { ParameterName=rf_cube, ParameterValue=TextureCube'cube_orb' }
+        TextureParameterValues[8] = { ParameterName=Emissive, ParameterValue=Texture2D'FatManGold_E' }
+    }
+    VectorParameterValues[19] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Mesh_trangition_Gold
+            ParameterValue = { R=0, G=12, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = Mesh_trangition_A
+            ParameterValue = { R=0, G=12, B=0, A=0 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = HighLight_Color_gold
+            ParameterValue = { R=0.8, G=0.5, B=0.1, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = HighLight_Color
+            ParameterValue = { R=0.948965, G=0.851252, B=0.573159, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = Burn_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = Fx_Glow_power_B
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[10] =
+        {
+            ParameterName = Glow_Trangition_B
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[11] =
+        {
+            ParameterName = Fx_Glow_color_B
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[12] =
+        {
+            ParameterName = Fx_Glow_power_C
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[13] =
+        {
+            ParameterName = Glow_Trangition_C
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[14] =
+        {
+            ParameterName = Fx_Glow_color_C
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[15] =
+        {
+            ParameterName = Fx_Glow_power_D
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[16] =
+        {
+            ParameterName = Glow_Trangition_D
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[17] =
+        {
+            ParameterName = Fx_Glow_color_D
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[18] =
+        {
+            ParameterName = Gold_Opacity
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+    }
+    Parent = Material3'Basic_FatManGold'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Fatman_FX_InvincibleMaterialG_INST
+
+    ScalarParameterValues[2] =
+    {
+        ScalarParameterValues[0] = { ParameterName=HighLight_Value, ParameterValue=7.5 }
+        ScalarParameterValues[1] = { ParameterName=HighLight_glossiness, ParameterValue=35 }
+    }
+    TextureParameterValues[2] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'FX_Fatman_Invincible_N' }
+        TextureParameterValues[1] = { ParameterName=Mask_FX_Texture, ParameterValue=Texture2D'Smoke_Pattern_001' }
+    }
+    VectorParameterValues[2] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = ADD_MAT_Trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = HighLight_Color
+            ParameterValue = { R=0.4, G=0.29, B=0.1, A=1 }
+        }
+    }
+    Parent = Material3'Fatman_FX_InvincibleMaterialG'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

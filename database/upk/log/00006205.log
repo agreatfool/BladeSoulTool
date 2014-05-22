@@ -1,0 +1,88 @@
+Found 16187 game files (144 skipped)
+Loading package: 00006205.upk Ver: 573/1 Engine: 4205 Names: 58 Exports: 3 Imports: 14 Game: 801A
+Loading AnimSet 080003_Autoscale_Animset from package 00006205.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+Loading SkeletalMesh3 080003_Autoscale from package 00006205.upk
+WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
+Loading package: 00006204.upk Ver: 573/1 Engine: 4205 Names: 84 Exports: 1 Imports: 20 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00006204.upk
+Loading package: 00006203.upk Ver: 573/1 Engine: 4205 Names: 31 Exports: 3 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D Weapon_080003_N from package 00006203.upk
+Loading Texture2D Weapon_080003_D from package 00006203.upk
+Loading Texture2D Weapon_080003_S from package 00006203.upk
+Loading TextureCube Cube_D from package 00002640.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.083 sec, 2671 allocs, 0.87 MBytes serialized in 172370 calls.
+
+Object info:
+============
+ClassName: AnimSet ObjectName: 080003_Autoscale_Animset
+
+    bAnimRotationOnly = true
+    TrackBoneNames[4] = { RF_Root, RF_Bone01_F, RF_Bone01_B, WeaponRoot }
+    Sequences[0] = {}
+    UseTranslationBoneNames[0] = {}
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00006205.080003_Autoscale
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 080003_Autoscale
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=976 }
+            }
+            NumVerts = 884
+            IndexCount = 2928
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 7

@@ -1,0 +1,177 @@
+Found 16187 game files (144 skipped)
+Loading package: 00009745.upk Ver: 573/1 Engine: 4205 Names: 251 Exports: 358 Imports: 20 Game: 801A
+Loading SkeletalMesh3 GrimReaper from package 00009745.upk
+WARNING: ObjectProperty "USkeletalMesh3::PlayParticleSet" was not found
+WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
+Loading package: 00009744.upk Ver: 573/1 Engine: 4205 Names: 133 Exports: 5 Imports: 41 Game: 801A
+Loading SkeletalMesh3 LynM_Black from package 00009745.upk
+WARNING: ObjectProperty "USkeletalMesh3::PlayParticleSet" was not found
+Loading MaterialInstanceConstant col1 from package 00009744.upk
+Loading package: 00009743.upk Ver: 573/1 Engine: 4205 Names: 46 Exports: 18 Imports: 2 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading MaterialInstanceConstant hair_a from package 00009744.upk
+Loading MaterialInstanceConstant col1b from package 00009744.upk
+Loading MaterialInstanceConstant Face_a from package 00009744.upk
+Loading MaterialInstanceConstant eye from package 00009744.upk
+Loading package: 00007428.upk Ver: 573/1 Engine: 4205 Names: 130 Exports: 48 Imports: 19 Game: 801A
+Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading Texture2D N from package 00009743.upk
+Loading Texture2D M from package 00009743.upk
+Loading Texture2D D from package 00009743.upk
+Loading Texture2D S from package 00009743.upk
+Loading Texture2D Em from package 00009743.upk
+Loading Material3 Body from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D LynM_hair002_N from package 00009743.upk
+Loading Texture2D LynM_hair002_m1 from package 00009743.upk
+Loading Texture2D LynM_hair002_D from package 00009743.upk
+Loading Texture2D LynM_hair002_S from package 00009743.upk
+Loading Material3 Basic from package 00002620.upk
+Loading Texture2D tail_n from package 00009743.upk
+Loading Texture2D tail_m from package 00009743.upk
+Loading Texture2D tail_d from package 00009743.upk
+Loading Texture2D tail_s from package 00009743.upk
+Loading Texture2D LynM_face_n from package 00009743.upk
+Loading Texture2D LynM_face_M from package 00009743.upk
+Loading Texture2D LynM_face_d from package 00009743.upk
+Loading Texture2D LynM_face_s from package 00009743.upk
+Loading Texture2D eye1_N from package 00007428.upk
+Loading Texture2D eye1_LynM08 from package 00007428.upk
+Loading Texture2D Nothing_A from package 00008613.upk
+Loading TextureCube eye3 from package 00002640.upk
+Loading Material3 eye from package 00002620.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D eye0_N from package 00007428.upk
+Loading Texture2D Sclera from package 00007428.upk
+Loading TextureCube eye1 from package 00002640.upk
+Loading TextureCube eye_s from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.33 sec, 4080 allocs, 3.79 MBytes serialized in 737792 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: GrimReaper
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[6] = { true, true, true, true, true, true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[5] =
+    {
+        Materials[0] = MaterialInstanceConstant'col1'
+        Materials[1] = MaterialInstanceConstant'hair_a'
+        Materials[2] = MaterialInstanceConstant'col1b'
+        Materials[3] = MaterialInstanceConstant'Face_a'
+        Materials[4] = MaterialInstanceConstant'eye'
+    }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[6] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=5195 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=15585, NumFaces=1763 }
+                Sections[2] = { Material=MaterialInstanceConstant'hair_a', FirstIndex=20874, NumFaces=1436 }
+                Sections[3] = { Material=MaterialInstanceConstant'col1b', FirstIndex=25182, NumFaces=1514 }
+                Sections[4] = { Material=MaterialInstanceConstant'Face_a', FirstIndex=29724, NumFaces=1156 }
+                Sections[5] = { Material=MaterialInstanceConstant'eye', FirstIndex=33192, NumFaces=176 }
+            }
+            NumVerts = 8576
+            IndexCount = 33720
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 148
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: LynM_Black
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[5] = { true, true, true, true, true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[5] =
+    {
+        Materials[0] = MaterialInstanceConstant'col1'
+        Materials[1] = MaterialInstanceConstant'hair_a'
+        Materials[2] = MaterialInstanceConstant'col1b'
+        Materials[3] = MaterialInstanceConstant'Face_a'
+        Materials[4] = MaterialInstanceConstant'eye'
+    }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[5] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=6958 }
+                Sections[1] = { Material=MaterialInstanceConstant'hair_a', FirstIndex=20874, NumFaces=1436 }
+                Sections[2] = { Material=MaterialInstanceConstant'col1b', FirstIndex=25182, NumFaces=1418 }
+                Sections[3] = { Material=MaterialInstanceConstant'Face_a', FirstIndex=29436, NumFaces=1156 }
+                Sections[4] = { Material=MaterialInstanceConstant'eye', FirstIndex=32904, NumFaces=176 }
+            }
+            NumVerts = 8501
+            IndexCount = 33432
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 9

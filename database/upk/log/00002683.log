@@ -1,0 +1,125 @@
+Found 16187 game files (144 skipped)
+Loading package: 00002683.upk Ver: 573/1 Engine: 4205 Names: 196 Exports: 115 Imports: 19 Game: 801A
+Loading SkeletalMesh3 JinM_001 from package 00002683.upk
+Loading package: 00002685.upk Ver: 573/1 Engine: 4205 Names: 142 Exports: 5 Imports: 36 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00002685.upk
+Loading package: 00002665.upk Ver: 573/1 Engine: 4205 Names: 187 Exports: 31 Imports: 21 Game: 801A
+Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
+Loading package: 00008621.upk Ver: 573/1 Engine: 4205 Names: 48 Exports: 18 Imports: 4 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading MaterialInstanceConstant eye from package 00002685.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00007428.upk Ver: 573/1 Engine: 4205 Names: 130 Exports: 48 Imports: 19 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading MaterialInstanceConstant Beard from package 00002685.upk
+Loading Texture2D Normal from package 00002665.upk
+Loading Texture2D Nothing_A_n from package 00008613.upk
+Loading Texture2D Nothing_A from package 00008613.upk
+Loading Texture2D JinM_borw01 from package 00008621.upk
+Loading Texture2D Diffuse from package 00002665.upk
+Loading Texture2D Specular from package 00002665.upk
+Loading Texture2D Mask from package 00002665.upk
+Loading Material3 Face-M from package 00002620.upk
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 69 Imports: 11 Game: 801A
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D eye0_JinM00 from package 00007428.upk
+Loading Texture2D eye0_N from package 00007428.upk
+Loading TextureCube eye2 from package 00002640.upk
+Loading Material3 eye from package 00002620.upk
+Loading Texture2D Nothing_W from package 00008613.upk
+Loading Material3 Beard_Ac from package 00002620.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D DefaultTexture from package EngineResources.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D Sclera from package 00007428.upk
+Loading TextureCube eye1 from package 00002640.upk
+Loading TextureCube eye_s from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.2 sec, 4011 allocs, 1.24 MBytes serialized in 231727 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: JinM_001
+
+    LODInfo[2] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[3] = { true, true, true }
+        }
+        LODInfo[1] =
+        {
+            DisplayFactor = 0.25
+            LODHysteresis = 0.02
+            LODMaterialMap[3] = { 0, 1, 2 }
+            bEnableShadowCasting[3] = { true, true, true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[3] =
+    {
+        Materials[0] = MaterialInstanceConstant'col1'
+        Materials[1] = MaterialInstanceConstant'eye'
+        Materials[2] = MaterialInstanceConstant'Beard'
+    }
+
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[3] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1448 }
+                Sections[1] = { Material=MaterialInstanceConstant'eye', FirstIndex=4344, NumFaces=120 }
+                Sections[2] = { Material=MaterialInstanceConstant'Beard', FirstIndex=4704, NumFaces=554 }
+            }
+            NumVerts = 1365
+            IndexCount = 6366
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[3] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=434 }
+                Sections[1] = { Material=MaterialInstanceConstant'eye', FirstIndex=1302, NumFaces=48 }
+                Sections[2] = { Material=MaterialInstanceConstant'Beard', FirstIndex=1446, NumFaces=168 }
+            }
+            NumVerts = 487
+            IndexCount = 1950
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 56

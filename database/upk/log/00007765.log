@@ -1,0 +1,48 @@
+Found 16187 game files (144 skipped)
+Loading package: 00007765.upk Ver: 573/1 Engine: 4205 Names: 77 Exports: 2 Imports: 19 Game: 801A
+Loading MaterialInstanceConstant col3 from package 00007765.upk
+Loading package: 00004014.upk Ver: 573/1 Engine: 4205 Names: 40 Exports: 12 Imports: 2 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D TreeGoblin_n_col4 from package 00004014.upk
+Loading Texture2D TreeGoblin_m_col4 from package 00004014.upk
+Loading Texture2D TreeGoblin_d_col4 from package 00004014.upk
+Loading Texture2D TreeGoblin_s_col4 from package 00004014.upk
+Loading Texture2D TreeGoblin_em_col4 from package 00004014.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.071 sec, 2149 allocs, 1.03 MBytes serialized in 133072 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col3
+
+    ScalarParameterValues[4] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Glossiness1, ParameterValue=1 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness2, ParameterValue=10 }
+        ScalarParameterValues[2] = { ParameterName=Specular_value, ParameterValue=2 }
+        ScalarParameterValues[3] = { ParameterName=Emissive_value, ParameterValue=1 }
+    }
+    TextureParameterValues[5] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'TreeGoblin_n_col4' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'TreeGoblin_m_col4' }
+        TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'TreeGoblin_d_col4' }
+        TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'TreeGoblin_s_col4' }
+        TextureParameterValues[4] = { ParameterName=Emissive, ParameterValue=Texture2D'TreeGoblin_em_col4' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Basic'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

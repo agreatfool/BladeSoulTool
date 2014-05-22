@@ -1,0 +1,144 @@
+Found 16187 game files (144 skipped)
+Loading package: 00018696.upk Ver: 573/1 Engine: 4205 Names: 68 Exports: 11 Imports: 12 Game: 801A
+Loading SkeletalMesh3 990134_Autoscale from package 00018696.upk
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
+Loading package: 00018698.upk Ver: 573/1 Engine: 4205 Names: 171 Exports: 152 Imports: 46 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_112 from package 00018696.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_113 from package 00018696.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_114 from package 00018696.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_115 from package 00018696.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_173 from package 00018696.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_174 from package 00018696.upk
+Loading MaterialInstanceConstant col1 from package 00018698.upk
+Loading package: 00018697.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D 990134_Autoscale_col1_N from package 00018697.upk
+Loading Texture2D 990134_Autoscale_col1_M from package 00018697.upk
+Loading Texture2D 990134_Autoscale_col1_D from package 00018697.upk
+Loading Texture2D 990134_Autoscale_col1_S from package 00018697.upk
+Loading TextureCube lenscube from package 00002640.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D 990134_Autoscale_col1_FX from package 00018697.upk
+Loading Material3 Basic_18698 from package 00018698.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.12 sec, 2862 allocs, 1.04 MBytes serialized in 180307 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 990134_Autoscale
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[6] =
+    {
+        Sockets[0] = SkeletalMeshSocket'990134_Autoscale.SkeletalMeshSocket_173'
+        Sockets[1] = SkeletalMeshSocket'990134_Autoscale.SkeletalMeshSocket_174'
+        Sockets[2] = SkeletalMeshSocket'990134_Autoscale.SkeletalMeshSocket_112'
+        Sockets[3] = SkeletalMeshSocket'990134_Autoscale.SkeletalMeshSocket_113'
+        Sockets[4] = SkeletalMeshSocket'990134_Autoscale.SkeletalMeshSocket_114'
+        Sockets[5] = SkeletalMeshSocket'990134_Autoscale.SkeletalMeshSocket_115'
+    }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=904 }
+            }
+            NumVerts = 1031
+            IndexCount = 2712
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 1
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_112
+
+    SocketName = trail2_start
+    BoneName = WeaponRoot
+    RelativeLocation = { X=0, Y=15.3742, Z=75.5 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_113
+
+    SocketName = trail2_end
+    BoneName = WeaponRoot
+    RelativeLocation = { X=0, Y=-16.2427, Z=75.75 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_114
+
+    SocketName = trail3_start
+    BoneName = WeaponRoot
+    RelativeLocation = { X=13.4832, Y=0, Z=76 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_115
+
+    SocketName = trail3_end
+    BoneName = WeaponRoot
+    RelativeLocation = { X=-13.9422, Y=0, Z=75.25 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_173
+
+    SocketName = trail_start
+    BoneName = WeaponRoot
+    RelativeLocation = { X=0, Y=0, Z=57.75 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_174
+
+    SocketName = trail_end
+    BoneName = WeaponRoot
+    RelativeLocation = { X=0, Y=0, Z=90.75 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
