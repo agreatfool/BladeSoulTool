@@ -449,9 +449,9 @@ BstUpkParser.prototype.preProcessSkeleton = function() {
             if (textureMatch !== null) {
                 var textureObjId = textureMatch[1];
                 var textureUpkId = textureMatch[2];
-                if (textureId === null
-                    && textureUpkId !== '00002620') { // 这个ID经常出现在正常的Texture2D upk之前，过滤之
-                    textureId = textureUpkId; // 只记录第一个出现的Texture2D的upk id，这个一般来说是真正的贴图upk
+                if (textureId === null // 只记录第一个出现的Texture2D的upk id
+                    && BstConst.UPK_INVALID_TEXTURE.indexOf(textureUpkId) === -1) { // 且该upk id并不在黑名单上
+                    textureId = textureUpkId;
                 }
                 if (!textureObjs.hasOwnProperty(textureUpkId)) {
                     textureObjs[textureUpkId] = [];
@@ -562,9 +562,9 @@ BstUpkParser.prototype.preProcessMaterial = function() {
             if (textureMatch !== null) {
                 var textureObjId = textureMatch[1];
                 var textureUpkId = textureMatch[2];
-                if (textureId === null
-                    && textureUpkId !== '00002620') { // 这个ID经常出现在正常的Texture2D upk之前，过滤之
-                    textureId = textureUpkId; // 只记录第一个出现的Texture2D的upk id，这个一般来说是真正的贴图upk
+                if (textureId === null // 只记录第一个出现的Texture2D的upk id
+                    && BstConst.UPK_INVALID_TEXTURE.indexOf(textureUpkId) === -1) { // 且该upk id并不在黑名单上
+                    textureId = textureUpkId;
                 }
                 if (!textureObjs.hasOwnProperty(textureUpkId)) {
                     textureObjs[textureUpkId] = [];
