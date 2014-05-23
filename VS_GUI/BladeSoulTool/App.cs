@@ -14,6 +14,7 @@ namespace BladeSoulTool
 
     public partial class App : Form
     {
+
         private const int FORM_TYPE_COSTUME = 0;
         private const int FORM_TYPE_ATTACH = 1;
         private const int FORM_TYPE_WEAPON = 2;
@@ -24,10 +25,6 @@ namespace BladeSoulTool
         private Form formWeapon;
         private Form formUtil;
 
-        public JObject costumeData {  get; set;  }
-        public JObject attachData { get; set; }
-        public JObject weaponData { get; set; }
-
         public App()
         {
             InitializeComponent();
@@ -36,9 +33,13 @@ namespace BladeSoulTool
 
         private void init()
         {
+            this.settings = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../config/setting.json")));
             this.costumeData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../database/costume/data/data.json")));
+            this.costumeInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../database/costume/data/data_invalid.json"))); 
             this.attachData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../database/attach/data/data.json")));
+            this.attachInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../database/attach/data/data_invalid.json")));
             this.weaponData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../database/weapon/data/data.json")));
+            this.weaponInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../database/weapon/data/data_invalid.json")));
 
             // 初始化第一个tab，costume
             this.formCostume = this.createItemsForm();
