@@ -1,14 +1,21 @@
 {
     "010002": {
         "code": "010002",
-        "notFound": [],
+        "notFound": [
+            "texture:[skeleton:00005710,texture:null]",
+            "texture:[skeleton:00006959,texture:null]",
+            "texture:[skeleton:00006960,texture:null]",
+            "texture:[skeleton:00006961,texture:null]",
+            "texture:[skeleton:00006962,texture:null]",
+            "texture:[skeleton:00006964,texture:null]"
+        ],
         "invalid": [
-            "material:[skeleton:00005710,texture:00012963,material:00008613]",
-            "material:[skeleton:00006959,texture:00012963,material:00008613]",
-            "material:[skeleton:00006960,texture:00012963,material:00008613]",
-            "material:[skeleton:00006961,texture:00012963,material:00008613]",
-            "material:[skeleton:00006962,texture:00012963,material:00008613]",
-            "material:[skeleton:00006964,texture:00012963,material:00008613]"
+            "skeleton:[skeleton:00005710]",
+            "skeleton:[skeleton:00006959]",
+            "skeleton:[skeleton:00006960]",
+            "skeleton:[skeleton:00006961]",
+            "skeleton:[skeleton:00006962]",
+            "skeleton:[skeleton:00006964]"
         ]
     },
     "010036": {
@@ -207,9 +214,11 @@
     },
     "060003": {
         "code": "060003",
-        "notFound": [],
+        "notFound": [
+            "texture:[skeleton:00009857,texture:null]"
+        ],
         "invalid": [
-            "material:[skeleton:00009857,texture:00012963,material:00008613]"
+            "skeleton:[skeleton:00009857]"
         ]
     },
     "070097": {
