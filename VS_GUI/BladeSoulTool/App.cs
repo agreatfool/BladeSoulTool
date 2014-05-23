@@ -12,7 +12,7 @@ using Newtonsoft.Json.Linq;
 namespace BladeSoulTool
 {
 
-    public partial class Application : Form
+    public partial class App : Form
     {
         private const int FORM_TYPE_COSTUME = 0;
         private const int FORM_TYPE_ATTACH = 1;
@@ -28,7 +28,7 @@ namespace BladeSoulTool
         public JObject attachData { get; set; }
         public JObject weaponData { get; set; }
 
-        public Application()
+        public App()
         {
             InitializeComponent();
             init();

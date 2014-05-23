@@ -1,6 +1,6 @@
 ﻿namespace BladeSoulTool
 {
-    partial class Application
+    partial class App
     {
         /// <summary>
         /// Required designer variable.

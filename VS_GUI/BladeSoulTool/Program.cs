@@ -14,7 +14,7 @@ namespace BladeSoulTool
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Application());
+            Application.Run(new App());
         }
     }
 }
