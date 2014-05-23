@@ -43,6 +43,15 @@ String.prototype.lcfist = function() {
     return this.charAt(0).toLowerCase() + this.slice(1);
 };
 
+String.prototype.countOccurence = function(needle) {
+    var match = this.match(new RegExp(needle, 'g'));
+    if (match === null) {
+        return 0;
+    } else {
+        return match.length;
+    }
+};
+
 var path = require('path');
 var moment = require('moment');
 /**

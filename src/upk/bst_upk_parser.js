@@ -209,7 +209,7 @@ BstUpkParser.prototype.preProcess = function() {
     self.grunt.file.recurse(BstConst.PATH_UPK_LOG, function(abspath, rootdir, subdir, filename) {
         if (filename !== 'upk_dir') {
             var upkId = filename.substr(0, filename.indexOf('.'));
-            var content = self.util.readFile(abspath).toString().split("\r\n");
+            var content = self.util.readFileSplitWithLineBreak(abspath);
             var coreLineOfContent = content[BstConst.UPK_ENTRANCE_LINE_NO];
 
             if (coreLineOfContent.match(new RegExp(BstConst.UPK_TYPE_SKELETON)) !== null) {
@@ -392,7 +392,7 @@ BstUpkParser.prototype.preProcessSkeleton = function() {
     _.each(self.upkIdsSkeleton, function(upkId) {
         self.grunt.log.writeln('[BstUpkParser] Pre process skeleton upk: ' + upkId);
 
-        var upkLog = self.util.readFile(path.join(BstConst.PATH_UPK_LOG, upkId + '.log')).split("\r\n");
+        var upkLog = self.util.readFileSplitWithLineBreak(path.join(BstConst.PATH_UPK_LOG, upkId + '.log'));
 
         /**
          * Loading SkeletalMesh3 65045_JinF from package 00010868.upk => 65045_JinF
@@ -450,7 +450,7 @@ BstUpkParser.prototype.preProcessSkeleton = function() {
                 var textureObjId = textureMatch[1];
                 var textureUpkId = textureMatch[2];
                 if (textureId === null // 只记录第一个出现的Texture2D的upk id
-                    && BstConst.UPK_INVALID_TEXTURE.indexOf(textureUpkId) === -1) { // 且该upk id并不在黑名单上
+                    && BstConst.UPK_INVALID_UPK_IDS.indexOf(textureUpkId) === -1) { // 且该upk id并不在黑名单上
                     textureId = textureUpkId;
                 }
                 if (!textureObjs.hasOwnProperty(textureUpkId)) {
@@ -501,7 +501,7 @@ BstUpkParser.prototype.preProcessTexture = function() {
     _.each(self.upkIdsTexture, function(upkId) {
         self.grunt.log.writeln('[BstUpkParser] Pre process skeleton upk: ' + upkId);
 
-        var upkLog = self.util.readFile(path.join(BstConst.PATH_UPK_LOG, upkId + '.log')).split("\r\n");
+        var upkLog = self.util.readFileSplitWithLineBreak(path.join(BstConst.PATH_UPK_LOG, upkId + '.log'));
 
         var objs = [];
         _.each(upkLog, function(line) {
@@ -544,7 +544,7 @@ BstUpkParser.prototype.preProcessMaterial = function() {
     _.each(self.upkIdsMaterial, function(upkId) {
         self.grunt.log.writeln('[BstUpkParser] Pre process material upk: ' + upkId);
 
-        var upkLog = self.util.readFile(path.join(BstConst.PATH_UPK_LOG, upkId + '.log')).split("\r\n");
+        var upkLog = self.util.readFileSplitWithLineBreak(path.join(BstConst.PATH_UPK_LOG, upkId + '.log'));
 
         var colInfo = self.util.formatCol(
             upkLog[BstConst.UPK_ENTRANCE_LINE_NO].match(/Loading\sMaterialInstanceConstant\s(.+)\sfrom\spackage\s\d+.upk/)[1]
@@ -563,7 +563,7 @@ BstUpkParser.prototype.preProcessMaterial = function() {
                 var textureObjId = textureMatch[1];
                 var textureUpkId = textureMatch[2];
                 if (textureId === null // 只记录第一个出现的Texture2D的upk id
-                    && BstConst.UPK_INVALID_TEXTURE.indexOf(textureUpkId) === -1) { // 且该upk id并不在黑名单上
+                    && BstConst.UPK_INVALID_UPK_IDS.indexOf(textureUpkId) === -1) { // 且该upk id并不在黑名单上
                     textureId = textureUpkId;
                 }
                 if (!textureObjs.hasOwnProperty(textureUpkId)) {

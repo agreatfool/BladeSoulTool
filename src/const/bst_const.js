@@ -47,10 +47,13 @@ BstConst.RAW_FILE_TEXTURE = 'raw_texture.json';
 BstConst.RAW_FILE_MATERIAL = 'raw_material.json';
 BstConst.RAW_FILE_MATERIAL_INVALID = 'raw_material_invalid.json';
 
-BstConst.UPK_INVALID_TEXTURE = [
+BstConst.UPK_INVALID_UPK_IDS = [
     '00002620', // 常见于costume类型数据中：core：Material3 Basic
     '00005708', // 常见于attach类型数据中：obj：D, S, glasses3_m
-    '00008613'  // 常见于attach, weapon类型数据中：core：NothingMAT
+    '00008613', // 常见于attach, weapon类型数据中：core：NothingMAT
+    '00012963', // 大量无用obj
+    '00005708', // 眼镜上的glasses obj
+    '00002640'  // 大量材质相关obj
 ];
 
 //------------------------------------------------------------------------

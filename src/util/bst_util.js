@@ -241,6 +241,24 @@ BstUtil.prototype.fileDownload = function(url, filepath, callback, headers) {
     });
 };
 
+BstUtil.prototype.readFileSplitWithLineBreak = function(filePath) {
+    var content = this.readFile(filePath).toString();
+    var lineBreak = this.detectFileLineBreak(content);
+
+    return content.split(lineBreak);
+};
+
+BstUtil.prototype.detectFileLineBreak = function(fileContent) {
+    var lfCount = fileContent.countOccurence("\n");
+    var crlfCount = fileContent.countOccurence("\r\n");
+
+    if (crlfCount > lfCount) {
+        return "\r\n";
+    } else {
+        return "\n";
+    }
+};
+
 BstUtil.prototype.findUpkPath = function(upkId, errCallback) {
     var upkName = upkId + '.upk';
     var upkPath = path.join(this.getBnsPath(), upkName);
