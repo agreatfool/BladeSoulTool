@@ -31,6 +31,9 @@
 * attact/data.json 里有一个数据是武器：010002_Autoscale_col1，而且在武器的数据里json里这个数据不存在，走错地方了
 * weapon里有部分数据没有pic字段，或者很多pic里是null，这不正常：110001_Autoscale_col2，110001_Autoscale_col3
 
+## 截图：
+截图错误的信息要记录并写成json文件，酌情重试，database/costume/data/shot_error.json
+
 ## 韩服的dedat
 韩服的dedat工具是另外的，需要单独下载韩服客户端，并进行测试
 
