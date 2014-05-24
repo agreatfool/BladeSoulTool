@@ -26,11 +26,15 @@
 * upk_parser 解析并生成数据库
 * shooter 输出模型截图
 * png_optimizer 压缩png
+* 需要做一个单独的grunt task来跑完整个流程
 
 ## 数据解析中的问题：
 * attach/data.json 里有一个数据是武器：010002_Autoscale_col1，而且在武器的数据里json里这个数据不存在，走错地方了
 * attach/data.json 开始的一段有好几件是衣服，而不是饰品
 * weapon里有部分数据没有pic字段，或者很多pic里是null，这不正常：110001_Autoscale_col2，110001_Autoscale_col3
+* 现在最大的问题是很多模型的信息在分类上跑错了位置，最关键的原因是在用icon进行索引配对的时候，有重复的code，一个icon的code在衣服、配饰、武器中重复了，要想个办法区分开
+* 错误数据还是有很大影响，截图说明问题了，举例code 70002，衣服只有2个种族截出来了，其他的5个都是在解析material信息的时候被污染了，参考raw_material_invalid.json里的70002群
+* 找时间一个个验证错误数据里的模型信息，是哪个模型，到底有没有办法更正或者做特殊处理
 
 ## 截图：
 截图错误的信息要记录并写成json文件，酌情重试，database/costume/data/shot_error.json
