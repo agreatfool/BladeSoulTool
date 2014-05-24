@@ -28,7 +28,8 @@
 * png_optimizer 压缩png
 
 ## 数据解析中的问题：
-* attact/data.json 里有一个数据是武器：010002_Autoscale_col1，而且在武器的数据里json里这个数据不存在，走错地方了
+* attach/data.json 里有一个数据是武器：010002_Autoscale_col1，而且在武器的数据里json里这个数据不存在，走错地方了
+* attach/data.json 开始的一段有好几件是衣服，而不是饰品
 * weapon里有部分数据没有pic字段，或者很多pic里是null，这不正常：110001_Autoscale_col2，110001_Autoscale_col3
 
 ## 截图：

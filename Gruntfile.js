@@ -178,19 +178,13 @@ module.exports = function(grunt) {
         parser.dataCheck(part);
     };
 
-    var Task_ScreenShooter = function() { // --part=body
+    var Task_ScreenShooter = function() {
         var Shooter = require('./src/screenshot/bst_screen_shooter.js');
 
         this.async();
 
-        var part = grunt.option('part');
-        if (typeof part === 'undefined' || part == null || part == '') {
-            grunt.log.error('[Grunt Task_ScreenShooter] Command line option "--part" not given, use default value: "body".');
-            part = BstConst.PART_BODY;
-        }
-
         var shooter = new Shooter(grunt);
-        shooter.start(part);
+        shooter.start();
     };
 
     var Task_ScreenShooter_Check = function() {

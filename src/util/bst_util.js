@@ -22,9 +22,8 @@ var BstUtil = function(grunt) {
 
     this.asyncList = []; // 异步工作控制器的注册列表
 
-    this.requiredMeshDataKeys = [ // 从mesh.xml中解析出来的数据必须有的键值
-        "skeleton", "texture", "material", "col1Material", "col",
-        "codeWithRace", "code", "race", "name", "pic", "piclink", "link"
+    this.requiredDataKeys = [ // 解析出来的数据必须有的键值
+        "skeleton", "texture", "material", "col1Material", "col", "core", "code", "race", "pic"
     ];
 };
 
@@ -86,7 +85,7 @@ BstUtil.prototype.mkdir = function(path) {
         this.grunt.file.mkdir(path);
         this.grunt.log.writeln('[BstUtil] mkdir: ' + path);
     } else {
-        this.grunt.log.error('[BstUtil] mkdir not work, since dir already exists: ' + path);
+        this.grunt.log.error('[BstUtil] mkdir did nothing, since dir already exists: ' + path);
     }
 };
 
@@ -330,12 +329,12 @@ BstUtil.prototype.formatCode = function(code) { // 删掉code开头的0字符串
     return result;
 };
 
-BstUtil.prototype.meshDataKeyCheck = function(element) {
+BstUtil.prototype.dataKeyCheck = function(element) {
     var self = this;
 
     var hasInvalidKey = false;
     var elementKeys = _.keys(element);
-    _.each(self.requiredMeshDataKeys, function(requiredKey) {
+    _.each(self.requiredDataKeys, function(requiredKey) {
         if (elementKeys.indexOf(requiredKey) === -1) { // 必须的键值在当前元素中未找到
             hasInvalidKey = true;
             self.grunt.log.error('[BstUtil] Required mesh element key "' + requiredKey + '"' +

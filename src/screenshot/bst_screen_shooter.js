@@ -21,9 +21,9 @@ var BstScreenShooter = function(grunt) {
     this.conf = this.util.readJsonFile('./config/setting.json');
     this.shotInterval = this.conf['umodel_shooter']['interval'];
 
-    this.part = null; // 当前抓的是哪个部分的图：body、face、hair
+    this.types = ['costume', 'attach', 'weapon']; // 需要处理的数据类型
 
-    this.data = {}; // 需要处理的数据：database/costume/[this.part]/data.json, etc...
+    this.data = {}; // 需要处理的数据：database/[attach|costume|weapon]/data/data.json, etc...
     this.workingList = null; // 需要处理的数据的键数组：_.keys(this.data)
 
     this.statusTotalCount = 0; // 总共需要处理的模型个数
@@ -31,80 +31,65 @@ var BstScreenShooter = function(grunt) {
     this.statusIsWorking = false; // 因为需要截图，必须单进程，这里存储是否在工作的状态
 };
 
-BstScreenShooter.prototype.start = function(part) {
+BstScreenShooter.prototype.start = function() {
     this.util.printHr();
-    if ([BstConst.PART_BODY, BstConst.PART_FACE, BstConst.PART_HAIR].indexOf(part) === -1) {
-        this.grunt.fail.fatal('[BstScreenShooter] Invalid start part specified: ' + part);
-    }
-    this.grunt.log.writeln('[BstScreenShooter] Start to take screenshot of part: ' + part);
+    this.grunt.log.writeln('[BstScreenShooter] Start to take screenshot ... ');
     this.util.printHr();
 
-    this.part = part;
-
-    this.process();
+    this.process(this.types.shift());
 };
 
-BstScreenShooter.prototype.process = function() {
-    var rawData = this.util.readJsonFile('./database/costume/' + this.part + '/data.json');
-    switch (this.part) {
-        case BstConst.PART_BODY:
-            this.processBody(rawData);
-            break;
-        case BstConst.PART_FACE:
-            this.processFace(rawData);
-            break;
-        case BstConst.PART_HAIR:
-            this.processHair(rawData);
-            break;
-        default:
-            break;
-    }
+BstScreenShooter.prototype.process = function(type) {
+    // 重置数据与状态
+    this.data = this.util.readJsonFile('./database/' + type + '/data/data.json');
+    this.workingList = null;
+    this.statusTotalCount = 0;
+    this.statusFinishedCount = 0;
+    this.statusIsWorking = false;
+
+    this.processType(type);
 };
 
-BstScreenShooter.prototype.processBody = function(rawData) {
+BstScreenShooter.prototype.processType = function(type) {
     var self = this;
 
-    _.each(rawData, function(raceData) {
-        self.data = _.extend(self.data, raceData);
-    });
     self.workingList = _.keys(self.data);
     self.statusTotalCount = self.workingList.length;
 
-    self.grunt.log.writeln('[BstScreenShooter] body data loaded, "' + self.statusTotalCount + '" lines of record read.');
+    self.grunt.log.writeln('[BstScreenShooter] ' + type + ' data loaded, "' + self.statusTotalCount + '" lines of record read.');
     self.util.printHr();
+
+    // 清理旧的截图文件，并创建目标输出文件夹
+    var targetOutputPath = path.join(BstConst.PATH_DATABASE, type, 'pics');
+    self.util.deleteDir(targetOutputPath, false); // 文件夹没找到也不要报错
+    self.util.mkdir(targetOutputPath);
 
     var timer = setInterval(function() {
         if (!self.statusIsWorking && self.workingList.length > 0) {
             // 目前没有运行中的任务，安排任务
             self.statusIsWorking = true;
-            self.processSingle(self.data[self.workingList.shift()]);
+            self.processSingle(type, self.data[self.workingList.shift()]);
         }
-        if (self.workingList.length == 0) {
+        if (!self.statusIsWorking && self.workingList.length == 0) {
             // 任务全部完成
             clearInterval(timer);
             self.util.printHr();
-            self.grunt.log.writeln('[BstScreenShooter] All "' + self.part + '" photo shot.');
-            // TODO 最后应该添上压缩图片，和统一删除所有备份文件的功能
+            self.grunt.log.writeln('[BstScreenShooter] All "' + type + '" photo shot.');
+            if (self.types.length > 0) {
+                self.process(self.types.shift()); // 处理下一个类型的数据
+            }
         }
     }, 500);
 };
 
-BstScreenShooter.prototype.processFace = function(rawData) {
-
-};
-
-BstScreenShooter.prototype.processHair = function(rawData) {
-
-};
-
-BstScreenShooter.prototype.processSingle = function(element) {
+BstScreenShooter.prototype.processSingle = function(type, element) {
     var self = this;
 
-    var name = element['codeWithRace'] + '_' + element['col'];
+    var name = element['core'] + '_' + element['col'];
     self.grunt.log.writeln('[BstScreenShooter] Start to process: ' + name);
 
     // 确保当前元素的格式是规范的
-    if (self.util.meshDataKeyCheck(element)) { // true返回表示有异常键值
+    if (self.util.dataKeyCheck(element)) { // true返回表示有异常键值
         self.finishSingle(name); // 格式不规范，停止执行
         return;
     }
@@ -117,7 +102,7 @@ BstScreenShooter.prototype.processSingle = function(element) {
         return; // 两个位置upk文件都不存在，只能跳过该项
     }
 
-    var hasBackupToRestore = false;
+    var hasBackupToRestore = false; // 标识是否有文件需要恢复
     var backupPath = null;
 
     // 修改skeleton骨骼upk里的值，调整成非默认配色
@@ -148,11 +133,11 @@ BstScreenShooter.prototype.processSingle = function(element) {
         worker.stderr.on('data', function (data) {
             self.util.logChildProcessStderr(data);
             // 取消之后的截图工作，因为umodel出错了，骨骼预览根本没出来
-            clearTimeout(timer);
+            clearTimeout(umodelShotTimer);
             if (element['col'] !== 'col1') {
                 // 出错了，而且当前material并非col1，则直接将col1的图拷贝过来
-                var imgBasePath = path.join('database/costume/pics', self.part);
-                var col1ImgPath = path.join(imgBasePath, element['codeWithRace'] + '_col1.png');
+                var imgBasePath = path.join('database', type,  'pics');
+                var col1ImgPath = path.join(imgBasePath, element['core'] + '_col1.png');
                 if (self.grunt.file.exists(col1ImgPath)) {
                     self.util.copyFile(
                         col1ImgPath,
@@ -163,7 +148,7 @@ BstScreenShooter.prototype.processSingle = function(element) {
             handleBackup();
         });
         worker.on('exit', function (code) { self.util.logChildProcessExit('umodel', code); });
-        var timer = setTimeout(function() {
+        var umodelShotTimer = setTimeout(function() {
             handleWinSize();
         }, self.shotInterval); // 间隔启动下一个工作，因为在umodel窗口打开期间，worker子进程是不会退出的，流程无法继续执行下去
     };
@@ -187,7 +172,7 @@ BstScreenShooter.prototype.processSingle = function(element) {
     var handleScreenShot = function() {
         var worker = cp.exec(
             'screenshot-cmd.exe -rc ' + xPos + ' ' + yPos + ' ' + (xPos + width) + ' ' + (yPos + height) +
-                ' -o ' + '../../database/costume/pics/' + self.part + '/' + name + '.png',
+                ' -o ' + path.join(BstConst.PATH_DATABASE, type, 'pics', name + '.png'),
             {"cwd": './resources/screenshot/'}
         );
         worker.stdout.on('data', function (data) { self.util.logChildProcessStdout(data); });

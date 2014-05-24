@@ -13,7 +13,7 @@ BstConst.PART_HAIR = 'hair';
 
 BstConst.BACKUP_TAIL = '.bst_bak';
 
-BstConst.PATH_DATABASE = 'database';
+BstConst.PATH_DATABASE = path.join(process.cwd(), 'database');
 
 //------------------------------------------------------------------------
 //- UPK
