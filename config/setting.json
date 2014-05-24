@@ -1,6 +1,6 @@
 {
     "path": {
-        "game": "Y:\\Games\\腾讯游戏\\剑灵_腾讯\\",
+        "game": "D:\\Games\\剑灵_腾讯\\",
         "data": "contents\\Local\\TENCENT\\CHINESES\\data",
         "tencent": "contents\\Local\\TENCENT\\CHINESES\\CookedPC",
         "bns": "contents\\bns\\CookedPC"
@@ -31,9 +31,19 @@
                 "dest": "database/icon/png-cps",
                 "level": 7
             },
+            "attach": {
+                "src": "database/attach/pics",
+                "dest": "database/attach/pics-cps",
+                "level": 7
+            },
             "costume": {
                 "src": "database/costume/pics",
                 "dest": "database/costume/pics-cps",
+                "level": 7
+            },
+            "weapon": {
+                "src": "database/weapon/pics",
+                "dest": "database/weapon/pics-cps",
                 "level": 7
             }
         }
