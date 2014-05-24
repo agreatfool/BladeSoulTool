@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -33,14 +34,8 @@ namespace BladeSoulTool
 
         private void init()
         {
-            this.settings = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../config/setting.json")));
-            this.costumeData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../database/costume/data/data.json")));
-            this.costumeInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../database/costume/data/data_invalid.json"))); 
-            this.attachData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../database/attach/data/data.json")));
-            this.attachInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../database/attach/data/data_invalid.json")));
-            this.weaponData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../database/weapon/data/data.json")));
-            this.weaponInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../database/weapon/data/data_invalid.json")));
-
+            // 初始化数据
+            DataManager dataManager = DataManager.Instance;
             // 初始化第一个tab，costume
             this.formCostume = this.createItemsForm();
             this.tabCostume.Controls.Add(this.formCostume);
