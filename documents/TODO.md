@@ -25,7 +25,7 @@
 * upk_scanner 输出所有upk的
 * upk_parser 解析并生成数据库
 * shooter 输出模型截图
-* png_optimizer 压缩png
+* png_optimizer 压缩png图片
 * 需要做一个单独的grunt task来跑完整个流程
 
 ## 数据解析中的问题：
