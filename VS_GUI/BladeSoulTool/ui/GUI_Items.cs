@@ -44,14 +44,8 @@ namespace BladeSoulTool
             DataGridViewColumn gridColumnIcon = this.gridItems.Columns[0];
             gridColumnIcon.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             gridColumnIcon.Width = 64;
-            // 操作按钮列
-            DataGridViewButtonColumn gridColumnAction = new DataGridViewButtonColumn();
-            gridColumnAction.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            gridColumnAction.Width = 100;
-            gridColumnAction.UseColumnTextForButtonValue = true;
-            gridColumnAction.Text = "查看模型信息";
-            gridColumnAction.Name = "操作";
-            this.gridItems.Columns.Add(gridColumnAction);
+            // 点击事件
+            this.gridItems.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridItems_CellClick);
 
             this.comboBoxRace.Items.AddRange(DataManager.Instance.raceNames.ToArray());
             this.comboBoxRace.SelectedIndex = 0;
@@ -70,27 +64,12 @@ namespace BladeSoulTool
                 default:
                     break;
             }
-
-            this.gridItems.Show();
         }
 
-        void gridItems_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        private void gridItems_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.Control is Button)
-            {
-                Button btn = e.Control as Button;
-                btn.Click -= new EventHandler(btn_Click);
-                btn.Click += new EventHandler(btn_Click);
-            }
-        }
-
-        void btn_Click(object sender, EventArgs e)
-        {
-            int col = this.gridItems.CurrentCell.ColumnIndex;
-            int row = this.gridItems.CurrentCell.RowIndex;
-            MessageBox.Show("Button in Cell[" +
-                col.ToString() + "," +
-                row.ToString() + "] has been clicked");
+            this.gridItems.Rows[e.RowIndex].Selected = true;
+            this.gridItems.Refresh();
         }
 
         private void initCostumeForm()

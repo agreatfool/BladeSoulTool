@@ -75,9 +75,10 @@
             this.gridItems.BackgroundColor = System.Drawing.SystemColors.Window;
             this.gridItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridItems.Location = new System.Drawing.Point(12, 130);
+            this.gridItems.MultiSelect = false;
             this.gridItems.Name = "gridItems";
             this.gridItems.RowTemplate.Height = 23;
-            this.gridItems.Size = new System.Drawing.Size(459, 514);
+            this.gridItems.Size = new System.Drawing.Size(418, 514);
             this.gridItems.TabIndex = 1;
             // 
             // labelRace
@@ -147,9 +148,9 @@
             this.panelInfo.Controls.Add(this.btnSelectOrigin);
             this.panelInfo.Controls.Add(this.textBoxInfo);
             this.panelInfo.Controls.Add(this.labelInfoHead);
-            this.panelInfo.Location = new System.Drawing.Point(477, 130);
+            this.panelInfo.Location = new System.Drawing.Point(436, 130);
             this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Size = new System.Drawing.Size(182, 514);
+            this.panelInfo.Size = new System.Drawing.Size(223, 514);
             this.panelInfo.TabIndex = 9;
             // 
             // labelInfoHead
@@ -175,14 +176,14 @@
             this.textBoxInfo.Location = new System.Drawing.Point(5, 29);
             this.textBoxInfo.Multiline = true;
             this.textBoxInfo.Name = "textBoxInfo";
-            this.textBoxInfo.Size = new System.Drawing.Size(170, 377);
+            this.textBoxInfo.Size = new System.Drawing.Size(212, 374);
             this.textBoxInfo.TabIndex = 1;
             // 
             // btnSelectOrigin
             // 
             this.btnSelectOrigin.Location = new System.Drawing.Point(5, 448);
             this.btnSelectOrigin.Name = "btnSelectOrigin";
-            this.btnSelectOrigin.Size = new System.Drawing.Size(170, 23);
+            this.btnSelectOrigin.Size = new System.Drawing.Size(212, 23);
             this.btnSelectOrigin.TabIndex = 2;
             this.btnSelectOrigin.Text = "选为原始模型";
             this.btnSelectOrigin.UseVisualStyleBackColor = true;
@@ -191,7 +192,7 @@
             // 
             this.btnSelectTarget.Location = new System.Drawing.Point(5, 480);
             this.btnSelectTarget.Name = "btnSelectTarget";
-            this.btnSelectTarget.Size = new System.Drawing.Size(170, 23);
+            this.btnSelectTarget.Size = new System.Drawing.Size(212, 23);
             this.btnSelectTarget.TabIndex = 3;
             this.btnSelectTarget.Text = "选为目标模型";
             this.btnSelectTarget.UseVisualStyleBackColor = true;
@@ -236,7 +237,7 @@
             // 
             this.btnView3DInfo.Location = new System.Drawing.Point(5, 415);
             this.btnView3DInfo.Name = "btnView3DInfo";
-            this.btnView3DInfo.Size = new System.Drawing.Size(170, 23);
+            this.btnView3DInfo.Size = new System.Drawing.Size(212, 23);
             this.btnView3DInfo.TabIndex = 4;
             this.btnView3DInfo.Text = "预览3D模型";
             this.btnView3DInfo.UseVisualStyleBackColor = true;
