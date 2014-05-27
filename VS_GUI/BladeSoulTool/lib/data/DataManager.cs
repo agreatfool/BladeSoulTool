@@ -27,6 +27,18 @@ namespace BladeSoulTool
             this.init();
         }
 
+        public const int RACE_ID_KUNN = 0;
+        public const int RACE_ID_JINF = 1;
+        public const int RACE_ID_JINM = 2;
+        public const int RACE_ID_GONF = 3;
+        public const int RACE_ID_GONM = 4;
+        public const int RACE_ID_LYNF = 5;
+        public const int RACE_ID_LYNM = 6;
+
+        public const string PATH_ROOT = "../../../../";
+        public const string PATH_CONFIG = DataManager.PATH_ROOT + "config/";
+        public const string PATH_DATABASE = DataManager.PATH_ROOT + "database/";
+
         public JObject settings { get; set; }
         public JObject costumeData { get; set; }
         public JObject costumeInvalidData { get; set; }
@@ -40,13 +52,13 @@ namespace BladeSoulTool
 
         private void init()
         {
-            this.settings = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../config/setting.json")));
-            this.costumeData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../database/costume/data/data.json")));
-            this.costumeInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../database/costume/data/data_invalid.json"))); 
-            this.attachData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../database/attach/data/data.json")));
-            this.attachInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../database/attach/data/data_invalid.json")));
-            this.weaponData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../database/weapon/data/data.json")));
-            this.weaponInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(@"../../../../database/weapon/data/data_invalid.json")));
+            this.settings = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(DataManager.PATH_CONFIG + "setting.json")));
+            this.costumeData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(DataManager.PATH_DATABASE + "costume/data/data.json")));
+            this.costumeInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(DataManager.PATH_DATABASE + "costume/data/data_invalid.json")));
+            this.attachData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(DataManager.PATH_DATABASE + "attach/data/data.json")));
+            this.attachInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(DataManager.PATH_DATABASE + "attach/data/data_invalid.json")));
+            this.weaponData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(DataManager.PATH_DATABASE + "weapon/data/data.json")));
+            this.weaponInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(DataManager.PATH_DATABASE + "weapon/data/data_invalid.json")));
 
             this.raceNames = new List<string>();
             this.raceNames.AddRange(new string[] {
@@ -73,7 +85,6 @@ namespace BladeSoulTool
                     filtered.Add(elementId, elementData);
                 }
             }
-            Console.WriteLine(filtered.ToString());
 
             return filtered;
         }
@@ -93,9 +104,29 @@ namespace BladeSoulTool
                     filtered.Add(elementId, elementData);
                 }
             }
-            Console.WriteLine(filtered.ToString());
 
             return filtered;
+        }
+
+        public static byte[] getBytesFromFile(string fullFilePath)
+        {
+            FileStream fs = null;
+            try
+            {
+                fs = File.OpenRead(fullFilePath);
+                byte[] bytes = new byte[fs.Length];
+                fs.Read(bytes, 0, Convert.ToInt32(fs.Length));
+                return bytes;
+            }
+            finally
+            {
+                if (fs != null)
+                {
+                    fs.Close();
+                    fs.Dispose();
+                }
+            }
+
         }
 
     }

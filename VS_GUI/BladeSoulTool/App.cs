@@ -16,10 +16,10 @@ namespace BladeSoulTool
     public partial class App : Form
     {
 
-        private const int FORM_TYPE_COSTUME = 0;
-        private const int FORM_TYPE_ATTACH = 1;
-        private const int FORM_TYPE_WEAPON = 2;
-        private const int FORM_TYPE_UTIL = 3;
+        public const int FORM_TYPE_COSTUME = 0;
+        public const int FORM_TYPE_ATTACH = 1;
+        public const int FORM_TYPE_WEAPON = 2;
+        public const int FORM_TYPE_UTIL = 3;
 
         private Form formCostume;
         private Form formAttach;
@@ -37,15 +37,15 @@ namespace BladeSoulTool
             // 初始化数据
             DataManager dataManager = DataManager.Instance;
             // 初始化第一个tab，costume
-            this.formCostume = this.createItemsForm();
+            this.formCostume = this.createItemsForm(App.FORM_TYPE_COSTUME);
             this.tabCostume.Controls.Add(this.formCostume);
         }
 
-        private Form createItemsForm()
+        private Form createItemsForm(int formType)
         {
-            Form form = new GUI_Items();
+            Form form = new GUI_Items(formType);
             form.TopLevel = false;
-            form.BackColor = Color.Green; // for test, remove later
+            //form.BackColor = Color.Green; // for test, remove later
             form.Visible = true;
             form.FormBorderStyle = FormBorderStyle.None;
             form.WindowState = FormWindowState.Maximized;
