@@ -3,26 +3,29 @@ using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Windows.Forms;
+using System.Threading;
 
 namespace BladeSoulTool
 {
-    class DataManager
+    class BstManager
     {
-        private static DataManager instance;
+        private static BstManager instance;
 
-        public static DataManager Instance 
+        public static BstManager Instance 
         {
             get 
             {
                 if (instance == null) 
                 {
-                    instance = new DataManager();
+                    instance = new BstManager();
                 }
                 return instance;
             }
         }
 
-        private DataManager()
+        private BstManager()
         {
             this.init();
         }
@@ -40,8 +43,8 @@ namespace BladeSoulTool
         public const int ITEM_TYPE_WEAPON = 2;
 
         public const string PATH_ROOT = "../../../../";
-        public const string PATH_CONFIG = DataManager.PATH_ROOT + "config/";
-        public const string PATH_DATABASE = DataManager.PATH_ROOT + "database/";
+        public const string PATH_CONFIG = BstManager.PATH_ROOT + "config/";
+        public const string PATH_DATABASE = BstManager.PATH_ROOT + "database/";
 
         public JObject settings { get; set; }
         public JObject costumeData { get; set; }
@@ -56,13 +59,13 @@ namespace BladeSoulTool
 
         private void init()
         {
-            this.settings = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(DataManager.PATH_CONFIG + "setting.json")));
-            this.costumeData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(DataManager.PATH_DATABASE + "costume/data/data.json")));
-            this.costumeInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(DataManager.PATH_DATABASE + "costume/data/data_invalid.json")));
-            this.attachData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(DataManager.PATH_DATABASE + "attach/data/data.json")));
-            this.attachInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(DataManager.PATH_DATABASE + "attach/data/data_invalid.json")));
-            this.weaponData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(DataManager.PATH_DATABASE + "weapon/data/data.json")));
-            this.weaponInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(DataManager.PATH_DATABASE + "weapon/data/data_invalid.json")));
+            this.settings = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_CONFIG + "setting.json")));
+            this.costumeData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_DATABASE + "costume/data/data.json")));
+            this.costumeInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_DATABASE + "costume/data/data_invalid.json")));
+            this.attachData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_DATABASE + "attach/data/data.json")));
+            this.attachInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_DATABASE + "attach/data/data_invalid.json")));
+            this.weaponData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_DATABASE + "weapon/data/data.json")));
+            this.weaponInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_DATABASE + "weapon/data/data_invalid.json")));
 
             this.raceNames = new List<string>();
             this.raceNames.AddRange(new string[] {
@@ -134,7 +137,7 @@ namespace BladeSoulTool
 
         public static string getIconPath(JObject elementData)
         {
-            return DataManager.PATH_DATABASE + "icon/png-cps/" + (string)elementData["pic"];
+            return BstManager.PATH_DATABASE + "icon/png-cps/" + (string)elementData["pic"];
         }
 
         public static string getItemPicPath(int itemType, string itemId)
@@ -142,19 +145,49 @@ namespace BladeSoulTool
             string path = null;
             switch (itemType)
             {
-                case DataManager.ITEM_TYPE_COSTUME:
-                    path = DataManager.PATH_DATABASE + "costume/pics-cps/" + itemId + ".png";
+                case BstManager.ITEM_TYPE_COSTUME:
+                    path = BstManager.PATH_DATABASE + "costume/pics-cps/" + itemId + ".png";
                     break;
-                case DataManager.ITEM_TYPE_ATTACH:
-                    path = DataManager.PATH_DATABASE + "attach/pics-cps/" + itemId + ".png";
+                case BstManager.ITEM_TYPE_ATTACH:
+                    path = BstManager.PATH_DATABASE + "attach/pics-cps/" + itemId + ".png";
                     break;
-                case DataManager.ITEM_TYPE_WEAPON:
-                    path = DataManager.PATH_DATABASE + "weapon/pics-cps/" + itemId + ".png";
+                case BstManager.ITEM_TYPE_WEAPON:
+                    path = BstManager.PATH_DATABASE + "weapon/pics-cps/" + itemId + ".png";
                     break;
                 default:
                     break;
             }
             return path;
+        }
+
+        public static void runGrunt(TextBox box, string task = "", string[] args = null)
+        {
+            Process proc = new Process();
+
+            proc.StartInfo.WorkingDirectory = Directory.GetCurrentDirectory() + "/" + BstManager.PATH_ROOT;
+            proc.StartInfo.FileName = "cmd.exe";
+            proc.StartInfo.Arguments = "/c grunt " + task + " " + ((args == null) ? "" : String.Join(" ", args)) + " --stack";
+            proc.StartInfo.UseShellExecute = false;
+            proc.StartInfo.CreateNoWindow = true;
+            proc.StartInfo.RedirectStandardError = true;
+            proc.StartInfo.RedirectStandardOutput = true;
+
+            proc.OutputDataReceived += (s, e) =>
+            {
+                // 注册输出接收事件
+                MethodInvoker action = delegate // cross thread update
+                {
+                    box.AppendText(e.Data + "\r\n");
+                };
+                box.BeginInvoke(action);
+            };
+            proc.Start(); // 启动
+            proc.BeginOutputReadLine(); // 逐行读入输出
+
+            while (!proc.HasExited)
+            {
+                Application.DoEvents(); // This keeps your form responsive by processing events
+            }
         }
 
     }

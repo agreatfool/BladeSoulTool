@@ -35,7 +35,7 @@ namespace BladeSoulTool
         private void init()
         {
             // 初始化数据
-            DataManager dataManager = DataManager.Instance;
+            BstManager dataManager = BstManager.Instance;
             // 初始化第一个tab，costume
             this.formCostume = this.createItemsForm(App.FORM_TYPE_COSTUME);
             this.tabCostume.Controls.Add(this.formCostume);

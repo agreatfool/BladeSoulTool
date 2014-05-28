@@ -60,7 +60,7 @@ namespace BladeSoulTool
             this.gridItems.MouseWheel += new MouseEventHandler(this.gridItems_MouseWheel);
 
             // 种族选择控件
-            this.comboBoxRace.Items.AddRange(DataManager.Instance.raceNames.ToArray());
+            this.comboBoxRace.Items.AddRange(BstManager.Instance.raceNames.ToArray());
             this.comboBoxRace.SelectedIndex = 0;
             this.comboBoxRace.SelectedIndexChanged +=new EventHandler(this.comboBoxRace_SelectedIndexChanged);
 
@@ -117,7 +117,7 @@ namespace BladeSoulTool
             this.selectedElementId = (string)this.gridItems.Rows[e.RowIndex].Cells[1].Value;
             this.textBoxInfo.Text = this.data[this.selectedElementId].ToString();
             // 模型截图控件
-            this.pictureBoxUmodel.ImageLocation = DataManager.getItemPicPath(this.formType, this.selectedElementId);
+            this.pictureBoxUmodel.ImageLocation = BstManager.getItemPicPath(this.formType, this.selectedElementId);
         }
 
         private void gridItems_MouseWheel(Object sender, MouseEventArgs e)
@@ -185,6 +185,7 @@ namespace BladeSoulTool
         {
             // 替换模型
             Console.WriteLine("btnReplace_Click");
+            BstManager.runGrunt(this.textBoxOut);
         }
 
         private void btnView3DInfo_Click(Object sender, EventArgs e)
@@ -210,7 +211,7 @@ namespace BladeSoulTool
             }
             this.originElementId = this.selectedElementId;
             // 展示icon
-            this.pictureBoxOrigin.ImageLocation = DataManager.getIconPath(element);
+            this.pictureBoxOrigin.ImageLocation = BstManager.getIconPath(element);
             this.pictureBoxOrigin.Load();
             // 显示模型数据
             this.textBoxOrigin.Text = element.ToString();
@@ -227,13 +228,13 @@ namespace BladeSoulTool
             this.targetElementId = this.selectedElementId;
             JObject element = (JObject)this.data[this.selectedElementId];
             // 展示icon
-            this.pictureBoxTarget.ImageLocation = DataManager.getIconPath(element);
+            this.pictureBoxTarget.ImageLocation = BstManager.getIconPath(element);
             this.pictureBoxTarget.Load();
             // 显示模型数据
             this.textBoxTarget.Text = element.ToString();
         }
 
-        private void initFormData(int raceType = DataManager.RACE_ID_KUNN)
+        private void initFormData(int raceType = BstManager.RACE_ID_KUNN)
         {
             // 初始化form数据
             // TODO 原始模型目标应该会被保存在磁盘上的某个配置文件内，这里需要读出
@@ -254,10 +255,10 @@ namespace BladeSoulTool
             }
         }
 
-        private void initCostumeForm(int raceType = DataManager.RACE_ID_KUNN)
+        private void initCostumeForm(int raceType = BstManager.RACE_ID_KUNN)
         {
             // 初始化服装数据
-            this.data = DataManager.Instance.getCostumeDataByRace(raceType);
+            this.data = BstManager.Instance.getCostumeDataByRace(raceType);
 
             foreach (JProperty element in this.data.Properties())
             {
@@ -266,16 +267,16 @@ namespace BladeSoulTool
                 JObject elementData = (JObject)element.Value;
                 // 填充数据
                 this.dataTable.Rows.Add(new object[] {
-                    DataManager.getBytesFromFile(DataManager.getIconPath(elementData)), 
+                    BstManager.getBytesFromFile(BstManager.getIconPath(elementData)), 
                     elementId
                 });
             }
         }
 
-        private void initAttachForm(int raceType = DataManager.RACE_ID_KUNN)
+        private void initAttachForm(int raceType = BstManager.RACE_ID_KUNN)
         {
             // 初始化饰品数据
-            this.data = DataManager.Instance.getAttachDataByRace(raceType);
+            this.data = BstManager.Instance.getAttachDataByRace(raceType);
 
             foreach (JProperty element in this.data.Properties())
             {
@@ -284,16 +285,16 @@ namespace BladeSoulTool
                 JObject elementData = (JObject)element.Value;
                 // 填充数据
                 this.dataTable.Rows.Add(new object[] {
-                    DataManager.getBytesFromFile(DataManager.getIconPath(elementData)), 
+                    BstManager.getBytesFromFile(BstManager.getIconPath(elementData)), 
                     elementId
                 });
             }
         }
 
-        private void initWeaponForm(int raceType = DataManager.RACE_ID_KUNN)
+        private void initWeaponForm(int raceType = BstManager.RACE_ID_KUNN)
         {
             // 初始化武器数据
-            this.data = DataManager.Instance.weaponData;
+            this.data = BstManager.Instance.weaponData;
 
             foreach (JProperty element in this.data.Properties())
             {
@@ -302,7 +303,7 @@ namespace BladeSoulTool
                 JObject elementData = (JObject)element.Value;
                 // 填充数据
                 this.dataTable.Rows.Add(new object[] {
-                    DataManager.getBytesFromFile(DataManager.getIconPath(elementData)), 
+                    BstManager.getBytesFromFile(BstManager.getIconPath(elementData)), 
                     elementId
                 });
             }
@@ -311,7 +312,7 @@ namespace BladeSoulTool
         private void createPictureForm(string elementId)
         {
             // 创建一个新的form来展示物件的2D截图
-            string imgPath = DataManager.getItemPicPath(this.formType, elementId);
+            string imgPath = BstManager.getItemPicPath(this.formType, elementId);
             Form pictureForm = new BladeSoulTool.ui.GUI_Picture(imgPath);
             pictureForm.Show();
         }

@@ -221,6 +221,7 @@
             this.textBoxOut.Multiline = true;
             this.textBoxOut.Name = "textBoxOut";
             this.textBoxOut.ReadOnly = true;
+            this.textBoxOut.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxOut.Size = new System.Drawing.Size(647, 80);
             this.textBoxOut.TabIndex = 8;
             // 
