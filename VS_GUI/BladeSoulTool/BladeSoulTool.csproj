@@ -46,6 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="lib\data\DataManager.cs" />
+    <Compile Include="ui\GUI_Picture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\GUI_Picture.Designer.cs">
+      <DependentUpon>GUI_Picture.cs</DependentUpon>
+    </Compile>
     <Compile Include="ui\GUI_Items.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ui\GUI_Picture.resx">
+      <DependentUpon>GUI_Picture.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

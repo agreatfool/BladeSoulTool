@@ -45,7 +45,6 @@ namespace BladeSoulTool
         {
             Form form = new GUI_Items(formType);
             form.TopLevel = false;
-            //form.BackColor = Color.Green; // for test, remove later
             form.Visible = true;
             form.FormBorderStyle = FormBorderStyle.None;
             form.WindowState = FormWindowState.Maximized;

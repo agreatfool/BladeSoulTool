@@ -35,6 +35,10 @@ namespace BladeSoulTool
         public const int RACE_ID_LYNF = 5;
         public const int RACE_ID_LYNM = 6;
 
+        public const int ITEM_TYPE_COSTUME = 0;
+        public const int ITEM_TYPE_ATTACH = 1;
+        public const int ITEM_TYPE_WEAPON = 2;
+
         public const string PATH_ROOT = "../../../../";
         public const string PATH_CONFIG = DataManager.PATH_ROOT + "config/";
         public const string PATH_DATABASE = DataManager.PATH_ROOT + "database/";
@@ -126,7 +130,31 @@ namespace BladeSoulTool
                     fs.Dispose();
                 }
             }
+        }
 
+        public static string getIconPath(JObject elementData)
+        {
+            return DataManager.PATH_DATABASE + "icon/png-cps/" + (string)elementData["pic"];
+        }
+
+        public static string getItemPicPath(int itemType, string itemId)
+        {
+            string path = null;
+            switch (itemType)
+            {
+                case DataManager.ITEM_TYPE_COSTUME:
+                    path = DataManager.PATH_DATABASE + "costume/pics-cps/" + itemId + ".png";
+                    break;
+                case DataManager.ITEM_TYPE_ATTACH:
+                    path = DataManager.PATH_DATABASE + "attach/pics-cps/" + itemId + ".png";
+                    break;
+                case DataManager.ITEM_TYPE_WEAPON:
+                    path = DataManager.PATH_DATABASE + "weapon/pics-cps/" + itemId + ".png";
+                    break;
+                default:
+                    break;
+            }
+            return path;
         }
 
     }

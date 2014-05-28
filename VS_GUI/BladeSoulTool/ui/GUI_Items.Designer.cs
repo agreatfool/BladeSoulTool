@@ -28,46 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.imgUmodelSnapshot = new System.Windows.Forms.PictureBox();
+            this.pictureBoxUmodel = new System.Windows.Forms.PictureBox();
             this.gridItems = new System.Windows.Forms.DataGridView();
             this.labelRace = new System.Windows.Forms.Label();
             this.comboBoxRace = new System.Windows.Forms.ComboBox();
             this.panelTarget = new System.Windows.Forms.Panel();
-            this.panelDest = new System.Windows.Forms.Panel();
-            this.btnTopRestoreAll = new System.Windows.Forms.Button();
-            this.textBoxOut = new System.Windows.Forms.TextBox();
-            this.panelInfo = new System.Windows.Forms.Panel();
-            this.labelInfoHead = new System.Windows.Forms.Label();
-            this.btnReplace = new System.Windows.Forms.Button();
-            this.textBoxInfo = new System.Windows.Forms.TextBox();
-            this.btnSelectOrigin = new System.Windows.Forms.Button();
-            this.btnSelectTarget = new System.Windows.Forms.Button();
-            this.labelOrigin = new System.Windows.Forms.Label();
-            this.textBoxOrigin = new System.Windows.Forms.TextBox();
-            this.labelTarget = new System.Windows.Forms.Label();
-            this.pictureBoxOrigin = new System.Windows.Forms.PictureBox();
-            this.btnView3DInfo = new System.Windows.Forms.Button();
             this.btnView3DOrigin = new System.Windows.Forms.Button();
+            this.pictureBoxOrigin = new System.Windows.Forms.PictureBox();
+            this.textBoxOrigin = new System.Windows.Forms.TextBox();
+            this.labelOrigin = new System.Windows.Forms.Label();
+            this.panelDest = new System.Windows.Forms.Panel();
             this.btnView3DTarget = new System.Windows.Forms.Button();
             this.pictureBoxTarget = new System.Windows.Forms.PictureBox();
             this.textBoxTarget = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.imgUmodelSnapshot)).BeginInit();
+            this.labelTarget = new System.Windows.Forms.Label();
+            this.btnTopRestoreAll = new System.Windows.Forms.Button();
+            this.textBoxOut = new System.Windows.Forms.TextBox();
+            this.panelInfo = new System.Windows.Forms.Panel();
+            this.btnView3DInfo = new System.Windows.Forms.Button();
+            this.btnSelectTarget = new System.Windows.Forms.Button();
+            this.btnSelectOrigin = new System.Windows.Forms.Button();
+            this.textBoxInfo = new System.Windows.Forms.TextBox();
+            this.labelInfoHead = new System.Windows.Forms.Label();
+            this.btnReplace = new System.Windows.Forms.Button();
+            this.btnView2DOrigin = new System.Windows.Forms.Button();
+            this.btnView2DTarget = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUmodel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridItems)).BeginInit();
             this.panelTarget.SuspendLayout();
-            this.panelDest.SuspendLayout();
-            this.panelInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrigin)).BeginInit();
+            this.panelDest.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTarget)).BeginInit();
+            this.panelInfo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // imgUmodelSnapshot
+            // pictureBoxUmodel
             // 
-            this.imgUmodelSnapshot.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imgUmodelSnapshot.Location = new System.Drawing.Point(665, 130);
-            this.imgUmodelSnapshot.Name = "imgUmodelSnapshot";
-            this.imgUmodelSnapshot.Size = new System.Drawing.Size(500, 600);
-            this.imgUmodelSnapshot.TabIndex = 0;
-            this.imgUmodelSnapshot.TabStop = false;
+            this.pictureBoxUmodel.BackColor = System.Drawing.SystemColors.Window;
+            this.pictureBoxUmodel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxUmodel.Location = new System.Drawing.Point(665, 130);
+            this.pictureBoxUmodel.Name = "pictureBoxUmodel";
+            this.pictureBoxUmodel.Size = new System.Drawing.Size(500, 600);
+            this.pictureBoxUmodel.TabIndex = 0;
+            this.pictureBoxUmodel.TabStop = false;
             // 
             // gridItems
             // 
@@ -78,7 +81,7 @@
             this.gridItems.MultiSelect = false;
             this.gridItems.Name = "gridItems";
             this.gridItems.RowTemplate.Height = 23;
-            this.gridItems.Size = new System.Drawing.Size(418, 514);
+            this.gridItems.Size = new System.Drawing.Size(400, 514);
             this.gridItems.TabIndex = 1;
             // 
             // labelRace
@@ -101,6 +104,7 @@
             // panelTarget
             // 
             this.panelTarget.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelTarget.Controls.Add(this.btnView2DOrigin);
             this.panelTarget.Controls.Add(this.btnView3DOrigin);
             this.panelTarget.Controls.Add(this.pictureBoxOrigin);
             this.panelTarget.Controls.Add(this.textBoxOrigin);
@@ -110,9 +114,49 @@
             this.panelTarget.Size = new System.Drawing.Size(547, 92);
             this.panelTarget.TabIndex = 4;
             // 
+            // btnView3DOrigin
+            // 
+            this.btnView3DOrigin.Location = new System.Drawing.Point(500, 2);
+            this.btnView3DOrigin.Name = "btnView3DOrigin";
+            this.btnView3DOrigin.Size = new System.Drawing.Size(42, 85);
+            this.btnView3DOrigin.TabIndex = 3;
+            this.btnView3DOrigin.Text = "预览3D模型";
+            this.btnView3DOrigin.UseVisualStyleBackColor = true;
+            // 
+            // pictureBoxOrigin
+            // 
+            this.pictureBoxOrigin.BackColor = System.Drawing.SystemColors.Window;
+            this.pictureBoxOrigin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxOrigin.Location = new System.Drawing.Point(68, 12);
+            this.pictureBoxOrigin.Name = "pictureBoxOrigin";
+            this.pictureBoxOrigin.Size = new System.Drawing.Size(64, 64);
+            this.pictureBoxOrigin.TabIndex = 2;
+            this.pictureBoxOrigin.TabStop = false;
+            // 
+            // textBoxOrigin
+            // 
+            this.textBoxOrigin.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxOrigin.Location = new System.Drawing.Point(138, 3);
+            this.textBoxOrigin.Multiline = true;
+            this.textBoxOrigin.Name = "textBoxOrigin";
+            this.textBoxOrigin.ReadOnly = true;
+            this.textBoxOrigin.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxOrigin.Size = new System.Drawing.Size(308, 84);
+            this.textBoxOrigin.TabIndex = 1;
+            // 
+            // labelOrigin
+            // 
+            this.labelOrigin.Location = new System.Drawing.Point(1, 2);
+            this.labelOrigin.Name = "labelOrigin";
+            this.labelOrigin.Padding = new System.Windows.Forms.Padding(0, 22, 0, 0);
+            this.labelOrigin.Size = new System.Drawing.Size(61, 85);
+            this.labelOrigin.TabIndex = 0;
+            this.labelOrigin.Text = "已设定的原始模型信息：";
+            // 
             // panelDest
             // 
             this.panelDest.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelDest.Controls.Add(this.btnView2DTarget);
             this.panelDest.Controls.Add(this.btnView3DTarget);
             this.panelDest.Controls.Add(this.pictureBoxTarget);
             this.panelDest.Controls.Add(this.textBoxTarget);
@@ -121,6 +165,45 @@
             this.panelDest.Name = "panelDest";
             this.panelDest.Size = new System.Drawing.Size(545, 92);
             this.panelDest.TabIndex = 5;
+            // 
+            // btnView3DTarget
+            // 
+            this.btnView3DTarget.Location = new System.Drawing.Point(498, 2);
+            this.btnView3DTarget.Name = "btnView3DTarget";
+            this.btnView3DTarget.Size = new System.Drawing.Size(42, 85);
+            this.btnView3DTarget.TabIndex = 6;
+            this.btnView3DTarget.Text = "预览3D模型";
+            this.btnView3DTarget.UseVisualStyleBackColor = true;
+            // 
+            // pictureBoxTarget
+            // 
+            this.pictureBoxTarget.BackColor = System.Drawing.SystemColors.Window;
+            this.pictureBoxTarget.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxTarget.Location = new System.Drawing.Point(70, 12);
+            this.pictureBoxTarget.Name = "pictureBoxTarget";
+            this.pictureBoxTarget.Size = new System.Drawing.Size(64, 64);
+            this.pictureBoxTarget.TabIndex = 5;
+            this.pictureBoxTarget.TabStop = false;
+            // 
+            // textBoxTarget
+            // 
+            this.textBoxTarget.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxTarget.Location = new System.Drawing.Point(140, 3);
+            this.textBoxTarget.Multiline = true;
+            this.textBoxTarget.Name = "textBoxTarget";
+            this.textBoxTarget.ReadOnly = true;
+            this.textBoxTarget.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxTarget.Size = new System.Drawing.Size(304, 84);
+            this.textBoxTarget.TabIndex = 4;
+            // 
+            // labelTarget
+            // 
+            this.labelTarget.Location = new System.Drawing.Point(3, 3);
+            this.labelTarget.Name = "labelTarget";
+            this.labelTarget.Padding = new System.Windows.Forms.Padding(0, 22, 0, 0);
+            this.labelTarget.Size = new System.Drawing.Size(61, 85);
+            this.labelTarget.TabIndex = 1;
+            this.labelTarget.Text = "已选择的目标模型信息：";
             // 
             // btnTopRestoreAll
             // 
@@ -133,10 +216,11 @@
             // 
             // textBoxOut
             // 
-            this.textBoxOut.Enabled = false;
+            this.textBoxOut.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxOut.Location = new System.Drawing.Point(12, 650);
             this.textBoxOut.Multiline = true;
             this.textBoxOut.Name = "textBoxOut";
+            this.textBoxOut.ReadOnly = true;
             this.textBoxOut.Size = new System.Drawing.Size(647, 80);
             this.textBoxOut.TabIndex = 8;
             // 
@@ -148,10 +232,47 @@
             this.panelInfo.Controls.Add(this.btnSelectOrigin);
             this.panelInfo.Controls.Add(this.textBoxInfo);
             this.panelInfo.Controls.Add(this.labelInfoHead);
-            this.panelInfo.Location = new System.Drawing.Point(436, 130);
+            this.panelInfo.Location = new System.Drawing.Point(418, 130);
             this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Size = new System.Drawing.Size(223, 514);
+            this.panelInfo.Size = new System.Drawing.Size(241, 514);
             this.panelInfo.TabIndex = 9;
+            // 
+            // btnView3DInfo
+            // 
+            this.btnView3DInfo.Location = new System.Drawing.Point(5, 415);
+            this.btnView3DInfo.Name = "btnView3DInfo";
+            this.btnView3DInfo.Size = new System.Drawing.Size(230, 23);
+            this.btnView3DInfo.TabIndex = 4;
+            this.btnView3DInfo.Text = "预览3D模型";
+            this.btnView3DInfo.UseVisualStyleBackColor = true;
+            // 
+            // btnSelectTarget
+            // 
+            this.btnSelectTarget.Location = new System.Drawing.Point(5, 480);
+            this.btnSelectTarget.Name = "btnSelectTarget";
+            this.btnSelectTarget.Size = new System.Drawing.Size(230, 23);
+            this.btnSelectTarget.TabIndex = 3;
+            this.btnSelectTarget.Text = "选为目标模型";
+            this.btnSelectTarget.UseVisualStyleBackColor = true;
+            // 
+            // btnSelectOrigin
+            // 
+            this.btnSelectOrigin.Location = new System.Drawing.Point(5, 448);
+            this.btnSelectOrigin.Name = "btnSelectOrigin";
+            this.btnSelectOrigin.Size = new System.Drawing.Size(230, 23);
+            this.btnSelectOrigin.TabIndex = 2;
+            this.btnSelectOrigin.Text = "选为原始模型";
+            this.btnSelectOrigin.UseVisualStyleBackColor = true;
+            // 
+            // textBoxInfo
+            // 
+            this.textBoxInfo.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxInfo.Location = new System.Drawing.Point(5, 29);
+            this.textBoxInfo.Multiline = true;
+            this.textBoxInfo.Name = "textBoxInfo";
+            this.textBoxInfo.ReadOnly = true;
+            this.textBoxInfo.Size = new System.Drawing.Size(230, 374);
+            this.textBoxInfo.TabIndex = 1;
             // 
             // labelInfoHead
             // 
@@ -167,116 +288,26 @@
             this.btnReplace.Name = "btnReplace";
             this.btnReplace.Size = new System.Drawing.Size(46, 92);
             this.btnReplace.TabIndex = 10;
-            this.btnReplace.Text = "替换";
+            this.btnReplace.Text = "将左边的替换为右边的";
             this.btnReplace.UseVisualStyleBackColor = true;
             // 
-            // textBoxInfo
+            // btnView2DOrigin
             // 
-            this.textBoxInfo.Enabled = false;
-            this.textBoxInfo.Location = new System.Drawing.Point(5, 29);
-            this.textBoxInfo.Multiline = true;
-            this.textBoxInfo.Name = "textBoxInfo";
-            this.textBoxInfo.Size = new System.Drawing.Size(212, 374);
-            this.textBoxInfo.TabIndex = 1;
+            this.btnView2DOrigin.Location = new System.Drawing.Point(452, 2);
+            this.btnView2DOrigin.Name = "btnView2DOrigin";
+            this.btnView2DOrigin.Size = new System.Drawing.Size(42, 85);
+            this.btnView2DOrigin.TabIndex = 4;
+            this.btnView2DOrigin.Text = "预览模型截图";
+            this.btnView2DOrigin.UseVisualStyleBackColor = true;
             // 
-            // btnSelectOrigin
+            // btnView2DTarget
             // 
-            this.btnSelectOrigin.Location = new System.Drawing.Point(5, 448);
-            this.btnSelectOrigin.Name = "btnSelectOrigin";
-            this.btnSelectOrigin.Size = new System.Drawing.Size(212, 23);
-            this.btnSelectOrigin.TabIndex = 2;
-            this.btnSelectOrigin.Text = "选为原始模型";
-            this.btnSelectOrigin.UseVisualStyleBackColor = true;
-            // 
-            // btnSelectTarget
-            // 
-            this.btnSelectTarget.Location = new System.Drawing.Point(5, 480);
-            this.btnSelectTarget.Name = "btnSelectTarget";
-            this.btnSelectTarget.Size = new System.Drawing.Size(212, 23);
-            this.btnSelectTarget.TabIndex = 3;
-            this.btnSelectTarget.Text = "选为目标模型";
-            this.btnSelectTarget.UseVisualStyleBackColor = true;
-            // 
-            // labelOrigin
-            // 
-            this.labelOrigin.Location = new System.Drawing.Point(1, 2);
-            this.labelOrigin.Name = "labelOrigin";
-            this.labelOrigin.Padding = new System.Windows.Forms.Padding(0, 22, 0, 0);
-            this.labelOrigin.Size = new System.Drawing.Size(61, 85);
-            this.labelOrigin.TabIndex = 0;
-            this.labelOrigin.Text = "已设定的原始模型信息：";
-            // 
-            // textBoxOrigin
-            // 
-            this.textBoxOrigin.Enabled = false;
-            this.textBoxOrigin.Location = new System.Drawing.Point(138, 3);
-            this.textBoxOrigin.Multiline = true;
-            this.textBoxOrigin.Name = "textBoxOrigin";
-            this.textBoxOrigin.Size = new System.Drawing.Size(241, 84);
-            this.textBoxOrigin.TabIndex = 1;
-            // 
-            // labelTarget
-            // 
-            this.labelTarget.Location = new System.Drawing.Point(3, 3);
-            this.labelTarget.Name = "labelTarget";
-            this.labelTarget.Padding = new System.Windows.Forms.Padding(0, 22, 0, 0);
-            this.labelTarget.Size = new System.Drawing.Size(61, 85);
-            this.labelTarget.TabIndex = 1;
-            this.labelTarget.Text = "已选择的目标模型信息：";
-            // 
-            // pictureBoxOrigin
-            // 
-            this.pictureBoxOrigin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxOrigin.Location = new System.Drawing.Point(68, 12);
-            this.pictureBoxOrigin.Name = "pictureBoxOrigin";
-            this.pictureBoxOrigin.Size = new System.Drawing.Size(64, 64);
-            this.pictureBoxOrigin.TabIndex = 2;
-            this.pictureBoxOrigin.TabStop = false;
-            // 
-            // btnView3DInfo
-            // 
-            this.btnView3DInfo.Location = new System.Drawing.Point(5, 415);
-            this.btnView3DInfo.Name = "btnView3DInfo";
-            this.btnView3DInfo.Size = new System.Drawing.Size(212, 23);
-            this.btnView3DInfo.TabIndex = 4;
-            this.btnView3DInfo.Text = "预览3D模型";
-            this.btnView3DInfo.UseVisualStyleBackColor = true;
-            // 
-            // btnView3DOrigin
-            // 
-            this.btnView3DOrigin.Location = new System.Drawing.Point(385, 3);
-            this.btnView3DOrigin.Name = "btnView3DOrigin";
-            this.btnView3DOrigin.Size = new System.Drawing.Size(42, 84);
-            this.btnView3DOrigin.TabIndex = 3;
-            this.btnView3DOrigin.Text = "预览3D模型";
-            this.btnView3DOrigin.UseVisualStyleBackColor = true;
-            // 
-            // btnView3DTarget
-            // 
-            this.btnView3DTarget.Location = new System.Drawing.Point(387, 2);
-            this.btnView3DTarget.Name = "btnView3DTarget";
-            this.btnView3DTarget.Size = new System.Drawing.Size(42, 84);
-            this.btnView3DTarget.TabIndex = 6;
-            this.btnView3DTarget.Text = "预览3D模型";
-            this.btnView3DTarget.UseVisualStyleBackColor = true;
-            // 
-            // pictureBoxTarget
-            // 
-            this.pictureBoxTarget.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxTarget.Location = new System.Drawing.Point(70, 12);
-            this.pictureBoxTarget.Name = "pictureBoxTarget";
-            this.pictureBoxTarget.Size = new System.Drawing.Size(64, 64);
-            this.pictureBoxTarget.TabIndex = 5;
-            this.pictureBoxTarget.TabStop = false;
-            // 
-            // textBoxTarget
-            // 
-            this.textBoxTarget.Enabled = false;
-            this.textBoxTarget.Location = new System.Drawing.Point(140, 3);
-            this.textBoxTarget.Multiline = true;
-            this.textBoxTarget.Name = "textBoxTarget";
-            this.textBoxTarget.Size = new System.Drawing.Size(241, 84);
-            this.textBoxTarget.TabIndex = 4;
+            this.btnView2DTarget.Location = new System.Drawing.Point(450, 2);
+            this.btnView2DTarget.Name = "btnView2DTarget";
+            this.btnView2DTarget.Size = new System.Drawing.Size(42, 85);
+            this.btnView2DTarget.TabIndex = 7;
+            this.btnView2DTarget.Text = "预览模型截图";
+            this.btnView2DTarget.UseVisualStyleBackColor = true;
             // 
             // GUI_Items
             // 
@@ -292,19 +323,19 @@
             this.Controls.Add(this.comboBoxRace);
             this.Controls.Add(this.labelRace);
             this.Controls.Add(this.gridItems);
-            this.Controls.Add(this.imgUmodelSnapshot);
+            this.Controls.Add(this.pictureBoxUmodel);
             this.Name = "GUI_Items";
             this.Text = "GUI_Items";
-            ((System.ComponentModel.ISupportInitialize)(this.imgUmodelSnapshot)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUmodel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridItems)).EndInit();
             this.panelTarget.ResumeLayout(false);
             this.panelTarget.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrigin)).EndInit();
             this.panelDest.ResumeLayout(false);
             this.panelDest.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTarget)).EndInit();
             this.panelInfo.ResumeLayout(false);
             this.panelInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrigin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTarget)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,7 +343,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox imgUmodelSnapshot;
+        private System.Windows.Forms.PictureBox pictureBoxUmodel;
         private System.Windows.Forms.DataGridView gridItems;
         private System.Windows.Forms.Label labelRace;
         private System.Windows.Forms.ComboBox comboBoxRace;
@@ -335,6 +366,8 @@
         private System.Windows.Forms.Button btnView3DTarget;
         private System.Windows.Forms.PictureBox pictureBoxTarget;
         private System.Windows.Forms.TextBox textBoxTarget;
+        private System.Windows.Forms.Button btnView2DOrigin;
+        private System.Windows.Forms.Button btnView2DTarget;
         
 
     }
