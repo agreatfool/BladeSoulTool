@@ -36,6 +36,22 @@
 * 现在最大的问题是很多模型的信息在分类上跑错了位置，最关键的原因是在用icon进行索引配对的时候，有重复的code，一个icon的code在衣服、配饰、武器中重复了，要想个办法区分开
 * 错误数据还是有很大影响，截图说明问题了，举例code 70002，衣服只有2个种族截出来了，其他的5个都是在解析material信息的时候被污染了，参考raw_material_invalid.json里的70002群
 * 找时间一个个验证错误数据里的模型信息，是哪个模型，到底有没有办法更正或者做特殊处理，要么就会漏衣服
+* 一部分衣服的upk在icon里是不存在的，必须到mesh.xml里查找，这里要思考下怎么结合这两者
+        "00024241": {
+            "upkId": "00024241",
+            "code": "60004",
+            "core": "60004_KunN",
+            "race": "KunN",
+            "col1Material": "00024240",
+            "texture": "00024239",
+            "textureObjs": [
+                "60004_KunN_col1_S",
+                "60004_KunN_col1_N",
+                "60004_KunN_col1_M",
+                "60004_KunN_col1_D"
+            ]
+        },
+        <record alias="60004_JinF" data-version="2" description="" id="76" name="60004-일반의상 39" race="진" resource-name="00007617
 
 ## 截图：
 截图错误的信息要记录并写成json文件，酌情重试，database/costume/data/shot_error.json
