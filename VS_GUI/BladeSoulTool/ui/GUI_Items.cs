@@ -85,7 +85,8 @@ namespace BladeSoulTool
             this.btnSelectTarget.Click += new EventHandler(this.btnSelectTarget_Click);
 
             // 按form类型做各自的逻辑处理
-            this.initFormData();
+            // TODO 如何在UI界面加载完之后再加载数据，而且要一边加载数据一边更新tableUI
+            //this.initFormData();
         }
 
         private void clearFormStatus()

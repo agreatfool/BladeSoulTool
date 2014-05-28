@@ -33,11 +33,13 @@
             this.labelRace = new System.Windows.Forms.Label();
             this.comboBoxRace = new System.Windows.Forms.ComboBox();
             this.panelTarget = new System.Windows.Forms.Panel();
+            this.btnView2DOrigin = new System.Windows.Forms.Button();
             this.btnView3DOrigin = new System.Windows.Forms.Button();
             this.pictureBoxOrigin = new System.Windows.Forms.PictureBox();
             this.textBoxOrigin = new System.Windows.Forms.TextBox();
             this.labelOrigin = new System.Windows.Forms.Label();
             this.panelDest = new System.Windows.Forms.Panel();
+            this.btnView2DTarget = new System.Windows.Forms.Button();
             this.btnView3DTarget = new System.Windows.Forms.Button();
             this.pictureBoxTarget = new System.Windows.Forms.PictureBox();
             this.textBoxTarget = new System.Windows.Forms.TextBox();
@@ -51,8 +53,6 @@
             this.textBoxInfo = new System.Windows.Forms.TextBox();
             this.labelInfoHead = new System.Windows.Forms.Label();
             this.btnReplace = new System.Windows.Forms.Button();
-            this.btnView2DOrigin = new System.Windows.Forms.Button();
-            this.btnView2DTarget = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUmodel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridItems)).BeginInit();
             this.panelTarget.SuspendLayout();
@@ -74,6 +74,10 @@
             // 
             // gridItems
             // 
+            this.gridItems.AllowUserToAddRows = false;
+            this.gridItems.AllowUserToDeleteRows = false;
+            this.gridItems.AllowUserToResizeColumns = false;
+            this.gridItems.AllowUserToResizeRows = false;
             this.gridItems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridItems.BackgroundColor = System.Drawing.SystemColors.Window;
             this.gridItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -113,6 +117,15 @@
             this.panelTarget.Name = "panelTarget";
             this.panelTarget.Size = new System.Drawing.Size(547, 92);
             this.panelTarget.TabIndex = 4;
+            // 
+            // btnView2DOrigin
+            // 
+            this.btnView2DOrigin.Location = new System.Drawing.Point(452, 2);
+            this.btnView2DOrigin.Name = "btnView2DOrigin";
+            this.btnView2DOrigin.Size = new System.Drawing.Size(42, 85);
+            this.btnView2DOrigin.TabIndex = 4;
+            this.btnView2DOrigin.Text = "预览模型截图";
+            this.btnView2DOrigin.UseVisualStyleBackColor = true;
             // 
             // btnView3DOrigin
             // 
@@ -165,6 +178,15 @@
             this.panelDest.Name = "panelDest";
             this.panelDest.Size = new System.Drawing.Size(545, 92);
             this.panelDest.TabIndex = 5;
+            // 
+            // btnView2DTarget
+            // 
+            this.btnView2DTarget.Location = new System.Drawing.Point(450, 2);
+            this.btnView2DTarget.Name = "btnView2DTarget";
+            this.btnView2DTarget.Size = new System.Drawing.Size(42, 85);
+            this.btnView2DTarget.TabIndex = 7;
+            this.btnView2DTarget.Text = "预览模型截图";
+            this.btnView2DTarget.UseVisualStyleBackColor = true;
             // 
             // btnView3DTarget
             // 
@@ -291,24 +313,6 @@
             this.btnReplace.TabIndex = 10;
             this.btnReplace.Text = "将左边的替换为右边的";
             this.btnReplace.UseVisualStyleBackColor = true;
-            // 
-            // btnView2DOrigin
-            // 
-            this.btnView2DOrigin.Location = new System.Drawing.Point(452, 2);
-            this.btnView2DOrigin.Name = "btnView2DOrigin";
-            this.btnView2DOrigin.Size = new System.Drawing.Size(42, 85);
-            this.btnView2DOrigin.TabIndex = 4;
-            this.btnView2DOrigin.Text = "预览模型截图";
-            this.btnView2DOrigin.UseVisualStyleBackColor = true;
-            // 
-            // btnView2DTarget
-            // 
-            this.btnView2DTarget.Location = new System.Drawing.Point(450, 2);
-            this.btnView2DTarget.Name = "btnView2DTarget";
-            this.btnView2DTarget.Size = new System.Drawing.Size(42, 85);
-            this.btnView2DTarget.TabIndex = 7;
-            this.btnView2DTarget.Text = "预览模型截图";
-            this.btnView2DTarget.UseVisualStyleBackColor = true;
             // 
             // GUI_Items
             // 

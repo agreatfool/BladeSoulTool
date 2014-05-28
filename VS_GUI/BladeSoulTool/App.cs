@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Threading;
 
 namespace BladeSoulTool
 {
@@ -39,6 +40,41 @@ namespace BladeSoulTool
             // 初始化第一个tab，costume
             this.formCostume = this.createItemsForm(App.FORM_TYPE_COSTUME);
             this.tabCostume.Controls.Add(this.formCostume);
+            // 注册tab切换事件
+            this.tabControl.SelectedIndexChanged += new EventHandler(tabControl_SelectedIndexChanged);
+        }
+
+        private void tabControl_SelectedIndexChanged(Object sender, EventArgs e)
+        {
+            switch (this.tabControl.SelectedIndex)
+            {
+                case App.FORM_TYPE_COSTUME:
+                    if (this.formCostume == null) 
+                    {
+                        this.formCostume = this.createItemsForm(App.FORM_TYPE_COSTUME);
+                        this.tabCostume.Controls.Add(this.formCostume);
+                    }
+                    break;
+                case App.FORM_TYPE_ATTACH:
+                    if (this.formAttach == null)
+                    {
+                        this.formAttach = this.createItemsForm(App.FORM_TYPE_ATTACH);
+                        this.tabAttach.Controls.Add(this.formAttach);
+                    }
+                    break;
+                case App.FORM_TYPE_WEAPON:
+                    if (this.formWeapon == null)
+                    {
+                        this.formWeapon = this.createItemsForm(App.FORM_TYPE_WEAPON);
+                        this.tabWeapon.Controls.Add(this.formWeapon);
+                    }
+                    break;
+                case App.FORM_TYPE_UTIL:
+                    // TODO 制作util面板form
+                    break;
+                default:
+                    break;
+            }
         }
 
         private Form createItemsForm(int formType)

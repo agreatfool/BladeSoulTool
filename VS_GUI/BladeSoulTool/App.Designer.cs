@@ -55,7 +55,7 @@
             this.tabCostume.Padding = new System.Windows.Forms.Padding(3);
             this.tabCostume.Size = new System.Drawing.Size(1177, 735);
             this.tabCostume.TabIndex = 0;
-            this.tabCostume.Text = "tabCostume";
+            this.tabCostume.Text = "服装";
             this.tabCostume.UseVisualStyleBackColor = true;
             // 
             // tabAttach
@@ -65,7 +65,7 @@
             this.tabAttach.Padding = new System.Windows.Forms.Padding(3);
             this.tabAttach.Size = new System.Drawing.Size(1177, 735);
             this.tabAttach.TabIndex = 1;
-            this.tabAttach.Text = "tabAttach";
+            this.tabAttach.Text = "饰品";
             this.tabAttach.UseVisualStyleBackColor = true;
             // 
             // tabWeapon
@@ -75,7 +75,7 @@
             this.tabWeapon.Padding = new System.Windows.Forms.Padding(3);
             this.tabWeapon.Size = new System.Drawing.Size(1177, 735);
             this.tabWeapon.TabIndex = 2;
-            this.tabWeapon.Text = "tabWeapon";
+            this.tabWeapon.Text = "武器";
             this.tabWeapon.UseVisualStyleBackColor = true;
             // 
             // tabUtil
@@ -85,16 +85,16 @@
             this.tabUtil.Padding = new System.Windows.Forms.Padding(3);
             this.tabUtil.Size = new System.Drawing.Size(1177, 735);
             this.tabUtil.TabIndex = 3;
-            this.tabUtil.Text = "tabUtil";
+            this.tabUtil.Text = "工具";
             this.tabUtil.UseVisualStyleBackColor = true;
             // 
-            // GUI
+            // App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1192, 766);
             this.Controls.Add(this.tabControl);
-            this.Name = "GUI";
+            this.Name = "App";
             this.Text = "BladeSoulTool";
             this.tabControl.ResumeLayout(false);
             this.ResumeLayout(false);
