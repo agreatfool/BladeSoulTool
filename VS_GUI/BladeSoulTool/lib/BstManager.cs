@@ -46,9 +46,14 @@ namespace BladeSoulTool
         public const string PATH_ROOT = "../../../../";
         public const string PATH_CONFIG = "config/";
         public const string PATH_DATABASE = "database/";
+        public const string PATH_RESOURCES = "resources/";
+
+        public const string PATH_LOADING_GIF = BstManager.PATH_ROOT + BstManager.PATH_RESOURCES + "others/loading.gif";
 
         public const string GITHUB_ROOT = "https://raw.githubusercontent.com/agreatfool/BladeSoulTool/";
         public const string GITHUB_BRANCH = "upk";
+
+        public byte[] loadingGif { get; set; }
 
         public JObject settings { get; set; }
         public JObject costumeData { get; set; }
@@ -79,6 +84,8 @@ namespace BladeSoulTool
             this.raceTypes.AddRange(new string[] {
                 "KunN", "JinF", "JinM", "GonF", "GonM", "LynF", "LynM"
             });
+
+            this.loadingGif = BstManager.getBytesFromFile(BstManager.PATH_LOADING_GIF);
         }
 
         public JObject getCostumeDataByRace(int raceId)
