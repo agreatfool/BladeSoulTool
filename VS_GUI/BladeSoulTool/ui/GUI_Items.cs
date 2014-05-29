@@ -251,7 +251,7 @@ namespace BladeSoulTool
             }
             this.originElementId = this.selectedElementId;
             // 展示icon
-            this.pictureBoxOrigin.ImageLocation = BstManager.getIconPath(element);
+            this.pictureBoxOrigin.ImageLocation = BstManager.getIconPicPath(element);
             this.pictureBoxOrigin.Load();
             // 显示模型数据
             this.textBoxOrigin.Text = element.ToString();
@@ -268,7 +268,7 @@ namespace BladeSoulTool
             this.targetElementId = this.selectedElementId;
             JObject element = (JObject)this.data[this.selectedElementId];
             // 展示icon
-            this.pictureBoxTarget.ImageLocation = BstManager.getIconPath(element);
+            this.pictureBoxTarget.ImageLocation = BstManager.getIconPicPath(element);
             this.pictureBoxTarget.Load();
             // 显示模型数据
             this.textBoxTarget.Text = element.ToString();
@@ -307,7 +307,7 @@ namespace BladeSoulTool
                 JObject elementData = (JObject)element.Value;
                 // 填充数据
                 this.dataTable.Rows.Add(new object[] {
-                    BstManager.getBytesFromFile(BstManager.getIconPath(elementData)), 
+                    BstManager.getBytesFromWeb(BstManager.getIconPicPath(elementData)), 
                     elementId
                 });
             }
@@ -325,7 +325,7 @@ namespace BladeSoulTool
                 JObject elementData = (JObject)element.Value;
                 // 填充数据
                 this.dataTable.Rows.Add(new object[] {
-                    BstManager.getBytesFromFile(BstManager.getIconPath(elementData)), 
+                    BstManager.getBytesFromWeb(BstManager.getIconPicPath(elementData)), 
                     elementId
                 });
             }
@@ -343,7 +343,7 @@ namespace BladeSoulTool
                 JObject elementData = (JObject)element.Value;
                 // 填充数据
                 this.dataTable.Rows.Add(new object[] {
-                    BstManager.getBytesFromFile(BstManager.getIconPath(elementData)), 
+                    BstManager.getBytesFromWeb(BstManager.getIconPicPath(elementData)), 
                     elementId
                 });
             }

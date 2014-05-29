@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Windows.Forms;
 using System.ComponentModel;
+using System.Net;
 
 namespace BladeSoulTool
 {
@@ -43,8 +44,11 @@ namespace BladeSoulTool
         public const int ITEM_TYPE_WEAPON = 2;
 
         public const string PATH_ROOT = "../../../../";
-        public const string PATH_CONFIG = BstManager.PATH_ROOT + "config/";
-        public const string PATH_DATABASE = BstManager.PATH_ROOT + "database/";
+        public const string PATH_CONFIG = "config/";
+        public const string PATH_DATABASE = "database/";
+
+        public const string GITHUB_ROOT = "https://raw.githubusercontent.com/agreatfool/BladeSoulTool/";
+        public const string GITHUB_BRANCH = "upk";
 
         public JObject settings { get; set; }
         public JObject costumeData { get; set; }
@@ -59,13 +63,13 @@ namespace BladeSoulTool
 
         private void init()
         {
-            this.settings = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_CONFIG + "setting.json")));
-            this.costumeData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_DATABASE + "costume/data/data.json")));
-            this.costumeInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_DATABASE + "costume/data/data_invalid.json")));
-            this.attachData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_DATABASE + "attach/data/data.json")));
-            this.attachInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_DATABASE + "attach/data/data_invalid.json")));
-            this.weaponData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_DATABASE + "weapon/data/data.json")));
-            this.weaponInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_DATABASE + "weapon/data/data_invalid.json")));
+            this.settings = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_ROOT + BstManager.PATH_CONFIG + "setting.json")));
+            this.costumeData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_ROOT + BstManager.PATH_DATABASE + "costume/data/data.json")));
+            this.costumeInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_ROOT + BstManager.PATH_DATABASE + "costume/data/data_invalid.json")));
+            this.attachData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_ROOT + BstManager.PATH_DATABASE + "attach/data/data.json")));
+            this.attachInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_ROOT + BstManager.PATH_DATABASE + "attach/data/data_invalid.json")));
+            this.weaponData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_ROOT + BstManager.PATH_DATABASE + "weapon/data/data.json")));
+            this.weaponInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_ROOT + BstManager.PATH_DATABASE + "weapon/data/data_invalid.json")));
 
             this.raceNames = new List<string>();
             this.raceNames.AddRange(new string[] {
@@ -115,6 +119,28 @@ namespace BladeSoulTool
             return filtered;
         }
 
+        public static byte[] getBytesFromWeb(string url)
+        {
+            byte[] bytes = null;
+            if (url == null)
+            {
+                return bytes;
+            }
+
+            WebClient webClient = new WebClient();
+
+            try
+            {
+                bytes = webClient.DownloadData(url);
+                return bytes;
+            }
+            catch (Exception ex)
+            {
+                //Console.WriteLine(ex);
+                return bytes;
+            }
+        }
+
         public static byte[] getBytesFromFile(string fullFilePath)
         {
             byte[] bytes = null;
@@ -146,9 +172,18 @@ namespace BladeSoulTool
             }
         }
 
-        public static string getIconPath(JObject elementData)
+        public static string getIconPicPath(JObject elementData)
         {
-            return BstManager.PATH_DATABASE + "icon/png-cps/" + (string)elementData["pic"];
+            string path = null;
+
+            string iconPicName = (string)elementData["pic"];
+
+            if (iconPicName != "" && iconPicName != null)
+            {
+                path = BstManager.GITHUB_ROOT + BstManager.GITHUB_BRANCH + "/" + BstManager.PATH_DATABASE + "icon/png-cps/" + iconPicName;
+            }
+
+            return path;
         }
 
         public static string getItemPicPath(int itemType, string itemId)
@@ -157,13 +192,13 @@ namespace BladeSoulTool
             switch (itemType)
             {
                 case BstManager.ITEM_TYPE_COSTUME:
-                    path = BstManager.PATH_DATABASE + "costume/pics-cps/" + itemId + ".png";
+                    path = BstManager.GITHUB_ROOT + BstManager.GITHUB_BRANCH + "/" + BstManager.PATH_DATABASE +"costume/pics-cps/" + itemId + ".png";
                     break;
                 case BstManager.ITEM_TYPE_ATTACH:
-                    path = BstManager.PATH_DATABASE + "attach/pics-cps/" + itemId + ".png";
+                    path = BstManager.GITHUB_ROOT + BstManager.GITHUB_BRANCH + "/" + BstManager.PATH_DATABASE + "attach/pics-cps/" + itemId + ".png";
                     break;
                 case BstManager.ITEM_TYPE_WEAPON:
-                    path = BstManager.PATH_DATABASE + "weapon/pics-cps/" + itemId + ".png";
+                    path = BstManager.GITHUB_ROOT + BstManager.GITHUB_BRANCH + "/" + BstManager.PATH_DATABASE + "weapon/pics-cps/" + itemId + ".png";
                     break;
                 default:
                     break;
