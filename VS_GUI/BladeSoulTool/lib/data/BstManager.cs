@@ -5,6 +5,7 @@ using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Windows.Forms;
+using System.ComponentModel;
 
 namespace BladeSoulTool
 {
@@ -172,32 +173,46 @@ namespace BladeSoulTool
 
         public static void runGrunt(TextBox box, string task = "", string[] args = null)
         {
-            Process proc = new Process();
-
-            proc.StartInfo.WorkingDirectory = Directory.GetCurrentDirectory() + "/" + BstManager.PATH_ROOT;
-            proc.StartInfo.FileName = "cmd.exe";
-            proc.StartInfo.Arguments = "/c grunt " + task + " " + ((args == null) ? "" : String.Join(" ", args)) + " --stack";
-            proc.StartInfo.UseShellExecute = false;
-            proc.StartInfo.CreateNoWindow = true;
-            proc.StartInfo.RedirectStandardError = true;
-            proc.StartInfo.RedirectStandardOutput = true;
-
-            proc.OutputDataReceived += (s, e) =>
+            BackgroundWorker worker = new BackgroundWorker();
+            worker.DoWork += (s, e) =>
             {
-                // 注册输出接收事件
-                MethodInvoker action = delegate // cross thread update
+                Process proc = new Process();
+
+                string cwd = Directory.GetCurrentDirectory() + "/" + BstManager.PATH_ROOT;
+                string cmd = "cmd.exe";
+                string arguments = "/c grunt " + task + " " + ((args == null) ? "" : String.Join(" ", args)) + " --stack";
+                // 打印命令信息
+                MethodInvoker logAction = delegate
                 {
-                    box.AppendText(e.Data + "\r\n");
+                    box.AppendText("开始运行：\r\n" + "位置：" + cwd + "\r\n" + "命令：" + cmd + "\r\n" + "参数：" + arguments + "\r\n输出：\r\n");
                 };
-                box.BeginInvoke(action);
-            };
-            proc.Start(); // 启动
-            proc.BeginOutputReadLine(); // 逐行读入输出
+                box.BeginInvoke(logAction);
 
-            while (!proc.HasExited)
+                proc.StartInfo.WorkingDirectory = cwd;
+                proc.StartInfo.FileName = cmd;
+                proc.StartInfo.Arguments = arguments;
+                proc.StartInfo.UseShellExecute = false;
+                proc.StartInfo.CreateNoWindow = true;
+                proc.StartInfo.RedirectStandardError = true;
+                proc.StartInfo.RedirectStandardOutput = true;
+
+                proc.OutputDataReceived += (dataSender, dataE) =>
+                {
+                    // 注册输出接收事件
+                    MethodInvoker outputAction = delegate // cross thread update
+                    {
+                        box.AppendText(dataE.Data + "\r\n");
+                    };
+                    box.BeginInvoke(outputAction);
+                };
+                proc.Start(); // 启动
+                proc.BeginOutputReadLine(); // 逐行读入输出
+            };
+            worker.RunWorkerCompleted += (s, e) =>
             {
-                Application.DoEvents(); // This keeps your form responsive by processing events
-            }
+                worker.Dispose();
+            };
+            worker.RunWorkerAsync();
         }
 
     }
