@@ -15,6 +15,8 @@ namespace BladeSoulTool
 
         private int formType;
 
+        private BackgroundWorker loader;
+
         private DataTable dataTable;
 
         private JObject data;
@@ -26,6 +28,7 @@ namespace BladeSoulTool
         public GUI_Items(int formType)
         {
             InitializeComponent();
+            this.Shown += new EventHandler(GUI_Items_Shown); // 页面展示后的事件
             this.init(formType);
         }
 
@@ -83,10 +86,42 @@ namespace BladeSoulTool
             this.btnSelectOrigin.Click += new EventHandler(this.btnSelectOrigin_Click);
             // 选为目标模型按钮
             this.btnSelectTarget.Click += new EventHandler(this.btnSelectTarget_Click);
+        }
 
+        private void GUI_Items_Shown(object sender, EventArgs e)
+        {
+            // 当UI加载完毕开始显示之后才开始加载数据
+            this.loader = new BackgroundWorker();
+            this.loader.DoWork += new DoWorkEventHandler(this.loader_DoWork);
+            this.loader.RunWorkerCompleted += new RunWorkerCompletedEventHandler(this.loader_RunWorkerCompleted);
+            this.loader.RunWorkerAsync();
+        }
+
+        private void loader_DoWork(object sender, DoWorkEventArgs e)
+        {
+            // 在background worker里加载数据
+            MethodInvoker action = delegate // cross thread update
+            {
+                this.textBoxOut.AppendText("开始加载数据列表数据... \r\n");
+            };
+            this.textBoxOut.BeginInvoke(action);
             // 按form类型做各自的逻辑处理
-            // TODO 如何在UI界面加载完之后再加载数据，而且要一边加载数据一边更新tableUI
-            //this.initFormData();
+            this.initFormData();
+        }
+
+        private void loader_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            // 数据加载完成
+            MethodInvoker action = delegate // cross thread update
+            {
+                this.textBoxOut.AppendText("数据列表加载完成...\r\n");
+            };
+            this.textBoxOut.BeginInvoke(action);
+            MethodInvoker gridAction = delegate
+            {
+                this.gridItems.PerformLayout(); // 刷新scrollbar
+            };
+            this.gridItems.BeginInvoke(gridAction);
         }
 
         private void clearFormStatus()
@@ -111,6 +146,10 @@ namespace BladeSoulTool
 
         private void gridItems_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex < 0 || e.RowIndex > (this.gridItems.RowCount - 1))
+            {
+                return; // 索引越界
+            }
             // 数据展示列表的点击事件
             this.gridItems.Rows[e.RowIndex].Selected = true;
             this.gridItems.Refresh();
@@ -235,7 +274,7 @@ namespace BladeSoulTool
             this.textBoxTarget.Text = element.ToString();
         }
 
-        private void initFormData(int raceType = BstManager.RACE_ID_KUNN)
+        public void initFormData(int raceType = BstManager.RACE_ID_KUNN)
         {
             // 初始化form数据
             // TODO 原始模型目标应该会被保存在磁盘上的某个配置文件内，这里需要读出

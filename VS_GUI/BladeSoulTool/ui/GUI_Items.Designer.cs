@@ -85,6 +85,7 @@
             this.gridItems.MultiSelect = false;
             this.gridItems.Name = "gridItems";
             this.gridItems.RowTemplate.Height = 23;
+            this.gridItems.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.gridItems.Size = new System.Drawing.Size(400, 514);
             this.gridItems.TabIndex = 1;
             // 

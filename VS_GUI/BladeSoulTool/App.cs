@@ -30,7 +30,7 @@ namespace BladeSoulTool
         public App()
         {
             InitializeComponent();
-            init();
+            this.init();
         }
 
         private void init()
