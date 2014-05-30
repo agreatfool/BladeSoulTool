@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
-using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace BladeSoulTool
@@ -13,17 +9,17 @@ namespace BladeSoulTool
     public partial class GUI_Items : Form
     {
 
-        private int formType;
+        private int _formType;
 
-        private BackgroundWorker loader;
+        private BackgroundWorker _loader;
 
-        private DataTable dataTable;
+        private DataTable _dataTable;
 
-        private JObject data;
+        private JObject _data;
 
-        private string selectedElementId;
-        private string originElementId;
-        private string targetElementId;
+        private string _selectedElementId;
+        private string _originElementId;
+        private string _targetElementId;
 
         public GUI_Items(int formType)
         {
@@ -34,27 +30,27 @@ namespace BladeSoulTool
 
         private void init(int formType)
         {
-            this.formType = formType;
+            this._formType = formType;
             // 数据列表
-            this.dataTable = new DataTable();
+            this._dataTable = new DataTable();
             // icon列
-            DataColumn columnIcon = new DataColumn("Icon");
-            columnIcon.DataType = System.Type.GetType("System.Byte[]");
-            columnIcon.AllowDBNull = true;
-            columnIcon.ColumnName = "缩略图";
+            var columnIcon = new DataColumn("Icon")
+            {
+                DataType = System.Type.GetType("System.Byte[]"),
+                AllowDBNull = true,
+                ColumnName = "缩略图"
+            };
             //columnIcon.ReadOnly = true;
-            this.dataTable.Columns.Add(columnIcon);
+            this._dataTable.Columns.Add(columnIcon);
             // code列
-            DataColumn columnCode = new DataColumn("Code");
-            columnCode.ColumnName = "编号";
-            columnCode.ReadOnly = true;
-            this.dataTable.Columns.Add(columnCode);
+            var columnCode = new DataColumn("Code") {ColumnName = "编号", ReadOnly = true};
+            this._dataTable.Columns.Add(columnCode);
 
             // 数据展示列表
-            this.gridItems.DataSource = this.dataTable;
+            this.gridItems.DataSource = this._dataTable;
             this.gridItems.RowTemplate.Height = 64;
             // icon列
-            DataGridViewColumn gridColumnIcon = this.gridItems.Columns[0];
+            var gridColumnIcon = this.gridItems.Columns[0];
             gridColumnIcon.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             gridColumnIcon.Width = 64;
             // 展示列表点击事件
@@ -63,7 +59,7 @@ namespace BladeSoulTool
             this.gridItems.MouseWheel += new MouseEventHandler(this.gridItems_MouseWheel);
 
             // 种族选择控件
-            this.comboBoxRace.Items.AddRange(BstManager.Instance.raceNames.ToArray());
+            this.comboBoxRace.Items.AddRange(BstManager.Instance.RaceNames.ToArray());
             this.comboBoxRace.SelectedIndex = 0;
             this.comboBoxRace.SelectedIndexChanged +=new EventHandler(this.comboBoxRace_SelectedIndexChanged);
 
@@ -91,37 +87,39 @@ namespace BladeSoulTool
         private void GUI_Items_Shown(object sender, EventArgs e)
         {
             // 当UI加载完毕开始显示之后才开始加载数据
-            this.loader = new BackgroundWorker();
-            this.loader.DoWork += new DoWorkEventHandler(this.loader_DoWork);
-            this.loader.RunWorkerCompleted += new RunWorkerCompletedEventHandler(this.loader_RunWorkerCompleted);
-            this.loader.RunWorkerAsync();
+            this._loader = new BackgroundWorker();
+            this._loader.DoWork += new DoWorkEventHandler(this.loader_DoWork);
+            this._loader.RunWorkerCompleted += new RunWorkerCompletedEventHandler(this.loader_RunWorkerCompleted);
+            this._loader.RunWorkerAsync();
         }
 
         private void loader_DoWork(object sender, DoWorkEventArgs e)
         {
             // 在background worker里加载数据
-            MethodInvoker action = () => this.textBoxOut.AppendText("开始加载数据列表数据... \r\n");
+            MethodInvoker action = () => this.textBoxOut.AppendText("开始加载数据列表数据 ... \r\n");
             this.textBoxOut.BeginInvoke(action);
+            BstLogger.Instance.Log("开始加载数据列表数据 ...");
             // 按form类型做各自的逻辑处理
-            this.initFormData();
+            this.InitFormData();
         }
 
         private void loader_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             // 数据加载完成
-            MethodInvoker action = () => this.textBoxOut.AppendText("数据列表加载完成，开始加载图片...\r\n");
+            MethodInvoker action = () => this.textBoxOut.AppendText("数据列表加载完成，开始加载图片 ...\r\n");
             this.textBoxOut.BeginInvoke(action);
+            BstLogger.Instance.Log("数据列表加载完成，开始加载图片 ...");
             MethodInvoker gridAction = () => this.gridItems.PerformLayout(); // 刷新scrollbar
             this.gridItems.BeginInvoke(gridAction);
-            BstPicLoader.Instance.start(); // 启动图片加载器
+            BstPicLoader.Instance.Start(); // 启动图片加载器
         }
 
-        private void clearFormStatus()
+        private void ClearFormStatus()
         {
             // 重置form的状态
-            this.selectedElementId = null;
-            this.originElementId = null;
-            this.targetElementId = null;
+            this._selectedElementId = null;
+            this._originElementId = null;
+            this._targetElementId = null;
 
             this.textBoxInfo.Text = null;
             this.textBoxOrigin.Text = null;
@@ -132,8 +130,8 @@ namespace BladeSoulTool
             this.pictureBoxTarget.Image = null;
             this.pictureBoxUmodel.Image = null;
 
-            this.data = null;
-            this.dataTable.Clear();
+            this._data = null;
+            this._dataTable.Clear();
         }
 
         private void gridItems_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -146,10 +144,10 @@ namespace BladeSoulTool
             this.gridItems.Rows[e.RowIndex].Selected = true;
             this.gridItems.Refresh();
             // 查找该行对应的数据
-            this.selectedElementId = (string)this.gridItems.Rows[e.RowIndex].Cells[1].Value;
-            this.textBoxInfo.Text = this.data[this.selectedElementId].ToString();
+            this._selectedElementId = (string)this.gridItems.Rows[e.RowIndex].Cells[1].Value;
+            this.textBoxInfo.Text = this._data[this._selectedElementId].ToString();
             // 模型截图控件
-            this.pictureBoxUmodel.ImageLocation = BstManager.getItemPicPath(this.formType, this.selectedElementId);
+            this.pictureBoxUmodel.ImageLocation = BstManager.GetItemPicPath(this._formType, this._selectedElementId);
         }
 
         private void gridItems_MouseWheel(Object sender, MouseEventArgs e)
@@ -171,69 +169,69 @@ namespace BladeSoulTool
         private void comboBoxRace_SelectedIndexChanged(Object sender, EventArgs e)
         {
             // 重新选择种族信息
-            this.clearFormStatus();
-            this.initFormData(this.comboBoxRace.SelectedIndex);
+            this.ClearFormStatus();
+            this.InitFormData(this.comboBoxRace.SelectedIndex);
         }
 
         private void btnTopRestoreAll_Click(Object sender, EventArgs e)
         {
             // 恢复全部模型
-            Console.WriteLine("btnTopRestoreAll_Click");
+            BstLogger.Instance.Log("btnTopRestoreAll_Click");
         }
 
         private void btnView2DOrigin_Click(Object sender, EventArgs e)
         {
             // 预览原始模型2D截图
-            if (this.originElementId == null)
+            if (this._originElementId == null)
             {
                 return;
             }
-            this.createPictureForm(this.originElementId);
+            this.CreatePictureForm(this._originElementId);
         }
 
         private void btnView3DOrigin_Click(Object sender, EventArgs e)
         {
             // 预览原始模型的3D模型
-            Console.WriteLine("btnView3DOrigin_Click");
+            BstLogger.Instance.Log("btnView3DOrigin_Click");
         }
 
         private void btnView2DTarget_Click(Object sender, EventArgs e)
         {
             // 预览目标模型2D截图
-            if (this.targetElementId == null)
+            if (this._targetElementId == null)
             {
                 return;
             }
-            this.createPictureForm(this.targetElementId);
+            this.CreatePictureForm(this._targetElementId);
         }
 
         private void btnView3DTarget_Click(Object sender, EventArgs e)
         {
             // 预览目标模型的3D模型
-            Console.WriteLine("btnView3DTarget_Click");
+            BstLogger.Instance.Log("btnView3DTarget_Click");
         }
 
         private void btnReplace_Click(Object sender, EventArgs e)
         {
             // 替换模型
-            Console.WriteLine("btnReplace_Click");
-            BstManager.runGrunt(this.textBoxOut);
+            BstLogger.Instance.Log("btnReplace_Click");
+            BstManager.RunGrunt(this.textBoxOut);
         }
 
         private void btnView3DInfo_Click(Object sender, EventArgs e)
         {
             // 预览选中的对象的3D模型
-            Console.WriteLine("btnView3DInfo_Click");
+            BstLogger.Instance.Log("btnView3DInfo_Click");
         }
 
         private void btnSelectOrigin_Click(Object sender, EventArgs e)
         {
             // 将当前选中的物件设为原始模型
-            if (this.selectedElementId == null) 
+            if (this._selectedElementId == null) 
             {
                 return; // 没有选中的元素，直接退出
             }
-            JObject element = (JObject)this.data[this.selectedElementId];
+            JObject element = (JObject)this._data[this._selectedElementId];
             // 只有col1的模型才可以被设为原始模型
             string col = (string)element["col"];
             if (col != "col1")
@@ -241,9 +239,9 @@ namespace BladeSoulTool
                 MessageBox.Show("只可将后缀最后为col1的模型设为原始模型", "选择错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            this.originElementId = this.selectedElementId;
+            this._originElementId = this._selectedElementId;
             // 展示icon
-            this.pictureBoxOrigin.ImageLocation = BstManager.getIconPicPath(element);
+            this.pictureBoxOrigin.ImageLocation = BstManager.GetIconPicPath(element);
             this.pictureBoxOrigin.Load();
             // 显示模型数据
             this.textBoxOrigin.Text = element.ToString();
@@ -253,102 +251,102 @@ namespace BladeSoulTool
         private void btnSelectTarget_Click(Object sender, EventArgs e)
         {
             // 将当前选中的物件设为目标模型
-            if (this.selectedElementId == null) 
+            if (this._selectedElementId == null) 
             {
                 return; // 没有选中的元素，直接退出
             }
-            this.targetElementId = this.selectedElementId;
-            JObject element = (JObject)this.data[this.selectedElementId];
+            this._targetElementId = this._selectedElementId;
+            JObject element = (JObject)this._data[this._selectedElementId];
             // 展示icon
-            this.pictureBoxTarget.ImageLocation = BstManager.getIconPicPath(element);
+            this.pictureBoxTarget.ImageLocation = BstManager.GetIconPicPath(element);
             this.pictureBoxTarget.Load();
             // 显示模型数据
             this.textBoxTarget.Text = element.ToString();
         }
 
-        public void initFormData(int raceType = BstManager.RACE_ID_KUNN)
+        public void InitFormData(int raceType = BstManager.RaceIdKunn)
         {
             // 首先关闭pic loader，防止多线程不安全的操作
-            BstPicLoader.Instance.stop();
+            BstPicLoader.Instance.Stop();
             // 初始化form数据
             // TODO 原始模型目标应该会被保存在磁盘上的某个配置文件内，这里需要读出
             // 并设置到 this.originElementId里，还要更新整个原始模型的cell控件
-            switch (this.formType)
+            switch (this._formType)
             {
-                case App.FORM_TYPE_COSTUME:
-                    this.initCostumeForm(raceType);
+                case App.FormTypeCostume:
+                    this.InitCostumeForm(raceType);
                     break;
-                case App.FORM_TYPE_ATTACH:
-                    this.initAttachForm(raceType);
+                case App.FormTypeAttach:
+                    this.InitAttachForm(raceType);
                     break;
-                case App.FORM_TYPE_WEAPON:
-                    this.initWeaponForm(raceType);
+                case App.FormTypeWeapon:
+                    this.InitWeaponForm(raceType);
                     break;
                 default:
                     break;
             }
         }
 
-        private void initCostumeForm(int raceType = BstManager.RACE_ID_KUNN)
+        private void InitCostumeForm(int raceType = BstManager.RaceIdKunn)
         {
             // 初始化服装数据
-            this.data = BstManager.Instance.getCostumeDataByRace(raceType);
+            this._data = BstManager.Instance.GetCostumeDataByRace(raceType);
 
-            foreach (JProperty element in this.data.Properties())
+            foreach (var element in this._data.Properties())
             {
                 // 读取数据
-                string elementId = element.Name;
-                JObject elementData = (JObject)element.Value;
+                var elementId = element.Name;
+                var elementData = (JObject)element.Value;
                 // 填充数据
-                this.dataTable.Rows.Add(new object[] { BstManager.Instance.loadingGif, elementId });
-                int rowId = this.dataTable.Rows.Count - 1;
-                BstPicLoader.Instance.registerTask(new BstPicLoadTask(
-                    BstManager.getIconPicPath(elementData), this.gridItems, this.dataTable, rowId
+                this._dataTable.Rows.Add(new object[] { BstManager.Instance.LoadingGif, elementId });
+                var rowId = this._dataTable.Rows.Count - 1;
+                BstPicLoader.Instance.RegisterTask(new BstPicLoadTask(
+                    BstManager.GetIconPicPath(elementData), this.gridItems, this._dataTable, rowId
                 ));
             }
         }
 
-        private void initAttachForm(int raceType = BstManager.RACE_ID_KUNN)
+        private void InitAttachForm(int raceType = BstManager.RaceIdKunn)
         {
             // 初始化饰品数据
-            this.data = BstManager.Instance.getAttachDataByRace(raceType);
+            this._data = BstManager.Instance.GetAttachDataByRace(raceType);
 
-            foreach (JProperty element in this.data.Properties())
+            foreach (var element in this._data.Properties())
             {
                 // 读取数据
-                string elementId = element.Name;
-                JObject elementData = (JObject)element.Value;
+                var elementId = element.Name;
+                var elementData = (JObject)element.Value;
                 // 填充数据
-                this.dataTable.Rows.Add(new object[] {
-                    BstManager.getBytesFromWeb(BstManager.getIconPicPath(elementData)), 
+                this._dataTable.Rows.Add(new object[] {
+                    BstManager.GetBytesFromWeb(BstManager.GetIconPicPath(elementData)), 
                     elementId
                 });
             }
         }
 
-        private void initWeaponForm(int raceType = BstManager.RACE_ID_KUNN)
+        private void InitWeaponForm(int raceType = BstManager.RaceIdKunn)
         {
             // 初始化武器数据
-            this.data = BstManager.Instance.weaponData;
+            this._data = BstManager.Instance.WeaponData;
 
-            foreach (JProperty element in this.data.Properties())
+            foreach (var element in this._data.Properties())
             {
                 // 读取数据
-                string elementId = element.Name;
-                JObject elementData = (JObject)element.Value;
+                var elementId = element.Name;
+                var elementData = (JObject)element.Value;
                 // 填充数据
-                this.dataTable.Rows.Add(new object[] {
-                    BstManager.getBytesFromWeb(BstManager.getIconPicPath(elementData)), 
+                this._dataTable.Rows.Add(new object[] {
+                    BstManager.GetBytesFromWeb(BstManager.GetIconPicPath(elementData)), 
                     elementId
                 });
             }
         }
 
-        private void createPictureForm(string elementId)
+        private void CreatePictureForm(string elementId)
         {
             // 创建一个新的form来展示物件的2D截图
-            string imgPath = BstManager.getItemPicPath(this.formType, elementId);
-            Form pictureForm = new BladeSoulTool.ui.GUI_Picture(imgPath);
+            var imgPath = BstManager.GetItemPicPath(this._formType, elementId);
+            var pictureForm = new BladeSoulTool.ui.GUI_Picture(imgPath);
             pictureForm.Show();
         }
 

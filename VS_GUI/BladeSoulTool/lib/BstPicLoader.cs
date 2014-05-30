@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Text;
-using System.ComponentModel;
+﻿using System.Collections.Generic;
 using System.Threading;
-using System.Data;
 using System.Windows.Forms;
 
 namespace BladeSoulTool
@@ -41,12 +36,11 @@ namespace BladeSoulTool
         private BstPicLoader()
         {
             this.queue = new Queue<BstPicLoadTask>();
-            this.picLoaderThread = new Thread(this.run);
-            picLoaderThread.IsBackground = true;
-            picLoaderThread.Start();
+            this.picLoaderThread = new Thread(this.Run) { IsBackground = true };
+            this.picLoaderThread.Start();
         }
 
-        public void run()
+        public void Run()
         {
             try
             {
@@ -57,40 +51,44 @@ namespace BladeSoulTool
                         && !this.isWorking) // 当前loader并未在处理任何工作
                     {
                         this.isWorking = true;
-                        BstPicLoadTask task = this.queue.Dequeue();
+                        var task = this.queue.Dequeue();
                         // 加载图片
-                        byte[] pic = BstManager.getBytesFromWeb(task.url);
+                        var pic = BstManager.GetBytesFromWeb(task.url);
                         // 更新图片
                         task.table.Rows[task.rowId][task.colId] = pic;
                         MethodInvoker updateAction = () => task.grid.Refresh();
                         task.grid.BeginInvoke(updateAction);
-                        Console.WriteLine("[BstPicLoader] Pic downloaded: " + task.url);
+                        BstLogger.Instance.Log("[BstPicLoader] Pic downloaded: " + task.url);
                         this.isWorking = false;
+                        if (this.queue.Count == 0) // 这是当前工作队列中的最后一个工作，完成后关闭启动状态，等待下次添加工作后手动启动
+                        {
+                            this.enabled = false;
+                        }
                     }
                     else if (this.queue.Count == 0 && !this.isWorking) // 当队列为空，且当前没有工作要处理的时候，睡眠
                     {
-                        Console.WriteLine("[BstPicLoader] No working to do, sleep 1000ms ...");
+                        BstLogger.Instance.Log("[BstPicLoader] No working to do, sleep 1000ms ...");
                         Thread.Sleep(1000); // 1000ms
                     }
                 }
             }
             catch (ThreadAbortException tae)
             {
-                //Console.WriteLine(tae);
+                BstLogger.Instance.Log(tae.ToString());
             }
         }
 
-        public void registerTask(BstPicLoadTask task)
+        public void RegisterTask(BstPicLoadTask task)
         {
             this.queue.Enqueue(task);
         }
 
-        public void start()
+        public void Start()
         {
             this.enabled = true; // 将loader的状态置为工作
         }
 
-        public void stop()
+        public void Stop()
         {
             this.enabled = false; // 将loader的状态置为暂停
         }

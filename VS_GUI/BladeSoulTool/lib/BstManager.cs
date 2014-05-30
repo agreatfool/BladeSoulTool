@@ -28,80 +28,89 @@ namespace BladeSoulTool
 
         private BstManager()
         {
-            this.init();
+            this.Init();
         }
 
-        public const int RACE_ID_KUNN = 0;
-        public const int RACE_ID_JINF = 1;
-        public const int RACE_ID_JINM = 2;
-        public const int RACE_ID_GONF = 3;
-        public const int RACE_ID_GONM = 4;
-        public const int RACE_ID_LYNF = 5;
-        public const int RACE_ID_LYNM = 6;
+        public const int RaceIdKunn = 0;
+        public const int RaceIdJinf = 1;
+        public const int RaceIdJinm = 2;
+        public const int RaceIdGonf = 3;
+        public const int RaceIdGonm = 4;
+        public const int RaceIdLynf = 5;
+        public const int RaceIdLynm = 6;
 
-        public const int ITEM_TYPE_COSTUME = 0;
-        public const int ITEM_TYPE_ATTACH = 1;
-        public const int ITEM_TYPE_WEAPON = 2;
+        public const int ItemTypeCostume = 0;
+        public const int ItemTypeAttach = 1;
+        public const int ItemTypeWeapon = 2;
 
-        public const string PATH_ROOT = "../../../../";
-        public const string PATH_CONFIG = "config/";
-        public const string PATH_DATABASE = "database/";
-        public const string PATH_RESOURCES = "resources/";
+        public const string PathRoot = "../../../../";
+        public const string PathConfig = "config/";
+        public const string PathDatabase = "database/";
+        public const string PathResources = "resources/";
 
-        public const string PATH_VS_ROOT = "../../";
-        public const string PATH_VS_LOG = "log/";
-        public const string PATH_VS_TMP = "tmp/";
+        public const string PathVsRoot = "../../";
+        public const string PathVsLog = "log/";
+        public const string PathVsTmp = "tmp/";
 
-        public const string PATH_LOADING_GIF = BstManager.PATH_ROOT + BstManager.PATH_RESOURCES + "others/loading.gif";
+        public const string PathLoadingGif = BstManager.PathRoot + BstManager.PathResources + "others/loading.gif";
 
-        public const string GITHUB_ROOT = "https://raw.githubusercontent.com/agreatfool/BladeSoulTool/";
-        public const string GITHUB_BRANCH = "upk";
+        public const string GithubRoot = "https://raw.githubusercontent.com/agreatfool/BladeSoulTool/";
+        public const string GithubBranch = "upk";
 
-        public byte[] loadingGif { get; set; }
+        public byte[] LoadingGif { get; set; }
 
-        public JObject settings { get; set; }
-        public JObject costumeData { get; set; }
-        public JObject costumeInvalidData { get; set; }
-        public JObject attachData { get; set; }
-        public JObject attachInvalidData { get; set; }
-        public JObject weaponData { get; set; }
-        public JObject weaponInvalidData { get; set; }
+        public JObject Settings { get; set; }
+        public JObject CostumeData { get; set; }
+        public JObject CostumeInvalidData { get; set; }
+        public JObject AttachData { get; set; }
+        public JObject AttachInvalidData { get; set; }
+        public JObject WeaponData { get; set; }
+        public JObject WeaponInvalidData { get; set; }
 
-        public List<string> raceNames { get; set; }
-        public List<string> raceTypes { get; set; }
+        public List<string> RaceNames { get; set; }
+        public List<string> RaceTypes { get; set; }
 
-        private void init()
+        private void Init()
         {
-            this.settings = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_ROOT + BstManager.PATH_CONFIG + "setting.json")));
-            this.costumeData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_ROOT + BstManager.PATH_DATABASE + "costume/data/data.json")));
-            this.costumeInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_ROOT + BstManager.PATH_DATABASE + "costume/data/data_invalid.json")));
-            this.attachData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_ROOT + BstManager.PATH_DATABASE + "attach/data/data.json")));
-            this.attachInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_ROOT + BstManager.PATH_DATABASE + "attach/data/data_invalid.json")));
-            this.weaponData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_ROOT + BstManager.PATH_DATABASE + "weapon/data/data.json")));
-            this.weaponInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PATH_ROOT + BstManager.PATH_DATABASE + "weapon/data/data_invalid.json")));
+            BstLogger.Instance.Log("[BstManager] Start to load json settings ...");
+            this.Settings = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PathRoot + BstManager.PathConfig + "setting.json")));
+            BstLogger.Instance.Log("[BstManager] Start to load json costumeData ...");
+            this.CostumeData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PathRoot + BstManager.PathDatabase + "costume/data/data.json")));
+            BstLogger.Instance.Log("[BstManager] Start to load json costumeInvalidData ...");
+            this.CostumeInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PathRoot + BstManager.PathDatabase + "costume/data/data_invalid.json")));
+            BstLogger.Instance.Log("[BstManager] Start to load json attachData ...");
+            this.AttachData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PathRoot + BstManager.PathDatabase + "attach/data/data.json")));
+            BstLogger.Instance.Log("[BstManager] Start to load json attachInvalidData ...");
+            this.AttachInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PathRoot + BstManager.PathDatabase + "attach/data/data_invalid.json")));
+            BstLogger.Instance.Log("[BstManager] Start to load json weaponData ...");
+            this.WeaponData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PathRoot + BstManager.PathDatabase + "weapon/data/data.json")));
+            BstLogger.Instance.Log("[BstManager] Start to load json weaponInvalidData ...");
+            this.WeaponInvalidData = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(BstManager.PathRoot + BstManager.PathDatabase + "weapon/data/data_invalid.json")));
 
-            this.raceNames = new List<string>();
-            this.raceNames.AddRange(new string[] {
+            this.RaceNames = new List<string>();
+            this.RaceNames.AddRange(new string[] {
                 "天女", "人女", "人男", "龙女", "龙男", "灵女", "灵男"
             });
-            this.raceTypes = new List<string>();
-            this.raceTypes.AddRange(new string[] {
+            this.RaceTypes = new List<string>();
+            this.RaceTypes.AddRange(new string[] {
                 "KunN", "JinF", "JinM", "GonF", "GonM", "LynF", "LynM"
             });
 
-            this.loadingGif = BstManager.getBytesFromFile(BstManager.PATH_LOADING_GIF);
+            this.LoadingGif = BstManager.GetBytesFromFile(BstManager.PathLoadingGif);
         }
 
-        public JObject getCostumeDataByRace(int raceId)
+        public JObject GetCostumeDataByRace(int raceId)
         {
-            string raceType = this.raceTypes[raceId]; // 获取目标种族类型名
+            BstLogger.Instance.Log("[BstManager] GetCostumeDataByRace: " + raceId);
 
-            JObject filtered = new JObject();
+            var raceType = this.RaceTypes[raceId]; // 获取目标种族类型名
 
-            foreach (JProperty element in this.costumeData.Properties())
+            var filtered = new JObject();
+
+            foreach (var element in this.CostumeData.Properties())
             {
-                string elementId = element.Name;
-                JObject elementData = (JObject)element.Value;
+                var elementId = element.Name;
+                var elementData = (JObject)element.Value;
                 if ((string)elementData["race"] == raceType) 
                 {
                     filtered.Add(elementId, elementData);
@@ -111,16 +120,18 @@ namespace BladeSoulTool
             return filtered;
         }
 
-        public JObject getAttachDataByRace(int raceId)
+        public JObject GetAttachDataByRace(int raceId)
         {
-            string raceType = this.raceTypes[raceId]; // 获取目标种族类型名
+            BstLogger.Instance.Log("[BstManager] GetAttachDataByRace: " + raceId);
 
-            JObject filtered = new JObject();
+            var raceType = this.RaceTypes[raceId]; // 获取目标种族类型名
 
-            foreach (JProperty element in this.attachData.Properties())
+            var filtered = new JObject();
+
+            foreach (var element in this.AttachData.Properties())
             {
-                string elementId = element.Name;
-                JObject elementData = (JObject)element.Value;
+                var elementId = element.Name;
+                var elementData = (JObject)element.Value;
                 if ((string)elementData["race"] == raceType)
                 {
                     filtered.Add(elementId, elementData);
@@ -130,15 +141,15 @@ namespace BladeSoulTool
             return filtered;
         }
 
-        public static byte[] getBytesFromWeb(string url)
+        public static byte[] GetBytesFromWeb(string url)
         {
             byte[] bytes = null;
             if (url == null)
             {
-                return bytes;
+                return null;
             }
 
-            WebClient webClient = new WebClient();
+            var webClient = new WebClient();
 
             try
             {
@@ -147,18 +158,18 @@ namespace BladeSoulTool
             }
             catch (Exception ex)
             {
-                //Console.WriteLine(ex);
+                BstLogger.Instance.Log(ex.ToString());
                 return bytes;
             }
         }
 
-        public static byte[] getBytesFromFile(string fullFilePath)
+        public static byte[] GetBytesFromFile(string fullFilePath)
         {
             byte[] bytes = null;
 
             FileStream fs = null;
             if (!File.Exists(fullFilePath)) {
-                return bytes; // 文件未找到，直接返回null
+                return null; // 文件未找到，直接返回null
             }
 
             try
@@ -170,7 +181,7 @@ namespace BladeSoulTool
             }
             catch (Exception ex)
             {
-                //Console.WriteLine(ex);
+                BstLogger.Instance.Log(ex.ToString());
                 return bytes;
             }
             finally
@@ -183,33 +194,33 @@ namespace BladeSoulTool
             }
         }
 
-        public static string getIconPicPath(JObject elementData)
+        public static string GetIconPicPath(JObject elementData)
         {
             string path = null;
 
-            string iconPicName = (string)elementData["pic"];
+            var iconPicName = (string)elementData["pic"];
 
-            if (iconPicName != "" && iconPicName != null)
+            if (!string.IsNullOrEmpty(iconPicName))
             {
-                path = BstManager.GITHUB_ROOT + BstManager.GITHUB_BRANCH + "/" + BstManager.PATH_DATABASE + "icon/png-cps/" + iconPicName;
+                path = BstManager.GithubRoot + BstManager.GithubBranch + "/" + BstManager.PathDatabase + "icon/png-cps/" + iconPicName;
             }
 
             return path;
         }
 
-        public static string getItemPicPath(int itemType, string itemId)
+        public static string GetItemPicPath(int itemType, string itemId)
         {
             string path = null;
             switch (itemType)
             {
-                case BstManager.ITEM_TYPE_COSTUME:
-                    path = BstManager.GITHUB_ROOT + BstManager.GITHUB_BRANCH + "/" + BstManager.PATH_DATABASE +"costume/pics-cps/" + itemId + ".png";
+                case BstManager.ItemTypeCostume:
+                    path = BstManager.GithubRoot + BstManager.GithubBranch + "/" + BstManager.PathDatabase +"costume/pics-cps/" + itemId + ".png";
                     break;
-                case BstManager.ITEM_TYPE_ATTACH:
-                    path = BstManager.GITHUB_ROOT + BstManager.GITHUB_BRANCH + "/" + BstManager.PATH_DATABASE + "attach/pics-cps/" + itemId + ".png";
+                case BstManager.ItemTypeAttach:
+                    path = BstManager.GithubRoot + BstManager.GithubBranch + "/" + BstManager.PathDatabase + "attach/pics-cps/" + itemId + ".png";
                     break;
-                case BstManager.ITEM_TYPE_WEAPON:
-                    path = BstManager.GITHUB_ROOT + BstManager.GITHUB_BRANCH + "/" + BstManager.PATH_DATABASE + "weapon/pics-cps/" + itemId + ".png";
+                case BstManager.ItemTypeWeapon:
+                    path = BstManager.GithubRoot + BstManager.GithubBranch + "/" + BstManager.PathDatabase + "weapon/pics-cps/" + itemId + ".png";
                     break;
                 default:
                     break;
@@ -217,21 +228,20 @@ namespace BladeSoulTool
             return path;
         }
 
-        public static void runGrunt(TextBox box, string task = "", string[] args = null)
+        public static void RunGrunt(TextBox box, string task = "", string[] args = null)
         {
-            BackgroundWorker worker = new BackgroundWorker();
+            var worker = new BackgroundWorker();
             worker.DoWork += (s, e) =>
             {
-                Process proc = new Process();
+                var proc = new Process();
 
-                string cwd = Directory.GetCurrentDirectory() + "/" + BstManager.PATH_ROOT;
-                string cmd = "cmd.exe";
-                string arguments = "/c grunt " + task + " " + ((args == null) ? "" : String.Join(" ", args)) + " --stack";
+                var cwd = Directory.GetCurrentDirectory() + "/" + BstManager.PathRoot;
+                var cmd = "cmd.exe";
+                var arguments = "/c grunt " + task + " " + ((args == null) ? "" : String.Join(" ", args)) + " --stack";
                 // 打印命令信息
-                MethodInvoker logAction = delegate
-                {
-                    box.AppendText("开始运行：\r\n" + "位置：" + cwd + "\r\n" + "命令：" + cmd + "\r\n" + "参数：" + arguments + "\r\n输出：\r\n");
-                };
+                var logMsg = "开始运行：\r\n" + "位置：" + cwd + "\r\n" + "命令：" + cmd + "\r\n" + "参数：" + arguments + "\r\n输出：\r\n";
+                MethodInvoker logAction = () => box.AppendText(logMsg);
+                BstLogger.Instance.Log(logMsg);
                 box.BeginInvoke(logAction);
 
                 proc.StartInfo.WorkingDirectory = cwd;
@@ -245,19 +255,17 @@ namespace BladeSoulTool
                 proc.OutputDataReceived += (dataSender, dataE) =>
                 {
                     // 注册输出接收事件
-                    MethodInvoker outputAction = delegate // cross thread update
+                    MethodInvoker outputAction = () =>
                     {
                         box.AppendText(dataE.Data + "\r\n");
-                    };
+                        BstLogger.Instance.Log(dataE.Data);
+                    }; 
                     box.BeginInvoke(outputAction);
                 };
                 proc.Start(); // 启动
                 proc.BeginOutputReadLine(); // 逐行读入输出
             };
-            worker.RunWorkerCompleted += (s, e) =>
-            {
-                worker.Dispose();
-            };
+            worker.RunWorkerCompleted += (s, e) => worker.Dispose();
             worker.RunWorkerAsync();
         }
 

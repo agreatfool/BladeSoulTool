@@ -1,10 +1,42 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.IO;
 using System.Text;
+using System.Timers;
 
-namespace BladeSoulTool.lib
+namespace BladeSoulTool
 {
     class BstLogger
     {
+        private static BstLogger instance;
+
+        public static BstLogger Instance 
+        {
+            get 
+            {
+                if (instance == null) 
+                {
+                    instance = new BstLogger();
+                }
+                return instance;
+            }
+        }
+
+        private readonly string logPath;
+        private Timer timer;
+        private readonly StringBuilder buff;
+
+        private BstLogger()
+        {
+            this.logPath = BstManager.PathVsRoot + BstManager.PathVsLog + DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss-ffff") + ".log";
+            this.timer = new Timer(5000);
+            this.buff = new StringBuilder();
+            this.timer.Elapsed += (sender, args) => File.AppendAllText(this.logPath, buff.ToString());
+        }
+
+        public void Log(string msg)
+        {
+            Console.WriteLine(msg + "\r\n");
+            buff.AppendLine(DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss-ffff") + " " + msg);
+        }
     }
 }
