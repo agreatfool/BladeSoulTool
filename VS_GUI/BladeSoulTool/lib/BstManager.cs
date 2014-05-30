@@ -48,6 +48,10 @@ namespace BladeSoulTool
         public const string PATH_DATABASE = "database/";
         public const string PATH_RESOURCES = "resources/";
 
+        public const string PATH_VS_ROOT = "../../";
+        public const string PATH_VS_LOG = "log/";
+        public const string PATH_VS_TMP = "tmp/";
+
         public const string PATH_LOADING_GIF = BstManager.PATH_ROOT + BstManager.PATH_RESOURCES + "others/loading.gif";
 
         public const string GITHUB_ROOT = "https://raw.githubusercontent.com/agreatfool/BladeSoulTool/";
