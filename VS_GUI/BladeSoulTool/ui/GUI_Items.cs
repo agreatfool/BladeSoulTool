@@ -42,7 +42,7 @@ namespace BladeSoulTool
             columnIcon.DataType = System.Type.GetType("System.Byte[]");
             columnIcon.AllowDBNull = true;
             columnIcon.ColumnName = "缩略图";
-            columnIcon.ReadOnly = true;
+            //columnIcon.ReadOnly = true;
             this.dataTable.Columns.Add(columnIcon);
             // code列
             DataColumn columnCode = new DataColumn("Code");
@@ -100,10 +100,7 @@ namespace BladeSoulTool
         private void loader_DoWork(object sender, DoWorkEventArgs e)
         {
             // 在background worker里加载数据
-            MethodInvoker action = delegate // cross thread update
-            {
-                this.textBoxOut.AppendText("开始加载数据列表数据... \r\n");
-            };
+            MethodInvoker action = () => this.textBoxOut.AppendText("开始加载数据列表数据... \r\n");
             this.textBoxOut.BeginInvoke(action);
             // 按form类型做各自的逻辑处理
             this.initFormData();
@@ -112,16 +109,11 @@ namespace BladeSoulTool
         private void loader_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             // 数据加载完成
-            MethodInvoker action = delegate // cross thread update
-            {
-                this.textBoxOut.AppendText("数据列表加载完成...\r\n");
-            };
+            MethodInvoker action = () => this.textBoxOut.AppendText("数据列表加载完成，开始加载图片...\r\n");
             this.textBoxOut.BeginInvoke(action);
-            MethodInvoker gridAction = delegate
-            {
-                this.gridItems.PerformLayout(); // 刷新scrollbar
-            };
+            MethodInvoker gridAction = () => this.gridItems.PerformLayout(); // 刷新scrollbar
             this.gridItems.BeginInvoke(gridAction);
+            BstPicLoader.Instance.start(); // 启动图片加载器
         }
 
         private void clearFormStatus()
@@ -276,6 +268,8 @@ namespace BladeSoulTool
 
         public void initFormData(int raceType = BstManager.RACE_ID_KUNN)
         {
+            // 首先关闭pic loader，防止多线程不安全的操作
+            BstPicLoader.Instance.stop();
             // 初始化form数据
             // TODO 原始模型目标应该会被保存在磁盘上的某个配置文件内，这里需要读出
             // 并设置到 this.originElementId里，还要更新整个原始模型的cell控件
@@ -306,10 +300,11 @@ namespace BladeSoulTool
                 string elementId = element.Name;
                 JObject elementData = (JObject)element.Value;
                 // 填充数据
-                this.dataTable.Rows.Add(new object[] {
-                    BstManager.getBytesFromWeb(BstManager.getIconPicPath(elementData)), 
-                    elementId
-                });
+                this.dataTable.Rows.Add(new object[] { BstManager.Instance.loadingGif, elementId });
+                int rowId = this.dataTable.Rows.Count - 1;
+                BstPicLoader.Instance.registerTask(new BstPicLoadTask(
+                    BstManager.getIconPicPath(elementData), this.gridItems, this.dataTable, rowId
+                ));
             }
         }
 

@@ -10,6 +10,7 @@ using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Threading;
+using BladeSoulTool;
 
 namespace BladeSoulTool
 {
@@ -37,6 +38,8 @@ namespace BladeSoulTool
         {
             // 初始化数据
             BstManager dataManager = BstManager.Instance;
+            // 启动一个新线程来处理任务来运行icon图片加载器
+            BstPicLoader loader = BstPicLoader.Instance;
             // 初始化第一个tab，costume
             this.formCostume = this.createItemsForm(App.FORM_TYPE_COSTUME);
             this.tabCostume.Controls.Add(this.formCostume);
