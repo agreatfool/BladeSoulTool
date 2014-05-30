@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -53,7 +54,18 @@ namespace BladeSoulTool
                         var task = this.queue.Dequeue();
 
                         // 加载图片
-                        var pic = BstManager.DownloadImageFile(task.url, BstManager.PathVsRoot + BstManager.PathVsTmp + "icon/" + task.name);
+                        byte[] pic = null;
+                        var imgCachePath = BstManager.PathVsRoot + BstManager.PathVsTmp + "icon/" + task.name;
+                        if (File.Exists(imgCachePath))
+                        {
+                            // 已有缓存文件
+                            pic = BstManager.GetBytesFromFile(imgCachePath);
+                        }
+                        else
+                        {
+                            // 没有缓存文件，需要下载
+                            pic = BstManager.DownloadImageFile(task.url, imgCachePath);
+                        }
                         if (pic == null)
                         {
                             MethodInvoker msgFailedAction = () => task.box.AppendText("图片下载失败：" + task.url + "\r\n");

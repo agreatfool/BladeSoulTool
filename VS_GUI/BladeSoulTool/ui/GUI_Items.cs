@@ -87,10 +87,16 @@ namespace BladeSoulTool
         private void GUI_Items_Shown(object sender, EventArgs e)
         {
             // 当UI加载完毕开始显示之后才开始加载数据
+            this.LoadItemList();
+        }
+
+        private void LoadItemList(int raceType = BstManager.RaceIdKunn)
+        {
+            BstLogger.Instance.Log("Start to load item list: " + raceType);
             this._loader = new BackgroundWorker();
             this._loader.DoWork += new DoWorkEventHandler(this.loader_DoWork);
             this._loader.RunWorkerCompleted += new RunWorkerCompletedEventHandler(this.loader_RunWorkerCompleted);
-            this._loader.RunWorkerAsync();
+            this._loader.RunWorkerAsync(raceType);
         }
 
         private void loader_DoWork(object sender, DoWorkEventArgs e)
@@ -100,7 +106,8 @@ namespace BladeSoulTool
             this.textBoxOut.BeginInvoke(action);
             BstLogger.Instance.Log("开始加载数据列表数据 ...");
             // 按form类型做各自的逻辑处理
-            this.InitFormData();
+            var raceType = (int) e.Argument;
+            this.InitFormData(raceType);
         }
 
         private void loader_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -112,6 +119,7 @@ namespace BladeSoulTool
             MethodInvoker gridAction = () => this.gridItems.PerformLayout(); // 刷新scrollbar
             this.gridItems.BeginInvoke(gridAction);
             BstIconLoader.Instance.Start(); // 启动图片加载器
+            this._loader.Dispose();
         }
 
         private void ClearFormStatus()
@@ -153,8 +161,8 @@ namespace BladeSoulTool
         private void gridItems_MouseWheel(Object sender, MouseEventArgs e)
         {
             // 数据展示列表的鼠标滚轴事件
-            int currentIndex = this.gridItems.FirstDisplayedScrollingRowIndex;
-            int scrollLines = SystemInformation.MouseWheelScrollLines;
+            var currentIndex = this.gridItems.FirstDisplayedScrollingRowIndex;
+            var scrollLines = SystemInformation.MouseWheelScrollLines;
 
             if (e.Delta > 0)
             {
@@ -170,7 +178,7 @@ namespace BladeSoulTool
         {
             // 重新选择种族信息
             this.ClearFormStatus();
-            this.InitFormData(this.comboBoxRace.SelectedIndex);
+            this.LoadItemList(this.comboBoxRace.SelectedIndex);
         }
 
         private void btnTopRestoreAll_Click(Object sender, EventArgs e)
@@ -231,9 +239,9 @@ namespace BladeSoulTool
             {
                 return; // 没有选中的元素，直接退出
             }
-            JObject element = (JObject)this._data[this._selectedElementId];
+            var element = (JObject)this._data[this._selectedElementId];
             // 只有col1的模型才可以被设为原始模型
-            string col = (string)element["col"];
+            var col = (string)element["col"];
             if (col != "col1")
             {
                 MessageBox.Show("只可将后缀最后为col1的模型设为原始模型", "选择错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -318,10 +326,12 @@ namespace BladeSoulTool
                 var elementId = element.Name;
                 var elementData = (JObject)element.Value;
                 // 填充数据
-                this._dataTable.Rows.Add(new object[] {
-                    BstManager.GetBytesFromWeb(BstManager.GetIconPicPath(elementData)), 
-                    elementId
-                });
+                this._dataTable.Rows.Add(new object[] { BstManager.Instance.LoadingGif, elementId });
+                var rowId = this._dataTable.Rows.Count - 1;
+                BstIconLoader.Instance.RegisterTask(new BstIconLoadTask(
+                    BstManager.GetIconPicPath(elementData), (string)elementData["pic"],
+                    this.gridItems, this._dataTable, rowId, this.textBoxOut
+                ));
             }
         }
 
@@ -336,10 +346,12 @@ namespace BladeSoulTool
                 var elementId = element.Name;
                 var elementData = (JObject)element.Value;
                 // 填充数据
-                this._dataTable.Rows.Add(new object[] {
-                    BstManager.GetBytesFromWeb(BstManager.GetIconPicPath(elementData)), 
-                    elementId
-                });
+                this._dataTable.Rows.Add(new object[] { BstManager.Instance.LoadingGif, elementId });
+                var rowId = this._dataTable.Rows.Count - 1;
+                BstIconLoader.Instance.RegisterTask(new BstIconLoadTask(
+                    BstManager.GetIconPicPath(elementData), (string)elementData["pic"],
+                    this.gridItems, this._dataTable, rowId, this.textBoxOut
+                ));
             }
         }
 

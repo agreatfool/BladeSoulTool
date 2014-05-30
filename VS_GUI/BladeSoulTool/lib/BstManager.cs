@@ -212,18 +212,18 @@ namespace BladeSoulTool
             }
         }
 
-        public static byte[] GetBytesFromFile(string fullFilePath)
+        public static byte[] GetBytesFromFile(string path)
         {
             byte[] bytes = null;
 
             FileStream fs = null;
-            if (!File.Exists(fullFilePath)) {
+            if (!File.Exists(path)) {
                 return null; // 文件未找到，直接返回null
             }
 
             try
             {
-                fs = File.OpenRead(fullFilePath);
+                fs = File.OpenRead(path);
                 bytes = new byte[fs.Length];
                 fs.Read(bytes, 0, Convert.ToInt32(fs.Length));
                 return bytes;
