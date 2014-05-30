@@ -31,7 +31,7 @@ namespace BladeSoulTool
             BstManager.CreateFile(this.logPath);
             this.timer = new Timer(5000);
             this.buff = new StringBuilder();
-            this.timer.Elapsed += (sender, args) => File.AppendAllText(this.logPath, buff.ToString());
+            this.timer.Elapsed += (sender, args) => //File.AppendAllText(this.logPath, buff.ToString());
             this.timer.AutoReset = true;
             this.timer.Enabled = true;
         }

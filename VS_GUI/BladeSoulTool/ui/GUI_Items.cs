@@ -92,7 +92,7 @@ namespace BladeSoulTool
 
         private void LoadItemList(int raceType = BstManager.RaceIdKunn)
         {
-            BstLogger.Instance.Log("Start to load item list: " + raceType);
+            BstLogger.Instance.Log("[GUI_Items] Start to load item list: " + raceType);
             this._loader = new BackgroundWorker();
             this._loader.DoWork += new DoWorkEventHandler(this.loader_DoWork);
             this._loader.RunWorkerCompleted += new RunWorkerCompletedEventHandler(this.loader_RunWorkerCompleted);
@@ -107,7 +107,7 @@ namespace BladeSoulTool
             BstLogger.Instance.Log("开始加载数据列表数据 ...");
             // 按form类型做各自的逻辑处理
             var raceType = (int) e.Argument;
-            this.InitFormData(raceType);
+            this.InitListData(raceType);
         }
 
         private void loader_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -272,74 +272,28 @@ namespace BladeSoulTool
             this.textBoxTarget.Text = element.ToString();
         }
 
-        public void InitFormData(int raceType = BstManager.RaceIdKunn)
+        public void InitListData(int raceType = BstManager.RaceIdKunn)
         {
             // 首先关闭pic loader，防止多线程不安全的操作
             BstIconLoader.Instance.Stop();
-            // 初始化form数据
             // TODO 原始模型目标应该会被保存在磁盘上的某个配置文件内，这里需要读出
             // 并设置到 this.originElementId里，还要更新整个原始模型的cell控件
+            // 初始化list数据
             switch (this._formType)
             {
                 case App.FormTypeCostume:
-                    this.InitCostumeForm(raceType);
+                    this._data = BstManager.Instance.GetCostumeDataByRace(raceType);
                     break;
                 case App.FormTypeAttach:
-                    this.InitAttachForm(raceType);
+                    this._data = BstManager.Instance.GetAttachDataByRace(raceType);
                     break;
                 case App.FormTypeWeapon:
-                    this.InitWeaponForm(raceType);
+                    this._data = BstManager.Instance.WeaponData;
                     break;
                 default:
                     break;
             }
-        }
-
-        private void InitCostumeForm(int raceType = BstManager.RaceIdKunn)
-        {
-            // 初始化服装数据
-            this._data = BstManager.Instance.GetCostumeDataByRace(raceType);
-
-            foreach (var element in this._data.Properties())
-            {
-                // 读取数据
-                var elementId = element.Name;
-                var elementData = (JObject)element.Value;
-                // 填充数据
-                this._dataTable.Rows.Add(new object[] { BstManager.Instance.LoadingGif, elementId });
-                var rowId = this._dataTable.Rows.Count - 1;
-                BstIconLoader.Instance.RegisterTask(new BstIconLoadTask(
-                    BstManager.GetIconPicPath(elementData), (string)elementData["pic"],
-                    this.gridItems, this._dataTable, rowId, this.textBoxOut
-                ));
-            }
-        }
-
-        private void InitAttachForm(int raceType = BstManager.RaceIdKunn)
-        {
-            // 初始化饰品数据
-            this._data = BstManager.Instance.GetAttachDataByRace(raceType);
-
-            foreach (var element in this._data.Properties())
-            {
-                // 读取数据
-                var elementId = element.Name;
-                var elementData = (JObject)element.Value;
-                // 填充数据
-                this._dataTable.Rows.Add(new object[] { BstManager.Instance.LoadingGif, elementId });
-                var rowId = this._dataTable.Rows.Count - 1;
-                BstIconLoader.Instance.RegisterTask(new BstIconLoadTask(
-                    BstManager.GetIconPicPath(elementData), (string)elementData["pic"],
-                    this.gridItems, this._dataTable, rowId, this.textBoxOut
-                ));
-            }
-        }
-
-        private void InitWeaponForm(int raceType = BstManager.RaceIdKunn)
-        {
-            // 初始化武器数据
-            this._data = BstManager.Instance.WeaponData;
-
+            // 加载list界面
             foreach (var element in this._data.Properties())
             {
                 // 读取数据

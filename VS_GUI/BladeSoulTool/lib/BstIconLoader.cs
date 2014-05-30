@@ -7,10 +7,11 @@ namespace BladeSoulTool
 {
     /**
      * 几个问题:
-     * 01. 当前程序在VS的debug模式下运行正常，但是在非debug模式下直接卡死，需要在别的机器上测试是否有相同问题，网上查询有部分说是.NET的问题
+     * 当前程序在VS的debug模式下运行正常，但是在非debug模式下直接卡死，需要在别的机器上测试是否有相同问题，网上查询有部分说是.NET的问题
      * http://stackoverflow.com/questions/738327/c-sharp-app-runs-with-debugging-but-not-without
-     * 04. picturebox的图片加载也应该使用这种lazy的方法
-     * 05. 加载下来的图片最好是下载，放到缓存文件夹里，以后重新打开程序时候的加载速度就可以快很多
+     * 在种族选择tab切换的时候，界面完全卡死，要寻找理由
+     * 此外，在读取本地缓存文件的时候，界面反而卡死，估计是过于频繁的DataGridView.Refresh()调用
+     * picturebox的图片加载也应该使用这种lazy的方法
      */
     class BstIconLoader
     {
