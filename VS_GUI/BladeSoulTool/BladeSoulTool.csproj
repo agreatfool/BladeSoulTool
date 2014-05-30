@@ -62,8 +62,8 @@
   <ItemGroup>
     <Compile Include="lib\BstLogger.cs" />
     <Compile Include="lib\BstManager.cs" />
-    <Compile Include="lib\BstPicLoader.cs" />
-    <Compile Include="lib\BstPicLoadTask.cs" />
+    <Compile Include="lib\BstIconLoader.cs" />
+    <Compile Include="lib\BstIconLoadTask.cs" />
     <Compile Include="ui\GUI_Picture.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +111,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="resources\Json60r3.zip" />
+    <None Include="resources\Json60r3\.DS_Store" />
+    <None Include="resources\Json60r3\Bin\.DS_Store" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -128,6 +131,19 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\Json60r3\Bin\Net20\Newtonsoft.Json.dll" />
+    <Content Include="resources\Json60r3\Bin\Net20\Newtonsoft.Json.pdb" />
+    <Content Include="resources\Json60r3\Bin\Net20\Newtonsoft.Json.xml" />
+    <Content Include="resources\wekeroad-ink.vssettings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="log\" />
+    <Folder Include="tmp\attach\" />
+    <Folder Include="tmp\costume\" />
+    <Folder Include="tmp\icon\" />
+    <Folder Include="tmp\weapon\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
