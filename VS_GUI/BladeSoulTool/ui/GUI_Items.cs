@@ -111,7 +111,7 @@ namespace BladeSoulTool
             BstLogger.Instance.Log("数据列表加载完成，开始加载图片 ...");
             MethodInvoker gridAction = () => this.gridItems.PerformLayout(); // 刷新scrollbar
             this.gridItems.BeginInvoke(gridAction);
-            BstPicLoader.Instance.Start(); // 启动图片加载器
+            BstIconLoader.Instance.Start(); // 启动图片加载器
         }
 
         private void ClearFormStatus()
@@ -267,7 +267,7 @@ namespace BladeSoulTool
         public void InitFormData(int raceType = BstManager.RaceIdKunn)
         {
             // 首先关闭pic loader，防止多线程不安全的操作
-            BstPicLoader.Instance.Stop();
+            BstIconLoader.Instance.Stop();
             // 初始化form数据
             // TODO 原始模型目标应该会被保存在磁盘上的某个配置文件内，这里需要读出
             // 并设置到 this.originElementId里，还要更新整个原始模型的cell控件
@@ -300,8 +300,9 @@ namespace BladeSoulTool
                 // 填充数据
                 this._dataTable.Rows.Add(new object[] { BstManager.Instance.LoadingGif, elementId });
                 var rowId = this._dataTable.Rows.Count - 1;
-                BstPicLoader.Instance.RegisterTask(new BstPicLoadTask(
-                    BstManager.GetIconPicPath(elementData), this.gridItems, this._dataTable, rowId
+                BstIconLoader.Instance.RegisterTask(new BstIconLoadTask(
+                    BstManager.GetIconPicPath(elementData), (string)elementData["pic"],
+                    this.gridItems, this._dataTable, rowId, this.textBoxOut
                 ));
             }
         }

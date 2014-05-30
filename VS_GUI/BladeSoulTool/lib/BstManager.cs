@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using System.ComponentModel;
 using System.Net;
+using System.Drawing;
 
 namespace BladeSoulTool
 {
@@ -141,10 +142,58 @@ namespace BladeSoulTool
             return filtered;
         }
 
+        public static byte[] DownloadImageFile(string url, string path)
+        {
+            var blob = BstManager.GetBytesFromWeb(url);
+            if (blob == null)
+            {
+                return null; // 下载失败
+            }
+            BstManager.WriteByteArrayToFile(path, blob);
+            return blob;
+        }
+
+        public static void CreateFile(string path)
+        {
+            File.Create(path).Dispose();
+        }
+
+        public static Bitmap ConvertByteToImage(byte[] blob)
+        {
+            var mStream = new MemoryStream();
+            var pData = blob;
+            mStream.Write(pData, 0, Convert.ToInt32(pData.Length));
+            var bitmap = new Bitmap(mStream, false);
+            mStream.Dispose();
+            return bitmap;
+        }
+
+        public static void WriteByteArrayToFile(string path, byte[] blob)
+        {
+            FileStream fs = null;
+            try
+            {
+                fs = new FileStream(path, FileMode.Create, FileAccess.Write);
+                fs.Write(blob, 0, blob.Length);
+            }
+            catch (Exception ex)
+            {
+                BstLogger.Instance.Log(ex.ToString());
+            }
+            finally
+            {
+                if (fs != null)
+                {
+                    fs.Close();
+                    fs.Dispose();
+                }
+            }
+        }
+
         public static byte[] GetBytesFromWeb(string url)
         {
             byte[] bytes = null;
-            if (url == null)
+            if (string.IsNullOrEmpty(url))
             {
                 return null;
             }
@@ -159,7 +208,7 @@ namespace BladeSoulTool
             catch (Exception ex)
             {
                 BstLogger.Instance.Log(ex.ToString());
-                return bytes;
+                return null;
             }
         }
 
@@ -182,7 +231,7 @@ namespace BladeSoulTool
             catch (Exception ex)
             {
                 BstLogger.Instance.Log(ex.ToString());
-                return bytes;
+                return null;
             }
             finally
             {

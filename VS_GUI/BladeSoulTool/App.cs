@@ -28,7 +28,7 @@ namespace BladeSoulTool
             // 初始化数据
             var dataManager = BstManager.Instance;
             // 启动一个新线程来处理任务来运行icon图片加载器
-            var loader = BstPicLoader.Instance;
+            var loader = BstIconLoader.Instance;
             // 初始化第一个tab，costume
             this._formCostume = createItemsForm(App.FormTypeCostume);
             this.tabCostume.Controls.Add(this._formCostume);
