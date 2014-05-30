@@ -28,14 +28,17 @@ namespace BladeSoulTool
         private BstLogger()
         {
             this.logPath = BstManager.PathVsRoot + BstManager.PathVsLog + DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss-ffff") + ".log";
+            BstManager.CreateFile(this.logPath);
             this.timer = new Timer(5000);
             this.buff = new StringBuilder();
             this.timer.Elapsed += (sender, args) => File.AppendAllText(this.logPath, buff.ToString());
+            this.timer.AutoReset = true;
+            this.timer.Enabled = true;
         }
 
         public void Log(string msg)
         {
-            Console.WriteLine(msg + "\r\n");
+            Console.WriteLine(msg);
             buff.AppendLine(DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss-ffff") + " " + msg);
         }
     }
