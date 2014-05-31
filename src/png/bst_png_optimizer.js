@@ -115,6 +115,13 @@ BstPngOptimizer.prototype.processCompress = function(pngFilePath) {
     var pngFileName = path.basename(pngFilePath);
     self.startProcess(pngFileName);
 
+    var pngCpsDestPath = path.join(self.outputDir, pngFileName);
+    if (self.grunt.file.exists(pngCpsDestPath)) {
+        // 目标压缩输出已经存在，跳过该文件
+        self.finishCompress(pngFilePath);
+        return;
+    }
+
     cp.exec(
         'optipng.exe -dir ' + self.outputDir + ' -o ' + self.optiLevel + ' -clobber ' + pngFilePath,
         {"cwd": './resources/optipng'},
