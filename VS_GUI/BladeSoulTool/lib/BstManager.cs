@@ -13,17 +13,17 @@ namespace BladeSoulTool
 {
     class BstManager
     {
-        private static BstManager instance;
+        private static BstManager _instance;
 
         public static BstManager Instance 
         {
             get 
             {
-                if (instance == null) 
+                if (_instance == null) 
                 {
-                    instance = new BstManager();
+                    _instance = new BstManager();
                 }
-                return instance;
+                return _instance;
             }
         }
 
@@ -241,6 +241,26 @@ namespace BladeSoulTool
                     fs.Dispose();
                 }
             }
+        }
+
+        public static string GetFormTypeName(int formType)
+        {
+            var name = "attach";
+            switch (formType)
+            {
+                case App.FormTypeAttach:
+                    name = "attach";
+                    break;
+                case App.FormTypeCostume:
+                    name = "costume";
+                    break;
+                case App.FormTypeWeapon:
+                    name = "weapon";
+                    break;
+                default:
+                    break;
+            }
+            return name;
         }
 
         public static string GetIconPicPath(JObject elementData)

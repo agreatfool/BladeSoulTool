@@ -7,39 +7,37 @@ namespace BladeSoulTool
 {
     class BstLogger
     {
-        private static BstLogger instance;
+        private static BstLogger _instance;
 
         public static BstLogger Instance 
         {
             get 
             {
-                if (instance == null) 
+                if (_instance == null)
                 {
-                    instance = new BstLogger();
+                    _instance = new BstLogger();
                 }
-                return instance;
+                return _instance;
             }
         }
 
-        private readonly string logPath;
-        private Timer timer;
-        private readonly StringBuilder buff;
+        private readonly StringBuilder _buff;
 
         private BstLogger()
         {
-            this.logPath = BstManager.PathVsRoot + BstManager.PathVsLog + DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss-ffff") + ".log";
-            BstManager.CreateFile(this.logPath);
-            this.timer = new Timer(5000);
-            this.buff = new StringBuilder();
-            this.timer.Elapsed += (sender, args) => //File.AppendAllText(this.logPath, buff.ToString());
-            this.timer.AutoReset = true;
-            this.timer.Enabled = true;
+            var logPath = BstManager.PathVsRoot + BstManager.PathVsLog + DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss-ffff") + ".log";
+            BstManager.CreateFile(logPath);
+            var timer = new Timer(5000);
+            this._buff = new StringBuilder();
+            timer.Elapsed += (sender, args) => File.AppendAllText(logPath, _buff.ToString());
+            timer.AutoReset = true;
+            timer.Enabled = true;
         }
 
         public void Log(string msg)
         {
             Console.WriteLine(msg);
-            buff.AppendLine(DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss-ffff") + " " + msg);
+            this._buff.AppendLine(DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss-ffff") + " " + msg);
         }
     }
 }

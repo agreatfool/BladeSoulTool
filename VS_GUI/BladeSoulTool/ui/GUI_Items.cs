@@ -140,6 +140,9 @@ namespace BladeSoulTool
 
             this._data = null;
             this._dataTable.Clear();
+
+            // 清空之前的加载队列，准备重新填充加载内容
+            BstIconLoader.Instance.Stop();
         }
 
         private void gridItems_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -155,7 +158,13 @@ namespace BladeSoulTool
             this._selectedElementId = (string)this.gridItems.Rows[e.RowIndex].Cells[1].Value;
             this.textBoxInfo.Text = this._data[this._selectedElementId].ToString();
             // 模型截图控件
-            this.pictureBoxUmodel.ImageLocation = BstManager.GetItemPicPath(this._formType, this._selectedElementId);
+            BstPicLoader.LoadPic(
+                BstManager.GetItemPicPath(this._formType, this._selectedElementId),
+                this._selectedElementId + ".png",
+                BstManager.PathVsRoot + BstManager.PathVsTmp + BstManager.GetFormTypeName(this._formType) + "/" + this._selectedElementId + ".png",
+                this.pictureBoxUmodel,
+                this.textBoxOut
+            );
         }
 
         private void gridItems_MouseWheel(Object sender, MouseEventArgs e)
@@ -274,8 +283,6 @@ namespace BladeSoulTool
 
         public void InitListData(int raceType = BstManager.RaceIdKunn)
         {
-            // 首先关闭pic loader，防止多线程不安全的操作
-            BstIconLoader.Instance.Stop();
             // TODO 原始模型目标应该会被保存在磁盘上的某个配置文件内，这里需要读出
             // 并设置到 this.originElementId里，还要更新整个原始模型的cell控件
             // 初始化list数据

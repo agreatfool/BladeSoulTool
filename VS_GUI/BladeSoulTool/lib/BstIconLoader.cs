@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 using System.Windows.Forms;
@@ -11,112 +12,106 @@ namespace BladeSoulTool
      * http://stackoverflow.com/questions/738327/c-sharp-app-runs-with-debugging-but-not-without
      * 在种族选择tab切换的时候，界面完全卡死，要寻找理由
      * 此外，在读取本地缓存文件的时候，界面反而卡死，估计是过于频繁的DataGridView.Refresh()调用
-     * picturebox的图片加载也应该使用这种lazy的方法
+     * 所有的picturebox的图片加载都需要更新，GUI PICTURE
+     * 顶部的两个icon picture box，也需要更新
+     * 图片加载的几个路径，和几个工具函数的调用，都比较麻烦，最好重构下
+     * picturebox里的gif动画，没有播放，还要居中
      */
     class BstIconLoader
     {
-        private static BstIconLoader instance;
+        private static BstIconLoader _instance;
 
         public static BstIconLoader Instance 
         {
             get 
             {
-                if (instance == null) 
+                if (_instance == null)
                 {
-                    instance = new BstIconLoader();
+                    _instance = new BstIconLoader();
                 }
-                return instance;
+                return _instance;
             }
         }
 
-        private bool enabled = false; // loader当前是否处于启动状态
-        private bool isWorking = false; // loader当前是否正在工作
-        private readonly Queue<BstIconLoadTask> queue;
-        private Thread picLoaderThread;
+        private readonly Queue<BstIconLoadTask> _queue;
+        private Thread _iconLoaderThread;
 
         private BstIconLoader()
         {
-            this.queue = new Queue<BstIconLoadTask>();
-            this.picLoaderThread = new Thread(this.Run) { IsBackground = true };
-            this.picLoaderThread.Start();
+            this._queue = new Queue<BstIconLoadTask>();
         }
 
         public void Run()
         {
-            try
+            var isAnyTaskLeft = true;
+            while (isAnyTaskLeft)
             {
-                while (true)
+                var task = this._queue.Dequeue();
+
+                // 加载图片
+                byte[] pic = null;
+                var imgCachePath = BstManager.PathVsRoot + BstManager.PathVsTmp + "icon/" + task.Name;
+                if (File.Exists(imgCachePath))
                 {
-                    if (this.enabled // loader处于启动状态
-                        && this.queue.Count != 0 // loader的工作列表有内容
-                        && !this.isWorking) // 当前loader并未在处理任何工作
-                    {
-                        this.isWorking = true;
-                        var task = this.queue.Dequeue();
-
-                        // 加载图片
-                        byte[] pic = null;
-                        var imgCachePath = BstManager.PathVsRoot + BstManager.PathVsTmp + "icon/" + task.name;
-                        if (File.Exists(imgCachePath))
-                        {
-                            // 已有缓存文件
-                            pic = BstManager.GetBytesFromFile(imgCachePath);
-                        }
-                        else
-                        {
-                            // 没有缓存文件，需要下载
-                            pic = BstManager.DownloadImageFile(task.url, imgCachePath);
-                        }
-                        if (pic == null)
-                        {
-                            MethodInvoker msgFailedAction = () => task.box.AppendText("图片下载失败：" + task.url + "\r\n");
-                            task.box.BeginInvoke(msgFailedAction);
-                            BstLogger.Instance.Log("[BstIconLoader] Pic download failed: " + task.url);
-                            this.isWorking = false;
-                            continue;
-                        }
-
-                        // 更新图片
-                        task.table.Rows[task.rowId][task.colId] = pic;
-                        MethodInvoker tableUpdateAction = () => task.grid.Refresh();
-                        task.grid.BeginInvoke(tableUpdateAction);
-                        MethodInvoker msgDownloadedAction = () => task.box.AppendText("图片下载完成：" + task.url + "\r\n");
-                        task.box.BeginInvoke(msgDownloadedAction);
-                        BstLogger.Instance.Log("[BstIconLoader] Pic downloaded: " + task.url);
-                        this.isWorking = false;
-
-                        if (this.queue.Count != 0) continue; // 这是当前工作队列中的最后一个工作，完成后关闭启动状态，等待下次添加工作后手动启动
-                        MethodInvoker msgDoneAction = () => task.box.AppendText("所有图片下载任务完成 ...\r\n");
-                        task.box.BeginInvoke(msgDoneAction);
-                        BstLogger.Instance.Log("[BstIconLoader] Queued works all done ...");
-                        this.enabled = false;
-                    }
-                    else if (this.queue.Count == 0 && !this.isWorking) // 当队列为空，且当前没有工作要处理的时候，睡眠
-                    {
-                        BstLogger.Instance.Log("[BstIconLoader] No working to do, sleep 1000ms ...");
-                        Thread.Sleep(1000); // 1000ms
-                    }
+                    // 已有缓存文件
+                    pic = BstManager.GetBytesFromFile(imgCachePath);
                 }
-            }
-            catch (ThreadAbortException tae)
-            {
-                BstLogger.Instance.Log(tae.ToString());
+                else
+                {
+                    // 没有缓存文件，需要下载
+                    pic = BstManager.DownloadImageFile(task.Url, imgCachePath);
+                }
+                if (pic == null)
+                {
+                    MethodInvoker msgFailedAction = () => task.Box.AppendText("图片下载失败：" + task.Url + "\r\n");
+                    task.Box.BeginInvoke(msgFailedAction);
+                    BstLogger.Instance.Log("[BstIconLoader] Pic download failed: " + task.Url);
+                    continue;
+                }
+
+                // 更新图片
+                task.Table.Rows[task.RowId][task.ColId] = pic;
+                MethodInvoker tableUpdateAction = () => task.Grid.Refresh();
+                task.Grid.BeginInvoke(tableUpdateAction);
+                MethodInvoker msgDownloadedAction = () => task.Box.AppendText("图片下载完成：" + task.Url + "\r\n");
+                task.Box.BeginInvoke(msgDownloadedAction);
+                BstLogger.Instance.Log("[BstIconLoader] Pic downloaded: " + task.Url);
+
+                if (this._queue.Count != 0) continue; // 仍旧还有工作未完成，继续
+                // 当前工作队列已清空，设置关闭状态
+                MethodInvoker msgDoneAction = () => task.Box.AppendText("所有图片下载任务完成 ...\r\n");
+                task.Box.BeginInvoke(msgDoneAction);
+                BstLogger.Instance.Log("[BstIconLoader] Queued works all done, thread exit ...");
+                isAnyTaskLeft = false;
             }
         }
 
         public void RegisterTask(BstIconLoadTask task)
         {
-            this.queue.Enqueue(task);
+            this._queue.Enqueue(task);
         }
 
         public void Start()
         {
-            this.enabled = true; // 将loader的状态置为工作
+            this._iconLoaderThread = new Thread(this.Run) { IsBackground = true };
+            this._iconLoaderThread.Start();
         }
 
         public void Stop()
         {
-            this.enabled = false; // 将loader的状态置为暂停
+            this._queue.Clear();
+            if (this._iconLoaderThread.IsAlive)
+            {
+                try
+                {
+                    this._iconLoaderThread.Abort(); // 如果线程正在工作的话，强制退出
+                }
+                catch (Exception ex)
+                {
+                    BstLogger.Instance.Log(ex.ToString());
+                }
+            }
+            this._iconLoaderThread = null;
         }
     }
 }
