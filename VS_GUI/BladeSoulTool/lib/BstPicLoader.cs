@@ -1,7 +1,7 @@
-﻿using System.Windows.Forms;
-using System.Threading;
+﻿using System.Threading;
+using System.Windows.Forms;
 
-namespace BladeSoulTool
+namespace BladeSoulTool.lib
 {
     class BstPicLoader
     {

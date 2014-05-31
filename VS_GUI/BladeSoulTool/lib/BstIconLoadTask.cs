@@ -1,7 +1,7 @@
 ﻿using System.Data;
 using System.Windows.Forms;
 
-namespace BladeSoulTool
+namespace BladeSoulTool.lib
 {
     class BstIconLoadTask
     {

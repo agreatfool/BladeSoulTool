@@ -1,12 +1,14 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Data;
+using System.Threading;
 using System.Windows.Forms;
+using BladeSoulTool.lib;
 using Newtonsoft.Json.Linq;
 
-namespace BladeSoulTool
+namespace BladeSoulTool.ui
 {
-    public partial class GUI_Items : Form
+    public partial class GuiItems : Form
     {
 
         private int _formType;
@@ -21,14 +23,16 @@ namespace BladeSoulTool
         private string _originElementId;
         private string _targetElementId;
 
-        public GUI_Items(int formType)
+        private Thread _loadingThread;
+
+        public GuiItems(int formType)
         {
             InitializeComponent();
             this.Shown += new EventHandler(GUI_Items_Shown); // 页面展示后的事件
-            this.init(formType);
+            this.Init(formType);
         }
 
-        private void init(int formType)
+        private void Init(int formType)
         {
             this._formType = formType;
             // 数据列表
@@ -92,34 +96,69 @@ namespace BladeSoulTool
 
         private void LoadItemList(int raceType = BstManager.RaceIdKunn)
         {
-            BstLogger.Instance.Log("[GUI_Items] Start to load item list: " + raceType);
-            this._loader = new BackgroundWorker();
-            this._loader.DoWork += new DoWorkEventHandler(this.loader_DoWork);
-            this._loader.RunWorkerCompleted += new RunWorkerCompletedEventHandler(this.loader_RunWorkerCompleted);
-            this._loader.RunWorkerAsync(raceType);
-        }
+            if (this._loadingThread != null && this._loadingThread.IsAlive)
+            {
+                // 之前启动的加载线程还活着，需要先停止
+                try
+                {
+                    this._loadingThread.Abort();
+                }
+                catch (Exception ex)
+                {
+                    BstLogger.Instance.Log(ex.ToString());
+                }
+                this._loadingThread = null;
+            }
 
-        private void loader_DoWork(object sender, DoWorkEventArgs e)
-        {
-            // 在background worker里加载数据
-            MethodInvoker action = () => this.textBoxOut.AppendText("开始加载数据列表数据 ... \r\n");
-            this.textBoxOut.BeginInvoke(action);
-            BstLogger.Instance.Log("开始加载数据列表数据 ...");
-            // 按form类型做各自的逻辑处理
-            var raceType = (int) e.Argument;
-            this.InitListData(raceType);
-        }
+            this.ClearFormStatus(); // 清理旧的数据
 
-        private void loader_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            // 数据加载完成
-            MethodInvoker action = () => this.textBoxOut.AppendText("数据列表加载完成，开始加载图片 ...\r\n");
-            this.textBoxOut.BeginInvoke(action);
-            BstLogger.Instance.Log("数据列表加载完成，开始加载图片 ...");
-            MethodInvoker gridAction = () => this.gridItems.PerformLayout(); // 刷新scrollbar
-            this.gridItems.BeginInvoke(gridAction);
-            BstIconLoader.Instance.Start(); // 启动图片加载器
-            this._loader.Dispose();
+            // 启动新的线程来处理数据加载内容
+            this._loadingThread = new Thread(() =>
+            {
+                MethodInvoker startAction = () => this.textBoxOut.AppendText("开始加载数据列表数据 ... \r\n");
+                this.textBoxOut.BeginInvoke(startAction);
+                BstLogger.Instance.Log("开始加载数据列表数据 ...");
+
+                // TODO 原始模型目标应该会被保存在磁盘上的某个配置文件内，这里需要读出
+                // 并设置到 this.originElementId里，还要更新整个原始模型的cell控件
+                // 初始化list数据
+                switch (this._formType)
+                {
+                    case App.FormTypeCostume:
+                        this._data = BstManager.Instance.GetCostumeDataByRace(raceType);
+                        break;
+                    case App.FormTypeAttach:
+                        this._data = BstManager.Instance.GetAttachDataByRace(raceType);
+                        break;
+                    case App.FormTypeWeapon:
+                        this._data = BstManager.Instance.WeaponData;
+                        break;
+                    default:
+                        break;
+                }
+                // 加载list界面
+                foreach (var element in this._data.Properties())
+                {
+                    // 读取数据
+                    var elementId = element.Name;
+                    var elementData = (JObject)element.Value;
+                    // 填充数据
+                    this._dataTable.Rows.Add(new object[] { BstManager.Instance.LoadingGif, elementId });
+                    var rowId = this._dataTable.Rows.Count - 1;
+                    BstIconLoader.Instance.RegisterTask(new BstIconLoadTask(
+                        BstManager.GetIconPicPath(elementData), (string)elementData["pic"],
+                        this.gridItems, this._dataTable, rowId, this.textBoxOut
+                    ));
+                }
+
+                MethodInvoker finishAction = () => this.textBoxOut.AppendText("数据列表加载完成，开始加载图片 ...\r\n");
+                this.textBoxOut.BeginInvoke(finishAction);
+                BstLogger.Instance.Log("数据列表加载完成，开始加载图片 ...");
+                MethodInvoker gridAction = () => this.gridItems.PerformLayout(); // 刷新scrollbar
+                this.gridItems.BeginInvoke(gridAction);
+                BstIconLoader.Instance.Start(); // 启动图片加载器
+            });
+            this._loadingThread.Start();
         }
 
         private void ClearFormStatus()
@@ -185,8 +224,7 @@ namespace BladeSoulTool
 
         private void comboBoxRace_SelectedIndexChanged(Object sender, EventArgs e)
         {
-            // 重新选择种族信息
-            this.ClearFormStatus();
+            // 重新选择种族，即重新加载界面
             this.LoadItemList(this.comboBoxRace.SelectedIndex);
         }
 
@@ -320,8 +358,8 @@ namespace BladeSoulTool
         {
             // 创建一个新的form来展示物件的2D截图
             var imgPath = BstManager.GetItemPicPath(this._formType, elementId);
-            var pictureForm = new BladeSoulTool.ui.GUI_Picture(imgPath);
-            pictureForm.Show();
+            var pictureForm = new BladeSoulTool.ui.GuiPicture(imgPath);
+            pictureForm.ShowDialog();
         }
 
     }

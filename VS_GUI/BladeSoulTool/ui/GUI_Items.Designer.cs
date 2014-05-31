@@ -1,6 +1,6 @@
-﻿namespace BladeSoulTool
+﻿namespace BladeSoulTool.ui
 {
-    partial class GUI_Items
+    partial class GuiItems
     {
         /// <summary>
         /// Required designer variable.
@@ -330,7 +330,7 @@
             this.Controls.Add(this.labelRace);
             this.Controls.Add(this.gridItems);
             this.Controls.Add(this.pictureBoxUmodel);
-            this.Name = "GUI_Items";
+            this.Name = "GuiItems";
             this.Text = "GUI_Items";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUmodel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridItems)).EndInit();

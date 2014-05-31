@@ -1,15 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Drawing;
 using System.IO;
+using System.Net;
+using System.Windows.Forms;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Windows.Forms;
-using System.ComponentModel;
-using System.Net;
-using System.Drawing;
 
-namespace BladeSoulTool
+namespace BladeSoulTool.lib
 {
     class BstManager
     {

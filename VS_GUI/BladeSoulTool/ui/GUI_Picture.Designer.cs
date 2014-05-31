@@ -1,6 +1,6 @@
 ﻿namespace BladeSoulTool.ui
 {
-    partial class GUI_Picture
+    partial class GuiPicture
     {
         /// <summary>
         /// Required designer variable.
@@ -48,7 +48,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(523, 625);
             this.Controls.Add(this.pictureBox2D);
-            this.Name = "GUI_Picture";
+            this.Name = "GuiPicture";
             this.Text = "Picture";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2D)).EndInit();
             this.ResumeLayout(false);

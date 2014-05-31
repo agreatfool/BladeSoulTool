@@ -3,7 +3,7 @@ using System.IO;
 using System.Text;
 using System.Timers;
 
-namespace BladeSoulTool
+namespace BladeSoulTool.lib
 {
     class BstLogger
     {
