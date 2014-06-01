@@ -1,11 +1,23 @@
-﻿using System.Threading;
+﻿using System.IO;
+using System.Threading;
 using System.Windows.Forms;
+using Newtonsoft.Json.Linq;
 
 namespace BladeSoulTool.lib
 {
     class BstPicLoader
     {
-        public static void LoadPic(string url, string name, string path, PictureBox picture, TextBox box)
+        public static void LoadPic(string elementId, PictureBox picture, TextBox box)
+        {
+            
+        }
+
+        public static void LoadPic(JObject elementData, PictureBox picture, TextBox box = null)
+        {
+
+        }
+
+        private static void runLoading(string url, string name, string path, PictureBox picture, TextBox box = null)
         {
             new Thread(() =>
             {
@@ -14,18 +26,26 @@ namespace BladeSoulTool.lib
                     BstManager.GetBytesFromFile(BstManager.PathRoot + BstManager.PathResources + "others/loading.gif")
                 );
                 picture.BeginInvoke(loadingAction);
-                // 下载图片
-                var blob = BstManager.DownloadImageFile(url, path);
-                if (blob == null)
+
+                // 检查是否有本地缓存
+                byte[] blob = null;
+                if (File.Exists(path))
                 {
-                    MethodInvoker msgFailedAction = () => box.AppendText("图片下载失败：" + url + "\r\n");
-                    box.BeginInvoke(msgFailedAction);
-                    BstLogger.Instance.Log("[BstPicLoader] Pic download failed: " + url);
-                    return; // 图片下载失败
+                    // 本地缓存存在，直接读取
+                    blob = BstManager.GetBytesFromFile(path);
                 }
-                MethodInvoker msgDownloadedAction = () => box.AppendText("图片下载完成：" + url + "\r\n");
-                box.BeginInvoke(msgDownloadedAction);
-                BstLogger.Instance.Log("[BstPicLoader] Pic downloaded: " + url);
+                else
+                {
+                    // 下载图片
+                    blob = BstManager.DownloadImageFile(url, path);
+                    if (blob == null)
+                    {
+                        BstManager.ShowMsgInTextBox(box, "图片下载失败：" + url);
+                        return; // 图片下载失败
+                    }
+                }
+
+                BstManager.ShowMsgInTextBox(box, "图片下载完成：" + url);
 
                 // 转换成位图
                 var bitmap = BstManager.ConvertByteToImage(blob);

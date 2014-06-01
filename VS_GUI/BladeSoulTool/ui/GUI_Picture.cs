@@ -1,15 +1,21 @@
 ﻿using System.Windows.Forms;
+using BladeSoulTool.lib;
 
 namespace BladeSoulTool.ui
 {
     public partial class GuiPicture : Form
     {
-        public GuiPicture(string imgPath)
+        public GuiPicture(int formType, string elementId, TextBox box)
         {
             InitializeComponent();
 
-            this.pictureBox2D.ImageLocation = imgPath;
-            this.pictureBox2D.Load();
+            BstPicLoader.LoadPic(
+                BstManager.GetItemPicUrl(formType, elementId),
+                elementId + ".png",
+                BstManager.PathVsRoot + BstManager.PathVsTmp + BstManager.GetTypeName(formType) + "/" + elementId + ".png",
+                this.pictureBox2D,
+                box
+            );
         }
     }
 }

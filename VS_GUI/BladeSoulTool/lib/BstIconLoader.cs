@@ -8,15 +8,10 @@ namespace BladeSoulTool.lib
 {
     /**
      * 几个问题:
-     * 当前程序在VS的debug模式下运行正常，但是在非debug模式下直接卡死，需要在别的机器上测试是否有相同问题，网上查询有部分说是.NET的问题
-     * http://stackoverflow.com/questions/738327/c-sharp-app-runs-with-debugging-but-not-without
-     * 在种族选择tab切换的时候，界面完全卡死，要寻找理由
-     * 此外，在读取本地缓存文件的时候，界面反而卡死，估计是过于频繁的DataGridView.Refresh()调用
      * 所有的picturebox的图片加载都需要更新，GUI PICTURE
      * 顶部的两个icon picture box，也需要更新
      * 图片加载的几个路径，和几个工具函数的调用，都比较麻烦，最好重构下
      * picturebox里的gif动画，没有播放，还要居中
-     * 将picturebox的form做成置顶，mask
      */
     class BstIconLoader
     {
@@ -34,7 +29,7 @@ namespace BladeSoulTool.lib
             }
         }
 
-        private const int UpdateThrottle = 30; // 在下载/读取多少张icon图片之后刷新UI，频率过快的刷新会卡死主界面
+        private const int UpdateThrottle = 30; // 在下载|读取多少张icon图片之后刷新UI，频率过快的刷新会卡死主界面
 
         private readonly Queue<BstIconLoadTask> _queue;
         private Thread _iconLoaderThread;

@@ -40,9 +40,9 @@ namespace BladeSoulTool.lib
         public const int RaceIdLynf = 5;
         public const int RaceIdLynm = 6;
 
-        public const int ItemTypeCostume = 0;
-        public const int ItemTypeAttach = 1;
-        public const int ItemTypeWeapon = 2;
+        public const int TypeCostume = 0;
+        public const int TypeAttach = 1;
+        public const int TypeWeapon = 2;
 
         public const string PathRoot = "../../../../";
         public const string PathConfig = "config/";
@@ -70,6 +70,8 @@ namespace BladeSoulTool.lib
 
         public List<string> RaceNames { get; set; }
         public List<string> RaceTypes { get; set; }
+
+        private bool isGruntRunning = false;
 
         private void Init()
         {
@@ -111,8 +113,8 @@ namespace BladeSoulTool.lib
             foreach (var element in this.CostumeData.Properties())
             {
                 var elementId = element.Name;
-                var elementData = (JObject)element.Value;
-                if ((string)elementData["race"] == raceType) 
+                var elementData = (JObject) element.Value;
+                if ((string) elementData["race"] == raceType) 
                 {
                     filtered.Add(elementId, elementData);
                 }
@@ -132,8 +134,8 @@ namespace BladeSoulTool.lib
             foreach (var element in this.AttachData.Properties())
             {
                 var elementId = element.Name;
-                var elementData = (JObject)element.Value;
-                if ((string)elementData["race"] == raceType)
+                var elementData = (JObject) element.Value;
+                if ((string) elementData["race"] == raceType)
                 {
                     filtered.Add(elementId, elementData);
                 }
@@ -243,18 +245,18 @@ namespace BladeSoulTool.lib
             }
         }
 
-        public static string GetFormTypeName(int formType)
+        public static string GetTypeName(int type)
         {
             var name = "attach";
-            switch (formType)
+            switch (type)
             {
-                case App.FormTypeAttach:
+                case BstManager.TypeAttach:
                     name = "attach";
                     break;
-                case App.FormTypeCostume:
+                case BstManager.TypeCostume:
                     name = "costume";
                     break;
-                case App.FormTypeWeapon:
+                case BstManager.TypeWeapon:
                     name = "weapon";
                     break;
                 default:
@@ -263,11 +265,11 @@ namespace BladeSoulTool.lib
             return name;
         }
 
-        public static string GetIconPicPath(JObject elementData)
+        public static string GetIconPicUrl(JObject elementData)
         {
             string path = null;
 
-            var iconPicName = (string)elementData["pic"];
+            var iconPicName = (string) elementData["pic"];
 
             if (!string.IsNullOrEmpty(iconPicName))
             {
@@ -277,18 +279,37 @@ namespace BladeSoulTool.lib
             return path;
         }
 
-        public static string GetItemPicPath(int itemType, string itemId)
+        public static string GetIconPicTmpPath(JObject elementData)
         {
             string path = null;
+
+            var iconPicName = (string)elementData["pic"];
+
+            if (!string.IsNullOrEmpty(iconPicName))
+            {
+                // FIXME
+                path = BstManager.PathVsRoot + BstManager.PathVsTmp + BstManager.PathDatabase + "icon/png-cps/" + iconPicName;
+            }
+
+            return path;
+        }
+
+        public static string GetItemPicUrl(int itemType, JObject elementData)
+        {
+            string path = null;
+            var core = (string) elementData["core"];
+            var col = (string) elementData["col"];
+            var itemId = core + "_" + col;
+
             switch (itemType)
             {
-                case BstManager.ItemTypeCostume:
+                case BstManager.TypeCostume:
                     path = BstManager.GithubRoot + BstManager.GithubBranch + "/" + BstManager.PathDatabase +"costume/pics-cps/" + itemId + ".png";
                     break;
-                case BstManager.ItemTypeAttach:
+                case BstManager.TypeAttach:
                     path = BstManager.GithubRoot + BstManager.GithubBranch + "/" + BstManager.PathDatabase + "attach/pics-cps/" + itemId + ".png";
                     break;
-                case BstManager.ItemTypeWeapon:
+                case BstManager.TypeWeapon:
                     path = BstManager.GithubRoot + BstManager.GithubBranch + "/" + BstManager.PathDatabase + "weapon/pics-cps/" + itemId + ".png";
                     break;
                 default:
@@ -297,15 +318,38 @@ namespace BladeSoulTool.lib
             return path;
         }
 
-        public static void RunGrunt(TextBox box, string task = "", string[] args = null)
+        public static void ShowMsgInTextBox(TextBox box, string msg)
         {
+            if (box == null)
+            {
+                return; // TextBox对象不存在
+            }
+            else
+            {
+                MethodInvoker action = () => box.AppendText(msg + "\r\n");
+                box.BeginInvoke(action);
+            }
+            BstLogger.Instance.Log(msg);
+        }
+
+        public void RunGrunt(TextBox box, string task = "", string[] args = null)
+        {
+            if (this.isGruntRunning)
+            {
+                return; // 已经有grunt脚本在运行了，这里不再运行新的脚本
+            }
+            else
+            {
+                this.isGruntRunning = true;
+            }
+
             var worker = new BackgroundWorker();
             worker.DoWork += (s, e) =>
             {
                 var proc = new Process();
 
                 var cwd = Directory.GetCurrentDirectory() + "/" + BstManager.PathRoot;
-                var cmd = "cmd.exe";
+                const string cmd = "cmd.exe";
                 var arguments = "/c grunt " + task + " " + ((args == null) ? "" : String.Join(" ", args)) + " --stack";
                 // 打印命令信息
                 var logMsg = "开始运行：\r\n" + "位置：" + cwd + "\r\n" + "命令：" + cmd + "\r\n" + "参数：" + arguments + "\r\n输出：\r\n";
@@ -334,7 +378,11 @@ namespace BladeSoulTool.lib
                 proc.Start(); // 启动
                 proc.BeginOutputReadLine(); // 逐行读入输出
             };
-            worker.RunWorkerCompleted += (s, e) => worker.Dispose();
+            worker.RunWorkerCompleted += (s, e) =>
+            {
+                this.isGruntRunning = false;
+                worker.Dispose();
+            };
             worker.RunWorkerAsync();
         }
 
