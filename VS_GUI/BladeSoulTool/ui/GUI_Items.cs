@@ -13,8 +13,6 @@ namespace BladeSoulTool.ui
 
         private int _formType;
 
-        private BackgroundWorker _loader;
-
         private DataTable _dataTable;
 
         private JObject _data;
@@ -28,7 +26,7 @@ namespace BladeSoulTool.ui
         public GuiItems(int formType)
         {
             InitializeComponent();
-            this.Shown += new EventHandler(GUI_Items_Shown); // 页面展示后的事件
+            this.Shown += new EventHandler(GuiItems_Shown); // 页面展示后的事件
             this.Init(formType);
         }
 
@@ -40,14 +38,14 @@ namespace BladeSoulTool.ui
             // icon列
             var columnIcon = new DataColumn("Icon")
             {
-                DataType = System.Type.GetType("System.Byte[]"),
+                DataType = Type.GetType("System.Byte[]"),
                 AllowDBNull = true,
                 ColumnName = "缩略图"
             };
             //columnIcon.ReadOnly = true;
             this._dataTable.Columns.Add(columnIcon);
             // code列
-            var columnCode = new DataColumn("Code") {ColumnName = "编号", ReadOnly = true};
+            var columnCode = new DataColumn("Code") { ColumnName = "编号", ReadOnly = true };
             this._dataTable.Columns.Add(columnCode);
 
             // 数据展示列表
@@ -58,14 +56,15 @@ namespace BladeSoulTool.ui
             gridColumnIcon.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             gridColumnIcon.Width = 64;
             // 展示列表点击事件
-            this.gridItems.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridItems_CellClick);
+            this.gridItems.CellClick += new DataGridViewCellEventHandler(this.gridItems_CellClick);
             // 展示列表鼠标滚轴事件
             this.gridItems.MouseWheel += new MouseEventHandler(this.gridItems_MouseWheel);
 
             // 种族选择控件
+            // ReSharper disable once CoVariantArrayConversion
             this.comboBoxRace.Items.AddRange(BstManager.Instance.RaceNames.ToArray());
             this.comboBoxRace.SelectedIndex = 0;
-            this.comboBoxRace.SelectedIndexChanged +=new EventHandler(this.comboBoxRace_SelectedIndexChanged);
+            this.comboBoxRace.SelectedIndexChanged += new EventHandler(this.comboBoxRace_SelectedIndexChanged);
 
             // 全部恢复按钮
             this.btnTopRestoreAll.Click += new EventHandler(this.btnTopRestoreAll_Click);
@@ -88,7 +87,7 @@ namespace BladeSoulTool.ui
             this.btnSelectTarget.Click += new EventHandler(this.btnSelectTarget_Click);
         }
 
-        private void GUI_Items_Shown(object sender, EventArgs e)
+        private void GuiItems_Shown(object sender, EventArgs e)
         {
             // 当UI加载完毕开始显示之后才开始加载数据
             this.LoadItemList();
@@ -115,25 +114,21 @@ namespace BladeSoulTool.ui
             // 启动新的线程来处理数据加载内容
             this._loadingThread = new Thread(() =>
             {
-                MethodInvoker startAction = () => this.textBoxOut.AppendText("开始加载数据列表数据 ... \r\n");
-                this.textBoxOut.BeginInvoke(startAction);
-                BstLogger.Instance.Log("开始加载数据列表数据 ...");
+                BstManager.ShowMsgInTextBox(this.textBoxOut, "开始加载数据列表数据 ...");
 
                 // TODO 原始模型目标应该会被保存在磁盘上的某个配置文件内，这里需要读出
                 // 并设置到 this.originElementId里，还要更新整个原始模型的cell控件
                 // 初始化list数据
                 switch (this._formType)
                 {
-                    case App.FormTypeCostume:
+                    case BstManager.TypeCostume:
                         this._data = BstManager.Instance.GetCostumeDataByRace(raceType);
                         break;
-                    case App.FormTypeAttach:
+                    case BstManager.TypeAttach:
                         this._data = BstManager.Instance.GetAttachDataByRace(raceType);
                         break;
-                    case App.FormTypeWeapon:
-                        this._data = BstManager.Instance.WeaponData;
-                        break;
-                    default:
+                    case BstManager.TypeWeapon:
+                        this._data = BstManager.Instance.DataWeapon;
                         break;
                 }
                 // 加载list界面
@@ -141,19 +136,16 @@ namespace BladeSoulTool.ui
                 {
                     // 读取数据
                     var elementId = element.Name;
-                    var elementData = (JObject)element.Value;
+                    var elementData = (JObject) element.Value;
                     // 填充数据
-                    this._dataTable.Rows.Add(new object[] { BstManager.Instance.LoadingGif, elementId });
+                    this._dataTable.Rows.Add(new object[] { BstManager.Instance.LoadingGifBytes, elementId });
                     var rowId = this._dataTable.Rows.Count - 1;
                     BstIconLoader.Instance.RegisterTask(new BstIconLoadTask(
-                        BstManager.GetIconPicUrl(elementData), (string)elementData["pic"],
-                        this.gridItems, this._dataTable, rowId, this.textBoxOut
+                        elementData, this.gridItems, this._dataTable, rowId, this.textBoxOut
                     ));
                 }
 
-                MethodInvoker finishAction = () => this.textBoxOut.AppendText("数据列表加载完成，开始加载图片 ...\r\n");
-                this.textBoxOut.BeginInvoke(finishAction);
-                BstLogger.Instance.Log("数据列表加载完成，开始加载图片 ...");
+                BstManager.ShowMsgInTextBox(this.textBoxOut, "数据列表加载完成，开始加载图片 ...");
                 MethodInvoker gridAction = () => this.gridItems.PerformLayout(); // 刷新scrollbar
                 this.gridItems.BeginInvoke(gridAction);
                 BstIconLoader.Instance.Start(); // 启动图片加载器
@@ -194,16 +186,11 @@ namespace BladeSoulTool.ui
             this.gridItems.Rows[e.RowIndex].Selected = true;
             this.gridItems.Refresh();
             // 查找该行对应的数据
-            this._selectedElementId = (string)this.gridItems.Rows[e.RowIndex].Cells[1].Value;
-            this.textBoxInfo.Text = this._data[this._selectedElementId].ToString();
+            this._selectedElementId = (string) this.gridItems.Rows[e.RowIndex].Cells[1].Value;
+            var elementData = (JObject) this._data[this._selectedElementId];
+            this.textBoxInfo.Text = elementData.ToString();
             // 模型截图控件
-            BstPicLoader.LoadPic(
-                BstManager.GetItemPicUrl(this._formType, this._selectedElementId),
-                this._selectedElementId + ".png",
-                BstManager.PathVsRoot + BstManager.PathVsTmp + BstManager.GetTypeName(this._formType) + "/" + this._selectedElementId + ".png",
-                this.pictureBoxUmodel,
-                this.textBoxOut
-            );
+            BstPicLoader.LoadPic(this._formType, elementData, pictureBoxUmodel, this.textBoxOut);
         }
 
         private void gridItems_MouseWheel(Object sender, MouseEventArgs e)
@@ -286,17 +273,19 @@ namespace BladeSoulTool.ui
             {
                 return; // 没有选中的元素，直接退出
             }
-            var element = (JObject)this._data[this._selectedElementId];
+            var element = (JObject) this._data[this._selectedElementId];
             // 只有col1的模型才可以被设为原始模型
-            var col = (string)element["col"];
+            var col = (string) element["col"];
             if (col != "col1")
             {
-                MessageBox.Show("只可将后缀最后为col1的模型设为原始模型", "选择错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                const string boxTitle = "选择错误";
+                const string boxMsg = "只可将后缀最后为col1的模型设为原始模型";
+                MessageBox.Show(boxMsg, boxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             this._originElementId = this._selectedElementId;
-            // 展示icon
-            this.pictureBoxOrigin.ImageLocation = BstManager.GetIconPicUrl(element);
+            // 展示icon，该icon应该已经有本地缓存，直接读取本地缓存
+            this.pictureBoxOrigin.ImageLocation = BstManager.GetIconPicTmpPath(element);
             this.pictureBoxOrigin.Load();
             // 显示模型数据
             this.textBoxOrigin.Text = element.ToString();
@@ -311,9 +300,9 @@ namespace BladeSoulTool.ui
                 return; // 没有选中的元素，直接退出
             }
             this._targetElementId = this._selectedElementId;
-            JObject element = (JObject)this._data[this._selectedElementId];
-            // 展示icon
-            this.pictureBoxTarget.ImageLocation = BstManager.GetIconPicUrl(element);
+            var element = (JObject) this._data[this._selectedElementId];
+            // 展示icon，该icon应该已经有本地缓存，直接读取本地缓存
+            this.pictureBoxTarget.ImageLocation = BstManager.GetIconPicTmpPath(element);
             this.pictureBoxTarget.Load();
             // 显示模型数据
             this.textBoxTarget.Text = element.ToString();
