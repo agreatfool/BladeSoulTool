@@ -1,12 +1,17 @@
-﻿using System.IO;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Threading;
 using System.Windows.Forms;
 using Newtonsoft.Json.Linq;
+using Timer = System.Timers.Timer;
 
 namespace BladeSoulTool.lib
 {
     class BstPicLoader
     {
+        private static Dictionary<PictureBox, Timer> _loadingTimers = new Dictionary<PictureBox, Timer>();
+
         public static void LoadPic(int type, string elementId, PictureBox picture, TextBox box = null)
         {
             var data = BstManager.Instance.GetAllDataByType(type);
@@ -27,9 +32,27 @@ namespace BladeSoulTool.lib
         {
             new Thread(() =>
             {
-                // 更新图片成读取状态
-                MethodInvoker loadingAction = () => picture.Image = BstManager.Instance.LoadingGifBitmap;
-                picture.BeginInvoke(loadingAction);
+                Timer loadingTimer = null;
+                if (!BstPicLoader._loadingTimers.ContainsKey(picture))
+                {
+                    // 更新图片成读取状态，如果Dictionary里已经有这个PictureBox的Timer了，说明loading图已经加载了
+                    var loadingGif = new BstGifImage(BstManager.PathLoadingGif) { ReverseAtEnd = false };
+                    loadingTimer = new Timer(50);
+                    loadingTimer.Elapsed += (s, e) =>
+                    {
+                        MethodInvoker loadingAction = () =>
+                        {
+                            picture.Image = loadingGif.GetNextFrame();
+                        };
+                        picture.BeginInvoke(loadingAction);
+                    };
+                    BstPicLoader._loadingTimers.Add(picture, loadingTimer);
+                    loadingTimer.Enabled = true;
+                }
+                else
+                {
+                    loadingTimer = BstPicLoader._loadingTimers[picture];
+                }
 
                 // 检查是否有本地缓存
                 byte[] blob = null;
@@ -48,6 +71,10 @@ namespace BladeSoulTool.lib
                         return; // 图片下载失败
                     }
                 }
+
+                loadingTimer.Enabled = false; // 记载完成，停止动态loading图的更新
+                BstPicLoader._loadingTimers.Remove(picture); // 加载完成，删除Dictionary里注册的Timer
+                loadingTimer.Dispose();
 
                 BstManager.ShowMsgInTextBox(box, "图片下载完成：" + url);
 

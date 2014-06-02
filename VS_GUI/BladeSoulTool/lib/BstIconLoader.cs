@@ -88,7 +88,7 @@ namespace BladeSoulTool.lib
                 // 当前工作队列已清空，最后更新UI，设置关闭状态
                 MethodInvoker tableFinalUpdateAction = () => task.Grid.Refresh();
                 task.Grid.BeginInvoke(tableFinalUpdateAction);
-                BstManager.ShowMsgInTextBox(task.Box, "所有图片下载任务完成 ..." + downloadUrl);
+                BstManager.ShowMsgInTextBox(task.Box, "所有图片下载任务完成 ...");
                 BstLogger.Instance.Log("[BstIconLoader] Queued works all done, thread exit ...");
                 isAnyTaskLeft = false;
             }
