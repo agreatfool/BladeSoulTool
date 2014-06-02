@@ -10,7 +10,7 @@ namespace BladeSoulTool.lib
 {
     class BstPicLoader
     {
-        private static Dictionary<PictureBox, Timer> _loadingTimers = new Dictionary<PictureBox, Timer>();
+        private static readonly Dictionary<PictureBox, Timer> LoadingTimers = new Dictionary<PictureBox, Timer>();
 
         public static void LoadPic(int type, string elementId, PictureBox picture, TextBox box = null)
         {
@@ -33,7 +33,7 @@ namespace BladeSoulTool.lib
             new Thread(() =>
             {
                 Timer loadingTimer = null;
-                if (!BstPicLoader._loadingTimers.ContainsKey(picture))
+                if (!BstPicLoader.LoadingTimers.ContainsKey(picture))
                 {
                     // 更新图片成读取状态，如果Dictionary里已经有这个PictureBox的Timer了，说明loading图已经加载了
                     var loadingGif = new BstGifImage(BstManager.PathLoadingGif) { ReverseAtEnd = false };
@@ -53,21 +53,21 @@ namespace BladeSoulTool.lib
                             // 因为我们可能会在GUI_Picture的UI中的PictureBox里显示loading动态图
                             // 而上述的窗口可能在关闭后被销毁，这里我们需要处理窗口被销毁后的错误
                             // 这时候Timer应该在Dictionary里注册过了
-                            if (BstPicLoader._loadingTimers.ContainsKey(picture))
+                            if (BstPicLoader.LoadingTimers.ContainsKey(picture))
                             {
-                                var timer = BstPicLoader._loadingTimers[picture];
+                                var timer = BstPicLoader.LoadingTimers[picture];
                                 timer.Enabled = false;
-                                BstPicLoader._loadingTimers.Remove(picture);
+                                BstPicLoader.LoadingTimers.Remove(picture);
                                 timer.Dispose();
                             }
                         }
                     };
-                    BstPicLoader._loadingTimers.Add(picture, loadingTimer);
+                    BstPicLoader.LoadingTimers.Add(picture, loadingTimer);
                     loadingTimer.Enabled = true;
                 }
                 else
                 {
-                    loadingTimer = BstPicLoader._loadingTimers[picture];
+                    loadingTimer = BstPicLoader.LoadingTimers[picture];
                 }
 
                 // 检查是否有本地缓存
@@ -89,7 +89,7 @@ namespace BladeSoulTool.lib
                 }
 
                 loadingTimer.Enabled = false; // 加载完成，停止动态loading图的更新
-                BstPicLoader._loadingTimers.Remove(picture); // 加载完成，删除Dictionary里注册的Timer
+                BstPicLoader.LoadingTimers.Remove(picture); // 加载完成，删除Dictionary里注册的Timer
                 loadingTimer.Dispose();
 
                 BstManager.ShowMsgInTextBox(box, "图片下载完成：" + url);
