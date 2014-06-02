@@ -60,7 +60,6 @@ namespace BladeSoulTool.lib
         public const string GithubBranch = "upk";
 
         public byte[] LoadingGifBytes { get; set; }
-        public Bitmap LoadingGifBitmap { get; set; }
 
         public JObject SystemSettings { get; set; }
         public JObject DataCostume { get; set; }
@@ -93,9 +92,6 @@ namespace BladeSoulTool.lib
             this.RaceTypes.AddRange(new string[] {
                 "KunN", "JinF", "JinM", "GonF", "GonM", "LynF", "LynM"
             });
-
-            this.LoadingGifBytes = BstManager.GetBytesFromFile(BstManager.PathLoadingGif);
-            this.LoadingGifBitmap = BstManager.ConvertByteToImage(this.LoadingGifBytes);
         }
 
         private static JObject ReadJsonFile(string path)
