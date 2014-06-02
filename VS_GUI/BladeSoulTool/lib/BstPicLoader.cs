@@ -44,7 +44,23 @@ namespace BladeSoulTool.lib
                         {
                             picture.Image = loadingGif.GetNextFrame();
                         };
-                        picture.BeginInvoke(loadingAction);
+                        try
+                        {
+                            picture.BeginInvoke(loadingAction);
+                        }
+                        catch (InvalidOperationException ex)
+                        {
+                            // 因为我们可能会在GUI_Picture的UI中的PictureBox里显示loading动态图
+                            // 而上述的窗口可能在关闭后被销毁，这里我们需要处理窗口被销毁后的错误
+                            // 这时候Timer应该在Dictionary里注册过了
+                            if (BstPicLoader._loadingTimers.ContainsKey(picture))
+                            {
+                                var timer = BstPicLoader._loadingTimers[picture];
+                                timer.Enabled = false;
+                                BstPicLoader._loadingTimers.Remove(picture);
+                                timer.Dispose();
+                            }
+                        }
                     };
                     BstPicLoader._loadingTimers.Add(picture, loadingTimer);
                     loadingTimer.Enabled = true;
@@ -72,7 +88,7 @@ namespace BladeSoulTool.lib
                     }
                 }
 
-                loadingTimer.Enabled = false; // 记载完成，停止动态loading图的更新
+                loadingTimer.Enabled = false; // 加载完成，停止动态loading图的更新
                 BstPicLoader._loadingTimers.Remove(picture); // 加载完成，删除Dictionary里注册的Timer
                 loadingTimer.Dispose();
 

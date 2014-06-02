@@ -6,19 +6,11 @@ using System.Windows.Forms;
 
 namespace BladeSoulTool.lib
 {
-    /**
-     * 几个问题:
-     * picturebox里的gif动画，没有播放，还要居中
-     * zip打包，grunt脚本制作
-     * util界面制作
-     * 3d模型语言grunt脚本制作
-     * 替换、还原grunt脚本集成
-     */
     class BstIconLoader
     {
         private static BstIconLoader _instance;
 
-        public static BstIconLoader Instance 
+        public static BstIconLoader Instance
         {
             get 
             {
