@@ -1,3 +1,3 @@
 @echo off
 
-grunt upk_parser --stack & pause > nul
+grunt png_optimizer --stack & pause > nul

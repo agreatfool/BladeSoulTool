@@ -6,18 +6,11 @@ using System.Windows.Forms;
 
 namespace BladeSoulTool.lib
 {
-    /**
-     * 几个问题:
-     * 所有的picturebox的图片加载都需要更新，GUI PICTURE
-     * 顶部的两个icon picture box，也需要更新
-     * 图片加载的几个路径，和几个工具函数的调用，都比较麻烦，最好重构下
-     * picturebox里的gif动画，没有播放，还要居中
-     */
     class BstIconLoader
     {
         private static BstIconLoader _instance;
 
-        public static BstIconLoader Instance 
+        public static BstIconLoader Instance
         {
             get 
             {
@@ -49,7 +42,8 @@ namespace BladeSoulTool.lib
 
                 // 加载图片
                 byte[] pic = null;
-                var imgCachePath = BstManager.PathVsRoot + BstManager.PathVsTmp + "icon/" + task.Name;
+                var downloadUrl = BstManager.GetIconPicUrl(task.ElementData);
+                var imgCachePath = BstManager.GetIconPicTmpPath(task.ElementData);
                 if (File.Exists(imgCachePath))
                 {
                     // 已有缓存文件
@@ -58,21 +52,17 @@ namespace BladeSoulTool.lib
                 else
                 {
                     // 没有缓存文件，需要下载
-                    pic = BstManager.DownloadImageFile(task.Url, imgCachePath);
+                    pic = BstManager.DownloadImageFile(downloadUrl, imgCachePath);
                 }
 
                 // 检查结果并更新UI
                 if (pic == null)
                 {
-                    MethodInvoker msgFailedAction = () => task.Box.AppendText("图片下载失败：" + task.Url + "\r\n");
-                    task.Box.BeginInvoke(msgFailedAction);
-                    BstLogger.Instance.Log("[BstIconLoader] Pic download failed: " + task.Url);
+                    BstManager.ShowMsgInTextBox(task.Box, "图片下载失败：" + downloadUrl);
                 }
                 else
                 {
-                    MethodInvoker msgDownloadedAction = () => task.Box.AppendText("图片下载完成：" + task.Url + "\r\n");
-                    task.Box.BeginInvoke(msgDownloadedAction);
-                    BstLogger.Instance.Log("[BstIconLoader] Pic downloaded: " + task.Url);
+                    BstManager.ShowMsgInTextBox(task.Box, "图片下载完成：" + downloadUrl);
 
                     // 更新图片
                     task.Table.Rows[task.RowId][task.ColId] = pic;
@@ -90,8 +80,7 @@ namespace BladeSoulTool.lib
                 // 当前工作队列已清空，最后更新UI，设置关闭状态
                 MethodInvoker tableFinalUpdateAction = () => task.Grid.Refresh();
                 task.Grid.BeginInvoke(tableFinalUpdateAction);
-                MethodInvoker msgDoneAction = () => task.Box.AppendText("所有图片下载任务完成 ...\r\n");
-                task.Box.BeginInvoke(msgDoneAction);
+                BstManager.ShowMsgInTextBox(task.Box, "所有图片下载任务完成 ...");
                 BstLogger.Instance.Log("[BstIconLoader] Queued works all done, thread exit ...");
                 isAnyTaskLeft = false;
             }
