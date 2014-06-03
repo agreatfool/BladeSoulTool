@@ -122,6 +122,7 @@ module.exports = function(grunt) {
                         "!run.sh", // exclude run.sh file
                         "!.gitignore", // exclude .gitignore file
                         "!.git", // exclude .git dir
+                        "!.idea", // exclude the .idea dir
                         "!**/*.zip", // exclude all *.zip files
                         "!**/*.log", // exclude all *.log files
                         "!**/*.png", // exclude all *.png files
