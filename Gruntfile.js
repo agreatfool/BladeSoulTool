@@ -109,36 +109,6 @@ module.exports = function(grunt) {
         this.async();
     };
 
-    var Task_Crawler = function() { // --part=body
-        var Crawler = require('./src/crawler/bst_crawler.js');
-
-        this.async();
-
-        var part = grunt.option('part');
-        if (typeof part === 'undefined' || part == null || part == '') {
-            grunt.log.error('[Grunt Task_Crawler] Command line option "--part" not given, use default value: "body".');
-            part = BstConst.PART_BODY;
-        }
-
-        var crawler = new Crawler(grunt);
-        crawler.start(part);
-    };
-
-    var Task_Crawler_MatchCheck = function() { // --part=body
-        var Crawler = require('./src/crawler/bst_crawler.js');
-
-        this.async();
-
-        var part = grunt.option('part');
-        if (typeof part === 'undefined' || part == null || part == '') {
-            grunt.log.error('[Grunt Task_Crawler_MatchCheck] Command line option "--part" not given, use default value: "body".');
-            part = BstConst.PART_BODY;
-        }
-
-        var crawler = new Crawler(grunt);
-        crawler.matchCheck(part);
-    };
-
     var Task_MeshParser = function() { // --part=body
         var Parser = require('./src/mesh/bst_mesh_parser.js');
 
