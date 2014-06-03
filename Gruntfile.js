@@ -102,6 +102,54 @@ module.exports = function(grunt) {
         "clearLogFile": true
     });
 
+    // zip 压缩插件
+    grunt.initConfig({
+        "compress": {
+            "main": {
+                "options": {
+                    "archive": "BladeSoulTool.zip",
+                    "mode": "zip",
+                    "level": 9,
+                    "pretty": true
+                },
+                "files": [{
+                    "expand": true,
+                    "src": [
+                        "**", // including all files first
+                        "!**/.DS_Store", // exclude MAC Finder dirs
+                        "!**/Thumbs.db", // exclude Thumbs.db files
+                        "!run.bat", // exclude run.bat file
+                        "!run.sh", // exclude run.sh file
+                        "!.gitignore", // exclude .gitignore file
+                        "!.git", // exclude .git dir
+                        "!**/*.zip", // exclude all *.zip files
+                        "!**/*.log", // exclude all *.log files
+                        "!**/*.png", // exclude all *.png files
+                        "!**/*.tga", // exclude all *.tga files
+                        "!resources/dedat/output/**/*", // exclude dedat output
+                        "!resources/optipng/output/**/*", // exclude optipng output
+                        "!resources/tga2png/output/**/*", // exclude tga2png output
+                        "!resources/umodel/output/**/*", // exclude umodel output
+                        // VS UI rules
+                        "!**/*.cs", // exclude *.cs files
+                        "!**/*.resx", // exclude *.resx files
+                        "!**/*.csproj", // exclude *.csproj files
+                        "!**/*.csproj.user", // exclude *.csproj.user files
+                        "!**/*.sln", // exclude *.sln files
+                        "!**/*.suo", // exclude *.suo files
+                        "!VS_GUI/BladeSoulTool/lib", // exclude VS UI lib
+                        "!VS_GUI/BladeSoulTool/obj/**/*", // exclude VS UI obj
+                        "!VS_GUI/BladeSoulTool/Properties", // exclude VS UI Properties
+                        "!VS_GUI/BladeSoulTool/resources/wekeroad-ink.vssettings", // exclude resources
+                        "!VS_GUI/BladeSoulTool/ui" // exclude VS UI ui
+                    ],
+                    "dest": "BladeSoulTool/"
+                }]
+            }
+        }
+    });
+    grunt.loadNpmTasks('grunt-contrib-compress');
+
     //------------------------------------------------------------------------------------------------
     //- TASK
     //------------------------------------------------------------------------------------------------
@@ -231,8 +279,6 @@ module.exports = function(grunt) {
     // Tasks
     //-------------------------------------------------------------------------------------------
     grunt.registerTask('default', Task_Default);
-    grunt.registerTask('crawler', Task_Crawler);
-    grunt.registerTask('crawler_check', Task_Crawler_MatchCheck);
     grunt.registerTask('parser', Task_MeshParser);
     grunt.registerTask('parser_prepare', Task_MeshParser_Prepare);
     grunt.registerTask('parser_check', Task_MeshParser_Check);
