@@ -361,7 +361,14 @@ namespace BladeSoulTool.lib
             else
             {
                 MethodInvoker action = () => box.AppendText(msg + "\r\n");
-                box.BeginInvoke(action);
+                try
+                {
+                    box.BeginInvoke(action);
+                }
+                catch (InvalidOperationException ex)
+                {
+                    BstLogger.Instance.Log(ex.ToString());
+                }
             }
             BstLogger.Instance.Log(msg);
         }
