@@ -392,7 +392,7 @@ namespace BladeSoulTool.lib
 
                 var cwd = Directory.GetCurrentDirectory() + "/" + BstManager.PathRoot;
                 const string cmd = "cmd.exe";
-                var arguments = "/c grunt " + task + " " + ((args == null) ? "" : String.Join(" ", args)) + " --stack";
+                var arguments = "/c grunt " + task + " " + ((args == null) ? "" : String.Join(" ", args)) + " --no-color --stack";
                 // 打印命令信息
                 var logMsg = "开始运行：\r\n" + "位置：" + cwd + "\r\n" + "命令：" + cmd + "\r\n" + "参数：" + arguments + "\r\n输出：";
                 BstManager.ShowMsgInTextBox(box, logMsg);
