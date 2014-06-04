@@ -235,7 +235,15 @@ namespace BladeSoulTool.ui
         private void btnView3DOrigin_Click(Object sender, EventArgs e)
         {
             // 预览原始模型的3D模型
-            BstLogger.Instance.Log("btnView3DOrigin_Click");
+            if (this._originElementId == null)
+            {
+                return;
+            }
+            BstManager.Instance.RunGrunt(this.textBoxOut, "upk_viewer", new string[]
+            {
+                "--part=" + BstManager.GetTypeName(this._formType),
+                "--model=" + this._originElementId
+            });
         }
 
         private void btnView2DTarget_Click(Object sender, EventArgs e)
@@ -251,7 +259,15 @@ namespace BladeSoulTool.ui
         private void btnView3DTarget_Click(Object sender, EventArgs e)
         {
             // 预览目标模型的3D模型
-            BstLogger.Instance.Log("btnView3DTarget_Click");
+            if (this._targetElementId == null)
+            {
+                return;
+            }
+            BstManager.Instance.RunGrunt(this.textBoxOut, "upk_viewer", new string[]
+            {
+                "--part=" + BstManager.GetTypeName(this._formType),
+                "--model=" + this._targetElementId
+            });
         }
 
         private void btnReplace_Click(Object sender, EventArgs e)
@@ -264,7 +280,15 @@ namespace BladeSoulTool.ui
         private void btnView3DInfo_Click(Object sender, EventArgs e)
         {
             // 预览选中的对象的3D模型
-            BstLogger.Instance.Log("btnView3DInfo_Click");
+            if (this._selectedElementId == null)
+            {
+                return;
+            }
+            BstManager.Instance.RunGrunt(this.textBoxOut, "upk_viewer", new string[]
+            {
+                "--part=" + BstManager.GetTypeName(this._formType),
+                "--model=" + this._selectedElementId
+            });
         }
 
         private void btnSelectOrigin_Click(Object sender, EventArgs e)

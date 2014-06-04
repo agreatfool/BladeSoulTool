@@ -27,7 +27,7 @@ namespace BladeSoulTool.ui
             this.btnSelectGameDir.Click += new EventHandler(btnSelectGameDir_Click); // 选择游戏安装路径
         }
 
-        private void btnSelectGameDir_Click(object sender, EventArgs e)
+        private void btnSelectGameDir_Click(Object sender, EventArgs e)
         {
             string path = "";
 
@@ -40,7 +40,7 @@ namespace BladeSoulTool.ui
                 if (!File.Exists(path + "/剑灵_腾讯.lnk"))
                 {
                     const string boxTitle = "选择错误";
-                    const string boxMsg = "选择的文件夹没有包含“剑灵_腾讯”！";
+                    const string boxMsg = "选择的文件夹非法，不含“剑灵_腾讯”！";
                     MessageBox.Show(boxMsg, boxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
