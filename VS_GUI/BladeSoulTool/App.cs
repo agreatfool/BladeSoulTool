@@ -59,7 +59,11 @@ namespace BladeSoulTool
                     }
                     break;
                 case BstManager.TypeUtil:
-                    // TODO 制作util面板form
+                    if (this._formUtil == null)
+                    {
+                        this._formUtil = App.CreateUtilForm();
+                        this.tabUtil.Controls.Add(this._formUtil);
+                    }
                     break;
                 default:
                     break;
@@ -69,6 +73,17 @@ namespace BladeSoulTool
         private static Form CreateItemsForm(int type)
         {
             Form form = new GuiItems(type);
+            form.TopLevel = false;
+            form.Visible = true;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.WindowState = FormWindowState.Maximized;
+
+            return form;
+        }
+
+        private static Form CreateUtilForm()
+        {
+            Form form = new GuiUtil();
             form.TopLevel = false;
             form.Visible = true;
             form.FormBorderStyle = FormBorderStyle.None;

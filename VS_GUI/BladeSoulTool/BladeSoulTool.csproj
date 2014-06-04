@@ -55,6 +55,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -66,6 +67,12 @@
     <Compile Include="lib\BstIconLoadTask.cs" />
     <Compile Include="lib\BstPicLoader.cs" />
     <Compile Include="lib\BstGifImage.cs" />
+    <Compile Include="ui\GUI_Util.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\GUI_Util.Designer.cs">
+      <DependentUpon>GUI_Util.cs</DependentUpon>
+    </Compile>
     <Compile Include="ui\GUI_Picture.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +110,9 @@
     </Compile>
     <EmbeddedResource Include="ui\GUI_Picture.resx">
       <DependentUpon>GUI_Picture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\GUI_Util.resx">
+      <DependentUpon>GUI_Util.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

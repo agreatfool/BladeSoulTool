@@ -43,12 +43,20 @@ namespace BladeSoulTool.lib
         public const int TypeCostume = 0;
         public const int TypeAttach = 1;
         public const int TypeWeapon = 2;
-        public const int TypeUtil = 999;
+        public const int TypeUtil = 3;
 
         public const string PathRoot = "../../../../";
         public const string PathConfig = "config/";
         public const string PathDatabase = "database/";
         public const string PathResources = "resources/";
+
+        public const string PathJsonSettings = BstManager.PathRoot + BstManager.PathConfig + "setting.json";
+        public const string PathJsonCostume = BstManager.PathRoot + BstManager.PathDatabase + "costume/data/data.json";
+        public const string PathJsonCostumeInvalid = BstManager.PathRoot + BstManager.PathDatabase + "costume/data/data_invalid.json";
+        public const string PathJsonAttach = BstManager.PathRoot + BstManager.PathDatabase + "attach/data/data.json";
+        public const string PathJsonAttachInvalid = BstManager.PathRoot + BstManager.PathDatabase + "attach/data/data_invalid.json";
+        public const string PathJsonWeapon = BstManager.PathRoot + BstManager.PathDatabase + "weapon/data/data.json";
+        public const string PathJsonWeaponInvalid = BstManager.PathRoot + BstManager.PathDatabase + "weapon/data/data_invalid.json";
 
         public const string PathVsRoot = "../../";
         public const string PathVsLog = "log/";
@@ -76,13 +84,13 @@ namespace BladeSoulTool.lib
 
         private void Init()
         {
-            this.SystemSettings = BstManager.ReadJsonFile(BstManager.PathRoot + BstManager.PathConfig + "setting.json");
-            this.DataCostume = BstManager.ReadJsonFile(BstManager.PathRoot + BstManager.PathDatabase + "costume/data/data.json");
-            this.DataCostumeInvalid = BstManager.ReadJsonFile(BstManager.PathRoot + BstManager.PathDatabase + "costume/data/data_invalid.json");
-            this.DataAttach = BstManager.ReadJsonFile(BstManager.PathRoot + BstManager.PathDatabase + "attach/data/data.json");
-            this.DataAttachInvalid = BstManager.ReadJsonFile(BstManager.PathRoot + BstManager.PathDatabase + "attach/data/data_invalid.json");
-            this.DataWeapon = BstManager.ReadJsonFile(BstManager.PathRoot + BstManager.PathDatabase + "weapon/data/data.json");
-            this.DataWeaponInvalid = BstManager.ReadJsonFile(BstManager.PathRoot + BstManager.PathDatabase + "weapon/data/data_invalid.json");
+            this.SystemSettings = BstManager.ReadJsonFile(BstManager.PathJsonSettings);
+            this.DataCostume = BstManager.ReadJsonFile(BstManager.PathJsonCostume);
+            this.DataCostumeInvalid = BstManager.ReadJsonFile(BstManager.PathJsonCostumeInvalid);
+            this.DataAttach = BstManager.ReadJsonFile(BstManager.PathJsonAttach);
+            this.DataAttachInvalid = BstManager.ReadJsonFile(BstManager.PathJsonAttachInvalid);
+            this.DataWeapon = BstManager.ReadJsonFile(BstManager.PathJsonWeapon);
+            this.DataWeaponInvalid = BstManager.ReadJsonFile(BstManager.PathJsonWeaponInvalid);
 
             this.RaceNames = new List<string>();
             this.RaceNames.AddRange(new string[] {
@@ -92,6 +100,17 @@ namespace BladeSoulTool.lib
             this.RaceTypes.AddRange(new string[] {
                 "KunN", "JinF", "JinM", "GonF", "GonM", "LynF", "LynM"
             });
+
+            this.LoadingGifBytes = BstManager.GetBytesFromFile(BstManager.PathLoadingGif);
+
+            // 检查已配置的游戏地址配置
+            var gamePath = (string) this.SystemSettings["path"]["game"];
+            if (!string.IsNullOrEmpty(gamePath) && !Directory.Exists(gamePath))
+            {
+                // 游戏地址配置不存在，更新为null
+                this.SystemSettings["path"]["game"] = null;
+                BstManager.WriteJsonFile(BstManager.PathJsonSettings, this.SystemSettings);
+            }
         }
 
         private static JObject ReadJsonFile(string path)
@@ -160,6 +179,16 @@ namespace BladeSoulTool.lib
             }
 
             return filtered;
+        }
+
+        public static void WriteJsonFile(string path, JObject json)
+        {
+            if (!File.Exists(path))
+            {
+                BstManager.CreateFile(path);
+            }
+
+            File.WriteAllText(path, json.ToString(Formatting.Indented));
         }
 
         public static byte[] DownloadImageFile(string url, string path)

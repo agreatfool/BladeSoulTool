@@ -138,7 +138,7 @@ namespace BladeSoulTool.ui
                     var elementId = element.Name;
                     var elementData = (JObject) element.Value;
                     // 填充数据
-                    // 这里暂时不考虑做成动态的gif动画，考虑到列表里的内容可能比较多，那么多timer更新gif动态图可能造成性能问题
+                    // 这里暂时不考虑做成动态的gif动画，考虑到列表里的项可能比较多，那么多timer更新gif动态图可能造成性能问题
                     this._dataTable.Rows.Add(new object[] { BstManager.Instance.LoadingGifBytes, elementId }); 
                     var rowId = this._dataTable.Rows.Count - 1;
                     BstIconLoader.Instance.RegisterTask(new BstIconLoadTask(
