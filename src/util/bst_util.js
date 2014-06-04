@@ -206,7 +206,7 @@ BstUtil.prototype.startToListenAsyncList = function(callback) {
 };
 
 BstUtil.prototype.formatJson = function(json) {
-    return JSON.stringify(json, null, 4);
+    return JSON.stringify(json, null, 2);
 };
 
 BstUtil.prototype.printJson = function(json) {
