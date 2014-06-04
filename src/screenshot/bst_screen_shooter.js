@@ -21,7 +21,7 @@ var BstScreenShooter = function(grunt) {
     this.conf = this.util.readJsonFile('./config/setting.json');
     this.shotInterval = this.conf['umodel_shooter']['interval'];
 
-    this.types = ['costume', 'attach', 'weapon']; // 需要处理的数据类型
+    this.types = BstConst.PART_TYPES; // 需要处理的数据类型
 
     this.data = {}; // 需要处理的数据：database/[attach|costume|weapon]/data/data.json, etc...
     this.workingList = null; // 需要处理的数据的键数组：_.keys(this.data)

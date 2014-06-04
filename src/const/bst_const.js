@@ -15,6 +15,11 @@ BstConst.BACKUP_TAIL = '.bst_bak';
 
 BstConst.PATH_DATABASE = path.join(process.cwd(), 'database');
 
+BstConst.PART_TYPES = ['costume', 'attach', 'weapon'];
+BstConst.PART_TYPE_COSTUME = 'costume';
+BstConst.PART_TYPE_ATTACH  = 'attach';
+BstConst.PART_TYPE_WEAPON  = 'weapon';
+
 //------------------------------------------------------------------------
 //- UPK
 //------------------------------------------------------------------------
