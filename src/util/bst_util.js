@@ -356,7 +356,7 @@ BstUtil.prototype.partTypeCheck = function(partType) {
 BstUtil.prototype.getElementDataFromPartConfFile = function(partType, elementId) {
     this.partTypeCheck(partType);
 
-    var conf = this.readJsonFile(path.join(BstConst.PATH_DATABASE, partType, 'data.json'));
+    var conf = this.readJsonFile(path.join(BstConst.PATH_DATABASE, partType, 'data', 'data.json'));
     if (_.keys(conf).indexOf(elementId) === -1) {
         this.grunt.fail.fatal('[BstUtil] Target element with id "' + elementId + '" was not found in conf of part: ' + partType);
     }
