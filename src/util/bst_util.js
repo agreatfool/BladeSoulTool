@@ -346,4 +346,22 @@ BstUtil.prototype.dataKeyCheck = function(element) {
     return hasInvalidKey;
 };
 
+BstUtil.prototype.partTypeCheck = function(partType) {
+    if (BstConst.PART_TYPES.indexOf(partType) === -1) {
+        this.grunt.fail.fatal('[BstUtil] Invalid part type, part shall only be one of the: "' +
+            this.formatJson(BstConst.PART_TYPES) + '"');
+    }
+};
+
+BstUtil.prototype.getElementDataFromPartConfFile = function(partType, elementId) {
+    this.partTypeCheck(partType);
+
+    var conf = this.readJsonFile(path.join(BstConst.PATH_DATABASE, partType, 'data.json'));
+    if (_.keys(conf).indexOf(elementId) === -1) {
+        this.grunt.fail.fatal('[BstUtil] Target element with id "' + elementId + '" was not found in conf of part: ' + partType);
+    }
+
+    return conf[elementId];
+};
+
 module.exports = BstUtil;

@@ -251,6 +251,22 @@ module.exports = function(grunt) {
         scanner.start();
     };
 
+    var Task_UpkViewer = function() { // --part=costume --model=:modelId
+        var Viewer = require('./src/upk/bst_upk_viewer.js');
+
+        this.async();
+
+        var part = grunt.option('part');
+        if (typeof part === 'undefined' || part == null || part == '') {
+            grunt.log.error('[Grunt Task_UpkViewer] Command line option "--part" not given, use default value: "costume".');
+            part = BstConst.PART_TYPE_COSTUME;
+        }
+        var modelId = grunt.option('model');
+
+        var viewer = new Viewer(grunt);
+        viewer.start(part, modelId);
+    };
+
     var Task_Replace = function() { // --part=body --model=:modelId
         var Replace = require('./src/replace/bst_replace.js');
 
@@ -289,6 +305,7 @@ module.exports = function(grunt) {
     grunt.registerTask('png_optimizer', Task_PngOptimizer);
     grunt.registerTask('upk_scanner', Task_UpkScanner);
     grunt.registerTask('upk_parser', Task_UpkParser);
+    grunt.registerTask('upk_viewer', Task_UpkViewer);
 
     grunt.registerTask('replace', Task_Replace);
     grunt.registerTask('restore', Task_Restore);
