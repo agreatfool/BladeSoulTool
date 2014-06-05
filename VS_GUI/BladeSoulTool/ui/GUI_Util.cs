@@ -37,10 +37,10 @@ namespace BladeSoulTool.ui
             if (result == DialogResult.OK)
             {
                 path = browser.SelectedPath;
-                if (!File.Exists(path + "/剑灵_腾讯.lnk"))
+                if (!File.Exists(path + "/bin/Client.exe"))
                 {
                     const string boxTitle = "选择错误";
-                    const string boxMsg = "选择的文件夹非法，不含“剑灵_腾讯”！";
+                    const string boxMsg = "选择的文件夹不是正确的游戏文件夹！";
                     MessageBox.Show(boxMsg, boxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else

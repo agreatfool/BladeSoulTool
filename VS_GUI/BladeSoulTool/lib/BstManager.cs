@@ -113,9 +113,9 @@ namespace BladeSoulTool.lib
             }
         }
 
-        private static JObject ReadJsonFile(string path)
+        public static JObject ReadJsonFile(string path)
         {
-            var content = (JObject)JToken.ReadFrom(new JsonTextReader(File.OpenText(path)));
+            var content = (JObject) JToken.ReadFrom(new JsonTextReader(File.OpenText(path)));
             BstLogger.Instance.Log("Json file loaded: " + path);
 
             return content;
@@ -352,7 +352,12 @@ namespace BladeSoulTool.lib
                 (string) elementData["core"] + "_" + (string) elementData["col"] + ".png";
         }
 
-        public static void ShowMsgInTextBox(TextBox box, string msg)
+        public static string GetItemOriginJsonPath(int type)
+        {
+            return BstManager.PathRoot + BstManager.PathDatabase + BstManager.GetTypeName(type) + "/data/origin.json";
+        }
+
+        public static void ShowMsgInTextBox(TextBox box, string msg, bool logInConsole = true)
         {
             if (box == null)
             {
@@ -367,10 +372,13 @@ namespace BladeSoulTool.lib
                 }
                 catch (InvalidOperationException ex)
                 {
-                    BstLogger.Instance.Log(ex.ToString());
+                    BstLogger.Instance.Log(ex.ToString()); // 有的时候在显示的时候TextBox已经被销毁，忽略错误
                 }
             }
-            BstLogger.Instance.Log(msg);
+            if (logInConsole)
+            {
+                BstLogger.Instance.Log(msg);
+            }
         }
 
         public void RunGrunt(TextBox box, string task = "", string[] args = null)

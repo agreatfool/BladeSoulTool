@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Data;
+using System.IO;
 using System.Threading;
 using System.Windows.Forms;
 using BladeSoulTool.lib;
@@ -23,6 +24,8 @@ namespace BladeSoulTool.ui
 
         private Thread _loadingThread;
 
+        private JObject _originSettings;
+
         public GuiItems(int formType)
         {
             InitializeComponent();
@@ -33,6 +36,7 @@ namespace BladeSoulTool.ui
         private void Init(int formType)
         {
             this._formType = formType;
+            this._originSettings = BstManager.ReadJsonFile(BstManager.GetItemOriginJsonPath(this._formType));
             // 数据列表
             this._dataTable = new DataTable();
             // icon列
@@ -116,8 +120,33 @@ namespace BladeSoulTool.ui
             {
                 BstManager.ShowMsgInTextBox(this.textBoxOut, "开始加载数据列表数据 ...");
 
-                // TODO 原始模型目标应该会被保存在磁盘上的某个配置文件内，这里需要读出
-                // 并设置到 this.originElementId里，还要更新整个原始模型的cell控件
+                // 更新原始模型区块数据
+                JObject originData = null;
+                if (this._formType == BstManager.TypeAttach
+                    || this._formType == BstManager.TypeCostume)
+                {
+                    var race = BstManager.Instance.RaceTypes[raceType];
+                    var data = (JObject) this._originSettings[race];
+                    if (data != null)
+                    {
+                        this._originElementId = (string) data["id"];
+                        originData = (JObject) data["data"];
+                    }
+                }
+                else
+                {
+                    if (this._originSettings["id"] != null)
+                    {
+                        this._originElementId = (string) this._originSettings["id"];
+                        originData = (JObject) this._originSettings["data"];
+                    }
+                }
+                if (originData != null)
+                {
+                    this.LoadOriginAndTargetIconPic(this.pictureBoxOrigin, originData, true);
+                    BstManager.ShowMsgInTextBox(this.textBoxOrigin, originData.ToString(), false);
+                }
+
                 // 初始化list数据
                 switch (this._formType)
                 {
@@ -273,7 +302,6 @@ namespace BladeSoulTool.ui
         private void btnReplace_Click(Object sender, EventArgs e)
         {
             // 替换模型
-            BstLogger.Instance.Log("btnReplace_Click");
             BstManager.Instance.RunGrunt(this.textBoxOut);
         }
 
@@ -310,11 +338,23 @@ namespace BladeSoulTool.ui
             }
             this._originElementId = this._selectedElementId;
             // 展示icon，该icon应该已经有本地缓存，直接读取本地缓存
-            this.pictureBoxOrigin.ImageLocation = BstManager.GetIconPicTmpPath(element);
-            this.pictureBoxOrigin.Load();
+            this.LoadOriginAndTargetIconPic(this.pictureBoxOrigin, element);
             // 显示模型数据
             this.textBoxOrigin.Text = element.ToString();
-            // TODO 将选择好的原始模型数据写入到文件
+            // 存储原始模型数据
+            var originData = new JObject();
+            originData["id"] = this._originElementId;
+            originData["data"] = element;
+            if (this._formType == BstManager.TypeAttach
+                || this._formType == BstManager.TypeCostume)
+            {
+                this._originSettings[(string) element["race"]] = originData;
+            }
+            else
+            {
+                this._originSettings = originData;
+            }
+            BstManager.WriteJsonFile(BstManager.GetItemOriginJsonPath(this._formType), this._originSettings);
         }
 
         private void btnSelectTarget_Click(Object sender, EventArgs e)
@@ -327,8 +367,7 @@ namespace BladeSoulTool.ui
             this._targetElementId = this._selectedElementId;
             var element = (JObject) this._data[this._selectedElementId];
             // 展示icon，该icon应该已经有本地缓存，直接读取本地缓存
-            this.pictureBoxTarget.ImageLocation = BstManager.GetIconPicTmpPath(element);
-            this.pictureBoxTarget.Load();
+            this.LoadOriginAndTargetIconPic(this.pictureBoxTarget, element);
             // 显示模型数据
             this.textBoxTarget.Text = element.ToString();
         }
@@ -338,6 +377,39 @@ namespace BladeSoulTool.ui
             // 创建一个新的form来展示物件的2D截图
             var pictureForm = new GuiPicture(this._formType, elementId, this.textBoxOut);
             pictureForm.ShowDialog();
+        }
+
+        private void LoadOriginAndTargetIconPic(PictureBox picture, JObject elementData, bool async = false)
+        {
+            var cachePath = BstManager.GetIconPicTmpPath(elementData);
+            if (async)
+            {
+                MethodInvoker picUpdate = delegate
+                {
+                    if (File.Exists(cachePath))
+                    {
+                        picture.ImageLocation = cachePath;
+                    }
+                    else
+                    {
+                        picture.ImageLocation = BstManager.GetIconPicUrl(elementData);
+                    }
+                    picture.Load();
+                };
+                picture.BeginInvoke(picUpdate);
+            }
+            else
+            {
+                if (File.Exists(cachePath))
+                {
+                    picture.ImageLocation = cachePath;
+                }
+                else
+                {
+                    picture.ImageLocation = BstManager.GetIconPicUrl(elementData);
+                }
+                picture.Load();
+            }
         }
 
     }
