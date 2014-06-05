@@ -1,0 +1,150 @@
+Found 16187 game files (144 skipped)
+Loading package: 00021668.upk Ver: 573/1 Engine: 4205 Names: 114 Exports: 7 Imports: 18 Game: 801A
+Loading MaterialInstanceConstant col20 from package 00021668.upk
+Loading package: 00018535.upk Ver: 573/1 Engine: 4205 Names: 31 Exports: 4 Imports: 4 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading SkeletalMesh3 JinM_037 from package 00021668.upk
+Loading Texture2D JinM_037_N from package 00021668.upk
+Loading Texture2D JinM_037_D from package 00018535.upk
+Loading Material3 Beard_ghost from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loaded in 0.058 sec, 2156 allocs, 1.51 MBytes serialized in 170302 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col20
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Hair_Glossiness, ParameterValue=10 }
+        ScalarParameterValues[1] = { ParameterName=Ac_Glossiness, ParameterValue=1 }
+        ScalarParameterValues[2] = { ParameterName=Ghost_Fresnel_Power, ParameterValue=2 }
+    }
+    TextureParameterValues[2] =
+    {
+        TextureParameterValues[0] = { ParameterName=Hair_Diffuse, ParameterValue=Texture2D'JinM_037_D' }
+        TextureParameterValues[1] = { ParameterName=Hair_normal, ParameterValue=Texture2D'JinM_037_N' }
+    }
+    VectorParameterValues[10] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = hair_color_D
+            ParameterValue = { R=0.003697, G=0.001963, B=0.000992, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = hair_color_L
+            ParameterValue = { R=0.25084, G=0.183549, B=0.116576, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = Ac_color_D
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Ac_color_L
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = hair_color_S
+            ParameterValue = { R=0.774227, G=0.722673, B=0.560499, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Ac_color_S
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = Ghost_Fresnel_color
+            ParameterValue = { R=0.5, G=1, B=2.5, A=1 }
+        }
+    }
+    Parent = Material3'Beard_ghost'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: JinM_037
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col20' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col20', FirstIndex=0, NumFaces=1368 }
+            }
+            NumVerts = 1130
+            IndexCount = 4104
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 9
+
+Object info:
+============
+ClassName: Texture2D ObjectName: JinM_037_N
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }

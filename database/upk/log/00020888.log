@@ -1,0 +1,149 @@
+Found 16187 game files (144 skipped)
+Loading package: 00020888.upk Ver: 573/1 Engine: 4205 Names: 605 Exports: 1605 Imports: 81 Game: 801A
+Loading Material3 FX_Ice_Mat from package 00020888.upk
+Loading package: 00020887.upk Ver: 573/1 Engine: 4205 Names: 31 Exports: 4 Imports: 2 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Material3 Parent_BG_Simple from package 00020888.upk
+Loading package: parent_normal.upk Ver: 573/1 Engine: 4205 Names: 1079 Exports: 9486 Imports: 96 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00020888.upk
+Loading Texture2D Parent_Ice_N from package 00020887.upk
+Loading Texture2D tex_Monster_Etc_Icicle_col1N from package 00020887.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D tex_Monster_Etc_Icicle_col1D from package 00020887.upk
+Loading Texture2D Ice_003_D from package 00020887.upk
+Loading Texture2D Parent_diffuse from package parent_normal.upk
+Loaded in 0.069 sec, 3677 allocs, 1.67 MBytes serialized in 338467 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FX_Ice_Mat
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'Parent_Ice_N'
+        ReferencedTextures[1] = Texture2D'tex_Monster_Etc_Icicle_col1N'
+        ReferencedTextures[2] = Texture2D'check'
+        ReferencedTextures[3] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[4] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[5] = Texture2D'tex_Monster_Etc_Icicle_col1D'
+        ReferencedTextures[6] = Texture2D'Ice_003_D'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Parent_BG_Simple
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Parent_diffuse' }
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[10] =
+    {
+        ScalarParameterValues[0] = { ParameterName=IceNormal_Intensity, ParameterValue=0.5 }
+        ScalarParameterValues[1] = { ParameterName=TransmissionMask_Intensity, ParameterValue=0.5 }
+        ScalarParameterValues[2] = { ParameterName=Specular_Range, ParameterValue=200 }
+        ScalarParameterValues[3] = { ParameterName=DiffuseSpecular_Desaturation, ParameterValue=0.5 }
+        ScalarParameterValues[4] = { ParameterName=DiffuseSpecular_Intensity, ParameterValue=50 }
+        ScalarParameterValues[5] = { ParameterName=Diffuse_Intensity, ParameterValue=2 }
+        ScalarParameterValues[6] = { ParameterName=IceDiffuse_Cameravector, ParameterValue=5 }
+        ScalarParameterValues[7] = { ParameterName=IceDiffuse_Depth_Intensity, ParameterValue=1 }
+        ScalarParameterValues[8] = { ParameterName=IceDiffuse_Depth, ParameterValue=-1 }
+        ScalarParameterValues[9] = { ParameterName=IceDiffuse_OutIntensity, ParameterValue=14 }
+    }
+    TextureParameterValues[6] =
+    {
+        TextureParameterValues[0] =
+        {
+            ParameterName = BaseNormalTexture
+            ParameterValue = Texture2D'tex_Monster_Etc_Icicle_col1N'
+        }
+        TextureParameterValues[1] = { ParameterName=IceNormalTexture, ParameterValue=Texture2D'Parent_Ice_N' }
+        TextureParameterValues[2] = { ParameterName=Mask_FX_Texture, ParameterValue=Texture2D'Smoke_Pattern_001' }
+        TextureParameterValues[3] =
+        {
+            ParameterName = DiffuseTexture
+            ParameterValue = Texture2D'tex_Monster_Etc_Icicle_col1D'
+        }
+        TextureParameterValues[4] = { ParameterName=FX_Add, ParameterValue=Texture2D'Parent_Ice_N' }
+        TextureParameterValues[5] = { ParameterName=IceDiffuseTexture, ParameterValue=Texture2D'Ice_003_D' }
+    }
+    VectorParameterValues[8] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = TransmissionMask_Color
+            ParameterValue = { R=0.420508, G=0.766744, B=1, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = DiffuseSpecular_Color
+            ParameterValue = { R=0.348865, G=0.579547, B=0.940601, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Fx_Glow_power_A
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Glow_Trangition_A
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Fx_Glow_color_A
+            ParameterValue = { R=0.74, G=-0.02, B=-0.14, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = IceDiffuse_OutColor
+            ParameterValue = { R=0.442323, G=0.774227, B=1, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = IceFresnel_color
+            ParameterValue = { R=0.154152, G=0.45908, B=0.940601, A=1 }
+        }
+    }
+    Parent = Material3'FX_Ice_Mat'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

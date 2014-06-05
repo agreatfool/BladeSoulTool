@@ -1,0 +1,110 @@
+Found 16187 game files (144 skipped)
+Loading package: 00016770.upk Ver: 573/1 Engine: 4205 Names: 93 Exports: 1 Imports: 20 Game: 801A
+Loading MaterialInstanceConstant col5 from package 00016770.upk
+Loading package: 00010239.upk Ver: 573/1 Engine: 4205 Names: 57 Exports: 28 Imports: 4 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D Monster_Etc_Haetae_col5_N from package 00010239.upk
+Loading Texture2D Monster_Etc_Haetae_col5_M from package 00010239.upk
+Loading Texture2D Monster_Etc_Haetae_col5_D from package 00010239.upk
+Loading Texture2D Monster_Etc_Haetae_col5_S from package 00010239.upk
+Loading TextureCube cube_orb from package 00002640.upk
+Loading Texture2D Monster_Etc_Haetae_col5_E from package 00010239.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.1 sec, 2701 allocs, 1.86 MBytes serialized in 146132 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col5
+
+    ScalarParameterValues[10] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=2.5 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness1, ParameterValue=8 }
+        ScalarParameterValues[2] = { ParameterName=Glossiness2, ParameterValue=80 }
+        ScalarParameterValues[3] = { ParameterName=Specular_value, ParameterValue=5 }
+        ScalarParameterValues[4] = { ParameterName=HighLight_Value, ParameterValue=5 }
+        ScalarParameterValues[5] = { ParameterName=HighLight_glossiness, ParameterValue=100 }
+        ScalarParameterValues[6] = { ParameterName=Emissive_value, ParameterValue=2 }
+        ScalarParameterValues[7] = { ParameterName=Emissive_value2, ParameterValue=2 }
+        ScalarParameterValues[8] = { ParameterName=Fresnel Value, ParameterValue=30 }
+        ScalarParameterValues[9] = { ParameterName=Fresnel exponent, ParameterValue=30 }
+    }
+    TextureParameterValues[6] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'Monster_Etc_Haetae_col5_N' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'Monster_Etc_Haetae_col5_M' }
+        TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'Monster_Etc_Haetae_col5_D' }
+        TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'Monster_Etc_Haetae_col5_S' }
+        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'cube_orb' }
+        TextureParameterValues[5] = { ParameterName=Emissive, ParameterValue=Texture2D'Monster_Etc_Haetae_col5_E' }
+    }
+    VectorParameterValues[9] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=0.982826, G=0.673049, B=0.378676, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = HighLight_Color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Burn_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Glow_Trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = Fx_Glow_power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = Fx_Glow_color
+            ParameterValue = { R=0, G=1, B=0, A=1 }
+        }
+    }
+    Parent = Material3'Basic'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

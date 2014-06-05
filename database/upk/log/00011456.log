@@ -1,0 +1,24 @@
+Found 16187 game files (144 skipped)
+Loading package: 00011456.upk Ver: 573/1 Engine: 4205 Names: 162 Exports: 1 Imports: 130 Game: 801A
+Loading AnimSet hwerang_animset from package 00011456.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+WARNING: AnimSet hwerang_animset has 0 sequences, but empty TrackBoneNames
+Loaded in 0.001 sec, 183 allocs, 0.01 MBytes serialized in 1482 calls.
+
+Object info:
+============
+ClassName: AnimSet ObjectName: hwerang_animset
+
+    bAnimRotationOnly = true
+    TrackBoneNames[0] = {}
+    Sequences[0] = {}
+    UseTranslationBoneNames[1] = { Bip01 }
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00010381.hwerang
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None

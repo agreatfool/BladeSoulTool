@@ -1,0 +1,150 @@
+Found 16187 game files (144 skipped)
+Loading package: 00005605.upk Ver: 573/1 Engine: 4205 Names: 94 Exports: 4 Imports: 31 Game: 801A
+Loading MaterialInstanceConstant Drop_Bottle from package 00005605.upk
+Loading package: 00005604.upk Ver: 573/1 Engine: 4205 Names: 44 Exports: 16 Imports: 2 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading MaterialInstanceConstant Drop_Cloth from package 00005605.upk
+Loading MaterialInstanceConstant Drop_Money from package 00005605.upk
+Loading MaterialInstanceConstant Drop_Pouch from package 00005605.upk
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading Texture2D Drop_Bottle_n from package 00005604.upk
+Loading Texture2D Drop_Bottle_m from package 00005604.upk
+Loading Texture2D Drop_Bottle_d from package 00005604.upk
+Loading Texture2D Drop_Bottle_s from package 00005604.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D Drop_Cloth_n from package 00005604.upk
+Loading Texture2D Drop_Cloth_m from package 00005604.upk
+Loading Texture2D Drop_Cloth_d from package 00005604.upk
+Loading Texture2D Drop_Cloth_s from package 00005604.upk
+Loading Texture2D Drop_Money_N from package 00005604.upk
+Loading Texture2D Drop_Money_M from package 00005604.upk
+Loading Texture2D Drop_Money_D from package 00005604.upk
+Loading Texture2D Drop_Money_S from package 00005604.upk
+Loading Texture2D Drop_Pouch_n from package 00005604.upk
+Loading Texture2D Drop_Pouch_m from package 00005604.upk
+Loading Texture2D Drop_Pouch_d from package 00005604.upk
+Loading Texture2D Drop_Pouch_s from package 00005604.upk
+Loading TextureCube cube_orb from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.15 sec, 2965 allocs, 1.03 MBytes serialized in 147944 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Drop_Bottle
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Glossiness1, ParameterValue=2.5 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness2, ParameterValue=15 }
+        ScalarParameterValues[2] = { ParameterName=Specular_value, ParameterValue=3 }
+    }
+    TextureParameterValues[4] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'Drop_Bottle_n' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'Drop_Bottle_m' }
+        TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'Drop_Bottle_d' }
+        TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'Drop_Bottle_s' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Basic'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Drop_Cloth
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Glossiness1, ParameterValue=1.5 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness2, ParameterValue=3.5 }
+        ScalarParameterValues[2] = { ParameterName=Specular_value, ParameterValue=3 }
+    }
+    TextureParameterValues[4] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'Drop_Cloth_n' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'Drop_Cloth_m' }
+        TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'Drop_Cloth_d' }
+        TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'Drop_Cloth_s' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Basic'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Drop_Money
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Glossiness1, ParameterValue=6 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness2, ParameterValue=1 }
+        ScalarParameterValues[2] = { ParameterName=Specular_value, ParameterValue=1 }
+    }
+    TextureParameterValues[4] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'Drop_Money_N' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'Drop_Money_M' }
+        TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'Drop_Money_D' }
+        TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'Drop_Money_S' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Basic'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Drop_Pouch
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Glossiness1, ParameterValue=1.5 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness2, ParameterValue=5 }
+        ScalarParameterValues[2] = { ParameterName=Specular_value, ParameterValue=3 }
+    }
+    TextureParameterValues[5] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'Drop_Pouch_n' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'Drop_Pouch_m' }
+        TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'Drop_Pouch_d' }
+        TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'Drop_Pouch_s' }
+        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'cube_orb' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Basic'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

@@ -1,0 +1,44 @@
+Found 16187 game files (144 skipped)
+Loading package: 00016068.upk Ver: 573/1 Engine: 4205 Names: 113 Exports: 1 Imports: 2 Game: 801A
+Loading SkeletalMesh3 41001_GonF_col3 from package 00016068.upk
+Loaded in 0.01 sec, 158 allocs, 0.38 MBytes serialized in 119848 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 41001_GonF_col3
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { None }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=None, FirstIndex=0, NumFaces=4233 }
+            }
+            NumVerts = 3055
+            IndexCount = 12699
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 93

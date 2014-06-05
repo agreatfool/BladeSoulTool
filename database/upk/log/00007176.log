@@ -1,0 +1,85 @@
+Found 16187 game files (144 skipped)
+Loading package: 00007176.upk Ver: 573/1 Engine: 4205 Names: 317 Exports: 1 Imports: 146 Game: 801A
+Loading AnimSet JinF_Facial_AnimSet from package 00007176.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::UseMovementBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+Loaded in 0.001 sec, 339 allocs, 0.01 MBytes serialized in 2181 calls.
+
+Object info:
+============
+ClassName: AnimSet ObjectName: JinF_Facial_AnimSet
+
+    bAnimRotationOnly = true
+    TrackBoneNames[59] =
+    {
+        TrackBoneNames[0] = Bip01Neck1
+        TrackBoneNames[1] = Bip01Head
+        TrackBoneNames[2] = Face_Root
+        TrackBoneNames[3] = mouth_jaw_DWN
+        TrackBoneNames[4] = mouth_DWN_MID
+        TrackBoneNames[5] = mouth_DWN_R
+        TrackBoneNames[6] = mouth_DWN_L
+        TrackBoneNames[7] = tongue_01
+        TrackBoneNames[8] = tongue_02
+        TrackBoneNames[9] = mouth_jaw_UP
+        TrackBoneNames[10] = mouth_UP_MID
+        TrackBoneNames[11] = mouth_UP_R
+        TrackBoneNames[12] = mouth_UP_L
+        TrackBoneNames[13] = nose_MID
+        TrackBoneNames[14] = nose_R
+        TrackBoneNames[15] = nose_L
+        TrackBoneNames[16] = Lear
+        TrackBoneNames[17] = Rear
+        TrackBoneNames[18] = mouth_MID_L
+        TrackBoneNames[19] = mouth_MID_R
+        TrackBoneNames[20] = Reye_UP
+        TrackBoneNames[21] = Reye_DWN
+        TrackBoneNames[22] = Leye_UP
+        TrackBoneNames[23] = Leye_DWN
+        TrackBoneNames[24] = Reyebrows_OUT
+        TrackBoneNames[25] = Reyebrows_IN
+        TrackBoneNames[26] = Leyebrows_IN
+        TrackBoneNames[27] = Leyebrows_OUT
+        TrackBoneNames[28] = Reye_OUT
+        TrackBoneNames[29] = Reye_IN
+        TrackBoneNames[30] = Leye_IN
+        TrackBoneNames[31] = Leye_OUT
+        TrackBoneNames[32] = Reye
+        TrackBoneNames[33] = Leye
+        TrackBoneNames[34] = cheek_L
+        TrackBoneNames[35] = cheek_R
+        TrackBoneNames[36] = cheekUp_L
+        TrackBoneNames[37] = cheekUp_R
+        TrackBoneNames[38] = Root
+        TrackBoneNames[39] = Bip01
+        TrackBoneNames[40] = Bip01Pelvis
+        TrackBoneNames[41] = Bip01Spine
+        TrackBoneNames[42] = Bip01Spine1
+        TrackBoneNames[43] = Bip01Spine2
+        TrackBoneNames[44] = Bip01Neck
+        TrackBoneNames[45] = Bip01LClavicle
+        TrackBoneNames[46] = Bip01LUpperArm
+        TrackBoneNames[47] = Bip01LForeArm
+        TrackBoneNames[48] = Bip01LHand
+        TrackBoneNames[49] = Bip01RClavicle
+        TrackBoneNames[50] = Bip01RUpperArm
+        TrackBoneNames[51] = Bip01RForeArm
+        TrackBoneNames[52] = Bip01RHand
+        TrackBoneNames[53] = Bip01LThigh
+        TrackBoneNames[54] = Bip01LCalf
+        TrackBoneNames[55] = Bip01LFoot
+        TrackBoneNames[56] = Bip01RThigh
+        TrackBoneNames[57] = Bip01RCalf
+        TrackBoneNames[58] = Bip01RFoot
+    }
+    Sequences[0] = {}
+    UseTranslationBoneNames[0] = {}
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00002691.JinF_001
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None

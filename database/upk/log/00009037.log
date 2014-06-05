@@ -1,0 +1,64 @@
+Found 16187 game files (144 skipped)
+Loading package: 00009037.upk Ver: 573/1 Engine: 4205 Names: 74 Exports: 2 Imports: 20 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00009037.upk
+Loading package: 00009036.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 8 Imports: 4 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D D from package 00009036.upk
+Loading Texture2D S from package 00009036.upk
+Loading Texture2D N from package 00009036.upk
+Loading Texture2D M from package 00009036.upk
+Loading Material3 Hair_Ac from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loaded in 0.082 sec, 2182 allocs, 1.48 MBytes serialized in 133291 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Ac_Glossiness, ParameterValue=5 }
+        ScalarParameterValues[1] = { ParameterName=Hair_Glossiness, ParameterValue=15 }
+        ScalarParameterValues[2] = { ParameterName=Ac_Glossiness2, ParameterValue=50 }
+    }
+    TextureParameterValues[4] =
+    {
+        TextureParameterValues[0] = { ParameterName=Hair_Diffuse, ParameterValue=Texture2D'D' }
+        TextureParameterValues[1] = { ParameterName=Hair_Specular, ParameterValue=Texture2D'S' }
+        TextureParameterValues[2] = { ParameterName=Hair_normal, ParameterValue=Texture2D'N' }
+        TextureParameterValues[3] = { ParameterName=Hair_Mask_RGB, ParameterValue=Texture2D'M' }
+    }
+    VectorParameterValues[3] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = hair_color_S
+            ParameterValue = { R=0.420508, G=0.383775, B=0.21952, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = hair_color_L
+            ParameterValue = { R=0.136099, G=0.096266, B=0.073828, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = hair_color_D
+            ParameterValue = { R=0.035614, G=0.030257, B=0.035614, A=1 }
+        }
+    }
+    Parent = Material3'Hair_Ac'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

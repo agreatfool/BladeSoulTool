@@ -1,0 +1,44 @@
+Found 16187 game files (144 skipped)
+Loading package: 00006660.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 5 Imports: 8 Game: 801A
+Loading SkeletalMesh3 Fly_Dummy from package 00006660.upk
+Loaded in 0.001 sec, 81 allocs, 0.00 MBytes serialized in 496 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: Fly_Dummy
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[0] = {}
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=None, FirstIndex=0, NumFaces=1 }
+            }
+            NumVerts = 3
+            IndexCount = 3
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 1

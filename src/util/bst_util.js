@@ -14,15 +14,16 @@ var BstUtil = function(grunt) {
     /** @type {grunt} */
     this.grunt = grunt;
 
+    this.gruntWorkingPath = process.cwd();
+
     this.conf = this.readJsonFile('./config/setting.json');
     this.tencentPath = path.join(this.conf['path']['game'], this.conf['path']['tencent']);
     this.bnsPath = path.join(this.conf['path']['game'], this.conf['path']['bns']);
 
     this.asyncList = []; // 异步工作控制器的注册列表
 
-    this.requiredMeshDataKeys = [ // 从mesh.xml中解析出来的数据必须有的键值
-        "skeleton", "texture", "material", "col1Material", "col",
-        "codeWithRace", "code", "race", "name", "pic", "piclink", "link"
+    this.requiredDataKeys = [ // 解析出来的数据必须有的键值
+        "skeleton", "texture", "material", "col1Material", "col", "core", "code", "race", "pic"
     ];
 };
 
@@ -57,10 +58,20 @@ BstUtil.prototype.copyFile = function(fromPath, toPath) {
     this.grunt.log.writeln('[BstUtil] Copy file FROM: ' + fromPath + ', TO: ' + toPath);
 };
 
-BstUtil.prototype.deleteDir = function(path) {
-    this.checkFileExists(path);
-    this.grunt.file.delete(path);
-    this.grunt.log.writeln('[BstUtil] Delete dir: ' + path);
+BstUtil.prototype.deleteDir = function(path, check) {
+    if (typeof check === 'undefined') {
+        check = true; // 默认会检查删除目标是否存在
+    }
+    if (check) {
+        this.checkFileExists(path);
+        this.grunt.file.delete(path);
+        this.grunt.log.writeln('[BstUtil] Delete dir: ' + path);
+    } else {
+        if (this.grunt.file.exists(path)) {
+            this.grunt.file.delete(path);
+            this.grunt.log.writeln('[BstUtil] Delete dir: ' + path);
+        }
+    }
 };
 
 BstUtil.prototype.deleteFile = function(path) {
@@ -74,7 +85,7 @@ BstUtil.prototype.mkdir = function(path) {
         this.grunt.file.mkdir(path);
         this.grunt.log.writeln('[BstUtil] mkdir: ' + path);
     } else {
-        this.grunt.log.error('[BstUtil] mkdir not work, since dir already exists: ' + path);
+        this.grunt.log.error('[BstUtil] mkdir did nothing, since dir already exists: ' + path);
     }
 };
 
@@ -162,7 +173,7 @@ BstUtil.prototype.backupFile = function(originPath) { // 这里的path是需要�
 BstUtil.prototype.restoreFile = function(backupPath) { // 这里的path是带后缀名的已备份文件
     var dir = path.dirname(backupPath);
     var backupName = path.basename(backupPath);
-    var originName = backupName.substr(0, backupName.indexOf(BstConst.BACKUP_TAIL) - 1);
+    var originName = backupName.substr(0, backupName.indexOf(BstConst.BACKUP_TAIL));
     var originPath = path.join(dir, originName);
     if (this.grunt.file.exists(backupPath)) { // 备份文件存在
         this.copyFile(backupPath, originPath);
@@ -195,7 +206,7 @@ BstUtil.prototype.startToListenAsyncList = function(callback) {
 };
 
 BstUtil.prototype.formatJson = function(json) {
-    return JSON.stringify(json, null, 4);
+    return JSON.stringify(json, null, 2);
 };
 
 BstUtil.prototype.printJson = function(json) {
@@ -229,6 +240,24 @@ BstUtil.prototype.fileDownload = function(url, filepath, callback, headers) {
     });
 };
 
+BstUtil.prototype.readFileSplitWithLineBreak = function(filePath) {
+    var content = this.readFile(filePath).toString();
+    var lineBreak = this.detectFileLineBreak(content);
+
+    return content.split(lineBreak);
+};
+
+BstUtil.prototype.detectFileLineBreak = function(fileContent) {
+    var lfCount = fileContent.countOccurence("\n");
+    var crlfCount = fileContent.countOccurence("\r\n");
+
+    if (crlfCount > lfCount) {
+        return "\r\n";
+    } else {
+        return "\n";
+    }
+};
+
 BstUtil.prototype.findUpkPath = function(upkId, errCallback) {
     var upkName = upkId + '.upk';
     var upkPath = path.join(this.getBnsPath(), upkName);
@@ -253,7 +282,7 @@ BstUtil.prototype.formatRawCode = function(rawCode) {
      * rawCode：基本上应该是 "数字短码_种族性别" 这样的格式，e.g：20002_KunN，
      * 但事实上mesh.xml里有大量的大小写错误，或者拼写错误之类的不符合规律的地方，
      * 为了方便后续的逻辑处理，我们这里会把 "种族性别" 这个字符串格式化为：
-     * KunN | JinF | JinM | GonF | GonM | LynF | LynM
+     * KunN | JinF | JinM | GonF | GonM | LynF | LynM | All
      */
     // 处理：_Kun
     if (rawCode.indexOf('_') !== -1
@@ -273,15 +302,39 @@ BstUtil.prototype.formatRawCode = function(rawCode) {
         replace(new RegExp('gonf', 'i'), 'GonF').
         replace(new RegExp('gonm', 'i'), 'GonM').
         replace(new RegExp('lynf', 'i'), 'LynF').
-        replace(new RegExp('lynm', 'i'), 'LynM');
+        replace(new RegExp('lynm', 'i'), 'LynM').
+        replace(new RegExp('all', 'i'), 'All');
 };
 
-BstUtil.prototype.meshDataKeyCheck = function(element) {
+BstUtil.prototype.formatCol = function(colInfo) {
+    return colInfo.replace(new RegExp('col', 'i'), 'col');
+};
+
+BstUtil.prototype.formatCode = function(code) { // 删掉code开头的0字符串，方便匹配相等
+    var result = code;
+
+    if (code !== null) {
+        code = code.split(''); // "0041003" => ["0", "0", "4", "1", "0", "0", "3"]
+        var notDone = true;
+        while (notDone) {
+            if (code[0] === '0') {
+                code.shift();
+            } else {
+                notDone = false;
+            }
+        }
+        result = code.join('');
+    }
+
+    return result;
+};
+
+BstUtil.prototype.dataKeyCheck = function(element) {
     var self = this;
 
     var hasInvalidKey = false;
     var elementKeys = _.keys(element);
-    _.each(self.requiredMeshDataKeys, function(requiredKey) {
+    _.each(self.requiredDataKeys, function(requiredKey) {
         if (elementKeys.indexOf(requiredKey) === -1) { // 必须的键值在当前元素中未找到
             hasInvalidKey = true;
             self.grunt.log.error('[BstUtil] Required mesh element key "' + requiredKey + '"' +
@@ -291,6 +344,24 @@ BstUtil.prototype.meshDataKeyCheck = function(element) {
     });
 
     return hasInvalidKey;
+};
+
+BstUtil.prototype.partTypeCheck = function(partType) {
+    if (BstConst.PART_TYPES.indexOf(partType) === -1) {
+        this.grunt.fail.fatal('[BstUtil] Invalid part type, part shall only be one of the: "' +
+            this.formatJson(BstConst.PART_TYPES) + '"');
+    }
+};
+
+BstUtil.prototype.getElementDataFromPartConfFile = function(partType, elementId) {
+    this.partTypeCheck(partType);
+
+    var conf = this.readJsonFile(path.join(BstConst.PATH_DATABASE, partType, 'data', 'data.json'));
+    if (_.keys(conf).indexOf(elementId) === -1) {
+        this.grunt.fail.fatal('[BstUtil] Target element with id "' + elementId + '" was not found in conf of part: ' + partType);
+    }
+
+    return conf[elementId];
 };
 
 module.exports = BstUtil;

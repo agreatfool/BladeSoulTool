@@ -1,4 +1,4 @@
 @echo off
 
-cd express
-node app.js
+cd VS_GUI\BladeSoulTool\bin\Debug
+start BladeSoulTool.exe

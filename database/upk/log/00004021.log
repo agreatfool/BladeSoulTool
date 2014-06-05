@@ -1,0 +1,77 @@
+Found 16187 game files (144 skipped)
+Loading package: 00004021.upk Ver: 573/1 Engine: 4205 Names: 50 Exports: 2 Imports: 16 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00004021.upk
+Loading package: 00004020.upk Ver: 573/1 Engine: 4205 Names: 40 Exports: 12 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00007569.upk Ver: 573/1 Engine: 4205 Names: 372 Exports: 1657 Imports: 68 Game: 801A
+Loading Texture2D face_d1 from package 00004020.upk
+Loading Texture2D face_s1 from package 00004020.upk
+Loading TextureCube eye_s2 from package 00002640.upk
+Loading Texture2D face_n from package 00004020.upk
+Loading Texture2D face_m from package 00004020.upk
+Loading TextureCube eye2 from package 00002640.upk
+Loading Material3 Face_test3 from package 00007569.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 69 Imports: 11 Game: 801A
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading TextureCube eye_s from package 00002640.upk
+Loading TextureCube eye1 from package 00002640.upk
+Loading Texture2D DefaultTexture from package EngineResources.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.15 sec, 2226 allocs, 0.88 MBytes serialized in 155868 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[5] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Lip_Glossiness, ParameterValue=50 }
+        ScalarParameterValues[1] = { ParameterName=Skin_glossiness, ParameterValue=5 }
+        ScalarParameterValues[2] = { ParameterName=Skin_Spec_value, ParameterValue=3 }
+        ScalarParameterValues[3] = { ParameterName=eye_glossiness, ParameterValue=1 }
+        ScalarParameterValues[4] = { ParameterName=eye_Spec_value, ParameterValue=5 }
+    }
+    TextureParameterValues[7] =
+    {
+        TextureParameterValues[0] = { ParameterName=Face_Diffuse, ParameterValue=Texture2D'face_d1' }
+        TextureParameterValues[1] = { ParameterName=Face_Specular, ParameterValue=Texture2D'face_s1' }
+        TextureParameterValues[2] = { ParameterName=eye_spec_cube, ParameterValue=TextureCube'eye_s2' }
+        TextureParameterValues[3] = { ParameterName=Face_Normal, ParameterValue=Texture2D'face_n' }
+        TextureParameterValues[4] = { ParameterName=Face_Mask_RGB, ParameterValue=Texture2D'face_m' }
+        TextureParameterValues[5] = { ParameterName=eye_cube, ParameterValue=TextureCube'eye2' }
+        TextureParameterValues[6] = { ParameterName=Face_Specular2, ParameterValue=Texture2D'face_s1' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Face_test3'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

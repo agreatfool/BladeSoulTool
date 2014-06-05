@@ -72,7 +72,7 @@ BstPngOptimizer.prototype.start = function() {
             self.statusTotalCount = self.workingList.length;
             self.grunt.log.writeln('[BstPngOptimizer] Total count: ' + self.workingList.length);
             self.grunt.log.writeln('[BstPngOptimizer] Clear output dir before run: ' + self.outputDir);
-            self.util.deleteDir(self.outputDir); // optipng命令会自动创建目标文件夹
+            self.util.deleteDir(self.outputDir, false); // optipng命令会自动创建目标文件夹
             self.util.printHr();
             self.processTask();
         }
@@ -89,12 +89,6 @@ BstPngOptimizer.prototype.start = function() {
 BstPngOptimizer.prototype.processTask = function() {
     var self = this;
 
-    // FIXME
-    // 所有的timer系列的多子进程任务处理逻辑都有问题：
-    // 因为是setInterval一个个打开子进程去处理的，所以一旦子进程处理结束的速度快过interval的话，
-    // 就永远只有一个进程在活动
-    // 解决方法：在开始的时候一次性创建N个子进程进行处理，然后setInterval进行状态管理，
-    // 或者缩短cycleInterval的间隔也行
     var workingTimer = setInterval(function() {
         if (self.statusWorkingChildProcess < self.childProcess // 有空余的进程数
             && self.workingList.length > 0) { // 队列中仍旧有任务需要安排
@@ -120,6 +114,13 @@ BstPngOptimizer.prototype.processCompress = function(pngFilePath) {
 
     var pngFileName = path.basename(pngFilePath);
     self.startProcess(pngFileName);
+
+    var pngCpsDestPath = path.join(self.outputDir, pngFileName);
+    if (self.grunt.file.exists(pngCpsDestPath)) {
+        // 目标压缩输出已经存在，跳过该文件
+        self.finishCompress(pngFilePath);
+        return;
+    }
 
     cp.exec(
         'optipng.exe -dir ' + self.outputDir + ' -o ' + self.optiLevel + ' -clobber ' + pngFilePath,

@@ -1,0 +1,82 @@
+Found 16187 game files (144 skipped)
+Loading package: 00008070.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 120 Imports: 18 Game: 801A
+Loading SkeletalMesh3 CommonCat1 from package 00008070.upk
+WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PlayParticleSet" was not found
+WARNING: FloatProperty "USkeletalMesh3::AddFootOffsetValue" was not found
+Loading package: 00008069.upk Ver: 573/1 Engine: 4205 Names: 78 Exports: 1 Imports: 19 Game: 801A
+Loading MaterialInstanceConstant col3 from package 00008069.upk
+Loading package: 00008066.upk Ver: 573/1 Engine: 4205 Names: 31 Exports: 12 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D N from package 00008066.upk
+Loading Texture2D M from package 00008066.upk
+Loading Texture2D D_3 from package 00008066.upk
+Loading Texture2D S_3 from package 00008066.upk
+Loading Texture2D eye_s_FR from package 00002640.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.074 sec, 2661 allocs, 1.16 MBytes serialized in 205059 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: CommonCat1
+
+    LODInfo[2] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+        LODInfo[1] =
+        {
+            DisplayFactor = 0.1
+            LODHysteresis = 0.02
+            LODMaterialMap[1] = { 0 }
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col3' }
+
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col3', FirstIndex=0, NumFaces=1688 }
+            }
+            NumVerts = 1145
+            IndexCount = 5064
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col3', FirstIndex=0, NumFaces=502 }
+            }
+            NumVerts = 399
+            IndexCount = 1506
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 35

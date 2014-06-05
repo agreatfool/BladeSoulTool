@@ -1,0 +1,160 @@
+Found 16187 game files (144 skipped)
+Loading package: 00013866.upk Ver: 573/1 Engine: 4205 Names: 113 Exports: 28 Imports: 11 Game: 801A
+Loading SkeletalMesh3 990034_NaHanThunder from package 00013866.upk
+Loading package: 00013867.upk Ver: 573/1 Engine: 4205 Names: 167 Exports: 141 Imports: 45 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_18 from package 00013866.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_19 from package 00013866.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_20 from package 00013866.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_55 from package 00013866.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_56 from package 00013866.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_57 from package 00013866.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_58 from package 00013866.upk
+Loading MaterialInstanceConstant MaterialInstanceConstant_0 from package 00013867.upk
+Loading package: 00013865.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 5 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D 990034_col1_n from package 00013865.upk
+Loading Texture2D 990034_col1_m from package 00013865.upk
+Loading Texture2D 990034_col1_d from package 00013865.upk
+Loading Texture2D 990034_col1_s from package 00013865.upk
+Loading TextureCube cube_orb from package 00002640.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D 990034_col1_FX_Line from package 00013865.upk
+Loading Material3 Basic_FX from package 00013867.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.11 sec, 2903 allocs, 1.51 MBytes serialized in 195393 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 990034_NaHanThunder
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[7] =
+    {
+        Sockets[0] = SkeletalMeshSocket'990034_NaHanThunder.SkeletalMeshSocket_18'
+        Sockets[1] = SkeletalMeshSocket'990034_NaHanThunder.SkeletalMeshSocket_19'
+        Sockets[2] = SkeletalMeshSocket'990034_NaHanThunder.SkeletalMeshSocket_20'
+        Sockets[3] = SkeletalMeshSocket'990034_NaHanThunder.SkeletalMeshSocket_55'
+        Sockets[4] = SkeletalMeshSocket'990034_NaHanThunder.SkeletalMeshSocket_56'
+        Sockets[5] = SkeletalMeshSocket'990034_NaHanThunder.SkeletalMeshSocket_57'
+        Sockets[6] = SkeletalMeshSocket'990034_NaHanThunder.SkeletalMeshSocket_58'
+    }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'MaterialInstanceConstant_0' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] =
+                {
+                    Material = MaterialInstanceConstant'MaterialInstanceConstant_0'
+                    FirstIndex = 0
+                    NumFaces = 1710
+                }
+            }
+            NumVerts = 1420
+            IndexCount = 5130
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 29
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_18
+
+    SocketName = Idle_Partocle-R
+    BoneName = Bip01RForeArm
+    RelativeLocation = { X=11.9741, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_19
+
+    SocketName = Idle_Partocle-L
+    BoneName = Bip01LForeArm
+    RelativeLocation = { X=11.9741, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_20
+
+    SocketName = Head_TH
+    BoneName = Bone_Head_Acc
+    RelativeLocation = { X=6.59669, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=-9169, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_55
+
+    SocketName = A1
+    BoneName = Bone_Head_Acc
+    RelativeLocation = { X=19.3425, Y=-11.292, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_56
+
+    SocketName = A3
+    BoneName = Bone_Head_Acc
+    RelativeLocation = { X=7.29224, Y=-9.50693, Z=26.0938 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_57
+
+    SocketName = A5
+    BoneName = Bone_Head_Acc
+    RelativeLocation = { X=-9.75715, Y=-2.54211, Z=34.3636 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_58
+
+    SocketName = A7
+    BoneName = Bone_Head_Acc
+    RelativeLocation = { X=-25.1776, Y=11.2343, Z=20.9439 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }

@@ -1,0 +1,93 @@
+Found 16187 game files (144 skipped)
+Loading package: 00004679.upk Ver: 573/1 Engine: 4205 Names: 87 Exports: 3 Imports: 24 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00004679.upk
+Loading package: 00004678.upk Ver: 573/1 Engine: 4205 Names: 36 Exports: 7 Imports: 4 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading MaterialInstanceConstant LOD3_col1 from package 00004679.upk
+Loading Texture2D Cloth_Faction_LynM_001LG_N from package 00004678.upk
+Loading Texture2D Cloth_Faction_LynM_001LG_m1 from package 00004678.upk
+Loading Texture2D Cloth_Faction_LynM_001LG_D from package 00004678.upk
+Loading Texture2D Cloth_Faction_LynM_001LG_S from package 00004678.upk
+Loading Material3 Body from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D 20001_LynM_lod from package 00004678.upk
+Loading Texture2D 20001_LynM_lodM from package 00004678.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loaded in 0.08 sec, 2213 allocs, 1.15 MBytes serialized in 133504 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Skin_glossiness, ParameterValue=3.5 }
+        ScalarParameterValues[1] = { ParameterName=Wear_glossiness1, ParameterValue=4 }
+        ScalarParameterValues[2] = { ParameterName=Skin_Spec_value, ParameterValue=1 }
+    }
+    TextureParameterValues[4] =
+    {
+        TextureParameterValues[0] = { ParameterName=Body_normal, ParameterValue=Texture2D'Cloth_Faction_LynM_001LG_N' }
+        TextureParameterValues[1] =
+        {
+            ParameterName = Body_mask_RGB
+            ParameterValue = Texture2D'Cloth_Faction_LynM_001LG_m1'
+        }
+        TextureParameterValues[2] =
+        {
+            ParameterName = Body_diffuse
+            ParameterValue = Texture2D'Cloth_Faction_LynM_001LG_D'
+        }
+        TextureParameterValues[3] =
+        {
+            ParameterName = Body_specular
+            ParameterValue = Texture2D'Cloth_Faction_LynM_001LG_S'
+        }
+    }
+    VectorParameterValues[2] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Skin_Specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = skin_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+    }
+    Parent = Material3'Body'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: LOD3_col1
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[2] =
+    {
+        TextureParameterValues[0] = { ParameterName=LOD_diffuse, ParameterValue=Texture2D'20001_LynM_lod' }
+        TextureParameterValues[1] = { ParameterName=mask_RG, ParameterValue=Texture2D'20001_LynM_lodM' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = None
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

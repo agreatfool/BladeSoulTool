@@ -1,0 +1,88 @@
+Found 16187 game files (144 skipped)
+Loading package: 00009060.upk Ver: 573/1 Engine: 4205 Names: 61 Exports: 11 Imports: 8 Game: 801A
+Loading Material3 TalkBalloonBackground_Mat from package 00009060.upk
+Loading MaterialInstanceConstant TalkBalloonBackground2_MIC from package 00009060.upk
+Loading MaterialInstanceConstant TalkBalloonBackground_MIC from package 00009060.upk
+Loaded in 0 sec, 86 allocs, 0.00 MBytes serialized in 767 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: TalkBalloonBackground_Mat
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[0] = {}
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: TalkBalloonBackground2_MIC
+
+    ScalarParameterValues[2] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Up, ParameterValue=1 }
+        ScalarParameterValues[1] = { ParameterName=Down, ParameterValue=0 }
+    }
+    TextureParameterValues[0] = {}
+    VectorParameterValues[2] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Up_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Down_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+    }
+    Parent = Material3'TalkBalloonBackground_Mat'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: TalkBalloonBackground_MIC
+
+    ScalarParameterValues[2] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Up, ParameterValue=0 }
+        ScalarParameterValues[1] = { ParameterName=Down, ParameterValue=1 }
+    }
+    TextureParameterValues[0] = {}
+    VectorParameterValues[2] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Up_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Down_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+    }
+    Parent = Material3'TalkBalloonBackground_Mat'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

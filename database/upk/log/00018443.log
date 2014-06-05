@@ -1,0 +1,143 @@
+Found 16187 game files (144 skipped)
+Loading package: 00018443.upk Ver: 573/1 Engine: 4205 Names: 74 Exports: 11 Imports: 9 Game: 801A
+Loading SkeletalMesh3 990066_ChainKnuckleBandit from package 00018443.upk
+Loading package: 00018442.upk Ver: 573/1 Engine: 4205 Names: 174 Exports: 174 Imports: 46 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_118 from package 00018443.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_55 from package 00018443.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_56 from package 00018443.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_57 from package 00018443.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_58 from package 00018443.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_59 from package 00018443.upk
+Loading MaterialInstanceConstant col1 from package 00018442.upk
+Loading package: 00018441.upk Ver: 573/1 Engine: 4205 Names: 36 Exports: 8 Imports: 2 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D 990066_ChainKnuckleBandit_col1_N from package 00018441.upk
+Loading Texture2D 990066_ChainKnuckleBandit_col1_M from package 00018441.upk
+Loading Texture2D 990066_ChainKnuckleBandit_col1_D from package 00018441.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D 990066_ChainKnuckleBandit_col1_S from package 00018441.upk
+Loading TextureCube lenscube from package 00002640.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D 990066_ChainKnuckleBandit_col1_FX_Line from package 00018441.upk
+Loading Material3 Basic_Acc_990066 from package 00018442.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.1 sec, 2871 allocs, 1.57 MBytes serialized in 247718 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 990066_ChainKnuckleBandit
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[6] =
+    {
+        Sockets[0] = SkeletalMeshSocket'990066_ChainKnuckleBandit.SkeletalMeshSocket_55'
+        Sockets[1] = SkeletalMeshSocket'990066_ChainKnuckleBandit.SkeletalMeshSocket_56'
+        Sockets[2] = SkeletalMeshSocket'990066_ChainKnuckleBandit.SkeletalMeshSocket_57'
+        Sockets[3] = SkeletalMeshSocket'990066_ChainKnuckleBandit.SkeletalMeshSocket_58'
+        Sockets[4] = SkeletalMeshSocket'990066_ChainKnuckleBandit.SkeletalMeshSocket_59'
+        Sockets[5] = SkeletalMeshSocket'990066_ChainKnuckleBandit.SkeletalMeshSocket_118'
+    }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=4538 }
+            }
+            NumVerts = 2883
+            IndexCount = 13614
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 13
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_118
+
+    SocketName = FX_Idle
+    BoneName = Bip01RForeArm
+    RelativeLocation = { X=58.4976, Y=-8.61827, Z=-55.8901 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_55
+
+    SocketName = Trail_Left
+    BoneName = Bip01RForeArm
+    RelativeLocation = { X=0, Y=-45.935, Z=-16.8705 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_56
+
+    SocketName = Trail_Right
+    BoneName = Bip01RForeArm
+    RelativeLocation = { X=0, Y=45.935, Z=-16.8705 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_57
+
+    SocketName = Trail_UP
+    BoneName = Bip01RForeArm
+    RelativeLocation = { X=-109.35, Y=-16.636, Z=-109.992 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_58
+
+    SocketName = Trail_Down
+    BoneName = Bip01RForeArm
+    RelativeLocation = { X=111.482, Y=0, Z=-12.2322 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_59
+
+    SocketName = Trail_Center
+    BoneName = Bip01RForeArm
+    RelativeLocation = { X=50.9914, Y=-12.6055, Z=-86.9754 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }

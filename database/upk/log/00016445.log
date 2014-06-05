@@ -1,0 +1,37 @@
+Found 16187 game files (144 skipped)
+Loading package: 00016445.upk Ver: 573/1 Engine: 4205 Names: 566 Exports: 1 Imports: 408 Game: 801A
+Loading AnimSet Shooter_M_Animset from package 00016445.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+WARNING: ArrayProperty "UAnimSet::PhysicalHitBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::WeaponSlotSocketNames" was not found
+WARNING: AnimSet Shooter_M_Animset has 0 sequences, but empty TrackBoneNames
+Loaded in 0.002 sec, 587 allocs, 0.03 MBytes serialized in 4660 calls.
+
+Object info:
+============
+ClassName: AnimSet ObjectName: Shooter_M_Animset
+
+    bAnimRotationOnly = true
+    TrackBoneNames[0] = {}
+    Sequences[0] = {}
+    UseTranslationBoneNames[9] =
+    {
+        UseTranslationBoneNames[0] = Bip01
+        UseTranslationBoneNames[1] = WeaponL
+        UseTranslationBoneNames[2] = WeaponR
+        UseTranslationBoneNames[3] = AdB01LForearmMuscleBone
+        UseTranslationBoneNames[4] = AdB01RForearmMuscleBone
+        UseTranslationBoneNames[5] = AdB01LHipBone
+        UseTranslationBoneNames[6] = AdB01RHipBone
+        UseTranslationBoneNames[7] = AdB01LKneeBone
+        UseTranslationBoneNames[8] = AdB01RKneeBone
+    }
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = None
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None

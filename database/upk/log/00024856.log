@@ -1,0 +1,135 @@
+Found 16187 game files (144 skipped)
+Loading package: 00024856.upk Ver: 573/1 Engine: 4205 Names: 140 Exports: 54 Imports: 22 Game: 801A
+Loading MaterialInstanceConstant col20 from package 00024856.upk
+Loading package: 00015016.upk Ver: 573/1 Engine: 4205 Names: 28 Exports: 2 Imports: 2 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading SkeletalMesh3 JinF_033 from package 00024856.upk
+Loading Texture2D JinF_033_col1_D from package 00015016.upk
+Loading Texture2D JinF_033_col1_N from package 00015016.upk
+Loading Material3 Beard_ghost from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loaded in 0.068 sec, 2179 allocs, 1.70 MBytes serialized in 205883 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col20
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Hair_Glossiness, ParameterValue=10 }
+        ScalarParameterValues[1] = { ParameterName=Ac_Glossiness, ParameterValue=5 }
+        ScalarParameterValues[2] = { ParameterName=Ghost_Fresnel_Power, ParameterValue=2 }
+    }
+    TextureParameterValues[2] =
+    {
+        TextureParameterValues[0] = { ParameterName=Hair_Diffuse, ParameterValue=Texture2D'JinF_033_col1_D' }
+        TextureParameterValues[1] = { ParameterName=Hair_normal, ParameterValue=Texture2D'JinF_033_col1_N' }
+    }
+    VectorParameterValues[10] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = hair_color_D
+            ParameterValue = { R=0.014311, G=0.014311, B=0.020951, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = hair_color_L
+            ParameterValue = { R=0.031551, G=0.035614, B=0.044553, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = Ac_color_D
+            ParameterValue = { R=0.25084, G=0.121986, B=0.071761, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Ac_color_L
+            ParameterValue = { R=0.618686, G=0.70117, B=0.737205, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = hair_color_S
+            ParameterValue = { R=0.505433, G=0.45908, B=0.315763, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Ac_color_S
+            ParameterValue = { R=1.3, G=0.9, B=0.2, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = Ghost_Fresnel_color
+            ParameterValue = { R=0.5, G=1, B=2.5, A=1 }
+        }
+    }
+    Parent = Material3'Beard_ghost'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: JinF_033
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col20' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col20', FirstIndex=0, NumFaces=2978 }
+            }
+            NumVerts = 1957
+            IndexCount = 8934
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 22

@@ -1,0 +1,49 @@
+Found 16187 game files (144 skipped)
+Loading package: 00007147.upk Ver: 573/1 Engine: 4205 Names: 67 Exports: 1 Imports: 17 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00007147.upk
+Loading package: 00007145.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 8 Imports: 4 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D LynM_T_N from package 00007145.upk
+Loading Texture2D LynM_T_M from package 00007145.upk
+Loading Texture2D LynM_T_D from package 00007145.upk
+Loading Texture2D LynM_T_S from package 00007145.upk
+Loading Material3 Fur from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loaded in 0.079 sec, 2148 allocs, 2.53 MBytes serialized in 133059 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[6] =
+    {
+        ScalarParameterValues[0] = { ParameterName=long, ParameterValue=1.5 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness1, ParameterValue=2 }
+        ScalarParameterValues[2] = { ParameterName=Glossiness2, ParameterValue=50 }
+        ScalarParameterValues[3] = { ParameterName=Spec_value, ParameterValue=1 }
+        ScalarParameterValues[4] = { ParameterName=LimLight_value, ParameterValue=10 }
+        ScalarParameterValues[5] = { ParameterName=LimLight_exp, ParameterValue=5 }
+    }
+    TextureParameterValues[4] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'LynM_T_N' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'LynM_T_M' }
+        TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'LynM_T_D' }
+        TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'LynM_T_S' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Fur'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

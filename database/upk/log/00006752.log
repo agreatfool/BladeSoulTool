@@ -1,0 +1,183 @@
+Found 16187 game files (144 skipped)
+Loading package: 00006752.upk Ver: 573/1 Engine: 4205 Names: 798 Exports: 3 Imports: 897 Game: 801A
+Loading AnimSet ForceMaster_KunN_Animset from package 00006752.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+WARNING: ArrayProperty "UAnimSet::PhysicalHitBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::WeaponSlotSocketNames" was not found
+Loading AnimSet ForceMaster_LynF_Animset from package 00006752.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+WARNING: ArrayProperty "UAnimSet::PhysicalHitBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::WeaponSlotSocketNames" was not found
+Loading AnimSet ForceMaster_LynM_Animset from package 00006752.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+WARNING: ArrayProperty "UAnimSet::PhysicalHitBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::WeaponSlotSocketNames" was not found
+WARNING: AnimSet ForceMaster_KunN_Animset has 0 sequences, but empty TrackBoneNames
+WARNING: AnimSet ForceMaster_LynM_Animset has 0 sequences, but empty TrackBoneNames
+Loaded in 0.003 sec, 829 allocs, 0.05 MBytes serialized in 9118 calls.
+
+Object info:
+============
+ClassName: AnimSet ObjectName: ForceMaster_KunN_Animset
+
+    bAnimRotationOnly = true
+    TrackBoneNames[0] = {}
+    Sequences[0] = {}
+    UseTranslationBoneNames[9] =
+    {
+        UseTranslationBoneNames[0] = Bip01
+        UseTranslationBoneNames[1] = WeaponL
+        UseTranslationBoneNames[2] = WeaponR
+        UseTranslationBoneNames[3] = AdB01LForearmMuscleBone
+        UseTranslationBoneNames[4] = AdB01RForearmMuscleBone
+        UseTranslationBoneNames[5] = AdB01LHipBone
+        UseTranslationBoneNames[6] = AdB01RHipBone
+        UseTranslationBoneNames[7] = AdB01LKneeBone
+        UseTranslationBoneNames[8] = AdB01RKneeBone
+    }
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00003445.00001_KunN
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None
+
+Object info:
+============
+ClassName: AnimSet ObjectName: ForceMaster_LynF_Animset
+
+    bAnimRotationOnly = true
+    TrackBoneNames[77] =
+    {
+        TrackBoneNames[0] = Root
+        TrackBoneNames[1] = Bip01
+        TrackBoneNames[2] = Bip01Pelvis
+        TrackBoneNames[3] = Bip01Spine
+        TrackBoneNames[4] = Bip01Spine1
+        TrackBoneNames[5] = Bip01Spine2
+        TrackBoneNames[6] = Bip01Neck
+        TrackBoneNames[7] = Bip01Neck1
+        TrackBoneNames[8] = Bip01Head
+        TrackBoneNames[9] = Bip01LClavicle
+        TrackBoneNames[10] = Bip01LUpperArm
+        TrackBoneNames[11] = Bip01LForeArm
+        TrackBoneNames[12] = Bip01LHand
+        TrackBoneNames[13] = Bip01LFinger0
+        TrackBoneNames[14] = Bip01LFinger01
+        TrackBoneNames[15] = Bip01LFinger02
+        TrackBoneNames[16] = Bip01LFinger1
+        TrackBoneNames[17] = Bip01LFinger11
+        TrackBoneNames[18] = Bip01LFinger12
+        TrackBoneNames[19] = Bip01LFinger2
+        TrackBoneNames[20] = Bip01LFinger21
+        TrackBoneNames[21] = Bip01LFinger22
+        TrackBoneNames[22] = Bip01LFinger3
+        TrackBoneNames[23] = Bip01LFinger31
+        TrackBoneNames[24] = Bip01LFinger32
+        TrackBoneNames[25] = Bip01LFinger4
+        TrackBoneNames[26] = Bip01LFinger41
+        TrackBoneNames[27] = Bip01LFinger42
+        TrackBoneNames[28] = WeaponL
+        TrackBoneNames[29] = BoneArmTwistL01
+        TrackBoneNames[30] = AdB01LForearmMuscleBone
+        TrackBoneNames[31] = BoneShoulderTwistL01
+        TrackBoneNames[32] = Bip01RClavicle
+        TrackBoneNames[33] = Bip01RUpperArm
+        TrackBoneNames[34] = Bip01RForeArm
+        TrackBoneNames[35] = Bip01RHand
+        TrackBoneNames[36] = Bip01RFinger0
+        TrackBoneNames[37] = Bip01RFinger01
+        TrackBoneNames[38] = Bip01RFinger02
+        TrackBoneNames[39] = Bip01RFinger1
+        TrackBoneNames[40] = Bip01RFinger11
+        TrackBoneNames[41] = Bip01RFinger12
+        TrackBoneNames[42] = Bip01RFinger2
+        TrackBoneNames[43] = Bip01RFinger21
+        TrackBoneNames[44] = Bip01RFinger22
+        TrackBoneNames[45] = Bip01RFinger3
+        TrackBoneNames[46] = Bip01RFinger31
+        TrackBoneNames[47] = Bip01RFinger32
+        TrackBoneNames[48] = Bip01RFinger4
+        TrackBoneNames[49] = Bip01RFinger41
+        TrackBoneNames[50] = Bip01RFinger42
+        TrackBoneNames[51] = WeaponR
+        TrackBoneNames[52] = WeaponRoot
+        TrackBoneNames[53] = Bone_WeaponR
+        TrackBoneNames[54] = BoneDeco01
+        TrackBoneNames[55] = BoneDeco02
+        TrackBoneNames[56] = BoneDeco03
+        TrackBoneNames[57] = BoneDeco04
+        TrackBoneNames[58] = BoneDeco05
+        TrackBoneNames[59] = BoneDeco06
+        TrackBoneNames[60] = BoneDeco07
+        TrackBoneNames[61] = BoneArmTwistR01
+        TrackBoneNames[62] = AdB01RForearmMuscleBone
+        TrackBoneNames[63] = BoneShoulderTwistR01
+        TrackBoneNames[64] = Bip01LThigh
+        TrackBoneNames[65] = Bip01LCalf
+        TrackBoneNames[66] = Bip01LFoot
+        TrackBoneNames[67] = Bip01LToe0
+        TrackBoneNames[68] = AdB01LKneeBone
+        TrackBoneNames[69] = Bip01RThigh
+        TrackBoneNames[70] = Bip01RCalf
+        TrackBoneNames[71] = Bip01RFoot
+        TrackBoneNames[72] = Bip01RToe0
+        TrackBoneNames[73] = AdB01RKneeBone
+        TrackBoneNames[74] = AdB01LHipBone
+        TrackBoneNames[75] = AdB01RHipBone
+        TrackBoneNames[76] = Bip01-Prop1
+    }
+    Sequences[0] = {}
+    UseTranslationBoneNames[9] =
+    {
+        UseTranslationBoneNames[0] = Bip01
+        UseTranslationBoneNames[1] = WeaponL
+        UseTranslationBoneNames[2] = WeaponR
+        UseTranslationBoneNames[3] = AdB01LForearmMuscleBone
+        UseTranslationBoneNames[4] = AdB01RForearmMuscleBone
+        UseTranslationBoneNames[5] = AdB01LHipBone
+        UseTranslationBoneNames[6] = AdB01RHipBone
+        UseTranslationBoneNames[7] = AdB01LKneeBone
+        UseTranslationBoneNames[8] = AdB01RKneeBone
+    }
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00004247.00001_LynM
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None
+
+Object info:
+============
+ClassName: AnimSet ObjectName: ForceMaster_LynM_Animset
+
+    bAnimRotationOnly = true
+    TrackBoneNames[0] = {}
+    Sequences[0] = {}
+    UseTranslationBoneNames[9] =
+    {
+        UseTranslationBoneNames[0] = Bip01
+        UseTranslationBoneNames[1] = WeaponL
+        UseTranslationBoneNames[2] = WeaponR
+        UseTranslationBoneNames[3] = AdB01LForearmMuscleBone
+        UseTranslationBoneNames[4] = AdB01RForearmMuscleBone
+        UseTranslationBoneNames[5] = AdB01LHipBone
+        UseTranslationBoneNames[6] = AdB01RHipBone
+        UseTranslationBoneNames[7] = AdB01LKneeBone
+        UseTranslationBoneNames[8] = AdB01RKneeBone
+    }
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00007885.40008_JinM
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None

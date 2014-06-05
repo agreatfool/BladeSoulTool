@@ -1,0 +1,74 @@
+Found 16187 game files (144 skipped)
+Loading package: 00003807.upk Ver: 573/1 Engine: 4205 Names: 81 Exports: 3 Imports: 21 Game: 801A
+Loading MaterialInstanceConstant col2 from package 00003807.upk
+Loading package: 00002659.upk Ver: 573/1 Engine: 4205 Names: 53 Exports: 22 Imports: 6 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading MaterialInstanceConstant Opa from package 00003807.upk
+Loading Texture2D MON009_n from package 00002659.upk
+Loading Texture2D MON009_m1 from package 00002659.upk
+Loading Texture2D PotAxPartyC_d_col2 from package 00002659.upk
+Loading Texture2D PotAxPartyC_s_col2 from package 00002659.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D MON009_d from package 00002659.upk
+Loading Texture2D MON009_s from package 00002659.upk
+Loading Material3 Blend_OP from package 00002620.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.071 sec, 2188 allocs, 0.81 MBytes serialized in 133714 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col2
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Glossiness1, ParameterValue=5 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness2, ParameterValue=80 }
+        ScalarParameterValues[2] = { ParameterName=Specular_value, ParameterValue=1.5 }
+    }
+    TextureParameterValues[4] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'MON009_n' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'MON009_m1' }
+        TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'PotAxPartyC_d_col2' }
+        TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'PotAxPartyC_s_col2' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Basic'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Opa
+
+    ScalarParameterValues[2] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Opacity, ParameterValue=0.8 }
+        ScalarParameterValues[1] = { ParameterName=Specular_value, ParameterValue=5 }
+    }
+    TextureParameterValues[3] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'MON009_n' }
+        TextureParameterValues[1] = { ParameterName=Diffuse, ParameterValue=Texture2D'MON009_d' }
+        TextureParameterValues[2] = { ParameterName=Specular, ParameterValue=Texture2D'MON009_s' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Blend_OP'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

@@ -1,0 +1,85 @@
+Found 16187 game files (144 skipped)
+Loading package: 00006828.upk Ver: 573/1 Engine: 4205 Names: 106 Exports: 32 Imports: 12 Game: 801A
+Loading SkeletalMesh3 990046_autoscale from package 00006828.upk
+Loading package: 00006827.upk Ver: 573/1 Engine: 4205 Names: 71 Exports: 1 Imports: 15 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_14 from package 00006828.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_15 from package 00006828.upk
+Loading MaterialInstanceConstant col1 from package 00006827.upk
+Loading package: 00006826.upk Ver: 573/1 Engine: 4205 Names: 31 Exports: 3 Imports: 2 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D lash_n from package 00006826.upk
+Loading Texture2D lash_D from package 00006826.upk
+Loading Texture2D lash_S from package 00006826.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.059 sec, 2224 allocs, 0.74 MBytes serialized in 142309 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 990046_autoscale
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[2] =
+    {
+        Sockets[0] = SkeletalMeshSocket'990046_autoscale.SkeletalMeshSocket_14'
+        Sockets[1] = SkeletalMeshSocket'990046_autoscale.SkeletalMeshSocket_15'
+    }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=242 }
+            }
+            NumVerts = 255
+            IndexCount = 726
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 8
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_14
+
+    SocketName = trail_start
+    BoneName = WeaponRoot
+    RelativeLocation = { X=0, Y=0, Z=8.75 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_15
+
+    SocketName = trail_end
+    BoneName = WeaponRoot
+    RelativeLocation = { X=0, Y=0, Z=46.5 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }

@@ -88,10 +88,10 @@ BstUpkScanner.prototype.processSingle = function(upkPath) {
         {"cwd": './resources/umodel', "maxBuffer": 5 * 1024 * 1024}, // max buff 5M
         function(error, stdout) {
             if (error !== null) {
-                if (stdout.indexOf(BstConst.NO_OBJ_ERROR) !== -1) {
+                if (stdout.indexOf(BstConst.UPK_NO_OBJ_ERROR) !== -1) {
                     // 目标upk没有可用的objects
                     self.grunt.log.error('[BstUpkScanner] Error in scanning file: ' + upkId + ', upk has no supported objects ... ');
-                } else if (error.stack.indexOf(BstConst.UNKNOWN_MEMBER_ERROR) !== -1) {
+                } else if (error.stack.indexOf(BstConst.UPK_UNKNOWN_MEMBER_ERROR) !== -1) {
                     // 目标upk含有未知的成员
                     self.grunt.log.error('[BstUpkScanner] Error in scanning file: ' + upkId + ', upk has unknown member ... ');
                     stdout += error.stack; // 将错误信息附加到stdout中，一同写入文件

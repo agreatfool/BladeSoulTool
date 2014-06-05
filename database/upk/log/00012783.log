@@ -1,0 +1,53 @@
+Found 16187 game files (144 skipped)
+Loading package: 00012783.upk Ver: 573/1 Engine: 4205 Names: 66 Exports: 1 Imports: 13 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00012783.upk
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00012782.upk Ver: 573/1 Engine: 4205 Names: 41 Exports: 7 Imports: 8 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading TextureCube cube_orb from package 00002640.upk
+Loading Texture2D Cloth_80003_LynM_col1_d from package 00012782.upk
+Loading Texture2D Cloth_80003_LynM_col1_s from package 00012782.upk
+Loading Texture2D Cloth_80003_LynM_col1_m from package 00012782.upk
+Loading Texture2D Cloth_80003_LynM_col1_n from package 00012782.upk
+Loading Material3 body_bk from package 00002620.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loaded in 0.072 sec, 1307 allocs, 1.16 MBytes serialized in 119695 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[7] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Skin_Spec_value, ParameterValue=1 }
+        ScalarParameterValues[1] = { ParameterName=Wear_glossiness1, ParameterValue=3 }
+        ScalarParameterValues[2] = { ParameterName=Wear_glossiness2, ParameterValue=60 }
+        ScalarParameterValues[3] = { ParameterName=Skin_glossiness, ParameterValue=3.5 }
+        ScalarParameterValues[4] = { ParameterName=HighLight_glossiness, ParameterValue=80 }
+        ScalarParameterValues[5] = { ParameterName=HighLight_Value, ParameterValue=0.4 }
+        ScalarParameterValues[6] = { ParameterName=Specular_value, ParameterValue=2 }
+    }
+    TextureParameterValues[5] =
+    {
+        TextureParameterValues[0] = { ParameterName=rf_cube, ParameterValue=TextureCube'cube_orb' }
+        TextureParameterValues[1] = { ParameterName=Body_diffuse, ParameterValue=Texture2D'Cloth_80003_LynM_col1_d' }
+        TextureParameterValues[2] = { ParameterName=Body_specular, ParameterValue=Texture2D'Cloth_80003_LynM_col1_s' }
+        TextureParameterValues[3] = { ParameterName=Body_mask_RGB, ParameterValue=Texture2D'Cloth_80003_LynM_col1_m' }
+        TextureParameterValues[4] = { ParameterName=Body_normal, ParameterValue=Texture2D'Cloth_80003_LynM_col1_n' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'body_bk'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

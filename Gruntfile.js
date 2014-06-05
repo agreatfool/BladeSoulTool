@@ -29,9 +29,10 @@ Object.prototype.shift = function() {
             continue;
         }
         result = [key, this[key]];
+        delete this[key];
         break;
     }
-    return result;
+    return (result.length > 0) ? result : false;
 };
 
 String.prototype.ucfirst = function() {
@@ -40,6 +41,15 @@ String.prototype.ucfirst = function() {
 
 String.prototype.lcfist = function() {
     return this.charAt(0).toLowerCase() + this.slice(1);
+};
+
+String.prototype.countOccurence = function(needle) {
+    var match = this.match(new RegExp(needle, 'g'));
+    if (match === null) {
+        return 0;
+    } else {
+        return match.length;
+    }
 };
 
 var path = require('path');
@@ -92,41 +102,60 @@ module.exports = function(grunt) {
         "clearLogFile": true
     });
 
+    // zip 压缩插件
+    grunt.initConfig({
+        "compress": {
+            "main": {
+                "options": {
+                    "archive": "BladeSoulTool.zip",
+                    "mode": "zip",
+                    "level": 9,
+                    "pretty": true
+                },
+                "files": [{
+                    "expand": true,
+                    "src": [
+                        "**", // including all files first
+                        "!**/.DS_Store", // exclude MAC Finder dirs
+                        "!**/Thumbs.db", // exclude Thumbs.db files
+                        "!run.bat", // exclude run.bat file
+                        "!run.sh", // exclude run.sh file
+                        "!.gitignore", // exclude .gitignore file
+                        "!.git", // exclude .git dir
+                        "!.idea", // exclude the .idea dir
+                        "!**/*.zip", // exclude all *.zip files
+                        "!**/*.log", // exclude all *.log files
+                        "!**/*.png", // exclude all *.png files
+                        "!**/*.tga", // exclude all *.tga files
+                        "!resources/dedat/output/**/*", // exclude dedat output
+                        "!resources/optipng/output/**/*", // exclude optipng output
+                        "!resources/tga2png/output/**/*", // exclude tga2png output
+                        "!resources/umodel/output/**/*", // exclude umodel output
+                        // VS UI rules
+                        "!**/*.cs", // exclude *.cs files
+                        "!**/*.resx", // exclude *.resx files
+                        "!**/*.csproj", // exclude *.csproj files
+                        "!**/*.csproj.user", // exclude *.csproj.user files
+                        "!**/*.sln", // exclude *.sln files
+                        "!**/*.suo", // exclude *.suo files
+                        "!VS_GUI/BladeSoulTool/lib", // exclude VS UI lib
+                        "!VS_GUI/BladeSoulTool/obj/**/*", // exclude VS UI obj
+                        "!VS_GUI/BladeSoulTool/Properties", // exclude VS UI Properties
+                        "!VS_GUI/BladeSoulTool/resources/wekeroad-ink.vssettings", // exclude resources
+                        "!VS_GUI/BladeSoulTool/ui" // exclude VS UI ui
+                    ],
+                    "dest": "BladeSoulTool/"
+                }]
+            }
+        }
+    });
+    grunt.loadNpmTasks('grunt-contrib-compress');
+
     //------------------------------------------------------------------------------------------------
     //- TASK
     //------------------------------------------------------------------------------------------------
     var Task_Default = function() {
         this.async();
-    };
-
-    var Task_Crawler = function() { // --part=body
-        var Crawler = require('./src/crawler/bst_crawler.js');
-
-        this.async();
-
-        var part = grunt.option('part');
-        if (typeof part === 'undefined' || part == null || part == '') {
-            grunt.log.error('[Grunt Task_Crawler] Command line option "--part" not given, use default value: "body".');
-            part = BstConst.PART_BODY;
-        }
-
-        var crawler = new Crawler(grunt);
-        crawler.start(part);
-    };
-
-    var Task_Crawler_MatchCheck = function() { // --part=body
-        var Crawler = require('./src/crawler/bst_crawler.js');
-
-        this.async();
-
-        var part = grunt.option('part');
-        if (typeof part === 'undefined' || part == null || part == '') {
-            grunt.log.error('[Grunt Task_Crawler_MatchCheck] Command line option "--part" not given, use default value: "body".');
-            part = BstConst.PART_BODY;
-        }
-
-        var crawler = new Crawler(grunt);
-        crawler.matchCheck(part);
     };
 
     var Task_MeshParser = function() { // --part=body
@@ -168,19 +197,13 @@ module.exports = function(grunt) {
         parser.dataCheck(part);
     };
 
-    var Task_ScreenShooter = function() { // --part=body
+    var Task_ScreenShooter = function() {
         var Shooter = require('./src/screenshot/bst_screen_shooter.js');
 
         this.async();
 
-        var part = grunt.option('part');
-        if (typeof part === 'undefined' || part == null || part == '') {
-            grunt.log.error('[Grunt Task_ScreenShooter] Command line option "--part" not given, use default value: "body".');
-            part = BstConst.PART_BODY;
-        }
-
         var shooter = new Shooter(grunt);
-        shooter.start(part);
+        shooter.start();
     };
 
     var Task_ScreenShooter_Check = function() {
@@ -228,7 +251,23 @@ module.exports = function(grunt) {
         scanner.start();
     };
 
-    var Task_Replace = function() { // --part=body --model=:modelId
+    var Task_UpkViewer = function() { // --part=costume --model=:modelId
+        var Viewer = require('./src/upk/bst_upk_viewer.js');
+
+        this.async();
+
+        var part = grunt.option('part');
+        if (typeof part === 'undefined' || part == null || part == '') {
+            grunt.log.error('[Grunt Task_UpkViewer] Command line option "--part" not given, use default value: "costume".');
+            part = BstConst.PART_TYPE_COSTUME;
+        }
+        var modelId = grunt.option('model');
+
+        var viewer = new Viewer(grunt);
+        viewer.start(part, modelId);
+    };
+
+    var Task_Replace = function() { // --part=costume --model=modelId --race=KunN
         var Replace = require('./src/replace/bst_replace.js');
 
         this.async();
@@ -236,12 +275,17 @@ module.exports = function(grunt) {
         var part = grunt.option('part');
         if (typeof part === 'undefined' || part == null || part == '') {
             grunt.log.error('[Grunt Task_Replace] Command line option "--part" not given, use default value: "body".');
-            part = BstConst.PART_BODY;
+            part = BstConst.PART_TYPE_COSTUME;
+        }
+        var race = grunt.option('race');
+        if (typeof part === 'undefined' || part == null || part == '' || part == 'null') {
+            grunt.log.error('[Grunt Task_Replace] Command line option "--race" not given, use "null".');
+            race = null;
         }
         var modelId = grunt.option('model');
 
         var replace = new Replace(grunt);
-        replace.start(part, modelId);
+        replace.start(part, race ,modelId);
     };
 
     var Task_Restore = function() {
@@ -257,8 +301,6 @@ module.exports = function(grunt) {
     // Tasks
     //-------------------------------------------------------------------------------------------
     grunt.registerTask('default', Task_Default);
-    grunt.registerTask('crawler', Task_Crawler);
-    grunt.registerTask('crawler_check', Task_Crawler_MatchCheck);
     grunt.registerTask('parser', Task_MeshParser);
     grunt.registerTask('parser_prepare', Task_MeshParser_Prepare);
     grunt.registerTask('parser_check', Task_MeshParser_Check);
@@ -268,6 +310,7 @@ module.exports = function(grunt) {
     grunt.registerTask('png_optimizer', Task_PngOptimizer);
     grunt.registerTask('upk_scanner', Task_UpkScanner);
     grunt.registerTask('upk_parser', Task_UpkParser);
+    grunt.registerTask('upk_viewer', Task_UpkViewer);
 
     grunt.registerTask('replace', Task_Replace);
     grunt.registerTask('restore', Task_Restore);

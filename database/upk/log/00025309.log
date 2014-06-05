@@ -1,0 +1,65 @@
+Found 16187 game files (144 skipped)
+Loading package: 00025309.upk Ver: 573/1 Engine: 4205 Names: 43 Exports: 3 Imports: 7 Game: 801A
+Loading AnimSet SealFlower_Animset from package 00025309.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+Loading AnimSequence AnimSequence_2 from package 00025309.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_0 from package 00025309.upk
+Loaded in 0.001 sec, 77 allocs, 0.00 MBytes serialized in 376 calls.
+
+Object info:
+============
+ClassName: AnimNotify_Sound ObjectName: AnimNotify_Sound_0
+
+    Sound = None
+    Volume = 1
+    Radius = 0
+    Random = 0
+    DefaultWalkSound[3] = { None, None, None }
+    DefaultRunSound[3] = { None, None, None }
+    GrassWalkSound[3] = { None, None, None }
+    GrassRunSound[3] = { None, None, None }
+    WaterWalkSound[3] = { None, None, None }
+    WaterRunSound[3] = { None, None, None }
+    DefaultActorWalkSound[3] = { None, None, None }
+    DefaultActorRunSound[3] = { None, None, None }
+
+Object info:
+============
+ClassName: AnimSequence ObjectName: AnimSequence_2
+
+    SequenceName = BK_B_Nnoe_Mov_Idle
+    SequenceLength = 2
+    NumFrames = 60
+    RateScale = 1
+    bNoLoopingInterpolation = false
+    RawAnimData[0] = {}
+    TranslationCompressionFormat = ACF_None (0)
+    RotationCompressionFormat = <unknown> (255)
+    KeyEncodingFormat = AKF_ConstantKeyLerp (0)
+    CompressedTrackOffsets[8] = { 0, 1, 12, 1, 24, 1, 36, 1 }
+    bIsAdditive = false
+    AdditiveRefName = None
+    KeyFrameData[0] = {}
+    m_pBioAnimSetData = None
+    CompressedTrackTimeOffsets[0] = {}
+    Tracks[0] = {}
+    TrackOffsets[0] = {}
+
+Object info:
+============
+ClassName: AnimSet ObjectName: SealFlower_Animset
+
+    bAnimRotationOnly = true
+    TrackBoneNames[2] = { Root, Bip01Spine2 }
+    Sequences[1] = { AnimSequence'SealFlower_Animset.AnimSequence_2' }
+    UseTranslationBoneNames[0] = {}
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00024090.SealFlower
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None

@@ -1,0 +1,44 @@
+Found 16187 game files (144 skipped)
+Loading package: 00019855.upk Ver: 573/1 Engine: 4205 Names: 71 Exports: 11 Imports: 12 Game: 801A
+Loading Material3 col2_parent from package 00019855.upk
+Loading package: 00014980.upk Ver: 573/1 Engine: 4205 Names: 34 Exports: 6 Imports: 2 Game: 801A
+Loading MaterialInstanceConstant col2 from package 00019855.upk
+Loading Texture2D NakWonDaeSung_D_col2 from package 00014980.upk
+Loaded in 0.01 sec, 170 allocs, 0.56 MBytes serialized in 1116 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: col2_parent
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'NakWonDaeSung_D_col2' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col2
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[1] =
+    {
+        TextureParameterValues[0] = { ParameterName=Diffuse, ParameterValue=Texture2D'NakWonDaeSung_D_col2' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'col2_parent'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

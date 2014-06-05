@@ -1,0 +1,70 @@
+Found 16187 game files (144 skipped)
+Loading package: 00009522.upk Ver: 573/1 Engine: 4205 Names: 257 Exports: 177 Imports: 85 Game: 801A
+Loading Material3 Weapon_030107_Aura_Trail_Mat from package 00009522.upk
+Loading Texture2D 13 from package 00009522.upk
+Loading Texture2D Weapon_030107__A from package 00009522.upk
+Loading Texture2D Weapon_030107__d from package 00009522.upk
+Loaded in 0.017 sec, 375 allocs, 0.16 MBytes serialized in 5292 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Weapon_030107_Aura_Trail_Mat
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[0] = {}
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 13
+
+    SizeX = 1024
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Weapon_030107__A
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_G8 (3)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Weapon_030107__d
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }

@@ -1,0 +1,93 @@
+Found 16187 game files (144 skipped)
+Loading package: 00007258.upk Ver: 573/1 Engine: 4205 Names: 217 Exports: 131 Imports: 21 Game: 801A
+Loading SkeletalMesh3 40005_GonM from package 00007258.upk
+WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
+WARNING: FloatProperty "USkeletalMesh3::EffectScale" was not found
+WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
+WARNING: FloatProperty "USkeletalMesh3::AddFootOffsetValue" was not found
+WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
+WARNING: ArrayProperty "USkeletalMesh3::NameplateMeshScaleRatio" was not found
+WARNING: StructProperty "USkeletalMesh3::NameplateHeightRatio" was not found
+WARNING: ArrayProperty "USkeletalMesh3::MeshScaleRatio" was not found
+WARNING: StructProperty "USkeletalMesh3::HeightRatio" was not found
+WARNING: StructProperty "USkeletalMesh3::HandRatio" was not found
+WARNING: ByteProperty "USkeletalMesh3::CommonPhysicsUseFlag" was not found
+WARNING: FloatProperty "USkeletalMesh3::PhysicalHitScale" was not found
+Loading package: 00007257.upk Ver: 573/1 Engine: 4205 Names: 77 Exports: 1 Imports: 17 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00007257.upk
+Loading package: 00007256.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 7 Imports: 2 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D Cloth_40005_GonM_col1_N from package 00007256.upk
+Loading Texture2D Cloth_40005_GonM_col1_M from package 00007256.upk
+Loading Texture2D Cloth_40005_GonM_col1_main_D from package 00007256.upk
+Loading Texture2D Cloth_40005_GonM_col1_S from package 00007256.upk
+Loading Material3 Body from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loaded in 0.091 sec, 2424 allocs, 2.00 MBytes serialized in 366777 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 40005_GonM
+
+    LODInfo[2] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+        LODInfo[1] =
+        {
+            DisplayFactor = 0.25
+            LODHysteresis = 0.02
+            LODMaterialMap[1] = { 0 }
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=4971 }
+            }
+            NumVerts = 4293
+            IndexCount = 14913
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1787 }
+            }
+            NumVerts = 1927
+            IndexCount = 5361
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 92

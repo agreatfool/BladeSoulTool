@@ -31,12 +31,6 @@ var BstIconDumper = function(grunt) {
     this.statusWorkingChildProcess = 0;
 };
 
-BstIconDumper.ICON_UPK_ID = '00008758';
-
-BstIconDumper.PATH_ICON_BASE = 'database/icon';
-BstIconDumper.PATH_ICON_TGA = path.join(process.cwd(), BstIconDumper.PATH_ICON_BASE, 'tga');
-BstIconDumper.PATH_ICON_PNG = path.join(process.cwd(), BstIconDumper.PATH_ICON_BASE, 'png');
-
 BstIconDumper.prototype.start = function() {
     var self = this;
 
@@ -45,14 +39,14 @@ BstIconDumper.prototype.start = function() {
     self.util.printHr();
 
     // 解包icon的upk
-    self.grunt.log.writeln('[BstIconDumper] Umodel exporting ' + BstIconDumper.ICON_UPK_ID + '.upk ...');
-    cp.exec('umodel.exe -export -path=' + self.util.getBnsPath() + ' -game=bns -out=output ' + BstIconDumper.ICON_UPK_ID,
+    self.grunt.log.writeln('[BstIconDumper] Umodel exporting ' + BstConst.ICON_UPK_ID + '.upk ...');
+    cp.exec('umodel.exe -export -path=' + self.util.getBnsPath() + ' -game=bns -out=output ' + BstConst.ICON_UPK_ID,
         {"cwd": './resources/umodel', "maxBuffer": 5 * 1024 * 1024}, // max buff 5M
         function(error) {
             if (error) {
-                self.grunt.fail.fatal('[BstIconDumper] Error in umodel exporting ' + BstIconDumper.ICON_UPK_ID + '.upk: ' + error.stack);
+                self.grunt.fail.fatal('[BstIconDumper] Error in umodel exporting ' + BstConst.ICON_UPK_ID + '.upk: ' + error.stack);
             }
-            self.grunt.log.writeln('[BstIconDumper] Umodel exporting ' + BstIconDumper.ICON_UPK_ID + '.upk done ...');
+            self.grunt.log.writeln('[BstIconDumper] Umodel exporting ' + BstConst.ICON_UPK_ID + '.upk done ...');
             self.process();
         }
     );
@@ -64,10 +58,14 @@ BstIconDumper.prototype.process = function() {
     // 拷贝tga文件到database文件夹
     self.grunt.log.writeln('[BstIconDumper] Copying all tga icon resources from output dir to database dir ...');
     self.grunt.file.recurse(
-        './resources/umodel/output/' + BstIconDumper.ICON_UPK_ID + '/Texture2D',
+        './resources/umodel/output/' + BstConst.ICON_UPK_ID + '/Texture2D',
         function(abspath, rootdir, subdir, filename) {
-            self.workingList.push(filename);
-            self.util.copyFile(abspath, path.join(BstIconDumper.PATH_ICON_TGA, filename));
+            if (filename.match(/^attach.+/i) !== null // 装饰品icon
+                || filename.match(/^costume.+/i) !== null // 时装icon
+                || (filename.match(/^weapon.+/i) !== null && filename.match(/^Weapon_Lock.+/i) === null)) { // 有效的武器icon
+                self.workingList.push(filename);
+                self.util.copyFile(abspath, path.join(BstConst.PATH_ICON_TGA, filename));
+            }
         }
     );
     self.statusTotalCount = self.workingList.length;
@@ -91,9 +89,9 @@ BstIconDumper.prototype.processTgaConvert = function(tgaFileName) {
 
     self.startProcess(tgaFileName);
 
-    var tgaFilePath = path.join(BstIconDumper.PATH_ICON_TGA, tgaFileName);
+    var tgaFilePath = path.join(BstConst.PATH_ICON_TGA, tgaFileName);
     cp.exec(
-        'tga2pngcmd.exe -c ' + tgaFilePath + ' ' + BstIconDumper.PATH_ICON_PNG,
+        'tga2pngcmd.exe -c ' + tgaFilePath + ' ' + BstConst.PATH_ICON_PNG,
         {"cwd": './resources/tga2png'},
         function(error, stdout) {
             if (error) {

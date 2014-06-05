@@ -1,0 +1,47 @@
+Found 16187 game files (144 skipped)
+Loading package: 00009018.upk Ver: 573/1 Engine: 4205 Names: 77 Exports: 2 Imports: 19 Game: 801A
+Loading MaterialInstanceConstant col2 from package 00009018.upk
+Loading package: 00007868.upk Ver: 573/1 Engine: 4205 Names: 43 Exports: 18 Imports: 4 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D n2 from package 00007868.upk
+Loading Texture2D M from package 00007868.upk
+Loading Texture2D D2 from package 00007868.upk
+Loading Texture2D S2 from package 00007868.upk
+Loading Material3 Body from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loaded in 0.07 sec, 2161 allocs, 1.28 MBytes serialized in 133235 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col2
+
+    ScalarParameterValues[4] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Skin_glossiness, ParameterValue=3.5 }
+        ScalarParameterValues[1] = { ParameterName=Wear_glossiness1, ParameterValue=5 }
+        ScalarParameterValues[2] = { ParameterName=Wear_glossiness2, ParameterValue=40 }
+        ScalarParameterValues[3] = { ParameterName=Skin_Spec_value, ParameterValue=1 }
+    }
+    TextureParameterValues[4] =
+    {
+        TextureParameterValues[0] = { ParameterName=Body_normal, ParameterValue=Texture2D'n2' }
+        TextureParameterValues[1] = { ParameterName=Body_mask_RGB, ParameterValue=Texture2D'M' }
+        TextureParameterValues[2] = { ParameterName=Body_diffuse, ParameterValue=Texture2D'D2' }
+        TextureParameterValues[3] = { ParameterName=Body_specular, ParameterValue=Texture2D'S2' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Body'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

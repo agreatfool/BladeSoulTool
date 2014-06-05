@@ -1,0 +1,53 @@
+Found 16187 game files (144 skipped)
+Loading package: 00007606.upk Ver: 573/1 Engine: 4205 Names: 47 Exports: 2 Imports: 4 Game: 801A
+Loading AnimSet GeneralWorld_AnimSet from package 00007606.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::PhysicalHitBoneNames" was not found
+Loaded in 0 sec, 69 allocs, 0.00 MBytes serialized in 334 calls.
+
+Object info:
+============
+ClassName: AnimSet ObjectName: GeneralWorld_AnimSet
+
+    bAnimRotationOnly = false
+    TrackBoneNames[28] =
+    {
+        TrackBoneNames[0] = Root
+        TrackBoneNames[1] = Bip01
+        TrackBoneNames[2] = Bip01Pelvis
+        TrackBoneNames[3] = Bip01Spine
+        TrackBoneNames[4] = Bip01Spine1
+        TrackBoneNames[5] = Bip01Spine2
+        TrackBoneNames[6] = Bip01Neck
+        TrackBoneNames[7] = Bip01Head
+        TrackBoneNames[8] = Bone_LEarRing01
+        TrackBoneNames[9] = Bone_LEarRing03
+        TrackBoneNames[10] = Bone_LEarRing04
+        TrackBoneNames[11] = Bone_LEarRing05
+        TrackBoneNames[12] = Bone_REarRing01
+        TrackBoneNames[13] = Bone_REarRing03
+        TrackBoneNames[14] = Bone_REarRing04
+        TrackBoneNames[15] = Bone_REarRing05
+        TrackBoneNames[16] = Bone_Reye
+        TrackBoneNames[17] = Bone_Leye
+        TrackBoneNames[18] = Bone01
+        TrackBoneNames[19] = Bone02
+        TrackBoneNames[20] = Bone04
+        TrackBoneNames[21] = Bone05
+        TrackBoneNames[22] = Bone03
+        TrackBoneNames[23] = Bone06
+        TrackBoneNames[24] = Bone07
+        TrackBoneNames[25] = Bone08
+        TrackBoneNames[26] = Bone_mouse02
+        TrackBoneNames[27] = Bone_mouse
+    }
+    Sequences[0] = {}
+    UseTranslationBoneNames[0] = {}
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00005672.GeneralWorld
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None

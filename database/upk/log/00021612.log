@@ -1,0 +1,73 @@
+Found 16187 game files (144 skipped)
+Loading package: 00021612.upk Ver: 573/1 Engine: 4205 Names: 58 Exports: 5 Imports: 12 Game: 801A
+Loading SkeletalMesh3 990170_Autoscale from package 00021612.upk
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
+Loading package: 00021470.upk Ver: 573/1 Engine: 4205 Names: 90 Exports: 3 Imports: 21 Game: 801A
+Loading MaterialInstanceConstant Acc_990097_GuardianShield_INST from package 00021470.upk
+Loading package: 00021469.upk Ver: 573/1 Engine: 4205 Names: 34 Exports: 7 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading Texture2D pr_005_01_N from package 00021469.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Acc_990097_GuardianShield_D from package 00021469.upk
+Loading Texture2D Acc_990097_GuardianShield_S from package 00021469.upk
+Loading TextureCube Cube_D from package 00002640.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.078 sec, 2685 allocs, 1.14 MBytes serialized in 178006 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 990170_Autoscale
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'Material.Acc_990097_GuardianShield_INST' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] =
+                {
+                    Material = MaterialInstanceConstant'Material.Acc_990097_GuardianShield_INST'
+                    FirstIndex = 0
+                    NumFaces = 1048
+                }
+            }
+            NumVerts = 1070
+            IndexCount = 3144
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 1

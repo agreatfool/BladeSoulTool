@@ -1,0 +1,120 @@
+Found 16187 game files (144 skipped)
+Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
+Loading MaterialInstanceConstant NothingMAT from package 00008613.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D LynM_beard_hide from package 00008613.upk
+Loading Texture2D Nothing_A from package 00008613.upk
+Loading Texture2D Nothing_A_n from package 00008613.upk
+Loading Texture2D Nothing_B from package 00008613.upk
+Loading Texture2D Nothing_W from package 00008613.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.053 sec, 2038 allocs, 0.64 MBytes serialized in 132366 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: NothingMAT
+
+    ScalarParameterValues[4] =
+    {
+        ScalarParameterValues[0] = { ParameterName=WrinkleWeight_R, ParameterValue=0 }
+        ScalarParameterValues[1] = { ParameterName=WrinkleWeight_G, ParameterValue=0 }
+        ScalarParameterValues[2] = { ParameterName=WrinkleWeight_B, ParameterValue=0 }
+        ScalarParameterValues[3] = { ParameterName=WrinkleWeight_A, ParameterValue=0 }
+    }
+    TextureParameterValues[3] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'Nothing_A_n' }
+        TextureParameterValues[1] = { ParameterName=Diffuse, ParameterValue=Texture2D'Nothing_A' }
+        TextureParameterValues[2] = { ParameterName=Specular, ParameterValue=Texture2D'Nothing_A' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Basic'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Texture2D ObjectName: LynM_beard_hide
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 5
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Nothing_A
+
+    SizeX = 4
+    SizeY = 4
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 2
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Nothing_A_n
+
+    SizeX = 4
+    SizeY = 4
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 2
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Nothing_B
+
+    SizeX = 4
+    SizeY = 4
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 2
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Nothing_W
+
+    SizeX = 4
+    SizeY = 4
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 2
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }

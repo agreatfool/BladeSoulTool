@@ -1,0 +1,466 @@
+Found 16187 game files (144 skipped)
+Loading package: 00012587.upk Ver: 573/1 Engine: 4205 Names: 164 Exports: 444 Imports: 56 Game: 801A
+Loading Material3 Blood_Defult_Mat from package 00012587.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 69 Imports: 11 Game: 801A
+Loading Material3 Blood_Defult_Mat2 from package 00012587.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Blood_Defult_Mat3 from package 00012587.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Blood_Sparkle001 from package 00012587.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 BloodSmoke000_MatB from package 00012587.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Bloodsparkle000_MatB2 from package 00012587.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Bloodsparkle000_MatB2_Des from package 00012587.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 BloodSplater002_MatB from package 00012587.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 BloodSplatter0044_MatB from package 00012587.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 BloodSplatter0099_MatB from package 00012587.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 BloodSplatter011_MatB from package 00012587.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 BloodSplatter012_MatB from package 00012587.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 BloodSplatter012_MatB_Des from package 00012587.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 BloodSplatter016_MatB from package 00012587.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 BloodSplatter016_MatB_Des from package 00012587.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Ink_Blending_Mat4 from package 00012587.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Splash_Ds from package 00012587.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Texture2D 2PixBlack000_Tex from package 00012587.upk
+Loading Texture2D Smoke_000 from package 00012963.upk
+Loading Texture2D Glow_Twiri_000 from package 00012963.upk
+Loading Texture2D Electric_Light_001 from package 00012963.upk
+Loading Texture2D DefaultTexture from package EngineResources.upk
+Loading Texture2D Blood_Splatter_000 from package 00012963.upk
+Loading Texture2D Smoke_Cloud_000 from package 00012963.upk
+Loading Texture2D Sparkle_004 from package 00012963.upk
+Loading Texture2D Sparkle_Sprite_004 from package 00012963.upk
+Loading Texture2D Sparkle_001 from package 00012963.upk
+Loading Texture2D Blood_Splatter_001 from package 00012963.upk
+Loading Texture2D Blood_Sparkle_Sprite_000 from package 00012963.upk
+Loading Texture2D Noise_002 from package 00012963.upk
+Loading Texture2D Glow_007 from package 00012963.upk
+Loading Texture2D Noise_Distortion_000 from package 00012963.upk
+Loading Texture2D Noise_Plazma_001 from package 00012963.upk
+Loading Texture2D Smoke_003 from package 00012963.upk
+Loading Texture2D Smoke_010 from package 00012963.upk
+Loading Texture2D Blood_Splatter_005 from package 00012963.upk
+Loading Texture2D Smoke_008 from package 00012963.upk
+Loading Texture2D Glow_Twiri_001 from package 00012963.upk
+Loading Texture2D Aura_Blood_003 from package 00012963.upk
+Loading Texture2D Glow_Twiri_002 from package 00012963.upk
+Loading Texture2D Noise_005 from package 00012963.upk
+Loading Texture2D Noise_003 from package 00012963.upk
+Loading Texture2D Noise_006 from package 00012963.upk
+Loading Texture2D Smoke_005 from package 00012963.upk
+Loading Texture2D Blood_Splatter_002 from package 00012963.upk
+Loading Texture2D Noise_Fractal_001 from package 00012963.upk
+Loading Texture2D Smoke_Inc_002 from package 00012963.upk
+Loading Texture2D Aura_Blood_002 from package 00012963.upk
+Loading Texture2D Aura_Blood_001 from package 00012963.upk
+Loaded in 0.23 sec, 2401 allocs, 0.73 MBytes serialized in 42013 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Blood_Defult_Mat
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Smoke_000'
+        ReferencedTextures[1] = Texture2D'Glow_Twiri_000'
+        ReferencedTextures[2] = Texture2D'Electric_Light_001'
+        ReferencedTextures[3] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 1
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Blood_Defult_Mat2
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Smoke_000'
+        ReferencedTextures[1] = Texture2D'Blood_Splatter_000'
+        ReferencedTextures[2] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 1
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Blood_Defult_Mat3
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] = { Texture2D'Smoke_Cloud_000', Texture2D'Sparkle_004', Texture2D'DefaultTexture' }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 1
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Blood_Sparkle001
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[1] = { Texture2D'Sparkle_Sprite_004' }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.3
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: BloodSmoke000_MatB
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Sparkle_001'
+        ReferencedTextures[1] = Texture2D'Blood_Splatter_001'
+        ReferencedTextures[2] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Bloodsparkle000_MatB2
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[2] = { Texture2D'Blood_Sparkle_Sprite_000', Texture2D'DefaultTexture' }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.2
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Bloodsparkle000_MatB2_Des
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[2] = { Texture2D'Blood_Sparkle_Sprite_000', Texture2D'DefaultTexture' }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.2
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: BloodSplater002_MatB
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_002'
+        ReferencedTextures[1] = Texture2D'Glow_007'
+        ReferencedTextures[2] = Texture2D'Noise_Distortion_000'
+        ReferencedTextures[3] = Texture2D'Noise_Plazma_001'
+        ReferencedTextures[4] = Texture2D'Smoke_003'
+        ReferencedTextures[5] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: BloodSplatter0044_MatB
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] = { Texture2D'Smoke_010', Texture2D'Blood_Splatter_005', Texture2D'Smoke_008' }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 1
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: BloodSplatter0099_MatB
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'Smoke_000'
+        ReferencedTextures[1] = Texture2D'Glow_Twiri_001'
+        ReferencedTextures[2] = Texture2D'Aura_Blood_003'
+        ReferencedTextures[3] = Texture2D'Glow_Twiri_002'
+        ReferencedTextures[4] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 1
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: BloodSplatter011_MatB
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Smoke_000'
+        ReferencedTextures[1] = Texture2D'Sparkle_004'
+        ReferencedTextures[2] = Texture2D'Noise_005'
+        ReferencedTextures[3] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 1
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: BloodSplatter012_MatB
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_003'
+        ReferencedTextures[1] = Texture2D'Noise_006'
+        ReferencedTextures[2] = Texture2D'Smoke_005'
+        ReferencedTextures[3] = Texture2D'Blood_Splatter_002'
+        ReferencedTextures[4] = Texture2D'Noise_Fractal_001'
+        ReferencedTextures[5] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: BloodSplatter012_MatB_Des
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_005'
+        ReferencedTextures[1] = Texture2D'Noise_006'
+        ReferencedTextures[2] = Texture2D'Smoke_005'
+        ReferencedTextures[3] = Texture2D'Blood_Splatter_002'
+        ReferencedTextures[4] = Texture2D'Noise_Fractal_001'
+        ReferencedTextures[5] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: BloodSplatter016_MatB
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_003'
+        ReferencedTextures[1] = Texture2D'Noise_005'
+        ReferencedTextures[2] = Texture2D'Smoke_005'
+        ReferencedTextures[3] = Texture2D'Blood_Splatter_001'
+        ReferencedTextures[4] = Texture2D'Noise_Fractal_001'
+        ReferencedTextures[5] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: BloodSplatter016_MatB_Des
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_003'
+        ReferencedTextures[1] = Texture2D'Noise_005'
+        ReferencedTextures[2] = Texture2D'Smoke_005'
+        ReferencedTextures[3] = Texture2D'Blood_Splatter_001'
+        ReferencedTextures[4] = Texture2D'Noise_Fractal_001'
+        ReferencedTextures[5] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Ink_Blending_Mat4
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Smoke_Inc_002'
+        ReferencedTextures[1] = Texture2D'Aura_Blood_002'
+        ReferencedTextures[2] = Texture2D'Aura_Blood_001'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Splash_Ds
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] = { Texture2D'Smoke_Cloud_000', Texture2D'Sparkle_001', Texture2D'DefaultTexture' }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 1
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 2PixBlack000_Tex
+
+    SizeX = 2
+    SizeY = 2
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 1
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }

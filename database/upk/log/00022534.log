@@ -1,0 +1,35 @@
+Found 16187 game files (144 skipped)
+Loading package: 00022534.upk Ver: 573/1 Engine: 4205 Names: 99 Exports: 11 Imports: 13 Game: 801A
+Loading AnimSet IronBall_animset from package 00022534.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+Loading AnimSequence AnimSequence_0 from package 00022534.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_0 from package 00022534.upk
+Loading AnimSequence AnimSequence_2 from package 00022534.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_4 from package 00022534.upk
+Loading AnimSequence AnimSequence_3 from package 00022534.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_5 from package 00022534.upk
+WARNING: FloatProperty "UAnimNotify_Sound::SoundVolume" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_6 from package 00022534.upk
+Loading AnimNotify_Sound AnimNotify_Sound_7 from package 00022534.upk
+Loading AnimNotify_Sound AnimNotify_Sound_8 from package 00022534.upk
+Loading AnimNotify_Sound AnimNotify_Sound_9 from package 00022534.upk
+Error: Command failed: ******** 00022534 ********
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** ERROR: Unknown rotation compression method: 255
+UAnimSet::ConvertAnims <- PostLoad:IronBall_animset <- UObject::EndLoad <- LoadWholePackage:00022534 <- Main
+
+
+    at ChildProcess.exithandler (child_process.js:637:15)
+    at ChildProcess.EventEmitter.emit (events.js:98:17)
+    at maybeClose (child_process.js:743:16)
+    at Process.ChildProcess._handle.onexit (child_process.js:810:5)

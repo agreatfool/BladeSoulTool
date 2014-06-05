@@ -1,0 +1,255 @@
+Found 16187 game files (144 skipped)
+Loading package: 00018547.upk Ver: 573/1 Engine: 4205 Names: 198 Exports: 149 Imports: 55 Game: 801A
+Loading Material3 Basic_snakequeen from package 00018547.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00018547.upk
+Loading package: 00018546.upk Ver: 573/1 Engine: 4205 Names: 34 Exports: 6 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading MaterialInstanceConstant eye_JF from package 00018547.upk
+Loading package: 00007428.upk Ver: 573/1 Engine: 4205 Names: 130 Exports: 48 Imports: 19 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D SnakeQueen_n from package 00018546.upk
+Loading Texture2D SnakeQueen_M from package 00018546.upk
+Loading Texture2D SnakeQueen_D from package 00018546.upk
+Loading Texture2D SnakeQueen_S from package 00018546.upk
+Loading TextureCube mirror2 from package 00002640.upk
+Loading Texture2D SnakeQueen_E from package 00018546.upk
+Loading Texture2D SnakeQueen_fx from package 00018546.upk
+Loading Texture2D eye0_JinF04 from package 00007428.upk
+Loading Texture2D JinF_eye0_N from package 00007428.upk
+Loading TextureCube eye3 from package 00002640.upk
+Loading Material3 eye from package 00002620.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D eye0_N from package 00007428.upk
+Loading Texture2D Sclera from package 00007428.upk
+Loading TextureCube eye1 from package 00002640.upk
+Loading TextureCube eye_s from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.21 sec, 3522 allocs, 2.34 MBytes serialized in 155244 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Basic_snakequeen
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'check_n'
+        ReferencedTextures[1] = Texture2D'check'
+        ReferencedTextures[2] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[4] = Texture2D'Gradient_Wipe_BurnOut_Mask_TEST'
+        ReferencedTextures[5] = Texture2D'Gradient_Wipe_BurnOut_Mask'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[10] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=0.5 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness1, ParameterValue=4 }
+        ScalarParameterValues[2] = { ParameterName=Glossiness2, ParameterValue=50 }
+        ScalarParameterValues[3] = { ParameterName=Specular_value, ParameterValue=2.3 }
+        ScalarParameterValues[4] = { ParameterName=HighLight_Value, ParameterValue=1 }
+        ScalarParameterValues[5] = { ParameterName=HighLight_glossiness, ParameterValue=80 }
+        ScalarParameterValues[6] = { ParameterName=Emissive_value, ParameterValue=2 }
+        ScalarParameterValues[7] = { ParameterName=Emissive_value2, ParameterValue=0 }
+        ScalarParameterValues[8] = { ParameterName=Fresnel Value, ParameterValue=3 }
+        ScalarParameterValues[9] = { ParameterName=Fresnel exponent, ParameterValue=20 }
+    }
+    TextureParameterValues[7] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'SnakeQueen_n' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'SnakeQueen_M' }
+        TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'SnakeQueen_D' }
+        TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'SnakeQueen_S' }
+        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'mirror2' }
+        TextureParameterValues[5] = { ParameterName=Emissive, ParameterValue=Texture2D'SnakeQueen_E' }
+        TextureParameterValues[6] = { ParameterName=FX_Add, ParameterValue=Texture2D'SnakeQueen_fx' }
+    }
+    VectorParameterValues[11] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=0.339223, G=0.2468, B=0.113921, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = HighLight_Color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Burn_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Glow_Trangition_A
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = Fx_Glow_power_A
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = Fx_Glow_color_A
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = AC_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[10] =
+        {
+            ParameterName = AC_specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+    }
+    Parent = Material3'Basic_snakequeen'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: eye_JF
+
+    ScalarParameterValues[6] =
+    {
+        ScalarParameterValues[0] = { ParameterName=eye_glossiness, ParameterValue=0.5 }
+        ScalarParameterValues[1] = { ParameterName=eye_size, ParameterValue=0.9008 }
+        ScalarParameterValues[2] = { ParameterName=deep_eye, ParameterValue=-5 }
+        ScalarParameterValues[3] = { ParameterName=eye_HighLight_Position, ParameterValue=2 }
+        ScalarParameterValues[4] = { ParameterName=eye_HighLight_value, ParameterValue=5 }
+        ScalarParameterValues[5] = { ParameterName=eye_HighLight_size, ParameterValue=0.2 }
+    }
+    TextureParameterValues[5] =
+    {
+        TextureParameterValues[0] = { ParameterName=Mask_FX_Texture, ParameterValue=Texture2D'Smoke_Pattern_001' }
+        TextureParameterValues[1] = { ParameterName=Eye_Diffuse, ParameterValue=Texture2D'eye0_JinF04' }
+        TextureParameterValues[2] = { ParameterName=Eye_Normal, ParameterValue=Texture2D'JinF_eye0_N' }
+        TextureParameterValues[3] = { ParameterName=Eye_Mask, ParameterValue=Texture2D'eye0_JinF04' }
+        TextureParameterValues[4] = { ParameterName=eye_cube, ParameterValue=TextureCube'eye3' }
+    }
+    VectorParameterValues[9] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = eye_Spec_Color
+            ParameterValue = { R=0.505433, G=0.20471, B=0.024223, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Burn_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Eye_Sclera
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Eye_Iris
+            ParameterValue = { R=0.751895, G=0.016068, B=0.020951, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = eye_cube_Color
+            ParameterValue = { R=1, G=0.9, B=0.7, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = eye_HighLight_XY
+            ParameterValue = { R=0, G=0, B=0, A=0 }
+        }
+    }
+    Parent = Material3'eye'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

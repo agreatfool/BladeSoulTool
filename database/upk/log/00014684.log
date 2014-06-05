@@ -1,0 +1,137 @@
+Found 16187 game files (144 skipped)
+Loading package: 00014684.upk Ver: 573/1 Engine: 4205 Names: 422 Exports: 3 Imports: 301 Game: 801A
+Loading AnimSet Summon_A_Animset from package 00014684.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::DynamicFixedBones" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+Loading AnimSet Summon_Cat_Animset from package 00014684.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::DynamicFixedBones" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+WARNING: ArrayProperty "UAnimSet::PhysicalHitBoneNames" was not found
+WARNING: AnimSet Summon_Cat_Animset has 0 sequences, but empty TrackBoneNames
+Loaded in 0.001 sec, 449 allocs, 0.02 MBytes serialized in 3720 calls.
+
+Object info:
+============
+ClassName: AnimSet ObjectName: Summon_A_Animset
+
+    bAnimRotationOnly = true
+    TrackBoneNames[77] =
+    {
+        TrackBoneNames[0] = Root
+        TrackBoneNames[1] = Bip01
+        TrackBoneNames[2] = Bip01Pelvis
+        TrackBoneNames[3] = Bip01Spine
+        TrackBoneNames[4] = Bip01Spine1
+        TrackBoneNames[5] = Bip01Spine2
+        TrackBoneNames[6] = Bip01Neck
+        TrackBoneNames[7] = Bip01Neck1
+        TrackBoneNames[8] = Bip01Head
+        TrackBoneNames[9] = Bip01-Ponytail1
+        TrackBoneNames[10] = Bip01-Ponytail11
+        TrackBoneNames[11] = SA_EarR
+        TrackBoneNames[12] = SA_EarL
+        TrackBoneNames[13] = SA_BrowR
+        TrackBoneNames[14] = SA_BrowL
+        TrackBoneNames[15] = SA_Hair01
+        TrackBoneNames[16] = SA_Hair02
+        TrackBoneNames[17] = SA_Hair03
+        TrackBoneNames[18] = SA_Hair04
+        TrackBoneNames[19] = Bip01LClavicle
+        TrackBoneNames[20] = Bip01LUpperArm
+        TrackBoneNames[21] = Bip01LForeArm
+        TrackBoneNames[22] = Bip01LHand
+        TrackBoneNames[23] = Bip01LFinger0
+        TrackBoneNames[24] = Bip01LFinger01
+        TrackBoneNames[25] = Bip01LFinger02
+        TrackBoneNames[26] = Bip01LFinger1
+        TrackBoneNames[27] = Bip01LFinger11
+        TrackBoneNames[28] = Bip01LFinger12
+        TrackBoneNames[29] = Bip01LFinger2
+        TrackBoneNames[30] = Bip01LFinger21
+        TrackBoneNames[31] = Bip01LFinger22
+        TrackBoneNames[32] = Bip01LFinger3
+        TrackBoneNames[33] = Bip01LFinger31
+        TrackBoneNames[34] = Bip01LFinger32
+        TrackBoneNames[35] = Bip01LFinger4
+        TrackBoneNames[36] = Bip01LFinger41
+        TrackBoneNames[37] = Bip01LFinger42
+        TrackBoneNames[38] = WeaponL
+        TrackBoneNames[39] = BoneArmTwistL01
+        TrackBoneNames[40] = AdB01LForearmMuscleBone
+        TrackBoneNames[41] = BoneShoulderTwistL01
+        TrackBoneNames[42] = Bip01RClavicle
+        TrackBoneNames[43] = Bip01RUpperArm
+        TrackBoneNames[44] = Bip01RForeArm
+        TrackBoneNames[45] = Bip01RHand
+        TrackBoneNames[46] = Bip01RFinger0
+        TrackBoneNames[47] = Bip01RFinger01
+        TrackBoneNames[48] = Bip01RFinger02
+        TrackBoneNames[49] = Bip01RFinger1
+        TrackBoneNames[50] = Bip01RFinger11
+        TrackBoneNames[51] = Bip01RFinger12
+        TrackBoneNames[52] = Bip01RFinger2
+        TrackBoneNames[53] = Bip01RFinger21
+        TrackBoneNames[54] = Bip01RFinger22
+        TrackBoneNames[55] = Bip01RFinger3
+        TrackBoneNames[56] = Bip01RFinger31
+        TrackBoneNames[57] = Bip01RFinger32
+        TrackBoneNames[58] = Bip01RFinger4
+        TrackBoneNames[59] = Bip01RFinger41
+        TrackBoneNames[60] = Bip01RFinger42
+        TrackBoneNames[61] = WeaponR
+        TrackBoneNames[62] = BoneArmTwistR01
+        TrackBoneNames[63] = SA_AX01
+        TrackBoneNames[64] = SA_AX02
+        TrackBoneNames[65] = SA_AX03
+        TrackBoneNames[66] = SA_AX04
+        TrackBoneNames[67] = AdB01RForearmMuscleBone
+        TrackBoneNames[68] = BoneShoulderTwistR01
+        TrackBoneNames[69] = Bip01LThigh
+        TrackBoneNames[70] = Bip01LCalf
+        TrackBoneNames[71] = Bip01LFoot
+        TrackBoneNames[72] = Bip01LToe0
+        TrackBoneNames[73] = Bip01RThigh
+        TrackBoneNames[74] = Bip01RCalf
+        TrackBoneNames[75] = Bip01RFoot
+        TrackBoneNames[76] = Bip01RToe0
+    }
+    Sequences[0] = {}
+    UseTranslationBoneNames[9] =
+    {
+        UseTranslationBoneNames[0] = Bip01
+        UseTranslationBoneNames[1] = WeaponL
+        UseTranslationBoneNames[2] = WeaponR
+        UseTranslationBoneNames[3] = AdB01LForearmMuscleBone
+        UseTranslationBoneNames[4] = AdB01RForearmMuscleBone
+        UseTranslationBoneNames[5] = AdB01LHipBone
+        UseTranslationBoneNames[6] = AdB01RHipBone
+        UseTranslationBoneNames[7] = AdB01LKneeBone
+        UseTranslationBoneNames[8] = AdB01RKneeBone
+    }
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00023597.SorcererA
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None
+
+Object info:
+============
+ClassName: AnimSet ObjectName: Summon_Cat_Animset
+
+    bAnimRotationOnly = true
+    TrackBoneNames[0] = {}
+    Sequences[0] = {}
+    UseTranslationBoneNames[0] = {}
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00014427.Body_0001
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None

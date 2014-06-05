@@ -1,0 +1,371 @@
+Found 16187 game files (144 skipped)
+Loading package: 00004049.upk Ver: 573/1 Engine: 4205 Names: 143 Exports: 5 Imports: 38 Game: 801A
+Loading MaterialInstanceConstant Beard from package 00004049.upk
+Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00004049.upk
+Loading package: 00008486.upk Ver: 573/1 Engine: 4205 Names: 73 Exports: 45 Imports: 4 Game: 801A
+Loading package: 00008484.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 4 Game: 801A
+Loading package: 00004047.upk Ver: 573/1 Engine: 4205 Names: 48 Exports: 18 Imports: 11 Game: 801A
+Loading MaterialInstanceConstant eye from package 00004049.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00007428.upk Ver: 573/1 Engine: 4205 Names: 130 Exports: 48 Imports: 19 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading MaterialInstanceConstant EyeShadow from package 00004049.upk
+Loading Texture2D Nothing_A from package 00008613.upk
+Loading Texture2D Nothing_A_n from package 00008613.upk
+Loading Texture2D LynM_beard_hide from package 00008613.upk
+Loading Material3 Beard_Ac from package 00002620.upk
+Loading Texture2D LynM_face_BrowBeard1 from package 00008486.upk
+Loading Texture2D LynM_face_oldMask from package 00008484.upk
+Loading Texture2D LynM_face_n from package 00004047.upk
+Loading Texture2D LynM_face_d from package 00004047.upk
+Loading Texture2D LynM_face_M from package 00004047.upk
+Loading Texture2D LynM_face_s from package 00004047.upk
+Loading Material3 Face-LynM from package 00002620.upk
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 69 Imports: 11 Game: 801A
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D eye1_LynM00 from package 00007428.upk
+Loading Texture2D eye1_N from package 00007428.upk
+Loading TextureCube eye2 from package 00002640.upk
+Loading Material3 eye from package 00002620.upk
+Loading Material3 EyeShadow from package 00002620.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D DefaultTexture from package EngineResources.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D eye0_N from package 00007428.upk
+Loading Texture2D Sclera from package 00007428.upk
+Loading TextureCube eye1 from package 00002640.upk
+Loading TextureCube eye_s from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.2 sec, 3751 allocs, 0.96 MBytes serialized in 157014 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Beard
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Ac_Glossiness, ParameterValue=1 }
+        ScalarParameterValues[1] = { ParameterName=Hair_Glossiness, ParameterValue=15 }
+        ScalarParameterValues[2] = { ParameterName=beard_hide, ParameterValue=0 }
+    }
+    TextureParameterValues[3] =
+    {
+        TextureParameterValues[0] = { ParameterName=Hair_Diffuse, ParameterValue=Texture2D'Nothing_A' }
+        TextureParameterValues[1] = { ParameterName=Hair_normal, ParameterValue=Texture2D'Nothing_A_n' }
+        TextureParameterValues[2] = { ParameterName=Hide, ParameterValue=Texture2D'LynM_beard_hide' }
+    }
+    VectorParameterValues[9] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = hair_color_S
+            ParameterValue = { R=0.899385, G=0.796917, B=0.353741, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = hair_color_L
+            ParameterValue = { R=0.420508, G=0.297653, B=0.163641, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = hair_color_D
+            ParameterValue = { R=0.101145, G=0.078057, B=0.069727, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Ac_color_S
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = Ac_color_L
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = Ac_color_D
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+    }
+    Parent = Material3'Beard_Ac'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[20] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Decal_Up?r(0~1), ParameterValue=0 }
+        ScalarParameterValues[1] = { ParameterName=old4, ParameterValue=0 }
+        ScalarParameterValues[2] = { ParameterName=old3, ParameterValue=0 }
+        ScalarParameterValues[3] = { ParameterName=old2, ParameterValue=0 }
+        ScalarParameterValues[4] = { ParameterName=old1, ParameterValue=0 }
+        ScalarParameterValues[5] = { ParameterName=EyeLine, ParameterValue=0 }
+        ScalarParameterValues[6] = { ParameterName=EyeLine_glossiness, ParameterValue=0 }
+        ScalarParameterValues[7] = { ParameterName=EyeShadow, ParameterValue=0 }
+        ScalarParameterValues[8] = { ParameterName=EyeShadow_glossiness, ParameterValue=0 }
+        ScalarParameterValues[9] = { ParameterName=Lip, ParameterValue=0.3 }
+        ScalarParameterValues[10] = { ParameterName=Lip_Glossiness, ParameterValue=50 }
+        ScalarParameterValues[11] = { ParameterName=Skin_glossiness2, ParameterValue=50 }
+        ScalarParameterValues[12] = { ParameterName=Skin_glossiness1, ParameterValue=3 }
+        ScalarParameterValues[13] = { ParameterName=Skin_Spec_value, ParameterValue=1 }
+        ScalarParameterValues[14] = { ParameterName=Decal_OriginalColor(0~1), ParameterValue=0 }
+        ScalarParameterValues[15] = { ParameterName=Blusher, ParameterValue=0 }
+        ScalarParameterValues[16] = { ParameterName=SkinEffect_at_Lip, ParameterValue=0.3 }
+        ScalarParameterValues[17] = { ParameterName=Lip_Spec_value, ParameterValue=1 }
+        ScalarParameterValues[18] = { ParameterName=eyebrow_OnOff(0~1), ParameterValue=1 }
+        ScalarParameterValues[19] = { ParameterName=Skin_Spec_value_X, ParameterValue=1 }
+    }
+    TextureParameterValues[11] =
+    {
+        TextureParameterValues[0] = { ParameterName=Decal_Diffuse, ParameterValue=Texture2D'Nothing_A' }
+        TextureParameterValues[1] = { ParameterName=eyebrow_mask, ParameterValue=Texture2D'LynM_face_BrowBeard1' }
+        TextureParameterValues[2] = { ParameterName=old_Mask, ParameterValue=Texture2D'LynM_face_oldMask' }
+        TextureParameterValues[3] = { ParameterName=old_Normal, ParameterValue=Texture2D'Nothing_A_n' }
+        TextureParameterValues[4] = { ParameterName=Face_Normal, ParameterValue=Texture2D'LynM_face_n' }
+        TextureParameterValues[5] = { ParameterName=Decal_Normal, ParameterValue=Texture2D'Nothing_A_n' }
+        TextureParameterValues[6] = { ParameterName=Beard_mask, ParameterValue=Texture2D'LynM_face_BrowBeard1' }
+        TextureParameterValues[7] = { ParameterName=Face_Diffuse, ParameterValue=Texture2D'LynM_face_d' }
+        TextureParameterValues[8] = { ParameterName=makeup_mask, ParameterValue=Texture2D'Nothing_A' }
+        TextureParameterValues[9] = { ParameterName=Face_Mask, ParameterValue=Texture2D'LynM_face_M' }
+        TextureParameterValues[10] = { ParameterName=Face_Specular, ParameterValue=Texture2D'LynM_face_s' }
+    }
+    VectorParameterValues[14] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = EyeLine_Specular
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = EyeShadow_Specular
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Lip_Specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Skin_Specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = eyebrow_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = EyeLine_Diffuse
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = EyeShadow_Diffuse
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[10] =
+        {
+            ParameterName = Blusher_Diffuse
+            ParameterValue = { R=0.378676, G=0.005522, B=0.000107, A=1 }
+        }
+        VectorParameterValues[11] =
+        {
+            ParameterName = Lip_color
+            ParameterValue = { R=1, G=0.21952, B=0.21952, A=1 }
+        }
+        VectorParameterValues[12] =
+        {
+            ParameterName = skin_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[13] =
+        {
+            ParameterName = old_color
+            ParameterValue = { R=0.2, G=0.02, B=0.03, A=1 }
+        }
+    }
+    Parent = Material3'Face-LynM'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: eye
+
+    ScalarParameterValues[10] =
+    {
+        ScalarParameterValues[0] = { ParameterName=eye_glossiness, ParameterValue=1 }
+        ScalarParameterValues[1] = { ParameterName=eye_size, ParameterValue=1.2 }
+        ScalarParameterValues[2] = { ParameterName=deep_eye, ParameterValue=-5 }
+        ScalarParameterValues[3] = { ParameterName=eye_HighLight_Position, ParameterValue=-2 }
+        ScalarParameterValues[4] = { ParameterName=eye_HighLight_value, ParameterValue=5 }
+        ScalarParameterValues[5] = { ParameterName=eye_HighLight_size, ParameterValue=0.15 }
+        ScalarParameterValues[6] = { ParameterName=WrinkleWeight_R, ParameterValue=0 }
+        ScalarParameterValues[7] = { ParameterName=WrinkleWeight_G, ParameterValue=0 }
+        ScalarParameterValues[8] = { ParameterName=WrinkleWeight_B, ParameterValue=0 }
+        ScalarParameterValues[9] = { ParameterName=WrinkleWeight_A, ParameterValue=0 }
+    }
+    TextureParameterValues[5] =
+    {
+        TextureParameterValues[0] = { ParameterName=Mask_FX_Texture, ParameterValue=Texture2D'Smoke_Pattern_001' }
+        TextureParameterValues[1] = { ParameterName=Eye_Diffuse, ParameterValue=Texture2D'eye1_LynM00' }
+        TextureParameterValues[2] = { ParameterName=Eye_Normal, ParameterValue=Texture2D'eye1_N' }
+        TextureParameterValues[3] = { ParameterName=Eye_Mask, ParameterValue=Texture2D'eye1_LynM00' }
+        TextureParameterValues[4] = { ParameterName=eye_cube, ParameterValue=TextureCube'eye2' }
+    }
+    VectorParameterValues[9] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = eye_Spec_Color
+            ParameterValue = { R=2, G=1, B=0.334458, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Burn_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Eye_Sclera
+            ParameterValue = { R=1, G=1, B=0.899385, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Eye_Iris
+            ParameterValue = { R=0.047776, G=0.020951, B=0.007751, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = eye_cube_Color
+            ParameterValue = { R=0.234895, G=0.234895, B=0.234895, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = eye_HighLight_XY
+            ParameterValue = { R=-0.04, G=-0.04, B=0, A=0 }
+        }
+    }
+    Parent = Material3'eye'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: EyeShadow
+
+    ScalarParameterValues[6] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Exp, ParameterValue=2.5 }
+        ScalarParameterValues[1] = { ParameterName=Root, ParameterValue=1 }
+        ScalarParameterValues[2] = { ParameterName=WrinkleWeight_R, ParameterValue=0 }
+        ScalarParameterValues[3] = { ParameterName=WrinkleWeight_G, ParameterValue=0 }
+        ScalarParameterValues[4] = { ParameterName=WrinkleWeight_B, ParameterValue=0 }
+        ScalarParameterValues[5] = { ParameterName=WrinkleWeight_A, ParameterValue=0 }
+    }
+    TextureParameterValues[0] = {}
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Shadow_color
+            ParameterValue = { R=0.004, G=0.002, B=0.001, A=1 }
+        }
+    }
+    Parent = Material3'EyeShadow'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

@@ -1,0 +1,125 @@
+Found 16187 game files (144 skipped)
+Loading package: 00004449.upk Ver: 573/1 Engine: 4205 Names: 223 Exports: 61 Imports: 29 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00004449.upk
+Loading package: 00004448.upk Ver: 573/1 Engine: 4205 Names: 42 Exports: 13 Imports: 4 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading SkeletalMesh3 KingFrog_bodyTest from package 00004449.upk
+WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
+Loading package: 00014137.upk Ver: 573/1 Engine: 4205 Names: 90 Exports: 1 Imports: 18 Game: 801A
+Loading Texture2D N from package 00004448.upk
+Loading Texture2D M from package 00004448.upk
+Loading Texture2D D from package 00004448.upk
+Loading Texture2D S from package 00004448.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading MaterialInstanceConstant col2 from package 00014137.upk
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D edit_KingFrogN from package 00004448.upk
+Loading Texture2D edit_KingFrogD from package 00004448.upk
+Loading Texture2D edit_KingFrogS from package 00004448.upk
+Loading TextureCube Cube_D from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.12 sec, 2994 allocs, 1.82 MBytes serialized in 274981 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[4] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=1.3 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness1, ParameterValue=20 }
+        ScalarParameterValues[2] = { ParameterName=Glossiness2, ParameterValue=5 }
+        ScalarParameterValues[3] = { ParameterName=Specular_value, ParameterValue=2 }
+    }
+    TextureParameterValues[4] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'N' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'M' }
+        TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'D' }
+        TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'S' }
+    }
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=0.766744, G=0.063815, B=0.106156, A=1 }
+        }
+    }
+    Parent = Material3'Basic'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: KingFrog_bodyTest
+
+    LODInfo[2] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+        LODInfo[1] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[1] = { 0 }
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col2' }
+
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col2', FirstIndex=0, NumFaces=3772 }
+            }
+            NumVerts = 2525
+            IndexCount = 11316
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col2', FirstIndex=0, NumFaces=1100 }
+            }
+            NumVerts = 948
+            IndexCount = 3300
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 74

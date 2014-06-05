@@ -1,0 +1,200 @@
+Found 16187 game files (144 skipped)
+Loading package: 00004466.upk Ver: 573/1 Engine: 4205 Names: 161 Exports: 122 Imports: 21 Game: 801A
+Loading SkeletalMesh3 FlyLizard_Lantern from package 00004466.upk
+WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::ImpactEffect" was not found
+WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
+Loading package: 00004465.upk Ver: 573/1 Engine: 4205 Names: 83 Exports: 3 Imports: 19 Game: 801A
+Loading package: 00004469.upk Ver: 573/1 Engine: 4205 Names: 168 Exports: 142 Imports: 46 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_0 from package 00004466.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_203 from package 00004466.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_204 from package 00004466.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_205 from package 00004466.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_25 from package 00004466.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_26 from package 00004466.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_366 from package 00004466.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_367 from package 00004466.upk
+Loading MaterialInstanceConstant col1 from package 00004465.upk
+Loading package: 00004464.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading MaterialInstanceConstant col1_1 from package 00004469.upk
+Loading package: 00004468.upk Ver: 573/1 Engine: 4205 Names: 34 Exports: 5 Imports: 2 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D FlyLizard_n from package 00004464.upk
+Loading Texture2D FlyLizard_m from package 00004464.upk
+Loading Texture2D FlyLizard_d from package 00004464.upk
+Loading Texture2D FlyLizard_s from package 00004464.upk
+Loading Texture2D cube_cst_all from package 00002640.upk
+Loading Material3 Basic from package 00002620.upk
+Loading Texture2D StoneLamp_n from package 00004468.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D StoneLamp_d from package 00004468.upk
+Loading Texture2D StoneLamp_s from package 00004468.upk
+Loading TextureCube Cube_D from package 00002640.upk
+Loading Texture2D StoneLamp_em from package 00004468.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D StoneLamp_FX_Glow from package 00004468.upk
+Loading Material3 Basic_FX from package 00004469.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.13 sec, 3228 allocs, 1.60 MBytes serialized in 266162 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: FlyLizard_Lantern
+
+    LODInfo[2] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[2] = { true, true }
+        }
+        LODInfo[1] =
+        {
+            DisplayFactor = 0.1
+            LODHysteresis = 0.02
+            LODMaterialMap[2] = { 1, 0 }
+            bEnableShadowCasting[2] = { true, true }
+        }
+    }
+    Sockets[8] =
+    {
+        Sockets[0] = SkeletalMeshSocket'FlyLizard_Lantern.SkeletalMeshSocket_0'
+        Sockets[1] = SkeletalMeshSocket'FlyLizard_Lantern.SkeletalMeshSocket_25'
+        Sockets[2] = SkeletalMeshSocket'FlyLizard_Lantern.SkeletalMeshSocket_203'
+        Sockets[3] = SkeletalMeshSocket'FlyLizard_Lantern.SkeletalMeshSocket_204'
+        Sockets[4] = SkeletalMeshSocket'FlyLizard_Lantern.SkeletalMeshSocket_205'
+        Sockets[5] = SkeletalMeshSocket'FlyLizard_Lantern.SkeletalMeshSocket_366'
+        Sockets[6] = SkeletalMeshSocket'FlyLizard_Lantern.SkeletalMeshSocket_367'
+        Sockets[7] = SkeletalMeshSocket'FlyLizard_Lantern.SkeletalMeshSocket_26'
+    }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'col1_1' }
+
+
+    Lods[2] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1576 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1_1', FirstIndex=4728, NumFaces=1094 }
+            }
+            NumVerts = 2035
+            IndexCount = 8010
+            NumTexCoords = 1
+        }
+        Lods[1] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1_1', FirstIndex=0, NumFaces=1094 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=3282, NumFaces=478 }
+            }
+            NumVerts = 1335
+            IndexCount = 4716
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 2
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 30
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_0
+
+    SocketName = Lantern_Socket
+    BoneName = Bone_Weapon
+    RelativeLocation = { X=28.6031, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_203
+
+    SocketName = socket_force
+    BoneName = Root
+    RelativeLocation = { X=44, Y=33, Z=20 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_204
+
+    SocketName = Mount_Socket
+    BoneName = Bone_Weapon
+    RelativeLocation = { X=21.1214, Y=-2.58654e-015, Z=0 }
+    RelativeRotation = { Yaw=32768, Pitch=0, Roll=16384 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_205
+
+    SocketName = Catch_Neck
+    BoneName = Bip01Neck
+    RelativeLocation = { X=-5.69473, Y=-8.30431, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_25
+
+    SocketName = target_high
+    BoneName = Bip01Head
+    RelativeLocation = { X=4.65326, Y=-5.39856, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_26
+
+    SocketName = Decap_Socket
+    BoneName = Bip01Neck
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_366
+
+    SocketName = Mount_Armbar_Socket
+    BoneName = Root
+    RelativeLocation = { X=1.57871, Y=-2.08604, Z=0 }
+    RelativeRotation = { Yaw=32768, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_367
+
+    SocketName = Mount_Choke_Socket
+    BoneName = Root
+    RelativeLocation = { X=-17.0243, Y=2.08481e-015, Z=0 }
+    RelativeRotation = { Yaw=32768, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }

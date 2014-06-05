@@ -1,0 +1,48 @@
+Found 16187 game files (144 skipped)
+Loading package: 00019856.upk Ver: 573/1 Engine: 4205 Names: 71 Exports: 11 Imports: 12 Game: 801A
+Loading Material3 col5_parent from package 00019856.upk
+Loading package: 00008788.upk Ver: 573/1 Engine: 4205 Names: 50 Exports: 22 Imports: 2 Game: 801A
+Loading MaterialInstanceConstant col5 from package 00019856.upk
+Loading Texture2D Monster_Human_MudSoldier_col5_D from package 00008788.upk
+Loaded in 0.008 sec, 183 allocs, 0.17 MBytes serialized in 1430 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: col5_parent
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Monster_Human_MudSoldier_col5_D' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col5
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[1] =
+    {
+        TextureParameterValues[0] =
+        {
+            ParameterName = Diffuse
+            ParameterValue = Texture2D'Monster_Human_MudSoldier_col5_D'
+        }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'col5_parent'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

@@ -1,0 +1,148 @@
+Found 16187 game files (144 skipped)
+Loading package: 00014229.upk Ver: 573/1 Engine: 4205 Names: 90 Exports: 1 Imports: 22 Game: 801A
+Loading MaterialInstanceConstant col20 from package 00014229.upk
+Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
+Loading package: 00008482.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 12 Imports: 4 Game: 801A
+Loading package: 00002670.upk Ver: 573/1 Engine: 4205 Names: 43 Exports: 14 Imports: 4 Game: 801A
+Loading package: 00008479.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 10 Imports: 4 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D Nothing_A from package 00008613.upk
+Loading Texture2D GonF_Face_brow1 from package 00008482.upk
+Loading Texture2D Nothing_A_n from package 00008613.upk
+Loading Texture2D GonF_Face_N001 from package 00002670.upk
+Loading Texture2D GonF_Face_D001 from package 00002670.upk
+Loading Texture2D GonF_Makeup01 from package 00008479.upk
+Loading Texture2D GonF_Face_M from package 00002670.upk
+Loading Texture2D GonF_Face_s from package 00002670.upk
+Loading Material3 Ghost_Face-F from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 69 Imports: 11 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D DefaultTexture from package EngineResources.upk
+Loaded in 0.074 sec, 2514 allocs, 0.82 MBytes serialized in 137329 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col20
+
+    ScalarParameterValues[20] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Decal_Up?r(0~1), ParameterValue=1 }
+        ScalarParameterValues[1] = { ParameterName=old4, ParameterValue=1 }
+        ScalarParameterValues[2] = { ParameterName=old3, ParameterValue=1 }
+        ScalarParameterValues[3] = { ParameterName=old2, ParameterValue=1 }
+        ScalarParameterValues[4] = { ParameterName=old1, ParameterValue=1 }
+        ScalarParameterValues[5] = { ParameterName=EyeLine, ParameterValue=1 }
+        ScalarParameterValues[6] = { ParameterName=EyeLine_glossiness, ParameterValue=1 }
+        ScalarParameterValues[7] = { ParameterName=EyeShadow, ParameterValue=1 }
+        ScalarParameterValues[8] = { ParameterName=EyeShadow_glossiness, ParameterValue=50 }
+        ScalarParameterValues[9] = { ParameterName=Lip, ParameterValue=0.3 }
+        ScalarParameterValues[10] = { ParameterName=Lip_Glossiness, ParameterValue=100 }
+        ScalarParameterValues[11] = { ParameterName=Skin_glossiness2, ParameterValue=50 }
+        ScalarParameterValues[12] = { ParameterName=Skin_glossiness1, ParameterValue=2 }
+        ScalarParameterValues[13] = { ParameterName=Skin_Spec_value, ParameterValue=2 }
+        ScalarParameterValues[14] = { ParameterName=Decal_OriginalColor(0~1), ParameterValue=1 }
+        ScalarParameterValues[15] = { ParameterName=Blusher, ParameterValue=1 }
+        ScalarParameterValues[16] = { ParameterName=SkinEffect_at_Lip, ParameterValue=0.5 }
+        ScalarParameterValues[17] = { ParameterName=Lip_Spec_value, ParameterValue=1 }
+        ScalarParameterValues[18] = { ParameterName=Ghost_Fresnel_Power, ParameterValue=2 }
+        ScalarParameterValues[19] = { ParameterName=Skin_Spec_value_X, ParameterValue=1 }
+    }
+    TextureParameterValues[11] =
+    {
+        TextureParameterValues[0] = { ParameterName=Decal_Diffuse, ParameterValue=Texture2D'Nothing_A' }
+        TextureParameterValues[1] = { ParameterName=eyebrow_mask, ParameterValue=Texture2D'GonF_Face_brow1' }
+        TextureParameterValues[2] = { ParameterName=old_Mask, ParameterValue=Texture2D'Nothing_A' }
+        TextureParameterValues[3] = { ParameterName=old_Normal, ParameterValue=Texture2D'Nothing_A_n' }
+        TextureParameterValues[4] = { ParameterName=Face_Normal, ParameterValue=Texture2D'GonF_Face_N001' }
+        TextureParameterValues[5] = { ParameterName=Decal_Normal, ParameterValue=Texture2D'Nothing_A_n' }
+        TextureParameterValues[6] = { ParameterName=Beard_mask, ParameterValue=Texture2D'GonF_Face_brow1' }
+        TextureParameterValues[7] = { ParameterName=Face_Diffuse, ParameterValue=Texture2D'GonF_Face_D001' }
+        TextureParameterValues[8] = { ParameterName=makeup_mask, ParameterValue=Texture2D'GonF_Makeup01' }
+        TextureParameterValues[9] = { ParameterName=Face_Mask, ParameterValue=Texture2D'GonF_Face_M' }
+        TextureParameterValues[10] = { ParameterName=Face_Specular, ParameterValue=Texture2D'GonF_Face_s' }
+    }
+    VectorParameterValues[14] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = EyeLine_Specular
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = EyeShadow_Specular
+            ParameterValue = { R=0.88318, G=0.673049, B=0.078057, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Lip_Specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Skin_Specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = eyebrow_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = EyeLine_Diffuse
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = EyeShadow_Diffuse
+            ParameterValue = { R=0.022013, G=0.011126, B=0.002586, A=1 }
+        }
+        VectorParameterValues[10] =
+        {
+            ParameterName = Blusher_Diffuse
+            ParameterValue = { R=0.523443, G=0.035614, B=0.000175, A=1 }
+        }
+        VectorParameterValues[11] =
+        {
+            ParameterName = Lip_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[12] =
+        {
+            ParameterName = skin_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[13] =
+        {
+            ParameterName = Ghost_Fresnel_color
+            ParameterValue = { R=0.5, G=1, B=2.5, A=1 }
+        }
+    }
+    Parent = Material3'Ghost_Face-F'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

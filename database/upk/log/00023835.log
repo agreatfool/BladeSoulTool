@@ -1,0 +1,183 @@
+Found 16187 game files (144 skipped)
+Loading package: 00023835.upk Ver: 573/1 Engine: 4205 Names: 179 Exports: 179 Imports: 49 Game: 801A
+Loading Material3 demonshadowcbig_mat from package 00023835.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading MaterialInstanceConstant col3 from package 00023835.upk
+Loading package: 00008545.upk Ver: 573/1 Engine: 4205 Names: 42 Exports: 14 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D Monster_Human_DemonShadowCBig_col2_N from package 00008545.upk
+Loading Texture2D Monster_Human_DemonShadowCBig_col2_M from package 00008545.upk
+Loading Texture2D Monster_Human_DemonShadowCBig_col3_D from package 00008545.upk
+Loading Texture2D Monster_Human_DemonShadowCBig_col3_S from package 00008545.upk
+Loading TextureCube Cube_Suicide2 from package 00002640.upk
+Loading Texture2D Monster_Human_DemonShadowCBig_col3_E from package 00008545.upk
+Loading Texture2D FX_DemonCBig_Col2_mask2 from package 00008545.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.11 sec, 2801 allocs, 1.63 MBytes serialized in 149831 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: demonshadowcbig_mat
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'check_n'
+        ReferencedTextures[1] = Texture2D'check'
+        ReferencedTextures[2] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[4] = Texture2D'Gradient_Wipe_BurnOut_Mask_TEST'
+        ReferencedTextures[5] = Texture2D'Gradient_Wipe_BurnOut_Mask'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col3
+
+    ScalarParameterValues[10] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=0.5 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness1, ParameterValue=8 }
+        ScalarParameterValues[2] = { ParameterName=Glossiness2, ParameterValue=3 }
+        ScalarParameterValues[3] = { ParameterName=Specular_value, ParameterValue=2 }
+        ScalarParameterValues[4] = { ParameterName=HighLight_Value, ParameterValue=3 }
+        ScalarParameterValues[5] = { ParameterName=HighLight_glossiness, ParameterValue=25 }
+        ScalarParameterValues[6] = { ParameterName=Emissive_value, ParameterValue=1 }
+        ScalarParameterValues[7] = { ParameterName=Emissive_value2, ParameterValue=4 }
+        ScalarParameterValues[8] = { ParameterName=Fresnel Value, ParameterValue=1 }
+        ScalarParameterValues[9] = { ParameterName=Fresnel exponent, ParameterValue=0 }
+    }
+    TextureParameterValues[7] =
+    {
+        TextureParameterValues[0] =
+        {
+            ParameterName = Normal
+            ParameterValue = Texture2D'Monster_Human_DemonShadowCBig_col2_N'
+        }
+        TextureParameterValues[1] =
+        {
+            ParameterName = Mask_GB
+            ParameterValue = Texture2D'Monster_Human_DemonShadowCBig_col2_M'
+        }
+        TextureParameterValues[2] =
+        {
+            ParameterName = Diffuse
+            ParameterValue = Texture2D'Monster_Human_DemonShadowCBig_col3_D'
+        }
+        TextureParameterValues[3] =
+        {
+            ParameterName = Specular
+            ParameterValue = Texture2D'Monster_Human_DemonShadowCBig_col3_S'
+        }
+        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'Cube_Suicide2' }
+        TextureParameterValues[5] =
+        {
+            ParameterName = Emissive
+            ParameterValue = Texture2D'Monster_Human_DemonShadowCBig_col3_E'
+        }
+        TextureParameterValues[6] = { ParameterName=FX_Mask, ParameterValue=Texture2D'FX_DemonCBig_Col2_mask2' }
+    }
+    VectorParameterValues[14] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = AC_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = AC_specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=0.042987, G=0.042987, B=0.042987, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = HighLight_Color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = Burn_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = Fx_Glow_power_A
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = Glow_Trangition_A
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[10] =
+        {
+            ParameterName = Fx_Glow_color_A
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[11] =
+        {
+            ParameterName = Fx_Glow_power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[12] =
+        {
+            ParameterName = Glow_Trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[13] =
+        {
+            ParameterName = Fx_Glow_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+    }
+    Parent = Material3'demonshadowcbig_mat'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

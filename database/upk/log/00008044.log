@@ -1,0 +1,61 @@
+Found 16187 game files (144 skipped)
+Loading package: 00008044.upk Ver: 573/1 Engine: 4205 Names: 82 Exports: 2 Imports: 20 Game: 801A
+Loading MaterialInstanceConstant col2 from package 00008044.upk
+Loading package: 00008042.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D n1 from package 00008042.upk
+Loading Texture2D m1 from package 00008042.upk
+Loading Texture2D D2 from package 00008042.upk
+Loading Texture2D s1 from package 00008042.upk
+Loading TextureCube eye1 from package 00002640.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.094 sec, 2610 allocs, 1.09 MBytes serialized in 144866 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col2
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Glossiness1, ParameterValue=1 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness2, ParameterValue=50 }
+        ScalarParameterValues[2] = { ParameterName=Specular_value, ParameterValue=0.5 }
+    }
+    TextureParameterValues[5] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'n1' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'm1' }
+        TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'D2' }
+        TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D's1' }
+        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'eye1' }
+    }
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=0.193972, G=0.089194, B=0.031551, A=1 }
+        }
+    }
+    Parent = Material3'Basic'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

@@ -1,0 +1,65 @@
+Found 16187 game files (144 skipped)
+Loading package: 00010859.upk Ver: 573/1 Engine: 4205 Names: 84 Exports: 1 Imports: 20 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00010859.upk
+Loading package: 00010858.upk Ver: 573/1 Engine: 4205 Names: 36 Exports: 4 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading Texture2D 41002_GonF_N from package 00010858.upk
+Loading Texture2D 41002_GonF_M from package 00010858.upk
+Loading Texture2D 41002_GonF_D from package 00010858.upk
+Loading Texture2D 41002_GonF_S from package 00010858.upk
+Loading TextureCube cube_orb from package 00002640.upk
+Loading Material3 Body from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loaded in 0.11 sec, 2671 allocs, 1.42 MBytes serialized in 145322 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[6] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=1.3 }
+        ScalarParameterValues[1] = { ParameterName=Skin_glossiness, ParameterValue=80 }
+        ScalarParameterValues[2] = { ParameterName=Wear_glossiness1, ParameterValue=4 }
+        ScalarParameterValues[3] = { ParameterName=Wear_glossiness2, ParameterValue=20 }
+        ScalarParameterValues[4] = { ParameterName=Skin_Spec_value, ParameterValue=5 }
+        ScalarParameterValues[5] = { ParameterName=Specular_value, ParameterValue=2 }
+    }
+    TextureParameterValues[5] =
+    {
+        TextureParameterValues[0] = { ParameterName=Body_normal, ParameterValue=Texture2D'41002_GonF_N' }
+        TextureParameterValues[1] = { ParameterName=Body_mask_RGB, ParameterValue=Texture2D'41002_GonF_M' }
+        TextureParameterValues[2] = { ParameterName=Body_diffuse, ParameterValue=Texture2D'41002_GonF_D' }
+        TextureParameterValues[3] = { ParameterName=Body_specular, ParameterValue=Texture2D'41002_GonF_S' }
+        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'cube_orb' }
+    }
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=0.948965, G=0.907547, B=0.598942, A=1 }
+        }
+    }
+    Parent = Material3'Body'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

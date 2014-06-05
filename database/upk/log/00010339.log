@@ -1,0 +1,49 @@
+Found 16187 game files (144 skipped)
+Loading package: 00010339.upk Ver: 573/1 Engine: 4205 Names: 616 Exports: 4 Imports: 695 Game: 801A
+Loading AnimSet Summoner_LynF_Animset from package 00010339.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+WARNING: ArrayProperty "UAnimSet::PhysicalHitBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::WeaponSlotSocketNames" was not found
+Loading AnimSet Summoner_LynM_Animset from package 00010339.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+WARNING: ArrayProperty "UAnimSet::PhysicalHitBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::WeaponSlotSocketNames" was not found
+WARNING: AnimSet Summoner_LynF_Animset has 0 sequences, but empty TrackBoneNames
+WARNING: AnimSet Summoner_LynM_Animset has 0 sequences, but empty TrackBoneNames
+Loaded in 0.002 sec, 638 allocs, 0.04 MBytes serialized in 6898 calls.
+
+Object info:
+============
+ClassName: AnimSet ObjectName: Summoner_LynF_Animset
+
+    bAnimRotationOnly = true
+    TrackBoneNames[0] = {}
+    Sequences[0] = {}
+    UseTranslationBoneNames[0] = {}
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00013176.00002_Lynm
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None
+
+Object info:
+============
+ClassName: AnimSet ObjectName: Summoner_LynM_Animset
+
+    bAnimRotationOnly = true
+    TrackBoneNames[0] = {}
+    Sequences[0] = {}
+    UseTranslationBoneNames[0] = {}
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00013176.00002_Lynm
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None

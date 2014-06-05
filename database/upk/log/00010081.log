@@ -1,0 +1,38 @@
+Found 16187 game files (144 skipped)
+Loading package: 00010081.upk Ver: 573/1 Engine: 4205 Names: 654 Exports: 8 Imports: 9 Game: 801A
+Loading Material3 DamageCount000_Mat from package 00010081.upk
+Loading Texture2D DamageCount000_Tex from package 00010081.upk
+Loaded in 0.004 sec, 679 allocs, 0.14 MBytes serialized in 2582 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: DamageCount000_Mat
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'DamageCount000_Tex' }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Texture2D ObjectName: DamageCount000_Tex
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
