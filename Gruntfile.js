@@ -267,7 +267,7 @@ module.exports = function(grunt) {
         viewer.start(part, modelId);
     };
 
-    var Task_Replace = function() { // --part=body --model=:modelId
+    var Task_Replace = function() { // --part=costume --model=modelId --race=KunN
         var Replace = require('./src/replace/bst_replace.js');
 
         this.async();
@@ -275,12 +275,17 @@ module.exports = function(grunt) {
         var part = grunt.option('part');
         if (typeof part === 'undefined' || part == null || part == '') {
             grunt.log.error('[Grunt Task_Replace] Command line option "--part" not given, use default value: "body".');
-            part = BstConst.PART_BODY;
+            part = BstConst.PART_TYPE_COSTUME;
+        }
+        var race = grunt.option('race');
+        if (typeof part === 'undefined' || part == null || part == '' || part == 'null') {
+            grunt.log.error('[Grunt Task_Replace] Command line option "--race" not given, use "null".');
+            race = null;
         }
         var modelId = grunt.option('model');
 
         var replace = new Replace(grunt);
-        replace.start(part, modelId);
+        replace.start(part, race ,modelId);
     };
 
     var Task_Restore = function() {
