@@ -17,7 +17,7 @@ var BstRestore = function(grunt) {
 
 BstRestore.prototype.start = function() {
     this.util.printHr();
-    this.grunt.log.writeln('[BstRestore] Start to restore models');
+    this.grunt.log.writeln('[BstRestore] Start to restore models ...');
     this.util.printHr();
 
     this.grunt.log.writeln('[BstRestore] Backup info read: ' + this.util.formatJson(this.backup));
