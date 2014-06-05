@@ -209,6 +209,16 @@ namespace BladeSoulTool.lib
             return blob;
         }
 
+        public static void DisplayErrorMessageBox(string boxTitle, string boxMsg)
+        {
+            MessageBox.Show(boxMsg, boxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static DialogResult DisplayConfirmMessageBox(string boxTitle, string boxMsg)
+        {
+            return MessageBox.Show(boxMsg, boxTitle, MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+        }
+
         public static void CreateFile(string path)
         {
             File.Create(path).Dispose();
