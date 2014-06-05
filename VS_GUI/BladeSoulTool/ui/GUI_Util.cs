@@ -39,9 +39,7 @@ namespace BladeSoulTool.ui
                 path = browser.SelectedPath;
                 if (!File.Exists(path + "/bin/Client.exe"))
                 {
-                    const string boxTitle = "选择错误";
-                    const string boxMsg = "选择的文件夹不是正确的游戏文件夹！";
-                    MessageBox.Show(boxMsg, boxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    BstManager.DisplayErrorMessageBox("选择错误", "选择的文件夹不是正确的游戏文件夹！");
                 }
                 else
                 {

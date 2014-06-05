@@ -248,7 +248,10 @@ namespace BladeSoulTool.ui
         private void btnTopRestoreAll_Click(Object sender, EventArgs e)
         {
             // 恢复全部模型
-            BstLogger.Instance.Log("btnTopRestoreAll_Click");
+            if (BstManager.DisplayConfirmMessageBox("确认操作", "确认恢复全部替换的模型？") == DialogResult.OK)
+            {
+                BstManager.Instance.RunGrunt(this.textBoxOut, "restore");
+            }
         }
 
         private void btnView2DOrigin_Click(Object sender, EventArgs e)
@@ -256,6 +259,7 @@ namespace BladeSoulTool.ui
             // 预览原始模型2D截图
             if (this._originElementId == null)
             {
+                BstManager.DisplayErrorMessageBox("选择错误", "请先选择一个原始模型");
                 return;
             }
             this.CreatePictureForm(this._originElementId);
@@ -266,6 +270,7 @@ namespace BladeSoulTool.ui
             // 预览原始模型的3D模型
             if (this._originElementId == null)
             {
+                BstManager.DisplayErrorMessageBox("选择错误", "请先选择一个原始模型");
                 return;
             }
             BstManager.Instance.RunGrunt(this.textBoxOut, "upk_viewer", new string[]
@@ -280,6 +285,7 @@ namespace BladeSoulTool.ui
             // 预览目标模型2D截图
             if (this._targetElementId == null)
             {
+                BstManager.DisplayErrorMessageBox("选择错误", "请先选择一个目标模型");
                 return;
             }
             this.CreatePictureForm(this._targetElementId);
@@ -290,6 +296,7 @@ namespace BladeSoulTool.ui
             // 预览目标模型的3D模型
             if (this._targetElementId == null)
             {
+                BstManager.DisplayErrorMessageBox("选择错误", "请先选择一个目标模型");
                 return;
             }
             BstManager.Instance.RunGrunt(this.textBoxOut, "upk_viewer", new string[]
@@ -302,7 +309,31 @@ namespace BladeSoulTool.ui
         private void btnReplace_Click(Object sender, EventArgs e)
         {
             // 替换模型
-            BstManager.Instance.RunGrunt(this.textBoxOut);
+            if (this._originElementId == null)
+            {
+                BstManager.DisplayErrorMessageBox("替换数据错误", "原始模型信息不得为空");
+                return;
+            }
+            if (this._targetElementId == null)
+            {
+                BstManager.DisplayErrorMessageBox("替换数据错误", "目标模型信息不得为空");
+                return;
+            }
+            if (BstManager.DisplayConfirmMessageBox("确认操作", "确认执行替换操作？") == DialogResult.OK)
+            {
+                string race = null;
+                if (this._formType == BstManager.TypeAttach
+                    || this._formType == BstManager.TypeCostume)
+                {
+                    race = BstManager.Instance.RaceTypes[this.comboBoxRace.SelectedIndex];
+                }
+                BstManager.Instance.RunGrunt(this.textBoxOut, "replace", new string[]
+                {
+                    "--part=" + BstManager.GetTypeName(this._formType),
+                    "--model=" + this._targetElementId,
+                    "--race=" + race
+                });
+            }
         }
 
         private void btnView3DInfo_Click(Object sender, EventArgs e)
@@ -310,6 +341,7 @@ namespace BladeSoulTool.ui
             // 预览选中的对象的3D模型
             if (this._selectedElementId == null)
             {
+                BstManager.DisplayErrorMessageBox("选择错误", "请先选择一个目标模型");
                 return;
             }
             BstManager.Instance.RunGrunt(this.textBoxOut, "upk_viewer", new string[]
@@ -322,8 +354,9 @@ namespace BladeSoulTool.ui
         private void btnSelectOrigin_Click(Object sender, EventArgs e)
         {
             // 将当前选中的物件设为原始模型
-            if (this._selectedElementId == null) 
+            if (this._selectedElementId == null)
             {
+                BstManager.DisplayErrorMessageBox("选择错误", "请先选择一个目标模型");
                 return; // 没有选中的元素，直接退出
             }
             var element = (JObject) this._data[this._selectedElementId];
@@ -331,9 +364,7 @@ namespace BladeSoulTool.ui
             var col = (string) element["col"];
             if (col != "col1")
             {
-                const string boxTitle = "选择错误";
-                const string boxMsg = "只可将后缀最后为col1的模型设为原始模型";
-                MessageBox.Show(boxMsg, boxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                BstManager.DisplayErrorMessageBox("选择错误", "只可将后缀最后为col1的模型设为原始模型");
                 return;
             }
             this._originElementId = this._selectedElementId;
@@ -360,8 +391,9 @@ namespace BladeSoulTool.ui
         private void btnSelectTarget_Click(Object sender, EventArgs e)
         {
             // 将当前选中的物件设为目标模型
-            if (this._selectedElementId == null) 
+            if (this._selectedElementId == null)
             {
+                BstManager.DisplayErrorMessageBox("选择错误", "请先选择一个目标模型");
                 return; // 没有选中的元素，直接退出
             }
             this._targetElementId = this._selectedElementId;
