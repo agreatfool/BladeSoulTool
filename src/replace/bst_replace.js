@@ -41,7 +41,7 @@ BstReplace.prototype.start = function(part, race, modelId) {
         this.grunt.fail.fatal('[BstReplace] Invalid target model id specified: ' + modelId);
     } else {
         this.targetModelInfo = dataCollection[modelId];
-        self.grunt.log.writeln('[BstReplace] Target model info read: ' + self.util.formatJson(this.targetModelInfo));
+        this.grunt.log.writeln('[BstReplace] Target model info read: ' + this.util.formatJson(this.targetModelInfo));
     }
 
     // 确定原始模型数据
@@ -54,7 +54,7 @@ BstReplace.prototype.start = function(part, race, modelId) {
                 this.grunt.fail.fatal('[BstReplace] No origin model info set ...');
             } else {
                 this.originModelInfo = originCollection[race]['data'];
-                self.grunt.log.writeln('[BstReplace] Origin model info read: ' + self.util.formatJson(this.originModelInfo));
+                this.grunt.log.writeln('[BstReplace] Origin model info read: ' + this.util.formatJson(this.originModelInfo));
             }
         }
     } else {
@@ -62,7 +62,7 @@ BstReplace.prototype.start = function(part, race, modelId) {
             this.grunt.fail.fatal('[BstReplace] No origin model info set ...');
         } else {
             this.originModelInfo = originCollection['data'];
-            self.grunt.log.writeln('[BstReplace] Origin model info read: ' + self.util.formatJson(this.originModelInfo));
+            this.grunt.log.writeln('[BstReplace] Origin model info read: ' + this.util.formatJson(this.originModelInfo));
         }
     }
 
