@@ -187,8 +187,14 @@ namespace BladeSoulTool.lib
             {
                 BstManager.CreateFile(path);
             }
-
-            File.WriteAllText(path, json.ToString(Formatting.Indented));
+            try
+            {
+                File.WriteAllText(path, json.ToString(Formatting.Indented));
+            }
+            catch (IOException ex)
+            {
+                BstLogger.Instance.Log(ex.ToString());
+            }
         }
 
         public static byte[] DownloadImageFile(string url, string path)
