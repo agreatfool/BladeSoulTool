@@ -44,7 +44,7 @@
 * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/ui-replace.png)
 * 在物品列表中选中一项物品，点击中间下方的`选为原始模型`按钮，设定原始模型
 * 在物品列表中选中一项不同的物品，点击中间下方的`选为目标模型`按钮，设定目标模型
-* 点击中间上方的`将左边左边的替换为右边的`按钮
+* 点击中间上方的`将左边的替换为右边的`按钮
 * 确认弹出的对话框
 * 等待`操作执行完成`对话框弹出
 * 进游戏看效果
