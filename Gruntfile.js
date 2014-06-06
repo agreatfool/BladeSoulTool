@@ -138,6 +138,7 @@ module.exports = function(grunt) {
                         "!**/*.csproj.user", // exclude *.csproj.user files
                         "!**/*.sln", // exclude *.sln files
                         "!**/*.suo", // exclude *.suo files
+                        "!VS_GUI/BladeSoulTool/log/*.log", // exclude VS log files
                         "!VS_GUI/BladeSoulTool/lib", // exclude VS UI lib
                         "!VS_GUI/BladeSoulTool/obj/**/*", // exclude VS UI obj
                         "!VS_GUI/BladeSoulTool/Properties", // exclude VS UI Properties
