@@ -64,11 +64,8 @@
 * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/ui-3d-effect-1.png)
 * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/ui-3d-effect-2.png)
 
-## 5. 程序结构及细节
-有兴趣了解下工具是如何工作的可以看下，见文档：[PROGRAM.md](https://github.com/agreatfool/BladeSoulTool/blob/master/documents/PROGRAM.md)
-
-## 6. 问题及后续工作
+## 5. 问题及后续工作
 见文档：[TODO.md](https://github.com/agreatfool/BladeSoulTool/blob/master/documents/TODO.md)
 
-## 7. 更新列表
+## 6. 更新列表
 2014-06-06：发布版本v1.0.0

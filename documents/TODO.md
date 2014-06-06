@@ -3,14 +3,6 @@
 ## 头发数据
 现在的数据库中缺少头发的数据，因为icon中没有普通头发，需要额外制作
 
-## 编写.net c\#的界面
-功能：
-
-* 选择被替换的目标，并写入配置文件
-* 选择替换的目标，并写入配置文件
-* 3d模型语言grunt脚本制作
-* 替换、还原grunt脚本集成
-
 ## 流程：
 * 更新客户端
 * 备份
@@ -50,18 +42,13 @@
             ]
         },
         <record alias="60004_JinF" data-version="2" description="" id="76" name="60004-일반의상 39" race="진" resource-name="00007617
+* 50002 GonF的几个upk用umodel解出来的信息都有问题，需要使用mesh xml补全
 
 ## 截图：
 截图错误的信息要记录并写成json文件，酌情重试，database/costume/data/shot_error.json
 
 ## 韩服的dedat
 韩服的dedat工具是另外的，需要单独下载韩服客户端，并进行测试
-
-## 最新的数据库已知问题
-* 50002 GonF的几个upk用umodel解出来的信息都有问题，需要使用mesh xml补全
-
-## zip
-使用grunt进行zip，可跨平台
 
 ## 截图
 仍旧有一部分的upk使用UE Viewer截图之后是有贴图错误的，需要找原因
