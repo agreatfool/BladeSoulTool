@@ -91,5 +91,5 @@ License：<br />
 见文档：[TODO.md](https://github.com/agreatfool/BladeSoulTool/blob/master/documents/TODO.md)
 
 ## 7. 更新列表
-2014-06-06：发布版本v1.0.0
-2014-06-06：更新版本v1.0.1：修复3D模型预览的log文件未打包问题
+* 2014-06-06：发布版本v1.0.0
+* 2014-06-06：更新版本v1.0.1：修复3D模型预览的log文件未打包问题
