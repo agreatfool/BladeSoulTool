@@ -65,8 +65,22 @@
 * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/ui-3d-effect-1.png)
 * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/ui-3d-effect-2.png)
 
-## 5. 问题及后续工作
+## 5. 申明
+发布申明：
+作者：Jonathan，论坛id：xenojoshua，支持团队：17173剑灵模型组
+我只会在17173发布，其他任何地方提供的下载皆为转载！
+17173剑灵模型替换讨论版地址：![](http://bbs.17173.com/forum-9665-1.html)
+17173发布帖地址：![](http://bbs.17173.com/thread-8018028-1-1.html)
+
+转载申明：
+该软件是我秉着对剑灵这款游戏的爱而制作的，初衷是为了让更多玩家能体验剑灵装扮的玩法。因此我不会禁止软件的转载，但是请尊重作者的劳动，需要转载的请到17173私信我，谢谢。
+此外，因为我的初衷是为了帮助玩家，任何转载或是使用我的脚本、数据的二次开发者，不得使用以虚拟币、论坛币等方式限制玩家的下载、传播的做法。最多允许回复可见。
+
+License：
+该软件以GPLv2许可发布分享，他人修改代码后不得闭源，且新增代码必须使用相同的许可证。
+
+## 6. 问题及后续工作
 见文档：[TODO.md](https://github.com/agreatfool/BladeSoulTool/blob/master/documents/TODO.md)
 
-## 6. 更新列表
+## 7. 更新列表
 2014-06-06：发布版本v1.0.0
