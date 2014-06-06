@@ -32,6 +32,7 @@
             this.textBoxGameDir = new System.Windows.Forms.TextBox();
             this.btnSelectGameDir = new System.Windows.Forms.Button();
             this.textBoxOut = new System.Windows.Forms.TextBox();
+            this.textBoxLicense = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // labelSelectGameDir
@@ -64,7 +65,7 @@
             // textBoxOut
             // 
             this.textBoxOut.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxOut.Location = new System.Drawing.Point(12, 565);
+            this.textBoxOut.Location = new System.Drawing.Point(12, 411);
             this.textBoxOut.Multiline = true;
             this.textBoxOut.Name = "textBoxOut";
             this.textBoxOut.ReadOnly = true;
@@ -72,11 +73,23 @@
             this.textBoxOut.Size = new System.Drawing.Size(1153, 165);
             this.textBoxOut.TabIndex = 3;
             // 
+            // textBoxLicense
+            // 
+            this.textBoxLicense.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxLicense.Location = new System.Drawing.Point(12, 582);
+            this.textBoxLicense.Multiline = true;
+            this.textBoxLicense.Name = "textBoxLicense";
+            this.textBoxLicense.ReadOnly = true;
+            this.textBoxLicense.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxLicense.Size = new System.Drawing.Size(1153, 148);
+            this.textBoxLicense.TabIndex = 4;
+            // 
             // GuiUtil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1177, 742);
+            this.Controls.Add(this.textBoxLicense);
             this.Controls.Add(this.textBoxOut);
             this.Controls.Add(this.btnSelectGameDir);
             this.Controls.Add(this.textBoxGameDir);
@@ -94,6 +107,7 @@
         private System.Windows.Forms.TextBox textBoxGameDir;
         private System.Windows.Forms.Button btnSelectGameDir;
         private System.Windows.Forms.TextBox textBoxOut;
+        private System.Windows.Forms.TextBox textBoxLicense;
 
 
     }
