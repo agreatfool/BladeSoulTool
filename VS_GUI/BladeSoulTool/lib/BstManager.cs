@@ -65,7 +65,7 @@ namespace BladeSoulTool.lib
         public const string PathLoadingGif = BstManager.PathRoot + BstManager.PathResources + "others/loading.gif";
 
         public const string GithubRoot = "https://raw.githubusercontent.com/agreatfool/BladeSoulTool/";
-        public const string GithubBranch = "upk";
+        public const string GithubBranch = "master";
 
         public byte[] LoadingGifBytes { get; set; }
 
