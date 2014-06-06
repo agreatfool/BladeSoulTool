@@ -1,3 +1,3 @@
 @echo off
 
-grunt png_optimizer --stack & pause > nul
+grunt compress --stack --verbose & pause > nul
