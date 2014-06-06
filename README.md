@@ -21,9 +21,21 @@
 
 ## 3. 安装
 * 解压缩下载的压缩包
+* 安装.net2.0，如果已经安装过的直接忽略，执行`resources/dotnet/dotnetfx20.exe`，一路默认
 * 安装nodejs：执行`resources/nodejs/node-v0.10.26-x*.msi`，如果你是32位操作系统，就执行`x86`，如果是64位就执行`x64`，一路默认
-* 执行安装脚本：执行`resources/nodejs/install.bat`，当窗口停止滚动，且无红色报错信息，就安装完成了
-* 最后需要修改配置文件：`config/setting.json`文件中的`path` >> `game`，修改成你当前的游戏安装路径，注意：路径中的`\`都需要替换成`\\`
+* ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/install-1.png)
+* 执行安装脚本：执行`resources/nodejs/install.bat`
+    * 如果脚本最上面显示的是：
+        * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/install-2.png)
+        * 说明之前安装的nodejs成功了
+    * 如果显示的文本是：`Command node not found, please install it first.`
+        * 说明nodejs安装未成功，或者需要重启来生效
+        * 一般来说安装完nodejs是不需要重启的，偶尔有例外会没有即时生效
+* 当屏幕上显示的如下图内容的时候，说明install脚本运行结束了：
+* ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/install-3.png)
+* 执行根目录下的`BladeSoulTool.bat`，切换到`工具`页面，点击`选择`按钮，选择游戏安装目录
+* ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/install-4.png)
+* ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/install-5.png)
 
 ## 4. 使用
 * 执行根目录下的`BladeSoulTool.bat`，这个脚本会打开一个窗口，请不要关闭（当你不再需要换装浏览的时候就可以关掉了）
