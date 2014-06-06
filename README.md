@@ -1,4 +1,6 @@
 # BladeSoulTool
+【17173模型组】一键换装还原工具，再也不用担心没衣服穿了
+
 ## 1. 效果
 * 冲角团军官改情人节服装：
     * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set1-1.png)
@@ -17,7 +19,7 @@
     * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set2-5.png)
 
 ## 2. 下载
-* 分流文件夹：[百度网盘](http://pan.baidu.com/s/1dD7slaD)，下面找BladeSoulTool_vx.x.x.zip，后面序列数字越大版本越新
+* 分流文件夹：[百度网盘](http://pan.baidu.com/s/1dD7slaD)，下面找BladeSoulTool_vx.x.x.zip，后面序列数字越大版本越新，压缩包都有加密
 
 ## 3. 安装
 * 解压缩下载的压缩包
@@ -35,7 +37,8 @@
 * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/install-3.png)
 * 执行根目录下的`BladeSoulTool.bat`，切换到`工具`页面，点击`选择`按钮，选择游戏安装目录
 * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/install-4.png)
-* ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/install-5.png)
+* 选这层文件夹：![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/install-5.png)
+* 安装完请务必备份下原始的客户端资源，如上图，contents文件夹复制下就OK
 
 ## 4. 使用
 执行根目录下的`BladeSoulTool.bat`，打开软件界面
@@ -85,3 +88,4 @@ License：<br />
 
 ## 7. 更新列表
 2014-06-06：发布版本v1.0.0
+2014-06-06：更新版本v1.0.1：修复3D模型预览的log文件未打包问题
