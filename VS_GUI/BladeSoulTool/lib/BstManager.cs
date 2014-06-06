@@ -219,6 +219,11 @@ namespace BladeSoulTool.lib
             return MessageBox.Show(boxMsg, boxTitle, MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
         }
 
+        public static DialogResult DisplayInfoMessageBox(string boxTitle, string boxMsg)
+        {
+            return MessageBox.Show(boxMsg, boxTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
         public static void CreateFile(string path)
         {
             File.Create(path).Dispose();
@@ -428,6 +433,9 @@ namespace BladeSoulTool.lib
                 proc.StartInfo.CreateNoWindow = true;
                 proc.StartInfo.RedirectStandardError = true;
                 proc.StartInfo.RedirectStandardOutput = true;
+
+                proc.EnableRaisingEvents = true;
+                proc.Exited += (es, ee) => BstManager.DisplayInfoMessageBox("脚本运行", "操作执行完毕");
 
                 proc.OutputDataReceived += (dataSender, dataE) => BstManager.ShowMsgInTextBox(box, dataE.Data); // 注册输出接收事件
                 proc.Start(); // 启动

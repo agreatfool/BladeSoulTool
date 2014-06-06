@@ -319,6 +319,17 @@ namespace BladeSoulTool.ui
                 BstManager.DisplayErrorMessageBox("替换数据错误", "目标模型信息不得为空");
                 return;
             }
+            if (this._originElementId == this._targetElementId)
+            {
+                BstManager.DisplayErrorMessageBox("替换数据错误", "目标模型不得与原始模型相同");
+                return;
+            }
+            if (this._formType != BstManager.TypeCostume)
+            {
+                // FIXME
+                BstManager.DisplayErrorMessageBox("功能未开放", "目前版本暂时只支持服装替换，请耐心等待下一个版本");
+                return;
+            }
             if (BstManager.DisplayConfirmMessageBox("确认操作", "确认执行替换操作？") == DialogResult.OK)
             {
                 string race = null;
