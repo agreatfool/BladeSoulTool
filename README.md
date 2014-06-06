@@ -23,7 +23,11 @@
 
 ## 3. 安装
 * 解压缩下载的压缩包
-* 安装.net2.0：如果已经安装过的直接忽略，没有安装过的执行`resources/dotnet/dotnetfx20.exe`，一路默认
+* 安装.net2.0：
+    * win7用户不需要安装，系统自带的
+    * 已经安装过的用户直接跳过这步
+    * 32位操作系统的请执行`resources/dotnet/dotnetfx20.exe`，一路默认
+    * 64位操作系统的请下载安装：[Microsoft .NET Framework 2.0 版可再发行组件包 (x64)](http://www.microsoft.com/zh-cn/download/details.aspx?id=6523)
 * 安装nodejs：执行`resources/nodejs/node-v0.10.26-x*.msi`，如果你是32位操作系统，就执行`x86`，如果是64位就执行`x64`，一路默认
 * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/install-1.png)
 * 执行安装脚本：执行`resources/nodejs/install.bat`
