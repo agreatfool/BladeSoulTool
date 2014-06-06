@@ -1,13 +1,17 @@
 # BladeSoulTool
 ## 1. 效果
-* 界面：
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-x1.png)
-* 换装：
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-x2.png)
-* 提示成功：
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-x3.png)
-* 进游戏看效果（这里的截图是老的，我懒得换了，所以和上面的对不上，别在意，实际上是正确的）：
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-x4.png)
+* 冲角团军官改情人节服装：
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set1-1.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set1-2.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set1-3.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set1-4.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set1-5.png)
+* 白鬼改贵族：
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set2-1.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set2-2.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set2-3.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set2-4.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set2-5.png)
 
 ## 2. 下载
 * 最新的发布版本（这个版本永远是最新的）：[下载链接](https://github.com/agreatfool/BladeSoulTool/archive/master.zip)
