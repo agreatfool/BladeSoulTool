@@ -47,8 +47,9 @@
 ## 截图：
 截图错误的信息要记录并写成json文件，酌情重试，database/costume/data/shot_error.json
 
-## 韩服的dedat
-韩服的dedat工具是另外的，需要单独下载韩服客户端，并进行测试
+## dedat
+* 韩服的dedat工具是另外的，需要单独下载韩服客户端，并进行测试
+* dedat的datafile.bin需要单独想办法解包
 
 ## 截图
 仍旧有一部分的upk使用UE Viewer截图之后是有贴图错误的，需要找原因
