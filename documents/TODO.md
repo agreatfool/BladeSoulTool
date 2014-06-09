@@ -34,6 +34,8 @@
 
 ## 数据解析中的问题：
 * 尝试寻找不依赖icon来解析数据的方法
+* 首先要解决所有的*_invalid.json里的数据
+* 思路：body的skeleton的log里，都有material的名字为body或者部分为body的upk，而weapon则一般带weapon字符，只有attach啥都不带，可以测试这个规则是否精准
 * 洪门道服的数据在costume数据库中不存在，因为洪门道服的icon不是正常的命名，需要单独处理
 * attach/data.json 里有一个数据是武器：010002_Autoscale_col1，而且在武器的数据里json里这个数据不存在，走错地方了
 * attach/data.json 开始的一段有好几件是衣服，而不是饰品
