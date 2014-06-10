@@ -69,7 +69,11 @@ namespace BladeSoulTool.lib
                     updatedCount++;
                     if (updatedCount >= BstIconLoader.UpdateThrottle)
                     {
-                        MethodInvoker tableUpdateAction = () => task.Grid.Refresh();
+                        MethodInvoker tableUpdateAction = () =>
+                        {
+                            task.Grid.Refresh();
+                            task.Grid.PerformLayout();
+                        };
                         task.Grid.BeginInvoke(tableUpdateAction);
                         updatedCount = 0;
                     }
@@ -78,7 +82,11 @@ namespace BladeSoulTool.lib
                 if (this._queue.Count != 0) continue; // 仍旧还有工作未完成，继续轮询
 
                 // 当前工作队列已清空，最后更新UI，设置关闭状态
-                MethodInvoker tableFinalUpdateAction = () => task.Grid.Refresh();
+                MethodInvoker tableFinalUpdateAction = () =>
+                {
+                    task.Grid.Refresh();
+                    task.Grid.PerformLayout();
+                };
                 task.Grid.BeginInvoke(tableFinalUpdateAction);
                 BstManager.ShowMsgInTextBox(task.Box, "所有图片下载任务完成 ...");
                 BstLogger.Instance.Log("[BstIconLoader] Queued works all done, thread exit ...");

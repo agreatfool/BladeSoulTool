@@ -98,7 +98,14 @@ namespace BladeSoulTool.lib
                 var bitmap = BstManager.ConvertByteToImage(blob);
                 // 更新图片内容
                 MethodInvoker updateAction = () => picture.Image = bitmap;
-                picture.BeginInvoke(updateAction);
+                try
+                {
+                    picture.BeginInvoke(updateAction);
+                }
+                catch (Exception ex)
+                {
+                    BstLogger.Instance.Log(ex.ToString());
+                }
             }).Start();
         }
     }
