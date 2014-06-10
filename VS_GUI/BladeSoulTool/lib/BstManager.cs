@@ -228,6 +228,38 @@ namespace BladeSoulTool.lib
             return MessageBox.Show(boxMsg, boxTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        public static void HideDataGridViewVerticalScrollBar(DataGridView grid)
+        {
+            MethodInvoker update = delegate
+            {
+                grid.ScrollBars = ScrollBars.None;
+            };
+            try
+            {
+                grid.BeginInvoke(update);
+            }
+            catch (Exception ex)
+            {
+                BstLogger.Instance.Log(ex.ToString());
+            }
+        }
+
+        public static void DisplayDataGridViewVerticalScrollBar(DataGridView grid)
+        {
+            MethodInvoker update = delegate
+            {
+                grid.ScrollBars = ScrollBars.Vertical;
+            };
+            try
+            {
+                grid.BeginInvoke(update);
+            }
+            catch (Exception ex)
+            {
+                BstLogger.Instance.Log(ex.ToString());
+            }
+        }
+
         public static void CreateFile(string path)
         {
             File.Create(path).Dispose();

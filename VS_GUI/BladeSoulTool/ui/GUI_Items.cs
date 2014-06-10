@@ -119,6 +119,8 @@ namespace BladeSoulTool.ui
             {
                 BstManager.ShowMsgInTextBox(this.textBoxOut, "开始加载数据列表数据 ...");
 
+                BstManager.HideDataGridViewVerticalScrollBar(this.gridItems); // 隐藏滚动条
+
                 // 更新原始模型区块数据
                 JObject originData = null;
                 if (this._formType == BstManager.TypeAttach
@@ -175,8 +177,6 @@ namespace BladeSoulTool.ui
                 }
 
                 BstManager.ShowMsgInTextBox(this.textBoxOut, "数据列表加载完成，开始加载图片 ...");
-                MethodInvoker gridAction = () => this.gridItems.PerformLayout(); // 刷新scrollbar
-                this.gridItems.BeginInvoke(gridAction);
                 BstIconLoader.Instance.Start(); // 启动图片加载器
             });
             this._loadingThread.Start();
@@ -220,6 +220,8 @@ namespace BladeSoulTool.ui
             this.textBoxInfo.Text = elementData.ToString();
             // 模型截图控件
             BstPicLoader.LoadPic(this._formType, elementData, pictureBoxUmodel, this.textBoxOut);
+            // 滚动条
+            this.gridItems.FirstDisplayedScrollingRowIndex = e.RowIndex;
         }
 
         private void gridItems_MouseWheel(Object sender, MouseEventArgs e)
