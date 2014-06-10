@@ -84,6 +84,9 @@ namespace BladeSoulTool.lib
         public List<string> RaceNames { get; set; }
         public List<string> RaceTypes { get; set; }
 
+        public List<string> LanguageNames { get; set; }
+        public List<string> LanguageTypes { get; set; } 
+
         private bool _isGruntRunning = false;
 
         private void Init()
@@ -97,12 +100,25 @@ namespace BladeSoulTool.lib
             this.DataWeaponInvalid = BstManager.ReadJsonFile(BstManager.PathJsonWeaponInvalid);
 
             this.RaceNames = new List<string>();
-            this.RaceNames.AddRange(new string[] {
+            this.RaceNames.AddRange(new string[] 
+            {
                 "天女", "人女", "人男", "龙女", "龙男", "灵女", "灵男"
             });
             this.RaceTypes = new List<string>();
-            this.RaceTypes.AddRange(new string[] {
+            this.RaceTypes.AddRange(new string[] 
+            {
                 "KunN", "JinF", "JinM", "GonF", "GonM", "LynF", "LynM"
+            });
+
+            this.LanguageNames = new List<string>();
+            this.LanguageNames.AddRange(new String[]
+            {
+                "简体中文", "English"
+            });
+            this.LanguageTypes = new List<string>();
+            this.LanguageTypes.AddRange(new String[]
+            {
+                "zh_CN", "en_US"
             });
 
             this.LoadingGifBytes = BstManager.GetBytesFromFile(BstManager.PathLoadingGif);

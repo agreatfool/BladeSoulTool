@@ -24,6 +24,12 @@ namespace BladeSoulTool.ui
             var gamePath = (string) BstManager.Instance.SystemSettings["path"]["game"];
             this.textBoxGameDir.Text = gamePath;
 
+            // 语言选项
+            this.comboBoxSelectLang.Items.AddRange(BstManager.Instance.LanguageNames.ToArray());
+            var lang = (string) BstManager.Instance.SystemSettings["lang"];
+            this.comboBoxSelectLang.SelectedIndex = BstManager.Instance.LanguageTypes.IndexOf(lang);
+            this.comboBoxSelectLang.SelectedIndexChanged += new EventHandler(comboBoxSelectLang_SelectedIndexChanged);
+
             // license文字内容
             this.textBoxLicense.Text =
                 "发布申明：\r\n" +
@@ -64,6 +70,21 @@ namespace BladeSoulTool.ui
                     BstManager.WriteJsonFile(BstManager.PathJsonSettings, BstManager.Instance.SystemSettings);
                 }
             }
+        }
+
+        private void comboBoxSelectLang_SelectedIndexChanged(Object sender, EventArgs e)
+        {
+            // 重新记录语言信息，并写入配置文件
+            var lang = BstManager.Instance.LanguageTypes[this.comboBoxSelectLang.SelectedIndex];
+            BstManager.Instance.SystemSettings["lang"] = lang;
+            BstManager.WriteJsonFile(BstManager.PathJsonSettings, BstManager.Instance.SystemSettings);
+
+            // 显示重启程序提示信息
+            BstManager.DisplayInfoMessageBox(
+                "重启以生效改动 / Restart to activate the setting change", 
+                "你需要手动重启应用程序，来应用当前改动的语言配置！\r\n" +
+                "You have to restart the application manually, to activate the language setting change!"
+            );
         }
         
     }

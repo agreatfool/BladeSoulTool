@@ -33,6 +33,8 @@
             this.btnSelectGameDir = new System.Windows.Forms.Button();
             this.textBoxOut = new System.Windows.Forms.TextBox();
             this.textBoxLicense = new System.Windows.Forms.TextBox();
+            this.labelSelectLang = new System.Windows.Forms.Label();
+            this.comboBoxSelectLang = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // labelSelectGameDir
@@ -84,11 +86,30 @@
             this.textBoxLicense.Size = new System.Drawing.Size(1153, 148);
             this.textBoxLicense.TabIndex = 4;
             // 
+            // labelSelectLang
+            // 
+            this.labelSelectLang.AutoSize = true;
+            this.labelSelectLang.Location = new System.Drawing.Point(973, 14);
+            this.labelSelectLang.Name = "labelSelectLang";
+            this.labelSelectLang.Size = new System.Drawing.Size(65, 12);
+            this.labelSelectLang.TabIndex = 5;
+            this.labelSelectLang.Text = "选择语言：";
+            // 
+            // comboBoxSelectLang
+            // 
+            this.comboBoxSelectLang.FormattingEnabled = true;
+            this.comboBoxSelectLang.Location = new System.Drawing.Point(1044, 10);
+            this.comboBoxSelectLang.Name = "comboBoxSelectLang";
+            this.comboBoxSelectLang.Size = new System.Drawing.Size(121, 20);
+            this.comboBoxSelectLang.TabIndex = 6;
+            // 
             // GuiUtil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1177, 742);
+            this.Controls.Add(this.comboBoxSelectLang);
+            this.Controls.Add(this.labelSelectLang);
             this.Controls.Add(this.textBoxLicense);
             this.Controls.Add(this.textBoxOut);
             this.Controls.Add(this.btnSelectGameDir);
@@ -108,6 +129,8 @@
         private System.Windows.Forms.Button btnSelectGameDir;
         private System.Windows.Forms.TextBox textBoxOut;
         private System.Windows.Forms.TextBox textBoxLicense;
+        private System.Windows.Forms.Label labelSelectLang;
+        private System.Windows.Forms.ComboBox comboBoxSelectLang;
 
 
     }
