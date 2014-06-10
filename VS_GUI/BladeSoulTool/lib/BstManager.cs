@@ -61,6 +61,7 @@ namespace BladeSoulTool.lib
         public const string PathVsRoot = "../../";
         public const string PathVsLog = "log/";
         public const string PathVsTmp = "tmp/";
+        public const string PathVsConfig = "config/";
 
         public const string PathLoadingGif = BstManager.PathRoot + BstManager.PathResources + "others/loading.gif";
 
@@ -69,7 +70,9 @@ namespace BladeSoulTool.lib
 
         public const string GithubVersionTxt = BstManager.GithubRoot + BstManager.GithubBranch + "/VERSION.txt";
 
-        public const string ReleaseUrl = "http://bbs.17173.com/thread-8018028-1-1.html";
+        public const string ReleaseSiteUrl = "http://bbs.17173.com/thread-8018028-1-1.html";
+
+        public const string PathI18N = BstManager.PathVsRoot + BstManager.PathVsConfig + "i18n-";
 
         public byte[] LoadingGifBytes { get; set; }
 
@@ -80,6 +83,7 @@ namespace BladeSoulTool.lib
         public JObject DataAttachInvalid { get; set; }
         public JObject DataWeapon { get; set; }
         public JObject DataWeaponInvalid { get; set; }
+        public JObject DataI18N { get; set; }
 
         public List<string> RaceNames { get; set; }
         public List<string> RaceTypes { get; set; }
@@ -99,11 +103,14 @@ namespace BladeSoulTool.lib
             this.DataWeapon = BstManager.ReadJsonFile(BstManager.PathJsonWeapon);
             this.DataWeaponInvalid = BstManager.ReadJsonFile(BstManager.PathJsonWeaponInvalid);
 
+            var lang = (string) this.SystemSettings["lang"];
+            this.DataI18N = BstManager.ReadJsonFile(BstManager.PathI18N + lang + ".json");
+
+            JArray raceNamesInConfig = (JArray) this.DataI18N["Game"]["raceNames"];
             this.RaceNames = new List<string>();
-            this.RaceNames.AddRange(new string[] 
-            {
-                "天女", "人女", "人男", "龙女", "龙男", "灵女", "灵男"
-            });
+            this.RaceNames.AddRange(
+                raceNamesInConfig.ToObject<List<string>>()
+            );
             this.RaceTypes = new List<string>();
             this.RaceTypes.AddRange(new string[] 
             {
@@ -248,7 +255,14 @@ namespace BladeSoulTool.lib
         {
             MethodInvoker update = delegate
             {
-                grid.ScrollBars = ScrollBars.None;
+                try
+                {
+                    grid.ScrollBars = ScrollBars.None;
+                }
+                catch (Exception ex)
+                {
+                    BstLogger.Instance.Log(ex.ToString());
+                }
             };
             try
             {

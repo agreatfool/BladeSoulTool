@@ -44,7 +44,6 @@
             this.labelSelectGameDir.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
             this.labelSelectGameDir.Size = new System.Drawing.Size(117, 23);
             this.labelSelectGameDir.TabIndex = 0;
-            this.labelSelectGameDir.Text = "设定游戏安装路径：";
             // 
             // textBoxGameDir
             // 
@@ -61,7 +60,6 @@
             this.btnSelectGameDir.Name = "btnSelectGameDir";
             this.btnSelectGameDir.Size = new System.Drawing.Size(75, 23);
             this.btnSelectGameDir.TabIndex = 2;
-            this.btnSelectGameDir.Text = "选择";
             this.btnSelectGameDir.UseVisualStyleBackColor = true;
             // 
             // textBoxOut
@@ -93,7 +91,6 @@
             this.labelSelectLang.Name = "labelSelectLang";
             this.labelSelectLang.Size = new System.Drawing.Size(65, 12);
             this.labelSelectLang.TabIndex = 5;
-            this.labelSelectLang.Text = "选择语言：";
             // 
             // comboBoxSelectLang
             // 
@@ -116,7 +113,7 @@
             this.Controls.Add(this.textBoxGameDir);
             this.Controls.Add(this.labelSelectGameDir);
             this.Name = "GuiUtil";
-            this.Text = "Form1";
+            this.Text = "GUI_Util";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -50,6 +50,7 @@ namespace BladeSoulTool.lib
                         }
                         catch (InvalidOperationException ex)
                         {
+                            BstLogger.Instance.Log(ex.ToString());
                             // 因为我们可能会在GUI_Picture的UI中的PictureBox里显示loading动态图
                             // 而上述的窗口可能在关闭后被销毁，这里我们需要处理窗口被销毁后的错误
                             // 这时候Timer应该在Dictionary里注册过了

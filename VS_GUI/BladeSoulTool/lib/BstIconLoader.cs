@@ -70,7 +70,14 @@ namespace BladeSoulTool.lib
                     if (updatedCount >= BstIconLoader.UpdateThrottle)
                     {
                         MethodInvoker tableUpdateAction = () => task.Grid.Refresh();
-                        task.Grid.BeginInvoke(tableUpdateAction);
+                        try
+                        {
+                            task.Grid.BeginInvoke(tableUpdateAction);
+                        }
+                        catch (Exception ex)
+                        {
+                            BstLogger.Instance.Log(ex.ToString());
+                        }
                         updatedCount = 0;
                     }
                 }

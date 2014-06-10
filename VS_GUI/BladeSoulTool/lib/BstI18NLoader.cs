@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using System;
+using Newtonsoft.Json.Linq;
 
 namespace BladeSoulTool.lib
 {
@@ -22,13 +23,20 @@ namespace BladeSoulTool.lib
 
         private BstI18NLoader()
         {
-            var lang = (string) BstManager.Instance.SystemSettings["lang"];
-            this._i18n = BstManager.ReadJsonFile(BstManager.PathI18N + lang + ".json");
+            this._i18n = BstManager.Instance.DataI18N;
         }
 
         public string LoadI18NValue(string uiClassName, string key)
         {
-            return (string) this._i18n[uiClassName][key];
+            try
+            {
+                return (string) this._i18n[uiClassName][key];
+            }
+            catch (Exception ex)
+            {
+                BstLogger.Instance.Log(ex.ToString());
+                return null;
+            }
         }
 
     }

@@ -25,11 +25,32 @@ namespace BladeSoulTool.ui
 
         private JObject _originSettings;
 
+        private BstI18NLoader _i18n;
+
         public GuiItems(int formType)
         {
             InitializeComponent();
-            this.Shown += new EventHandler(GuiItems_Shown); // 页面展示后的事件
+            this.InitI18N();
             this.Init(formType);
+            this.Shown += new EventHandler(GuiItems_Shown); // 页面展示后的事件
+        }
+
+        private void InitI18N()
+        {
+            this._i18n = BstI18NLoader.Instance;
+            this.labelRace.Text = this._i18n.LoadI18NValue("GuiItems", "labelRace");
+            this.btnView2DOrigin.Text = this._i18n.LoadI18NValue("GuiItems", "btnView2D");
+            this.btnView3DOrigin.Text = this._i18n.LoadI18NValue("GuiItems", "btnView3D");
+            this.labelOrigin.Text = this._i18n.LoadI18NValue("GuiItems", "labelOrigin");
+            this.btnView2DTarget.Text = this._i18n.LoadI18NValue("GuiItems", "btnView2D");
+            this.btnView3DTarget.Text = this._i18n.LoadI18NValue("GuiItems", "btnView3D");
+            this.labelTarget.Text = this._i18n.LoadI18NValue("GuiItems", "labelTarget");
+            this.btnTopRestoreAll.Text = this._i18n.LoadI18NValue("GuiItems", "btnTopRestoreAll");
+            this.btnView3DInfo.Text = this._i18n.LoadI18NValue("GuiItems", "btnView3D");
+            this.btnSelectTarget.Text = this._i18n.LoadI18NValue("GuiItems", "btnSelectTarget");
+            this.btnSelectOrigin.Text = this._i18n.LoadI18NValue("GuiItems", "btnSelectOrigin");
+            this.labelInfoHead.Text = this._i18n.LoadI18NValue("GuiItems", "labelInfoHead");
+            this.btnReplace.Text = this._i18n.LoadI18NValue("GuiItems", "btnReplace");
         }
 
         private void Init(int formType)
@@ -43,12 +64,15 @@ namespace BladeSoulTool.ui
             {
                 DataType = Type.GetType("System.Byte[]"),
                 AllowDBNull = true,
-                ColumnName = "缩略图"
+                ColumnName = this._i18n.LoadI18NValue("GuiItems", "tableColIcon")
             };
             //columnIcon.ReadOnly = true;
             this._dataTable.Columns.Add(columnIcon);
             // code列
-            var columnCode = new DataColumn("Code") { ColumnName = "编号", ReadOnly = true };
+            var columnCode = new DataColumn("Code") {
+                ColumnName = this._i18n.LoadI18NValue("GuiItems", "tableColCode"),
+                ReadOnly = true
+            };
             this._dataTable.Columns.Add(columnCode);
 
             // 数据展示列表
@@ -220,8 +244,6 @@ namespace BladeSoulTool.ui
             this.textBoxInfo.Text = elementData.ToString();
             // 模型截图控件
             BstPicLoader.LoadPic(this._formType, elementData, pictureBoxUmodel, this.textBoxOut);
-            // 滚动条
-            this.gridItems.FirstDisplayedScrollingRowIndex = e.RowIndex;
         }
 
         private void gridItems_MouseWheel(Object sender, MouseEventArgs e)

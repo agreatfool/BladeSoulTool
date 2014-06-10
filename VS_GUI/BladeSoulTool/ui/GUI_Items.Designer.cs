@@ -96,7 +96,6 @@
             this.labelRace.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.labelRace.Size = new System.Drawing.Size(65, 20);
             this.labelRace.TabIndex = 2;
-            this.labelRace.Text = "选择种族：";
             // 
             // comboBoxRace
             // 
@@ -125,7 +124,6 @@
             this.btnView2DOrigin.Name = "btnView2DOrigin";
             this.btnView2DOrigin.Size = new System.Drawing.Size(42, 85);
             this.btnView2DOrigin.TabIndex = 4;
-            this.btnView2DOrigin.Text = "预览模型截图";
             this.btnView2DOrigin.UseVisualStyleBackColor = true;
             // 
             // btnView3DOrigin
@@ -134,7 +132,6 @@
             this.btnView3DOrigin.Name = "btnView3DOrigin";
             this.btnView3DOrigin.Size = new System.Drawing.Size(42, 85);
             this.btnView3DOrigin.TabIndex = 3;
-            this.btnView3DOrigin.Text = "预览3D模型";
             this.btnView3DOrigin.UseVisualStyleBackColor = true;
             // 
             // pictureBoxOrigin
@@ -165,7 +162,6 @@
             this.labelOrigin.Padding = new System.Windows.Forms.Padding(0, 22, 0, 0);
             this.labelOrigin.Size = new System.Drawing.Size(61, 85);
             this.labelOrigin.TabIndex = 0;
-            this.labelOrigin.Text = "已设定的原始模型信息：";
             // 
             // panelDest
             // 
@@ -186,7 +182,6 @@
             this.btnView2DTarget.Name = "btnView2DTarget";
             this.btnView2DTarget.Size = new System.Drawing.Size(42, 85);
             this.btnView2DTarget.TabIndex = 7;
-            this.btnView2DTarget.Text = "预览模型截图";
             this.btnView2DTarget.UseVisualStyleBackColor = true;
             // 
             // btnView3DTarget
@@ -195,7 +190,6 @@
             this.btnView3DTarget.Name = "btnView3DTarget";
             this.btnView3DTarget.Size = new System.Drawing.Size(42, 85);
             this.btnView3DTarget.TabIndex = 6;
-            this.btnView3DTarget.Text = "预览3D模型";
             this.btnView3DTarget.UseVisualStyleBackColor = true;
             // 
             // pictureBoxTarget
@@ -226,7 +220,6 @@
             this.labelTarget.Padding = new System.Windows.Forms.Padding(0, 22, 0, 0);
             this.labelTarget.Size = new System.Drawing.Size(61, 85);
             this.labelTarget.TabIndex = 1;
-            this.labelTarget.Text = "已选择的目标模型信息：";
             // 
             // btnTopRestoreAll
             // 
@@ -234,7 +227,6 @@
             this.btnTopRestoreAll.Name = "btnTopRestoreAll";
             this.btnTopRestoreAll.Size = new System.Drawing.Size(75, 21);
             this.btnTopRestoreAll.TabIndex = 6;
-            this.btnTopRestoreAll.Text = "全部还原";
             this.btnTopRestoreAll.UseVisualStyleBackColor = true;
             // 
             // textBoxOut
@@ -267,7 +259,6 @@
             this.btnView3DInfo.Name = "btnView3DInfo";
             this.btnView3DInfo.Size = new System.Drawing.Size(230, 23);
             this.btnView3DInfo.TabIndex = 4;
-            this.btnView3DInfo.Text = "预览3D模型";
             this.btnView3DInfo.UseVisualStyleBackColor = true;
             // 
             // btnSelectTarget
@@ -276,7 +267,6 @@
             this.btnSelectTarget.Name = "btnSelectTarget";
             this.btnSelectTarget.Size = new System.Drawing.Size(230, 23);
             this.btnSelectTarget.TabIndex = 3;
-            this.btnSelectTarget.Text = "选为目标模型";
             this.btnSelectTarget.UseVisualStyleBackColor = true;
             // 
             // btnSelectOrigin
@@ -285,7 +275,6 @@
             this.btnSelectOrigin.Name = "btnSelectOrigin";
             this.btnSelectOrigin.Size = new System.Drawing.Size(230, 23);
             this.btnSelectOrigin.TabIndex = 2;
-            this.btnSelectOrigin.Text = "选为原始模型";
             this.btnSelectOrigin.UseVisualStyleBackColor = true;
             // 
             // textBoxInfo
@@ -304,7 +293,6 @@
             this.labelInfoHead.Name = "labelInfoHead";
             this.labelInfoHead.Size = new System.Drawing.Size(174, 17);
             this.labelInfoHead.TabIndex = 0;
-            this.labelInfoHead.Text = "选中的模型信息：";
             // 
             // btnReplace
             // 
@@ -312,7 +300,6 @@
             this.btnReplace.Name = "btnReplace";
             this.btnReplace.Size = new System.Drawing.Size(46, 92);
             this.btnReplace.TabIndex = 10;
-            this.btnReplace.Text = "将左边的替换为右边的";
             this.btnReplace.UseVisualStyleBackColor = true;
             // 
             // GUI_Items

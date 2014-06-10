@@ -14,44 +14,58 @@ namespace BladeSoulTool
         private Form _formWeapon;
         private Form _formUtil;
 
+        private BstI18NLoader _i18n;
+
         public App()
         {
             InitializeComponent();
+
+            // 初始化数据
+            var dataManager = BstManager.Instance;
+            // 初始化icon图片加载器
+            var loader = BstIconLoader.Instance;
+            // 检查新版本
+            this.CheckNewVersion();
+
+            this.InitI18N();
             this.Init();
+        }
+
+        private void InitI18N()
+        {
+            this._i18n = BstI18NLoader.Instance;
+            this.tabCostume.Text = this._i18n.LoadI18NValue("App", "tabCostume");
+            this.tabAttach.Text = this._i18n.LoadI18NValue("App", "tabAttach");
+            this.tabWeapon.Text = this._i18n.LoadI18NValue("App", "tabWeapon");
+            this.tabUtil.Text = this._i18n.LoadI18NValue("App", "tabUtil");
+            this.Text = this._i18n.LoadI18NValue("App", "title");
         }
 
         private void Init()
         {
             BstLogger.Instance.Log("[App] BladeSoulTool App start ...");
-            // 初始化数据
-            var dataManager = BstManager.Instance;
-            // 初始化icon图片加载器
-            var loader = BstIconLoader.Instance;
             // 初始化第一个tab，costume
             this._formCostume = CreateItemsForm(BstManager.TypeCostume);
             this.tabCostume.Controls.Add(this._formCostume);
             // 注册tab切换事件
             this.tabControl.SelectedIndexChanged += new EventHandler(tabControl_SelectedIndexChanged);
-            // 检查新版本
-            this.CheckNewVersion();
         }
 
         private void CheckNewVersion()
         {
-            var currentVer = (string)BstManager.Instance.SystemSettings["version"];
+            var currentVer = (string) BstManager.Instance.SystemSettings["version"];
             new Thread(() =>
             {
                 var releasedVer = BstManager.GetStringFromWeb(BstManager.GithubVersionTxt);
                 if (currentVer != releasedVer)
                 {
                     var result = BstManager.DisplayConfirmMessageBox(
-                        "发现新版本",
-                        "新版本发现，当前版本为：" + currentVer + "，最新版本为：" + releasedVer + "\r\n" +
-                        "请去 " + BstManager.ReleaseUrl + " 检阅最新版本信息。"
+                        this._i18n.LoadI18NValue("App", "newVerTitle"),
+                        string.Format(this._i18n.LoadI18NValue("App", "newVerContent"), currentVer, releasedVer, BstManager.ReleaseSiteUrl)
                     );
                     if (result == DialogResult.OK)
                     {
-                        Process.Start(BstManager.ReleaseUrl);
+                        Process.Start(BstManager.ReleaseSiteUrl);
                     }
                 }
             }).Start();
