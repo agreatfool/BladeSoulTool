@@ -67,6 +67,8 @@ namespace BladeSoulTool.lib
         public const string GithubRoot = "https://raw.githubusercontent.com/agreatfool/BladeSoulTool/";
         public const string GithubBranch = "master";
 
+        public const string GithubVersionTxt = BstManager.GithubRoot + BstManager.GithubBranch + "/VERSION.txt";
+
         public const string ReleaseUrl = "http://bbs.17173.com/thread-8018028-1-1.html";
 
         public byte[] LoadingGifBytes { get; set; }

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Threading;
 using System.Windows.Forms;
 using BladeSoulTool.lib;
 using BladeSoulTool.ui;
@@ -36,16 +38,23 @@ namespace BladeSoulTool
 
         private void CheckNewVersion()
         {
-            var currentVer = (string) BstManager.Instance.SystemSettings["version"];
-            var releasedVer = BstManager.GetStringFromWeb("https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/VERSION.txt");
-            if (currentVer != releasedVer)
+            var currentVer = (string)BstManager.Instance.SystemSettings["version"];
+            new Thread(() =>
             {
-                BstManager.DisplayInfoMessageBox(
-                    "发现新版本",
-                    "新版本发现，当前版本为：" + currentVer + "，最新版本为：" + releasedVer + "\r\n" +
-                    "请去 " + BstManager.ReleaseUrl + " 检阅最新版本信息。"
-                );
-            }
+                var releasedVer = BstManager.GetStringFromWeb(BstManager.GithubVersionTxt);
+                if (currentVer != releasedVer)
+                {
+                    var result = BstManager.DisplayConfirmMessageBox(
+                        "发现新版本",
+                        "新版本发现，当前版本为：" + currentVer + "，最新版本为：" + releasedVer + "\r\n" +
+                        "请去 " + BstManager.ReleaseUrl + " 检阅最新版本信息。"
+                    );
+                    if (result == DialogResult.OK)
+                    {
+                        Process.Start(BstManager.ReleaseUrl);
+                    }
+                }
+            }).Start();
         }
 
         private void tabControl_SelectedIndexChanged(Object sender, EventArgs e)
