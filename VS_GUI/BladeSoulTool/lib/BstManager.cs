@@ -67,6 +67,8 @@ namespace BladeSoulTool.lib
         public const string GithubRoot = "https://raw.githubusercontent.com/agreatfool/BladeSoulTool/";
         public const string GithubBranch = "master";
 
+        public const string ReleaseUrl = "http://bbs.17173.com/thread-8018028-1-1.html";
+
         public byte[] LoadingGifBytes { get; set; }
 
         public JObject SystemSettings { get; set; }
@@ -259,6 +261,26 @@ namespace BladeSoulTool.lib
                     fs.Close();
                     fs.Dispose();
                 }
+            }
+        }
+
+        public static string GetStringFromWeb(string url)
+        {
+            if (string.IsNullOrEmpty(url))
+            {
+                return null;
+            }
+
+            var webClient = new WebClient();
+
+            try
+            {
+                return webClient.DownloadString(url);
+            }
+            catch (Exception ex)
+            {
+                BstLogger.Instance.Log(ex.ToString());
+                return null;
             }
         }
 

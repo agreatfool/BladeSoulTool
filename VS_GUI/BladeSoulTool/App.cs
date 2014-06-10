@@ -30,6 +30,22 @@ namespace BladeSoulTool
             this.tabCostume.Controls.Add(this._formCostume);
             // 注册tab切换事件
             this.tabControl.SelectedIndexChanged += new EventHandler(tabControl_SelectedIndexChanged);
+            // 检查新版本
+            this.CheckNewVersion();
+        }
+
+        private void CheckNewVersion()
+        {
+            var currentVer = (string) BstManager.Instance.SystemSettings["version"];
+            var releasedVer = BstManager.GetStringFromWeb("https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/VERSION.txt");
+            if (currentVer != releasedVer)
+            {
+                BstManager.DisplayInfoMessageBox(
+                    "发现新版本",
+                    "新版本发现，当前版本为：" + currentVer + "，最新版本为：" + releasedVer + "\r\n" +
+                    "请去 " + BstManager.ReleaseUrl + " 检阅最新版本信息。"
+                );
+            }
         }
 
         private void tabControl_SelectedIndexChanged(Object sender, EventArgs e)
