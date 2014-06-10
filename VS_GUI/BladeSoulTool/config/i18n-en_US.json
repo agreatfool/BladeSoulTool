@@ -47,5 +47,20 @@
         "actionWaitForFuncMsg": "Current version only support costume replace, please wait for next version",
         "actionReplaceMsg": "Confirm replacement?",
         "actionOnlyCol1DataMsg": "Only col1 model can be set as origin model"
+    },
+    "BstIconLoader": {
+        "iconDownloadFailed": "Icon download failed: {0}",
+        "iconDownloadSucceed": "Icon download succeeded: {0}",
+        "iconDownloadAllDone": "All icons downloaded ..."
+    },
+    "BstPicLoader": {
+        "picDownloadFailed": "Pic download failed: {0}",
+        "picDownloadSucceed": "Pic download succeeded: {0}"
+    },
+    "BstManager": {
+        "gruntAlreadyRun": "There is already some grunt script running, please do not do many tasks at the same time ...",
+        "gruntStartLog": "Start to run: \r\nCwd: {0}\r\nCommand: {1}\r\nArguments: {2}\r\nOutput: ",
+        "gruntResultTitle": "Script done",
+        "gruntResultMsg": "Specified grunt task done"
     }
 }

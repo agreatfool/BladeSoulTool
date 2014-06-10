@@ -84,7 +84,7 @@ namespace BladeSoulTool.lib
                     blob = BstManager.DownloadImageFile(url, path);
                     if (blob == null)
                     {
-                        BstManager.ShowMsgInTextBox(box, "图片下载失败：" + url);
+                        BstManager.ShowMsgInTextBox(box, string.Format(BstI18NLoader.Instance.LoadI18NValue("BstPicLoader", "picDownloadFailed"), url));
                         return; // 图片下载失败
                     }
                 }
@@ -93,7 +93,7 @@ namespace BladeSoulTool.lib
                 BstPicLoader.LoadingTimers.Remove(picture); // 加载完成，删除Dictionary里注册的Timer
                 loadingTimer.Dispose();
 
-                BstManager.ShowMsgInTextBox(box, "图片下载完成：" + url);
+                BstManager.ShowMsgInTextBox(box, string.Format(BstI18NLoader.Instance.LoadI18NValue("BstPicLoader", "picDownloadSucceed"), url));
 
                 // 转换成位图
                 var bitmap = BstManager.ConvertByteToImage(blob);

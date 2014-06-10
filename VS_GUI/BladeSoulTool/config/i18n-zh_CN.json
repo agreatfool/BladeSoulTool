@@ -47,5 +47,20 @@
         "actionWaitForFuncMsg": "目前版本暂时只支持服装替换，请耐心等待下一个版本",
         "actionReplaceMsg": "确认执行替换操作？",
         "actionOnlyCol1DataMsg": "只可将后缀最后为col1的模型设为原始模型"
+    },
+    "BstIconLoader": {
+        "iconDownloadFailed": "图片下载失败：{0}",
+        "iconDownloadSucceed": "图片下载完成：{0}",
+        "iconDownloadAllDone": "所有图片下载任务完成 ..."
+    },
+    "BstPicLoader": {
+        "picDownloadFailed": "图片下载失败：{0}",
+        "picDownloadSucceed": "图片下载完成：{0}"
+    },
+    "BstManager": {
+        "gruntAlreadyRun": "已经有grunt脚本在执行了，请不要重复运行工作脚本 ...",
+        "gruntStartLog": "开始运行：\r\n位置：{0}\r\n命令：{1}\r\n参数：{2}\r\n输出：",
+        "gruntResultTitle": "脚本运行",
+        "gruntResultMsg": "操作执行完毕"
     }
 }

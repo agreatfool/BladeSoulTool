@@ -58,11 +58,11 @@ namespace BladeSoulTool.lib
                 // 检查结果并更新UI
                 if (pic == null)
                 {
-                    BstManager.ShowMsgInTextBox(task.Box, "图片下载失败：" + downloadUrl);
+                    BstManager.ShowMsgInTextBox(task.Box, string.Format(BstI18NLoader.Instance.LoadI18NValue("BstIconLoader", "iconDownloadFailed"), downloadUrl));
                 }
                 else
                 {
-                    BstManager.ShowMsgInTextBox(task.Box, "图片下载完成：" + downloadUrl);
+                    BstManager.ShowMsgInTextBox(task.Box, string.Format(BstI18NLoader.Instance.LoadI18NValue("BstIconLoader", "iconDownloadSucceed"), downloadUrl));
 
                     // 更新图片
                     task.Table.Rows[task.RowId][task.ColId] = pic;
@@ -88,7 +88,7 @@ namespace BladeSoulTool.lib
                 MethodInvoker tableFinalUpdateAction = () => task.Grid.Refresh();
                 task.Grid.BeginInvoke(tableFinalUpdateAction);
                 BstManager.DisplayDataGridViewVerticalScrollBar(task.Grid);
-                BstManager.ShowMsgInTextBox(task.Box, "所有图片下载任务完成 ...");
+                BstManager.ShowMsgInTextBox(task.Box, BstI18NLoader.Instance.LoadI18NValue("BstIconLoader", "iconDownloadAllDone"));
                 BstLogger.Instance.Log("[BstIconLoader] Queued works all done, thread exit ...");
                 isAnyTaskLeft = false;
             }
