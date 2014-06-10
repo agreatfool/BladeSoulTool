@@ -141,7 +141,7 @@ namespace BladeSoulTool.ui
             // 启动新的线程来处理数据加载内容
             this._loadingThread = new Thread(() =>
             {
-                BstManager.ShowMsgInTextBox(this.textBoxOut, "开始加载数据列表数据 ...");
+                BstManager.ShowMsgInTextBox(this.textBoxOut, this._i18n.LoadI18NValue("GuiItems", "logStartToLoadDataList"));
 
                 BstManager.HideDataGridViewVerticalScrollBar(this.gridItems); // 隐藏滚动条
 
@@ -200,7 +200,7 @@ namespace BladeSoulTool.ui
                     ));
                 }
 
-                BstManager.ShowMsgInTextBox(this.textBoxOut, "数据列表加载完成，开始加载图片 ...");
+                BstManager.ShowMsgInTextBox(this.textBoxOut, this._i18n.LoadI18NValue("GuiItems", "logEndLoadDataList"));
                 BstIconLoader.Instance.Start(); // 启动图片加载器
             });
             this._loadingThread.Start();
@@ -271,7 +271,9 @@ namespace BladeSoulTool.ui
         private void btnTopRestoreAll_Click(Object sender, EventArgs e)
         {
             // 恢复全部模型
-            if (BstManager.DisplayConfirmMessageBox("确认操作", "确认恢复全部替换的模型？") == DialogResult.OK)
+            if (BstManager.DisplayConfirmMessageBox(
+                this._i18n.LoadI18NValue("GuiItems", "actionConfirmTitle"),
+                this._i18n.LoadI18NValue("GuiItems", "actionRestoreMsg")) == DialogResult.OK)
             {
                 BstManager.Instance.RunGrunt(this.textBoxOut, "restore");
             }
@@ -282,7 +284,10 @@ namespace BladeSoulTool.ui
             // 预览原始模型2D截图
             if (this._originElementId == null)
             {
-                BstManager.DisplayErrorMessageBox("选择错误", "请先选择一个原始模型");
+                BstManager.DisplayErrorMessageBox(
+                    this._i18n.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
+                    this._i18n.LoadI18NValue("GuiItems", "actionSelectOriginErrorMsg")
+                );
                 return;
             }
             this.CreatePictureForm(this._originElementId);
@@ -293,7 +298,10 @@ namespace BladeSoulTool.ui
             // 预览原始模型的3D模型
             if (this._originElementId == null)
             {
-                BstManager.DisplayErrorMessageBox("选择错误", "请先选择一个原始模型");
+                BstManager.DisplayErrorMessageBox(
+                    this._i18n.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
+                    this._i18n.LoadI18NValue("GuiItems", "actionSelectOriginErrorMsg")
+                );
                 return;
             }
             BstManager.Instance.RunGrunt(this.textBoxOut, "upk_viewer", new string[]
@@ -308,7 +316,10 @@ namespace BladeSoulTool.ui
             // 预览目标模型2D截图
             if (this._targetElementId == null)
             {
-                BstManager.DisplayErrorMessageBox("选择错误", "请先选择一个目标模型");
+                BstManager.DisplayErrorMessageBox(
+                    this._i18n.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
+                    this._i18n.LoadI18NValue("GuiItems", "actionSelectTargetErrorMsg")
+                );
                 return;
             }
             this.CreatePictureForm(this._targetElementId);
@@ -319,7 +330,10 @@ namespace BladeSoulTool.ui
             // 预览目标模型的3D模型
             if (this._targetElementId == null)
             {
-                BstManager.DisplayErrorMessageBox("选择错误", "请先选择一个目标模型");
+                BstManager.DisplayErrorMessageBox(
+                    this._i18n.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
+                    this._i18n.LoadI18NValue("GuiItems", "actionSelectTargetErrorMsg")
+                );
                 return;
             }
             BstManager.Instance.RunGrunt(this.textBoxOut, "upk_viewer", new string[]
@@ -334,26 +348,40 @@ namespace BladeSoulTool.ui
             // 替换模型
             if (this._originElementId == null)
             {
-                BstManager.DisplayErrorMessageBox("替换数据错误", "原始模型信息不得为空");
+                BstManager.DisplayErrorMessageBox(
+                    this._i18n.LoadI18NValue("GuiItems", "actionReplaceErrorTitle"),
+                    this._i18n.LoadI18NValue("GuiItems", "actionOriginEmptyErrorMsg")
+                );
                 return;
             }
             if (this._targetElementId == null)
             {
-                BstManager.DisplayErrorMessageBox("替换数据错误", "目标模型信息不得为空");
+                BstManager.DisplayErrorMessageBox(
+                    this._i18n.LoadI18NValue("GuiItems", "actionReplaceErrorTitle"),
+                    this._i18n.LoadI18NValue("GuiItems", "actionTargetEmptyErrorMsg")
+                );
                 return;
             }
             if (this._originElementId == this._targetElementId)
             {
-                BstManager.DisplayErrorMessageBox("替换数据错误", "目标模型不得与原始模型相同");
+                BstManager.DisplayErrorMessageBox(
+                    this._i18n.LoadI18NValue("GuiItems", "actionReplaceErrorTitle"),
+                    this._i18n.LoadI18NValue("GuiItems", "actionTargetSameErrorMsg")
+                );
                 return;
             }
             if (this._formType != BstManager.TypeCostume)
             {
                 // FIXME
-                BstManager.DisplayErrorMessageBox("功能未开放", "目前版本暂时只支持服装替换，请耐心等待下一个版本");
+                BstManager.DisplayErrorMessageBox(
+                    this._i18n.LoadI18NValue("GuiItems", "actionFuncNotDoneTitle"),
+                    this._i18n.LoadI18NValue("GuiItems", "actionWaitForFuncMsg")
+                );
                 return;
             }
-            if (BstManager.DisplayConfirmMessageBox("确认操作", "确认执行替换操作？") == DialogResult.OK)
+            if (BstManager.DisplayConfirmMessageBox(
+                this._i18n.LoadI18NValue("GuiItems", "actionConfirmTitle"),
+                this._i18n.LoadI18NValue("GuiItems", "actionReplaceMsg")) == DialogResult.OK)
             {
                 string race = null;
                 if (this._formType == BstManager.TypeAttach
@@ -375,7 +403,10 @@ namespace BladeSoulTool.ui
             // 预览选中的对象的3D模型
             if (this._selectedElementId == null)
             {
-                BstManager.DisplayErrorMessageBox("选择错误", "请先选择一个目标模型");
+                BstManager.DisplayErrorMessageBox(
+                    this._i18n.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
+                    this._i18n.LoadI18NValue("GuiItems", "actionSelectTargetErrorMsg")
+                );
                 return;
             }
             BstManager.Instance.RunGrunt(this.textBoxOut, "upk_viewer", new string[]
@@ -390,7 +421,10 @@ namespace BladeSoulTool.ui
             // 将当前选中的物件设为原始模型
             if (this._selectedElementId == null)
             {
-                BstManager.DisplayErrorMessageBox("选择错误", "请先选择一个目标模型");
+                BstManager.DisplayErrorMessageBox(
+                    this._i18n.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
+                    this._i18n.LoadI18NValue("GuiItems", "actionSelectTargetErrorMsg")
+                );
                 return; // 没有选中的元素，直接退出
             }
             var element = (JObject) this._data[this._selectedElementId];
@@ -398,7 +432,10 @@ namespace BladeSoulTool.ui
             var col = (string) element["col"];
             if (col != "col1")
             {
-                BstManager.DisplayErrorMessageBox("选择错误", "只可将后缀最后为col1的模型设为原始模型");
+                BstManager.DisplayErrorMessageBox(
+                    this._i18n.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
+                    this._i18n.LoadI18NValue("GuiItems", "actionOnlyCol1DataMsg")
+                );
                 return;
             }
             this._originElementId = this._selectedElementId;
@@ -427,7 +464,10 @@ namespace BladeSoulTool.ui
             // 将当前选中的物件设为目标模型
             if (this._selectedElementId == null)
             {
-                BstManager.DisplayErrorMessageBox("选择错误", "请先选择一个目标模型");
+                BstManager.DisplayErrorMessageBox(
+                    this._i18n.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
+                    this._i18n.LoadI18NValue("GuiItems", "actionSelectTargetErrorMsg")
+                );
                 return; // 没有选中的元素，直接退出
             }
             this._targetElementId = this._selectedElementId;
