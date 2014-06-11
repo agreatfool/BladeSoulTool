@@ -106,7 +106,7 @@ namespace BladeSoulTool.lib
             var lang = (string) this.SystemSettings["lang"];
             this.DataI18N = BstManager.ReadJsonFile(BstManager.PathI18N + lang + ".json");
 
-            JArray raceNamesInConfig = (JArray) this.DataI18N["Game"]["raceNames"];
+            var raceNamesInConfig = (JArray) this.DataI18N["Game"]["raceNames"];
             this.RaceNames = new List<string>();
             this.RaceNames.AddRange(
                 raceNamesInConfig.ToObject<List<string>>()
