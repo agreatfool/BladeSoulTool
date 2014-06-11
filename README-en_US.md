@@ -107,5 +107,5 @@ GPLv2
 ## 8. Change Log
 * 2014-06-06: v1.0.0 release
 * 2014-06-06: v1.0.1: Fix 3D view log not zipped
-* 2014-06-11: v1.0.2: Add new version notification functionality
+* 2014-06-11: v1.0.2: Add new version notification functionality, fix scroll bar issue
 * 2014-06-11: v1.0.3: Add I18N
