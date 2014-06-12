@@ -42,7 +42,7 @@ BstUpkScanner.prototype.start = function() {
     self.util.printHr();
 
     /**
-     * 扫描只会扫bns目录下的upk，因为umodel无法指定两个工作目录，所以先要运行parser_prepare，
+     * 扫描只会扫bns目录下的upk，因为umodel无法指定两个工作目录，所以先要运行preparer，
      * 将所有不重复的upk复制到bns下，然后再开始跑scanner脚本
      */
     // 收集bns目录下的upk文件path
