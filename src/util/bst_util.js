@@ -307,7 +307,10 @@ BstUtil.prototype.formatRawCode = function(rawCode) {
 };
 
 BstUtil.prototype.formatCol = function(colInfo) {
-    return colInfo.replace(new RegExp('col', 'i'), 'col');
+    if (colInfo.match(/col\d+/i) !== null) { // 只有带数字后缀的，才有必要转换，否则可能就是一个"Col"
+        colInfo = colInfo.replace(new RegExp('col', 'i'), 'col');
+    }
+    return colInfo;
 };
 
 BstUtil.prototype.formatCode = function(code) { // 删掉code开头的0字符串，方便匹配相等

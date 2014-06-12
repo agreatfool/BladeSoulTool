@@ -19,6 +19,13 @@ BstConst.PART_TYPES = ['costume', 'attach', 'weapon'];
 BstConst.PART_TYPE_COSTUME = 'costume';
 BstConst.PART_TYPE_ATTACH  = 'attach';
 BstConst.PART_TYPE_WEAPON  = 'weapon';
+BstConst.PART_TYPE_UNRECOGNIZED = 'unrecognized';
+
+//------------------------------------------------------------------------
+//- MESH XML
+//------------------------------------------------------------------------
+BstConst.PATH_MESH_XML = path.join(process.cwd(), 'resources/dedat/output/engine/charactertoolappearance_mesh.xml');
+BstConst.RACE_VALID = ['곤', '건', '진', '린'];
 
 //------------------------------------------------------------------------
 //- UPK
@@ -36,7 +43,8 @@ BstConst.PATH_UPK_LOG = path.join(process.cwd(), BstConst.PATH_UPK_BASE, 'log');
 BstConst.PATH_UPK_DATA_LIST = path.join(process.cwd(), BstConst.PATH_UPK_BASE, 'data/list');
 BstConst.PATH_UPK_DATA_RAW = path.join(process.cwd(), BstConst.PATH_UPK_BASE, 'data/raw');
 
-BstConst.LIST_FILE_SKELETON_COSTUME_WITH_ATTACHMENT = 'list_skeleton_costume_with_attachment.json';
+BstConst.LIST_FILE_SKELETON_COSTUME = 'list_skeleton_costume.json';
+BstConst.LIST_FILE_SKELETON_ATTACH = 'list_skeleton_attach.json';
 BstConst.LIST_FILE_SKELETON_WEAPON = 'list_skeleton_weapon.json';
 BstConst.LIST_FILE_SKELETON_HAIR = 'list_skeleton_hair.json';
 BstConst.LIST_FILE_SKELETON_UNRECOGNIZED = 'list_skeleton_unrecognized.json';

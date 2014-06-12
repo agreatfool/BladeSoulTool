@@ -2,7 +2,7 @@
 
 REM umodel.exe -export -path=Y:\Games\ÌÚÑ¶ÓÎÏ·\½£Áé_ÌÚÑ¶\contents\bns\CookedPC -game=bns -out=output 00009664 & pause > nul
 
-umodel.exe -view -path=D:\Games\½£Áé_ÌÚÑ¶\contents\bns\CookedPC -game=bns 00015584 & pause > nul
+umodel.exe -view -path=Y:\Games\ÌÚÑ¶ÓÎÏ·\½£Áé_ÌÚÑ¶\contents\bns\CookedPC -game=bns 00005796 & pause > nul
 
 REM umodel.exe -dump -path=Y:\Games\ÌÚÑ¶ÓÎÏ·\½£Áé_ÌÚÑ¶\contents\bns\CookedPC -game=bns 00021666 & pause > nul
 
