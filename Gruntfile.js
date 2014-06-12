@@ -234,6 +234,15 @@ module.exports = function(grunt) {
         optimizer.start();
     };
 
+    var Task_UpkEnvPreparer = function() {
+        var Preparer = require('./src/upk/bst_upk_env_preparer.js');
+
+        this.async();
+
+        var preparer = new Preparer(grunt);
+        preparer.start();
+    };
+
     var Task_UpkScanner = function() {
         var Scanner = require('./src/upk/bst_upk_scanner.js');
 
@@ -309,6 +318,7 @@ module.exports = function(grunt) {
     grunt.registerTask('shooter_check', Task_ScreenShooter_Check);
     grunt.registerTask('icon_dumper', Task_IconDumper);
     grunt.registerTask('png_optimizer', Task_PngOptimizer);
+    grunt.registerTask('upk_preparer', Task_UpkEnvPreparer);
     grunt.registerTask('upk_scanner', Task_UpkScanner);
     grunt.registerTask('upk_parser', Task_UpkParser);
     grunt.registerTask('upk_viewer', Task_UpkViewer);
