@@ -14,6 +14,9 @@ var BstUtil = require('../util/bst_util.js');
  */
 var BstConst = require('../const/bst_const.js');
 
+/**
+ * 扫描所有的upk文件，使用umodel.exe的dump命令，将所有的分析数据搜集，输出到"database/upk/log"下
+ */
 var BstUpkScanner = function(grunt) {
     this.grunt  = grunt;
     this.util   = new BstUtil(grunt);
