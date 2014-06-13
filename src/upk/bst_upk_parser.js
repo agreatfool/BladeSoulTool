@@ -706,99 +706,82 @@ BstUpkParser.prototype.buildDatabase = function() {
     self.grunt.log.writeln('[BstUpkParser] Start to build database ...');
     self.util.printHr();
 
-    var buildTypeOfDatabase = function(type) {
-        self.grunt.log.writeln('[BstUpkParser] Start to build ' + type + ' database ...');
+    var totalCount = _.keys(self.upkDataSkeleton).length;
+    var finishedCount = 0;
+
+    // 循环构造数据
+    _.each(self.upkDataSkeleton, function(skeletonData, skeletonKey) {
+        self.buildData(skeletonData);
+        finishedCount++;
+        self.grunt.log.writeln('[BstUpkParser] Finish data build of skeleton: ' + skeletonKey +
+            ', progress: ' + finishedCount + ' / ' + totalCount);
         self.util.printHr();
-        var totalCount = _.keys(self.iconData[type]).length;
-        var finishedCount = 0;
-        if (totalCount > 0) {
-            _.each(self.iconData[type], function(data, code) {
-                self.grunt.log.writeln('[BstUpkParser] Build ' + type + ' data: ' + code);
-                self.buildData(type, code, data);
-                finishedCount++;
-                self.grunt.log.writeln('[BstUpkParser] Finish ' + type + ' data: ' + code +
-                    ', progress: ' + finishedCount + ' / ' + totalCount);
-                self.util.printHr();
-            });
-        }
+    });
+
+    // 写入数据
+    var types = ["costume", "attach", "weapon"];
+    _.each(types, function(type) {
         self.util.writeFile(path.join(BstConst.PATH_DATABASE, type, 'data', 'data.json'), self.util.formatJson(self.db[type]));
         self.util.writeFile(path.join(BstConst.PATH_DATABASE, type, 'data', 'data_invalid.json'), self.util.formatJson(self.dbInvalid[type]));
         self.grunt.log.writeln('[BstUpkParser] Database build of ' + type + ' done ...');
-        self.util.printHr();
-    };
-
-    var types = ["costume", "attach", "weapon"];
-    _.each(types, function(type) {
-        buildTypeOfDatabase(type);
     });
+
+    self.grunt.log.writeln('[BstUpkParser] Database build all done ...');
+    self.util.printHr();
 };
 
-BstUpkParser.prototype.buildData = function(type, code, iconData) {
+BstUpkParser.prototype.buildData = function(skeletonData) {
     var self = this;
 
-    // 根据code，滤出skeleton数据
-    var skeletons = [];
-    _.each(self.upkDataSkeleton, function(data) {
-        if (data['code'] == code) {
-            skeletons.push(data);
-        }
-    });
-    if (skeletons.length === 0) {
-        self.utilBuildDataInvalidInfo(type, code);
-        self.dbInvalid[type][code]['notFound'].push('skeleton:[code:' + code + ']');
-        self.grunt.log.error('[BstUpkParser] Skeleton data not found, code: ' + code);
-        return; // 没必要继续处理下去了
-    } else {
-        _.each(skeletons, function(data) {
-            if (self.upkDataSkeletonInvalid.hasOwnProperty(data['upkId'])) {
-                // 这个skeleton有错误数据，记录下
-                self.utilBuildDataInvalidInfo(type, code);
-                self.dbInvalid[type][code]['invalid'].push('skeleton:[skeleton:' + data['upkId'] + ']');
-                self.grunt.log.error('[BstUpkParser] Skeleton has invalid data, code: ' + code + ', upkId: ' + data['upkId']);
-            }
-        });
+    var skeletonId = skeletonData['upkId'];
+    var skeletonCode = skeletonData['code'];
+    var skeletonType = self.upkSkeletonTypes[skeletonId];
+
+    // 查找对应code的icon数据
+    var iconData = null;
+    if (self.iconData[skeletonType].hasOwnProperty(skeletonCode)) {
+        iconData = self.iconData[skeletonType][skeletonCode];
     }
 
-    _.each(skeletons, function(skeletonData) { // 轮询所有查询到的skeleton数据
-        var skeletonId = skeletonData['upkId'];
-        // 根据skeleton数据，获得texture数据
-        var textureId = skeletonData['texture'];
-        var textureData = null;
-        if (self.upkDataTexture.hasOwnProperty(textureId)) {
-            textureData = self.upkDataTexture[textureId];
-        } else {
-            self.utilBuildDataInvalidInfo(type, code);
-            self.dbInvalid[type][code]['notFound'].push('texture:[skeleton:' + skeletonId + ',texture:' + textureId + ']');
-            self.grunt.log.error('[BstUpkParser] Texture data not found, code: ' + code +
-                ', skeleton: ' + skeletonId + ', texture: ' + textureId);
-            return; // 这个skeleton没必要处理下去了，因为缺失texture
+    // 根据skeleton数据，获得texture数据
+    var textureId = skeletonData['texture'];
+    var textureData = null;
+    if (self.upkDataTexture.hasOwnProperty(textureId)) {
+        textureData = self.upkDataTexture[textureId];
+    } else {
+        self.utilBuildDataInvalidInfo(skeletonType, skeletonCode);
+        self.dbInvalid[skeletonType][skeletonCode]['notFound'].push('texture:[skeleton:' + skeletonId + ',texture:' + textureId + ']');
+        self.grunt.log.error('[BstUpkParser] Texture data not found, code: ' + skeletonCode +
+            ', skeleton: ' + skeletonId + ', texture: ' + textureId);
+        return; // 这个skeleton没必要处理下去了，因为缺失texture
+    }
+
+    // 检查texture数据
+    if (_.keys(textureData['materials']).length == 0) {
+        self.utilBuildDataInvalidInfo(skeletonType, skeletonCode);
+        self.dbInvalid[skeletonType][skeletonCode]['invalid'].push('texture:[skeleton:' + skeletonId + ',texture:' + textureId + ']');
+        self.grunt.log.error('[BstUpkParser] Texture has invalid data, code: ' + skeletonCode +
+            ', skeleton: ' + skeletonId + ', texture: ' + textureId);
+        return; // 当前的texture没有对应的material
+    }
+
+    // 根据texture数据，获得相关的materials列表和数据
+    var materials = textureData['materials']; // { colX : upkId, ... }
+
+    // 组装数据
+    _.each(materials, function(materialId, col) { // 轮询所有的materials数据
+        // 检查material数据
+        if (self.upkDataMaterialInvalid.hasOwnProperty(materialId)) {
+            self.utilBuildDataInvalidInfo(skeletonType, skeletonCode);
+            self.dbInvalid[skeletonType][skeletonCode]['invalid'].push('material:[skeleton:' + skeletonId + ',texture:' + textureId + ',material:' + materialId + ']');
+            self.grunt.log.error('[BstUpkParser] Material has invalid data, code: ' + skeletonCode +
+                ', skeleton: ' + skeletonId + ', texture: ' + textureId + ', material: ' + materialId);
+            return; // 当前的material有错误数据
         }
 
-        // 检查texture数据
-        if (_.keys(textureData['materials']).length == 0) {
-            self.utilBuildDataInvalidInfo(type, code);
-            self.dbInvalid[type][code]['invalid'].push('texture:[skeleton:' + skeletonId + ',texture:' + textureId + ']');
-            self.grunt.log.error('[BstUpkParser] Texture has invalid data, code: ' + code +
-                ', skeleton: ' + skeletonId + ', texture: ' + textureId);
-            return; // 当前的texture没有对应的material
-        }
-
-        // 根据texture数据，获得相关的materials列表和数据
-        var materials = textureData['materials']; // colX : upkId
-
-        // 组装数据
-        _.each(materials, function(materialId, col) { // 轮询所有的materials数据
-            // 检查material数据
-            if (self.upkDataMaterialInvalid.hasOwnProperty(materialId)) {
-                self.utilBuildDataInvalidInfo(type, code);
-                self.dbInvalid[type][code]['invalid'].push('material:[skeleton:' + skeletonId + ',texture:' + textureId + ',material:' + materialId + ']');
-                self.grunt.log.error('[BstUpkParser] Material has invalid data, code: ' + code +
-                    ', skeleton: ' + skeletonId + ', texture: ' + textureId + ', material: ' + materialId);
-                return; // 当前的material有错误数据
-            }
-
-            // 选取图片
-            var pic = null;
+        // 选取图片
+        var pic = null;
+        if (iconData !== null) {
             var icons = iconData['colIcons'];
             if (icons.hasOwnProperty(skeletonData['race'] + '_' + col)) {
                 // 有精确的种族 + col icon
@@ -824,27 +807,28 @@ BstUpkParser.prototype.buildData = function(type, code, iconData) {
                 } else {
                     pic = icons[firstIconKey];
                 }
-            } else if (pic === null) {
-                // 没有找到icon，记录日志
-                self.utilBuildDataInvalidInfo(type, code);
-                self.dbInvalid[type][code]['notFound'].push('pic:[skeleton:' + skeletonId + ',texture:' + textureId + ',material:' + materialId + ']');
-                self.grunt.log.error('[BstUpkParser] Icon pic has not been found, code: ' + code +
-                    ', skeleton: ' + skeletonId + ', texture: ' + textureId + ', material: ' + materialId);
             }
+        }
+        if (pic === null) {
+            // 没有找到icon，记录日志
+            self.utilBuildDataInvalidInfo(skeletonType, skeletonCode);
+            self.dbInvalid[skeletonType][skeletonCode]['notFound'].push('pic:[skeleton:' + skeletonId + ',texture:' + textureId + ',material:' + materialId + ']');
+            self.grunt.log.error('[BstUpkParser] Icon pic has not been found, code: ' + skeletonCode +
+                ', skeleton: ' + skeletonId + ', texture: ' + textureId + ', material: ' + materialId);
+        }
 
-            // 写入数据
-            self.db[type][skeletonData['core'] + '_' + col] = {
-                "skeleton": skeletonId,
-                "texture": textureId,
-                "material": materialId,
-                "col1Material": skeletonData['col1Material'],
-                "col": col,
-                "core": skeletonData['core'],
-                "code": code,
-                "race": skeletonData['race'],
-                "pic": pic
-            };
-        });
+        // 写入数据
+        self.db[skeletonType][skeletonData['core'] + '_' + col] = {
+            "skeleton": skeletonId,
+            "texture": textureId,
+            "material": materialId,
+            "col1Material": skeletonData['col1Material'],
+            "col": col,
+            "core": skeletonData['core'],
+            "code": skeletonCode,
+            "race": skeletonData['race'],
+            "pic": pic
+        };
     });
 };
 
