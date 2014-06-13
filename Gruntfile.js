@@ -52,12 +52,19 @@ String.prototype.countOccurence = function(needle) {
     }
 };
 
+var fs = require('fs');
+var cp = require('child_process');
 var path = require('path');
+var _ = require('underscore');
 var moment = require('moment');
 /**
  * @type {BstConst|exports}
  */
 var BstConst = require('./src/const/bst_const.js');
+/**
+ * @type {BstUtil|exports}
+ */
+var BstUtil = require('./src/util/bst_util.js');
 
 module.exports = function(grunt) {
 

@@ -741,8 +741,18 @@ BstUpkParser.prototype.buildData = function(skeletonData) {
 
     // 查找对应code的icon数据
     var iconData = null;
-    if (self.iconData[skeletonType].hasOwnProperty(skeletonCode)) {
-        iconData = self.iconData[skeletonType][skeletonCode];
+    var types = ["costume", "attach", "weapon"];
+    _.each(types, function(typeName) {
+        if (self.iconData[typeName].hasOwnProperty(skeletonCode)) {
+            iconData = self.iconData[typeName][skeletonCode];
+        }
+    });
+    if (iconData === null
+        && skeletonCode.match(/^\d{3}$/) === null) { // 3位数字类型的code一般是默认头发等没有icon的模型
+        // 没有找到icon数据集，记录日志
+        self.utilBuildDataInvalidInfo(skeletonType, skeletonCode);
+        self.dbInvalid[skeletonType][skeletonCode]['notFound'].push('pic:[skeleton:' + skeletonId + ']');
+        self.grunt.log.error('[BstUpkParser] Icon pic has not been found, code: ' + skeletonCode + ', skeleton: ' + skeletonId);
     }
 
     // 根据skeleton数据，获得texture数据
@@ -762,7 +772,7 @@ BstUpkParser.prototype.buildData = function(skeletonData) {
     if (_.keys(textureData['materials']).length == 0) {
         self.utilBuildDataInvalidInfo(skeletonType, skeletonCode);
         self.dbInvalid[skeletonType][skeletonCode]['invalid'].push('texture:[skeleton:' + skeletonId + ',texture:' + textureId + ']');
-        self.grunt.log.error('[BstUpkParser] Texture has invalid data, code: ' + skeletonCode +
+        self.grunt.log.error('[BstUpkParser] Texture has no materials data, code: ' + skeletonCode +
             ', skeleton: ' + skeletonId + ', texture: ' + textureId);
         return; // 当前的texture没有对应的material
     }
@@ -810,13 +820,13 @@ BstUpkParser.prototype.buildData = function(skeletonData) {
                     pic = icons[firstIconKey];
                 }
             }
-        }
-        if (pic === null) {
-            // 没有找到icon，记录日志
-            self.utilBuildDataInvalidInfo(skeletonType, skeletonCode);
-            self.dbInvalid[skeletonType][skeletonCode]['notFound'].push('pic:[skeleton:' + skeletonId + ',texture:' + textureId + ',material:' + materialId + ']');
-            self.grunt.log.error('[BstUpkParser] Icon pic has not been found, code: ' + skeletonCode +
-                ', skeleton: ' + skeletonId + ', texture: ' + textureId + ', material: ' + materialId);
+            if (pic === null) {
+                // 没有找到icon，记录日志
+                self.utilBuildDataInvalidInfo(skeletonType, skeletonCode);
+                self.dbInvalid[skeletonType][skeletonCode]['notFound'].push('pic:[skeleton:' + skeletonId + ',texture:' + textureId + ',material:' + materialId + ']');
+                self.grunt.log.error('[BstUpkParser] Icon pic has not been found, code: ' + skeletonCode +
+                    ', skeleton: ' + skeletonId + ', texture: ' + textureId + ', material: ' + materialId);
+            }
         }
 
         // 写入数据
