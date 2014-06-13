@@ -4,6 +4,7 @@ var fs = require('fs');
 var cp = require('child_process');
 var path = require('path');
 var _ = require('underscore');
+var xml2js = require('xml2js');
 
 /**
  * @type {BstUtil|exports}
@@ -17,6 +18,7 @@ var BstConst = require('../const/bst_const.js');
 var BstUpkParser = function(grunt) {
     this.grunt  = grunt;
     this.util   = new BstUtil(grunt);
+    this.parser = new xml2js.Parser();
 
     this.meshXml = [];
 
