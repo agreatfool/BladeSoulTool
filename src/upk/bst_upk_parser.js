@@ -193,7 +193,7 @@ BstUpkParser.prototype.start = function() {
             self.grunt.fail.fatal('[BstUpkParser] Error in parsing mesh.xml: ' + err.stack);
         }
         self.meshXml = result['table']['record'];
-        self.grunt.log.writeln('[BstUpkParser] mesh.xml parsed, "' + self.xml.length + '" lines of records read.');
+        self.grunt.log.writeln('[BstUpkParser] mesh.xml parsed, "' + self.meshXml.length + '" lines of records read.');
 
         self.preProcess(); // 准备list数据，参考：database/upk/data/list/*
 
@@ -883,9 +883,13 @@ BstUpkParser.prototype.utilSearchMeshXmlViaSkeletonId = function(skeletonId) {
             && resourceMatch[1] == skeletonId // skeleton upk id 数值一致
         );
     });
+    filtered = filtered.shift(); // 只取第一个，虽然理论上也只应该有一个，因为是根据skeleton upk id来筛选的
 
-    if (filtered !== null) {
-        filtered = filtered.shift(); // 只取第一个，虽然理论上也只应该有一个，因为是根据skeleton upk id来筛选的
+    /**
+     * _.filter的返回结果永远是一个object，即便没找到，返回的也是"[]"格式的object，shift()返回值可能为undefined
+     */
+    if (typeof filtered === 'undefined') {
+        filtered = null;
     }
 
     return filtered;
