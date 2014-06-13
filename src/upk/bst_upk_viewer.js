@@ -70,7 +70,7 @@ BstUpkViewer.prototype.start = function(partType, elementId) {
 
     // scan upkId.log to copy all resources upk
     var upkLog = self.util.readFileSplitWithLineBreak(path.join(BstConst.PATH_UPK_LOG, element['skeleton'] + '.log'));
-    _.forEach(upkLog, function(line) {
+    _.each(upkLog, function(line) {
         var match = line.match(/(\d+).upk/);
         if (match !== null) {
             copyResourceUpk(match[1]);

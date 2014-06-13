@@ -60,13 +60,27 @@ BstConst.RAW_FILE_TEXTURE = 'raw_texture.json';
 BstConst.RAW_FILE_MATERIAL = 'raw_material.json';
 BstConst.RAW_FILE_MATERIAL_INVALID = 'raw_material_invalid.json';
 
-BstConst.UPK_INVALID_UPK_IDS = [
-    '00002620', // 常见于costume类型数据中：core：Material3 Basic
-    '00005708', // 常见于attach类型数据中：obj：D, S, glasses3_m
-    '00008613', // 常见于attach, weapon类型数据中：core：NothingMAT
-    '00012963', // 大量无用obj
-    '00005708', // 眼镜上的glasses obj
-    '00002640'  // 大量材质相关obj
+BstConst.UPK_INVALID_TEXTURE_UPK_IDS = [
+    '00002620', // Material3：常见于costume类型数据中：core：Material3 Basic
+    '00002640', // Texture2D：大量材质相关obj
+    '00002665', // MaterialInstanceConstant：材质upk
+    '00002700', // MaterialInstanceConstant：材质upk
+    '00005708', // Texture2D：常见于attach类型数据中特别是眼镜上的glasses obj：obj：D, S, glasses3_m
+    '00007428', // MaterialInstanceConstant：材质upk
+    '00008124', // MaterialInstanceConstant：材质upk
+    '00008613', // MaterialInstanceConstant：常见于attach, weapon类型数据中：core：NothingMAT
+    '00009220', // MaterialInstanceConstant：材质upk
+    '00012963', // Texture2D：大量无用obj
+    '00016228', // MaterialInstanceConstant：材质upk
+    '00016234', // MaterialInstanceConstant：材质upk
+    '00016237', // MaterialInstanceConstant：材质upk
+    '00016885', // MaterialInstanceConstant：材质upk
+    '00017459', // MaterialInstanceConstant：材质upk
+    '00018859', // MaterialInstanceConstant：材质upk
+    '00021199', // MaterialInstanceConstant：材质upk
+    '00021666', // MaterialInstanceConstant：材质upk
+    '00021668', // MaterialInstanceConstant：材质upk
+    '00021674'  // MaterialInstanceConstant：材质upk
 ];
 
 //------------------------------------------------------------------------
