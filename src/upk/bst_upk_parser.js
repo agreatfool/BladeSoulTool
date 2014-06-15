@@ -195,9 +195,10 @@ BstUpkParser.prototype.start = function() {
         self.meshXml = result['table']['record'];
         self.grunt.log.writeln('[BstUpkParser] mesh.xml parsed, "' + self.meshXml.length + '" lines of records read.');
 
+        self.preProcessIcon();
+
         self.preProcess(); // 准备list数据，参考：database/upk/data/list/*
 
-        self.preProcessIcon();
         self.preProcessSkeleton();
         self.preProcessTexture();
         self.preProcessMaterial();
@@ -212,7 +213,6 @@ BstUpkParser.prototype.preProcess = function() {
     var upkListSkeletonCostume = {};
     var upkListSkeletonAttach = {};
     var upkListSkeletonWeapon = {};
-    var upkListSkeletonHair = {};
     var upkListSkeletonUnrecognized = {};
     var upkListTexture = {};
     var upkListMaterial = {};
@@ -268,7 +268,6 @@ BstUpkParser.prototype.preProcess = function() {
     self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_SKELETON_COSTUME), self.util.formatJson(upkListSkeletonCostume));
     self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_SKELETON_ATTACH), self.util.formatJson(upkListSkeletonAttach));
     self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_SKELETON_WEAPON), self.util.formatJson(upkListSkeletonWeapon));
-    self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_SKELETON_HAIR), self.util.formatJson(upkListSkeletonHair));
     self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_SKELETON_UNRECOGNIZED), self.util.formatJson(upkListSkeletonUnrecognized));
     self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_TEXTURE), self.util.formatJson(upkListTexture));
     self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_MATERIAL), self.util.formatJson(upkListMaterial));
@@ -926,7 +925,7 @@ BstUpkParser.prototype.utilRecognizeSkeletonType = function(skeletonId, upkLog) 
         }
 
         // 02. 检查mesh.xml里的数据，数据存在，且类型是"body-mesh"的，是衣服
-        if (type !== BstConst.PART_TYPE_ATTACH) {
+        if (type === BstConst.PART_TYPE_ATTACH) {
             var meshElement = self.utilSearchMeshXmlViaSkeletonId(skeletonId);
             if (meshElement !== null
                 && meshElement.hasOwnProperty('type-mesh')
@@ -936,7 +935,7 @@ BstUpkParser.prototype.utilRecognizeSkeletonType = function(skeletonId, upkLog) 
         }
 
         // 03. 首先检查upk log里有没有含body的Material3信息，有的话，是衣服
-        if (type !== BstConst.PART_TYPE_ATTACH) {
+        if (type === BstConst.PART_TYPE_ATTACH) {
             _.each(upkLog, function(line) {
                 var match = line.match(/Loading\sMaterial3\s(.+)\sfrom\spackage\s\d+.upk/);
                 if (match !== null && match[1].toLowerCase().match(/.*body.*/i) !== null) {
