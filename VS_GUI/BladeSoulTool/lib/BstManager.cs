@@ -70,7 +70,7 @@ namespace BladeSoulTool.lib
 
         public const string GithubVersionTxt = BstManager.GithubRoot + BstManager.GithubBranch + "/VERSION.txt";
 
-        public const string ReleaseSiteUrl = "http://bbs.17173.com/thread-8018028-1-1.html";
+        public const string ReleaseUrl17173 = "http://bbs.17173.com/thread-8018028-1-1.html";
 
         public const string PathI18N = BstManager.PathVsRoot + BstManager.PathVsConfig + "i18n-";
 

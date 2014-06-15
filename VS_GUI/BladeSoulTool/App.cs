@@ -61,11 +61,15 @@ namespace BladeSoulTool
                 {
                     var result = BstManager.DisplayConfirmMessageBox(
                         this._i18n.LoadI18NValue("App", "newVerTitle"),
-                        string.Format(this._i18n.LoadI18NValue("App", "newVerContent"), currentVer, releasedVer, BstManager.ReleaseSiteUrl)
+                        string.Format(
+                            this._i18n.LoadI18NValue("App", "newVerContent"),
+                            currentVer,
+                            releasedVer,
+                            BstI18NLoader.Instance.LoadI18NValue("App", "releaseSiteUrl"))
                     );
                     if (result == DialogResult.OK)
                     {
-                        Process.Start(BstManager.ReleaseSiteUrl);
+                        Process.Start(BstI18NLoader.Instance.LoadI18NValue("App", "releaseSiteUrl"));
                     }
                 }
             }).Start();
