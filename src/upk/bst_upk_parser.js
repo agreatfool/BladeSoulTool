@@ -749,9 +749,12 @@ BstUpkParser.prototype.buildData = function(skeletonData) {
     if (iconData === null
         && skeletonCode.match(/^\d{3}$/) === null) { // 3位数字类型的code一般是默认头发等没有icon的模型
         // 没有找到icon数据集，记录日志
-        self.utilBuildDataInvalidInfo(skeletonType, skeletonCode);
-        self.dbInvalid[skeletonType][skeletonCode]['notFound'].push('pic:[skeleton:' + skeletonId + ']');
-        self.grunt.log.error('[BstUpkParser] Icon pic has not been found, code: ' + skeletonCode + ', skeleton: ' + skeletonId);
+        /**
+         * UPDATE: 这里不再打log，日志过多
+         * self.utilBuildDataInvalidInfo(skeletonType, skeletonCode);
+         * self.dbInvalid[skeletonType][skeletonCode]['notFound'].push('pic:[skeleton:' + skeletonId + ']');
+         * self.grunt.log.error('[BstUpkParser] Icon pic has not been found, code: ' + skeletonCode + ', skeleton: ' + skeletonId);
+         */
     }
 
     // 根据skeleton数据，获得texture数据
