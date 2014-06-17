@@ -271,15 +271,24 @@ module.exports = function(grunt) {
     // Tasks
     //-------------------------------------------------------------------------------------------
     grunt.registerTask('default', Task_Default);
+
     grunt.registerTask('shooter', Task_ScreenShooter);
     grunt.registerTask('icon_dumper', Task_IconDumper);
     grunt.registerTask('png_optimizer', Task_PngOptimizer);
     grunt.registerTask('upk_preparer', Task_UpkEnvPreparer);
     grunt.registerTask('upk_scanner', Task_UpkScanner);
     grunt.registerTask('upk_parser', Task_UpkParser);
-    grunt.registerTask('upk_viewer', Task_UpkViewer);
 
+    grunt.registerTask('upk_viewer', Task_UpkViewer);
     grunt.registerTask('replace', Task_Replace);
     grunt.registerTask('restore', Task_Restore);
 
+    grunt.registerTask('build', [
+        'icon_dumper',
+        'upk_preparer',
+        'upk_scanner',
+        'upk_parser',
+        'shooter',
+        'png_optimizer'
+    ]);
 };
