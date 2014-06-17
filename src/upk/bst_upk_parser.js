@@ -723,7 +723,7 @@ BstUpkParser.prototype.buildDatabase = function() {
 
     // 循环构造数据
     _.each(self.upkDataSkeleton, function(skeletonData, skeletonKey) {
-        self.buildData(skeletonData);
+        self.buildData(skeletonKey, skeletonData);
         finishedCount++;
         self.grunt.log.writeln('[BstUpkParser] Finish data build of skeleton: ' + skeletonKey +
             ', progress: ' + finishedCount + ' / ' + totalCount);
@@ -742,7 +742,7 @@ BstUpkParser.prototype.buildDatabase = function() {
     self.util.printHr();
 };
 
-BstUpkParser.prototype.buildData = function(skeletonData) {
+BstUpkParser.prototype.buildData = function(skeletonKey, skeletonData) {
     var self = this;
 
     var unrecognizedSkeletonUpkIds = _.keys(self.util.readJsonFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_SKELETON_UNRECOGNIZED)));
@@ -789,7 +789,7 @@ BstUpkParser.prototype.buildData = function(skeletonData) {
     if (_.keys(textureData['materials']).length == 0) {
         self.grunt.log.writeln('[BstUpkParser] No materials info collected for texture: ' + textureId + ', scanning all upk logs ...');
         /**
-         * 没有为该texture找到对应的material数据，可能某些描述material信息的upk文件，在关键行[3]里没有以 MaterialInstanceConstant
+         * 没有为该texture找到对应的material数据，可能某些描述material信息的upk文件，在关键行[2]里没有以 MaterialInstanceConstant
          * 的格式进行描述，参考例子：
          * skeleton：00017488，texture：00017486，material：00017487
          * material关键行为：Loading Material3 Basic_FX from package 00017487.upk
@@ -807,6 +807,7 @@ BstUpkParser.prototype.buildData = function(skeletonData) {
             var scanUpkLog = self.util.readFileSplitWithLineBreak(scanUpkPath);
 
             var scanMaterialInfo = null;
+            var foundMaterial3Info = false;
             var foundTextureInfo = false;
 
             _.each(scanUpkLog, function(scanLine) {
@@ -821,9 +822,23 @@ BstUpkParser.prototype.buildData = function(skeletonData) {
                 }
             });
 
+            if (scanMaterialInfo === null) {
+                // 部分材质upk在关键行[2]里的描述是 Material3 colX，这里也一并检查，参考：material：00019772
+                var scanCoreMatch = scanUpkLog[BstConst.UPK_ENTRANCE_LINE_NO].match(new RegExp("Loading\\sMaterial3\\s(.+)\\sfrom\\spackage\\s" + scanUpkId + ".upk"));
+                if (scanCoreMatch !== null && self.util.formatCol(scanCoreMatch[1]).match(/col\d+/) !== null) {
+                    scanMaterialInfo = self.util.formatCol(scanCoreMatch[1]);
+                    foundMaterial3Info = true;
+                }
+            }
+
             if (scanMaterialInfo !== null && foundTextureInfo) {
                 // 两项条件全部满足，更新textureData['materials']数据
                 textureData['materials'][scanMaterialInfo] = scanUpkId;
+                // 因为关键字为 Material3 的材质信息肯定没有被收录在 self.upkDataSkeleton 的 col1Material 里，这里需要一并更新
+                if (scanMaterialInfo === 'col1' && foundMaterial3Info) {
+                    skeletonData['col1Material'] = scanUpkId;
+                    self.upkDataSkeleton[skeletonKey]['col1Material'] = scanUpkId;
+                }
             }
         });
     }
