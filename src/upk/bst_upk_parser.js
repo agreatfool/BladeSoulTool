@@ -222,46 +222,47 @@ BstUpkParser.prototype.preProcess = function() {
     self.util.printHr();
 
     self.grunt.file.recurse(BstConst.PATH_UPK_LOG, function(abspath, rootdir, subdir, filename) {
-        if (filename !== 'upk_dir') {
-            var upkId = filename.substr(0, filename.indexOf('.'));
-            var upkLog = self.util.readFileSplitWithLineBreak(abspath);
-            var coreLineOfContent = upkLog[BstConst.UPK_ENTRANCE_LINE_NO];
+        if (filename === 'upk_dir') {
+            return; // 忽略占位文件
+        }
+        var upkId = filename.substr(0, filename.indexOf('.'));
+        var upkLog = self.util.readFileSplitWithLineBreak(abspath);
+        var coreLineOfContent = upkLog[BstConst.UPK_ENTRANCE_LINE_NO];
 
-            if (coreLineOfContent.match(new RegExp(BstConst.UPK_TYPE_SKELETON)) !== null) {
-                // skeleton
-                var skeletonType = self.utilRecognizeSkeletonType(upkId, upkLog);
+        if (coreLineOfContent.match(new RegExp(BstConst.UPK_TYPE_SKELETON)) !== null) {
+            // skeleton
+            var skeletonType = self.utilRecognizeSkeletonType(upkId, upkLog);
 
-                if (skeletonType == BstConst.PART_TYPE_COSTUME) {
-                    // costume
-                    self.upkIdsSkeleton.push(upkId);
-                    self.upkSkeletonTypes[upkId] = BstConst.PART_TYPE_COSTUME;
-                    upkListSkeletonCostume[upkId] = coreLineOfContent;
-                } else if (skeletonType == BstConst.PART_TYPE_ATTACH) {
-                    // attach
-                    self.upkIdsSkeleton.push(upkId);
-                    self.upkSkeletonTypes[upkId] = BstConst.PART_TYPE_ATTACH;
-                    upkListSkeletonAttach[upkId] = coreLineOfContent;
-                } else if (skeletonType == BstConst.PART_TYPE_WEAPON) {
-                    // weapon
-                    self.upkIdsSkeleton.push(upkId);
-                    self.upkSkeletonTypes[upkId] = BstConst.PART_TYPE_WEAPON;
-                    upkListSkeletonWeapon[upkId] = coreLineOfContent;
-                } else {
-                    // unrecognized
-                    upkListSkeletonUnrecognized[upkId] = coreLineOfContent;
-                }
-            } else if (coreLineOfContent.match(new RegExp(BstConst.UPK_TYPE_TEXTURE)) !== null) {
-                // texture
-                self.upkIdsTexture.push(upkId);
-                upkListTexture[upkId] = coreLineOfContent;
-            } else if (coreLineOfContent.match(new RegExp(BstConst.UPK_TYPE_MATERIAL)) !== null) {
-                // material
-                self.upkIdsMaterial.push(upkId);
-                upkListMaterial[upkId] = coreLineOfContent;
+            if (skeletonType == BstConst.PART_TYPE_COSTUME) {
+                // costume
+                self.upkIdsSkeleton.push(upkId);
+                self.upkSkeletonTypes[upkId] = BstConst.PART_TYPE_COSTUME;
+                upkListSkeletonCostume[upkId] = coreLineOfContent;
+            } else if (skeletonType == BstConst.PART_TYPE_ATTACH) {
+                // attach
+                self.upkIdsSkeleton.push(upkId);
+                self.upkSkeletonTypes[upkId] = BstConst.PART_TYPE_ATTACH;
+                upkListSkeletonAttach[upkId] = coreLineOfContent;
+            } else if (skeletonType == BstConst.PART_TYPE_WEAPON) {
+                // weapon
+                self.upkIdsSkeleton.push(upkId);
+                self.upkSkeletonTypes[upkId] = BstConst.PART_TYPE_WEAPON;
+                upkListSkeletonWeapon[upkId] = coreLineOfContent;
             } else {
                 // unrecognized
-                upkListUnrecognized[upkId] = coreLineOfContent;
+                upkListSkeletonUnrecognized[upkId] = coreLineOfContent;
             }
+        } else if (coreLineOfContent.match(new RegExp(BstConst.UPK_TYPE_TEXTURE)) !== null) {
+            // texture
+            self.upkIdsTexture.push(upkId);
+            upkListTexture[upkId] = coreLineOfContent;
+        } else if (coreLineOfContent.match(new RegExp(BstConst.UPK_TYPE_MATERIAL)) !== null) {
+            // material
+            self.upkIdsMaterial.push(upkId);
+            upkListMaterial[upkId] = coreLineOfContent;
+        } else {
+            // unrecognized
+            upkListUnrecognized[upkId] = coreLineOfContent;
         }
     });
 
@@ -734,6 +735,10 @@ BstUpkParser.prototype.buildDatabase = function() {
 BstUpkParser.prototype.buildData = function(skeletonData) {
     var self = this;
 
+    var unrecognizedSkeletonUpkIds = _.keys(self.util.readJsonFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_SKELETON_UNRECOGNIZED)));
+    var unrecognizedNonSkUpkIds = _.keys(self.util.readJsonFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_UNRECOGNIZED)));
+    var unrecognizedUpkIds = unrecognizedSkeletonUpkIds.concat(unrecognizedNonSkUpkIds); // 将两组未能识别的upk id列表合并
+
     var skeletonId = skeletonData['upkId'];
     var skeletonCode = skeletonData['code'];
     var skeletonType = self.upkSkeletonTypes[skeletonId];
@@ -772,6 +777,48 @@ BstUpkParser.prototype.buildData = function(skeletonData) {
 
     // 检查texture数据
     if (_.keys(textureData['materials']).length == 0) {
+        self.grunt.log.writeln('[BstUpkParser] No materials info collected for texture: ' + textureId + ', scanning all upk logs ...');
+        /**
+         * 没有为该texture找到对应的material数据，可能某些描述material信息的upk文件，在关键行[3]里没有以
+         * 的格式进行描述，参考例子：
+         * skeleton：00017488，texture：00017486，material：00017487
+         * material关键行为：Loading Material3 Basic_FX from package 00017487.upk
+         * 这里我们需要全局重新扫描upk文件，查找拥有两个关键特征的upk文件：
+         * 1. 文件中拥有材质信息：
+         *     Loading MaterialInstanceConstant col1 from package 00017487.upk
+         * 2. 文件中拥有贴图信息：
+         *     Loading Texture2D 60071_GonM_col1_N from package 00017486.upk
+         *     Loading Texture2D 60071_GonM_col1_M from package 00017486.upk
+         *     Loading Texture2D 60071_GonM_col1_D from package 00017486.upk
+         *     Loading Texture2D 60071_GonM_col1_S from package 00017486.upk
+         */
+        _.each(unrecognizedUpkIds, function(scanUpkId) {
+            var scanUpkPath = path.join(BstConst.PATH_UPK_LOG, scanUpkId + '.log');
+            var scanUpkLog = self.util.readFileSplitWithLineBreak(scanUpkPath);
+
+            var scanMaterialInfo = null;
+            var foundTextureInfo = false;
+
+            _.each(scanUpkLog, function(scanLine) {
+                var scanMaterialMatch = scanLine.match(new RegExp("Loading\\sMaterialInstanceConstant\\s(.+)\\sfrom\\spackage\\s" + scanUpkId + ".upk"));
+                if (scanMaterialInfo === null && scanMaterialMatch !== null) {
+                    // 只需要查找第一个找到的material信息
+                    scanMaterialInfo = self.util.formatCol(scanMaterialMatch[1]);
+                }
+                var scanTextureMatch = scanLine.match(new RegExp("Loading\\sTexture2D\\s.+\\sfrom\\spackage\\s" + textureId + ".upk"));
+                if (scanTextureMatch !== null) {
+                    foundTextureInfo = true;
+                }
+            });
+
+            if (scanMaterialInfo !== null && foundTextureInfo) {
+                // 两项条件全部满足，更新textureData['materials']数据
+                textureData['materials'][scanMaterialInfo] = scanUpkId;
+            }
+        });
+    }
+    if (_.keys(textureData['materials']).length == 0) {
+        // 仍旧没有找到贴图对应的材质upk信息
         self.utilBuildDataInvalidInfo(skeletonType, skeletonCode);
         self.dbInvalid[skeletonType][skeletonCode]['invalid'].push('texture:[skeleton:' + skeletonId + ',texture:' + textureId + ']');
         self.grunt.log.error('[BstUpkParser] Texture has no materials data, code: ' + skeletonCode +
