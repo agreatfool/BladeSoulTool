@@ -14,9 +14,11 @@ var BstUtil = require('../util/bst_util.js');
  */
 var BstConst = require('../const/bst_const.js');
 
-var BstUpkEnvPreparer = function(grunt) {
-    this.grunt  = grunt;
-    this.util   = new BstUtil(grunt);
+var BstUpkEnvPreparer = function(grunt, done, forceDedat) {
+    this.grunt       = grunt;
+    this.util        = new BstUtil(grunt);
+    this.taskDone    = done;
+    this.forceDedat  = forceDedat;
 
     this.conf = this.util.readJsonFile('./config/setting.json');
 
@@ -47,7 +49,8 @@ BstUpkEnvPreparer.prototype.start = function() {
 
     // 因为之后可能使用到mesh.xml，所以需要先将其解包出来
     self.grunt.log.writeln('[BstUpkEnvPreparer] Start to dedat xml.dat ...');
-    if (!self.grunt.file.exists(BstConst.PATH_MESH_XML)) { // 没有已经被解包的dat文件内容，需要现场解包
+    if (self.forceDedat // 强制执行
+        || (!self.forceDedat && !self.grunt.file.exists(BstConst.PATH_MESH_XML))) { // 没有已经被解包的dat文件内容，需要现场解包
         var xmlDatPath = path.join(self.conf['path']['game'], self.conf['path']['data'], 'xml.dat');
         this.grunt.log.writeln('[BstUpkEnvPreparer] Start to dedat xml.dat: ' + xmlDatPath);
 
@@ -56,6 +59,7 @@ BstUpkEnvPreparer.prototype.start = function() {
         worker.stderr.on('data', function (data) { self.util.logChildProcessStderr(data); });
         worker.on('exit', function (code) {
             self.util.logChildProcessExit('dedat', code);
+            self.taskDone();
         });
     }
 };

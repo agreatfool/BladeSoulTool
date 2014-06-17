@@ -14,9 +14,10 @@ var BstUtil = require('../util/bst_util.js');
  */
 var BstConst = require('../const/bst_const.js');
 
-var BstUpkViewer = function(grunt) {
-    this.grunt  = grunt;
-    this.util   = new BstUtil(grunt);
+var BstUpkViewer = function(grunt, done) {
+    this.grunt    = grunt;
+    this.util     = new BstUtil(grunt);
+    this.taskDone = done;
 
     this.conf = this.util.readJsonFile('./config/setting.json');
 
@@ -86,7 +87,7 @@ BstUpkViewer.prototype.start = function(partType, elementId) {
         );
         worker.stdout.on('data', function (data) { self.util.logChildProcessStdout(data); });
         worker.stderr.on('data', function (data) { self.util.logChildProcessStderr(data); });
-        worker.on('exit', function (code) { clearWorkingDir(); });
+        worker.on('exit', function (code) { clearWorkingDir(); self.taskDone(); });
     };
 
     // edit the upk skeleton if col is not col1

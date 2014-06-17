@@ -169,70 +169,62 @@ module.exports = function(grunt) {
     var Task_ScreenShooter = function() {
         var Shooter = require('./src/screenshot/bst_screen_shooter.js');
 
-        this.async();
+        var done = this.async();
 
-        var shooter = new Shooter(grunt);
+        var shooter = new Shooter(grunt, done);
         shooter.start();
-    };
-
-    var Task_ScreenShooter_Check = function() {
-        var Shooter = require('./src/screenshot/bst_screen_shooter.js');
-
-        this.async();
-
-        var shooter = new Shooter(grunt);
-        shooter.checkShotResult('./logs/05_shooter-grunt_2014-05-06_20-49-25.log');
     };
 
     var Task_IconDumper = function() {
         var Dumper = require('./src/icon/bst_icon_dumper.js');
 
-        this.async();
+        var done = this.async();
 
-        var dumper = new Dumper(grunt);
+        var dumper = new Dumper(grunt, done);
         dumper.start();
     };
 
     var Task_PngOptimizer = function() {
         var Optimizer = require('./src/png/bst_png_optimizer.js');
 
-        this.async();
+        var done = this.async();
 
-        var optimizer = new Optimizer(grunt);
+        var optimizer = new Optimizer(grunt, done);
         optimizer.start();
     };
 
     var Task_UpkEnvPreparer = function() {
         var Preparer = require('./src/upk/bst_upk_env_preparer.js');
 
-        this.async();
+        var done = this.async();
 
-        var preparer = new Preparer(grunt);
+        var forceDedat = true; // 默认强制重新dedat数据
+        var preparer = new Preparer(grunt, done, forceDedat);
         preparer.start();
     };
 
     var Task_UpkScanner = function() {
         var Scanner = require('./src/upk/bst_upk_scanner.js');
 
-        this.async();
+        var done = this.async();
 
-        var scanner = new Scanner(grunt);
+        var scanner = new Scanner(grunt, done);
         scanner.start();
     };
 
     var Task_UpkParser = function() {
         var Scanner = require('./src/upk/bst_upk_parser.js');
 
-        this.async();
+        var done = this.async();
 
-        var scanner = new Scanner(grunt);
+        var scanner = new Scanner(grunt, done);
         scanner.start();
     };
 
     var Task_UpkViewer = function() { // --part=costume --model=:modelId
         var Viewer = require('./src/upk/bst_upk_viewer.js');
 
-        this.async();
+        var done = this.async();
 
         var part = grunt.option('part');
         if (typeof part === 'undefined' || part == null || part == '') {
@@ -241,14 +233,14 @@ module.exports = function(grunt) {
         }
         var modelId = grunt.option('model');
 
-        var viewer = new Viewer(grunt);
+        var viewer = new Viewer(grunt, done);
         viewer.start(part, modelId);
     };
 
     var Task_Replace = function() { // --part=costume --model=modelId --race=KunN
         var Replace = require('./src/replace/bst_replace.js');
 
-        this.async();
+        var done = this.async();
 
         var part = grunt.option('part');
         if (typeof part === 'undefined' || part == null || part == '') {
@@ -262,16 +254,16 @@ module.exports = function(grunt) {
         }
         var modelId = grunt.option('model');
 
-        var replace = new Replace(grunt);
+        var replace = new Replace(grunt, done);
         replace.start(part, race ,modelId);
     };
 
     var Task_Restore = function() {
         var Restore = require('./src/restore/bst_restore.js');
 
-        this.async();
+        var done = this.async();
 
-        var restore = new Restore(grunt);
+        var restore = new Restore(grunt, done);
         restore.start();
     };
 
@@ -280,7 +272,6 @@ module.exports = function(grunt) {
     //-------------------------------------------------------------------------------------------
     grunt.registerTask('default', Task_Default);
     grunt.registerTask('shooter', Task_ScreenShooter);
-    grunt.registerTask('shooter_check', Task_ScreenShooter_Check);
     grunt.registerTask('icon_dumper', Task_IconDumper);
     grunt.registerTask('png_optimizer', Task_PngOptimizer);
     grunt.registerTask('upk_preparer', Task_UpkEnvPreparer);

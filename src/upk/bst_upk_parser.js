@@ -15,10 +15,11 @@ var BstUtil = require('../util/bst_util.js');
  */
 var BstConst = require('../const/bst_const.js');
 
-var BstUpkParser = function(grunt) {
-    this.grunt  = grunt;
-    this.util   = new BstUtil(grunt);
-    this.parser = new xml2js.Parser();
+var BstUpkParser = function(grunt, done) {
+    this.grunt    = grunt;
+    this.util     = new BstUtil(grunt);
+    this.parser   = new xml2js.Parser();
+    this.taskDone = done;
 
     this.meshXml = [];
 
@@ -197,13 +198,15 @@ BstUpkParser.prototype.start = function() {
 
         self.preProcessIcon();
 
-        self.preProcess(); // 准备list数据，参考：database/upk/data/list/*
+        self.preProcess(); // 准备list & raw数据，参考：database/upk/data/[list | raw]/*
 
         self.preProcessSkeleton();
         self.preProcessTexture();
         self.preProcessMaterial();
 
         self.buildDatabase();
+
+        self.taskDone();
     });
 };
 

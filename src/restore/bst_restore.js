@@ -8,9 +8,10 @@ var _ = require('underscore');
  */
 var BstUtil = require('../util/bst_util.js');
 
-var BstRestore = function(grunt) {
-    this.grunt = grunt;
-    this.util = new BstUtil(grunt);
+var BstRestore = function(grunt, done) {
+    this.grunt    = grunt;
+    this.util     = new BstUtil(grunt);
+    this.taskDone = done;
 
     this.backup = this.util.readJsonFile('./config/backup.json');
 };
@@ -32,6 +33,8 @@ BstRestore.prototype.start = function() {
     this.util.writeFile(backupPath, this.util.formatJson({
         'delete': [], 'restore': []
     }));
+
+    this.taskDone();
 };
 
 BstRestore.prototype.processRestore = function() {

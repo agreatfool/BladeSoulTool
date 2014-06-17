@@ -17,9 +17,10 @@ var BstConst = require('../const/bst_const.js');
 /**
  * 扫描所有的upk文件，使用umodel.exe的dump命令，将所有的分析数据搜集，输出到"database/upk/log"下
  */
-var BstUpkScanner = function(grunt) {
-    this.grunt  = grunt;
-    this.util   = new BstUtil(grunt);
+var BstUpkScanner = function(grunt, done) {
+    this.grunt    = grunt;
+    this.util     = new BstUtil(grunt);
+    this.taskDone = done;
 
     this.conf = this.util.readJsonFile('./config/setting.json');
     this.childProcess = this.conf['upk_scanner']['childProcess'];
@@ -70,6 +71,7 @@ BstUpkScanner.prototype.process = function() {
         if (self.statusFinishedCount >= self.statusTotalCount) {
             clearInterval(workingTimer);
             self.grunt.log.writeln('[BstUpkScanner] All works done ...');
+            self.taskDone();
         }
     }, self.cycleInterval);
 };

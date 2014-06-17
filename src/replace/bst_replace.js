@@ -12,9 +12,11 @@ var BstUtil = require('../util/bst_util.js');
  */
 var BstConst = require('../const/bst_const.js');
 
-var BstReplace = function(grunt) {
-    this.grunt = grunt;
-    this.util = new BstUtil(grunt);
+var BstReplace = function(grunt, done) {
+    this.grunt    = grunt;
+    this.util     = new BstUtil(grunt);
+    this.taskDone = done;
+
     this.gruntWorkingPath = process.cwd();
 
     this.backup = this.util.readJsonFile('./config/backup.json');
@@ -141,12 +143,6 @@ BstReplace.prototype.processCostume = function() {
 
     // 所有working目录下的upk内的模型名都替换完成后
     self.util.startToListenAsyncList(function() {
-        /**
-         * 目前的换装构造，只允许替换洪门道服。
-         * 洪门道服原本只存在bns文件夹下，而我们的换装永远是向tencent目录下放东西，
-         * 即不会有文件被覆盖，只会有文件创建到tencent目录下，
-         * 所以备份的时候只要写好backup.json配置文件就好
-         */
         // 拷贝修改后的文件到tencent下，同时编辑备份列表，最后将working文件夹清空
         self.grunt.file.recurse('working', function(abspath, rootdir, subdir, filename) {
             /**
@@ -154,6 +150,7 @@ BstReplace.prototype.processCostume = function() {
              */
             if (filename === 'working_dir') { return; } // 忽略占位文件
             var targetTencentPath = path.join(self.util.getTencentPath(), filename);
+            // FIXME 这里需要检查目标对象是否存在，存在的话需要备份！
             self.util.copyFile(abspath, targetTencentPath);
             self.util.deleteFile(abspath);
             if (self.backup['delete'].indexOf(targetTencentPath) === -1) { // 未存在于备份列表中
@@ -162,6 +159,7 @@ BstReplace.prototype.processCostume = function() {
         });
         // 将更新过的备份列表重新写回文件
         self.util.writeFile('./config/backup.json', self.util.formatJson(self.backup));
+        self.taskDone();
     });
 };
 

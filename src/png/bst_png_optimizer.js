@@ -14,9 +14,10 @@ var BstUtil = require('../util/bst_util.js');
  */
 var BstConst = require('../const/bst_const.js');
 
-var BstPngOptimizer = function(grunt) {
-    this.grunt  = grunt;
-    this.util   = new BstUtil(grunt);
+var BstPngOptimizer = function(grunt, done) {
+    this.grunt    = grunt;
+    this.util     = new BstUtil(grunt);
+    this.taskDone = done;
 
     this.conf = this.util.readJsonFile('./config/setting.json');
     this.tasks = this.conf['png_optimizer']['tasks'];
@@ -80,7 +81,7 @@ BstPngOptimizer.prototype.start = function() {
         if (self.statusFinishedTaskCount >= self.statusTotalTaskCount) {
             clearInterval(taskTimer);
             self.grunt.log.writeln('[BstPngOptimizer] All tasks done ...');
-            self.util.printHr();
+            self.taskDone();
         }
 
     }, self.cycleInterval);

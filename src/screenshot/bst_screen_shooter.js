@@ -14,9 +14,10 @@ var BstUtil = require('../util/bst_util.js');
  */
 var BstConst = require('../const/bst_const.js');
 
-var BstScreenShooter = function(grunt) {
-    this.grunt  = grunt;
-    this.util   = new BstUtil(grunt);
+var BstScreenShooter = function(grunt, done) {
+    this.grunt    = grunt;
+    this.util     = new BstUtil(grunt);
+    this.taskDone = done; // notify grunt: tasks done
 
     this.conf = this.util.readJsonFile('./config/setting.json');
     this.shotInterval = this.conf['umodel_shooter']['interval'];
@@ -77,6 +78,9 @@ BstScreenShooter.prototype.processType = function(type) {
             self.grunt.log.writeln('[BstScreenShooter] All "' + type + '" photo shot.');
             if (self.types.length > 0) {
                 self.process(self.types.shift()); // 处理下一个类型的数据
+            } else {
+                // 所有数据类型都已处理完毕，任务完成
+                self.taskDone();
             }
         }
     }, 500);
@@ -228,27 +232,6 @@ BstScreenShooter.prototype.finishSingle = function(name) {
     this.grunt.log.writeln('[BstScreenShooter] Processing of "' + name + '" done, ' +
         'progress: ' + this.statusFinishedCount + ' / ' + this.statusTotalCount);
     this.util.printHr();
-};
-
-BstScreenShooter.prototype.checkShotResult = function(logPath) {
-    var self = this;
-
-    this.util.checkFileExists(logPath);
-    var logLines = fs.readFileSync(logPath).toString().split("\r\n");
-
-    var errorModelCodes = [];
-    var currentWorkingCode = null;
-    _.each(logLines, function(line) {
-        var match = line.match(/\[BstScreenShooter\] Start to process: (.+)/);
-        if (match !== null) {
-            currentWorkingCode = match[1];
-        }
-        match = line.match(/\>\> \[BstScreenShooter\] process: stderr:.+/);
-        if (match !== null) {
-            errorModelCodes.push(currentWorkingCode);
-        }
-    });
-    self.grunt.log.writeln(self.util.printJson(errorModelCodes));
 };
 
 module.exports = BstScreenShooter;

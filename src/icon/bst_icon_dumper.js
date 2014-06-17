@@ -14,9 +14,10 @@ var BstUtil = require('../util/bst_util.js');
  */
 var BstConst = require('../const/bst_const.js');
 
-var BstIconDumper = function(grunt) {
-    this.grunt  = grunt;
-    this.util   = new BstUtil(grunt);
+var BstIconDumper = function(grunt, done) {
+    this.grunt    = grunt;
+    this.util     = new BstUtil(grunt);
+    this.taskDone = done;
 
     this.conf = this.util.readJsonFile('./config/setting.json');
     this.childProcess = this.conf['icon_dumper']['childProcess'];
@@ -80,6 +81,7 @@ BstIconDumper.prototype.process = function() {
         if (self.statusFinishedCount >= self.statusTotalCount) {
             clearInterval(workingTimer);
             self.grunt.log.writeln('[BstIconDumper] All works done ...');
+            self.taskDone();
         }
     }, self.cycleInterval);
 };
