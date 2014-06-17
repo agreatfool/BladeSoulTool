@@ -166,45 +166,6 @@ module.exports = function(grunt) {
         this.async();
     };
 
-    var Task_MeshParser = function() { // --part=body
-        var Parser = require('./src/mesh/bst_mesh_parser.js');
-
-        this.async();
-
-        var part = grunt.option('part');
-        if (typeof part === 'undefined' || part == null || part == '') {
-            grunt.log.error('[Grunt Task_MeshParser] Command line option "--part" not given, use default value: "body-mesh".');
-            part = BstConst.PART_BODY;
-        }
-
-        var parser = new Parser(grunt);
-        parser.start(part);
-    };
-
-    var Task_MeshParser_Prepare = function() {
-        var Parser = require('./src/mesh/bst_mesh_parser.js');
-
-        this.async();
-
-        var parser = new Parser(grunt);
-        parser.dataPrepare();
-    };
-
-    var Task_MeshParser_Check = function() { // --part=body
-        var Parser = require('./src/mesh/bst_mesh_parser.js');
-
-        this.async();
-
-        var part = grunt.option('part');
-        if (typeof part === 'undefined' || part == null || part == '') {
-            grunt.log.error('[Grunt Task_MeshParser_Check] Command line option "--part" not given, use default value: "body-mesh".');
-            part = BstConst.PART_BODY;
-        }
-
-        var parser = new Parser(grunt);
-        parser.dataCheck(part);
-    };
-
     var Task_ScreenShooter = function() {
         var Shooter = require('./src/screenshot/bst_screen_shooter.js');
 
