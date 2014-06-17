@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_947" broadcast-category="field" category="epic" completed-desc="q_947_completed" completed-list="y" desc="q_947_sum" grade="1" group2="QG_NextbaeCheongEpic2" id="947" map-group-1-1="startzone" max-repeat="1" name2="Quest.Name2.947" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="50" sort-no="539"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.947_1" required-register-value="1">
+				<case mapunit-1="m_1261_footswitch_01" object="zoneenv:1261_footswitch_01" object2="zoneenv2:1261_footswitch_01" progress-mission="y" type="env-entered"/>
+				<case object="zone:StartZone_Epic6th_train" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.947_2" required-register-value="1">
+				<case npc-response="qrsp_947_1" object="npc:CH_WB_SeoYeon_0001" progress-mission="y" type="talk"/>
+				<case object="zone:StartZone_Epic6th_train" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_947_14" object="npc:CH_WB_Ryu_0003" type="approach"/>
+				<case npc-response="qrsp_947_13" object="npc:CH_WB_BeonYang_0006" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.947_3" required-register-value="1">
+				<case npc-response="qrsp_947_2" object="npc:CH_WB_SeoYeon_0001" progress-mission="y" type="npc-manipulate"/>
+				<case npc-response="qrsp_947_3" object="npc:CH_WB_ChinChin_0007" progress-mission="n" type="approach"/>
+				<case object="zone:StartZone_Epic6th_train" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_947_12" object="npc:CH_WB_Ryu_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.947_6" required-register-value="1">
+				<case npc-response="qrsp_947_5" object="npc:CH_WB_Ryu_0004" progress-mission="n" type="approach"/>
+				<case mapunit-1="Guide_Cave_Epic6_00" mapunit-3="null" object="zone:StartZone_Epic6th_Cave" progress-mission="y" type="enter-zone"/>
+				<case object="zone:StartZone_Epic6th_train" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_947_17" object="npc:CH_WB_Ryu_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="7">
+			<mission id="7" name2="Mission.Name2.947_7" required-register-value="4">
+				<case mapunit-1="1262_m_ME_WB_Mushroom_0001" mapunit-2="1262_m_ME_WB_Mushroom_0002" object="npc:ME_WB_Spider_0001" object2="npc:ME_WB_Spider_0001" progress-mission="y" type="killed"/>
+				<case object="zone:StartZone_Epic6th_Cave" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_947_5" object="npc:CH_WB_Ryu_0004" progress-mission="n" type="approach"/>
+			</mission>
+			<mission id="8" name2="Mission.Name2.947_8" required-register-value="2">
+				<case mapunit-1="1262_m_ME_WB_Mushroom_0001" object="npc:ME_WB_Mushroom_0001" object2="npc:ME_WB_Mushroom_0001" progress-mission="y" type="killed"/>
+				<case object="npc:ME_WB_Mushroom_0002" object2="npc:ME_WB_Mushroom_0002" progress-mission="y" type="killed"/>
+			</mission>
+			<mission-step-fail rollback-step-id="6"/>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="9" name2="Mission.Name2.947_9" required-register-value="1">
+				<case object="zone:StartZone_Epic6th_Cave" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_947_6" object="npc:CH_WB_SeoYeon_0002" progress-mission="n" type="approach"/>
+				<case looting="q_947_2_icon" mapunit-1="1262_ME_WB_GrassBeastBig_0001" object="npc:ME_WB_GrassBeastBig_0001" object2="npc:ME_WB_GrassBeastBig_0001" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="11" name2="Mission.Name2.947_11" required-register-value="1">
+				<case gadget-required="dont-care" indicator="default" looting="q_947_3_icon" mapunit-1="222_3_e_onoff_stfire_re_01" mapunit-2="Guide_Cave_Epic6_01" mapunit-3="222_1_CH_JinYoung_0001" object="zoneenv:e_chest_1262muilstfire_re_01" object2="zoneenv2:e_chest_1262muilstfire_re_01" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_947_7" object="npc:CH_WB_SeoYeon_0002" progress-mission="n" type="approach"/>
+				<case object="zone:StartZone_Epic6th_Cave" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_947_18" object="npc:CH_WB_BeonA_0004" type="approach"/>
+				<case npc-response="qrsp_947_16" object="npc:CH_WB_ChinChin_0004" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="12" name2="Mission.Name2.947_12" required-register-value="1">
+				<case npc-response="qrsp_947_8" object="npc:CH_WB_SeoYeon_0002" progress-mission="y" type="npc-manipulate"/>
+				<case npc-response="qrsp_947_9" object="npc:CH_WB_ChinChin_0004" progress-mission="n" type="approach"/>
+				<case object="zone:StartZone_Epic6th_Cave" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_947_23" object="npc:CH_WB_BeonYang_0004" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="12">
+			<mission id="13" name2="Mission.Name2.947_13" required-register-value="1" reward-1="947_final_set1">
+				<case npc-response="qrsp_947_10" object="npc:CH_WB_ChinChin_0004" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_947_11" object="npc:CH_WB_SeoYeon_0002" progress-mission="n" type="approach"/>
+				<case object="zone:StartZone_Epic6th_Cave" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_948"/>
+		</completion>
+		<transit id="1" zone="StartZone_Event">
+			<destination mission-step-id="9" zone-index="7"/>
+			<destination mission-step-id="8" zone-index="7"/>
+			<destination mission-step-id="7" zone-index="7"/>
+			<destination mission-step-id="6" zone-index="7"/>
+			<destination mission-step-id="5" zone-index="6"/>
+			<destination mission-step-id="4" zone-index="6"/>
+			<destination mission-step-id="3" zone-index="6"/>
+			<destination mission-step-id="2" zone-index="6"/>
+			<destination mission-step-id="1" zone-index="6"/>
+			<destination mission-step-id="10" zone-index="7"/>
+			<destination mission-step-id="11" zone-index="7"/>
+			<destination mission-step-id="12" zone-index="7"/>
+		</transit>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.947_4" required-register-value="1">
+				<case npc-response="qrsp_947_4" object="npc:CH_WB_BeonYang_0006" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_947_15" object="npc:CH_WB_BeonA_0007" type="approach"/>
+				<case object="zone:StartZone_Epic6th_train" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_947_11" object="npc:CH_WB_SeoYeon_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.947_5" required-register-value="1">
+				<case npc-response="qrsp_947_5" object="npc:CH_WB_Ryu_0003" progress-mission="y" type="talk"/>
+				<case object="zone:StartZone_Epic6th_train" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="10" name2="Mission.Name2.947_10" required-register-value="1" reward-1="Mission.Name2.947_10">
+				<case mapunit-1="Guide_Cave_Epic6_02" npc-response="qrsp_947_19" object="npc:CH_WB_BeonYang_0004" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_947_18" object="npc:CH_WB_BeonA_0004" type="approach"/>
+				<case object="zone:StartZone_Epic6th_Cave" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

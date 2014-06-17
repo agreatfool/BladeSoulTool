@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1186" broadcast-category="field" category="normal" desc="q_1186_sum" district-1="suwal" grade="1" group2="QG_GuidosiSouth" id="1186" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1186" save-type="all">
+		<acquisition level="39" preceding-quest-1="q_epic_915" preceding-quest-check="and" preceding-quest-mission-step-1="5" recommended-level="41">
+			<case acquire-quest="y" npc-response="qrsp_1186_1" object="npc:ce_scroll_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1186_1" required-register-value="1">
+				<case gadget="q_stonea" gadget-required="carry-and-remove" mapunit-2="4300_e_pot_well_01" object-1="zoneenv:e_pot_well_01" object2-1="zoneenv2:e_pot_well_01" progress-mission="y" skill="gadget_q_stonea" skill3="gadget_q_stonea" type="skill"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="4300_e_chest_pilestone_01" object="zoneenv:e_chest_pilestone_01" object2="zoneenv2:e_chest_pilestone_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1186_3" required-register-value="10">
+				<case mapunit-1="4300_ME_Dokebi_0001_1" mapunit-2="4300_ME_DokebiAssassin_0004_3" mapunit-3="4300_ME_DokebiAssassin_0004_4" mapunit-4="4300_ME_DokebiAssassin_0004_5" object="npc:me_dokebi_0001" object2="npc:me_dokebi_0001" progress-mission="y" type="killed"/>
+				<case object="npc:me_dokebigon_0004" object2="npc:me_dokebigon_0004" progress-mission="y" type="killed"/>
+				<case object="npc:me_dokebiassassin_0004" object2="npc:me_dokebiassassin_0004" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="4" name2="Mission.Name2.1186_4" required-register-value="10">
+				<case mapunit-1="4300_me_generalworldb_0003" object="npc:me_generalworldb_0003" object2="npc:me_generalworldb_0003" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="5" name2="Mission.Name2.1186_5" required-register-value="1">
+				<case npc-response="qrsp_1186_3" object="npc:ch_jangeaegyo_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="6" name2="Mission.Name2.1186_6" required-register-value="1">
+				<case npc-response="qrsp_1186_4" object="npc:ce_scroll_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="7" name2="Mission.Name2.1186_7" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="4312_ME_Dokebi_0002" object="npc:me_dokebi_0002" object2="npc:me_dokebi_0002" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_1186_6" object="npc:ce_scroll_0001" type="approach"/>
+				<case object="zone:zone_hunuhouse" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="8" name2="Mission.Name2.1186_8" required-register-value="1" reward-1="1186_final_set1">
+				<case npc-response="qrsp_1186_5" object="npc:ch_taesangmun_0008" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_1186_7" object="npc:ce_scroll_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1186_2" required-register-value="1">
+				<case npc-response="qrsp_1186_2" object="npc:ch_jangeaegyo_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1196" broadcast-category="field" category="normal" desc="q_1196_sum" district-1="suwal" grade="1" group2="QG_GuidosiNorth" id="1196" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1196" save-type="all">
+		<acquisition level="39" preceding-quest-1="q_sub_1188" preceding-quest-2="q_epic_916" preceding-quest-check="and" preceding-quest-mission-step-2="3" recommended-level="41">
+			<case acquire-quest="y" npc-response="qrsp_1196_1" object="npc:ch_godosi_0011" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1196_1" required-register-value="1">
+				<case npc-response="qrsp_1196_2" object="npc:ch_godosi_0012" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1196_2" required-register-value="1">
+				<case npc-response="qrsp_1196_3" object="npc:ch_godosi_0013" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1196_3" required-register-value="1">
+				<case gadget-required="dont-care" looting="q_1196_Quest_wooden_identity_tag_1_icon" object="zoneenv:e_chest_chest_04" object2="zoneenv2:e_chest_chest_04" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1196_Quest_wooden_identity_tag_1_icon" object="zoneenv:e_chest_chest_03" object2="zoneenv2:e_chest_chest_03" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1196_Quest_wooden_identity_tag_1_icon" object="zoneenv:e_chest_chest_02" object2="zoneenv2:e_chest_chest_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1196_Quest_wooden_identity_tag_1_icon" mapunit-1="4590_e_chest_chest_01" mapunit-2="4590_e_chest_chest_02" mapunit-3="4590_e_chest_chest_03" mapunit-4="4590_e_chest_chest_04" object="zoneenv:e_chest_chest_01" object2="zoneenv2:e_chest_chest_01" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_1196_5" object="npc:ch_godosi_0013" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.1196_4" required-register-value="1" reward-1="1196_final_set1">
+				<case npc-response="qrsp_1196_4" object="npc:ch_godosi_0013" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

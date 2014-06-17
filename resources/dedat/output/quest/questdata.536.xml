@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_536" broadcast-category="field" category="epic" completed-desc="q_536_completed" completed-list="y" desc="q_536_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="536" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.536" save-type="all">
+		<acquisition level="1" recommended-level="36" sort-no="339"/>
+		<mission-step id="2" location-x="42744.594" location-y="78088.820" map="hakjadg" mission-map-type="mapunit">
+			<mission id="2" name2="Mission.Name2.536_2" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_536_Quest_gold_tag_1_icon" mapunit-1="3083_MH_MuYeongDan_0022" object="npc:mh_muyeongdan_0022" object2="npc:mh_muyeongdan_0022" progress-mission="y" type="loot"/>
+				<case object="zone:zone_HakJaDg" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="30787.0566" location-y="71930.3906" map="hakjadg" mission-map-type="mapunit">
+			<mission id="3" name2="Mission.Name2.536_3" required-register-value="1">
+				<case indicator-social="q_536_m3_indi_1" msg="q_536_m3" npc-response="qrsp_536_1" object="npc:ch_chungun_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HakJaDg" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="30787.0566" location-y="71930.3906" map="oseakamdo">
+			<mission id="4" name2="Mission.Name2.536_4" required-register-value="1">
+				<case mapunit-1="3032_Epic_MuSinEnterZone" object="zone:zone_MuShinBeaCha_Epic" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8" location-x="30787.0566" location-y="71930.3906" map="oseakamdo">
+			<mission id="8" name2="Mission.Name2.536_8" required-register-value="1" reward-1="536_final_set1">
+				<case npc-response="qrsp_536_3" object="npc:CH_SoYeonHwa_009" progress-mission="y" type="talk"/>
+				<case object="zone:zone_MuShinBeaCha_Epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_MuShinBeaCha_1">
+			<destination mission-step-id="9" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_537"/>
+		</completion>
+		<mission-step id="1" location-x="18430.23" location-y="71373.27" map="bigbonedg" mission-map-type="mapunit">
+			<mission id="1" name2="Mission.Name2.536_1" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_535_Quest_silver_tag_1_icon" mapunit-1="3077_me_bonemaskbiga_003" object="npc:me_bonemaskbiga_003" object2="npc:me_bonemaskbiga_003" progress-mission="y" type="loot"/>
+				<case object="zone:zone_bigbonedg" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="30787.0566" location-y="71930.3906">
+			<mission id="5" name2="Mission.Name2.536_5" required-register-value="1">
+				<case indicator-social="q_536_m5_indi_1" msg="q_536_m5" npc-response="qrsp_536_2" object="npc:ch_soyeonhwa_009" progress-mission="y" type="talk"/>
+				<case object="zone:zone_mushinbeacha_epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step hide="n" id="6" location-x="30787.0566" location-y="71930.3906">
+			<mission id="6" name2="Mission.Name2.536_6" required-register-value="10">
+				<case object="npc:ch_unguksoldier_0026" object2="npc:ch_unguksoldier_0026" progress-mission="y" type="killed"/>
+				<case mapunit-1="3032_ch_unguksoldier_0026" object="npc:ch_unguksoldier_0027" object2="npc:ch_unguksoldier_0027" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_536_4" object="npc:ch_soyeonhwa_009" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="5"/>
+		</mission-step>
+		<mission-step hide="n" id="7" location-x="26542.875" location-y="4369.0884">
+			<mission id="7" name2="Mission.Name2.536_7" required-register-value="3">
+				<case object="npc:CH_UnGukSoldier_0029" object2="npc:CH_UnGukSoldier_0029" progress-mission="y" type="killed"/>
+				<case mapunit-1="3032_ch_unguksoldier_0026" object="npc:CH_UnGukSoldier_0030" object2="npc:CH_UnGukSoldier_0030" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_536_5" object="npc:ch_soyeonhwa_009" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="5"/>
+		</mission-step>
+	</quest>
+</table>

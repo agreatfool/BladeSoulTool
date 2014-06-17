@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="factionmain2" alias="q_sub_1266" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1266_sum" district-1="suwal" grade="1" group2="QG_AngaeForestSouth" id="1266" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1266" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" faction="factionmain2" faction-level="2" faction-reputation="200" level="41" preceding-quest-1="q_epic_928" preceding-quest-check="and" recommended-level="43">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1266_1" object="npc:CH_HonChunGyo_0023" type="talk">
+				<filter-set>
+					<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain2"/>
+				</filter-set>
+			</case>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1266_1" object="npc:CH_HonChunGyo_0023" type="talk">
+				<filter-set>
+					<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain2"/>
+				</filter-set>
+			</case>
+		</acquisition>
+		<mission-step id="1" location-x="-13420.01" location-y="33646.66" map="jegukgunyeongsukgwangsan" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.1266_1" required-register-value="3">
+				<case object="zoneenv:e_chest_youngsek_01" object2="zoneenv2:e_chest_youngsek_01" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_youngsek_02" object2="zoneenv2:e_chest_youngsek_02" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_youngsek_03" object2="zoneenv2:e_chest_youngsek_03" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_youngsek_04" object2="zoneenv2:e_chest_youngsek_04" progress-mission="y" type="manipulate"/>
+				<case mapunit-1="4400_e_chest_youngsek_01" mapunit-2="4400_JeGukGunYeongSukGwangSan_S1262" object="zoneenv:e_chest_youngsek_05" object2="zoneenv2:e_chest_youngsek_05" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1266_2" required-register-value="1" reward-1="1266_final_set1" reward-2="1266_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1266_2" object="npc:CH_HonChunGyo_0023" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain2"/>
+					</filter-set>
+				</case>
+				<case completion-count="1" npc-response="qrsp_1266_2" object="npc:CH_HonChunGyo_0023" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain2"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_373" broadcast-category="field" category="normal" day-of-week="daily" desc="q_373_sum" district-1="jeryoungrim" grade="2" group="제룡림(흑음림)" group2="QG_HuekUmmRim" id="373" map-group-1-1="jeryoungrim" max-repeat="1" name="현실은 버섯밭 (완)" name2="Quest.Name2.373" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="8" preceding-quest-1="q_sub_390" preceding-quest-check="and" recommended-level="10">
+			<case acquire-quest="y" completion-count="0" indicator-social="q_373_s_indi_1" msg="q_373_s" npc-response="qrsp_373_1" object="npc:ctzn_jinf_jakyungdan_buyoung_kff_001" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_373_5" object="npc:CE_Board_0014" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-11254.0625" location-y="-170.8174" map="UnSin_Dun">
+			<mission id="3" name="남해함대 수색병 처치" name2="Mission.Name2.373_3" required-register-value="1" show-kill-mapunit="y">
+				<case object="npc:mh_nokrimdo_0042" object2="npc:mh_nokrimdo_0042" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.373_2" required-register-value="1" show-kill-mapunit="y">
+				<case object="npc:mh_nokrimdo_0041" object2="npc:mh_nokrimdo_0041" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="1" name2="Mission.Name2.373_1" required-register-value="1" show-kill-mapunit="y">
+				<case object="npc:mh_nokrimdo_0040" object2="npc:mh_nokrimdo_0040" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-17460.5215" location-y="-5093.2109" map="huekummrim">
+			<mission id="4" name="버려진 어촌 북쪽의 자경단원 부용에게 보고" name2="Mission.Name2.373_4" required-register-value="1" reward-1="373_final_set1" reward-2="373_final_set2">
+				<case indicator-social="q_373_m4_indi_1" msg="q_373_m4" npc-response="qrsp_373_2" object="npc:ctzn_jinf_jakyungdan_buyoung_kff_001" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_373_1_icon" msg="q_373_6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

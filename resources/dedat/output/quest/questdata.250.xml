@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_250" broadcast-category="field" category="epic" district-1="startzone" grade="1" group2="#N/A" id="250" map-group-1-1="startzone" max-repeat="1" name2="Quest.Name2.250" save-type="all" tutorial="y">
+		<acquisition level="1" recommended-level="1"/>
+		<mission-step completion-type="and" id="1">
+			<mission id="1" required-register-value="1">
+				<case object="zone:StartZone_Renew_All" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_221"/>
+		</completion>
+	</quest>
+</table>

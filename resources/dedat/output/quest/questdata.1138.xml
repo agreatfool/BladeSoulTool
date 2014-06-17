@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1138" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1138_sum" district-1="suwal" grade="1" group2="QG_Wolho" id="1138" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1138" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="38" preceding-quest-1="q_epic_912" preceding-quest-check="and" preceding-quest-count-1="1" preceding-quest-mission-step-1="6" recommended-level="40">
+			<case acquire-quest="y" looting="q_1138_1_icon" object="npc:ch_daeeobang_0064" object2="npc:ch_daeeobang_0064" type="loot"/>
+			<case acquire-quest="y" looting="q_1138_1_icon" object="npc:CH_DaeEoBang_0054" object2="npc:CH_DaeEoBang_0054" type="loot"/>
+		</acquisition>
+		<mission-step desc="q_1138_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.1138_1" required-register-value="1" reward-1="1138_final_set1" reward-2="1138_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1138_1" object="npc:ch_daeeobang_0065" progress-mission="y" type="talk"/>
+				<case completion-count="1" msg="q_1138_2" npc-response="qrsp_1138_2" object="npc:ch_daeeobang_0065" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_1138_2_icon" msg="q_1138_2" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

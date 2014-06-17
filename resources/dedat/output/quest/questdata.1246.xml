@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1246" broadcast-category="field" category="normal" content-type="festival" day-of-week="daily" desc="q_1246_sum" grade="1" group2="QG_Event" id="1246" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.1246" reset-type="daily" retired="y" save-type="all">
+		<acquisition check-tencent-vitality="n" level="16" recommended-level="16">
+			<case acquire-quest="y" item="q_1246_Quest_hair_growth_solution_manual_1_icon" msg="q_1246_1" type="talk-to-self"/>
+		</acquisition>
+		<mission-step desc="q_1246_des_1" id="1">
+			<mission check-tencent-vitality="n" id="1" name2="Mission.Name2.1246_1" required-register-value="1">
+				<case mapunit-1="2310_e_chest_burner_01_s1246" object="zoneenv:e_chest_burner_01" object2="zoneenv2:e_chest_burner_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission check-tencent-vitality="n" id="2" name2="Mission.Name2.1246_2" required-register-value="1">
+				<case npc-response="qrsp_1246_1" object="npc:ch_jr_dweller_0001" object2="npc:ch_jr_dweller_0001" progress-mission="y" social="talksocial_deepbow" type="pc-social"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission check-tencent-vitality="n" id="3" name2="Mission.Name2.1246_3" required-register-value="1">
+				<case npc-response="qrsp_1246_2" object="npc:ch_jr_dweller_0001" progress-mission="n" type="approach"/>
+				<case npc-response="qrsp_1246_3" object="npc:Ctzn_LynM_DokChoGeoSa_Foc_001" object2="npc:Ctzn_LynM_DokChoGeoSa_Foc_001" progress-mission="y" social="talksocial_deepbow" type="pc-social"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_1246_des_4" id="4">
+			<mission check-tencent-vitality="n" id="4" name2="Mission.Name2.1246_4" required-register-value="1">
+				<case npc-response="qrsp_1246_4" object="npc:Ctzn_LynM_DokChoGeoSa_Foc_001" type="approach"/>
+				<case looting="q_1246_1_icon" object="npc:me_jr_kingfrog_0002" object2="npc:me_jr_kingfrog_0002" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission check-tencent-vitality="n" id="5" name2="Mission.Name2.1246_5" required-register-value="1" reward-1="1246_final_set1" reward-2="1246_final_set2">
+				<case item="q_1246_Quest_hair_growth_solution_manual_2_icon" msg="q_1246_2" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

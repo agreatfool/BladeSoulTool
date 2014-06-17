@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_797" broadcast-category="field" category="normal" desc="q_797_sum" district-1="deasamak" grade="1" group2="QG_SaJiSeokRimEast" id="797" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.797" save-type="all">
+		<acquisition level="31" preceding-quest-1="q_epic_526" preceding-quest-check="and" recommended-level="33">
+			<case acquire-quest="y" indicator-social="q_797_s_indi_1" msg="q_797_s" npc-response="qrsp_797_1" object="npc:ch_guyungsin_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="43605.578" location-y="-15941.141" map="sajisukrim">
+			<mission id="1" name2="Mission.Name2.797_1" required-register-value="10">
+				<case mapunit-1="3024_ME_SaMyoJeong_004" mapunit-2="3024_ME_SaMyoJeong_004_1" object="npc:me_samyojeong_004" object2="npc:me_samyojeong_004" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="34434.254" location-y="-18674.316" map="sajisukrim">
+			<mission id="3" name2="Mission.Name2.797_3" required-register-value="1" reward-1="797_final_set1">
+				<case indicator-social="q_797_m3_indi_1" msg="q_797_m3" npc-response="qrsp_797_3" object="npc:ch_muun_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="47055.82" location-y="-20411.531" map="haerimchon">
+			<mission id="2" name2="Mission.Name2.797_2" required-register-value="1">
+				<case indicator-social="q_797_m2_indi_1" msg="q_797_m2" npc-response="qrsp_797_2" object="npc:ch_guyungsin_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

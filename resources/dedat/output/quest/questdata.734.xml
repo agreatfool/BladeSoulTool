@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_734" broadcast-category="field" category="normal" day-of-week="daily" desc="q_734_sum" grade="1" group2="QG_HwangGung" id="734" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.734" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="45" preceding-quest-1="q_epic_272" preceding-quest-check="and" preceding-quest-mission-step-1="11" recommended-level="47">
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_734_5" object="npc:CE_CT_Board_0024" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_734_3" object="npc:CH_CT_Citizen_0423" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_734_1" object="npc:CH_CT_Citizen_0423" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_734_5" object="npc:CE_CT_Board_0023" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_734_5" object="npc:CE_BC_Board_0001" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_734_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.734_1" required-register-value="1">
+				<case completion-count="0" gadget-required="empty" npc-response="qrsp_734_10" object="npc:CH_CT_YubGiDong_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_734_des_2" guide-message="gm_734_1" guide-message-zone-1="Zone_ShootingRange" id="2" time-limit="300" time-limit-type="until">
+			<mission id="2" name2="Mission.Name2.734_2" required-register-value="50">
+				<case gadget="Q_Rifle_0003" gadget-required="not-a" object="npc:ME_CT_RewardBox_0018" object2="npc:ME_CT_RewardBox_0018" progress-mission="reaction-only" type="killed"/>
+				<case gadget="Q_MachineGun_0001" gadget-required="not-a" object="npc:ME_CT_RewardBox_0019" object2="npc:ME_CT_RewardBox_0019" progress-mission="reaction-only" type="killed"/>
+				<case gadget="Q_Launcher_01" gadget-required="not-a" object="npc:ME_CT_RewardBox_0021" object2="npc:ME_CT_RewardBox_0021" progress-mission="reaction-only" type="killed"/>
+				<case gadget-required="dont-care" object="zoneenv:e_chest_boomboom1_03" object2="zoneenv2:e_chest_boomboom1_03" progress-mission="reaction-only" type="killed"/>
+				<case gadget-required="dont-care" object="zoneenv:e_chest_boomboom1_02" object2="zoneenv2:e_chest_boomboom1_02" progress-mission="reaction-only" type="killed"/>
+				<case gadget-required="dont-care" object="zoneenv:e_chest_boomboom1_01" object2="zoneenv2:e_chest_boomboom1_01" progress-mission="reaction-only" type="killed"/>
+				<case object="npc:MH_CT_JeGukGun_0508" object2="npc:MH_CT_JeGukGun_0508" progress-mission="y" progress-value="1" type="killed"/>
+				<case object="npc:MH_CT_JeGukGun_0507" object2="npc:MH_CT_JeGukGun_0507" progress-mission="y" progress-value="2" type="killed"/>
+				<case mapunit-1="5139_MH_CT_JeGukGun_0506_s734" mapunit-2="5139_MH_CT_JeGukGun_0506_s734_1" mapunit-3="5139_MH_CT_JeGukGun_0506_s734_2" mapunit-4="5139_MH_CT_JeGukGun_0506_s734_3" object="npc:MH_CT_JeGukGun_0506" object2="npc:MH_CT_JeGukGun_0506" progress-mission="y" progress-value="5" type="killed"/>
+				<case button-text-accept="q_734_21_ok" button-text-cancel="q_734_21_no" gadget-required="empty" npc-response="qrsp_734_8" object="npc:CH_CT_MoSinGun_0001" progress-mission="reaction-only" type="talk"/>
+				<case button-text-accept="q_734_20_ok" button-text-cancel="q_734_20_no" gadget-required="empty" npc-response="qrsp_734_7" object="npc:CH_CT_JoGyukSoo_0001" progress-mission="reaction-only" type="talk"/>
+				<case button-text-accept="q_734_22_ok" button-text-cancel="q_734_22_no" gadget-required="empty" npc-response="qrsp_734_9" object="npc:CH_CT_YubGiDong_0001" progress-mission="reaction-only" type="talk"/>
+				<case npc-response="qrsp_734_11" object="npc:MH_CT_JeGukGun_0578" type="approach"/>
+			</mission>
+			<mission-step-fail/>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.734_3" required-register-value="1" reward-1="734_final_set1" reward-2="734_final_set2">
+				<case completion-count="1" npc-response="qrsp_734_4" object="npc:CH_CT_Citizen_0423" progress-mission="y" type="talk"/>
+				<case completion-count="0" completion-count-op="ge" fee="y" item="q_734_1_icon" msg="q_734_6" progress-mission="y" type="talk-to-self"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_734_2" object="npc:CH_CT_Citizen_0423" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

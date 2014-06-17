@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_834" broadcast-category="field" category="normal" day-of-week="daily" desc="q_834_sum" grade="1" group2="QG_SnowMountSouth" id="834" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.834" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="47" preceding-quest-1="q_epic_283" preceding-quest-2="q_sub_849" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="49">
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_834_6" object="npc:CE_CT_Board_0030" type="talk"/>
+			<case acquire-quest="y" completion-count="0" completion-count-op="ge" npc-response="qrsp_834_1" object="npc:CH_CT_Adventurer_0010" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="2" name2="Mission.Name2.834_2" required-register-value="1">
+				<case looting="q_834_3_icon" object="npc:ME_CT_ToGa_0006" object2="npc:ME_CT_ToGa_0006" progress-mission="y" type="loot"/>
+				<case object="npc:ME_CT_ToGa_0009" object2="npc:ME_CT_ToGa_0009" show-in-tooltip="y" type="killed"/>
+				<case object="npc:ME_CT_ToGa_0008" object2="npc:ME_CT_ToGa_0008" show-in-tooltip="y" type="killed"/>
+				<case mapunit-1="5220_ME_CT_ToGa_0007_s834" object="npc:ME_CT_ToGa_0007" object2="npc:ME_CT_ToGa_0007" show-in-tooltip="y" type="killed"/>
+				<case object="npc:ME_CT_DarkCrazyTribe_0050" object2="npc:ME_CT_DarkCrazyTribe_0050" type="killed"/>
+			</mission>
+			<mission id="1" name2="Mission.Name2.834_1" required-register-value="10">
+				<case object="npc:ME_CT_ToGa_0009" object2="npc:ME_CT_ToGa_0009" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_ToGa_0008" object2="npc:ME_CT_ToGa_0008" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_ToGa_0007" object2="npc:ME_CT_ToGa_0007" progress-mission="y" type="killed"/>
+				<case mapunit-1="5220_ME_CT_ToGa_0007_s834" object="npc:ME_CT_ToGa_0006" object2="npc:ME_CT_ToGa_0006" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_DarkCrazyTribe_0050" object2="npc:ME_CT_DarkCrazyTribe_0050" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.834_3" required-register-value="1" reward-1="834_final_set1" reward-2="834_final_set2">
+				<case fee="y" item="q_834_2_icon" msg="q_834_5" progress-mission="y" type="talk-to-self"/>
+				<case completion-count="0" completion-count-op="ge" npc-response="qrsp_834_2" object="npc:CH_CT_Baba_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

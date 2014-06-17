@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_922" broadcast-category="field" category="epic" completed-desc="q_922_completed" completed-list="y" desc="q_922_sum" district-1="suwal" grade="1" group2="QG_SuwalPWEpic" id="922" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.922" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="42" sort-no="422"/>
+		<mission-step id="1" location-x="-33816.42" location-y="3065.44" map="neukdaegureung" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.922_1" required-register-value="1">
+				<case mapunit-1="4611_Suwal_Tunnel_03_phase" mapunit-2="4300_Guide_E922(1)" object="zone:zone_suwal_tunnel_03_phase" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.922_2" required-register-value="1">
+				<case npc-response="qrsp_922_1" object="npc:CH_GeongChunMaeng_0005" progress-mission="y" type="talk"/>
+				<case object="zone:zone_suwal_tunnel_03_phase" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:4611_Foot1" object2="zoneenv2:4611_Foot1" progress-mission="reaction-only" type="env-entered"/>
+				<case object="zoneenv:4611_Foot2" object2="zoneenv2:4611_Foot2" progress-mission="reaction-only" type="env-entered"/>
+				<case object="zoneenv:4611_Foot3" object2="zoneenv2:4611_Foot3" progress-mission="reaction-only" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.922_3" required-register-value="1">
+				<case npc-response="qrsp_922_2" object="npc:CH_GyeongChunMaeng_0033" progress-mission="y" type="talk"/>
+				<case object="zone:zone_suwal_tunnel_03_phase" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.922_4" required-register-value="1">
+				<case npc-response="qrsp_922_3" object="npc:CH_BarkMun_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_nakwongul_epic2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.922_5" required-register-value="1">
+				<case npc-response="qrsp_922_5" object="npc:CE_NakWonJok_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_nakwongul_epic2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.922_6" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="4536_CE_NakWonJok_0001_1" object="npc:CE_NakWonJok_0001" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="zone:zone_nakwongul_epic2" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_922_6" object="npc:CH_BarkMun_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.922_7" required-register-value="1">
+				<case object="zone:zone_nakwongul_epic2" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_922_7" object="npc:CE_NakWonJok_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_923"/>
+		</completion>
+		<transit id="1" zone="zone_suwal_tunnel_03">
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.922_9" required-register-value="1" reward-1="922_final_set1">
+				<case npc-response="qrsp_922_8" object="npc:ch_barkmun_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_nakwongul_epic2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step guide-message="gm_922_1" id="8" location-x="-9638.13" location-y="-4079.95" map="nakwonsawon" mission-map-type="location">
+			<mission id="8" name2="Mission.Name2.922_8" required-register-value="1">
+				<case object="npc:CE_NakWonJok_0001" object2="npc:CE_NakWonJok_0001" progress-mission="y" social="talksocial_bow1" type="pc-social"/>
+				<case object="zone:zone_nakwongul_epic2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="2" zone="zone_nakwongul">
+			<destination mission-step-id="9" zone-index="1"/>
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

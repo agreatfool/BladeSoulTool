@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_828" broadcast-category="field" category="normal" desc="q_828_sum" grade="1" group2="QG_SnowMountSouth" id="828" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.828" save-type="all">
+		<acquisition level="47" preceding-quest-1="q_epic_282" preceding-quest-check="and" preceding-quest-mission-step-1="5" recommended-level="49">
+			<case acquire-quest="y" npc-response="qrsp_828_1" object="npc:CH_CT_SamBongIn_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.828_1" required-register-value="10">
+				<case looting="q_828_1_icon" mapunit-1="5220_ME_CT_Mole_0007_s828" object="npc:ME_CT_Mole_0007" object2="npc:ME_CT_Mole_0007" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.828_2" required-register-value="1">
+				<case mapunit-1="5270_e_Chest_noname_01_s828" object="zoneenv:e_Chest_noname_01" object2="zoneenv2:e_Chest_noname_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.828_3" required-register-value="1">
+				<case npc-response="qrsp_828_2" object="npc:CH_CT_Flower_0002" progress-mission="y" type="talk"/>
+				<fixed-reward slot-1="item:Quest_Scroll_BackChung_0031"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.828_4" required-register-value="1">
+				<case item="Quest_Scroll_BackChung_0031" msg="q_828_3" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.828_5" required-register-value="1">
+				<case npc-response="qrsp_828_4" object="npc:CH_CT_Ghost_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.828_6" required-register-value="1" reward-1="828_final_set1">
+				<case npc-response="qrsp_828_5" object="npc:CH_CT_SamBongIn_0001" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Scroll_BackChung_0031"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_BackChung_0031"/>
+	</quest>
+</table>

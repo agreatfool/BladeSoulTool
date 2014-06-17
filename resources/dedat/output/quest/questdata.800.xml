@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_800" broadcast-category="field" category="normal" day-of-week="none" desc="q_800_sum" grade="1" group2="QG_ZazakWoodWest" id="800" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.800" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="n" level="46" preceding-quest-1="q_epic_282" preceding-quest-2="q_sub_815" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="48">
+			<case acquire-quest="y" npc-response="qrsp_800_1" object="npc:CH_CT_Mercenary_0008" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.800_1" required-register-value="10">
+				<case object="npc:MH_CT_BukBang_0022" object2="npc:MH_CT_BukBang_0022" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_BukBang_0021" object2="npc:MH_CT_BukBang_0021" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_BukBang_0020" object2="npc:MH_CT_BukBang_0020" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_BukBang_0019" object2="npc:MH_CT_BukBang_0019" progress-mission="y" type="killed"/>
+				<case mapunit-1="5200_MH_CT_BukBang_0017_s800" object="npc:MH_CT_BukBang_0017" object2="npc:MH_CT_BukBang_0017" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.800_2" required-register-value="1" reward-1="800_final_set1">
+				<case npc-response="qrsp_800_2" object="npc:ch_ct_golapa_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

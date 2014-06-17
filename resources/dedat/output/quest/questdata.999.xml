@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_999" broadcast-category="field" category="epic" completed-desc="q_999_completed" completed-list="y" desc="q_999_sum" grade="1" group2="QG_NextbaeCheongEpic2" id="999" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.999" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="50" sort-no="543"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.999_1" required-register-value="5">
+				<case object="zone:zone_YoungRinBong_Act6" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_999_1" object="npc:CH_WB_ChungGak_0003" type="approach"/>
+				<case mapunit-1="4429_DemonShadow" object="npc:ME_WB_DarkAura_0002" object2="npc:ME_WB_DarkAura_0002" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2">
+			<mission id="2" name2="Mission.Name2.999_2" required-register-value="1">
+				<case mapunit-1="4429_epic6_tool_01" object="zoneenv:e_chest_4429heakchun_01" object2="zoneenv2:e_chest_4429heakchun_01" progress-mission="y" type="manipulate"/>
+				<case npc-response="qrsp_999_2" object="npc:CH_WB_ChungGak_0003" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.999_3" required-register-value="1">
+				<case mapunit-1="4429_ch_wb_chunggak_0002" npc-response="qrsp_999_3" object="npc:CH_WB_ChungGak_0002" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step completion-type="and" id="4">
+			<mission id="4" name2="Mission.Name2.999_4" required-register-value="1">
+				<case mapunit-1="4429_epic6_tool_02" object="zoneenv:e_chest_4429heakchun_02" object2="zoneenv2:e_chest_4429heakchun_02" progress-mission="y" type="manipulate"/>
+				<case npc-response="qrsp_999_4" object="npc:CH_WB_ChungGak_0002" type="approach"/>
+			</mission>
+			<mission-step-fail/>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.999_5" required-register-value="1">
+				<case mapunit-1="4429_ch_wb_chunggak_0002" npc-response="qrsp_999_5" object="npc:CE_WB_ChungGak_0046" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+			<mission-step-fail/>
+		</mission-step>
+		<mission-step guide-message="gm_999_1" guide-message-zone-1="zone_YoungRinBong_Act6" id="6">
+			<mission id="6" name2="Mission.Name2.999_6" required-register-value="1">
+				<case object="npc:ME_WB_Valak_0002" progress-mission="y" type="npc-bleeding-occured"/>
+				<case npc-response="qrsp_999_6" object="npc:CE_WB_ChungGak_0046" type="approach"/>
+				<case object="zone:zone_YoungRinBong_Act6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.999_7" required-register-value="1">
+				<case npc-response="qrsp_999_7" object="npc:CH_WB_ChungGak_0012" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_999_8" object="npc:CH_WB_ChungGak_0004" type="approach"/>
+				<case npc-response="qrsp_999_9" object="npc:CH_WB_ChungGak_0042" type="approach"/>
+				<case object="zone:zone_YoungRinBong_Act6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.999_8" required-register-value="1" reward-1="999_final_set1">
+				<case npc-response="qrsp_999_10" object="npc:CH_WB_ChungGak_0003" progress-mission="y" type="talk"/>
+				<case object="zone:zone_YoungRinBong_Act6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_993"/>
+		</completion>
+		<transit id="1" zone="zone_YoungRinBong_6">
+			<destination mission-step-id="1" zone-index="7"/>
+			<destination mission-step-id="2" zone-index="7"/>
+			<destination mission-step-id="3" zone-index="7"/>
+			<destination mission-step-id="4" zone-index="7"/>
+			<destination mission-step-id="5" zone-index="7"/>
+			<destination mission-step-id="6" zone-index="7"/>
+			<destination mission-step-id="7" zone-index="7"/>
+			<destination mission-step-id="8" zone-index="7"/>
+		</transit>
+		<transit id="2" zone="StartZone_Event">
+			<destination mission-step-id="1" zone-index="5"/>
+			<destination mission-step-id="2" zone-index="5"/>
+			<destination mission-step-id="3" zone-index="5"/>
+			<destination mission-step-id="4" zone-index="5"/>
+			<destination mission-step-id="5" zone-index="5"/>
+			<destination mission-step-id="6" zone-index="5"/>
+			<destination mission-step-id="7" zone-index="5"/>
+			<destination mission-step-id="8" zone-index="5"/>
+		</transit>
+	</quest>
+</table>

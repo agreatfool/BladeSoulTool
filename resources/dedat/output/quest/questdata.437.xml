@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_437" broadcast-category="field" category="normal" day-of-week="daily" desc="q_437_sum" grade="2" group2="QG_AngaeForestSouth" id="437" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.437" reset-type="daily" save-type="all">
+		<acquisition level="40" preceding-quest-1="q_epic_926" preceding-quest-check="and" preceding-quest-mission-step-1="6" recommended-level="42">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_437_1" object="npc:CH_KyeongChunMaeng_0017" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_437_3" object="npc:CE_Board_0005" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_437_1" object="npc:CH_KyeongChunMaeng_0017" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.437_1" required-register-value="1">
+				<case object="npc:me_skullcaptain_0011" object2="npc:me_skullcaptain_0011" progress-mission="y" type="killed"/>
+				<case mapunit-1="4406_ME_SkullBEmpire_0001_1" object="npc:me_unbalancezombie_0003" object2="npc:me_unbalancezombie_0003" progress-mission="y" type="killed"/>
+				<case object="npc:me_skullbunguk_0004" object2="npc:me_skullbunguk_0004" progress-mission="n" show-in-tooltip="y" type="killed"/>
+				<case object="npc:me_skullbunguk_0003" object2="npc:me_skullbunguk_0003" show-in-tooltip="y" type="killed"/>
+				<case object="npc:me_skullbunguk_0002" object2="npc:me_skullbunguk_0002" show-in-tooltip="y" type="killed"/>
+				<case object="npc:me_skullbempire_0004" object2="npc:me_skullbempire_0004" show-in-tooltip="y" type="killed"/>
+				<case object="npc:me_skullbempire_0003" object2="npc:me_skullbempire_0003" show-in-tooltip="y" type="killed"/>
+				<case object="npc:me_skullbempire_0001" object2="npc:me_skullbempire_0001" show-in-tooltip="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.437_2" required-register-value="1" reward-1="437_final_set1" reward-2="437_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_437_2" object="npc:CH_KyeongChunMaeng_0017" progress-mission="y" type="talk"/>
+				<case completion-count="1" npc-response="qrsp_437_2" object="npc:CH_KyeongChunMaeng_0017" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_437_1_icon" msg="q_437_4" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

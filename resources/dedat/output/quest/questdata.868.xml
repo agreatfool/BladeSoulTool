@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_868" broadcast-category="field" category="normal" desc="q_868_sum" district-1="deasamak" grade="1" group2="QG_OSaekAmDoEast" id="868" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.868" save-type="all">
+		<acquisition level="34" preceding-quest-1="q_epic_542" preceding-quest-check="and" recommended-level="36">
+			<case acquire-quest="y" indicator-social="q_868_s_indi_1" msg="q_868_s" npc-response="qrsp_868_1" object="npc:ch_mayeongganggun_0029" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_868_des_1" id="1" location-x="37724.0469" location-y="60551.2969" map="oseakamdo">
+			<mission id="1" name2="Mission.Name2.868_1" required-register-value="1">
+				<case gadget-required="dont-care" looting="q_866_Quest_pelple_skull_1_icon" mapunit-1="3037_e_onoff_ghostcorpse_01" object="zoneenv:e_onoff_ghostcorpse_01" object2="zoneenv2:e_onoff_ghostcorpse_01" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_866_Quest_pelple_skull_1_icon" object="zoneenv:e_onoff_ghostcorpse_02" object2="zoneenv2:e_onoff_ghostcorpse_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_866_Quest_pelple_skull_1_icon" object="zoneenv:e_onoff_ghostcorpse_03" object2="zoneenv2:e_onoff_ghostcorpse_03" progress-mission="y" type="loot"/>
+				<case indicator-social="q_868_s_indi_2" npc-response="qrsp_868_3" object="npc:ch_mayeongganggun_0036" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="39062.7656" location-y="61342.3516" map="oseakamdo">
+			<mission id="2" name2="Mission.Name2.868_2" required-register-value="1" reward-1="868_final_set1">
+				<case indicator-social="q_868_m2_indi_1" msg="q_868_m2" npc-response="qrsp_868_2" object="npc:ch_mayeongganggun_0048" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_295" broadcast-category="field" category="normal" desc="q_295_sum" grade="1" group2="QG_BaeCheongEpic" id="295" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.295" save-type="all">
+		<acquisition level="1" preceding-quest-1="q_epic_293" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="49">
+			<case acquire-quest="y" item="Quest_Scroll_BackChung_0047" msg="q_295_1" type="talk-to-item"/>
+		</acquisition>
+		<mission-step desc="q_295_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.295_1" required-register-value="1">
+				<case grocery="General_Grocery_SpecialMaterial_0094" npc-response="qrsp_295_1" object="npc:CH_CT_HyunDam_0008" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekRimSa_BonDang" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_295_des_2" id="2">
+			<mission id="2" name2="Mission.Name2.295_2" required-register-value="1" reward-1="295_final_set1">
+				<case grocery="General_Costume_Dress_1121" mapunit-1="5232_e_Chest_backbrazierB_01_e295" object="zoneenv:e_Chest_backbrazierB_01" object2="zoneenv2:e_Chest_backbrazierB_01" progress-mission="y" transfer-faction2="SecondFaction1" type="manipulate"/>
+				<case object="zone:zone_BaekRimSa_BonDang" progress-mission="reaction-only" type="enter-zone"/>
+				<completion-loss item-1="quest_scroll_backchung_0047" item-count-1="1"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

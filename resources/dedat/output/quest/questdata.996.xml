@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_996" broadcast-category="field" category="epic" completed-desc="q_996_completed" completed-list="y" desc="q_996_sum" grade="1" group2="QG_NextbaeCheongEpic2" id="996" map-group-1-1="startzone" max-repeat="1" name2="Quest.Name2.996" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="50" sort-no="547"/>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.996_2" required-register-value="1">
+				<case mapunit-1="1260_Guide_MuIlBong" object="zone:StartZone_Epic6th" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.996_6" required-register-value="1" reward-1="996_middle_set1">
+				<case npc-response="qrsp_996_3" object="npc:CH_WB_SeoYeon_0010" progress-mission="y" type="talk"/>
+				<case object="zone:StartZone_Epic6th_Jinseryoen" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.996_7" required-register-value="1">
+				<case mapunit-1="1260_Guide_MuIlBong" object="zone:StartZone_Epic6th_attackzone" progress-mission="y" type="enter-zone"/>
+				<case object="zone:StartZone_Epic6th_Jinseryoen" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.996_8" required-register-value="3">
+				<case mapunit-1="1263_ME_WB_DemonShadow_0028" object="npc:MH_WB_BlackDragon_0063" object2="npc:MH_WB_BlackDragon_0063" progress-mission="y" type="killed"/>
+				<case object="npc:MH_WB_BlackDragon_0062" object2="npc:MH_WB_BlackDragon_0062" progress-mission="y" type="killed"/>
+				<case object="npc:MH_WB_BlackDragon_0061" object2="npc:MH_WB_BlackDragon_0061" progress-mission="y" type="killed"/>
+			</mission>
+			<mission-step-fail rollback-step-id="7"/>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.996_10" required-register-value="1">
+				<case object="npc:MH_WB_YuRanM_0002" object2="npc:MH_WB_YuRanM_0002" progress-mission="y" type="killed"/>
+				<case object="zone:StartZone_Epic6th_attackzone" progress-mission="n" type="enter-zone"/>
+				<case npc-response="qrsp_996_13" object="npc:CH_WB_ChinChin_0016" type="approach"/>
+				<case npc-response="qrsp_996_12" object="npc:CH_WB_BeonA_0008" type="approach"/>
+				<case npc-response="qrsp_996_11" object="npc:CH_WB_BeonYang_0008" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.996_11" required-register-value="1" reward-1="996_final_set1">
+				<case npc-response="qrsp_996_5" object="npc:CH_WB_BaekWoon_0006" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_996_7" object="npc:CE_WB_DokChoGeoSa_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.996_3" required-register-value="1">
+				<case npc-response="qrsp_996_1" object="npc:CH_WB_Ryu_0013" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_996_6" object="npc:CH_WB_ChinChin_0013" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.996_4" required-register-value="1">
+				<case npc-response="qrsp_996_2" object="npc:CH_WB_BeonYang_0014" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_996_7" object="npc:CH_WB_BeonA_0014" type="approach"/>
+				<case npc-response="qrsp_996_8" object="npc:CH_WB_Ryu_0014" type="approach"/>
+				<case object="zone:StartZone_Epic6th" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.996_9" required-register-value="1">
+				<case npc-response="qrsp_996_4" object="npc:CH_WB_BeonYang_0008" progress-mission="y" type="talk"/>
+				<case object="zone:StartZone_Epic6th_attackzone" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="StartZone_Event">
+			<destination mission-step-id="11" zone-index="5"/>
+			<destination mission-step-id="10" zone-index="8"/>
+			<destination mission-step-id="9" zone-index="8"/>
+			<destination mission-step-id="8" zone-index="8"/>
+			<destination mission-step-id="7" zone-index="8"/>
+			<destination mission-step-id="6" zone-index="9"/>
+			<destination mission-step-id="5" zone-index="9"/>
+			<destination mission-step-id="4" zone-index="9"/>
+			<destination mission-step-id="3" zone-index="5"/>
+			<destination mission-step-id="2" zone-index="5"/>
+			<destination mission-step-id="1" zone-index="5"/>
+		</transit>
+		<transit id="2" zone="zone_ChRyoungCHN_Doctor_SP">
+			<destination mission-step-id="11" zone-index="3"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_997"/>
+		</completion>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.996_1" required-register-value="1">
+				<case npc-response="qrsp_996_9" object="npc:CE_WB_DokChoGeoSa_0001" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Grocery_BackChung_0017"/>
+				<fixed-reward slot-1="item:Quest_Grocery_BackChung_0018"/>
+				<case npc-response="qrsp_996_10" object="npc:CH_WB_YukSon_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.996_5" required-register-value="1">
+				<case object="npc:CH_WB_SeoYeon_0010" progress-mission="y" type="npc-manipulate"/>
+				<completion-loss item-1="Quest_Grocery_BackChung_0018"/>
+				<case object="zone:StartZone_Epic6th_Jinseryoen" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

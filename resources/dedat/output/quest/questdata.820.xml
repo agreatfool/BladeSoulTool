@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_820" broadcast-category="field" category="normal" desc="q_820_sum" grade="1" group2="QG_ZazakWoodEast" id="820" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.820" save-type="all">
+		<acquisition level="46" preceding-quest-1="q_epic_282" preceding-quest-2="q_sub_819" preceding-quest-check="and" preceding-quest-mission-step-1="2" recommended-level="48">
+			<case acquire-quest="y" npc-response="qrsp_820_1" object="npc:CH_CT_Mercenary_0013" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.820_1" required-register-value="1">
+				<case loot-item="Quest_Scroll_BackChung_0030" looting="q_820_1_icon" object="npc:ME_CT_DonDon_0004" object2="npc:ME_CT_DonDon_0004" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case loot-item="Quest_Scroll_BackChung_0030" looting="q_820_1_icon" object="npc:ME_CT_DonDon_0002" object2="npc:ME_CT_DonDon_0002" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case loot-item="Quest_Scroll_BackChung_0030" looting="q_820_1_icon" mapunit-1="5210_ME_CT_DonDon_0001_s820" object="npc:ME_CT_DonDon_0001" object2="npc:ME_CT_DonDon_0001" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case loot-item="Quest_Scroll_BackChung_0030" looting="q_820_1_icon" object="npc:me_ct_pigtribec_0003" object2="npc:me_ct_pigtribec_0003" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.820_2" required-register-value="1">
+				<case msg="q_820_3" npc-response="qrsp_820_2" object="npc:CH_CT_Mercenary_0013" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.820_3" required-register-value="1">
+				<case item="Quest_Scroll_BackChung_0030" msg="q_820_3" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.820_4" required-register-value="1" reward-1="820_final_set1">
+				<case grocery="Quest_Scroll_BackChung_0030" npc-response="qrsp_820_4" object="npc:CH_CT_Mercenary_0013" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_BackChung_0030"/>
+	</quest>
+</table>

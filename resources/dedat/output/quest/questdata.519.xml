@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_519" broadcast-category="field" category="epic" completed-desc="q_519_completed" completed-list="y" desc="q_519_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="519" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.519" save-type="all">
+		<acquisition level="1" recommended-level="30" sort-no="320"/>
+		<mission-step id="1" location-x="-15666.7793" location-y="3827.0571" map="toemungekjan" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.519_1" required-register-value="1">
+				<case indicator-social="q_519_m1_indi_1" msg="q_519_m1" npc-response="qrsp_519_1" object="npc:ch_tomun_011" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-24337.7344" location-y="-24395.3984" map="yeolsajeedea" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.519_2" required-register-value="1">
+				<case indicator-social="q_519_m2_indi_1" mapunit-1="3016_Guide_E519" msg="q_519_m2" npc-response="qrsp_519_2" object="npc:ch_jinsoa_0003" progress-mission="y" type="talk" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-19117.1094" location-y="-30455.0508" map="yousadonggul">
+			<mission id="3" name2="Mission.Name2.519_3" required-register-value="1">
+				<case mapunit-1="3010_Epic_YouSaDongGul" object="zone:zone_chungsungburak_2" progress-mission="y" type="enter-zone"/>
+				<case npc-response="qrsp_519_7" object="npc:ch_jinsoa_0003" progress-mission="n" type="approach" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-17015.373" location-y="-30956.9727" map="yousadonggul">
+			<mission id="4" name2="Mission.Name2.519_4" required-register-value="1">
+				<case indicator-social="q_519_m4_indi_1" msg="q_519_m4" npc-response="qrsp_519_3" object="npc:ch_soyeonhwa_0004" progress-mission="y" type="talk"/>
+				<case object="zone:zone_ChungSungBuRak_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="-10019.2793" location-y="-31097.5977" map="yousadonggul">
+			<mission id="5" name2="Mission.Name2.519_5" required-register-value="1">
+				<case mapunit-1="3048_e_FootSwitch_519_Finish" object="zone:zone_ChungSungBuRak_2" progress-mission="y" type="convoy-arrived"/>
+				<case object="zoneenv:e_FootSwitch_519_Play" object2="zoneenv2:e_FootSwitch_519_Play" progress-mission="reaction-only" type="env-entered"/>
+			</mission>
+			<mission-step-fail rollback-step-id="4">
+				<case convoy="epic_519_con" object="zone:zone_ChungSungBuRak_2" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step id="6" location-x="-8191.1543" location-y="-30992.1289" map="yousadonggul">
+			<mission id="6" name2="Mission.Name2.519_6" required-register-value="1">
+				<case indicator-social="q_519_m6_indi_1" msg="q_519_m6" npc-response="qrsp_519_4" object="npc:ch_baekunsunsa_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_ChungSungBuRak_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7" location-x="-8191.1543" location-y="-30992.1289" map="yousadonggul" mission-map-type="location">
+			<mission id="7" name2="Mission.Name2.519_7" required-register-value="1">
+				<case indicator-social="q_519_m7_indi_1" msg="q_519_m7" npc-response="qrsp_519_5" object="npc:ch_soyeonhwa_0004" progress-mission="y" type="talk"/>
+				<case object="zone:zone_ChungSungBuRak_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8" location-x="-24337.7344" location-y="-24395.3984" map="yeolsajeedea">
+			<mission id="8" name2="Mission.Name2.519_8" required-register-value="1" reward-1="519_final_set1">
+				<case indicator-social="q_519_m8_indi_1" msg="q_519_m8" npc-response="qrsp_519_6" object="npc:ch_jinsoa_0004" progress-mission="y" type="talk" visible-object="y"/>
+				<case object="zone:zone_mjnaru_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_ChungSungBuRak_1">
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<complete zone-index="2"/>
+			<destination mission-step-id="8" zone-index="2"/>
+		</transit>
+		<transit id="2" zone="zone_MJNaru_1">
+			<destination mission-step-id="8" zone-index="1"/>
+			<complete zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_520"/>
+		</completion>
+	</quest>
+</table>

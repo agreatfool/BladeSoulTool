@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_467" broadcast-category="field" category="normal" desc="q_467_sum" district-1="jeryoungrim" grade="1" group="제룡림(송암도)" group2="QG_SongAmDo" id="467" map-group-1-1="jeryoungrim" max-repeat="1" name="이 안에 철있다" name2="Quest.Name2.467" save-type="all">
+		<acquisition level="14" preceding-quest-1="q_epic_496" preceding-quest-check="and" recommended-level="16">
+			<case acquire-quest="y" indicator-social="q_467_s_indi_1" msg="q_467_s" npc-response="qrsp_467_1" object="npc:ch_merchantweapon_002" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-7764.7422" location-y="40973.9688" map="songamdo">
+			<mission id="1" name="철무방 이진명에게 암석 전달" name2="Mission.Name2.467_1" required-register-value="1" reward-1="467_final_set1">
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_amsuk_01" object2="zoneenv2:e_onoff_amsuk_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_amsuk_02" object2="zoneenv2:e_onoff_amsuk_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_amsuk_03" object2="zoneenv2:e_onoff_amsuk_03" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_amsuk_04" object2="zoneenv2:e_onoff_amsuk_04" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="2440_e_onoff_amsuk_05" object="zoneenv:e_onoff_amsuk_05" object2="zoneenv2:e_onoff_amsuk_05" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="q_rockb" gadget-required="carry-and-remove" indicator-social="q_467_m1_indi_1" msg="q_467_m1" npc-response="qrsp_467_2" object="npc:ch_merchantweapon_002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

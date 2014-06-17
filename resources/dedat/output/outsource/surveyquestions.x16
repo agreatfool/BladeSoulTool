@@ -1,0 +1,503 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="LocalizationData" release-mversion="0.0.0.156" release-side="client" type="petition-faq-list" version="0.2">
+	<surveyQuestion alias="poll01" greeting="您好！首先感谢您在游戏过程中抽出宝贵的时间来回答我们的问题，请您协助我们完成以下问题，您的意见将会帮助我们改善《剑灵》游戏环境，感谢您的支持！" title="新手引导，外型创造">
+		<question desc="习惯使用ESC显示【鼠标】，还是按住ALT键显示【鼠标】？" num="1" question-type="single-selection-question">
+			<questionExample desc="ESC" num="1"/>
+			<questionExample desc="ALT" num="2"/>
+			<questionExample desc="我终于知道如何显示【鼠标】了，坑爹啊！" num="3"/>
+		</question>
+		<question desc="在无日峰进行新手训练是最难的部分是？" num="2" question-type="single-selection-question">
+			<questionExample desc="F键的使用(道具获得/对话)" num="1"/>
+			<questionExample desc="按两下W疾行" num="2"/>
+			<questionExample desc="疾行后跳起来再滑行" num="3"/>
+			<questionExample desc="自动锁定目标" num="4"/>
+			<questionExample desc="战斗教学" num="5"/>
+			<questionExample desc="死亡后，运气疗伤" num="6"/>
+			<questionExample desc="道具佩戴/使用" num="7"/>
+			<questionExample desc="没有" num="8"/>
+		</question>
+		<question desc="是否注意到活力值，显示方式是否满意？" num="3" question-type="single-selection-question">
+			<questionExample desc="没有看到，太不明显了" num="1"/>
+			<questionExample desc="看到了，但不够明显" num="2"/>
+			<questionExample desc="可以接受" num="3"/>
+			<questionExample desc="满意" num="4"/>
+		</question>
+	</surveyQuestion>
+	<surveyQuestion alias="poll02" greeting="您好！首先感谢您在游戏过程中抽出宝贵的时间来回答我们的问题，请您协助我们完成以下问题，您的意见将会帮助我们改善《剑灵》游戏环境，感谢您的支持！" title="操作习惯、界面聊天、教学任务">
+		<question desc="请选择喜好的操作模式 " num="1" question-type="single-selection-question">
+			<questionExample desc="剑灵模式" num="1"/>
+			<questionExample desc="常规模式" num="2"/>
+			<questionExample desc="现在才知道按SHIFT+F2是切换战斗模式" num="3"/>
+		</question>
+		<question desc="您对剑灵的界面设置及功能满意度如何" num="2" question-type="single-selection-question">
+			<questionExample desc="不满意，需要改进" num="1"/>
+			<questionExample desc="满意" num="2"/>
+			<questionExample desc="现在才知道按SHIFT+F1可以调整界面布局" num="3"/>
+		</question>
+		<question desc="游戏内聊天窗的功能及使用方法是否便利？" num="3" question-type="single-selection-question">
+			<questionExample desc="不方便" num="1"/>
+			<questionExample desc="方便" num="2"/>
+			<questionExample desc="按TAB直接切换之前的密语好友很方便啊！" num="3"/>
+		</question>
+	</surveyQuestion>
+	<surveyQuestion alias="poll03" greeting="您好！首先感谢您在游戏过程中抽出宝贵的时间来回答我们的问题，请您协助我们完成以下问题，您的意见将会帮助我们改善《剑灵》游戏环境，感谢您的支持！" title="野外BOSS 、装备成长">
+		<question desc="您对可以群殴"千魂灵妖"的玩法是否爽快？" num="1" question-type="single-selection-question">
+			<questionExample desc="群殴什么的最喜欢了！" num="1"/>
+			<questionExample desc="挺好，不用组队了！" num="2"/>
+			<questionExample desc="不爽，太乱，我喜欢单挑他！" num="3"/>
+		</question>
+		<question desc="杀了"千魂灵妖"后用精魄去转【大转盘】获得装备" num="2" question-type="single-selection-question">
+			<questionExample desc="不错，很喜欢这样的设计" num="1"/>
+			<questionExample desc="无所谓什么方式获得装备。" num="2"/>
+			<questionExample desc="原来是这样抽奖的，才知道！" num="3"/>
+		</question>
+		<question desc="您是否使用过提炼（装备成长）系统？" num="3" question-type="single-selection-question">
+			<questionExample desc="用过，从任务中就知道怎么用了" num="1"/>
+			<questionExample desc="没有，这个是什么？（包裹中使用"提炼"按钮）" goToQuestionNum="6" num="2"/>
+		</question>
+		<question desc="您现在使用的武器，利用提炼到达的成长等级是？" num="4" question-type="single-selection-question">
+			<questionExample desc="才只是默认的1段而已" num="1"/>
+			<questionExample desc="我已经把武器成长了，但是没到5段" num="2"/>
+			<questionExample desc="已经5段无压力" goToQuestionNum="6" num="3"/>
+		</question>
+		<question desc="您的武器没有提炼到更高等级的原因是？" num="5" question-type="single-selection-question">
+			<questionExample desc="觉得武器替换会很快，成长了比较浪费" num="1"/>
+			<questionExample desc="纯粹是缺少金币啊~" num="2"/>
+			<questionExample desc="现在的攻击力打怪够用了，不追求提升的那些攻击力" num="3"/>
+		</question>
+		<question desc="您在使用《剑灵》自带语音功能时的掌握程度是？" num="6" question-type="single-selection-question">
+			<questionExample desc="我知道怎么说话" num="1"/>
+			<questionExample desc="我知道怎么屏蔽语音" num="2"/>
+			<questionExample desc="我会用按键说话功能" num="3"/>
+			<questionExample desc="我知道谁在说话" num="4"/>
+		</question>
+	</surveyQuestion>
+	<surveyQuestion alias="poll04" greeting="您好！首先感谢您在游戏过程中抽出宝贵的时间来回答我们的问题，请您协助我们完成以下问题，您的意见将会帮助我们改善《剑灵》游戏环境，感谢您的支持！" title="生活技能">
+		<question desc="采集/制作系统体验过了吗？" num="1" question-type="single-selection-question">
+			<questionExample desc="体验过了" num="1"/>
+			<questionExample desc="现在才知道是绿明村可以学习生活技能！" goToQuestionNum="4" num="2"/>
+			<questionExample desc="原来这游戏还有生活技能！" goToQuestionNum="4" num="3"/>
+		</question>
+		<question desc="采集/制作的远程委托系统是否便利" num="2" question-type="single-selection-question">
+			<questionExample desc="非常复杂" num="1"/>
+			<questionExample desc="比较复杂" num="2"/>
+			<questionExample desc="便捷" num="3"/>
+			<questionExample desc="太贵了" num="4"/>
+		</question>
+		<question desc="领取采集/制作产出道具的过程是否便利" num="3" question-type="single-selection-question">
+			<questionExample desc="非常复杂" num="1"/>
+			<questionExample desc="比较复杂" num="2"/>
+			<questionExample desc="便捷" num="3"/>
+		</question>
+		<question desc="您认为活力值系统对于游戏的体验影响如何？" num="4" question-type="single-selection-question">
+			<questionExample desc="感觉每天的量有点少，天天用完" num="1"/>
+			<questionExample desc="挺好，没时间的人就不会落后太多" num="2"/>
+			<questionExample desc="每天都用不完，给太多了" num="3"/>
+		</question>
+		<question desc="您觉得活力值系统最大的问题是什么?" num="5" question-type="single-selection-question">
+			<questionExample desc="双倍存储的量太少" num="1"/>
+			<questionExample desc="活力耗尽以后不知道干什么" num="2"/>
+			<questionExample desc="希望能增加活力值的获取方式" num="3"/>
+		</question>
+	</surveyQuestion>
+	<surveyQuestion alias="poll05" greeting="您好！首先感谢您在游戏过程中抽出宝贵的时间来回答我们的问题，请您协助我们完成以下问题，您的意见将会帮助我们改善《剑灵》游戏环境，感谢您的支持！" title="金币、经济、生活技能">
+		<question desc="到现在为止，您的金币够用吗？" num="1" question-type="single-selection-question">
+			<questionExample desc="不够" num="1"/>
+			<questionExample desc="刚刚好够用" num="2"/>
+			<questionExample desc="我存了好多金币呢" num="3"/>
+		</question>
+		<question desc="您觉得游戏最大的金币消耗是哪一种" num="2" question-type="single-selection-question">
+			<questionExample desc="遁地" num="1"/>
+			<questionExample desc="血瓶和食物" num="2"/>
+			<questionExample desc="购买装备及材料" num="3"/>
+			<questionExample desc="装备成长" num="4"/>
+			<questionExample desc="采集制作消耗" num="5"/>
+		</question>
+		<question desc="您觉得游戏的金币获得途径哪个最重要" num="3" question-type="single-selection-question">
+			<questionExample desc="向系统出售道具（杂物、药水、食物等）" num="1"/>
+			<questionExample desc="任务获取" num="2"/>
+			<questionExample desc="拍卖行" num="3"/>
+		</question>
+		<question desc="您给武器镶嵌过宝石吗？" num="4" question-type="single-selection-question">
+			<questionExample desc="镶嵌过好几个了！" num="1"/>
+			<questionExample desc="原来还有这功能！" num="2"/>
+		</question>
+		<question desc="您的武器成长突破过5段了吗？" num="5" question-type="single-selection-question">
+			<questionExample desc="已经到5段以上了" num="1"/>
+			<questionExample desc="到5段时找不到突破的材料" num="2"/>
+			<questionExample desc="什么是突破？（5段后仍然可以使用提炼功能进行武器成长突破）" num="3"/>
+		</question>
+		<question desc="您使用过武器的进化吗？（1把10段武器进化为新的1段武器）" num="6" question-type="single-selection-question">
+			<questionExample desc="用过" num="1"/>
+			<questionExample desc="不知道还能武器进化（在提炼系统中进行）" num="2"/>
+			<questionExample desc="知道，但是另一把作为材料的武器太难弄了" num="3"/>
+		</question>
+	</surveyQuestion>
+	<surveyQuestion alias="poll06" greeting="您好！首先感谢您在游戏过程中抽出宝贵的时间来回答我们的问题，请您协助我们完成以下问题，您的意见将会帮助我们改善《剑灵》游戏环境，感谢您的支持！" title="修炼&组队 QT">
+		<question desc="剑灵组队系统是否方便？" num="1" question-type="single-selection-question">
+			<questionExample desc="不方便" num="1"/>
+			<questionExample desc="方便" num="2"/>
+			<questionExample desc="根本组不到人" num="3"/>
+			<questionExample desc="原来按ESC以后可以点其他人进行组队啊！" num="4"/>
+		</question>
+		<question desc="自动组队的龙柱系统如何？" num="3" question-type="single-selection-question">
+			<questionExample desc="不方便" num="1"/>
+			<questionExample desc="方便" num="2"/>
+			<questionExample desc="根本组不到人" num="3"/>
+			<questionExample desc="现在才知道靠近龙柱按F可以自动组队啊！" num="4"/>
+		</question>
+		<question desc="您是否添加了好友" num="4" question-type="single-selection-question">
+			<questionExample desc="已经添加了不少了" num="1"/>
+			<questionExample desc="随便添加了几个" num="2"/>
+			<questionExample desc="没有注意到好友系统" num="3"/>
+			<questionExample desc="我喜欢独来独往" num="4"/>
+		</question>
+		<question desc="是否知道添加的好友是对方的账号而不是角色？" num="5" question-type="single-selection-question">
+			<questionExample desc="知道的，是和对方的账号结为好友" num="1"/>
+			<questionExample desc="知道是账号，但不知道详细规则" num="2"/>
+			<questionExample desc="不知道是账号好友" num="3"/>
+			<questionExample desc="能加就行，怎样都无所谓" num="4"/>
+		</question>
+		<question desc="您觉得技能修炼加点是否便利？" num="6" question-type="single-selection-question">
+			<questionExample desc="非常复杂，眼睛都看花了" num="1"/>
+			<questionExample desc="比较复杂，但是研究下还是能接受" num="2"/>
+			<questionExample desc="太简单了，我很喜欢" num="3"/>
+			<questionExample desc="现在才知道按"K"键可以修炼技能" num="4"/>
+		</question>
+		<question desc="您使用的是那种技能修炼加点方式？" num="7" question-type="single-selection-question">
+			<questionExample desc="直接用系统推荐的加点" num="1"/>
+			<questionExample desc="自己点的技能加点" num="2"/>
+		</question>
+	</surveyQuestion>
+	<surveyQuestion alias="poll07" greeting="您好！首先感谢您在游戏过程中抽出宝贵的时间来回答我们的问题，请您协助我们完成以下问题，您的意见将会帮助我们改善《剑灵》游戏环境，感谢您的支持！" title="拍卖 好友">
+		<question desc="拍卖系统是否方便" num="1" question-type="single-selection-question">
+			<questionExample desc="不方便" num="1"/>
+			<questionExample desc="方便" num="2"/>
+			<questionExample desc="啊？按F5进入拍卖行现在才知道！" num="3"/>
+		</question>
+		<question desc="好友系统使用起来是否方便" num="2" question-type="single-selection-question">
+			<questionExample desc="非常方便，添加和互动都很简单" num="1"/>
+			<questionExample desc="比较好，基本功能都挺好用的" num="2"/>
+			<questionExample desc="不是很会使用，很多功能不了解" num="3"/>
+			<questionExample desc="从来不开好友面板" num="4"/>
+		</question>
+	</surveyQuestion>
+	<surveyQuestion alias="poll08" greeting="您好！首先感谢您在游戏过程中抽出宝贵的时间来回答我们的问题，请您协助我们完成以下问题，您的意见将会帮助我们改善《剑灵》游戏环境，感谢您的支持！" title="忽雷副本、组队合击">
+		<question desc="是否参过忽雷副本？" num="1" question-type="single-selection-question">
+			<questionExample desc="是" num="1"/>
+			<questionExample desc="否" goToQuestionNum="4" num="2"/>
+			<questionExample desc="原来还有这副本？马上问下朋友怎么去！" goToQuestionNum="4" num="3"/>
+		</question>
+		<question desc="忽雷战斗过程是否有意思" num="2" question-type="single-selection-question">
+			<questionExample desc="没有意思" num="1"/>
+			<questionExample desc="有意思" num="2"/>
+		</question>
+		<question desc="忽雷的通关难易度如何" num="3" question-type="single-selection-question">
+			<questionExample desc="非常难" num="1"/>
+			<questionExample desc="比较难" num="2"/>
+			<questionExample desc="简单" num="3"/>
+			<questionExample desc="非常简单" num="4"/>
+		</question>
+		<question desc="没有参加的原因是什么？" num="4" question-type="single-selection-question">
+			<questionExample desc="根本不知道这副本" num="1"/>
+			<questionExample desc="知道这副本，但是我没兴趣" num="2"/>
+			<questionExample desc="我觉得我应该打不过吧……" num="3"/>
+		</question>
+		<question desc="您在打副本时，是否留意到boss脚下的技能范围提示？（boss施放技能时出现）" num="5" question-type="single-selection-question">
+			<questionExample desc="注意到了，对我打boss很有帮助" num="1"/>
+			<questionExample desc="啊？原来boss脚下的是他的技能范围提示啊。。。" num="2"/>
+		</question>
+		<question desc="您在组队打boss，是否留意到boss会被击倒，眩晕等异常状态？" num="6" question-type="single-selection-question">
+			<questionExample desc="没注意到" num="1"/>
+			<questionExample desc="注意到" num="2"/>
+			<questionExample desc="很明显" num="3"/>
+		</question>
+		<question desc="是否了解合击技能使用提示的红、绿、蓝、黄四色残影的作用" num="7" question-type="single-selection-question">
+			<questionExample desc="不了解" num="1"/>
+			<questionExample desc="比较了解" num="2"/>
+			<questionExample desc="啊？原来这些残影是合击提醒啊！" num="3"/>
+		</question>
+		<question desc="组队时，是否使用了【合击提醒】功能？" num="8" question-type="single-selection-question">
+			<questionExample desc="啊？完全不知道这功能" num="1"/>
+			<questionExample desc="小意思，只要队长按CTRL+F1，F2，F3，F4发起这功能，大家都能受益" num="2"/>
+		</question>
+	</surveyQuestion>
+	<surveyQuestion alias="poll09" greeting="您好！首先感谢您在游戏过程中抽出宝贵的时间来回答我们的问题，请您协助我们完成以下问题，您的意见将会帮助我们改善《剑灵》游戏环境，感谢您的支持！" title="八卦系统、TGOS">
+		<question desc="您对八卦牌用过强化功能了吗？" num="1" question-type="single-selection-question">
+			<questionExample desc="用过了" num="1"/>
+			<questionExample desc="啊？原来八卦还能强化啊！（背包面板下的提炼按钮）" num="2"/>
+		</question>
+		<question desc="您对八卦牌套装的额外属性种类数量是否满意？ " num="2" question-type="single-selection-question">
+			<questionExample desc="觉得种类太少" num="1"/>
+			<questionExample desc="挺满意的" num="2"/>
+		</question>
+		<question desc="在游戏过程中遇到问题时，你更倾向于？" num="3" question-type="single-selection-question">
+			<questionExample desc="向剑灵帮帮提问（自助问答）" num="1"/>
+			<questionExample desc="切出去找媒体的网站看攻略" num="2"/>
+			<questionExample desc="切出去看官方论坛或者帖吧" num="3"/>
+			<questionExample desc="在游戏内找人问" num="4"/>
+			<questionExample desc="不知道剑灵帮帮是什么" num="5"/>
+		</question>
+	</surveyQuestion>
+	<surveyQuestion alias="poll10" greeting="您好！首先感谢您在游戏过程中抽出宝贵的时间来回答我们的问题，请您协助我们完成以下问题，您的意见将会帮助我们改善《剑灵》游戏环境，感谢您的支持！" title="阵营">
+		<question desc="是否有加入阵营(武林盟, 浑天教)" num="1" question-type="single-selection-question">
+			<questionExample desc="有" num="1"/>
+			<questionExample desc="啊？还有阵营系统！赶紧问朋友去加！" num="2"/>
+		</question>
+		<question desc="加入阵营之后，您感觉到与敌对阵营的PVP必要性么？" num="2" question-type="single-selection-question">
+			<questionExample desc="没有" num="1"/>
+			<questionExample desc="必要" num="2"/>
+		</question>
+		<question desc="您觉得阵营PVP的战斗可玩性如何？" num="3" question-type="single-selection-question">
+			<questionExample desc="无聊" num="1"/>
+			<questionExample desc="好玩" num="2"/>
+		</question>
+		<question desc="您觉得穿上或脱掉阵营服装之后选择阵营是否方便？" num="4" question-type="single-selection-question">
+			<questionExample desc="不方便" num="1"/>
+			<questionExample desc="方便" num="2"/>
+		</question>
+	</surveyQuestion>
+	<surveyQuestion alias="poll11" greeting="您好！首先感谢您在游戏过程中抽出宝贵的时间来回答我们的问题，请您协助我们完成以下问题，您的意见将会帮助我们改善《剑灵》游戏环境，感谢您的支持！" title="战斗难度">
+		<question desc="单人打怪战斗时，您觉得打怪战斗难度如何？" num="1" question-type="single-selection-question">
+			<questionExample desc="非常难" num="1"/>
+			<questionExample desc="比较难" num="2"/>
+			<questionExample desc="简单" num="3"/>
+			<questionExample desc="非常简单" num="4"/>
+		</question>
+		<question desc="使战斗难度上升的原因是什么？" num="2" question-type="single-selection-question">
+			<questionExample desc="自动锁定目标" num="1"/>
+			<questionExample desc="对应PC时的反应" num="2"/>
+			<questionExample desc="怪物AI高" num="3"/>
+			<questionExample desc="快捷键的分布及使用" num="4"/>
+			<questionExample desc="怪物分布密度高" num="5"/>
+		</question>
+		<question desc="打怪的战斗速度如何？" num="3" question-type="single-selection-question">
+			<questionExample desc="非常慢" num="1"/>
+			<questionExample desc="慢" num="2"/>
+			<questionExample desc="比较快" num="3"/>
+			<questionExample desc="非常快" num="4"/>
+		</question>
+		<question desc="自动锁定目标系统的战斗操作难易度如何" num="4" question-type="single-selection-question">
+			<questionExample desc="非常难" num="1"/>
+			<questionExample desc="比较难" num="2"/>
+			<questionExample desc="简单" num="3"/>
+			<questionExample desc="非常简单" num="4"/>
+		</question>
+		<question desc="利用格档，回避，反击进行的战斗难易度如何？" num="5" question-type="single-selection-question">
+			<questionExample desc="非常难" num="1"/>
+			<questionExample desc="比较难" num="2"/>
+			<questionExample desc="简单" num="3"/>
+			<questionExample desc="非常简单" num="4"/>
+		</question>
+	</surveyQuestion>
+	<surveyQuestion alias="poll12" greeting="您好！首先感谢您在游戏过程中抽出宝贵的时间来回答我们的问题，请您协助我们完成以下问题，您的意见将会帮助我们改善《剑灵》游戏环境，感谢您的支持！" title="任务">
+		<question desc="您觉得游戏的任务种类如何？" num="1" question-type="single-selection-question">
+			<questionExample desc="不满意" num="1"/>
+			<questionExample desc="非常满意" num="2"/>
+		</question>
+		<question desc="您觉得游戏的任务数量如何？" num="2" question-type="single-selection-question">
+			<questionExample desc="很少" num="1"/>
+			<questionExample desc="比较充足" num="2"/>
+			<questionExample desc="非常多" num="3"/>
+		</question>
+		<question desc="您觉得游戏的任务难度如何？" num="3" question-type="single-selection-question">
+			<questionExample desc="难" num="1"/>
+			<questionExample desc="简单" num="2"/>
+			<questionExample desc="正合适" num=""/>
+		</question>
+		<question desc="您是否遇到过没有任务可以接的情况？" num="4" question-type="single-selection-question">
+			<questionExample desc="有！有段时间只能刷怪，没有任务做" num="1"/>
+			<questionExample desc="没遇到过，一直很流畅" num="2"/>
+		</question>
+	</surveyQuestion>
+	<surveyQuestion alias="poll13" greeting="您好！首先感谢您在游戏过程中抽出宝贵的时间来回答我们的问题，请您协助我们完成以下问题，您的意见将会帮助我们改善《剑灵》游戏环境，感谢您的支持！" title="组队 QT">
+		<question desc="组队打怪时，队员各职业的分工是否明显？" num="1" question-type="single-selection-question">
+			<questionExample desc="一点也没有体现" num="1"/>
+			<questionExample desc="有所体现" num="2"/>
+		</question>
+		<question desc="组队游戏时的合击技能是否有趣 ?" num="2" question-type="single-selection-question">
+			<questionExample desc="没有意思" num="1"/>
+			<questionExample desc="有意思" num="2"/>
+		</question>
+		<question desc="使用合击技能时操作是否方便？" num="3" question-type="single-selection-question">
+			<questionExample desc="不方便" num="1"/>
+			<questionExample desc="方便" num="2"/>
+		</question>
+		<question desc="组队时最欢迎的职业是？" num="4" question-type="single-selection-question">
+			<questionExample desc="剑士" num="1"/>
+			<questionExample desc="拳师" num="2"/>
+			<questionExample desc="力士" num="3"/>
+			<questionExample desc="气功师" num="4"/>
+			<questionExample desc="刺客" num="5"/>
+			<questionExample desc="召唤师" num="6"/>
+			<questionExample desc="无" num="7"/>
+		</question>
+		<question desc="组队时最不欢迎的职业是？" num="5" question-type="single-selection-question">
+			<questionExample desc="剑士" num="1"/>
+			<questionExample desc="拳师" num="2"/>
+			<questionExample desc="力士" num="3"/>
+			<questionExample desc="气功师" num="4"/>
+			<questionExample desc="刺客" num="5"/>
+			<questionExample desc="召唤师" num="6"/>
+			<questionExample desc="无" num="7"/>
+		</question>
+		<question desc="《剑灵》自带语音功能，带给你最大困扰是？" num="6" question-type="single-selection-question">
+			<questionExample desc="其他玩家会骂人" num="1"/>
+			<questionExample desc="造成游戏卡顿" num="2"/>
+			<questionExample desc="造成游戏掉帧" num="3"/>
+			<questionExample desc="听不清别人说话" num="4"/>
+			<questionExample desc="比较吵，不太舒服" num="5"/>
+			<questionExample desc="我不喜欢用语音" num="6"/>
+		</question>
+	</surveyQuestion>
+	<surveyQuestion alias="poll14" greeting="您好！首先感谢您在游戏过程中抽出宝贵的时间来回答我们的问题，请您协助我们完成以下问题，您的意见将会帮助我们改善《剑灵》游戏环境，感谢您的支持！" title="群战 商城">
+		<question desc="团队PK您觉得PVP获胜最重要的因素是什么？" num="1" question-type="single-selection-question">
+			<questionExample desc="人数" num="1"/>
+			<questionExample desc="等级" num="2"/>
+			<questionExample desc="职业" num="3"/>
+			<questionExample desc="操作" num="4"/>
+			<questionExample desc="配合度" num="5"/>
+		</question>
+		<question desc="比武场去过了吗？" num="2" question-type="single-selection-question">
+			<questionExample desc="嗯，按F9直接进入非常方便！" num="1"/>
+			<questionExample desc="原来还有比武场！？" num="2"/>
+		</question>
+		<question desc="是否使用过游戏商城" num="3" question-type="single-selection-question">
+			<questionExample desc="经常使用" num="1"/>
+			<questionExample desc="偶尔会进去看看" num="2"/>
+			<questionExample desc="我不怎么消费，不是很关心" num="3"/>
+			<questionExample desc="根本没有使用过" num="4"/>
+		</question>
+		<question desc="商城使用起来是否方便" num="4" question-type="single-selection-question">
+			<questionExample desc="功能比较全面，购物很顺畅" num="1"/>
+			<questionExample desc="没有什么不方便的" num="2"/>
+			<questionExample desc="一般般，不够人性化" num="3"/>
+		</question>
+		<question desc="您觉得哪些商城功能需要添加" num="5" question-type="single-selection-question">
+			<questionExample desc="购物车功能" num="1"/>
+			<questionExample desc="试衣间功能" num="2"/>
+			<questionExample desc="搜索功能" num="3"/>
+			<questionExample desc="拍卖团购等功能" num="4"/>
+		</question>
+	</surveyQuestion>
+	<surveyQuestion alias="poll15" greeting="您好！首先感谢您在游戏过程中抽出宝贵的时间来回答我们的问题，请您协助我们完成以下问题，您的意见将会帮助我们改善《剑灵》游戏环境，感谢您的支持！" title="职业">
+		<question desc="对您现在正在体验的角色的职业是否满意？" num="1" question-type="single-selection-question">
+			<questionExample desc="非常不满意" num="1"/>
+			<questionExample desc="不太满意" num="2"/>
+			<questionExample desc="满意" num="3"/>
+			<questionExample desc="非常满意" num="4"/>
+		</question>
+		<question desc="您在本职业战斗中是否经常使用连招？" num="2" question-type="single-selection-question">
+			<questionExample desc="经常用" num="1"/>
+			<questionExample desc="偶尔" num="2"/>
+			<questionExample desc="不怎么用" num="3"/>
+			<questionExample desc="官方敢出个连招引导，让哥学习下吗？" num="4"/>
+		</question>
+		<question desc="您觉得本职业的趣味性如何？" num="3" question-type="single-selection-question">
+			<questionExample desc="非常有趣" num="1"/>
+			<questionExample desc="有趣" num="2"/>
+			<questionExample desc="无趣" num="3"/>
+			<questionExample desc="非常无趣" num="4"/>
+		</question>
+	</surveyQuestion>
+	<surveyQuestion alias="poll16" greeting="您好！首先感谢您在游戏过程中抽出宝贵的时间来回答我们的问题，请您协助我们完成以下问题，您的意见将会帮助我们改善《剑灵》游戏环境，感谢您的支持！" title="生活技能">
+		<question desc="游戏的金币地位是否足够重要" num="1" question-type="single-selection-question">
+			<questionExample desc="无所谓" num="1"/>
+			<questionExample desc="比较重要" num="2"/>
+			<questionExample desc="非常重要" num="3"/>
+		</question>
+		<question desc="生活技能的产出是否足够多样性" num="2" question-type="single-selection-question">
+			<questionExample desc="不够" num="1"/>
+			<questionExample desc="比较好" num="2"/>
+			<questionExample desc="非常好" num="3"/>
+		</question>
+		<question desc="生活技能是否能够带来足够的收益" num="3" question-type="single-selection-question">
+			<questionExample desc="不够" num="1"/>
+			<questionExample desc="比较好" num="2"/>
+			<questionExample desc="非常好" num="3"/>
+		</question>
+	</surveyQuestion>
+	<surveyQuestion alias="poll17" greeting="您好！首先感谢您在游戏过程中抽出宝贵的时间来回答我们的问题，请您协助我们完成以下问题，您的意见将会帮助我们改善《剑灵》游戏环境，感谢您的支持！" title="炎煌、游戏玩法">
+		<question desc="是否参过炎煌副本？" num="1" question-type="single-selection-question">
+			<questionExample desc="是" num="1"/>
+			<questionExample desc="否" goToQuestionNum="5" num="2"/>
+			<questionExample desc="原来还有这副本？马上问下朋友怎么去！" num="3"/>
+		</question>
+		<question desc="炎煌战斗过程是否有意思" num="2" question-type="single-selection-question">
+			<questionExample desc="非常没有意思" num="1"/>
+			<questionExample desc="没有意思" num="2"/>
+			<questionExample desc="有意思" num="3"/>
+			<questionExample desc="非常有意思" num="4"/>
+		</question>
+		<question desc="炎煌的通关难易度如何" num="3" question-type="single-selection-question">
+			<questionExample desc="非常难" num="1"/>
+			<questionExample desc="比较难" num="2"/>
+			<questionExample desc="简单" num="3"/>
+			<questionExample desc="非常简单" num="4"/>
+		</question>
+		<question desc="通关炎煌副本时，使用过红心系统吗？（BOSS前的红心龙柱）" num="4" question-type="single-selection-question">
+			<questionExample desc="用过，让我打副本更容易" num="1"/>
+			<questionExample desc="没用过" num="2"/>
+		</question>
+		<question desc="没有参加的原因是什么？" num="5" question-type="single-selection-question">
+			<questionExample desc="根本不知道这副本" num="1"/>
+			<questionExample desc="知道这副本，但是我没兴趣" num="2"/>
+			<questionExample desc="我觉得我应该打不过吧……" num="3"/>
+		</question>
+	</surveyQuestion>
+	<surveyQuestion alias="poll18" greeting="您好！首先感谢您在游戏过程中抽出宝贵的时间来回答我们的问题，请您协助我们完成以下问题，您的意见将会帮助我们改善《剑灵》游戏环境，感谢您的支持！" title="水月平原  商城">
+		<question desc="是否遇到过因为等级不够而无法领取任务的情况？（灰色的任务图标）" num="1" question-type="single-selection-question">
+			<questionExample desc="遇到了，很痛苦" num="1"/>
+			<questionExample desc="我现在都做每日任务在升级，还可以。" num="2"/>
+			<questionExample desc="打算刷怪练到满级！" num="3"/>
+		</question>
+		<question desc="收到火炮兰邀请函，击杀4大副本了吗？" num="2" question-type="single-selection-question">
+			<questionExample desc="已经击杀完毕！" num="1"/>
+			<questionExample desc="太难了！！" num="2"/>
+			<questionExample desc="现在才知道要击杀这些副本才能去打4人火炮兰啊！" num="3"/>
+		</question>
+		<question desc="是否在商城中进行过购物" num="3" question-type="single-selection-question">
+			<questionExample desc="经常购买道具" num="1"/>
+			<questionExample desc="有需求时会购买" num="2"/>
+			<questionExample desc="偶尔购买过" num="3"/>
+			<questionExample desc="我不需要商城道具" num="4"/>
+		</question>
+		<question desc="是否觉得商城道具影响了游戏平衡性" num="4" question-type="single-selection-question">
+			<questionExample desc="目前种类不多，没有什么影响" num="1"/>
+			<questionExample desc="还好，都是辅助类的，不怎么影响" num="2"/>
+			<questionExample desc="我不怎么关心商城的影响" num="3"/>
+			<questionExample desc="确实对免费玩家有影响" num="4"/>
+		</question>
+		<question desc="商城中出售什么道具您觉得可以接受" num="5" question-type="single-selection-question">
+			<questionExample desc="药水辅助类的可以多一些" num="1"/>
+			<questionExample desc="各种功能类，如重新捏脸的道具需有的" num="2"/>
+			<questionExample desc="服装类应该再多一点" num="3"/>
+			<questionExample desc="会员的功能应该得到加强" num="4"/>
+		</question>
+		<question desc="对剑灵的会员系统有何看法" num="6" question-type="single-selection-question">
+			<questionExample desc="没什么问题，实用性很强" num="1"/>
+			<questionExample desc="比较合理，性价比较高" num="2"/>
+			<questionExample desc="一般般没什么特色" num="3"/>
+			<questionExample desc="目前太简单了，需要完善" num="4"/>
+			<questionExample desc="就不应该有会员" num="5"/>
+		</question>
+	</surveyQuestion>
+	<surveyQuestion alias="poll19" greeting="您好！首先感谢您在游戏过程中抽出宝贵的时间来回答我们的问题，请您协助我们完成以下问题，您的意见将会帮助我们改善《剑灵》游戏环境，感谢您的支持！" title="总结">
+		<question desc="您觉得这款游戏的整体感受如何？" num="1" question-type="single-selection-question">
+			<questionExample desc="非常不满意" num="1"/>
+			<questionExample desc="不太满意" num="2"/>
+			<questionExample desc="满意" num="3"/>
+			<questionExample desc="非常满意" num="4"/>
+		</question>
+		<question desc="你对火炮兰24人副本怎么看？" num="2" question-type="single-selection-question">
+			<questionExample desc="挺好的,任意击杀BOSS很自由！" num="1"/>
+			<questionExample desc="原来有24人的副本？赶紧找朋友去！" num="2"/>
+		</question>
+		<question desc="您对剑灵比武场的看法是？" num="3" question-type="single-selection-question">
+			<questionExample desc="没有【自由PK模式】吗？" num="1"/>
+			<questionExample desc="奖励能给力点不？" num="2"/>
+			<questionExample desc="出个全服排行榜就行！" num="3"/>
+			<questionExample desc="没啥意见" num="4"/>
+		</question>
+	</surveyQuestion>
+</table>

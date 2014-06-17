@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_669" broadcast-category="field" category="normal" day-of-week="daily" desc="q_669_sum" district-1="deasamak" grade="7" group2="QG_GmmDalUJukJi" id="669" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.669" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="26" preceding-quest-1="q_epic_516" preceding-quest-2="q_sub_637" preceding-quest-check="and" recommended-level="30">
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_669_3" object="npc:ch_tosok_0001" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_669_1" object="npc:ch_tosok_0001" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_669_5" object="npc:CE_Board_0015" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.669_1" required-register-value="1">
+				<case looting="q_669_1_icon" object="npc:me_adamantineman_0003" object2="npc:me_adamantineman_0003" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.669_2" required-register-value="1" reward-1="669_final_set1" reward-2="669_final_set2">
+				<case completion-count="1" npc-response="qrsp_669_4" object="npc:ch_tosok_0001" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_669_2" object="npc:ch_tosok_0001" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_669_2_icon" msg="q_669_6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

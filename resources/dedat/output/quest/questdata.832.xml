@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_832" broadcast-category="field" category="normal" desc="q_832_sum" grade="1" group2="QG_SnowMountSouth" id="832" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.832" save-type="all">
+		<acquisition level="47" preceding-quest-1="q_epic_282" preceding-quest-2="q_sub_831" preceding-quest-check="and" preceding-quest-mission-step-1="8" recommended-level="49">
+			<case acquire-quest="y" npc-response="qrsp_832_1" object="npc:CH_CT_Flower_0004" type="talk"/>
+		</acquisition>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.832_2" required-register-value="10">
+				<case looting="q_832_1_icon" mapunit-1="5220_ME_CT_ChuAngKa_0001_s832" object="npc:ME_CT_ChuAngKa_0001" object2="npc:ME_CT_ChuAngKa_0001" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.832_3" required-register-value="1" reward-1="832_final_set1">
+				<case npc-response="qrsp_832_3" object="npc:CH_CT_Ghost_0007" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.832_1" required-register-value="1">
+				<case npc-response="qrsp_832_2" object="npc:CH_CT_Ghost_0006" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

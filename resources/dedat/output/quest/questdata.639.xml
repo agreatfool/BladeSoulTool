@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_639" broadcast-category="field" category="normal" desc="q_639_sum" district-1="deasamak" grade="1" group2="QG_HwangPungSaMak" id="639" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.639" save-type="all">
+		<acquisition level="23" preceding-quest-1="q_sub_419" preceding-quest-2="q_epic_509" preceding-quest-check="and" recommended-level="25" talk-to-self-guide-msg="Msg.AirDash.quest1">
+			<case acquire-quest="y" item="q_639_Quest_hair_growth_solution_manual_1_icon" msg="q_639_1" type="talk-to-self"/>
+		</acquisition>
+		<mission-step desc="q_639_des_1" id="3">
+			<mission id="4" name2="Mission.Name2.639_4" required-register-value="1" reward-1="639_final_set1">
+				<case grocery="General_Grocery_Quest_0012" npc-response="qrsp_639_1" object="npc:ce_dokchogeosa_0004" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_639_4" object="npc:CH_DS_BeonYang_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_639_des_1" id="2">
+			<mission id="3" name2="Mission.Name2.639_3" required-register-value="1">
+				<case npc-response="qrsp_639_2" object="npc:CH_DS_BeonYang_0003" progress-mission="y" remove-grocery="n" type="approach"/>
+				<case npc-response="qrsp_639_7" object="npc:CH_DS_BeonA_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" desc="q_639_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.639_1" required-register-value="1">
+				<case npc-response="qrsp_639_5" object="npc:CH_MuRimMeng_0001" progress-mission="y" type="approach">
+					<filter-set name="무림맹">
+						<filter subject="case:approached:pc" subject2="case:approached:pc" type="faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+			</mission>
+			<mission id="2" name2="Mission.Name2.639_2" required-register-value="1">
+				<case npc-response="qrsp_639_6" object="npc:CH_HonChunGyo_0007" progress-mission="y" type="approach">
+					<filter-set name="혼천교">
+						<filter subject="case:approached:pc" subject2="case:approached:pc" type="faction" value="factionmain2"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

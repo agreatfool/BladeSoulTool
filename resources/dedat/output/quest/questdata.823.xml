@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_823" broadcast-category="field" category="normal" day-of-week="none" desc="q_823_sum" grade="1" group2="QG_ZazakWoodEast" id="823" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.823" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="n" level="46" preceding-quest-1="q_epic_282" preceding-quest-check="and" preceding-quest-mission-step-1="2" recommended-level="48">
+			<case acquire-quest="y" completion-count="0" completion-count-op="ge" npc-response="qrsp_823_1" object="npc:CE_CT_FrogKing_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.823_1" required-register-value="10">
+				<case looting="q_823_1_icon" object="npc:ME_CT_Akyo_0002" object2="npc:ME_CT_Akyo_0002" progress-mission="y" type="loot"/>
+				<case looting="q_823_1_icon" object="npc:ME_CT_CrocodileSharkTribeD_0024" object2="npc:ME_CT_CrocodileSharkTribeD_0024" progress-mission="y" type="loot"/>
+				<case looting="q_823_1_icon" mapunit-1="5210_ME_CT_Akyo_0002_s823" object="npc:ME_CT_CrocodileSharkTribeD_0022" object2="npc:ME_CT_CrocodileSharkTribeD_0022" progress-mission="y" type="loot"/>
+				<case looting="q_823_1_icon" object="npc:me_ct_crocodilesharktribec_0011" object2="npc:me_ct_crocodilesharktribec_0011" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.823_2" required-register-value="1" reward-1="823_final_set1">
+				<case completion-count="0" completion-count-op="ge" npc-response="qrsp_823_2" object="npc:CE_CT_FrogKing_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

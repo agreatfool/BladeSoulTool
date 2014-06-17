@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1067" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1067_sum" grade="1" group2="QG_MoilBong" id="1067" map-group-1-1="startzone" max-repeat="1" name2="Quest.Name2.1067" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="50" preceding-quest-1="q_sub_1119" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" npc-response="qrsp_1067_1" object="npc:CH_SA_GwanChulSu_0002" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1067_1" required-register-value="5">
+				<case gadget="Q_Basket_0001" gadget-required="carry" indicator="quest-normal-repeat-can-progress" object="zoneenv:e_chest_MI_field_01_1" object2="zoneenv2:e_chest_MI_field_01_1" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Basket_0001" gadget-required="carry" indicator="quest-normal-repeat-can-progress" object="zoneenv:e_chest_MI_field_02_1" object2="zoneenv2:e_chest_MI_field_02_1" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Basket_0001" gadget-required="carry" indicator="quest-normal-repeat-can-progress" mapunit-1="1252_CE_SA_GoodWheat_0001" object="zoneenv:e_chest_MI_field_04_1" object2="zoneenv2:e_chest_MI_field_04_1" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Basket_0001" gadget-required="carry" indicator="quest-normal-repeat-can-progress" object="zoneenv:e_chest_MI_field_05_1" object2="zoneenv2:e_chest_MI_field_05_1" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Basket_0001" gadget-required="not-a" indicator="quest-gadget-drop" object="zoneenv:e_chest_seedsbasket_01_1" object2="zoneenv2:e_chest_seedsbasket_01_1" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Basket_0001" gadget-required="not-a" indicator="quest-gadget-drop" object="zoneenv:e_chest_seedsbasket_02_1" object2="zoneenv2:e_chest_seedsbasket_02_1" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Basket_0001" gadget-required="not-a" indicator="quest-gadget-drop" object="zoneenv:e_chest_seedsbasket_03_1" object2="zoneenv2:e_chest_seedsbasket_03_1" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Sprayer_0001" gadget-required="carry" indicator="quest-normal-repeat-can-progress" mapunit-1="1252_CE_SA_GoodWheat_0001" object="npc:CE_SA_Seeding_0003" progress-mission="reaction-only" type="npc-manipulate"/>
+				<case gadget="Q_Sprayer_0001" gadget-required="not-a" indicator="quest-gadget-drop" object="zoneenv:e_chest_wateringcan_01_1" object2="zoneenv2:e_chest_wateringcan_01_1" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Sprayer_0001" gadget-required="not-a" indicator="quest-gadget-drop" object="zoneenv:e_chest_wateringcan_02_1" object2="zoneenv2:e_chest_wateringcan_02_1" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_FlameThrower_Water" gadget-required="not-a" indicator="quest-gadget-drop" object="zoneenv:e_chest_sprinkler_01_1" object2="zoneenv2:e_chest_sprinkler_01_1" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_DoubleFire_0001" gadget-required="not-a" indicator="quest-gadget-drop" object="zoneenv:e_chest_weaponbox_01_1" object2="zoneenv2:e_chest_weaponbox_01_1" progress-mission="reaction-only" type="manipulate"/>
+				<case mapunit-1="1252_CE_SA_GoodWheat_0001" object="npc:ME_SA_Pest_0005" object2="npc:ME_SA_Pest_0005" show-in-tooltip="y" type="killed"/>
+				<case object="npc:ME_SA_Pest_0006" object2="npc:ME_SA_Pest_0006" show-in-tooltip="y" type="killed"/>
+				<case object="npc:ME_SA_Pest_0007" object2="npc:ME_SA_Pest_0007" show-in-tooltip="y" type="killed"/>
+				<case object="npc:ME_SA_Pest_0008" object2="npc:ME_SA_Pest_0008" show-in-tooltip="y" type="killed"/>
+				<case object="npc:ME_SA_Juno_0003" object2="npc:ME_SA_Juno_0003" show-in-tooltip="y" type="killed"/>
+				<case object="npc:ME_SA_Juno_0004" object2="npc:ME_SA_Juno_0004" show-in-tooltip="y" type="killed"/>
+				<case object="npc:ME_SA_JunoBig_0003" object2="npc:ME_SA_JunoBig_0003" show-in-tooltip="y" type="killed"/>
+				<case object="npc:ME_SA_JunoBig_0004" object2="npc:ME_SA_JunoBig_0004" show-in-tooltip="y" type="killed"/>
+				<case gadget-required="empty" indicator="default" mapunit-1="1252_CE_SA_GoodWheat_0001" object="npc:CE_SA_GoodWheat_0003" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1067_2" required-register-value="1" reward-1="1067_final_set1" reward-2="1067_final_set2">
+				<case npc-response="qrsp_1067_2" object="npc:CH_SA_GwanChulSu_0002" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_1067_1_icon" msg="q_1067_3" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

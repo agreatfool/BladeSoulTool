@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_505" broadcast-category="field" category="epic" completed-desc="q_505_completed" completed-list="y" desc="q_505_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="505" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.505" save-type="all">
+		<acquisition level="1" recommended-level="23" sort-no="306"/>
+		<mission-step completion-type="or" id="1" location-x="-44359.1523" location-y="-62430.625" map="oemalri">
+			<mission id="1" name2="Mission.Name2.505_1" required-register-value="1">
+				<case npc-response="qrsp_505_14" object="npc:CH_DS_MuRimMaeng_0001" progress-mission="y" type="talk">
+					<filter-set name="무림맹 가입 상태">
+						<filter field="faction" op="eq" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="1"/>
+					</filter-set>
+				</case>
+				<case indicator="quest-epic-can-progress" npc-response="qrsp_505_12" object="npc:CH_DS_MuRimMaeng_0001" type="talk">
+					<filter-set name="가입 안한 상태">
+						<filter field="faction" op="eq" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="0"/>
+					</filter-set>
+				</case>
+			</mission>
+			<mission id="2" name2="Mission.Name2.505_2" required-register-value="1">
+				<case npc-response="qrsp_505_15" object="npc:CH_DS_HonChunGyo_0001" progress-mission="y" type="talk">
+					<filter-set name="혼천교 가입 상태">
+						<filter field="faction" op="eq" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="2"/>
+					</filter-set>
+				</case>
+				<case indicator="quest-epic-can-progress" npc-response="qrsp_505_13" object="npc:CH_DS_HonChunGyo_0001" type="talk">
+					<filter-set name="가입 안한 상태">
+						<filter field="faction" op="eq" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="0"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-46720.6484" location-y="-75777.3984" map="toemunjean" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.505_3" required-register-value="1">
+				<case indicator-social="q_505_m3_indi_1" mapunit-1="3000_guide_e505" msg="q_505_m3" npc-response="qrsp_505_3" object="npc:ch_shaman_023" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekMoo" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-46720.6484" location-y="-75777.3984" map="toemunjean">
+			<mission id="4" name2="Mission.Name2.505_4" required-register-value="1">
+				<case indicator-social="q_505_m4_indi_1" msg="q_505_m4" npc-response="qrsp_505_4" object="npc:ch_unguksoldier_0003" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekMoo" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-46720.6484" location-y="-75777.3984" map="toemunjean">
+			<mission id="5" name2="Mission.Name2.505_5" required-register-value="1">
+				<case msg="q_505_m5" npc-response="qrsp_505_5" object="npc:ch_shaman_023" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekMoo" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_505_des_5" id="5" location-x="-53750.5859" location-y="-90306.9688" map="suonangdangdg">
+			<mission id="6" name2="Mission.Name2.505_6" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_505_quest_sorcery_black_stone_1_icon" mapunit-3="3078_ME_Hades_0002" object="npc:me_hades_0002" object2="npc:me_hades_0002" progress-mission="y" type="loot"/>
+				<case gadget="Q_DrumA" gadget-required="not-a" mapunit-2="3078_ME_ThunderDrum_0001" object="npc:me_thunderdrum_0001" object2="npc:me_thunderdrum_0001" progress-mission="reaction-only" type="killed"/>
+				<case gadget="Q_DrumA" gadget-required="carry-and-remove" object="zoneenv:e_onoff_sealedrock_01" object2="zoneenv2:e_onoff_sealedrock_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_DrumA" gadget-required="carry-and-remove" object="zoneenv:e_onoff_sealedrock_02" object2="zoneenv2:e_onoff_sealedrock_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_DrumA" gadget-required="carry-and-remove" object="zoneenv:e_onoff_sealedrock_03" object2="zoneenv2:e_onoff_sealedrock_03" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_DrumA" gadget-required="carry-and-remove" object="zoneenv:e_onoff_sealedrock_04" object2="zoneenv2:e_onoff_sealedrock_04" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_DrumA" gadget-required="carry-and-remove" mapunit-1="3078_e_onoff_sealedrock_01" object="zoneenv:e_onoff_sealedrock_05" object2="zoneenv2:e_onoff_sealedrock_05" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zone:zone_BaekMoo" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6" location-x="-46720.6484" location-y="-75777.3984" map="toemunjean">
+			<mission id="7" name2="Mission.Name2.505_7" required-register-value="1">
+				<case indicator-social="q_505_m7_indi_1" msg="q_505_m7" npc-response="qrsp_505_6" object="npc:ch_shaman_023" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekMoo" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7" location-x="-46720.6484" location-y="-75777.3984" map="toemunjean">
+			<mission id="8" name2="Mission.Name2.505_8" required-register-value="1">
+				<case object="zoneenv:e_onoff_drycorpse_01" object2="zoneenv2:e_onoff_drycorpse_01" progress-mission="y" type="manipulate"/>
+				<case mapunit-1="3003_e_destroy_drycorpse_01" mapunit-2="3003_e_destroy_drycorpse_02" object="zoneenv:e_onoff_drycorpse_02" object2="zoneenv2:e_onoff_drycorpse_02" progress-mission="y" type="manipulate"/>
+				<case object="zone:zone_BaekMoo" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8" location-x="-46720.6484" location-y="-75777.3984" map="toemunjean">
+			<mission id="9" name2="Mission.Name2.505_9" required-register-value="1" reward-1="505_final_set1">
+				<case indicator-social="q_505_m9_indi_1" msg="q_505_m9" npc-response="qrsp_505_7" object="npc:ch_shaman_023" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekMoo" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_506"/>
+		</completion>
+	</quest>
+</table>

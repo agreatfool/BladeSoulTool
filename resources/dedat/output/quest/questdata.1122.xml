@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1122" attraction-1="classic-field-zone:PoHwaRan_Classic" broadcast-category="always" category="normal" day-of-week="daily" desc="q_1122_sum" district-1="suwal" grade="10" group2="QG_ChungGakEastJiBu" id="1122" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1122" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="43" preceding-quest-1="q_sub_1035" preceding-quest-check="and" recommended-level="46">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1122_1" object="npc:ch_donghae_a_0002" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1122_3" object="npc:ch_donghae_a_0002" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1122_1" required-register-value="1" show-kill-mapunit="y">
+				<case acquire-quest="n" object="npc:me_chunggakaboss_0001" object2="npc:me_chunggakaboss_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1122_2" required-register-value="1" show-kill-mapunit="y">
+				<case object="npc:me_chunggakaboss_0002" object2="npc:me_chunggakaboss_0002" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1122_3" required-register-value="1" show-kill-mapunit="y">
+				<case object="npc:me_chunggakaboss_0004" object2="npc:me_chunggakaboss_0004" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.1122_4" required-register-value="1" show-kill-mapunit="y">
+				<case object="npc:me_chunggakaboss_0005" object2="npc:me_chunggakaboss_0005" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.1122_5" required-register-value="1" reward-1="1122_final_set1" reward-2="1122_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1122_2" object="npc:ch_donghae_a_0002" progress-mission="y" type="talk"/>
+				<case acquire-quest="n" completion-count="1" msg="q_1122_5" npc-response="qrsp_1122_4" object="npc:ch_donghae_a_0002" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_1122_1_icon" msg="q_1122_5" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

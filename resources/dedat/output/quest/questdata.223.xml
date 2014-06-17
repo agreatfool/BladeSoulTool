@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_223" broadcast-category="field" category="epic" completed-desc="q_223_completed" completed-list="y" desc="q_223_sum" district-1="startzone" grade="1" group2="QG_Toturial" id="223" map-group-1-1="startzone" max-repeat="1" name2="Quest.Name2.223" save-type="all" show-tutorial-tag="n" tutorial="y">
+		<acquisition level="1" recommended-level="1" sort-no="103"/>
+		<mission-step completion-type="and" desc="q_223_des_1" guide-message="gm_223_2" id="1" location-x="-10175.473" location-y="39583.637" map="startzone">
+			<mission id="1" name2="Mission.Name2.223_1" required-register-value="1">
+				<case mapunit-1="221_11_CH_YungMook_0001" object="zoneenv:1101_foot_2" object2="zoneenv2:1101_foot_2" progress-mission="y" type="env-entered"/>
+				<case object="zone:startzone_renew_all" progress-mission="reaction-only" type="enter-zone"/>
+				<case msg="q_223_m1" npc-response="qrsp_223_1" object="npc:ch_jinyoung_0001" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_223_des_2" guide-message="null" id="2" location-x="-10175.473" location-y="39583.637" map="startzone">
+			<mission id="2" name2="Mission.Name2.223_2" required-register-value="1" reward-1="223_middle_set1">
+				<case indicator-social="q_223_m2_indi_1" mapunit-1="221_10_CH_YungMook_0001" msg="q_223_m2" npc-response="qrsp_223_2" object="npc:ch_yungmook_0001" progress-mission="y" type="talk"/>
+				<case object="zone:startzone_renew_all" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_223_des_3" guide-message="gm_223_3" id="3" location-x="-8737.976" location-y="37157.859" map="startzone">
+			<mission id="3" name2="Mission.Name2.223_3" required-register-value="1">
+				<case mapunit-1="221_9_CH_MuSung_0001" object="zoneenv:1101_foot_3" object2="zoneenv2:1101_foot_3" progress-mission="y" type="env-entered"/>
+				<case object="zone:startzone_renew_all" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_223_m3_indi_3" msg="q_223_m3" npc-response="qrsp_223_3" object="npc:ch_yungmook_0001" type="talk"/>
+				<case indicator-social="q_223_m3_indi_1" npc-response="qrsp_223_4" object="npc:ch_gilhong_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_223_des_4" id="4" location-x="-8737.976" location-y="37157.859" map="startzone">
+			<mission id="4" name2="Mission.Name2.223_4" required-register-value="1" reward-1="223_final_set1">
+				<case indicator-social="q_223_m4_indi_1" mapunit-1="221_11_CH_MuSung_0001" msg="q_223_m4" npc-response="qrsp_223_5" object="npc:ch_musung_0001" progress-mission="y" type="talk"/>
+				<case object="zone:startzone_renew_all" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_223_m4_indi_2" npc-response="qrsp_223_7" object="npc:ch_gilhong_0003" type="approach"/>
+				<case indicator-social="q_223_m4_indi_4" npc-response="qrsp_223_8" object="npc:ch_yungmook_0001" type="approach"/>
+				<case msg="q_223_m4_1" npc-response="qrsp_223_6" object="npc:ch_jinyoung_0001" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest job-1="소환사" quest="q_epic_244"/>
+			<next-quest job-1="암살자" quest="q_epic_224"/>
+			<next-quest job-1="역사" quest="q_epic_224"/>
+			<next-quest job-1="기공사" quest="q_epic_224"/>
+			<next-quest job-1="권사" quest="q_epic_224"/>
+			<next-quest job-1="검사" quest="q_epic_224"/>
+			<next-quest job-1="귀검사" quest="q_epic_224"/>
+		</completion>
+	</quest>
+</table>

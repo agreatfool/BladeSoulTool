@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_269" broadcast-category="field" category="epic" completed-desc="q_269_completed" completed-list="y" desc="q_269_sum" grade="1" group2="QG_BaeCheongEpic" id="269" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.269" save-type="all">
+		<acquisition level="1" recommended-level="47" sort-no="510"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.269_1" required-register-value="1">
+				<case mapunit-1="5165_footswitch_01_e269" object="zoneenv:5165_footswitch_01" object2="zoneenv2:5165_footswitch_01" progress-mission="y" type="env-entered"/>
+				<case npc-response="qrsp_268_13" object="npc:CH_CT_JeGukGun_0253" type="approach"/>
+				<case npc-response="qrsp_268_12" object="npc:CH_CT_JeGukGun_0252" type="approach"/>
+				<case npc-response="qrsp_267_12" object="npc:CE_CT_ThiefCat_0003" type="approach"/>
+				<case npc-response="qrsp_267_11" object="npc:CE_CT_ThiefCat_0009" type="approach"/>
+				<case npc-response="qrsp_746_19" object="npc:CH_CT_ChaDoPa_0003" type="approach"/>
+				<case npc-response="qrsp_746_18" object="npc:CH_CT_ChaDoPa_0002" type="approach"/>
+				<case npc-response="qrsp_746_17" object="npc:CH_CT_ChaDoPa_0001" type="approach"/>
+				<case npc-response="qrsp_746_16" object="npc:CH_CT_KwaeDoBang_0002" type="approach"/>
+				<case npc-response="qrsp_746_15" object="npc:CH_CT_KwaeDoBang_0001" type="approach"/>
+				<case npc-response="qrsp_746_14" object="npc:CH_CT_BulSaPa_0004" type="approach"/>
+				<case npc-response="qrsp_746_13" object="npc:CH_CT_BulSaPa_0003" type="approach"/>
+				<case npc-response="qrsp_746_12" object="npc:CH_CT_BulSaPa_0002" type="approach"/>
+				<case npc-response="qrsp_746_11" object="npc:CH_CT_BulSaPa_0001" type="approach"/>
+				<case npc-response="qrsp_746_10" object="npc:CH_CT_UnPoSamGoe_0001" type="approach"/>
+				<case npc-response="qrsp_746_9" object="npc:CH_CT_UnPoSamGoe_0002" type="approach"/>
+				<case npc-response="qrsp_746_8" object="npc:CH_CT_UnPoSamGoe_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-14526.66" location-y="37865.03" map="PungWolGwan2Cheung" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.269_2" required-register-value="1">
+				<case npc-response="qrsp_269_1" object="npc:CH_CT_PungWeol_0017" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_267_12" object="npc:CE_CT_ThiefCat_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-15317.68" location-y="37865.03" map="PungWolGwan2Cheung" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.269_3" required-register-value="1">
+				<case npc-response="qrsp_269_2" object="npc:CH_CT_PungWeol_0018" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_269_14" object="npc:CH_CT_PungWeol_0017" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-16094.045" location-y="36385.54" map="PungWolGwan2Cheung" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.269_4" required-register-value="1">
+				<case object="npc:CH_CT_BokUn_0027" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="zone:Zone_PungWallGwan_p1" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_269_6" object="npc:CH_CT_PungWeol_0021" type="approach"/>
+				<case npc-response="qrsp_269_15" object="npc:CH_CT_PungWeol_0018" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="-16665.33" location-y="35374.80" map="PungWolGwan2Cheung" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.269_5" required-register-value="1">
+				<case object="npc:CH_CT_PungWeol_0046" progress-mission="y" type="npc-bleeding-occured"/>
+				<case npc-response="qrsp_269_7" object="npc:CH_CT_BokUn_0001" type="approach"/>
+				<case object="zone:Zone_PungWallGwan_p1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6" location-x="-16167.29" location-y="35374.80" map="PungWolGwan2Cheung" mission-map-type="location">
+			<mission id="6" name2="Mission.Name2.269_6" required-register-value="1">
+				<case object="npc:CH_CT_YeHaRang_0006" progress-mission="y" type="npc-manipulate"/>
+				<case npc-response="qrsp_269_8" object="npc:CH_CT_BokUn_0001" type="approach"/>
+				<case object="zone:Zone_PungWallGwan_p1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7" location-x="1752.36" location-y="25115.14" map="KangRyuSi" mission-map-type="location">
+			<mission id="7" name2="Mission.Name2.269_7" required-register-value="1">
+				<case mapunit-1="5176_Guide_e269" mapunit-2="5176_Guide_e269-" npc-response="qrsp_269_3" object="npc:CH_CT_JeGukGun_0020" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_267_12" object="npc:CE_CT_ThiefCat_0010" type="approach"/>
+				<case npc-response="qrsp_267_13" object="npc:CE_CT_ThiefCat_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.269_8" required-register-value="1">
+				<case gadget="Q_Bottle_0001" gadget-required="carry-and-remove" npc-response="qrsp_269_10" object="npc:CH_CT_SungBae_0002" progress-mission="y" type="npc-manipulate"/>
+				<case button-text-accept="q_269_4_ok" button-text-cancel="q_269_4_no" gadget-required="empty" indicator="default" npc-response="qrsp_269_4" object="npc:CH_CT_JeGukGun_0020" progress-mission="reaction-only" type="talk"/>
+				<case npc-response="qrsp_269_9" object="npc:CH_CT_JeGukGun_0026" type="approach"/>
+				<case npc-response="qrsp_267_12" object="npc:CE_CT_ThiefCat_0010" type="approach"/>
+				<case npc-response="qrsp_269_13" object="npc:CH_CT_BokUn_0007" type="approach"/>
+				<case npc-response="qrsp_269_12" object="npc:CH_CT_BokUn_0006" type="approach"/>
+				<case npc-response="qrsp_269_11" object="npc:CH_CT_BokUn_0005" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.269_9" required-register-value="1" reward-1="269_final_set1">
+				<case npc-response="qrsp_269_5" object="npc:CH_CT_JeGukGun_0026" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_269_13" object="npc:CH_CT_BokUn_0007" type="approach"/>
+				<case npc-response="qrsp_269_12" object="npc:CH_CT_BokUn_0006" type="approach"/>
+				<case npc-response="qrsp_269_11" object="npc:CH_CT_BokUn_0005" type="approach"/>
+				<case npc-response="qrsp_269_10" object="npc:CH_CT_SungBae_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="Zone_PungWallGwan">
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_270"/>
+		</completion>
+	</quest>
+</table>

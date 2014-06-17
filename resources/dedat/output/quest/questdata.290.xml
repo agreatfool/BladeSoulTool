@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_290" broadcast-category="field" category="normal" content-type="festival" desc="q_290_sum" grade="1" group2="QG_Delete" id="290" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.290" retired="y" save-type="all">
+		<acquisition level="15" preceding-quest-check="and" recommended-level="15">
+			<case acquire-quest="y" item="q_290_1_icon" msg="q_290_1" type="talk-to-self"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.290_1" required-register-value="1">
+				<case npc-response="qrsp_290_1" object="npc:CH_CT_Dinos_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.290_2" required-register-value="1">
+				<case npc-response="qrsp_290_3" object="npc:CH_CT_Dinos_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_290_2" object="npc:CH_CT_Dinos_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.290_3" required-register-value="1">
+				<case looting="q_290_2_icon" mapunit-1="2300_me_belliedfrog_002_3" mapunit-2="2300_me_belliedfrog_002_4" object="npc:ME_BelliedFrog_0003" object2="npc:ME_BelliedFrog_0003" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+				<case npc-response="qrsp_290_2" object="npc:CH_CT_Dinos_0003" type="approach"/>
+				<case npc-response="qrsp_290_4" object="npc:CH_CT_Dinos_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.290_4" required-register-value="1" reward-1="290_final_set1">
+				<case npc-response="qrsp_290_5" object="npc:CH_CT_Dinos_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

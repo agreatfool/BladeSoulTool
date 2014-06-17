@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_727" broadcast-category="field" category="normal" desc="q_727_sum" grade="1" group2="QG_Haodong" id="727" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.727" save-type="all">
+		<acquisition level="45" preceding-quest-1="q_epic_268" preceding-quest-2="q_sub_719" preceding-quest-check="and" preceding-quest-mission-step-1="10" recommended-level="47">
+			<case acquire-quest="y" npc-response="qrsp_727_1" object="npc:CH_CT_HaoBang_0060" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.727_1" required-register-value="1">
+				<case npc-response="qrsp_727_2" object="npc:CH_CT_HaoBang_0057" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_PickpocketBase" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.727_2" required-register-value="1">
+				<case object="npc:CH_CT_HaoDong_0003" progress-mission="y" type="npc-bleeding-occured"/>
+			</mission>
+			<mission-step-fail/>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.727_3" required-register-value="1">
+				<case npc-response="qrsp_727_3" object="npc:CH_CT_HaoDong_0003" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.727_4" required-register-value="1">
+				<case object="npc:MH_CT_HaOBanng_0063" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="zone:Zone_PickpocketBase" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.727_5" required-register-value="1" reward-1="727_final_set1">
+				<case npc-response="qrsp_727_4" object="npc:CH_CT_Homeless_0004" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_PickpocketBase" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

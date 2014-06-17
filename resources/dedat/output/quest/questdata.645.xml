@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_645" broadcast-category="field" category="normal" desc="q_645_sum" district-1="deasamak" grade="1" group2="QG_ToMunGaekJan" id="645" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.645" save-type="all">
+		<acquisition level="27" preceding-quest-1="q_epic_517" preceding-quest-check="and" recommended-level="29">
+			<case acquire-quest="y" indicator-social="q_645_s_indi_1" msg="q_645_s" npc-response="qrsp_645_1" object="npc:ch_ilmimun_0003" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-13635.5293" location-y="3116.1196" map="toemungekjan" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.645_1" required-register-value="1">
+				<case gadget="Q_SmokedA" gadget-required="carry" indicator-social="q_645_m1_indi_1" msg="q_645_m1" npc-response="qrsp_645_4" object="npc:ch_tomun_012" progress-mission="y" type="talk"/>
+				<case button-text-accept="q_645_m1_re_ok" button-text-cancel="q_645_m1_re_no" gadget-required="empty" indicator="quest-normal-can-progress" msg="q_645_m1_re" npc-response="qrsp_645_2" object="npc:ch_ilmimun_0003" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-14676.5449" location-y="4131.7446" map="toemungekjan" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.645_2" required-register-value="1" reward-1="645_final_set1">
+				<case gadget="Q_SmokedA" gadget-required="carry-and-remove" indicator-social="q_645_m2_indi_1" msg="q_645_m2" npc-response="qrsp_645_3" object="npc:ch_vagabond_006" progress-mission="y" type="talk"/>
+				<case button-text-accept="q_645_m2_re_ok" button-text-cancel="q_645_m2_re_no" gadget-required="empty" indicator="quest-normal-can-complete" msg="q_645_m2_re" npc-response="qrsp_645_5" object="npc:ch_tomun_012" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

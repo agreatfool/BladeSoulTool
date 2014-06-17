@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_263" broadcast-category="field" category="epic" completed-desc="q_263_completed" completed-list="y" desc="q_263_sum" grade="1" group2="QG_BaeCheongEpic" id="263" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.263" save-type="all">
+		<acquisition level="1" recommended-level="46" sort-no="504"/>
+		<mission-step id="1" location-x="-86402.09" location-y="24659.45" map="YeomSaekChon" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.263_1" required-register-value="1">
+				<case mapunit-1="5024_e_Chest_drinktable_01_e263" mapunit-2="5021_Guide_e263" object="zoneenv:e_Chest_drinktable_01" object2="zoneenv2:e_Chest_drinktable_01" progress-mission="y" type="manipulate"/>
+				<case npc-response="qrsp_263_2" object="npc:CH_CT_Citizen_0193" type="approach"/>
+				<case npc-response="qrsp_263_1" object="npc:CH_CT_JeGukGun_0112" type="approach"/>
+				<case object="zone:Zone_YumSek_Zekuk" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.263_2" required-register-value="1">
+				<case npc-response="qrsp_263_5" object="npc:CH_CT_JeGukGun_0112" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_263_4" object="npc:CH_CT_Citizen_0195" type="approach"/>
+				<case object="zone:Zone_YumSek_Zekuk" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.263_3" required-register-value="1">
+				<case npc-response="qrsp_263_3" object="npc:CH_CT_Citizen_0193" progress-mission="y" type="npc-manipulate"/>
+				<case object="zone:Zone_YumSek_Zekuk" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_263_8" object="npc:CH_CT_JeGukGun_0271" type="approach"/>
+				<case looting="q_263_1_icon" object="zoneenv:e_chest_drinkpot_01" object2="zoneenv2:e_chest_drinkpot_01" progress-mission="reaction-only" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.263_4" required-register-value="1">
+				<case npc-response="qrsp_263_10" object="npc:CH_CT_JeGukGun_0112" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_263_9" object="npc:CH_CT_JeGukGun_0271" progress-mission="n" type="approach"/>
+				<case object="zone:Zone_YumSek_Zekuk" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_263_32" object="npc:CH_CT_Citizen_0193" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.263_5" required-register-value="1">
+				<case npc-response="qrsp_263_13" object="npc:CH_CT_DokGo_0001" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_YumSek_Zekuk" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_263_29" object="npc:CH_CT_ORakDang_0032" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6" location-x="-92855.75" location-y="20519.04" map="GreatPlain" mission-map-type="location">
+			<mission id="6" name2="Mission.Name2.263_6" required-register-value="7">
+				<case looting="q_263_2_icon" mapunit-1="5001_ME_CT_SaMyoJeong_0026_e263" mapunit-2="5002_Guide_e263" object="npc:ME_CT_SaMyoJeong_0026" object2="npc:ME_CT_SaMyoJeong_0026" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+				<case npc-response="qrsp_263_11" object="npc:CH_CT_JeGukGun_0262" type="approach"/>
+				<case npc-response="qrsp_263_30" object="npc:CH_CT_ORakDang_0032" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.263_7" required-register-value="1">
+				<case npc-response="qrsp_263_14" object="npc:CH_CT_DokGo_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_263_11" object="npc:CH_CT_JeGukGun_0262" type="approach"/>
+				<case npc-response="qrsp_263_31" object="npc:CH_CT_ORakDang_0032" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.263_8" required-register-value="5">
+				<case object="zoneenv:e_pot_colorpot_03" object2="zoneenv2:e_pot_colorpot_03" progress-mission="y" type="killed"/>
+				<case object="zoneenv:e_pot_colorpot_02" object2="zoneenv2:e_pot_colorpot_02" progress-mission="y" type="killed"/>
+				<case mapunit-1="5002_e_pot_colorpot_01_e263" object="zoneenv:e_pot_colorpot_01" object2="zoneenv2:e_pot_colorpot_01" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_263_28" object="npc:CE_CT_Book_0005" progress-mission="reaction-only" type="approach"/>
+				<case object="zoneenv:e_pot_colorpot_05" object2="zoneenv2:e_pot_colorpot_05" progress-mission="y" type="killed"/>
+				<case object="zoneenv:e_pot_colorpot_04" object2="zoneenv2:e_pot_colorpot_04" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_263_11" object="npc:CH_CT_JeGukGun_0262" type="approach"/>
+				<case npc-response="qrsp_263_21" object="npc:CH_CT_Citizen_0105" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.263_10" required-register-value="1">
+				<case npc-response="qrsp_263_28" object="npc:CE_CT_Book_0005" progress-mission="y" type="npc-manipulate"/>
+				<case npc-response="qrsp_263_24" object="npc:CH_CT_Citizen_0105" type="approach"/>
+				<fixed-reward slot-1="item:Quest_Scroll_BackChung_0002"/>
+				<case npc-response="qrsp_263_11" object="npc:CH_CT_JeGukGun_0262" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.263_11" required-register-value="1" reward-1="263_final_set1">
+				<case item="Quest_Scroll_BackChung_0002" msg="q_263_18" progress-mission="y" type="talk-to-item"/>
+				<case npc-response="qrsp_263_24" object="npc:CH_CT_Citizen_0105" type="approach"/>
+				<case npc-response="qrsp_263_11" object="npc:CH_CT_JeGukGun_0262" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.263_9" required-register-value="1">
+				<case npc-response="qrsp_263_27" object="npc:CH_CT_Citizen_0105" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_263_24" object="npc:CH_CT_Citizen_0105" type="approach"/>
+				<case npc-response="qrsp_263_11" object="npc:CH_CT_JeGukGun_0262" type="approach"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="Zone_YumSek_Zekuk_NA">
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_264"/>
+		</completion>
+	</quest>
+</table>

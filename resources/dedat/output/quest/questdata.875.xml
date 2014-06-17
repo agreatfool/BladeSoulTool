@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_875" broadcast-category="field" category="normal" day-of-week="daily" desc="q_875_sum" district-1="deasamak" grade="1" group2="QG_OSaekAmDoEast" id="875" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.875" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="33" preceding-quest-1="q_sub_860" preceding-quest-check="and" recommended-level="35">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" indicator-social="q_875_s_indi_1" msg="q_875_s" npc-response="qrsp_875_1" object="npc:ce_hwarang_0001" type="talk"/>
+			<case acquire-quest="y" completion-count="1" msg="q_875_re_s" npc-response="qrsp_875_3" object="npc:ce_hwarang_0001" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_875_5" object="npc:ce_board_0011" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="37054.6875" location-y="35785.0313" map="oseakamdo">
+			<mission id="1" name2="Mission.Name2.875_1" required-register-value="8">
+				<case looting="q_875_Quest_claw_1_icon" mapunit-1="3030_me_juno_011" mapunit-2="3030_me_juno_011_1" object="npc:me_juno_011" object2="npc:me_juno_011" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="34194.7031" location-y="34446.3125" map="dalgokchon">
+			<mission id="2" name2="Mission.Name2.875_2" required-register-value="1" reward-1="875_final_set1" reward-2="875_final_set2">
+				<case completion-count="1" completion-count-op="lt" indicator-social="q_875_m1_indi_1" msg="q_875_m1" npc-response="qrsp_875_2" object="npc:ce_hwarang_0001" progress-mission="y" type="talk"/>
+				<case completion-count="1" indicator-social="q_875_re_m2_indi_1" msg="q_875_re_m2" npc-response="qrsp_875_4" object="npc:ce_hwarang_0001" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_875_1_icon" msg="q_875_m3" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

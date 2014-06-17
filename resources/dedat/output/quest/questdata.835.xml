@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_835" broadcast-category="field" category="normal" desc="q_835_sum" grade="1" group2="QG_SnowMountSouth" id="835" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.835" save-type="all">
+		<acquisition level="47" preceding-quest-1="q_epic_282" preceding-quest-2="q_sub_832" preceding-quest-check="and" preceding-quest-mission-step-1="9" recommended-level="49">
+			<case acquire-quest="y" npc-response="qrsp_835_3" object="npc:CH_CT_Hunter_0028" type="talk"/>
+		</acquisition>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.835_3" required-register-value="5">
+				<case looting="q_835_1_icon" mapunit-1="5275_ME_CT_Juno_0024_s835" object="npc:ME_CT_Juno_0024" object2="npc:ME_CT_Juno_0024" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.835_4" required-register-value="1" reward-1="835_final_set1">
+				<case npc-response="qrsp_835_2" object="npc:CH_CT_Ghost_0009" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.835_2" required-register-value="1">
+				<case npc-response="qrsp_835_1" object="npc:CH_CT_Ghost_0009" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.835_1" required-register-value="10">
+				<case looting="q_835_2_icon" mapunit-1="5275_ME_CT_YakChoGun_0001_s835" mapunit-2="5275_ME_CT_YakChoGun_0001_s835_1" object="npc:ME_CT_YakChoGun_0001" object2="npc:ME_CT_YakChoGun_0001" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

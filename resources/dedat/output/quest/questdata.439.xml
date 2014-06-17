@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_439" broadcast-category="field" category="normal" desc="q_439_sum" district-1="jeryoungrim" grade="1" group2="QG_KiYoenCliff" id="439" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.439" save-type="all">
+		<acquisition level="13" preceding-quest-1="q_epic_314" preceding-quest-2="q_sub_425" preceding-quest-check="and" preceding-quest-mission-step-1="2" recommended-level="15" talk-to-self-guide-msg="Msg.CH_JR_Dweller_0001_02">
+			<case acquire-quest="y" item="q_439_1_icon" msg="q_439_s" type="talk-to-self"/>
+		</acquisition>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.439_2" required-register-value="1" reward-1="439_final_set1">
+				<case npc-response="qrsp_439_1" object="npc:ch_dweller_033" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.439_1" required-register-value="1">
+				<case npc-response="qrsp_439_2" object="npc:CH_JR_BeonA_0001" type="approach"/>
+				<tutorial-case mapunit-1="2300_Airdash_giyeon_10_A_n" object="zoneenv:Airdash_giyeon_10_A" object2="zoneenv2:Airdash_giyeon_10_A" progress-mission="y" type="airdash"/>
+				<case npc-response="qrsp_439_3" object="npc:CH_JR_BeonYang_0001" type="approach"/>
+				<tutorial-case object="zoneenv:airdash_giyeon_06_b" object2="zoneenv2:airdash_giyeon_06_b" progress-mission="y" type="airdash"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

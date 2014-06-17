@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25060" attraction-1="faction-battle-field-zone:BuYuDo" attraction-2="dungeon:Dungeon_Buyudo" broadcast-category="field" category="attraction" desc="q_25060_sum" grade="7" group2="QG_Booyudo" id="25060" map-group-1-1="baekchung" max-repeat="-1" name2="Quest.Name2.25060" save-type="nothing">
+		<acquisition faction="factionmain2" level="48" recommended-level="50"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.25060_1" required-register-value="3">
+				<case looting="q_25060_1_icon" object="npc:me_ct_desertdragon_0003" object2="npc:me_ct_desertdragon_0003" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" required-register-value="1" reward-1="25060_final_set1">
+				<case item="q_25060_2_icon" msg="q_25060_1" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest faction="factionmain2" quest="q_sub_25060"/>
+		</completion>
+	</quest>
+</table>

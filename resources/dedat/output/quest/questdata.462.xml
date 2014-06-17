@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_462" broadcast-category="field" category="normal" desc="q_462_sum" district-1="jeryoungrim" grade="1" group="제룡림(송암도)" group2="QG_SongAmDo" id="462" map-group-1-1="jeryoungrim" max-repeat="1" name="도공이 되자!" name2="Quest.Name2.462" save-type="all">
+		<acquisition level="16" preceding-quest-1="q_epic_316" preceding-quest-check="and" recommended-level="18">
+			<case acquire-quest="y" indicator-social="q_462_s_indi_1" msg="q_462_s" npc-response="qrsp_462_1" object="npc:ch_cheongryeongctzn_027" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-15877.4219" location-y="43852.6602" map="songamdo">
+			<mission id="1" name="항아리단 도끼파의 도공서 습득" name2="Mission.Name2.462_1" required-register-value="1">
+				<case gadget-required="dont-care" looting="q_462_Quest_old_book_1_icon" mapunit-1="2440_e_onoff_book_01" object="zoneenv:e_onoff_book_01" object2="zoneenv2:e_onoff_book_01" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_462_Quest_old_book_1_icon" object="zoneenv:e_onoff_book_02" object2="zoneenv2:e_onoff_book_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_462_Quest_old_book_1_icon" object="zoneenv:e_onoff_book_03" object2="zoneenv2:e_onoff_book_03" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_462_Quest_old_book_1_icon" object="zoneenv:e_onoff_book_04" object2="zoneenv2:e_onoff_book_04" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_462_Quest_old_book_1_icon" object="zoneenv:e_onoff_book_05" object2="zoneenv2:e_onoff_book_05" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-18180.2051" location-y="55603.1328" map="songrimsa">
+			<mission id="2" name="송림사에 있는 제룡림 난민 이복돌에게 보고" name2="Mission.Name2.462_2" required-register-value="1" reward-1="462_final_set1">
+				<case indicator-social="q_462_m2_indi_1" msg="q_462_m2" npc-response="qrsp_462_2" object="npc:ch_cheongryeongctzn_027" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_994" broadcast-category="field" category="epic" completed-desc="q_994_completed" completed-list="y" desc="q_994_sum" grade="1" group2="QG_NextbaeCheongEpic2" id="994" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.994" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="50" sort-no="545"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.994_1" required-register-value="1" reset-teleport-recycle-time="y">
+				<case npc-response="qrsp_994_1" object="npc:CE_WB_DokChoGeoSa_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.994_2" required-register-value="1">
+				<case mapunit-1="5181_Guide_JoJangWon" object="zone:zone_JoJangWon_Act6" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.994_3" required-register-value="1">
+				<case npc-response="qrsp_994_2" object="npc:CH_WB_JinSoA_0005" progress-mission="y" type="talk"/>
+				<case object="zone:zone_JoJangWon_Act6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.994_4" required-register-value="1">
+				<case looting="q_994_2_icon" object="zoneenv:e_chest_5181yougoal_03" object2="zoneenv2:e_chest_5181yougoal_03" progress-mission="y" type="loot"/>
+				<case object="zone:zone_JoJangWon_Act6" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator="default" looting="q_994_2_icon" object="zoneenv:e_chest_5181yougoal_02" object2="zoneenv2:e_chest_5181yougoal_02" progress-mission="y" type="loot"/>
+				<case looting="q_994_2_icon" object="zoneenv:e_chest_5181yougoal_01" object2="zoneenv2:e_chest_5181yougoal_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.994_9" required-register-value="1">
+				<case object="npc:ME_WB_UnbalanceZombieB_0001" object2="npc:ME_WB_UnbalanceZombieB_0001" progress-mission="y" type="killed"/>
+				<case object="zone:zone_JoJangWon_Act6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.994_8" required-register-value="1">
+				<case object="zoneenv:5181_foot_01" object2="zoneenv2:5181_foot_01" progress-mission="y" type="env-entered"/>
+				<case object="zone:zone_JoJangWon_Act6" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_994_7" object="npc:CH_WB_JinSoA_0005" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.994_11" required-register-value="1">
+				<case npc-response="qrsp_994_4" object="npc:CH_WB_JinSoA_0006" progress-mission="y" type="talk"/>
+				<fixed-reward slot-1="item:Quest_Scroll_BackChung_0059"/>
+				<case object="zone:zone_JoJangWon_Act6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="12">
+			<mission id="12" name2="Mission.Name2.994_12" required-register-value="1">
+				<case item="Quest_Scroll_BackChung_0059" msg="q_994_5" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="13">
+			<mission id="13" name2="Mission.Name2.994_13" required-register-value="1" reset-teleport-recycle-time="y" reward-1="994_final_set1">
+				<case npc-response="qrsp_994_5" object="npc:CE_WB_DokChoGeoSa_0001" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Scroll_BackChung_0059"/>
+				<case npc-response="qrsp_994_9" object="npc:CH_WB_YukSon_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="Zone_JoJangWon">
+			<destination mission-step-id="10" zone-index="3"/>
+			<destination mission-step-id="9" zone-index="3"/>
+			<destination mission-step-id="8" zone-index="3"/>
+			<destination mission-step-id="7" zone-index="3"/>
+			<destination mission-step-id="6" zone-index="3"/>
+			<destination mission-step-id="5" zone-index="3"/>
+			<destination mission-step-id="4" zone-index="3"/>
+			<destination mission-step-id="3" zone-index="3"/>
+			<destination mission-step-id="2" zone-index="3"/>
+		</transit>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.994_7" required-register-value="1">
+				<case npc-response="qrsp_994_3" object="npc:CH_WB_JinSoA_0005" progress-mission="y" type="talk"/>
+				<case object="zone:zone_JoJangWon_Act6" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_JoJangWon_Act6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.994_10" required-register-value="1">
+				<case object="zoneenv:5181_foot_02" object2="zoneenv2:5181_foot_02" progress-mission="y" type="env-entered"/>
+				<case object="zone:zone_JoJangWon_Act6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="2" zone="StartZone_Event">
+			<destination mission-step-id="12" zone-index="5"/>
+			<destination mission-step-id="11" zone-index="5"/>
+			<destination mission-step-id="10" zone-index="5"/>
+			<destination mission-step-id="9" zone-index="5"/>
+			<destination mission-step-id="8" zone-index="5"/>
+			<destination mission-step-id="7" zone-index="5"/>
+			<destination mission-step-id="6" zone-index="5"/>
+			<destination mission-step-id="5" zone-index="5"/>
+			<destination mission-step-id="4" zone-index="5"/>
+			<destination mission-step-id="3" zone-index="5"/>
+			<destination mission-step-id="2" zone-index="5"/>
+			<destination mission-step-id="1" zone-index="5"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_995"/>
+		</completion>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.994_5" required-register-value="1">
+				<case npc-response="qrsp_994_6" object="npc:CH_WB_JinSoA_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.994_6" required-register-value="1">
+				<case object="zoneenv:e_gate_5181yougoaldoor_01" object2="zoneenv2:e_gate_5181yougoaldoor_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

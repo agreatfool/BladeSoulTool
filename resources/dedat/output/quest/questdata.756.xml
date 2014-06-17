@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_756" broadcast-category="field" category="normal" day-of-week="daily" desc="q_756_sum" district-1="deasamak" grade="1" group2="QG_SaJiSeokRimSouth" id="756" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.756" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="29" preceding-quest-1="q_epic_523" preceding-quest-check="and" recommended-level="31">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" indicator-social="q_756_s_indi_1" msg="q_756_s" npc-response="qrsp_756_1" object="npc:ch_pottery_015" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator-social="q_756_re_s_indi_1" msg="q_756_re_s" npc-response="qrsp_756_3" object="npc:ch_pottery_015" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_756_5" object="npc:ce_board_0013" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="18581.836" location-y="-25659.1" map="sajisukrim">
+			<mission id="1" name2="Mission.Name2.756_1" required-register-value="15">
+				<case object="npc:MH_BokGonPe_0008" object2="npc:MH_BokGonPe_0008" progress-mission="y" type="killed"/>
+				<case object="npc:MH_BokGonPae_0005" object2="npc:MH_BokGonPae_0005" progress-mission="y" type="killed"/>
+				<case object="npc:MH_BokGonPae_0004" object2="npc:MH_BokGonPae_0004" progress-mission="y" type="killed"/>
+				<case mapunit-1="3020_mh_bokgonpe_0008" mapunit-2="3020_mh_bokgonpe_0008_1" mapunit-3="3020_mh_bokgonpe_0008_2" object="npc:MH_BokGonPe_012" object2="npc:MH_BokGonPe_012" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="10864.095" location-y="-36273.281" map="hangari">
+			<mission id="2" name2="Mission.Name2.756_2" required-register-value="1" reward-1="756_final_set1" reward-2="756_final_set2">
+				<case completion-count="1" completion-count-op="lt" indicator-social="q_756_m2_indi_1" msg="q_756_m2" npc-response="qrsp_756_2" object="npc:ch_pottery_015" progress-mission="y" type="talk"/>
+				<case completion-count="1" indicator-social="q_756_re_m2_indi_1" msg="q_756_re_m2" npc-response="qrsp_756_4" object="npc:ch_pottery_015" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_756_1_icon" msg="q_756_m4" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

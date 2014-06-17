@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="CombatData" release-side="client" type="summoned-sequence" version="0.4">
+	<summoned-sequence alias="seq_cat_rookie">
+		<melee margin="18">
+			<action skill="1" type="use-indexed-skill"/>
+			<action skill="6" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+			<action skill="2" type="use-indexed-skill"/>
+			<action skill="6" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+			<action skill="3" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+			<action skill="4" type="use-indexed-skill"/>
+			<action skill="6" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+			<action skill="5" type="use-indexed-skill"/>
+			<action skill="6" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+		</melee>
+		<range margin="200">
+			<action skill="7" type="use-indexed-skill"/>
+		</range>
+	</summoned-sequence>
+	<summoned-sequence alias="seq_cat_defender">
+		<melee margin="18">
+			<action skill="1" type="use-indexed-skill"/>
+			<action skill="6" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+			<action skill="2" type="use-indexed-skill"/>
+			<action skill="6" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+			<action skill="3" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+			<action skill="4" type="use-indexed-skill"/>
+			<action skill="6" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+			<action skill="5" type="use-indexed-skill"/>
+			<action skill="6" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+		</melee>
+		<range margin="200">
+			<action skill="7" type="use-indexed-skill"/>
+		</range>
+	</summoned-sequence>
+	<summoned-sequence alias="seq_cat_striker">
+		<melee margin="18">
+			<action skill="1" type="use-indexed-skill"/>
+			<action skill="6" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+			<action skill="2" type="use-indexed-skill"/>
+			<action skill="6" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+			<action skill="3" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+			<action skill="4" type="use-indexed-skill"/>
+			<action skill="6" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+			<action skill="5" type="use-indexed-skill"/>
+			<action skill="6" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+		</melee>
+		<range margin="200">
+			<action skill="7" type="use-indexed-skill"/>
+		</range>
+	</summoned-sequence>
+	<summoned-sequence alias="seq_cat_controller">
+		<melee margin="25">
+			<action skill="1" type="use-indexed-skill"/>
+			<action skill="6" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+			<action skill="2" type="use-indexed-skill"/>
+			<action skill="6" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+			<action skill="3" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+			<action skill="4" type="use-indexed-skill"/>
+			<action skill="6" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+			<action skill="5" type="use-indexed-skill"/>
+			<action skill="6" type="use-indexed-skill"/>
+			<action skill="8" type="use-indexed-skill"/>
+		</melee>
+		<range margin="200">
+			<action skill="7" type="use-indexed-skill"/>
+		</range>
+	</summoned-sequence>
+</table>

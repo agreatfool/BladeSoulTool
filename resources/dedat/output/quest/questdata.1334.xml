@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1334" broadcast-category="field" category="job" desc="q_1334_sum" district-1="jeryoungrim" grade="1" group2="QG_HuekUmmRim" id="1334" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.1334" save-type="all" show-tutorial-tag="n" tutorial="y">
+		<acquisition job-1="암살자" level="14" preceding-quest-1="q_epic_311" preceding-quest-2="q_sub_1333" preceding-quest-check="and" recommended-level="14" talk-to-self-guide-msg="Msg.Job.quest6">
+			<case acquire-quest="y" item="q_1334_Quest_hair_growth_solution_manual_1_icon" msg="q_1334_s" type="talk-to-self"/>
+			<case acquire-quest="y" npc-response="qrsp_1334_11" object="npc:ch_dweller_023" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1334_1" required-register-value="1">
+				<case indicator-social="q_1334_m1_indi_1" msg="q_1334_m1" npc-response="qrsp_1334_1" object="npc:CH_HwaJung_0035" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_6_C5" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" guide-message="gm_1334_1" guide-message-zone-1="zone_HuekUmmRim_ClassQ_6_C5" id="2">
+			<mission id="2" name2="Mission.Name2.1334_2" required-register-value="2" show-kill-mapunit="y">
+				<tutorial-case object-1="npc:CH_HwaJung_0036" object2-1="npc:CH_HwaJung_0036" progress-mission="y" skill-sequence="Assassin_Lv14_M11" type="skill-sequence"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_6_C5" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_1334_m2_indi_1" npc-response="qrsp_1334_2" object="npc:CH_HwaJung_0035" type="approach"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.1334_3" required-register-value="1">
+				<case npc-response="qrsp_1334_12" object="npc:CE_JR_JobBook_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" guide-message="gm_1334_2" guide-message-zone-1="zone_HuekUmmRim_ClassQ_6_C5" id="4">
+			<mission id="5" name2="Mission.Name2.1334_5" required-register-value="2" show-kill-mapunit="y">
+				<tutorial-case object-1="npc:CH_HwaJung_0037" object2-1="npc:CH_HwaJung_0037" progress-mission="y" skill-sequence="Assassin_Lv14_M21" type="skill-sequence"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_6_C5" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_1334_m4_indi_1" npc-response="qrsp_1334_5" object="npc:CH_HwaJung_0035" type="approach"/>
+			</mission>
+			<mission id="6" name2="Mission.Name2.1334_6" required-register-value="1">
+				<case npc-response="qrsp_1334_13" object="npc:CE_JR_JobBook_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" guide-message="gm_1334_3" guide-message-zone-1="zone_HuekUmmRim_ClassQ_6_C5" id="6">
+			<mission id="8" name2="Mission.Name2.1334_8" required-register-value="2" show-kill-mapunit="y">
+				<tutorial-case object-1="npc:CH_HwaJung_0038" object2-1="npc:CH_HwaJung_0038" progress-mission="y" skill-sequence="Assassin_Lv14_M31" type="skill-sequence"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_6_C5" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_1334_m6_indi_1" npc-response="qrsp_1334_8" object="npc:CH_HwaJung_0035" type="approach"/>
+			</mission>
+			<mission id="9" name2="Mission.Name2.1334_9" required-register-value="1">
+				<case npc-response="qrsp_1334_14" object="npc:CE_JR_JobBook_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="10" name2="Mission.Name2.1334_10" required-register-value="1" reward-1="1334_final_set1">
+				<case indicator-social="q_1334_m7_indi_1" msg="q_1334_m7" npc-response="qrsp_1334_10" object="npc:CH_HwaJung_0035" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_6_C5" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_HuekUmmRim_ClassQ_6_SP">
+			<destination mission-step-id="1" zone-index="4"/>
+			<destination mission-step-id="2" zone-index="4"/>
+			<destination mission-step-id="3" zone-index="4"/>
+			<destination mission-step-id="4" zone-index="4"/>
+			<destination mission-step-id="5" zone-index="4"/>
+			<destination mission-step-id="6" zone-index="4"/>
+			<destination mission-step-id="7" zone-index="4"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_sub_1307"/>
+		</completion>
+		<mission-step id="5">
+			<mission id="7" name2="Mission.Name2.1334_7" required-register-value="1">
+				<case indicator-social="q_1334_m5_indi_1" msg="q_1334_m5" npc-response="qrsp_1334_7" object="npc:CH_HwaJung_0035" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_6_C5" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="4" name2="Mission.Name2.1334_4" required-register-value="1">
+				<case indicator-social="q_1334_m3_indi_1" msg="q_1334_m3" npc-response="qrsp_1334_4" object="npc:CH_HwaJung_0035" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_6_C5" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

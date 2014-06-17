@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_776" broadcast-category="field" category="normal" desc="q_776_sum" district-1="deasamak" grade="1" group2="QG_SaJiSeokRimEast" id="776" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.776" save-type="all">
+		<acquisition job-1="역사" level="31" preceding-quest-1="q_epic_526" preceding-quest-check="and" recommended-level="33">
+			<case acquire-quest="y" indicator-social="q_776_s_indi_1" msg="q_776_s" npc-response="qrsp_776_1" object="npc:ch_muungwan_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="44433.75" location-y="-22213.289" map="haerimchon">
+			<mission id="1" name2="Mission.Name2.776_1" required-register-value="1">
+				<case mapunit-1="3024_MH_MuUnGwan_0001" msg="q_776_m1" npc-response="qrsp_776_2" object="npc:mh_muungwan_0004" progress-mission="y" type="talk"/>
+				<case object="zone:zone_IelDong" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="44521.641" location-y="-21759.188" map="haerimchon">
+			<mission id="2" name2="Mission.Name2.776_2" required-register-value="1" reward-1="776_final_set1">
+				<case indicator-social="q_776_m2_indi_1" msg="q_776_m2" npc-response="qrsp_776_3" object="npc:ch_muungwan_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_IelDong_SP">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

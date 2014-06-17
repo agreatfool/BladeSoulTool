@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_559" broadcast-category="field" category="normal" desc="q_559_sum" district-1="deasamak" grade="1" group2="QG_ToMunJinSouth" id="559" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.559" save-type="all">
+		<acquisition level="20" preceding-quest-1="q_epic_540" preceding-quest-check="and" recommended-level="22">
+			<case acquire-quest="y" indicator-social="q_559_s_indi_1" msg="q_559_s" npc-response="qrsp_559_1" object="npc:ch_unguksoldier_016" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-60098.2852" location-y="-86082.6641" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.559_1" required-register-value="12">
+				<case looting="q_559_Quest_liver_1_icon" mapunit-1="3000_ME_TreeGoblin_029" mapunit-2="3000_ME_TreeGoblin_029_1" object="npc:me_treegoblin_029" object2="npc:me_treegoblin_029" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_559_des_2" id="2" location-x="-64002.7656" location-y="-81730.125" map="toemunjean">
+			<mission id="2" name2="Mission.Name2.559_2" required-register-value="1">
+				<case gadget-required="dont-care" mapunit-1="3000_e_onoff_bonfire_01" object="zoneenv:e_onoff_bonfire_01" object2="zoneenv2:e_onoff_bonfire_01" progress-mission="y" type="manipulate"/>
+				<case approach-talk="n" npc-response="qrsp_559_3" object="npc:ch_unguksoldier_016" progress-mission="n" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-64002.7656" location-y="-81730.125" map="toemunjean">
+			<mission id="3" name2="Mission.Name2.559_3" required-register-value="1" reward-1="559_final_set1">
+				<case indicator-social="q_559_m3_indi_1" msg="q_559_m3" npc-response="qrsp_559_2" object="npc:ch_unguksoldier_016" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

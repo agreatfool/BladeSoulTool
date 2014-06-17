@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1135" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1135_sum" district-1="suwal" grade="1" group2="QG_Wolho" id="1135" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1135" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="38" preceding-quest-1="q_epic_912" preceding-quest-check="and" preceding-quest-mission-step-1="0" recommended-level="40">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" msg="q_1135_s" npc-response="qrsp_1135_1" object="npc:CH_DaeEoBang_0087" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1135_11" object="npc:CH_DaeEoBang_0087" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_1135_13" object="npc:ce_board_0008" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_1135_des_1" hide="y" id="1">
+			<mission id="1" name2="Mission.Name2.1135_1" required-register-value="1">
+				<case mapunit-1="4200_CH_DaeEoBang_0052" npc-response="qrsp_1135_9" object="npc:CH_DaeEoBang_0052" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_1135_2" object="npc:CH_DaeEoBang_0053" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1135_2" required-register-value="1">
+				<case gadget-required="dont-care" npc-response="qrsp_1135_3" object="npc:CH_DaeEoBang_0058" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_1135_7" object="npc:CH_DaeEoBang_0053" type="approach"/>
+				<case npc-response="qrsp_1135_10" object="npc:CH_DaeEoBang_0052" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.1135_3" required-register-value="3">
+				<case npc-response="qrsp_1135_4" object="npc:CH_DaeEoBang_0076" type="approach"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_chest_hatchet_03" object2="zoneenv2:e_chest_hatchet_03" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_chest_hatchet_02" object2="zoneenv2:e_chest_hatchet_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="4200_e_chest_hatchet_01" mapunit-2="4200_e_chest_hatchet_02" mapunit-3="4200_e_chest_hatchet_03" object="zoneenv:e_chest_hatchet_01" object2="zoneenv2:e_chest_hatchet_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="HandAxe_F" gadget-required="carry-and-remove" mapunit-4="4200_e_pot_ceramics_01" object-1="zoneenv:e_pot_ceramics_01" object-2="zoneenv:e_pot_ceramics_02" object-3="zoneenv:e_pot_ceramics_03" object-4="zoneenv:e_pot_ceramics_04" object-5="zoneenv:e_pot_ceramics_05" object-6="zoneenv:e_pot_ceramics_06" object-7="zoneenv:e_pot_ceramics_07" object2-1="zoneenv2:e_pot_ceramics_01" object2-2="zoneenv2:e_pot_ceramics_02" object2-3="zoneenv2:e_pot_ceramics_03" object2-4="zoneenv2:e_pot_ceramics_04" object2-5="zoneenv2:e_pot_ceramics_05" object2-6="zoneenv2:e_pot_ceramics_06" object2-7="zoneenv2:e_pot_ceramics_07" progress-mission="y" skill="Gadget_HandAxe_F" skill3="Gadget_HandAxe_F" type="skill"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.1135_5" required-register-value="1" reward-1="1135_final_set1" reward-2="1135_final_set2">
+				<case completion-count="1" completion-count-op="lt" gadget-required="dont-care" npc-response="qrsp_1135_5" object="npc:CH_DaeEoBang_0087" progress-mission="y" type="talk"/>
+				<case completion-count="1" npc-response="qrsp_1135_12" object="npc:CH_DaeEoBang_0087" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_1135_1_icon" msg="q_1135_13" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_1135_des_1" id="2">
+			<mission id="2" name2="Mission.Name2.1135_1" required-register-value="1">
+				<case mapunit-1="4200_CH_DaeEoBang_0052" object="npc:CH_DaeEoBang_0052" progress-mission="y" type="npc-bleeding-occured"/>
+				<case npc-response="qrsp_1135_6" object="npc:CH_DaeEoBang_0053" type="approach"/>
+				<case button-text-accept="q_1135_9_ok" button-text-cancel="q_1135_9_no" indicator="quest-normal-repeat-can-progress" npc-response="qrsp_1135_9" object="npc:CH_DaeEoBang_0052" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.1135_4" required-register-value="1">
+				<case npc-response="qrsp_1135_8" object="npc:ch_daeeobang_0068" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

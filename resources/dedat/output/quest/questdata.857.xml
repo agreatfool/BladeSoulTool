@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_857" broadcast-category="field" category="normal" day-of-week="daily" desc="q_857_sum" district-1="deasamak" grade="1" group2="QG_OSaekAmDoWest" id="857" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.857" reset-type="daily" save-type="all">
+		<acquisition level="33" preceding-quest-1="q_epic_531" preceding-quest-check="and" recommended-level="35">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" indicator-social="q_857_s_indi_1" msg="q_857_s" npc-response="qrsp_857_1" object="npc:ch_mayeongganggun_0028" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_857_5" object="npc:ce_board_0011" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_857_3" object="npc:ch_mayeongganggun_0028" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_857_des_1" id="1" location-x="28584.625" location-y="37681.5977" map="jeolbuktuom">
+			<mission id="1" name2="Mission.Name2.857_1" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_857_Quest_portrait_girl_1_icon" mapunit-1="3070_MH_ORakDang_0025" object="npc:mh_orakdang_0025" object2="npc:mh_orakdang_0025" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="22207.0977" location-y="49111.3516" map="oseakamdo">
+			<mission id="2" name2="Mission.Name2.857_2" required-register-value="1" reward-1="857_final_set1" reward-2="857_final_set2">
+				<case completion-count="1" completion-count-op="lt" indicator-social="q_857_m2_indi_1" msg="q_857_m2" npc-response="qrsp_857_2" object="npc:ch_mayeongganggun_0028" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_857_1_icon" msg="q_857_m4" progress-mission="y" type="talk-to-self"/>
+				<case completion-count="1" npc-response="qrsp_857_4" object="npc:ch_mayeongganggun_0028" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

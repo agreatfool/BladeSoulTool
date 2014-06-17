@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_620" broadcast-category="field" category="normal" desc="q_620_sum" district-1="deasamak" grade="1" group2="QG_HwangPungSaMak" id="620" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.620" save-type="all">
+		<acquisition level="25" preceding-quest-1="q_epic_514" preceding-quest-2="q_sub_618" preceding-quest-check="and" recommended-level="27">
+			<case acquire-quest="y" indicator-social="q_620_s_indi_1" msg="q_620_s" npc-response="qrsp_620_2" object="npc:ch_dweller_0013" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-56686.9531" location-y="7860.5977" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.620_1" required-register-value="1" reward-1="620_final_set1">
+				<case indicator-social="q_620_m1_indi_1" msg="q_620_m1" npc-response="qrsp_620_1" object="npc:ch_treasurehunter_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

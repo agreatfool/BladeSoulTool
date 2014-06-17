@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_966" broadcast-category="field" category="normal" desc="q_966_sum" grade="1" group2="QG_KiYoenCliff" id="966" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.966" save-type="all">
+		<acquisition level="14" preceding-quest-1="q_epic_314" preceding-quest-check="and" preceding-quest-count-1="1" preceding-quest-mission-step-1="2" recommended-level="16">
+			<case acquire-quest="y" item="q_966_1_icon" msg="q_966_25" type="talk-to-self">
+				<filter-set>
+					<filter field="faction" op="eq" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="prop" value="0"/>
+				</filter-set>
+			</case>
+		</acquisition>
+		<mission-step completion-type="or" desc="q_966_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.966_1" required-register-value="1">
+				<fixed-reward job-1="귀검사" slot-1="item:quest_costum_dress_1027" slot-2="item:general_weapon_sword_1060"/>
+				<fixed-reward job-1="역사" slot-1="item:quest_costum_dress_1027" slot-2="item:general_weapon_axe_1060"/>
+				<fixed-reward job-1="암살자" slot-1="item:quest_costum_dress_1027" slot-2="item:general_weapon_dagger_1060"/>
+				<fixed-reward job-1="기공사" slot-1="item:quest_costum_dress_1027" slot-2="item:general_weapon_aura-bangle_1060"/>
+				<fixed-reward job-1="권사" slot-1="item:quest_costum_dress_1027" slot-2="item:general_weapon_gauntlet_1060"/>
+				<fixed-reward job-1="검사" slot-1="item:quest_costum_dress_1027" slot-2="item:general_weapon_sword_1060"/>
+				<fixed-reward job-1="소환사" slot-1="item:quest_costum_dress_1027" slot-2="item:general_weapon_staff_1060"/>
+				<case faction="factionmain1" npc-response-1="qrsp_966_6" npc-response-2="qrsp_966_7" npc-response-3="qrsp_966_8" object="npc:CH_JR_HonChunGyo_0001" progress-mission="y" type="join-faction"/>
+				<case faction="factionmain1" npc-response-1="qrsp_966_3" npc-response-2="qrsp_966_4" npc-response-3="qrsp_966_5" object="npc:CH_JR_MuRimMaeng_0001" progress-mission="y" type="join-faction"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.966_2" required-register-value="1">
+				<fixed-reward job-1="귀검사" slot-1="item:quest_costum_dress_1018" slot-2="item:general_weapon_sword_1082"/>
+				<fixed-reward job-1="역사" slot-1="item:quest_costum_dress_1018" slot-2="item:general_weapon_axe_1082"/>
+				<fixed-reward job-1="암살자" slot-1="item:quest_costum_dress_1018" slot-2="item:general_weapon_dagger_1082"/>
+				<fixed-reward job-1="기공사" slot-1="item:quest_costum_dress_1018" slot-2="item:general_weapon_aura-bangle_1082"/>
+				<fixed-reward job-1="권사" slot-1="item:quest_costum_dress_1018" slot-2="item:general_weapon_gauntlet_1082"/>
+				<fixed-reward job-1="검사" slot-1="item:quest_costum_dress_1018" slot-2="item:general_weapon_sword_1082"/>
+				<fixed-reward job-1="소환사" slot-1="item:quest_costum_dress_1018" slot-2="item:general_weapon_staff_1082"/>
+				<case faction="factionmain2" npc-response-1="qrsp_966_6" npc-response-2="qrsp_966_7" npc-response-3="qrsp_966_8" object="npc:CH_JR_HonChunGyo_0001" progress-mission="y" type="join-faction"/>
+				<case faction="factionmain2" npc-response-1="qrsp_966_3" npc-response-2="qrsp_966_4" npc-response-3="qrsp_966_5" object="npc:CH_JR_MuRimMaeng_0001" progress-mission="y" type="join-faction"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

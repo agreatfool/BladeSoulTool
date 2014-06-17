@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_500" attraction-1="classic-field-zone:NoklimdovillageClassic" attraction-2="cave2:cave_baekchung_13" attraction-3="dungeon:dungeon_noklimdotreasurehouse" attraction-4="dungeon:dungeon_takmagul" broadcast-category="field" category="normal" day-of-week="daily" desc="q_500_sum" grade="9" group2="QG_NokRimDo" id="500" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.500" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="50" preceding-quest-1="q_sub_481" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" npc-response="qrsp_500_1" object="npc:CH_CT_JeGukGun_0224" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.500_1" required-register-value="1">
+				<case object="npc:MH_CT_NokLimDo_0002" object2="npc:MH_CT_NokLimDo_0002" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.500_2" required-register-value="1" reward-1="500_final_set1" reward-2="500_final_set2">
+				<case npc-response="qrsp_500_2" object="npc:CH_CT_JeGukGun_0224" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

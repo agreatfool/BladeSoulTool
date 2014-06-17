@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_681" broadcast-category="field" category="normal" desc="q_681_sum" grade="1" group2="QG_BooNongWestSouth" id="681" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.681" save-type="all">
+		<acquisition level="43" preceding-quest-1="q_epic_262" preceding-quest-2="q_sub_594" preceding-quest-check="and" preceding-quest-count-1="1" preceding-quest-mission-step-1="7" recommended-level="45">
+			<case acquire-quest="y" npc-response="qrsp_681_1" object="npc:CH_CT_JeGukGun_0161" type="talk"/>
+			<case npc-response="qrsp_681_2" object="npc:CH_CT_JeGukGun_0164" type="approach"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.681_1" required-register-value="1">
+				<case npc-response="qrsp_681_3" object="npc:CE_CT_Paper_0003" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.681_2" required-register-value="1">
+				<case npc-response="qrsp_681_6" object="npc:CH_CT_JeGukGun_0164" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_681_5" object="npc:CH_CT_JeGukGun_0161" type="approach"/>
+				<case npc-response="qrsp_681_4" object="npc:CE_CT_Paper_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.681_3" required-register-value="1" reward-1="681_final_set1">
+				<case npc-response="qrsp_681_7" object="npc:CH_CT_JeGukGun_0164" type="approach"/>
+				<case npc-response="qrsp_681_10" object="npc:CH_CT_LeeMoongRyong_0002" type="approach"/>
+				<case npc-response="qrsp_681_9" object="npc:CH_CT_JeGukGun_0161" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_681_4" object="npc:CE_CT_Paper_0003" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

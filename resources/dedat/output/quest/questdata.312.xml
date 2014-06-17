@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_312" broadcast-category="field" category="epic" completed-desc="q_312_completed" completed-list="y" desc="q_312_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="312" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.312" save-type="all">
+		<acquisition level="1" recommended-level="14" sort-no="213"/>
+		<mission-step completion-type="and" desc="q_312_des_1" id="1" location-x="14702.37" location-y="13497.88" map="nokmyeong" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.312_1" required-register-value="1">
+				<case indicator-social="q_312_m1_indi_1" mapunit-1="2200_guide_E312" msg="q_312_m1" npc-response="qrsp_312_1" object="npc:ch_jakyoungdan_024" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_312_5" object="npc:ctzn_lynm_dokchogeosa_foc_001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_312_des_2" id="2" location-x="14186.748" location-y="20388.5" map="nokmyeong">
+			<mission id="2" name2="Mission.Name2.312_2" required-register-value="1">
+				<case indicator-social="q_312_m2_indi_1" msg="q_312_m2" npc-response="qrsp_312_2" object="npc:ctzn_lynm_dokchogeosa_foc_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_312_des_3" id="3" location-x="15827.373" location-y="20529.125" map="nokmyeong">
+			<mission id="3" name2="Mission.Name2.312_3" required-register-value="1">
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="2310_e_onoff_aroma_01" object="zoneenv:e_onoff_aroma_01" object2="zoneenv2:e_onoff_aroma_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Aromatic_FirewoodA" gadget-required="carry-and-remove" indicator="quest-gadget-required" mapunit-2="2310_e_onoff_wood_01" object="zoneenv:e_onoff_wood_01" object2="zoneenv2:e_onoff_wood_01" progress-mission="y" type="manipulate"/>
+				<case npc-response="qrsp_312_5" object="npc:ctzn_lynm_dokchogeosa_foc_001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_312_des_4" id="4" location-x="15827.373" location-y="20529.125" map="nokmyeong">
+			<mission id="4" name2="Mission.Name2.312_4" required-register-value="1">
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="2310_e_onoff_pot_01" object="zoneenv:e_onoff_pot_01" object2="zoneenv2:e_onoff_pot_01" progress-mission="reaction-only" type="manipulate"/>
+				<case indicator-social="q_312_m4_indi_1" npc-response="qrsp_312_3" object="npc:ctzn_lynm_dokchogeosa_foc_001" type="approach"/>
+				<case gadget="Q_WaterPotB" gadget-required="carry-and-remove" indicator="quest-gadget-required" mapunit-2="2310_e_onoff_waterjar_01" object="zoneenv:e_onoff_waterjar_01" object2="zoneenv2:e_onoff_waterjar_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_312_des_5" id="5" location-x="14186.748" location-y="20482.25" map="nokmyeong">
+			<mission id="5" name2="Mission.Name2.312_5" required-register-value="1" reward-1="312_final_set1">
+				<case indicator-social="q_312_m5_indi_1" msg="q_312_m5" npc-response="qrsp_312_4" object="npc:ctzn_lynm_dokchogeosa_foc_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_491"/>
+		</completion>
+		<transit id="1" zone="zone_HuekUmmRim_DoChunPung_SP">
+			<destination mission-step-id="1" zone-index="2"/>
+		</transit>
+	</quest>
+</table>

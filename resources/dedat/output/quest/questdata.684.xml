@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_684" broadcast-category="field" category="normal" day-of-week="daily" desc="q_684_sum" grade="6" group2="QG_BooNongWestSouth" id="684" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.684" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="43" preceding-quest-1="q_epic_262" preceding-quest-check="and" recommended-level="45">
+			<case acquire-quest="y" npc-response="qrsp_684_1" object="npc:CH_CT_DangGunMyung_0001" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_684_10" object="npc:CE_CT_Board_0016" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.684_1" required-register-value="1">
+				<case object="zoneenv:e_Chest_haobangjailgate_01_1" object2="zoneenv2:e_Chest_haobangjailgate_01_1" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_Chest_haobangjailgate_02_1" object2="zoneenv2:e_Chest_haobangjailgate_02_1" progress-mission="reaction-only" type="manipulate"/>
+				<case npc-response="qrsp_684_2" object="npc:ME_CT_PotAxPartyLeader_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_684_3" object="npc:ME_CT_PotAxPartyLeader_0002" progress-mission="y" type="talk"/>
+				<case object="zoneenv:e_Chest_haobanggate_01_1" object2="zoneenv2:e_Chest_haobanggate_01_1" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zone:Zone_HaoBang" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step guide-message="gm_684_1" guide-message-zone-1="Zone_HaoBang" id="2" time-limit="300" time-limit-type="until">
+			<mission id="2" name2="Mission.Name2.684_2" required-register-value="1">
+				<case object="zoneenv:e_pot_hangari_01" object2="zoneenv2:e_pot_hangari_01" progress-mission="reaction-only" type="killed"/>
+				<case object="zoneenv:e_pot_hangari_02" object2="zoneenv2:e_pot_hangari_02" progress-mission="reaction-only" type="killed"/>
+				<case object="zoneenv:e_pot_hangari_03" object2="zoneenv2:e_pot_hangari_03" progress-mission="reaction-only" type="killed"/>
+				<case object="zoneenv:e_pot_hangari_04" object2="zoneenv2:e_pot_hangari_04" progress-mission="reaction-only" type="killed"/>
+				<case object="zoneenv:e_pot_hangari_05" object2="zoneenv2:e_pot_hangari_05" progress-mission="reaction-only" type="killed"/>
+				<case mapunit-1="5022_e_pot_hangari_01_s684" object="zoneenv:e_pot_hangari_06" object2="zoneenv2:e_pot_hangari_06" progress-mission="reaction-only" type="killed"/>
+				<case object="zone:Zone_HaoBang" progress-mission="y" type="convoy-arrived"/>
+				<case mapunit-1="5022_Foot_1_s684" object="zone:Zone_HaoBang" progress-mission="y" type="convoy-arrived"/>
+				<case npc-response="qrsp_684_5" object="npc:CH_CT_Citizen_0165" type="approach"/>
+				<case npc-response="qrsp_684_6" object="npc:CH_CT_Citizen_0166" type="approach"/>
+				<case npc-response="qrsp_684_7" object="npc:CH_CT_Citizen_0167" type="approach"/>
+				<case npc-response="qrsp_684_8" object="npc:CH_CT_Citizen_0168" type="approach"/>
+				<case npc-response="qrsp_684_9" object="npc:CH_CT_Citizen_0169" type="approach"/>
+			</mission>
+			<mission-step-fail>
+				<case convoy="sub_684_con_1" object="zone:Zone_HaoBang" progress-mission="reaction-only" type="convoy-failed"/>
+				<case convoy="sub_684_con_2" object="zone:Zone_HaoBang" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.684_3" required-register-value="1" reward-1="684_final_set1" reward-2="684_final_set2">
+				<case npc-response="qrsp_684_4" object="npc:CH_CT_DangGunMyung_0001" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_684_1_icon" msg="q_684_11" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

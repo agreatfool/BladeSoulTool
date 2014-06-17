@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_901" broadcast-category="field" category="epic" completed-desc="q_901_completed" completed-list="y" desc="q_901_sum" district-1="suwal" grade="1" group2="QG_SuwalPWEpic" id="901" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.901" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="37" sort-no="401"/>
+		<mission-step id="1" location-x="38655.13" location-y="35316.81" map="dalgokchon" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.901_1" required-register-value="1">
+				<case npc-response="qrsp_901_1" object="npc:ch_teachershaman_0002" progress-mission="y" type="talk">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="36"/>
+					</filter-set>
+				</case>
+				<case object="zone:zone_muchon_sul_2" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_901_8" object="npc:ch_jinsoa_0015" progress-mission="reaction-only" type="approach"/>
+				<case npc-response="qrsp_901_19" object="npc:ch_teachershaman_0002" type="talk">
+					<filter-set>
+						<filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="35"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="47498.48" location-y="47386.35" map="angaesup" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.901_2" required-register-value="1">
+				<case npc-response="qrsp_901_2" object="npc:ch_yeonglin_0033" progress-mission="y" type="talk"/>
+				<case object="zone:zone_youngrinbong_5" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_muchon_sul_2" progress-mission="reaction-only" type="enter-zone"/>
+				<case button-text-accept="q_901_1_ok" button-text-cancel="q_901_1_no" npc-response="qrsp_901_1" object="npc:ch_teachershaman_0002" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.901_3" required-register-value="2" show-kill-mapunit="y">
+				<case object="npc:MH_JeGukGun_0141" object2="npc:MH_JeGukGun_0141" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0142" object2="npc:mh_jegukgun_0142" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_901_12" object="npc:ch_yeonglin_0055" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="2"/>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.901_4" required-register-value="1">
+				<case npc-response="qrsp_901_3" object="npc:ch_yeonglin_0055" progress-mission="y" type="talk"/>
+				<case object="zone:zone_youngrinbong_5" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.901_5" required-register-value="2" show-kill-mapunit="y">
+				<case object="npc:mh_jegukgun_0068" object2="npc:mh_jegukgun_0068" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0067" object2="npc:mh_jegukgun_0067" progress-mission="y" type="killed"/>
+				<case object="zone:zone_youngrinbong_5" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_901_11" object="npc:ch_yeonglin_0055" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.901_6" required-register-value="1">
+				<case npc-response="qrsp_901_4" object="npc:ch_yeonglin_0057" progress-mission="y" type="talk"/>
+				<case object="zone:zone_youngrinchn__night" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.901_7" required-register-value="1">
+				<case mapunit-1="4419_footswitch_1" object="zone:zone_youngrinchn__night" progress-mission="y" type="convoy-arrived"/>
+			</mission>
+			<mission-step-fail rollback-step-id="6">
+				<case convoy="epic_901_con" object="zone:zone_youngrinchn__night" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.901_8" required-register-value="1">
+				<case npc-response="qrsp_901_5" object="npc:ch_yeonglin_0056" progress-mission="y" type="talk"/>
+				<case object="zone:zone_youngrinchn__night" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.901_9" required-register-value="1">
+				<case mapunit-1="4419_footswitch_3" object="zoneenv:4419_footswitch_3" object2="zoneenv2:4419_footswitch_3" progress-mission="y" type="env-entered"/>
+				<case object="zone:zone_youngrinchn__night" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.901_10" required-register-value="1">
+				<case npc-response="qrsp_901_6" object="npc:ch_yeonglin_0036" progress-mission="y" type="talk"/>
+				<case object="zone:zone_youngrinchn__night" progress-mission="reaction-only" type="enter-zone"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="4419_e_chest_waterbucket_01" object="zoneenv:e_chest_waterbucket_01" object2="zoneenv2:e_chest_waterbucket_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_WaterPotA_3" gadget-required="carry-and-remove" mapunit-1="4419_e_pot_ricestraw_01" object="zoneenv:e_pot_ricestraw_01" object2="zoneenv2:e_pot_ricestraw_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_902"/>
+		</completion>
+		<mission-step id="11" location-x="34525.83" location-y="37056.27" map="angaesup" mission-map-type="location">
+			<mission id="11" name2="Mission.Name2.901_11" required-register-value="1">
+				<case gadget-required="dont-care" mapunit-1="4419_foot_5" object="zone:zone_youngrinchn__night" progress-mission="y" type="convoy-arrived"/>
+				<case npc-response="qrsp_901_13" object="npc:ch_yeonglin_0009" type="approach"/>
+				<case npc-response="qrsp_901_14" object="npc:ch_yeonglin_0021" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="10">
+				<case convoy="epic_901_con_3" object="zone:zone_youngrinchn__night" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step id="12">
+			<mission id="12" name2="Mission.Name2.901_12" required-register-value="1">
+				<case npc-response="qrsp_901_7" object="npc:ch_yeonglin_0009" progress-mission="y" type="talk"/>
+				<case object="zone:zone_youngrinchn__night" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="13">
+			<mission id="13" name2="Mission.Name2.901_13" required-register-value="1">
+				<case npc-response="qrsp_901_9" object="npc:CH_YeongLin_0072" progress-mission="y" type="talk"/>
+				<case object="zone:zone_youngrinchn__night" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="14" location-x="41252.39" location-y="49548.46" map="angaesup" mission-map-type="location">
+			<mission id="14" name2="Mission.Name2.901_14" required-register-value="1" reward-1="901_final_set1">
+				<case npc-response="qrsp_901_10" object="npc:CH_YeongLin_0073" progress-mission="y" type="talk"/>
+				<case object="zone:zone_youngrinchn__night" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_901_16" object="npc:ch_yeonglin_0009" type="approach"/>
+				<case npc-response="qrsp_901_17" object="npc:ch_yeonglin_0021" type="approach"/>
+				<case npc-response="qrsp_901_18" object="npc:ch_yeonglin_0023" type="approach"/>
+			</mission>
+		</mission-step>
+		<transit id="3" zone="zone_YoungRinBong_6">
+			<destination mission-step-id="11" zone-index="5"/>
+			<destination mission-step-id="10" zone-index="5"/>
+			<destination mission-step-id="9" zone-index="5"/>
+			<destination mission-step-id="8" zone-index="5"/>
+			<destination mission-step-id="7" zone-index="5"/>
+			<destination mission-step-id="6" zone-index="5"/>
+			<destination mission-step-id="5" zone-index="5"/>
+			<destination mission-step-id="4" zone-index="5"/>
+			<destination mission-step-id="3" zone-index="5"/>
+			<destination mission-step-id="2" zone-index="5"/>
+			<destination mission-step-id="12" zone-index="5"/>
+			<destination mission-step-id="13" zone-index="5"/>
+			<destination mission-step-id="14" zone-index="5"/>
+		</transit>
+		<transit id="2" zone="zone_muchon_sul_1">
+			<destination mission-step-id="1" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+		</transit>
+		<transit id="1" zone="zone_youngrinchn">
+			<destination mission-step-id="11" zone-index="1"/>
+			<destination mission-step-id="10" zone-index="1"/>
+			<destination mission-step-id="9" zone-index="1"/>
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="12" zone-index="1"/>
+			<destination mission-step-id="13" zone-index="1"/>
+			<destination mission-step-id="14" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

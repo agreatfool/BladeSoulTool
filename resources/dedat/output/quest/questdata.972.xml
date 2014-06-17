@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_972" broadcast-category="field" category="normal" desc="q_972_sum" district-1="suwal" grade="1" group2="QG_YounglinVillage" id="972" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.972" save-type="all">
+		<acquisition level="35" preceding-quest-1="q_sub_971" preceding-quest-2="q_epic_902" preceding-quest-check="and" preceding-quest-mission-step-2="8" recommended-level="37">
+			<case acquire-quest="y" npc-response="qrsp_972_1" object="npc:ch_yeonglin_0015" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.972_1" required-register-value="1">
+				<case npc-response="qrsp_972_2" object="npc:ch_yeonglin_0043" progress-mission="y" type="talk"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.972_2" required-register-value="1">
+				<case npc-response="qrsp_972_3" object="npc:ch_yeonglin_0044" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.972_3" required-register-value="3">
+				<case gadget-required="dont-care" looting="q_972_Quest_hair_growth_solution_manual_1_icon" object="zoneenv:e_chest_youngrinvboard_05" object2="zoneenv2:e_chest_youngrinvboard_05" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_972_Quest_hair_growth_solution_manual_1_icon" object="zoneenv:e_chest_youngrinvboard_04" object2="zoneenv2:e_chest_youngrinvboard_04" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_972_Quest_hair_growth_solution_manual_1_icon" object="zoneenv:e_chest_youngrinvboard_03" object2="zoneenv2:e_chest_youngrinvboard_03" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_972_Quest_hair_growth_solution_manual_1_icon" object="zoneenv:e_chest_youngrinvboard_02" object2="zoneenv2:e_chest_youngrinvboard_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_972_Quest_hair_growth_solution_manual_1_icon" mapunit-1="4410_e_chest_youngrinvboard_01" object="zoneenv:e_chest_youngrinvboard_01" object2="zoneenv2:e_chest_youngrinvboard_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="4" name2="Mission.Name2.972_4" required-register-value="1">
+				<case npc-response="qrsp_972_4" object="npc:ch_yeonglin_0015" progress-mission="y" type="talk"/>
+				<fixed-reward slot-1="item:quest_scroll_soowolpyungwon_0013"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="5" name2="Mission.Name2.972_5" required-register-value="1">
+				<case item="Quest_Scroll_SoowolPyungwon_0013" msg="q_972_5" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="6" name2="Mission.Name2.972_6" required-register-value="1" reward-1="972_final_set1">
+				<case npc-response="qrsp_972_5" object="npc:ch_yeonglin_0015" progress-mission="y" type="talk"/>
+				<completion-loss item-1="quest_scroll_soowolpyungwon_0013"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="quest_scroll_soowolpyungwon_0013"/>
+	</quest>
+</table>

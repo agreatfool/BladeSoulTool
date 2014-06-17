@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_279" broadcast-category="field" category="epic" completed-desc="q_279_completed" completed-list="y" desc="q_279_sum" grade="1" group2="QG_BaeCheongEpic" id="279" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.279" save-type="all">
+		<acquisition level="1" recommended-level="48" sort-no="521"/>
+		<mission-step id="1" mission-map-type="mapunit">
+			<mission id="1" name2="Mission.Name2.279_1" required-register-value="1">
+				<case npc-response="qrsp_279_1" object="npc:CH_CT_DoCheonPung_0008" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekRimSa_Byul1" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_BaekRimSa_Byul2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.279_2" required-register-value="1">
+				<case npc-response="qrsp_279_2" object="npc:CH_CT_DoCheonPung_0009" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.279_3" required-register-value="1">
+				<case mapunit-1="5261_Foot_05_e279" object="zone:zone_UnRimWon_Epic" progress-mission="y" type="convoy-arrived"/>
+			</mission>
+			<mission-step-fail rollback-step-id="2">
+				<case convoy="epic_279_con" object="zone:zone_UnRimWon_Epic" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.279_4" required-register-value="1">
+				<case npc-response="qrsp_279_3" object="npc:CH_CT_DoCheonPung_0013" progress-mission="y" type="talk"/>
+				<case object="zone:zone_UnRimWon_EpicRoom" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_UnRimWon_Epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6" time-limit-type="none">
+			<mission id="6" name2="Mission.Name2.279_6" required-register-value="1">
+				<case object="zone:zone_UnRimWon_EpicRoom" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_UnRimWon_Epic" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="npc:MH_CT_HockRyuGo_0007" progress-mission="y" type="npc-bleeding-occured"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.279_7" required-register-value="1">
+				<case gadget="Q_Baby_0001" gadget-required="carry-and-remove" npc-response="qrsp_279_4" object="npc:CH_CT_DoCheonPung_0015" progress-mission="y" type="talk"/>
+				<case gadget-required="empty" indicator="quest-epic-can-progress" mapunit-1="5264_CH_CT_Citizen_0073_e279" object="npc:CH_CT_Citizen_0073" progress-mission="reaction-only" type="npc-manipulate"/>
+				<case object="zone:zone_UnRimWon_EpicRoom" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_UnRimWon_Epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+			<mission-step-fail rollback-step-id="6"/>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.279_8" required-register-value="1" reward-1="279_final_set1">
+				<case npc-response="qrsp_279_5" object="npc:CH_CT_DoCheonPung_0008" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_280"/>
+		</completion>
+		<mission-step id="5" time-limit-type="none">
+			<mission id="5" name2="Mission.Name2.279_5" required-register-value="1">
+				<case mapunit-1="5263_zone_UnRimWon_EpicEnd_e279" object="zone:zone_UnRimWon_EpicEnd" progress-mission="y" type="enter-zone"/>
+				<case object="zone:zone_UnRimWon_EpicRoom" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_UnRimWon_Epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_UnRimWon">
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="2"/>
+			<destination mission-step-id="8" zone-index="2"/>
+		</transit>
+	</quest>
+</table>

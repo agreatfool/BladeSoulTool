@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_656" broadcast-category="field" category="normal" day-of-week="daily" desc="q_656_sum" district-1="deasamak" grade="8" group2="QG_GoYoSaMak" id="656" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.656" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="28" preceding-quest-1="q_epic_519" preceding-quest-check="and" recommended-level="30">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" indicator-social="q_656_s_indi_1" msg="q_656_s" npc-response="qrsp_656_1" object="npc:ch_scholar_006" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator-social="q_656_re_s_indi_1" msg="q_656_re_s" npc-response="qrsp_656_3" object="npc:ch_scholar_006" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_656_5" object="npc:CE_Board_0015" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-12480.2168" location-y="-31027.2852" map="yousadonggul">
+			<mission id="1" name2="Mission.Name2.656_1" required-register-value="3">
+				<case looting="q_656_Quest_golden_rock_1_icon" mapunit-1="3048_ME_Haetae_0006" mapunit-2="3048_ME_Haetae_0006_1" mapunit-3="3048_ME_Haetae_0006_2" object="npc:ME_Haetae_0006" object2="npc:ME_Haetae_0006" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-24337.7344" location-y="-24395.3984" map="yeolsajeedea">
+			<mission id="2" name2="Mission.Name2.656_2" required-register-value="1" reward-1="656_final_set1" reward-2="656_final_set2">
+				<case completion-count="1" completion-count-op="lt" indicator-social="q_656_m2_indi_1" msg="q_656_m2" npc-response="qrsp_656_2" object="npc:ch_scholar_006" progress-mission="y" type="talk"/>
+				<case completion-count="1" indicator-social="q_656_re_m2_indi_1" msg="q_656_re_m2" npc-response="qrsp_656_4" object="npc:ch_scholar_006" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_656_1_icon" msg="q_656_6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

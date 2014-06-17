@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_862" broadcast-category="field" category="normal" desc="q_862_sum" district-1="deasamak" grade="1" group2="QG_OSaekAmDoWest" id="862" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.862" save-type="all">
+		<acquisition level="33" preceding-quest-1="q_epic_533" preceding-quest-check="and" recommended-level="35">
+			<case acquire-quest="y" indicator-social="q_862_s_indi_1" msg="q_862_s" npc-response="qrsp_862_1" object="npc:ch_smuggler_0005" type="talk"/>
+		</acquisition>
+		<mission-step id="2" location-x="34194.7031" location-y="36941.1953" map="oseakamdo">
+			<mission id="2" name2="Mission.Name2.862_2" required-register-value="1">
+				<case looting="q_862_grocery_rough_skin_1_icon" mapunit-1="3030_ME_Wolf_0011" object="npc:me_wolf_0011" object2="npc:me_wolf_0011" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="36920.75" location-y="35660.5586" map="dalgokchon">
+			<mission id="3" name2="Mission.Name2.862_3" required-register-value="1" reward-1="862_final_set1">
+				<case indicator-social="q_862_m3_indi_1" msg="q_862_m3" npc-response="qrsp_862_3" object="npc:ch_smuggler_0005" progress-mission="y" type="talk"/>
+				<case indicator-social="q_862_m3_indi_2" npc-response="qrsp_862_4" object="npc:ch_blackmarket_0004" type="approach"/>
+				<case indicator-social="q_862_m3_indi_3" npc-response="qrsp_862_5" object="npc:ch_dojuksang_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_862_des_1" id="1" location-x="34194.7031" location-y="34446.3125" map="dalgokchon">
+			<mission id="1" name2="Mission.Name2.862_1" required-register-value="1">
+				<case indicator-social="q_862_m1_indi_1" msg="q_862_m1" npc-response="qrsp_862_2" object="npc:ce_hwarang_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

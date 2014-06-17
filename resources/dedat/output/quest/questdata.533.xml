@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_533" broadcast-category="field" category="epic" completed-desc="q_533_completed" completed-list="y" desc="q_533_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="533" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.533" save-type="all">
+		<acquisition level="1" recommended-level="35" sort-no="335"/>
+		<mission-step id="1" location-x="37832.1211" location-y="35114" map="dalgokchon">
+			<mission id="1" name2="Mission.Name2.533_1" required-register-value="1">
+				<case indicator-social="q_533_m1_indi_1" msg="q_533_m1" npc-response="qrsp_533_1" object="npc:ch_unguksoldier_0015" progress-mission="y" type="talk"/>
+				<case object="zone:zone_MuChon_Sul_2" progress-mission="reaction-only" type="enter-zone"/>
+				<case approach-social="q_533_m1_app_1" npc-response="qrsp_533_2" object="npc:ch_unguksoldier_0016" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="34233.25" location-y="33613.6836" map="dalgokchon_3091">
+			<mission id="2" name2="Mission.Name2.533_2" required-register-value="1">
+				<case mapunit-1="3030_Epic_BuSangGuoMukBburi" mapunit-2="3030_Epic_BuSangGuoMukBburi_1" object="zone:zone_ChangGo_2" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="34508.9531" location-y="30458.2988" map="busangguomukbburi">
+			<mission id="3" name2="Mission.Name2.533_3" required-register-value="1">
+				<case indicator-social="q_533_m3_indi_1" msg="q_533_m3" npc-response="qrsp_533_3" object="npc:ch_ildong_0003" progress-mission="y" type="talk"/>
+				<case object="zone:zone_ChangGo_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="35856.6094" location-y="25719.041" map="busangguomukbburi">
+			<mission id="4" name2="Mission.Name2.533_4" required-register-value="1">
+				<case mapunit-1="3095_e_footswitch_949" object="zoneenv:e_footswitch_949" object2="zoneenv2:e_footswitch_949" progress-mission="y" type="env-entered"/>
+				<case object="zone:zone_ChangGo_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="35721.8438" location-y="25045.2129" map="busangguomukbburi">
+			<mission id="5" name2="Mission.Name2.533_5" required-register-value="1">
+				<case indicator-social="q_533_m5_indi_1" msg="q_533_m5" npc-response="qrsp_533_4" object="npc:ch_jinsoa_0009" progress-mission="y" type="talk"/>
+				<case object="zone:zone_ChangGo_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6" location-x="37832.1211" location-y="35114" map="dalgokchon_3091">
+			<mission id="6" name2="Mission.Name2.533_6" required-register-value="1" reward-1="533_final_set1">
+				<case indicator-social="q_533_m6_indi_1" msg="q_533_m6" npc-response="qrsp_533_5" object="npc:ch_unguksoldier_0015" progress-mission="y" type="talk"/>
+				<case approach-social="q_533_m6_app_1" npc-response="qrsp_533_6" object="npc:ch_unguksoldier_0016" type="approach"/>
+				<case object="zone:zone_muchon_sul_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_MuChon_Sul_1">
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+		<transit id="2" zone="zone_ChangGo_1">
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+		</transit>
+		<transit id="3" zone="zone_MuChon_1">
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_542"/>
+		</completion>
+	</quest>
+</table>

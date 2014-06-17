@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="CombatData" release-mversion="0.0.0.1" release-side="client" type="TutorialSkillSequence" version="0.1">
+	<tutorialSkillSequence alias="Destroyer_Lv4_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="24040" target-pass-state="knockback" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="24030" target-pass-effect="Destroyer_AxeChop_TutorialQuest_DownFlag" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="Destroyer_Lv6_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="24050" target-pass-state="stun" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="24040" target-pass-state="knockback" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="Destroyer_Lv6_M21">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="24040" target-pass-state="knockback" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="24050" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="24030" target-pass-effect="Destroyer_AxeChop_TutorialQuest_DownFlag" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="Destroyer_Lv6_M31">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="24030" target-pass-effect="Destroyer_AxeChop_TutorialQuest_DownFlag" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="Destroyer_Lv8_M11">
+		<step result-1="hit" result-event-type-1="attack" skill-1="24110" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="Destroyer_Lv8_M12">
+		<step result-1="hit" result-event-type-1="attack" skill-1="24111" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="Destroyer_Lv8_M21">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="24140" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="Destroyer_Lv10_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="24180" target-pass-state="stun" type="skill"/>
+		<step result-1="hit" result-event-type-1="attack" skill-1="24110" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="24140" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="Destroyer_Lv12_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="24140" target-pass-effect="Destroyer_Pound_TutorialQuest_2ndFlag" target-pass-effect-count="2" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="Destroyer_Lv12_M21">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="24130" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="Destroyer_Lv14_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="24164" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="Destroyer_Lv14_M21">
+		<step caster-fail-effect="Destroyer_Protection_Down_BackTumbling_Lv1_down" result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="24230" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="DE_PvE_EliteSkill_0034_Stomping_hit">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="24070" skill-2="24071" skill-3="24072" skill-4="24240" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="DE_PvE_EliteSkill_0041_RagingWind_critical-hit">
+		<step result-1="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="24010" skill-10="24162" skill-11="24163" skill-12="24164" skill-13="24230" skill-2="24011" skill-3="24012" skill-4="24013" skill-5="24015" skill-6="24016" skill-7="24017" skill-8="24160" skill-9="24161" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="DE_PvE_EliteSkill_0048_Judgement_hit">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="24001" skill-10="24006" skill-11="24313" skill-2="24004" skill-3="24007" skill-4="24008" skill-5="24311" skill-6="24002" skill-7="24005" skill-8="24312" skill-9="24003" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="DE_PvE_EliteSkill_0055_Judgement_hit">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="24001" skill-10="24006" skill-11="24313" skill-2="24004" skill-3="24007" skill-4="24008" skill-5="24311" skill-6="24002" skill-7="24005" skill-8="24312" skill-9="24003" type="skill"/>
+	</tutorialSkillSequence>
+</table>

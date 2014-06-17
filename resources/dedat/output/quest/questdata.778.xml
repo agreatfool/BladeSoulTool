@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_778" broadcast-category="field" category="normal" desc="q_778_sum" district-1="deasamak" grade="1" group2="QG_SaJiSeokRimEast" id="778" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.778" save-type="all">
+		<acquisition level="31" preceding-quest-1="q_epic_528" preceding-quest-2="q_sub_797" preceding-quest-3="q_sub_785" preceding-quest-check="and" recommended-level="33">
+			<case acquire-quest="y" indicator-social="q_778_s_indi_1" msg="q_778_s" npc-response="qrsp_778_1" object="npc:ch_muun_0002" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="26599.15" location-y="-21528.965" map="sajisukrim">
+			<mission id="1" name2="Mission.Name2.778_1" required-register-value="15">
+				<case looting="q_778_1_Quest_dog_tag_1_icon" object="npc:MH_BokGonPae_0008" object2="npc:MH_BokGonPae_0008" progress-mission="y" type="loot"/>
+				<case looting="q_778_1_Quest_dog_tag_1_icon" object="npc:MH_BokGonPe_013" object2="npc:MH_BokGonPe_013" progress-mission="y" type="loot"/>
+				<case looting="q_778_1_Quest_dog_tag_1_icon" object="npc:MH_BokGonPe_014" object2="npc:MH_BokGonPe_014" progress-mission="y" type="loot"/>
+				<case looting="q_778_1_Quest_dog_tag_1_icon" mapunit-1="3024_MH_BokGonPe_013" mapunit-2="3024_MH_BokGonPe_013_1" object="npc:MH_BokGonPe_0042" object2="npc:MH_BokGonPe_0042" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="11743.002" location-y="-37113.125" map="hangari">
+			<mission id="2" name2="Mission.Name2.778_2" required-register-value="1" reward-1="778_final_set1">
+				<case indicator-social="q_778_m2_indi_1" msg="q_778_m2" npc-response="qrsp_778_2" object="npc:ch_guyounggon_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

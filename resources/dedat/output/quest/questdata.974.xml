@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_974" broadcast-category="field" category="normal" desc="q_974_sum" district-1="suwal" grade="1" group2="QG_YounglinVillage" id="974" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.974" save-type="all">
+		<acquisition level="35" preceding-quest-1="q_sub_972" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="37">
+			<case acquire-quest="y" npc-response="qrsp_974_1" object="npc:ch_yeonglin_0044" progress-mission="n" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="2" name2="Mission.Name2.974_2" required-register-value="1">
+				<case gadget-required="dont-care" looting="q_974_Weapon_AB_030006_1_icon" object="zoneenv:e_chest_jegukgunmulpum_05" object2="zoneenv2:e_chest_jegukgunmulpum_05" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_974_Weapon_AB_030006_1_icon" object="zoneenv:e_chest_jegukgunmulpum_04" object2="zoneenv2:e_chest_jegukgunmulpum_04" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_974_Weapon_AB_030006_1_icon" object="zoneenv:e_chest_jegukgunmulpum_03" object2="zoneenv2:e_chest_jegukgunmulpum_03" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_974_Weapon_AB_030006_1_icon" object="zoneenv:e_chest_jegukgunmulpum_02" object2="zoneenv2:e_chest_jegukgunmulpum_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_974_Weapon_AB_030006_1_icon" mapunit-1="4410_e_chest_jegukgunmulpum_01" object="zoneenv:e_chest_jegukgunmulpum_01" object2="zoneenv2:e_chest_jegukgunmulpum_01" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="1" name2="Mission.Name2.974_1" required-register-value="10">
+				<case object="npc:mh_jegukgun_0277" object2="npc:mh_jegukgun_0277" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0276" object2="npc:mh_jegukgun_0276" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0046" object2="npc:mh_jegukgun_0046" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0178" object2="npc:mh_jegukgun_0178" progress-mission="y" type="killed"/>
+				<case mapunit-1="4410_mh_jegukgun_0177" object="npc:mh_jegukgun_0177" object2="npc:mh_jegukgun_0177" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.974_3" required-register-value="1" reward-1="974_final_set1">
+				<case npc-response="qrsp_974_2" object="npc:ch_yeonglin_0044" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

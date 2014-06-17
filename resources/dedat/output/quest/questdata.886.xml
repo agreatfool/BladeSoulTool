@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_886" broadcast-category="field" category="normal" desc="q_886_sum" grade="1" group2="QG_SnowMountNorth" id="886" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.886" save-type="all">
+		<acquisition level="48" preceding-quest-1="q_epic_283" preceding-quest-check="and" preceding-quest-mission-step-1="5" recommended-level="50">
+			<case acquire-quest="y" item="Quest_Scroll_BackChung_0032" msg="q_886_2" type="talk-to-item"/>
+			<case loot-item="Quest_Scroll_BackChung_0032" looting="q_886_2_icon" object="npc:ME_CT_BukBang_0012" object2="npc:ME_CT_BukBang_0012" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			<case loot-item="Quest_Scroll_BackChung_0032" looting="q_886_2_icon" object="npc:ME_CT_BukBang_0011" object2="npc:ME_CT_BukBang_0011" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			<case loot-item="Quest_Scroll_BackChung_0032" looting="q_886_2_icon" object="npc:ME_CT_BukBang_0013" object2="npc:ME_CT_BukBang_0013" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			<case loot-item="Quest_Scroll_BackChung_0032" looting="q_886_2_icon" object="npc:ME_CT_HyeolPung_0016" object2="npc:ME_CT_HyeolPung_0016" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			<case loot-item="Quest_Scroll_BackChung_0032" looting="q_886_2_icon" object="npc:ME_CT_CrocodileSharkTribeBKingAkKyo_0002" object2="npc:ME_CT_CrocodileSharkTribeBKingAkKyo_0002" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			<case loot-item="Quest_Scroll_BackChung_0032" looting="q_886_2_icon" object="npc:ME_CT_StrangeMonkeyTribeAScaleUp1_0002" object2="npc:ME_CT_StrangeMonkeyTribeAScaleUp1_0002" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			<case looting="q_886_2_icon" object="npc:ME_CT_DonDon_0015" object2="npc:ME_CT_DonDon_0015" type="loot"/>
+			<case looting="q_886_2_icon" object="npc:ME_CT_MeiOne_0018" object2="npc:ME_CT_MeiOne_0018" type="loot"/>
+			<case looting="q_886_2_icon" object="npc:ME_CT_Akyo_0010" object2="npc:ME_CT_Akyo_0010" type="loot"/>
+			<case looting="q_886_2_icon" object="npc:ME_CT_Akyo_0009" object2="npc:ME_CT_Akyo_0009" type="loot"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.886_1" required-register-value="1">
+				<case npc-response="qrsp_886_3" object="npc:CH_CT_Ghost_0008" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.886_2" required-register-value="1" reward-1="886_final_set1">
+				<case npc-response="qrsp_886_4" object="npc:CH_CT_Guard_0006" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Scroll_BackChung_0032"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_BackChung_0032"/>
+	</quest>
+</table>

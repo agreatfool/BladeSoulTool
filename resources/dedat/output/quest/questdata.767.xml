@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_767" broadcast-category="field" category="normal" day-of-week="daily" desc="q_767_sum" district-1="deasamak" grade="2" group2="QG_HeukChangJokBuRak" id="767" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.767" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="30" preceding-quest-1="q_epic_525" preceding-quest-check="and" recommended-level="32">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" indicator-social="q_767_s_indi_1" msg="q_767_s" npc-response="qrsp_767_1" object="npc:ch_mayeongganggun_0010" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator-social="q_767_re_s_indi_1" msg="q_767_re_s" npc-response="qrsp_767_3" object="npc:ch_mayeongganggun_0010" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_767_5" object="npc:ce_board_0013" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="27228.828" location-y="-54091.75" map="dandudeadg">
+			<mission id="1" name2="Mission.Name2.767_1" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_767_quest_old_metal_box_1_icon" mapunit-1="3081_ME_DarkCrazyTribe_0035" object="npc:me_darkcrazytribe_0035" object2="npc:me_darkcrazytribe_0035" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="27874.633" location-y="-32340.195" map="sajisukrim">
+			<mission id="2" name2="Mission.Name2.767_2" required-register-value="1" reward-1="767_final_set1" reward-2="767_final_set2">
+				<case completion-count="1" completion-count-op="lt" indicator-social="q_767_m2_indi_1" msg="q_767_m2" npc-response="qrsp_767_2" object="npc:ch_mayeongganggun_0010" progress-mission="y" type="talk"/>
+				<case completion-count="1" indicator-social="q_767_re_m2_indi_1" msg="q_767_re_m2" npc-response="qrsp_767_4" object="npc:ch_mayeongganggun_0010" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_767_1_icon" msg="q_767_m4" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

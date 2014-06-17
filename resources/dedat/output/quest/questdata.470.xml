@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="SecondFaction2" alias="q_sub_470" broadcast-category="field" category="normal" day-of-week="daily" desc="q_470_sum" grade="7" group2="QG_SnowMountNorth" id="470" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.470" reset-type="daily" save-type="all">
+		<acquisition faction="SecondFaction2" level="48" recommended-level="50">
+			<case acquire-quest="y" looting="q_470_1_icon" object="npc:mh_ct_jegukgun_0573" object2="npc:mh_ct_jegukgun_0573" type="loot">
+				<filter-set>
+					<filter subject="case:loot:pc" subject2="case:loot:pc" type="active-faction" value="SecondFaction2"/>
+				</filter-set>
+			</case>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.470_1" required-register-value="1" reward-1="470_final_set1" reward-2="470_final_set2">
+				<case item="q_470_2_icon" msg="q_470_1" progress-mission="y" type="talk-to-self">
+					<filter-set>
+						<filter subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="active-faction" value="SecondFaction2"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

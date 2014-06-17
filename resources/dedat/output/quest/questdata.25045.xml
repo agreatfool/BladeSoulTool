@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25045" broadcast-category="solo-quartet" category="dungeon" dungeon="Dungeon_Whanmadan" group2="null" id="25045" map-group-1-1="null" max-repeat="1" name2="Quest.Name2.25045" progress-party-duo="n" progress-party-sextet="n" progress-party-solo="n" reset-type="none" save-type="nothing">
+		<acquisition level="1" mastery-level="50" recommended-level="50">
+			<case acquire-quest="y" object="zoneenv:4430_portal_4741" object2="zoneenv2:4430_portal_4741" type="enter-portal"/>
+			<case acquire-quest="y" object="zoneenv:812_Portal_4741" object2="zoneenv2:812_Portal_4741" type="enter-portal"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.25045_1" required-register-value="1">
+				<case object="npc:ME_WA_Whanmadan_A1_Nmd_0002" object2="npc:ME_WA_Whanmadan_A1_Nmd_0002" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.25045_2" required-register-value="1">
+				<case object="npc:ME_WA_Whanmadan_A1_Boss_0001" object2="npc:ME_WA_Whanmadan_A1_Boss_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<transit id="2" zone="Zone_Whanmadan_2_Default">
+			<destination mission-step-id="2" zone-index="1"/>
+		</transit>
+		<transit id="1" zone="Zone_Whanmadan_1_Default">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.25045_3" required-register-value="1">
+				<case object="npc:ME_WA_Whanmadan_A2_Boss_0001" object2="npc:ME_WA_Whanmadan_A2_Boss_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<transit id="3" zone="Zone_Whanmadan_3_Default">
+			<destination mission-step-id="3" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

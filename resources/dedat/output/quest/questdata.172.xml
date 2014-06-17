@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_172" broadcast-category="always" category="normal" content-type="gather" craft-type="gather" district-1="deasamak" grade="1" group2="QG_Gathering" id="172" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.172" save-type="all" show-tutorial-tag="y" tutorial="y">
+		<acquisition level="11" production-exp="0" production-id="gathering-type-4" recommended-level="26" reward-1="172_final_set1">
+			<case acquire-quest="y" env-looting="q_172_Gather_lizard_meat_1_icon" object="zoneenv:e_onoff_3010animalcorpse_01" object2="zoneenv2:e_onoff_3010animalcorpse_01" progress-mission="y" type="manipulate"/>
+			<case acquire-quest="y" env-looting="q_172_Gather_lizard_meat_1_icon" object="zoneenv:e_onoff_3000animalcorpse_01" object2="zoneenv2:e_onoff_3000animalcorpse_01" progress-mission="y" type="manipulate"/>
+			<case acquire-quest="y" env-looting="q_172_Gather_lizard_meat_1_icon" object="zoneenv:e_onoff_3020animalcorpse_01" object2="zoneenv2:e_onoff_3020animalcorpse_01" progress-mission="y" type="manipulate"/>
+			<case acquire-quest="y" env-looting="q_172_Gather_lizard_meat_1_icon" object="zoneenv:e_onoff_3030animalcorpse_01" object2="zoneenv2:e_onoff_3030animalcorpse_01" progress-mission="y" type="manipulate"/>
+		</acquisition>
+	</quest>
+</table>

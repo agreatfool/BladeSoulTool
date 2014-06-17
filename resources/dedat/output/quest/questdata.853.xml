@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_853" broadcast-category="field" category="normal" day-of-week="daily" desc="q_853_sum" district-1="deasamak" grade="7" group2="QG_OSaekAmDoWest" id="853" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.853" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="33" preceding-quest-1="q_epic_530" preceding-quest-check="and" recommended-level="35">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" indicator-social="q_853_s_indi_1" msg="q_853_s" npc-response="qrsp_853_1" object="npc:ch_unguk_0002" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator-social="q_853_re_s_indi_1" msg="q_853_re_s" npc-response="qrsp_853_3" object="npc:ch_unguk_0002" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_853_5" object="npc:ce_board_0011" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_853_des_1" id="1" location-x="10462.8965" location-y="45521.1523" map="oseakamdo">
+			<mission id="1" name2="Mission.Name2.853_1" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_853_2_icon" mapunit-1="3030_ME_HeukMaSinJo_0001" object="npc:me_heukmasinjo_0001" object2="npc:me_heukmasinjo_0001" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="17217.334" location-y="43634.7813" map="oseakamdo">
+			<mission id="2" name2="Mission.Name2.853_2" required-register-value="1" reward-1="853_final_set1" reward-2="853_final_set2">
+				<case completion-count="1" completion-count-op="lt" indicator-social="q_853_m2_indi_1" msg="q_853_m2" npc-response="qrsp_853_2" object="npc:ch_unguk_0002" progress-mission="y" type="talk"/>
+				<case completion-count="1" indicator-social="q_853_re_m2_indi_1" msg="q_853_re_m2" npc-response="qrsp_853_4" object="npc:ch_unguk_0002" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_853_1_icon" msg="q_853_m4" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

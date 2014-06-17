@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_615" broadcast-category="field" category="normal" desc="q_615_sum" district-1="deasamak" grade="1" group2="QG_HwangPungSaMak" id="615" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.615" save-type="all">
+		<acquisition level="25" preceding-quest-1="q_epic_513" preceding-quest-check="and" recommended-level="27">
+			<case acquire-quest="y" indicator-social="q_615_s_indi_1" msg="q_615_s" npc-response="qrsp_615_1" object="npc:ch_mayeongganggun_0041" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-54822.4453" location-y="-7614.8242" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.615_1" required-register-value="1">
+				<case mapunit-1="3010_e_FootSwitch_615_Search" object="zoneenv:e_FootSwitch_615_Search" object2="zoneenv2:e_FootSwitch_615_Search" progress-mission="y" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_615_des_2" id="2" location-x="-54822.4453" location-y="-7614.8242" map="yeolsajeedea">
+			<mission id="2" name2="Mission.Name2.615_2" required-register-value="1">
+				<case env-looting="q_615_Quest_Q_scroll_1_icon" mapunit-1="3010_e_onoff_ubone_01" object="zoneenv:e_onoff_ubone_01" object2="zoneenv2:e_onoff_ubone_01" progress-mission="y" type="manipulate"/>
+				<fixed-reward slot-1="item:quest_615"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_615_des_3" id="3">
+			<mission id="3" name2="Mission.Name2.615_3" required-register-value="1">
+				<case item="quest_615" msg="q_615_m3" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-52398.5859" location-y="-436.4648" map="yeolsajeedea">
+			<mission id="4" name2="Mission.Name2.615_4" required-register-value="12">
+				<case looting="q_615_quest_portrait_girl_1_icon" mapunit-1="3010_MH_JukRyongChae_0004" mapunit-2="3010_MH_JukRyongChae_0004_1" object="npc:mh_jukryongchae_0004" object2="npc:mh_jukryongchae_0004" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+				<case looting="q_615_quest_portrait_girl_1_icon" object="npc:mh_jukryongchae_0005" object2="npc:mh_jukryongchae_0005" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="-56780.1797" location-y="-5563.8633" map="yeolsajeedea">
+			<mission id="5" name2="Mission.Name2.615_5" required-register-value="1" reward-1="615_final_set1">
+				<case indicator-social="q_615_m5_indi_1" msg="q_615_m5" npc-response="qrsp_615_2" object="npc:ch_mayeongganggun_0041" progress-mission="y" type="talk"/>
+				<completion-loss item-1="quest_615"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="quest_615"/>
+	</quest>
+</table>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_641" broadcast-category="field" category="normal" desc="q_641_sum" district-1="deasamak" grade="1" group2="QG_GmmDalUJukJi" id="641" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.641" save-type="all">
+		<acquisition level="28" preceding-quest-1="q_sub_640" preceding-quest-2="q_epic_516" preceding-quest-check="and" recommended-level="30">
+			<case acquire-quest="y" npc-response="qrsp_641_1" object="npc:ce_dokchogeosa_0005" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_641_des_1" id="2">
+			<mission id="2" name2="Mission.Name2.641_2" required-register-value="1" reward-1="641_final_set1">
+				<case grocery="General_Grocery_Quest_0014" npc-response="qrsp_641_2" object="npc:ce_dokchogeosa_0005" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_641_4" object="npc:CH_DS_BeonYang_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_641_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.641_1" required-register-value="1">
+				<case npc-response="qrsp_641_3" object="npc:CH_DS_BeonYang_0001" progress-mission="y" remove-grocery="n" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

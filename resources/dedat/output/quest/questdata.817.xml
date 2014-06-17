@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_817" broadcast-category="field" category="normal" desc="q_817_sum" grade="1" group2="QG_ZazakWoodEast" id="817" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.817" save-type="all">
+		<acquisition level="46" preceding-quest-1="q_epic_282" preceding-quest-2="q_sub_818" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="48">
+			<case acquire-quest="y" npc-response="qrsp_817_1" object="npc:CH_CT_CuteVoice_0002" progress-mission="n" type="talk"/>
+			<case npc-response="qrsp_817_6" object="npc:CE_CT_Lion_0001" type="approach"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.817_1" required-register-value="1">
+				<case npc-response="qrsp_817_2" object="npc:CE_CT_Lion_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_817_5" object="npc:CH_CT_CuteVoice_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.817_3" required-register-value="1">
+				<case object="npc:CE_CT_Lion_0002" object2="npc:CE_CT_Lion_0002" progress-mission="y" social="talksocial_gogo" type="pc-social"/>
+				<case object="zone:zone_BorderOffice" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.817_4" required-register-value="1">
+				<case object="npc:ME_CT_BukBang_0003" object2="npc:ME_CT_BukBang_0003" progress-mission="y" type="killed"/>
+			</mission>
+			<mission-step-fail rollback-step-id="3"/>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.817_5" required-register-value="1">
+				<case npc-response="qrsp_817_3" object="npc:CE_CT_Lion_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BorderOffice" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.817_6" required-register-value="1" reward-1="817_final_set1">
+				<case npc-response="qrsp_817_4" object="npc:CH_CT_CuteVoice_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.817_2" required-register-value="1">
+				<case mapunit-1="5200_zone_BorderOffice_s817" object="zone:zone_BorderOffice" progress-mission="y" type="enter-zone"/>
+				<case npc-response="qrsp_817_5" object="npc:CH_CT_CuteVoice_0002" type="approach"/>
+				<case npc-response="qrsp_817_6" object="npc:CE_CT_Lion_0001" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

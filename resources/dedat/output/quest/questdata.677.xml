@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_677" broadcast-category="field" category="normal" desc="q_677_sum" grade="1" group2="QG_NokMyungCHN" id="677" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.677" save-type="all" show-tutorial-tag="y" tutorial="y">
+		<acquisition level="1" preceding-quest-1="q_sub_386" preceding-quest-check="and" recommended-level="14">
+			<case acquire-quest="y" npc-response="qrsp_677_1" object="npc:ch_faction_0002" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.677_1" required-register-value="1">
+				<tutorial-case item="general_costum_dress_1011" progress-mission="y" type="equip-item"/>
+				<case npc-response="qrsp_677_3" object="npc:ch_faction_0002" type="approach"/>
+				<case npc-response="qrsp_677_5" object="npc:CH_CT_JaKyeongDan_0011" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.677_2" required-register-value="1">
+				<case object="npc:CH_CT_JaKyeongDan_0011" progress-mission="y" type="npc-bleeding-occured"/>
+				<case npc-response="qrsp_677_4" object="npc:ch_faction_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.677_3" required-register-value="1" reward-1="677_final_set1">
+				<case npc-response="qrsp_677_2" object="npc:ch_faction_0002" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_ChungGakFaction" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_ChungGakFaction_Default">
+			<destination mission-step-id="1" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<not-acquire zone-index="1"/>
+		</transit>
+	</quest>
+</table>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_682" broadcast-category="field" category="normal" desc="q_682_sum" grade="1" group2="QG_BooNongWestSouth" id="682" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.682" save-type="all">
+		<acquisition level="43" preceding-quest-1="q_epic_262" preceding-quest-2="q_sub_595" preceding-quest-check="and" preceding-quest-count-1="1" preceding-quest-mission-step-1="7" recommended-level="45">
+			<case acquire-quest="y" npc-response="qrsp_682_1" object="npc:CH_CT_JeGukGun_0165" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.682_1" required-register-value="1">
+				<case npc-response="qrsp_682_2" object="npc:CH_CT_HwangBoYun_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_682_9" object="npc:CH_CT_JeGukGun_0165" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.682_2" required-register-value="1">
+				<case mapunit-1="5001_e_chest_tables_01_s682" object="zoneenv:e_chest_tables_01" object2="zoneenv2:e_chest_tables_01" progress-mission="y" type="manipulate"/>
+				<case npc-response="qrsp_682_3" object="npc:CH_CT_SoYangSang_0007" type="approach"/>
+				<case npc-response="qrsp_682_9" object="npc:CH_CT_JeGukGun_0165" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.682_3" required-register-value="1">
+				<case npc-response="qrsp_682_4" object="npc:CH_CT_SoYangSang_0007" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_682_5" object="npc:CH_CT_PangJiYun_0001" type="approach"/>
+				<case npc-response="qrsp_682_9" object="npc:CH_CT_JeGukGun_0165" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.682_4" required-register-value="1">
+				<case looting="q_682_1_icon" mapunit-1="5001_e_chest_boxes_01_s682" object="zoneenv:e_chest_boxes_01" object2="zoneenv2:e_chest_boxes_01" progress-mission="y" type="loot"/>
+				<case looting="q_682_1_icon" object="zoneenv:e_chest_boxes_02" object2="zoneenv2:e_chest_boxes_02" progress-mission="y" type="loot"/>
+				<case looting="q_682_1_icon" object="zoneenv:e_chest_boxes_03" object2="zoneenv2:e_chest_boxes_03" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_682_8" object="npc:CH_CT_SoYangSang_0007" type="approach"/>
+				<case npc-response="qrsp_682_9" object="npc:CH_CT_JeGukGun_0165" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.682_5" required-register-value="1">
+				<case npc-response="qrsp_682_6" object="npc:CH_CT_YungOk_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_682_9" object="npc:CH_CT_JeGukGun_0165" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.682_6" required-register-value="1" reward-1="682_final_set1">
+				<case npc-response="qrsp_682_7" object="npc:CH_CT_JeGukGun_0165" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

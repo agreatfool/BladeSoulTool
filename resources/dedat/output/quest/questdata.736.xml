@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_736" broadcast-category="field" category="normal" desc="q_736_sum" grade="1" group2="QG_HwangGung" id="736" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.736" save-type="all">
+		<acquisition level="45" preceding-quest-1="q_epic_273" preceding-quest-check="and" preceding-quest-mission-step-1="2" recommended-level="47">
+			<case acquire-quest="y" npc-response="qrsp_736_1" object="npc:CH_CT_PungEmpire_0004" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.736_1" required-register-value="7">
+				<case object="npc:CH_CT_PungEmpire_0094" object2="npc:CH_CT_PungEmpire_0094" progress-mission="y" type="killed"/>
+				<case object="npc:CH_CT_PungEmpire_0093" object2="npc:CH_CT_PungEmpire_0093" progress-mission="y" type="killed"/>
+				<case object="npc:CH_CT_PungEmpire_0092" object2="npc:CH_CT_PungEmpire_0092" progress-mission="y" type="killed"/>
+				<case object="npc:CH_CT_PungEmpire_0091" object2="npc:CH_CT_PungEmpire_0091" progress-mission="y" type="killed"/>
+				<case object="npc:CH_CT_PungEmpire_0090" object2="npc:CH_CT_PungEmpire_0090" progress-mission="y" type="killed"/>
+				<case object="npc:CH_CT_PungEmpire_0089" object2="npc:CH_CT_PungEmpire_0089" progress-mission="y" type="killed"/>
+				<case object="npc:CH_CT_PungEmpire_0088" object2="npc:CH_CT_PungEmpire_0088" progress-mission="y" type="killed"/>
+				<case mapunit-1="5135_CH_CT_PungEmpire_0087_s736" object="npc:CH_CT_PungEmpire_0087" object2="npc:CH_CT_PungEmpire_0087" progress-mission="y" type="killed"/>
+				<case button-text-accept="q_736_20_ok" button-text-cancel="q_736_20_no" npc-response="qrsp_736_10" object="npc:CH_CT_PungEmpire_0094" prob="100" progress-mission="reaction-only" type="talk"/>
+				<case button-text-accept="q_736_20_ok" button-text-cancel="q_736_20_no" npc-response="qrsp_736_9" object="npc:CH_CT_PungEmpire_0093" prob="100" progress-mission="reaction-only" type="talk"/>
+				<case button-text-accept="q_736_20_ok" button-text-cancel="q_736_20_no" npc-response="qrsp_736_8" object="npc:CH_CT_PungEmpire_0092" prob="100" progress-mission="reaction-only" type="talk"/>
+				<case button-text-accept="q_736_20_ok" button-text-cancel="q_736_20_no" npc-response="qrsp_736_7" object="npc:CH_CT_PungEmpire_0091" prob="100" progress-mission="reaction-only" type="talk"/>
+				<case button-text-accept="q_736_20_ok" button-text-cancel="q_736_20_no" npc-response="qrsp_736_6" object="npc:CH_CT_PungEmpire_0090" prob="100" progress-mission="reaction-only" type="talk"/>
+				<case button-text-accept="q_736_20_ok" button-text-cancel="q_736_20_no" npc-response="qrsp_736_5" object="npc:CH_CT_PungEmpire_0089" prob="100" progress-mission="reaction-only" type="talk"/>
+				<case button-text-accept="q_736_20_ok" button-text-cancel="q_736_20_no" npc-response="qrsp_736_4" object="npc:CH_CT_PungEmpire_0088" prob="100" progress-mission="reaction-only" type="talk"/>
+				<case button-text-accept="q_736_20_ok" button-text-cancel="q_736_20_no" npc-response="qrsp_736_3" object="npc:CH_CT_PungEmpire_0087" prob="100" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.736_2" required-register-value="1" reward-1="736_final_set1">
+				<case npc-response="qrsp_736_2" object="npc:CH_CT_PungEmpire_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

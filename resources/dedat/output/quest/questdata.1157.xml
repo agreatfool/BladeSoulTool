@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1157" attraction-1="classic-field-zone:PoHwaRan_Classic" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1157_sum" district-1="suwal" grade="1" group2="QG_ChungGakEastJiBu" id="1157" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1157" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="43" preceding-quest-1="q_sub_1127" preceding-quest-2="q_sub_1035" preceding-quest-check="or" recommended-level="46">
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1157_3" object="npc:CH_Strom_DongHae_A_0001" progress-mission="n" remove-grocery="y" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1157_1" object="npc:CH_Strom_DongHae_A_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1157_1" required-register-value="30">
+				<case object="npc:ME_CrocodileSharkTribeB_0028" object2="npc:ME_CrocodileSharkTribeB_0028" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CrocodileSharkTribeB_0030" object2="npc:ME_CrocodileSharkTribeB_0030" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CrocodileSharkTribeB_0027" object2="npc:ME_CrocodileSharkTribeB_0027" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CrocodileSharkTribeDSorcerer_0016" object2="npc:ME_CrocodileSharkTribeDSorcerer_0016" progress-mission="y" type="killed"/>
+				<case object="npc:ME_DarkCrazyTribeB_0012" object2="npc:ME_DarkCrazyTribeB_0012" progress-mission="y" type="killed"/>
+				<case object="npc:ME_DarkCrazyTribeB_0011" object2="npc:ME_DarkCrazyTribeB_0011" progress-mission="y" type="killed"/>
+				<case object="npc:ME_DarkCrazyTribeA_0004" object2="npc:ME_DarkCrazyTribeA_0004" progress-mission="y" type="killed"/>
+				<case object="npc:ME_DarkCrazyTribeB_0008" object2="npc:ME_DarkCrazyTribeB_0008" progress-mission="y" type="killed"/>
+				<case object="npc:ME_DarkCrazyTribeB_0009" object2="npc:ME_DarkCrazyTribeB_0009" progress-mission="y" type="killed"/>
+				<case object="npc:ME_DarkCrazyTribeBigB_0005" object2="npc:ME_DarkCrazyTribeBigB_0005" progress-mission="y" type="killed"/>
+				<case object="npc:ME_DarkCrazyTribeA_0005" object2="npc:ME_DarkCrazyTribeA_0005" progress-mission="y" type="killed"/>
+				<case mapunit-1="4725_ME_DarkCrazyTribeB_0009" mapunit-2="4725_ME_DarkCrazyTribeB_0009_1" mapunit-3="4725_ME_DarkCrazyTribeB_0009_2" mapunit-4="4725_ME_DarkCrazyTribeB_0009_3" mapunit-5="4725_ME_DarkCrazyTribeB_0009_4" object="npc:ME_DarkCrazyTribeB_0010" object2="npc:ME_DarkCrazyTribeB_0010" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1157_2" required-register-value="1" reward-1="1157_final_set1" reward-2="1157_final_set2">
+				<case completion-count="1" npc-response="qrsp_1157_4" object="npc:CH_Strom_DongHae_A_0001" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1157_2" object="npc:CH_Strom_DongHae_A_0001" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_1157_1_icon" msg="q_1157_5" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

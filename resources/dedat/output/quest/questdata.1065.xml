@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1065" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1065_sum" grade="10" group2="QG_HeukRyonjgyo" id="1065" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.1065" reset-type="daily" save-type="all">
+		<acquisition level="50" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" npc-response="qrsp_1065_1" object="npc:CH_WA_Juyu_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1065_1" required-register-value="1">
+				<case object="npc:ME_WA_Whanmadan_A1_Nmd_0002" object2="npc:ME_WA_Whanmadan_A1_Nmd_0002" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1065_2" required-register-value="1">
+				<case object="npc:ME_WA_Whanmadan_A1_Boss_0001" object2="npc:ME_WA_Whanmadan_A1_Boss_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1065_3" required-register-value="1" reward-1="1065_final_set1" reward-2="1065_final_set2">
+				<case fee="y" item="q_1065_1_icon" msg="q_1065_3" progress-mission="y" type="talk-to-self"/>
+				<case npc-response="qrsp_1065_2" object="npc:CH_WA_Juyu_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

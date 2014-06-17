@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_529" broadcast-category="field" category="epic" completed-desc="q_529_completed" completed-list="y" desc="q_529_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="529" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.529" save-type="all">
+		<acquisition level="1" recommended-level="34" sort-no="331"/>
+		<mission-step id="1" location-x="-17998.4063" location-y="12987.9961" map="yeolsajeedea" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.529_1" required-register-value="1">
+				<case indicator-social="q_529_m1_indi_1" mapunit-1="3016_Guide_E529" msg="q_529_m1" npc-response="qrsp_529_1" object="npc:ch_unguksoldier_0009" progress-mission="y" type="talk" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-13035.6816" location-y="28085.543" map="poisondg">
+			<mission id="2" name2="Mission.Name2.529_2" required-register-value="1">
+				<case object="zone:zone_PoisonDg" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_529_m2_indi_1" msg="q_529_m2" npc-response="qrsp_529_2" object="npc:ch_ildong_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="16919.9375" location-y="31421.2988" map="hoerangchon" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.529_3" required-register-value="1" reward-1="529_final_set1">
+				<case indicator-social="q_529_m3_indi_1" mapunit-1="3010_Guide_E529" msg="q_529_m3" npc-response="qrsp_529_3" object="npc:ce_hwerang_006" progress-mission="y" type="talk">
+					<filter-set name="가능">
+						<filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="33"/>
+					</filter-set>
+				</case>
+				<case indicator-social="q_529_m3_deny_indi_1" msg="q_529_m3_deny" npc-response="qrsp_529_4" object="npc:ce_hwerang_006" progress-mission="y" type="talk">
+					<filter-set name="불가능">
+						<filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="32"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_530"/>
+		</completion>
+	</quest>
+</table>

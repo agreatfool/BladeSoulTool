@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_909" broadcast-category="field" category="epic" completed-desc="q_909_completed" completed-list="y" desc="q_909_sum" district-1="suwal" grade="1" group2="QG_SuwalPWEpic" id="909" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.909" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="39" sort-no="410"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.909_1" required-register-value="1">
+				<case npc-response="qrsp_909_1" object="npc:ch_pungjeohoe_0003" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_909_11" object="npc:ch_jegukgun_0012" progress-mission="n" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.909_2" required-register-value="1">
+				<case npc-response="qrsp_909_2" object="npc:ch_gyeongchunmaeng_0031" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_909_12" object="npc:ch_jegukgun_0012" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.909_3" required-register-value="5">
+				<case looting="q_909_Quest_gallbladder_1_icon" mapunit-1="4100_me_samyojeong_0006" mapunit-2="4100_me_samyojeong_0006_1" mapunit-3="4100_me_samyojeong_0006_2" object="npc:me_samyojeong_0006" object2="npc:me_samyojeong_0006" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_909_12" object="npc:ch_jegukgun_0012" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.909_4" required-register-value="1">
+				<case npc-response="qrsp_909_3" object="npc:ch_jegukgun_0012" progress-mission="y" type="talk"/>
+				<fixed-reward slot-1="item:quest_scroll_soowolpyungwon_0011"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.909_5" required-register-value="1">
+				<case item="quest_scroll_soowolpyungwon_0011" msg="q_909_4" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.909_6" required-register-value="1">
+				<case npc-response="qrsp_909_5" object="npc:ch_pungjeohoe_0003" progress-mission="y" type="talk"/>
+				<completion-loss item-1="quest_scroll_soowolpyungwon_0011"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.909_7" required-register-value="1">
+				<case mapunit-1="4540_CH_PungJeoHoe_0027" object="npc:ch_pungjeohoe_0027" progress-mission="y" type="npc-manipulate"/>
+				<case object="zone:zone_JeKukGubYangDae_epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_910"/>
+		</completion>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.909_8" required-register-value="1">
+				<case npc-response="qrsp_909_6" object="npc:ch_pungjeohoe_0001" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="7"/>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.909_9" required-register-value="1">
+				<case mapunit-1="4540_footswitch_2" object="zone:zone_JeKukGubYangDae_epic" progress-mission="y" type="convoy-arrived"/>
+			</mission>
+			<mission-step-fail rollback-step-id="7">
+				<case convoy="epic_909_con" object="zone:zone_JeKukGubYangDae_epic" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.909_10" required-register-value="1">
+				<case npc-response="qrsp_909_7" object="npc:ch_pungjeohoe_0001" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="7"/>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.909_11" required-register-value="1">
+				<case npc-response="qrsp_909_8" object="npc:ce_hongdonjok_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_JeKukGubYangDae_epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="12">
+			<mission id="12" name2="Mission.Name2.909_12" required-register-value="1">
+				<case mapunit-1="4540_CE_HongDonJok_0001_1" object="npc:ce_hongdonjok_0001" object2="npc:ce_hongdonjok_0001" progress-mission="y" social="talksocial_bow1" type="pc-social"/>
+			</mission>
+			<mission-step-fail rollback-step-id="11"/>
+		</mission-step>
+		<mission-step id="13">
+			<mission id="13" name2="Mission.Name2.909_13" required-register-value="1">
+				<case npc-response="qrsp_909_9" object="npc:ch_baekmoon_0003" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="11"/>
+		</mission-step>
+		<mission-step id="14">
+			<mission id="14" name2="Mission.Name2.909_14" required-register-value="1" reward-1="909_final_set1">
+				<case npc-response="qrsp_909_10" object="npc:ch_gyeongchunmaeng_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_jekukgubyangdae">
+			<destination mission-step-id="11" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_384" broadcast-category="field" category="normal" day-of-week="daily" desc="q_384_sum" district-1="jeryoungrim" grade="1" group="제룡림(기연절벽)" group2="QG_KiYoenCliff" id="384" map-group-1-1="jeryoungrim" max-repeat="1" name="사라진 자경단원 (2)" name2="Quest.Name2.384" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="14" preceding-quest-1="q_sub_383" preceding-quest-check="and" recommended-level="16">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" indicator-social="q_384_s_indi_1" msg="q_384_s" npc-response="qrsp_384_1" object="npc:ch_jakyoungdan_033" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_384_4" object="npc:ch_jakyoungdan_033" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_384_6" object="npc:ce_board_0012" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="12474.3086" location-y="40092.6211" map="JulBukDongGul_dun">
+			<mission id="1" name2="Mission.Name2.384_1" required-register-value="1">
+				<case indicator-social="q_384_m1_indi_1" msg="q_384_m1" npc-response="qrsp_384_2" object="npc:ch_jakyoungdan_0019" progress-mission="y" type="talk" visible-object="y"/>
+				<case object="zone:zone_suryengol_dun_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="8149.901" location-y="43284.773" map="julbukdonggul_dun" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.384_2" required-register-value="4">
+				<case looting="q_384_Grocery_Aura_Empty_bottle_1_icon" object="npc:mh_chunggak_0072" object2="npc:mh_chunggak_0072" progress-mission="y" type="loot"/>
+				<case looting="q_384_Grocery_Aura_Empty_bottle_1_icon" object="npc:mh_chunggak_0071" object2="npc:mh_chunggak_0071" progress-mission="y" type="loot"/>
+				<case looting="q_384_Grocery_Aura_Empty_bottle_1_icon" object="npc:mh_chunggak_0054" object2="npc:mh_chunggak_0054" progress-mission="y" type="loot"/>
+				<case looting="q_384_Grocery_Aura_Empty_bottle_1_icon" object="npc:mh_chunggak_0053" object2="npc:mh_chunggak_0053" progress-mission="y" type="loot"/>
+				<case looting="q_384_Grocery_Aura_Empty_bottle_1_icon" object="npc:mh_chunggak_0052" object2="npc:mh_chunggak_0052" progress-mission="y" type="loot"/>
+				<case looting="q_384_Grocery_Aura_Empty_bottle_1_icon" mapunit-1="2300_JulBukDongGul_S384(1)" mapunit-2="2607_MH_ChungGak_0051" mapunit-3="2607_MH_ChungGak_0051_1" object="npc:mh_chunggak_0051" object2="npc:mh_chunggak_0051" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="7763.183" location-y="41948.836" map="julbukdonggul_dun" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.384_3" required-register-value="4">
+				<case mapunit-1="2300_JulBukDongGul_S384(2)" mapunit-2="2607_CH_JaKyoungDan_0020" mapunit-3="2607_CH_JaKyoungDan_0020_1" mapunit-4="2607_CH_JaKyoungDan_0020_2" object="npc:ch_jakyoungdan_0020" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.384_4" required-register-value="1" reward-1="384_final_set1" reward-2="384_final_set2">
+				<case completion-count="1" completion-count-op="lt" indicator-social="q_384_s_indi_1" msg="q_384_m4" npc-response="qrsp_384_3" object="npc:ch_jakyoungdan_033" progress-mission="y" type="talk"/>
+				<case completion-count="1" npc-response="qrsp_384_5" object="npc:ch_jakyoungdan_033" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_384_1_icon" msg="q_384_m6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_545" broadcast-category="field" category="normal" day-of-week="daily" desc="q_545_sum" grade="1" group2="QG_BooNongWestNorth" id="545" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.545" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="43" preceding-quest-1="q_sub_547" preceding-quest-2="q_sub_761" preceding-quest-check="and" recommended-level="45">
+			<case acquire-quest="y" npc-response="qrsp_545_1" object="npc:CH_CT_Citizen_0380" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_545_4" object="npc:CE_CT_Board_0016" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1">
+			<mission id="1" name2="Mission.Name2.545_1" required-register-value="10">
+				<case gadget="Q_Torchlight_0012" gadget-required="carry-and-remove" indicator="quest-gadget-required" mapunit-1="5001_e_chest_stackstraw_03_s545" object="zoneenv:e_chest_stackstraw_03" object2="zoneenv2:e_chest_stackstraw_03" progress-mission="reaction-only" show-in-tooltip="n" type="manipulate"/>
+				<case gadget="Q_Torchlight_0012" gadget-required="carry-and-remove" indicator="quest-gadget-required" mapunit-1="5001_e_chest_stackstraw_02_s545" object="zoneenv:e_chest_stackstraw_02" object2="zoneenv2:e_chest_stackstraw_02" progress-mission="reaction-only" show-in-tooltip="n" type="manipulate"/>
+				<case gadget="Q_Torchlight_0012" gadget-required="carry-and-remove" indicator="quest-gadget-required" mapunit-1="5001_e_chest_stackstraw_01_s545" object="zoneenv:e_chest_stackstraw_01" object2="zoneenv2:e_chest_stackstraw_01" progress-mission="reaction-only" show-in-tooltip="n" type="manipulate"/>
+				<case object="npc:ME_CT_Pest_0035" object2="npc:ME_CT_Pest_0035" progress-mission="y" type="killed"/>
+				<case mapunit-1="5001_ME_CT_Pest_0035_s545" object="npc:ME_CT_Pest_0036" object2="npc:ME_CT_Pest_0036" progress-mission="y" type="killed"/>
+				<case gadget="Q_Torchlight_0012" gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_chest_5001firedae_01" object2="zoneenv2:e_chest_5001firedae_01" progress-mission="reaction-only" show-in-tooltip="n" type="manipulate"/>
+				<case gadget="Q_Torchlight_0012" gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_chest_5001firedae_02" object2="zoneenv2:e_chest_5001firedae_02" progress-mission="reaction-only" show-in-tooltip="n" type="manipulate"/>
+				<case gadget="Q_Torchlight_0012" gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="5001_e_chest_5001firedae_01_s545" object="zoneenv:e_chest_5001firedae_03" object2="zoneenv2:e_chest_5001firedae_03" progress-mission="reaction-only" show-in-tooltip="n" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.545_2" required-register-value="1" reward-1="545_final_set1" reward-2="545_final_set2">
+				<case npc-response="qrsp_545_2" object="npc:CH_CT_Citizen_0380" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_545_1_icon" msg="q_545_5" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

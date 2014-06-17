@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_447" broadcast-category="field" category="normal" desc="q_447_sum" district-1="jeryoungrim" grade="1" group="제룡림(송암도)" group2="QG_SongAmDo" id="447" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.447" save-type="all">
+		<acquisition level="14" preceding-quest-1="q_epic_496" preceding-quest-check="and" recommended-level="16">
+			<case acquire-quest="y" indicator-social="q_447_s_indi_1" msg="q_447_s" npc-response="qrsp_447_1" object="npc:ch_merchantaccessory_002" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-7503.0469" location-y="42631.3984" map="songamdo">
+			<mission id="1" name="천하대장군 처치" name2="Mission.Name2.447_1" required-register-value="4">
+				<case mapunit-1="2440_mob_etc_mlnd_spctr_generalworld_001" mapunit-2="2440_mob_etc_mlnd_spctr_generalworld_001_1" object="npc:mob_etc_mlnd_spctr_generalworld_001" object2="npc:mob_etc_mlnd_spctr_generalworld_001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-7764.7422" location-y="47080.2852" map="songamdo">
+			<mission id="2" name="송암도에 있는 자경단원 부용에게 보고" name2="Mission.Name2.447_2" required-register-value="1" reward-1="447_final_set1">
+				<case indicator-social="q_447_m2_indi_1" msg="q_447_m2" npc-response="qrsp_447_2" object="npc:ch_shaman_030" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

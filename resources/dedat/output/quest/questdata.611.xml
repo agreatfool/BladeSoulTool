@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_611" broadcast-category="field" category="normal" desc="q_611_sum" district-1="deasamak" grade="1" group2="QG_HyeolPungSaMak" id="611" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.611" save-type="all">
+		<acquisition level="24" preceding-quest-1="q_epic_510" preceding-quest-check="and" recommended-level="26">
+			<case acquire-quest="y" msg="q_611_s_2" npc-response="qrsp_611_2" object="npc:ch_library_0002" type="talk"/>
+			<fixed-reward item-count-2="0" item-count-3="0" item-count-4="0" slot-1="item:quest_611"/>
+			<case acquire-quest="y" npc-response="qrsp_611_1" object="npc:ch_library_0001" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_611_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.611_1" required-register-value="1">
+				<case item="quest_611" msg="q_611_m1" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_611_des_2" id="2" location-x="-68491.7578" location-y="-22157.25" map="yugachon">
+			<mission id="2" name2="Mission.Name2.611_2" required-register-value="1" reward-1="611_final_set1">
+				<case indicator-social="q_611_m2_indi_1" msg="q_611_m2" npc-response="qrsp_611_3" object="npc:ch_yugactzn_015" progress-mission="y" type="talk"/>
+				<completion-loss item-1="quest_611"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_611"/>
+	</quest>
+</table>

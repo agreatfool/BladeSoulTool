@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_390" broadcast-category="field" category="normal" desc="q_390_sum" district-1="jeryoungrim" grade="1" group="제룡림(버려진 어촌)" group2="QG_BuryejinECHN" id="390" map-group-1-1="jeryoungrim" max-repeat="1" name="드디어 임무!" name2="Quest.Name2.390" save-type="all">
+		<acquisition level="8" preceding-quest-1="q_epic_310" preceding-quest-check="and" recommended-level="10">
+			<case acquire-quest="y" indicator-social="q_390_s_indi_1" msg="q_390_s" npc-response="qrsp_390_1" object="npc:ch_jakyungdan_0007" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-19070.7422" location-y="-5426.3594" map="huekummrim">
+			<mission id="1" name="버려진 어촌 북쪽의 자경단원 부용과 대화" name2="Mission.Name2.390_1" required-register-value="1" reward-1="390_final_set1">
+				<case indicator-social="q_390_m2_indi_1" msg="q_390_m2" npc-response="qrsp_390_2" object="npc:ctzn_jinf_jakyungdan_buyoung_kff_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25000" broadcast-category="always" category="dungeon" dungeon="dungeon_test2" grade="17" id="25000" max-repeat="1" name2="Quest.Name2.25000" save-type="nothing">
+		<acquisition check-tencent-vitality="n" level="1" recommended-level="1">
+			<case acquire-quest="y" object="zoneenv:portal_testdungeon_lobby_u1d" type="enter-portal"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="mission.name2.25000_1" required-register-value="1">
+				<case object="npc:mh_mokujin_0036" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="mission.name2.25000_2" required-register-value="1">
+				<case object="npc:mh_mokujin_0037" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="mission.name2.25000_3" required-register-value="1">
+				<case object="npc:mh_mokujin_0038" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<transit id="3" zone="zone_testdungeon_u3_default">
+			<destination mission-step-id="3" zone-index="1"/>
+		</transit>
+		<transit id="2" zone="zone_testdungeon_u2_default">
+			<destination mission-step-id="2" zone-index="1"/>
+		</transit>
+		<transit id="1" zone="zone_testdungeon_u1_default">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

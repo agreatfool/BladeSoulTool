@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_965" broadcast-category="field" category="normal" day-of-week="none" desc="q_965_sum" grade="1" group2="QG_MoilBong" id="965" map-group-1-1="startzone" max-repeat="1" name2="Quest.Name2.965" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="n" level="50" preceding-quest-1="q_sub_964" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_965_1" object="npc:CH_SA_GuakChill_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.965_1" required-register-value="1">
+				<case gadget-required="empty" indicator="quest-normal-can-progress" mapunit-1="1252_ME_SA_PigBig_0002" object="npc:ME_SA_PigBig_0002" progress-mission="reaction-only" type="npc-manipulate"/>
+				<case gadget="Q_Deadbody_PigA_2" gadget-required="carry-and-remove" indicator="quest-gadget-required" mapunit-1="1252_e_chest_charcoal_01" object="zoneenv:e_chest_charcoal_01" object2="zoneenv2:e_chest_charcoal_01" progress-mission="y" type="manipulate"/>
+				<case object="zone:StartZone_FarmIsland" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_965_3" object="npc:CH_SA_BunYang_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.965_2" required-register-value="1" reward-1="965_final_set1">
+				<case completion-count="0" completion-count-op="ge" npc-response="qrsp_965_2" object="npc:CH_SA_GuakChill_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="StartZone_Event">
+			<destination mission-step-id="2" zone-index="3"/>
+			<destination mission-step-id="1" zone-index="3"/>
+		</transit>
+	</quest>
+</table>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_530" broadcast-category="field" category="epic" completed-desc="q_530_completed" completed-list="y" desc="q_530_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="530" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.530" save-type="all">
+		<acquisition level="1" recommended-level="34" sort-no="332"/>
+		<mission-step id="1" location-x="19927.75" location-y="33870.5156" map="hoerangchon">
+			<mission id="1" name2="Mission.Name2.530_1" required-register-value="1">
+				<case indicator-social="q_530_m1_indi_1" msg="q_530_m1" npc-response="qrsp_530_1" object="npc:ce_hwerang_007" progress-mission="y" type="talk">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="33"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_530_3" object="npc:ce_hwerang_007" type="talk">
+					<filter-set>
+						<filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="32"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-914.7813" location-y="35994.6602" map="susalmok" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.530_3" required-register-value="3">
+				<case looting="q_530_Quest_burly_root_1_icon" object="zoneenv:e_onfoff_treeroot_01" object2="zoneenv2:e_onfoff_treeroot_01" progress-mission="y" type="loot"/>
+				<case looting="q_530_Quest_burly_root_1_icon" object="zoneenv:e_onfoff_treeroot_02" object2="zoneenv2:e_onfoff_treeroot_02" progress-mission="y" type="loot"/>
+				<case looting="q_530_Quest_burly_root_1_icon" object="zoneenv:e_onfoff_treeroot_03" object2="zoneenv2:e_onfoff_treeroot_03" progress-mission="y" type="loot"/>
+				<case looting="q_530_Quest_burly_root_1_icon" object="zoneenv:e_onfoff_treeroot_04" object2="zoneenv2:e_onfoff_treeroot_04" progress-mission="y" type="loot"/>
+				<case looting="q_530_Quest_burly_root_1_icon" mapunit-1="3069_e_onfoff_treeroot_01" mapunit-2="3069_e_onfoff_treeroot_02" mapunit-3="3069_e_onfoff_treeroot_03" mapunit-4="3069_e_onfoff_treeroot_04" mapunit-5="3069_e_onfoff_treeroot_05" mapunit-6="3030_Guide_E530" object="zoneenv:e_onfoff_treeroot_05" object2="zoneenv2:e_onfoff_treeroot_05" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.530_2" required-register-value="1">
+				<case mapunit-2="3069_e_onfoff_cleanmachine_01" object="zoneenv:e_onfoff_cleanmachine_01" object2="zoneenv2:e_onfoff_cleanmachine_01" progress-mission="y" type="manipulate"/>
+				<case mapunit-1="3069_e_onfoff_cyclemachine_01" mapunit-3="3030_Guide_E530" object="zoneenv:e_onfoff_cyclemachine_01" object2="zoneenv2:e_onfoff_cyclemachine_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="19927.75" location-y="33870.5156" map="hoerangchon">
+			<mission id="4" name2="Mission.Name2.530_4" required-register-value="1" reward-1="530_final_set1">
+				<case indicator-social="q_530_m4_indi_1" msg="q_530_m4" npc-response="qrsp_530_2" object="npc:ce_hwerang_007" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_531"/>
+		</completion>
+	</quest>
+</table>

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_50" broadcast-category="always" category="normal" content-type="gather" craft-type="gather" district-1="suwal" grade="1" group2="QG_Gathering" id="50" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.50" save-type="all" show-tutorial-tag="y" tutorial="y">
+		<acquisition level="11" production-exp="0" production-id="gathering-type-3" recommended-level="43" reward-1="50_final_set1">
+			<case acquire-quest="y" env-looting="q_50_1_icon" object="zoneenv:e_onoff_4400shelldebris_01" object2="zoneenv2:e_onoff_4400shelldebris_01" progress-mission="y" type="manipulate"/>
+			<case acquire-quest="y" env-looting="q_50_1_icon" object="zoneenv:e_onoff_4535shelldebris_01" object2="zoneenv2:e_onoff_4535shelldebris_01" progress-mission="y" type="manipulate"/>
+			<case acquire-quest="y" env-looting="q_50_1_icon" object="zoneenv:e_onoff_4000shelldebris_01" object2="zoneenv2:e_onoff_4000shelldebris_01" progress-mission="y" type="manipulate"/>
+		</acquisition>
+	</quest>
+</table>

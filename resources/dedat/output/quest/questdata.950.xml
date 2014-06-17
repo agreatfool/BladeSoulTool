@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_950" broadcast-category="field" category="epic" completed-desc="q_950_completed" completed-list="y" desc="q_950_sum" grade="1" group2="QG_NextbaeCheongEpic2" id="950" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.950" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="50" sort-no="542"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.950_1" required-register-value="1">
+				<case mapunit-1="Guide_Quest" object="zone:zone_NokMyungCHN" progress-mission="y" type="enter-zone"/>
+				<case npc-response="qrsp_949_7" object="npc:CH_WB_BaekWoon_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.950_2" required-register-value="1">
+				<case npc-response="qrsp_950_1" object="npc:CE_WB_DokChoGeoSa_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step guide-message="gm_950_1" guide-message-zone-1="zone_YoungRinBong_Act6" id="3">
+			<mission id="3" name2="Mission.Name2.950_3" required-register-value="1">
+				<case mapunit-1="Guide_warp_HeukChang_CL" object="zone:zone_HukChang_Classic" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.950_4" required-register-value="1">
+				<case npc-response="qrsp_950_2" object="npc:CH_WB_DarkCrazyTribeA_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HukChang_Classic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.950_5" required-register-value="1">
+				<case npc-response="qrsp_950_3" object="npc:CH_WB_DarkCrazyTribeA_0001" type="approach"/>
+				<case object="zone:zone_HukChang_Classic" progress-mission="reaction-only" type="enter-zone"/>
+				<case mapunit-1="Guide_HeukChunJoo_00" object="zoneenv:e_button_6000heakchun_01" object2="zoneenv2:e_button_6000heakchun_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.950_6" required-register-value="1">
+				<case npc-response="qrsp_950_4" object="npc:CH_WB_Citizen_0094" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HukChang_Classic" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_999"/>
+		</completion>
+		<transit id="1" zone="zone_YoungRinBong_6">
+			<destination mission-step-id="9" zone-index="7"/>
+		</transit>
+		<transit id="2" zone="StartZone_Event">
+			<destination mission-step-id="1" zone-index="5"/>
+			<destination mission-step-id="2" zone-index="5"/>
+			<destination mission-step-id="3" zone-index="5"/>
+			<destination mission-step-id="4" zone-index="5"/>
+			<destination mission-step-id="5" zone-index="5"/>
+			<destination mission-step-id="6" zone-index="5"/>
+			<destination mission-step-id="7" zone-index="5"/>
+			<destination mission-step-id="8" zone-index="5"/>
+			<destination mission-step-id="9" zone-index="5"/>
+			<destination mission-step-id="10" zone-index="5"/>
+			<destination mission-step-id="11" zone-index="5"/>
+			<destination mission-step-id="12" zone-index="5"/>
+			<destination mission-step-id="13" zone-index="5"/>
+			<destination mission-step-id="14" zone-index="5"/>
+		</transit>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.950_7" required-register-value="1">
+				<case looting="q_949_1_icon" object="npc:ME_WB_DarkCrazyTribeB_0004" object2="npc:ME_WB_DarkCrazyTribeB_0004" progress-mission="y" quest-symbol-drop-prob="5" type="loot"/>
+				<case object="zone:zone_HukChang_Classic" progress-mission="reaction-only" type="enter-zone"/>
+				<case looting="q_949_1_icon" object="npc:ME_WB_DarkCrazyTribeB_0005" object2="npc:ME_WB_DarkCrazyTribeB_0005" progress-mission="y" quest-symbol-drop-prob="5" type="loot"/>
+				<case looting="q_949_1_icon" object="npc:ME_WB_DarkCrazyTribeB_0013" object2="npc:ME_WB_DarkCrazyTribeB_0013" progress-mission="y" quest-symbol-drop-prob="5" type="loot"/>
+				<case looting="q_949_1_icon" object="npc:ME_WB_DarkCrazyTribeB_0014" object2="npc:ME_WB_DarkCrazyTribeB_0014" progress-mission="y" quest-symbol-drop-prob="5" type="loot"/>
+			</mission>
+			<mission id="8" name2="Mission.Name2.950_8" required-register-value="1">
+				<case looting="q_949_2_icon" object="npc:ME_WB_Valak_0003" object2="npc:ME_WB_Valak_0003" progress-mission="y" type="loot"/>
+				<case object="zone:zone_HukChang_Classic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="9" name2="Mission.Name2.950_9" required-register-value="1">
+				<case object="zone:zone_HukChang_Classic" progress-mission="reaction-only" type="enter-zone"/>
+				<case mapunit-1="Guide_Portal_Epic6" object="npc:CE_WB_Dummy_0003" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="10" name2="Mission.Name2.950_10" required-register-value="1" reward-1="950_final_set1">
+				<case npc-response="qrsp_950_5" object="npc:CH_WB_ChungGak_0003" progress-mission="y" type="talk"/>
+				<case object="zone:zone_YoungRinBong_Act6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

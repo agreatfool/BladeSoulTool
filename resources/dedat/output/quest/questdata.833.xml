@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_833" broadcast-category="field" category="normal" desc="q_833_sum" grade="1" group2="QG_SnowMountSouth" id="833" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.833" save-type="all">
+		<acquisition level="47" preceding-quest-1="q_epic_282" preceding-quest-check="and" preceding-quest-mission-step-1="7" recommended-level="49">
+			<case acquire-quest="y" npc-response="qrsp_833_1" object="npc:CH_CT_Flower_0012" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.833_1" required-register-value="15">
+				<case looting="q_833_1_icon" mapunit-1="5220_ME_CT_SnowBear_0001_s833" object="npc:ME_CT_SnowBear_0001" object2="npc:ME_CT_SnowBear_0001" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+				<case npc-response="qrsp_833_4" object="npc:CH_CT_Flower_0007" type="approach"/>
+				<case looting="q_833_1_icon" object="npc:ME_CT_WhiteTiger_0001" object2="npc:ME_CT_WhiteTiger_0001" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.833_2" required-register-value="1">
+				<case npc-response="qrsp_833_2" object="npc:CH_CT_Flower_0007" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.833_3" required-register-value="1">
+				<case mapunit-1="5220_e_Chest_tombstone_01_s833" object="zoneenv:e_Chest_tombstone_01" object2="zoneenv2:e_Chest_tombstone_01" progress-mission="y" type="manipulate"/>
+				<case npc-response="qrsp_833_5" object="npc:CH_CT_Flower_0007" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.833_4" required-register-value="1" reward-1="833_final_set1">
+				<case npc-response="qrsp_833_3" object="npc:CH_CT_Blizzard_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

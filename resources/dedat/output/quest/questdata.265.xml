@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_265" broadcast-category="field" category="epic" completed-desc="q_265_completed" completed-list="y" desc="q_265_sum" grade="1" group2="QG_BaeCheongEpic" id="265" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.265" save-type="all">
+		<acquisition level="1" recommended-level="46" sort-no="506"/>
+		<mission-step id="1" location-x="-87230.75" location-y="54737.79" map="GreatPlain" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.265_1" required-register-value="1">
+				<case mapunit-1="5028_Zone_YukByung_e265" mapunit-2="5002_Guide_e265" object="zone:Zone_YukByung" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.265_2" required-register-value="1">
+				<case npc-response="qrsp_265_1" object="npc:CH_CT_JeGukGun_0319" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_265_8" object="npc:CH_CT_ORakDang_0032" type="approach"/>
+				<case npc-response="qrsp_265_3" object="npc:CH_CT_JeGukGun_0122" type="approach"/>
+				<case npc-response="qrsp_265_3" object="npc:CH_CT_JeGukGun_0121" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.265_3" required-register-value="1">
+				<case gadget-required="empty" object="npc:CE_CT_Bubgi_0003" progress-mission="y" type="npc-manipulate"/>
+				<case npc-response="qrsp_265_3" object="npc:CH_CT_JeGukGun_0122" type="approach"/>
+				<case npc-response="qrsp_265_3" object="npc:CH_CT_JeGukGun_0121" type="approach"/>
+				<case npc-response="qrsp_265_2" object="npc:CH_CT_ORakDang_0032" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.265_4" required-register-value="2">
+				<case gadget="Q_Torchlight_0005" gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="5028_e_Chest_JeGukbrazier_02_e265" object="zoneenv:e_Chest_JeGukbrazier_02" object2="zoneenv2:e_Chest_JeGukbrazier_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Torchlight_0005" gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="5028_e_Chest_JeGukbrazier_01_e265" object="zoneenv:e_Chest_JeGukbrazier_01" object2="zoneenv2:e_Chest_JeGukbrazier_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Torchlight_0005" gadget-required="carry-and-remove" mapunit-1="5028_e_pot_straw_01_e265" mapunit-2="5028_e_pot_straw_02_e265" object-1="zoneenv:e_pot_straw_01" object-2="zoneenv:e_pot_straw_02" object2-1="zoneenv2:e_pot_straw_01" object2-2="zoneenv2:e_pot_straw_02" progress-mission="y" skill="Gadget_Q_Torchlight_0005" skill3="Gadget_Q_Torchlight_0005" type="skill"/>
+				<case npc-response="qrsp_265_3" object="npc:CH_CT_JeGukGun_0122" type="approach"/>
+				<case npc-response="qrsp_265_3" object="npc:CH_CT_JeGukGun_0121" type="approach"/>
+				<case npc-response="qrsp_265_9" object="npc:CH_CT_JeGukGun_0319" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.265_5" required-register-value="1">
+				<case npc-response="qrsp_265_4" object="npc:CH_CT_JeGukGun_0319" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_265_3" object="npc:CH_CT_JeGukGun_0122" type="approach"/>
+				<case npc-response="qrsp_265_3" object="npc:CH_CT_JeGukGun_0121" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6" location-x="-86605.22" location-y="24634.06" map="YeomSaekChon" mission-map-type="location">
+			<mission id="6" name2="Mission.Name2.265_6" required-register-value="1" reward-1="265_final_set1">
+				<case mapunit-1="5028_Guide_e265" npc-response="qrsp_265_6" object="npc:CH_CT_JeGukGun_0124" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_265_5" object="npc:CH_CT_ORakDang_0019" type="approach"/>
+				<case npc-response="qrsp_265_7" object="npc:CH_CT_JeGukGun_0320" type="approach"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_266"/>
+		</completion>
+		<transit id="1" zone="zone_yumsek_zekuk_na">
+			<destination mission-step-id="6" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

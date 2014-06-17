@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_698" attraction-1="dungeon:Dungeon_BaekCheong_Sulokgoong" attraction-2="dungeon:Dungeon_SulinDongGul" attraction-3="dungeon:Dungeon_GuiMunGuan_Nightmare" broadcast-category="field" category="normal" day-of-week="daily" desc="q_698_sum" grade="10" group2="QG_GuiMun" id="698" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.698" reset-type="daily">
+		<acquisition level="50" preceding-quest-1="q_epic_498" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_698_1" object="npc:me_c3_akgyojok_0001" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_698_3" object="npc:me_c3_akgyojok_0001" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_698_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.698_1" required-register-value="1">
+				<case object="npc:me_c3_galmawang_0001" object2="npc:me_c3_galmawang_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.698_2" required-register-value="1" reward-1="698_final_set1" reward-2="698_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_698_2" object="npc:me_c3_akgyojok_0001" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_698_1_icon" msg="q_698_3" progress-mission="y" type="talk-to-self"/>
+				<case completion-count="1" npc-response="qrsp_698_4" object="npc:me_c3_akgyojok_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

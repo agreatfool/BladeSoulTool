@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_20036" broadcast-category="field" category="normal" grade="1" group2="QG_HwangGung" id="20036" map-group-1-1="baekchung" max-repeat="-1" name2="Quest.Name2.20036" save-type="except-completion">
+		<acquisition level="45" preceding-quest-1="q_epic_273" preceding-quest-check="and" preceding-quest-mission-step-1="6" recommended-level="47">
+			<case acquire-quest="y" npc-response="qrsp_20036_1" object="npc:CH_CT_JeGukGun_0058" progress-mission="y" type="talk"/>
+		</acquisition>
+	</quest>
+</table>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_692" attraction-1="classic-field-zone:NoklimdovillageClassic" attraction-2="cave2:cave_baekchung_13" attraction-3="dungeon:dungeon_noklimdotreasurehouse" attraction-4="dungeon:dungeon_takmagul" broadcast-category="field" category="normal" day-of-week="daily" desc="q_692_sum" grade="9" group2="QG_NokRimDo" id="692" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.692" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="50" preceding-quest-1="q_sub_691" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" npc-response="qrsp_692_1" object="npc:CE_CT_GulGulB_0003" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.692_1" required-register-value="1">
+				<case object="npc:ME_CT_KangSiFat_0002" object2="npc:ME_CT_KangSiFat_0002" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_692_2" object="npc:CE_CT_GulGulB_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.692_2" required-register-value="1" reward-1="692_final_set1" reward-2="692_final_set2">
+				<case fee="n" item="q_692_1_icon" msg="q_692_2" progress-mission="y" type="talk-to-self"/>
+				<case npc-response="qrsp_692_2" object="npc:CE_CT_GulGulB_0003" type="approach"/>
+				<case npc-response="qrsp_692_3" object="npc:CE_CT_GulGulB_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

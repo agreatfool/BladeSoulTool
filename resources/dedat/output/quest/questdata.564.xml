@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_564" broadcast-category="field" category="normal" desc="q_564_sum" district-1="deasamak" grade="1" group2="QG_ToMunJinSouth" id="564" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.564" save-type="all">
+		<acquisition level="20" preceding-quest-1="q_epic_503" preceding-quest-2="q_sub_563" preceding-quest-check="and" recommended-level="22">
+			<case acquire-quest="y" indicator-social="q_564_s_indi_1" msg="q_564_s" npc-response="qrsp_564_1" object="npc:ch_dweller_034" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-53633.4922" location-y="-61759.6875" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.564_1" required-register-value="10">
+				<case looting="q_564_Quest_gallbladder_1_icon" mapunit-1="3000_ME_BelliedFireFrog_004" mapunit-2="3000_ME_BelliedFireFrog_004_1" object="npc:me_belliedfirefrog_004" object2="npc:me_belliedfirefrog_004" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-45394.3086" location-y="-62020.4688" map="OeMalRi">
+			<mission id="2" name2="Mission.Name2.564_2" required-register-value="1" reward-1="564_final_set1">
+				<case indicator-social="q_564_m2_indi_1" msg="q_564_m2" npc-response="qrsp_564_2" object="npc:ch_dweller_036" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

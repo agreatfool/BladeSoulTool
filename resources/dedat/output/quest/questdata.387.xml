@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_387" broadcast-category="field" category="normal" day-of-week="daily" desc="q_387_sum" district-1="jeryoungrim" grade="2" group="제룡림(기연절벽)" group2="QG_KiYoenCliff" id="387" map-group-1-1="jeryoungrim" max-repeat="1" name="납치라면 그들이 전문가" name2="Quest.Name2.387" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="14" preceding-quest-1="q_sub_383" preceding-quest-check="and" recommended-level="16">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" gadget-required="dont-care" indicator-social="q_387_s_indi_1" msg="q_387_s" npc-response="qrsp_387_1" object="npc:ch_doctor_0002" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_387_3" object="npc:ch_doctor_0002" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_387_5" object="npc:ce_board_0012" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="12075.8711" location-y="42037.9336" map="julbukdonggul_dun">
+			<mission id="1" name="절벽 동굴에 있는 수련자 나도낙과 대화" name2="Mission.Name2.387_1" required-register-value="5">
+				<case gadget="q_torchlighta_5" gadget-required="carry-and-remove" object="zoneenv:e_onoff_aljumeoni_07" object2="zoneenv2:e_onoff_aljumeoni_07" progress-mission="y" type="manipulate"/>
+				<case gadget="q_torchlighta_5" gadget-required="carry-and-remove" object="zoneenv:e_onoff_aljumeoni_06" object2="zoneenv2:e_onoff_aljumeoni_06" progress-mission="y" type="manipulate"/>
+				<case gadget="q_torchlighta_5" gadget-required="carry-and-remove" object="zoneenv:e_onoff_aljumeoni_05" object2="zoneenv2:e_onoff_aljumeoni_05" progress-mission="y" type="manipulate"/>
+				<case gadget="q_torchlighta_5" gadget-required="carry-and-remove" object="zoneenv:e_onoff_aljumeoni_04" object2="zoneenv2:e_onoff_aljumeoni_04" progress-mission="y" type="manipulate"/>
+				<case gadget="q_torchlighta_5" gadget-required="carry-and-remove" object="zoneenv:e_onoff_aljumeoni_03" object2="zoneenv2:e_onoff_aljumeoni_03" progress-mission="y" type="manipulate"/>
+				<case gadget="q_torchlighta_5" gadget-required="carry-and-remove" object="zoneenv:e_onoff_aljumeoni_02" object2="zoneenv2:e_onoff_aljumeoni_02" progress-mission="y" type="manipulate"/>
+				<case gadget="q_torchlighta_5" gadget-required="carry-and-remove" indicator="default" mapunit-1="2607_e_onoff_aljumeoni_01" object="zoneenv:e_onoff_aljumeoni_01" object2="zoneenv2:e_onoff_aljumeoni_01" progress-mission="y" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="2607_e_chest_brazier_01" mapunit-2="2607_e_chest_brazier_02" mapunit-3="2607_e_chest_brazier_03" mapunit-4="2607_e_chest_brazier_04" object="zoneenv:e_chest_brazier_01" object2="zoneenv2:e_chest_brazier_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_chest_brazier_02" object2="zoneenv2:e_chest_brazier_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_chest_brazier_03" object2="zoneenv2:e_chest_brazier_03" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_chest_brazier_04" object2="zoneenv2:e_chest_brazier_04" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.387_2" required-register-value="1" show-kill-mapunit="y">
+				<case object="npc:mh_chunggak_0064" object2="npc:mh_chunggak_0064" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="23838.7246" location-y="42673.8672" map="suryengol">
+			<mission id="3" name="기연절벽에 있는 약왕원 수련의 신의소에게 보고" name2="Mission.Name2.387_3" required-register-value="1" reward-1="387_final_set1" reward-2="387_final_set2">
+				<case completion-count="1" completion-count-op="lt" indicator-social="q_387_m4_indi_1" msg="q_387_m4" npc-response="qrsp_387_2" object="npc:ch_doctor_0002" progress-mission="y" type="talk"/>
+				<case completion-count="1" npc-response="qrsp_387_4" object="npc:ch_doctor_0002" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_387_1_icon" msg="q_387_m6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

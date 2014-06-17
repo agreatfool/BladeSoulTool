@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1047" attraction-1="classic-field-zone:SnakeScalesVally_Classic" attraction-2="Dungeon:Dungeon_SnakeScalesVally" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1047_sum" grade="1" group2="QG_SnakeValley" id="1047" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.1047" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="50" preceding-quest-1="q_sub_1044" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" npc-response="qrsp_1047_1" object="npc:CH_CT_Adventurer_0012" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1047_4" object="npc:CE_CT_Board_0037" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1047_1" required-register-value="1">
+				<case looting="q_1047_2_icon" object="npc:ME_CT_BaBaJok_0004" object2="npc:ME_CT_BaBaJok_0004" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1047_2" required-register-value="1">
+				<case looting="q_1047_3_icon" object="npc:ME_CT_ChuAngKa_0013" object2="npc:ME_CT_ChuAngKa_0013" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.1047_3" required-register-value="1">
+				<case looting="q_1047_4_icon" object="npc:ME_CT_BaBaJok_0011" object2="npc:ME_CT_BaBaJok_0011" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="4" name2="Mission.Name2.1047_4" required-register-value="1" reward-1="1047_final_set1" reward-2="1047_final_set2">
+				<case npc-response="qrsp_1047_2" object="npc:CH_CT_Adventurer_0012" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_1047_1_icon" msg="q_1047_3" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

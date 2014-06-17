@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_825" broadcast-category="field" category="normal" desc="q_825_sum" grade="1" group2="QG_ZazakWoodEast" id="825" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.825" save-type="all">
+		<acquisition level="46" preceding-quest-1="q_epic_282" preceding-quest-2="q_sub_814" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="48">
+			<case acquire-quest="y" npc-response="qrsp_825_1" object="npc:CH_CT_Monk_0006" type="talk"/>
+			<case npc-response="qrsp_825_4" object="npc:CE_CT_SaOhJang_0004" type="approach"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.825_1" required-register-value="1" reward-1="825_final_set1">
+				<case gadget-required="empty" mapunit-1="5200_ME_CT_DarkCrazyTribeB_0008_s825" object="npc:ME_CT_DarkCrazyTribeB_0008" object2="npc:ME_CT_DarkCrazyTribeB_0008" prob="100" progress-mission="reaction-only" type="killed"/>
+				<case gadget="Q_Club_0001" gadget-required="carry-and-remove" npc-response="qrsp_825_2" object="npc:CE_CT_SaOhJang_0004" prob="100" progress-mission="y" type="talk"/>
+				<case object="npc:CH_CT_Monk_0006" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

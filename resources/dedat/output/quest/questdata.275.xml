@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_275" broadcast-category="field" category="epic" completed-desc="q_275_completed" completed-list="y" desc="q_275_sum" grade="1" group2="QG_BaeCheongEpic" id="275" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.275" save-type="all">
+		<acquisition level="1" recommended-level="47" sort-no="516"/>
+		<mission-step id="1" location-x="-5083.58" location-y="-8673.92" map="KangRyuSi" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.275_1" required-register-value="1">
+				<case mapunit-1="Guide_BaekRimSa_right" mapunit-2="Guide_JajakSup_down" npc-response="qrsp_275_1" object="npc:CH_CT_JeGukGun_0048" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekRimSa_Byul1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.275_2" required-register-value="1">
+				<case npc-response="qrsp_275_2" object="npc:CH_CT_PungEmpire_0029" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_275_5" object="npc:CH_CT_JeGukGun_0048" type="approach"/>
+				<case npc-response="qrsp_280_28" object="npc:CH_CT_BiMoo_0024" type="approach"/>
+				<case npc-response="qrsp_280_27" object="npc:CH_CT_BiMoo_0023" type="approach"/>
+				<case npc-response="qrsp_280_26" object="npc:CH_CT_BiMoo_0022" type="approach"/>
+				<case npc-response="qrsp_280_25" object="npc:CH_CT_BiMoo_0021" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_275_des_3" id="3" location-x="19865.68" location-y="836.46" map="taesajeon" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.275_3" required-register-value="1">
+				<case object="zoneenv:e_chest_redstonelantern_01" object2="zoneenv2:e_chest_redstonelantern_01" progress-mission="reaction-only" type="manipulate"/>
+				<case mapunit-1="5151_footswitch_01" mapunit-2="Guide_SinHyeWon" mapunit-3="Guide_SeolRinGung_left" mapunit-4="Guide_GyeongHoeRu_right" mapunit-5="5151_e_chest_redstonelantern_01" object="zoneenv:5151_footswitch_01" object2="zoneenv2:5151_footswitch_01" progress-mission="y" type="env-entered"/>
+				<case object="zone:Zone_KyeongHoiRu_p" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:e_chest_redstonelantern_02" object2="zoneenv2:e_chest_redstonelantern_02" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_redstonelantern_03" object2="zoneenv2:e_chest_redstonelantern_03" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_redstonelantern_04" object2="zoneenv2:e_chest_redstonelantern_04" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_redstonelantern_05" object2="zoneenv2:e_chest_redstonelantern_05" progress-mission="reaction-only" type="manipulate"/>
+				<case npc-response="qrsp_275_6" object="npc:CH_CT_PungEmpire_0029" type="approach"/>
+				<case npc-response="qrsp_280_32" object="npc:CH_CT_BiMoo_0034" type="approach"/>
+				<case npc-response="qrsp_280_31" object="npc:CH_CT_BiMoo_0027" type="approach"/>
+				<case npc-response="qrsp_280_30" object="npc:CH_CT_BiMoo_0033" type="approach"/>
+				<case npc-response="qrsp_280_29" object="npc:CH_CT_BiMoo_0025" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_275_des_4" id="4">
+			<mission id="4" name2="Mission.Name2.275_4" required-register-value="1">
+				<case mapunit-1="5151_footswitch_02" object="zoneenv:5151_footswitch_02" object2="zoneenv2:5151_footswitch_02" progress-mission="y" type="env-entered"/>
+				<case object="zone:Zone_KyeongHoiRu_p" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:e_chest_redstonelantern_01" object2="zoneenv2:e_chest_redstonelantern_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_redstonelantern_02" object2="zoneenv2:e_chest_redstonelantern_02" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_redstonelantern_03" object2="zoneenv2:e_chest_redstonelantern_03" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_redstonelantern_04" object2="zoneenv2:e_chest_redstonelantern_04" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_redstonelantern_05" object2="zoneenv2:e_chest_redstonelantern_05" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="Zone_KyeongHoiRu">
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_276"/>
+		</completion>
+		<mission-step id="5" location-x="-4009.36" location-y="-15314.54" map="KangRyuSi" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.275_5" required-register-value="1" reward-1="275_final_set1">
+				<case mapunit-1="Guide_TaeSaJeon_left" mapunit-2="Guide_GyeongHoeRu_down" npc-response="qrsp_275_3" object="npc:CH_CT_Prisoner_0017" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_706" broadcast-category="field" category="normal" day-of-week="none" desc="q_706_sum" grade="1" group2="QG_BooNongEast" id="706" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.706" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="y" level="44" preceding-quest-1="q_sub_704" preceding-quest-2="q_sub_707" preceding-quest-check="and" recommended-level="46">
+			<case acquire-quest="y" completion-count="0" completion-count-op="ge" npc-response="qrsp_706_1" object="npc:CH_CT_JeGukGun_0193" progress-mission="n" type="talk"/>
+		</acquisition>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.706_2" required-register-value="1" reward-1="706_final_set1" reward-2="706_final_set2">
+				<case npc-response="qrsp_706_2" object="npc:CH_CT_JeGukGun_0193" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.706_1" required-register-value="5">
+				<case button-text-accept="q_706_3_ok" button-text-cancel="q_706_3_no" gadget="Q_FlameThrower_0001" gadget-required="empty" indicator="quest-normal-repeat-can-progress" mapunit-1="5028_CH_CT_JeGukGun_0193_s706" npc-response="qrsp_706_3" object="npc:CH_CT_JeGukGun_0193" progress-mission="reaction-only" type="talk"/>
+				<case gadget-required="dont-care" object="npc:ME_CT_ZombieA_0060" object2="npc:ME_CT_ZombieA_0060" progress-mission="y" type="killed"/>
+				<case gadget-required="dont-care" object="npc:ME_CT_ZombieA_0063" object2="npc:ME_CT_ZombieA_0063" progress-mission="y" type="killed"/>
+				<case gadget-required="dont-care" object="npc:ME_CT_ZombieA_0059" object2="npc:ME_CT_ZombieA_0059" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_ZombieA_0054" object2="npc:ME_CT_ZombieA_0054" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_ZombieA_0061" object2="npc:ME_CT_ZombieA_0061" progress-mission="y" type="killed"/>
+				<case mapunit-1="5028_ME_CT_ZombieA_0054_s706" object="npc:ME_CT_ZombieA_0062" object2="npc:ME_CT_ZombieA_0062" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

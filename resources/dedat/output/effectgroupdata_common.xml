@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="CombatData" release-side="client" type="effect-group" version="0.3">
+	<record alias="Common_Resurrection_Action_E1_01" effect-1="Common_Resurrection_Action_Resurrection" effect-2="Common_Resurrection_Action_Resurrection_blockact" skill-result="hit-critical-hit" target="first-target" target-state="all"/>
+	<record alias="Tutorial_ShipCannon_E1_01" effect-1="Tutorial_ShipCannon_knockback1" effect-2="Tutorial_ShipCannon_knockback2" effect-3="Tutorial_ShipCannon_down" effect-4="Tutorial_ShipCannon_midair" individual-probability="y" probability-1="20" probability-2="20" probability-3="20" probability-4="40" skill-result="hit-critical-hit" target="second-target" target-state="all"/>
+	<record alias="GM_Move_e1_01" effect-1="return" skill-result="hit-critical-hit" target="caster" target-state="all"/>
+	<record alias="Destroyer_Catch_Lv1_E1_0222222" effect-1="Destroyer_Catch_Lv1_Flag22222" skill-result="hit-critical-hit" target="caster" target-state="all"/>
+</table>

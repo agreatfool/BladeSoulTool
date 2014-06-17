@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1053" attraction-1="classic-field-zone:SnakeScalesVally_Classic" attraction-2="Dungeon:Dungeon_SnakeScalesVally" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1053_sum" grade="1" group2="QG_SnakeValley" id="1053" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.1053" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="50" preceding-quest-1="q_sub_1044" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" completion-count="0" completion-count-op="ge" npc-response="qrsp_1053_1" object="npc:CH_CT_Adventurer_0015" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1053_4" object="npc:CE_CT_Board_0037" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1053_1" required-register-value="10">
+				<case object="zoneenv:e_Chest_soulpot_08" object2="zoneenv2:e_Chest_soulpot_08" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_Chest_soulpot_07" object2="zoneenv2:e_Chest_soulpot_07" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_Chest_soulpot_06" object2="zoneenv2:e_Chest_soulpot_06" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_Chest_soulpot_05" object2="zoneenv2:e_Chest_soulpot_05" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_Chest_soulpot_04" object2="zoneenv2:e_Chest_soulpot_04" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_Chest_soulpot_03" object2="zoneenv2:e_Chest_soulpot_03" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_Chest_soulpot_02" object2="zoneenv2:e_Chest_soulpot_02" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_Chest_soulpot_01" object2="zoneenv2:e_Chest_soulpot_01" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_Chest_sculpture_10" object2="zoneenv2:e_Chest_sculpture_10" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_Chest_sculpture_09" object2="zoneenv2:e_Chest_sculpture_09" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_Chest_sculpture_08" object2="zoneenv2:e_Chest_sculpture_08" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_Chest_sculpture_07" object2="zoneenv2:e_Chest_sculpture_07" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_Chest_sculpture_06" object2="zoneenv2:e_Chest_sculpture_06" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_Chest_sculpture_05" object2="zoneenv2:e_Chest_sculpture_05" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_Chest_sculpture_04" object2="zoneenv2:e_Chest_sculpture_04" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_Chest_sculpture_03" object2="zoneenv2:e_Chest_sculpture_03" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_Chest_sculpture_02" object2="zoneenv2:e_Chest_sculpture_02" progress-mission="y" type="manipulate"/>
+				<case mapunit-1="5295_e_Chest_soulpot_01_s1053" mapunit-2="5295_e_Chest_sculpture_01_s1053" mapunit-3="5295_e_Chest_sculpture_01_s1053_1" object="zoneenv:e_Chest_sculpture_01" object2="zoneenv2:e_Chest_sculpture_01" progress-mission="y" type="manipulate"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1053_2" required-register-value="100">
+				<case object="npc:ME_CT_BaBaJok_0011" object2="npc:ME_CT_BaBaJok_0011" progress-mission="y" progress-value="3" type="killed"/>
+				<case object="npc:ME_CT_ChuAngKa_0013" object2="npc:ME_CT_ChuAngKa_0013" progress-mission="y" progress-value="3" type="killed"/>
+				<case object="npc:ME_CT_BaBaJok_0004" object2="npc:ME_CT_BaBaJok_0004" progress-mission="y" progress-value="3" type="killed"/>
+				<case object="npc:ME_CT_BaBaJok_0012" object2="npc:ME_CT_BaBaJok_0012" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_SnakeWoman_0001" object2="npc:ME_CT_SnakeWoman_0001" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_SnakeMan_0001" object2="npc:ME_CT_SnakeMan_0001" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_BaBaJok_0030" object2="npc:ME_CT_BaBaJok_0030" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_BaBaJok_0029" object2="npc:ME_CT_BaBaJok_0029" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_BaBaJok_0028" object2="npc:ME_CT_BaBaJok_0028" progress-mission="y" progress-value="2" type="killed"/>
+				<case object="npc:ME_CT_BaBaJok_0010" object2="npc:ME_CT_BaBaJok_0010" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_ChuAngKa_0015" object2="npc:ME_CT_ChuAngKa_0015" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_ChuAngKa_0014" object2="npc:ME_CT_ChuAngKa_0014" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_BaBaJok_0023" object2="npc:ME_CT_BaBaJok_0023" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_BaBaJok_0017" object2="npc:ME_CT_BaBaJok_0017" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_BaBaJok_0007" object2="npc:ME_CT_BaBaJok_0007" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_BaBaJok_0006" object2="npc:ME_CT_BaBaJok_0006" progress-mission="y" progress-value="2" type="killed"/>
+				<case object="npc:ME_CT_BaBaJok_0005" object2="npc:ME_CT_BaBaJok_0005" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_BaBaJok_0003" object2="npc:ME_CT_BaBaJok_0003" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_BaBaJok_0002" object2="npc:ME_CT_BaBaJok_0002" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_BaBaJok_0024" object2="npc:ME_CT_BaBaJok_0024" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_BaBaJok_0008" object2="npc:ME_CT_BaBaJok_0008" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_BaBaJok_0009" object2="npc:ME_CT_BaBaJok_0009" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_BaBaJok_0022" object2="npc:ME_CT_BaBaJok_0022" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_BaBaJok_0025" object2="npc:ME_CT_BaBaJok_0025" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.1053_3" required-register-value="1" reward-1="1053_final_set1" reward-2="1053_final_set2">
+				<case completion-count="0" completion-count-op="ge" npc-response="qrsp_1053_2" object="npc:CH_CT_Adventurer_0015" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_1053_4_icon" msg="q_1053_3" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

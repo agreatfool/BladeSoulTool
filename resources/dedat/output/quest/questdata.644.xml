@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_644" broadcast-category="field" category="normal" desc="q_644_sum" district-1="deasamak" grade="1" group2="QG_ToMunGaekJan" id="644" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.644" save-type="all">
+		<acquisition level="27" preceding-quest-1="q_epic_517" preceding-quest-check="and" recommended-level="29">
+			<case acquire-quest="y" indicator-social="q_644_s_indi_1" msg="q_644_s" npc-response="qrsp_644_1" object="npc:ch_bigulbogul_002" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-14168.7324" location-y="4080.9634" map="toemungekjan" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.644_1" required-register-value="1">
+				<case mapunit-1="3016_e_onoff_goldenbell_01" mapunit-2="3016_e_onoff_goldenbell_01+" mapunit-3="3016_e_onoff_goldenbell_01-" object="zoneenv:e_onoff_goldenbell_01" object2="zoneenv2:e_onoff_goldenbell_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-14168.7324" location-y="4080.9634" map="toemungekjan" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.644_2" required-register-value="1">
+				<case indicator-social="q_644_m2_indi_1" msg="q_644_m2" npc-response="qrsp_644_2" object="npc:ch_wangjoyeon_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-14778.1074" location-y="3852.4478" map="toemungekjan" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.644_3" required-register-value="1">
+				<case indicator-social="q_644_m3_indi_1" npc-response="qrsp_644_4" object="npc:ch_geumeunbang_0001" progress-mission="y" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-14778.1074" location-y="3852.4478" map="toemungekjan" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.644_4" required-register-value="1" reward-1="644_final_set1">
+				<case indicator-social="q_644_m4_indi_1" msg="q_644_m4" npc-response="qrsp_644_3" object="npc:ch_geumeunbang_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

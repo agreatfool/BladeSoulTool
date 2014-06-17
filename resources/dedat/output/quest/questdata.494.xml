@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_494" broadcast-category="field" category="epic" completed-desc="q_494_completed" completed-list="y" desc="q_494_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="494" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.494" save-type="all">
+		<acquisition level="1" recommended-level="15" sort-no="217"/>
+		<mission-step completion-type="and" desc="q_494_des_1" id="1" location-x="27221.6074" location-y="38839.9375" map="suryengol">
+			<mission id="1" name2="Mission.Name2.494_1" required-register-value="1">
+				<case mapunit-1="2300_giyundonggul_e494" object="zone:zone_suryengol_dun_dokcho" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_494_des_2" id="2" location-x="31873.9219" location-y="43729.6094" map="GiYunDongGul">
+			<mission id="2" name2="Mission.Name2.494_2" required-register-value="1">
+				<case indicator-social="q_494_m2_indi_1" msg="q_494_m2" npc-response="qrsp_494_1" object="npc:ch_dokchogeosa_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_314"/>
+		</completion>
+		<transit id="1" zone="zone_suryengol_dun_4">
+			<destination mission-step-id="1" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="9" zone-index="1"/>
+			<destination mission-step-id="10" zone-index="1"/>
+			<destination mission-step-id="11" zone-index="1"/>
+			<destination mission-step-id="12" zone-index="1"/>
+			<destination mission-step-id="13" zone-index="1"/>
+		</transit>
+		<mission-step desc="q_494_des_3" id="3" location-x="34151.1133" location-y="44432.4453" map="GiYunDongGul">
+			<mission id="3" name2="Mission.Name2.494_3" required-register-value="1">
+				<case indicator-social="q_494_m3_1_indi_1" msg="q_494_m3_1" npc-response="qrsp_494_18" object="npc:ctzn_jinm_master_geonma_swd_001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="귀검사"/>
+					</filter-set>
+				</case>
+				<case indicator-social="q_494_m3_1_indi_1" msg="q_494_m3_1" npc-response="qrsp_494_2" object="npc:ctzn_jinm_master_geonma_swd_001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="검사"/>
+					</filter-set>
+				</case>
+				<case indicator-social="q_494_m3_2_indi_1" msg="q_494_m3_2" npc-response="qrsp_494_3" object="npc:ctzn_jinf_gonmyeong_foc_001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="기공사"/>
+					</filter-set>
+				</case>
+				<case indicator-social="q_494_m3_3_indi_1" msg="q_494_m3_3" npc-response="qrsp_494_4" object="npc:ctzn_jinm_taewang_kff_001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="권사"/>
+					</filter-set>
+				</case>
+				<case indicator-social="q_494_m3_4_indi_1" msg="q_494_m3_4" npc-response="qrsp_494_5" object="npc:ctzn_gonm_master_jinwoong_des_001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="역사"/>
+					</filter-set>
+				</case>
+				<case indicator-social="q_494_m3_5_indi_1" msg="q_494_m3_5" npc-response="qrsp_494_6" object="npc:ch_ganmyowal_0001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="암살자"/>
+					</filter-set>
+				</case>
+				<case indicator-social="q_494_m3_6_indi_1" msg="q_494_m3_6" npc-response="qrsp_494_7" object="npc:ctzn_lynm_master_gammadeung_shm_001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="소환사"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_494_des_4" id="4" location-x="35669.2422" location-y="42942.4297" map="GiYunDongGul">
+			<mission id="4" name2="Mission.Name2.494_4" required-register-value="1">
+				<case msg="q_494_m4" npc-response="qrsp_494_8" object="npc:ch_murimmaeng_0006" progress-mission="y" type="talk"/>
+				<case object="zoneenv:2623_FS_Play1" object2="zoneenv2:2623_FS_Play1" progress-mission="reaction-only" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_494_des_5" id="5" location-x="39380.22" location-y="42267.71" map="GiYunDongGul" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.494_5" required-register-value="6">
+				<case mapunit-1="2300_GiYunDongGul_e494" mapunit-2="2618_mh_occultdoll_001" object="npc:mh_occultdoll_001" object2="npc:mh_occultdoll_001" progress-mission="y" type="killed"/>
+				<case object="zoneenv:2623_FS_Play1" object2="zoneenv2:2623_FS_Play1" progress-mission="reaction-only" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_494_des_6" id="6" location-x="38480.5898" location-y="43870.1758" map="GiYunDongGul">
+			<mission id="6" name2="Mission.Name2.494_6" required-register-value="1">
+				<case msg="q_494_m6" npc-response="qrsp_494_9" object="npc:ch_honchungyo_0003" progress-mission="y" type="talk"/>
+				<case object="zoneenv:2623_FS_Play2" object2="zoneenv2:2623_FS_Play2" progress-mission="reaction-only" type="env-entered"/>
+				<case object="zoneenv:2623_FS_Play1" object2="zoneenv2:2623_FS_Play1" progress-mission="reaction-only" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_494_des_7" id="7" location-x="37271.711" location-y="47215.680" map="GiYunDongGul" mission-map-type="location">
+			<mission id="7" name2="Mission.Name2.494_7" required-register-value="9">
+				<case mapunit-1="2300_GiYunDongGul_e494" mapunit-2="2618_mh_occultdoll_002" mapunit-3="2618_mh_occultdoll_002_1" object="npc:mh_occultdoll_002" object2="npc:mh_occultdoll_002" progress-mission="y" type="killed"/>
+				<case object="zoneenv:2623_FS_Play1" object2="zoneenv2:2623_FS_Play1" progress-mission="reaction-only" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_494_des_12" id="12" location-x="35303.7656" location-y="44657.3516" map="GiYunDongGul">
+			<mission id="13" name2="Mission.Name2.494_13" required-register-value="1" reward-1="494_middle_set1">
+				<case indicator-social="q_494_m8_1_indi_1" msg="q_494_m8_1" npc-response="qrsp_494_19" object="npc:ctzn_jinm_master_geonma_swd_001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="귀검사"/>
+					</filter-set>
+				</case>
+				<case indicator-social="q_494_m8_1_indi_1" msg="q_494_m8_1" npc-response="qrsp_494_10" object="npc:ctzn_jinm_master_geonma_swd_001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="검사"/>
+					</filter-set>
+				</case>
+				<case indicator-social="q_494_m8_2_indi_1" msg="q_494_m8_2" npc-response="qrsp_494_11" object="npc:ctzn_jinf_gonmyeong_foc_001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="기공사"/>
+					</filter-set>
+				</case>
+				<case indicator-social="q_494_m8_3_indi_1" msg="q_494_m8_3" npc-response="qrsp_494_12" object="npc:ctzn_jinm_taewang_kff_001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="권사"/>
+					</filter-set>
+				</case>
+				<case indicator-social="q_494_m8_4_indi_1" msg="q_494_m8_4" npc-response="qrsp_494_13" object="npc:ctzn_gonm_master_jinwoong_des_001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="역사"/>
+					</filter-set>
+				</case>
+				<case indicator-social="q_494_m8_5_indi_1" msg="q_494_m8_5" npc-response="qrsp_494_14" object="npc:ch_ganmyowal_0001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="암살자"/>
+					</filter-set>
+				</case>
+				<case indicator-social="q_494_m8_6_indi_1" msg="q_494_m8_6" npc-response="qrsp_494_15" object="npc:ctzn_lynm_master_gammadeung_shm_001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="소환사"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_494_28" object="npc:CH_JR_HonChunGyo_0001" type="approach"/>
+				<case npc-response="qrsp_494_28" object="npc:CH_JR_MuRimMaeng_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_494_des_13" id="13" location-x="31873.9219" location-y="43729.6094" map="GiYunDongGul">
+			<mission id="14" name2="Mission.Name2.494_14" required-register-value="1" reward-1="494_final_set1">
+				<case msg="q_494_m9" npc-response="qrsp_494_16" object="npc:ch_dokchogeosa_001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="15"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_494_17" object="npc:ch_dokchogeosa_001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="14"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" desc="q_494_des_11" id="11">
+			<mission id="12" name2="Mission.Name2.494_12" required-register-value="1">
+				<case faction="factionmain1" npc-response-1="qrsp_494_25" npc-response-2="qrsp_494_26" npc-response-3="qrsp_494_27" object="npc:CH_JR_HonChunGyo_0001" progress-mission="y" type="join-faction"/>
+				<case faction="factionmain1" npc-response-1="qrsp_494_22" npc-response-2="qrsp_494_23" npc-response-3="qrsp_494_24" object="npc:CH_JR_MuRimMaeng_0001" progress-mission="y" type="join-faction"/>
+				<fixed-reward job-1="귀검사" slot-1="item:quest_costum_dress_1027" slot-2="item:general_weapon_sword_1060"/>
+				<fixed-reward job-1="역사" slot-1="item:quest_costum_dress_1027" slot-2="item:general_weapon_axe_1060"/>
+				<fixed-reward job-1="암살자" slot-1="item:quest_costum_dress_1027" slot-2="item:general_weapon_dagger_1060"/>
+				<fixed-reward job-1="기공사" slot-1="item:quest_costum_dress_1027" slot-2="item:general_weapon_aura-bangle_1060"/>
+				<fixed-reward job-1="권사" slot-1="item:quest_costum_dress_1027" slot-2="item:general_weapon_gauntlet_1060"/>
+				<fixed-reward job-1="검사" slot-1="item:quest_costum_dress_1027" slot-2="item:general_weapon_sword_1060"/>
+				<fixed-reward job-1="소환사" slot-1="item:quest_costum_dress_1027" slot-2="item:general_weapon_staff_1060"/>
+			</mission>
+			<mission id="11" name2="Mission.Name2.494_11" required-register-value="1">
+				<case faction="factionmain2" npc-response-1="qrsp_494_25" npc-response-2="qrsp_494_26" npc-response-3="qrsp_494_27" object="npc:CH_JR_HonChunGyo_0001" progress-mission="y" type="join-faction"/>
+				<case faction="factionmain2" npc-response-1="qrsp_494_22" npc-response-2="qrsp_494_23" npc-response-3="qrsp_494_24" object="npc:CH_JR_MuRimMaeng_0001" progress-mission="y" type="join-faction"/>
+				<fixed-reward job-1="귀검사" slot-1="item:quest_costum_dress_1018" slot-2="item:general_weapon_sword_1082"/>
+				<fixed-reward job-1="역사" slot-1="item:quest_costum_dress_1018" slot-2="item:general_weapon_axe_1082"/>
+				<fixed-reward job-1="암살자" slot-1="item:quest_costum_dress_1018" slot-2="item:general_weapon_dagger_1082"/>
+				<fixed-reward job-1="기공사" slot-1="item:quest_costum_dress_1018" slot-2="item:general_weapon_aura-bangle_1082"/>
+				<fixed-reward job-1="권사" slot-1="item:quest_costum_dress_1018" slot-2="item:general_weapon_gauntlet_1082"/>
+				<fixed-reward job-1="검사" slot-1="item:quest_costum_dress_1018" slot-2="item:general_weapon_sword_1082"/>
+				<fixed-reward job-1="소환사" slot-1="item:quest_costum_dress_1018" slot-2="item:general_weapon_staff_1082"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_494_des_8" id="8">
+			<mission id="8" name2="Mission.Name2.494_8" required-register-value="1">
+				<case npc-response="qrsp_494_20" object="npc:CH_JR_MuRimMaeng_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_494_28" object="npc:CH_JR_HonChunGyo_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_494_des_9" id="9">
+			<mission id="9" name2="Mission.Name2.494_9" required-register-value="1">
+				<case npc-response="qrsp_494_21" object="npc:CH_JR_HonChunGyo_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_494_28" object="npc:CH_JR_MuRimMaeng_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.494_10" required-register-value="1">
+				<case npc-response="qrsp_494_29" object="npc:CH_DokChoGeoSa_001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_494_28" object="npc:CH_JR_HonChunGyo_0001" type="approach"/>
+				<case npc-response="qrsp_494_28" object="npc:CH_JR_MuRimMaeng_0001" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_593" broadcast-category="field" category="normal" desc="q_593_sum" grade="1" group2="QG_BooNongWestNorth" id="593" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.593" save-type="all">
+		<acquisition level="43" preceding-quest-1="q_sub_587" preceding-quest-2="q_sub_597" preceding-quest-check="and" preceding-quest-count-1="1" recommended-level="45">
+			<case acquire-quest="y" npc-response="qrsp_593_1" object="npc:CH_CT_JeGukGun_0145" type="talk"/>
+		</acquisition>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.593_2" required-register-value="1">
+				<case object="zone:Zone_Naru_WangDeGan" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="npc:CH_CT_Citizen_0440" progress-mission="y" type="npc-bleeding-occured"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.593_3" required-register-value="1">
+				<case indicator="default" loot-item="Quest_Scroll_BackChung_0005" looting="q_593_1_icon" object="npc:MH_CT_HaOBang_0024" object2="npc:MH_CT_HaOBang_0024" progress-mission="y" type="loot"/>
+				<case object="zone:Zone_Naru_WangDeGan" progress-mission="reaction-only" type="enter-zone"/>
+				<case loot-item="Quest_Scroll_BackChung_0005" looting="q_593_1_icon" object="npc:MH_CT_HaOBang_0025" object2="npc:MH_CT_HaOBang_0025" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.593_4" required-register-value="1">
+				<case item="Quest_Scroll_BackChung_0005" msg="q_593_2" progress-mission="y" type="talk-to-item"/>
+				<case object="zone:Zone_Naru_WangDeGan" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_593_4" object="npc:CH_CT_JeGukGun_0245" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.593_5" required-register-value="1" reward-1="593_final_set1">
+				<case npc-response="qrsp_593_2" object="npc:CH_CT_JeGukGun_0245" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Scroll_BackChung_0005" item-count-1="1"/>
+				<case object="zone:Zone_Naru_WangDeGan" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_BackChung_0005" item-count-1="1"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.593_1" required-register-value="1">
+				<case npc-response="qrsp_593_5" object="npc:CH_CT_Citizen_0440" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_Naru_WangDeGan" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_593_6" object="npc:CH_CT_JeGukGun_0145" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

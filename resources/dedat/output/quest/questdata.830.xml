@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_830" broadcast-category="field" category="normal" day-of-week="none" desc="q_830_sum" grade="1" group2="QG_SnowMountSouth" id="830" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.830" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="n" level="47" preceding-quest-1="q_epic_282" preceding-quest-check="and" preceding-quest-mission-step-1="7" recommended-level="49">
+			<case acquire-quest="y" completion-count-op="ge" npc-response="qrsp_830_1" object="npc:CH_CT_Chef_0003" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.830_1" required-register-value="1">
+				<case object="zone:zone_YakChoHouse" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="npc:CH_CT_HerbDigger_0001" object2="npc:CH_CT_HerbDigger_0001" progress-mission="y" state-social="statesocial_dance" type="pc-social"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.830_3" required-register-value="1">
+				<case npc-response="qrsp_830_3" object="npc:CH_CT_Chef_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.830_4" required-register-value="10">
+				<case mapunit-1="5220_ME_CT_Wolf_0029_s830" object="npc:ME_CT_Wolf_0029" object2="npc:ME_CT_Wolf_0029" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_MamMoSu_0001" object2="npc:ME_CT_MamMoSu_0001" progress-mission="y" progress-value="3" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.830_5" required-register-value="1" reward-1="830_final_set1">
+				<case completion-count="0" completion-count-op="ge" npc-response="qrsp_830_4" object="npc:CH_CT_Flower_0006" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.830_2" required-register-value="1">
+				<case npc-response="qrsp_830_2" object="npc:CH_CT_HerbDigger_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_YakChoHouse" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_790" broadcast-category="field" category="normal" desc="q_790_sum" grade="1" group2="QG_BooNongWestSouth" id="790" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.790" save-type="all">
+		<acquisition level="43" preceding-quest-1="q_epic_262" preceding-quest-2="q_sub_546" preceding-quest-check="and" preceding-quest-mission-step-1="5" recommended-level="45">
+			<case acquire-quest="y" npc-response="qrsp_790_1" object="npc:CH_CT_JalNanChae_0006" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.790_1" required-register-value="10">
+				<case looting="q_790_1_icon" object="npc:ME_CT_FrogTribeC_0018" object2="npc:ME_CT_FrogTribeC_0018" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_790_3" object="npc:CH_CT_JalNanChae_0006" type="approach"/>
+				<case looting="q_790_1_icon" object="npc:ME_CT_FrogTribeC_0019" object2="npc:ME_CT_FrogTribeC_0019" progress-mission="y" type="loot"/>
+				<case looting="q_790_1_icon" object="npc:ME_CT_BelliedFrog_0063" object2="npc:ME_CT_BelliedFrog_0063" progress-mission="y" type="loot"/>
+				<case looting="q_790_1_icon" mapunit-1="5001_ME_CT_FrogTribeC_0018_s790" object="npc:ME_CT_BelliedWaterFrog_0022" object2="npc:ME_CT_BelliedWaterFrog_0022" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.790_2" required-register-value="1" reward-1="790_final_set1">
+				<case npc-response="qrsp_790_2" object="npc:CH_CT_JalNanChae_0006" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

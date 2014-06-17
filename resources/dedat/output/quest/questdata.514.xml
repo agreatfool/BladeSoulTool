@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_514" broadcast-category="field" category="epic" completed-desc="q_514_completed" completed-list="y" desc="q_514_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="514" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.514" save-type="all">
+		<acquisition level="1" recommended-level="27" sort-no="315"/>
+		<mission-step id="1" location-x="-56780.1797" location-y="-5563.8633" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.514_1" required-register-value="1">
+				<case indicator-social="q_514_m1_indi_1" msg="q_514_m1" npc-response="qrsp_514_1" object="npc:ch_unguksoldier_009" progress-mission="y" type="talk" visible-object="n"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-52025.6836" location-y="-2487.4258" map="yeolsajeedea">
+			<mission id="2" name2="Mission.Name2.514_2" required-register-value="10">
+				<case looting="q_514_Quest_meat02_1_icon" mapunit-1="3010_me_juno_0004" mapunit-2="3010_me_juno_0004_1" object="npc:me_juno_0004" object2="npc:me_juno_0004" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_YuGaCHN_BaekUn_1">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_515"/>
+		</completion>
+		<mission-step id="3" location-x="-56780.1797" location-y="-5563.8633" map="yeolsajeedea">
+			<mission id="3" name2="Mission.Name2.514_3" required-register-value="1">
+				<case indicator-social="q_514_m3_indi_1" msg="q_514_m3" npc-response="qrsp_514_2" object="npc:ch_unguksoldier_026" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-56780.1797" location-y="-5563.8633" map="yeolsajeedea">
+			<mission id="4" name2="Mission.Name2.514_4" required-register-value="1" reward-1="514_final_set1">
+				<case indicator-social="q_514_m4_indi_1" msg="q_514_m4" npc-response="qrsp_514_3" object="npc:ch_unguksoldier_009" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

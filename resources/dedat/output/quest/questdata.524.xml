@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_524" broadcast-category="field" category="epic" completed-desc="q_524_completed" completed-list="y" desc="q_524_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="524" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.524" save-type="all">
+		<acquisition level="1" recommended-level="32" sort-no="325"/>
+		<mission-step id="1" location-x="17124.1426" location-y="-31975.7715" map="sajisukrim" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.524_1" required-register-value="1">
+				<case indicator-social="q_524_m1_indi_1" mapunit-1="3020_Guide_E524" msg="q_524_m1" npc-response="qrsp_524_1" object="npc:ch_jukun_0001" progress-mission="y" type="talk" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_524_des_2" id="2" location-x="14924.0615" location-y="-40599.3867" map="sanghumadang">
+			<mission id="2" name2="Mission.Name2.524_2" required-register-value="3">
+				<case object="npc:ce_yeongahcho_0001" progress-mission="y" type="npc-manipulate"/>
+				<case gadget-required="empty" mapunit-2="3020_e_onoff_requiem_01" object="zoneenv:e_onoff_requiem_01" object2="zoneenv2:e_onoff_requiem_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_RedMarbleA" gadget-required="carry-and-remove" mapunit-1="3066_ME_Moran_004" object-1="npc:me_moran_004" object2-1="npc:me_moran_004" progress-mission="reaction-only" skill="Gadget_Q_RedMarbleA" skill3="Gadget_Q_RedMarbleA" type="skill"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="13696.127" location-y="-36820.1563" map="hangari">
+			<mission id="3" name2="Mission.Name2.524_3" required-register-value="1" reward-1="524_final_set1">
+				<case indicator-social="q_524_m3_indi_1" msg="q_524_m3" npc-response="qrsp_524_2" object="npc:ch_pottery_011" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_525"/>
+		</completion>
+	</quest>
+</table>

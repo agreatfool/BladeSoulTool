@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_685" broadcast-category="field" category="normal" desc="q_685_sum" grade="1" group2="QG_BooNongWestSouth" id="685" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.685" save-type="all">
+		<acquisition level="43" preceding-quest-1="q_epic_262" preceding-quest-2="q_sub_683" preceding-quest-3="q_sub_681" preceding-quest-check="and" recommended-level="45">
+			<case acquire-quest="y" npc-response="qrsp_685_1" object="npc:CH_CT_ChungYangI_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.685_1" required-register-value="1" reward-1="685_final_set1">
+				<case npc-response="qrsp_685_3" object="npc:CH_CT_LeeMoongRyong_0003" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_685_5" object="npc:CH_CT_ChungYangI_0001" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

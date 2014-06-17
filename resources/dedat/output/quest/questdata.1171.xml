@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="factionmain1" alias="q_sub_1171" attraction-1="faction-battle-field-zone:BuYuDo" attraction-2="dungeon:Dungeon_Buyudo" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1171_sum" district-1="suwal" grade="1" group2="QG_Booyudo" id="1171" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.1171" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" faction="factionmain1" level="48" preceding-quest-1="q_sub_1169" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" completion-count="0" npc-response="qrsp_1171_1" object="npc:CE_CT_Board_0035" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1171_1" required-register-value="5">
+				<case object="faction:factionmain2" object2="faction:factionmain2" progress-mission="y" type="killed" valid-zone-1="zone_buyoudo_new"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1171_2" required-register-value="30">
+				<case object="npc:mh_honcheongyo_0003" object2="npc:mh_honcheongyo_0003" progress-mission="y" type="killed"/>
+				<case object="npc:mh_honcheongyo_0004" object2="npc:mh_honcheongyo_0004" progress-mission="y" type="killed"/>
+				<case object="npc:mh_honcheongyo_0006" object2="npc:mh_honcheongyo_0006" progress-mission="y" type="killed"/>
+				<case object="npc:mh_honcheongyo_0012" object2="npc:mh_honcheongyo_0012" progress-mission="y" type="killed"/>
+				<case object="npc:mh_honcheongyo_0016" object2="npc:mh_honcheongyo_0016" progress-mission="y" type="killed"/>
+				<case object="npc:mh_honcheongyo_0024" object2="npc:mh_honcheongyo_0024" progress-mission="y" type="killed"/>
+				<case object="npc:mh_honcheongyo_0036" object2="npc:mh_honcheongyo_0036" progress-mission="y" type="killed"/>
+				<case object="npc:mh_honcheongyo_0044" object2="npc:mh_honcheongyo_0044" progress-mission="y" type="killed"/>
+				<case object="npc:mh_honcheongyo_0046" object2="npc:mh_honcheongyo_0046" progress-mission="y" type="killed"/>
+				<case object="npc:mh_honcheongyo_0062" object2="npc:mh_honcheongyo_0062" progress-mission="y" type="killed"/>
+				<case object="npc:mh_honcheongyo_0063" object2="npc:mh_honcheongyo_0063" progress-mission="y" type="killed"/>
+				<case object="npc:mh_honcheongyo_0064" object2="npc:mh_honcheongyo_0064" progress-mission="y" type="killed"/>
+				<case object="npc:mh_honcheongyo_0066" object2="npc:mh_honcheongyo_0066" progress-mission="y" type="killed"/>
+				<case object="npc:mh_honcheongyo_0079" object2="npc:mh_honcheongyo_0079" progress-mission="y" type="killed"/>
+				<case object="npc:CH_HonChunGyo_0042" object2="npc:CH_HonChunGyo_0042" progress-mission="y" type="killed"/>
+				<case object="npc:CH_HonChunGyo_0041" object2="npc:CH_HonChunGyo_0041" progress-mission="y" type="killed"/>
+				<case object="npc:CH_HonChunGyo_0038" object2="npc:CH_HonChunGyo_0038" progress-mission="y" type="killed"/>
+				<case object="npc:CH_HonChunGyo_0039" object2="npc:CH_HonChunGyo_0039" progress-mission="y" type="killed"/>
+				<case object="npc:CH_CT_HonChunGyo_0074" object2="npc:CH_CT_HonChunGyo_0074" progress-mission="y" type="killed"/>
+				<case object="npc:CH_CT_HonChunGyo_0075" object2="npc:CH_CT_HonChunGyo_0075" progress-mission="y" type="killed"/>
+				<case mapunit-1="7100_HonCheonGyo_s1171" object="npc:CH_CT_HonChunGyo_0077" object2="npc:CH_CT_HonChunGyo_0077" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.1171_3" required-register-value="1" reward-1="1171_final_set1" reward-2="1171_final_set2">
+				<case completion-count="0" npc-response="qrsp_1171_2" object="npc:ch_murimmaeng_0042" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

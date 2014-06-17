@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1277" broadcast-category="field" category="normal" desc="q_1277_sum" district-1="suwal" grade="1" group2="QG_GuidosiSouth" id="1277" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1277" save-type="all">
+		<acquisition level="41" preceding-quest-1="q_epic_928" preceding-quest-2="q_sub_1276" preceding-quest-check="and" recommended-level="43" talk-to-self-guide-msg="Msg.AirDash.quest1">
+			<case acquire-quest="y" item="q_1277_Quest_hair_growth_solution_manual_1_icon" msg="q_1277_1" type="talk-to-self"/>
+		</acquisition>
+		<mission-step desc="q_1277_des_1" id="3">
+			<mission id="3" name2="Mission.Name2.1277_3" required-register-value="1" reward-1="1277_final_set1">
+				<case grocery="general_grocery_quest_0016" grocery-count="1" npc-response="qrsp_1277_1" object="npc:CE_DokChoGeoSa_0007" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_1277_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.1277_1" required-register-value="1">
+				<case npc-response="qrsp_1277_2" object="npc:CH_SW_BeonYang_0002" progress-mission="y" remove-grocery="n" type="approach"/>
+				<case npc-response="qrsp_1277_6" object="npc:CH_SW_BeonA_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_1277_des_1" id="2">
+			<mission id="2" name2="Mission.Name2.1277_2" required-register-value="1">
+				<case npc-response="qrsp_1277_5" object="npc:CH_SW_BeonYang_0002" type="approach"/>
+				<case npc-response="qrsp_1277_3" object="npc:CH_SW_BeonA_0002" progress-mission="y" remove-grocery="n" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

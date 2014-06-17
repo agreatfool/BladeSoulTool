@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="factionmain1" alias="q_sub_882" broadcast-category="field" category="normal" day-of-week="daily" desc="q_882_sum" district-1="deasamak" grade="4" group2="QG_OSaekAmDoEast" id="882" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.882" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" faction="factionmain1" level="34" preceding-quest-1="q_epic_535" preceding-quest-check="and" recommended-level="36">
+			<case acquire-quest="y" indicator-social="q_882_s_indi_1" msg="q_882_s" npc-response="qrsp_882_1" object="npc:ch_murimmaeng_0012" type="talk">
+				<filter-set>
+					<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain1"/>
+				</filter-set>
+			</case>
+		</acquisition>
+		<mission-step id="1" location-x="32977.6875" location-y="59760.2344" map="oseakamdo">
+			<mission id="1" name2="Mission.Name2.882_1" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="3037_MH_HonChunGyo_0002 " object="npc:mh_honchungyo_0002" object2="npc:mh_honchungyo_0002" prob="100" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="40036.375" location-y="61038.1016" map="oseakamdo">
+			<mission id="2" name2="Mission.Name2.882_2" required-register-value="1" reward-1="882_final_set1" reward-2="882_final_set2">
+				<case indicator-social="q_882_m2_indi_1" msg="q_882_m2" npc-response="qrsp_882_2" object="npc:ch_murimmaeng_0012" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

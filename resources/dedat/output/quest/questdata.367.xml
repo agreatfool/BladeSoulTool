@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_367" broadcast-category="field" category="normal" desc="q_367_sum" district-1="jeryoungrim" grade="1" group="제룡림(흑음림)" group2="QG_HuekUmmRim" id="367" map-group-1-1="jeryoungrim" max-repeat="1" name="탄연방의 심부름꾼" name2="Quest.Name2.367" save-type="all">
+		<acquisition level="9" preceding-quest-1="q_sub_374" preceding-quest-check="and" recommended-level="11">
+			<case acquire-quest="y" indicator-social="q_367_s_indi_1" msg="q_367_s" npc-response="qrsp_367_1" object="npc:ch_dweller_022" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-18126.8203" location-y="-6037.1328" map="huekummrim">
+			<mission id="1" name="탄연방 주문서 탈환" name2="Mission.Name2.367_1" required-register-value="12">
+				<case object="npc:mob_jinm_bandit_member_clb_002" object2="npc:mob_jinm_bandit_member_clb_002" progress-mission="y" type="killed"/>
+				<case object="npc:mh_nokrimdo_0027" object2="npc:mh_nokrimdo_0027" progress-mission="y" type="killed"/>
+				<case mapunit-1="2200_Mob_JinM_Bandit_Member_Clb_002" object="npc:mh_nokrimdo_0028" object2="npc:mh_nokrimdo_0028" progress-mission="y" type="killed"/>
+				<case object="npc:mob_jinm_bandit_member_fst_002" object2="npc:mob_jinm_bandit_member_fst_002" progress-mission="y" type="killed"/>
+				<case object="npc:mh_nokrimdo_0076" object2="npc:mh_nokrimdo_0076" progress-mission="y" type="killed"/>
+				<case object="npc:mh_nokrimdo_0077" object2="npc:mh_nokrimdo_0077" progress-mission="y" type="killed"/>
+				<case object="npc:mh_nokrimdo_0030" object2="npc:mh_nokrimdo_0030" progress-mission="y" type="killed"/>
+				<case mapunit-1="2200_Mob_JinM_Bandit_Member_Fst_002" object="npc:mh_nokrimdo_0029" object2="npc:mh_nokrimdo_0029" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="3" location-x="-9742.5586" location-y="-10312.5508" map="huekummrim">
+			<mission id="3" name="숯 가마터의 탄연방주 서문연상과 대화" name2="Mission.Name2.367_3" required-register-value="1" reward-1="367_final_set1">
+				<case indicator-social="q_367_m3_indi_1" msg="q_367_m3" npc-response="qrsp_367_3" object="npc:ch_dweller_023" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.367_2" required-register-value="1">
+				<case indicator-social="q_367_m3_indi_1" msg="q_367_m2" npc-response="qrsp_367_2" object="npc:ch_dweller_022" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

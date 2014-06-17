@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_558" broadcast-category="field" category="normal" day-of-week="daily" desc="q_558_sum" district-1="deasamak" grade="1" group2="QG_ToMunJinSouth" id="558" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.558" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="20" preceding-quest-1="q_epic_540" preceding-quest-check="and" recommended-level="22">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" indicator-social="q_558_s_indi_1" msg="q_558_s" npc-response="qrsp_558_1" object="npc:ch_unguksoldier_015" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator-social="q_558_re_s_indi_1" msg="q_558_re_s" npc-response="qrsp_558_3" object="npc:ch_unguksoldier_015" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_558_5" object="npc:ce_board_0010" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-62082.5273" location-y="-86274.6875" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.558_1" required-register-value="10">
+				<case mapunit-1="3000_MH_Bandit_0013" object="npc:mh_bandit_0013" object2="npc:mh_bandit_0013" progress-mission="y" type="killed"/>
+				<case object="npc:mh_nokrimdo_0001" object2="npc:mh_nokrimdo_0001" progress-mission="y" type="killed"/>
+				<case object="npc:mh_nokrimdo_0002" object2="npc:mh_nokrimdo_0002" progress-mission="y" type="killed"/>
+				<case object="npc:mh_bandit_0019" object2="npc:mh_bandit_0019" progress-mission="y" type="killed"/>
+				<case object="npc:mh_bandit_0018" object2="npc:mh_bandit_0018" progress-mission="y" type="killed"/>
+				<case object="npc:mh_bandit_0017" object2="npc:mh_bandit_0017" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-64002.7656" location-y="-81730.125" map="toemunjean">
+			<mission id="2" name2="Mission.Name2.558_2" required-register-value="1" reward-1="558_final_set1" reward-2="558_final_set2">
+				<case completion-count="1" completion-count-op="lt" indicator-social="q_558_m2_indi_1" msg="q_558_m2" npc-response="qrsp_558_2" object="npc:ch_unguksoldier_015" progress-mission="y" type="talk"/>
+				<case completion-count="1" indicator-social="q_558_re_m2_indi_1" msg="q_558_re_m2" npc-response="qrsp_558_4" object="npc:ch_unguksoldier_015" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_558_1_icon" msg="q_558_m4" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

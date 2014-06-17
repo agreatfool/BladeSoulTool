@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_305" broadcast-category="field" category="epic" completed-desc="q_305_completed" completed-list="y" desc="q_305_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="305" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.305" save-type="all">
+		<acquisition level="1" recommended-level="4" sort-no="206"/>
+		<mission-step completion-type="and" desc="q_305_des_1" id="1" location-x="-37263.8359" location-y="-55047.2969" map="MeMaRyun_Dun">
+			<mission id="1" name2="Mission.Name2.305_1" required-register-value="1">
+				<case msg="q_305_m1" npc-response="qrsp_305_1" object="npc:ctzn_jinm_cheongryeongctzn_gwakdekyu_001" progress-mission="y" type="talk"/>
+				<case object="zoneenv:2723_footswitch_1" object2="zoneenv2:2723_footswitch_1" progress-mission="reaction-only" type="env-entered"/>
+				<case object="zone:zone_mangjasup_dun_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_305_des_2" id="2" location-x="-34103.6641" location-y="-50877.5859" map="mangjasup">
+			<mission id="2" name2="Mission.Name2.305_2" required-register-value="1">
+				<case indicator-social="q_305_m2_indi_1" msg="q_305_m2" npc-response="qrsp_305_2" object="npc:ctzn_jinm_jakyungdan_gongsamsik_kff_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_305_des_3" id="3" location-x="-34103.6641" location-y="-50877.5859" map="mangjasup">
+			<mission id="3" name2="Mission.Name2.305_3" required-register-value="1">
+				<case indicator-social="q_305_m3_indi_1" msg="q_305_m3" npc-response="qrsp_305_3" object="npc:ch_dadanha_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_305_des_4" id="4" location-x="-34103.6641" location-y="-50877.5859" map="mangjasup">
+			<mission id="4" name2="Mission.Name2.305_4" required-register-value="1" reward-1="305_final_set1">
+				<case gadget-required="dont-care" indicator-social="q_305_m4_indi_1" msg="q_305_m4" npc-response="qrsp_305_4" object="npc:ch_namsoyu_0003" progress-mission="y" type="talk"/>
+				<case object="zone:zone_mangjasup_gerjeum_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_306"/>
+		</completion>
+		<transit id="1" zone="zone_mangjasup_gerjeum_sp">
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

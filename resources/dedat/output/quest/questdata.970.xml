@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_970" broadcast-category="field" category="normal" day-of-week="none" desc="q_970_sum" grade="1" group2="QG_KiYoenCliff" id="970" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.970" reset-type="none" save-type="all">
+		<acquisition level="13" preceding-quest-1="q_sub_439" preceding-quest-check="and" recommended-level="15">
+			<case acquire-quest="y" npc-response="qrsp_970_1" object="npc:ch_dweller_033" type="talk"/>
+			<case npc-response="qrsp_970_3" object="npc:CE_DokChoGeoSa_0002" type="approach"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.970_1" required-register-value="1" reward-1="970_final_set1">
+				<case npc-response="qrsp_970_2" object="npc:CE_DokChoGeoSa_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

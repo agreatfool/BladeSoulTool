@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_34" broadcast-category="always" category="normal" content-type="gather" craft-type="gather" district-1="deasamak" grade="1" group2="QG_Gathering" id="34" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.34" save-type="all" show-tutorial-tag="y" tutorial="y">
+		<acquisition level="11" production-exp="0" production-id="gathering-type-2" recommended-level="30" reward-1="34_final_set1">
+			<case acquire-quest="y" env-looting="q_34_1_icon" object="zoneenv:e_onoff_2440soil_01" object2="zoneenv2:e_onoff_2440soil_01" progress-mission="y" type="manipulate"/>
+			<case acquire-quest="y" env-looting="q_34_1_icon" object="zoneenv:e_onoff_2420soil_01" object2="zoneenv2:e_onoff_2420soil_01" progress-mission="y" type="manipulate"/>
+		</acquisition>
+	</quest>
+</table>

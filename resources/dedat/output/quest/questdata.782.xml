@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_782" broadcast-category="field" category="normal" desc="q_782_sum" district-1="deasamak" grade="1" group2="QG_SaJiSeokRimEast" id="782" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.782" save-type="all">
+		<acquisition level="31" preceding-quest-1="q_epic_527" preceding-quest-check="and" recommended-level="33">
+			<case acquire-quest="y" indicator-social="q_782_s_indi_1" msg="q_782_s" npc-response="qrsp_782_1" object="npc:ch_muun_0008" type="talk"/>
+		</acquisition>
+		<mission-step id="2" location-x="34434.254" location-y="-18674.316" map="sajisukrim">
+			<mission id="3" name2="Mission.Name2.782_3" required-register-value="1" reward-1="782_final_set1">
+				<case indicator-social="q_782_m3_indi_1" msg="q_782_m3" npc-response="qrsp_782_2" object="npc:ch_mayeongganggun_0019" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1" location-x="37653.328" location-y="-13147.227" map="sajisukrim">
+			<mission id="1" name2="Mission.Name2.782_1" required-register-value="10">
+				<case mapunit-1="3024_MH_BigulBogul_0002" mapunit-2="3024_MH_BigulBogul_0002_1" mapunit-3="3024_MH_BigulBogul_0002_2" object="npc:mh_bigulbogul_0002" object2="npc:mh_bigulbogul_0002" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.782_2" required-register-value="10">
+				<case mapunit-1="3024_mh_bigulbogul_0003" mapunit-2="3024_mh_bigulbogul_0003_1" object="npc:mh_bigulbogul_0003" object2="npc:mh_bigulbogul_0003" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

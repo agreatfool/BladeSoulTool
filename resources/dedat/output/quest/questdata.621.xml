@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_621" broadcast-category="field" category="normal" desc="q_621_sum" district-1="deasamak" grade="1" group2="QG_HwangPungSaMak" id="621" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.621" save-type="all">
+		<acquisition level="25" preceding-quest-1="q_epic_514" preceding-quest-2="q_sub_620" preceding-quest-check="and" recommended-level="27">
+			<case acquire-quest="y" gadget-required="empty" indicator-social="q_621_s_indi_1" msg="q_621_s" npc-response="qrsp_621_1" object="npc:ch_scholar_005" progress-mission="reaction-only" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_621_des_1" id="1" location-x="-51093.4297" location-y="11869.2891" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.621_1" required-register-value="1">
+				<case object="npc:ch_bonemaskbiga_0001" progress-mission="y" type="npc-manipulate"/>
+				<case mapunit-1="3010_ME_BoneMaskBigA_0003_1" mapunit-2="3010_ME_BoneMaskBigA_0003_1_1" object="npc:ch_bonemaskthina_0001" progress-mission="y" type="npc-manipulate"/>
+				<case button-text-accept="q_621_m1_re_ok" button-text-cancel="q_621_m1_re_no" gadget-required="empty" indicator="quest-normal-can-progress" msg="q_621_m1_re" npc-response="qrsp_621_2" object="npc:ch_scholar_005" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-56686.9531" location-y="7860.5977" map="yeolsajeedea">
+			<mission id="2" name2="Mission.Name2.621_2" required-register-value="1" reward-1="621_final_set1">
+				<case indicator-social="q_621_m2_indi_1" msg="q_621_m2" npc-response="qrsp_621_3" object="npc:ch_scholar_005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

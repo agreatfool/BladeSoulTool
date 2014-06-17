@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_349" broadcast-category="field" category="normal" desc="q_349_sum" district-1="jeryoungrim" grade="1" group="제룡림(월영 공동묘지)" group2="QG_WalYoungCemetery" id="349" map-group-1-1="jeryoungrim" max-repeat="1" name="혈강시의 배후 (1)" name2="Quest.Name2.349" save-type="all">
+		<acquisition level="3" preceding-quest-1="q_epic_305" preceding-quest-check="and" recommended-level="5">
+			<case acquire-quest="y" indicator-social="q_349_s_indi_1" msg="q_349_s" npc-response="qrsp_349_1" object="npc:ctzn_jinm_moyongjung_001" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" desc="q_349_des_1" id="1" location-x="-35062.7813" location-y="-35591.5938" map="mangjasup">
+			<mission id="1" name="혈강시의 부적 획득" name2="Mission.Name2.349_1" required-register-value="8">
+				<case looting="q_349_grocery_charm_1_icon" mapunit-1="2000_sub_mob_hnm_mlnd_spctr_gangsi_baby_001" mapunit-2="2000_sub_mob_hnm_mlnd_spctr_gangsi_baby_001_1" mapunit-3="2000_sub_mob_hnm_mlnd_spctr_gangsi_baby_001_2" mapunit-4="2000_sub_mob_hnm_mlnd_spctr_gangsi_baby_001_3" object="npc:mob_hnm_mlnd_spctr_gangsi_baby_001" object2="npc:mob_hnm_mlnd_spctr_gangsi_baby_001" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-35062.7813" location-y="-35591.5938" map="mangjasup">
+			<mission id="2" name="화장터에 있는 영환도사 모용중에게 보고" name2="Mission.Name2.349_2" required-register-value="1" reward-1="349_final_set1">
+				<case indicator-social="q_349_m2_indi_1" msg="q_349_m2" npc-response="qrsp_349_2" object="npc:ctzn_jinm_moyongjung_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="factionmain1" alias="q_sub_1169" broadcast-category="field" category="normal" desc="q_1169_sum" district-1="suwal" grade="1" group2="QG_Booyudo" id="1169" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.1169" save-type="all">
+		<acquisition faction="factionmain1" level="48" preceding-quest-1="q_epic_277" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" item="q_1169_1_icon" msg="q_1169_1" type="talk-to-self"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1169_1" required-register-value="1">
+				<case npc-response="qrsp_1169_1" object="npc:CH_CT_MuRimMaeng_0080" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1169_3" required-register-value="1" reward-1="1169_final_set1">
+				<case npc-response="qrsp_1169_3" object="npc:ch_murimmaeng_0040" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1169_2" required-register-value="1">
+				<case mapunit-1="7100_zone_buyoudo_new_s1169_s1170" object="zone:zone_buyoudo_new" progress-mission="y" type="enter-zone"/>
+				<case npc-response="qrsp_1169_2" object="npc:CH_CT_MuRimMaeng_0080" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1314" attraction-1="classic-field-zone:Haemoojin_Classic" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1314_sum" grade="1" group2="QG_ChungGakEastJiBu" id="1314" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1314" reset-type="daily" save-type="all">
+		<acquisition level="43" preceding-quest-1="q_sub_1127" preceding-quest-2="q_sub_1035" preceding-quest-check="or" recommended-level="46">
+			<case acquire-quest="y" npc-response="qrsp_1314_1" object="npc:ch_kyeongchunmaeng_0068" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1314_1" required-register-value="1">
+				<case looting="q_1314_1_icon" object="npc:me_chunggakb2boss_0003" object2="npc:me_chunggakb2boss_0003" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1314_2" required-register-value="1">
+				<case looting="q_1314_2_icon" object="npc:me_chunggakb2boss_0007" object2="npc:me_chunggakb2boss_0007" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.1314_3" required-register-value="1">
+				<case looting="q_1314_4_icon" object="npc:mh_chunggakb2boss_0005" object2="npc:mh_chunggakb2boss_0005" progress-mission="y" type="loot"/>
+				<case looting="q_1314_3_icon" object="npc:mh_chunggakb2boss_0004" object2="npc:mh_chunggakb2boss_0004" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="4" name2="Mission.Name2.1314_4" required-register-value="1" reward-1="1314_final_set1" reward-2="1314_final_set2">
+				<case npc-response="qrsp_1314_2" object="npc:ch_kyeongchunmaeng_0068" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_1314_5_icon" msg="q_1314_3" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

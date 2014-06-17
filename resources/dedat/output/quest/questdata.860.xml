@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_860" broadcast-category="field" category="normal" desc="q_860_sum" district-1="deasamak" grade="1" group2="QG_OSaekAmDoWest" id="860" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.860" save-type="all">
+		<acquisition level="33" preceding-quest-1="q_epic_533" preceding-quest-check="and" recommended-level="35">
+			<case acquire-quest="y" indicator-social="q_860_s_indi_1" msg="q_860_s" npc-response="qrsp_860_1" object="npc:ch_blackmarket_0002" type="talk"/>
+			<case indicator-social="q_860_s_indi_2" npc-response="qrsp_860_4" object="npc:ch_subfactioncostume_0007" type="approach"/>
+			<case indicator-social="q_860_s_indi_3" npc-response="qrsp_860_7" object="npc:ch_shinryong_051" type="approach"/>
+		</acquisition>
+		<mission-step desc="q_860_des_1" id="1" location-x="33829.5938" location-y="38340.7617" map="oseakamdo">
+			<mission id="1" name2="Mission.Name2.860_1" required-register-value="1">
+				<case indicator-social="q_860_m1_indi_1" msg="q_860_m1" npc-response="qrsp_860_2" object="npc:ch_blackmarket_0003" progress-mission="y" type="talk" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_860_des_2" id="2" location-x="34194.7031" location-y="36941.1953" map="oseakamdo">
+			<mission id="2" name2="Mission.Name2.860_2" required-register-value="12">
+				<case object="npc:me_wolf_0003" object2="npc:me_wolf_0003" progress-mission="y" type="killed"/>
+				<case mapunit-1="3030_ME_Wolf_0003" object="npc:me_wolfbaby_0001" object2="npc:me_wolfbaby_0001" progress-mission="y" type="killed"/>
+				<case object="npc:me_wolf_0011" object2="npc:me_wolf_0011" prob="100" progress-mission="y" type="killed"/>
+				<case object="npc:me_wolf_0016" object2="npc:me_wolf_0016" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_860_9" object="npc:ch_blackmarket_0003" type="approach" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="34194.7031" location-y="34446.3125" map="dalgokchon">
+			<mission id="3" name2="Mission.Name2.860_3" required-register-value="1" reward-1="860_final_set1">
+				<case indicator-social="q_860_m3_indi_1" msg="q_860_m3" npc-response="qrsp_860_3" object="npc:ch_blackmarket_0002" progress-mission="y" type="talk"/>
+				<case indicator-social="q_860_m3_indi_2" npc-response="qrsp_860_6" object="npc:ch_blackmarket_0004" type="approach"/>
+				<case indicator-social="q_860_m3_indi_3" npc-response="qrsp_860_8" object="npc:ch_dojuksang_0001" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

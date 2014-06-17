@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_861" broadcast-category="field" category="normal" desc="q_861_sum" district-1="deasamak" grade="1" group2="QG_OSaekAmDoWest" id="861" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.861" save-type="all">
+		<acquisition level="33" preceding-quest-1="q_epic_533" preceding-quest-check="and" recommended-level="35">
+			<case acquire-quest="y" indicator-social="q_861_s_indi_1" msg="q_861_s" npc-response="qrsp_861_1" object="npc:ch_blackmarket_0001" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_861_des_1" id="1" location-x="37780.125" location-y="36832.434" map="dalgokchon" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.861_1" required-register-value="1" reward-1="861_final_set1">
+				<case gadget="q_deadbody_piga" gadget-required="carry-and-remove" indicator-social="q_861_m1_indi_1" msg="q_861_m1" npc-response="qrsp_861_2" object="npc:ch_blackmarket_0001" progress-mission="y" type="talk"/>
+				<case gadget="q_deadbody_piga" gadget-required="not-a" mapunit-1="3090_ME_PigBig_0002" mapunit-2="3090_ME_PigBig_0002_1" object="npc:me_pigbig_0002" object2="npc:me_pigbig_0002" progress-mission="reaction-only" type="killed"/>
+				<case indicator-social="q_861_m1_indi_2" npc-response="qrsp_861_3" object="npc:ch_shinryong_051" type="approach"/>
+				<case indicator-social="q_861_m1_indi_3" npc-response="qrsp_861_4" object="npc:ch_blackmarket_0005" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

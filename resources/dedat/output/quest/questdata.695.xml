@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_695" broadcast-category="field" category="epic" completed-desc="q_695_completed" completed-list="y" desc="q_695_sum" grade="1" group2="QG_BaeCheongEpic" id="695" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.695" save-type="all">
+		<acquisition level="1" recommended-level="50" sort-no="530"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.695_1" required-register-value="1">
+				<case mapunit-1="5140_CH_CT_JaKyoungDan_0032_e695" npc-response="qrsp_695_1" object="npc:CH_CT_JaKyoungDan_0032" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_695_9" object="npc:CH_CT_DoCheonPung_0005" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.695_2" required-register-value="1">
+				<case npc-response="qrsp_695_2" object="npc:CH_CT_JaKyoungDan_0032" type="approach"/>
+				<case npc-response="qrsp_695_4" object="npc:CH_CT_DoCheonPung_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-15725.87" location-y="-11579.50" map="SeolHaeMaEul" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.695_3" required-register-value="1">
+				<case npc-response="qrsp_695_5" object="npc:CH_CT_DoCheonPung_0017" type="approach"/>
+				<case mapunit-1="5140_Guide_e695" mapunit-2="5151_Guide_e695" mapunit-3="5200_Guide_e695" npc-response="qrsp_695_6" object="npc:CE_CT_GeoGeoBung_0003" progress-mission="y" type="talk"/>
+				<case object="zoneenv:e_chest_redstonelantern_05" object2="zoneenv2:e_chest_redstonelantern_05" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_redstonelantern_04" object2="zoneenv2:e_chest_redstonelantern_04" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_redstonelantern_03" object2="zoneenv2:e_chest_redstonelantern_03" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_redstonelantern_02" object2="zoneenv2:e_chest_redstonelantern_02" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_redstonelantern_01" object2="zoneenv2:e_chest_redstonelantern_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.695_4" required-register-value="1">
+				<case npc-response="qrsp_695_7" object="npc:CE_CT_GeoGeoBung_0003" type="approach"/>
+				<case npc-response="qrsp_695_8" object="npc:CH_CT_DoCheonPung_0017" progress-mission="y" type="talk"/>
+				<case object="zoneenv:e_chest_redstonelantern_05" object2="zoneenv2:e_chest_redstonelantern_05" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_redstonelantern_04" object2="zoneenv2:e_chest_redstonelantern_04" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_redstonelantern_03" object2="zoneenv2:e_chest_redstonelantern_03" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_redstonelantern_02" object2="zoneenv2:e_chest_redstonelantern_02" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_redstonelantern_01" object2="zoneenv2:e_chest_redstonelantern_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="-11821.86" location-y="26677.64" map="KangRyuSi" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.695_5" required-register-value="1">
+				<case npc-response="qrsp_695_9" object="npc:CH_CT_DoCheonPung_0017" type="approach"/>
+				<case npc-response="qrsp_695_7" object="npc:CE_CT_GeoGeoBung_0003" type="approach"/>
+				<case npc-response="qrsp_695_13" object="npc:CH_CT_InJeolMi_0002" type="approach"/>
+				<case npc-response="qrsp_695_12" object="npc:CH_CT_Citizen_1015" type="approach"/>
+				<case npc-response="qrsp_695_11" object="npc:CH_CT_Citizen_1014" type="approach"/>
+				<case npc-response="qrsp_695_10" object="npc:CH_CT_Citizen_1013" type="approach"/>
+				<case mapunit-1="5165_footswitch_02_e695" mapunit-2="5240_Guide_e695" mapunit-3="5220_Guide_e695" mapunit-4="5200_Guide_e695_1" object="zoneenv:5165_footswitch_02" object2="zoneenv2:5165_footswitch_02" progress-mission="y" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.695_6" required-register-value="1">
+				<case npc-response="qrsp_695_12" object="npc:CH_CT_Citizen_1015" type="approach"/>
+				<case npc-response="qrsp_695_11" object="npc:CH_CT_Citizen_1014" type="approach"/>
+				<case npc-response="qrsp_695_10" object="npc:CH_CT_Citizen_1013" type="approach"/>
+				<case npc-response="qrsp_695_14" object="npc:CH_CT_InJeolMi_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7" location-x="-12505.18" location-y="33939.25" map="PungWolGwan" mission-map-type="location">
+			<mission id="7" name2="Mission.Name2.695_7" required-register-value="1">
+				<case npc-response="qrsp_695_16" object="npc:CH_CT_Citizen_1030" type="approach"/>
+				<case npc-response="qrsp_695_15" object="npc:CH_CT_Citizen_1029" type="approach"/>
+				<case mapunit-1="5165_Zone_PungWallGwanByulChae_p_e695" mapunit-2="5165_Zone_PungWallGwanByulChae_p_e695+" object="zone:Zone_PungWallGwanByulChae_p" progress-mission="y" type="enter-zone"/>
+				<case npc-response="qrsp_695_17" object="npc:CH_CT_InJeolMi_0002" type="approach"/>
+				<case npc-response="qrsp_695_21" object="npc:CH_CT_Citizen_1015" type="approach"/>
+				<case npc-response="qrsp_695_21" object="npc:CH_CT_Citizen_1014" type="approach"/>
+				<case npc-response="qrsp_695_21" object="npc:CH_CT_Citizen_1013" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8" location-x="-10278.62" location-y="32855.26" map="PungWolGwan" mission-map-type="location">
+			<mission id="8" name2="Mission.Name2.695_8" required-register-value="1">
+				<case npc-response="qrsp_695_18" object="npc:MH_CT_NokLimDo_0222" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9" location-x="-12505.18" location-y="32738.08" map="PungWolGwan" mission-map-type="location">
+			<mission id="9" name2="Mission.Name2.695_9" required-register-value="1">
+				<case mapunit-1="5165_CH_CT_JaKyoungDan_0032_e695" mapunit-2="5165_CH_CT_JaKyoungDan_0032_e695+" npc-response="qrsp_695_22" object="npc:CH_CT_JaKyoungDan_0032" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10" location-x="-30900.23" location-y="93982.57" map="DaeDuRyeongUiByeolChae" mission-map-type="location">
+			<mission id="10" name2="Mission.Name2.695_10" required-register-value="1">
+				<case mapunit-1="5100_Guide_e695" mapunit-2="5165_Guide_e695" mapunit-3="5165_Guide_e695+" object="npc:CH_CT_NokLimDo_0046" object2="npc:CH_CT_NokLimDo_0046" progress-mission="y" type="killed"/>
+				<case object="zone:Zone_NokRim_HeukRyoungKyo_p" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.695_11" required-register-value="1">
+				<case npc-response="qrsp_695_19" object="npc:CH_CT_DoCheonPung_0018" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_NokRim_HeukRyoungKyo_p" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="12" location-x="-15749.31" location-y="-11509.19" map="SeolHaeMaEul" mission-map-type="location">
+			<mission id="12" name2="Mission.Name2.695_12" required-register-value="1" reward-1="695_final_set1">
+				<case mapunit-1="5031_Guide_e695" mapunit-2="5095_Guide_e695" mapunit-3="5001_Guide_e695" mapunit-4="5151_Guide_e695" mapunit-5="5200_Guide_e695" npc-response="qrsp_695_20" object="npc:CH_CT_DoCheonPung_0019" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="Zone_PungWallGwanByulChae_d">
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+		</transit>
+		<transit id="2" zone="Zone_NokRim_HeukRyoungKyo">
+			<destination mission-step-id="11" zone-index="1"/>
+			<destination mission-step-id="10" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_932"/>
+		</completion>
+		<transit id="3" zone="StartZone_Event">
+			<destination mission-step-id="1" zone-index="2"/>
+			<destination mission-step-id="2" zone-index="2"/>
+			<destination mission-step-id="3" zone-index="2"/>
+			<destination mission-step-id="4" zone-index="2"/>
+			<destination mission-step-id="5" zone-index="2"/>
+			<destination mission-step-id="6" zone-index="2"/>
+			<destination mission-step-id="7" zone-index="2"/>
+			<destination mission-step-id="8" zone-index="2"/>
+			<destination mission-step-id="9" zone-index="2"/>
+			<destination mission-step-id="10" zone-index="2"/>
+			<destination mission-step-id="11" zone-index="2"/>
+			<destination mission-step-id="12" zone-index="2"/>
+		</transit>
+	</quest>
+</table>

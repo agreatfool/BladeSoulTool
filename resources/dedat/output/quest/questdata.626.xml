@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_626" broadcast-category="field" category="normal" day-of-week="daily" desc="q_626_sum" district-1="deasamak" grade="1" group2="QG_HwangPungSaMak" id="626" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.626" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="26" preceding-quest-1="q_epic_515" preceding-quest-check="and" recommended-level="28">
+			<case acquire-quest="y" indicator-social="q_626_s_indi_1" msg="q_626_s" npc-response="qrsp_626_1" object="npc:ch_treasurehunter_0002" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_626_5" object="npc:CE_Board_0015" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.626_1" required-register-value="15">
+				<case looting="q_626_Grocery_blue_big_flag_1_icon" object="npc:mh_bigulbogul_071" object2="npc:mh_bigulbogul_071" progress-mission="y" type="loot"/>
+				<case looting="q_626_Grocery_blue_big_flag_1_icon" mapunit-1="3072_MH_BiGulBoGul_071" mapunit-2="3072_MH_BiGulBoGul_071_1" mapunit-3="Guide_PungSaIlJok_d" object="npc:me_pungsadan_0004" object2="npc:me_pungsadan_0004" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_626_des_2" id="2">
+			<mission id="2" name2="Mission.Name2.626_2" required-register-value="3">
+				<case object="zoneenv:e_onoff_whansadanfly_01" object2="zoneenv2:e_onoff_whansadanfly_01" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_onoff_whansadanfly_02" object2="zoneenv2:e_onoff_whansadanfly_02" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_onoff_whansadanfly_03" object2="zoneenv2:e_onoff_whansadanfly_03" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_onoff_whansadanfly_04" object2="zoneenv2:e_onoff_whansadanfly_04" progress-mission="y" type="manipulate"/>
+				<case mapunit-1="3072_e_onoff_whansadanfly_01" mapunit-2="3072_e_onoff_whansadanfly_01_1" mapunit-3="3072_e_onoff_whansadanfly_01_2" mapunit-4="Guide_PungSaIlJok_d_1" object="zoneenv:e_onoff_whansadanfly_05" object2="zoneenv2:e_onoff_whansadanfly_05" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.626_3" required-register-value="1" reward-1="626_final_set1" reward-2="626_final_set2">
+				<case indicator-social="q_626_m3_indi_1" msg="q_626_m3" npc-response="qrsp_626_2" object="npc:ch_treasurehunter_0002" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_626_1_icon" msg="q_626_6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

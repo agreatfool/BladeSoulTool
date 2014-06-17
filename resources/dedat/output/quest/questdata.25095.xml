@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25095" attraction-1="cave2:Cave_SuWal_9" broadcast-category="field" category="attraction" grade="8" group2="QG_AngaeForestSouth" id="25095" map-group-1-1="suwal" max-repeat="-1" name2="Quest.Name2.25095" save-type="nothing">
+		<acquisition level="38" preceding-quest-check="and" recommended-level="43"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.25095_1" required-register-value="1">
+				<case object="npc:MH_JeGukGun_0225" object2="npc:MH_JeGukGun_0225" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" required-register-value="1" reward-1="25095_final_set1">
+				<case item="q_25095_1_icon" msg="q_25095_1" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

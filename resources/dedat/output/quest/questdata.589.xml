@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_589" broadcast-category="field" category="normal" day-of-week="none" desc="q_589_sum" grade="1" group2="QG_BooNongWestNorth" id="589" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.589" reset-type="none" save-type="all">
+		<mission-step id="1" location-x="-58793.25" location-y="-4637.21" map="GreatPlain" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.589_1" required-register-value="3">
+				<case looting="q_589_1_icon" object="zoneenv:e_chset_5001_mushroom_01" object2="zoneenv2:e_chset_5001_mushroom_01" progress-mission="y" type="loot"/>
+				<case looting="q_589_1_icon" object="zoneenv:e_chset_5001_mushroom_02" object2="zoneenv2:e_chset_5001_mushroom_02" progress-mission="y" type="loot"/>
+				<case looting="q_589_1_icon" object="zoneenv:e_chset_5001_mushroom_03" object2="zoneenv2:e_chset_5001_mushroom_03" progress-mission="y" type="loot"/>
+				<case looting="q_589_1_icon" object="zoneenv:e_chset_5001_mushroom_04" object2="zoneenv2:e_chset_5001_mushroom_04" progress-mission="y" type="loot"/>
+				<case looting="q_589_1_icon" mapunit-1="5001_e_chset_5001_mushroom_01_s589" mapunit-2="5004_Guide_s589" object="zoneenv:e_chset_5001_mushroom_05" object2="zoneenv2:e_chset_5001_mushroom_05" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_589_3" object="npc:CH_CT_Citizen_0481" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.589_2" required-register-value="1" reward-1="589_final_set1">
+				<case npc-response="qrsp_589_2" object="npc:CH_CT_Citizen_0482" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_589_4" object="npc:CH_CT_Citizen_0481" type="approach"/>
+			</mission>
+		</mission-step>
+		<acquisition check-tencent-vitality="n" level="43" preceding-quest-1="q_epic_260" preceding-quest-check="and" recommended-level="45">
+			<case acquire-quest="y" npc-response="qrsp_589_1" object="npc:CH_CT_Citizen_0481" type="talk"/>
+		</acquisition>
+	</quest>
+</table>

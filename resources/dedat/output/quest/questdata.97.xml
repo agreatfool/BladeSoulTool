@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_97" broadcast-category="always" category="normal" craft-type="none" desc="q_97_sum" district-1="jeryoungrim" grade="1" group2="QG_Gathering" id="97" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.97" production="gathering-type-4" save-type="all" show-tutorial-tag="y" tutorial="y">
+		<acquisition level="11" preceding-quest-check="and" production-exp="0" production-id="gathering-type-4" recommended-level="11">
+			<case acquire-quest="y" indicator-social="q_97_s_indi_1" msg="q_97_s" npc-response="qrsp_97_1" object="npc:ch_gather_hunter_0004" progress-mission="n" type="talk"/>
+		</acquisition>
+		<mission-step guide-message="gm_97_1" guide-message-zone-1="zone_nokmyungchn" id="1" location-x="5889.8716" location-y="9841.625" map="suryengol">
+			<mission id="1" name2="Mission.Name2.97_1" required-register-value="1">
+				<case env-looting="q_97_gather_small_brisket_1_icon" mapunit-1="2310_e_onoff_2310animalcorpse_01" object="zoneenv:e_onoff_2310animalcorpse_01" object2="zoneenv2:e_onoff_2310animalcorpse_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.97_2" required-register-value="1" reward-1="97_final_set1">
+				<case indicator-social="q_97_m2_indi_1" msg="q_97_m2" npc-response="qrsp_97_2" object="npc:ch_gather_hunter_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

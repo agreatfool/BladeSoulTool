@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_321" broadcast-category="field" category="normal" desc="q_321_sum" district-1="jeryoungrim" grade="1" group="제룡림(대나무 마을)" group2="QG_DaeNaMuCHN" id="321" map-group-1-1="jeryoungrim" max-repeat="1" name="밥은 먹고 다니나요" name2="Quest.Name2.321" save-type="all" show-tutorial-tag="y" tutorial="y">
+		<acquisition level="2" preceding-quest-1="q_epic_304" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="4">
+			<case acquire-quest="y" indicator-social="q_321_s_indi_1" mapunit-1="2010_ctzn_jinf_cheongryeongctzn_ryubekeon_001" msg="q_321_s" npc-response="qrsp_321_1" object="npc:ctzn_jinf_cheongryeongctzn_ryubekeon_001" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" desc="q_321_des_5" id="5" location-x="-55061.47" location-y="-50509.58" map="chungryoung" mission-map-type="location">
+			<mission id="5" name="대나무 마을 주민 류백언에게 보고" name2="Mission.Name2.321_5" required-register-value="1" reward-1="321_final_set1">
+				<case indicator-social="q_321_m5_indi_1" msg="q_321_m5" npc-response="qrsp_321_3" object="npc:Ctzn_JinM_JaKyungDan_HoEom_001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_321_5" object="npc:ctzn_jinf_cheongryeongctzn_ryubekeon_001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_321_des_1" guide-message="gm_321_1" guide-message-zone-1="zone_ChRyoungCHN" id="1" location-x="-53405.9766" location-y="-51177.3125">
+			<mission id="1" name2="Mission.Name2.321_1" required-register-value="1">
+				<tutorial-case progress-mission="y" type="enlarge-mini-map"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_321_des_4" guide-message="gm_321_3" guide-message-zone-1="zone_ChRyoungCHN" id="4" location-x="-55061.47" location-y="-50509.58" map="chungryoung" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.321_4" required-register-value="1">
+				<tutorial-case progress-mission="y" type="quest-tracking-position"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.321_3" required-register-value="1">
+				<case indicator-social="q_321_m3_indi_1" msg="q_321_m3" npc-response="qrsp_321_2" object="npc:ctzn_jinf_cheongryeongctzn_ryubekeon_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_321_des_2" guide-message="gm_321_2" guide-message-zone-1="zone_ChRyoungCHN" id="2">
+			<mission id="2" name2="Mission.Name2.321_2" required-register-value="1">
+				<tutorial-case progress-mission="y" type="transparent-mini-map"/>
+				<case indicator-social="q_321_m3_indi_2" npc-response="qrsp_321_4" object="npc:ctzn_jinf_cheongryeongctzn_ryubekeon_001" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

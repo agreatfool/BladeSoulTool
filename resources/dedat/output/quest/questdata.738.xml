@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_738" broadcast-category="field" category="normal" desc="q_738_sum" grade="1" group2="QG_HwangGung" id="738" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.738" save-type="all">
+		<acquisition level="45" preceding-quest-1="q_epic_274" preceding-quest-check="and" recommended-level="47">
+			<case acquire-quest="y" npc-response="qrsp_738_1" object="npc:CH_CT_JungIChan_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.738_1" required-register-value="1">
+				<case object="zoneenv:e_gate_bigirongate_01" object2="zoneenv2:e_gate_bigirongate_01" progress-mission="reaction-only" type="manipulate"/>
+				<case npc-response="qrsp_738_7" object="npc:CE_CT_Diary_0001" progress-mission="y" type="npc-manipulate"/>
+				<fixed-reward slot-1="item:Quest_Scroll_BackChung_0018"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.738_2" required-register-value="1">
+				<case npc-response="qrsp_738_3" object="npc:CH_CT_JungIChan_0001" progress-mission="y" type="talk"/>
+				<case button-text-accept="q_738_20_ok" button-text-cancel="q_738_20_no" item="Quest_Scroll_BackChung_0018" msg="q_738_2" progress-mission="reaction-only" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.738_3" required-register-value="1">
+				<case npc-response="qrsp_738_4" object="npc:CH_CT_AnGoGan_0001" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Scroll_BackChung_0018" item-count-1="1"/>
+				<case button-text-accept="q_738_20_ok" button-text-cancel="q_738_20_no" item="Quest_Scroll_BackChung_0018" msg="q_738_2" progress-mission="reaction-only" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.738_4" required-register-value="1">
+				<case npc-response="qrsp_738_8" object="npc:CE_CT_Instrument_0001" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.738_5" required-register-value="1">
+				<case mapunit-1="5151_e_chest_small_burner_01" object="zoneenv:e_chest_small_burner_01" object2="zoneenv2:e_chest_small_burner_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.738_6" required-register-value="1">
+				<case npc-response="qrsp_738_5" object="npc:CH_CT_PungEmpire_0109" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_KyeongHoiRu_p" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.738_7" required-register-value="1" reward-1="738_final_set1">
+				<case npc-response="qrsp_738_6" object="npc:CH_CT_AnGoGan_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_BackChung_0018" item-count-1="1"/>
+		<transit id="2" zone="Zone_KyeongHoiRu">
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+		</transit>
+		<transit id="1" zone="Zone_NoiOk_d">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

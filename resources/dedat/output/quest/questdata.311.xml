@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_311" broadcast-category="field" category="epic" completed-desc="q_311_completed" completed-list="y" desc="q_311_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="311" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.311" save-type="all">
+		<acquisition level="1" recommended-level="12" sort-no="212"/>
+		<mission-step completion-type="and" desc="q_311_des_1" id="1" location-x="-8965.2109" location-y="-10867.8008" map="huekummrim">
+			<mission id="1" name2="Mission.Name2.311_1" required-register-value="1">
+				<case indicator-social="q_311_m1_indi_1" msg="q_311_m1" npc-response="qrsp_311_1" object="npc:ch_docheonpung_002" progress-mission="y" type="talk">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="10"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_311_9" object="npc:ch_docheonpung_002" type="talk">
+					<filter-set>
+						<filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="9"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_311_des_2" id="2" location-x="-5022.9414" location-y="-12755.6484" map="huekummrim">
+			<mission id="2" name2="Mission.Name2.311_2" required-register-value="1">
+				<case indicator-social="q_311_m2_indi_1" msg="q_311_m2" npc-response="qrsp_311_2" object="npc:ch_jakyoungdan_023" progress-mission="y" type="talk"/>
+				<case object="zone:zone_huekummrim_dochunpung" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_311_des_3" id="3" location-x="-1358.3008" location-y="-14643.4941" map="huekummrim">
+			<mission id="3" name2="Mission.Name2.311_3" required-register-value="1">
+				<case looting="q_311_Quest_wooden_identity_tag_1_icon" mapunit-1="2603_e_onoff_2200drycorpse_01" mapunit-2="2603_e_onoff_2200drycorpse_02" object="npc:mh_ghost_0002" object2="npc:mh_ghost_0002" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_2200drycorpse_01" object2="zoneenv2:e_onoff_2200drycorpse_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_2200drycorpse_02" object2="zoneenv2:e_onoff_2200drycorpse_02" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_311_des_4" id="4" location-x="-3912.4453" location-y="-13088.7969" map="huekummrim">
+			<mission id="4" name2="Mission.Name2.311_4" required-register-value="1">
+				<case indicator-social="q_311_m4_indi_1" msg="q_311_m4" npc-response="qrsp_311_3" object="npc:ch_dweller_026" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_311_des_7" id="7" location-x="-5022.9414" location-y="-12755.6484">
+			<mission id="7" name2="Mission.Name2.311_7" required-register-value="3">
+				<case looting="q_311_Quest_poison_plant_1_icon" mapunit-1="2200_e_onoff_blackfiregrass_01" mapunit-2="2200_e_onoff_blackfiregrass_01_1" mapunit-3="2200_e_onoff_blackfiregrass_01_2" object="zoneenv:e_onoff_blackfiregrass_01" object2="zoneenv2:e_onoff_blackfiregrass_01" progress-mission="y" type="loot"/>
+				<case looting="q_311_Quest_poison_plant_1_icon" object="zoneenv:e_onoff_blackfiregrass_02" object2="zoneenv2:e_onoff_blackfiregrass_02" progress-mission="y" type="loot"/>
+				<case looting="q_311_Quest_poison_plant_1_icon" object="zoneenv:e_onoff_blackfiregrass_03" object2="zoneenv2:e_onoff_blackfiregrass_03" progress-mission="y" type="loot"/>
+				<case looting="q_311_Quest_poison_plant_1_icon" object="zoneenv:e_onoff_blackfiregrass_04" object2="zoneenv2:e_onoff_blackfiregrass_04" progress-mission="y" type="loot"/>
+				<case looting="q_311_Quest_poison_plant_1_icon" object="zoneenv:e_onoff_blackfiregrass_05" object2="zoneenv2:e_onoff_blackfiregrass_05" progress-mission="y" type="loot"/>
+				<case looting="q_311_Quest_poison_plant_1_icon" object="zoneenv:e_onoff_blackfiregrass_06" object2="zoneenv2:e_onoff_blackfiregrass_06" progress-mission="y" type="loot"/>
+				<case object="zone:zone_HuekUmmRim_DoChunPung_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_311_des_6" id="6" location-x="-3912.4453" location-y="-13088.7969" map="huekummrim">
+			<mission id="6" name2="Mission.Name2.311_6" required-register-value="1">
+				<case npc-response="qrsp_311_4" object="npc:CH_Dweller_0014" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HuekUmmRim_DoChunPung_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_311_des_5" id="5" location-x="-5022.9414" location-y="-12755.6484" map="huekummrim">
+			<mission id="5" name2="Mission.Name2.311_5" required-register-value="1">
+				<case npc-response="qrsp_311_7" object="npc:ch_wionehong_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HuekUmmRim_DoChunPung_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_HuekUmmRim_DoChunPung_SP">
+			<destination mission-step-id="1" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="2"/>
+			<destination mission-step-id="4" zone-index="2"/>
+			<destination mission-step-id="5" zone-index="2"/>
+			<destination mission-step-id="6" zone-index="2"/>
+			<destination mission-step-id="7" zone-index="2"/>
+			<destination mission-step-id="8" zone-index="2"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_312"/>
+		</completion>
+		<mission-step desc="q_311_des_8" id="8">
+			<mission id="8" name2="Mission.Name2.311_8" required-register-value="1" reward-1="311_final_set1">
+				<case npc-response="qrsp_311_8" object="npc:ch_dweller_026" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HuekUmmRim_DoChunPung_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_234" broadcast-category="field" category="epic" completed-desc="q_234_completed" completed-list="y" desc="q_234_sum" district-1="startzone" grade="1" group2="QG_Toturial" id="234" map-group-1-1="startzone" max-repeat="1" name2="Quest.Name2.234" save-type="all" show-tutorial-tag="n" tutorial="y">
+		<acquisition job-1="기공사" level="1" recommended-level="1" sort-no="105"/>
+		<mission-step completion-type="and" desc="q_234_des_1" guide-message="gm_225_2" id="1" location-x="-8378.602" location-y="40751.602" map="startzone">
+			<mission id="1" name2="Mission.Name2.234_1" required-register-value="1" reward-1="234_final_set1">
+				<case indicator-social="q_234_m1_indi_2" mapunit-1="224_1_CH_YungMook_0001" msg="q_234_m1" npc-response="qrsp_234_1" object="npc:ch_youngmook_0009" progress-mission="y" type="talk"/>
+				<completion-loss item-1="start_zone_book"/>
+				<case indicator-social="q_234_m1_indi_1" npc-response="qrsp_234_2" object="npc:ch_hongsukkeun_0001" type="approach"/>
+				<case object="zone:startzone_renew_all" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_234_des_2" guide-message="gm_234_1" id="2">
+			<mission id="2" name2="Mission.Name2.234_2" required-register-value="1">
+				<tutorial-case item="Quest_Weapon_Aura-bangle_1010" progress-mission="y" type="equip-item"/>
+				<case indicator-social="q_234_m2_indi_1" msg="q_234_m2" npc-response="qrsp_234_3" object="npc:ch_youngmook_0009" type="talk"/>
+				<case object="zone:startzone_renew_force" progress-mission="reaction-only" type="enter-zone"/>
+				<case msg="q_234_m2_ny_1" npc-response="qrsp_234_4" object="npc:ch_musung_0003" type="talk"/>
+				<case msg="q_234_m2_ny_2" npc-response="qrsp_234_5" object="npc:ch_hwajoong_0004" type="talk"/>
+				<case indicator-social="q_234_m2_indi_2" msg="q_234_m2_ny_3" npc-response="qrsp_234_6" object="npc:ch_jinyoung_0003" type="talk"/>
+				<case msg="q_234_m2_ny_4" npc-response="qrsp_234_7" object="npc:ch_gilhong_0005" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_234_des_3" id="3" location-x="-8378.602" location-y="40751.602" map="startzone">
+			<mission id="3" name2="Mission.Name2.234_3" required-register-value="1">
+				<case mapunit-1="224_3_CH_YungMook_0001" object="zoneenv:1105_foot_3" object2="zoneenv2:1105_foot_3" progress-mission="y" type="env-entered"/>
+				<case object="zone:startzone_renew_force" progress-mission="reaction-only" type="enter-zone"/>
+				<case msg="q_234_m3_ny_1" npc-response="qrsp_234_10" object="npc:ch_musung_0003" type="talk"/>
+				<case msg="q_234_m3_ny_2" npc-response="qrsp_234_11" object="npc:ch_hwajoong_0004" type="talk"/>
+				<case indicator-social="q_234_m3_indi_1" msg="q_234_m3_ny_3" npc-response="qrsp_234_12" object="npc:ch_jinyoung_0003" type="talk"/>
+				<case msg="q_234_m3_ny_4" npc-response="qrsp_234_13" object="npc:ch_gilhong_0005" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest job-1="기공사" quest="q_epic_235"/>
+		</completion>
+		<transit id="1" zone="startzone_renew_blade">
+			<destination mission-step-id="1" zone-index="3"/>
+			<destination mission-step-id="2" zone-index="3"/>
+			<destination mission-step-id="3" zone-index="3"/>
+		</transit>
+	</quest>
+</table>

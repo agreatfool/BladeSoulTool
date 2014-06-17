@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_822" broadcast-category="field" category="normal" day-of-week="daily" desc="q_822_sum" grade="1" group2="QG_ZazakWoodEast" id="822" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.822" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="46" preceding-quest-1="q_epic_282" preceding-quest-2="q_sub_819" preceding-quest-check="and" preceding-quest-mission-step-1="2" recommended-level="48">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_822_1" object="npc:CH_CT_Mercenary_0005" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_822_3" object="npc:CH_CT_Mercenary_0005" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-vsboard-start" npc-response="qrsp_822_6" object="npc:CE_CT_Board_0027" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.822_1" required-register-value="10">
+				<case looting="q_822_1_icon" object="npc:ME_CT_Akyo_0008" object2="npc:ME_CT_Akyo_0008" progress-mission="y" quest-symbol-drop-prob="90" type="loot"/>
+				<case looting="q_822_1_icon" object="npc:ME_CT_DonDon_0014" object2="npc:ME_CT_DonDon_0014" progress-mission="y" quest-symbol-drop-prob="90" type="loot"/>
+				<case looting="q_822_1_icon" object="npc:ME_CT_DonDon_0013" object2="npc:ME_CT_DonDon_0013" quest-symbol-drop-prob="90" type="loot"/>
+				<case looting="q_822_1_icon" object="npc:ME_CT_CrocodileSharkTribeD_0021" object2="npc:ME_CT_CrocodileSharkTribeD_0021" progress-mission="y" quest-symbol-drop-prob="90" type="loot"/>
+				<case looting="q_822_1_icon" object="npc:ME_CT_DonDon_0010" object2="npc:ME_CT_DonDon_0010" progress-mission="y" quest-symbol-drop-prob="90" type="loot"/>
+				<case looting="q_822_1_icon" object="npc:ME_CT_DonDon_0009" object2="npc:ME_CT_DonDon_0009" progress-mission="y" quest-symbol-drop-prob="90" type="loot"/>
+				<case looting="q_822_1_icon" object="npc:ME_CT_Akyo_0006" object2="npc:ME_CT_Akyo_0006" progress-mission="y" quest-symbol-drop-prob="90" type="loot"/>
+				<case looting="q_822_1_icon" object="npc:ME_CT_ChungGak_0183" object2="npc:ME_CT_ChungGak_0183" progress-mission="y" quest-symbol-drop-prob="90" type="loot"/>
+				<case looting="q_822_1_icon" object="npc:ME_CT_FishmanBStaff_0007" object2="npc:ME_CT_FishmanBStaff_0007" progress-mission="y" quest-symbol-drop-prob="90" type="loot"/>
+				<case looting="q_822_1_icon" mapunit-1="5200_ME_CT_Akyo_0006_s822" mapunit-2="5200_ME_CT_Akyo_0006_s822_1" object="npc:ME_CT_FishmanA_0006" object2="npc:ME_CT_FishmanA_0006" prob="100" progress-mission="y" quest-symbol-drop-prob="90" type="loot"/>
+				<case looting="q_822_1_icon" object="npc:ME_CT_MeiOne_0013" object2="npc:ME_CT_MeiOne_0013" progress-mission="y" quest-symbol-drop-prob="90" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.822_2" required-register-value="1" reward-1="822_final_set1" reward-2="822_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_822_2" object="npc:CH_CT_Mercenary_0005" progress-mission="y" type="talk"/>
+				<case completion-count="1" npc-response="qrsp_822_4" object="npc:CH_CT_Mercenary_0005" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_822_2_icon" msg="q_822_5" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

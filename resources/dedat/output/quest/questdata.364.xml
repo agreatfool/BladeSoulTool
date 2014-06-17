@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_364" broadcast-category="field" category="normal" desc="q_364_sum" district-1="jeryoungrim" grade="1" group="제룡림(버려진 어촌)" group2="QG_Delete" id="364" map-group-1-1="jeryoungrim" max-repeat="1" name="미확인 괴생명체 (1)" name2="Quest.Name2.364" retired="y" save-type="all">
+		<acquisition level="50" preceding-quest-1="q_epic_310" preceding-quest-check="and" recommended-level="50"/>
+		<mission-step completion-type="and" id="1" location-x="-29620.4746" location-y="-1817.2422" map="huekummrim">
+			<mission id="1" name2="Mission.Name2.364_1" required-register-value="10"/>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-29620.4746" location-y="-1817.2422" map="huekummrim">
+			<mission id="2" name="버려진 어촌의 풍수사 정풍우에게 보고" name2="Mission.Name2.364_2" required-register-value="1" reward-1="364_final_set1"/>
+		</mission-step>
+	</quest>
+</table>

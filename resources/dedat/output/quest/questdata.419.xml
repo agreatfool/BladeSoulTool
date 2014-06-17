@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_419" broadcast-category="field" category="normal" desc="q_419_sum" district-1="jeryoungrim" grade="1" group2="QG_Geoamgol" id="419" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.419" save-type="all">
+		<acquisition level="18" preceding-quest-1="q_sub_439" preceding-quest-2="q_epic_317" preceding-quest-check="and" recommended-level="20" talk-to-self-guide-msg="msg.airdash.quest1">
+			<case acquire-quest="y" item="q_419_Quest_hair_growth_solution_manual_1_icon" msg="q_419_s" type="talk-to-self"/>
+		</acquisition>
+		<mission-step desc="q_419_des_2" id="2">
+			<mission id="2" name2="Mission.Name2.419_2" required-register-value="1">
+				<case grocery="General_Grocery_Quest_0011" grocery-count="1" npc-response="qrsp_419_1" object="npc:CE_Indura_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_419_des_3" id="3">
+			<mission id="3" name2="Mission.Name2.419_3" required-register-value="1" reward-1="419_final_set1">
+				<case npc-response="qrsp_419_2" object="npc:ce_dokchogeosa_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_419_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.419_1" required-register-value="1">
+				<case npc-response="qrsp_419_3" object="npc:CH_Merchant_0005" progress-mission="y" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

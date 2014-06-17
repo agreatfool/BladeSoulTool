@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1109" broadcast-category="field" category="normal" desc="q_1109_sum" district-1="suwal" grade="1" group2="QG_ChungGakEastJiBu" id="1109" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1109" save-type="all">
+		<acquisition level="37" preceding-quest-1="q_epic_910" preceding-quest-check="and" recommended-level="39">
+			<case acquire-quest="y" npc-response="qrsp_1109_1" object="npc:ch_pigfarm_0012" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1109_1" required-register-value="5">
+				<case object="npc:mh_chunggak_0196" object2="npc:mh_chunggak_0196" progress-mission="y" type="killed"/>
+				<case mapunit-1="4111_MH_ChungGak_0195" object="npc:mh_chunggak_0195" object2="npc:mh_chunggak_0195" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1109_2" required-register-value="5">
+				<case object="npc:mh_chunggak_0194" object2="npc:mh_chunggak_0194" progress-mission="y" type="killed"/>
+				<case mapunit-2="4111_MH_ChungGak_0193" object="npc:mh_chunggak_0193" object2="npc:mh_chunggak_0193" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.1109_3" required-register-value="5">
+				<case mapunit-3="4111_ME_FishmanBCannon_0004" object="npc:me_fishmanbcannon_0004" object2="npc:me_fishmanbcannon_0004" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="4" name2="Mission.Name2.1109_4" required-register-value="1" reward-1="1109_final_set1">
+				<case npc-response="qrsp_1109_2" object="npc:ch_pigfarm_0023" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

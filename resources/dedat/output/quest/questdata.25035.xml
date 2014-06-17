@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25035" broadcast-category="field" category="dungeon" dungeon="Dungeon_NoklimdoTreasureHouse" grade="1" id="25035" max-repeat="1" name2="Quest.Name2.25035" progress-party-duo="n" progress-party-quartet="n" progress-party-solo="n" reset-type="none" save-type="nothing">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" object="zoneenv:5095_portal_5098" object2="zoneenv2:5095_portal_5098" type="enter-portal"/>
+			<case acquire-quest="y" object="zoneenv:924_potal_5096" object2="zoneenv2:924_potal_5096" type="enter-portal"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.25035_1" required-register-value="1">
+				<case object="npc:MH_CT_NokLimDo_0002" object2="npc:MH_CT_NokLimDo_0002" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_NoklimdoTreasureHouse_Default">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

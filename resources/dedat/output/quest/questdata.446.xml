@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_446" broadcast-category="field" category="normal" desc="q_446_sum" district-1="jeryoungrim" grade="1" group="제룡림(송암도)" group2="QG_SongAmDo" id="446" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.446" save-type="all">
+		<acquisition level="15" preceding-quest-1="q_epic_496" preceding-quest-2="q_sub_447" preceding-quest-check="and" recommended-level="17">
+			<case acquire-quest="y" indicator-social="q_446_s_indi_1" msg="q_446_s" npc-response="qrsp_446_1" object="npc:ch_shaman_030" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-7764.7422" location-y="46120.7188" map="songamdo">
+			<mission id="1" name="변질된 목장승에 부적 부착" name2="Mission.Name2.446_1" required-register-value="2">
+				<case gadget-required="dont-care" mapunit-1="2440_e_onoff_jangsung_01" object="zoneenv:e_onoff_jangsung_01" object2="zoneenv2:e_onoff_jangsung_01" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_jangsung_02" object2="zoneenv2:e_onoff_jangsung_02" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_jangsung_03" object2="zoneenv2:e_onoff_jangsung_03" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_jangsung_04" object2="zoneenv2:e_onoff_jangsung_04" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_jangsung_05" object2="zoneenv2:e_onoff_jangsung_05" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_jangsung_07" object2="zoneenv2:e_onoff_jangsung_07" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_jangsung_08" object2="zoneenv2:e_onoff_jangsung_08" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_jangsung_09" object2="zoneenv2:e_onoff_jangsung_09" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_jangsung_10" object2="zoneenv2:e_onoff_jangsung_10" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-7764.7422" location-y="47080.2852" map="songamdo">
+			<mission id="2" name="송암도에 있는 만금당 선교옥에게 보고" name2="Mission.Name2.446_2" required-register-value="1" reward-1="446_final_set1">
+				<case indicator-social="q_446_m2_indi_1" msg="q_446_m2" npc-response="qrsp_446_2" object="npc:ch_shaman_030" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1162" attraction-1="classic-field-zone:PoHwaRan_Classic" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1162_sum" district-1="suwal" grade="1" group2="QG_ChungGakEastJiBu" id="1162" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1162" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="43" preceding-quest-1="q_sub_1127" preceding-quest-2="q_sub_1035" preceding-quest-check="or" recommended-level="46">
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1162_3" object="npc:CH_Strom_DongHae_A_0001" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1162_1" object="npc:CH_Strom_DongHae_A_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="4" name2="Mission.Name2.1162_4" required-register-value="1">
+				<case object="npc:mh_chunggak_0329" object2="npc:mh_chunggak_0329" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0303" object2="npc:mh_chunggak_0303" progress-mission="y" type="killed"/>
+				<case object="npc:me_darkcrazytribeb_0011" object2="npc:me_darkcrazytribeb_0011" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.1162_3" required-register-value="1">
+				<case object="npc:mh_chunggak_0320" object2="npc:mh_chunggak_0320" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0317" object2="npc:mh_chunggak_0317" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1162_2" required-register-value="1">
+				<case object="npc:mh_chunggak_0293" object2="npc:mh_chunggak_0293" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0297" object2="npc:mh_chunggak_0297" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0298" object2="npc:mh_chunggak_0298" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="1" name2="Mission.Name2.1162_1" required-register-value="1">
+				<case object="npc:mh_chunggak_0309" object2="npc:mh_chunggak_0309" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0290" object2="npc:mh_chunggak_0290" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="5" name2="Mission.Name2.1162_5" required-register-value="1" reward-1="1162_final_set1" reward-2="1162_final_set2">
+				<case completion-count="1" npc-response="qrsp_1162_4" object="npc:CH_Strom_DongHae_A_0001" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1162_2" object="npc:CH_Strom_DongHae_A_0001" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_1162_1_icon" msg="q_1162_5" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

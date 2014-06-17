@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_953" broadcast-category="field" category="normal" desc="q_953_sum" grade="1" group2="QG_Sigaji" id="953" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.953" save-type="all">
+		<acquisition level="45" preceding-quest-1="q_epic_269" preceding-quest-check="and" recommended-level="47">
+			<case acquire-quest="y" item="Quest_Scroll_BackChung_0043" msg="q_953_1" npc-response="qrsp_953_1" type="talk-to-item"/>
+			<case loot-item="Quest_Scroll_BackChung_0043" looting="q_953_1_icon" object="npc:mh_ct_noklimdo_0128" object2="npc:mh_ct_noklimdo_0128" quest-symbol-drop-prob="40" type="loot"/>
+			<case loot-item="Quest_Scroll_BackChung_0043" looting="q_953_1_icon" object="npc:mh_ct_noklimdo_0127" object2="npc:mh_ct_noklimdo_0127" quest-symbol-drop-prob="40" type="loot"/>
+			<case loot-item="Quest_Scroll_BackChung_0043" looting="q_953_1_icon" object="npc:mh_ct_noklimdo_0126" object2="npc:mh_ct_noklimdo_0126" quest-symbol-drop-prob="40" type="loot"/>
+			<case loot-item="Quest_Scroll_BackChung_0043" looting="q_953_1_icon" object="npc:mh_ct_noklimdo_0125" object2="npc:mh_ct_noklimdo_0125" quest-symbol-drop-prob="40" type="loot"/>
+			<case loot-item="Quest_Scroll_BackChung_0043" looting="q_953_1_icon" object="npc:mh_ct_noklimdo_0124" object2="npc:mh_ct_noklimdo_0124" quest-symbol-drop-prob="40" type="loot"/>
+			<case loot-item="Quest_Scroll_BackChung_0043" looting="q_953_1_icon" object="npc:mh_ct_noklimdo_0123" object2="npc:mh_ct_noklimdo_0123" quest-symbol-drop-prob="40" type="loot"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.953_1" required-register-value="1" reward-1="953_final_set1">
+				<case grocery="Quest_Scroll_BackChung_0043" npc-response="qrsp_953_1" object="npc:ch_ct_citizen_0284" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_BackChung_0043"/>
+	</quest>
+</table>

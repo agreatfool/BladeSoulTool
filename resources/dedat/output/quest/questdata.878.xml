@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_878" broadcast-category="field" category="normal" desc="q_878_sum" district-1="deasamak" grade="1" group2="QG_OSaekAmDoEast" id="878" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.878" save-type="all">
+		<acquisition level="34" preceding-quest-1="q_epic_535" preceding-quest-check="and" recommended-level="36">
+			<case acquire-quest="y" indicator-social="q_878_s_indi_1" msg="q_878_s" npc-response="qrsp_878_1" object="npc:ch_smuggler_0006" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="41801.0469" location-y="68340.1953" map="oseakamdo">
+			<mission id="1" name2="Mission.Name2.878_1" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_878_Acc_silver_earring_1_icon" mapunit-1="3037_MH_HwangPungDan_0008" object="npc:mh_hwangpungdan_0008" object2="npc:mh_hwangpungdan_0008" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="36081.0703" location-y="64810.8516" map="oseakamdo">
+			<mission id="2" name2="Mission.Name2.878_2" required-register-value="1" reward-1="878_final_set1">
+				<case indicator-social="q_878_m2_indi_1" msg="q_878_m2" npc-response="qrsp_878_2" object="npc:ch_smuggler_0006" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

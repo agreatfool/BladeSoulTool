@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1197" broadcast-category="field" category="normal" desc="q_1197_sum" district-1="suwal" grade="1" group2="QG_GuidosiNorth" id="1197" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1197" save-type="all">
+		<acquisition level="39" preceding-quest-check="and" recommended-level="41">
+			<case acquire-quest="y" item="Quest_Scroll_SoowolPyungwon_0032" msg="q_1197_1" progress-mission="n" type="talk-to-item"/>
+			<case gadget-required="dont-care" loot-item="Quest_Scroll_SoowolPyungwon_0032" looting="q_1197_Quest_old_letter_1_icon" object="npc:ME_ZombieBUnGuk_0001" object2="npc:ME_ZombieBUnGuk_0001" progress-mission="n" quest-symbol-drop-prob="20" type="loot"/>
+			<case loot-item="Quest_Scroll_SoowolPyungwon_0032" looting="q_1197_Quest_old_letter_1_icon" object="npc:ME_ZombieBUnGuk_0002" object2="npc:ME_ZombieBUnGuk_0002" progress-mission="n" quest-symbol-drop-prob="20" type="loot"/>
+			<case loot-item="Quest_Scroll_SoowolPyungwon_0032" looting="q_1197_Quest_old_letter_1_icon" object="npc:ME_ZombieBUnGuk_0003" object2="npc:ME_ZombieBUnGuk_0003" progress-mission="n" quest-symbol-drop-prob="20" type="loot"/>
+			<case loot-item="Quest_Scroll_SoowolPyungwon_0032" looting="q_1197_Quest_old_letter_1_icon" object="npc:me_skullb_0002" object2="npc:me_skullb_0002" progress-mission="n" quest-symbol-drop-prob="20" type="loot"/>
+			<case loot-item="Quest_Scroll_SoowolPyungwon_0032" looting="q_1197_Quest_old_letter_1_icon" object="npc:me_skullb_0003" object2="npc:me_skullb_0003" prob="100" progress-mission="n" quest-symbol-drop-prob="20" type="loot"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1197_1" required-register-value="1" reward-1="1197_final_set1">
+				<case npc-response="qrsp_1197_1" object="npc:ch_taesangmun_0006" progress-mission="y" type="talk"/>
+				<completion-loss item-1="quest_scroll_soowolpyungwon_0032"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="quest_scroll_soowolpyungwon_0032"/>
+	</quest>
+</table>

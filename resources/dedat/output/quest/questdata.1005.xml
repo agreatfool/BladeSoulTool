@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1005" broadcast-category="field" category="normal" desc="q_1005_sum" district-1="suwal" grade="1" group2="QG_Wolchon" id="1005" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1005" save-type="all">
+		<acquisition level="36" preceding-quest-1="q_sub_1002" preceding-quest-check="and" recommended-level="38">
+			<case acquire-quest="y" npc-response="qrsp_1005_1" object="npc:CH_WolChon_0012" type="talk"/>
+		</acquisition>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1005_2" required-register-value="10">
+				<case mapunit-1="4000_ME_Noctiluca_0014" mapunit-2="4000_ME_Noctiluca_0014_1" object="npc:ME_Noctiluca_0014" object2="npc:ME_Noctiluca_0014" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_1005_7" object="npc:CH_WolChon_0008" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1005_6" object="npc:CH_Bounty Hunter_0003" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1005_5" object="npc:CH_Bounty Hunter_0002" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1005_4" object="npc:CH_Bounty Hunter_0001" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1004_5" object="npc:CH_Bounty Hunter_0018" type="approach"/>
+				<case npc-response="qrsp_1004_4" object="npc:CH_Bounty Hunter_0017" type="approach"/>
+				<case npc-response="qrsp_1004_3" object="npc:CH_Bounty Hunter_0016" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1005_3" required-register-value="1">
+				<case npc-response="qrsp_1005_8" object="npc:CH_WolChon_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.1005_4" required-register-value="3">
+				<case gadget-required="dont-care" looting="q_1005_Quest_spiritual_stone001_1_icon" mapunit-1="4000_e_chest_ghostrock_01" object="zoneenv:e_chest_ghostrock_01" object2="zoneenv2:e_chest_ghostrock_01" progress-mission="y" type="loot"/>
+				<case looting="q_1005_Quest_spiritual_stone001_1_icon" object="zoneenv:e_chest_ghostrock_02" object2="zoneenv2:e_chest_ghostrock_02" progress-mission="y" type="loot"/>
+				<case looting="q_1005_Quest_spiritual_stone001_1_icon" object="zoneenv:e_chest_ghostrock_03" object2="zoneenv2:e_chest_ghostrock_03" progress-mission="y" type="loot"/>
+				<case looting="q_1005_Quest_spiritual_stone001_1_icon" object="zoneenv:e_chest_ghostrock_04" object2="zoneenv2:e_chest_ghostrock_04" progress-mission="y" type="loot"/>
+				<case looting="q_1005_Quest_spiritual_stone001_1_icon" object="zoneenv:e_chest_ghostrock_05" object2="zoneenv2:e_chest_ghostrock_05" progress-mission="y" type="loot"/>
+				<case looting="q_1005_Quest_spiritual_stone001_1_icon" object="zoneenv:e_chest_ghostrock_06" object2="zoneenv2:e_chest_ghostrock_06" progress-mission="y" type="loot"/>
+				<case looting="q_1005_Quest_spiritual_stone001_1_icon" object="zoneenv:e_chest_ghostrock_07" object2="zoneenv2:e_chest_ghostrock_07" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.1005_5" required-register-value="1">
+				<case npc-response="qrsp_1005_9" object="npc:CH_WolChon_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6" location-x="-4721.35" location-y="13105.59" map="haenamumaeulicheung" mission-map-type="location">
+			<mission id="6" name2="Mission.Name2.1005_6" required-register-value="1" reward-1="1005_final_set1">
+				<case npc-response="qrsp_1005_10" object="npc:CH_ManGeumDang_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1" location-x="-4721.35" location-y="13105.59" map="haenamumaeulicheung" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.1005_1" required-register-value="1">
+				<case npc-response="qrsp_1005_2" object="npc:CH_ManGeumDang_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_1004_5" object="npc:CH_Bounty Hunter_0018" type="approach"/>
+				<case npc-response="qrsp_1004_4" object="npc:CH_Bounty Hunter_0017" type="approach"/>
+				<case npc-response="qrsp_1004_3" object="npc:CH_Bounty Hunter_0016" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

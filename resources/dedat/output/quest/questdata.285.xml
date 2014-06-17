@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_285" broadcast-category="field" category="epic" completed-desc="q_285_completed" completed-list="y" desc="q_285_sum" grade="1" group2="QG_BaeCheongEpic" id="285" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.285" save-type="all">
+		<acquisition level="1" recommended-level="50" sort-no="527"/>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.285_2" required-register-value="1">
+				<case indicator="default" mapunit-1="5292_Foot_1_e285" object="zoneenv:5292_Foot_1" object2="zoneenv2:5292_Foot_1" progress-mission="y" type="env-entered"/>
+				<case object="zone:zone_BaekCheongPa_Epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.285_3" required-register-value="1">
+				<case mapunit-1="5292_Foot_2_e285" object="zoneenv:5292_Foot_2" object2="zoneenv2:5292_Foot_2" progress-mission="y" type="env-entered"/>
+				<case object="zoneenv:5292_Foot_2_8" object2="zoneenv2:5292_Foot_2_8" progress-mission="y" type="env-entered"/>
+				<case object="zoneenv:5292_Foot_2_7" object2="zoneenv2:5292_Foot_2_7" progress-mission="y" type="env-entered"/>
+				<case object="zoneenv:5292_Foot_2_6" object2="zoneenv2:5292_Foot_2_6" progress-mission="y" type="env-entered"/>
+				<case object="zoneenv:5292_Foot_2_5" object2="zoneenv2:5292_Foot_2_5" progress-mission="y" type="env-entered"/>
+				<case object="zoneenv:5292_Foot_2_4" object2="zoneenv2:5292_Foot_2_4" progress-mission="y" type="env-entered"/>
+				<case object="zoneenv:5292_Foot_2_3" object2="zoneenv2:5292_Foot_2_3" progress-mission="y" type="env-entered"/>
+				<case object="zoneenv:5292_Foot_2_2" object2="zoneenv2:5292_Foot_2_2" progress-mission="y" type="env-entered"/>
+				<case object="zoneenv:5292_Foot_2_1" object2="zoneenv2:5292_Foot_2_1" progress-mission="y" type="env-entered"/>
+			</mission>
+			<mission-step-fail rollback-step-id="2"/>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.285_4" required-register-value="1">
+				<case npc-response="qrsp_285_1" object="npc:CH_CT_ChunJinKwon_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BiWalBong_Phase" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_BiWalBong" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_BaekCheongPa_Epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_285_des_5" id="5">
+			<mission id="5" name2="Mission.Name2.285_5" required-register-value="1" reward-1="285_final_set1">
+				<case npc-response="qrsp_285_2" object="npc:CH_CT_BiWol_0003" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BiWalBong_Phase" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_BaekCheongPa_Epic" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_BiWalBong" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.285_1" required-register-value="1">
+				<case mapunit-1="5291_AirDash_NorthField_01A_e285" object="zone:zone_BiWalBong" progress-mission="y" type="enter-zone"/>
+				<case object="zone:zone_BaekCheongPa_Epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_287"/>
+		</completion>
+		<transit id="1" zone="zone_BaekCheongPa_Party">
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+		</transit>
+		<transit id="3" zone="zone_ResurrectionAltar_Default">
+			<complete zone-index="1"/>
+		</transit>
+		<transit id="2" zone="zone_SnakeScalesVally_Default">
+			<complete zone-index="1"/>
+		</transit>
+	</quest>
+</table>

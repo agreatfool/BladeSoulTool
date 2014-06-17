@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_565" broadcast-category="field" category="normal" desc="q_565_sum" district-1="deasamak" grade="1" group2="QG_ToMunJinSouth" id="565" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.565" save-type="all">
+		<acquisition level="20" preceding-quest-1="q_epic_503" preceding-quest-check="and" recommended-level="22">
+			<case acquire-quest="y" indicator-social="q_565_s_indi_1" msg="q_565_s" npc-response="qrsp_565_1" object="npc:ch_songrimsa_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-54785.6367" location-y="-61247.625" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.565_1" required-register-value="12">
+				<case mapunit-1="3000_ME_SaMaGyo_034" mapunit-2="3000_ME_SaMaGyo_034_1" object="npc:mh_samagyo_0019" object2="npc:mh_samagyo_0019" progress-mission="y" type="killed"/>
+				<case object="npc:mh_samagyo_0003" object2="npc:mh_samagyo_0003" progress-mission="y" type="killed"/>
+				<case object="npc:me_samagyo_034" object2="npc:me_samagyo_034" progress-mission="y" type="killed"/>
+				<case object="npc:mh_samagyo_0007" object2="npc:mh_samagyo_0007" progress-mission="y" type="killed"/>
+				<case object="npc:mh_samagyo_0006" object2="npc:mh_samagyo_0006" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-47406.0273" location-y="-62508.75" map="OeMalRi">
+			<mission id="2" name2="Mission.Name2.565_2" required-register-value="1" reward-1="565_final_set1">
+				<case indicator-social="q_565_m2_indi_1" msg="q_565_m2" npc-response="qrsp_565_2" object="npc:ch_songrimsa_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

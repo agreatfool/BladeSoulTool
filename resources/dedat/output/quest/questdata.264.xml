@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_264" broadcast-category="field" category="epic" completed-desc="q_264_completed" completed-list="y" desc="q_264_sum" grade="1" group2="QG_BaeCheongEpic" id="264" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.264" save-type="all">
+		<acquisition level="1" recommended-level="46" sort-no="505"/>
+		<mission-step id="1" location-x="-95824.50" location-y="36769.04" map="GreatPlain" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.264_1" required-register-value="1">
+				<case mapunit-1="5002_Guide_e264" npc-response="qrsp_264_1" object="npc:CH_CT_Citizen_0113" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_263_11" object="npc:CH_CT_JeGukGun_0262" type="approach"/>
+				<case npc-response="qrsp_264_12" object="npc:CH_CT_ORakDang_0033" type="approach"/>
+				<completion-loss item-1="quest_scroll_backchung_0002"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.264_2" required-register-value="1">
+				<case npc-response="qrsp_264_3" object="npc:CH_CT_Citizen_0114" progress-mission="y" type="npc-manipulate"/>
+				<case npc-response="qrsp_264_2" object="npc:CH_CT_Citizen_0113" type="approach"/>
+				<completion-loss money="500"/>
+				<case npc-response="qrsp_263_11" object="npc:CH_CT_JeGukGun_0262" type="approach"/>
+				<case npc-response="qrsp_264_10" object="npc:CH_CT_ORakDang_0033" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.264_3" required-register-value="1">
+				<case npc-response="qrsp_264_5" object="npc:CH_CT_Citizen_0114" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_264_4" object="npc:CH_CT_Citizen_0113" type="approach"/>
+				<case npc-response="qrsp_263_11" object="npc:CH_CT_JeGukGun_0262" type="approach"/>
+				<case npc-response="qrsp_264_11" object="npc:CH_CT_ORakDang_0033" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.264_4" required-register-value="1">
+				<case mapunit-1="5023_Zone_BinMin_Flower_e264" object="zone:Zone_BinMin_Flower" progress-mission="y" type="enter-zone"/>
+				<case npc-response="qrsp_263_11" object="npc:CH_CT_JeGukGun_0262" type="approach"/>
+				<case npc-response="qrsp_264_14" object="npc:CH_CT_ORakDang_0033" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.264_5" required-register-value="4">
+				<case npc-response="qrsp_263_11" object="npc:CH_CT_JeGukGun_0262" type="approach"/>
+				<case mapunit-1="5023_MH_CT_BokUnHoe_0022_e264" mapunit-2="5023_MH_CT_BokUnHoe_0022_e264_1" mapunit-3="5023_MH_CT_BokUnHoe_0022_e264_2" mapunit-4="5023_MH_CT_BokUnHoe_0022_e264_3" object="npc:MH_CT_BokUnHoe_0022" object2="npc:MH_CT_BokUnHoe_0022" progress-mission="y" show-in-tooltip="y" type="killed"/>
+				<case object="zone:Zone_BinMin_Flower" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator="default" object="npc:CE_CT_RewardBox_0001" progress-mission="reaction-only" type="npc-manipulate"/>
+			</mission>
+			<mission id="6" name2="Mission.Name2.264_6" required-register-value="1">
+				<case loot-item="quest_scroll_backchung_0013" looting="q_264_1_icon" object="npc:ME_CT_Scorpion_0022" object2="npc:ME_CT_Scorpion_0022" progress-mission="y" type="loot"/>
+				<case object="zone:Zone_BinMin_Flower" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator="default" object="npc:CE_CT_RewardBox_0001" progress-mission="reaction-only" type="npc-manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="7" name2="Mission.Name2.264_7" required-register-value="1">
+				<case item="Quest_Scroll_BackChung_0013" msg="q_264_5" progress-mission="y" type="talk-to-item"/>
+				<case npc-response="qrsp_263_11" object="npc:CH_CT_JeGukGun_0262" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7" location-x="-85547.00" location-y="27422.63" map="YeomSaekChonJeoJangChangGo" mission-map-type="location">
+			<mission id="8" name2="Mission.Name2.264_8" required-register-value="1">
+				<case mapunit-1="5023_Guide_e264" npc-response="qrsp_264_8" object="npc:CH_CT_JeGukGun_0115" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Scroll_BackChung_0013"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="9" name2="Mission.Name2.264_9" required-register-value="1">
+				<case mapunit-1="5026_Foot_1_e264" object="zone:Zone_JerZangChangGo_Epic" progress-mission="y" type="convoy-arrived"/>
+				<case object="zoneenv:e_Chest_crate_03" object2="zoneenv2:e_Chest_crate_03" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_Chest_crate_02" object2="zoneenv2:e_Chest_crate_02" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_Chest_crate_01" object2="zoneenv2:e_Chest_crate_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+			<mission-step-fail rollback-step-id="7">
+				<case convoy="epic_264_con_1" object="npc:CH_CT_JeGukGun_0115" progress-mission="n" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="10" name2="Mission.Name2.264_10" required-register-value="1">
+				<case object="npc:CH_CT_JeGukGun_0276" progress-mission="y" type="npc-bleeding-occured"/>
+			</mission>
+			<mission-step-fail rollback-step-id="7"/>
+		</mission-step>
+		<mission-step id="11" location-x="-86478.27" location-y="24659.45" map="YeomSaekChon" mission-map-type="location">
+			<mission id="12" name2="Mission.Name2.264_12" required-register-value="1" reward-1="264_final_set1">
+				<case mapunit-1="5026_Guide_e264" npc-response="qrsp_264_9" object="npc:CH_CT_JeGukGun_0251" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_YumSek_Zekuk" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="Zone_JerZangChangGo">
+			<destination mission-step-id="9" zone-index="1"/>
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+		</transit>
+		<transit id="2" zone="Zone_YumSek_Zekuk_NA">
+			<destination mission-step-id="11" zone-index="1"/>
+			<destination mission-step-id="10" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_265"/>
+		</completion>
+		<mission-step id="10">
+			<mission id="11" name2="Mission.Name2.264_11" required-register-value="1">
+				<case npc-response="qrsp_264_13" object="npc:CH_CT_ORakDang_0035" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_YumSek_Zekuk" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

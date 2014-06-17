@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_962" broadcast-category="field" category="normal" complete-talksocial-delay="0.0" day-of-week="none" desc="q_962_sum" grade="1" group2="QG_MoilBong" id="962" map-group-1-1="startzone" max-repeat="1" name2="Quest.Name2.962" reset-by-acquire-time="none" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="n" level="50" preceding-quest-1="q_sub_1055" preceding-quest-check="and" preceding-quest-mission-step-1="2" recommended-level="50">
+			<case acquire-quest="y" completion-count="0" completion-count-op="ge" npc-response="qrsp_962_1" object="npc:CH_SA_GwanChulSu_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="2" progress-talksocial="TalkSocial_whisking">
+			<mission id="2" name2="Mission.Name2.962_2" required-register-value="4">
+				<case gadget="Q_Basket_0001" gadget-required="carry" indicator="default" join-faction2="null" object="zoneenv:e_chest_MI_field_01" object2="zoneenv2:e_chest_MI_field_01" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_Basket_0001" gadget-required="not-a" indicator="quest-gadget-drop" object="zoneenv:e_chest_seedsbasket_03" object2="zoneenv2:e_chest_seedsbasket_03" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Basket_0001" gadget-required="not-a" indicator="quest-gadget-drop" object="zoneenv:e_chest_seedsbasket_02" object2="zoneenv2:e_chest_seedsbasket_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Basket_0001" gadget-required="not-a" indicator="quest-gadget-drop" mapunit-1="1252_e_chest_seedsbasket_01" object="zoneenv:e_chest_seedsbasket_01" object2="zoneenv2:e_chest_seedsbasket_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Basket_0001" gadget-required="carry" indicator="default" object="zoneenv:e_chest_MI_field_05" object2="zoneenv2:e_chest_MI_field_05" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_Basket_0001" gadget-required="carry" indicator="default" object="zoneenv:e_chest_MI_field_04" object2="zoneenv2:e_chest_MI_field_04" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_Basket_0001" gadget-required="carry" indicator="default" mapunit-1="1252_e_chest_MI_field_01" object="zoneenv:e_chest_MI_field_02" object2="zoneenv2:e_chest_MI_field_02" progress-mission="y" type="manipulate"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="3" progress-talksocial="TalkSocial_glee" progress-talksocial-delay="2.0">
+			<mission id="3" name2="Mission.Name2.962_3" required-register-value="4">
+				<case gadget="Q_Sprayer_0001" gadget-required="carry" mapunit-1="1252_CE_SA_Seeding_0001" object="npc:CE_SA_Seeding_0001" progress-mission="y" type="npc-manipulate"/>
+				<case gadget="Q_Sprayer_0001" gadget-required="not-a" indicator="quest-gadget-drop" object="zoneenv:e_chest_wateringcan_02" object2="zoneenv2:e_chest_wateringcan_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Sprayer_0001" gadget-required="not-a" indicator="quest-gadget-drop" mapunit-1="1252_e_chest_wateringcan_01" object="zoneenv:e_chest_wateringcan_01" object2="zoneenv2:e_chest_wateringcan_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="4" progress-talksocial="TalkSocial_wiping" time-limit="80" time-limit-type="until">
+			<mission id="4" name2="Mission.Name2.962_4" required-register-value="30">
+				<case mapunit-1="1252_ME_SA_Pest_0002" object="npc:ME_SA_Pest_0002" object2="npc:ME_SA_Pest_0002" progress-mission="y" progress-value="2" type="killed"/>
+				<case object="npc:ME_SA_Pest_0001" object2="npc:ME_SA_Pest_0001" progress-mission="y" type="killed"/>
+				<case gadget="Q_FlameThrower_Water" gadget-required="not-a" indicator="quest-gadget-drop" mapunit-1="1252_e_chest_sprinkler_01" object="zoneenv:e_chest_sprinkler_01" object2="zoneenv2:e_chest_sprinkler_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+			<mission-step-fail fail-talksocial="TalkSocial_frustration" rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="6" progress-talksocial="TalkSocial_glee">
+			<mission id="6" name2="Mission.Name2.962_6" required-register-value="4">
+				<case gadget-required="empty" mapunit-1="1252_CE_SA_GoodWheat_0001" object="npc:CE_SA_GoodWheat_0001" progress-mission="y" type="npc-manipulate"/>
+				<case object="zone:StartZone_FarmIsland" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.962_7" required-register-value="1" reward-1="962_final_set1">
+				<case completion-count="0" completion-count-op="ge" npc-response="qrsp_962_3" object="npc:CH_SA_OhBack_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.962_1" required-register-value="1">
+				<case completion-count="0" completion-count-op="ge" npc-response="qrsp_962_2" object="npc:CH_SA_OhBack_0001" progress-mission="y" type="talk"/>
+				<case object="zone:StartZone_FarmIsland" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="StartZone_Event">
+			<destination mission-step-id="6" zone-index="3"/>
+			<destination mission-step-id="5" zone-index="3"/>
+			<destination mission-step-id="1" zone-index="3"/>
+		</transit>
+		<mission-step id="5" progress-talksocial="TalkSocial_wiping" time-limit="80" time-limit-type="until">
+			<mission id="5" name2="Mission.Name2.962_5" required-register-value="30">
+				<case gadget="Q_DoubleFire_0001" gadget-required="not-a" indicator="quest-gadget-drop" mapunit-1="1252_e_chest_weaponbox_01" object="zoneenv:e_chest_weaponbox_01" object2="zoneenv2:e_chest_weaponbox_01" progress-mission="reaction-only" type="manipulate"/>
+				<case mapunit-1="1252_ME_SA_Pest_0002" object="npc:ME_SA_JunoBig_0001" object2="npc:ME_SA_JunoBig_0001" progress-mission="y" progress-value="2" type="killed"/>
+				<case object="npc:ME_SA_Juno_0001" object2="npc:ME_SA_Juno_0001" progress-mission="y" type="killed"/>
+			</mission>
+			<mission-step-fail fail-talksocial="TalkSocial_frustration"/>
+		</mission-step>
+	</quest>
+</table>

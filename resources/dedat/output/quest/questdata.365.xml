@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_365" broadcast-category="field" category="normal" desc="q_365_sum" district-1="jeryoungrim" grade="1" group="제룡림(버려진 어촌)" group2="QG_BuryejinECHN" id="365" map-group-1-1="jeryoungrim" max-repeat="1" name="풍수사의 딸 (1)" name2="Quest.Name2.365" save-type="all" show-tutorial-tag="y" tutorial="y">
+		<acquisition level="7" preceding-quest-1="q_epic_310" preceding-quest-check="and" recommended-level="9">
+			<case acquire-quest="y" indicator-social="q_365_s_indi_1" msg="q_365_s" npc-response="qrsp_365_1" object="npc:Ctzn_JinM_Ghost_MangNanJa_001" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" guide-message="gm_365_1" guide-message-zone-1="zone_HuekUmmRim_UCHN" id="1" location-x="-29620.4746" location-y="-1817.2422" map="huekummrim">
+			<mission id="1" name="철가면 녹포검귀의 철가면 획득" name2="Mission.Name2.365_1" required-register-value="1">
+				<case grocery-count="1" mapunit-1="2200_CH_Merchant_0007_S365" npc-response="qrsp_365_2" object="npc:ch_merchant_0007" progress-mission="y" remove-grocery="n" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" guide-message="gm_365_2" guide-message-zone-1="zone_HuekUmmRim_UCHN" id="2" location-x="-29620.4746" location-y="-1817.2422" map="huekummrim">
+			<mission id="2" name="버려진 어촌 정풍우의 딸 정소교에게 보고" name2="Mission.Name2.365_2" required-register-value="1" reward-1="365_final_set1">
+				<case grocery="General_Grocery_RepairTool_0012" grocery-count="1" mapunit-1="2200_CH_Merchant_0007_S365" msg="q_365_m2" npc-response="qrsp_365_3" object="npc:Ctzn_JinM_Ghost_MangNanJa_001" progress-mission="y" remove-grocery="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

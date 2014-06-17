@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_957" broadcast-category="field" category="normal" desc="q_957_sum" grade="1" group2="QG_Haodong" id="957" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.957" save-type="all">
+		<acquisition level="45" preceding-quest-1="q_epic_268" preceding-quest-check="and" preceding-quest-mission-step-1="11" recommended-level="47">
+			<case acquire-quest="y" npc-response="qrsp_957_1" object="npc:CH_CT_HaoBang_0030" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.957_1" required-register-value="1">
+				<case object="npc:MH_CT_HaOBang_0095" object2="npc:MH_CT_HaOBang_0095" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.957_2" required-register-value="1">
+				<case object="npc:mh_ct_haobang_0093" object2="npc:mh_ct_haobang_0093" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.957_3" required-register-value="1">
+				<case object="npc:MH_CT_HaOBang_0096" object2="npc:MH_CT_HaOBang_0096" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="4" name2="Mission.Name2.957_4" required-register-value="1">
+				<case object="npc:ME_CT_HaOBang_0094" object2="npc:ME_CT_HaOBang_0094" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="5" name2="Mission.Name2.957_5" required-register-value="1" reward-1="957_final_set1">
+				<case npc-response="qrsp_957_2" object="npc:CH_CT_HaoBang_0030" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

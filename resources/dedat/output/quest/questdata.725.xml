@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_725" broadcast-category="field" category="normal" day-of-week="daily" desc="q_725_sum" grade="1" group2="QG_Haodong" id="725" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.725" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="45" preceding-quest-1="q_epic_268" preceding-quest-check="and" preceding-quest-mission-step-1="10" recommended-level="47">
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_725_3" object="npc:ce_ct_board_0023" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_725_1" object="npc:CH_CT_HaoDong_0006" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_725_3" object="npc:CE_BC_Board_0001" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_725_3" object="npc:CE_CT_Board_0024" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.725_1" required-register-value="5">
+				<case mapunit-1="5110_MH_CT_Criminal_0002_s725" object="npc:MH_CT_Criminal_0002" object2="npc:MH_CT_Criminal_0002" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_Criminal_0005" object2="npc:MH_CT_Criminal_0005" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_HaOBanng_0093" object2="npc:ME_CT_HaOBanng_0093" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBanng_0087" object2="npc:MH_CT_HaOBanng_0087" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_Criminal_0004" object2="npc:MH_CT_Criminal_0004" progress-mission="n" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_Criminal_0003" object2="npc:MH_CT_Criminal_0003" progress-mission="n" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_Criminal_0001" object2="npc:MH_CT_Criminal_0001" progress-mission="n" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBanng_0051" object2="npc:MH_CT_HaOBanng_0051" progress-mission="n" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBanng_0052" object2="npc:MH_CT_HaOBanng_0052" progress-mission="n" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBanng_0053" object2="npc:MH_CT_HaOBanng_0053" progress-mission="n" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBanng_0054" object2="npc:MH_CT_HaOBanng_0054" progress-mission="n" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBanng_0055" object2="npc:MH_CT_HaOBanng_0055" progress-mission="n" show-in-tooltip="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.725_2" required-register-value="1" reward-1="725_final_set1" reward-2="725_final_set2">
+				<case fee="y" item="q_725_1_icon" msg="q_725_4" progress-mission="y" type="talk-to-self"/>
+				<case npc-response="qrsp_725_2" object="npc:CH_CT_HaoBang_0020" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

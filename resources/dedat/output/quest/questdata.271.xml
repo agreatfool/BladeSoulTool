@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_271" broadcast-category="field" category="epic" completed-desc="q_271_completed" completed-list="y" desc="q_271_sum" grade="1" group2="QG_BaeCheongEpic" id="271" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.271" save-type="all">
+		<acquisition level="1" recommended-level="47" sort-no="512"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.271_1" required-register-value="1">
+				<case npc-response="qrsp_271_1" object="npc:CH_CT_JeGukGun_0028" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_JoJangWon_p1" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_270_11" object="npc:MH_CT_JoJangWon_0004" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_271_des_2" id="2">
+			<mission id="2" name2="Mission.Name2.271_2" required-register-value="1">
+				<case button-text-accept="q_271_20_ok" button-text-cancel="q_271_20_no" gadget-required="empty" npc-response="qrsp_271_6" object="npc:CH_CT_JeGukGun_0028" progress-mission="reaction-only" type="talk"/>
+				<case mapunit-1="5171_e_gate_latchin_01_e271" object="zoneenv:e_gate_latchin_01" object2="zoneenv2:e_gate_latchin_01" progress-mission="y" type="manipulate"/>
+				<case npc-response="qrsp_270_11" object="npc:MH_CT_JoJangWon_0004" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.271_3" required-register-value="1">
+				<case looting="q_271_1_icon" object="npc:MH_CT_BokUnHoe_0002" object2="npc:MH_CT_BokUnHoe_0002" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_271_8" object="npc:CH_CT_JeGukGun_0028" type="approach"/>
+				<case npc-response="qrsp_270_11" object="npc:MH_CT_JoJangWon_0004" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="4" location-x="35324.50" location-y="30800.95" map="jojangwon" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.271_4" required-register-value="1">
+				<case npc-response="qrsp_271_2" object="npc:CH_CT_JeGukGun_0028" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_270_11" object="npc:MH_CT_JoJangWon_0004" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step desc="q_271_des_5" id="5">
+			<mission id="5" name2="Mission.Name2.271_5" required-register-value="1">
+				<case npc-response="qrsp_271_3" object="npc:CH_CT_JeGukGun_0029" progress-mission="y" type="talk"/>
+				<case gadget="Q_PoisonedNeedle_0003" gadget-required="not-a" indicator="quest-gadget-drop" object="npc:ME_CT_RewardBox_0016" object2="npc:ME_CT_RewardBox_0016" progress-mission="reaction-only" type="killed"/>
+				<case npc-response="qrsp_270_11" object="npc:MH_CT_JoJangWon_0004" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.271_6" required-register-value="1">
+				<case mapunit-1="5171_footswitch_02_e271" object="zoneenv:5171_footswitch_02" object2="zoneenv2:5171_footswitch_02" progress-mission="y" type="env-entered"/>
+				<case npc-response="qrsp_270_11" object="npc:MH_CT_JoJangWon_0004" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.271_7" required-register-value="20">
+				<case npc-response="qrsp_270_11" object="npc:MH_CT_JoJangWon_0004" type="approach"/>
+				<case npc-response="qrsp_271_12" object="npc:CH_CT_JeGukGun_0029" type="approach"/>
+				<case object="npc:MH_CT_BokUnHoe_0010" object2="npc:MH_CT_BokUnHoe_0010" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_BokUnHoe_0004" object2="npc:MH_CT_BokUnHoe_0004" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_BokUnHoe_0005" object2="npc:MH_CT_BokUnHoe_0005" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_BokUnHoe_0006" object2="npc:MH_CT_BokUnHoe_0006" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_BokUnHoe_0007" object2="npc:MH_CT_BokUnHoe_0007" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_BokUnHoe_0008" object2="npc:MH_CT_BokUnHoe_0008" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_BokUnHoe_0009" object2="npc:MH_CT_BokUnHoe_0009" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_BokUnHoe_0092" object2="npc:MH_CT_BokUnHoe_0092" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_BokUnHoe_0080" object2="npc:MH_CT_BokUnHoe_0080" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_BokUnHoe_0081" object2="npc:MH_CT_BokUnHoe_0081" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_BokUnHoe_0082" object2="npc:MH_CT_BokUnHoe_0082" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_BokUnHoe_0083" object2="npc:MH_CT_BokUnHoe_0083" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_BokUnHoe_0084" object2="npc:MH_CT_BokUnHoe_0084" progress-mission="y" type="killed"/>
+				<case mapunit-1="5171_MH_CT_BokUnHoe_0004_e271" object="npc:MH_CT_BokUnHoe_0085" object2="npc:MH_CT_BokUnHoe_0085" progress-mission="y" type="killed"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.271_8" required-register-value="1">
+				<case mapunit-1="5171_footswitch_03_e271" object="zoneenv:5171_footswitch_03" object2="zoneenv2:5171_footswitch_03" progress-mission="y" type="env-entered"/>
+				<case npc-response="qrsp_271_10" object="npc:CH_CT_JeGukGun_0031" type="approach"/>
+				<case npc-response="qrsp_271_11" object="npc:MH_CT_JeGukGun_0558" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.271_9" required-register-value="1">
+				<case npc-response="qrsp_271_4" object="npc:CH_CT_JinSoA_0016" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_271_10" object="npc:CH_CT_JeGukGun_0031" type="approach"/>
+				<case npc-response="qrsp_271_11" object="npc:MH_CT_JeGukGun_0558" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.271_10" required-register-value="1">
+				<case object="npc:CH_CT_JinSoA_0016" progress-mission="y" type="npc-bleeding-occured"/>
+				<case npc-response="qrsp_271_10" object="npc:CH_CT_JeGukGun_0031" type="approach"/>
+				<case npc-response="qrsp_271_11" object="npc:MH_CT_JeGukGun_0558" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.271_11" required-register-value="1">
+				<case object="npc:CH_CT_JinSoA_0020" progress-mission="y" type="npc-manipulate"/>
+				<case npc-response="qrsp_271_10" object="npc:CH_CT_JeGukGun_0031" type="approach"/>
+				<case npc-response="qrsp_271_11" object="npc:MH_CT_JeGukGun_0558" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="12">
+			<mission id="12" name2="Mission.Name2.271_12" required-register-value="1" reward-1="271_final_set1">
+				<case npc-response="qrsp_271_5" object="npc:CH_CT_JeGukGun_0034" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_JoJangWon_p1" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_271_9" object="npc:CH_CT_Guard_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_272"/>
+		</completion>
+		<transit id="1" zone="Zone_JoJangWon">
+			<destination mission-step-id="12" zone-index="1"/>
+			<destination mission-step-id="11" zone-index="1"/>
+			<destination mission-step-id="10" zone-index="1"/>
+			<destination mission-step-id="9" zone-index="1"/>
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

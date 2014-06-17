@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_371" broadcast-category="field" category="normal" desc="q_371_sum" district-1="jeryoungrim" grade="1" group2="QG_Delete" id="371" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.371" retired="y" save-type="all">
+		<mission-step id="1" location-x="-18126.8203" location-y="-6037.1328">
+			<mission id="1" name2="Mission.Name2.371_1" required-register-value="1"/>
+		</mission-step>
+		<mission-step id="3" location-x="-18126.8203" location-y="-6037.1328">
+			<mission id="3" name2="Mission.Name2.371_3" required-register-value="10"/>
+		</mission-step>
+		<mission-step id="4" location-x="-18126.8203" location-y="-6037.1328">
+			<mission id="4" name2="Mission.Name2.371_4" required-register-value="1" reward-1="371_final_set1"/>
+		</mission-step>
+		<acquisition level="50" preceding-quest-1="q_sub_373" preceding-quest-check="and" recommended-level="50"/>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.371_2" required-register-value="1"/>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_DaeSaMak_0010"/>
+	</quest>
+</table>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1383" broadcast-category="field" category="normal" desc="q_1383_sum" district-1="suwal" grade="5" group2="QG_Delete" id="1383" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1383" reset-type="daily" retired="y" save-type="all">
+		<acquisition check-tencent-vitality="n" level="43" preceding-quest-1="q_sub_1381" preceding-quest-check="and" preceding-quest-mission-step-1="3" recommended-level="45"/>
+		<mission-step id="1" location-x="-47492.969" location-y="10060.160" map="MuSinUiTop4cheung" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.1383_1" required-register-value="1"/>
+		</mission-step>
+		<mission-step completion-type="or" id="2" location-x="-47492.969" location-y="10060.160" map="MuSinUiTop5cheung" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.1383_2" required-register-value="1"/>
+		</mission-step>
+		<mission-step id="3" location-x="-47492.969" location-y="10060.160" map="MuSinUiTop6cheung" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.1383_3" required-register-value="1"/>
+		</mission-step>
+		<mission-step id="4" location-x="-53761.957" location-y="4816.068" map="musinuihoedang2cheung" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.1383_4" required-register-value="1" reward-1="1383_final_set1" reward-2="1383_final_set2"/>
+		</mission-step>
+	</quest>
+</table>

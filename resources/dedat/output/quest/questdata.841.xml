@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_841" broadcast-category="field" category="normal" desc="q_841_sum" district-1="deasamak" grade="1" group2="QG_OSaekAmDoWest" id="841" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.841" save-type="all">
+		<acquisition level="32" preceding-quest-1="q_epic_529" preceding-quest-check="and" recommended-level="34">
+			<case acquire-quest="y" indicator-social="q_841_s_indi_1" msg="q_841_s" npc-response="qrsp_841_1" object="npc:ce_hoerangjok_0001" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_841_des_1" id="1" location-x="14053.0938" location-y="32194.832" map="oseakamdo">
+			<mission id="1" name2="Mission.Name2.841_1" required-register-value="10">
+				<case object="npc:mh_hwangpungdan_0003" object2="npc:mh_hwangpungdan_0003" progress-mission="y" type="killed"/>
+				<case object="npc:mh_hwangpungdan_0002" object2="npc:mh_hwangpungdan_0002" progress-mission="y" type="killed"/>
+				<case gadget-required="dont-care" mapunit-1="3030_MH_HwangPungDan_0001" object="npc:mh_hwangpungdan_0001" object2="npc:mh_hwangpungdan_0001" progress-mission="y" type="killed"/>
+				<case object="npc:ME_HwangPungDan_0012" object2="npc:ME_HwangPungDan_0012" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="16962.9063" location-y="32968.1719" map="hoerangchon">
+			<mission id="2" name2="Mission.Name2.841_2" required-register-value="1" reward-1="841_final_set1">
+				<case indicator-social="q_841_m2_indi_1" msg="q_841_m2" npc-response="qrsp_841_2" object="npc:ce_hoerangjok_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_508" broadcast-category="field" category="epic" completed-desc="q_508_completed" completed-list="y" desc="q_508_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="508" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.508" save-type="all">
+		<acquisition level="1" recommended-level="25" sort-no="309"/>
+		<mission-step id="1" location-x="-20097.168" location-y="-74379.6016" map="hwanyoungcho">
+			<mission id="1" name2="Mission.Name2.508_1" required-register-value="1">
+				<case approach-social="q_508_m2_app_1" npc-response="qrsp_508_3" object="npc:mh_inspector_0003" progress-mission="y" type="approach"/>
+				<case object="zone:zone_HealSpring" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_HwanYoungCho" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_508_des_2" id="2" location-x="-20097.168" location-y="-74379.6016" map="hwanyoungcho">
+			<mission id="2" name2="Mission.Name2.508_2" required-register-value="1">
+				<case msg="q_508_m2" npc-response="qrsp_508_1" object="npc:mh_inspector_0003" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HwanYoungCho" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-20961.2305" location-y="-77372.9609" map="hwanyoungcho">
+			<mission id="3" name2="Mission.Name2.508_3" required-register-value="1">
+				<case mapunit-1="3062_ChoiJinA" object="zone:zone_HwanYoungCho" progress-mission="y" type="convoy-arrived"/>
+			</mission>
+			<mission-step-fail rollback-step-id="2">
+				<case convoy="epic_508_con" object="zone:zone_HwanYoungCho" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step desc="q_508_des_4" id="4" location-x="-20961.2305" location-y="-77372.9609" map="hwanyoungcho">
+			<mission id="4" name2="Mission.Name2.508_4" required-register-value="1">
+				<case mapunit-1="3062_CE_TradeBook_0001" object="npc:ce_tradebook_0001" progress-mission="y" type="npc-manipulate"/>
+				<case object="zone:zone_HwanYoungCho" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:3062_ChoiJinASight" object2="zoneenv2:3062_ChoiJinASight" progress-mission="reaction-only" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="-20529.20" location-y="-79687.41" map="hwanyoungcho" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.508_5" required-register-value="1" reward-1="508_final_set1">
+				<case indicator-social="q_508_m5_indi_1" msg="q_508_m5" npc-response="qrsp_508_2" object="npc:mh_inspector_0003" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HwanYoungCho" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_509"/>
+		</completion>
+		<transit id="1" zone="zone_HwanYoung_Nonepic">
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

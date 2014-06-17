@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_925" broadcast-category="field" category="epic" completed-desc="q_925_completed" completed-list="y" desc="q_925_sum" district-1="suwal" grade="1" group2="QG_SuwalPWEpic" id="925" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.925" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="43" sort-no="426"/>
+		<completion>
+			<next-quest quest="q_epic_927"/>
+		</completion>
+		<transit id="1" zone="zone_bimilyeanguso">
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+		</transit>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.925_1" required-register-value="1">
+				<case npc-response="qrsp_925_1" object="npc:ch_gyeongchunmaeng_0038" progress-mission="y" type="talk">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="43"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_925_6" object="npc:ch_gyeongchunmaeng_0038" type="talk">
+					<filter-set>
+						<filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="42"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.925_2" required-register-value="15">
+				<case object="npc:mh_jegukgun_0098" object2="npc:mh_jegukgun_0098" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0097" object2="npc:mh_jegukgun_0097" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0164" object2="npc:mh_jegukgun_0164" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0163" object2="npc:mh_jegukgun_0163" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0162" object2="npc:mh_jegukgun_0162" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0362" object2="npc:mh_jegukgun_0362" progress-mission="y" type="killed"/>
+				<case object="npc:me_cannonfighter_0010" object2="npc:me_cannonfighter_0010" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0358" object2="npc:mh_jegukgun_0358" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0357" object2="npc:mh_jegukgun_0357" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0356" object2="npc:mh_jegukgun_0356" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0160" object2="npc:mh_jegukgun_0160" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0158" object2="npc:mh_jegukgun_0158" progress-mission="y" type="killed"/>
+				<case mapunit-1="4400_mh_jegukgun_0157" mapunit-2="4400_mh_jegukgun_0157_1" object="npc:mh_jegukgun_0157" object2="npc:mh_jegukgun_0157" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.925_3" required-register-value="1">
+				<case npc-response="qrsp_925_2" object="npc:ch_gyeongchunmaeng_0040" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.925_4" required-register-value="1">
+				<case mapunit-1="4400_YeongRinZokYuJukJi_E925(4)" object="zone:zone_bimilyeanguso_epic" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.925_5" required-register-value="1">
+				<case npc-response="qrsp_925_3" object="npc:ch_baekmoon_0012" progress-mission="y" type="talk"/>
+				<case object="zone:zone_bimilyeanguso_epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.925_7" required-register-value="1">
+				<case npc-response="qrsp_925_4" object="npc:ch_gyeongchunmaeng_0041" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="5"/>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.925_8" required-register-value="10">
+				<case object="npc:me_jegukgun_0368" object2="npc:me_jegukgun_0368" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0146" object2="npc:mh_jegukgun_0146" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0144" object2="npc:mh_jegukgun_0144" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0361" object2="npc:mh_jegukgun_0361" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0360" object2="npc:mh_jegukgun_0360" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0359" object2="npc:mh_jegukgun_0359" progress-mission="y" type="killed"/>
+				<case object="npc:me_runemechabattle_0006" object2="npc:me_runemechabattle_0006" progress-mission="y" type="killed"/>
+				<case object="npc:me_cannonfighter_0004" object2="npc:me_cannonfighter_0004" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0108" object2="npc:mh_jegukgun_0108" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0244" object2="npc:mh_jegukgun_0244" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0107" object2="npc:mh_jegukgun_0107" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0117" object2="npc:mh_jegukgun_0117" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0118" object2="npc:mh_jegukgun_0118" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0119" object2="npc:mh_jegukgun_0119" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0383" object2="npc:mh_jegukgun_0383" progress-mission="y" type="killed"/>
+				<case mapunit-1="4400_mh_jegukgun_0108" mapunit-2="4400_mh_jegukgun_0108_1" object="npc:mh_jegukgun_0382" object2="npc:mh_jegukgun_0382" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0466" object2="npc:mh_jegukgun_0466" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0467" object2="npc:mh_jegukgun_0467" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0468" object2="npc:mh_jegukgun_0468" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="9" name2="Mission.Name2.925_9" required-register-value="1">
+				<case object="zoneenv:e_pot_tied_bignail_03" object2="zoneenv2:e_pot_tied_bignail_03" progress-mission="y" type="killed"/>
+				<case object="zoneenv:e_pot_tied_bignail_02" object2="zoneenv2:e_pot_tied_bignail_02" progress-mission="y" type="killed"/>
+				<case object="zoneenv:e_pot_tied_bignail_01" object2="zoneenv2:e_pot_tied_bignail_01" progress-mission="y" type="killed"/>
+				<case gadget="q_ironhammera_2" gadget-required="carry" mapunit-1="4400_e_pot_tied_bignail_01" mapunit-2="4400_e_pot_tied_bignail_02" mapunit-3="4400_e_pot_tied_bignail_03" object-1="zoneenv:e_pot_tied_bignail_01" object-2="zoneenv:e_pot_tied_bignail_02" object-3="zoneenv:e_pot_tied_bignail_03" object-4="zoneenv:e_pot_jaegukbomb_01" object-5="zoneenv:e_pot_explosive_01" object-6="zoneenv:e_pot_explosive_02" object-7="zoneenv:e_pot_explosive_03" object-8="zoneenv:e_pot_explosive_04" object2-1="zoneenv2:e_pot_tied_bignail_01" object2-2="zoneenv2:e_pot_tied_bignail_02" object2-3="zoneenv2:e_pot_tied_bignail_03" object2-4="zoneenv2:e_pot_jaegukbomb_01" object2-5="zoneenv2:e_pot_explosive_01" object2-6="zoneenv2:e_pot_explosive_02" object2-7="zoneenv2:e_pot_explosive_03" object2-8="zoneenv2:e_pot_explosive_04" progress-mission="reaction-only" skill="gadget_q_ironhammera_2" skill3="gadget_q_ironhammera_2" type="skill"/>
+				<case gadget="q_ironhammera_2" gadget-required="not-a" mapunit-1="4400_me_rewardbox_0010" object="npc:me_rewardbox_0010" object2="npc:me_rewardbox_0010" progress-mission="reaction-only" show-in-tooltip="n" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="10" name2="Mission.Name2.925_10" required-register-value="1" reward-1="925_final_set1">
+				<case npc-response="qrsp_925_5" object="npc:ch_gyeongchunmaeng_0040" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.925_6" required-register-value="1">
+				<case mapunit-1="4506_foot_1" object="zoneenv:4506_foot_1" object2="zoneenv2:4506_foot_1" progress-mission="y" type="env-entered"/>
+			</mission>
+			<mission-step-fail rollback-step-id="5"/>
+		</mission-step>
+	</quest>
+</table>

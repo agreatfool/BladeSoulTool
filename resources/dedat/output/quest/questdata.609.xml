@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="factionmain1" alias="q_sub_609" broadcast-category="field" category="normal" day-of-week="daily" desc="q_609_sum" district-1="deasamak" grade="1" group2="QG_HyeolPungSaMak" id="609" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.609" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" faction="factionmain1" level="24" preceding-quest-1="q_sub_602" preceding-quest-2="q_sub_603" preceding-quest-check="or" recommended-level="26">
+			<case acquire-quest="y" indicator-social="q_609_s_indi_1" msg="q_609_s" npc-response="qrsp_609_1" object="npc:ch_murimmeng_0005" type="talk">
+				<filter-set>
+					<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain1"/>
+				</filter-set>
+			</case>
+		</acquisition>
+		<mission-step id="1" location-x="-42050.5625" location-y="-6962.2461" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.609_1" required-register-value="1">
+				<case gadget-required="empty" mapunit-1="3010_ch_prisoner_0001" object="npc:ch_prisoner_0001" progress-mission="reaction-only" type="npc-manipulate">
+					<filter-set>
+						<filter subject="case:npc-manipulate:pc" subject2="case:npc-manipulate:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+				<case gadget="Q_PrisonerA" gadget-required="carry-and-remove" indicator-social="q_609_m1_indi_1" msg="q_609_m1" npc-response="qrsp_609_3" object="npc:ch_murimmeng_0003" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+				<case gadget="Q_PrisonerC" gadget-required="carry-and-remove" indicator-social="q_609_m1_2_indi_1" msg="q_609_m1_2" npc-response="qrsp_609_4" object="npc:ch_murimmeng_0003" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-41491.2109" location-y="-19920.5781" map="yeolsajeedea">
+			<mission id="2" name2="Mission.Name2.609_2" required-register-value="1" reward-1="609_final_set1" reward-2="609_final_set2">
+				<case indicator-social="q_609_m2_indi_1" msg="q_609_m2" npc-response="qrsp_609_2" object="npc:ch_murimmeng_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

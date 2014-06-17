@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_325" broadcast-category="field" category="normal" desc="q_325_sum" district-1="jeryoungrim" grade="1" group="제룡림(대나무 마을)" group2="QG_Delete" id="325" map-group-1-1="jeryoungrim" max-repeat="1" name="자경단이 부른다" name2="Quest.Name2.325" retired="y" save-type="all" show-tutorial-tag="y" tutorial="y">
+		<acquisition level="2" preceding-quest-1="q_epic_304" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="4"/>
+		<mission-step completion-type="and" id="3">
+			<mission id="3" name="자경단 초소의 묵언도와 대화" name2="Mission.Name2.325_3" required-register-value="1"/>
+		</mission-step>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.325_1" required-register-value="1"/>
+		</mission-step>
+		<mission-step guide-message="gm_325_1" guide-message-zone-1="zone_ChRyoungCHN" id="2">
+			<mission id="2" name2="Mission.Name2.325_2" required-register-value="1"/>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.325_4" required-register-value="1" reward-1="325_final_set1"/>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_374" broadcast-category="field" category="normal" desc="q_374_sum" district-1="jeryoungrim" grade="1" group="제룡림(흑음림)" group2="QG_HuekUmmRim" id="374" map-group-1-1="jeryoungrim" max-repeat="1" name="버섯 캐는 협객 (완)" name2="Quest.Name2.374" save-type="all">
+		<acquisition level="8" preceding-quest-1="q_epic_310" preceding-quest-check="and" recommended-level="10">
+			<case acquire-quest="y" indicator-social="q_374_s_indi_1" msg="q_374_s" npc-response="qrsp_374_1" object="npc:ch_dweller_022" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-9256.988" location-y="10248.799" map="UnSin_Dun" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.374_1" required-register-value="8">
+				<case object="npc:ch_tanyeonbang_0002" progress-mission="y" type="npc-manipulate"/>
+				<case mapunit-1="2604_CH_TanYeonBang_0002" mapunit-2="2604_CH_TanYeonBang_0002_1" mapunit-3="2200_UnSin_Dun_S374(2)" object="npc:ch_tanyeonbang_0003" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-9909.1328" location-y="-11256.4746" map="huekummrim">
+			<mission id="2" name="숯 가마터에 있는 자경단원 고붕에게 보고" name2="Mission.Name2.374_2" required-register-value="1" reward-1="374_final_set1">
+				<case indicator-social="q_374_m2_indi_1" msg="q_374_m2" npc-response="qrsp_374_2" object="npc:ch_dweller_022" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

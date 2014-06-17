@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_315" broadcast-category="field" category="epic" completed-desc="q_315_completed" completed-list="y" desc="q_315_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="315" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.315" save-type="all">
+		<acquisition level="1" recommended-level="17" sort-no="220"/>
+		<mission-step completion-type="and" desc="q_315_des_1" id="1" location-x="-8026.45" location-y="50046.21" map="songamdo" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.315_1" required-register-value="1">
+				<case indicator-social="q_315_m1_indi_1" mapunit-1="2310_guide_E315" mapunit-2="2300_guide_E315" msg="q_315_m1" npc-response="qrsp_315_2" object="npc:ctzn_jinf_jakyungdan_buyoung_kff_002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_315_des_2" id="2" location-x="-9073.2422" location-y="43416.4922" map="songamdo">
+			<mission id="2" name2="Mission.Name2.315_2" required-register-value="1">
+				<case indicator-social="q_315_m2_indi_1" msg="q_315_m2" npc-response="qrsp_315_3" object="npc:ch_gobong_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_315_des_4" id="4">
+			<mission id="4" name2="Mission.Name2.315_4" required-register-value="1">
+				<case gadget-required="dont-care" mapunit-1="2612_e_door_byjaildoor01" object="zoneenv:e_door_byjaildoor01" object2="zoneenv2:e_door_byjaildoor01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_315_des_5" id="5" location-x="-9073.2422" location-y="43416.4922" map="songamdo">
+			<mission id="5" name2="Mission.Name2.315_5" required-register-value="1">
+				<case indicator-social="q_315_m5_indi_1" msg="q_315_m5" npc-response="qrsp_315_4" object="npc:CH_DoDanHa_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_SongAmDo_Dun_1_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_315_des_6" id="6">
+			<mission id="6" name2="Mission.Name2.315_6" required-register-value="1">
+				<case mapunit-1="2612_KKoBong_Finish" object="zone:zone_songamdo_dun_1_1" progress-mission="y" type="convoy-arrived"/>
+			</mission>
+			<mission-step-fail rollback-step-id="5">
+				<case convoy="epic_315_con" object="zone:zone_songamdo_dun_1_1" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_315_des_7" id="7" location-x="-9073.2422" location-y="43416.4922" map="songamgul_dun">
+			<mission id="7" name2="Mission.Name2.315_7" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_315_Quest_cubic_package_1_icon" object="npc:mh_nokrimdo_0055" object2="npc:mh_nokrimdo_0055" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+				<case object="zone:zone_SongAmDo_Dun_1_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_315_des_9" id="9" location-x="-8637.0703" location-y="49348.3477" map="songamdo">
+			<mission id="9" name2="Mission.Name2.315_9" required-register-value="1" reward-1="315_final_set1">
+				<case acquire-quest="n" indicator-social="q_315_m9_indi_1" msg="q_315_m9" npc-response="qrsp_315_7" object="npc:ctzn_jinf_jakyungdan_buyoung_kff_002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_316"/>
+		</completion>
+		<mission-step desc="q_315_des_3" id="3" location-x="-6394.08" location-y="46324.51" map="songamgul_dun" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.315_3" required-register-value="2">
+				<case mapunit-1="2612_mh_bandit_0020" mapunit-2="2440_SongAmGul_Dun_E315" object="npc:mh_bandit_0031" object2="npc:mh_bandit_0031" progress-mission="y" type="killed"/>
+				<case object="npc:mh_bandit_0030" object2="npc:mh_bandit_0030" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_songamdo_dun_1_2">
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+		</transit>
+		<mission-step desc="q_315_des_8" id="8" location-x="-7435.096" location-y="42845.996" map="songamgul_dun" mission-map-type="location">
+			<mission id="8" name2="Mission.Name2.315_8" required-register-value="1">
+				<case indicator-social="q_315_m8_indi_1" msg="q_315_m8" npc-response="qrsp_315_6" object="npc:CH_DoDanHa_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_SongAmDo_Dun_1_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

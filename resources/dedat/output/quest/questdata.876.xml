@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_876" broadcast-category="field" category="normal" desc="q_876_sum" district-1="deasamak" grade="1" group2="QG_OSaekAmDoEast" id="876" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.876" save-type="all">
+		<mission-step desc="q_876_des_1" id="1" location-x="35046.6094" location-y="66453.8203" map="oseakamdo">
+			<mission id="1" name2="Mission.Name2.876_1" required-register-value="7">
+				<case looting="q_876_Quest_red_ball_1_icon" mapunit-1="3030_MH_ZombieA_0031" object="npc:mh_treasurehunter_0006" object2="npc:mh_treasurehunter_0006" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="34133.8516" location-y="69374.6563" map="oseakamdo">
+			<mission id="2" name2="Mission.Name2.876_2" required-register-value="1" reward-1="876_final_set1">
+				<case indicator-social="q_876_m2_indi_1" msg="q_876_m2" npc-response="qrsp_876_2" object="npc:ch_smuggler_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<acquisition level="34" preceding-quest-1="q_sub_878" preceding-quest-check="and" recommended-level="36">
+			<case acquire-quest="y" indicator-social="q_876_s_indi_1" msg="q_876_s" npc-response="qrsp_876_1" object="npc:ch_smuggler_0006" type="talk"/>
+		</acquisition>
+	</quest>
+</table>

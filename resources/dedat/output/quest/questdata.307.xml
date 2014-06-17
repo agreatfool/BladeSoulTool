@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_307" broadcast-category="field" category="epic" completed-desc="q_307_completed" completed-list="y" desc="q_307_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="307" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.307" save-type="all">
+		<acquisition level="1" recommended-level="6" sort-no="208"/>
+		<mission-step completion-type="and" desc="q_307_des_1" id="1" location-x="-29607.7813" location-y="-33193.7891" map="mangjasup">
+			<mission id="1" name2="Mission.Name2.307_1" required-register-value="1">
+				<case indicator-social="q_307_m1_indi_1" mapunit-1="2000_ch_jakyoungdan_029" msg="q_307_m1" npc-response="qrsp_307_1" object="npc:ch_jakyoungdan_029" progress-mission="y" type="talk">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="5"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_307_4" object="npc:ch_jakyoungdan_029" type="talk">
+					<filter-set>
+						<filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="4"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_307_des_2" id="2" location-x="-20753.377" location-y="-43063.6953" map="SanJuk_Dun">
+			<mission id="2" name2="Mission.Name2.307_2" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="2617_mh_chunggak_0009" object="npc:mh_chunggak_0009" object2="npc:mh_chunggak_0009" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_307_5" object="npc:ch_jakyoungdan_029" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_307_des_3" id="3" location-x="-24812.1758" location-y="-33193.7891" map="mangjasup">
+			<mission id="3" name2="Mission.Name2.307_3" required-register-value="1">
+				<case indicator-social="q_307_m3_indi_1" mapunit-1="2000_ch_jakyoungdan_029" msg="q_307_m3" npc-response="qrsp_307_2" object="npc:ch_jakyoungdan_029" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_308"/>
+		</completion>
+		<mission-step desc="q_307_des_4" id="4">
+			<mission id="4" name2="Mission.Name2.307_4" required-register-value="1">
+				<case looting="q_307_1_icon" object="npc:mh_nokrimdo_0066" object2="npc:mh_nokrimdo_0066" progress-mission="y" quest-symbol-drop-prob="50" type="loot"/>
+				<case looting="q_307_1_icon" object="npc:mh_nokrimdo_0065" object2="npc:mh_nokrimdo_0065" progress-mission="y" quest-symbol-drop-prob="50" type="loot"/>
+				<case looting="q_307_1_icon" mapunit-1="2000_mh_nokrimdo_0064" mapunit-2="2000_mh_nokrimdo_0064_1" mapunit-3="2000_mh_nokrimdo_0064_2" object="npc:mh_nokrimdo_0064" object2="npc:mh_nokrimdo_0064" progress-mission="y" quest-symbol-drop-prob="50" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_307_des_5" id="5" location-x="-24812.1758" location-y="-33193.7891" map="mangjasup">
+			<mission id="5" name2="Mission.Name2.307_5" required-register-value="1" reward-1="307_final_set1">
+				<case indicator-social="q_307_m5_indi_1" msg="q_307_m5" npc-response="qrsp_307_3" object="npc:CH_JaKyoungDan_0038" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

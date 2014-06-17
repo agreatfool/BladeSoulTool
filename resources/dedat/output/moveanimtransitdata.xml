@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="CombatData" release-side="client" type="moveAnimTransit" version="0.3">
+	<record after-idle="normal" before-idle="kneel" transit-anim-seq="AA_A_None_Bat_Knee_End"/>
+	<record after-idle="normal" before-idle="down" transit-anim-seq="AA_A_None_Bat_Down_End"/>
+	<record after-idle="normal" before-idle="front_down" transit-anim-seq="AA_A_None_Bat_Down_Front_End"/>
+	<record after-idle="normal" before-idle="mount-linker" transit-anim-seq="BK_A_Mount_Bat_End"/>
+	<record after-idle="normal" before-idle="stiff" transit-anim-seq="AA_A_None_Bat_Fall_End"/>
+	<record after-idle="kneel" before-idle="down"/>
+	<record after-idle="kneel" before-idle="front_down" transit-anim-seq="AA_A_None_Bat_Knee_Toknee_Start"/>
+	<record after-idle="normal" before-idle="air" transit-anim-seq="AA_A_None_Bat_Down_End"/>
+	<record after-idle="normal" before-idle="knockback-stand" transit-anim-seq="AA_A_None_Bat_Fall_End"/>
+	<record after-idle="normal" before-idle="knockback-kneel" transit-anim-seq="AA_A_None_Bat_Knee_End"/>
+	<record after-idle="normal" before-idle="knockback-frontdown" transit-anim-seq="AA_A_None_Bat_Down_Front_End"/>
+	<record after-idle="normal" before-idle="knockback-down" transit-anim-seq="AA_A_None_Bat_Down_End"/>
+	<record after-idle="kneel" before-idle="knockback-frontdown" transit-anim-seq="AA_A_None_Bat_Knee_Toknee_Start"/>
+	<record after-idle="kneel" before-idle="knockback-down"/>
+	<record after-idle="normal" before-idle="mount-linkee" transit-anim-seq="AA_A_None_Bat_Down_End"/>
+	<record after-idle="picking" before-idle="normal" transit-anim-seq="AA_A_None_Mov_PickupStart"/>
+	<record after-idle="normal" before-idle="picking" transit-anim-seq="AA_A_None_Mov_PickupEnd"/>
+	<record after-idle="kneel" before-idle="knockback-kneel"/>
+	<record after-idle="normal" before-idle="front_down"/>
+	<record after-idle="front_down" before-idle="kneel" transit-anim-seq="AA_A_None_Bat_Down_Front_Start"/>
+	<record after-idle="front_down" before-idle="normal" transit-anim-seq="AA_A_None_Bat_Down_Front_Start"/>
+	<record after-idle="normal" before-idle="inhalation_linker" transit-anim-seq="BK_A_Hard_Skl_MagneticEnergy_Finish"/>
+	<record after-idle="normal" before-idle="inhalation_linkee" transit-anim-seq="AA_A_None_Bat_Pratfall"/>
+	<record after-idle="kneel" before-idle="inhalation_linkee"/>
+	<record after-idle="stiff" before-idle="normal" transit-anim-seq="AA_A_None_Bat_Fall_Start"/>
+	<record after-idle="normal" before-idle="landing-shock" transit-anim-seq="AA_A_None_Bat_LandingToNormal"/>
+	<record after-idle="stagger" before-idle="normal" transit-anim-seq="AA_A_None_Bat_Stagger_B_Looping"/>
+	<record after-idle="normal" before-idle="hide" transit-anim-seq="DG_A_Hide_Skl_Reveal"/>
+	<record after-idle="normal" before-idle="air2" transit-anim-seq="AA_A_None_Bat_Down_Front_End"/>
+	<record after-idle="normal" before-idle="air3" transit-anim-seq="AA_A_None_Bat_Down_End"/>
+	<record after-idle="normal" before-idle="magnetic" transit-anim-seq="AA_A_None_Bat_Pratfall"/>
+	<record after-idle="kneel" before-idle="normal" transit-anim-seq="AA_A_None_Bat_Knee_F_Start"/>
+</table>

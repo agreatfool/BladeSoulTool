@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_548" broadcast-category="field" category="normal" day-of-week="daily" desc="q_548_sum" grade="1" group2="QG_BooNongWestNorth" id="548" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.548" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="43" preceding-quest-1="q_sub_545" preceding-quest-2="q_sub_546" preceding-quest-check="and" recommended-level="45">
+			<case acquire-quest="y" npc-response="qrsp_548_1" object="npc:CH_CT_JeGukGun_0199" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_548_4" object="npc:CE_CT_Board_0016" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.548_1" required-register-value="1">
+				<case npc-response="qrsp_548_2" object="npc:CH_CT_JeGukGun_0239" progress-mission="y" type="talk"/>
+				<case object="zone:zone_haori_fell" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.548_2" required-register-value="4">
+				<case object="zone:zone_haori_fell" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="npc:MH_CT_HaOBang_0097" object2="npc:MH_CT_HaOBang_0097" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBang_0098" object2="npc:MH_CT_HaOBang_0098" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBang_0004" object2="npc:MH_CT_HaOBang_0004" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBang_0006" object2="npc:MH_CT_HaOBang_0006" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBang_0003" object2="npc:MH_CT_HaOBang_0003" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBang_0005" object2="npc:MH_CT_HaOBang_0005" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBang_0001" object2="npc:MH_CT_HaOBang_0001" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBang_0002" object2="npc:MH_CT_HaOBang_0002" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBang_0007" object2="npc:MH_CT_HaOBang_0007" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBang_0008" object2="npc:MH_CT_HaOBang_0008" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBang_0009" object2="npc:MH_CT_HaOBang_0009" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBang_0010" object2="npc:MH_CT_HaOBang_0010" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBang_0099" object2="npc:MH_CT_HaOBang_0099" progress-mission="y" type="killed"/>
+				<case mapunit-1="5013_MH_CT_HaOBang_0001_s548" mapunit-2="5013_MH_CT_HaOBang_0001_s548_1" object="npc:MH_CT_HaOBang_0100" object2="npc:MH_CT_HaOBang_0100" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_548_5" object="npc:CH_CT_JeGukGun_0239" type="approach"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.548_3" required-register-value="5">
+				<case object="zone:zone_haori_fell" progress-mission="reaction-only" type="enter-zone"/>
+				<case looting="q_548_1_icon" object="npc:ME_CT_RuneMechaB_0006" object2="npc:ME_CT_RuneMechaB_0006" progress-mission="y" type="loot"/>
+				<case looting="q_548_1_icon" mapunit-1="5013_ME_CT_RuneMechaB_0006_s548" mapunit-2="5013_ME_CT_RuneMechaB_0006_s548_1" object="npc:ME_CT_RuneMechaB_0007" object2="npc:ME_CT_RuneMechaB_0007" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_548_5" object="npc:CH_CT_JeGukGun_0239" type="approach"/>
+			</mission>
+			<mission id="4" name2="Mission.Name2.548_4" required-register-value="1">
+				<case object="zone:zone_haori_fell" progress-mission="reaction-only" type="enter-zone"/>
+				<case looting="q_548_3_icon" object="npc:CE_CT_TreasureBox_0001" object2="npc:CE_CT_TreasureBox_0001" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_548_5" object="npc:CH_CT_JeGukGun_0239" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="5" name2="Mission.Name2.548_5" required-register-value="1" reward-1="548_final_set1" reward-2="548_final_set2">
+				<case npc-response="qrsp_548_3" object="npc:CH_CT_JeGukGun_0239" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_548_2_icon" msg="q_548_5" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

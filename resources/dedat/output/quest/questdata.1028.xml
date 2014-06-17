@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1028" broadcast-category="field" category="normal" desc="q_1028_sum" district-1="suwal" grade="2" group2="QG_AncyJokVillage" id="1028" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1028" save-type="all">
+		<acquisition level="36" preceding-quest-1="q_epic_907" preceding-quest-check="and" recommended-level="38">
+			<case acquire-quest="y" npc-response="qrsp_1028_1" object="npc:CH_SinRyong_0046" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1028_1" required-register-value="1">
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="4530_e_chest_angsibrazier_01" object="zoneenv:e_chest_angsibrazier_01" object2="zoneenv2:e_chest_angsibrazier_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_TorchlightA_4" gadget-required="carry-and-remove" mapunit-1="4530_e_chest_oilcrock_01" object="zoneenv:e_chest_oilcrock_01" object2="zoneenv2:e_chest_oilcrock_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1028_2" required-register-value="1" reward-1="1028_final_set1">
+				<case npc-response="qrsp_1028_2" object="npc:CH_SinRyong_0046" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

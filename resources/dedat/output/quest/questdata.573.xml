@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_573" broadcast-category="field" category="normal" desc="q_573_sum" district-1="deasamak" grade="1" group2="QG_ToMunJinNorth" id="573" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.573" save-type="all">
+		<acquisition level="22" preceding-quest-1="q_epic_505" preceding-quest-check="and" recommended-level="24">
+			<case acquire-quest="y" indicator-social="q_573_s_indi_1" msg="q_573_s" npc-response="qrsp_573_1" object="npc:ch_shaman_029" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_573_des_1" id="1" location-x="-34687.1797" location-y="-70720.7813" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.573_1" required-register-value="3">
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_bignailde_05" object2="zoneenv2:e_onoff_bignailde_05" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_bignailde_04" object2="zoneenv2:e_onoff_bignailde_04" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_bignailde_03" object2="zoneenv2:e_onoff_bignailde_03" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_bignailde_02" object2="zoneenv2:e_onoff_bignailde_02" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" mapunit-1="3003_e_onoff_bignail_01" object="zoneenv:e_onoff_bignailde_01" object2="zoneenv2:e_onoff_bignailde_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-36607.4141" location-y="-70400.7422" map="toemunjean">
+			<mission id="2" name2="Mission.Name2.573_2" required-register-value="1" reward-1="573_final_set1">
+				<case indicator-social="q_573_m2_indi_1" msg="q_573_m2" npc-response="qrsp_573_2" object="npc:ch_shaman_029" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

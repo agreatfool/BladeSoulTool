@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_849" broadcast-category="field" category="normal" day-of-week="none" desc="q_849_sum" grade="1" group2="QG_SnowMountSouth" id="849" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.849" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="n" level="47" preceding-quest-1="q_epic_283" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="49">
+			<case acquire-quest="y" completion-count="0" completion-count-op="ge" npc-response="qrsp_849_1" object="npc:CH_CT_Adventurer_0010" type="talk"/>
+		</acquisition>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.849_3" required-register-value="1" reward-1="849_final_set1">
+				<case completion-count="0" completion-count-op="ge" npc-response="qrsp_849_2" object="npc:CH_CT_Adventurer_0010" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.849_1" required-register-value="4">
+				<case looting="q_897_1_icon" object="zoneenv:e_chest_snowgrasssub_07" object2="zoneenv2:e_chest_snowgrasssub_07" progress-mission="y" type="loot"/>
+				<case looting="q_897_1_icon" object="zoneenv:e_chest_snowgrasssub_06" object2="zoneenv2:e_chest_snowgrasssub_06" progress-mission="y" type="loot"/>
+				<case looting="q_897_1_icon" object="zoneenv:e_chest_snowgrasssub_05" object2="zoneenv2:e_chest_snowgrasssub_05" progress-mission="y" type="loot"/>
+				<case looting="q_897_1_icon" object="zoneenv:e_chest_snowgrasssub_04" object2="zoneenv2:e_chest_snowgrasssub_04" progress-mission="y" type="loot"/>
+				<case looting="q_897_1_icon" object="zoneenv:e_chest_snowgrasssub_03" object2="zoneenv2:e_chest_snowgrasssub_03" progress-mission="y" type="loot"/>
+				<case looting="q_897_1_icon" object="zoneenv:e_chest_snowgrasssub_02" object2="zoneenv2:e_chest_snowgrasssub_02" progress-mission="y" type="loot"/>
+				<case looting="q_897_1_icon" mapunit-1="5220_e_chest_snowgrasssub_01_s849" object="zoneenv:e_chest_snowgrasssub_01" object2="zoneenv2:e_chest_snowgrasssub_01" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.849_2" required-register-value="10">
+				<case object="npc:ME_CT_NaryuHaetae_0001" object2="npc:ME_CT_NaryuHaetae_0001" progress-mission="y" type="killed"/>
+				<case mapunit-1="5285_ME_CT_NaryuHaetae_0001_s849" object="npc:ME_CT_NaryuToryung_0001" object2="npc:ME_CT_NaryuToryung_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

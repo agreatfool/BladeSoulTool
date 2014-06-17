@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="factionmain1" alias="q_sub_1104" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1104_sum" district-1="suwal" grade="4" group2="QG_SouthCoast" id="1104" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1104" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" faction="factionmain1" faction-level="2" faction-reputation="200" level="37" preceding-quest-1="q_epic_909" preceding-quest-check="and" recommended-level="39">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1104_1" object="npc:ch_murimmaeng_0032" type="talk">
+				<filter-set>
+					<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain1"/>
+				</filter-set>
+			</case>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1104_3" object="npc:ch_murimmaeng_0032" type="talk">
+				<filter-set>
+					<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain1"/>
+				</filter-set>
+			</case>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1104_1" required-register-value="5">
+				<case object="zoneenv:e_bupgipiece_08" object2="zoneenv2:e_bupgipiece_08" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_bupgipiece_07" object2="zoneenv2:e_bupgipiece_07" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_bupgipiece_06" object2="zoneenv2:e_bupgipiece_06" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_bupgipiece_05" object2="zoneenv2:e_bupgipiece_05" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_bupgipiece_04" object2="zoneenv2:e_bupgipiece_04" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_bupgipiece_03" object2="zoneenv2:e_bupgipiece_03" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_bupgipiece_02" object2="zoneenv2:e_bupgipiece_02" progress-mission="y" type="manipulate"/>
+				<case mapunit-1="4105_e_bupgipiece_01" object="zoneenv:e_bupgipiece_01" object2="zoneenv2:e_bupgipiece_01" progress-mission="y" type="manipulate"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.1104_3" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="4105_ME_ChungGak_0228" object="npc:me_chunggak_0228" object2="npc:me_chunggak_0228" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1104_2" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="4105_ME_ChungGak_0227" object="npc:me_chunggak_0227" object2="npc:me_chunggak_0227" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="4" name2="Mission.Name2.1104_4" required-register-value="1" reward-1="1104_final_set1" reward-2="1104_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1104_2" object="npc:ch_murimmaeng_0032" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+				<case completion-count="1" npc-response="qrsp_1104_4" object="npc:ch_murimmaeng_0032" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

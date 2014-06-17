@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_838" broadcast-category="field" category="normal" day-of-week="daily" desc="q_838_sum" grade="10" group2="QG_GuiMun" id="838" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.838" reset-type="daily" save-type="all">
+		<acquisition level="50" preceding-quest-1="q_epic_498" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_838_1" object="npc:MH_C3_AngSi_0009" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_838_2" object="npc:MH_C3_AngSi_0009" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-49552.719" location-y="5474.082" map="GwiMunGwanUiAkMong" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.838_1" required-register-value="1">
+				<case object="npc:me_c3_sinsi_0001" object2="npc:me_c3_sinsi_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.838_2" required-register-value="1" reward-1="838_final_set1" reward-2="838_final_set2">
+				<case fee="y" item="q_838_2_icon" msg="q_838_1" progress-mission="y" type="talk-to-self"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_838_3" object="npc:MH_C3_AngSi_0009" progress-mission="y" type="talk"/>
+				<case completion-count="1" npc-response="qrsp_838_4" object="npc:MH_C3_AngSi_0009" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

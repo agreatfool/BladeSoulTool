@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_946" broadcast-category="field" category="epic" completed-list="y" desc="q_946_sum" grade="1" group2="QG_NextbaeCheongEpic2" id="946" map-group-1-1="startzone" max-repeat="1" name2="Quest.Name2.946" save-type="all">
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.946_1" required-register-value="1"/>
+		</mission-step>
+		<acquisition level="1" preceding-quest-check="and" recommended-level="50" sort-no="538"/>
+		<transit id="1" zone="StartZone_Event">
+			<destination mission-step-id="1" zone-index="3"/>
+		</transit>
+	</quest>
+</table>

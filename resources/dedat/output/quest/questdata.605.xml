@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_605" broadcast-category="field" category="normal" desc="q_605_sum" district-1="deasamak" grade="1" group2="QG_HyeolPungSaMak" id="605" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.605" save-type="all">
+		<acquisition level="24" preceding-quest-1="q_epic_508" preceding-quest-check="and" recommended-level="26">
+			<case acquire-quest="y" indicator-social="q_605_s_indi_1" msg="q_605_s" npc-response="qrsp_605_2" object="npc:ch_subfactiontrading_0003" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-67052.3047" location-y="-18784.2031" map="yugachon">
+			<mission id="1" name2="Mission.Name2.605_1" required-register-value="1">
+				<case indicator-social="q_605_m1_indi_1" msg="q_605_m1" npc-response="qrsp_605_1" object="npc:ch_tongkeunbanjum_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_605_des_2" id="2" location-x="-49881.5" location-y="-19920.5781" map="yeolsajeedea">
+			<mission id="2" name2="Mission.Name2.605_2" required-register-value="1">
+				<case gadget-required="empty" indicator-social="q_605_m2_indi_1" msg="q_605_m2" npc-response="qrsp_605_3" object="npc:ch_tongkeunbanjum_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_605_des_3" id="3" location-x="-44101.5234" location-y="-15166.082" map="yeolsajeedea">
+			<mission id="3" name2="Mission.Name2.605_3" required-register-value="1">
+				<case looting="q_605_Quest_meat01_1_icon" mapunit-1="3010_ME_Juno_0002" mapunit-2="3010_ME_Juno_0002_1" mapunit-3="3010_ME_Juno_0002_2" object="npc:me_juno_0006" object2="npc:me_juno_0006" progress-mission="y" type="loot"/>
+				<case button-text-accept="q_605_m3_re_ok" button-text-cancel="q_605_m3_re_no" gadget-required="empty" indicator="quest-normal-can-progress" msg="q_605_m3_re" npc-response="qrsp_605_4" object="npc:ch_tongkeunbanjum_0002" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-49881.5" location-y="-19920.5781" map="yeolsajeedea">
+			<mission id="4" name2="Mission.Name2.605_4" required-register-value="1" reward-1="605_final_set1">
+				<case indicator-social="q_605_m4_indi_1" msg="q_605_m4" npc-response="qrsp_605_5" object="npc:ch_tongkeunbanjum_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

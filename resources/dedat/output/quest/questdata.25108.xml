@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25108" broadcast-category="solo-quartet" category="dungeon" dungeon="Dungeon_HeukRyong_Epic6" group2="QG_HeukRyong_Epic6" id="25108" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.25108" progress-party-duo="n" progress-party-quartet="y" progress-party-sextet="n" progress-party-solo="n" save-type="nothing">
+		<acquisition level="50" mastery-level="50" preceding-quest-1="q_epic_999" preceding-quest-2="q_epic_293" preceding-quest-check="or" recommended-level="50">
+			<case acquire-quest="y" object="zoneenv:4430_portal_4431" object2="zoneenv2:4430_portal_4431" type="enter-portal"/>
+			<case acquire-quest="y" object="zoneenv:934_portal_4432" object2="zoneenv2:934_portal_4432" type="enter-portal"/>
+			<case object="zoneenv:4430_portal_4431_1" object2="zoneenv2:4430_portal_4431_1" type="enter-portal"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.25108_1" required-register-value="1">
+				<case object="npc:ME_WB_DemonShadowCBig_0002" object2="npc:ME_WB_DemonShadowCBig_0002" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_HeukRyong_Epic6_Default">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

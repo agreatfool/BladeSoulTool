@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_927" broadcast-category="field" category="epic" completed-desc="q_927_completed" completed-list="y" desc="q_927_sum" district-1="suwal" grade="1" group2="QG_SuwalPWEpic" id="927" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.927" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="43" sort-no="427"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.927_1" required-register-value="1">
+				<case mapunit-1="4400_zone_angaesup_salsu" object="zone:zone_angaesup_salsu" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.927_2" required-register-value="1">
+				<case npc-response="qrsp_927_1" object="npc:ch_gyeongchunmaeng_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.927_3" required-register-value="1">
+				<case npc-response="qrsp_927_2" object="npc:me_crocodilesharktribebkingakkyo_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_jekuk_attack" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.927_4" required-register-value="1">
+				<case npc-response="qrsp_927_3" object="npc:MH_AngSi_0041" progress-mission="y" type="talk"/>
+				<case object="zone:zone_jekuk_attack" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.927_5" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="4418_mh_jegukgun_0285" object="npc:mh_jegukgun_0285" object2="npc:mh_jegukgun_0285" progress-mission="y" type="killed"/>
+				<case object="zone:zone_jekuk_attack" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_927_9" object="npc:mh_geongchunmaeng_0048" type="approach"/>
+				<case npc-response="qrsp_927_8" object="npc:mh_geongchunmaeng_0051" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.927_6" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="4418_MH_GeongChunMaeng_0064_1" object="npc:mh_geongchunmaeng_0006" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="zone:zone_jekuk_attack" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.927_7" required-register-value="1">
+				<case mapunit-1="4418_foot_4" object="zoneenv:4418_foot_4" object2="zoneenv2:4418_foot_4" progress-mission="y" type="env-entered"/>
+				<case object="zone:zone_jekuk_attack" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_927_12" object="npc:mh_geongchunmaeng_0048" type="approach"/>
+				<case npc-response="qrsp_927_11" object="npc:mh_geongchunmaeng_0051" type="approach"/>
+				<case npc-response="qrsp_927_20" object="npc:ch_geongchunmaeng_0020" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9" location-x="40852.00" location-y="48747.68" map="angaesup" mission-map-type="location">
+			<mission id="9" name2="Mission.Name2.927_9" required-register-value="1" show-kill-mapunit="y">
+				<case object="zoneenv:4418_foot_1" object2="zoneenv2:4418_foot_1" progress-mission="reaction-only" type="env-entered"/>
+				<case mapunit-1="4418_MH_GeongChunMaeng_0005_1" mapunit-2="4418_Guide_E927(9)" object="npc:mh_geongchunmaeng_0005" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="zone:zone_jekuk_attack" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.927_10" required-register-value="1">
+				<case npc-response="qrsp_927_4" object="npc:ch_geongchunmaeng_0021" progress-mission="y" type="talk"/>
+				<case object="zone:zone_jekuk_attack" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_youngrinchn">
+			<destination mission-step-id="12" zone-index="2"/>
+			<destination mission-step-id="11" zone-index="2"/>
+			<destination mission-step-id="10" zone-index="2"/>
+			<destination mission-step-id="9" zone-index="2"/>
+			<destination mission-step-id="8" zone-index="2"/>
+			<destination mission-step-id="7" zone-index="2"/>
+			<destination mission-step-id="6" zone-index="2"/>
+			<destination mission-step-id="5" zone-index="2"/>
+			<destination mission-step-id="4" zone-index="2"/>
+			<destination mission-step-id="3" zone-index="2"/>
+			<destination mission-step-id="2" zone-index="2"/>
+		</transit>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.927_11" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="4418_MH_JeGukGun_0305" object="npc:mh_jegukgun_0305" object2="npc:mh_jegukgun_0305" progress-mission="y" type="killed"/>
+				<case object="zoneenv:4418_foot_2" object2="zoneenv2:4418_foot_2" progress-mission="reaction-only" type="env-entered"/>
+			</mission>
+			<mission-step-fail rollback-step-id="10"/>
+		</mission-step>
+		<mission-step id="12">
+			<mission id="12" name2="Mission.Name2.927_12" required-register-value="1" reward-1="927_final_set1">
+				<case npc-response="qrsp_927_5" object="npc:CH_YeongLin_0012" progress-mission="y" type="talk"/>
+				<case object="zone:zone_jekuk_attack" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_928"/>
+		</completion>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.927_8" required-register-value="1" show-kill-mapunit="y">
+				<case object="npc:MH_GeongChunMaeng_0064" object2="npc:MH_GeongChunMaeng_0064" progress-mission="y" type="killed"/>
+				<case object="zone:zone_jekuk_attack" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

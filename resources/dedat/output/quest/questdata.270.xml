@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_270" broadcast-category="field" category="epic" completed-desc="q_270_completed" completed-list="y" desc="q_270_sum" grade="1" group2="QG_BaeCheongEpic" id="270" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.270" save-type="all">
+		<acquisition level="1" recommended-level="47" sort-no="511"/>
+		<mission-step desc="q_270_des_1" id="1" location-x="32506.14" location-y="27093.92" map="jojangwon" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.270_1" required-register-value="1">
+				<case npc-response="qrsp_270_1" object="npc:CH_CT_JeGukGun_0027" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_JoJangWon_p1" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_269_16" object="npc:CH_CT_JeGukGun_0026" type="approach"/>
+				<case npc-response="qrsp_269_10" object="npc:CH_CT_SungBae_0002" type="approach"/>
+				<case npc-response="qrsp_269_11" object="npc:CH_CT_BokUn_0005" type="approach"/>
+				<case npc-response="qrsp_269_12" object="npc:CH_CT_BokUn_0006" type="approach"/>
+				<case npc-response="qrsp_269_13" object="npc:CH_CT_BokUn_0007" type="approach"/>
+				<case npc-response="qrsp_269_14" object="npc:CE_CT_ThiefCat_0010" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.270_2" required-register-value="1">
+				<case mapunit-1="5171_footswitch_01_e270" object="zoneenv:5171_footswitch_01" object2="zoneenv2:5171_footswitch_01" progress-mission="y" type="env-entered"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="3" location-x="30652.62" location-y="27677.91" map="JoJangWon" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.270_3" required-register-value="1">
+				<case gadget-required="empty" npc-response="qrsp_270_2" object="npc:CH_CT_JeGukGun_0027" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step desc="q_270_des_4" id="4">
+			<mission id="4" name2="Mission.Name2.270_4" required-register-value="1">
+				<case gadget-required="dont-care" mapunit-1="5171_e_chest_latchout_01_e270" object="zoneenv:e_chest_latchout_01" object2="zoneenv2:e_chest_latchout_01" progress-mission="y" type="manipulate"/>
+				<case button-text-accept="q_270_20_ok" button-text-cancel="q_270_20_no" gadget-required="empty" npc-response="qrsp_270_7" object="npc:CH_CT_JeGukGun_0027" progress-mission="reaction-only" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="5" location-x="30678.01" location-y="30775.56" map="JoJangWon" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.270_5" required-register-value="1">
+				<case gadget-required="empty" npc-response="qrsp_270_3" object="npc:CH_CT_JeGukGun_0027" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step desc="q_270_des_6" id="6">
+			<mission id="6" name2="Mission.Name2.270_6" required-register-value="1">
+				<case gadget="Q_Body_0001" gadget-required="carry-and-remove" indicator="quest-gadget-required" mapunit-1="5171_e_chest_bigstake_01_e270" object="zoneenv:e_chest_bigstake_01" object2="zoneenv2:e_chest_bigstake_01" progress-mission="y" type="manipulate"/>
+				<case button-text-accept="q_270_20_ok" button-text-cancel="q_270_20_no" gadget-required="empty" npc-response="qrsp_270_9" object="npc:CH_CT_JeGukGun_0027" progress-mission="reaction-only" type="talk"/>
+				<case gadget-required="dont-care" indicator="quest-gadget-drop" mapunit-1="5171_CH_CT_Guard_0003_e270" object="npc:CH_CT_Guard_0003" progress-mission="reaction-only" type="npc-manipulate"/>
+				<case gadget-required="dont-care" indicator="default" npc-response="qrsp_270_8" object="npc:MH_CT_JoJangWon_0003" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="7" location-x="33394.81" location-y="31207.20" map="JoJangWon" mission-map-type="location">
+			<mission id="7" name2="Mission.Name2.270_7" required-register-value="1">
+				<case gadget-required="empty" npc-response="qrsp_270_4" object="npc:CH_CT_JeGukGun_0027" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step desc="q_270_des_8" id="8">
+			<mission id="8" name2="Mission.Name2.270_8" required-register-value="2">
+				<case object="zoneenv:e_chest_lodhing_01" object2="zoneenv2:e_chest_lodhing_01" progress-mission="y" type="manipulate"/>
+				<case button-text-accept="q_270_20_ok" button-text-cancel="q_270_20_no" gadget-required="empty" npc-response="qrsp_270_10" object="npc:CH_CT_JeGukGun_0027" progress-mission="reaction-only" type="talk"/>
+				<case mapunit-1="5171_e_chest_lodhing_01_e270" mapunit-2="5171_e_chest_lodhing_02_e270" object="zoneenv:e_chest_lodhing_02" object2="zoneenv2:e_chest_lodhing_02" progress-mission="y" type="manipulate"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="9" location-x="34638.95" location-y="31131.03" map="JoJangWon" mission-map-type="location">
+			<mission id="9" name2="Mission.Name2.270_9" required-register-value="1">
+				<case npc-response="qrsp_270_5" object="npc:CH_CT_JeGukGun_0027" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step desc="q_270_des_10" id="10">
+			<mission id="10" name2="Mission.Name2.270_10" required-register-value="1">
+				<case mapunit-1="5171_e_pot_bigflame_01_e270" object="zoneenv:e_pot_bigflame_01" object2="zoneenv2:e_pot_bigflame_01" progress-mission="y" type="killed"/>
+				<case gadget="Q_Rifle_0006" gadget-required="not-a" indicator="quest-gadget-drop" object="npc:ME_CT_RewardBox_0009" object2="npc:ME_CT_RewardBox_0009" progress-mission="reaction-only" type="killed"/>
+				<case gadget-required="dont-care" object-1="zoneenv:e_pot_bigflame_01" object2-1="zoneenv2:e_pot_bigflame_01" progress-mission="reaction-only" skill3="Gadget_Q_Rifle_0006" type="skill"/>
+				<case npc-response="qrsp_270_12" object="npc:CH_CT_JeGukGun_0027" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.270_11" required-register-value="1">
+				<case mapunit-1="5171_e_gate_bigbarngate_01_e270" object="zoneenv:e_gate_bigbarngate_01" object2="zoneenv2:e_gate_bigbarngate_01" progress-mission="y" type="manipulate"/>
+				<case npc-response="qrsp_270_11" object="npc:MH_CT_JoJangWon_0004" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="12" location-x="34004.18" location-y="27043.14" map="jojangwon" mission-map-type="location">
+			<mission id="12" name2="Mission.Name2.270_12" required-register-value="1" reward-1="270_final_set1">
+				<case npc-response="qrsp_270_6" object="npc:CH_CT_JeGukGun_0027" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_270_11" object="npc:MH_CT_JoJangWon_0004" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_271"/>
+		</completion>
+		<transit id="1" zone="Zone_JoJangWon">
+			<destination mission-step-id="12" zone-index="1"/>
+			<destination mission-step-id="11" zone-index="1"/>
+			<destination mission-step-id="10" zone-index="1"/>
+			<destination mission-step-id="9" zone-index="1"/>
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

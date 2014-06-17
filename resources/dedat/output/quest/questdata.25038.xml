@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25038" broadcast-category="field" category="dungeon" dungeon="Dungeon_SnakeScalesVally" grade="#N/A" group2="QG_SnakeValley" id="25038" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.25038" progress-party-duo="n" progress-party-quartet="n" progress-party-solo="n" reset-type="none" save-type="nothing">
+		<acquisition level="1" preceding-quest-1="q_epic_285" preceding-quest-2="q_epic_293" preceding-quest-check="or" recommended-level="50">
+			<case acquire-quest="y" object="zoneenv:5295_portal_5297" object2="zoneenv2:5295_portal_5297" type="enter-portal"/>
+			<case acquire-quest="y" object="zoneenv:928_potal_5296" object2="zoneenv2:928_potal_5296" type="enter-portal"/>
+		</acquisition>
+		<mission-step id="1" location-x="16248.98" location-y="-60079.03" map="BuHwalUiJeDan" mission-map-type="location">
+			<mission id="1" required-register-value="1">
+				<case object="npc:ME_CT_RewardBox_0034" object2="npc:ME_CT_RewardBox_0034" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_ResurrectionAltar_Default">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

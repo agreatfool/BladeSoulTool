@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_814" broadcast-category="field" category="normal" day-of-week="none" desc="q_814_sum" grade="1" group2="QG_ZazakWoodWest" id="814" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.814" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="n" level="46" preceding-quest-1="q_epic_282" preceding-quest-2="q_sub_813" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="48">
+			<case acquire-quest="y" completion-count="0" completion-count-op="ge" npc-response="qrsp_814_1" object="npc:CE_CT_ToGaJuk_0003" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.814_1" required-register-value="10">
+				<case looting="q_814_1_icon" object="npc:MH_CT_JeGukGun_0603" object2="npc:MH_CT_JeGukGun_0603" progress-mission="y" type="loot"/>
+				<case looting="q_814_1_icon" object="npc:MH_CT_JeGukGun_0601" object2="npc:MH_CT_JeGukGun_0601" progress-mission="y" type="loot"/>
+				<case looting="q_814_1_icon" object="npc:MH_CT_JeGukGun_0600" object2="npc:MH_CT_JeGukGun_0600" progress-mission="y" type="loot"/>
+				<case looting="q_814_1_icon" object="npc:MH_CT_JeGukGun_0599" object2="npc:MH_CT_JeGukGun_0599" progress-mission="y" type="loot"/>
+				<case looting="q_814_1_icon" mapunit-1="5200_MH_CT_JeGukGun_0600_s814" object="npc:MH_CT_JeGukGun_0598" object2="npc:MH_CT_JeGukGun_0598" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.814_2" required-register-value="1" reward-1="814_final_set1">
+				<case completion-count="0" completion-count-op="ge" npc-response="qrsp_814_2" object="npc:CE_CT_ToGaJuk_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

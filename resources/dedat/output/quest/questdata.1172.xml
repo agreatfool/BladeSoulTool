@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="factionmain1" alias="q_sub_1172" attraction-1="faction-battle-field-zone:BuYuDo" attraction-2="dungeon:Dungeon_Buyudo" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1172_sum" district-1="suwal" grade="6" group2="QG_Booyudo" id="1172" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.1172" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" faction="factionmain1" level="48" preceding-quest-1="q_sub_1169" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" completion-count="0" npc-response="qrsp_1172_1" object="npc:CE_CT_Board_0035" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1172_1" required-register-value="1">
+				<case object="npc:ch_honchungyo_0042" object2="npc:ch_honchungyo_0042" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1172_2" required-register-value="1">
+				<case object="npc:ch_honchungyo_0038" object2="npc:ch_honchungyo_0038" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.1172_3" required-register-value="1">
+				<case object="npc:ch_honchungyo_0041" object2="npc:ch_honchungyo_0041" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="4" name2="Mission.Name2.1172_4" required-register-value="1" reward-1="1172_final_set1" reward-2="1172_final_set2">
+				<case completion-count="0" npc-response="qrsp_1172_2" object="npc:ch_murimmaeng_0042" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

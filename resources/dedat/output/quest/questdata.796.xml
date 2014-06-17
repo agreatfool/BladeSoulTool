@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_796" attraction-1="classic-field-zone:NoklimdovillageClassic" attraction-2="cave2:cave_baekchung_13" attraction-3="dungeon:dungeon_noklimdotreasurehouse" attraction-4="dungeon:dungeon_takmagul" broadcast-category="field" category="normal" day-of-week="daily" desc="q_796_sum" grade="6" group2="QG_NokRimDo" id="796" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.796" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="46" preceding-quest-1="q_sub_481" preceding-quest-check="and" recommended-level="47">
+			<case acquire-quest="y" npc-response="qrsp_796_1" object="npc:CH_CT_JeGukGun_0241" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_796_3" object="npc:ce_ct_board_0026" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.796_1" required-register-value="6">
+				<case looting="q_796_1_icon" object="npc:ME_CT_HyeolPung_0015" object2="npc:ME_CT_HyeolPung_0015" progress-mission="y" type="loot"/>
+				<case looting="q_796_1_icon" object="npc:ME_CT_GeoGeoBung_0002" object2="npc:ME_CT_GeoGeoBung_0002" progress-mission="y" type="loot"/>
+				<case looting="q_796_1_icon" object="npc:ME_CT_HaOBanng_0148" object2="npc:ME_CT_HaOBanng_0148" progress-mission="y" type="loot"/>
+				<case looting="q_796_1_icon" object="npc:ME_CT_FrogTribeCLeader_0004" object2="npc:ME_CT_FrogTribeCLeader_0004" progress-mission="y" type="loot"/>
+				<case looting="q_796_1_icon" object="npc:ME_CT_NokLimDo_0177" object2="npc:ME_CT_NokLimDo_0177" progress-mission="y" type="loot"/>
+				<case looting="q_796_1_icon" object="npc:ME_CT_JeGukGun_0572" object2="npc:ME_CT_JeGukGun_0572" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.796_2" required-register-value="1" reward-1="796_final_set1" reward-2="796_final_set2">
+				<case item="q_796_2_icon" msg="q_796_2" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

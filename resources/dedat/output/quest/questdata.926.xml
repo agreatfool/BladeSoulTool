@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_926" broadcast-category="field" category="epic" completed-desc="q_926_completed" completed-list="y" desc="q_926_sum" district-1="suwal" grade="1" group2="QG_SuwalPWEpic" id="926" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.926" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="42" sort-no="424"/>
+		<completion>
+			<next-quest quest="q_epic_924"/>
+		</completion>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.926_1" required-register-value="1">
+				<case npc-response="qrsp_926_1" object="npc:ch_gyeongchunmaeng_0038" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.926_2" required-register-value="1">
+				<case loot-item="Quest_Scroll_SoowolPyungwon_0047" looting="q_926_1_icon" object="npc:mh_geongchunmaeng_0088" object2="npc:mh_geongchunmaeng_0088" progress-mission="y" quest-symbol-drop-prob="20" type="loot"/>
+				<case loot-item="Quest_Scroll_SoowolPyungwon_0047" looting="q_926_1_icon" object="npc:mh_geongchunmaeng_0087" object2="npc:mh_geongchunmaeng_0087" progress-mission="y" quest-symbol-drop-prob="20" type="loot"/>
+				<case loot-item="Quest_Scroll_SoowolPyungwon_0047" looting="q_926_1_icon" mapunit-1="4400_mh_geongchunmaeng_0086" object="npc:mh_geongchunmaeng_0086" object2="npc:mh_geongchunmaeng_0086" progress-mission="y" quest-symbol-drop-prob="20" type="loot"/>
+				<case npc-response="qrsp_926_2" object="npc:ch_gyeongchunmaeng_0038" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.926_3" required-register-value="1">
+				<case item="Quest_Scroll_SoowolPyungwon_0047" msg="q_926_2" progress-mission="y" type="talk-to-item"/>
+				<case npc-response="qrsp_926_3" object="npc:ch_gyeongchunmaeng_0038" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.926_4" required-register-value="1">
+				<case npc-response="qrsp_926_4" object="npc:ch_gyeongchunmaeng_0038" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.926_5" required-register-value="1">
+				<case npc-response="qrsp_926_5" object="npc:ch_gyeongchunmaeng_0039" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_926_6" object="npc:ch_geongchunmaeng_0010" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.926_6" required-register-value="1">
+				<case npc-response="qrsp_926_7" object="npc:ch_geongchunmaeng_0010" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_926_8" object="npc:ch_gyeongchunmaeng_0039" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.926_7" required-register-value="10">
+				<case object="npc:mh_jegukgun_0154" object2="npc:mh_jegukgun_0154" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0153" object2="npc:mh_jegukgun_0153" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0152" object2="npc:mh_jegukgun_0152" progress-mission="y" type="killed"/>
+				<case mapunit-1="4406_mh_jegukgun_0149" mapunit-2="4406_mh_jegukgun_0149_1" object="npc:mh_jegukgun_0149" object2="npc:mh_jegukgun_0149" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_926_10" object="npc:ch_geongchunmaeng_0010" type="approach"/>
+				<case npc-response="qrsp_926_9" object="npc:ch_gyeongchunmaeng_0039" type="approach"/>
+			</mission>
+			<mission id="8" name2="Mission.Name2.926_8" required-register-value="4">
+				<case looting="q_926_2_icon" object="zoneenv:e_chest_soldier_ashes_08" object2="zoneenv2:e_chest_soldier_ashes_08" progress-mission="y" type="loot"/>
+				<case looting="q_926_2_icon" object="zoneenv:e_chest_soldier_ashes_07" object2="zoneenv2:e_chest_soldier_ashes_07" progress-mission="y" type="loot"/>
+				<case looting="q_926_2_icon" object="zoneenv:e_chest_soldier_ashes_06" object2="zoneenv2:e_chest_soldier_ashes_06" progress-mission="y" type="loot"/>
+				<case looting="q_926_2_icon" object="zoneenv:e_chest_soldier_ashes_05" object2="zoneenv2:e_chest_soldier_ashes_05" progress-mission="y" type="loot"/>
+				<case looting="q_926_2_icon" object="zoneenv:e_chest_soldier_ashes_04" object2="zoneenv2:e_chest_soldier_ashes_04" progress-mission="y" type="loot"/>
+				<case looting="q_926_2_icon" object="zoneenv:e_chest_soldier_ashes_03" object2="zoneenv2:e_chest_soldier_ashes_03" progress-mission="y" type="loot"/>
+				<case looting="q_926_2_icon" object="zoneenv:e_chest_soldier_ashes_02" object2="zoneenv2:e_chest_soldier_ashes_02" progress-mission="y" type="loot"/>
+				<case looting="q_926_2_icon" mapunit-3="4406_e_chest_soldier_ashes_01" object="zoneenv:e_chest_soldier_ashes_01" object2="zoneenv2:e_chest_soldier_ashes_01" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_926_12" object="npc:ch_geongchunmaeng_0010" type="approach"/>
+				<case npc-response="qrsp_926_11" object="npc:ch_gyeongchunmaeng_0039" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="9" name2="Mission.Name2.926_9" required-register-value="1" reward-1="926_middle_set1">
+				<case npc-response="qrsp_926_13" object="npc:ch_geongchunmaeng_0010" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_926_14" object="npc:ch_gyeongchunmaeng_0039" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="10" name2="Mission.Name2.926_10" required-register-value="1" reward-1="926_final_set1">
+				<case npc-response="qrsp_926_15" object="npc:ch_gyeongchunmaeng_0039" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_926_16" object="npc:ch_geongchunmaeng_0010" type="approach"/>
+				<completion-loss item-1="Quest_Scroll_SoowolPyungwon_0047"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

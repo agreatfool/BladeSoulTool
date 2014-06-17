@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1033" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1033_sum" district-1="suwal" grade="9" group2="QG_MonkeysForest" id="1033" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1033" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="43" preceding-quest-check="and" recommended-level="46">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1033_1" object="npc:CH_Trainee_0002" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1033_3" object="npc:CH_Trainee_0002" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_1033_5" object="npc:ce_board_0003" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1033_1" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="4535_ME_NakWonDaeSung_0002" object="npc:ME_NakWonDaeSung_0002" object2="npc:ME_NakWonDaeSung_0002" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1033_2" required-register-value="1" reward-1="1033_final_set1" reward-2="1033_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1033_2" object="npc:CH_Trainee_0002" progress-mission="y" type="talk"/>
+				<case completion-count="1" npc-response="qrsp_1033_4" object="npc:CH_Trainee_0002" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_1033_1_icon" msg="q_1033_6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

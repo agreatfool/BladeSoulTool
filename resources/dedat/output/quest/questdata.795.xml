@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_795" broadcast-category="field" category="normal" desc="q_795_sum" district-1="deasamak" grade="1" group2="QG_HeukChangJokBuRak" id="795" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.795" save-type="all">
+		<acquisition level="30" preceding-quest-1="q_epic_525" preceding-quest-check="and" recommended-level="32">
+			<case acquire-quest="y" indicator-social="q_795_s_indi_1" msg="q_795_s" npc-response="qrsp_795_1" object="npc:ch_dangsan_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="31944.027" location-y="-38717.606" map="sajisukrim">
+			<mission id="2" name2="Mission.Name2.795_2" required-register-value="10">
+				<case looting="q_795_Quest_baemmushroom_cap_1_icon" mapunit-1="3023_ME_HolyMushroom_002" mapunit-2="3023_ME_HolyMushroom_002_1" mapunit-3="3023_ME_HolyMushroom_002_2" object="npc:me_holymushroom_002" object2="npc:me_holymushroom_002" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="1" name2="Mission.Name2.795_1" required-register-value="7">
+				<case gadget-required="dont-care" looting="q_766_quest_blue_fish_1_icon" object="zoneenv:e_onoff_net_01" object2="zoneenv2:e_onoff_net_01" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_766_quest_blue_fish_1_icon" object="zoneenv:e_onoff_net_02" object2="zoneenv2:e_onoff_net_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_766_quest_blue_fish_1_icon" object="zoneenv:e_onoff_net_03" object2="zoneenv2:e_onoff_net_03" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_766_quest_blue_fish_1_icon" object="zoneenv:e_onoff_net_04" object2="zoneenv2:e_onoff_net_04" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_766_quest_blue_fish_1_icon" object="zoneenv:e_onoff_net_05" object2="zoneenv2:e_onoff_net_05" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_766_quest_blue_fish_1_icon" object="zoneenv:e_onoff_net_06" object2="zoneenv2:e_onoff_net_06" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_766_quest_blue_fish_1_icon" object="zoneenv:e_onoff_net_07" object2="zoneenv2:e_onoff_net_07" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_766_quest_blue_fish_1_icon" object="zoneenv:e_onoff_net_08" object2="zoneenv2:e_onoff_net_08" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_766_quest_blue_fish_1_icon" object="zoneenv:e_onoff_net_09" object2="zoneenv2:e_onoff_net_09" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_766_quest_blue_fish_1_icon" mapunit-1="3023_e_onoff_net_01" mapunit-2="3023_e_onoff_net_01_1" mapunit-3="3023_e_onoff_net_01_2" object="zoneenv:e_onoff_net_10" object2="zoneenv2:e_onoff_net_10" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="44577.375" location-y="-42604.789" map="sajisukrim">
+			<mission id="3" name2="Mission.Name2.795_3" required-register-value="1" reward-1="795_final_set1">
+				<case indicator-social="q_795_m3_indi_1" msg="q_795_m3" npc-response="qrsp_795_2" object="npc:ch_mayeongganggun_0012" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

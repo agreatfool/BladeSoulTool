@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_921" broadcast-category="field" category="epic" completed-desc="q_921_completed" completed-list="y" desc="q_921_sum" district-1="suwal" grade="1" group2="QG_SuwalPWEpic" id="921" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.921" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="42" sort-no="421"/>
+		<mission-step id="1" location-x="-56539.03" location-y="15383.28" map="gwidosi" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.921_1" required-register-value="1">
+				<case npc-response="qrsp_921_1" object="npc:ce_akgyojok_0009" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_921_8" object="npc:ce_akgyojok_0011" progress-mission="reaction-only" type="approach"/>
+				<fixed-reward slot-1="item:quest_scroll_soowolpyungwon_0033"/>
+			</mission>
+		</mission-step>
+		<mission-step hide="y" id="2" location-x="-52167.059" location-y="18811.191" map="jihachanggo" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.921_2" required-register-value="1" show-kill-mapunit="y">
+				<case object="npc:me_dokebigon_0002" object2="npc:me_dokebigon_0002" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_921_8" object="npc:ce_akgyojok_0009" progress-mission="reaction-only" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step hide="y" id="3" location-x="-52167.059" location-y="18811.191" map="jihachanggo" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.921_3" required-register-value="1" show-kill-mapunit="y">
+				<case object="npc:me_dokebigon_0002" object2="npc:me_dokebigon_0002" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_921_8" object="npc:ce_akgyojok_0009" progress-mission="reaction-only" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step hide="y" id="4" location-x="-52167.059" location-y="18811.191" map="jihachanggo" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.921_4" required-register-value="1" show-kill-mapunit="y">
+				<case object="npc:me_dokebigon_0002" object2="npc:me_dokebigon_0002" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_921_8" object="npc:ce_akgyojok_0009" progress-mission="reaction-only" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step hide="y" id="5" location-x="-52167.059" location-y="18811.191" map="jihachanggo" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.921_5" required-register-value="1" show-kill-mapunit="y">
+				<case object="npc:me_dokebigon_0002" object2="npc:me_dokebigon_0002" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_921_8" object="npc:ce_akgyojok_0009" progress-mission="reaction-only" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6" location-x="-52167.059" location-y="18811.191" map="jihachanggo" mission-map-type="location">
+			<mission id="6" name2="Mission.Name2.921_6" required-register-value="1" show-kill-mapunit="n">
+				<case loot-item="quest_scroll_soowolpyungwon_0034" looting="q_921_quest_old_book_1_icon" object="npc:me_dokebigon_0002" object2="npc:me_dokebigon_0002" progress-mission="y" type="loot"/>
+				<completion-loss item-1="quest_scroll_soowolpyungwon_0033" item-count-1="0"/>
+				<case npc-response="qrsp_921_8" object="npc:ce_akgyojok_0009" progress-mission="reaction-only" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.921_7" required-register-value="1">
+				<case item="quest_scroll_soowolpyungwon_0034" msg="q_921_2" progress-mission="y" type="talk-to-item"/>
+				<case npc-response="qrsp_921_8" object="npc:ce_akgyojok_0009" progress-mission="reaction-only" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.921_8" required-register-value="1">
+				<case npc-response="qrsp_921_3" object="npc:ce_akgyojok_0009" progress-mission="y" type="talk"/>
+				<completion-loss item-1="quest_scroll_soowolpyungwon_0034" item-count-1="0"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9" location-x="-47569.61" location-y="9385.57" map="gwimungwan" mission-map-type="location">
+			<mission id="9" name2="Mission.Name2.921_9" required-register-value="1">
+				<case npc-response="qrsp_921_4" object="npc:ch_baekmoon_0006" progress-mission="y" type="talk"/>
+				<case object="zone:zone_guimunguan_epic" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_921_8" object="npc:ce_akgyojok_0009" progress-mission="reaction-only" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.921_10" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="4311_MH_YuRan_0004_1" object="npc:mh_yuran_0004" progress-mission="y" type="npc-bleeding-occured"/>
+			</mission>
+			<mission-step-fail rollback-step-id="9"/>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.921_11" required-register-value="1">
+				<case npc-response="qrsp_921_5" object="npc:ch_baekmoon_0006" progress-mission="y" type="talk"/>
+				<case object="zone:zone_guimunguan_epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="12">
+			<mission id="12" name2="Mission.Name2.921_12" required-register-value="1">
+				<case npc-response="qrsp_921_6" object="npc:ce_crocodilesharktribeaelder_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_guimunguan_epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step guide-message="gm_921_1" id="13" location-x="-47483.67" location-y="9932.45" map="gwimungwan" mission-map-type="location">
+			<mission id="13" name2="Mission.Name2.921_13" required-register-value="1">
+				<case object="npc:ce_crocodilesharktribeaelder_0001" object2="npc:ce_crocodilesharktribeaelder_0001" progress-mission="y" social="talksocial_bow1" type="pc-social"/>
+			</mission>
+			<mission-step-fail rollback-step-id="12"/>
+		</mission-step>
+		<mission-step id="14">
+			<mission id="14" name2="Mission.Name2.921_14" required-register-value="1" reward-1="921_final_set1">
+				<case npc-response="qrsp_921_7" object="npc:ce_akgyonojang_0005" progress-mission="y" type="talk"/>
+				<case object="zone:zone_guimunguan_epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_922"/>
+		</completion>
+		<transit id="1" zone="zone_guimunguan">
+			<destination mission-step-id="14" zone-index="1"/>
+			<destination mission-step-id="13" zone-index="1"/>
+			<destination mission-step-id="12" zone-index="1"/>
+			<destination mission-step-id="11" zone-index="1"/>
+			<destination mission-step-id="10" zone-index="1"/>
+			<destination mission-step-id="9" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

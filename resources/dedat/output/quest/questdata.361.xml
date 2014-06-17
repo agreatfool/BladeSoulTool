@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_361" broadcast-category="field" category="normal" desc="q_361_sum" district-1="jeryoungrim" grade="1" group="제룡림(버려진 어촌)" group2="QG_Delete" id="361" map-group-1-1="jeryoungrim" max-repeat="1" name="양식있는 양식장 주인 (1)" name2="Quest.Name2.361" retired="y" save-type="all">
+		<acquisition level="50" preceding-quest-1="q_epic_309" preceding-quest-check="and" recommended-level="50"/>
+		<mission-step completion-type="and" id="1" location-x="-27715.4063" location-y="-7652.6309" map="Oyum_Dun">
+			<mission id="1" name="오염된 까칠한 모래소라의 살 획득" name2="Mission.Name2.361_1" required-register-value="1" show-kill-mapunit="y"/>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-29120.75" location-y="-2816.6914" map="huekummrim">
+			<mission id="2" name="버려진 어촌 주민 왕부자에게 보고" name2="Mission.Name2.361_2" required-register-value="1" reward-1="361_final_set1"/>
+		</mission-step>
+	</quest>
+</table>

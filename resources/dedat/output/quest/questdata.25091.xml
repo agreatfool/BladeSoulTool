@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25091" attraction-1="cave2:Cave_SuWal_13" broadcast-category="field" category="attraction" grade="8" group2="QG_AncyJokVillage" id="25091" map-group-1-1="suwal" max-repeat="-1" name2="Quest.Name2.25091" save-type="nothing">
+		<acquisition level="33" preceding-quest-check="and" recommended-level="38"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.25091_1" required-register-value="1">
+				<case object="npc:ME_BarbarianSpearBow_0001" object2="npc:ME_BarbarianSpearBow_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" required-register-value="1" reward-1="25091_final_set1">
+				<case item="q_25091_1_icon" msg="q_25091_1" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

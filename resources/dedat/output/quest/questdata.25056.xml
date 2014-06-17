@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25056" broadcast-category="sextet" category="dungeon" dungeon="Dungeon_GuiMunGuan_Nightmare" grade="21" id="25056" max-repeat="1" name2="Quest.Name2.25056" progress-party-duo="n" progress-party-quartet="n" progress-party-solo="n" reset-by-acquire-time="none" save-type="nothing">
+		<acquisition check-tencent-vitality="n" level="1" preceding-quest-1="q_epic_498" recommended-level="50">
+			<case acquire-quest="y" object="zoneenv:5919_portal_5906" object2="zoneenv2:5919_portal_5906" type="enter-portal"/>
+			<case acquire-quest="y" object="zoneenv:809_Portal_5906" object2="zoneenv2:809_Portal_5906" type="enter-portal"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.25056_1" required-register-value="1">
+				<case object="npc:ME_C3_KangSiFat_0004" object2="npc:ME_C3_KangSiFat_0004" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="mission.name2.25056_2" required-register-value="1">
+				<case object="npc:ME_C3_GalMaWang_0001" object2="npc:ME_C3_GalMaWang_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<transit id="2" zone="Zone_GuiMunGuan_Nightmare_2_Default">
+			<destination mission-step-id="2" zone-index="1"/>
+		</transit>
+		<transit id="1" zone="Zone_GuiMunGuan_Nightmare_1_Default">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

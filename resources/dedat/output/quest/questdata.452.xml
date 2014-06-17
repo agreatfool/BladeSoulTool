@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_452" broadcast-category="field" category="normal" content-type="elite-skill" grade="1" group2="QG_Elite" id="452" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.452" save-type="all">
+		<acquisition job-1="소환사" level="1" recommended-level="46">
+			<case acquire-quest="y" grocery="Quest_Scroll_EliteSkill_0046" item="Quest_Scroll_EliteSkill_0046" msg="q_452_1" type="talk-to-item"/>
+			<case acquire-quest="y" grocery="Quest_Scroll_EliteSkill_0102" item="Quest_Scroll_EliteSkill_0102" msg="q_452_1" type="talk-to-item"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.452_1" required-register-value="100">
+				<tutorial-case object-1="npc:ME_GuGuBung_0003" object2-1="npc:ME_GuGuBung_0003" progress-mission="y" skill-sequence="SU_PvE_EliteSkill_0046_Rose_hit" type="skill-sequence"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.452_2" required-register-value="50">
+				<case npc="ME_FireGorilla_0001" progress-mission="y" progress-value="2" skill3-id-1="26101" skill3-id-2="26102" type="finish-blow"/>
+				<case npc="MH_ORakDang_0030" progress-mission="y" skill3-id-1="26101" skill3-id-2="26102" type="finish-blow"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.452_3" required-register-value="50">
+				<case npc="ME_NakWonDaeSung_0002" progress-mission="y" progress-value="2" skill3-id-1="26101" skill3-id-2="26102" type="finish-blow"/>
+				<case npc="MH_JungYun_0001" progress-mission="y" skill3-id-1="26101" skill3-id-2="26102" type="finish-blow"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.452_4" required-register-value="10">
+				<case npc="ME_SpiderQueen_0001" progress-mission="y" skill3-id-1="26101" skill3-id-2="26102" type="finish-blow"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

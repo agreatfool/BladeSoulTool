@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="gang1_jakyngdan" alias="q_sub_478" broadcast-category="field" category="normal" day-of-week="daily" desc="q_478_sum" district-1="jeryoungrim" grade="1" group2="QG_Geoamgol" id="478" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.478" reset-type="daily" save-type="all">
+		<mission-step id="1" map="songamdo">
+			<mission id="1" name2="Mission.Name2.478_1" required-register-value="15">
+				<case object="npc:ch_chunggak_0009" object2="npc:ch_chunggak_0009" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:ch_chunggak_0008" object2="npc:ch_chunggak_0008" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:ch_chunggak_0007" object2="npc:ch_chunggak_0007" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0083" object2="npc:MH_ChungGak_0083" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0082" object2="npc:MH_ChungGak_0082" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0081" object2="npc:MH_ChungGak_0081" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0080" object2="npc:MH_ChungGak_0080" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0077" object2="npc:MH_ChungGak_0077" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0112" object2="npc:MH_ChungGak_0112" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0111" object2="npc:MH_ChungGak_0111" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0079" object2="npc:MH_ChungGak_0079" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0078" object2="npc:MH_ChungGak_0078" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0099" object2="npc:MH_ChungGak_0099" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0098" object2="npc:MH_ChungGak_0098" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:Mob_Hmn_2LegR_MLnd_Spctr_DeadSwordMan_Q_001" object2="npc:Mob_Hmn_2LegR_MLnd_Spctr_DeadSwordMan_Q_001" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0097" object2="npc:MH_ChungGak_0097" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0096" object2="npc:MH_ChungGak_0096" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:Mob_JinM_Practitioner_Crazy_Swd_Q_001" object2="npc:Mob_JinM_Practitioner_Crazy_Swd_Q_001" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0095" object2="npc:MH_ChungGak_0095" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0094" object2="npc:MH_ChungGak_0094" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_Practitioner_0001" object2="npc:MH_Practitioner_0001" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0179" object2="npc:MH_ChungGak_0179" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0178" object2="npc:MH_ChungGak_0178" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0105" object2="npc:MH_ChungGak_0105" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0104" object2="npc:MH_ChungGak_0104" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0103" object2="npc:MH_ChungGak_0103" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0102" object2="npc:MH_ChungGak_0102" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0101" object2="npc:MH_ChungGak_0101" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0100" object2="npc:MH_ChungGak_0100" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0093" object2="npc:MH_ChungGak_0093" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0092" object2="npc:MH_ChungGak_0092" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case mapunit-1="2420_MH_ChungGak" mapunit-2="2420_MH_ChungGak_1" mapunit-3="2420_MH_ChungGak_2" mapunit-4="2420_MH_ChungGak_3" object="npc:Mob_JinM_ChungGak_Plunder_CrsBow_003" object2="npc:Mob_JinM_ChungGak_Plunder_CrsBow_003" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0091" object2="npc:MH_ChungGak_0091" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:MH_ChungGak_0090" object2="npc:MH_ChungGak_0090" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case object="npc:Mob_JinM_ChungGak_Plunder_CrsBow_002" object2="npc:Mob_JinM_ChungGak_Plunder_CrsBow_002" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_478_3" object="npc:ch_faction_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" map="songamdo">
+			<mission id="2" name2="Mission.Name2.478_2" required-register-value="1" reward-1="478_final_set1" reward-2="478_final_set2">
+				<case msg="q_478_m2" npc-response="qrsp_478_2" object="npc:ch_faction_0003" progress-mission="y" type="talk" visible-object="y">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="gang1_jakyngdan"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<acquisition check-tencent-vitality="n" level="18" preceding-quest-1="q_sub_477" preceding-quest-check="and" recommended-level="20">
+			<case acquire-quest="y" msg="q_478_s" npc-response="qrsp_478_1" object="npc:ch_faction_0003" type="talk" visible-object="y">
+				<filter-set>
+					<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="gang1_jakyngdan"/>
+				</filter-set>
+			</case>
+		</acquisition>
+	</quest>
+</table>

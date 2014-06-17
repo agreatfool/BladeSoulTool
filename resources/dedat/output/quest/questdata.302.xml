@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_302" broadcast-category="field" category="epic" completed-desc="q_302_completed" completed-list="y" desc="q_302_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="302" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.302" save-type="all">
+		<acquisition level="1" recommended-level="3" sort-no="202"/>
+		<mission-step completion-type="and" desc="q_302_des_1" id="1" location-x="-55504.0508" location-y="-54833.9609" map="mangjasup">
+			<mission id="1" name2="Mission.Name2.302_1" required-register-value="1">
+				<case mapunit-1="2631_ch_dochunpung_0001" object="npc:ch_dochunpung_0001" progress-mission="y" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-55324.2188" location-y="-54174.5625" map="mangjasup">
+			<mission id="2" name2="Mission.Name2.302_2" required-register-value="3">
+				<case object="npc:mh_chunggak_0002" object2="npc:mh_chunggak_0002" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0003" object2="npc:mh_chunggak_0003" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0004" object2="npc:mh_chunggak_0004" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0011" object2="npc:mh_chunggak_0011" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0012" object2="npc:mh_chunggak_0012" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0013" object2="npc:mh_chunggak_0013" progress-mission="y" type="killed"/>
+				<case mapunit-1="2631_mh_chunggak_0013" mapunit-2="2631_mh_chunggak_0013_1" object="npc:mh_chunggak_0001" object2="npc:mh_chunggak_0001" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0266" object2="npc:mh_chunggak_0266" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0265" object2="npc:mh_chunggak_0265" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0264" object2="npc:mh_chunggak_0264" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0263" object2="npc:mh_chunggak_0263" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0262" object2="npc:mh_chunggak_0262" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0261" object2="npc:mh_chunggak_0261" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0260" object2="npc:mh_chunggak_0260" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0259" object2="npc:mh_chunggak_0259" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0258" object2="npc:mh_chunggak_0258" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_302_des_3" guide-message="gm_302_1" id="3" location-x="-55683.8867" location-y="-55373.4648" map="mangjasup" mission-map-type="mapunit">
+			<mission id="3" name2="Mission.Name2.302_3" required-register-value="1">
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_downpoli_01" object2="zoneenv2:e_onoff_downpoli_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_downpoli_02" object2="zoneenv2:e_onoff_downpoli_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_downpoli_03" object2="zoneenv2:e_onoff_downpoli_03" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_downpoli_04" object2="zoneenv2:e_onoff_downpoli_04" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_downpoli_05" object2="zoneenv2:e_onoff_downpoli_05" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_downpoli_06" object2="zoneenv2:e_onoff_downpoli_06" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_downpoli_07" object2="zoneenv2:e_onoff_downpoli_07" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_downpoli_08" object2="zoneenv2:e_onoff_downpoli_08" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_downpoli_09" object2="zoneenv2:e_onoff_downpoli_09" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="2631_e_onoff_downpoli_01" mapunit-2="2631_e_onoff_downpoli_01_1" object="zoneenv:e_onoff_downpoli_10" object2="zoneenv2:e_onoff_downpoli_10" progress-mission="reaction-only" type="manipulate"/>
+				<case approach-social="q_302_m3_app_2" indicator-social="q_302_m3_indi_2" npc-response="qrsp_302_2" object="npc:ch_jakyungdan_0004" type="approach"/>
+				<case gadget="q_jakyungdana" gadget-required="carry-and-remove" indicator="default" indicator-social="q_302_m3_indi_1" msg="q_302_m3" npc-response="qrsp_302_1" object="npc:ch_kwakjun_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_302_des_4" guide-message="gm_302_4" id="4" location-x="-55324.2188" location-y="-54174.5625" map="mangjasup">
+			<mission id="4" name2="Mission.Name2.302_4" required-register-value="1" reward-1="302_final_set1">
+				<case indicator-social="q_302_m4_indi_1" mapunit-1="2015_Ctzn_JinM_JaKyungDan_DoCheonPung_001" msg="q_302_m4" npc-response="qrsp_302_3" object="npc:ctzn_jinm_jakyungdan_docheonpung_001" progress-mission="y" type="talk"/>
+				<case indicator-social="q_302_m4_indi_2" npc-response="qrsp_302_4" object="npc:CH_NamSoYu_0001" progress-mission="n" type="approach"/>
+				<case object="zone:zone_chryoungchn_doctor1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_chryoungchn_doctor_start">
+			<destination mission-step-id="4" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_303"/>
+		</completion>
+	</quest>
+</table>

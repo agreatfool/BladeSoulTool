@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1251" broadcast-category="field" category="normal" desc="q_1251_sum" district-1="suwal" grade="1" group2="QG_AngaeForestNorth" id="1251" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1251" save-type="all">
+		<acquisition level="41" preceding-quest-1="q_epic_925" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="43">
+			<case acquire-quest="y" item="Quest_Scroll_SoowolPyungwon_0041" msg="q_1251_1" npc-response="qrsp_1251_1" type="talk-to-item"/>
+			<case loot-item="Quest_Scroll_SoowolPyungwon_0041" looting="q_1251_1_icon" object="npc:mh_jegukgun_0362" object2="npc:mh_jegukgun_0362" type="loot"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1251_1" required-register-value="1" reward-1="1251_final_set1">
+				<case npc-response="qrsp_1251_1" object="npc:CH_GyeongChunMaeng_0028" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Scroll_SoowolPyungwon_0041"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_SoowolPyungwon_0041"/>
+	</quest>
+</table>

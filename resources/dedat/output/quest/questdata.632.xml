@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_632" broadcast-category="field" category="normal" desc="q_632_sum" district-1="deasamak" grade="1" group2="QG_GmmDalUJukJi" id="632" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.632" save-type="all">
+		<acquisition level="26" preceding-quest-1="q_epic_516" preceding-quest-check="and" recommended-level="28">
+			<case acquire-quest="y" gadget-required="empty" indicator-social="q_632_s_indi_1" msg="q_632_s" npc-response="qrsp_632_1" object="npc:ch_yugactzn_021" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-38135.0977" location-y="6835.1172" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.632_1" required-register-value="1">
+				<case gadget="Q_TorchlightE" gadget-required="carry-and-remove" object="zoneenv:e_onoff_lakebug_01" object2="zoneenv2:e_onoff_lakebug_01" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_TorchlightE" gadget-required="carry-and-remove" object="zoneenv:e_onoff_lakebug_02" object2="zoneenv2:e_onoff_lakebug_02" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_TorchlightE" gadget-required="carry-and-remove" object="zoneenv:e_onoff_lakebug_03" object2="zoneenv2:e_onoff_lakebug_03" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_TorchlightE" gadget-required="carry-and-remove" object="zoneenv:e_onoff_lakebug_04" object2="zoneenv2:e_onoff_lakebug_04" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_TorchlightE" gadget-required="carry-and-remove" mapunit-1="3010_e_destroy_lakebug_01" mapunit-2="3010_e_destroy_lakebug_01_1" object="zoneenv:e_onoff_lakebug_05" object2="zoneenv2:e_onoff_lakebug_05" progress-mission="y" type="manipulate"/>
+				<case button-text-accept="q_632_m1_ok" button-text-cancel="q_632_m1_no" gadget-required="empty" indicator="quest-normal-can-progress" msg="q_632_m1" npc-response="qrsp_632_2" object="npc:ch_yugactzn_021" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-37948.6445" location-y="9352.2031" map="yeolsajeedea">
+			<mission id="2" name2="Mission.Name2.632_2" required-register-value="1" reward-1="632_final_set1">
+				<case indicator-social="q_632_m2_indi_1" msg="q_632_m2" npc-response="qrsp_632_3" object="npc:ch_yugactzn_021" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_382" broadcast-category="field" category="normal" desc="q_382_sum" district-1="jeryoungrim" grade="1" group="제룡림(기연폭포)" group2="QG_KiYoenFall" id="382" map-group-1-1="jeryoungrim" max-repeat="1" name="제대로 낚아보자" name2="Quest.Name2.382" save-type="all">
+		<acquisition level="12" preceding-quest-1="q_epic_491" preceding-quest-check="and" recommended-level="14">
+			<case acquire-quest="y" indicator-social="q_382_s_indi_1" msg="q_382_s" npc-response="qrsp_382_1" object="npc:ctzn_jinm_fisherman_annakin_001" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" desc="q_382_des_1" id="1" location-x="31356.2363" location-y="23579.3867" map="suryengol">
+			<mission id="1" name="향나무 중독 발발이의 머리 획득" name2="Mission.Name2.382_1" required-register-value="3">
+				<case looting="q_382_quest_head_grass_beast_1_icon" mapunit-1="2300_e_destroy_aroma_01" mapunit-2="2300_e_destroy_aroma_01_1" mapunit-3="2300_e_destroy_aroma_01_2" mapunit-4="2300_e_destroy_aroma_01_3" object="npc:mob_4legr_mlnd_spctr_grassbeast_green_q_001" object2="npc:mob_4legr_mlnd_spctr_grassbeast_green_q_001" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" object="zoneenv:e_destroy_aroma_01" object2="zoneenv2:e_destroy_aroma_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_destroy_aroma_02" object2="zoneenv2:e_destroy_aroma_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_destroy_aroma_03" object2="zoneenv2:e_destroy_aroma_03" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_destroy_aroma_04" object2="zoneenv2:e_destroy_aroma_04" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_destroy_aroma_05" object2="zoneenv2:e_destroy_aroma_05" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_destroy_aroma_06" object2="zoneenv2:e_destroy_aroma_06" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_destroy_aroma_07" object2="zoneenv2:e_destroy_aroma_07" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_destroy_aroma_08" object2="zoneenv2:e_destroy_aroma_08" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="13858.623" location-y="15794.751" map="nokmyeong">
+			<mission id="2" name="녹명촌에 있는 안낙인에게 보고" name2="Mission.Name2.382_2" required-register-value="1" reward-1="382_final_set1">
+				<case indicator-social="q_382_m2_indi_1" msg="q_382_m2" npc-response="qrsp_382_2" object="npc:CH_JR_Citizen_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_718" broadcast-category="field" category="normal" day-of-week="none" desc="q_718_sum" grade="1" group2="QG_Hasijang" id="718" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.718" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="y" level="45" preceding-quest-1="q_epic_267" preceding-quest-check="and" recommended-level="47">
+			<case acquire-quest="y" completion-count="0" completion-count-op="ge" npc-response="qrsp_718_1" object="npc:CH_CT_Guard_0007" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.718_1" required-register-value="10">
+				<case object="npc:MH_CT_HaOBanng_0032" object2="npc:MH_CT_HaOBanng_0032" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBanng_0031" object2="npc:MH_CT_HaOBanng_0031" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBanng_0030" object2="npc:MH_CT_HaOBanng_0030" progress-mission="y" type="killed"/>
+				<case mapunit-1="5100_MH_CT_HaOBanng_0029_s718" object="npc:MH_CT_HaOBanng_0029" object2="npc:MH_CT_HaOBanng_0029" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.718_2" required-register-value="1" reward-1="718_final_set1" reward-2="718_final_set2">
+				<case npc-response="qrsp_718_2" object="npc:CH_CT_Guard_0008" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

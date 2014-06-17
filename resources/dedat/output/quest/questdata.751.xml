@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_751" broadcast-category="field" category="normal" desc="q_751_sum" district-1="deasamak" grade="1" group2="QG_SaJiSeokRimSouth" id="751" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.751" save-type="all">
+		<acquisition level="29" preceding-quest-1="q_epic_521" preceding-quest-check="and" recommended-level="31">
+			<case acquire-quest="y" indicator-social="q_751_s_indi_1" msg="q_751_s" npc-response="qrsp_751_1" object="npc:ch_mangnanja_0002" type="talk"/>
+		</acquisition>
+		<mission-step id="2" location-x="11111.155" location-y="-16548.512" map="sajisukrim">
+			<mission id="2" name2="Mission.Name2.751_2" required-register-value="1" reward-1="751_final_set1">
+				<case indicator-social="q_751_m2_indi_1" msg="q_751_m2" npc-response="qrsp_751_2" object="npc:ch_mangnanja_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1" location-x="11536.3154" location-y="-23594.0313" map="sajisukrim">
+			<mission id="1" name2="Mission.Name2.751_1" required-register-value="10">
+				<case looting="q_751_Gather_smooth_wolfleather_1_icon" mapunit-1="3020_ME_Wolf_004" mapunit-2="3020_ME_Wolf_004_1" object="npc:me_wolf_004" object2="npc:me_wolf_004" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

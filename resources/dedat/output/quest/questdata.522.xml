@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_522" broadcast-category="field" category="epic" completed-desc="q_522_completed" completed-list="y" desc="q_522_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="522" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.522" save-type="all">
+		<acquisition level="1" recommended-level="31" sort-no="323"/>
+		<mission-step id="1" location-x="11111.1553" location-y="-16548.5117" map="sajisukrim" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.522_1" required-register-value="1">
+				<case indicator-social="q_522_m1_indi_1" mapunit-1="3016_Guide_E522" mapunit-2="3010_Guide_E522" msg="q_522_m1" npc-response="qrsp_522_1" object="npc:ch_dogibang_0001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="30"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_522_3" object="npc:ch_dogibang_0001" type="talk">
+					<filter-set>
+						<filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="29"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_522_des_2" id="2" location-x="12511.6328" location-y="-9074.54" map="waroungtogul">
+			<mission id="2" name2="Mission.Name2.522_2" required-register-value="1">
+				<case looting="q_522_Quest_blue_ball_1_icon" mapunit-4="3075_e_onoff_bunwagod_01" object="zoneenv:e_onoff_bunwagod_01" object2="zoneenv2:e_onoff_bunwagod_01" progress-mission="y" type="loot"/>
+				<case object="zone:zone_WaRoungToGul" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:e_door_junwajail_01" object2="zoneenv2:e_door_junwajail_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_door_junwajail_02" object2="zoneenv2:e_door_junwajail_02" progress-mission="reaction-only" type="manipulate"/>
+				<case mapunit-1="3075_e_door_junwajail_01" mapunit-2="3075_e_door_junwajail_02" mapunit-3="3075_e_door_junwajail_03" object="zoneenv:e_door_junwajail_03" object2="zoneenv2:e_door_junwajail_03" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="11111.1553" location-y="-16548.5117" map="sajisukrim">
+			<mission id="3" name2="Mission.Name2.522_3" required-register-value="1" reward-1="522_final_set1">
+				<case indicator-social="q_522_m3_indi_1" msg="q_522_m3" npc-response="qrsp_522_2" object="npc:ch_dogibang_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_523"/>
+		</completion>
+	</quest>
+</table>

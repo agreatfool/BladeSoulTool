@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="CombatData" release-side="client" type="effect-group" version="0.3">
+	<record alias="ME_Dummy_None_Ground_Fire_E1_01" effect-1="ME_Dummy_None_Ground_Fire_damage" effect-2="MH_Common_Deal_embers" effect-3="MH_Common_None_Kneel" skill-result="hit-critical-hit" target="second-target" target-state="Enemy"/>
+	<record alias="ME_Dummy_None_Ground_Ice_E1_01" effect-1="MH_Common_SpeedDown_40" skill-result="hit-critical-hit" target="second-target" target-state="Enemy"/>
+	<record alias="ME_Dummy_None_Ground_Ice_E4_01" effect-1="ME_Dummy_None_Ground_Ice_damage" skill-result="hit-critical-hit" target="second-target" target-state="Enemy"/>
+	<record alias="ME_Dummy_None_Ground_Ice_E5_01" effect-1="MH_Common_None_rapid_cooling_fastfreezing" skill-result="hit-critical-hit" target="second-target" target-state="Enemy"/>
+	<record alias="ME_JEA_Dummy_None_Ground_Poison_E1_01" effect-1="ME_Dummy_None_Ground_Poison_damage" effect-2="MH_Common_Bleeding_JEA_Name_19" skill-result="hit-critical-hit" target="second-target" target-state="Enemy"/>
+	<record alias="ME_ID_Nucleus_None_Fire1_E1_01" effect-1="ME_ID_Nucleus_None_Fire1_damage" effect-2="MH_Common_Suicide" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="ME_ID_Nucleus_None_Fire2_E1_01" effect-1="ME_ID_Nucleus_None_Fire2_damage" effect-2="MH_Common_Suicide" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="MH_ID_Common_SelfCancel" effect-1="MH_common_CasterSkillBlock" skill-result="all" target="caster" target-state="all" target-state-first-filter="60022"/>
+	<record alias="ME_ID_Nucleus_None_Explosion_E1_01" effect-1="ME_ID_Nucleus_None_Explosion_knockback" effect-2="MH_Common_Suicide" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="ME_SUA_Dummy_None_Ground_Poison_E1_01" effect-1="ME_Dummy_None_Ground_Poison_damage" effect-2="MH_Common_Bleeding_SUA_Name_44" skill-result="hit-critical-hit" target="second-target" target-state="Enemy"/>
+	<record alias="ME_SUB_Dummy_None_Ground_Poison_E1_01" effect-1="ME_Dummy_None_Ground_Poison_damage" effect-2="MH_Common_Bleeding_SUB_Name_44" skill-result="hit-critical-hit" target="second-target" target-state="Enemy"/>
+	<record alias="ME_SUP_Dummy_None_Ground_Poison_E1_01" effect-1="ME_Dummy_None_Ground_Poison_damage" effect-2="MH_Common_Bleeding_SUP_Name_44" skill-result="hit-critical-hit" target="second-target" target-state="Enemy"/>
+	<record alias="ME_SUP2_Dummy_None_Ground_Poison_E1_01" effect-1="ME_Dummy_None_Ground_Poison_damage" effect-2="MH_Common_Bleeding_SUP2_Name_44" skill-result="hit-critical-hit" target="second-target" target-state="Enemy"/>
+</table>

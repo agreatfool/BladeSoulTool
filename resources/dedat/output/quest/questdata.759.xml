@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_759" broadcast-category="field" category="normal" desc="q_759_sum" district-1="deasamak" grade="1" group2="QG_SaJiSeokRimSouth" id="759" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.759" save-type="all">
+		<acquisition level="30" preceding-quest-1="q_epic_523" preceding-quest-2="q_sub_758" preceding-quest-check="and" recommended-level="31">
+			<case acquire-quest="y" indicator-social="q_759_s_indi_1" msg="q_759_s" npc-response="qrsp_759_1" object="npc:ch_poyeon_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="10414.876" location-y="-37191.25" map="hangari">
+			<mission id="1" name2="Mission.Name2.759_1" required-register-value="1">
+				<case indicator-social="q_759_m1_indi_1" msg="q_759_m1" npc-response="qrsp_759_2" object="npc:ch_limjirong_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="10512.532" location-y="-37327.969" map="hangari">
+			<mission id="2" name2="Mission.Name2.759_2" required-register-value="1">
+				<case object="zoneenv:e_onoff_strongpot_01" object2="zoneenv2:e_onoff_strongpot_01" progress-mission="y" type="killed"/>
+				<case object="zoneenv:e_onoff_strongpot_02" object2="zoneenv2:e_onoff_strongpot_02" progress-mission="y" type="killed"/>
+				<case object="zoneenv:e_onoff_strongpot_03" object2="zoneenv2:e_onoff_strongpot_03" progress-mission="y" type="killed"/>
+				<case object="zoneenv:e_onoff_strongpot_04" object2="zoneenv2:e_onoff_strongpot_04" progress-mission="y" type="killed"/>
+				<case mapunit-1="3020_e_onoff_strongpot_01" object="zoneenv:e_onoff_strongpot_05" object2="zoneenv2:e_onoff_strongpot_05" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="10414.876" location-y="-37191.25" map="hangari">
+			<mission id="3" name2="Mission.Name2.759_3" required-register-value="1">
+				<case indicator-social="q_759_m3_indi_1" msg="q_759_m3" npc-response="qrsp_759_3" object="npc:ch_limjirong_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="10317.22" location-y="-37406.094" map="hangari">
+			<mission id="4" name2="Mission.Name2.759_4" required-register-value="1">
+				<case indicator-social="q_759_m4_indi_1" msg="q_759_m4" npc-response="qrsp_759_4" object="npc:ch_pottery_013" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="10414.876" location-y="-37191.25" map="hangari">
+			<mission id="5" name2="Mission.Name2.759_5" required-register-value="1">
+				<case gadget-required="dont-care" looting="q_759_grocery_gem_dust_aura_1_icon" object="zoneenv:e_onoff_baekpot_01" object2="zoneenv2:e_onoff_baekpot_01" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_759_grocery_gem_dust_aura_1_icon" object="zoneenv:e_onoff_baekpot_02" object2="zoneenv2:e_onoff_baekpot_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_759_grocery_gem_dust_aura_1_icon" mapunit-1="3020_e_onoff_baekpot_01" object="zoneenv:e_onoff_baekpot_03" object2="zoneenv2:e_onoff_baekpot_03" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6" location-x="10805.501" location-y="-37757.6563" map="hangari">
+			<mission id="6" name2="Mission.Name2.759_6" required-register-value="1">
+				<case indicator-social="q_759_m6_indi_1" msg="q_759_m6" npc-response="qrsp_759_5" object="npc:ch_gudogong_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7" location-x="10707.845" location-y="-34593.594" map="hangari">
+			<mission id="7" name2="Mission.Name2.759_7" required-register-value="1">
+				<case indicator-social="q_759_m7_indi_1" msg="q_759_m7" npc-response="qrsp_759_6" object="npc:ch_poyeon_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8" location-x="12407.065" location-y="-36175.625" map="hangari">
+			<mission id="8" name2="Mission.Name2.759_8" required-register-value="1">
+				<case gadget="q_poyeon_pota" gadget-required="carry-and-remove" mapunit-1="3020_e_onoff_ceramicklin_01" object="zoneenv:e_onoff_ceramicklin_01" object2="zoneenv2:e_onoff_ceramicklin_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="q_poyeon_potb" gadget-required="carry-and-remove" indicator-social="q_759_m8_indi_1" msg="q_759_m8" npc-response="qrsp_759_7" object="npc:ch_pottery_011" progress-mission="y" type="talk"/>
+				<case button-text-accept="q_759_m8_re_ok" button-text-cancel="q_759_m8_re_no" gadget-required="empty" indicator="quest-normal-can-progress" indicator-social="q_759_m8_re_indi_1" msg="q_759_m8_re" npc-response="qrsp_759_8" object="npc:ch_poyeon_0001" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9" location-x="10707.845" location-y="-34593.594" map="hangari">
+			<mission id="9" name2="Mission.Name2.759_9" required-register-value="1" reward-1="759_final_set1">
+				<case indicator-social="q_759_m9_indi_1" msg="q_759_m9" npc-response="qrsp_759_9" object="npc:ch_poyeon_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

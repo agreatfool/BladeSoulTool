@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1238" broadcast-category="field" category="normal" content-type="festival" day-of-week="daily" desc="q_1238_sum" grade="1" group2="QG_Event" id="1238" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.1238" reset-type="daily" retired="y">
+		<acquisition check-tencent-vitality="n" level="30" recommended-level="30">
+			<case acquire-quest="y" item="q_1238_1_icon" msg="q_1238_1" type="talk-to-self"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission check-tencent-vitality="n" id="1" name2="Mission.Name2.1238_1" required-register-value="1">
+				<case npc-response="qrsp_1238_1" object="npc:ch_gather_lumberjack_0004" progress-mission="y" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission check-tencent-vitality="n" id="2" name2="Mission.Name2.1238_2" required-register-value="1">
+				<case npc-response="qrsp_1238_2" object="npc:ch_gather_lumberjack_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" time-limit-type="none">
+			<mission check-tencent-vitality="n" id="3" name2="Mission.Name2.1238_3" required-register-value="1">
+				<case gadget="Q_Grass_BagB" gadget-required="carry-and-remove" npc-response="qrsp_1238_3" object="npc:ch_medecine_016" progress-mission="y" type="talk"/>
+				<case button-text-accept="q_1238_5_ok" button-text-cancel="q_1238_5_no" gadget-required="empty" indicator="quest-festival-can-progress" npc-response="qrsp_1238_6" object="npc:ch_gather_lumberjack_0004" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_1238_des_4" id="4" time-limit="30" time-limit-type="until">
+			<mission check-tencent-vitality="n" id="4" name2="Mission.Name2.1238_4" required-register-value="1">
+				<case env-looting="q_11_1_icon" mapunit-1="2310_e_onoff_2310tree_01_s1238" mapunit-2="2310_e_onoff_2310gemstone_01_s1238" mapunit-3="2310_e_onoff_2310shelldebris_01_s1238" object="zoneenv:e_onoff_2310shelldebris_01" object2="zoneenv2:e_onoff_2310shelldebris_01" progress-mission="y" type="manipulate"/>
+				<case env-looting="q_94_Gather_matte_dark_gray_gem_1_icon" mapunit-1="2310_e_onoff_2310tree_01_s1238" mapunit-2="2310_e_onoff_2310gemstone_01_s1238" mapunit-3="2310_e_onoff_2310shelldebris_01_s1238" object="zoneenv:e_onoff_2310gemstone_01" object2="zoneenv2:e_onoff_2310gemstone_01" progress-mission="y" type="manipulate"/>
+				<case env-looting="q_93_gather_thin_woodboard_1_icon" mapunit-1="2310_e_onoff_2310tree_01_s1238" mapunit-2="2310_e_onoff_2310gemstone_01_s1238" mapunit-3="2310_e_onoff_2310shelldebris_01_s1238" object="zoneenv:e_onoff_2310tree_01" object2="zoneenv2:e_onoff_2310tree_01" progress-mission="y" type="manipulate"/>
+			</mission>
+			<mission-step-fail rollback-step-id="2"/>
+		</mission-step>
+		<mission-step desc="q_1238_des_5" id="5" time-limit="90" time-limit-type="until">
+			<mission check-tencent-vitality="n" id="5" name2="Mission.Name2.1238_5" required-register-value="1">
+				<case env-looting="q_96_gather_clay_1_icon" mapunit-1="2310_e_onoff_2310herb_01_s1238" mapunit-2="2310_e_onoff_2310mineral_01_s1238" mapunit-3="2310_e_onoff_2310soil_01_s1238" object="zoneenv:e_onoff_2310soil_01" object2="zoneenv2:e_onoff_2310soil_01" progress-mission="y" type="manipulate"/>
+				<case env-looting="q_91_Gather_rare_cooper_1_icon" mapunit-1="2310_e_onoff_2310herb_01_s1238" mapunit-2="2310_e_onoff_2310mineral_01_s1238" mapunit-3="2310_e_onoff_2310soil_01_s1238" object="zoneenv:e_onoff_2310mineral_01" object2="zoneenv2:e_onoff_2310mineral_01" progress-mission="y" type="manipulate"/>
+				<case env-looting="q_95_gather_mugwort_1_icon" mapunit-1="2310_e_onoff_2310herb_01_s1238" mapunit-2="2310_e_onoff_2310mineral_01_s1238" mapunit-3="2310_e_onoff_2310soil_01_s1238" object="zoneenv:e_onoff_2310herb_01" object2="zoneenv2:e_onoff_2310herb_01" progress-mission="y" type="manipulate"/>
+			</mission>
+			<mission-step-fail rollback-step-id="2"/>
+		</mission-step>
+		<mission-step id="6" time-limit="120" time-limit-type="until">
+			<mission check-tencent-vitality="n" id="6" name2="Mission.Name2.1238_6" required-register-value="1">
+				<case npc-response="qrsp_1238_4" object="npc:ch_medecine_016" progress-mission="y" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="2"/>
+		</mission-step>
+		<mission-step id="7">
+			<mission check-tencent-vitality="n" id="7" name2="Mission.Name2.1238_7" required-register-value="1" reward-1="1238_final_set1" reward-2="1238_final_set2">
+				<case npc-response="qrsp_1238_5" object="npc:ch_medecine_016" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

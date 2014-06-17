@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_892" broadcast-category="field" category="normal" day-of-week="daily" desc="q_892_sum" district-1="deasamak" grade="8" group2="QG_ToMunJinNorth" id="892" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.892" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="22" preceding-quest-1="q_epic_506" preceding-quest-check="and" recommended-level="24">
+			<case acquire-quest="y" npc-response="qrsp_892_1" object="npc:ch_shaman_025" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_892_3" object="npc:ce_board_0010" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_892_des_1" id="1" location-x="-36239.996" location-y="-80753.219" map="yeogwegul_3108" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.892_1" required-register-value="1" show-kill-mapunit="y">
+				<case object="npc:mh_shaman_0008" object2="npc:mh_shaman_0008" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.892_2" required-register-value="1" reward-1="892_final_set1" reward-2="892_final_set2">
+				<case npc-response="qrsp_892_2" object="npc:ch_shaman_025" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_892_1_icon" msg="q_892_4" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

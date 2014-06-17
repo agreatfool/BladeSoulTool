@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1166" broadcast-category="field" category="normal" desc="q_1166_sum" district-1="suwal" grade="1" group2="QG_SuwajokVillage" id="1166" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1166" save-type="all">
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1166_1" required-register-value="7">
+				<case looting="q_1167_Grocery_Scraps_of_Crab_Meat_1_icon" mapunit-1="4250_ME_SoraCrab_0004" mapunit-2="4250_ME_SoraCrab_0004_1" object="npc:ME_SoraCrab_0004" object2="npc:ME_SoraCrab_0004" prob="100" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+			</mission>
+		</mission-step>
+		<acquisition level="38" preceding-quest-1="q_epic_913" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="40">
+			<case acquire-quest="y" npc-response="qrsp_1166_1" object="npc:ce_belliedfirefrog_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1166_2" required-register-value="1">
+				<case looting="q_1166_1_icon" object="npc:ME_CrocodileSharkTribeB_0009" object2="npc:ME_CrocodileSharkTribeB_0009" progress-mission="y" type="loot"/>
+				<case looting="q_1166_1_icon" object="npc:ME_BelliedFrog_0022" object2="npc:ME_BelliedFrog_0022" progress-mission="y" type="loot"/>
+				<case looting="q_1166_1_icon" mapunit-1="4250_e_chest_fishrod_01" object="npc:ME_FishmanBStaff_0003" object2="npc:ME_FishmanBStaff_0003" progress-mission="y" type="loot"/>
+				<case object="zoneenv:e_chest_fishrod_02" object2="zoneenv2:e_chest_fishrod_02" progress-mission="reaction-only" type="manipulate"/>
+				<case npc-response="qrsp_1166_2" object="npc:ch_fisher_0017" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1166_3" required-register-value="1" reward-1="1166_final_set1">
+				<case npc-response="qrsp_1166_3" object="npc:ce_belliedfirefrog_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

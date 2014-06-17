@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_363" broadcast-category="field" category="normal" desc="q_363_sum" district-1="jeryoungrim" grade="1" group2="QG_BuryejinECHN" id="363" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.363" save-type="all">
+		<acquisition level="7" preceding-quest-1="q_epic_310" preceding-quest-check="and" recommended-level="9">
+			<case acquire-quest="y" npc-response="qrsp_363_1" object="npc:ctzn_jinm_seavillctzn_wangbuja_001" type="talk"/>
+			<case npc-response="qrsp_363_3" object="npc:ch_haetalyi_0001" type="approach"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1">
+			<mission id="1" name2="Mission.Name2.363_1" required-register-value="50">
+				<case mapunit-1="2201_me_soracrab_0007" mapunit-2="2201_me_soracrab_0007_1" mapunit-3="2201_e_harpoon_01" mapunit-4="2201_e_harpoon_02" mapunit-5="2201_e_harpoon_03" object="npc:me_soracrab_0007" object2="npc:me_soracrab_0007" progress-mission="y" type="killed"/>
+				<case gadget-required="empty" object="zoneenv:e_harpoon_03" object2="zoneenv2:e_harpoon_03" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" object="zoneenv:e_harpoon_02" object2="zoneenv2:e_harpoon_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" object="zoneenv:e_harpoon_01" object2="zoneenv2:e_harpoon_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object-1="npc:me_soracrab_0007" object-2="npc:me_soracrab_0009" object2-1="npc:me_soracrab_0007" object2-2="npc:me_soracrab_0009" skill="gadget_spearguna_lv10" skill3="gadget_spearguna_lv10" type="skill"/>
+				<case object-1="npc:me_soracrab_0007" object-2="npc:me_soracrab_0009" object2-1="npc:me_soracrab_0007" object2-2="npc:me_soracrab_0009" skill="gadget_spearguna_lv10_shoot" skill3="gadget_spearguna_lv10_shoot" type="skill"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.363_2" required-register-value="1">
+				<case mapunit-1="2201_me_soracrab_0009" mapunit-2="2201_me_soracrab_0009_1" mapunit-3="2201_e_harpoon_01_1" mapunit-4="2201_e_harpoon_02_1" mapunit-5="2201_e_harpoon_03_1" object="npc:me_soracrab_0009" object2="npc:me_soracrab_0009" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.363_3" required-register-value="1" reward-1="363_final_set1">
+				<case npc-response="qrsp_363_2" object="npc:ctzn_jinm_seavillctzn_wangbuja_001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_363_4" object="npc:ch_haetalyi_0001" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

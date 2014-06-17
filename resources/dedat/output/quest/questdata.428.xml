@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_428" broadcast-category="field" category="normal" desc="q_428_sum" district-1="jeryoungrim" grade="1" group="제룡림(기연폭포)" group2="QG_Delete" id="428" map-group-1-1="jeryoungrim" max-repeat="1" name="밥이 보약이죠" name2="Quest.Name2.428" retired="y" save-type="all">
+		<acquisition level="12" preceding-quest-1="q_epic_312" preceding-quest-check="and" recommended-level="14">
+			<case acquire-quest="y" indicator-social="q_428_s_indi_1" msg="q_428_s" npc-response="qrsp_428_1" object="npc:ch_merchantfood_001" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="32032.8145" location-y="23278.6875" map="suryengol">
+			<mission id="1" name2="Mission.Name2.428_1" required-register-value="12">
+				<case looting="q_428_quest_frog_lingua_1_icon" object="npc:me_kingfrog_003" object2="npc:me_kingfrog_003" progress-mission="y" type="loot"/>
+				<case looting="q_428_quest_frog_lingua_1_icon" mapunit-1="2300_me_belliedfrog_002" object="npc:me_belliedfrog_002" object2="npc:me_belliedfrog_002" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="15733.623" location-y="15654.126" map="nokmyeong">
+			<mission id="2" name="녹명촌에 있는 일미문 손가정에게 보고" name2="Mission.Name2.428_2" required-register-value="1" reward-1="428_final_set1">
+				<case indicator-social="q_428_m2_indi_1" msg="q_428_m2" npc-response="qrsp_428_2" object="npc:ch_merchantfood_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

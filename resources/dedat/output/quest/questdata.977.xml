@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_977" broadcast-category="field" category="normal" desc="q_977_sum" district-1="suwal" grade="1" group2="QG_YounglinVillage" id="977" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.977" save-type="all">
+		<acquisition level="35" preceding-quest-1="q_epic_902" preceding-quest-check="and" recommended-level="37">
+			<case acquire-quest="y" npc-response="qrsp_977_1" object="npc:ch_yeonglin_0016" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="45792.53" location-y="62635.39" map="yeongsukgwangsan" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.977_1" required-register-value="1">
+				<case gadget-required="dont-care" loot-item="Quest_Scroll_SoowolPyungwon_0014" looting="q_976_Quest_old_letter_1_icon" object="zoneenv:e_chest_brokenmachine_05" object2="zoneenv2:e_chest_brokenmachine_05" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" loot-item="Quest_Scroll_SoowolPyungwon_0014" looting="q_976_Quest_old_letter_1_icon" object="zoneenv:e_chest_brokenmachine_04" object2="zoneenv2:e_chest_brokenmachine_04" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" loot-item="Quest_Scroll_SoowolPyungwon_0014" looting="q_976_Quest_old_letter_1_icon" object="zoneenv:e_chest_brokenmachine_03" object2="zoneenv2:e_chest_brokenmachine_03" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" loot-item="Quest_Scroll_SoowolPyungwon_0014" looting="q_976_Quest_old_letter_1_icon" object="zoneenv:e_chest_brokenmachine_02" object2="zoneenv2:e_chest_brokenmachine_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" loot-item="Quest_Scroll_SoowolPyungwon_0014" looting="q_976_Quest_old_letter_1_icon" mapunit-1="4420_e_chest_brokenmachine_01" mapunit-2="4400_YeongSukGwangSan_S977" object="zoneenv:e_chest_brokenmachine_01" object2="zoneenv2:e_chest_brokenmachine_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.977_2" required-register-value="1">
+				<case npc-response="qrsp_977_2" object="npc:ch_yeonglin_0016" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.977_3" required-register-value="1">
+				<case item="Quest_Scroll_SoowolPyungwon_0014" msg="q_977_3" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.977_4" required-register-value="1" reward-1="977_final_set1">
+				<case npc-response="qrsp_977_3" object="npc:ch_yeonglin_0016" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Scroll_SoowolPyungwon_0014"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_SoowolPyungwon_0014"/>
+	</quest>
+</table>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_732" broadcast-category="field" category="normal" day-of-week="daily" desc="q_732_sum" grade="1" group2="QG_HwangGung" id="732" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.732" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="45" preceding-quest-1="q_epic_272" preceding-quest-check="and" preceding-quest-mission-step-1="11" recommended-level="47">
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_732_5" object="npc:CE_CT_Board_0024" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_732_3" object="npc:CE_CT_MaBulPa_0005" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_732_1" object="npc:CE_CT_MaBulPa_0005" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_732_5" object="npc:CE_CT_Board_0023" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_732_5" object="npc:CE_BC_Board_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1" time-limit-type="none">
+			<mission id="1" name2="Mission.Name2.732_1" required-register-value="1">
+				<case completion-count="1" npc-response="qrsp_732_7" object="npc:CH_CT_JeGukGun_0333" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_732_6" object="npc:CH_CT_JeGukGun_0333" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_732_des_2" id="2" time-limit="180" time-limit-type="until">
+			<mission id="2" name2="Mission.Name2.732_2" required-register-value="30">
+				<case object="npc:ME_CT_JeGukGun_0513" object2="npc:ME_CT_JeGukGun_0513" progress-mission="y" progress-value="2" type="killed"/>
+				<case mapunit-1="5135_ME_CT_JeGukGun_0513_s732" object="npc:ME_CT_JeGukGun_0514" object2="npc:ME_CT_JeGukGun_0514" progress-mission="y" type="killed"/>
+				<case gadget-required="dont-care" object="zoneenv:e_chest_boomboom_03" object2="zoneenv2:e_chest_boomboom_03" progress-mission="reaction-only" type="killed"/>
+				<case gadget-required="dont-care" object="zoneenv:e_chest_boomboom_02" object2="zoneenv2:e_chest_boomboom_02" progress-mission="reaction-only" type="killed"/>
+				<case gadget-required="dont-care" object="zoneenv:e_chest_boomboom_01" object2="zoneenv2:e_chest_boomboom_01" progress-mission="reaction-only" type="killed"/>
+				<case gadget-required="dont-care" mapunit-1="5135_e_chest_boomboom_01_s732" mapunit-2="5135_e_chest_boomboom_02_s732" mapunit-3="5135_e_chest_boomboom_03_s732" mapunit-4="5135_e_chest_boomboom_04_s732" object="zoneenv:e_chest_boomboom_04" object2="zoneenv2:e_chest_boomboom_04" progress-mission="reaction-only" type="killed"/>
+			</mission>
+			<mission-step-fail/>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.732_3" required-register-value="1" reward-1="732_final_set1" reward-2="732_final_set2">
+				<case completion-count="1" npc-response="qrsp_732_4" object="npc:CE_CT_MaBulPa_0005" progress-mission="y" type="talk"/>
+				<case completion-count="0" completion-count-op="ge" fee="y" item="q_732_1_icon" msg="q_732_6" progress-mission="y" type="talk-to-self"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_732_2" object="npc:CE_CT_MaBulPa_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

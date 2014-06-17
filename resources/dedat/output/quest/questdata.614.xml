@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_614" broadcast-category="field" category="normal" desc="q_614_sum" district-1="deasamak" grade="1" group2="QG_HwangPungSaMak" id="614" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.614" save-type="all">
+		<acquisition level="25" preceding-quest-1="q_epic_511" preceding-quest-check="and" recommended-level="27">
+			<case loot-item="Quest_614_1" looting="q_614_Quest_brown_book_1_icon" object="npc:mh_mayeongganggun_0006" object2="npc:mh_mayeongganggun_0006" type="loot"/>
+			<case acquire-quest="y" item="Quest_614_1" msg="q_614_s" type="talk-to-item"/>
+		</acquisition>
+		<mission-step id="1" location-x="-56780.1797" location-y="-5563.8633" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.614_1" required-register-value="1" reward-1="614_final_set1">
+				<case grocery="Quest_614_1" indicator-social="q_614_m1_indi_1" msg="q_614_m1" npc-response="qrsp_614_1" object="npc:ch_unguksoldier_009" progress-mission="y" remove-grocery="n" type="talk"/>
+				<completion-loss item-1="Quest_614_1"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_614_1"/>
+	</quest>
+</table>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_523" broadcast-category="field" category="epic" completed-desc="q_523_completed" completed-list="y" desc="q_523_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="523" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.523" save-type="all">
+		<acquisition level="1" recommended-level="31" sort-no="324"/>
+		<mission-step id="1" location-x="15848.6602" location-y="-31003.9766" map="sajisukrim">
+			<mission id="1" name2="Mission.Name2.523_1" required-register-value="1">
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="3020_e_onoff_jujube_01" object="zoneenv:e_onoff_jujube_01" object2="zoneenv2:e_onoff_jujube_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_523_des_2" id="2" location-x="13754.72" location-y="-36917.81" map="hangari" mission-map-type="mapunit">
+			<mission id="2" name2="Mission.Name2.523_2" required-register-value="1">
+				<case gadget="Q_TorchlightB" gadget-required="carry-and-remove" mapunit-2="3020_e_onoff_kilnpot_01" object="zoneenv:e_onoff_kilnpot_01" object2="zoneenv2:e_onoff_kilnpot_01" progress-mission="y" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="3020_e_onoff_jujube_01" object="zoneenv:e_onoff_jujube_01" object2="zoneenv2:e_onoff_jujube_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="13696.127" location-y="-36820.1563" map="hangari">
+			<mission id="3" name2="Mission.Name2.523_3" required-register-value="1" reward-1="523_final_set1">
+				<case indicator-social="q_523_m3_indi_1" msg="q_523_m3" npc-response="qrsp_523_1" object="npc:ch_pottery_011" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_524"/>
+		</completion>
+	</quest>
+</table>

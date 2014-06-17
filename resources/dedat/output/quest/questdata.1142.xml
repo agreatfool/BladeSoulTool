@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1142" broadcast-category="field" category="normal" desc="q_1142_sum" district-1="suwal" grade="1" group2="QG_SuwajokVillage" id="1142" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1142" save-type="all">
+		<acquisition level="38" preceding-quest-1="q_epic_913" preceding-quest-check="and" preceding-quest-mission-step-1="8" recommended-level="40">
+			<case acquire-quest="y" msg="q_1142_s" npc-response="qrsp_1142_1" object="npc:ce_suwajok_0012" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1142_1" required-register-value="1">
+				<case gadget-required="dont-care" looting="q_1142_Quest_Item_010_1_icon" mapunit-1="4200_e_chest_dragonball_A_01" object="zoneenv:e_chest_dragonball_a_01" object2="zoneenv2:e_chest_dragonball_a_01" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1142_2" required-register-value="1">
+				<case looting="q_1142_Quest_Item_010_1_icon" mapunit-1="4200_e_chest_dragonball_B_01" object="zoneenv:e_chest_dragonball_b_01" object2="zoneenv2:e_chest_dragonball_b_01" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_1142_5" object="npc:ce_ironturtlebaby_0001" progress-mission="n" type="approach"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.1142_3" required-register-value="1">
+				<case mapunit-1="4200_ME_Monster_0004" object="npc:ce_suwajok_0029" progress-mission="y" type="npc-manipulate"/>
+				<case object="npc:ME_Monster_0004" object2="npc:ME_Monster_0004" progress-mission="reaction-only" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="4" name2="Mission.Name2.1142_4" required-register-value="1">
+				<case npc-response="qrsp_1142_2" object="npc:ce_suwajok_0012" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="5" name2="Mission.Name2.1142_5" required-register-value="1" reward-1="1142_final_set1">
+				<case npc-response="qrsp_1142_4" object="npc:CE_SuWaJok_0022" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_1142_3" object="npc:ce_suwajok_0012" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

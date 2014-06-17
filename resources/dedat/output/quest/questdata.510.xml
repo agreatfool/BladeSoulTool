@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_510" broadcast-category="field" category="epic" completed-desc="q_510_completed" completed-list="y" desc="q_510_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="510" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.510" save-type="all">
+		<acquisition level="1" recommended-level="25" sort-no="311"/>
+		<mission-step id="1" location-x="-64388.2422" location-y="-19729.5156" map="yugachon" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.510_1" required-register-value="1">
+				<case mapunit-1="3000_Guide_E510(1)" mapunit-2="3000_Guide_E510(2)" npc-response="qrsp_510_1" object="npc:ch_baekun_0001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="24"/>
+					</filter-set>
+				</case>
+				<case approach-social="q_510_m1_app_1" npc-response="qrsp_510_2" object="npc:ch_chinchin_0001" type="approach"/>
+				<case object="zone:zone_YuGaCHN_BaekUn_2" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_510_6" object="npc:ch_chungun_0003" type="approach" visible-object="y"/>
+				<case npc-response="qrsp_510_5" object="npc:CH_HanSiRang_0007" type="approach" visible-object="y"/>
+				<case npc-response="qrsp_510_7" object="npc:ch_baekun_0001" type="talk">
+					<filter-set>
+						<filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="23"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-42889.5938" location-y="-13021.8984" map="yeolsajeedea" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.510_2" required-register-value="2">
+				<case looting="q_510_quest_arrowroot_1_icon" object="zoneenv:e_onoff_kuzuvine_01" object2="zoneenv2:e_onoff_kuzuvine_01" progress-mission="y" type="loot"/>
+				<case looting="q_510_quest_arrowroot_1_icon" object="zoneenv:e_onoff_kuzuvine_02" object2="zoneenv2:e_onoff_kuzuvine_02" progress-mission="y" type="loot"/>
+				<case looting="q_510_quest_arrowroot_1_icon" object="zoneenv:e_onoff_kuzuvine_03" object2="zoneenv2:e_onoff_kuzuvine_03" progress-mission="y" type="loot"/>
+				<case looting="q_510_quest_arrowroot_1_icon" object="zoneenv:e_onoff_kuzuvine_04" object2="zoneenv2:e_onoff_kuzuvine_04" progress-mission="y" type="loot"/>
+				<case looting="q_510_quest_arrowroot_1_icon" object="zoneenv:e_onoff_kuzuvine_05" object2="zoneenv2:e_onoff_kuzuvine_05" progress-mission="y" type="loot"/>
+				<case looting="q_510_quest_arrowroot_1_icon" object="zoneenv:e_onoff_kuzuvine_06" object2="zoneenv2:e_onoff_kuzuvine_06" progress-mission="y" type="loot"/>
+				<case looting="q_510_quest_arrowroot_1_icon" object="zoneenv:e_onoff_kuzuvine_07" object2="zoneenv2:e_onoff_kuzuvine_07" progress-mission="y" type="loot"/>
+				<case looting="q_510_quest_arrowroot_1_icon" mapunit-1="3010_e_onoff_kuzuvine_01" mapunit-2="3010_e_onoff_kuzuvine_01_1" mapunit-3="3050_Guide_E510" object="zoneenv:e_onoff_kuzuvine_08" object2="zoneenv2:e_onoff_kuzuvine_08" progress-mission="y" type="loot"/>
+				<case object="zone:zone_YuGaCHN_BaekUn_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-64388.2422" location-y="-19729.5156" map="yugachon">
+			<mission id="3" name2="Mission.Name2.510_3" required-register-value="1" reward-1="510_middle_set1">
+				<case indicator-social="q_510_m3_indi_1" msg="q_510_m3" npc-response="qrsp_510_3" object="npc:ch_chinchin_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_YuGaCHN_BaekUn_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-64388.2422" location-y="-19729.5156" map="yugachon">
+			<mission id="4" name2="Mission.Name2.510_4" required-register-value="1" reward-1="510_final_set1">
+				<case indicator-social="q_510_m4_indi_1" msg="q_510_m4" npc-response="qrsp_510_4" object="npc:ch_baekun_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_YuGaCHN_BaekUn_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_YuGaCHN_BaekUn_1">
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_511"/>
+		</completion>
+	</quest>
+</table>

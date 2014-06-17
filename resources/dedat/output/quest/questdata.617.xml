@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_617" broadcast-category="field" category="normal" desc="q_617_sum" district-1="deasamak" grade="1" group2="QG_HwangPungSaMak" id="617" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.617" save-type="all">
+		<acquisition level="25" preceding-quest-1="q_epic_513" preceding-quest-check="and" recommended-level="27">
+			<case acquire-quest="y" indicator-social="q_617_s_indi_1" msg="q_617_s" npc-response="qrsp_617_1" object="npc:ch_unguksoldier_024" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-51186.6563" location-y="-1368.7188" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.617_1" required-register-value="10">
+				<case looting="q_617_Quest_treegoblin_rind_1_icon" mapunit-1="3010_ME_TreeGoblin_0013" mapunit-2="3010_ME_TreeGoblin_0013_1" object="npc:me_treegoblin_0013" object2="npc:me_treegoblin_0013" progress-mission="y" quest-symbol-drop-prob="85" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-56780.1797" location-y="-5563.8633" map="yeolsajeedea">
+			<mission id="2" name2="Mission.Name2.617_2" required-register-value="1">
+				<case indicator-social="q_617_m2_indi_1" msg="q_617_m2" npc-response="qrsp_617_3" object="npc:ch_unguksoldier_009" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-56780.1797" location-y="-5563.8633" map="yeolsajeedea">
+			<mission id="3" name2="Mission.Name2.617_3" required-register-value="1" reward-1="617_final_set1">
+				<case indicator-social="q_617_m3_indi_1" msg="q_617_m3" npc-response="qrsp_617_2" object="npc:ch_unguksoldier_024" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

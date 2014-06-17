@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_635" broadcast-category="field" category="normal" desc="q_635_sum" district-1="deasamak" grade="1" group2="QG_GmmDalUJukJi" id="635" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.635" save-type="all">
+		<acquisition level="26" preceding-quest-1="q_epic_516" preceding-quest-2="q_sub_630" preceding-quest-3="q_sub_624" preceding-quest-check="and" recommended-level="28">
+			<case acquire-quest="y" indicator-social="q_635_s_indi_1" msg="q_635_s" npc-response="qrsp_635_1" object="npc:ch_eunggaman_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-38507.9961" location-y="13547.3477" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.635_1" required-register-value="1">
+				<case env-looting="q_635_Quest_rubbed_copy_1_icon" mapunit-1="3010_e_onoff_sculpture_01" object="zoneenv:e_onoff_sculpture_01" object2="zoneenv2:e_onoff_sculpture_01" progress-mission="y" type="manipulate"/>
+				<fixed-reward slot-1="item:quest_635"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-37948.6445" location-y="9352.2031" map="yeolsajeedea">
+			<mission id="2" name2="Mission.Name2.635_2" required-register-value="1" reward-1="635_final_set1">
+				<case grocery="Quest_635" indicator-social="q_635_m2_indi_1" msg="q_635_m2" npc-response="qrsp_635_2" object="npc:ch_eunggaman_0001" progress-mission="y" remove-grocery="n" type="talk"/>
+				<completion-loss item-1="Quest_635"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_635"/>
+	</quest>
+</table>

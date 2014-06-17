@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1189" broadcast-category="field" category="normal" desc="q_1189_sum" district-1="suwal" grade="1" group2="QG_GuidosiNorth" id="1189" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1189" save-type="all">
+		<acquisition level="39" preceding-quest-1="q_epic_915" preceding-quest-2="q_sub_1187" preceding-quest-check="and" preceding-quest-mission-step-1="9" preceding-quest-mission-step-2="1" recommended-level="41">
+			<case acquire-quest="y" npc-response="qrsp_1189_1" object="npc:ch_taesangmun_0012" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1189_1" required-register-value="1">
+				<case npc-response="qrsp_1189_2" object="npc:ce_crocodilesharktribe_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1189_2" required-register-value="1">
+				<case npc-response="qrsp_1189_3" object="npc:ce_jukgyodan_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1189_3" required-register-value="2">
+				<case gadget-required="dont-care" object="zoneenv:e_chest_spiderfood_05" object2="zoneenv2:e_chest_spiderfood_05" prob="50" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_chest_spiderfood_04" object2="zoneenv2:e_chest_spiderfood_04" prob="50" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_chest_spiderfood_03" object2="zoneenv2:e_chest_spiderfood_03" prob="50" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_chest_spiderfood_02" object2="zoneenv2:e_chest_spiderfood_02" prob="50" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" mapunit-1="4300_e_chest_spiderfood_01" mapunit-2="4300_e_chest_spiderfood_01_1" object="zoneenv:e_chest_spiderfood_01" object2="zoneenv2:e_chest_spiderfood_01" prob="50" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.1189_4" required-register-value="1" reward-1="1189_final_set1">
+				<case npc-response="qrsp_1189_4" object="npc:ce_jukgyodan_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

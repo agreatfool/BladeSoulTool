@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_413" broadcast-category="field" category="normal" content-type="duel" day-of-week="daily" desc="q_413_sum" grade="16" group2="QG_Duel" id="413" map-group-1-1="duel" max-repeat="1" name2="Quest.Name2.413" reset-type="daily" retired="n" save-type="all">
+		<acquisition level="36" preceding-quest-1="q_sub_326" preceding-quest-check="and" recommended-level="36">
+			<case acquire-quest="y" indicator="quest-vsboard-repeat-start" mapunit-1="Guide_BiMuJang_ds" npc-response="qrsp_413_1" object="npc:CE_CT_Board_0021" type="talk"/>
+			<case acquire-quest="y" indicator="quest-vsboard-repeat-start" npc-response="qrsp_413_1" object="npc:CE_CT_Board_0020" type="talk"/>
+			<case acquire-quest="y" indicator="quest-vsboard-repeat-start" npc-response="qrsp_413_1" object="npc:CE_CT_Board_0019" type="talk"/>
+			<case acquire-quest="y" indicator="quest-vsboard-repeat-start" npc-response="qrsp_413_1" object="npc:CE_CT_Board_0018" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="148732.39" location-y="578873.25" map="world" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.413_1" required-register-value="15">
+				<case duel-type="sudden-death-1vs1" mapunit-1="Guide_BiMuJang_d" progress-mission="y" type="duel-finish"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.413_2" required-register-value="1" reward-1="413_final_set1" reward-2="413_final_set2">
+				<case indicator="quest-vsboard-end" mapunit-1="Guide_BiMuJang_se" npc-response="qrsp_413_2" object="npc:CE_CT_Board_0021" progress-mission="y" type="talk"/>
+				<case fee="y" item="duel_quest_completion_icon" msg="q_413_3" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

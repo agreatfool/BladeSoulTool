@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_20038" broadcast-category="field" category="normal" desc="q_20038_sum" grade="1" group2="QG_LightningStorm" id="20038" map-group-1-1="deasamak" map-group-1-2="suwal" max-repeat="-1" name2="Quest.Name2.20038" retired="y" save-type="except-completion">
+		<acquisition level="50" recommended-level="50">
+			<case acquire-quest="y" grocery="Quest_Scroll_LegendMaterial_0002" item="Quest_Scroll_LegendMaterial_0002" msg="q_20038_1" type="talk-to-item"/>
+		</acquisition>
+		<mission-step desc="q_20038_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.20038_1" required-register-value="1">
+				<case grocery="Quest_Grocery_LegendMaterial_0012" npc-response="qrsp_20038_1" object="npc:ce_dokchogeosa_0006" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_20038_des_2" id="2" location-x="6818.79" location-y="49788.69" map="AnGaeSup" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.20038_2" required-register-value="1">
+				<case grocery="Quest_Grocery_LegendMaterial_0009" npc-response="qrsp_20038_2" object="npc:ce_dokchogeosa_0006" progress-mission="y" type="talk"/>
+				<case mapunit-1="4105_CH_CT_BlackSmith_0005_s20038" npc-response="qrsp_20038_6" object="npc:ce_dokchogeosa_0006" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_20038_des_3" id="3" location-x="6818.79" location-y="49788.69" map="AnGaeSup" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.20038_3" required-register-value="1">
+				<case grocery="Quest_Grocery_LegendMaterial_0010" npc-response="qrsp_20038_3" object="npc:ce_dokchogeosa_0006" progress-mission="y" type="talk"/>
+				<case mapunit-1="4401_CH_WeaponMaster_0001_s20038" npc-response="qrsp_20038_6" object="npc:ce_dokchogeosa_0006" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_20038_des_4" id="4" location-x="6818.79" location-y="49788.69" map="AnGaeSup" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.20038_4" required-register-value="1" reward-1="20038_middle_set1">
+				<case grocery="Quest_Grocery_LegendMaterial_0011" npc-response="qrsp_20038_4" object="npc:ce_dokchogeosa_0006" progress-mission="y" type="talk"/>
+				<case mapunit-1="4400_CH_MuRimMaeng_0052_S20038" mapunit-2="4400_CH_HonChunGyo_0051_S20038" npc-response="qrsp_20038_6" object="npc:ce_dokchogeosa_0006" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_20038_des_5" id="5">
+			<mission id="5" name2="Mission.Name2.20038_5" required-register-value="1" reward-1="20038_final_set1">
+				<case grocery="Quest_Grocery_LegendMaterial_0014" npc-response="qrsp_20038_5" object="npc:ch_legendary_0001" progress-mission="y" type="talk"/>
+				<completion-loss item-1="quest_grocery_legendmaterial_0013" item-count-1="1"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Grocery_LegendMaterial_0012" item-2="Quest_Grocery_LegendMaterial_0013" item-count-1="1" item-count-2="1"/>
+	</quest>
+</table>

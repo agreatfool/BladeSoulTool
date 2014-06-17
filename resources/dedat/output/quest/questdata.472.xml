@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_472" attraction-1="dungeon:Dungeon_BaekCheong_Sulokgoong" attraction-2="dungeon:Dungeon_SulinDongGul" attraction-3="dungeon:Dungeon_GuiMunGuan_Nightmare" broadcast-category="field" category="normal" desc="q_472_sum" grade="10" group2="QG_SulInCave" id="472" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.472">
+		<acquisition level="50" preceding-quest-1="q_sub_960" preceding-quest-2="q_sub_1049" preceding-quest-check="or" recommended-level="50">
+			<case acquire-quest="y" npc-response="qrsp_472_1" object="npc:ch_c3_yettycave_0002" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.472_1" required-register-value="1" reward-1="472_final_set1">
+				<case npc-response="qrsp_472_2" object="npc:ch_c3_yettycave_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

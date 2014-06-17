@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_272" broadcast-category="field" category="epic" completed-desc="q_272_completed" completed-list="y" desc="q_272_sum" grade="1" group2="QG_BaeCheongEpic" id="272" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.272" save-type="all">
+		<acquisition level="1" recommended-level="47" sort-no="513"/>
+		<mission-step desc="q_272_des_1" id="1" location-x="-15825.77" location-y="1091.71" map="KangRyuSi" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.272_1" required-register-value="1">
+				<case mapunit-1="5100_Zone_TaePungJeon_p_e272" mapunit-2="5171_Guide_e272" object="zone:Zone_TaePungJeon_p" progress-mission="y" type="enter-zone"/>
+				<case npc-response="qrsp_267_12" object="npc:CE_CT_ThiefCat_0011" type="approach"/>
+				<case npc-response="qrsp_271_9" object="npc:CH_CT_Guard_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.272_3" required-register-value="1">
+				<case object="npc:CH_CT_DongHun_0002" object2="npc:CH_CT_DongHun_0002" progress-mission="y" type="killed"/>
+				<case object="zone:Zone_TaePungJeon_p" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_267_12" object="npc:CE_CT_ThiefCat_0011" type="approach"/>
+				<case npc-response="qrsp_272_33" object="npc:CH_CT_BiMoo_0003" type="approach"/>
+				<case npc-response="qrsp_272_32" object="npc:CH_CT_BiMoo_0002" type="approach"/>
+				<case npc-response="qrsp_272_31" object="npc:CH_CT_PungEmpire_0015" type="approach"/>
+				<case npc-response="qrsp_272_30" object="npc:CH_CT_PungEmpire_0014" type="approach"/>
+				<case npc-response="qrsp_272_29" object="npc:CH_CT_PungEmpire_0011" type="approach"/>
+				<case npc-response="qrsp_272_28" object="npc:CH_CT_PungEmpire_0010" type="approach"/>
+				<case npc-response="qrsp_272_27" object="npc:CH_CT_PungEmpire_0007" type="approach"/>
+				<case npc-response="qrsp_272_26" object="npc:CH_CT_PungEmpire_0006" type="approach"/>
+				<case npc-response="qrsp_272_25" object="npc:CH_CT_DeaHwan_0002" type="approach"/>
+				<case npc-response="qrsp_272_24" object="npc:CH_CT_KwangRyeol_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.272_4" required-register-value="1">
+				<case object="npc:CH_CT_JiYeon_0003" object2="npc:CH_CT_JiYeon_0003" progress-mission="y" type="killed"/>
+				<case object="zone:Zone_TaePungJeon_p" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_267_12" object="npc:CE_CT_ThiefCat_0011" type="approach"/>
+				<case npc-response="qrsp_272_41" object="npc:CH_CT_BiMoo_0004" type="approach"/>
+				<case npc-response="qrsp_272_40" object="npc:CH_CT_PungEmpire_0016" type="approach"/>
+				<case npc-response="qrsp_272_31" object="npc:CH_CT_PungEmpire_0015" type="approach"/>
+				<case npc-response="qrsp_272_30" object="npc:CH_CT_PungEmpire_0014" type="approach"/>
+				<case npc-response="qrsp_272_39" object="npc:CH_CT_PungEmpire_0011" type="approach"/>
+				<case npc-response="qrsp_272_38" object="npc:CH_CT_PungEmpire_0010" type="approach"/>
+				<case npc-response="qrsp_272_37" object="npc:CH_CT_PungEmpire_0009" type="approach"/>
+				<case npc-response="qrsp_272_36" object="npc:CH_CT_PungEmpire_0008" type="approach"/>
+				<case npc-response="qrsp_272_35" object="npc:CH_CT_PungEmpire_0007" type="approach"/>
+				<case npc-response="qrsp_272_26" object="npc:CH_CT_PungEmpire_0006" type="approach"/>
+				<case npc-response="qrsp_272_34" object="npc:CH_CT_DeaHwan_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.272_6" required-register-value="1">
+				<case object="npc:CH_CT_DeaHwan_0002" object2="npc:CH_CT_DeaHwan_0002" progress-mission="y" type="killed"/>
+				<case object="zone:Zone_TaePungJeon_p" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_272_26" object="npc:CH_CT_PungEmpire_0006" type="approach"/>
+				<case npc-response="qrsp_272_35" object="npc:CH_CT_PungEmpire_0007" type="approach"/>
+				<case npc-response="qrsp_272_42" object="npc:CH_CT_PungEmpire_0008" type="approach"/>
+				<case npc-response="qrsp_272_47" object="npc:CH_CT_PungEmpire_0009" type="approach"/>
+				<case npc-response="qrsp_272_38" object="npc:CH_CT_PungEmpire_0010" type="approach"/>
+				<case npc-response="qrsp_272_39" object="npc:CH_CT_PungEmpire_0011" type="approach"/>
+				<case npc-response="qrsp_272_44" object="npc:CH_CT_PungEmpire_0012" type="approach"/>
+				<case npc-response="qrsp_272_48" object="npc:CH_CT_PungEmpire_0013" type="approach"/>
+				<case npc-response="qrsp_272_49" object="npc:CH_CT_PungEmpire_0014" type="approach"/>
+				<case npc-response="qrsp_272_31" object="npc:CH_CT_PungEmpire_0015" type="approach"/>
+				<case npc-response="qrsp_272_40" object="npc:CH_CT_PungEmpire_0016" type="approach"/>
+				<case npc-response="qrsp_272_50" object="npc:CH_CT_PungEmpire_0017" type="approach"/>
+				<case npc-response="qrsp_272_46" object="npc:CH_CT_BiMoo_0001" type="approach"/>
+				<case npc-response="qrsp_272_32" object="npc:CH_CT_BiMoo_0002" type="approach"/>
+				<case npc-response="qrsp_272_33" object="npc:CH_CT_BiMoo_0003" type="approach"/>
+				<case npc-response="qrsp_272_41" object="npc:CH_CT_BiMoo_0004" type="approach"/>
+				<case npc-response="qrsp_267_12" object="npc:CE_CT_ThiefCat_0011" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.272_8" required-register-value="1">
+				<case object="npc:CH_CT_DoCheonPung_0006" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="zone:Zone_TaePungJeon_p" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_272_66" object="npc:CH_CT_PungEmpire_0006" type="approach"/>
+				<case npc-response="qrsp_272_67" object="npc:CH_CT_PungEmpire_0007" type="approach"/>
+				<case npc-response="qrsp_272_68" object="npc:CH_CT_PungEmpire_0008" type="approach"/>
+				<case npc-response="qrsp_272_69" object="npc:CH_CT_PungEmpire_0009" type="approach"/>
+				<case npc-response="qrsp_272_70" object="npc:CH_CT_PungEmpire_0010" type="approach"/>
+				<case npc-response="qrsp_272_71" object="npc:CH_CT_PungEmpire_0011" type="approach"/>
+				<case npc-response="qrsp_272_72" object="npc:CH_CT_PungEmpire_0012" type="approach"/>
+				<case npc-response="qrsp_272_73" object="npc:CH_CT_PungEmpire_0013" type="approach"/>
+				<case npc-response="qrsp_272_74" object="npc:CH_CT_PungEmpire_0014" type="approach"/>
+				<case npc-response="qrsp_272_75" object="npc:CH_CT_PungEmpire_0015" type="approach"/>
+				<case npc-response="qrsp_272_76" object="npc:CH_CT_PungEmpire_0016" type="approach"/>
+				<case npc-response="qrsp_272_77" object="npc:CH_CT_PungEmpire_0017" type="approach"/>
+				<case npc-response="qrsp_272_78" object="npc:CH_CT_BiMoo_0001" type="approach"/>
+				<case npc-response="qrsp_272_79" object="npc:CH_CT_BiMoo_0002" type="approach"/>
+				<case npc-response="qrsp_272_80" object="npc:CH_CT_BiMoo_0003" type="approach"/>
+				<case npc-response="qrsp_272_81" object="npc:CH_CT_BiMoo_0004" type="approach"/>
+				<case npc-response="qrsp_267_12" object="npc:CE_CT_ThiefCat_0011" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.272_5" required-register-value="1">
+				<case object="npc:CH_CT_KwangRyeol_0003" object2="npc:CH_CT_KwangRyeol_0003" progress-mission="y" type="killed"/>
+				<case object="zone:Zone_TaePungJeon_p" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_272_26" object="npc:CH_CT_PungEmpire_0006" type="approach"/>
+				<case npc-response="qrsp_272_35" object="npc:CH_CT_PungEmpire_0007" type="approach"/>
+				<case npc-response="qrsp_272_42" object="npc:CH_CT_PungEmpire_0008" type="approach"/>
+				<case npc-response="qrsp_272_43" object="npc:CH_CT_PungEmpire_0009" type="approach"/>
+				<case npc-response="qrsp_272_38" object="npc:CH_CT_PungEmpire_0010" type="approach"/>
+				<case npc-response="qrsp_272_39" object="npc:CH_CT_PungEmpire_0011" type="approach"/>
+				<case npc-response="qrsp_272_44" object="npc:CH_CT_PungEmpire_0012" type="approach"/>
+				<case npc-response="qrsp_272_30" object="npc:CH_CT_PungEmpire_0014" type="approach"/>
+				<case npc-response="qrsp_272_31" object="npc:CH_CT_PungEmpire_0015" type="approach"/>
+				<case npc-response="qrsp_272_40" object="npc:CH_CT_PungEmpire_0016" type="approach"/>
+				<case npc-response="qrsp_272_45" object="npc:CH_CT_PungEmpire_0017" type="approach"/>
+				<case npc-response="qrsp_272_46" object="npc:CH_CT_BiMoo_0001" type="approach"/>
+				<case npc-response="qrsp_272_32" object="npc:CH_CT_BiMoo_0002" type="approach"/>
+				<case npc-response="qrsp_272_33" object="npc:CH_CT_BiMoo_0003" type="approach"/>
+				<case npc-response="qrsp_272_41" object="npc:CH_CT_BiMoo_0004" type="approach"/>
+				<case npc-response="qrsp_267_12" object="npc:CE_CT_ThiefCat_0011" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.272_7" required-register-value="1">
+				<case npc-response="qrsp_272_2" object="npc:CH_CT_DoCheonPung_0006" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_TaePungJeon_p" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_272_51" object="npc:CH_CT_PungEmpire_0006" type="approach"/>
+				<case npc-response="qrsp_272_35" object="npc:CH_CT_PungEmpire_0007" type="approach"/>
+				<case npc-response="qrsp_272_52" object="npc:CH_CT_PungEmpire_0008" type="approach"/>
+				<case npc-response="qrsp_272_53" object="npc:CH_CT_PungEmpire_0009" type="approach"/>
+				<case npc-response="qrsp_272_54" object="npc:CH_CT_PungEmpire_0010" type="approach"/>
+				<case npc-response="qrsp_272_55" object="npc:CH_CT_PungEmpire_0011" type="approach"/>
+				<case npc-response="qrsp_272_56" object="npc:CH_CT_PungEmpire_0012" type="approach"/>
+				<case npc-response="qrsp_272_57" object="npc:CH_CT_PungEmpire_0013" type="approach"/>
+				<case npc-response="qrsp_272_58" object="npc:CH_CT_PungEmpire_0014" type="approach"/>
+				<case npc-response="qrsp_272_59" object="npc:CH_CT_PungEmpire_0015" type="approach"/>
+				<case npc-response="qrsp_272_60" object="npc:CH_CT_PungEmpire_0016" type="approach"/>
+				<case npc-response="qrsp_272_61" object="npc:CH_CT_PungEmpire_0017" type="approach"/>
+				<case npc-response="qrsp_272_62" object="npc:CH_CT_BiMoo_0001" type="approach"/>
+				<case npc-response="qrsp_272_63" object="npc:CH_CT_BiMoo_0002" type="approach"/>
+				<case npc-response="qrsp_272_64" object="npc:CH_CT_BiMoo_0003" type="approach"/>
+				<case npc-response="qrsp_272_65" object="npc:CH_CT_BiMoo_0004" type="approach"/>
+				<case npc-response="qrsp_267_12" object="npc:CE_CT_ThiefCat_0011" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.272_9" required-register-value="1">
+				<case npc-response="qrsp_272_3" object="npc:CH_CT_PungEmpire_0003" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_272_66" object="npc:CH_CT_PungEmpire_0006" type="approach"/>
+				<case npc-response="qrsp_272_67" object="npc:CH_CT_PungEmpire_0007" type="approach"/>
+				<case npc-response="qrsp_272_68" object="npc:CH_CT_PungEmpire_0008" type="approach"/>
+				<case npc-response="qrsp_272_69" object="npc:CH_CT_PungEmpire_0009" type="approach"/>
+				<case npc-response="qrsp_272_82" object="npc:CH_CT_PungEmpire_0010" type="approach"/>
+				<case npc-response="qrsp_272_83" object="npc:CH_CT_PungEmpire_0011" type="approach"/>
+				<case npc-response="qrsp_272_84" object="npc:CH_CT_PungEmpire_0012" type="approach"/>
+				<case npc-response="qrsp_272_85" object="npc:CH_CT_PungEmpire_0013" type="approach"/>
+				<case npc-response="qrsp_272_86" object="npc:CH_CT_PungEmpire_0014" type="approach"/>
+				<case npc-response="qrsp_272_87" object="npc:CH_CT_PungEmpire_0015" type="approach"/>
+				<case npc-response="qrsp_272_76" object="npc:CH_CT_PungEmpire_0016" type="approach"/>
+				<case npc-response="qrsp_272_88" object="npc:CH_CT_PungEmpire_0017" type="approach"/>
+				<case npc-response="qrsp_272_89" object="npc:CH_CT_BiMoo_0001" type="approach"/>
+				<case npc-response="qrsp_272_90" object="npc:CH_CT_BiMoo_0002" type="approach"/>
+				<case npc-response="qrsp_272_91" object="npc:CH_CT_BiMoo_0003" type="approach"/>
+				<case npc-response="qrsp_272_92" object="npc:CH_CT_BiMoo_0004" type="approach"/>
+				<case npc-response="qrsp_267_12" object="npc:CE_CT_ThiefCat_0011" type="approach"/>
+				<case object="zone:Zone_TaePungJeon_p" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.272_10" required-register-value="1">
+				<case object="npc:CE_CT_Dummy_0014" object2="npc:CE_CT_Dummy_0014" progress-mission="y" social="talksocial_deepbow" type="pc-social"/>
+				<case npc-response="qrsp_272_66" object="npc:CH_CT_PungEmpire_0006" type="approach"/>
+				<case npc-response="qrsp_272_67" object="npc:CH_CT_PungEmpire_0007" type="approach"/>
+				<case npc-response="qrsp_272_68" object="npc:CH_CT_PungEmpire_0008" type="approach"/>
+				<case npc-response="qrsp_272_69" object="npc:CH_CT_PungEmpire_0009" type="approach"/>
+				<case npc-response="qrsp_272_82" object="npc:CH_CT_PungEmpire_0010" type="approach"/>
+				<case npc-response="qrsp_272_83" object="npc:CH_CT_PungEmpire_0011" type="approach"/>
+				<case npc-response="qrsp_272_84" object="npc:CH_CT_PungEmpire_0012" type="approach"/>
+				<case npc-response="qrsp_272_85" object="npc:CH_CT_PungEmpire_0013" type="approach"/>
+				<case npc-response="qrsp_272_86" object="npc:CH_CT_PungEmpire_0014" type="approach"/>
+				<case npc-response="qrsp_272_87" object="npc:CH_CT_PungEmpire_0015" type="approach"/>
+				<case npc-response="qrsp_272_76" object="npc:CH_CT_PungEmpire_0016" type="approach"/>
+				<case npc-response="qrsp_272_88" object="npc:CH_CT_PungEmpire_0017" type="approach"/>
+				<case npc-response="qrsp_272_89" object="npc:CH_CT_BiMoo_0001" type="approach"/>
+				<case npc-response="qrsp_272_90" object="npc:CH_CT_BiMoo_0002" type="approach"/>
+				<case npc-response="qrsp_272_91" object="npc:CH_CT_BiMoo_0003" type="approach"/>
+				<case npc-response="qrsp_272_92" object="npc:CH_CT_BiMoo_0004" type="approach"/>
+				<case npc-response="qrsp_267_12" object="npc:CE_CT_ThiefCat_0011" type="approach"/>
+				<case npc-response="qrsp_272_6" object="npc:CH_CT_PungEmpire_0086" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.272_11" required-register-value="1">
+				<case npc-response="qrsp_272_4" object="npc:CH_CT_PungEmpire_0086" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_272_66" object="npc:CH_CT_PungEmpire_0006" type="approach"/>
+				<case npc-response="qrsp_272_67" object="npc:CH_CT_PungEmpire_0007" type="approach"/>
+				<case npc-response="qrsp_272_68" object="npc:CH_CT_PungEmpire_0008" type="approach"/>
+				<case npc-response="qrsp_272_69" object="npc:CH_CT_PungEmpire_0009" type="approach"/>
+				<case npc-response="qrsp_272_82" object="npc:CH_CT_PungEmpire_0010" type="approach"/>
+				<case npc-response="qrsp_272_83" object="npc:CH_CT_PungEmpire_0011" type="approach"/>
+				<case npc-response="qrsp_272_84" object="npc:CH_CT_PungEmpire_0012" type="approach"/>
+				<case npc-response="qrsp_272_85" object="npc:CH_CT_PungEmpire_0013" type="approach"/>
+				<case npc-response="qrsp_272_86" object="npc:CH_CT_PungEmpire_0014" type="approach"/>
+				<case npc-response="qrsp_272_87" object="npc:CH_CT_PungEmpire_0015" type="approach"/>
+				<case npc-response="qrsp_272_76" object="npc:CH_CT_PungEmpire_0016" type="approach"/>
+				<case npc-response="qrsp_272_88" object="npc:CH_CT_PungEmpire_0017" type="approach"/>
+				<case npc-response="qrsp_272_89" object="npc:CH_CT_BiMoo_0001" type="approach"/>
+				<case npc-response="qrsp_272_90" object="npc:CH_CT_BiMoo_0002" type="approach"/>
+				<case npc-response="qrsp_272_91" object="npc:CH_CT_BiMoo_0003" type="approach"/>
+				<case npc-response="qrsp_272_92" object="npc:CH_CT_BiMoo_0004" type="approach"/>
+				<case npc-response="qrsp_267_12" object="npc:CE_CT_ThiefCat_0011" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="12" location-x="-4595.30" location-y="-8673.92" map="KangRyuSi" mission-map-type="location">
+			<mission id="12" name2="Mission.Name2.272_12" required-register-value="1" reward-1="272_final_set1">
+				<case mapunit-1="5141_Guide_e272" npc-response="qrsp_272_5" object="npc:CH_CT_PungEmpire_0005" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_272_66" object="npc:CH_CT_PungEmpire_0006" type="approach"/>
+				<case npc-response="qrsp_272_67" object="npc:CH_CT_PungEmpire_0007" type="approach"/>
+				<case npc-response="qrsp_272_68" object="npc:CH_CT_PungEmpire_0008" type="approach"/>
+				<case npc-response="qrsp_272_69" object="npc:CH_CT_PungEmpire_0009" type="approach"/>
+				<case npc-response="qrsp_272_82" object="npc:CH_CT_PungEmpire_0010" type="approach"/>
+				<case npc-response="qrsp_272_83" object="npc:CH_CT_PungEmpire_0011" type="approach"/>
+				<case npc-response="qrsp_272_84" object="npc:CH_CT_PungEmpire_0012" type="approach"/>
+				<case npc-response="qrsp_272_85" object="npc:CH_CT_PungEmpire_0013" type="approach"/>
+				<case npc-response="qrsp_272_86" object="npc:CH_CT_PungEmpire_0014" type="approach"/>
+				<case npc-response="qrsp_272_87" object="npc:CH_CT_PungEmpire_0015" type="approach"/>
+				<case npc-response="qrsp_272_76" object="npc:CH_CT_PungEmpire_0016" type="approach"/>
+				<case npc-response="qrsp_272_88" object="npc:CH_CT_PungEmpire_0017" type="approach"/>
+				<case npc-response="qrsp_272_89" object="npc:CH_CT_BiMoo_0001" type="approach"/>
+				<case npc-response="qrsp_272_90" object="npc:CH_CT_BiMoo_0002" type="approach"/>
+				<case npc-response="qrsp_272_91" object="npc:CH_CT_BiMoo_0003" type="approach"/>
+				<case npc-response="qrsp_272_92" object="npc:CH_CT_BiMoo_0004" type="approach"/>
+				<case npc-response="qrsp_267_12" object="npc:CE_CT_ThiefCat_0011" type="approach"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="Zone_TaePungJeon">
+			<destination mission-step-id="1" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="9" zone-index="1"/>
+			<destination mission-step-id="10" zone-index="1"/>
+			<destination mission-step-id="11" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_273"/>
+		</completion>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.272_2" required-register-value="1">
+				<case npc-response="qrsp_272_1" object="npc:CH_CT_PungEmpire_0003" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_TaePungJeon_p" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_267_12" object="npc:CE_CT_ThiefCat_0011" type="approach"/>
+				<case npc-response="qrsp_272_23" object="npc:CH_CT_BiMoo_0004" type="approach"/>
+				<case npc-response="qrsp_272_22" object="npc:CH_CT_BiMoo_0003" type="approach"/>
+				<case npc-response="qrsp_272_21" object="npc:CH_CT_BiMoo_0002" type="approach"/>
+				<case npc-response="qrsp_272_20" object="npc:CH_CT_BiMoo_0001" type="approach"/>
+				<case npc-response="qrsp_272_19" object="npc:CH_CT_PungEmpire_0016" type="approach"/>
+				<case npc-response="qrsp_272_18" object="npc:CH_CT_PungEmpire_0015" type="approach"/>
+				<case npc-response="qrsp_272_17" object="npc:CH_CT_PungEmpire_0014" type="approach"/>
+				<case npc-response="qrsp_272_16" object="npc:CH_CT_PungEmpire_0011" type="approach"/>
+				<case npc-response="qrsp_272_15" object="npc:CH_CT_PungEmpire_0010" type="approach"/>
+				<case npc-response="qrsp_272_14" object="npc:CH_CT_PungEmpire_0009" type="approach"/>
+				<case npc-response="qrsp_272_13" object="npc:CH_CT_PungEmpire_0008" type="approach"/>
+				<case npc-response="qrsp_272_12" object="npc:CH_CT_PungEmpire_0007" type="approach"/>
+				<case npc-response="qrsp_272_11" object="npc:CH_CT_PungEmpire_0006" type="approach"/>
+				<case npc-response="qrsp_272_10" object="npc:CH_CT_DeaHwan_0002" type="approach"/>
+				<case npc-response="qrsp_272_9" object="npc:CH_CT_KwangRyeol_0003" type="approach"/>
+				<case npc-response="qrsp_272_8" object="npc:CH_CT_JiYeon_0003" type="approach"/>
+				<case npc-response="qrsp_272_7" object="npc:CH_CT_DongHun_0002" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

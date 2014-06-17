@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_460" broadcast-category="field" category="normal" day-of-week="daily" desc="q_460_sum" grade="7" group2="QG_AngaeForestNorth" id="460" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.460" reset-type="daily" save-type="all">
+		<acquisition level="41" preceding-quest-1="q_epic_925" preceding-quest-check="and" preceding-quest-mission-step-1="7" recommended-level="43">
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_460_3" object="npc:ce_board_0006" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_460_1" object="npc:ch_gyeongchunmaeng_0037" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_460_1" object="npc:ch_gyeongchunmaeng_0037" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.460_1" required-register-value="1">
+				<case looting="q_460_2_icon" object="npc:me_jegukgun_0368" object2="npc:me_jegukgun_0368" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.460_2" required-register-value="1" reward-1="460_final_set1" reward-2="460_final_set2">
+				<case completion-count="1" npc-response="qrsp_460_2" object="npc:ch_gyeongchunmaeng_0037" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_460_1_icon" msg="q_460_4" progress-mission="y" type="talk-to-self"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_460_2" object="npc:ch_gyeongchunmaeng_0037" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

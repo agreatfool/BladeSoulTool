@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="CombatData" release-mversion="0.0.0.1" release-side="client" version="0.1">
+	<contextscript alias="ContextScript_SwordMaster_Item_Pierce">
+		<stance stance="발도" status="stance">
+			<layer>
+				<decision>
+					<condition skill="27997"/>
+					<result context-3="27997" context-ui-effect="event" control-mode="classic"/>
+					<result context-3="27997" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27996"/>
+					<result context-3="27996" context-ui-effect="event" control-mode="classic"/>
+					<result context-3="27996" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27995"/>
+					<result context-3="27995" context-ui-effect="event" control-mode="classic"/>
+					<result context-3="27995" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+		</stance>
+	</contextscript>
+</table>

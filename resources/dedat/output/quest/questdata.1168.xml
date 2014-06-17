@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1168" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1168_sum" district-1="suwal" grade="7" group2="QG_SuwajokVillage" id="1168" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1168" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="38" preceding-quest-1="q_epic_914" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="40">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1168_1" object="npc:ce_suwajok_0016" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1168_3" object="npc:ce_suwajok_0016" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_1168_5" object="npc:ce_board_0009" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1168_1" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_1168_1_icon" object="npc:me_crocodilesharktribec2_0002" object2="npc:me_crocodilesharktribec2_0002" progress-mission="y" type="loot"/>
+				<case object="npc:ME_IronTuttle_0001" object2="npc:ME_IronTuttle_0001" show-in-tooltip="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1168_2" required-register-value="1" reward-1="1168_final_set1" reward-2="1168_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1168_2" object="npc:ce_suwajok_0016" progress-mission="y" type="talk"/>
+				<case completion-count="1" npc-response="qrsp_1168_4" object="npc:ce_suwajok_0016" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_1168_2_icon" msg="q_1168_5" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

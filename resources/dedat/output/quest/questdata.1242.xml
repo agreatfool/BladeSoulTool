@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1242" broadcast-category="field" category="normal" content-type="festival" day-of-week="daily" desc="q_1242_sum" grade="1" group2="QG_Event" id="1242" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.1242" reset-type="daily" save-type="all">
+		<acquisition level="43" preceding-quest-1="q_sub_1241" preceding-quest-check="and" recommended-level="43">
+			<case acquire-quest="y" item="q_1242_1_icon" msg="q_1242_1" type="talk-to-self">
+				<filter-set>
+					<filter field="equip-hand" op="eq" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="prop" value="2601841"/>
+				</filter-set>
+				<filter-set>
+					<filter item="GB_General_Weapon_RynSword_0028" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="inventory"/>
+				</filter-set>
+				<filter-set>
+					<filter field="equip-hand" op="eq" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="prop" value="2601840"/>
+				</filter-set>
+				<filter-set>
+					<filter item="GB_General_Weapon_Dagger_0028" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="inventory"/>
+				</filter-set>
+				<filter-set>
+					<filter field="equip-hand" op="eq" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="prop" value="2601839"/>
+				</filter-set>
+				<filter-set>
+					<filter item="GB_General_Weapon_Axe_0028" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="inventory"/>
+				</filter-set>
+				<filter-set>
+					<filter field="equip-hand" op="eq" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="prop" value="2601838"/>
+				</filter-set>
+				<filter-set>
+					<filter item="GB_General_Weapon_Aura-bangle_0028" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="inventory"/>
+				</filter-set>
+				<filter-set>
+					<filter field="equip-hand" op="eq" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="prop" value="2601837"/>
+				</filter-set>
+				<filter-set>
+					<filter item="GB_General_Weapon_Staff_0028" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="inventory"/>
+				</filter-set>
+				<filter-set>
+					<filter field="equip-hand" op="eq" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="prop" value="2601836"/>
+				</filter-set>
+				<filter-set>
+					<filter item="GB_General_Weapon_Gauntlet_0028" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="inventory"/>
+				</filter-set>
+				<filter-set>
+					<filter field="equip-hand" op="eq" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="prop" value="2601835"/>
+				</filter-set>
+				<filter-set>
+					<filter item="GB_General_Weapon_Sword_0028" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="inventory"/>
+				</filter-set>
+			</case>
+		</acquisition>
+		<mission-step completion-type="or" id="1">
+			<mission id="1" name2="Mission.Name2.1242_1" required-register-value="1">
+				<case looting="q_1242_3_icon" object2="npc:me_nakwondaesung_0002" progress-mission="y" type="loot"/>
+				<case looting="q_1242_3_icon" object2="npc:me_hyeolpung_0004" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1242_2" required-register-value="1">
+				<case looting="q_1242_3_icon" object2="npc:me_spiderqueen_0001" progress-mission="y" type="loot"/>
+				<case looting="q_1242_3_icon" object2="npc:mh_scholar_0001" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.1242_3" required-register-value="1">
+				<case looting="q_1242_3_icon" object2="npc:mh_chunggak_0310" progress-mission="y" type="loot"/>
+				<case looting="q_1242_3_icon" object2="npc:mh_chunggak_0330" progress-mission="y" type="loot"/>
+				<case looting="q_1242_3_icon" object2="npc:me_fishmancboss_0001" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="4" name2="Mission.Name2.1242_4" required-register-value="1">
+				<case looting="q_1242_3_icon" object2="npc:me_chunggakaboss_0005" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="5" name2="Mission.Name2.1242_5" required-register-value="1" reward-1="1242_final_set1" reward-2="1242_final_set2">
+				<case item="q_1242_2_icon" msg="q_1242_2" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

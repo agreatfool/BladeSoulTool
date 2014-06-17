@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_918" broadcast-category="field" category="epic" completed-desc="q_918_completed" completed-list="y" desc="q_918_sum" district-1="suwal" grade="1" group2="QG_SuwalPWEpic" id="918" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.918" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="41" sort-no="419"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.918_1" required-register-value="7">
+				<case mapunit-1="4301_MH_UnKuk_0008" mapunit-2="4301_MH_UnKuk_0008_1" object="npc:mh_unkuk_0008" object2="npc:mh_unkuk_0008" progress-mission="y" type="killed"/>
+				<case object="npc:mh_unkuk_0007" object2="npc:mh_unkuk_0007" progress-mission="y" type="killed"/>
+				<case object="npc:mh_unkuk_0006" object2="npc:mh_unkuk_0006" progress-mission="y" type="killed"/>
+				<case object="npc:mh_unkuk_0005" object2="npc:mh_unkuk_0005" progress-mission="y" type="killed"/>
+				<case object="npc:mh_unkuk_0004" object2="npc:mh_unkuk_0004" progress-mission="y" type="killed"/>
+				<case object="npc:mh_unkuk_0002" object2="npc:mh_unkuk_0002" progress-mission="y" type="killed"/>
+				<case object="npc:mh_unkuk_0001" object2="npc:mh_unkuk_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.918_2" required-register-value="1">
+				<case mapunit-1="4301_zone_dogabigul_godosi" object="zone:zone_dogabigul_godosi" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.918_3" required-register-value="1">
+				<case npc-response="qrsp_918_1" object="npc:ch_doyung_0003" progress-mission="y" type="talk"/>
+				<case object="zone:zone_dogabigul_godosi" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.918_4" required-register-value="1">
+				<case mapunit-1="4307_foot_1" object="zone:zone_dogabigul_godosi" progress-mission="y" type="convoy-arrived"/>
+			</mission>
+			<mission-step-fail rollback-step-id="3">
+				<case convoy="epic_918_con" object="zone:zone_dogabigul_godosi" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.918_5" required-register-value="1">
+				<case npc-response="qrsp_918_2" object="npc:ce_akgyojok_0012" progress-mission="y" type="talk"/>
+				<case object="zone:zone_dogabigul_godosi" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6" location-x="-52283.680" location-y="20851.170" map="wangsiljihachanggo" mission-map-type="location">
+			<mission id="6" name2="Mission.Name2.918_6" required-register-value="1">
+				<case npc-response="qrsp_918_3" object="npc:ch_doyung_0005" progress-mission="y" type="talk"/>
+				<case object="zone:zone_dogabigul_godosi" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7" location-x="-54065.12" location-y="19093.17" map="wangsiljihachanggo" mission-map-type="location">
+			<mission id="7" name2="Mission.Name2.918_7" required-register-value="1">
+				<case npc-response="qrsp_918_7" object="npc:ch_doyung_0003" progress-mission="n" type="approach"/>
+				<case mapunit-1="4307_foot_2" object="zoneenv:4307_foot_2" object2="zoneenv2:4307_foot_2" progress-mission="y" type="env-entered"/>
+				<case object="zone:zone_dogabigul_godosi" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.918_8" required-register-value="1">
+				<case npc-response="qrsp_918_4" object="npc:ch_supgwang_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_dogabigul_godosi" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.918_9" required-register-value="1" show-kill-mapunit="y">
+				<case object="npc:ch_supgwang_0001" object2="npc:ch_supgwang_0001" progress-mission="y" type="killed"/>
+			</mission>
+			<mission-step-fail rollback-step-id="8"/>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.918_10" required-register-value="1">
+				<case npc-response="qrsp_918_5" object="npc:ch_supsul_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_dogabigul_godosi" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.918_11" required-register-value="1" reward-1="918_final_set1">
+				<case npc-response="qrsp_918_6" object="npc:ce_akgyojok_0012" progress-mission="y" type="talk"/>
+				<case object="zone:zone_dogabigul_godosi" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_919"/>
+		</completion>
+		<transit id="1" zone="zone_dogabigul">
+			<destination mission-step-id="10" zone-index="1"/>
+			<destination mission-step-id="9" zone-index="1"/>
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+			<destination mission-step-id="11" zone-index="1"/>
+		</transit>
+		<transit id="2" zone="zone_guidosi">
+			<destination mission-step-id="10" zone-index="1"/>
+			<destination mission-step-id="9" zone-index="1"/>
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+			<destination mission-step-id="11" zone-index="1"/>
+		</transit>
+		<transit id="3" zone="zone_youngheulmun">
+			<destination mission-step-id="11" zone-index="2"/>
+			<destination mission-step-id="10" zone-index="2"/>
+			<destination mission-step-id="9" zone-index="2"/>
+			<destination mission-step-id="8" zone-index="2"/>
+			<destination mission-step-id="7" zone-index="2"/>
+			<destination mission-step-id="6" zone-index="2"/>
+			<destination mission-step-id="5" zone-index="2"/>
+			<destination mission-step-id="4" zone-index="2"/>
+			<destination mission-step-id="3" zone-index="2"/>
+			<destination mission-step-id="2" zone-index="2"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

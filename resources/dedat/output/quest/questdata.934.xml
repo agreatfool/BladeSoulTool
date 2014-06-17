@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_934" broadcast-category="field" category="epic" completed-desc="q_934_completed" completed-list="y" desc="q_934_sum" grade="1" group2="QG_NextbaeCheongEpic" id="934" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.934" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="50" sort-no="534"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.934_1" required-register-value="1">
+				<case npc-response="qrsp_934_1" object="npc:CH_SA_Citizen_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_934_6" object="npc:CH_SA_YuGaChon_0001" type="approach"/>
+				<case npc-response="qrsp_934_8" object="npc:CH_YuGaChon_0015" type="approach"/>
+				<case npc-response="qrsp_934_9" object="npc:CH_YuGaChon_0016" type="approach"/>
+				<case npc-response="qrsp_934_10" object="npc:CH_YuGaChon_0017" type="approach"/>
+				<case npc-response="qrsp_934_14" object="npc:CH_YuGaChon_0014" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.934_6" required-register-value="1">
+				<case mapunit-1="Guide_YuGaChon" npc-response="qrsp_934_2" object="npc:MH_SA_MaYeongGangGun_0005" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HwangSaIlJok_p" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.934_8" required-register-value="4">
+				<case object="npc:MH_SA_MaYeongGangGun_0009" object2="npc:MH_SA_MaYeongGangGun_0009" progress-mission="y" type="killed"/>
+				<case object="npc:MH_SA_MaYeongGangGun_0008" object2="npc:MH_SA_MaYeongGangGun_0008" progress-mission="y" type="killed"/>
+				<case object="npc:MH_SA_MaYeongGangGun_0007" object2="npc:MH_SA_MaYeongGangGun_0007" progress-mission="y" type="killed"/>
+				<case mapunit-1="3058_MH_SA_MaYeongGangGun_0006" mapunit-2="Guide_HwangSaIlJok_e" object="npc:MH_SA_MaYeongGangGun_0006" object2="npc:MH_SA_MaYeongGangGun_0006" progress-mission="y" type="killed"/>
+				<case object="zone:zone_HwangSaIlJok_p" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.934_9" required-register-value="1" reward-1="934_final_set1">
+				<case npc-response="qrsp_934_3" object="npc:MH_SA_MaYeongGangGun_0005" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_934_3" object="npc:CH_SA_Aliba_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HwangSaIlJok_p" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_934_4" object="npc:CH_SA_MaYeongGangGun_0009" type="approach"/>
+				<case npc-response="qrsp_934_5" object="npc:CH_SA_MaYeongGangGun_0010" type="approach"/>
+				<case npc-response="qrsp_934_4" object="npc:CH_SA_MaYeongGangGun_0007" type="approach"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_1165"/>
+		</completion>
+		<transit id="1" zone="zone_HwangSaIlJok">
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="9" zone-index="1"/>
+		</transit>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.934_7" required-register-value="1">
+				<case mapunit-1="M_3058_Footswich_2" object="zoneenv:3058_Footswich_2" object2="zoneenv2:3058_Footswich_2" progress-mission="y" type="env-entered"/>
+				<case object="zone:zone_HwangSaIlJok_p" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="2" zone="StartZone_Event">
+			<destination mission-step-id="9" zone-index="2"/>
+			<destination mission-step-id="8" zone-index="2"/>
+			<destination mission-step-id="7" zone-index="2"/>
+			<destination mission-step-id="6" zone-index="2"/>
+			<destination mission-step-id="5" zone-index="2"/>
+			<destination mission-step-id="4" zone-index="2"/>
+			<destination mission-step-id="3" zone-index="2"/>
+			<destination mission-step-id="2" zone-index="2"/>
+			<destination mission-step-id="1" zone-index="2"/>
+		</transit>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.934_5" required-register-value="1">
+				<case mapunit-1="3010_zone_HwangSaIlJok_p_e" object="zone:zone_HwangSaIlJok_p" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.934_4" required-register-value="1">
+				<case npc-response="qrsp_934_13" object="npc:CH_SA_YuGaChon_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.934_2" required-register-value="1" reset-teleport-recycle-time="y">
+				<case npc-response="qrsp_934_11" object="npc:CH_YuGaChon_0014" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_934_12" object="npc:CH_SA_Citizen_0001" type="approach"/>
+				<case npc-response="qrsp_934_7" object="npc:CH_SA_YuGaChon_0001" type="approach"/>
+				<case npc-response="qrsp_934_8" object="npc:CH_YuGaChon_0015" type="approach"/>
+				<case npc-response="qrsp_934_9" object="npc:CH_YuGaChon_0016" type="approach"/>
+				<case npc-response="qrsp_934_10" object="npc:CH_YuGaChon_0017" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.934_3" required-register-value="3">
+				<case looting="q_613_Quest_poison_plant_1_icon" object="zoneenv:e_onoff_poisongrass_01" object2="zoneenv2:e_onoff_poisongrass_01" progress-mission="y" type="loot"/>
+				<case looting="q_613_Quest_poison_plant_1_icon" object="zoneenv:e_onoff_poisongrass_02" object2="zoneenv2:e_onoff_poisongrass_02" progress-mission="y" type="loot"/>
+				<case looting="q_613_Quest_poison_plant_1_icon" object="zoneenv:e_onoff_poisongrass_03" object2="zoneenv2:e_onoff_poisongrass_03" progress-mission="y" type="loot"/>
+				<case looting="q_613_Quest_poison_plant_1_icon" object="zoneenv:e_onoff_poisongrass_04" object2="zoneenv2:e_onoff_poisongrass_04" progress-mission="y" type="loot"/>
+				<case looting="q_613_Quest_poison_plant_1_icon" object="zoneenv:e_onoff_poisongrass_05" object2="zoneenv2:e_onoff_poisongrass_05" progress-mission="y" type="loot"/>
+				<case looting="q_613_Quest_poison_plant_1_icon" object="zoneenv:e_onoff_poisongrass_06" object2="zoneenv2:e_onoff_poisongrass_06" progress-mission="y" type="loot"/>
+				<case looting="q_613_Quest_poison_plant_1_icon" mapunit-1="Guide_YuGaChon" mapunit-2="3010_e_onoff_poisongrass_01" mapunit-3="3010_e_onoff_poisongrass_01_1" object="zoneenv:e_onoff_poisongrass_07" object2="zoneenv2:e_onoff_poisongrass_07" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_934_10" object="npc:CH_YuGaChon_0017" type="approach"/>
+				<case npc-response="qrsp_934_9" object="npc:CH_YuGaChon_0016" type="approach"/>
+				<case npc-response="qrsp_934_8" object="npc:CH_YuGaChon_0015" type="approach"/>
+				<case npc-response="qrsp_934_7" object="npc:CH_SA_YuGaChon_0001" type="approach"/>
+				<case npc-response="qrsp_934_12" object="npc:CH_SA_Citizen_0001" type="approach"/>
+				<case npc-response="qrsp_934_15" object="npc:CH_SA_YuGaChon_0003" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

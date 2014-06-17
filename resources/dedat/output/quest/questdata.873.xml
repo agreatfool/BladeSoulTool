@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_873" broadcast-category="field" category="normal" desc="q_873_sum" district-1="deasamak" grade="1" group2="QG_OSaekAmDoEast" id="873" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.873" save-type="all">
+		<acquisition level="34" preceding-quest-1="q_epic_534" preceding-quest-check="and" recommended-level="36">
+			<case acquire-quest="y" indicator-social="q_873_s_indi_1" msg="q_873_s" npc-response="qrsp_873_1" object="npc:ch_unguk_0006" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="30482.8027" location-y="63837.2344" map="oseakamdo">
+			<mission id="1" name2="Mission.Name2.873_1" required-register-value="10">
+				<case looting="q_873_Quest_bone_helmet_1_icon" mapunit-1="3037_ME_BoneMaskThinA_001" object="npc:me_bonemaskthina_001" object2="npc:me_bonemaskthina_001" progress-mission="y" type="loot"/>
+				<case looting="q_873_Quest_bone_helmet_1_icon" object="npc:me_bonemask_0004" object2="npc:me_bonemask_0004" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="34620.6563" location-y="60064.4922" map="oseakamdo">
+			<mission id="2" name2="Mission.Name2.873_2" required-register-value="1" reward-1="873_final_set1">
+				<case indicator-social="q_873_m2_indi_1" msg="q_873_m2" npc-response="qrsp_873_2" object="npc:ch_unguk_0006" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

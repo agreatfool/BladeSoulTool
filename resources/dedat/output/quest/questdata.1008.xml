@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1008" broadcast-category="field" category="normal" desc="q_1008_sum" district-1="suwal" grade="1" group2="QG_Wolchon" id="1008" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1008" save-type="all">
+		<acquisition level="36" preceding-quest-1="q_epic_904" preceding-quest-check="and" recommended-level="38">
+			<case acquire-quest="y" npc-response="qrsp_1008_1" object="npc:CH_SinRyong_0044" type="talk" visible-object="n"/>
+			<case npc-response="qrsp_1002_5" object="npc:CH_WolChon_0008" type="approach"/>
+		</acquisition>
+		<mission-step id="1" location-x="6759.74" location-y="-1329.09" map="neukdaegureung" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.1008_1" required-register-value="10">
+				<case mapunit-1="4000_MH_Poacher_0001" object="npc:mh_poacher_0001" object2="npc:mh_poacher_0001" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_1008_2" object="npc:CH_SinRyong_0044" type="approach" visible-object="n"/>
+				<case object="npc:mh_poacher_0002" object2="npc:mh_poacher_0002" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_1005_7" object="npc:CH_WolChon_0008" type="approach"/>
+				<case object="npc:mh_poacher_0003" object2="npc:mh_poacher_0003" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1008_2" required-register-value="10">
+				<case mapunit-1="4000_MH_Butcher_0001" object="npc:MH_Butcher_0001" object2="npc:MH_Butcher_0001" progress-mission="y" type="killed"/>
+				<case object="npc:MH_Butcher_0002" object2="npc:MH_Butcher_0002" progress-mission="y" type="killed"/>
+				<case object="npc:MH_Butcher_0003" object2="npc:MH_Butcher_0003" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.1008_3" required-register-value="1" reward-1="1008_final_set1">
+				<case npc-response="qrsp_1008_3" object="npc:CH_SinRyong_0045" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_1009_10" object="npc:CH_Bounty Hunter_0012" type="approach"/>
+				<case npc-response="qrsp_1009_9" object="npc:CH_Bounty Hunter_0011" type="approach"/>
+				<case npc-response="qrsp_1009_8" object="npc:CH_Bounty Hunter_0010" type="approach"/>
+				<case npc-response="qrsp_1009_7" object="npc:CH_Bounty Hunter_0009" type="approach"/>
+				<case npc-response="qrsp_1009_6" object="npc:CH_Bounty Hunter_0008" type="approach"/>
+				<case npc-response="qrsp_1009_5" object="npc:CH_Bounty Hunter_0007" type="approach"/>
+				<case npc-response="qrsp_1009_4" object="npc:CH_Hunter_0008" type="approach"/>
+				<case npc-response="qrsp_1009_3" object="npc:CH_Hunter_0007" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

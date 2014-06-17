@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_314" broadcast-category="field" category="epic" completed-desc="q_314_completed" completed-list="y" desc="q_314_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="314" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.314" save-type="all" tutorial="y">
+		<acquisition level="1" recommended-level="15" sort-no="218"/>
+		<mission-step completion-type="and" desc="q_314_des_3" id="3" location-x="24139.4277" location-y="44478.0703" map="suryengol">
+			<mission id="3" name2="Mission.Name2.314_3" required-register-value="1">
+				<case indicator-social="q_314_m3_indi_1" msg="q_314_m3" npc-response="qrsp_314_2" object="npc:ch_herbalist_004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_314_des_4" id="4" location-x="23763.5488" location-y="42222.8164" map="suryengol">
+			<mission id="4" name2="Mission.Name2.314_4" required-register-value="4">
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" object="zoneenv:e_onoff_mushroom_01" object2="zoneenv2:e_onoff_mushroom_01" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" object="zoneenv:e_onoff_mushroom_02" object2="zoneenv2:e_onoff_mushroom_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" object="zoneenv:e_onoff_mushroom_03" object2="zoneenv2:e_onoff_mushroom_03" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" object="zoneenv:e_onoff_mushroom_04" object2="zoneenv2:e_onoff_mushroom_04" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" object="zoneenv:e_onoff_mushroom_05" object2="zoneenv2:e_onoff_mushroom_05" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" object="zoneenv:e_onoff_mushroom_06" object2="zoneenv2:e_onoff_mushroom_06" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" object="zoneenv:e_onoff_mushroom_07" object2="zoneenv2:e_onoff_mushroom_07" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" object="zoneenv:e_onoff_mushroom_08" object2="zoneenv2:e_onoff_mushroom_08" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" object="zoneenv:e_onoff_mushroom_09" object2="zoneenv2:e_onoff_mushroom_09" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" mapunit-1="2300_e_onoff_mushroom_01" mapunit-2="2300_e_onoff_mushroom_01_1" object="zoneenv:e_onoff_mushroom_10" object2="zoneenv2:e_onoff_mushroom_10" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" object="zoneenv:e_onoff_mushroom_11" object2="zoneenv2:e_onoff_mushroom_11" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" object="zoneenv:e_onoff_mushroom_12" object2="zoneenv2:e_onoff_mushroom_12" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" object="zoneenv:e_onoff_mushroom_13" object2="zoneenv2:e_onoff_mushroom_13" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" object="zoneenv:e_onoff_mushroom_14" object2="zoneenv2:e_onoff_mushroom_14" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" object="zoneenv:e_onoff_mushroom_15" object2="zoneenv2:e_onoff_mushroom_15" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" object="zoneenv:e_onoff_mushroom_16" object2="zoneenv2:e_onoff_mushroom_16" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" object="zoneenv:e_onoff_mushroom_17" object2="zoneenv2:e_onoff_mushroom_17" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" object="zoneenv:e_onoff_mushroom_18" object2="zoneenv2:e_onoff_mushroom_18" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" object="zoneenv:e_onoff_mushroom_19" object2="zoneenv2:e_onoff_mushroom_19" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_314_Quest_poisonous_mushroom_1_icon" object="zoneenv:e_onoff_mushroom_20" object2="zoneenv2:e_onoff_mushroom_20" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_314_des_5" id="5" location-x="24139.4277" location-y="44478.0703" map="suryengol">
+			<mission id="5" name2="Mission.Name2.314_5" required-register-value="1" reward-1="314_final_set1">
+				<case indicator-social="q_314_m5_indi_1" msg="q_314_m5" npc-response="qrsp_314_3" object="npc:ch_herbalist_004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_496"/>
+		</completion>
+		<mission-step desc="q_314_des_1" guide-message="gm_314_1" id="1" location-x="24891.1777" location-y="42824.2188">
+			<mission id="1" name2="Mission.Name2.314_1" required-register-value="1">
+				<tutorial-case progress-mission="y" type="skill-training">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:skill-training:pc" subject2="case:skill-training:pc" type="prop" value="15"/>
+					</filter-set>
+				</tutorial-case>
+				<case npc-response="qrsp_314_4" object="npc:ch_dokchogeosa_001" progress-mission="n" type="talk">
+					<filter-set>
+						<filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="14"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_314_des_2" id="2" location-x="23763.5488" location-y="42222.8164">
+			<mission id="2" name2="Mission.Name2.314_2" required-register-value="1">
+				<case msg="q_314_m2" npc-response="qrsp_314_1" object="npc:ch_dokchogeosa_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_suryengol_dun_4">
+			<destination mission-step-id="1" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+		</transit>
+		<transit id="2" zone="zone_SuRyenDongGul">
+			<complete zone-index="1"/>
+		</transit>
+	</quest>
+</table>

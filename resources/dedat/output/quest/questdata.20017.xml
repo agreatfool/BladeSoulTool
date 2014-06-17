@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_20017" broadcast-category="always" category="normal" desc="q_20017_sum" district-1="suwal" grade="1" group2="QG_Musintap" id="20017" map-group-1-1="suwal" max-repeat="-1" name2="Quest.Name2.20017" save-type="except-completion">
+		<acquisition level="43" preceding-quest-1="q_sub_1387" preceding-quest-check="and" recommended-level="45">
+			<case acquire-quest="y" mapunit-1="4900_e_button_4900yongmak_07_ns+" npc-response="qrsp_20017_1" object="npc:ch_musintower_0002" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_20017_des_1" guide-message-zone-1="zone_musintower_train" id="1">
+			<mission id="1" name2="Mission.Name2.20017_1" required-register-value="1">
+				<case mapunit-1="4900_e_button_4900yongmak_07+" object="npc:me_mokujin_0064" object2="npc:me_mokujin_0064" progress-mission="y" type="killed"/>
+			</mission>
+			<mission-step-fail dispose-quest="y"/>
+		</mission-step>
+	</quest>
+</table>

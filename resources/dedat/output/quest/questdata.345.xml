@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_345" broadcast-category="field" category="normal" desc="q_345_sum" district-1="jeryoungrim" grade="1" group="제룡림(월영 공동묘지)" group2="QG_WalYoungCemetery" id="345" map-group-1-1="jeryoungrim" max-repeat="1" name="등불이 필요한 이유" name2="Quest.Name2.345" save-type="all">
+		<acquisition level="3" preceding-quest-1="q_sub_337" preceding-quest-check="and" recommended-level="5">
+			<case acquire-quest="y" indicator-social="q_345_s_indi_1" msg="q_345_s" npc-response="qrsp_345_1" object="npc:ch_wanderer_001" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" desc="q_345_des_1" id="1" location-x="-32545.0898" location-y="-37389.9453" map="mangjasup">
+			<mission id="1" name="날렵한 석등비룡의 점액 획득" name2="Mission.Name2.345_1" required-register-value="8">
+				<case mapunit-1="2000_me_wolf_0015" mapunit-2="2000_me_wolf_0015_1" mapunit-3="2000_me_wolf_0015_2" object="npc:me_wolf_0015" object2="npc:me_wolf_0015" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_345_3" object="npc:ch_wanderer_001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-36321.6328" location-y="-35891.3164" map="mangjasup">
+			<mission id="2" name="소각장에 있는 방랑거사 심봉사에게 보고" name2="Mission.Name2.345_2" required-register-value="1" reward-1="345_final_set1">
+				<case indicator-social="q_345_m2_indi_1" msg="q_345_m2" npc-response="qrsp_345_2" object="npc:ch_wanderer_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

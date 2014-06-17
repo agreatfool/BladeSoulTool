@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_553" broadcast-category="field" category="normal" desc="q_553_sum" district-1="deasamak" grade="1" group2="QG_ToMunJinSouth" id="553" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.553" save-type="all">
+		<acquisition level="19" preceding-quest-1="q_epic_501" preceding-quest-check="and" recommended-level="21">
+			<case loot-item="quest_553" looting="q_553_Quest_old_letter_1_icon" object="npc:mh_bandit_0014" object2="npc:mh_bandit_0014" type="loot"/>
+			<case acquire-quest="y" item="quest_553" msg="q_553_s" type="talk-to-item"/>
+			<case loot-item="quest_553" looting="q_553_Quest_old_letter_1_icon" object="npc:mh_bandit_0015" object2="npc:mh_bandit_0015" type="loot"/>
+			<case loot-item="quest_553" looting="q_553_Quest_old_letter_1_icon" object="npc:mh_bandit_0016" object2="npc:mh_bandit_0016" type="loot"/>
+		</acquisition>
+		<mission-step id="1" location-x="-51905.2813" location-y="-77825.6484" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.553_1" required-register-value="1" reward-1="553_final_set1">
+				<case indicator-social="q_553_m1_indi_1" msg="q_553_m1" npc-response="qrsp_553_1" object="npc:ch_gunwonsungdo_0003" progress-mission="y" type="talk"/>
+				<completion-loss item-1="quest_553"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="quest_553"/>
+	</quest>
+</table>

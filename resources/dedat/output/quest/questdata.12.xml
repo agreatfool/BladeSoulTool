@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_12" broadcast-category="always" category="normal" content-type="gather" craft-type="gather" district-1="jeryoungrim" grade="1" group2="QG_Delete" id="12" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.12" retired="y" save-type="all" show-tutorial-tag="n" tutorial="n">
+		<acquisition level="11" preceding-quest-check="and" production-exp="0" production-id="gathering-type-3" recommended-level="15" reward-1="12_final_set1">
+			<case acquire-quest="y" env-looting="q_12_1_icon" object="zoneenv:e_onoff_2420shelldebris_01" object2="zoneenv2:e_onoff_2420shelldebris_01" progress-mission="y" type="manipulate"/>
+			<case acquire-quest="y" env-looting="q_12_1_icon" object="zoneenv:e_onoff_2440shelldebris_01" object2="zoneenv2:e_onoff_2440shelldebris_01" progress-mission="y" type="manipulate"/>
+		</acquisition>
+	</quest>
+</table>

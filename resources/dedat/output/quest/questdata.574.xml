@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_574" broadcast-category="field" category="normal" desc="q_574_sum" district-1="deasamak" grade="1" group2="QG_ToMunJinNorth" id="574" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.574" reset-type="none" save-type="all">
+		<acquisition level="21" preceding-quest-1="q_epic_505" preceding-quest-2="q_sub_584" preceding-quest-check="and" recommended-level="23">
+			<case acquire-quest="y" indicator-social="q_574_s_indi_1" msg="q_574_s" npc-response="qrsp_574_1" object="npc:ch_dweller_041" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_574_des_1" id="1" location-x="-36607.4141" location-y="-70400.7422" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.574_1" required-register-value="1">
+				<case gadget="Q_GourdBottleC" gadget-required="carry-and-remove" mapunit-1="3003_e_destroy_puretree_01" object="zoneenv:e_onoff_puretree_01" object2="zoneenv2:e_onoff_puretree_01" progress-mission="y" type="manipulate"/>
+				<case button-text-accept="q_574_m1_re_ok" button-text-cancel="q_574_m1_re_no" gadget-required="empty" indicator="quest-normal-can-progress" msg="q_574_m1_re" npc-response="qrsp_574_3" object="npc:ch_dweller_041" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_574_des_2" id="2" location-x="-36607.4141" location-y="-70400.7422" map="toemunjean">
+			<mission id="2" name2="Mission.Name2.574_2" required-register-value="1" reward-1="574_final_set1">
+				<case indicator-social="q_574_m2_indi_1" msg="q_574_m2" npc-response="qrsp_574_2" object="npc:ch_dweller_041" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

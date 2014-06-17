@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1199" broadcast-category="field" category="normal" desc="q_1199_sum" district-1="suwal" grade="1" group2="QG_GuidosiNorth" id="1199" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1199" save-type="all">
+		<acquisition level="40" preceding-quest-1="q_epic_921" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="42">
+			<case acquire-quest="y" npc-response="qrsp_1199_1" object="npc:ch_taesangmun_0006" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1199_1" required-register-value="1">
+				<case env-looting="q_1199_quest_brown_book_1_icon" gadget-required="dont-care" mapunit-1="4585_e_chest_oldbox_01" object="zoneenv:e_chest_oldbox_01" object2="zoneenv2:e_chest_oldbox_01" progress-mission="y" type="manipulate"/>
+				<fixed-reward slot-1="item:quest_scroll_soowolpyungwon_0019"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1199_2" required-register-value="1">
+				<case item="Quest_Scroll_SoowolPyungwon_0019" msg="q_1199_2" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1199_3" required-register-value="1" reward-1="1199_final_set1">
+				<case npc-response="qrsp_1199_2" object="npc:ch_taesangmun_0006" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Scroll_SoowolPyungwon_0019"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_SoowolPyungwon_0019"/>
+	</quest>
+</table>

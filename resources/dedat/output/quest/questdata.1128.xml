@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1128" attraction-1="classic-field-zone:PoHwaRan_Classic" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1128_sum" district-1="suwal" grade="1" group2="QG_ChungGakEastJiBu" id="1128" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1128" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="43" preceding-quest-1="q_sub_1127" preceding-quest-2="q_sub_1035" preceding-quest-check="or" recommended-level="46">
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1128_3" object="npc:CH_Strom_DongHae_A_0001" progress-mission="n" remove-grocery="y" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1128_1" object="npc:CH_Strom_DongHae_A_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="1187.008" location-y="-31820.840" map="Pbadabaembogeupgiji" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.1128_1" required-register-value="50">
+				<case object="npc:MH_ChungGak_0308" object2="npc:MH_ChungGak_0308" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0307" object2="npc:MH_ChungGak_0307" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0305" object2="npc:MH_ChungGak_0305" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0302" object2="npc:MH_ChungGak_0302" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0301" object2="npc:MH_ChungGak_0301" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0300" object2="npc:MH_ChungGak_0300" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0299" object2="npc:MH_ChungGak_0299" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0296" object2="npc:MH_ChungGak_0296" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0295" object2="npc:MH_ChungGak_0295" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0292" object2="npc:MH_ChungGak_0292" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0291" object2="npc:MH_ChungGak_0291" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0289" object2="npc:MH_ChungGak_0289" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0288" object2="npc:MH_ChungGak_0288" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0287" object2="npc:MH_ChungGak_0287" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0286" object2="npc:MH_ChungGak_0286" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0285" object2="npc:MH_ChungGak_0285" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0322" object2="npc:MH_ChungGak_0322" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0321" object2="npc:MH_ChungGak_0321" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0320" object2="npc:MH_ChungGak_0320" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0319" object2="npc:MH_ChungGak_0319" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0318" object2="npc:MH_ChungGak_0318" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0317" object2="npc:MH_ChungGak_0317" progress-mission="y" type="killed"/>
+				<case mapunit-1="4725_MH_ChungGak_0286" mapunit-2="4725_MH_ChungGak_0286_1" mapunit-3="4725_MH_ChungGak_0286_2" mapunit-4="4725_MH_ChungGak_0286_3" mapunit-5="4725_MH_ChungGak_0286_4" object="npc:MH_ChungGak_0309" object2="npc:MH_ChungGak_0309" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1128_2" required-register-value="1" reward-1="1128_final_set1" reward-2="1128_final_set2">
+				<case completion-count="1" npc-response="qrsp_1128_4" object="npc:CH_Strom_DongHae_A_0001" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1128_2" object="npc:CH_Strom_DongHae_A_0001" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_1128_1_icon" msg="q_1128_5" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

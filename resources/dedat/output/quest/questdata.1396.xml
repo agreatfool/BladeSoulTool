@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1396" broadcast-category="field" category="normal" desc="q_1396_sum" grade="1" group2="QG_Musintap_Simhwa" id="1396" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1396" save-type="all">
+		<acquisition level="50" preceding-quest-1="q_sub_1391" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" npc-response="qrsp_1396_1" object="npc:ch_musintower_baekwoon_0003" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-50238.52" location-y="4235.99" map="MuSinUiHoeDang2Cheung" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.1396_1" required-register-value="1" reward-1="1396_final_set1">
+				<case npc-response="qrsp_1396_2" object="npc:ch_musintower_jukwoon_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

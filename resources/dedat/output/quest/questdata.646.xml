@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_646" broadcast-category="field" category="normal" desc="q_646_sum" district-1="deasamak" grade="1" group2="QG_GoYoSaMak" id="646" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.646" save-type="all">
+		<acquisition level="27" preceding-quest-1="q_epic_518" preceding-quest-check="and" preceding-quest-mission-step-1="4" recommended-level="29">
+			<case acquire-quest="y" indicator-social="q_646_s_indi_1" msg="q_646_s" npc-response="qrsp_646_1" object="npc:ch_treasurehunter_0005" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-23778.3828" location-y="-4351.9336" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.646_1" required-register-value="1">
+				<case looting="q_646_Grocery_Damaged_martial_arts_manual_1_icon" mapunit-1="3010_e_onoff_togu_01" object="zoneenv:e_onoff_togu_01" object2="zoneenv2:e_onoff_togu_01" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.646_2" required-register-value="7">
+				<case looting="q_646_Quest_savage_headdeco_1_icon" mapunit-2="3010_mh_treasurehunter_0002" object="npc:mh_treasurehunter_0002" object2="npc:mh_treasurehunter_0002" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+				<case looting="q_646_Quest_savage_headdeco_1_icon" object="npc:mh_treasurehunter_0007" object2="npc:mh_treasurehunter_0007" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+				<case looting="q_646_Quest_savage_headdeco_1_icon" object="npc:mh_treasurehunter_0008" object2="npc:mh_treasurehunter_0008" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-18408.9668" location-y="5452.0571" map="toemungekjan" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.646_3" required-register-value="1" reward-1="646_final_set1">
+				<case indicator-social="q_646_m3_indi_1" msg="q_646_m3" npc-response="qrsp_646_2" object="npc:ch_treasurehunter_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

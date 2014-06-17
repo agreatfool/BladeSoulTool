@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_711" broadcast-category="field" category="normal" desc="q_711_sum" grade="1" group2="QG_Hasijang" id="711" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.711" save-type="all">
+		<acquisition level="45" preceding-quest-1="q_epic_267" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="47">
+			<case acquire-quest="y" npc-response="qrsp_711_1" object="npc:CH_CT_JangSaJang_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.711_1" required-register-value="1">
+				<case npc-response="qrsp_711_2" object="npc:CH_CT_Trader_0031" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" time-limit="30" time-limit-type="until">
+			<mission id="2" name2="Mission.Name2.711_2" required-register-value="1">
+				<case gadget="Q_FoodDish_0001" gadget-required="dont-care" indicator="quest-gadget-required" mapunit-1="5100_e_chest_table1_02_s711" object="zoneenv:e_chest_table1_02" object2="zoneenv2:e_chest_table1_02" progress-mission="y" type="manipulate"/>
+				<case button-text-accept="q_711_3_ok" button-text-cancel="q_711_3_no" npc-response="qrsp_711_3" object="npc:CH_CT_Trader_0031" progress-mission="reaction-only" type="talk"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.711_3" required-register-value="1">
+				<case gadget="Q_FoodDish_0001" gadget-required="dont-care" indicator="quest-gadget-required" mapunit-1="5100_e_chest_table1_01_s711" object="zoneenv:e_chest_table1_01" object2="zoneenv2:e_chest_table1_01" progress-mission="y" type="manipulate"/>
+				<case button-text-accept="q_711_3_ok" button-text-cancel="q_711_3_no" npc-response="qrsp_711_3" object="npc:CH_CT_Trader_0031" progress-mission="reaction-only" type="talk"/>
+			</mission>
+			<mission id="4" name2="Mission.Name2.711_4" required-register-value="1">
+				<case gadget="Q_FoodDish_0001" gadget-required="dont-care" indicator="quest-gadget-required" mapunit-1="5100_e_chest_table1_03_s711" object="zoneenv:e_chest_table1_03" object2="zoneenv2:e_chest_table1_03" progress-mission="y" type="manipulate"/>
+				<case button-text-accept="q_711_3_ok" button-text-cancel="q_711_3_no" npc-response="qrsp_711_3" object="npc:CH_CT_Trader_0031" progress-mission="reaction-only" type="talk"/>
+			</mission>
+			<mission-step-fail/>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="5" name2="Mission.Name2.711_5" required-register-value="1">
+				<case npc-response="qrsp_711_4" object="npc:CH_CT_MerChant_0100" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_711_des_4" id="4">
+			<mission id="6" name2="Mission.Name2.711_6" required-register-value="2">
+				<case object="npc:CH_CT_Citizen_0419" object2="npc:CH_CT_Citizen_0419" progress-mission="y" social="TalkSocial_clap" type="pc-social"/>
+				<case object="npc:CH_CT_Citizen_0419" object2="npc:CH_CT_Citizen_0419" progress-mission="y" social="TalkSocial_bow2" type="pc-social"/>
+				<case object="npc:CH_CT_Citizen_0419" object2="npc:CH_CT_Citizen_0419" progress-mission="y" state-social="statesocial_dance" type="pc-social"/>
+				<case object="npc:CH_CT_Citizen_0418" object2="npc:CH_CT_Citizen_0418" progress-mission="y" social="TalkSocial_clap" type="pc-social"/>
+				<case object="npc:CH_CT_Citizen_0418" object2="npc:CH_CT_Citizen_0418" progress-mission="y" social="TalkSocial_bow2" type="pc-social"/>
+				<case object="npc:CH_CT_Citizen_0418" object2="npc:CH_CT_Citizen_0418" progress-mission="y" state-social="statesocial_dance" type="pc-social"/>
+				<case object="npc:CH_CT_Citizen_0417" object2="npc:CH_CT_Citizen_0417" progress-mission="y" social="TalkSocial_clap" type="pc-social"/>
+				<case object="npc:CH_CT_Citizen_0417" object2="npc:CH_CT_Citizen_0417" progress-mission="y" social="TalkSocial_bow2" type="pc-social"/>
+				<case object="npc:CH_CT_Citizen_0417" object2="npc:CH_CT_Citizen_0417" progress-mission="y" state-social="statesocial_dance" type="pc-social"/>
+				<case object="npc:CH_CT_Citizen_0416" object2="npc:CH_CT_Citizen_0416" progress-mission="y" social="TalkSocial_clap" type="pc-social"/>
+				<case object="npc:CH_CT_Citizen_0416" object2="npc:CH_CT_Citizen_0416" progress-mission="y" social="TalkSocial_bow2" type="pc-social"/>
+				<case object="npc:CH_CT_Citizen_0416" object2="npc:CH_CT_Citizen_0416" progress-mission="y" state-social="statesocial_dance" type="pc-social"/>
+				<case object="npc:CH_CT_Citizen_0415" object2="npc:CH_CT_Citizen_0415" progress-mission="y" social="TalkSocial_clap" type="pc-social"/>
+				<case object="npc:CH_CT_Citizen_0415" object2="npc:CH_CT_Citizen_0415" progress-mission="y" social="TalkSocial_bow2" type="pc-social"/>
+				<case mapunit-1="5100_CH_CT_Citizen_0415_s711" object="npc:CH_CT_Citizen_0415" object2="npc:CH_CT_Citizen_0415" progress-mission="y" state-social="statesocial_dance" type="pc-social"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="7" name2="Mission.Name2.711_7" required-register-value="1" reward-1="711_final_set1">
+				<case npc-response="qrsp_711_5" object="npc:CH_CT_MerChant_0100" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

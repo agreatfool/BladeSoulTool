@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_721" broadcast-category="field" category="normal" day-of-week="none" desc="q_721_sum" grade="1" group2="QG_Hasijang" id="721" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.721" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="y" level="45" preceding-quest-1="q_epic_268" preceding-quest-2="q_sub_718" preceding-quest-check="and" preceding-quest-mission-step-1="2" recommended-level="47">
+			<case acquire-quest="y" completion-count="0" completion-count-op="ge" npc-response="qrsp_721_1" object="npc:CH_CT_Guard_0008" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.721_1" required-register-value="5">
+				<case object="npc:MH_CT_HaOBanng_0046" object2="npc:MH_CT_HaOBanng_0046" progress-mission="n" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBanng_0043" object2="npc:MH_CT_HaOBanng_0043" progress-mission="n" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBanng_0042" object2="npc:MH_CT_HaOBanng_0042" progress-mission="n" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBanng_0045" object2="npc:MH_CT_HaOBanng_0045" progress-mission="n" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBanng_0044" object2="npc:MH_CT_HaOBanng_0044" progress-mission="n" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBanng_0041" object2="npc:MH_CT_HaOBanng_0041" progress-mission="n" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBanng_0050" object2="npc:MH_CT_HaOBanng_0050" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBanng_0049" object2="npc:MH_CT_HaOBanng_0049" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_HaOBanng_0048" object2="npc:MH_CT_HaOBanng_0048" progress-mission="y" type="killed"/>
+				<case mapunit-1="5101_MH_CT_HaOBanng_0047_s721" object="npc:MH_CT_HaOBanng_0047" object2="npc:MH_CT_HaOBanng_0047" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.721_2" required-register-value="1" reward-1="721_final_set1" reward-2="721_final_set2">
+				<case npc-response="qrsp_721_2" object="npc:ch_ct_haodong_0006" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_495" broadcast-category="field" category="epic" completed-desc="q_495_completed" completed-list="y" desc="q_495_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="495" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.495" save-type="all">
+		<acquisition level="1" recommended-level="20" sort-no="225"/>
+		<completion>
+			<next-quest quest="q_epic_319"/>
+		</completion>
+		<mission-step desc="q_495_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.495_1" required-register-value="1">
+				<case npc-response="qrsp_495_1" object="npc:ch_merchantweapon_003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_495_des_2" id="2">
+			<mission id="2" name2="Mission.Name2.495_2" required-register-value="12">
+				<case looting="q_497_Quest_gray_stone_1_icon" mapunit-1="2420_me_rockmonster_001" mapunit-2="2420_me_rockmonster_001_1" object="npc:me_rockmonster_001" object2="npc:me_rockmonster_001" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_495_des_3" id="3">
+			<mission id="3" name2="Mission.Name2.495_3" required-register-value="1" reward-1="495_middle_set1">
+				<case npc-response="qrsp_495_2" object="npc:ch_merchantweapon_003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_495_des_4" id="4">
+			<mission id="4" name2="Mission.Name2.495_4" required-register-value="1" reward-1="495_final_set1">
+				<case npc-response="qrsp_495_3" object="npc:ctzn_jinm_jakyungdan_seomunbeom_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

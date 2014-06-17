@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1357" broadcast-category="field" category="normal" content-type="elite-skill" desc="q_1357_sum" grade="1" group2="QG_Elite" id="1357" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.1357" save-type="all">
+		<acquisition job-1="암살자" level="1" recommended-level="45">
+			<case acquire-quest="y" grocery="GB_Quest_Scroll_EliteSkill_0006" item="GB_Quest_Scroll_EliteSkill_0006" msg="q_1357_1" type="talk-to-item"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1357_1" required-register-value="1">
+				<case acquire-quest="y" npc-response="qrsp_1357_1" object="npc:ch_musintower_baekwoon_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1357_2" required-register-value="1">
+				<case npc-response="qrsp_1357_2" object="npc:ce_dokchogeosa_0006" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1357_3" required-register-value="1">
+				<case loot-item="GB_Quest_Grocery_SundryItem_0001" looting="q_1357_1_icon" object="npc:mh_scholar_0001" object2="npc:mh_scholar_0001" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_1357_7" object="npc:ce_dokchogeosa_0006" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.1357_4" required-register-value="1">
+				<case grocery="GB_Quest_Grocery_SundryItem_0001" npc-response="qrsp_1357_3" object="npc:ce_dokchogeosa_0006" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_1357_7" object="npc:ce_dokchogeosa_0006" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.1357_5" required-register-value="1">
+				<case loot-item="GB_Quest_Grocery_SundryItem_0002" looting="q_1357_2_icon" object="npc:mh_jegukgun_0225" object2="npc:mh_jegukgun_0225" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_1356_7" object="npc:ce_dokchogeosa_0006" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.1357_6" required-register-value="1">
+				<case grocery="GB_Quest_Grocery_SundryItem_0002" npc-response="qrsp_1357_4" object="npc:ch_musintower_baekwoon_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.1357_7" required-register-value="1">
+				<case grocery="GB_Quest_Grocery_SundryItem_0003" npc-response="qrsp_1357_5" object="npc:ch_musintower_baekwoon_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_1357_des_8" id="8">
+			<mission id="8" name2="Mission.Name2.1357_8" required-register-value="1">
+				<case grocery="GB_Quest_Grocery_SundryItem_0004" npc-response="qrsp_1357_6" object="npc:ch_musintower_baekwoon_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

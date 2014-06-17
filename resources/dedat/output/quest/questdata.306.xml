@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_306" broadcast-category="field" category="epic" completed-desc="q_306_completed" completed-list="y" desc="q_306_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="306" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.306" save-type="all">
+		<acquisition level="1" recommended-level="5" sort-no="207"/>
+		<mission-step completion-type="and" desc="q_306_des_1" id="1" location-x="-35902.0156" location-y="-40626.9766" map="mangjasup">
+			<mission id="1" name2="Mission.Name2.306_1" required-register-value="1">
+				<case indicator-social="q_306_m1_indi_1" msg="q_306_m1" npc-response="qrsp_306_1" object="npc:ctzn_jinm_jakyungdan_yeokgisan_kff_001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_mangjasup_gerjeum_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_306_des_2" id="2" location-x="-35842.0703" location-y="-35891.3164" map="mangjasup">
+			<mission id="2" name2="Mission.Name2.306_2" required-register-value="1">
+				<case indicator-social="q_306_m2_indi_1" msg="q_306_m2" npc-response="qrsp_306_2" object="npc:Ctzn_JinM_EumSoJi_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_306_des_3" id="3" location-x="-35842.0703" location-y="-35891.3164" map="mangjasup">
+			<mission id="3" name2="Mission.Name2.306_3" required-register-value="3">
+				<case gadget="q_deadbody_kangsia" gadget-required="not-a" mapunit-1="2000_mob_hnm_mlnd_spctr_gangsi_baby_001" mapunit-2="2000_mob_hnm_mlnd_spctr_gangsi_baby_001_1" mapunit-3="2000_mob_hnm_mlnd_spctr_gangsi_baby_001_2" mapunit-4="2000_mob_hnm_mlnd_spctr_gangsi_baby_001_3" object="npc:mob_hnm_mlnd_spctr_gangsi_baby_001" object2="npc:mob_hnm_mlnd_spctr_gangsi_baby_001" progress-mission="reaction-only" type="killed"/>
+				<case gadget="q_deadbody_kangsia" gadget-required="carry-and-remove" mapunit-1="2000_e_destroy_crematory_01" mapunit-2="2000_e_destroy_crematory_01_1" object="zoneenv:e_destroy_crematory_01" object2="zoneenv2:e_destroy_crematory_01" progress-mission="y" type="manipulate"/>
+				<case gadget="q_deadbody_kangsia" gadget-required="carry-and-remove" object="zoneenv:e_destroy_crematory_02" object2="zoneenv2:e_destroy_crematory_02" progress-mission="y" type="manipulate"/>
+				<case gadget="q_deadbody_kangsia" gadget-required="carry-and-remove" object="zoneenv:e_destroy_crematory_03" object2="zoneenv2:e_destroy_crematory_03" progress-mission="y" type="manipulate"/>
+				<case gadget="q_deadbody_kangsia" gadget-required="carry-and-remove" object="zoneenv:e_destroy_crematory_04" object2="zoneenv2:e_destroy_crematory_04" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_306_des_4" id="4" location-x="-35842.0703" location-y="-35891.3164" map="mangjasup">
+			<mission id="4" name2="Mission.Name2.306_4" required-register-value="1">
+				<case indicator-social="q_306_m4_indi_1" msg="q_306_m4" npc-response="qrsp_306_3" object="npc:ctzn_jinm_eumsoji_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_306_des_5" id="5" location-x="-35842.0703" location-y="-35891.3164" map="mangjasup">
+			<mission id="5" name2="Mission.Name2.306_5" required-register-value="1" reward-1="306_final_set1">
+				<case indicator-social="q_306_m5_indi_1" msg="q_306_m5" npc-response="qrsp_306_4" object="npc:ctzn_jinm_jakyungdan_yeokgisan_kff_001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="5"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_306_5" object="npc:ctzn_jinm_jakyungdan_yeokgisan_kff_001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="4"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_307"/>
+		</completion>
+		<transit id="1" zone="zone_MangJaSup_Gerjeum_sp">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

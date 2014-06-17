@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_571" broadcast-category="field" category="normal" desc="q_571_sum" district-1="deasamak" grade="1" group2="QG_ToMunJinNorth" id="571" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.571" save-type="all">
+		<acquisition level="21" preceding-quest-1="q_epic_505" preceding-quest-check="and" recommended-level="23">
+			<case acquire-quest="y" indicator-social="q_571_s_indi_1" msg="q_571_s" npc-response="qrsp_571_1" object="npc:ch_sinmani_0001" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_571_des_1" id="1" location-x="-39743.7969" location-y="-72256.9688" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.571_1" required-register-value="5">
+				<case gadget-required="dont-care" looting="q_571_quest_umbrella_shape_moss_1_icon" object="zoneenv:e_onoff_wildgrass_07" object2="zoneenv2:e_onoff_wildgrass_07" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_571_quest_umbrella_shape_moss_1_icon" object="zoneenv:e_onoff_wildgrass_06" object2="zoneenv2:e_onoff_wildgrass_06" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_571_quest_umbrella_shape_moss_1_icon" object="zoneenv:e_onoff_wildgrass_05" object2="zoneenv2:e_onoff_wildgrass_05" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_571_quest_umbrella_shape_moss_1_icon" object="zoneenv:e_onoff_wildgrass_04" object2="zoneenv2:e_onoff_wildgrass_04" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_571_quest_umbrella_shape_moss_1_icon" object="zoneenv:e_onoff_wildgrass_03" object2="zoneenv2:e_onoff_wildgrass_03" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_571_quest_umbrella_shape_moss_1_icon" object="zoneenv:e_onoff_wildgrass_02" object2="zoneenv2:e_onoff_wildgrass_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_571_quest_umbrella_shape_moss_1_icon" mapunit-1="3003_e_onoff_wildgrass_01" object="zoneenv:e_onoff_wildgrass_01" object2="zoneenv2:e_onoff_wildgrass_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-36607.4141" location-y="-70400.7422" map="toemunjean">
+			<mission id="2" name2="Mission.Name2.571_2" required-register-value="1" reward-1="571_final_set1">
+				<case indicator-social="q_571_m2_indi_1" msg="q_571_m2" npc-response="qrsp_571_2" object="npc:ch_shaman_028" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

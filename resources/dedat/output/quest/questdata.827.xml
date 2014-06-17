@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_827" broadcast-category="field" category="normal" day-of-week="daily" desc="q_827_sum" grade="1" group2="QG_SnowMountSouth" id="827" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.827" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="47" preceding-quest-1="q_epic_282" preceding-quest-check="and" preceding-quest-mission-step-1="5" recommended-level="49">
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_827_8" object="npc:CE_CT_Board_0030" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_827_5" object="npc:CH_CT_Flower_0003" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_827_1" object="npc:CH_CT_Flower_0003" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.827_1" required-register-value="1">
+				<case npc-response="qrsp_827_2" object="npc:CH_CT_SamSikI_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="4" name2="Mission.Name2.827_4" required-register-value="1" reward-1="827_final_set1" reward-2="827_final_set2">
+				<case fee="y" item="q_827_2_icon" msg="q_827_7" progress-mission="y" type="talk-to-self"/>
+				<case completion-count="1" npc-response="qrsp_827_6" object="npc:CH_CT_Flower_0003" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_827_4" object="npc:CH_CT_Flower_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.827_3" required-register-value="8">
+				<case looting="q_827_1_icon" mapunit-1="5220_ME_CT_BingIkRyung_0003_s827" object="npc:ME_CT_BingIkRyung_0003" object2="npc:ME_CT_BingIkRyung_0003" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.827_2" required-register-value="10">
+				<case mapunit-1="5220_ME_CT_BingIkRyung_0001_s827" object="npc:ME_CT_BingIkRyung_0001" object2="npc:ME_CT_BingIkRyung_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

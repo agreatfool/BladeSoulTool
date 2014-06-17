@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_336" broadcast-category="field" category="normal" desc="q_336_sum" district-1="jeryoungrim" grade="1" group="제룡림(망자의 숲)" group2="QG_MangJaSup" id="336" map-group-1-1="jeryoungrim" max-repeat="1" name="산 넘어 산" name2="Quest.Name2.336" save-type="all">
+		<acquisition level="3" preceding-quest-1="q_epic_305" preceding-quest-check="and" recommended-level="5">
+			<case acquire-quest="y" indicator-social="q_336_s_indi_1" msg="q_336_s" npc-response="qrsp_336_1" object="npc:ch_jakyoungdan_009" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-36141.7969" location-y="-40926.7031" map="mangjasup">
+			<mission id="1" name="월영 공동묘지 화장터에 있는 자경단 소붕과 대화" name2="Mission.Name2.336_1" required-register-value="1" reward-1="336_final_set1">
+				<case indicator-social="q_336_m1_indi_1" msg="q_336_m1" npc-response="qrsp_336_2" object="npc:ctzn_jinm_jakyungdan_sobung_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

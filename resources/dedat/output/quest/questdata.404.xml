@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_404" broadcast-category="field" category="normal" desc="q_404_sum" district-1="jeryoungrim" grade="1" group="제룡림(대나무 마을)" group2="QG_DaeNaMuCHN" id="404" map-group-1-1="jeryoungrim" max-repeat="1" name="여자의 미모는 피부부터" name2="Quest.Name2.404" save-type="all">
+		<acquisition level="2" preceding-quest-1="q_epic_304" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="4">
+			<case acquire-quest="y" indicator-social="q_404_s_indi_1" msg="q_404_s" npc-response="qrsp_404_1" object="npc:ctzn_jinf_cheongryeongctzn_nayerin_001" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" desc="q_404_des_1" id="1" location-x="-55923.668" location-y="-56392.5313" map="mangjasup">
+			<mission id="1" name="진주조개의 진주 채집" name2="Mission.Name2.404_1" required-register-value="3">
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" mapunit-1="2010_e_onoff_clam_01" mapunit-2="2010_e_onoff_clam_01_1" mapunit-3="2010_e_onoff_clam_01_2" object="zoneenv:e_onoff_clam_01" object2="zoneenv2:e_onoff_clam_01" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" object="zoneenv:e_onoff_clam_02" object2="zoneenv2:e_onoff_clam_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" object="zoneenv:e_onoff_clam_03" object2="zoneenv2:e_onoff_clam_03" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" object="zoneenv:e_onoff_clam_04" object2="zoneenv2:e_onoff_clam_04" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" object="zoneenv:e_onoff_clam_05" object2="zoneenv2:e_onoff_clam_05" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" object="zoneenv:e_onoff_clam_06" object2="zoneenv2:e_onoff_clam_06" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" object="zoneenv:e_onoff_clam_07" object2="zoneenv2:e_onoff_clam_07" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" object="zoneenv:e_onoff_clam_08" object2="zoneenv2:e_onoff_clam_08" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" object="zoneenv:e_onoff_clam_09" object2="zoneenv2:e_onoff_clam_09" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" object="zoneenv:e_onoff_clam_10" object2="zoneenv2:e_onoff_clam_10" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" object="zoneenv:e_onoff_clam_11" object2="zoneenv2:e_onoff_clam_11" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" object="zoneenv:e_onoff_clam_12" object2="zoneenv2:e_onoff_clam_12" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" object="zoneenv:e_onoff_clam_13" object2="zoneenv2:e_onoff_clam_13" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" object="zoneenv:e_onoff_clam_14" object2="zoneenv2:e_onoff_clam_14" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" object="zoneenv:e_onoff_clam_15" object2="zoneenv2:e_onoff_clam_15" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" object="zoneenv:e_onoff_clam_16" object2="zoneenv2:e_onoff_clam_16" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" object="zoneenv:e_onoff_clam_17" object2="zoneenv2:e_onoff_clam_17" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" object="zoneenv:e_onoff_clam_18" object2="zoneenv2:e_onoff_clam_18" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" object="zoneenv:e_onoff_clam_19" object2="zoneenv2:e_onoff_clam_19" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_322_Gather_pearly_1_icon" object="zoneenv:e_onoff_clam_20" object2="zoneenv2:e_onoff_clam_20" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-51405.2188" location-y="-53835.75" map="chungryoung">
+			<mission id="2" name="대나무 마을 주민 나예린에게 보고" name2="Mission.Name2.404_2" required-register-value="1" reward-1="404_final_set1">
+				<case indicator-social="q_322_m2_indi_1" msg="q_322_m2" npc-response="qrsp_404_2" object="npc:ctzn_jinf_cheongryeongctzn_nayerin_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

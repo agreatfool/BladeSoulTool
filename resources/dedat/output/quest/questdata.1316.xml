@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1316" broadcast-category="field" category="job" desc="q_1316_sum" district-1="jeryoungrim" grade="1" group2="QG_MangJaSup" id="1316" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.1316" save-type="all" show-tutorial-tag="n" tutorial="y">
+		<acquisition job-1="역사" level="6" preceding-quest-1="q_epic_307" preceding-quest-2="q_sub_1315" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="6" talk-to-self-guide-msg="Msg.Job.quest2">
+			<case acquire-quest="y" item="q_1316_quest_hair_growth_solution_manual_1_icon" msg="q_1316_s" type="talk-to-self"/>
+			<case acquire-quest="y" npc-response="qrsp_1316_6" object="npc:ch_jakyungdan_0006" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1316_1" required-register-value="1">
+				<case indicator-social="q_1316_m1_indi_1" msg="q_1316_m1" npc-response="qrsp_1316_1" object="npc:ch_hwajung_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_MangJa_ClassQ_2_C3" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:2027_footswitch_01" object2="zoneenv2:2027_footswitch_01" progress-mission="reaction-only" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1316_2" required-register-value="1">
+				<case mapunit-1="2027_e_onoff_brush_01" object="zoneenv:e_onoff_brush_01" object2="zoneenv2:e_onoff_brush_01" progress-mission="y" type="manipulate"/>
+				<case object="zone:zone_MangJa_ClassQ_2_C3" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" guide-message="gm_1316_1" guide-message-zone-1="zone_MangJa_ClassQ_2_C3" id="3">
+			<mission id="3" name2="Mission.Name2.1316_3" required-register-value="2" show-kill-mapunit="y">
+				<tutorial-case object-1="npc:mh_militaire_0001" object2-1="npc:mh_militaire_0001" progress-mission="y" skill-sequence="Destroyer_Lv6_M11" type="skill-sequence"/>
+				<case object="zone:zone_MangJa_ClassQ_2_C3" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+			<mission id="4" name2="Mission.Name2.1316_4" required-register-value="1">
+				<case npc-response="qrsp_1316_7" object="npc:CE_JR_JobBook_0006" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" guide-message="gm_1316_2" guide-message-zone-1="zone_MangJa_ClassQ_2_C3" id="5">
+			<mission id="6" name2="Mission.Name2.1316_6" required-register-value="2" show-kill-mapunit="y">
+				<tutorial-case object-1="npc:mh_militaire_0001" object2-1="npc:mh_militaire_0001" progress-mission="y" skill-sequence="Destroyer_Lv6_M21" type="skill-sequence"/>
+				<case object="zone:zone_MangJa_ClassQ_2_C3" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_1316_m5_indi_1" npc-response="qrsp_1316_4" object="npc:ch_hwajung_0002" type="approach"/>
+			</mission>
+			<mission id="7" name2="Mission.Name2.1316_7" required-register-value="1">
+				<case npc-response="qrsp_1316_8" object="npc:CE_JR_JobBook_0006" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="8" name2="Mission.Name2.1316_8" required-register-value="1">
+				<case indicator-social="q_1316_m6_indi_1" msg="q_1316_m6" npc-response="qrsp_1316_2" object="npc:ch_hwajung_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_MangJa_ClassQ_2_C3" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" guide-message="gm_1316_3" guide-message-zone-1="zone_MangJa_ClassQ_2_C3" id="7">
+			<mission id="9" name2="Mission.Name2.1316_9" required-register-value="2" show-kill-mapunit="y">
+				<tutorial-case object-1="npc:mh_militaire_0002" object2-1="npc:mh_militaire_0002" progress-mission="y" skill-sequence="Destroyer_Lv6_M31" type="skill-sequence"/>
+				<case object="zone:zone_MangJa_ClassQ_2_C3" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+			<mission id="10" name2="Mission.Name2.1316_10" required-register-value="1">
+				<case npc-response="qrsp_1316_9" object="npc:CE_JR_JobBook_0006" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="11" name2="Mission.Name2.1316_11" required-register-value="1" reward-1="1316_final_set1">
+				<case indicator-social="q_1316_m8_indi_1" msg="q_1316_m8" npc-response="qrsp_1316_3" object="npc:ch_hwajung_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_MangJa_ClassQ_2_C3" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_1316_m8_indi_1" msg="q_1316_m8" npc-response="qrsp_1316_3" object="npc:MH_HwaJung_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_MangJa_ClassQ_2_SP">
+			<destination mission-step-id="1" zone-index="2"/>
+			<destination mission-step-id="2" zone-index="2"/>
+			<destination mission-step-id="3" zone-index="2"/>
+			<destination mission-step-id="4" zone-index="2"/>
+			<destination mission-step-id="5" zone-index="2"/>
+			<destination mission-step-id="6" zone-index="2"/>
+			<destination mission-step-id="7" zone-index="2"/>
+			<destination mission-step-id="8" zone-index="2"/>
+		</transit>
+		<mission-step id="4">
+			<mission id="5" name2="Mission.Name2.1316_5" required-register-value="1">
+				<case indicator-social="q_1316_m4_indi_1" msg="q_1316_m4" npc-response="qrsp_1316_5" object="npc:ch_hwajung_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_MangJa_ClassQ_2_C3" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_943" broadcast-category="field" category="normal" desc="q_943_sum" grade="1" group2="QG_SongAmDo" id="943" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.943" save-type="all" show-tutorial-tag="y" tutorial="y">
+		<acquisition level="16" preceding-quest-1="q_epic_316" preceding-quest-check="and" recommended-level="18">
+			<case acquire-quest="y" npc-response="qrsp_943_1" object="npc:CH_JR_MangNanJa_0001" type="talk"/>
+			<case acquire-quest="y" completion-count="0" completion-count-op="ge" item="q_943_1_icon" msg="q_943_1" type="talk-to-self">
+				<filter-set>
+					<filter field="level" op="ge" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="prop" value="19"/>
+				</filter-set>
+			</case>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.943_1" required-register-value="1">
+				<case mapunit-1="2451_SongAmGul_n" object="zone:zone_songamheartzone" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.943_2" required-register-value="1">
+				<case npc-response="qrsp_943_2" object="npc:CH_JR_BeonYang_0002" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail/>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.943_3" required-register-value="1">
+				<case object="zoneenv:e_chest_2451harta_01" object2="zoneenv2:e_chest_2451harta_01" progress-mission="reaction-only" type="manipulate"/>
+				<tutorial-case mapunit-1="2451_e_Chest_2451hartA_01_n" progress-mission="y" type="charge-heart-count"/>
+			</mission>
+			<mission-step-fail/>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.943_4" required-register-value="1">
+				<case npc-response="qrsp_943_3" object="npc:CH_JR_BeonA_0002" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail/>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.943_5" required-register-value="1">
+				<completion-loss item-1="quest_tutorial_specialmaterial_0001"/>
+				<case object="zoneenv:e_chest_2451harta_02" object2="zoneenv2:e_chest_2451harta_02" progress-mission="reaction-only" type="manipulate"/>
+				<tutorial-case mapunit-1="2451_e_Chest_2451hartA_02_n" progress-mission="y" type="charge-heart-count"/>
+			</mission>
+			<mission-step-fail/>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.943_6" required-register-value="1">
+				<case gadget-required="dont-care" indicator="default" npc-response="qrsp_943_4" object="npc:CH_JR_BeonA_0002" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail/>
+		</mission-step>
+		<mission-step guide-message="gm_943_1" guide-message-zone-1="zone_SongAmHeartZone" id="7">
+			<mission id="7" name2="Mission.Name2.943_7" required-register-value="1">
+				<case button-text-accept="q_943_7_ok" button-text-cancel="q_943_7_no" gadget-required="empty" indicator="quest-normal-can-progress" npc-response="qrsp_943_6" object="npc:CH_JR_BeonA_0002" progress-mission="reaction-only" type="talk"/>
+				<tutorial-case progress-mission="y" type="use-heart-count"/>
+			</mission>
+			<mission-step-fail/>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.943_8" required-register-value="1" reward-1="943_final_set1">
+				<case object="zone:zone_SongAmHeartZone" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_943_5" object="npc:CH_JR_BeonYang_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Tutorial_SpecialMaterial_0001"/>
+	</quest>
+</table>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1329" broadcast-category="field" category="job" desc="q_1329_sum" district-1="jeryoungrim" grade="1" group2="QG_MangJaSup" id="1329" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.1329" save-type="all" show-tutorial-tag="n" tutorial="y">
+		<acquisition job-1="암살자" level="4" preceding-quest-1="q_epic_304" preceding-quest-check="and" recommended-level="4" talk-to-self-guide-msg="Msg.Job.quest1">
+			<case acquire-quest="y" item="q_1329_Quest_old_letter_1_icon" msg="q_1329_s" type="talk-to-self"/>
+			<case acquire-quest="y" npc-response="qrsp_1329_4" object="npc:ctzn_jinm_jakyungdan_gongsamsik_kff_001" type="talk"/>
+		</acquisition>
+		<mission-step guide-message="gm_1329_2" guide-message-zone-1="zone_MangJaSup_Dun_1" id="1">
+			<mission id="1" name2="Mission.Name2.1329_1" required-register-value="1">
+				<case mapunit-1="2038_footswitch_CQ1_1" object="zoneenv:2038_footswitch_CQ1_1" object2="zoneenv2:2038_footswitch_CQ1_1" progress-mission="y" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1329_2" required-register-value="1">
+				<case indicator-social="q_1329_m2_indi_1" msg="q_1329_m2" npc-response="qrsp_1329_1" object="npc:CH_HwaJung_0027" progress-mission="y" type="talk"/>
+				<case object="zone:zone_MangJaSup_Gerjeum_1_C5" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" guide-message="gm_1329_1" guide-message-zone-1="zone_MangJaSup_Gerjeum_1_C5" id="3">
+			<mission id="3" name2="Mission.Name2.1329_3" required-register-value="3" show-kill-mapunit="y">
+				<tutorial-case object-1="npc:CH_HwaJung_0027" object2-1="npc:CH_HwaJung_0027" progress-mission="y" range-max="2" range-min="2" skill-sequence="Assassin_Lv4_M11" type="skill-sequence"/>
+				<tutorial-case object-1="npc:CH_HwaJung_0028" object2-1="npc:CH_HwaJung_0028" progress-mission="y" range-max="2" range-min="2" skill-sequence="Assassin_Lv4_M11" type="skill-sequence"/>
+				<tutorial-case object-1="npc:CH_HwaJung_0027" object2-1="npc:CH_HwaJung_0027" progress-mission="y" range-max="2" range-min="2" skill-sequence="Assassin_Lv4_M12" type="skill-sequence"/>
+				<tutorial-case object-1="npc:CH_HwaJung_0028" object2-1="npc:CH_HwaJung_0028" progress-mission="y" range-max="2" range-min="2" skill-sequence="Assassin_Lv4_M12" type="skill-sequence"/>
+				<case object="zone:zone_MangJaSup_Gerjeum_1_C5" progress-mission="reaction-only" type="enter-zone"/>
+				<tutorial-case object-1="npc:CH_HwaJung_0027" object2-1="npc:CH_HwaJung_0027" progress-mission="y" range-max="1" range-min="1" skill-sequence="Assassin_Lv4_M11" type="skill-sequence"/>
+				<tutorial-case object-1="npc:CH_HwaJung_0028" object2-1="npc:CH_HwaJung_0028" progress-mission="y" range-max="1" range-min="1" skill-sequence="Assassin_Lv4_M11" type="skill-sequence"/>
+				<tutorial-case object-1="npc:CH_HwaJung_0027" object2-1="npc:CH_HwaJung_0027" progress-mission="y" range-max="1" range-min="1" skill-sequence="Assassin_Lv4_M12" type="skill-sequence"/>
+				<tutorial-case object-1="npc:CH_HwaJung_0028" object2-1="npc:CH_HwaJung_0028" progress-mission="y" range-max="1" range-min="1" skill-sequence="Assassin_Lv4_M12" type="skill-sequence"/>
+				<tutorial-case object-1="npc:CH_HwaJung_0027" object2-1="npc:CH_HwaJung_0027" progress-mission="y" range-max="0" range-min="0" skill-sequence="Assassin_Lv4_M11" type="skill-sequence"/>
+				<tutorial-case object-1="npc:CH_HwaJung_0028" object2-1="npc:CH_HwaJung_0028" progress-mission="y" range-max="0" range-min="0" skill-sequence="Assassin_Lv4_M11" type="skill-sequence"/>
+				<tutorial-case object-1="npc:CH_HwaJung_0027" object2-1="npc:CH_HwaJung_0027" progress-mission="y" range-max="0" range-min="0" skill-sequence="Assassin_Lv4_M12" type="skill-sequence"/>
+				<tutorial-case object-1="npc:CH_HwaJung_0028" object2-1="npc:CH_HwaJung_0028" progress-mission="y" range-max="0" range-min="0" skill-sequence="Assassin_Lv4_M12" type="skill-sequence"/>
+			</mission>
+			<mission id="4" name2="Mission.Name2.1329_4" required-register-value="1">
+				<case npc-response="qrsp_1329_5" object="npc:CE_JR_JobBook_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="5" name2="Mission.Name2.1329_5" required-register-value="1" reward-1="1329_final_set1">
+				<case indicator-social="q_1329_m4_indi_1" msg="q_1329_m4" npc-response="qrsp_1329_3" object="npc:CH_HwaJung_0029" progress-mission="y" type="talk"/>
+				<case object="zone:zone_MangJaSup_Gerjeum_1_C5" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_MangJaSup_Gerjeum_1_sp">
+			<destination mission-step-id="4" zone-index="5"/>
+			<destination mission-step-id="3" zone-index="5"/>
+			<destination mission-step-id="2" zone-index="5"/>
+			<destination mission-step-id="1" zone-index="5"/>
+		</transit>
+	</quest>
+</table>

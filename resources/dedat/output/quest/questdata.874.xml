@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_874" broadcast-category="field" category="normal" desc="q_874_sum" district-1="deasamak" grade="1" group2="QG_OSaekAmDoEast" id="874" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.874" save-type="all">
+		<acquisition level="34" preceding-quest-1="q_epic_534" preceding-quest-check="and" recommended-level="36">
+			<case acquire-quest="y" indicator-social="q_874_s_indi_1" msg="q_874_s" npc-response="qrsp_874_1" object="npc:ch_mayeongganggun_0029" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="34620.6563" location-y="60064.4922" map="oseakamdo">
+			<mission id="1" name2="Mission.Name2.874_1" required-register-value="1" reward-1="874_final_set1">
+				<case indicator-social="q_874_m1_indi_1" msg="q_874_m1" npc-response="qrsp_874_2" object="npc:ce_bonemask_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

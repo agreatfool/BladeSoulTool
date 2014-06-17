@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_919" broadcast-category="field" category="epic" completed-desc="q_919_completed" completed-list="y" desc="q_919_sum" district-1="suwal" grade="1" group2="QG_SuwalPWEpic" id="919" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.919" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="41" sort-no="420"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.919_1" required-register-value="1">
+				<case npc-response="qrsp_919_1" object="npc:ce_crocodilesharktribeaelder_0011" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_919_5" object="npc:ce_crocodilesharktribeaelder_0012" progress-mission="n" type="approach"/>
+				<case object="zone:zone_youngheulmun_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.919_2" required-register-value="1">
+				<case mapunit-1="4304_foot_1" object="zone:zone_youngheulmun_2" progress-mission="y" type="convoy-arrived"/>
+				<case npc-response="qrsp_919_8" object="npc:ce_crocodilesharktribeaelder_0012" type="approach"/>
+				<case npc-response="qrsp_919_7" object="npc:ce_crocodilesharktribeaelder_0011" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1">
+				<case convoy="epic_919_con" object="zone:zone_youngheulmun_2" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.919_3" required-register-value="1">
+				<case npc-response="qrsp_919_2" object="npc:ce_crocodilesharktribeaelder_0011" progress-mission="y" type="talk"/>
+				<case object="zone:zone_youngheulmun_2" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_919_6" object="npc:ce_crocodilesharktribeaelder_0012" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.919_4" required-register-value="1">
+				<case npc-response="qrsp_919_3" object="npc:ch_hongsukkeun_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_youngheulmun_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.919_5" required-register-value="1" reward-1="919_final_set1">
+				<case npc-response="qrsp_919_4" object="npc:ce_akgyojok_0011" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_921"/>
+		</completion>
+		<transit id="2" zone="zone_youngheulmun">
+			<destination mission-step-id="4" zone-index="2"/>
+			<destination mission-step-id="3" zone-index="2"/>
+			<destination mission-step-id="2" zone-index="2"/>
+			<destination mission-step-id="1" zone-index="2"/>
+		</transit>
+		<transit id="1" zone="zone_guidosi">
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

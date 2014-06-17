@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_20008" broadcast-category="always" category="normal" district-1="suwal" grade="1" group2="QG_Wolho" id="20008" map-group-1-1="suwal" max-repeat="-1" name2="Quest.Name2.20008" save-type="except-completion">
+		<acquisition level="38" preceding-quest-check="and" recommended-level="40">
+			<case acquire-quest="y" grocery="General_Grocery_Deed_0003" npc-response="qrsp_20008_1" object="npc:mh_bigulbogul_0008" type="talk"/>
+		</acquisition>
+	</quest>
+</table>

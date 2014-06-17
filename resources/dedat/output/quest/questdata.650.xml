@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_650" broadcast-category="field" category="normal" desc="q_650_sum" district-1="deasamak" grade="1" group2="QG_GoYoSaMak" id="650" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.650" save-type="all">
+		<acquisition level="27" preceding-quest-1="q_epic_517" preceding-quest-2="q_sub_644" preceding-quest-check="and" recommended-level="29">
+			<case acquire-quest="y" indicator-social="q_650_s_indi_1" msg="q_650_s" npc-response="qrsp_650_1" object="npc:ch_buchaepa_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-25829.3398" location-y="2639.9727" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.650_1" required-register-value="9">
+				<case looting="q_650_Grocery_horsehair_1_icon" mapunit-1="3010_ME_HongUn_0002" mapunit-2="3010_ME_HongUn_0002_1" object="npc:me_hongun_0002" object2="npc:me_hongun_0002" progress-mission="y" quest-symbol-drop-prob="85" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-14549.5918" location-y="3395.4165" map="toemungekjan" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.650_2" required-register-value="1" reward-1="650_final_set1">
+				<case indicator-social="q_650_m2_indi_1" msg="q_650_m2" npc-response="qrsp_650_2" object="npc:ch_buchaepa_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_551" broadcast-category="field" category="normal" desc="q_551_sum" district-1="deasamak" grade="1" group2="QG_ToMunJinSouth" id="551" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.551" save-type="all">
+		<acquisition level="19" preceding-quest-1="q_epic_501" preceding-quest-check="and" recommended-level="21">
+			<case acquire-quest="y" indicator-social="q_551_s_indi_1" msg="q_551_s" npc-response="qrsp_551_1" object="npc:ch_goboonyeong_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-49024.9297" location-y="-67392.375" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.551_1" required-register-value="12">
+				<case looting="q_551_quest_poison_pouch002_1_icon" mapunit-1="3000_ME_IronTurtle_002" mapunit-2="3000_ME_IronTurtle_002_1" mapunit-3="3000_ME_IronTurtle_002_2" object="npc:me_ironturtle_002" object2="npc:me_ironturtle_002" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_551_des_2" id="2" location-x="-51905.2813" location-y="-77825.6484" map="toemunjean">
+			<mission id="2" name2="Mission.Name2.551_2" required-register-value="1">
+				<case gadget="Q_PerfumeA" gadget-required="empty" mapunit-3="3000_e_onoff_smallpot_01" object="zoneenv:e_onoff_smallpot_01" object2="zoneenv2:e_onoff_smallpot_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_551_des_3" id="3" location-x="-51905.2813" location-y="-77825.6484" map="toemunjean">
+			<mission id="3" name2="Mission.Name2.551_3" required-register-value="1" reward-1="551_final_set1">
+				<case gadget="Q_PerfumeA" gadget-required="carry-and-remove" indicator-social="q_551_m3_indi_1" msg="q_551_m3" npc-response="qrsp_551_2" object="npc:ch_unguksoldier_014" progress-mission="y" type="talk"/>
+				<case gadget="Q_PerfumeA" gadget-required="empty" mapunit-1="3000_e_onoff_smallpot_01" object="zoneenv:e_onoff_smallpot_01" object2="zoneenv2:e_onoff_smallpot_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

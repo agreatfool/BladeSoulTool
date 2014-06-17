@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_456" broadcast-category="field" category="normal" desc="q_456_sum" district-1="jeryoungrim" grade="1" group="제룡림(송암도)" group2="QG_SongAmDo" id="456" map-group-1-1="jeryoungrim" max-repeat="1" name="녹림왕의 의중 (완)" name2="Quest.Name2.456" save-type="all">
+		<acquisition level="16" preceding-quest-1="q_epic_493" preceding-quest-2="q_sub_455" preceding-quest-check="and" recommended-level="18">
+			<case acquire-quest="y" indicator-social="q_456_s_indi_1" msg="q_456_s" npc-response="qrsp_456_1" object="npc:ctzn_jinm_jakyungdan_giljun_001" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-20239.0781" location-y="43329.2617" map="songamdo">
+			<mission id="1" name2="Mission.Name2.456_1" required-register-value="5">
+				<case looting="q_455_quest_turban_meat_1_icon" mapunit-1="2440_mob_etc_mlnd_beast_crab_hermit_002" object="npc:mob_etc_mlnd_beast_crab_hermit_002" object2="npc:mob_etc_mlnd_beast_crab_hermit_002" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-19361.8457" location-y="54077.7422" map="songrimsa">
+			<mission id="2" name="가마솥에 소라탕 끓이기" name2="Mission.Name2.456_2" required-register-value="1">
+				<case indicator-social="q_456_m2_indi_1" msg="q_456_m2" npc-response="qrsp_456_2" object="npc:ctzn_jinm_shimbongsa_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="3" location-x="-20350.127" location-y="55151.9609" map="songrimsa">
+			<mission id="3" name2="Mission.Name2.456_3" required-register-value="1">
+				<case gadget-required="dont-care" mapunit-1="2450_e_onoff_sorapot_01" object="zoneenv:e_onoff_sorapot_01" object2="zoneenv2:e_onoff_sorapot_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="4" location-x="-20350.127" location-y="55151.9609" map="songrimsa">
+			<mission id="4" name2="Mission.Name2.456_4" required-register-value="1">
+				<case indicator-social="q_456_m4_indi_1" msg="q_456_m4" npc-response="qrsp_456_3" object="npc:ctzn_jinm_shimbongsa_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="5" location-x="-18115.752" location-y="57966.4141" map="songrimsa">
+			<mission id="5" name2="Mission.Name2.456_5" required-register-value="1" reward-1="456_final_set1">
+				<case indicator-social="q_456_m5_indi_1" msg="q_456_m5" npc-response="qrsp_456_4" object="npc:ctzn_jinm_songrimsa_jeongdam_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_894" broadcast-category="field" category="normal" day-of-week="none" desc="q_894_sum" grade="1" group2="QG_SnowMountNorth" id="894" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.894" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="n" level="48" preceding-quest-1="q_epic_283" preceding-quest-2="q_sub_886" preceding-quest-check="and" preceding-quest-mission-step-1="5" recommended-level="50">
+			<case acquire-quest="y" completion-count="0" completion-count-op="ge" npc-response="qrsp_894_1" object="npc:CH_CT_Guard_0006" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.894_1" required-register-value="10">
+				<case looting="q_894_1_icon" object="npc:ME_CT_Wolf_0041" object2="npc:ME_CT_Wolf_0041" progress-mission="y" type="loot"/>
+				<case looting="q_894_1_icon" mapunit-1="5225_ME_CT_Wolf_0041_s894" object="npc:ME_CT_UnGumho_0001" object2="npc:ME_CT_UnGumho_0001" progress-mission="y" progress-value="3" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.894_2" required-register-value="1" reward-1="894_final_set1">
+				<case completion-count="0" completion-count-op="ge" npc-response="qrsp_894_2" object="npc:CH_CT_Festival_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

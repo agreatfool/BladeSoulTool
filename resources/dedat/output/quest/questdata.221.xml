@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_221" broadcast-category="field" category="epic" completed-desc="q_221_completed" completed-list="y" desc="q_221_sum" district-1="startzone" grade="1" group2="QG_Toturial" id="221" map-group-1-1="startzone" max-repeat="1" name2="Quest.Name2.221" save-type="all" show-tutorial-tag="n" tutorial="y">
+		<acquisition level="1" recommended-level="1" sort-no="101"/>
+		<mission-step completion-type="and" desc="q_221_des_1" guide-message="gm_221_1" id="1" location-x="-11253.597" location-y="38325.828" map="startzone">
+			<mission id="1" name2="Mission.Name2.221_1" required-register-value="1">
+				<case indicator-social="q_221_m1_indi_1" mapunit-1="221_1_CH_JinYoung_0001" msg="q_221_m1" npc-response="qrsp_221_1" object="npc:ch_jinyoung_0001" progress-mission="y" type="talk"/>
+				<case approach-talk="y" object="npc:ch_jinyoung_0001" type="approach"/>
+				<case indicator-social="q_221_m1_indi_2" npc-response="qrsp_221_2" object="npc:ch_yungmook_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_221_des_2" guide-message="gm_221_2" id="2" location-x="-11253.597" location-y="38325.828" map="startzone">
+			<mission id="2" name2="Mission.Name2.221_2" required-register-value="1">
+				<case indicator-social="q_221_m2_indi_1" msg="q_221_m2" npc-response="qrsp_221_3" object="npc:ch_jinyoung_0001" type="talk"/>
+				<case loot-item="quest_costum_dress_1010" looting="q_221_costume_startzone_jeja_2_icon" mapunit-1="221_2_e_onoff_uniformbox_re_01" object="zoneenv:e_onoff_uniformbox_re_01" object2="zoneenv2:e_onoff_uniformbox_re_01" progress-mission="y" type="loot"/>
+				<case indicator-social="q_221_m2_indi_2" npc-response="qrsp_221_4" object="npc:ch_yungmook_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_221_des_3" guide-message="gm_221_3" id="3">
+			<mission id="3" name2="Mission.Name2.221_3" required-register-value="1">
+				<case indicator-social="q_221_m3_indi_1" msg="q_221_m3" npc-response="qrsp_221_5" object="npc:ch_jinyoung_0001" type="talk"/>
+				<tutorial-case item="Quest_Costum_Dress_1010" progress-mission="y" type="equip-item"/>
+				<case indicator-social="q_221_m3_indi_2" npc-response="qrsp_221_6" object="npc:ch_yungmook_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_221_des_4" id="4" location-x="-11253.597" location-y="38325.828" map="startzone">
+			<mission id="4" name2="Mission.Name2.221_4" required-register-value="1">
+				<case indicator-social="q_221_m4_indi_1" mapunit-1="221_1_CH_JinYoung_0001" msg="q_221_m4" npc-response="qrsp_221_7" object="npc:ch_jinyoung_0001" progress-mission="y" type="talk"/>
+				<case indicator-social="q_221_m4_indi_2" npc-response="qrsp_221_8" object="npc:ch_yungmook_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_221_des_5" guide-message="gm_221_5" id="5" location-x="-11253.597" location-y="38325.828" map="startzone">
+			<mission id="5" name2="Mission.Name2.221_5" required-register-value="1">
+				<case mapunit-1="221_4_CH_JinYoung_0001" object="zoneenv:1101_foot_1" object2="zoneenv2:1101_foot_1" progress-mission="y" type="env-entered"/>
+				<case object="zone:startzone_renew_all" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_221_m5_indi_1" npc-response="qrsp_221_10" object="npc:ch_yungmook_0001" type="approach"/>
+				<case msg="q_221_m5" npc-response="qrsp_221_9" object="npc:ch_jinyoung_0001" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_221_des_6" guide-message="gm_221_4" id="6" location-x="-11253.597" location-y="38325.828" map="startzone">
+			<mission id="6" name2="Mission.Name2.221_6" required-register-value="1">
+				<case mapunit-1="221_6_CH_GilHong_0003" object="zoneenv:e_onoff_stbed_re_01" object2="zoneenv2:e_onoff_stbed_re_01" progress-mission="y" type="manipulate"/>
+				<case object="zone:startzone_renew_all" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_221_m6_indi_1" msg="q_221_m6" npc-response="qrsp_221_11" object="npc:ch_jinyoung_0001" type="talk"/>
+				<case indicator-social="q_221_m6_indi_2" npc-response="qrsp_221_12" object="npc:ch_yungmook_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_221_des_7" guide-message="gm_221_7" id="7" location-x="-11253.597" location-y="38325.828" map="startzone">
+			<mission id="7" name2="Mission.Name2.221_7" required-register-value="1">
+				<case indicator-social="q_221_m7_indi_1" mapunit-1="221_7_CH_GilHong_0003" msg="q_221_m7" npc-response="qrsp_221_13" object="npc:ch_gilhong_0003" progress-mission="y" type="talk"/>
+				<case object="zone:startzone_renew_all" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_221_m7_indi_3" npc-response="qrsp_221_14" object="npc:ch_yungmook_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_222"/>
+		</completion>
+	</quest>
+</table>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1016" broadcast-category="field" category="normal" desc="q_1016_sum" district-1="suwal" grade="1" group2="QG_Wolchon" id="1016" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1016" save-type="all">
+		<acquisition level="36" preceding-quest-1="q_sub_1014" preceding-quest-check="and" recommended-level="38">
+			<case acquire-quest="y" npc-response="qrsp_1016_1" object="npc:CH_Merchant_0012" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1016_1" required-register-value="1">
+				<case gadget-required="dont-care" looting="q_1016_Quest_hive_1_icon" object="zoneenv:e_chest_hiverock_01" object2="zoneenv2:e_chest_hiverock_01" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1016_Quest_hive_1_icon" object="zoneenv:e_chest_hiverock_02" object2="zoneenv2:e_chest_hiverock_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1016_Quest_hive_1_icon" object="zoneenv:e_chest_hiverock_03" object2="zoneenv2:e_chest_hiverock_03" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1016_Quest_hive_1_icon" mapunit-1="4000_e_chest_hiverock_01" object="zoneenv:e_chest_hiverock_04" object2="zoneenv2:e_chest_hiverock_04" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1016_2" required-register-value="1">
+				<case gadget-required="dont-care" looting="q_1016_Quest_red_fruit_1_icon" object="zoneenv:e_onoff_powernean_01" object2="zoneenv2:e_onoff_powernean_01" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1016_Quest_red_fruit_1_icon" object="zoneenv:e_onoff_powernean_02" object2="zoneenv2:e_onoff_powernean_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1016_Quest_red_fruit_1_icon" object="zoneenv:e_onoff_powernean_03" object2="zoneenv2:e_onoff_powernean_03" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1016_Quest_red_fruit_1_icon" mapunit-2="4000_e_onoff_powernean_01" object="zoneenv:e_onoff_powernean_04" object2="zoneenv2:e_onoff_powernean_04" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.1016_3" required-register-value="1" reward-1="1016_final_set1">
+				<case npc-response="qrsp_1016_2" object="npc:ch_pungjeohoe_0016" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_1016_3" object="npc:CH_PungJeoHoe_0018" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

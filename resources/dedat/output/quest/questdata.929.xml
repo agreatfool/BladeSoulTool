@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_929" broadcast-category="field" category="normal" content-type="elite-skill" grade="1" group2="QG_Elite" id="929" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.929" save-type="all">
+		<acquisition job-1="권사" level="1" recommended-level="45">
+			<case acquire-quest="y" grocery="Quest_Scroll_EliteSkill_0052" item="Quest_Scroll_EliteSkill_0052" msg="q_929_1" type="talk-to-item"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.929_1" required-register-value="100">
+				<tutorial-case object-1="npc:ME_HongUn_0001" object2-1="npc:ME_HongUn_0001" progress-mission="y" skill-sequence="KF_PvE_EliteSkill_0052_JusticePunch_hit" type="skill-sequence"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.929_2" required-register-value="50">
+				<case npc="MH_JeGukGun_0225" progress-mission="y" progress-value="2" skill3-id-1="21000" skill3-id-10="21502" skill3-id-11="21503" skill3-id-2="21001" skill3-id-3="21002" skill3-id-4="21300" skill3-id-5="21301" skill3-id-6="21302" skill3-id-7="21400" skill3-id-8="21401" skill3-id-9="21402" type="finish-blow"/>
+				<case npc="ME_FrogTribeCLeader_0001" progress-mission="y" skill3-id-1="21000" skill3-id-10="21502" skill3-id-11="21503" skill3-id-2="21001" skill3-id-3="21002" skill3-id-4="21300" skill3-id-5="21301" skill3-id-6="21302" skill3-id-7="21400" skill3-id-8="21401" skill3-id-9="21402" type="finish-blow"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.929_3" required-register-value="50">
+				<case npc="ME_HyeolPung_0004" progress-mission="y" progress-value="2" skill3-id-1="21000" skill3-id-10="21502" skill3-id-11="21503" skill3-id-2="21001" skill3-id-3="21002" skill3-id-4="21300" skill3-id-5="21301" skill3-id-6="21302" skill3-id-7="21400" skill3-id-8="21401" skill3-id-9="21402" type="finish-blow"/>
+				<case npc="ME_MuSinTower3_GoleamLeader_0001" progress-mission="y" skill3-id-1="21000" skill3-id-10="21502" skill3-id-11="21503" skill3-id-2="21001" skill3-id-3="21002" skill3-id-4="21300" skill3-id-5="21301" skill3-id-6="21302" skill3-id-7="21400" skill3-id-8="21401" skill3-id-9="21402" type="finish-blow"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.929_4" required-register-value="10">
+				<case npc="ME_RuneMechaFireGorillaA_0001" progress-mission="y" skill3-id-1="21000" skill3-id-10="21502" skill3-id-11="21503" skill3-id-2="21001" skill3-id-3="21002" skill3-id-4="21300" skill3-id-5="21301" skill3-id-6="21302" skill3-id-7="21400" skill3-id-8="21401" skill3-id-9="21402" type="finish-blow"/>
+				<case npc="ME_RuneMechaFireGorillaA_0002" progress-mission="y" skill3-id-1="21000" skill3-id-10="21502" skill3-id-11="21503" skill3-id-2="21001" skill3-id-3="21002" skill3-id-4="21300" skill3-id-5="21301" skill3-id-6="21302" skill3-id-7="21400" skill3-id-8="21401" skill3-id-9="21402" type="finish-blow"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

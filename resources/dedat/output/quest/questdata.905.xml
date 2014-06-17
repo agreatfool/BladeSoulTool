@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_905" broadcast-category="field" category="epic" completed-desc="q_905_completed" completed-list="y" desc="q_905_sum" district-1="suwal" grade="1" group2="QG_SuwalPWEpic" id="905" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.905" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="38" sort-no="405"/>
+		<mission-step id="1" location-x="9249.97" location-y="-2354.48" map="neukdaegureung" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.905_1" required-register-value="1">
+				<case mapunit-1="4020_Guide_E905(1)" mapunit-2="4020_Guide_E905(1)+" npc-response="qrsp_905_1" object="npc:CH_DaeEoBang_0043" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="18991.18" location-y="12879.89" map="neukdaegureung" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.905_2" required-register-value="1">
+				<case npc-response="qrsp_905_10" object="npc:CH_HonHwaDae_0004" progress-mission="y" type="approach"/>
+				<case object="zone:zone_JeKukJipGyul_Phase" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_905_8" object="npc:CH_DaeEoBang_0043" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.905_3" required-register-value="1">
+				<case npc-response="qrsp_905_2" object="npc:CH_HonHwaDae_0004" progress-mission="y" type="talk"/>
+				<case object="zone:zone_JeKukJipGyul_Phase" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9" location-x="20785.78" location-y="-12943.54" map="maengsugul" mission-map-type="location">
+			<mission id="9" name2="Mission.Name2.905_9" required-register-value="1">
+				<case mapunit-1="4525_EuRanOut" object="zoneenv:4525_euranout" object2="zoneenv2:4525_euranout" progress-mission="y" type="env-entered"/>
+				<case object="zone:zone_maengsugul" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_905_9" object="npc:CH_DaeEoBang_0043" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.905_10" required-register-value="1">
+				<case npc-response="qrsp_905_6" object="npc:ch_gyeongchunmaeng_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_maengsugul" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_906"/>
+		</completion>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.905_6" required-register-value="1">
+				<case npc-response="qrsp_905_3" object="npc:CH_BaekMoon_0008" progress-mission="y" type="talk"/>
+				<case object="zone:zone_JeKukJipGyul_Phase" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_905_3" object="npc:CH_BaekMoon_0009" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.905_7" required-register-value="1">
+				<case npc-response="qrsp_905_4" object="npc:CH_HonHwaDae_0004" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_905_4" object="npc:CH_HonHwaDae_0005" progress-mission="y" type="talk"/>
+				<case object="zone:zone_JeKukJipGyul_Phase" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.905_8" required-register-value="1">
+				<case npc-response="qrsp_905_5" object="npc:CH_DaeEoBang_0043" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.905_4" required-register-value="1">
+				<case mapunit-1="4522_Foot1" object="zone:zone_JeKukJipGyul_Phase" progress-mission="y" type="convoy-arrived"/>
+			</mission>
+			<mission-step-fail rollback-step-id="3">
+				<case convoy="epic_905_con" object="zone:zone_JeKukJipGyul_Phase" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.905_5" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="4522_MH_JeGukGun_0331" object="npc:mh_jegukgun_0331" object2="npc:mh_jegukgun_0331" progress-mission="y" type="killed"/>
+			</mission>
+			<mission-step-fail rollback-step-id="3"/>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.905_11" required-register-value="1" reward-1="905_final_set1">
+				<case npc-response="qrsp_905_7" object="npc:CH_DaeEoBang_0043" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_JeKukJipGyul">
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+		</transit>
+		<transit id="2" zone="zone_IkSanWoon_Default">
+			<destination mission-step-id="1" zone-index="2"/>
+		</transit>
+	</quest>
+</table>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1032" broadcast-category="field" category="normal" desc="q_1032_sum" district-1="suwal" grade="1" group2="QG_AncyJokVillage" id="1032" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1032" save-type="all">
+		<acquisition level="40" preceding-quest-1="q_epic_922" preceding-quest-2="q_sub_1002" preceding-quest-3="q_sub_1026" preceding-quest-check="and" recommended-level="42">
+			<case acquire-quest="y" npc-response="qrsp_1032_1" object="npc:CH_WolChon_0012" progress-mission="n" type="talk" visible-object="n"/>
+			<case npc-response="qrsp_1032_2" object="npc:CH_WolChon_0013" type="approach" visible-object="n"/>
+		</acquisition>
+		<mission-step id="1" location-x="-5861.97" location-y="10464.98" map="haenamumaeulicheung" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.1032_1" required-register-value="1">
+				<case npc-response="qrsp_1032_3" object="npc:CH_IlMiMun_0009" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_1032_8" object="npc:CH_Hunter_0017" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1032_7" object="npc:CH_Hunter_0016" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1032_6" object="npc:CH_Hunter_0015" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1032_5" object="npc:CH_WolChon_0013" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1032_4" object="npc:CH_WolChon_0012" type="approach" visible-object="n"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1032_2" required-register-value="1">
+				<case gadget="Q_SmokedA_2" gadget-required="carry-and-remove" npc-response="qrsp_1032_10" object="npc:CH_WolChon_0012" progress-mission="y" type="talk" visible-object="n"/>
+				<case button-text-accept="q_1032_4_ok" button-text-cancel="q_1032_4_no" gadget-required="empty" indicator="quest-normal-can-progress" npc-response="qrsp_1032_16" object="npc:CH_IlMiMun_0009" progress-mission="reaction-only" type="talk"/>
+				<case npc-response="qrsp_1032_14" object="npc:CH_Hunter_0017" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1032_13" object="npc:CH_Hunter_0016" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1032_12" object="npc:CH_Hunter_0015" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1032_11" object="npc:CH_WolChon_0013" type="approach" visible-object="n"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-4721.35" location-y="13105.59" map="haenamumaeulicheung" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.1032_3" required-register-value="1" reward-1="1032_final_set1">
+				<case npc-response="qrsp_1032_17" object="npc:CH_ManGeumDang_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_1032_18" object="npc:CH_WolChon_0012" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1032_19" object="npc:CH_WolChon_0013" type="approach" visible-object="n"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

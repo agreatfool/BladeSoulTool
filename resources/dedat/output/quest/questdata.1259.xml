@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1259" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1259_sum" district-1="suwal" grade="1" group2="QG_AngaeForestNorth" id="1259" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1259" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="41" preceding-quest-1="q_epic_925" preceding-quest-check="and" preceding-quest-mission-step-1="3" recommended-level="43">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1259_1" object="npc:CH_KyeongChunMaeng_0036" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_1259_14" object="npc:CE_Board_0006" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1259_1" object="npc:CH_KyeongChunMaeng_0036" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1259_1" required-register-value="1">
+				<case npc-response="qrsp_1259_2" object="npc:CH_KyeongChunMaeng_0037" progress-mission="y" type="talk"/>
+				<case object="zone:zone_AnGaeSup_BeubKi" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1259_2" required-register-value="1">
+				<case mapunit-1="4402_e_chest_beobgi_jail_door_01" object="zoneenv:e_chest_beobgi_jail_door_01" object2="zoneenv2:e_chest_beobgi_jail_door_01" progress-mission="y" type="manipulate"/>
+				<case object="zone:zone_AnGaeSup_BeubKi" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_1259_9" object="npc:CH_KyeongChunMaeng_0038" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1259_3" required-register-value="1">
+				<case npc-response="qrsp_1259_3" object="npc:CH_KyeongChunMaeng_0038" progress-mission="y" type="talk"/>
+				<case object="zone:zone_AnGaeSup_BeubKi" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="16621.53" location-y="74539.06" map="gegukgunbeopgibudae" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.1259_4" required-register-value="4">
+				<case object="zoneenv:e_chest_repair_toolbox_01" object2="zoneenv2:e_chest_repair_toolbox_01" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_repair_toolbox_02" object2="zoneenv2:e_chest_repair_toolbox_02" progress-mission="y" type="manipulate"/>
+				<case mapunit-1="4402_e_chest_repair_toolbox_01" mapunit-2="4400_GeGukGunBeopGiBuDae_S1259(4)" object="zoneenv:e_chest_repair_toolbox_03" object2="zoneenv2:e_chest_repair_toolbox_03" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_repair_toolbox_04" object2="zoneenv2:e_chest_repair_toolbox_04" progress-mission="y" type="manipulate"/>
+				<case object="zone:zone_AnGaeSup_BeubKi" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.1259_5" required-register-value="1">
+				<case npc-response="qrsp_1259_4" object="npc:CH_KyeongChunMaeng_0038" progress-mission="y" type="talk"/>
+				<case object="zone:zone_AnGaeSup_BeubKi" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.1259_6" required-register-value="1">
+				<case mapunit-1="4402_e_destroy_aerator_01" object="zoneenv:e_destroy_aerator_01" object2="zoneenv2:e_destroy_aerator_01" progress-mission="y" type="manipulate"/>
+				<case object="zone:zone_AnGaeSup_BeubKi" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.1259_7" required-register-value="1">
+				<case npc-response="qrsp_1259_5" object="npc:CH_KyeongChunMaeng_0038" progress-mission="y" type="talk"/>
+				<case object="zone:zone_AnGaeSup_BeubKi" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8" time-limit="900" time-limit-type="until">
+			<mission id="8" name2="Mission.Name2.1259_8" required-register-value="4">
+				<case looting="q_1259_Quest_secret_map_1_icon" object="zoneenv:e_chest_beobgi_filebox_01" object2="zoneenv2:e_chest_beobgi_filebox_01" progress-mission="y" type="loot"/>
+				<case looting="q_1259_Quest_secret_map_1_icon" object="zoneenv:e_chest_beobgi_filebox_02" object2="zoneenv2:e_chest_beobgi_filebox_02" progress-mission="y" type="loot"/>
+				<case looting="q_1259_Quest_secret_map_1_icon" object="zoneenv:e_chest_beobgi_filebox_03" object2="zoneenv2:e_chest_beobgi_filebox_03" progress-mission="y" type="loot"/>
+				<case looting="q_1259_Quest_secret_map_1_icon" mapunit-1="4402_e_chest_beobgi_filebox_01" mapunit-2="4402_e_chest_beobgi_filebox_02" mapunit-3="4402_e_chest_beobgi_filebox_03" mapunit-4="4402_e_chest_beobgi_filebox_04" object="zoneenv:e_chest_beobgi_filebox_04" object2="zoneenv2:e_chest_beobgi_filebox_04" progress-mission="y" type="loot"/>
+			</mission>
+			<mission-step-fail rollback-step-id="7"/>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.1259_9" required-register-value="1">
+				<case npc-response="qrsp_1259_6" object="npc:CH_KyeongChunMaeng_0038" progress-mission="y" type="talk"/>
+				<case object="zone:zone_AnGaeSup_BeubKi" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.1259_11" required-register-value="1">
+				<case npc-response="qrsp_1259_7" object="npc:CH_KyeongChunMaeng_0036" progress-mission="y" type="approach"/>
+				<case object="zone:zone_AnGaeSup_BeubKi" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_1259_10" object="npc:CH_KyeongChunMaeng_0041" progress-mission="n" type="approach"/>
+				<case npc-response="qrsp_1259_11" object="npc:CH_KyeongChunMaeng_0040" progress-mission="n" type="approach"/>
+				<case npc-response="qrsp_1259_12" object="npc:CH_KyeongChunMaeng_0039" progress-mission="n" type="approach"/>
+				<case npc-response="qrsp_1259_13" object="npc:MH_GyeongCheonMaeng_0005" progress-mission="n" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="12">
+			<mission id="12" name2="Mission.Name2.1259_12" required-register-value="1" reward-1="1259_final_set1" reward-2="1259_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1259_8" object="npc:CH_KyeongChunMaeng_0036" progress-mission="y" type="talk"/>
+				<case completion-count="1" npc-response="qrsp_1259_8" object="npc:CH_KyeongChunMaeng_0036" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_1259_1_icon" msg="q_1259_15" progress-mission="y" type="talk-to-self"/>
+				<case npc-response="qrsp_1259_10" object="npc:CH_KyeongChunMaeng_0041" progress-mission="n" type="approach"/>
+				<case npc-response="qrsp_1259_11" object="npc:CH_KyeongChunMaeng_0040" progress-mission="n" type="approach"/>
+				<case npc-response="qrsp_1259_12" object="npc:CH_KyeongChunMaeng_0039" progress-mission="n" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10" location-x="16269.967" location-y="73660.156" map="gegukgunbeopgibudae" mission-map-type="location">
+			<mission id="10" name2="Mission.Name2.1259_10" required-register-value="1">
+				<case npc-response="qrsp_1259_13" object="npc:MH_GyeongCheonMaeng_0005" progress-mission="y" type="approach"/>
+				<case object="zone:zone_AnGaeSup_BeubKi" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1043" attraction-1="classic-field-zone:Haemoojin_Classic" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1043_sum" district-1="suwal" grade="1" group2="QG_ChungGakEastJiBu" id="1043" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1043" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="43" preceding-quest-1="q_sub_1127" preceding-quest-2="q_sub_1035" preceding-quest-check="or" recommended-level="46">
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1043_3" object="npc:CH_KyeongChunMaeng_0068" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1043_1" object="npc:CH_KyeongChunMaeng_0068" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-5671.21" location-y="19347.66" map="dpibitsangeohang" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.1043_1" required-register-value="20">
+				<case object="npc:ME_Tiger_0033" object2="npc:ME_Tiger_0033" progress-mission="y" type="killed"/>
+				<case mapunit-1="4727_ME_PigTribeB_0011" mapunit-2="4113_DPiBitSangEoHang_S1043" object="npc:ME_PigTribeB_0011" object2="npc:ME_PigTribeB_0011" progress-mission="y" type="killed"/>
+				<case object="npc:ME_FrogTribeC_0019" object2="npc:ME_FrogTribeC_0019" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1043_2" required-register-value="1" reward-1="1043_final_set1" reward-2="1043_final_set2">
+				<case completion-count="1" npc-response="qrsp_1043_4" object="npc:CH_KyeongChunMaeng_0068" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1043_2" object="npc:CH_KyeongChunMaeng_0068" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_1043_1_icon" msg="q_1043_5" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_474" broadcast-category="always" category="normal" day-of-week="daily" desc="q_474_sum" district-1="jeryoungrim" district-2="deasamak" grade="10" group2="QG_Geoamgol" id="474" map-group-1-1="jeryoungrim" map-group-1-2="deasamak" max-repeat="1" name2="Quest.Name2.474" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="18" preceding-quest-1="q_epic_317" preceding-quest-check="and" recommended-level="21">
+			<case acquire-quest="y" indicator-social="q_474_s_indi_1" msg="q_474_s" npc-response="qrsp_474_1" object="npc:CH_JaKyoungDan_0017" type="talk"/>
+			<case acquire-quest="y" npc-response="qrsp_474_4" object="npc:ch_songrimsa_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-59493.9766" location-y="77524.6406" map="chunggakjibu">
+			<mission id="1" name2="Mission.Name2.474_1" required-register-value="1">
+				<case indicator-social="q_474_m1_indi_1" msg="q_474_m1" npc-response="qrsp_474_2" object="npc:mh_jakyoungdan_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-69525.7813" location-y="68452.3984" map="chunggakjibu">
+			<mission id="2" name2="Mission.Name2.474_2" required-register-value="1">
+				<case mapunit-1="2503_Gergerbung_start" object="zoneenv:Quest474_hold" object2="zoneenv2:Quest474_hold" progress-mission="y" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-69264.0859" location-y="65573.7031" map="chunggakjibu">
+			<mission id="3" name2="Mission.Name2.474_3" required-register-value="1">
+				<case mapunit-1="2503_ME_GuGuBung_0002" object="npc:ME_GuGuBung_0003" object2="npc:ME_GuGuBung_0003" progress-mission="y" type="killed"/>
+				<case object="npc:me_gugubung_0002" object2="npc:me_gugubung_0002" show-in-tooltip="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_474_des_4" id="4" location-x="-51119.35" location-y="70957.31" map="ChungGakJiBu" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.474_4" required-register-value="1" reward-1="474_final_set1" reward-2="474_final_set2">
+				<case indicator-social="q_474_m4_indi_1" msg="q_474_m4" npc-response="qrsp_474_3" object="npc:CH_JaKyoungDan_0017" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_474_5" object="npc:ch_songrimsa_0001" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_474_1_icon" msg="q_474_m5" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

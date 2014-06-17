@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1191" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1191_sum" district-1="suwal" grade="1" group2="QG_GuidosiNorth" id="1191" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1191" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="39" preceding-quest-1="q_epic_915" preceding-quest-check="and" recommended-level="41">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1191_1" object="npc:ce_jukgyodan_0005" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_1191_3" object="npc:CE_Board_0003" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1191_1" object="npc:ce_jukgyodan_0005" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1191_1" required-register-value="15">
+				<case mapunit-1="4300_e_chest_deadspider_01" mapunit-2="4300_e_chest_deadspider_02" object="npc:me_spider_0013" object2="npc:me_spider_0013" progress-mission="y" type="killed"/>
+				<case gadget-required="dont-care" object="zoneenv:e_chest_deadspider_05" object2="zoneenv2:e_chest_deadspider_05" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_chest_deadspider_04" object2="zoneenv2:e_chest_deadspider_04" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_chest_deadspider_03" object2="zoneenv2:e_chest_deadspider_03" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_chest_deadspider_02" object2="zoneenv2:e_chest_deadspider_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_chest_deadspider_01" object2="zoneenv2:e_chest_deadspider_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1191_2" required-register-value="4">
+				<case mapunit-2="4300_e_chest_torch_01" mapunit-3="4300_e_chest_torch_02" mapunit-4="4300_e_chest_torch_03" mapunit-5="4300_e_chest_torch_04" object="npc:me_spider_0014" object2="npc:me_spider_0014" progress-mission="y" type="killed"/>
+				<case gadget="Q_TorchlightA_2" gadget-required="carry-and-remove" object="zoneenv:e_pot_spiderweb_04" object2="zoneenv2:e_pot_spiderweb_04" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_TorchlightA_2" gadget-required="carry-and-remove" object="zoneenv:e_pot_spiderweb_03" object2="zoneenv2:e_pot_spiderweb_03" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_TorchlightA_2" gadget-required="carry-and-remove" object="zoneenv:e_pot_spiderweb_02" object2="zoneenv2:e_pot_spiderweb_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_TorchlightA_2" gadget-required="carry-and-remove" object="zoneenv:e_pot_spiderweb_01" object2="zoneenv2:e_pot_spiderweb_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_chest_torch_04" object2="zoneenv2:e_chest_torch_04" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_chest_torch_03" object2="zoneenv2:e_chest_torch_03" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_chest_torch_02" object2="zoneenv2:e_chest_torch_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_chest_torch_01" object2="zoneenv2:e_chest_torch_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.1191_3" required-register-value="1" reward-1="1191_final_set1" reward-2="1191_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1191_2" object="npc:ce_jukgyodan_0005" progress-mission="y" type="talk"/>
+				<case acquire-quest="n" completion-count="0" fee="y" item="q_1191_1_icon" msg="q_1191_4" progress-mission="y" type="talk-to-self"/>
+				<case acquire-quest="n" completion-count="1" npc-response="qrsp_1191_2" object="npc:ce_jukgyodan_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

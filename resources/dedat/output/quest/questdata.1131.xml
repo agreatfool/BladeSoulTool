@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1131" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1131_sum" district-1="suwal" grade="1" group2="QG_Wolho" id="1131" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1131" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="38" preceding-quest-1="q_epic_911" preceding-quest-check="and" recommended-level="40">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1131_1" object="npc:CH_DaeEoBang_0037" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1131_3" object="npc:CH_DaeEoBang_0037" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_1131_5" object="npc:ce_board_0007" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_1131_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.1131_1" required-register-value="7">
+				<case looting="q_1131_1_icon" mapunit-1="4200_ME_RewardBox_0004" mapunit-2="4200_ME_RewardBox_0004_1" object="npc:ME_RewardBox_0004" object2="npc:ME_RewardBox_0004" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1131_2" required-register-value="3">
+				<case object="npc:ME_FishmanC_0008" object2="npc:ME_FishmanC_0008" progress-mission="y" type="killed"/>
+				<case mapunit-1="4200_ME_FishmanB_0001" mapunit-2="4200_ME_FishmanB_0001_1" object="npc:ME_FishmanC_0007" object2="npc:ME_FishmanC_0007" progress-mission="y" type="killed"/>
+				<case object="npc:ME_FishmanB_0001" object2="npc:ME_FishmanB_0001" show-in-tooltip="y" type="killed"/>
+				<case object="npc:ME_EoInJok_0003" object2="npc:ME_EoInJok_0003" show-in-tooltip="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.1131_3" required-register-value="1" reward-1="1131_final_set1" reward-2="1131_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1131_2" object="npc:CH_DaeEoBang_0037" progress-mission="y" type="talk"/>
+				<case completion-count="1" npc-response="qrsp_1131_4" object="npc:CH_DaeEoBang_0037" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_1131_2_icon" msg="q_1131_6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

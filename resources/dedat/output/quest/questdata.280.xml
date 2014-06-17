@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_280" broadcast-category="field" category="epic" completed-desc="q_280_completed" completed-list="y" desc="q_280_sum" grade="1" group2="QG_BaeCheongEpic" id="280" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.280" save-type="all">
+		<acquisition level="1" recommended-level="48" sort-no="522"/>
+		<mission-step id="1" location-x="13959.39" location-y="-9748.14" map="KangRyuSi" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.280_1" required-register-value="1">
+				<case mapunit-1="Guide_UnRimWon_down" mapunit-2="Guide_BaekRimSa_right" mapunit-3="Guide_JajakSup_down" mapunit-4="Guide_SeolRinGung_left" npc-response="qrsp_280_1" object="npc:CH_CT_PungEmpire_0030" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="27529.79" location-y="-11472.93" map="GyeongHoeRu" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.280_2" required-register-value="1">
+				<case mapunit-1="5150_Zone_ChunMyungJiWii" object="zone:Zone_ChunMyungJiWii_p1" progress-mission="y" type="enter-zone"/>
+				<case npc-response="qrsp_280_16" object="npc:CH_CT_PungEmpire_0030" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.280_3" required-register-value="1">
+				<case npc-response="qrsp_280_2" object="npc:CH_CT_PungEmpire_0031" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.280_4" required-register-value="1">
+				<case npc-response="qrsp_280_3" object="npc:CH_CT_Slave_0004" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_280_9" object="npc:CH_CT_Slave_0005" type="approach"/>
+				<case npc-response="qrsp_280_7" object="npc:CH_CT_PungEmpire_0031" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" time-limit-type="none">
+			<mission id="5" name2="Mission.Name2.280_5" required-register-value="1">
+				<case npc-response="qrsp_280_4" object="npc:CH_CT_DoDanHa_0003" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_280_11" object="npc:CH_CT_PungEmpire_0032" type="approach"/>
+				<case npc-response="qrsp_280_10" object="npc:CH_CT_GoBong_0006" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.280_6" required-register-value="1">
+				<case npc-response="qrsp_280_5" object="npc:CH_CT_PungEmpire_0060" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.280_7" required-register-value="1" reward-1="280_final_set1">
+				<case npc-response="qrsp_280_6" object="npc:CH_CT_JeGukGun_0052" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_280_14" object="npc:CH_CT_JeGukGun_0257" type="approach"/>
+				<case npc-response="qrsp_280_13" object="npc:CH_CT_JeGukGun_0256" type="approach"/>
+				<case npc-response="qrsp_280_11" object="npc:CH_CT_PungEmpire_0060" type="approach"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="Zone_ChunMyungJiWii">
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_281"/>
+		</completion>
+	</quest>
+</table>

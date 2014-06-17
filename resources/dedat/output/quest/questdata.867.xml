@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_867" broadcast-category="field" category="normal" desc="q_867_sum" district-1="deasamak" grade="1" group2="QG_OSaekAmDoEast" id="867" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.867" save-type="all">
+		<acquisition level="34" preceding-quest-1="q_epic_533" preceding-quest-check="and" recommended-level="36">
+			<case acquire-quest="y" indicator-social="q_867_s_indi_1" msg="q_867_s" npc-response="qrsp_867_1" object="npc:ce_hoerangjok_0013" type="talk"/>
+			<fixed-reward slot-1="item:quest_867"/>
+		</acquisition>
+		<mission-step desc="q_867_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.867_1" required-register-value="1">
+				<case item="quest_867" msg="q_867_m1" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="33221.0859" location-y="55318.125" map="oseakamdo">
+			<mission id="3" name2="Mission.Name2.867_3" required-register-value="1" reward-1="867_final_set1">
+				<case indicator-social="q_867_m3_indi_1" msg="q_867_m3" npc-response="qrsp_867_4" object="npc:ce_mokrang_0001" progress-mission="y" type="talk"/>
+				<completion-loss item-1="quest_867" item-count-1="0"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="31760.6699" location-y="47833.4844" map="oseakamdo">
+			<mission id="2" name2="Mission.Name2.867_2" required-register-value="1">
+				<case indicator-social="q_867_m2_indi_1" msg="q_867_m2" npc-response="qrsp_867_3" object="npc:ce_hoerangjok_0013" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="quest_867" item-count-1="0"/>
+	</quest>
+</table>

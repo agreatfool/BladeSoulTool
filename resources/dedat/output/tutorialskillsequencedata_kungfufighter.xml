@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="CombatData" release-mversion="0.0.0.1" release-side="client" type="TutorialSkillSequence" version="0.1">
+	<tutorialSkillSequence alias="KungfuFighter_Lv4_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21115" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="KungfuFighter_Lv6_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21106" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21309" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21116" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="KungfuFighter_Lv8_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21106" target-pass-state="down" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21065" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="KungfuFighter_Lv8_M21">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21106" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21309" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21116" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="KungfuFighter_Lv10_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21305" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21110" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21007" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21065" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="KungfuFighter_Lv10_M12">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21305" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21110" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21007" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21365" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="KungfuFighter_Lv12_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21143" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="KungfuFighter_Lv12_M12">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21143" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="KungfuFighter_Lv14_M11">
+		<step caster-fail-state="swoon" result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21132" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="KungfuFighter_Lv14_M21">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21112" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21125" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="KungfuFighter_Lv14_M22">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="11102" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="11130" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="KF_PvE_EliteSkill_0031_HeavyPunch_hit">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21108" skill-2="21408" skill-3="21508" skill-4="21808" skill-5="21908" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="KF_PvE_EliteSkill_0038_Counterenemy_counter">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21305" skill-2="21405" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="KF_PvE_EliteSkill_0045_JusticePunch_hit">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21000" skill-10="21502" skill-11="21503" skill-2="21300" skill-3="21400" skill-4="21001" skill-5="21301" skill-6="21401" skill-7="21002" skill-8="21302" skill-9="21402" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="KF_PvE_EliteSkill_0052_JusticePunch_hit">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="21000" skill-10="21502" skill-11="21503" skill-2="21300" skill-3="21400" skill-4="21001" skill-5="21301" skill-6="21401" skill-7="21002" skill-8="21302" skill-9="21402" type="skill"/>
+	</tutorialSkillSequence>
+</table>

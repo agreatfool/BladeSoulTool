@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_717" broadcast-category="field" category="normal" desc="q_717_sum" grade="1" group2="QG_Hasijang" id="717" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.717" save-type="all">
+		<acquisition level="45" preceding-quest-1="q_epic_267" preceding-quest-check="and" recommended-level="47">
+			<case acquire-quest="y" npc-response="qrsp_717_1" object="npc:CH_CT_HaoDong_0002" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.717_1" required-register-value="1">
+				<case loot-item="Quest_Scroll_BackChung_0008" looting="q_717_1_icon" object="npc:MH_CT_HaOBanng_0028" object2="npc:MH_CT_HaOBanng_0028" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case loot-item="Quest_Scroll_BackChung_0008" looting="q_717_1_icon" object="npc:MH_CT_HaOBanng_0027" object2="npc:MH_CT_HaOBanng_0027" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case loot-item="Quest_Scroll_BackChung_0008" looting="q_717_1_icon" object="npc:MH_CT_HaOBanng_0026" object2="npc:MH_CT_HaOBanng_0026" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case loot-item="Quest_Scroll_BackChung_0008" looting="q_717_1_icon" mapunit-1="5100_MH_CT_HaOBanng_0025_s717" object="npc:MH_CT_HaOBanng_0025" object2="npc:MH_CT_HaOBanng_0025" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.717_2" required-register-value="1">
+				<case item="Quest_Scroll_BackChung_0008" msg="q_717_2" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.717_3" required-register-value="1">
+				<case npc-response="qrsp_717_2" object="npc:CH_CT_WiDal_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.717_4" required-register-value="1">
+				<case looting="q_717_2_icon" mapunit-1="5100_e_chest_oakteambonfire_01_s717" object="zoneenv:e_chest_oakteambonfire_01" object2="zoneenv2:e_chest_oakteambonfire_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.717_5" required-register-value="1">
+				<case item="Quest_Scroll_BackChung_0009" msg="q_717_4" progress-mission="y" type="talk-to-item"/>
+				<case item="Quest_Scroll_BackChung_0008" msg="q_717_4" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.717_6" required-register-value="1" reward-1="717_final_set1">
+				<case grocery-count="0" npc-response="qrsp_717_3" object="npc:CH_CT_HaoDong_0016" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Scroll_BackChung_0008" item-2="Quest_Scroll_BackChung_0009"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_BackChung_0008" item-2="Quest_Scroll_BackChung_0009"/>
+	</quest>
+</table>

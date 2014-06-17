@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_377" broadcast-category="field" category="normal" desc="q_377_sum" district-1="jeryoungrim" grade="1" group="제룡림(흑음림)" group2="QG_Delete" id="377" map-group-1-1="jeryoungrim" max-repeat="1" name="멋있지만 쓸모없어" name2="Quest.Name2.377" retired="y" save-type="all">
+		<acquisition level="50" preceding-quest-1="q_epic_311" preceding-quest-check="and" recommended-level="50"/>
+		<mission-step completion-type="and" id="1" location-x="-3246.1445" location-y="-6925.5313" map="huekummrim">
+			<mission id="1" name="결계석에 숯으로 주술 각인" name2="Mission.Name2.377_1" required-register-value="1"/>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-4301.1172" location-y="-10590.1758" map="huekummrim">
+			<mission id="2" name="흑음림 주술사 군투양에게 보고" name2="Mission.Name2.377_2" required-register-value="1" reward-1="377_final_set1"/>
+		</mission-step>
+	</quest>
+</table>

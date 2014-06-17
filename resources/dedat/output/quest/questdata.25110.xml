@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25110" attraction-1="dungeon:Dungeon_HeukRyong_Epic6" broadcast-category="field" category="attraction" desc="q_25110_sum" grade="9" group2="QG_HeukRyong_Epic6" id="25110" map-group-1-1="jeryoungrim" max-repeat="-1" name2="Quest.Name2.25110" save-type="nothing">
+		<acquisition level="50" preceding-quest-check="and" recommended-level="50"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.25110_1" required-register-value="1">
+				<case object="npc:ME_WB_DemonShadowCBig_0002" object2="npc:ME_WB_DemonShadowCBig_0002" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" required-register-value="1" reward-1="25110_final_set1">
+				<case item="q_25110_1_icon" msg="q_25110_1" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

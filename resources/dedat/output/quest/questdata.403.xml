@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_403" broadcast-category="field" category="normal" desc="q_403_sum" district-1="jeryoungrim" grade="1" group2="QG_MangJaSup" id="403" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.403" save-type="all">
+		<acquisition level="5" preceding-quest-1="q_epic_307" preceding-quest-check="and" preceding-quest-mission-step-1="3" recommended-level="7">
+			<case acquire-quest="y" npc-response="qrsp_403_1" object="npc:ch_jakyungdan_0010" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_403_des_1" id="1">
+			<mission id="2" name2="Mission.Name2.403_2" required-register-value="3">
+				<case object="npc:mh_nokrimdo_0075" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="npc:mh_nokrimdo_0074" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="npc:mh_nokrimdo_0073" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="npc:mh_nokrimdo_0072" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="npc:mh_nokrimdo_0071" progress-mission="y" type="npc-bleeding-occured"/>
+				<case mapunit-1="2000_mh_nokrimdo_0070" mapunit-2="2000_mh_nokrimdo_0070_1" object="npc:mh_nokrimdo_0070" progress-mission="y" type="npc-bleeding-occured"/>
+			</mission>
+			<mission id="1" name2="Mission.Name2.403_1" required-register-value="3">
+				<case looting="q_403_Grocery_rice_bag_1_icon" object="zoneenv:e_onoff_food_09" object2="zoneenv2:e_onoff_food_09" progress-mission="y" type="loot"/>
+				<case looting="q_403_Grocery_rice_bag_1_icon" object="zoneenv:e_onoff_food_08" object2="zoneenv2:e_onoff_food_08" progress-mission="y" type="loot"/>
+				<case looting="q_403_Grocery_rice_bag_1_icon" object="zoneenv:e_onoff_food_07" object2="zoneenv2:e_onoff_food_07" progress-mission="y" type="loot"/>
+				<case looting="q_403_Grocery_rice_bag_1_icon" object="zoneenv:e_onoff_food_06" object2="zoneenv2:e_onoff_food_06" progress-mission="y" type="loot"/>
+				<case looting="q_403_Grocery_rice_bag_1_icon" object="zoneenv:e_onoff_food_05" object2="zoneenv2:e_onoff_food_05" progress-mission="y" type="loot"/>
+				<case looting="q_403_Grocery_rice_bag_1_icon" object="zoneenv:e_onoff_food_04" object2="zoneenv2:e_onoff_food_04" progress-mission="y" type="loot"/>
+				<case looting="q_403_Grocery_rice_bag_1_icon" object="zoneenv:e_onoff_food_03" object2="zoneenv2:e_onoff_food_03" progress-mission="y" type="loot"/>
+				<case looting="q_403_Grocery_rice_bag_1_icon" object="zoneenv:e_onoff_food_02" object2="zoneenv2:e_onoff_food_02" progress-mission="y" type="loot"/>
+				<case looting="q_403_Grocery_rice_bag_1_icon" mapunit-1="2000_e_onoff_food_01" mapunit-2="2000_e_onoff_food_01_1" object="zoneenv:e_onoff_food_01" object2="zoneenv2:e_onoff_food_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.403_3" required-register-value="1" reward-1="403_final_set1">
+				<case npc-response="qrsp_403_2" object="npc:ch_jakyungdan_0010" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

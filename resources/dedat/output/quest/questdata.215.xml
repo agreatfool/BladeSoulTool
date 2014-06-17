@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_215" broadcast-category="always" category="normal" content-type="elite-skill" grade="1" group2="QG_Elite" id="215" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.215" save-type="all">
+		<acquisition job-1="검사" level="1" recommended-level="50">
+			<case acquire-quest="y" grocery="Quest_Scroll_EliteSkill_0023" item="Quest_Scroll_EliteSkill_0023" msg="q_215_1" type="talk-to-item"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1">
+			<mission id="1" name2="Mission.Name2.215_1" required-register-value="10">
+				<case npc="ME_ChungGakBBoss_0006" progress-mission="y" progress-value="2" skill3-id-1="20103" skill3-id-2="20120" skill3-id-3="20122" skill3-id-4="20123" skill3-id-5="20124" skill3-id-6="20166" skill3-id-7="20167" skill3-id-8="20168" type="finish-blow"/>
+				<case npc="MH_MuSinTower_0001" progress-mission="y" skill3-id-1="20103" skill3-id-2="20120" skill3-id-3="20122" skill3-id-4="20123" skill3-id-5="20124" skill3-id-6="20166" skill3-id-7="20167" skill3-id-8="20168" type="finish-blow"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2">
+			<mission id="2" name2="Mission.Name2.215_2" required-register-value="10">
+				<case npc="ME_NaHanThunder_0001" progress-mission="y" progress-value="2" skill3-id-1="20103" skill3-id-2="20120" skill3-id-3="20122" skill3-id-4="20123" skill3-id-5="20124" skill3-id-6="20166" skill3-id-7="20167" skill3-id-8="20168" type="finish-blow"/>
+				<case npc="ME_NaHanWind_0002" progress-mission="y" progress-value="2" skill3-id-1="20103" skill3-id-2="20120" skill3-id-3="20122" skill3-id-4="20123" skill3-id-5="20124" skill3-id-6="20166" skill3-id-7="20167" skill3-id-8="20168" type="finish-blow"/>
+				<case npc="ME_NaHanWind_0001" progress-mission="y" progress-value="2" skill3-id-1="20103" skill3-id-2="20120" skill3-id-3="20122" skill3-id-4="20123" skill3-id-5="20124" skill3-id-6="20166" skill3-id-7="20167" skill3-id-8="20168" type="finish-blow"/>
+				<case npc="MH_MuSinTower_0003" progress-mission="y" skill3-id-1="20103" skill3-id-2="20120" skill3-id-3="20122" skill3-id-4="20123" skill3-id-5="20124" skill3-id-6="20166" skill3-id-7="20167" skill3-id-8="20168" type="finish-blow"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="3">
+			<mission id="3" name2="Mission.Name2.215_3" required-register-value="10">
+				<case npc="ME_C3_SeolOkGungBoss_0005" progress-mission="y" skill3-id-1="20103" skill3-id-2="20120" skill3-id-3="20122" skill3-id-4="20123" skill3-id-5="20124" skill3-id-6="20166" skill3-id-7="20167" skill3-id-8="20168" type="finish-blow"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

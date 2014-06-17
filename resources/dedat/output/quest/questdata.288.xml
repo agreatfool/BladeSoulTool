@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_288" broadcast-category="field" category="epic" completed-desc="q_288_completed" completed-list="y" desc="q_288_sum" grade="1" group2="QG_BaeCheongEpic" id="288" invoke-fx-msg="y" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.288" save-type="all">
+		<mission-step desc="q_288_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.288_1" required-register-value="1">
+				<case mapunit-1="1250_footswitch_01_e288" object="zoneenv:1250_footswitch_01" object2="zoneenv2:1250_footswitch_01" progress-mission="y" type="env-entered"/>
+				<case object="zone:StartZone_Ending" progress-mission="reaction-only" type="enter-zone"/>
+				<case button-text-accept="q_287_3_ok" button-text-cancel="q_287_3_no" npc-response="qrsp_287_3" object="npc:CH_CT_HyunDam_0006" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_288_des_2" id="2">
+			<mission id="2" name2="Mission.Name2.288_2" required-register-value="1">
+				<case mapunit-1="1250_footswitch_02_e288" object="zoneenv:1250_footswitch_02" object2="zoneenv2:1250_footswitch_02" progress-mission="y" type="env-entered"/>
+				<case object="zone:StartZone_Ending" progress-mission="reaction-only" type="enter-zone"/>
+				<case button-text-accept="q_287_3_ok" button-text-cancel="q_287_3_no" npc-response="qrsp_287_3" object="npc:CH_CT_HyunDam_0006" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_288_des_3" id="3">
+			<mission id="3" name2="Mission.Name2.288_3" required-register-value="1">
+				<case npc-response="qrsp_288_1" object="npc:CH_CT_HongSeokGun_0001" progress-mission="y" type="talk"/>
+				<case object="zone:StartZone_Ending" progress-mission="reaction-only" type="enter-zone"/>
+				<case button-text-accept="q_287_3_ok" button-text-cancel="q_287_3_no" npc-response="qrsp_287_3" object="npc:CH_CT_HyunDam_0006" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.288_4" required-register-value="1">
+				<case npc-response="qrsp_288_2" object="npc:CH_CT_DoDanHa_0004" progress-mission="y" type="talk"/>
+				<case object="zone:zone_ChRyoungCHN_DoChunPung_1" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_288_11" object="npc:CH_CT_GoBong_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.288_5" required-register-value="1">
+				<case npc-response="qrsp_288_3" object="npc:CH_CT_GunMaYeom_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_288_16" object="npc:CH_CT_SoYangSang_0001" type="approach"/>
+				<case npc-response="qrsp_288_62" object="npc:CH_CT_HyunDam_0001" type="approach"/>
+				<case npc-response="qrsp_288_14" object="npc:CH_CT_GoBong_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.288_6" required-register-value="1">
+				<case npc-response="qrsp_288_4" object="npc:CH_CT_SoYangSang_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_288_63" object="npc:CH_CT_GunMaYeom_0001" type="approach"/>
+				<case npc-response="qrsp_288_64" object="npc:CH_CT_HyunDam_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8" location-x="-15971.47" location-y="3877.84" map="ToeMunGekJan_1" mission-map-type="location">
+			<mission id="8" name2="Mission.Name2.288_8" required-register-value="1">
+				<case npc-response="qrsp_288_6" object="npc:CH_CT_YeHaRang_0004" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_288_13" object="npc:CH_CT_SoYeonHwa_0009" type="approach"/>
+				<case npc-response="qrsp_288_17" object="npc:CH_CT_GunMaYeom_0001" type="approach"/>
+				<case npc-response="qrsp_288_16" object="npc:CH_CT_SoYangSang_0001" type="approach"/>
+				<case npc-response="qrsp_288_15" object="npc:CH_CT_HyunDam_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9" location-x="-15946.08" location-y="3979.40" map="ToeMunGekJan_1" mission-map-type="location">
+			<mission id="9" name2="Mission.Name2.288_9" required-register-value="1">
+				<case npc-response="qrsp_288_7" object="npc:CH_CT_SoYeonHwa_0009" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_288_12" object="npc:CH_CT_YeHaRang_0004" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10" location-x="-11604.28" location-y="3014.56" map="ToeMunGekJan_1" mission-map-type="location">
+			<mission id="10" name2="Mission.Name2.288_10" required-register-value="1">
+				<case npc-response="qrsp_288_8" object="npc:CH_CT_DangYeoWeol_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_syhbang" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:e_door_jinsoadoor_01" object2="zoneenv2:e_door_jinsoadoor_01" progress-mission="reaction-only" type="manipulate"/>
+				<case npc-response="qrsp_288_13" object="npc:CH_CT_SoYeonHwa_0009" type="approach"/>
+				<case npc-response="qrsp_288_18" object="npc:CH_CT_YeHaRang_0004" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="11" location-x="-11502.72" location-y="3065.34" map="ToeMunGekJan_1" mission-map-type="location">
+			<mission id="11" name2="Mission.Name2.288_11" required-register-value="1">
+				<case npc-response="qrsp_288_9" object="npc:CH_CT_JinSoA_0018" progress-mission="y" type="talk"/>
+				<case object="zone:zone_syhbang" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:e_door_jinsoadoor_01" object2="zoneenv2:e_door_jinsoadoor_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="12">
+			<mission id="12" name2="Mission.Name2.288_12" required-register-value="1" reward-1="288_middle_set1">
+				<case npc-response="qrsp_288_10" object="npc:CH_CT_PungEmpire_0033" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_288_13" object="npc:CH_CT_SoYeonHwa_0009" type="approach"/>
+				<case npc-response="qrsp_288_18" object="npc:CH_CT_YeHaRang_0004" type="approach"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="StartZone_Event">
+			<destination mission-step-id="1" zone-index="2"/>
+			<destination mission-step-id="2" zone-index="2"/>
+			<destination mission-step-id="3" zone-index="2"/>
+			<destination mission-step-id="4" zone-index="2"/>
+			<destination mission-step-id="5" zone-index="2"/>
+			<destination mission-step-id="6" zone-index="2"/>
+			<destination mission-step-id="7" zone-index="2"/>
+			<destination mission-step-id="8" zone-index="2"/>
+			<destination mission-step-id="9" zone-index="2"/>
+			<destination mission-step-id="10" zone-index="2"/>
+			<destination mission-step-id="11" zone-index="2"/>
+			<destination mission-step-id="12" zone-index="2"/>
+			<destination mission-step-id="13" zone-index="2"/>
+			<destination mission-step-id="14" zone-index="2"/>
+		</transit>
+		<transit id="2" zone="zone_ChRyoungCHN_DoChunPung_1_sp">
+			<destination mission-step-id="4" zone-index="3"/>
+		</transit>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.288_7" required-register-value="1">
+				<case npc-response="qrsp_288_5" object="npc:CH_CT_HyunDam_0001" object2="npc:CH_CT_HyunDam_0001" progress-mission="y" social="talksocial_deepbow" type="pc-social"/>
+				<case npc-response="qrsp_288_63" object="npc:CH_CT_GunMaYeom_0001" type="approach"/>
+				<case npc-response="qrsp_288_16" object="npc:CH_CT_SoYangSang_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="13">
+			<mission id="13" name2="Mission.Name2.288_13" required-register-value="1">
+				<case npc-response="qrsp_288_23" object="npc:CH_CT_JeGukGun_0055" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<acquisition level="1" recommended-level="50" sort-no="529"/>
+		<mission-step id="14">
+			<mission id="14" name2="Mission.Name2.288_14" required-register-value="1" reward-1="288_final_set1">
+				<case npc-response="qrsp_288_24" object="npc:CH_CT_DoCheonPung_0005" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_288_25" object="npc:CH_CT_Yeokgisan_0001" type="approach"/>
+				<case npc-response="qrsp_288_26" object="npc:CH_CT_HaJunKwang_0001" type="approach"/>
+				<case npc-response="qrsp_288_27" object="npc:CH_CT_Chuhwayeon_0002" type="approach"/>
+				<case npc-response="qrsp_288_28" object="npc:CH_CT_AngSi_0021" type="approach"/>
+				<case npc-response="qrsp_288_29" object="npc:CH_CT_Trainee_0010" type="approach"/>
+				<case npc-response="qrsp_288_30" object="npc:CE_CT_DokCho_0001" type="approach"/>
+				<case npc-response="qrsp_288_31" object="npc:CH_CT_BaekWoon_0003" type="approach"/>
+				<case npc-response="qrsp_288_32" object="npc:CH_CT_ChungWoon_0006" type="approach"/>
+				<case npc-response="qrsp_288_33" object="npc:CH_CT_JukWoon_0006" type="approach"/>
+				<case npc-response="qrsp_288_34" object="npc:CH_CT_MuRimMaeng_0079" type="approach"/>
+				<case npc-response="qrsp_288_35" object="npc:CH_CT_HonChunGyo_0078" type="approach"/>
+				<case npc-response="qrsp_288_36" object="npc:CH_CT_Buna_0001" type="approach"/>
+				<case npc-response="qrsp_288_37" object="npc:CH_CT_Bunyang_0001" type="approach"/>
+				<case npc-response="qrsp_288_38" object="npc:CH_CT_AnDuMae_0002" type="approach"/>
+				<case npc-response="qrsp_288_39" object="npc:CE_CT_ThiefCat_0013" type="approach"/>
+				<case npc-response="qrsp_288_40" object="npc:CH_CT_MaBulPa_0006" type="approach"/>
+				<case npc-response="qrsp_288_41" object="npc:CE_CT_Sutaku_0001" type="approach"/>
+				<case npc-response="qrsp_288_42" object="npc:CE_CT_Hwigo_0001" type="approach"/>
+				<case npc-response="qrsp_288_43" object="npc:CE_CT_BelliedWaterFrog_0003" type="approach"/>
+				<case npc-response="qrsp_288_44" object="npc:CE_CT_CrocodileSharkTribeAElder_0019" type="approach"/>
+				<case npc-response="qrsp_288_45" object="npc:CE_CT_CrocodileSharkTribeAElder_0020" type="approach"/>
+				<case npc-response="qrsp_288_47" object="npc:CE_CT_PaDol_0005" type="approach"/>
+				<case npc-response="qrsp_288_48" object="npc:CE_CT_JinDol_0005" type="approach"/>
+				<case npc-response="qrsp_288_49" object="npc:CE_CT_DolJin_0003" type="approach"/>
+				<case npc-response="qrsp_288_50" object="npc:CH_CT_MangNanJa_0006" type="approach"/>
+				<case npc-response="qrsp_288_51" object="npc:CH_CT_TreasureHunter_0019" type="approach"/>
+				<case npc-response="qrsp_288_52" object="npc:CH_CT_PoYeon_0002" type="approach"/>
+				<case npc-response="qrsp_288_53" object="npc:CH_CT_UnGuk_0018" type="approach"/>
+				<case npc-response="qrsp_288_54" object="npc:CH_CT_Smuggler_0008" type="approach"/>
+				<case npc-response="qrsp_288_55" object="npc:CE_CT_HaeTalYi_0002" type="approach"/>
+				<case npc-response="qrsp_288_56" object="npc:CH_CT_YangSiJok_0003" type="approach"/>
+				<case npc-response="qrsp_288_57" object="npc:CE_CT_SuWaJok_0036" type="approach"/>
+				<case npc-response="qrsp_288_58" object="npc:CE_CT_AkGyoJok_0021" type="approach"/>
+				<case npc-response="qrsp_288_59" object="npc:CE_CT_NakWonJok_0003" type="approach"/>
+				<case npc-response="qrsp_288_60" object="npc:CH_CT_WolChon_0016" type="approach"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_695"/>
+		</completion>
+	</quest>
+</table>

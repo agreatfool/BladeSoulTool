@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_606" broadcast-category="field" category="normal" desc="q_606_sum" district-1="deasamak" grade="1" group2="QG_HyeolPungSaMak" id="606" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.606" save-type="all">
+		<acquisition level="24" preceding-quest-1="q_epic_508" preceding-quest-2="q_sub_605" preceding-quest-check="and" recommended-level="26">
+			<case acquire-quest="y" gadget-required="empty" indicator-social="q_606_s_indi_1" msg="q_606_s" npc-response="qrsp_606_1" object="npc:ch_tongkeunbanjum_0001" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_606_des_1" id="1" location-x="-65247.6172" location-y="-21877.9531" map="yugachon">
+			<mission id="1" name2="Mission.Name2.606_1" required-register-value="1">
+				<case gadget="q_eggc" gadget-required="carry-and-remove" indicator="quest-gadget-required" object="zoneenv:e_onoff_ugabrazier_01" object2="zoneenv2:e_onoff_ugabrazier_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="q_eggc" gadget-required="carry-and-remove" indicator="quest-gadget-required" object="zoneenv:e_onoff_ugabrazier_02" object2="zoneenv2:e_onoff_ugabrazier_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="q_eggc" gadget-required="carry-and-remove" indicator="quest-gadget-required" mapunit-1="3050_e_onoff_ugabrazier_01" mapunit-2="3050_e_onoff_ugabrazier_02" mapunit-3="3050_e_onoff_ugabrazier_03" object="zoneenv:e_onoff_ugabrazier_03" object2="zoneenv2:e_onoff_ugabrazier_03" progress-mission="reaction-only" type="manipulate"/>
+				<case button-text-accept="q_606_m1_re_ok" button-text-cancel="q_606_m1_re_no" gadget-required="empty" indicator="quest-normal-can-progress" msg="q_606_m1_re" npc-response="qrsp_606_2" object="npc:ch_tongkeunbanjum_0001" progress-mission="reaction-only" type="talk"/>
+				<case gadget="q_eggc" gadget-required="carry-and-remove" indicator-social="q_606_m1_indi_1" npc-response="qrsp_606_3" object="npc:ch_ilmimun_0002" progress-mission="y" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-64151.9141" location-y="-22823.2656" map="yugachon">
+			<mission id="2" name2="Mission.Name2.606_2" required-register-value="1" reward-1="606_final_set1">
+				<case indicator-social="q_606_m2_indi_1" msg="q_606_m2" npc-response="qrsp_606_4" object="npc:ch_ilmimun_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_90" broadcast-category="always" category="normal" craft-type="none" desc="q_90_sum" district-1="jeryoungrim" grade="1" group2="QG_Gathering" id="90" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.90" save-type="all" show-tutorial-tag="y" tutorial="y">
+		<acquisition level="11" preceding-quest-1="q_epic_311" preceding-quest-check="and" recommended-level="13">
+			<case acquire-quest="y" item="q_90_Quest_hair_growth_solution_manual_1_icon" msg="q_90_s" type="talk-to-self"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.90_1" required-register-value="1">
+				<case indicator-social="q_90_m1_indi_1" msg="q_90_m1" npc-response="qrsp_90_1" object="npc:Ctzn_JinM_NokMyeonCtzn_NoHeKwang_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.90_2" required-register-value="1">
+				<case indicator-social="q_90_m2_indi_1" msg="q_90_m2" npc-response="qrsp_90_2" object="npc:CH_Gather_Miner_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.90_3" required-register-value="1">
+				<case indicator-social="q_90_m3_indi_1" msg="q_90_m3" npc-response="qrsp_90_3" object="npc:CH_Gather_Lumberjack_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.90_4" required-register-value="1">
+				<case indicator-social="q_90_m4_indi_1" msg="q_90_m4" npc-response="qrsp_90_4" object="npc:CH_Gather_Gemcolletor_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.90_5" required-register-value="1">
+				<case indicator-social="q_90_m5_indi_1" msg="q_90_m5" npc-response="qrsp_90_5" object="npc:ch_daeeobang_0041" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.90_6" required-register-value="1">
+				<case indicator-social="q_90_m6_indi_1" msg="q_90_m6" npc-response="qrsp_90_6" object="npc:CH_Gather_Digger_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.90_7" required-register-value="1">
+				<case indicator-social="q_90_m7_indi_1" msg="q_90_m7" npc-response="qrsp_90_7" object="npc:CH_Gather_Farmer_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.90_8" required-register-value="1">
+				<case indicator-social="q_90_m8_indi_1" msg="q_90_m8" npc-response="qrsp_90_8" object="npc:CH_Gather_Hunter_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.90_9" required-register-value="1" reward-1="90_final_set1">
+				<case indicator-social="q_90_m9_indi_1" msg="q_90_m9" npc-response="qrsp_90_9" object="npc:ctzn_jinm_nokmyeonctzn_nohekwang_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

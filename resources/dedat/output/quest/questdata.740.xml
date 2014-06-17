@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_740" broadcast-category="field" category="normal" day-of-week="daily" desc="q_740_sum" grade="8" group2="QG_Sigaji" id="740" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.740" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="45" preceding-quest-1="q_epic_277" preceding-quest-check="and" recommended-level="47">
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_740_5" object="npc:CE_CT_Board_0024" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_740_3" object="npc:CH_CT_PungEmpire_0142" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_740_1" object="npc:CH_CT_PungEmpire_0142" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_740_5" object="npc:CE_CT_Board_0023" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_740_5" object="npc:CE_BC_Board_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.740_1" required-register-value="1">
+				<case object="npc:ME_CT_GeoGeoBoong_0001" object2="npc:ME_CT_GeoGeoBoong_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.740_2" required-register-value="1" reward-1="740_final_set1" reward-2="740_final_set2">
+				<case completion-count="1" npc-response="qrsp_740_4" object="npc:CH_CT_PungEmpire_0142" progress-mission="y" type="talk"/>
+				<case completion-count="0" completion-count-op="ge" fee="y" item="q_740_1_icon" msg="q_740_6" progress-mission="y" type="talk-to-self"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_740_2" object="npc:CH_CT_PungEmpire_0142" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

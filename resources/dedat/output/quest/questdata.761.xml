@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_761" broadcast-category="field" category="normal" desc="q_761_sum" grade="1" group2="QG_BooNongWestNorth" id="761" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.761" save-type="all">
+		<acquisition level="43" preceding-quest-1="q_epic_261" preceding-quest-check="and" recommended-level="45">
+			<case acquire-quest="y" npc-response="qrsp_761_1" object="npc:CH_CT_DaeEoBang_0089" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.761_1" required-register-value="1">
+				<case npc-response="qrsp_761_2" object="npc:CH_CT_DaeEoBang_0088" progress-mission="y" type="approach"/>
+				<case npc-response="qrsp_761_5" object="npc:CE_CT_etc_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.761_2" required-register-value="1">
+				<case npc-response="qrsp_761_5" object="npc:CE_CT_etc_0002" progress-mission="y" type="npc-manipulate"/>
+				<case npc-response="qrsp_761_4" object="npc:CH_CT_DaeEoBang_0088" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.761_3" required-register-value="1" reward-1="761_final_set1">
+				<case npc-response="qrsp_761_4" object="npc:CH_CT_DaeEoBang_0088" type="approach"/>
+				<case npc-response="qrsp_761_6" object="npc:CE_CT_etc_0002" type="approach"/>
+				<case npc-response="qrsp_761_3" object="npc:CH_CT_DaeEoBang_0089" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

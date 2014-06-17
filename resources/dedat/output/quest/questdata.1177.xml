@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="factionmain1" alias="q_sub_1177" attraction-1="faction-battle-field-zone:BuYuDo" attraction-2="dungeon:Dungeon_Buyudo" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1177_sum" grade="9" group2="QG_Booyudo" id="1177" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.1177" reset-type="daily" retired="n">
+		<acquisition faction="factionmain1" level="48" preceding-quest-1="q_sub_1169" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" npc-response="qrsp_1177_1" object="npc:CE_CT_Board_0035" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1177_1" required-register-value="1">
+				<case object="npc:me_ct_desertdragon_0012" object2="npc:me_ct_desertdragon_0012" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1177_2" required-register-value="1" reward-1="1177_final_set1" reward-2="1177_final_set2">
+				<case npc-response="qrsp_1177_2" object="npc:ch_murimmaeng_0040" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

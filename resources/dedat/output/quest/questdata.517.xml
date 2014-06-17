@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_517" broadcast-category="field" category="epic" completed-desc="q_517_completed" completed-list="y" desc="q_517_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="517" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.517" save-type="all">
+		<acquisition level="1" recommended-level="28" sort-no="318"/>
+		<mission-step id="1" location-x="-37948.6445" location-y="9352.2031" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.517_1" required-register-value="1">
+				<case indicator-social="q_517_m1_indi_1" msg="q_517_m1" npc-response="qrsp_517_1" object="npc:ch_noklimdo_0001" progress-mission="y" type="talk" visible-object="y">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="27"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_517_3" object="npc:ch_noklimdo_0001" progress-mission="n" type="talk">
+					<filter-set>
+						<filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="26"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-37855.4219" location-y="5436.7344" map="yeolsajeedea">
+			<mission id="2" name2="Mission.Name2.517_2" required-register-value="1">
+				<case looting="q_517_Quest_rock_salt_1_icon" mapunit-1="3010_e_onoff_saltrock_01" mapunit-2="3010_e_onoff_saltrock_01_1" object="zoneenv:e_onoff_saltrock_01" object2="zoneenv2:e_onoff_saltrock_01" progress-mission="y" type="loot"/>
+				<case looting="q_517_Quest_rock_salt_1_icon" object="zoneenv:e_onoff_saltrock_02" object2="zoneenv2:e_onoff_saltrock_02" progress-mission="y" type="loot"/>
+				<case looting="q_517_Quest_rock_salt_1_icon" object="zoneenv:e_onoff_saltrock_03" object2="zoneenv2:e_onoff_saltrock_03" progress-mission="y" type="loot"/>
+				<case looting="q_517_Quest_rock_salt_1_icon" object="zoneenv:e_onoff_saltrock_04" object2="zoneenv2:e_onoff_saltrock_04" progress-mission="y" type="loot"/>
+				<case looting="q_517_Quest_rock_salt_1_icon" object="zoneenv:e_onoff_saltrock_05" object2="zoneenv2:e_onoff_saltrock_05" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_517_4" object="npc:ch_noklimdo_0001" type="approach" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-37948.6445" location-y="9352.2031" map="yeolsajeedea">
+			<mission id="3" name2="Mission.Name2.517_3" required-register-value="1" reward-1="517_final_set1">
+				<case indicator-social="q_517_m3_indi_1" msg="q_517_m3" npc-response="qrsp_517_2" object="npc:ch_noklimdo_0001" progress-mission="y" type="talk" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_518"/>
+		</completion>
+	</quest>
+</table>

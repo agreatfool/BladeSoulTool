@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_341" broadcast-category="field" category="normal" desc="q_341_sum" district-1="jeryoungrim" grade="1" group="제룡림(망자의 숲)" group2="QG_Delete" id="341" map-group-1-1="jeryoungrim" max-repeat="1" name="흑룡채의 약탈품" name2="Quest.Name2.341" retired="y" save-type="all">
+		<acquisition level="50" preceding-quest-1="q_epic_306" preceding-quest-check="and" recommended-level="50"/>
+		<mission-step completion-type="and" desc="q_341_des_1" id="1" location-x="-23253.6055" location-y="-33073.8984" map="mangjasup">
+			<mission id="3" name="산적소굴 앞 흑룡채 야영지에 있는 흑룡채 약탈품 습득" name2="Mission.Name2.341_3" required-register-value="1"/>
+			<mission id="1" name="망자의 숲에 있는 흑룡채 약탈조 처치" name2="Mission.Name2.341_1" required-register-value="5"/>
+			<mission id="2" name="망자의 숲에 있는 흑룡채 정찰조 처치" name2="Mission.Name2.341_2" required-register-value="5"/>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-23853.0547" location-y="-30616.1523" map="mangjasup">
+			<mission id="4" name="숲속 야영지에 있는 대나무 마을 자경단 진화려에게 보고" name2="Mission.Name2.341_4" required-register-value="1" reward-1="341_final_set1"/>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1090" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1090_sum" district-1="suwal" grade="1" group2="QG_Farmland" id="1090" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1090" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="37" preceding-quest-1="q_epic_931" preceding-quest-check="and" recommended-level="39">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1090_1" object="npc:ch_pigfarm_0009" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1090_3" object="npc:ch_pigfarm_0009" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_1090_5" object="npc:ce_board_0002" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1090_1" required-register-value="7">
+				<case mapunit-1="4100_ME_Noctiluca_0017" mapunit-2="4100_ME_Noctiluca_0017_1" mapunit-3="4100_ME_Noctiluca_0017_2" object="npc:ME_Noctiluca_0017" object2="npc:ME_Noctiluca_0017" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1090_2" required-register-value="1" reward-1="1090_final_set1" reward-2="1090_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1090_2" object="npc:ch_pigfarm_0009" progress-mission="y" type="talk"/>
+				<case completion-count="1" npc-response="qrsp_1090_4" object="npc:ch_pigfarm_0009" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_1090_1_icon" msg="q_1090_6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_570" broadcast-category="field" category="normal" desc="q_570_sum" district-1="deasamak" grade="1" group2="QG_ToMunJinNorth" id="570" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.570" save-type="all">
+		<acquisition level="21" preceding-quest-1="q_epic_504" preceding-quest-check="and" recommended-level="23">
+			<case acquire-quest="y" indicator-social="q_570_s_indi_1" msg="q_570_s" npc-response="qrsp_570_1" object="npc:ch_shaman_026" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_570_des_1" id="1" location-x="-46016.5625" location-y="-82114.1719" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.570_1" required-register-value="1">
+				<case gadget-required="dont-care" mapunit-1="3003_e_onoff_throwbrazier_01" object="zoneenv:e_onoff_throwbrazier_01" object2="zoneenv2:e_onoff_throwbrazier_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_570_des_1" id="2" location-x="-46016.5625" location-y="-82114.1719" map="toemunjean">
+			<mission id="2" name2="Mission.Name2.570_2" required-register-value="1">
+				<case indicator-social="q_570_m1_indi_1" msg="q_570_m1" npc-response="qrsp_570_2" object="npc:ce_pigbaby_002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-45440.4922" location-y="-83650.3594" map="toemunjean">
+			<mission id="3" name2="Mission.Name2.570_3" required-register-value="10">
+				<case looting="q_570_quest_thunderdrum_leather_1_icon" mapunit-1="3003_ME_ThunderDrum_006" object="npc:me_thunderdrum_006" object2="npc:me_thunderdrum_006" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-46080.5703" location-y="-84098.4219" map="toemunjean">
+			<mission id="4" name2="Mission.Name2.570_4" required-register-value="1">
+				<case gadget-required="dont-care" mapunit-2="3003_e_onoff_zelkova_01" object="zoneenv:e_onoff_zelkova_01" object2="zoneenv2:e_onoff_zelkova_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="-46016.5625" location-y="-82114.1719" map="toemunjean">
+			<mission id="5" name2="Mission.Name2.570_5" required-register-value="1">
+				<case mapunit-1="3003_e_onoff_throwbrazier_01" object="zoneenv:e_onoff_throwbrazier_01" object2="zoneenv2:e_onoff_throwbrazier_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6" location-x="-46016.5625" location-y="-82114.1719" map="toemunjean">
+			<mission id="6" name2="Mission.Name2.570_6" required-register-value="1" reward-1="570_final_set1">
+				<case indicator-social="q_570_m4_indi_1" msg="q_570_m4" npc-response="qrsp_570_3" object="npc:ce_pigbaby_002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

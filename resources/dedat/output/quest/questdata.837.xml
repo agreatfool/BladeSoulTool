@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_837" broadcast-category="field" category="normal" day-of-week="daily" desc="q_837_sum" grade="8" group2="QG_SnowMountSouth" id="837" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.837" reset-type="daily" save-type="all">
+		<acquisition level="47" preceding-quest-1="q_epic_282" preceding-quest-2="q_sub_836" preceding-quest-check="and" preceding-quest-mission-step-1="9" recommended-level="49">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_837_1" object="npc:CH_CT_CuteVoice_0004" type="talk"/>
+			<case npc-response="qrsp_837_7" object="npc:CE_CT_Lion_0003" type="approach"/>
+			<case npc-response="qrsp_837_6" object="npc:CE_CT_ScareCrow_0002" type="approach"/>
+			<case npc-response="qrsp_837_5" object="npc:CE_CT_LumberJack_0003" type="approach"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_837_15" object="npc:CE_CT_Board_0030" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_837_14" object="npc:CH_CT_CuteVoice_0004" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.837_1" required-register-value="1">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_837_2" object="npc:CE_CT_Lion_0004" progress-mission="y" type="talk"/>
+				<case completion-count="1" npc-response="qrsp_837_16" object="npc:CE_CT_Lion_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.837_2" required-register-value="1">
+				<case object="npc:ME_CT_SnowWoman_0001" object2="npc:ME_CT_SnowWoman_0001" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_837_13" object="npc:CH_CT_ManBokI_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.837_4" required-register-value="1" reward-1="837_final_set1" reward-2="837_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_837_3" object="npc:CH_CT_CuteVoice_0004" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_837_8" object="npc:CH_CT_ManBokI_0004" type="approach"/>
+				<case completion-count="1" npc-response="qrsp_837_17" object="npc:CH_CT_CuteVoice_0004" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_837_2_icon" msg="q_837_9" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.837_3" required-register-value="1">
+				<case npc-response="qrsp_837_13" object="npc:CH_CT_ManBokI_0003" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

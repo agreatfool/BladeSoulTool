@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_277" broadcast-category="field" category="epic" completed-desc="q_277_completed" completed-list="y" desc="q_277_sum" grade="1" group2="QG_BaeCheongEpic" id="277" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.277" save-type="all">
+		<acquisition level="1" recommended-level="48" sort-no="518"/>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.277_2" required-register-value="1">
+				<case npc-response="qrsp_277_1" object="npc:CH_CT_TeacherShaman_0003" progress-mission="y" type="talk"/>
+				<case object="zone:zone_SooRyunGool_Epic" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:e_button_prisonyongmak_01" object2="zoneenv2:e_button_prisonyongmak_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.277_3" required-register-value="1">
+				<case object="npc:CH_CT_TeacherBladeMaster_0001" progress-mission="y" type="npc-bleeding-occured"/>
+			</mission>
+			<mission-step-fail rollback-step-id="2"/>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.277_4" required-register-value="1">
+				<case npc-response="qrsp_277_2" object="npc:CH_CT_TeacherShaman_0003" progress-mission="y" type="talk"/>
+				<case object="zone:zone_SooRyunGool_Epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="2" zone="zone_SooRyunGool_Daily">
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest faction="SecondFaction1" quest="q_epic_289"/>
+			<next-quest faction="SecondFaction2" quest="q_epic_293"/>
+		</completion>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.277_1" required-register-value="1">
+				<case mapunit-1="5146_e_button_prisonyongmak_01_e277" object="zoneenv:e_button_prisonyongmak_01" object2="zoneenv2:e_button_prisonyongmak_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="7797.00" location-y="-59782.39" map="BaekRimSa" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.277_5" required-register-value="1">
+				<case mapunit-1="5251_Guide_e277" npc-response="qrsp_277_3" object="npc:CH_CT_HyunDam_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekRimSa_An1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_277_des_6" id="6">
+			<mission id="6" name2="Mission.Name2.277_6" required-register-value="1">
+				<case npc-response="qrsp_277_4" object="npc:CH_CT_HyunDam_0008" progress-mission="y" type="talk">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="48"/>
+					</filter-set>
+				</case>
+				<case object="zone:zone_BaekRimSa_BonDang" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_277_6" object="npc:CH_CT_HyunDam_0008" type="talk">
+					<filter-set name="레벨제한">
+						<filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="47"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" desc="q_277_des_7" id="7">
+			<mission id="8" name2="Mission.Name2.277_8" required-register-value="1">
+				<case grocery="quest_costum_dress_1010" join-faction2="SecondFaction2" mapunit-1="5232_e_Chest_backbrazierB_01_e277" object="zoneenv:e_Chest_backbrazierB_01" object2="zoneenv2:e_Chest_backbrazierB_01" progress-mission="y" type="manipulate"/>
+			</mission>
+			<mission id="7" name2="Mission.Name2.277_7" required-register-value="1">
+				<case join-faction2="SecondFaction1" mapunit-1="5232_e_Chest_backbrazierA_01_e277" object="zoneenv:e_Chest_backbrazierA_01" object2="zoneenv2:e_Chest_backbrazierA_01" progress-mission="y" type="manipulate">
+					<filter-set>
+						<filter field="equip-body" op="eq" subject="case:manipulated:pc" subject2="case:manipulated:pc" type="prop" value="910000"/>
+					</filter-set>
+				</case>
+				<case object="zone:zone_BaekRimSa_BonDang" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="9" name2="Mission.Name2.277_9" required-register-value="1" reward-1="277_final_set1">
+				<case npc-response="qrsp_277_5" object="npc:CH_CT_HyunDam_0008" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekRimSa_BonDang" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="Zone_NoiOk_d">
+			<destination mission-step-id="1" zone-index="1"/>
+			<complete zone-index="2"/>
+		</transit>
+	</quest>
+</table>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_415" broadcast-category="field" category="normal" desc="q_415_sum" district-1="jeryoungrim" grade="1" group2="QG_BuryejinECHN" id="415" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.415" save-type="all" show-tutorial-tag="y" tutorial="y">
+		<acquisition level="8" preceding-quest-1="q_epic_310" preceding-quest-check="and" recommended-level="10">
+			<case acquire-quest="y" indicator-social="q_415_s_indi_1" msg="q_415_s" npc-response="qrsp_415_1" object="npc:CH_JaKyoungDan_031" type="talk"/>
+			<fixed-reward job-1="검사" slot-1="item:quest_grocery_weapongem_0001" slot-2="item:Quest_Tutorial_Weapon_0001"/>
+			<fixed-reward job-1="권사" slot-1="item:quest_grocery_weapongem_0001" slot-2="item:Quest_Tutorial_Weapon_0002"/>
+			<fixed-reward job-1="소환사" slot-1="item:quest_grocery_weapongem_0001" slot-2="item:Quest_Tutorial_Weapon_0003"/>
+			<fixed-reward job-1="기공사" slot-1="item:quest_grocery_weapongem_0001" slot-2="item:Quest_Tutorial_Weapon_0004"/>
+			<fixed-reward job-1="역사" slot-1="item:quest_grocery_weapongem_0001" slot-2="item:Quest_Tutorial_Weapon_0005"/>
+			<fixed-reward job-1="암살자" slot-1="item:quest_grocery_weapongem_0001" slot-2="item:Quest_Tutorial_Weapon_0006"/>
+			<fixed-reward job-1="귀검사" slot-1="item:quest_grocery_weapongem_0001" slot-2="item:Quest_Tutorial_Weapon_0001"/>
+		</acquisition>
+		<mission-step guide-message="gm_415_1" guide-message-zone-1="zone_HuekUmmRim_UCHN" id="1">
+			<mission id="1" name2="Mission.Name2.415_1" required-register-value="1">
+				<tutorial-case gem="quest_grocery_weapongem_0001" progress-mission="y" type="weapon-gem" weapon="quest_tutorial_weapon_0001"/>
+				<tutorial-case gem="quest_grocery_weapongem_0001" progress-mission="y" type="weapon-gem" weapon="quest_tutorial_weapon_0002"/>
+				<tutorial-case gem="quest_grocery_weapongem_0001" progress-mission="y" type="weapon-gem" weapon="quest_tutorial_weapon_0003"/>
+				<tutorial-case gem="quest_grocery_weapongem_0001" progress-mission="y" type="weapon-gem" weapon="quest_tutorial_weapon_0004"/>
+				<tutorial-case gem="quest_grocery_weapongem_0001" progress-mission="y" type="weapon-gem" weapon="quest_tutorial_weapon_0005"/>
+				<tutorial-case gem="quest_grocery_weapongem_0001" progress-mission="y" type="weapon-gem" weapon="quest_tutorial_weapon_0006"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-12395.9385" location-y="-28385.3457">
+			<mission id="2" name2="Mission.Name2.415_2" required-register-value="1">
+				<case indicator-social="q_415_m2_indi_1" msg="q_415_m2" npc-response="qrsp_415_2" object="npc:CH_JaKyoungDan_031" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step guide-message="gm_415_2" guide-message-zone-1="zone_HuekUmmRim_UCHN" id="3">
+			<mission id="3" name2="Mission.Name2.415_3" required-register-value="1">
+				<tutorial-case gem="quest_grocery_weapongem_0001" progress-mission="y" type="detach-weapon-gem" weapon="quest_tutorial_weapon_0001"/>
+				<tutorial-case gem="quest_grocery_weapongem_0001" progress-mission="y" type="detach-weapon-gem" weapon="quest_tutorial_weapon_0002"/>
+				<tutorial-case gem="quest_grocery_weapongem_0001" progress-mission="y" type="detach-weapon-gem" weapon="quest_tutorial_weapon_0003"/>
+				<tutorial-case gem="quest_grocery_weapongem_0001" progress-mission="y" type="detach-weapon-gem" weapon="quest_tutorial_weapon_0004"/>
+				<tutorial-case gem="quest_grocery_weapongem_0001" progress-mission="y" type="detach-weapon-gem" weapon="quest_tutorial_weapon_0005"/>
+				<tutorial-case gem="quest_grocery_weapongem_0001" progress-mission="y" type="detach-weapon-gem" weapon="quest_tutorial_weapon_0006"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.415_4" required-register-value="1" reward-1="415_final_set1">
+				<case indicator-social="q_415_m3_indi_1" msg="q_415_m3" npc-response="qrsp_415_3" object="npc:CH_JaKyoungDan_031" progress-mission="y" type="talk"/>
+				<completion-loss item-1="quest_tutorial_weapon_0001" item-2="quest_grocery_weapongem_0001" job-1="검사"/>
+				<completion-loss item-1="quest_tutorial_weapon_0002" item-2="quest_grocery_weapongem_0001" job-1="권사"/>
+				<completion-loss item-1="quest_tutorial_weapon_0003" item-2="quest_grocery_weapongem_0001" job-1="소환사"/>
+				<completion-loss item-1="quest_tutorial_weapon_0004" item-2="quest_grocery_weapongem_0001" job-1="기공사"/>
+				<completion-loss item-1="quest_tutorial_weapon_0005" item-2="quest_grocery_weapongem_0001" job-1="역사"/>
+				<completion-loss item-1="quest_tutorial_weapon_0006" item-2="quest_grocery_weapongem_0001" job-1="암살자"/>
+				<completion-loss item-1="quest_tutorial_weapon_0001" item-2="quest_grocery_weapongem_0001" job-1="귀검사"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="quest_grocery_weapongem_0001" item-2="quest_tutorial_weapon_0001" job-1="검사"/>
+		<giveup-loss item-1="quest_grocery_weapongem_0001" item-2="quest_tutorial_weapon_0002" job-1="권사"/>
+		<giveup-loss item-1="quest_grocery_weapongem_0001" item-2="quest_tutorial_weapon_0003" job-1="소환사"/>
+		<giveup-loss item-1="quest_grocery_weapongem_0001" item-2="quest_tutorial_weapon_0004" job-1="기공사"/>
+		<giveup-loss item-1="quest_grocery_weapongem_0001" item-2="quest_tutorial_weapon_0005" job-1="역사"/>
+		<giveup-loss item-1="quest_grocery_weapongem_0001" item-2="quest_tutorial_weapon_0006" job-1="암살자"/>
+		<giveup-loss item-1="quest_grocery_weapongem_0001" item-2="quest_tutorial_weapon_0001" job-1="귀검사"/>
+	</quest>
+</table>

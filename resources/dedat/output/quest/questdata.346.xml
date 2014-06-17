@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_346" broadcast-category="field" category="normal" desc="q_346_sum" district-1="jeryoungrim" grade="1" group="제룡림(월영 공동묘지)" group2="QG_WalYoungCemetery" id="346" map-group-1-1="jeryoungrim" max-repeat="1" name="내 다리 내놔! (1)" name2="Quest.Name2.346" save-type="all">
+		<acquisition level="4" preceding-quest-1="q_epic_306" preceding-quest-check="and" recommended-level="6">
+			<case acquire-quest="y" indicator-social="q_346_s_indi_1" msg="q_346_s" npc-response="qrsp_346_1" object="npc:ch_wanderer_002" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="2" location-x="-30686.793" location-y="-33913.1289" map="mangjasup">
+			<mission id="2" name="숲속 야영지에 있는 묘지기 육지평과 대화" name2="Mission.Name2.346_2" required-register-value="1">
+				<case indicator-social="q_346_m2_indi_1" msg="q_346_m2" npc-response="qrsp_346_3" object="npc:ch_gravekeeper_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="3" location-x="-19077.5957" location-y="-46948.4609" map="SanJuk_Dun">
+			<mission id="3" name="탄연방의 땔감 탈환" name2="Mission.Name2.346_3" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_346_Quest_wooden_key_1_icon" object="npc:mh_nokrimdo_0009" object2="npc:mh_nokrimdo_0009" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="5" location-x="-24812.1758" location-y="-33193.7891" map="mangjasup">
+			<mission id="5" name="숲속 야영지에 있는 묘지기 육지평에게 보고" name2="Mission.Name2.346_5" required-register-value="1" reward-1="346_final_set1">
+				<case indicator-social="q_346_m5_indi_1" msg="q_346_m5" npc-response="qrsp_346_4" object="npc:ch_gravekeeper_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_346_des_1" id="1" location-x="-33624.1016" location-y="-34272.8008" map="mangjasup">
+			<mission id="1" name="화장터 묘지기 음소지와 대화" name2="Mission.Name2.346_1" required-register-value="1">
+				<case indicator-social="q_346_m1_indi_1" msg="q_346_m1" npc-response="qrsp_346_2" object="npc:ctzn_jinm_eumsoji_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-16387.71" location-y="-46470.74" map="sanjuk_dun" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.346_4" required-register-value="5">
+				<case looting="q_346_Quest_leather_sack_1_icon" object="zoneenv:e_onoff_yuhwangbox_07" object2="zoneenv2:e_onoff_yuhwangbox_07" progress-mission="y" type="loot"/>
+				<case looting="q_346_Quest_leather_sack_1_icon" object="zoneenv:e_onoff_yuhwangbox_06" object2="zoneenv2:e_onoff_yuhwangbox_06" progress-mission="y" type="loot"/>
+				<case looting="q_346_Quest_leather_sack_1_icon" object="zoneenv:e_onoff_yuhwangbox_05" object2="zoneenv2:e_onoff_yuhwangbox_05" progress-mission="y" type="loot"/>
+				<case looting="q_346_Quest_leather_sack_1_icon" object="zoneenv:e_onoff_yuhwangbox_04" object2="zoneenv2:e_onoff_yuhwangbox_04" progress-mission="y" type="loot"/>
+				<case looting="q_346_Quest_leather_sack_1_icon" object="zoneenv:e_onoff_yuhwangbox_03" object2="zoneenv2:e_onoff_yuhwangbox_03" progress-mission="y" type="loot"/>
+				<case looting="q_346_Quest_leather_sack_1_icon" object="zoneenv:e_onoff_yuhwangbox_02" object2="zoneenv2:e_onoff_yuhwangbox_02" progress-mission="y" type="loot"/>
+				<case looting="q_346_Quest_leather_sack_1_icon" mapunit-1="2617_e_onoff_yuhwangbox_01" mapunit-2="2000_SanJuk_Dun_S346(3)" object="zoneenv:e_onoff_yuhwangbox_01" object2="zoneenv2:e_onoff_yuhwangbox_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

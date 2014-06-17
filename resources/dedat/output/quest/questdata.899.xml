@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_899" broadcast-category="field" category="normal" content-type="elite-skill" grade="1" group2="QG_Elite" id="899" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.899" save-type="all">
+		<acquisition job-1="귀검사" level="1" recommended-level="46">
+			<case acquire-quest="y" grocery="Quest_Scroll_EliteSkill_0050" item="Quest_Scroll_EliteSkill_0050" msg="q_899_1" type="talk-to-item"/>
+			<case acquire-quest="y" grocery="Quest_Scroll_EliteSkill_0106" item="Quest_Scroll_EliteSkill_0106" msg="q_899_1" type="talk-to-item"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.899_1" required-register-value="100">
+				<tutorial-case object-1="npc:ME_GuGuBung_0003" object2-1="npc:ME_GuGuBung_0003" progress-mission="y" skill-sequence="SM_PvE_EliteSkill_0050_RushingWind_hit" type="skill-sequence"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.899_2" required-register-value="50">
+				<case npc="ME_FireGorilla_0001" progress-mission="y" progress-value="2" skill3-id-1="27100" skill3-id-2="27101" skill3-id-3="27102" type="finish-blow"/>
+				<case npc="MH_ORakDang_0030" progress-mission="y" skill3-id-1="27100" skill3-id-2="27101" skill3-id-3="27102" type="finish-blow"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.899_3" required-register-value="50">
+				<case npc="ME_NakWonDaeSung_0002" progress-mission="y" progress-value="2" skill3-id-1="27100" skill3-id-2="27101" skill3-id-3="27102" type="finish-blow"/>
+				<case npc="MH_JungYun_0001" progress-mission="y" skill3-id-1="27100" skill3-id-2="27101" skill3-id-3="27102" type="finish-blow"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.899_4" required-register-value="10">
+				<case npc="ME_SpiderQueen_0001" progress-mission="y" skill3-id-1="27100" skill3-id-2="27101" skill3-id-3="27102" type="finish-blow"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

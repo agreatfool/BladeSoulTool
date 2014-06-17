@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_20030" broadcast-category="field" category="normal" desc="q_20030_sum" grade="1" group2="QG_Haodong" id="20030" map-group-1-1="baekchung" max-repeat="-1" name2="Quest.Name2.20030" save-type="except-completion">
+		<acquisition level="45" recommended-level="47">
+			<case acquire-quest="y" gadget-required="dont-care" grocery="quest_grocery_backchung_0003" grocery-count="1" npc-response="qrsp_20030_1" object="npc:CH_CT_HaoBang_0066" remove-grocery="n" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.20030_1" required-register-value="2">
+				<case grocery="quest_grocery_backchung_0003" object="zoneenv:e_chest_electronicpot_04" object2="zoneenv2:e_chest_electronicpot_04" prob="60" progress-mission="y" type="manipulate"/>
+				<case grocery="quest_grocery_backchung_0003" object="zoneenv:e_chest_electronicpot_03" object2="zoneenv2:e_chest_electronicpot_03" prob="50" progress-mission="y" type="manipulate"/>
+				<case grocery="quest_grocery_backchung_0003" object="zoneenv:e_chest_electronicpot_02" object2="zoneenv2:e_chest_electronicpot_02" prob="45" progress-mission="y" type="manipulate"/>
+				<case grocery="quest_grocery_backchung_0003" mapunit-1="5111_e_chest_electronicpot_01_s20030" object="zoneenv:e_chest_electronicpot_01" object2="zoneenv2:e_chest_electronicpot_01" prob="55" progress-mission="y" type="manipulate"/>
+				<case npc-response="qrsp_20030_3" object="npc:ch_ct_haobang_0067" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.20030_2" required-register-value="1" reward-1="20030_final_set1">
+				<case npc-response="qrsp_20030_2" object="npc:CH_CT_HaoBang_0067" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

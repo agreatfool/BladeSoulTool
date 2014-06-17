@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_276" broadcast-category="field" category="epic" completed-desc="q_276_completed" completed-list="y" desc="q_276_sum" grade="1" group2="QG_BaeCheongEpic" id="276" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.276" save-type="all">
+		<acquisition level="1" recommended-level="47" sort-no="517"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.276_1" required-register-value="1">
+				<case mapunit-1="5146_footswitch_06_e276" object="zoneenv:5146_footswitch_06" object2="zoneenv2:5146_footswitch_06" progress-mission="y" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.276_2" required-register-value="1" reward-1="276_final_set1">
+				<case npc-response="qrsp_276_1" object="npc:CH_CT_TeacherShaman_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_277"/>
+		</completion>
+		<transit id="1" zone="Zone_NoiOk_d">
+			<destination mission-step-id="1" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

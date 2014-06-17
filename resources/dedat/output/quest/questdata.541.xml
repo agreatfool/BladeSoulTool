@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_541" broadcast-category="field" category="epic" completed-desc="q_541_completed" completed-list="y" desc="q_541_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="541" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.541" save-type="all">
+		<acquisition level="1" recommended-level="34" sort-no="330"/>
+		<mission-step id="1" location-x="12270.3457" location-y="-34242.0313" map="hangari">
+			<mission id="1" name2="Mission.Name2.541_1" required-register-value="1">
+				<case indicator-social="q_541_m1_indi_1" msg="q_541_m1" npc-response="qrsp_541_1" object="npc:CH_JinSoA_0014" progress-mission="y" type="talk" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-12924.5918" location-y="5071.1978" map="toemungekjan_1" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.541_2" required-register-value="1">
+				<case mapunit-1="3016_e_onoff_soyeonout_01" mapunit-2="3016_e_onoff_soyeonout_01+" mapunit-3="3016_e_onoff_soyeonout_01-" mapunit-4="3020_Guide_E541(1)" mapunit-5="3020_Guide_E541(2)" object="zoneenv:e_door_soyeonout_01" object2="zoneenv2:e_door_soyeonout_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-12924.5918" location-y="5071.1978" map="toemungekjan_1" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.541_3" required-register-value="1">
+				<case object="npc:CH_JinSoA_0014" type="approach"/>
+				<case indicator-social="q_541_m3_indi_1" msg="q_541_m3" npc-response="qrsp_541_2" object="npc:ch_soyeonhwa_008" progress-mission="y" type="talk"/>
+				<case object="zoneenv:e_door_soyeonout_01" object2="zoneenv2:e_door_soyeonout_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-14828.8887" location-y="4030.1821" map="toemungekjan_1" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.541_4" required-register-value="1">
+				<case indicator-social="q_541_m4_indi_1" msg="q_541_m4" npc-response="qrsp_541_3" object="npc:ch_yeharang_003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="-12924.5918" location-y="5071.1978" map="toemungekjan_1" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.541_5" required-register-value="1" reward-1="541_final_set1">
+				<case indicator-social="q_541_m5_indi_1" msg="q_541_m5" npc-response="qrsp_541_4" object="npc:ch_soyeonhwa_008" progress-mission="y" type="talk"/>
+				<case object="zoneenv:e_door_soyeonout_01" object2="zoneenv2:e_door_soyeonout_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_529"/>
+		</completion>
+		<transit id="1" zone="zone_YeHaRangBang">
+			<destination mission-step-id="4" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

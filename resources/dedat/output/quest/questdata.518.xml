@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_518" broadcast-category="field" category="epic" completed-desc="q_518_completed" completed-list="y" desc="q_518_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="518" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.518" save-type="all">
+		<acquisition level="1" recommended-level="29" sort-no="319"/>
+		<mission-step id="1" location-x="-16199.9824" location-y="3903.229" map="toemungekjan_3085" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.518_1" required-register-value="1">
+				<case npc-response="qrsp_518_6" object="npc:ch_noklimdo_0001" type="approach" visible-object="y"/>
+				<case mapunit-1="3016_e_footswitch_511_01" object="zoneenv:e_footswitch_511_001" object2="zoneenv2:e_footswitch_511_001" progress-mission="y" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-15666.7793" location-y="3827.0571" map="toemungekjan_3085" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.518_2" required-register-value="1">
+				<case indicator-social="q_518_m2_indi_1" msg="q_518_m2" npc-response="qrsp_518_1" object="npc:ch_tomun_011" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-12823.0293" location-y="3344.6353" map="toemungekjan_1" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.518_3" required-register-value="1">
+				<case indicator-social="q_518_m3_indi_1" msg="q_518_m3" npc-response="qrsp_518_2" object="npc:ch_jinsoa_0002" progress-mission="y" type="talk"/>
+				<case object="zoneenv:e_door_jinsoadoor_01" object2="zoneenv2:e_door_jinsoadoor_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zone:zone_SYHBang" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-12924.5918" location-y="5071.1978" map="toemungekjan_1" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.518_4" required-register-value="1">
+				<case msg="q_518_m4" npc-response="qrsp_518_3" object="npc:ch_soyeonhwa_0007" progress-mission="y" type="talk"/>
+				<case object="zoneenv:e_door_soyeonout_01" object2="zoneenv2:e_door_soyeonout_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zone:zone_SYHBang" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="-17811.957" location-y="-8733.5273" map="yeolsajeedea" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.518_5" required-register-value="8">
+				<case looting="q_513_Quest_rock_monster_horn_1_icon" mapunit-1="3010_ME_RockMonster_0005" mapunit-2="3016_Guide_E518" object="npc:me_rockmonster_0005" object2="npc:me_rockmonster_0005" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6" location-x="-14828.8887" location-y="4030.1821" map="toemungekjan_1" mission-map-type="location">
+			<mission id="6" name2="Mission.Name2.518_6" required-register-value="1">
+				<case indicator-social="q_518_m6_indi_1" msg="q_518_m6" npc-response="qrsp_518_4" object="npc:ch_yeharang_003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7" location-x="-12924.5918" location-y="5071.1978" map="toemungekjan_1" mission-map-type="location">
+			<mission id="7" name2="Mission.Name2.518_7" required-register-value="1" reward-1="518_final_set1">
+				<case indicator-social="q_518_m7_indi_1" msg="q_518_m7" npc-response="qrsp_518_5" object="npc:ch_soyeonhwa_008" progress-mission="y" type="talk"/>
+				<case object="zoneenv:e_door_soyeonout_01" object2="zoneenv2:e_door_soyeonout_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_YeHaRangBang">
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_519"/>
+		</completion>
+		<transit id="2" zone="zone_toemunkegjan">
+			<destination mission-step-id="1" zone-index="2"/>
+		</transit>
+	</quest>
+</table>

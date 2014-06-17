@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_501" broadcast-category="field" category="epic" completed-desc="q_501_completed" completed-list="y" desc="q_501_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="501" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.501" save-type="all">
+		<acquisition level="1" recommended-level="21" sort-no="301"/>
+		<mission-step id="1" location-x="-50541.9375" location-y="-53784.9688" map="chungryoung" mission-map-type="mapunit">
+			<mission id="1" name2="Mission.Name2.501_1" required-register-value="1">
+				<case indicator-social="q_501_m1_indi_1" msg="q_501_m1" npc-response="qrsp_501_1" object="npc:ch_andumae_0001" progress-mission="y" type="talk"/>
+				<case object="zoneenv:e_onoff_illusionsmoke_01" object2="zoneenv2:e_onoff_illusionsmoke_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_onoff_illusionsmoke_02" object2="zoneenv2:e_onoff_illusionsmoke_02" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_onoff_illusionsmoke_03" object2="zoneenv2:e_onoff_illusionsmoke_03" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_onoff_musinenter_01" object2="zoneenv2:e_onoff_musinenter_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_onoff_sealeddoor_01" object2="zoneenv2:e_onoff_sealeddoor_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_door_3031fence_01" object2="zoneenv2:e_door_3031fence_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_door_3021fence_01" object2="zoneenv2:e_door_3021fence_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-44359.1523" location-y="-62430.625" map="oemalri">
+			<mission id="5" name2="Mission.Name2.501_5" required-register-value="1">
+				<case indicator-social="q_501_m5_indi_1" msg="q_501_m5" npc-response="qrsp_501_5" object="npc:ch_andumae_0001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="20"/>
+					</filter-set>
+				</case>
+				<case indicator-social="q_501_m5_deny_indi_1" msg="q_501_m5_deny" npc-response="qrsp_501_8" object="npc:ch_andumae_0001" type="talk">
+					<filter-set name="deny">
+						<filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="19"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-46019.3086" location-y="-62567.3438" map="oemalri">
+			<mission id="6" name2="Mission.Name2.501_6" required-register-value="1">
+				<case indicator-social="q_501_m6_indi_1" msg="q_501_m6" npc-response="qrsp_501_6" object="npc:CH_SungGunDang_0007" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HanSiRangHouse2" progress-mission="reaction-only" type="enter-zone"/>
+				<case button-text-accept="q_501_m5_ok" button-text-cancel="q_501_m5_no" npc-response="qrsp_501_5" object="npc:ch_andumae_0001" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="-44554.4648" location-y="-61942.3438" map="oemalri">
+			<mission id="7" name2="Mission.Name2.501_7" required-register-value="1">
+				<case looting="q_501_medic_pill_for_adamantine_1_icon" object="npc:mh_samagyo_0025" object2="npc:mh_samagyo_0025" progress-mission="y" quest-symbol-drop-prob="20" type="loot"/>
+				<case looting="q_501_medic_pill_for_adamantine_1_icon" mapunit-2="3008_MH_Samagyo_0024" object="npc:mh_samagyo_0024" object2="npc:mh_samagyo_0024" progress-mission="y" quest-symbol-drop-prob="20" type="loot"/>
+				<case object="zone:zone_HanSiRangHouse2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6" location-x="-44359.1523" location-y="-62430.625" map="oemalri">
+			<mission id="8" name2="Mission.Name2.501_8" required-register-value="1">
+				<case mapunit-1="3008_CH_HanSiRang_0003" object="npc:CH_HanSiRang_0003" progress-mission="y" type="npc-manipulate"/>
+				<case object="zone:zone_HanSiRangHouse2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8" location-x="-43714.62" location-y="-62665.00" map="oemalri" mission-map-type="location">
+			<mission id="10" name2="Mission.Name2.501_10" required-register-value="1" reward-1="501_final_set1">
+				<case indicator-social="q_501_m10_indi_1" msg="q_501_m10" npc-response="qrsp_501_7" object="npc:CH_UnGukSoldier_001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HanSiRangHouse" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-idle="backmu_idle" npc-response="qrsp_501_10" object="npc:CH_SungGunDang_0007" type="approach"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_540"/>
+		</completion>
+		<transit id="1" zone="zone_toemunjean">
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+		</transit>
+		<mission-step id="2" location-x="-44359.1523" location-y="-62430.625">
+			<mission id="4" name2="Mission.Name2.501_4" required-register-value="1">
+				<case indicator-social="q_501_m4_indi_1" msg="q_501_m4" npc-response="qrsp_501_4" object="npc:ctzn_jinm_cheongryeongctzn_gwancheolsu_001" progress-mission="y" type="talk"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.501_3" required-register-value="1">
+				<case indicator-social="q_501_m3_indi_1" msg="q_501_m3" npc-response="qrsp_501_3" object="npc:ctzn_jinf_cheongryeongctzn_nayerin_001" progress-mission="y" type="talk"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.501_2" required-register-value="1">
+				<case indicator-social="q_501_m2_indi_1" msg="q_501_m2" npc-response="qrsp_501_2" object="npc:ctzn_jinf_cheongryeongctzn_ryubekeon_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7" location-x="-45921.65" location-y="-62762.66" map="oemalri_3008" mission-map-type="location">
+			<mission id="9" name2="Mission.Name2.501_9" required-register-value="1" show-kill-mapunit="y">
+				<case object="npc:mh_samagyo_0047" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="zone:zone_oetoli_phase" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-idle="backmu_idle" npc-response="qrsp_501_9" object="npc:CH_SungGunDang_0007" type="approach"/>
+			</mission>
+		</mission-step>
+		<transit id="2" zone="zone_ChRyoungCHN_DoChunPung_1_sp">
+			<destination mission-step-id="3" zone-index="2"/>
+			<destination mission-step-id="2" zone-index="2"/>
+			<destination mission-step-id="1" zone-index="2"/>
+		</transit>
+		<transit id="3" zone="zone_HanSiRangHouse">
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

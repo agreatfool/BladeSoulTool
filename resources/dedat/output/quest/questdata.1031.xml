@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1031" broadcast-category="field" category="normal" desc="q_1031_sum" district-1="suwal" grade="1" group2="QG_AncyJokVillage" id="1031" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1031" save-type="all">
+		<acquisition level="36" preceding-quest-1="q_epic_907" preceding-quest-check="and" recommended-level="38">
+			<case acquire-quest="y" npc-response="qrsp_1031_1" object="npc:CH_PungJeoHoe_0022" type="talk"/>
+			<case npc-response="qrsp_1031_3" object="npc:CH_PungJeoHoe_0016" type="approach"/>
+			<case npc-response="qrsp_1031_2" object="npc:CH_PungJeoHoe_0020" type="approach"/>
+		</acquisition>
+		<mission-step id="1" location-x="2145.48" location-y="-25059.55" map="neukdaegureung" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.1031_1" required-register-value="3">
+				<case gadget-required="dont-care" looting="q_1030_Quest_nunmangul_pink_1_icon" mapunit-1="4000_e_onoff_eyegrass_01" object="zoneenv:e_onoff_eyegrass_01" object2="zoneenv2:e_onoff_eyegrass_01" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1030_Quest_nunmangul_pink_1_icon" object="zoneenv:e_onoff_eyegrass_02" object2="zoneenv2:e_onoff_eyegrass_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1030_Quest_nunmangul_pink_1_icon" object="zoneenv:e_onoff_eyegrass_03" object2="zoneenv2:e_onoff_eyegrass_03" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1030_Quest_nunmangul_pink_1_icon" object="zoneenv:e_onoff_eyegrass_04" object2="zoneenv2:e_onoff_eyegrass_04" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1030_Quest_nunmangul_pink_1_icon" object="zoneenv:e_onoff_eyegrass_05" object2="zoneenv2:e_onoff_eyegrass_05" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_1031_5" object="npc:CH_PungJeoHoe_0016" type="approach"/>
+				<case npc-response="qrsp_1031_4" object="npc:CH_PungJeoHoe_0020" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1031_2" required-register-value="1" reward-1="1031_final_set1">
+				<case npc-response="qrsp_1031_6" object="npc:CH_CheongNyeonHoe_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

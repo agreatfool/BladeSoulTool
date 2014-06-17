@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25044" broadcast-category="sextet" category="dungeon" dungeon="Dungeon_BaekCheong_Sulokgoong" grade="17" id="25044" max-repeat="1" name2="Quest.Name2.25044" progress-party-duo="n" progress-party-quartet="n" progress-party-sextet="y" progress-party-solo="n" save-type="nothing">
+		<acquisition check-tencent-vitality="n" level="1" mastery-level="3" preceding-quest-1="q_sub_296" preceding-quest-2="q_sub_1209" preceding-quest-check="or" recommended-level="50">
+			<case acquire-quest="y" object="zoneenv:5919_portal_5900" object2="zoneenv2:5919_portal_5900" type="enter-portal"/>
+			<case acquire-quest="y" object="zoneenv:807_Portal_5900" object2="zoneenv2:807_Portal_5900" type="enter-portal"/>
+		</acquisition>
+		<mission-step completion-type="or" id="1">
+			<mission id="1" name2="mission.name2.25044_1" required-register-value="1">
+				<case object="npc:ME_C3_SeolOkGungBoss_0001" object2="npc:ME_C3_SeolOkGungBoss_0001" progress-mission="y" type="killed"/>
+				<case object="npc:ME_C3_SeolOkGungBoss_0002" object2="npc:ME_C3_SeolOkGungBoss_0002" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="mission.name2.25044_2" required-register-value="1">
+				<case object="npc:ME_C3_SeolOkGungBoss_0003" object2="npc:ME_C3_SeolOkGungBoss_0003" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="mission.name2.25044_3" required-register-value="1">
+				<case object="npc:ME_C3_RewardBox_0010" object2="npc:ME_C3_RewardBox_0010" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="mission.name2.25044_4" required-register-value="1">
+				<case object="npc:ME_C3_SeolOkGungBoss_0005" object2="npc:ME_C3_SeolOkGungBoss_0005" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<transit id="4" zone="Zone_Sulokgoong_4_Default">
+			<destination mission-step-id="4" zone-index="1"/>
+		</transit>
+		<transit id="3" zone="Zone_Sulokgoong_3_Default">
+			<destination mission-step-id="3" zone-index="1"/>
+		</transit>
+		<transit id="2" zone="Zone_Sulokgoong_2_Default">
+			<destination mission-step-id="2" zone-index="1"/>
+		</transit>
+		<transit id="1" zone="Zone_Sulokgoong_1_Default">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

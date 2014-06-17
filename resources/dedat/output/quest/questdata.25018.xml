@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25018" attraction-1="classic-field-zone:NoklimdovillageClassic" attraction-2="cave2:cave_baekchung_13" attraction-3="dungeon:dungeon_noklimdotreasurehouse" attraction-4="dungeon:dungeon_takmagul" broadcast-category="field" category="attraction" desc="q_25018_sum" grade="7" group2="QG_NokRimDo" id="25018" map-group-1-1="baekchung" max-repeat="-1" name2="Quest.Name2.25018" save-type="nothing">
+		<acquisition level="46" preceding-quest-check="and" recommended-level="47"/>
+		<mission-step id="2">
+			<mission id="2" required-register-value="1" reward-1="25018_final_set1">
+				<case item="q_25000_1_icon" msg="q_25018_1" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.25018_1" required-register-value="3">
+				<case looting="q_25000_2_icon" object="npc:ME_CT_DesertDragon_0002" object2="npc:ME_CT_DesertDragon_0002" progress-mission="y" type="loot"/>
+				<case looting="q_25000_2_icon" object="npc:ME_CT_DesertDragon_0005" object2="npc:ME_CT_DesertDragon_0005" progress-mission="y" type="loot"/>
+				<case looting="q_25000_2_icon" object="npc:ME_CT_DesertDragon_0006" object2="npc:ME_CT_DesertDragon_0006" progress-mission="y" type="loot"/>
+				<case looting="q_25000_2_icon" object="npc:ME_CT_DesertDragon_0009" object2="npc:ME_CT_DesertDragon_0009" progress-mission="y" type="loot"/>
+				<case looting="q_25000_2_icon" object="npc:ME_CT_DesertDragon_0010" object2="npc:ME_CT_DesertDragon_0010" progress-mission="y" type="loot"/>
+				<case looting="q_25000_2_icon" object="npc:ME_CT_DesertDragon_0011" object2="npc:ME_CT_DesertDragon_0011" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_sub_25018"/>
+		</completion>
+	</quest>
+</table>

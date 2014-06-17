@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_543" broadcast-category="field" category="normal" desc="q_543_sum" grade="1" group2="QG_BooNongWestNorth" id="543" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.543" save-type="all">
+		<acquisition level="43" preceding-quest-1="q_epic_260" preceding-quest-check="and" recommended-level="45">
+			<case acquire-quest="y" npc-response="qrsp_543_1" object="npc:CH_CT_JeGukGun_0125" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.543_1" required-register-value="1">
+				<case npc-response="qrsp_543_2" object="npc:CH_CT_CitiZen_0143" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.543_2" required-register-value="1">
+				<case npc-response="qrsp_543_3" object="npc:CH_CT_CitiZen_0144" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_543_6" object="npc:CH_CT_JeGukGun_0125" type="approach"/>
+				<case object="zone:Zone_PNTower_Chunhyang" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_543_2" object="npc:CH_CT_CitiZen_0143" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.543_3" required-register-value="1">
+				<case mapunit-1="5007_e_pot_jangdokdae_01_s543" object="zoneenv:e_pot_jangdokdae_01" object2="zoneenv2:e_pot_jangdokdae_01" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_543_8" object="npc:CH_CT_JeGukGun_0125" type="approach"/>
+				<case object="zone:Zone_PNTower_Chunhyang" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:e_pot_jangdokdae_02" object2="zoneenv2:e_pot_jangdokdae_02" progress-mission="y" type="killed"/>
+				<case object="zoneenv:e_pot_jangdokdae_03" object2="zoneenv2:e_pot_jangdokdae_03" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.543_4" required-register-value="1" reward-1="543_final_set1">
+				<case npc-response="qrsp_543_5" object="npc:CH_CT_JeGukGun_0126" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_PNTower_Chunhyang" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_543_8" object="npc:CH_CT_JeGukGun_0125" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

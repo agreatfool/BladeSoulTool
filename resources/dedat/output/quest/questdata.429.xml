@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_429" broadcast-category="field" category="normal" desc="q_429_sum" district-1="jeryoungrim" grade="1" group="제룡림(기연폭포)" group2="QG_KiYoenFall" id="429" map-group-1-1="jeryoungrim" max-repeat="1" name="밥은 밥이오, 약은 약이로다" name2="Quest.Name2.429" save-type="all">
+		<acquisition level="12" preceding-quest-1="q_epic_491" preceding-quest-check="and" recommended-level="14">
+			<case acquire-quest="y" indicator-social="q_429_s_indi_1" msg="q_429_s" npc-response="qrsp_429_1" object="npc:ch_medecine_016" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="31356.2363" location-y="23579.3867" map="suryengol">
+			<mission id="1" name2="Mission.Name2.429_1" required-register-value="5">
+				<case looting="q_429_Quest_swampmushroom_cap_1_icon" mapunit-1="2300_me_mushroom_002" mapunit-2="2300_me_mushroom_002_1" mapunit-3="2300_me_mushroom_002_2" object="npc:me_mushroom_002" object2="npc:me_mushroom_002" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.429_2" required-register-value="3">
+				<case gadget-required="dont-care" looting="q_429_Quest_yellow_flower_1_icon" mapunit-1="2300_e_onoff_fragrant_01" mapunit-2="2300_e_onoff_fragrant_01_1" mapunit-3="2300_e_onoff_fragrant_01_2" mapunit-4="2300_e_onoff_fragrant_01_3" object="zoneenv:e_onoff_fragrant_01" object2="zoneenv2:e_onoff_fragrant_01" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_429_Quest_yellow_flower_1_icon" object="zoneenv:e_onoff_fragrant_02" object2="zoneenv2:e_onoff_fragrant_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_429_Quest_yellow_flower_1_icon" object="zoneenv:e_onoff_fragrant_03" object2="zoneenv2:e_onoff_fragrant_03" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_429_Quest_yellow_flower_1_icon" object="zoneenv:e_onoff_fragrant_04" object2="zoneenv2:e_onoff_fragrant_04" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_429_Quest_yellow_flower_1_icon" object="zoneenv:e_onoff_fragrant_05" object2="zoneenv2:e_onoff_fragrant_05" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_429_Quest_yellow_flower_1_icon" object="zoneenv:e_onoff_fragrant_06" object2="zoneenv2:e_onoff_fragrant_06" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_429_Quest_yellow_flower_1_icon" object="zoneenv:e_onoff_fragrant_07" object2="zoneenv2:e_onoff_fragrant_07" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_429_Quest_yellow_flower_1_icon" object="zoneenv:e_onoff_fragrant_08" object2="zoneenv2:e_onoff_fragrant_08" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_429_Quest_yellow_flower_1_icon" object="zoneenv:e_onoff_fragrant_09" object2="zoneenv2:e_onoff_fragrant_09" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_429_Quest_yellow_flower_1_icon" object="zoneenv:e_onoff_fragrant_10" object2="zoneenv2:e_onoff_fragrant_10" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_429_Quest_yellow_flower_1_icon" object="zoneenv:e_onoff_fragrant_11" object2="zoneenv2:e_onoff_fragrant_11" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_429_Quest_yellow_flower_1_icon" object="zoneenv:e_onoff_fragrant_12" object2="zoneenv2:e_onoff_fragrant_12" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="15733.623" location-y="15654.126" map="nokmyeong">
+			<mission id="3" name="녹명촌에 있는 약왕원 유자서에게 보고" name2="Mission.Name2.429_3" required-register-value="1" reward-1="429_final_set1">
+				<case indicator-social="q_429_m3_indi_1" msg="q_429_m3" npc-response="qrsp_429_2" object="npc:CH_JR_Citizen_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

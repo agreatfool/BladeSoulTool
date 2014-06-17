@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_303" broadcast-category="field" category="epic" completed-desc="q_303_completed" completed-list="y" desc="q_303_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="303" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.303" save-type="all" tutorial="y">
+		<acquisition level="1" recommended-level="3" sort-no="203"/>
+		<mission-step completion-type="and" desc="q_303_des_1" id="1" location-x="-55683.8867" location-y="-52795.8281" map="mangjasup">
+			<mission id="1" name2="Mission.Name2.303_1" required-register-value="1">
+				<case indicator-social="q_303_m1_indi_1" msg="q_303_m1" npc-response="qrsp_303_1" object="npc:ch_gosuljun_0001" progress-mission="y" type="talk"/>
+				<case indicator-social="q_303_m1_indi_2" npc-response="qrsp_303_2" object="npc:CH_NamSoYu_0001" progress-mission="n" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_303_des_2" guide-message="gm_303_2" id="2" location-x="-54964.5469" location-y="-56812.1484" map="mangjasup">
+			<mission id="2" name2="Mission.Name2.303_2" required-register-value="1">
+				<case looting="q_302_quest_old_map_1_icon" object="npc:mh_chunggak_0005" object2="npc:mh_chunggak_0005" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+				<case looting="q_302_quest_old_map_1_icon" object="npc:mh_chunggak_0006" object2="npc:mh_chunggak_0006" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+				<case looting="q_302_quest_old_map_1_icon" mapunit-1="2631_mh_chunggak_0007" mapunit-2="2631_mh_chunggak_0007_1" mapunit-3="2631_Guide" object="npc:mh_chunggak_0007" object2="npc:mh_chunggak_0007" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_303_des_3" id="3" location-x="-52566.7422" location-y="-61667.6953" map="mangjasup">
+			<mission id="3" name2="Mission.Name2.303_3" required-register-value="1">
+				<case indicator-social="q_303_m3_indi_1" msg="q_303_m3" npc-response="qrsp_303_3" object="npc:ch_gobong_0001" progress-mission="y" type="talk"/>
+				<case object="zoneenv:2020_footswitch_2" object2="zoneenv2:2020_footswitch_2" progress-mission="reaction-only" type="env-entered">
+					<filter-set>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_303_des_4" id="4" location-x="-52566.7422" location-y="-61667.6953" map="mangjasup">
+			<mission id="4" name2="Mission.Name2.303_4" required-register-value="2">
+				<case mapunit-1="2020_mh_chunggak_011" object="npc:mh_chunggak_011" object2="npc:mh_chunggak_011" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_012" object2="npc:mh_chunggak_012" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_303_des_6" id="6" location-x="-52566.7422" location-y="-61667.6953" map="mangjasup">
+			<mission id="6" name2="Mission.Name2.303_6" required-register-value="1">
+				<case gadget-required="dont-care" mapunit-1="2020_e_destroy_2020jaildoor_01" object="zoneenv:e_destroy_2020jaildoor_01" object2="zoneenv2:e_destroy_2020jaildoor_01" progress-mission="y" type="manipulate"/>
+				<case object="zone:zone_chryounghwa" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_303_des_7" id="7" location-x="-52566.7422" location-y="-61667.6953" map="mangjasup">
+			<mission id="7" name2="Mission.Name2.303_7" required-register-value="1">
+				<case indicator-social="q_303_m7_indi_1" msg="q_303_m7" npc-response="qrsp_303_5" object="npc:ctzn_jinm_nokmyeonctzn_dodanha_002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_chryounghwa" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_303_des_8" id="8" location-x="-52566.7422" location-y="-61667.6953" map="mangjasup">
+			<mission id="8" name2="Mission.Name2.303_8" required-register-value="1">
+				<case gadget-required="dont-care" mapunit-1="2020_e_destroy_landingboat_01" object="zoneenv:e_destroy_landingboat_01" object2="zoneenv2:e_destroy_landingboat_01" progress-mission="y" type="manipulate"/>
+				<case indicator-social="q_303_m8_indi_1" npc-response="qrsp_303_6" object="npc:ctzn_jinm_nokmyeonctzn_dodanha_002" type="approach"/>
+				<case object="zone:zone_chryounghwa" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_303_des_9" id="9" location-x="-52566.7422" location-y="-61667.6953" map="mangjasup">
+			<mission id="9" name2="Mission.Name2.303_9" required-register-value="1" reward-1="303_middle_set1">
+				<case msg="q_303_m9" npc-response="qrsp_303_7" object="npc:ctzn_jinm_nokmyeonctzn_dodanha_002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_chryounghwa" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:2020_footswitch_2" object2="zoneenv2:2020_footswitch_2" progress-mission="reaction-only" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_303_des_10" guide-message="gm_303_1" id="10" location-x="-49424.75" location-y="-48960.75" map="chungryoung" mission-map-type="location">
+			<mission id="10" name2="Mission.Name2.303_10" required-register-value="1">
+				<case object="zone:zone_chryounghwa" progress-mission="reaction-only" type="enter-zone"/>
+				<tutorial-case mapunit-1="2010_teleportswitch_01" progress-mission="y" type="teleport"/>
+				<case npc-response="qrsp_303_8" object="npc:ctzn_jinm_nokmyeonctzn_dodanha_002" type="approach"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_497"/>
+		</completion>
+		<transit id="1" zone="zone_ChRyoungHwA_SP">
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="9" zone-index="1"/>
+			<destination mission-step-id="10" zone-index="1"/>
+		</transit>
+		<transit id="2" zone="zone_ChRyoungCHN_DoChunPung_1_sp">
+			<destination mission-step-id="12" zone-index="3"/>
+		</transit>
+		<mission-step completion-type="and" desc="q_303_des_5" id="5" location-x="-52566.7422" location-y="-61667.6953" map="mangjasup">
+			<mission id="5" name2="Mission.Name2.303_5" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="2020_mh_chunggak_018" object="npc:mh_chunggak_018" object2="npc:mh_chunggak_018" progress-mission="y" type="killed"/>
+				<case object="zone:zone_chryounghwa" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_303_m5_indi_1" npc-response="qrsp_303_4" object="npc:ch_gobong_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_303_des_12" guide-message="gm_303_12" id="12" location-x="-49805.61" location-y="-56197.08" map="chungryoung" mission-map-type="location">
+			<mission id="12" name2="Mission.Name2.303_12" required-register-value="1" reward-1="303_final_set1">
+				<case indicator-social="q_303_m11_indi_1" msg="q_303_m11" npc-response="qrsp_303_9" object="npc:ch_dochunpung_0002" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_303_11" object="npc:CH_JaKyoungDan_0028" type="approach"/>
+			</mission>
+		</mission-step>
+		<transit id="3" zone="zone_ChRyoungCHN_Doctor_start">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+		<mission-step desc="q_303_des_11" id="11">
+			<mission id="11" name2="Mission.Name2.303_11" required-register-value="1">
+				<case npc-response="qrsp_303_10" object="npc:CH_JaKyoungDan_0028" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

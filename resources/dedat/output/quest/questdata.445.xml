@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_445" broadcast-category="field" category="normal" day-of-week="daily" desc="q_445_sum" district-1="jeryoungrim" grade="8" group2="QG_NokMyungCHN" id="445" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.445" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="12" preceding-quest-1="q_epic_311" preceding-quest-check="and" recommended-level="14">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" indicator-social="q_445_s_indi_1" msg="q_445_s" npc-response="qrsp_445_1" object="npc:ch_merchantcharm_001" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator-social="q_445_re_s_indi_1" msg="q_445_re_s" npc-response="qrsp_445_3" object="npc:ch_merchantcharm_001" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_445_5" object="npc:ce_board_0012" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.445_1" required-register-value="50">
+				<case object="npc:me_pestsmall_0001" object2="npc:me_pestsmall_0001" progress-mission="y" type="killed"/>
+				<case object="npc:me_pestsmall_0002" object2="npc:me_pestsmall_0002" progress-mission="y" type="killed"/>
+				<case mapunit-1="Guide_PokPoSuDongGul_d" mapunit-2="2606_me_pestsmall_0002" mapunit-3="2606_me_pestsmall_0002_1" mapunit-4="2606_me_pestsmall_0002_2" mapunit-5="2606_me_pestsmall_0002_3" object="npc:me_pestsmall_0003" object2="npc:me_pestsmall_0003" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.445_2" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_425_Quest_insect_antenna_1_icon" object="npc:me_pest_0010" object2="npc:me_pest_0010" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.445_3" required-register-value="1" reward-1="445_final_set1" reward-2="445_final_set2">
+				<case completion-count="1" completion-count-op="lt" indicator-social="q_445_m3_indi_1" msg="q_445_m3" npc-response="qrsp_445_2" object="npc:ch_merchantcharm_001" progress-mission="y" type="talk"/>
+				<case completion-count="1" indicator-social="q_445_re_m3_indi_1" msg="q_445_re_m3" npc-response="qrsp_445_4" object="npc:ch_merchantcharm_001" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_445_1_icon" msg="q_445_m5" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

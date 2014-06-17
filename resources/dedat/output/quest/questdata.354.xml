@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_354" broadcast-category="field" category="normal" desc="q_354_sum" district-1="jeryoungrim" grade="1" group="제룡림(월영 공동묘지)" group2="QG_WalYoungCemetery" id="354" map-group-1-1="jeryoungrim" max-repeat="1" name="내 다리 내놔! (완)" name2="Quest.Name2.354" save-type="all">
+		<acquisition level="6" preceding-quest-1="q_epic_308" preceding-quest-2="q_sub_346" preceding-quest-check="and" preceding-quest-mission-step-1="3" recommended-level="8">
+			<case acquire-quest="y" indicator-social="q_354_s_indi_1" msg="q_354_s" npc-response="qrsp_354_1" object="npc:ch_gravekeeper_0001" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" desc="q_354_des_2" id="2" location-x="-36302.5313" location-y="-29203.1895" map="DoGul_Dun">
+			<mission id="2" name="파헤쳐진 무덤에 있는 왕미남의 무덤에서 시체의 다리 습득" name2="Mission.Name2.354_2" required-register-value="1">
+				<case gadget-required="dont-care" looting="q_354_Grocery_Bad_Skin_1_icon" mapunit-1="2601_e_onoff_minam_01" object="zoneenv:e_onoff_minam_01" object2="zoneenv2:e_onoff_minam_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="3" location-x="-35842.0703" location-y="-33253.7344" map="mangjasup">
+			<mission id="3" name="소각장에 있는 자경단원 왕진평에게 보고" name2="Mission.Name2.354_3" required-register-value="1">
+				<case indicator-social="q_354_m3_indi_1" msg="q_354_m3" npc-response="qrsp_354_3" object="npc:ctzn_jinm_jakyungdan_wangjinpyeong_foc_001" progress-mission="y" type="talk"/>
+				<fixed-reward slot-1="item:quest_scroll_soowolpyungwon_0050"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="1" location-x="-33863.8828" location-y="-33913.1289" map="mangjasup">
+			<mission id="1" name2="Mission.Name2.354_1" required-register-value="1">
+				<case indicator-social="q_354_m1_indi_1" msg="q_354_m1" npc-response="qrsp_354_2" object="npc:ctzn_jinm_jakyungdan_wangjinpyeong_foc_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_354_des_4" id="4">
+			<mission id="4" name2="Mission.Name2.354_4" required-register-value="1">
+				<case item="Quest_Scroll_SoowolPyungwon_0050" msg="q_354_4" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.354_5" required-register-value="1">
+				<case grocery="Quest_Scroll_SoowolPyungwon_0050" mapunit-1="2000_e_onoff_tomb_01" object="zoneenv:e_onoff_tomb_01" object2="zoneenv2:e_onoff_tomb_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.354_6" required-register-value="1" reward-1="354_final_set1">
+				<case npc-response="qrsp_354_4" object="npc:ctzn_jinf_ghost_hosuki_001" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Scroll_SoowolPyungwon_0050"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_SoowolPyungwon_0050"/>
+	</quest>
+</table>

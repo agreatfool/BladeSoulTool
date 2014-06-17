@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_768" broadcast-category="field" category="normal" desc="q_768_sum" district-1="deasamak" grade="1" group2="QG_HeukChangJokBuRak" id="768" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.768" save-type="all">
+		<acquisition level="30" preceding-quest-1="q_epic_525" preceding-quest-2="q_sub_764" preceding-quest-check="and" recommended-level="32">
+			<case acquire-quest="y" indicator-social="q_768_s_indi_1" msg="q_768_s" npc-response="qrsp_768_1" object="npc:ch_jinwigwan_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="3" location-x="39839.871" location-y="-44791.328" map="sajisukrim">
+			<mission id="3" name2="Mission.Name2.768_3" required-register-value="1">
+				<case gadget-required="dont-care" looting="q_768_Grocery_white_linen_package_1_icon" mapunit-1="3023_e_onoff_magicianbag_01" object="zoneenv:e_onoff_magicianbag_01" object2="zoneenv2:e_onoff_magicianbag_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="44577.375" location-y="-42604.789" map="sajisukrim">
+			<mission id="4" name2="Mission.Name2.768_4" required-register-value="1" reward-1="768_final_set1">
+				<case indicator-social="q_768_m4_indi_1" msg="q_768_m4" npc-response="qrsp_768_4" object="npc:ch_researcher_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="27874.633" location-y="-32340.195" map="sajisukrim">
+			<mission id="2" name2="Mission.Name2.768_2" required-register-value="1">
+				<case indicator-social="q_768_m2_indi_1" msg="q_768_m2" npc-response="qrsp_768_3" object="npc:ch_jinwigwan_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1" location-x="27874.633" location-y="-32340.195" map="sajisukrim">
+			<mission id="1" name2="Mission.Name2.768_1" required-register-value="1">
+				<case indicator-social="q_768_m1_indi_1" msg="q_768_m1" npc-response="qrsp_768_2" object="npc:ch_seolgonji_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

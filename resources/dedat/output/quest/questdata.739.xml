@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_739" broadcast-category="field" category="normal" desc="q_739_sum" grade="1" group2="QG_HwangGung" id="739" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.739" save-type="all">
+		<acquisition level="45" preceding-quest-1="q_epic_275" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="47">
+			<case acquire-quest="y" npc-response="qrsp_739_1" object="npc:CH_CT_NaSangSo_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.739_1" required-register-value="1">
+				<case button-text-accept="q_739_20_ok" button-text-cancel="q_739_20_no" item="Quest_Scroll_BackChung_0019" msg="q_739_2" progress-mission="reaction-only" type="talk-to-item"/>
+				<case button-text-accept="q_739_20_ok" button-text-cancel="q_739_20_no" item="Quest_Scroll_BackChung_0020" msg="q_739_3" progress-mission="reaction-only" type="talk-to-item"/>
+				<case button-text-accept="q_739_20_ok" button-text-cancel="q_739_20_no" item="Quest_Scroll_BackChung_0021" msg="q_739_4" progress-mission="reaction-only" type="talk-to-item"/>
+				<case loot-item="Quest_Scroll_BackChung_0019" looting="q_739_1_icon" mapunit-1="5137_e_chest_public_appeals_01_s739" object="zoneenv:e_chest_public_appeals_01" object2="zoneenv2:e_chest_public_appeals_01" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.739_2" required-register-value="1">
+				<case button-text-accept="q_739_20_ok" button-text-cancel="q_739_20_no" item="Quest_Scroll_BackChung_0019" msg="q_739_2" progress-mission="reaction-only" type="talk-to-item"/>
+				<case button-text-accept="q_739_20_ok" button-text-cancel="q_739_20_no" item="Quest_Scroll_BackChung_0020" msg="q_739_3" progress-mission="reaction-only" type="talk-to-item"/>
+				<case button-text-accept="q_739_20_ok" button-text-cancel="q_739_20_no" item="Quest_Scroll_BackChung_0021" msg="q_739_4" progress-mission="reaction-only" type="talk-to-item"/>
+				<case loot-item="Quest_Scroll_BackChung_0020" looting="q_739_2_icon" mapunit-1="5137_e_chest_public_appeals_02_s739" object="zoneenv:e_chest_public_appeals_02" object2="zoneenv2:e_chest_public_appeals_02" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.739_3" required-register-value="1">
+				<case button-text-accept="q_739_20_ok" button-text-cancel="q_739_20_no" item="Quest_Scroll_BackChung_0019" msg="q_739_2" progress-mission="reaction-only" type="talk-to-item"/>
+				<case button-text-accept="q_739_20_ok" button-text-cancel="q_739_20_no" item="Quest_Scroll_BackChung_0020" msg="q_739_3" progress-mission="reaction-only" type="talk-to-item"/>
+				<case button-text-accept="q_739_20_ok" button-text-cancel="q_739_20_no" item="Quest_Scroll_BackChung_0021" msg="q_739_4" progress-mission="reaction-only" type="talk-to-item"/>
+				<case loot-item="Quest_Scroll_BackChung_0021" looting="q_739_3_icon" mapunit-1="5137_e_chest_public_appeals_03_s739" object="zoneenv:e_chest_public_appeals_03" object2="zoneenv2:e_chest_public_appeals_03" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="4" name2="Mission.Name2.739_4" required-register-value="1" reward-1="739_final_set1">
+				<case npc-response="qrsp_739_2" object="npc:CH_CT_NaSangSo_0001" progress-mission="y" type="talk"/>
+				<case button-text-accept="q_739_20_ok" button-text-cancel="q_739_20_no" item="Quest_Scroll_BackChung_0019" msg="q_739_2" progress-mission="reaction-only" type="talk-to-item"/>
+				<case button-text-accept="q_739_20_ok" button-text-cancel="q_739_20_no" item="Quest_Scroll_BackChung_0020" msg="q_739_3" progress-mission="reaction-only" type="talk-to-item"/>
+				<case button-text-accept="q_739_20_ok" button-text-cancel="q_739_20_no" item="Quest_Scroll_BackChung_0021" msg="q_739_4" progress-mission="reaction-only" type="talk-to-item"/>
+				<completion-loss item-1="Quest_Scroll_BackChung_0019" item-2="Quest_Scroll_BackChung_0020" item-3="Quest_Scroll_BackChung_0021" item-count-1="0" item-count-2="0" item-count-3="0"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_BackChung_0019" item-2="Quest_Scroll_BackChung_0020" item-3="Quest_Scroll_BackChung_0021" item-count-1="0" item-count-2="0" item-count-3="0"/>
+	</quest>
+</table>

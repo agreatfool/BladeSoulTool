@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_466" broadcast-category="field" category="normal" day-of-week="daily" desc="q_466_sum" district-1="jeryoungrim" grade="13" group="제룡림(송암도)" group2="QG_SongAmDo" id="466" map-group-1-1="jeryoungrim" max-repeat="1" name="숨어있는 도끼파 소탕" name2="Quest.Name2.466" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="16" preceding-quest-1="q_epic_493" preceding-quest-check="and" recommended-level="18">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" indicator-social="q_466_s_indi_1" msg="q_466_s" npc-response="qrsp_466_1" object="npc:ch_jakyoungdan_040" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator-social="q_466_re_s_indi_1" msg="q_466_re_s" npc-response="qrsp_466_2" object="npc:ch_jakyoungdan_040" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_466_5" object="npc:ce_board_0012" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-18320.7832" location-y="35683.7422" map="HeAn_Dun">
+			<mission id="1" name="도끼파 전문 날강도 처치" name2="Mission.Name2.466_1" required-register-value="1" show-kill-mapunit="y">
+				<case object="npc:me_fishman_0001" object2="npc:me_fishman_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-21024.1758" location-y="40276.1016" map="songrimsa">
+			<mission id="2" name="송림사에 있는 자경단원 맹도성과 대화" name2="Mission.Name2.466_2" required-register-value="1" reward-1="466_final_set1" reward-2="466_final_set2">
+				<case completion-count="1" completion-count-op="lt" indicator-social="q_466_m2_indi_1" msg="q_466_m2" npc-response="qrsp_466_3" object="npc:ch_jakyoungdan_040" progress-mission="y" type="talk"/>
+				<case completion-count="1" npc-response="qrsp_466_3" object="npc:ch_jakyoungdan_040" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_466_1_icon" msg="q_466_m4" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

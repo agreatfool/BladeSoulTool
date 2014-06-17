@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_401" broadcast-category="field" category="normal" desc="q_401_sum" district-1="jeryoungrim" grade="1" group2="QG_MangJaSup" id="401" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.401" save-type="all">
+		<acquisition level="4" preceding-quest-1="q_epic_306" preceding-quest-check="and" recommended-level="6">
+			<case acquire-quest="y" npc-response="qrsp_401_1" object="npc:ch_jakyungdan_0006" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_401_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.401_1" required-register-value="10">
+				<case object="npc:mh_nokrimdo_0020" object2="npc:mh_nokrimdo_0020" progress-mission="y" type="killed"/>
+				<case object="npc:mh_nokrimdo_0019" object2="npc:mh_nokrimdo_0019" progress-mission="y" type="killed"/>
+				<case object="npc:mh_bandit_010" object2="npc:mh_bandit_010" progress-mission="y" type="killed"/>
+				<case object="npc:mh_nokrimdo_0018" object2="npc:mh_nokrimdo_0018" progress-mission="y" type="killed"/>
+				<case object="npc:mh_nokrimdo_0017" object2="npc:mh_nokrimdo_0017" progress-mission="y" type="killed"/>
+				<case mapunit-1="2000_mh_bandit_013" mapunit-2="2000_mh_bandit_013_1" mapunit-3="2000_mh_bandit_013_2" object="npc:mh_bandit_013" object2="npc:mh_bandit_013" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.401_2" required-register-value="1">
+				<case looting="q_401_grocery_white_linen_package_1_icon" mapunit-1="2000_e_onoff_bag_01" object="zoneenv:e_onoff_bag_01" object2="zoneenv2:e_onoff_bag_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.401_3" required-register-value="1" reward-1="401_final_set1">
+				<case npc-response="qrsp_401_2" object="npc:ch_jakyungdan_0006" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

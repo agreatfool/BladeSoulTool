@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1130" attraction-1="classic-field-zone:Haemoojin_Classic" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1130_sum" grade="1" group2="QG_ChungGakEastJiBu" id="1130" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1130" reset-type="daily" save-type="all">
+		<acquisition level="43" preceding-quest-1="q_sub_1127" preceding-quest-2="q_sub_1035" preceding-quest-check="or" recommended-level="46">
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1130_3" object="npc:CH_KyeongChunMaeng_0067" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1130_1" object="npc:CH_KyeongChunMaeng_0067" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1130_1" required-register-value="1">
+				<case object="npc:ME_DarkCrazyTribeBigB_0006" object2="npc:ME_DarkCrazyTribeBigB_0006" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0340" object2="npc:MH_ChungGak_0340" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0336" object2="npc:MH_ChungGak_0336" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1130_2" required-register-value="1">
+				<case object="npc:ME_Bear_0027" object2="npc:ME_Bear_0027" progress-mission="y" type="killed"/>
+				<case object="npc:ME_Bear_0026" object2="npc:ME_Bear_0026" progress-mission="y" type="killed"/>
+				<case object="npc:ME_PigTribeA_0020" object2="npc:ME_PigTribeA_0020" progress-mission="y" type="killed"/>
+				<case object="npc:ME_PigTribeA_0021" object2="npc:ME_PigTribeA_0021" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.1130_3" required-register-value="1">
+				<case object="npc:MH_ChungGak_0343" object2="npc:MH_ChungGak_0343" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0338" object2="npc:MH_ChungGak_0338" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0337" object2="npc:MH_ChungGak_0337" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="4" name2="Mission.Name2.1130_4" required-register-value="1">
+				<case object="npc:ME_CrocodileSharkTribeB_0032" object2="npc:ME_CrocodileSharkTribeB_0032" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CrocodileSharkTribeB_0031" object2="npc:ME_CrocodileSharkTribeB_0031" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="5" name2="Mission.Name2.1130_5" required-register-value="1">
+				<case object="npc:MH_ChungGak_0342" object2="npc:MH_ChungGak_0342" progress-mission="y" type="killed"/>
+				<case object="npc:MH_ChungGak_0339" object2="npc:MH_ChungGak_0339" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="6" name2="Mission.Name2.1130_6" required-register-value="1" reward-1="1130_final_set1" reward-2="1130_final_set2">
+				<case completion-count="1" npc-response="qrsp_1130_4" object="npc:CH_KyeongChunMaeng_0067" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1130_2" object="npc:CH_KyeongChunMaeng_0067" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_1130_1_icon" msg="q_1130_5" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

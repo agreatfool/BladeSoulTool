@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_928" broadcast-category="field" category="epic" completed-desc="q_928_completed" completed-list="y" desc="q_928_sum" district-1="suwal" grade="1" group2="QG_SuwalPWEpic" id="928" invoke-fx-msg="y" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.928" save-type="all" tutorial="y">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="43" sort-no="428"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.928_1" required-register-value="1">
+				<case mapunit-1="4412_zone_YoungRinBong_2" object="zone:zone_youngrinbong_2" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.928_4" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="4412_e_galmawang_0001" object="npc:me_galmawang_0001" object2="npc:me_galmawang_0001" progress-mission="y" type="killed"/>
+				<case object="zone:zone_youngrinbong_3" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.928_5" required-register-value="1">
+				<tutorial-case mapunit-1="4412_MH_JinSeoYeon_0002" progress-mission="y" type="exhausted"/>
+				<case object="zoneenv:4421_foot_1" object2="zoneenv2:4421_foot_1" progress-mission="reaction-only" type="env-entered"/>
+				<case object="zone:zone_youngrinbong_4" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.928_6" required-register-value="1">
+				<case npc-response="qrsp_928_2" object="npc:ch_cheonjingwon_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_YoungRinBong_0" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.928_7" required-register-value="1">
+				<case npc-response="qrsp_928_3" object="npc:ch_cheonjingwon_0002" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="6"/>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.928_9" required-register-value="1" reward-1="928_final_set1">
+				<case npc-response="qrsp_928_5" object="npc:ch_yuran_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_930"/>
+		</completion>
+		<transit id="2" zone="zone_youngrinbong_6">
+			<destination mission-step-id="8" zone-index="6"/>
+			<destination mission-step-id="7" zone-index="6"/>
+			<destination mission-step-id="6" zone-index="6"/>
+			<destination mission-step-id="5" zone-index="4"/>
+			<destination mission-step-id="4" zone-index="3"/>
+			<destination mission-step-id="3" zone-index="2"/>
+			<destination mission-step-id="2" zone-index="2"/>
+			<destination mission-step-id="1" zone-index="2"/>
+		</transit>
+		<transit id="1" zone="zone_youngrinchn">
+			<destination mission-step-id="9" zone-index="2"/>
+			<destination mission-step-id="8" zone-index="2"/>
+			<destination mission-step-id="7" zone-index="2"/>
+			<destination mission-step-id="6" zone-index="2"/>
+			<destination mission-step-id="5" zone-index="2"/>
+			<destination mission-step-id="4" zone-index="2"/>
+			<destination mission-step-id="3" zone-index="2"/>
+			<destination mission-step-id="2" zone-index="2"/>
+			<destination mission-step-id="1" zone-index="2"/>
+		</transit>
+		<mission-step guide-message="gm_928_1" id="8">
+			<mission id="8" name2="Mission.Name2.928_8" required-register-value="1">
+				<case mapunit-1="4423_CH_CheonJinGwon_0002_1" npc-response="qrsp_928_4" object="npc:ch_cheonjingwon_0002" object2="npc:ch_cheonjingwon_0002" progress-mission="y" social="talksocial_bow1" type="pc-social"/>
+				<case object="zone:zone_YoungRinBong_0" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.928_2" required-register-value="1">
+				<case npc-response="qrsp_928_1" object="npc:ch_gyeongchunmaeng_0009" progress-mission="y" type="talk"/>
+				<case object="zone:zone_youngrinbong_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.928_3" required-register-value="1">
+				<case mapunit-1="4412_foot_1" object="zoneenv:4412_foot_1" object2="zoneenv2:4412_foot_1" progress-mission="y" type="env-entered"/>
+				<case object="zone:zone_youngrinbong_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="3" zone="zone_kyoungchenkiji">
+			<complete zone-index="2"/>
+		</transit>
+	</quest>
+</table>

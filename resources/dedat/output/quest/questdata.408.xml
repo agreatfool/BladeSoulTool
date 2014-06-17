@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_408" broadcast-category="field" category="normal" desc="q_408_sum" district-1="jeryoungrim" grade="1" group2="QG_Geoamgol" id="408" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.408" save-type="all">
+		<acquisition level="18" preceding-quest-1="q_sub_406" preceding-quest-check="and" recommended-level="20">
+			<case acquire-quest="y" indicator-social="q_408_s_indi_1" msg="q_408_s" npc-response="qrsp_408_1" object="npc:ctzn_jinm_songrimsa_pengilgang_001" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-33411.2773" location-y="64614.1406" map="songamdo">
+			<mission id="1" name2="Mission.Name2.408_1" required-register-value="1">
+				<case gadget="q_rocka" gadget-required="not-a" indicator="default" mapunit-1="2420_e_destroy_rock_01" object="zoneenv:e_destroy_rock_01" object2="zoneenv2:e_destroy_rock_01" progress-mission="reaction-only" type="killed"/>
+				<case indicator="default" object="zoneenv:e_destroy_rock_04" object2="zoneenv2:e_destroy_rock_04" progress-mission="reaction-only" type="killed"/>
+				<case indicator="default" object="zoneenv:e_destroy_rock_05" object2="zoneenv2:e_destroy_rock_05" progress-mission="reaction-only" type="killed"/>
+				<case indicator="default" object="zoneenv:e_destroy_rock_06" object2="zoneenv2:e_destroy_rock_06" progress-mission="reaction-only" type="killed"/>
+				<case gadget="q_rocka" gadget-required="carry-and-remove" indicator="quest-gadget-required" mapunit-4="2420_e_onoff_tower_01" object="zoneenv:e_onoff_tower_01" object2="zoneenv2:e_onoff_tower_01" progress-mission="y" type="manipulate"/>
+				<case gadget="q_rocka" gadget-required="carry-and-remove" indicator="quest-gadget-required" mapunit-1="2420_e_onoff_tower_02" object="zoneenv:e_onoff_tower_02" object2="zoneenv2:e_onoff_tower_02" progress-mission="y" type="manipulate"/>
+				<case gadget="q_rocka" gadget-required="carry-and-remove" indicator="quest-gadget-required" mapunit-1="2420_e_onoff_tower_03" object="zoneenv:e_onoff_tower_03" object2="zoneenv2:e_onoff_tower_03" progress-mission="y" type="manipulate"/>
+				<case indicator="default" object="zoneenv:e_destroy_rock_02" object2="zoneenv2:e_destroy_rock_02" progress-mission="reaction-only" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="3" location-x="-35592.1055" location-y="64003.5078" map="songamdo">
+			<mission id="3" name2="Mission.Name2.408_3" required-register-value="1" reward-1="408_final_set1">
+				<case indicator-social="q_408_m3_indi_1" msg="q_408_m3" npc-response="qrsp_408_2" object="npc:ctzn_jinm_songrimsa_pengilgang_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-33847.4414" location-y="64265.2071" map="songamdo">
+			<mission id="2" name2="Mission.Name2.408_2" required-register-value="1">
+				<case gadget-required="dont-care" mapunit-1="2420_e_onoff_big_01" object="zoneenv:e_onoff_big_01" object2="zoneenv2:e_onoff_big_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

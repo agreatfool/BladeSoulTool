@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_438" broadcast-category="field" category="normal" desc="q_438_sum" district-1="jeryoungrim" grade="1" group="제룡림(기연절벽)" group2="QG_KiYoenCliff" id="438" map-group-1-1="jeryoungrim" max-repeat="1" name="목청 좋은 개구리" name2="Quest.Name2.438" save-type="all">
+		<acquisition level="13" preceding-quest-1="q_epic_494" preceding-quest-check="and" recommended-level="15">
+			<case acquire-quest="y" indicator-social="q_438_s_indi_1" msg="q_438_s" npc-response="qrsp_438_1" object="npc:ch_pungsusa_002" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="24590.4785" location-y="41621.418" map="suryengol">
+			<mission id="1" name="무당 개구리의 알집 획득" name2="Mission.Name2.438_1" required-register-value="5">
+				<case looting="q_438_2_icon" mapunit-1="2300_ME_JR_SeaMonster_0002" object="npc:ME_JR_SeaMonster_0002" object2="npc:ME_JR_SeaMonster_0002" progress-mission="y" progress-value="1" quest-symbol-drop-prob="100" type="loot"/>
+			</mission>
+			<mission id="2" name="수염 개구리의 알집 획득" name2="Mission.Name2.438_2" required-register-value="5">
+				<case object="npc:CE_JR_BelliedWaterFrog_0002" progress-mission="y" type="npc-manipulate"/>
+				<case object="zoneenv:e_chest_2300riverrock_08" object2="zoneenv2:e_chest_2300riverrock_08" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_2300riverrock_07" object2="zoneenv2:e_chest_2300riverrock_07" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_2300riverrock_06" object2="zoneenv2:e_chest_2300riverrock_06" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_2300riverrock_05" object2="zoneenv2:e_chest_2300riverrock_05" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_2300riverrock_04" object2="zoneenv2:e_chest_2300riverrock_04" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_2300riverrock_03" object2="zoneenv2:e_chest_2300riverrock_03" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_2300riverrock_02" object2="zoneenv2:e_chest_2300riverrock_02" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_2300riverrock_01" object2="zoneenv2:e_chest_2300riverrock_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_2300riverboulder_05" object2="zoneenv2:e_chest_2300riverboulder_05" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_2300riverboulder_04" object2="zoneenv2:e_chest_2300riverboulder_04" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_2300riverboulder_03" object2="zoneenv2:e_chest_2300riverboulder_03" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_chest_2300riverboulder_02" object2="zoneenv2:e_chest_2300riverboulder_02" progress-mission="reaction-only" type="manipulate"/>
+				<case mapunit-1="2300_e_chest_2300riverboulder_01" object="zoneenv:e_chest_2300riverboulder_01" object2="zoneenv2:e_chest_2300riverboulder_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="24364.9512" location-y="42749.043" map="suryengol">
+			<mission id="3" name="기연절벽에 있는 풍수사 왕호저에게 보고" name2="Mission.Name2.438_3" required-register-value="1" reward-1="438_final_set1">
+				<case indicator-social="q_438_m3_indi_1" msg="q_438_m3" npc-response="qrsp_438_2" object="npc:ch_pungsusa_002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

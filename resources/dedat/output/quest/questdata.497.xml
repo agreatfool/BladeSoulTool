@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_497" broadcast-category="field" category="epic" completed-desc="q_497_completed" completed-list="y" desc="q_497_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="497" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.497" save-type="all" tutorial="y">
+		<acquisition level="1" recommended-level="3" sort-no="204"/>
+		<mission-step desc="q_497_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.497_1" required-register-value="1" reward-1="497_middle_set1">
+				<case npc-response="qrsp_497_1" object="npc:ch_namsoyu_001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_chryoungchn_dochunpung_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_497_des_2" guide-message="gm_497_1" id="2">
+			<mission id="2" name2="Mission.Name2.497_2" required-register-value="1">
+				<case object="zone:zone_chryoungchn_dochunpung_1" progress-mission="reaction-only" type="enter-zone"/>
+				<tutorial-case item-category="equip-gem" progress-mission="y" type="equip-item"/>
+				<case button-text-accept="q_497_b1_ok" button-text-cancel="q_497_b1_no" npc-response="qrsp_497_2" object="npc:ch_namsoyu_001" progress-mission="reaction-only" type="talk"/>
+				<case loot-item="Quest_EquipGem_Gam1_1009" looting="q_497_e_gem_mirror_grade_02_pos_01_2_icon" object="zoneenv:e_chest_trashbox_01" object2="zoneenv2:e_chest_trashbox_01" progress-mission="reaction-only" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_497_des_3" id="3">
+			<mission id="3" name2="Mission.Name2.497_3" required-register-value="1" reward-1="497_final_set1">
+				<case npc-response="qrsp_497_3" object="npc:ch_namsoyu_001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_chryoungchn_dochunpung_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_ChRyoungCHN_DoChunPung_1_sp">
+			<destination mission-step-id="1" zone-index="3"/>
+			<destination mission-step-id="2" zone-index="3"/>
+			<destination mission-step-id="3" zone-index="3"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_304"/>
+		</completion>
+	</quest>
+</table>

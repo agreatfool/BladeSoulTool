@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_932" broadcast-category="field" category="epic" completed-desc="q_932_completed" completed-list="y" desc="q_932_sum" grade="1" group2="QG_NextbaeCheongEpic" id="932" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.932" save-type="all">
+		<acquisition level="1" recommended-level="50" sort-no="531"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.932_1" required-register-value="1" reset-teleport-recycle-time="y">
+				<case npc-response="qrsp_932_1" object="npc:CH_CT_DoCheonPung_0019" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_933"/>
+		</completion>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.932_2" required-register-value="1">
+				<case npc-response="qrsp_932_2" object="npc:CH_CT_DoCheonPung_0019" type="approach"/>
+				<case mapunit-1="1253_StartZone_Epic5thCurtain_p1" object="zone:StartZone_Epic5thCurtain_p1" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.932_3" required-register-value="1">
+				<case npc-response="qrsp_932_3" object="npc:CH_SA_YeongMok_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.932_4" required-register-value="1">
+				<case npc-response="qrsp_932_4" object="npc:CH_SA_BunYang_0002" progress-mission="y" type="talk"/>
+				<fixed-reward slot-1="item:Quest_Scroll_BackChung_0050"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.932_5" required-register-value="1">
+				<case item="Quest_Scroll_BackChung_0050" msg="q_932_4" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.932_6" required-register-value="1" reward-1="932_final_set1">
+				<case grocery="Quest_Scroll_BackChung_0050" npc-response="qrsp_932_5" object="npc:CH_SA_BunYang_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="StartZone_Event">
+			<destination mission-step-id="2" zone-index="4"/>
+			<destination mission-step-id="3" zone-index="4"/>
+			<destination mission-step-id="4" zone-index="4"/>
+			<destination mission-step-id="5" zone-index="4"/>
+			<destination mission-step-id="6" zone-index="4"/>
+			<destination mission-step-id="1" zone-index="4"/>
+		</transit>
+	</quest>
+</table>

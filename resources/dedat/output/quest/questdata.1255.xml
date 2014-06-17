@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="factionmain1" alias="q_sub_1255" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1255_sum" district-1="suwal" grade="1" group2="QG_AngaeForestSouth" id="1255" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1255" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" faction="factionmain1" faction-level="2" faction-reputation="200" level="41" preceding-quest-1="q_epic_928" preceding-quest-check="and" recommended-level="43">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1255_1" object="npc:ch_murimmaeng_0025" type="talk">
+				<filter-set>
+					<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain1"/>
+				</filter-set>
+			</case>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1255_1" object="npc:ch_murimmaeng_0025" type="talk">
+				<filter-set>
+					<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain1"/>
+				</filter-set>
+			</case>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1255_1" required-register-value="10">
+				<case object="faction:factionmain2" object2="faction:factionmain2" progress-mission="y" type="killed" valid-zone-1="zone_angaesup">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="factionmain1"/>
+						<filter op="ge" subject="case:killed:victim" subject2="case:killed:victim" type="faction-level" value="2"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1255_2" required-register-value="1" reward-1="1255_final_set1" reward-2="1255_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1255_2" object="npc:ch_murimmaeng_0025" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+				<case completion-count="1" npc-response="qrsp_1255_2" object="npc:ch_murimmaeng_0025" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

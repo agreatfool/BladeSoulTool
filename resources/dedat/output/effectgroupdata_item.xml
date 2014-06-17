@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="ItemData" release-side="client" type="effect-group" version="0.3">
+	<record alias="Item_Resurrection_Action_E1_01" effect-1="Item_Resurrection_Action_Resurrection" effect-2="Item_Resurrection_Action_Resurrection_blockact" effect-3="Item_Resurrection_Action_Resurrection_immune" skill-result="hit-critical-hit" target="Second-target" target-state="friend" target-state-first-filter="50020"/>
+	<record alias="Item_Resurrection_Action_E1_01_SP" effect-1="Item_Resurrection_Action_Resurrection_SP" effect-2="Item_Resurrection_Action_Resurrection_blockact_SP" effect-3="Item_Resurrection_Action_Resurrection_immune" skill-result="hit-critical-hit" target="Second-target" target-state="friend" target-state-first-filter="50020"/>
+	<record alias="Item_Resurrection_Action_E1_02" effect-1="Item_Resurrection_Action_Resurrection" effect-2="Item_Resurrection_Action_Resurrection_blockact" effect-3="Item_Resurrection_Action_Resurrection_immune" skill-result="hit-critical-hit" target="Second-target" target-state="friend" target-state-first-filter="40005"/>
+	<record alias="Item_Resurrection_Action_E1_02_SP" effect-1="Item_Resurrection_Action_Resurrection_SP" effect-2="Item_Resurrection_Action_Resurrection_blockact_SP" effect-3="Item_Resurrection_Action_Resurrection_immune" skill-result="hit-critical-hit" target="Second-target" target-state="friend" target-state-first-filter="40005"/>
+	<record alias="effect_GM_Buff_Lv36_E1_01" effect-1="effect_GM_Buff_Lv36_01" skill-result="hit-critical-hit" target="Second-target" target-state="all"/>
+	<record alias="effect_GM_Buff_Lv45_E1_01" effect-1="effect_GM_Buff_Lv45_01" skill-result="hit-critical-hit" target="Second-target" target-state="all"/>
+	<record alias="Item_witheday_0001_firework_E1_01" effect-1="Effect_Item_witheday_0001_firework" skill-result="hit-critical-hit" target="Second-target" target-state="all" target-state-first-filter="40006"/>
+	<record alias="Item_Heart_potion_E1_01" effect-1="Effect_Item_HeartRecharge_0001" skill-result="hit-critical-hit" target="first-target" target-state="all" target-state-first-filter="60125"/>
+	<record alias="Item_BMHeart_potion_E1_01" effect-1="Effect_Item_HeartRecharge_Max" skill-result="hit-critical-hit" target="first-target" target-state="all" target-state-first-filter="60126"/>
+	<record alias="GB_Item_Resurrection_Action_E1_01_Speed" effect-1="Item_Resurrection_Action_Resurrection_speed" effect-2="Item_Resurrection_Action_Resurrection_blockact" effect-3="Item_Resurrection_Action_Resurrection_immune" skill-result="hit-critical-hit" target="Second-target" target-state="friend" target-state-first-filter="50020"/>
+	<record alias="GB_Item_Resurrection_Action_E1_02_Speed" effect-1="Item_Resurrection_Action_Resurrection_speed" effect-2="Item_Resurrection_Action_Resurrection_blockact" effect-3="Item_Resurrection_Action_Resurrection_immune" skill-result="hit-critical-hit" target="Second-target" target-state="friend" target-state-first-filter="40005"/>
+	<record alias="Effect_CN_Event_Gr3_0001_E1_01" effect-1="Effect_CN_Event_Gr3_0001" skill-result="hit-critical-hit" target="Second-target" target-state="all"/>
+	<record alias="Effect_CN_Event_Gr4_0001_E1_01" effect-1="Effect_CN_Event_Gr4_0001" skill-result="hit-critical-hit" target="Second-target" target-state="all"/>
+</table>

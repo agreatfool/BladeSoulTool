@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_376" broadcast-category="field" category="normal" desc="q_376_sum" district-1="jeryoungrim" grade="1" group="제룡림(흑음림)" group2="QG_Delete" id="376" map-group-1-1="jeryoungrim" max-repeat="1" name="숯을 만들어 보아요 (완)" name2="Quest.Name2.376" retired="y" save-type="all">
+		<acquisition level="50" preceding-quest-1="q_epic_311" preceding-quest-check="and" preceding-quest-mission-step-1="2" recommended-level="50"/>
+		<mission-step completion-type="and" id="1" location-x="-3468.2461" location-y="-12366.9727" map="huekummrim">
+			<mission id="1" name="흑음림 숯 가마터의 탄연방 곡운과 대화" name2="Mission.Name2.376_1" required-register-value="1"/>
+		</mission-step>
+		<mission-step completion-type="and" id="3" location-x="-12395.9385" location-y="-28385.3457" map="SanYang_Dun">
+			<mission id="3" name="산양목굴에 있는 숯가마를 이용하여 숯 제작" name2="Mission.Name2.376_3" required-register-value="1"/>
+		</mission-step>
+		<mission-step completion-type="and" id="4" location-x="-6577.6406" location-y="-14143.7695" map="huekummrim">
+			<mission id="4" name="흑음림 군투양의 제자 하운에게 보고" name2="Mission.Name2.376_4" required-register-value="1" reward-1="376_final_set1"/>
+		</mission-step>
+		<mission-step id="2" location-x="-12395.9385" location-y="-28385.3457">
+			<mission id="2" name2="Mission.Name2.376_2" required-register-value="2"/>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_948" broadcast-category="field" category="epic" completed-desc="q_948_completed" completed-list="y" desc="q_948_sum" grade="1" group2="QG_NextbaeCheongEpic2" id="948" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.948" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="50" sort-no="540"/>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.948_4" required-register-value="1">
+				<case mapunit-1="2631_mh_chunggak_0007" mapunit-10="2631_mh_chunggak_0007_1" mapunit-2="2631_mh_chunggak_0013_1" object="npc:MH_WB_ChungGak_0079" object2="npc:MH_WB_ChungGak_0079" progress-mission="y" type="killed"/>
+				<case mapunit-1="2631_mh_chunggak_0007" mapunit-10="2631_mh_chunggak_0007_1" mapunit-2="2631_mh_chunggak_0013_1" object="npc:MH_WB_ChungGak_0078" object2="npc:MH_WB_ChungGak_0078" progress-mission="y" type="killed"/>
+				<case mapunit-1="2631_mh_chunggak_0007" mapunit-10="2631_mh_chunggak_0007_1" mapunit-2="2631_mh_chunggak_0013_1" object="npc:MH_WB_ChungGak_0077" object2="npc:MH_WB_ChungGak_0077" progress-mission="y" type="killed"/>
+				<case mapunit-1="2631_mh_chunggak_0007" mapunit-10="2631_mh_chunggak_0007_1" mapunit-2="2631_mh_chunggak_0013_1" object="npc:MH_WB_ChungGak_0076" object2="npc:MH_WB_ChungGak_0076" progress-mission="y" type="killed"/>
+				<case mapunit-1="2631_mh_chunggak_0007" mapunit-10="2631_mh_chunggak_0007_1" mapunit-2="2631_mh_chunggak_0013_1" object="npc:MH_WB_ChungGak_0075" object2="npc:MH_WB_ChungGak_0075" progress-mission="y" type="killed"/>
+				<case mapunit-1="2631_mh_chunggak_0007" mapunit-10="2631_mh_chunggak_0007_1" mapunit-2="2631_mh_chunggak_0013_1" object="npc:MH_WB_ChungGak_0072" object2="npc:MH_WB_ChungGak_0072" progress-mission="y" type="killed"/>
+				<case mapunit-1="2631_mh_chunggak_0007" mapunit-10="2631_mh_chunggak_0007_1" mapunit-2="2631_mh_chunggak_0013_1" object="npc:MH_WB_ChungGak_0071" object2="npc:MH_WB_ChungGak_0071" progress-mission="y" type="killed"/>
+				<case mapunit-1="2631_mh_chunggak_0007" mapunit-10="2631_mh_chunggak_0007_1" mapunit-2="2631_mh_chunggak_0013_1" object="npc:MH_WB_ChungGak_0070" object2="npc:MH_WB_ChungGak_0070" progress-mission="y" type="killed"/>
+				<case mapunit-1="2631_mh_chunggak_0007" mapunit-10="2631_mh_chunggak_0007_1" mapunit-2="2631_mh_chunggak_0013_1" object="npc:MH_WB_ChungGak_0069" object2="npc:MH_WB_ChungGak_0069" progress-mission="y" type="killed"/>
+				<case mapunit-1="2631_mh_chunggak_0007" mapunit-10="2631_mh_chunggak_0007_1" mapunit-2="2631_mh_chunggak_0013_1" object="npc:MH_WB_ChungGak_0068" object2="npc:MH_WB_ChungGak_0068" progress-mission="y" type="killed"/>
+				<case object="npc:MH_WB_ChungGak_0084" object2="npc:MH_WB_ChungGak_0084" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_WB_ChungGak_0085" object2="npc:MH_WB_ChungGak_0085" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_WB_ChungGak_0086" object2="npc:MH_WB_ChungGak_0086" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_WB_ChungGak_0087" object2="npc:MH_WB_ChungGak_0087" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_WB_ChungGak_0088" object2="npc:MH_WB_ChungGak_0088" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_WB_ChungGak_0089" object2="npc:MH_WB_ChungGak_0089" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_WB_ChungGak_0090" object2="npc:MH_WB_ChungGak_0090" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_WB_ChungGak_0091" object2="npc:MH_WB_ChungGak_0091" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_WB_ChungGak_0092" object2="npc:MH_WB_ChungGak_0092" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_WB_ChungGak_0093" object2="npc:MH_WB_ChungGak_0093" show-in-tooltip="y" type="killed"/>
+				<case npc-response="qrsp_948_8" object="npc:CH_WB_GoBong_0001" type="approach"/>
+				<case npc-response="qrsp_948_4" object="npc:CH_WB_BeonYang_0011" type="approach"/>
+				<case npc-response="qrsp_948_4" object="npc:CH_WB_BeonA_0011" type="approach"/>
+				<case npc-response="qrsp_948_11" object="npc:CH_WB_ChinChin_0012" type="approach"/>
+				<case npc-response="qrsp_948_22" object="npc:CH_WB_DoDanHa_0002" type="approach"/>
+				<case object="npc:MH_WB_ChungGak_0094" object2="npc:MH_WB_ChungGak_0094" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_WB_ChungGak_0095" object2="npc:MH_WB_ChungGak_0095" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_WB_ChungGak_0096" object2="npc:MH_WB_ChungGak_0096" show-in-tooltip="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="3">
+			<mission id="3" name2="Mission.Name2.948_3" required-register-value="1">
+				<case object="npc:CH_WB_DoDanHa_0002" progress-mission="y" type="approach"/>
+				<case npc-response="qrsp_948_10" object="npc:CH_WB_GoBong_0001" type="approach"/>
+				<case npc-response="qrsp_948_6" object="npc:CH_WB_ChinChin_0012" type="approach"/>
+				<case npc-response="qrsp_948_7" object="npc:CH_WB_BeonYang_0011" type="approach"/>
+				<case npc-response="qrsp_948_4" object="npc:CH_WB_BeonA_0011" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.948_11" required-register-value="1">
+				<case mapunit-1="2073_CH_WB_JaKyoungDan_0012_01" mapunit-10="2073_CH_WB_JaKyoungDan_0012_02" npc-response="qrsp_948_23" object="npc:CH_WB_JaKyoungDan_0012" progress-mission="y" type="talk"/>
+				<case object="zone:zone_ChRyoungCHN_Doctor_Act6_1" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_ChRyoungCHN_Act6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="12">
+			<mission id="12" name2="Mission.Name2.948_12" required-register-value="1">
+				<case object="zone:zone_ChRyoungCHN_Doctor_Act6_1" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_ChRyoungCHN_Act6" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="npc:ME_WB_ChungGak_0067" progress-mission="y" type="npc-bleeding-occured"/>
+			</mission>
+		</mission-step>
+		<mission-step id="14">
+			<mission id="14" name2="Mission.Name2.948_14" required-register-value="1">
+				<case object="zone:zone_ChRyoungCHN_Doctor_Act6_1" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_ChRyoungCHN_Act6" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_ChRyoungCHN_Jujum_Act6" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_948_25" object="npc:CH_WB_KwakJun_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_948_26" object="npc:CH_WB_Citizen_0038" type="approach"/>
+				<case npc-response="qrsp_948_49" object="npc:CH_WB_ChungGak_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="15">
+			<mission id="15" name2="Mission.Name2.948_15" required-register-value="1" reward-1="948_final_set1">
+				<case npc-response="qrsp_948_27" object="npc:CH_WB_KwakJun_0002" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_948_29" object="npc:CH_WB_BeonYang_0010" type="approach"/>
+				<case npc-response="qrsp_948_31" object="npc:CH_JaKyoungDan_0028" type="approach"/>
+				<case npc-response="qrsp_948_32" object="npc:Ctzn_JinM_CheongRyeongCtzn_GwanCheolSu_001" type="approach"/>
+				<case npc-response="qrsp_948_33" object="npc:CH_AnDuMae_0001" type="approach"/>
+				<case npc-response="qrsp_948_34" object="npc:CH_FactionA_Guard_0005" type="approach"/>
+				<case npc-response="qrsp_948_35" object="npc:CH_FactionA_Guard_0003" type="approach"/>
+				<case npc-response="qrsp_948_36" object="npc:CH_MerchantCostume_001" type="approach"/>
+				<case npc-response="qrsp_948_37" object="npc:Ctzn_JinM_Ohaengsang_001" type="approach"/>
+				<case npc-response="qrsp_948_38" object="npc:CH_FactionA_Guard_0004" type="approach"/>
+				<case npc-response="qrsp_948_39" object="npc:Ctzn_JinM_CheongRyeongCtzn_YeomGu_001" type="approach"/>
+				<case npc-response="qrsp_948_40" object="npc:Ctzn_JinF_CheongRyeongCtzn_NaYeRin_001" type="approach"/>
+				<case npc-response="qrsp_948_41" object="npc:Ctzn_JinF_CheongRyeongCtzn_RyuBekEon_001" type="approach"/>
+				<case npc-response="qrsp_948_28" object="npc:CH_WB_Ryu_0010" type="approach"/>
+				<case npc-response="qrsp_948_30" object="npc:CH_WB_ChinChin_0011" type="approach"/>
+				<case object="zone:zone_ChRyoungCHN_Doctor_Act6_2" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_948_50" object="npc:CH_WB_GoBong_0004" type="approach"/>
+				<case npc-response="qrsp_948_51" object="npc:CH_WB_Uhun_0003" type="approach"/>
+				<case npc-response="qrsp_948_52" object="npc:CH_WB_DoDanHa_0001" type="approach"/>
+				<case npc-response="qrsp_948_52" object="npc:CH_WB_SunJun_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_949"/>
+		</completion>
+		<transit id="1" zone="zone_ChRyoungCHN">
+			<destination mission-step-id="4" zone-index="3"/>
+			<destination mission-step-id="3" zone-index="3"/>
+			<destination mission-step-id="2" zone-index="3"/>
+			<destination mission-step-id="1" zone-index="3"/>
+			<destination mission-step-id="8" zone-index="3"/>
+			<destination mission-step-id="9" zone-index="2"/>
+			<destination mission-step-id="10" zone-index="2"/>
+			<destination mission-step-id="11" zone-index="2"/>
+			<destination mission-step-id="12" zone-index="2"/>
+			<destination mission-step-id="13" zone-index="2"/>
+			<destination mission-step-id="5" zone-index="3"/>
+			<destination mission-step-id="6" zone-index="3"/>
+			<destination mission-step-id="7" zone-index="3"/>
+			<destination mission-step-id="14" zone-index="2"/>
+		</transit>
+		<transit id="2" zone="zone_ChRyoungCHN_Doctor_SP">
+			<destination mission-step-id="8" zone-index="4"/>
+			<destination mission-step-id="7" zone-index="4"/>
+			<destination mission-step-id="6" zone-index="4"/>
+			<destination mission-step-id="5" zone-index="4"/>
+			<destination mission-step-id="15" zone-index="5"/>
+			<destination mission-step-id="9" zone-index="4"/>
+			<destination mission-step-id="10" zone-index="4"/>
+			<destination mission-step-id="11" zone-index="4"/>
+			<destination mission-step-id="12" zone-index="4"/>
+			<destination mission-step-id="13" zone-index="4"/>
+			<destination mission-step-id="14" zone-index="4"/>
+		</transit>
+		<transit id="3" zone="zone_ChRyoungCHN_Jujum_Act6_default">
+			<destination mission-step-id="14" zone-index="1"/>
+		</transit>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.948_2" required-register-value="1">
+				<case npc-response="qrsp_948_1" object="npc:CH_WB_GoBong_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_948_3" object="npc:CH_WB_BeonYang_0011" type="approach"/>
+				<case npc-response="qrsp_948_2" object="npc:CH_WB_ChinChin_0012" type="approach"/>
+				<case npc-response="qrsp_948_4" object="npc:CH_WB_BeonA_0011" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.948_10" required-register-value="1">
+				<case npc-response="qrsp_948_21" object="npc:CH_WB_DoDanHa_0003" progress-mission="y" type="talk"/>
+				<case object="zoneenv:2073_foot_03" object2="zoneenv2:2073_foot_03" progress-mission="reaction-only" type="env-entered"/>
+				<case npc-response="qrsp_948_19" object="npc:CH_WB_Ryu_0011" type="approach"/>
+				<case npc-response="qrsp_948_20" object="npc:CH_WB_GoBong_0003" type="approach"/>
+				<case object="zone:zone_ChRyoungCHN_Doctor_Act6_1" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_ChRyoungCHN_Act6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.948_9" required-register-value="1">
+				<case mapunit-1="2631_e_onoff_supplybox_01" object="zone:zone_ChRyoungCHN_Act6" progress-mission="y" type="enter-zone"/>
+				<case npc-response="qrsp_948_19" object="npc:CH_WB_Ryu_0005" type="approach"/>
+				<case npc-response="qrsp_948_20" object="npc:CH_WB_GoBong_0002" type="approach"/>
+				<case object="zone:zone_ChRyoungCHN_Doctor_Act6_1" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_948_44" object="npc:CH_WB_BeonYang_0007" type="approach"/>
+				<case npc-response="qrsp_948_44" object="npc:CH_WB_BeonA_0006" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.948_8" required-register-value="1">
+				<case npc-response="qrsp_948_15" object="npc:CH_WB_KwakJun_0003" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_948_16" object="npc:CH_WB_GoBong_0002" type="approach"/>
+				<case npc-response="qrsp_948_17" object="npc:CH_WB_Ryu_0005" type="approach"/>
+				<case npc-response="qrsp_948_14" object="npc:CH_WB_BeonYang_0007" type="approach"/>
+				<case object="zone:zone_ChRyoungCHN_Doctor_Act6_1" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_948_44" object="npc:CH_WB_BeonA_0006" type="approach"/>
+				<case npc-response="qrsp_948_43" object="npc:CH_WB_ChinChin_0008" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.948_6" required-register-value="1">
+				<case npc-response="qrsp_948_12" object="npc:CH_WB_KwakJun_0003" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_948_13" object="npc:CH_WB_ChinChin_0008" type="approach"/>
+				<case npc-response="qrsp_948_45" object="npc:CH_WB_GoBong_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.948_5" required-register-value="1">
+				<case mapunit-1="2072_Guide" object="zone:zone_ChRyoungCHN_Doctor_Act6_1" progress-mission="y" type="enter-zone"/>
+				<case npc-response="qrsp_948_22" object="npc:CH_WB_DoDanHa_0002" type="approach"/>
+				<case npc-response="qrsp_948_8" object="npc:CH_WB_GoBong_0001" type="approach"/>
+				<case npc-response="qrsp_948_4" object="npc:CH_WB_BeonYang_0011" type="approach"/>
+				<case npc-response="qrsp_948_4" object="npc:CH_WB_BeonA_0011" type="approach"/>
+				<case npc-response="qrsp_948_9" object="npc:CH_WB_ChinChin_0012" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="13">
+			<mission id="13" name2="Mission.Name2.948_13" required-register-value="1">
+				<case object="zone:zone_ChRyoungCHN_Doctor_Act6_1" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_ChRyoungCHN_Act6" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_948_24" object="npc:CH_WB_ChungGak_0009" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_948_48" object="npc:CH_WB_ChungGak_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<transit id="4" zone="StartZone_Event">
+			<destination mission-step-id="1" zone-index="7"/>
+			<destination mission-step-id="2" zone-index="5"/>
+			<destination mission-step-id="3" zone-index="5"/>
+			<destination mission-step-id="4" zone-index="5"/>
+			<destination mission-step-id="5" zone-index="5"/>
+			<destination mission-step-id="6" zone-index="5"/>
+			<destination mission-step-id="7" zone-index="5"/>
+			<destination mission-step-id="8" zone-index="5"/>
+			<destination mission-step-id="9" zone-index="5"/>
+			<destination mission-step-id="10" zone-index="5"/>
+			<destination mission-step-id="11" zone-index="5"/>
+			<destination mission-step-id="12" zone-index="5"/>
+			<destination mission-step-id="13" zone-index="5"/>
+			<destination mission-step-id="14" zone-index="5"/>
+			<destination mission-step-id="15" zone-index="5"/>
+		</transit>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.948_7" required-register-value="1">
+				<case npc-response="qrsp_948_42" object="npc:CH_WB_GoBong_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_ChRyoungCHN_Doctor_Act6_1" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_948_43" object="npc:CH_WB_ChinChin_0008" type="approach"/>
+				<case indicator="quest-epic-can-progress" object="npc:CH_WB_KwakJun_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.948_1" required-register-value="1">
+				<case npc-response="qrsp_947_22" object="npc:CH_WB_Ryu_0004" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_947_11" object="npc:CH_WB_SeoYeon_0002" type="approach"/>
+				<case object="zone:StartZone_Epic6th_Cave" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

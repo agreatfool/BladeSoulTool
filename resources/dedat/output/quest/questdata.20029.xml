@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_20029" broadcast-category="field" category="normal" desc="q_20029_sum" grade="1" group2="QG_Haodong" id="20029" map-group-1-1="baekchung" max-repeat="-1" name2="Quest.Name2.20029" save-type="except-completion">
+		<acquisition level="45" recommended-level="47">
+			<case acquire-quest="y" drop-gadget="y" grocery="Quest_Grocery_BackChung_0003" grocery-count="1" npc-response="qrsp_20029_1" object="npc:CH_CT_PotAxPartyA_0007" party-broadcast="n" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.20029_1" required-register-value="1">
+				<case mapunit-1="5111_CE_CT_Pot_0002_s20029" object="npc:ce_ct_pot_0002" object-1="npc:CE_CT_Pot_0003" object2="npc:ce_ct_pot_0002" object2-1="npc:CE_CT_Pot_0003" party-broadcast="n" progress-mission="y" show-in-tooltip="y" skill="Gadget_Q_IronHammer_0001" type="killed"/>
+				<case object-1="npc:CE_CT_Pot_0002" object-2="npc:ce_ct_pot_0003" object2-1="npc:CE_CT_Pot_0002" object2-2="npc:ce_ct_pot_0003" party-broadcast="n" progress-mission="n" show-in-tooltip="y" skill="Gadget_Q_IronHammer_0001" skill3="Gadget_Q_IronHammer_0001" type="skill"/>
+				<case button-text-accept="q_20029_ok" button-text-cancel="q_20029_no" drop-gadget="y" grocery="Quest_Grocery_BackChung_0003" npc-response="qrsp_20029_2" object="npc:CH_CT_PotAxPartyA_0007" party-broadcast="n" progress-mission="reaction-only" type="talk"/>
+				<case drop-gadget="y" grocery="Quest_Grocery_BackChung_0003" object="zoneenv:e_chest_hammerstand_01" object2="zoneenv2:e_chest_hammerstand_01" party-broadcast="n" progress-mission="reaction-only" type="manipulate"/>
+				<case npc-response="qrsp_20029_4" object="npc:ch_ct_potaxpartyb_0006" party-broadcast="n" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.20029_2" required-register-value="1" reward-1="20029_final_set1">
+				<case npc-response="qrsp_20029_3" object="npc:CH_CT_PotAxPartyC_0006" party-broadcast="n" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

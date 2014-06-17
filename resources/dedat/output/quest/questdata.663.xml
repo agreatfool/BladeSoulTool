@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_663" broadcast-category="field" category="normal" desc="q_663_sum" district-1="deasamak" grade="1" group2="QG_HyeolPungSaMak" id="663" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.663" save-type="all">
+		<acquisition level="23" preceding-quest-1="q_epic_508" preceding-quest-check="and" recommended-level="25">
+			<case acquire-quest="y" indicator-social="q_663_s_indi_1" msg="q_663_s" npc-response="qrsp_663_3" object="npc:ch_yugachon_0021" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-64345.2734" location-y="-20116.2344" map="yugachon">
+			<mission id="1" name2="Mission.Name2.663_1" required-register-value="1">
+				<case indicator-social="q_663_m1_indi_1" msg="q_663_m1" npc-response="qrsp_663_1" object="npc:ch_yugachon_0022" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-44101.5234" location-y="-15166.082" map="yeolsajeedea">
+			<mission id="2" name2="Mission.Name2.663_2" required-register-value="12">
+				<case looting="q_663_Grocery_Meat_of_Wool_1_icon" object="npc:me_juno_0002" object2="npc:me_juno_0002" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+				<case looting="q_663_Grocery_Meat_of_Wool_1_icon" mapunit-1="3010_ME_Juno_0002_3" mapunit-2="3010_ME_Juno_0002_4" mapunit-3="3010_ME_Juno_0002_5" object="npc:me_juno_0005" object2="npc:me_juno_0005" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-64345.2734" location-y="-20116.2344" map="yugachon">
+			<mission id="3" name2="Mission.Name2.663_3" required-register-value="1" reward-1="663_final_set1">
+				<case indicator-social="q_663_m3_indi_1" msg="q_663_m3" npc-response="qrsp_663_2" object="npc:ch_yugachon_0022" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

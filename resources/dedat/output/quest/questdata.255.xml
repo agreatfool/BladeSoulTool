@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_255" broadcast-category="always" category="normal" content-type="elite-skill" grade="1" group2="QG_Elite" id="255" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.255" save-type="all">
+		<acquisition job-1="기공사" level="1" recommended-level="50">
+			<case acquire-quest="y" grocery="Quest_Scroll_EliteSkill_0040" item="Quest_Scroll_EliteSkill_0040" msg="q_255_1" type="talk-to-item"/>
+			<case acquire-quest="y" grocery="Quest_Scroll_EliteSkill_0096" item="Quest_Scroll_EliteSkill_0096" msg="q_255_1" type="talk-to-item"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.255_1" required-register-value="100">
+				<tutorial-case object-1="npc:me_ct_geogeoboong_0001" object2-1="npc:me_ct_geogeoboong_0001" progress-mission="y" skill-sequence="FM_PvE_EliteSkill_0040_EnergyMissile_critical-hit" type="skill-sequence"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.255_2" required-register-value="100">
+				<tutorial-case object-1="npc:ME_CT_MeiOne_0009" object2-1="npc:ME_CT_MeiOne_0009" progress-mission="y" skill-sequence="FM_PvE_EliteSkill_0040_EnergyMissile_critical-hit" type="skill-sequence"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.255_3" required-register-value="100">
+				<tutorial-case object-1="npc:MH_CT_BaekCheongPa_0002" object2-1="npc:MH_CT_BaekCheongPa_0002" progress-mission="y" skill-sequence="FM_PvE_EliteSkill_0040_EnergyMissile_critical-hit" type="skill-sequence"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.255_4" required-register-value="5">
+				<case npc="ME_C3_YettyCaveBoss_0002" progress-mission="y" skill3-id-1="22106" skill3-id-10="22134" skill3-id-2="22107" skill3-id-3="22111" skill3-id-4="22112" skill3-id-5="22113" skill3-id-6="22114" skill3-id-7="22131" skill3-id-8="22132" skill3-id-9="22133" type="finish-blow"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

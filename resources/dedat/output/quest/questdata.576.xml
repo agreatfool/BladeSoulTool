@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_576" broadcast-category="field" category="normal" desc="q_576_sum" district-1="deasamak" grade="1" group2="QG_ToMunJinNorth" id="576" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.576" save-type="all">
+		<acquisition level="22" preceding-quest-1="q_epic_506" preceding-quest-check="and" recommended-level="24">
+			<case acquire-quest="y" indicator-social="q_576_s_indi_1" msg="q_576_s" npc-response="qrsp_576_2" object="npc:ch_shaman_029" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_576_des_1" id="1" location-x="-37439.5156" location-y="-67456.3828" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.576_1" required-register-value="10">
+				<case mapunit-1="3003_e_onoff_roadlamp_01" mapunit-2="3003_ME_ZombieA_004" object="npc:ME_ZombieA_004" object2="npc:ME_ZombieA_004" progress-mission="y" type="killed"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_roadlamp_04" object2="zoneenv2:e_onoff_roadlamp_04" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_roadlamp_03" object2="zoneenv2:e_onoff_roadlamp_03" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_roadlamp_02" object2="zoneenv2:e_onoff_roadlamp_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_roadlamp_01" object2="zoneenv2:e_onoff_roadlamp_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_576_des_2" id="2" location-x="-38079.5938" location-y="-54654.8164" map="toemunjean">
+			<mission id="2" name2="Mission.Name2.576_2" required-register-value="1" reward-1="576_final_set1">
+				<case indicator-social="q_576_m2_indi_1" msg="q_576_m2" npc-response="qrsp_576_1" object="npc:ch_dweller_044" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

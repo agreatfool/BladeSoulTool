@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_783" broadcast-category="field" category="normal" desc="q_783_sum" district-1="deasamak" grade="1" group2="QG_SaJiSeokRimEast" id="783" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.783" save-type="all">
+		<acquisition level="31" preceding-quest-1="q_epic_527" preceding-quest-check="and" recommended-level="33">
+			<case acquire-quest="y" indicator-social="q_783_s_indi_1" msg="q_783_s" npc-response="qrsp_783_1" object="npc:ch_mayeongganggun_0019" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="34737.941" location-y="-12904.277" map="sajisukrim">
+			<mission id="1" name2="Mission.Name2.783_1" required-register-value="7">
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_gravestone_01" object2="zoneenv2:e_onoff_gravestone_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_gravestone_02" object2="zoneenv2:e_onoff_gravestone_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_gravestone_03" object2="zoneenv2:e_onoff_gravestone_03" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_gravestone_04" object2="zoneenv2:e_onoff_gravestone_04" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_gravestone_05" object2="zoneenv2:e_onoff_gravestone_05" progress-mission="reaction-only" type="manipulate"/>
+				<case looting="q_783_Quest_spiritual_stone002_1_icon" mapunit-1="3024_e_onoff_gravestone_01" object="npc:me_soldier_0001" object2="npc:me_soldier_0001" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="34434.254" location-y="-18674.316" map="sajisukrim">
+			<mission id="2" name2="Mission.Name2.783_2" required-register-value="1" reward-1="783_final_set1">
+				<case indicator-social="q_783_m2_indi_1" msg="q_783_m2" npc-response="qrsp_783_2" object="npc:ch_mayeongganggun_0019" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

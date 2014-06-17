@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_672" broadcast-category="field" category="normal" desc="q_672_sum" district-1="deasamak" grade="1" group2="QG_MaengDokSaMak" id="672" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.672" save-type="all">
+		<acquisition level="32" preceding-quest-1="q_epic_541" preceding-quest-check="and" recommended-level="34">
+			<case acquire-quest="y" indicator-social="q_672_s_indi_1" msg="q_672_s" npc-response="qrsp_672_2" object="npc:CH_GangHoIn_0003" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-20329.043" location-y="9258.9766" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.672_1" required-register-value="1">
+				<case loot-item="quest_672_1" looting="q_672_1_Quest_hair_growth_solution_manual_1_icon" mapunit-1="3010_e_onoff_dangpigeon_01" object="zoneenv:e_onoff_dangpigeon_01" object2="zoneenv2:e_onoff_dangpigeon_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-18650.9844" location-y="11030.2617" map="yeolsajeedea">
+			<mission id="2" name2="Mission.Name2.672_2" required-register-value="1">
+				<case loot-item="quest_672_2" looting="q_672_2_Quest_hair_growth_solution_manual_1_icon" mapunit-1="3010_e_onoff_pangpigeon_01" object="zoneenv:e_onoff_pangpigeon_01" object2="zoneenv2:e_onoff_pangpigeon_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-19490.0117" location-y="15598.3086" map="yeolsajeedea">
+			<mission id="3" name2="Mission.Name2.672_3" required-register-value="1">
+				<case loot-item="quest_672_3" looting="q_672_3_Quest_hair_growth_solution_manual_1_icon" mapunit-1="3010_e_onoff_nampigeon_01" object="zoneenv:e_onoff_nampigeon_01" object2="zoneenv2:e_onoff_nampigeon_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-17998.4063" location-y="12987.9961" map="yeolsajeedea">
+			<mission id="4" name2="Mission.Name2.672_4" required-register-value="1" reward-1="672_final_set1">
+				<case indicator-social="q_672_m4_indi_1" msg="q_672_m4" npc-response="qrsp_672_1" object="npc:ch_dokgomun_0001" progress-mission="y" type="talk"/>
+				<completion-loss item-1="quest_672_1" item-2="quest_672_2" item-3="quest_672_3"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="quest_672_1" item-2="quest_672_2" item-3="quest_672_3"/>
+	</quest>
+</table>

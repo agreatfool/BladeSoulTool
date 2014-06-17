@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_352" broadcast-category="field" category="normal" desc="q_352_sum" district-1="jeryoungrim" grade="1" group="제룡림(월영 공동묘지)" group2="QG_WalYoungCemetery" id="352" map-group-1-1="jeryoungrim" max-repeat="1" name="혈강시의 배후 (완)" name2="Quest.Name2.352" save-type="all">
+		<acquisition level="6" preceding-quest-1="q_epic_308" preceding-quest-2="q_sub_349" preceding-quest-check="and" recommended-level="8">
+			<case acquire-quest="y" indicator-social="q_352_s_indi_1" msg="q_352_s" npc-response="qrsp_352_1" object="npc:ctzn_jinm_moyongjung_001" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="2" location-x="-35842.0703" location-y="-33253.7344" map="mangjasup">
+			<mission id="2" name="소각장에 있는 영환도사 모용중에게 보고" name2="Mission.Name2.352_2" required-register-value="1" reward-1="352_final_set1">
+				<case indicator-social="q_352_m2_indi_1" msg="q_352_m2" npc-response="qrsp_352_2" object="npc:ctzn_jinm_moyongjung_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="1" location-x="-35161.2734" location-y="-24595.084" map="dogul_dun">
+			<mission id="1" name="파헤쳐진 무덤에 있는 주술사 나추옹 처치" name2="Mission.Name2.352_1" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="2601_mob_jimm_utnsl_shm_majoman_q_001" object="npc:mob_jimm_utnsl_shm_majoman_q_001" object2="npc:mob_jimm_utnsl_shm_majoman_q_001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

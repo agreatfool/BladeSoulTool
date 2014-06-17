@@ -1,0 +1,495 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="CombatData" release-side="client" type="effect-group" version="0.3">
+	<record alias="Gadget_BombA_Damage_Lv1_E1_01" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Damage_Lv2_E1_01" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Damage_Lv3_E1_01" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_PotA_Damage_Lv1_E1_01" effect-1="80003" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_PotA_Damage_Lv2_E1_01" effect-1="80004" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_PotA_Damage_Lv3_E1_01" effect-1="80005" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_PotA_Damage_Lv4_E1_01" effect-1="80006" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_ClubA_Damage_Lv1_E1_01" effect-1="80007" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_ClubA_Damage_Lv2_E1_01" effect-1="80008" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_BowA_Damage_Lv1_E1_01" effect-1="80009" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_ShortswordA_Damage_Lv1_E1_01" effect-1="80010" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Healpot_Heal_Lv1_E1_01" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="all"/>
+	<record alias="Gadget_SlowswordA_Damage_Lv1_E1_01" effect-1="80012" effect-2="80013" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_TimebombA_Damage_Lv1_E1_01" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="all"/>
+	<record alias="Gadget_Kangsi_Damage_Lv1_E1_01" effect-1="80015" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Firewood_Damage_Lv1_E1_01" effect-1="80016" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Torchlight_Damage_Lv1_E1_01" effect-1="80017" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_StoneA_Damage_Lv1_E1_01" effect-1="80018" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_BombA2_Damage_Lv1_E1_01" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_WaterpotA_Damage_Lv1_E1_01" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Bone_Damage_Lv1_E1_01" effect-1="80021" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Sesamepot_Damage_Lv1_E1_01" effect-1="80022" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Pastepot_Buff_Lv1_E1_01" effect-1="80023" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="all"/>
+	<record alias="Gadget_WaterpotB_Damage_Lv1_E1_01" effect-1="80024" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_OneHand_BombA_Damage_Lv1_E1_01" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Test_Rope_stun_Lv1_E1_01" effect-1="80027" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Test_Rifle_Damage_Lv1_E1_01" effect-1="80028" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Test_Revolver_Damage_Lv1_E1_01" effect-1="80029" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Hades_Lantern_Damage_Lv1_E1_01" effect-1="80030" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Ground_SeedA_Damage_Lv1_E1_01" effect-1="80031" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_YeopSan_BagA_Damage_Lv1_E1_01" effect-1="80032" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_OneHand_BombA_Damage_Lv12_E1_01" effect-1="Gadget_OneHand_BombA_Damage_Lv12" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_RockColum_Damage_Lv28_E1_01" effect-1="80034" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_OneHand_DarkCrazyTribeCloth_Lv23_E1_01" effect-1="80035" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_Lantern_Lv4_E1_01" effect-1="80036" effect-2="80037" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_OneHand_TimeBombA_Lv13_E1_01" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_OneHand_RopeA_Lv15_E1_01" effect-1="80040" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_RifleA_Lv15_E1_01" effect-1="80041" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_RifleA_Lv7_E1_01" effect-1="80000380" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_OneHand_TimeBombA_KnockBack_Lv13_E1_01" effect-1="80000390" effect-2="80000391" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Sesame_PotA_E1_01" effect-1="80000400" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Perilla_PotA_E1_01" effect-1="Gadget_Q_Perilla_PotA_buff" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_PepperA_E1_01" effect-1="80000420" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Flash_BangA_E1_01" effect-1="80000430" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_IronHammerA_E1_01" effect-1="Gadget_Q_IronHammerA_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_FirewoodB_E1_01" effect-1="80000450" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_SwordA_E1_01" effect-1="80000460" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_SwordB_E1_01" effect-1="80000470" effect-2="Gadget_Q_SwordB_buff" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_PoisonedNeedleA_E1_01" effect-1="Gadget_Q_PoisonedNeedleA_stun" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Dark_SwordA_E1_01" effect-1="Gadget_Q_Dark_SwordA_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_OneHand_DetecterA_E1_01" effect-1="Gadget_OneHand_DetecterA_BurrowScan" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_OneHand_DetecterB_E1_01" effect-1="Gadget_OneHand_DetecterB_BurrowScan" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_OneHand_DetecterD_E1_01" effect-1="Gadget_OneHand_DetecterD_BurrowScan" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_OneHand_RockA_E1_01" effect-1="Gadget_OneHand_RockA_stun2" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_BomB_PvPvEA_E1_01" effect-1="Gadget_Q_BomB_PvPvEA_stun" effect-2="Gadget_Q_BomB_PvPvEA_damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_DrumA_E1_01" effect-1="Gadget_Q_Damage_common" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_GourdBottleA_E1_01" effect-1="Gadget_Q_GourdBottleA_death" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_DarkForce_CrystalA_E1_01" effect-1="Gadget_Q_DarkForce_CrystalA_death" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Flash_BangB_E1_01" effect-1="Gadget_Q_Flash_BangB_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_OneHand_PoisonNeedleA_Lv25_E1_01" effect-1="Gadget_Q_Damage_common" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_SwordC_E1_01" effect-1="Gadget_Q_SwordC_Damage_Lv1" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_FishA" effect-1="Gadget_Q_FishA_Damage_Lv1" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_BombB_E1_01" effect-1="Gadget_Q_Damage_common" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_SkullA_E1_01" effect-1="Gadget_Q_SkullA_dispel" effect-2="Gadget_Q_SkullA_Stun" skill-result="hit-critical-hit" target="first-target" target-state="enemy" target-state-first-filter="40042"/>
+	<record alias="Gadget_Q_SkullA_E1_02" skill-result="hit-critical-hit" target="first-target" target-state="enemy" target-state-first-filter="40043"/>
+	<record alias="Gadget_Q_ChainA_E1_01" effect-1="Gadget_Q_ChainADamage_Lv1" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_BombC_E1_01" effect-1="Gadget_Q_BombC_Damage_Lv1" effect-2="Gadget_Q_BombC_Stun" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv1_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv1_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv1_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv2_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv2_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv2_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv3_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv3_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv3_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv4_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv4_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv4_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv5_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv5_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv5_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv6_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv6_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv6_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv7_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv7_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv7_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv8_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv8_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv8_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv9_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv9_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv9_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv10_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv10_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv10_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv11_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv11_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv11_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv12_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv12_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv12_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv13_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv13_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv13_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv14_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv14_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv14_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv15_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv15_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv15_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv16_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv16_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv16_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv17_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv17_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv17_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv18_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv18_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv18_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv19_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv19_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv19_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv20_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv20_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv20_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv21_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv21_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv21_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv22_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv22_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv22_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv23_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv23_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv23_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv24_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv24_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv24_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv25_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv25_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv25_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv26_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv26_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv26_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv27_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv27_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv27_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv28_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv28_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv28_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv29_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv29_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv29_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv30_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv30_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv30_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv31_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv31_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv31_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv32_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv32_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv32_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv33_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv33_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv33_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv34_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv34_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv34_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv35_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv35_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv35_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv36_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv36_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv36_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv37_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv37_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv37_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv38_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv38_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv38_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv39_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv39_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv39_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv40_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv40_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv40_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv41_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv41_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv41_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv42_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv42_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv42_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv43_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv43_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv43_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv44_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv44_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv44_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv45_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv45_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv45_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv46_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv46_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv46_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv47_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv47_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv47_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv48_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv48_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv48_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv49_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv49_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv49_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_TwoHand_Flylizard_LanternA_Lv50_E1_01" effect-1="Gadget_TwoHand_Flylizard_Lantern_Lv50_damage" effect-2="Gadget_TwoHand_Flylizard_Lantern_Lv50_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_TorchlightC_E1_01" effect-1="Gadget_Q_TorchlightC_Damage_Lv1" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_TorchlightD_E1_01" effect-1="Gadget_Q_TorchlightD_Damage_Lv1" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv1_E1_01" effect-1="Gadget_BombA_Lv1_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv2_E1_01" effect-1="Gadget_BombA_Lv2_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv3_E1_01" effect-1="Gadget_BombA_Lv3_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv4_E1_01" effect-1="Gadget_BombA_Lv4_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv5_E1_01" effect-1="Gadget_BombA_Lv5_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv6_E1_01" effect-1="Gadget_BombA_Lv6_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv7_E1_01" effect-1="Gadget_BombA_Lv7_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv8_E1_01" effect-1="Gadget_BombA_Lv8_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv9_E1_01" effect-1="Gadget_BombA_Lv9_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv10_E1_01" effect-1="Gadget_BombA_Lv10_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv11_E1_01" effect-1="Gadget_BombA_Lv11_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv12_E1_01" effect-1="Gadget_BombA_Lv12_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv13_E1_01" effect-1="Gadget_BombA_Lv13_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv14_E1_01" effect-1="Gadget_BombA_Lv14_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv15_E1_01" effect-1="Gadget_BombA_Lv15_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv16_E1_01" effect-1="Gadget_BombA_Lv16_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv17_E1_01" effect-1="Gadget_BombA_Lv17_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv18_E1_01" effect-1="Gadget_BombA_Lv18_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv19_E1_01" effect-1="Gadget_BombA_Lv19_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv20_E1_01" effect-1="Gadget_BombA_Lv20_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv21_E1_01" effect-1="Gadget_BombA_Lv21_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv22_E1_01" effect-1="Gadget_BombA_Lv22_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv23_E1_01" effect-1="Gadget_BombA_Lv23_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv24_E1_01" effect-1="Gadget_BombA_Lv24_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv25_E1_01" effect-1="Gadget_BombA_Lv25_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv26_E1_01" effect-1="Gadget_BombA_Lv26_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv27_E1_01" effect-1="Gadget_BombA_Lv27_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv28_E1_01" effect-1="Gadget_BombA_Lv28_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv29_E1_01" effect-1="Gadget_BombA_Lv29_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv30_E1_01" effect-1="Gadget_BombA_Lv30_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv31_E1_01" effect-1="Gadget_BombA_Lv31_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv32_E1_01" effect-1="Gadget_BombA_Lv32_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv33_E1_01" effect-1="Gadget_BombA_Lv33_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv34_E1_01" effect-1="Gadget_BombA_Lv34_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv35_E1_01" effect-1="Gadget_BombA_Lv35_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv36_E1_01" effect-1="Gadget_BombA_Lv36_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv37_E1_01" effect-1="Gadget_BombA_Lv37_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv38_E1_01" effect-1="Gadget_BombA_Lv38_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv39_E1_01" effect-1="Gadget_BombA_Lv39_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv40_E1_01" effect-1="Gadget_BombA_Lv40_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv41_E1_01" effect-1="Gadget_BombA_Lv41_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv42_E1_01" effect-1="Gadget_BombA_Lv42_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv43_E1_01" effect-1="Gadget_BombA_Lv43_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv44_E1_01" effect-1="Gadget_BombA_Lv44_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv45_E1_01" effect-1="Gadget_BombA_Lv45_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv46_E1_01" effect-1="Gadget_BombA_Lv46_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv47_E1_01" effect-1="Gadget_BombA_Lv47_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv48_E1_01" effect-1="Gadget_BombA_Lv48_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv49_E1_01" effect-1="Gadget_BombA_Lv49_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv50_E1_01" effect-1="Gadget_BombA_Lv50_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombA_Lv51_E1_01" effect-1="Gadget_BombA_Lv51_Damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_SapA_E1_01" effect-1="Gadget_Q_SapA_Damage" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_IronHammerB_E1_01" effect-1="Gadget_Q_IronHammerB_Damage" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Ref_Torchlight_E1_01" effect-1="Gadget_Ref_Torchlight_damage" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Ref_Torchlight_E1_02" effect-1="Gadget_Ref_Torchlight_damage2" effect-2="Gadget_Ref_Torchlight_Lv1_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" target-state-first-filter="40007"/>
+	<record alias="Gadget_Ref_OilCask_E1_01" effect-1="Gadget_Ref_OilCask_oily" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Ref_SorceryBomb_E1_01" effect-1="Gadget_Ref_SorceryBomb_damage" effect-2="Gadget_Ref_SorceryBomb_midair" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Ref_BiYeon_E1_01" effect-1="Gadget_Ref_BiYeon_Damage" individual-probability="n" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_WaterPotD_E1_01" effect-1="Gadget_Q_WaterPotD_Damage" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_DaggerA_E1_01" effect-1="Gadget_Q_DaggerA_Damage" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_AxeA_E1_01" effect-1="Gadget_Q_AxeA_Damage" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_ShockBombA_Lv26_E1_01" effect-1="Gadget_ShockBombA_Lv26_Damage" effect-2="Gadget_ShockBombA_Lv26_midair" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_OilCaskA_Lv24_E1_01" effect-1="Gadget_OilCaskA_Lv24_Oily" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_TorchlightA_Lv24_E1_01" effect-1="Gadget_Ref_Torchlight_damage" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_TorchlightA_Lv24_E1_02" effect-1="Gadget_Ref_Torchlight_damage2" effect-2="Gadget_Ref_Torchlight_Lv1_burn" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" target-state-first-filter="40007"/>
+	<record alias="Gadget_BombS_Lv20_E1_01" effect-1="Gadget_BombS_Lv20_damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Deadbody_Pest_E1_01" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Deadbody_PestSmall_E1_01" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Deadbody_HolyMushroom_E1_01" skill-result="hit-critical-hit" target="second-target" target-state="all"/>
+	<record alias="Gadget_Q_BombA_E1_01" effect-1="Gadget_Q_BombA_Damage" effect-2="Gadget_OneHand_BombA" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_RedBombA_E1_01" effect-1="Gadget_Q_RedBombA_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_BlueBombA_E1_01" effect-1="Gadget_Q_BlueBombA_Damage" effect-2="Gadget_Q_BlueBombA_Swoon" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_YellowBombA_E1_01" effect-1="Gadget_Q_YellowBombA_Speeddown" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_BombC2_E1_01" effect-1="Gadget_Q_BombC2_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_RifleA_E1_01" effect-1="Gadget_Q_RifleA_FallDown_Transit" effect-2="Gadget_Q_RifleA_Damage_Transit" effect-3="Gadget_Q_RifleA_DispelBurrow_stack" skill-result="hit-critical-hit" target="first-target" target-state="enemy" target-state-first-filter="40054"/>
+	<record alias="Gadget_Q_RifleA_E1_02" effect-1="Gadget_Q_RifleA_Shot_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_RockD_E1_01" effect-1="Gadget_Q_RockD_Damage" effect-2="Gadget_Q_RockD_Stun_ImmuneBreak" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_BombD_E1_01" effect-1="Gadget_Q_BombD_Damage" effect-2="Gadget_Q_BombD_Stun" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_RifleB_E1_01" effect-1="Gadget_Q_RifleB_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_BombE_E1_01" effect-1="Gadget_Q_BombE_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_RifleC_E1_01" effect-1="Gadget_Q_RifleC_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_CrystalA_E1_01" effect-1="Gadget_Q_CrystalA_Damage" effect-2="Gadget_Q_CrystalA_Salting" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_BombF_E1_01" effect-1="Gadget_Q_BombF_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_DaggerB_E1_01" effect-1="Gadget_Q_DaggerB_Damage" effect-2="Gadget_Q_DaggerB_Berserker" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_BombG_E1_01" effect-1="Gadget_Q_BombG_Damage" effect-2="Gadget_Q_BombG_Stun" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_IronHammerC_E1_01" effect-1="Gadget_Q_IronHammerC_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_DynamiteA_E1_01" effect-1="Gadget_Q_DynamiteA_Stun" effect-2="Gadget_Q_DynamiteA_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_GasBombA_E1_01" effect-1="Gadget_Q_GasBombA_Stun" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_ClubA_E1_01" effect-1="Gadget_Q_ClubA_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_GourdBottleB_E1_01" effect-1="Gadget_Q_GourdBottleB_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_BombA_Lv32_E1_01" effect-1="Gadget_Q_BombA_Lv32_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_RedBombB_E1_01" effect-1="Gadget_Q_RedBombB_Knockback" effect-2="Gadget_Q_RedBombB_Damage" skill-result="hit-critical-hit" target="second-target" target-state="all"/>
+	<record alias="Gadget_Q_RedMarbleA_E1_01" effect-1="Gadget_Q_RedMarbleA_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_DBombA_E1_01" effect-1="Gadget_Q_DBombA_Damage" individual-probability="n" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_BotteA_E1_01" effect-1="Gadget_Q_BotteA_Damage" effect-2="Gadget_Q_BotteA_Stun" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_LumberA_E1_01" effect-1="Gadget_Q_LumberA_Damage" effect-2="Gadget_Q_LumberA_Stun" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_DrumstickA_E1_01" effect-1="Gadget_Q_DrumstickA_Damage" skill-result="hit-critical-hit" target="first-target" target-state="all"/>
+	<record alias="Gadget_AtomA_Green_E1_01" effect-1="Gadget_AtomA_Green_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_AtomA_Red_E1_01" effect-1="Gadget_AtomA_Red_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_AtomA_Blue_E1_01" effect-1="Gadget_AtomA_Blue_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_StoneA_E1_01" effect-1="Gadget_Q_StoneA_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_IceBombA_Lv16_E1_01" effect-1="Gadget_IceBombA_Freezing" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_OrepartsB_E1_01" effect-1="Gadget_Q_OrepartsB_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_FireBombA_Lv38_E1_01" effect-1="Gadget_FireBombA_Lv38_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_IceBombA_Lv38_E1_01" effect-1="Gadget_IceBombA_Lv38_Freezing" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BoneA_E1_01" effect-1="Gadget_BoneA_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_AxeB_E1_01" effect-1="Gadget_Q_AxeB_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_FireBombB_Lv39_E1_01" effect-1="Gadget_FireBombB_Lv39_DOT" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_StaffA_E1_01" effect-1="Gadget_Q_StaffA_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_TorchlightA_2_E1_01" effect-1="Gadget_Q_TorchlightA_2_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_StaffA_2_E1_01" effect-1="Gadget_Q_StaffA_2_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_BottleB_E1_01" effect-1="Gadget_Q_BottleB_Damage" effect-2="Gadget_Q_BottleB_Stun" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_OrbA_E1_01" effect-1="Gadget_Q_OrbA_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_ArconA_E1_01" effect-1="Gadget_Q_ArconA_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerA_Lv39_E1_01" effect-1="Gadget_FlameThrowerA_Lv39_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerA_Lv39_E1_02" effect-1="Gadget_FlameThrowerA_Lv39_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_LampA_E1_01" effect-1="Gadget_LampA_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_WaterPotE_E1_01" effect-1="Gadget_Q_WaterPotE_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_BagA_E1_01" effect-1="Gadget_Q_BagA_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_BlueBatA_E1_01" effect-1="Gadget_BlueBatA_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerA_Lv14_E1_01" effect-1="Gadget_FlameThrowerA_Lv14_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerA_Lv14_E1_02" effect-1="Gadget_FlameThrowerA_Lv14_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerA_Lv20_E1_01" effect-1="Gadget_FlameThrowerA_Lv20_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerA_Lv20_E1_02" effect-1="Gadget_FlameThrowerA_Lv20_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerA_Lv24_E1_01" effect-1="Gadget_FlameThrowerA_Lv24_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerA_Lv24_E1_02" effect-1="Gadget_FlameThrowerA_Lv24_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerA_Lv30_E1_01" effect-1="Gadget_FlameThrowerA_Lv30_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerA_Lv30_E1_02" effect-1="Gadget_FlameThrowerA_Lv30_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerA_Lv34_E1_01" effect-1="Gadget_FlameThrowerA_Lv34_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerA_Lv34_E1_02" effect-1="Gadget_FlameThrowerA_Lv34_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_RifleB_Lv44_E1_01" effect-1="Gadget_RifleB_Lv44_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_D_SpeargunA_Lv45_Shoot_E1_01" effect-1="Gadget_D_SpeargunA_Lv45_Shoot_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_D_SpeargunA_Lv45_E1_01" effect-1="Gadget_D_SpeargunA_Lv45_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_GourdBottleD_E1_01" effect-1="Gadget_Q_GourdBottleD_Damage" effect-2="Gadget_Q_GourdBottleD_stun" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_PoisonNeddleA_E1_01" effect-1="Gadget_Q_PoisonNeddleA_kneel" effect-2="Gadget_Q_PoisonNeddleA_DOT" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_PoisonNeddleA_2_E1_01" effect-1="Gadget_Q_PoisonNeddleA_2_stun" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_RifleC_2_E1_01" effect-1="Gadget_Q_RifleC_2_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_CrapA_E1_01" effect-1="Gadget_Q_CrapA_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_StoneA_2_E1_01" effect-1="Gadget_Q_StoneA_2_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_RifleA_2_E1_01" effect-1="Gadget_Q_RifleA_2_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_BombA_3_E1_01" effect-1="Gadget_Q_BombA_3_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_FlameThrowerA_E1_01" effect-1="Gadget_Q_FlameThrowerA_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_FlameThrowerA_E1_02" effect-1="Gadget_Q_FlameThrowerA_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_IronHammerA_2_E1_01" effect-1="Gadget_Q_IronHammerA_2_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_PoisonNeddleA_Lv38_E1_01" effect-1="Gadget_PoisonNeddleA_Lv38_Damage" effect-2="Gadget_PoisonNeddleA_Lv38_stun" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_RifleA_Lv44_E1_01" effect-1="Gadget_RifleA_Lv44_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerA_Lv43_E1_01" effect-1="Gadget_FlameThrowerA_Lv43_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerA_Lv43_E1_02" effect-1="Gadget_FlameThrowerA_Lv43_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_ShieldC_Lv42_Counter_E1_01" effect-1="Gadget_ShieldC_Lv42_Counter_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_RifleA_Lv17_E1_01" effect-1="Gadget_RifleA_Lv17_Damage" effect-2="Gadget_RifleA_Lv17_stun" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_FlameThrowerA_2_E1_01" effect-1="Gadget_Q_FlameThrowerA_2_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_FlameThrowerA_2_E1_02" effect-1="Gadget_Q_FlameThrowerA_2_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_OrbA_2_E1_01" effect-1="Gadget_Q_OrbA_2_Damage" effect-2="Gadget_Q_OrbA_2_stun" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_AntidotA_E1_01" effect-1="Gadget_AntidotA_dispel" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_RifleA_Lv39_E1_01" effect-1="Gadget_RifleA_Lv39_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_RifleA_Lv42_E1_01" effect-1="Gadget_RifleA_Lv42_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_BombA_2_E1_01" effect-1="Gadget_Q_BombA_2_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_BombS_Lv20_2_E1_01" effect-1="Gadget_BombS_Lv20_2_damage" effect-2="Gadget_OneHand_BombA" individual-probability="n" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BeeHiveB_E1_01" effect-1="Gadget_BeeHiveB_Damage" effect-2="Gadget_BeeHiveB_stun" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_CharmA_E1_01" effect-1="Gadget_CharmA_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_BombS_Lv36_E1_01" effect-1="Gadget_BombS_Lv36_Damage" effect-2="Gadget_BombS_Lv36_Stun" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombS_1_E1_01" effect-1="Gadget_BombS_1_Damage" effect-2="Gadget_BombS_1_Stun" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombC_Lv42_1_E1_01" effect-1="Gadget_BombC_Lv42_1_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombC_Lv42_2_E1_01" effect-1="Gadget_BombC_Lv42_2_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombC_Lv42_3_E1_01" effect-1="Gadget_BombC_Lv42_3_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombC_Lv43_1_E1_01" effect-1="Gadget_BombC_Lv43_1_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombC_Lv43_2_E1_01" effect-1="Gadget_BombC_Lv43_2_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerC_Lv42_1_E1_01" effect-1="Gadget_FlameThrowerC_Lv42_1_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerC_Lv42_2_E1_01" effect-1="Gadget_FlameThrowerC_Lv42_2_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerC_Lv42_3_E1_01" effect-1="Gadget_FlameThrowerC_Lv42_3_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerC_Lv43_1_E1_01" effect-1="Gadget_FlameThrowerC_Lv43_1_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerC_Lv43_2_E1_01" effect-1="Gadget_FlameThrowerC_Lv43_2_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerC_Lv42_1_E1_02" effect-1="Gadget_FlameThrowerC_Lv42_1_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerC_Lv42_2_E1_02" effect-1="Gadget_FlameThrowerC_Lv42_2_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerC_Lv42_3_E1_02" effect-1="Gadget_FlameThrowerC_Lv42_3_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerC_Lv43_1_E1_02" effect-1="Gadget_FlameThrowerC_Lv43_1_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerC_Lv43_2_E1_02" effect-1="Gadget_FlameThrowerC_Lv43_2_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_RifleC_Lv42_1_E1_01" effect-1="Gadget_RifleC_Lv42_1_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_RifleC_Lv42_2_E1_01" effect-1="Gadget_RifleC_Lv42_2_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_RifleC_Lv43_1_E1_01" effect-1="Gadget_RifleC_Lv43_1_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_RifleC_Lv43_2_E1_01" effect-1="Gadget_RifleC_Lv43_2_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_IronHammerA_Lv40_E1_01" effect-1="Gadget_IronHammerA_Lv40_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_RifleC_F_E1_01" effect-1="Gadget_RifleC_F_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_StoneA_F_E1_01" effect-1="Gadget_StoneA_F_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_SpeargunA_Lv40_F_Shoot_E1_01" effect-1="Gadget_SpeargunA_Lv40_F_Shoot_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_SpeargunA_Lv40_F_E1_01" effect-1="Gadget_SpeargunA_Lv40_F_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_BombC_Lv40_F_E1_01" effect-1="Gadget_BombC_Lv40_F_Stun" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_HandAxe_F_E1_01" effect-1="Gadget_HandAxe_F_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_HandAxe_Lv37_E1_01" effect-1="Gadget_Q_HandAxe_Lv37_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_BombS_In01_E1_01" effect-1="Gadget_BombS_In01_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_RifleS_In01_E1_01" effect-1="Gadget_RifleS_In01_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerA_PVE_01_E1_01" effect-1="Gadget_FlameThrowerA_PVE_01_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerA_PVE_01_E1_02" effect-1="Gadget_FlameThrowerA_PVE_01_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerA_PVE_02_E1_01" effect-1="Gadget_FlameThrowerA_PVE_02_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrowerA_PVE_02_E1_02" effect-1="Gadget_FlameThrowerA_PVE_02_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_SpeargunA_Lv10_Shoot_E1_01" effect-1="Gadget_SpeargunA_Lv10_Shoot_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_SpeargunA_Lv10_E1_01" effect-1="Gadget_SpeargunA_Lv10_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_FlameThrowerA_Lv10_E1_01" effect-1="Gadget_Q_FlameThrowerA_Lv10_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_FlameThrowerA_Lv10_E1_02" effect-1="Gadget_Q_FlameThrowerA_Lv10_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_FlameThrowerA_Lv10_2_E1_01" effect-1="Gadget_Q_FlameThrowerA_Lv10_2_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_FlameThrowerA_Lv10_2_E1_02" effect-1="Gadget_Q_FlameThrowerA_Lv10_2_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_TorchlightA_Lv12_E1_01" effect-1="Gadget_TorchlightA_Lv12_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_TorchtreeA_Lv12_E1_01" effect-1="Gadget_TorchtreeA_Lv12_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_SkullBomb_In01_E1_01" effect-1="Gadget_SkullBomb_In01_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_SkullBomb_In02_E1_01" effect-1="Gadget_SkullBomb_In02_damage" effect-2="Gadget_SkullBomb_In02_freezing" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombS_In02_E1_01" effect-1="Gadget_BombS_In02_midair1" skill-result="hit-critical-hit" target="first-second-target" target-state="all"/>
+	<record alias="Gadget_BlueBatA_In01_E1_01" effect-1="Gadget_BlueBatA_In01_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_BombBoxA_In01_E1_01" effect-1="Gadget_BombBoxA_In01_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Tower_Rifle_01_E1_01" effect-1="Gadget_Tower_Rifle_01_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Tower_Rifle_FlameThrower_01_E1_01" effect-1="Gadget_Tower_Rifle_FlameThrower_01_damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Tower_Rifle_FlameThrower_01_E1_02" effect-1="Gadget_Tower_Rifle_FlameThrower_01_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Arena_Rifle_01_E1_01" effect-1="Gadget_Arena_Rifle_01_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Arena_Launcher_01_Shoot_E1_01" effect-1="Gadget_Arena_Launcher_01_Shoot_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy" target-state-first-filter="40006"/>
+	<record alias="Gadget_Arena_Launcher_01_Shoot_E1_02" effect-1="Gadget_Arena_Launcher_01_Shoot_npc_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy" target-state-first-filter="30000"/>
+	<record alias="Gadget_Arena_Launcher_01_Bomb_E1_01" effect-1="Gadget_Arena_Launcher_01_Bomb_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" target-state-first-filter="40006"/>
+	<record alias="Gadget_Arena_Launcher_01_Bomb_E1_02" effect-1="Gadget_Arena_Launcher_01_Bomb_npc_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" target-state-first-filter="30000"/>
+	<record alias="Gadget_Arena_MachineGun_01_E1_01" effect-1="Gadget_Arena_MachineGun_01_damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy" target-state-first-filter="40006"/>
+	<record alias="Gadget_Arena_MachineGun_01_E1_02" effect-1="Gadget_Arena_MachineGun_01_npc_damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy" target-state-first-filter="30000"/>
+	<record alias="Gadget_Arena_SniperGun_01_E1_01" effect-1="Gadget_Arena_SniperGun_01_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Arena_FlameThrower_01_E1_01" effect-1="Gadget_Arena_FlameThrower_01_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Arena_FlameThrower_01_E1_02" effect-1="Gadget_Arena_FlameThrower_01_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Arena_ShadowBomb_01_E1_01" effect-1="Gadget_Arena_ShadowBomb_01_blockdash" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Arena_Staff_01_E1_01" effect-1="Gadget_Arena_Staff_01_Power" skill-result="hit-critical-hit" target="first-second-target" target-state="friend"/>
+	<record alias="Gadget_Arena_Staff_02_E1_01" effect-1="Gadget_Arena_Staff_02_Firemiss" effect-2="Gadget_Arena_Staff_02_modifydamage_caster" skill-result="hit-critical-hit" target="first-second-target" target-state="friend"/>
+	<record alias="Gadget_Arena_Staff_03_E1_01" effect-1="Gadget_Arena_Staff_03_heal" skill-result="hit-critical-hit" target="first-second-target" target-state="friend"/>
+	<record alias="Gadget_Arena_Staff_04_E1_01" effect-1="Gadget_Arena_Staff_04_Immune" skill-result="hit-critical-hit" target="first-second-target" target-state="friend"/>
+	<record alias="Gadget_RifleS_In02_E1_01" effect-1="Gadget_RifleS_In02_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_BombS_In03_E1_01" effect-1="Gadget_BombS_In03_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Rifle_0001_E1_01" effect-1="Gadget_Q_Rifle_0001_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_IronHammer_0001_E1_01" effect-1="Gadget_Q_IronHammer_0001_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Rifle_0002_E1_01" effect-1="Gadget_Q_Rifle_0002__damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_WaterPot_0001_E1_01" effect-1="Gadget_Q_WaterPot_0001_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_IcePick_0001_E1_01" effect-1="Gadget_Q_IcePick_0001_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_IceBomb_0001_E1_01" effect-1="Gadget_Q_IceBomb_0001_freezing" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Torchlight_0005_E1_01" effect-1="Gadget_Q_Torchlight_0005_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Egg_0002_E1_01" effect-1="Gadget_Q_Egg_0002_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_FireWood_0003_E1_01" effect-1="Gadget_Q_FireWood_0003_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_FlameThrower_0001_E1_01" effect-1="Gadget_Q_FlameThrower_0001_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_FlameThrower_0001_E1_02" effect-1="Gadget_Q_FlameThrower_0001_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_FlameThrower_0002_E1_01" effect-1="Gadget_Q_FlameThrower_0002_Damage" effect-2="Gadget_Q_FlameThrower_0002_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Bomb_0002_E1_01" effect-1="Gadget_Q_Bomb_0002_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Bomb_0003_E1_01" effect-1="Gadget_Q_Bomb_0003_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_MachineGun_0001_E1_01" effect-1="Gadget_Q_MachineGun_0001_damage" effect-2="Gadget_Q_MachineGun_0001_damage" effect-3="Gadget_Q_MachineGun_0001_damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_PoisonedNeedle_0001_E1_01" effect-1="Gadget_Q_PoisonedNeedle_0001_swoon" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Rifle_0005_E1_01" effect-1="Gadget_Q_Rifle_0005_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_BeeHive_0001_E1_01" effect-1="Gadget_Q_BeeHive_0001_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_WoodClub_001_E1_01" effect-1="Gadget_Q_WoodClub_001_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Bomb_0004_E1_01" effect-1="Gadget_Q_Bomb_0004_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_OilBox_0001_E1_01" effect-1="Gadget_Q_OilBox_0001_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_PoisonedNeedle_0002_E1_01" effect-1="Gadget_Q_PoisonedNeedle_0002_swoon" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_PoisonedNeedle_0003_E1_01" effect-1="Gadget_Q_PoisonedNeedle_0003_swoon" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_PoisonedNeedle_0004_E1_01" effect-1="Gadget_Q_PoisonedNeedle_0004_swoon" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_PoisonedNeedle_0005_E1_01" effect-1="Gadget_Q_PoisonedNeedle_0005_swoon" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Rifle_0006_E1_01" effect-1="Gadget_Q_Rifle_0006_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Shield_In_01_Counter_E1_01" effect-1="Gadget_Shield_In_01_Counter_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Shield_In_01_Throw_E1_01" effect-1="ME_BEA_B2_Valak_None_LightningSpear_ImmuneDispel" effect-2="Gadget_Shield_In_01_Throw_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy" target-state-first-filter="40075"/>
+	<record alias="Gadget_Shield_In_01_Throw_E1_02" effect-1="Gadget_Shield_In_01_Throw_Damage2" skill-result="hit-critical-hit" target="first-target" target-state="enemy" target-state-first-filter="40076"/>
+	<record alias="Gadget_SnowBall_In_04_E1_01" effect-1="Gadget_SnowBall_In_04_Damage" effect-2="ForceMaster_Deal_common_frostbite" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Test_OnehandSword_E1_01" effect-1="Gadget_Test_OnehandSword_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Test_TwohandSword_E1_01" effect-1="Gadget_Test_TwohandSword_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Test_Rifle_E1_01" effect-1="Gadget_Test_Rifle_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Test_Revolver_E1_01" effect-1="Gadget_Test_Revolver_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Test_Needle_E1_01" effect-1="Gadget_Test_Needle_damage" effect-2="Gadget_Test_Needle_DOT" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Test_Torchlight_E1_01" effect-1="Gadget_Test_Torchlight_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Test_FlameThrower_E1_01" effect-1="Gadget_Test_FlameThrower_damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Test_FlameThrower_E1_02" effect-1="Gadget_Test_FlameThrower_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Test_Launcher_Shoot_E1_01" effect-1="Gadget_Test_Launcher_Shoot_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Test_Launcher_Bomb_E1_01" effect-1="Gadget_Test_Launcher_Bomb_damage" effect-2="Gadget_Test_Launcher_Bomb_DOT" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Test_MachineGun_E1_01" effect-1="Gadget_Test_MachineGun_damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Test_Dagger_E1_01" effect-1="Gadget_Test_Dagger_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Test_SniperGun_E1_01" effect-1="Gadget_Test_SniperGun_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Test_Staff_01_E1_01" effect-1="Gadget_Test_Staff_01_modifydamage" effect-2="Gadget_Test_Staff_01_fire_miss" skill-result="all" target="second-target" target-state="friend"/>
+	<record alias="Gadget_Test_Staff_02_E1_01" effect-1="Gadget_Test_Staff_02_Counter1" effect-2="DandelionSeed_Immune" skill-result="hit-critical-hit" target="second-target" target-state="friend" target-state-first-filter="50027" target-state-second-filter="6001"/>
+	<record alias="Gadget_Test_Staff_02_E1_02" effect-1="Gadget_Test_Staff_02_Counter1" effect-2="DandelionSeed_Immune" skill-result="hit-critical-hit" target="second-target" target-state="friend" target-state-first-filter="50042"/>
+	<record alias="Gadget_Test_Staff_02_E1_03" effect-1="Gadget_Test_Staff_02_Counter2" effect-2="DandelionSeed_Immune" skill-result="hit-critical-hit" target="second-target" target-state="friend" target-state-first-filter="50027" target-state-second-filter="6000"/>
+	<record alias="Gadget_Test_Staff_02_E1_04" effect-1="Gadget_Test_Staff_02_Counter3" effect-2="DandelionSeed_Immune" skill-result="hit-critical-hit" target="second-target" target-state="friend" target-state-first-filter="50030" target-state-second-filter="6001"/>
+	<record alias="Gadget_Test_Staff_02_E1_05" effect-1="Gadget_Test_Staff_02_Counter3" effect-2="DandelionSeed_Immune" skill-result="hit-critical-hit" target="second-target" target-state="friend" target-state-first-filter="50030" target-state-second-filter="6000"/>
+	<record alias="Gadget_Test_Staff_02_Counter_E1_01" effect-1="Gadget_Test_Staff_02_Counter_Hide" effect-2="Gadget_Test_Staff_02_Counter_SPHeal3" skill-result="hit-critical-hit" target="caster" target-state="all"/>
+	<record alias="Gadget_Test_Mirror_Counter_E1_01" effect-1="Gadget_Test_Mirror_Counter_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Test_Mirror_Throw_E1_01" effect-1="Gadget_Test_Mirror_Throw_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Bomb_0006_E1_01" effect-1="Gadget_Q_Bomb_0006_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Rifle_0007_E1_01" effect-1="Gadget_Q_Rifle_0007_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_WaterPot_0002_E1_01" effect-1="Gadget_Q_WaterPot_0002_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Rifle_0008_E1_01" effect-1="Gadget_Q_Rifle_0008_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_MachineGun_Lv50_E1_01" effect-1="Gadget_MachineGun_Lv50_damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrower_Lv50_E1_01" effect-1="Gadget_FlameThrower_Lv50_damage" effect-2="Gadget_FlameThrower_Lv50_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_SkullBomb_Lv50_E1_01" effect-1="Gadget_SkullBomb_Lv50_Damage" effect-2="ForceMaster_Deal_common_freezing" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_StoneA_3_E1_01" effect-1="Gadget_Common_FlagChk_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrower_0002_E1_01" effect-1="Gadget_FlameThrower_0002_damage" effect-2="Gadget_FlameThrower_0002_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Launcher_01_E1_01" effect-1="Gadget_Q_Launcher_01_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Launcher_01_Bomb_E1_01" effect-1="Gadget_Q_Launcher_01_Bomb_damage" effect-2="Gadget_Q_Launcher_01_dot" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Rifle_0009_E1_01" effect-1="Gadget_Q_Rifle_0009_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Rifle_0010_E1_01" effect-1="Gadget_Q_Rifle_0010_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_BombS_In04_E1_01" effect-1="Gadget_BombS_In04_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_ExBall_0001_E1_01" effect-1="Gadget_Q_ExBall_0001_damage" effect-2="Gadget_Q_ExBall_0001_midair" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_MachineGun_Lv47_E1_01" effect-1="Gadget_MachineGun_Lv47_damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_NokRimDo_Bomb_0003_E1_01" effect-1="Gadget_NokRimDo_Bomb_0003_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_NokRimDo_HandAxe_0001_E1_01" effect-1="Gadget_NokRimDo_HandAxe_0001_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrower_In01_E1_01" effect-1="Gadget_FlameThrower_In01_damage" effect-2="Gadget_FlameThrower_In01_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_BombS_In05_E1_01" effect-1="Gadget_BombS_In05_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_FlameThrower_0003_E1_01" effect-1="Gadget_Q_FlameThrower_0003_damage" effect-2="Gadget_Q_FlameThrower_0003_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy" target-state-first-filter="30000"/>
+	<record alias="Gadget_Q_FlameThrower_0004_E1_01" effect-1="Gadget_Q_FlameThrower_0004_damage" effect-2="Gadget_Q_FlameThrower_0004_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_SnowBall_0001_E1_01" effect-1="Gadget_Q_SnowBall_0001_damage" effect-2="ForceMaster_Deal_common_frostbite" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_Rifle_0011_E1_01" effect-1="Gadget_Q_Rifle_0011_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_NokRimDo_Bomb_0002_E1_01" effect-1="Gadget_NokRimDo_Bomb_0002_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="all" target-state-first-filter="30000" target-state-second-filter="40075"/>
+	<record alias="Gadget_NokRimDo_Bomb_0002_E1_02" effect-1="Gadget_NokRimDo_Bomb_0002_Debuff1" effect-2="Gadget_NokRimDo_Bomb_0002_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="all" target-state-first-filter="30000" target-state-second-filter="40076"/>
+	<record alias="Gadget_NokRimDo_Bomb_0002_E1_03" effect-1="Gadget_NokRimDo_Bomb_0002_Damage" skill-result="hit-critical-hit" target="first-second-target" target-state="all" target-state-first-filter="30001"/>
+	<record alias="Gadget_Q_Rifle_0003_E1_01" effect-1="Gadget_Q_Rifle_0003_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_GreenBall_0001_E1_01" effect-1="Gadget_Q_GreenBall_0001_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_RedBall_0001_E1_01" effect-1="Gadget_Q_RedBall_0001_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_BlueBall_0001_E1_01" effect-1="Gadget_Q_BlueBall_0001_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_SnowBall_In_01_E1_01" effect-1="Gadget_SnowBall_In_01_damage" effect-2="ForceMaster_Deal_common_frostbite" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_SnowBall_In_02_E1_01" effect-1="Gadget_SnowBall_In_01_damage" effect-2="ForceMaster_Deal_common_frostbite" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_SnowBall_In_03_E1_01" effect-1="Gadget_SnowBall_In_01_damage" effect-2="ForceMaster_Deal_common_frostbite" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_WebShooter_0001_E1_01" effect-1="Gadget_WebShooter_0001_FallDown_Transit" effect-2="Gadget_WebShooter_0001_Damage_Transit" effect-3="Gadget_WebShooter_0001_DispelBurrow_stack" skill-result="hit-critical-hit" target="first-target" target-state="enemy" target-state-first-filter="40054"/>
+	<record alias="Gadget_WebShooter_0001_E1_02" effect-1="Gadget_WebShooter_0001_Shot_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_BlueBall_0001_E1_01" effect-1="Gadget_BlueBall_0001_FallDown_Transit" effect-2="Gadget_BlueBall_0001_Damage_Transit" effect-3="Gadget_BlueBall_0001_DispelBurrow_stack" skill-result="hit-critical-hit" target="first-target" target-state="enemy" target-state-first-filter="40054"/>
+	<record alias="Gadget_BlueBall_0001_E1_02" effect-1="Gadget_BlueBall_0001_Shot_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_MachineGun_Lv50_Lv2_E1_01" effect-1="Gadget_MachineGun_Lv50_Lv2_damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_SniperGun_In01_E1_01" effect-1="Gadget_SniperGun_In01_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_FlameThrower_Lv50_Lv2_E1_01" effect-1="Gadget_FlameThrower_Lv50_Lv2_damage" effect-2="Gadget_FlameThrower_Lv50_Lv2_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_RedBall_0001_E1_01" effect-1="Gadget_RedBall_0001_FallDown_Transit" effect-2="Gadget_RedBall_0001_Damage_Transit" effect-3="Gadget_RedBall_0001_DispelBurrow_stack" skill-result="hit-critical-hit" target="first-target" target-state="enemy" target-state-first-filter="40054"/>
+	<record alias="Gadget_RedBall_0001_E1_02" effect-1="Gadget_RedBall_0001_Shot_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_FlameThrower_0005_E1_01" effect-1="Gadget_Q_FlameThrower_0005_damage" effect-2="Gadget_Q_FlameThrower_0005_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_FlameThrower_0006_E1_01" effect-1="Gadget_Q_FlameThrower_0006_damage" effect-2="Gadget_Q_FlameThrower_0006_DOT" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Arena_Bomb_Ice_01_E1_01" effect-1="Gadget_Arena_Bomb_Ice_01_damage" effect-2="Gadget_Arena_Bomb_Ice_01_freezing" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" target-state-first-filter="40006"/>
+	<record alias="Gadget_Arena_Bomb_Ice_01_E1_02" effect-1="Gadget_Arena_Bomb_Ice_01_npc_damage" effect-2="Gadget_Arena_Bomb_Ice_01_freezing" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" target-state-first-filter="30000"/>
+	<record alias="Gadget_BombS_In06_E1_01" effect-1="Gadget_BombS_In06_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_BombS_In07_E1_01" effect-1="Gadget_BombS_In07_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="all"/>
+	<record alias="Gadget_Launcher_In01_E1_01" effect-1="Gadget_Launcher_In01_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Launcher_In02_E1_01" effect-1="Gadget_Launcher_In02_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Launcher_In03_E1_01" effect-1="Gadget_Launcher_In03_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Launcher_In04_E1_01" effect-1="Gadget_Launcher_In04_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_IronHammerA_In01_E1_01" effect-1="Gadget_IronHammerA_In01_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_BlueBall_In01_02_E1_01" effect-1="Gadget_BlueBall_In01_02_Damage" effect-2="ME_BED_B1_Common_Dispel_modify-ability-172" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_BlueBall_0002_E1_01" effect-1="Gadget_BlueBall_0002_Down" effect-2="Gadget_BlueBall_0002_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_MachineGun_Lv50_03_E1_01" effect-1="Gadget_MachineGun_Lv50_03_damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_BatA_0001_E1_01" effect-1="Gadget_BatA_0001_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_MachineGun_Su01_E1_01" effect-1="Gadget_MachineGun_Su01_damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy" target-state-first-filter="40006"/>
+	<record alias="Gadget_MachineGun_Su01_E1_02" effect-1="Gadget_MachineGun_Su01_npc_damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy" target-state-first-filter="30000"/>
+	<record alias="Gadget_FlameThrower_Su01_E1_01" effect-1="Gadget_FlameThrower_Su01_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy" target-state-first-filter="40006"/>
+	<record alias="Gadget_FlameThrower_Su01_E1_02" effect-1="Gadget_FlameThrower_Su01_npc_Damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy" target-state-first-filter="30000"/>
+	<record alias="Gadget_Bomb_Su01_E1_01" effect-1="Gadget_Bomb_Su01_Damage" effect-2="ForceMaster_Deal_common_freezing" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" target-state-first-filter="40006"/>
+	<record alias="Gadget_Bomb_Su01_E1_02" effect-1="Gadget_Bomb_Su01_npc_Damage" effect-2="ForceMaster_Deal_common_freezing" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy" target-state-first-filter="30000"/>
+	<record alias="Gadget_SniperGun_Su01_E1_01" effect-1="Gadget_SniperGun_Su01_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_SniperGun_Su01_E1_02" effect-1="Gadget_SniperGun_Su01_npc_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_RedBombB_In01_E1_01" effect-1="Gadget_RedBombB_In01_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_BombS_In08_E1_01" effect-1="ME_BED_B1_Common_Dispel_modify-ability-172" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_FlameThrower_Water_E1_01" effect-1="Gadget_Q_FlameThrower_Water_damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_Q_WoodClub_002_E1_01" effect-1="Gadget_Q_WoodClub_002_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_WaterPot_0003_E1_01" effect-1="Gadget_Q_WaterPot_0003_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_WaterPot_0004_E1_01" effect-1="Gadget_Q_WaterPot_0004_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_DoubleFire_0001_E1_01" effect-1="Gadget_Q_DoubleFire_0001_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_Q_MachineGun_Epic6_E1_01" effect-1="Gadget_Q_MachineGun_Epic6_damage" skill-result="hit-critical-hit" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_EffectBall_02_E1_01" effect-1="Gadget_EffectBall_02_critical" skill-result="all" target="second-target" target-state="enemy"/>
+	<record alias="Gadget_EffectBall_03_E1_01" effect-1="Gadget_EffectBall_ABC" skill-result="all" target="second-target" target-state="enemy" target-state-first-filter="60150" target-state-second-filter="60152"/>
+	<record alias="Gadget_EffectBall_03_E1_02" effect-1="Gadget_EffectBall_AB" skill-result="all" target="second-target" target-state="enemy" target-state-first-filter="60150" target-state-second-filter="60153"/>
+	<record alias="Gadget_EffectBall_03_E1_03" effect-1="Gadget_EffectBall_AC" skill-result="all" target="second-target" target-state="enemy" target-state-first-filter="60151" target-state-second-filter="60152"/>
+	<record alias="Gadget_EffectBall_03_E1_04" effect-1="Gadget_EffectBall_A" skill-result="all" target="second-target" target-state="enemy" target-state-first-filter="60151" target-state-second-filter="60153"/>
+	<record alias="Gadget_EffectBall_04_E1_01" effect-1="Gadget_EffectBall_ABC" skill-result="all" target="second-target" target-state="enemy" target-state-first-filter="60057" target-state-second-filter="60152"/>
+	<record alias="Gadget_EffectBall_04_E1_02" effect-1="Gadget_EffectBall_AB" skill-result="all" target="second-target" target-state="enemy" target-state-first-filter="60057" target-state-second-filter="60153"/>
+	<record alias="Gadget_EffectBall_04_E1_03" effect-1="Gadget_EffectBall_BC" skill-result="all" target="second-target" target-state="enemy" target-state-first-filter="60058" target-state-second-filter="60152"/>
+	<record alias="Gadget_EffectBall_04_E1_04" effect-1="Gadget_EffectBall_B" skill-result="all" target="second-target" target-state="enemy" target-state-first-filter="60058" target-state-second-filter="60153"/>
+	<record alias="Gadget_EffectBall_05_E1_01" effect-1="Gadget_EffectBall_ABC" skill-result="all" target="second-target" target-state="enemy" target-state-first-filter="60057" target-state-second-filter="60150"/>
+	<record alias="Gadget_EffectBall_05_E1_02" effect-1="Gadget_EffectBall_AC" skill-result="all" target="second-target" target-state="enemy" target-state-first-filter="60057" target-state-second-filter="60151"/>
+	<record alias="Gadget_EffectBall_05_E1_03" effect-1="Gadget_EffectBall_BC" skill-result="all" target="second-target" target-state="enemy" target-state-first-filter="60058" target-state-second-filter="60150"/>
+	<record alias="Gadget_EffectBall_05_E1_04" effect-1="Gadget_EffectBall_C" skill-result="all" target="second-target" target-state="enemy" target-state-first-filter="60058" target-state-second-filter="60151"/>
+	<record alias="Gadget_HuekUmm_BombBox_E1_01" effect-1="Gadget_HuekUmm_BombBox_damage" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="Gadget_PoisonedNeedle_0001_E1_01" effect-1="Gadget_PoisonedNeedle_0001_swoon" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_HuekUmmLim_Bomb_E1_01" effect-1="Gadget_HuekUmmLim_Bomb_Speeddown" skill-result="hit-critical-hit" target="first-target" target-state="all" target-state-first-filter="30000"/>
+	<record alias="Gadget_HaeJukSun_Bomb_0001_E1_01" effect-1="Gadget_HaeJukSun_Bomb_0001_Damage" effect-2="ForceMaster_Deal_common_freezing" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="Gadget_CH_Event_Damage_Defend_Boom_E1_01" effect-1="Gadget_CH_Event_Damage_Defend_Boom_Damage_flag" skill-result="hit-critical-hit" target="first-target" target-state="enemy" target-state-first-filter="30000" target-state-second-filter="60055"/>
+	<record alias="Gadget_CH_Event_Damage_Defend_Boom_E1_02" effect-1="Gadget_CH_Event_Damage_Defend_Boom_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy" target-state-first-filter="30000" target-state-second-filter="60056"/>
+</table>

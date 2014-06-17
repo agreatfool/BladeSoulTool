@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_521" broadcast-category="field" category="epic" completed-desc="q_521_completed" completed-list="y" desc="q_521_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="521" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.521" save-type="all">
+		<acquisition level="1" recommended-level="30" sort-no="322"/>
+		<mission-step id="1" location-x="-12823.0293" location-y="3344.6353" map="toemungekjan_1" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.521_1" required-register-value="1">
+				<case indicator-idle="Jinsoa_soc_02" npc-response="qrsp_521_6" object="npc:CH_JinSoA_0015" type="approach"/>
+				<case loot-item="quest_521" looting="q_520_Quest_hair_growth_solution_manual_1_icon" mapunit-1="3014_e_onoff_billpaper_01" mapunit-2="3014_e_onoff_billpaper_01+" mapunit-3="3014_e_onoff_billpaper_01-" object="zoneenv:e_onoff_billpaper_01" object2="zoneenv2:e_onoff_billpaper_01" progress-mission="y" type="loot"/>
+				<case object="zoneenv:e_door_jinsoadoor_01" object2="zoneenv2:e_door_jinsoadoor_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zone:zone_SYHBang" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-12823.0293" location-y="3344.6353">
+			<mission id="2" name2="Mission.Name2.521_2" required-register-value="1">
+				<case item="quest_521" msg="q_521_m2" progress-mission="y" type="talk-to-item"/>
+				<case indicator-idle="Jinsoa_soc_02" npc-response="qrsp_521_7" object="npc:CH_JinSoA_0015" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-14828.8887" location-y="4030.1821" map="toemungekjan_1" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.521_3" required-register-value="1">
+				<case indicator-social="q_521_m3_indi_1" msg="q_521_m3" npc-response="qrsp_521_2" object="npc:ch_yeharang_003" progress-mission="y" type="talk"/>
+				<completion-loss item-1="quest_521"/>
+				<case indicator-idle="Jinsoa_soc_02" npc-response="qrsp_521_8" object="npc:CH_JinSoA_0015" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-12924.5918" location-y="5071.1978" map="toemungekjan_1" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.521_4" required-register-value="1">
+				<case indicator-social="q_521_m4_indi_1" msg="q_521_m4" npc-response="qrsp_521_3" object="npc:ch_soyeonhwa_008" progress-mission="y" type="talk"/>
+				<case object="zone:zone_SYHBang" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:e_door_soyeonout_01" object2="zoneenv2:e_door_soyeonout_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="-12924.5918" location-y="5071.1978" map="toemungekjan_1" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.521_5" required-register-value="1" reward-1="521_final_set1">
+				<case indicator-social="q_521_m5_indi_1" msg="q_521_m5" npc-response="qrsp_521_4" object="npc:ch_noklimdo_0002" progress-mission="y" type="talk">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="30"/>
+					</filter-set>
+				</case>
+				<case object="zone:zone_SYHBang" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:e_door_soyeonout_01" object2="zoneenv2:e_door_soyeonout_01" progress-mission="reaction-only" type="manipulate"/>
+				<case indicator-social="q_521_m5_deny_indi_1" msg="q_521_m5_deny" npc-response="qrsp_521_5" object="npc:ch_noklimdo_0002" progress-mission="y" type="talk">
+					<filter-set>
+						<filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="29"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_YeHaRangBang">
+			<destination mission-step-id="3" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_522"/>
+		</completion>
+	</quest>
+</table>

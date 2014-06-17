@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_425" broadcast-category="field" category="normal" desc="q_425_sum" district-1="jeryoungrim" grade="1" group2="QG_KiYoenCliff" id="425" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.425" save-type="all">
+		<acquisition level="11" preceding-quest-1="q_epic_311" preceding-quest-check="and" recommended-level="13" talk-to-self-guide-msg="Msg.CH_JR_Dweller_0001_01">
+			<case acquire-quest="y" item="q_425_1_icon" msg="q_425_s" type="talk-to-self"/>
+		</acquisition>
+		<mission-step desc="q_425_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.425_1" required-register-value="1">
+				<case npc-response="qrsp_425_1" object="npc:CH_JR_Dweller_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_425_des_2" id="3">
+			<mission id="3" name2="Mission.Name2.425_3" required-register-value="1" reward-1="425_final_set1">
+				<case grocery="General_Grocery_Quest_0010" npc-response="qrsp_425_2" object="npc:CH_JR_Dweller_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_425_4" object="npc:CH_JR_Dweller_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_425_des_2" id="2">
+			<mission id="2" name2="Mission.Name2.425_2" required-register-value="1">
+				<case npc-response="qrsp_425_3" object="npc:Ctzn_JinF_NokMyeongCtzn_Misc_001" progress-mission="y" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

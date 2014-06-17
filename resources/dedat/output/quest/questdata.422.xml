@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_422" broadcast-category="field" category="normal" day-of-week="daily" grade="1" group2="QG_Delete" id="422" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.422" reset-type="daily" retired="y" save-type="all">
+		<acquisition level="43" preceding-quest-1="q_sub_431" preceding-quest-2="q_sub_1160" preceding-quest-3="q_sub_1384" preceding-quest-check="or" recommended-level="45" reward-1="422_final_set1" reward-2="422_final_set2">
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_422_1" object="npc:ch_muyeongdan_0007" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_422_2" object="npc:ch_muyeongdan_0007" type="talk"/>
+		</acquisition>
+	</quest>
+</table>

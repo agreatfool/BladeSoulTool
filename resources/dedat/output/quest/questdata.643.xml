@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_643" broadcast-category="field" category="normal" desc="q_643_sum" district-1="deasamak" grade="1" group2="QG_ToMunGaekJan" id="643" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.643" save-type="all">
+		<acquisition level="27" preceding-quest-1="q_epic_517" preceding-quest-2="q_sub_634" preceding-quest-check="and" recommended-level="29">
+			<case acquire-quest="y" indicator-social="q_643_s_indi_1" msg="q_643_s" npc-response="qrsp_643_2" object="npc:ch_mangnanja_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-27787.0742" location-y="8047.0469" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.643_1" required-register-value="1">
+				<case looting="q_643_Grocery_White_egg_1_icon" object="zoneenv:e_onoff_bategg_01" object2="zoneenv2:e_onoff_bategg_01" progress-mission="y" type="loot"/>
+				<case looting="q_643_Grocery_White_egg_1_icon" mapunit-1="3010_e_onoff_bategg_01" mapunit-2="3010_e_onoff_bategg_02" object="zoneenv:e_onoff_bategg_02" object2="zoneenv2:e_onoff_bategg_02" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-14270.2949" location-y="4131.7446" map="toemungekjan_2" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.643_2" required-register-value="1" reward-1="643_final_set1">
+				<case indicator-social="q_643_m2_indi_1" msg="q_643_m2" npc-response="qrsp_643_1" object="npc:ch_ilmimun_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

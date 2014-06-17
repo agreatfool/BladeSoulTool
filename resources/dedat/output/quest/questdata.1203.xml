@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1203" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1203_sum" district-1="suwal" grade="1" group2="QG_GangsiGrave" id="1203" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1203" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="40" preceding-quest-1="q_epic_921" preceding-quest-check="and" preceding-quest-mission-step-1="8" recommended-level="42">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1203_1" object="npc:ch_shaman_0003" type="talk">
+				<filter-set/>
+			</case>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_1203_3" object="npc:CE_Board_0004" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1203_1" object="npc:ch_shaman_0003" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1203_1" required-register-value="6">
+				<case mapunit-1="4302_ME_KangSi_0007" object="npc:me_kangsi_0007" object2="npc:me_kangsi_0007" progress-mission="y" type="killed"/>
+				<case object="npc:me_kangsitall_0007" object2="npc:me_kangsitall_0007" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1203_2" required-register-value="10">
+				<case mapunit-1="4302_MH_Samagyo_0048_4" mapunit-2="4302_MH_Samagyo_0048_5" object="npc:ME_SkullFighter_0009" object2="npc:ME_SkullFighter_0009" progress-mission="y" type="killed"/>
+				<case object="npc:me_skullsorcery_0013" object2="npc:me_skullsorcery_0013" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.1203_3" required-register-value="1" reward-1="1203_final_set1" reward-2="1203_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1203_2" object="npc:ch_shaman_0003" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_1203_1_icon" msg="q_1203_4" progress-mission="y" type="talk-to-self"/>
+				<case completion-count="1" npc-response="qrsp_1203_2" object="npc:ch_shaman_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

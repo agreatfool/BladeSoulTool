@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_821" broadcast-category="field" category="normal" desc="q_821_sum" grade="1" group2="QG_ZazakWoodEast" id="821" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.821" save-type="all">
+		<acquisition level="46" preceding-quest-1="q_epic_282" preceding-quest-2="q_sub_825" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="48">
+			<case acquire-quest="y" npc-response="qrsp_821_1" object="npc:CE_CT_SaOhJang_0006" type="talk"/>
+		</acquisition>
+		<mission-step id="1" time-limit-type="none">
+			<mission id="1" name2="Mission.Name2.821_1" required-register-value="1">
+				<case object="zone:zone_borderbar" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_821_2" object="npc:CH_CT_Monk_0026" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" time-limit="60" time-limit-type="until">
+			<mission id="2" name2="Mission.Name2.821_2" required-register-value="50">
+				<case gadget-required="empty" mapunit-1="5268_CE_CT_PigKing_0005_s821" npc-response="qrsp_821_3" object="npc:CE_CT_PigKing_0005" progress-mission="reaction-only" type="npc-manipulate"/>
+				<case mapunit-1="5268_ME_CT_PestSmall_0021_s821" object="npc:ME_CT_PestSmall_0021" object2="npc:ME_CT_PestSmall_0021" progress-mission="y" type="killed"/>
+			</mission>
+			<mission-step-fail/>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.821_3" required-register-value="1" reward-1="821_final_set1">
+				<case npc-response="qrsp_821_4" object="npc:CH_CT_Monk_0026" progress-mission="y" type="talk"/>
+				<case object="zone:zone_borderbar" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

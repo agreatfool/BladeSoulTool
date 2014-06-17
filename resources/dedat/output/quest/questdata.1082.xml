@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1082" broadcast-category="field" category="normal" desc="q_1082_sum" district-1="suwal" grade="1" group2="QG_Farmland" id="1082" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1082" save-type="all">
+		<acquisition level="37" preceding-quest-1="q_epic_931" preceding-quest-check="and" preceding-quest-mission-step-1="2" recommended-level="39">
+			<case acquire-quest="y" npc-response="qrsp_1082_1" object="npc:ch_pigfarm_0020" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1082_1" required-register-value="3">
+				<case looting="q_1076_Quest_brown_pill_1_icon" object="zoneenv:e_onoff_bigpotato_05" object2="zoneenv2:e_onoff_bigpotato_05" progress-mission="y" type="loot"/>
+				<case looting="q_1076_Quest_brown_pill_1_icon" object="zoneenv:e_onoff_bigpotato_04" object2="zoneenv2:e_onoff_bigpotato_04" progress-mission="y" type="loot"/>
+				<case looting="q_1076_Quest_brown_pill_1_icon" object="zoneenv:e_onoff_bigpotato_03" object2="zoneenv2:e_onoff_bigpotato_03" progress-mission="y" type="loot"/>
+				<case looting="q_1076_Quest_brown_pill_1_icon" object="zoneenv:e_onoff_bigpotato_02" object2="zoneenv2:e_onoff_bigpotato_02" progress-mission="y" type="loot"/>
+				<case looting="q_1076_Quest_brown_pill_1_icon" mapunit-1="4105_e_onoff_bigpotato_01" object="zoneenv:e_onoff_bigpotato_01" object2="zoneenv2:e_onoff_bigpotato_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1082_2" required-register-value="1">
+				<case npc-response="qrsp_1082_2" object="npc:ch_heungbu_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1082_3" required-register-value="1">
+				<case npc-response="qrsp_1082_3" object="npc:ch_pigfarm_0020" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.1082_4" required-register-value="3">
+				<case gadget="Q_HandAxe_Lv37" gadget-required="carry" mapunit-1="4105_e_manboktree_01" object-1="zoneenv:e_manboktree_01" object-2="zoneenv:e_manboktree_02" object-3="zoneenv:e_manboktree_03" object-4="zoneenv:e_manboktree_04" object-5="zoneenv:e_manboktree_05" object-6="zoneenv:e_manboktree_06" object2-1="zoneenv2:e_manboktree_01" object2-2="zoneenv2:e_manboktree_02" object2-3="zoneenv2:e_manboktree_03" object2-4="zoneenv2:e_manboktree_04" object2-5="zoneenv2:e_manboktree_05" object2-6="zoneenv2:e_manboktree_06" progress-mission="y" skill="Gadget_Q_HandAxe_Lv37" skill3="Gadget_Q_HandAxe_Lv37" type="skill"/>
+				<case button-text-accept="q_1082_6_ok" button-text-cancel="q_1082_6_no" gadget-required="empty" indicator="quest-normal-can-progress" npc-response="qrsp_1082_6" object="npc:ch_pigfarm_0020" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.1082_5" required-register-value="1">
+				<case npc-response="qrsp_1082_4" object="npc:ch_heungbu_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.1082_6" required-register-value="3">
+				<case gadget="Q_StoneA_2" gadget-required="carry-and-remove" mapunit-1="4105_ME_PigBig_0010" object-1="npc:me_pigbig_0010" object2-1="npc:me_pigbig_0010" progress-mission="y" skill="Gadget_Q_StoneA_2" skill3="Gadget_Q_StoneA_2" type="skill"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_stone_01" object2="zoneenv2:e_stone_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_stone_02" object2="zoneenv2:e_stone_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="4100_e_stone_01" mapunit-2="4100_e_stone_02" mapunit-3="4100_e_stone_03" object="zoneenv:e_stone_03" object2="zoneenv2:e_stone_03" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.1082_7" required-register-value="1" reward-1="1082_final_set1">
+				<case npc-response="qrsp_1082_5" object="npc:ch_pigfarm_0020" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_659" broadcast-category="field" category="normal" desc="q_659_sum" district-1="deasamak" grade="1" group2="QG_GoYoSaMak" id="659" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.659" save-type="all">
+		<acquisition level="28" preceding-quest-1="q_epic_519" preceding-quest-check="and" recommended-level="30">
+			<case acquire-quest="y" indicator-social="q_659_s_indi_1" msg="q_659_s" npc-response="qrsp_659_1" object="npc:CH_MuYeongDan_0004" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-16676.2129" location-y="-42616.7266" map="seasidedg">
+			<mission id="1" name2="Mission.Name2.659_1" required-register-value="1">
+				<case mapunit-2="3080_e_onoff_stonecoffin_01" object="zoneenv:e_onoff_stonecoffin_01" object2="zoneenv2:e_onoff_stonecoffin_01" progress-mission="y" type="manipulate"/>
+				<case mapunit-1="3080_e_onoff_stonecoffin_02" object="zoneenv:e_onoff_stonecoffin_02" object2="zoneenv2:e_onoff_stonecoffin_02" progress-mission="n" type="manipulate"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.659_2" required-register-value="1">
+				<case mapunit-4="3080_e_onoff_stonecoffin_03" object="zoneenv:e_onoff_stonecoffin_03" object2="zoneenv2:e_onoff_stonecoffin_03" progress-mission="y" type="manipulate"/>
+				<case mapunit-3="3080_e_onoff_stonecoffin_04" object="zoneenv:e_onoff_stonecoffin_04" object2="zoneenv2:e_onoff_stonecoffin_04" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-24337.7344" location-y="-24395.3984" map="yeolsajeedea">
+			<mission id="3" name2="Mission.Name2.659_3" required-register-value="1" reward-1="659_final_set1">
+				<case indicator-social="q_659_m3_indi_1" msg="q_659_m3" npc-response="qrsp_659_2" object="npc:CH_MuYeongDan_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

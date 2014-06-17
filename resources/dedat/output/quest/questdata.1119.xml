@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1119" broadcast-category="field" category="normal" desc="q_1119_sum" grade="1" group2="QG_MoilBong" id="1119" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.1119" save-type="all">
+		<acquisition level="50" preceding-quest-1="q_sub_1055" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" item="q_1119_1_icon" msg="q_1119_1" type="talk-to-self"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1119_1" required-register-value="1">
+				<case npc-response="qrsp_1119_2" object="npc:CH_AnDuMae_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1119_2" required-register-value="1">
+				<case object="zone:StartZone_FarmIsland_Per" progress-mission="y" type="enter-zone"/>
+				<case button-text-accept="q_1119_4_ok" button-text-cancel="q_1119_4_no" npc-response="qrsp_1119_3" object="npc:CH_AnDuMae_0001" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1119_3" required-register-value="1" reward-1="1119_final_set1" reward-2="1119_final_set2">
+				<case npc-response="qrsp_1119_1" object="npc:CH_SA_GwanChulSu_0002" progress-mission="y" type="talk"/>
+				<case button-text-accept="q_1119_4_ok" button-text-cancel="q_1119_4_no" npc-response="qrsp_1119_3" object="npc:CH_AnDuMae_0001" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

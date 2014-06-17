@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_441" broadcast-category="field" category="normal" desc="q_441_sum" district-1="jeryoungrim" grade="1" group2="QG_SongAmDo" id="441" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.441" save-type="all">
+		<acquisition level="1" recommended-level="16">
+			<case acquire-quest="y" item="quest_440" msg="q_441_s" type="talk-to-item"/>
+			<case loot-item="quest_440" looting="q_441_Quest_marshal_art_book_1_icon" object="npc:mh_bandit_0005" object2="npc:mh_bandit_0005" type="loot"/>
+			<case loot-item="quest_440" looting="q_441_Quest_marshal_art_book_1_icon" object="npc:mh_bandit_0006" object2="npc:mh_bandit_0006" type="loot"/>
+			<case loot-item="quest_440" looting="q_441_Quest_marshal_art_book_1_icon" object="npc:mh_bandit_0007" object2="npc:mh_bandit_0007" type="loot"/>
+		</acquisition>
+		<mission-step id="1" location-x="-7415.8125" location-y="38793.1406" map="songamdo">
+			<mission id="1" name2="Mission.Name2.441_1" required-register-value="1" reward-1="441_final_set1">
+				<case grocery="quest_440" indicator-social="q_441_m1_indi_1" msg="q_441_m1" npc-response="qrsp_441_2" object="npc:ch_merchantweapon_002" progress-mission="y" remove-grocery="n" type="talk"/>
+				<completion-loss item-1="quest_440"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="quest_440"/>
+	</quest>
+</table>

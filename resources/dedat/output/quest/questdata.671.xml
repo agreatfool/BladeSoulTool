@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_671" broadcast-category="field" category="normal" day-of-week="daily" desc="q_671_sum" district-1="deasamak" grade="8" group2="QG_ToMunGaekJan" id="671" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.671" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="32" preceding-quest-1="q_epic_541" preceding-quest-check="and" recommended-level="34">
+			<case acquire-quest="y" indicator-social="q_671_s_indi_1" msg="q_671_s" npc-response="qrsp_671_1" object="npc:ch_tomun_011" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_671_5" object="npc:CE_Board_0015" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-15463.6543" location-y="4080.9634" map="toemungekjan_1" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.671_1" required-register-value="1">
+				<case indicator-social="q_671_m1_indi_1" msg="q_671_m1" npc-response="qrsp_671_3" object="npc:CH_ToMun_013" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-14625.7637" location-y="4080.9634" map="toemungekjan_3045" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.671_2" required-register-value="1">
+				<case indicator-social="q_671_m2_indi_1" msg="q_671_m2" npc-response="qrsp_671_2" object="npc:ch_tomungaekjan_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-18332.7949" location-y="2912.9946" map="toemungekjan_3045" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.671_3" required-register-value="1">
+				<case mapunit-1="3045_e_onoff_beacon_01" mapunit-2="3045_e_onoff_beacon_03" mapunit-3="3045_e_onoff_beacon_02" object="zone:zone_ToeMunKegJan_2" progress-mission="y" type="convoy-arrived"/>
+			</mission>
+			<mission-step-fail dispose-quest="n" rollback-step-id="1">
+				<case convoy="sun_671_con" object="zone:zone_ToeMunKegJan_2" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step id="4" location-x="-15463.6543" location-y="4080.9634" map="toemungekjan_1" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.671_4" required-register-value="1" reward-1="671_final_set1" reward-2="671_final_set2">
+				<case indicator-social="q_671_m4_indi_1" msg="q_671_m4" npc-response="qrsp_671_4" object="npc:CH_ToMun_013" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_671_1_icon" msg="q_671_6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_toemunkegjan">
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

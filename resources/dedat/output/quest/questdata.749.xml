@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_749" broadcast-category="field" category="normal" desc="q_749_sum" grade="9" group2="QG_DaeNaMuCHN" id="749" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.749" save-type="all">
+		<acquisition level="16" preceding-quest-1="q_epic_501" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="18">
+			<case acquire-quest="y" npc-response="qrsp_749_1" object="npc:CH_AnDuMae_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.749_1" required-register-value="3">
+				<case object="npc:MH_NokRimDo_0042" object2="npc:MH_NokRimDo_0042" progress-mission="y" type="killed"/>
+				<case object="npc:MH_NokRimDo_0041" object2="npc:MH_NokRimDo_0041" progress-mission="y" type="killed"/>
+				<case object="npc:MH_NokRimDo_0040" object2="npc:MH_NokRimDo_0040" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.749_2" required-register-value="1">
+				<case object="npc:ME_Moran_0001" object2="npc:ME_Moran_0001" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.749_3" required-register-value="1">
+				<case object="npc:MH_NokRimDo_0052" object2="npc:MH_NokRimDo_0052" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="4" name2="Mission.Name2.749_4" required-register-value="1">
+				<case object="npc:me_scorpion_0003" object2="npc:me_scorpion_0003" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="5" name2="Mission.Name2.749_5" required-register-value="1">
+				<case object="npc:me_pest_0010" object2="npc:me_pest_0010" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="8" name2="Mission.Name2.749_8" required-register-value="1">
+				<case object="npc:me_heukryongchae_0001" object2="npc:me_heukryongchae_0001" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="9" name2="Mission.Name2.749_9" required-register-value="1">
+				<case object="npc:ME_Fishman_0001" object2="npc:ME_Fishman_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="10" name2="Mission.Name2.749_10" required-register-value="1" reward-1="749_final_set1">
+				<case npc-response="qrsp_749_2" object="npc:CH_JaKyoungDan_016" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="7" name2="Mission.Name2.749_7" required-register-value="1">
+				<case object="npc:MH_ChungGak_0064" object2="npc:MH_ChungGak_0064" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="6" name2="Mission.Name2.749_6" required-register-value="4">
+				<case mapunit-1="Guide_JulBukDongGul_s" mapunit-2="2607_CH_JaKyoungDan_0020" mapunit-3="2607_CH_JaKyoungDan_0020_1" mapunit-4="2607_CH_JaKyoungDan_0020_2" object="npc:ch_jakyoungdan_0020" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

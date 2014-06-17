@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_527" broadcast-category="field" category="epic" completed-desc="q_527_completed" completed-list="y" desc="q_527_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="527" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.527" save-type="all">
+		<acquisition level="1" recommended-level="33" sort-no="328"/>
+		<mission-step id="1" location-x="46836.0938" location-y="-22799.2266" map="haerimchon">
+			<mission id="1" name2="Mission.Name2.527_1" required-register-value="1">
+				<case indicator-social="q_527_m1_indi_1" msg="q_527_m1" npc-response="qrsp_527_1" object="npc:ch_muun_0015" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="52188.4375" location-y="-4850.873" map="godeamudeom" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.527_2" required-register-value="1">
+				<case mapunit-1="3024_Guide_E527(1)" msg="q_527_m2" npc-response="qrsp_527_2" object="npc:mh_bokgonpe_0024" progress-mission="y" type="talk"/>
+				<case object="zone:zone_GoDeaMuDeom" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="46836.0938" location-y="-22799.2266" map="haerimchon">
+			<mission id="3" name2="Mission.Name2.527_3" required-register-value="1">
+				<case indicator-social="q_527_m3_indi_1" msg="q_527_m3" npc-response="qrsp_527_3" object="npc:ch_muun_0015" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_527_des_4" id="4" location-x="45366.957" location-y="-19160.2148" map="sajisukrim" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.527_4" required-register-value="1">
+				<case gadget="Q_Aboil_PotA" gadget-required="carry-and-remove" indicator="quest-gadget-required" mapunit-2="3024_e_onoff_gustatue_01" mapunit-3="3024_Guide_E527(2)" object="zoneenv:e_onoff_gustatue_01" object2="zoneenv2:e_onoff_gustatue_01" progress-mission="y" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="3024_e_onoff_boilpot_01" object="zoneenv:e_onoff_boilpot_01" object2="zoneenv2:e_onoff_boilpot_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_527_des_5" id="5" location-x="45366.957" location-y="-17398.8359" map="sajisukrim" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.527_5" required-register-value="1">
+				<case mapunit-1="3024_CE_Paper_0001" npc-response="qrsp_527_4" object="npc:ce_paper_0001" progress-mission="y" type="npc-manipulate" visible-object="n"/>
+				<fixed-reward slot-1="item:quest_527"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6" location-x="45366.957" location-y="-17398.8359">
+			<mission id="6" name2="Mission.Name2.527_6" required-register-value="1">
+				<case item="Quest_527" msg="q_527_m6" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7" location-x="46836.0938" location-y="-22799.2266" map="haerimchon">
+			<mission id="7" name2="Mission.Name2.527_7" required-register-value="1" reward-1="527_final_set1">
+				<case indicator-social="q_527_m7_indi_1" msg="q_527_m7" npc-response="qrsp_527_5" object="npc:ch_muun_0015" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_527"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_528"/>
+		</completion>
+	</quest>
+</table>

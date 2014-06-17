@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_378" broadcast-category="field" category="normal" day-of-week="daily" desc="q_378_sum" district-1="jeryoungrim" grade="2" group="제룡림(흑음림)" group2="QG_HuekUmmRim" id="378" map-group-1-1="jeryoungrim" max-repeat="1" name="환야의 숲에 이르는 빛 (1)" name2="Quest.Name2.378" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="10" preceding-quest-1="q_epic_311" preceding-quest-check="and" preceding-quest-mission-step-1="2" recommended-level="12">
+			<case acquire-quest="y" completion-count="0" indicator-social="q_378_s_indi_1" msg="q_378_s" npc-response="qrsp_378_1" object="npc:ctzn_jinm_hogieum_shm_001" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_378_4" object="npc:CE_Board_0014" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" desc="q_378_des_1" id="1" location-x="5164.279" location-y="-27271.723" map="SanYang_Dun">
+			<mission id="1" name2="Mission.Name2.378_1" required-register-value="1" show-kill-mapunit="y">
+				<case object="npc:me_moran_0001" object2="npc:me_moran_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-6133.4414" location-y="-13588.5215" map="huekummrim">
+			<mission id="2" name="흑음림 주술사 호기음에게 보고" name2="Mission.Name2.378_2" required-register-value="1" reward-1="378_final_set1" reward-2="378_final_set2">
+				<case indicator-social="q_378_m3_indi_1" msg="q_378_m3" npc-response="qrsp_378_2" object="npc:ctzn_jinm_hogieum_shm_001" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_378_1_icon" msg="q_378_5" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

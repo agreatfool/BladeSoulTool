@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25050" broadcast-category="field" category="dungeon" dungeon="Dungeon_TakMaGul" id="25050" max-repeat="1" name2="Quest.Name2.25050" progress-party-duo="n" progress-party-quartet="n" progress-party-solo="n" reset-type="none" save-type="nothing">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" object="zoneenv:5095_portal_5099" object2="zoneenv2:5095_portal_5099" type="enter-portal"/>
+			<case acquire-quest="y" object="zoneenv:925_potal_5097" object2="zoneenv2:925_potal_5097" type="enter-portal"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.25050_1" required-register-value="1">
+				<case object="npc:ME_CT_KangSiFat_0002" object2="npc:ME_CT_KangSiFat_0002" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_TakMaGul_Default">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

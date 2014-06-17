@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_421" broadcast-category="field" category="normal" desc="q_421_sum" district-1="jeryoungrim" grade="1" group="제룡림(흑음림)" group2="QG_HuekUmmRim" id="421" map-group-1-1="jeryoungrim" max-repeat="1" name="광불목" name2="Quest.Name2.421" save-type="all">
+		<acquisition level="11" preceding-quest-1="q_epic_311" preceding-quest-check="and" preceding-quest-mission-step-1="6" recommended-level="13">
+			<case acquire-quest="y" indicator-social="q_421_s_indi_1" msg="q_421_s" npc-response="qrsp_421_1" object="npc:ch_shaman_022" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-1469.3477" location-y="-14532.4453" map="huekummrim">
+			<mission id="1" name="모란등령 광불목 처치" name2="Mission.Name2.421_1" required-register-value="8">
+				<case mapunit-1="2200_mob_hmn_mflt_soul_moran_001" object="npc:mob_hmn_mflt_soul_moran_001" object2="npc:mob_hmn_mflt_soul_moran_001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-3024.0469" location-y="-13199.8477" map="huekummrim">
+			<mission id="2" name="흑음림 주술사 호기음에게 보고" name2="Mission.Name2.421_2" required-register-value="1" reward-1="421_final_set1">
+				<case indicator-social="q_421_m2_indi_1" msg="q_421_m2" npc-response="qrsp_421_2" object="npc:ch_shaman_022" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

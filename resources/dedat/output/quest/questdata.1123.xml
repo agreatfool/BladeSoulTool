@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1123" broadcast-category="solo-quartet" category="normal" day-of-week="daily" desc="q_1123_sum" district-1="suwal" grade="23" group2="QG_Delete" id="1123" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1123" reset-type="daily" retired="y" save-type="all">
+		<acquisition check-tencent-vitality="n" level="45" preceding-quest-1="q_epic_928" preceding-quest-2="q_sub_1121" preceding-quest-check="and" recommended-level="46">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1123_1" object="npc:ch_donghae_b_0002" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1123_3" object="npc:ch_donghae_b_0002" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1123_1" required-register-value="1" show-kill-mapunit="y">
+				<case object="npc:me_chunggakbboss_0006" object2="npc:me_chunggakbboss_0006" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1123_2" required-register-value="1" reward-1="1123_final_set1" reward-2="1123_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1123_2" object="npc:ch_donghae_b_0002" progress-mission="y" type="talk"/>
+				<case completion-count="1" npc-response="qrsp_1123_4" object="npc:ch_donghae_b_0002" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_1123_2_icon" msg="q_1123_5" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25004" broadcast-category="sextet" category="dungeon" dungeon="dungeon_chunggakjibu" grade="21" id="25004" max-repeat="1" name2="Quest.Name2.25004" progress-party-duo="n" progress-party-quartet="n" progress-party-solo="n" save-type="nothing">
+		<acquisition check-tencent-vitality="n" level="1" recommended-level="18">
+			<case acquire-quest="y" object="zoneenv:2502_chungkakdan_instant_in" object2="zoneenv2:2502_chungkakdan_instant_in" type="enter-portal"/>
+			<case acquire-quest="y" object="zoneenv:801_Portal_2502" object2="zoneenv2:801_Portal_2502" type="enter-portal"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="mission.name2.25004_1" required-register-value="1">
+				<case object="npc:mh_chunggak_0040" object2="npc:mh_chunggak_0040" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="mission.name2.25004_2" required-register-value="1">
+				<case object="npc:mh_blademaster_0001" object2="npc:mh_blademaster_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="mission.name2.25004_3" required-register-value="1">
+				<case object="npc:me_gugubung_0003" object2="npc:me_gugubung_0003" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<transit id="3" zone="zone_chunggakjibu_3_default">
+			<destination mission-step-id="3" zone-index="1"/>
+		</transit>
+		<transit id="2" zone="zone_chunggakjibu_2_default">
+			<destination mission-step-id="2" zone-index="1"/>
+		</transit>
+		<transit id="1" zone="zone_chunggakjibu_1_default">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

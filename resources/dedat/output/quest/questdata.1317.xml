@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1317" broadcast-category="field" category="job" desc="q_1317_sum" district-1="jeryoungrim" grade="1" group2="QG_MangJaSup" id="1317" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.1317" save-type="all" show-tutorial-tag="n" tutorial="y">
+		<acquisition job-1="역사" level="8" preceding-quest-1="q_epic_307" preceding-quest-2="q_sub_1316" preceding-quest-check="and" recommended-level="8" talk-to-self-guide-msg="Msg.Job.quest3">
+			<case acquire-quest="y" item="q_1317_quest_hair_growth_solution_manual_1_icon" msg="q_1317_s" type="talk-to-self"/>
+			<case acquire-quest="y" npc-response="qrsp_1317_4" object="npc:ch_jakyungdan_0006" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1317_1" required-register-value="1">
+				<case object="zone:zone_MangJa_ClassQ_3_C3" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_1317_m1_indi_1" msg="q_1317_m1" npc-response="qrsp_1317_1" object="npc:ch_hwajung_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" guide-message="gm_1317_1" guide-message-zone-1="zone_MangJa_ClassQ_3_C3" id="2" location-x="-10012.428711" location-y="-36171.554688" map="bukjjok_dun" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.1317_2" required-register-value="1" show-kill-mapunit="y">
+				<case object="zone:zone_MangJa_ClassQ_3_C3" progress-mission="reaction-only" type="enter-zone"/>
+				<tutorial-case approach-range="3.0" link-npc="ch_hwajung_0003" location-x="-10012.428711" location-y="-36171.554688" progress-mission="y" type="move-to-position"/>
+				<tutorial-case approach-range="3.0" link-npc="MH_HwaJung_0005" location-x="-10012.428711" location-y="-36171.554688" mapunit-1="2028_MH_HwaJung_0005_1" progress-mission="y" type="move-to-position"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.1317_3" required-register-value="1">
+				<case npc-response="qrsp_1317_5" object="npc:CE_JR_JobBook_0006" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" guide-message="gm_1317_2" guide-message-zone-1="zone_MangJa_ClassQ_3_C3" id="4">
+			<mission id="5" name2="Mission.Name2.1317_5" required-register-value="3" show-kill-mapunit="y">
+				<tutorial-case object-1="npc:ch_hwajung_0003" object2-1="npc:ch_hwajung_0003" progress-mission="y" range-max="2" range-min="2" skill-sequence="Destroyer_Lv8_M21" type="skill-sequence"/>
+				<case object="zone:zone_MangJa_ClassQ_3_C3" progress-mission="reaction-only" type="enter-zone"/>
+				<tutorial-case object-1="npc:ch_hwajung_0003" object2-1="npc:ch_hwajung_0003" progress-mission="y" range-max="1" range-min="1" skill-sequence="Destroyer_Lv8_M21" type="skill-sequence"/>
+				<tutorial-case object-1="npc:ch_hwajung_0003" object2-1="npc:ch_hwajung_0003" progress-mission="y" range-max="0" range-min="0" skill-sequence="Destroyer_Lv8_M21" type="skill-sequence"/>
+				<tutorial-case object-1="npc:MH_HwaJung_0005" object2-1="npc:MH_HwaJung_0005" progress-mission="y" range-max="2" range-min="2" skill-sequence="Destroyer_Lv8_M21" type="skill-sequence"/>
+				<tutorial-case object-1="npc:MH_HwaJung_0005" object2-1="npc:MH_HwaJung_0005" progress-mission="y" range-max="1" range-min="1" skill-sequence="Destroyer_Lv8_M21" type="skill-sequence"/>
+				<tutorial-case object-1="npc:MH_HwaJung_0005" object2-1="npc:MH_HwaJung_0005" progress-mission="y" range-max="0" range-min="0" skill-sequence="Destroyer_Lv8_M21" type="skill-sequence"/>
+			</mission>
+			<mission id="6" name2="Mission.Name2.1317_6" required-register-value="1">
+				<case npc-response="qrsp_1317_6" object="npc:CE_JR_JobBook_0006" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="7" name2="Mission.Name2.1317_7" required-register-value="1" reward-1="1317_final_set1">
+				<case indicator-social="q_1317_m5_indi_1" msg="q_1317_m5" npc-response="qrsp_1317_3" object="npc:ch_hwajung_0003" progress-mission="y" type="talk"/>
+				<case object="zone:zone_MangJa_ClassQ_3_C3" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_1317_m5_indi_1" msg="q_1317_m5" npc-response="qrsp_1317_3" object="npc:MH_HwaJung_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_MangJa_ClassQ_3_SP">
+			<destination mission-step-id="5" zone-index="2"/>
+			<destination mission-step-id="4" zone-index="2"/>
+			<destination mission-step-id="3" zone-index="2"/>
+			<destination mission-step-id="2" zone-index="2"/>
+			<destination mission-step-id="1" zone-index="2"/>
+		</transit>
+		<mission-step id="3">
+			<mission id="4" name2="Mission.Name2.1317_4" required-register-value="1">
+				<case indicator-social="q_1317_m3_indi_1" msg="q_1317_m3" npc-response="qrsp_1317_2" object="npc:ch_hwajung_0003" progress-mission="y" type="talk"/>
+				<case indicator-social="q_1317_m3_indi_1" msg="q_1317_m3" npc-response="qrsp_1317_2" object="npc:MH_HwaJung_0005" progress-mission="y" type="talk"/>
+				<case object="zone:zone_MangJa_ClassQ_3_C3" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

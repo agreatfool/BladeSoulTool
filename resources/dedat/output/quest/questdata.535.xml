@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_535" broadcast-category="field" category="epic" completed-desc="q_535_completed" completed-list="y" desc="q_535_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="535" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.535" save-type="all">
+		<acquisition level="1" recommended-level="36" sort-no="338"/>
+		<mission-step id="1" location-x="22561.09" location-y="67769.76" map="bigbonedg" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.535_1" required-register-value="1">
+				<case npc-response="qrsp_535_3" object="npc:ch_chungun_0001" type="approach" visible-object="y"/>
+				<case object="zone:zone_BigBoneDg" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_535_1" object="npc:ch_jinsoa_0010" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="19777.8906" location-y="71109.6016" map="bigbonedg">
+			<mission id="2" name2="Mission.Name2.535_2" required-register-value="1" reward-1="535_final_set1">
+				<case npc-response="qrsp_535_2" object="npc:ch_tomungaekjan_0002" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_536"/>
+		</completion>
+	</quest>
+</table>

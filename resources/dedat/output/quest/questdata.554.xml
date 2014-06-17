@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_554" broadcast-category="field" category="normal" desc="q_554_sum" district-1="deasamak" grade="1" group2="QG_ToMunJinSouth" id="554" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.554" save-type="all">
+		<acquisition level="19" preceding-quest-1="q_epic_501" preceding-quest-check="and" recommended-level="21">
+			<case acquire-quest="y" indicator-social="q_554_s_indi_1" msg="q_554_s" npc-response="qrsp_554_1" object="npc:ch_unguksoldier_010" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-55809.7617" location-y="-72641.0156" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.554_1" required-register-value="1">
+				<case looting="q_554_quest_fabric_bag_1_icon" mapunit-1="3000_mh_madman_0001_1" object="npc:mh_madman_0001" object2="npc:mh_madman_0001" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case looting="q_554_quest_fabric_bag_1_icon" object="npc:mh_hwanyeongcho_0005" object2="npc:mh_hwanyeongcho_0005" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.554_2" required-register-value="10">
+				<case mapunit-2="3000_mh_madman_0001" object="npc:mh_madman_0001" object2="npc:mh_madman_0001" progress-mission="y" type="killed"/>
+				<case object="npc:mh_hwanyeongcho_0005" object2="npc:mh_hwanyeongcho_0005" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-51905.2813" location-y="-77825.6484" map="toemunjean">
+			<mission id="3" name2="Mission.Name2.554_3" required-register-value="1" reward-1="554_final_set1">
+				<case indicator-social="q_554_m3_indi_1" msg="q_554_m3" npc-response="qrsp_554_2" object="npc:ch_gunwonsungdo_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

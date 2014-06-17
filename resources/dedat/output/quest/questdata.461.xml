@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_461" broadcast-category="field" category="normal" day-of-week="daily" desc="q_461_sum" district-1="jeryoungrim" grade="1" group="제룡림(송암도)" group2="QG_SongAmDo" id="461" map-group-1-1="jeryoungrim" max-repeat="1" name="전우를 위하여" name2="Quest.Name2.461" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="16" preceding-quest-1="q_epic_316" preceding-quest-check="and" recommended-level="18">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" indicator-social="q_461_s_indi_1" msg="q_461_s" npc-response="qrsp_461_1" object="npc:ch_foodmaster_002" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator-social="q_461_re_s_indi_1" msg="q_461_re_s" npc-response="qrsp_461_2" object="npc:ch_foodmaster_002" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_461_5" object="npc:ce_board_0012" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-17971.0156" location-y="37659.1094" map="songamdo">
+			<mission id="1" name="붉은 뱀버섯의 갓 획득" name2="Mission.Name2.461_1" required-register-value="15">
+				<case object="npc:mob_hmn_mlnd_bman_hangari_001" object2="npc:mob_hmn_mlnd_bman_hangari_001" progress-mission="y" type="killed"/>
+				<case object="npc:mob_hmn_mlnd_bman_hangari_003" object2="npc:mob_hmn_mlnd_bman_hangari_003" progress-mission="y" type="killed"/>
+				<case object="npc:mob_hmn_mlnd_bman_hangari_002" object2="npc:mob_hmn_mlnd_bman_hangari_002" progress-mission="y" type="killed"/>
+				<case mapunit-1="2440_me_potaxpartyb_002" mapunit-2="2440_me_potaxpartyb_002_1" mapunit-3="2440_me_potaxpartyb_002_2" mapunit-4="2440_me_potaxpartyb_002_3" object="npc:me_potaxpartyb_002" object2="npc:me_potaxpartyb_002" progress-mission="y" type="killed"/>
+				<case object="npc:me_potaxpartya_002" object2="npc:me_potaxpartya_002" progress-mission="y" type="killed"/>
+				<case object="npc:me_potaxpartyb_001" object2="npc:me_potaxpartyb_001" progress-mission="y" type="killed"/>
+				<case object="npc:me_potaxpartya_003" object2="npc:me_potaxpartya_003" progress-mission="y" type="killed"/>
+				<case object="npc:me_potaxpartya_004" object2="npc:me_potaxpartya_004" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-16225.127" location-y="54249.6172" map="songrimsa">
+			<mission id="2" name="송림사에 있는 자경단원 길준에게 보고" name2="Mission.Name2.461_2" required-register-value="1" reward-1="461_final_set1" reward-2="461_final_set2">
+				<case completion-count="1" completion-count-op="lt" indicator-social="q_461_m2_indi_1" msg="q_461_m2" npc-response="qrsp_461_3" object="npc:ch_foodmaster_002" progress-mission="y" type="talk"/>
+				<case completion-count="1" indicator-social="q_461_re_m2_indi_1" msg="q_461_re_m2" npc-response="qrsp_461_4" object="npc:ch_foodmaster_002" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_461_1_icon" msg="q_461_m4" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

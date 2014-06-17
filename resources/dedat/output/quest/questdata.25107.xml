@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25107" broadcast-category="field" category="dungeon" dungeon="Dungeon_HaeMuJin" grade="21" group2="QG_ZamsikHaejuk" id="25107" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.25107" progress-party-duo="n" progress-party-quartet="n" progress-party-solo="n" save-type="nothing">
+		<acquisition level="50" preceding-quest-1="q_epic_994" preceding-quest-2="q_epic_293" preceding-quest-check="or" recommended-level="50">
+			<case acquire-quest="y" object="zoneenv:4430_portal_4745" object2="zoneenv2:4430_portal_4745" type="enter-portal"/>
+			<case acquire-quest="y" object="zoneenv:4430_portal_4745_1" object2="zoneenv2:4430_portal_4745_1" type="enter-portal"/>
+			<case acquire-quest="y" object="zoneenv:813_Portal_4745" object2="zoneenv2:813_Portal_4745" type="enter-portal"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.25107_1" required-register-value="2">
+				<case object="npc:ME_WA_Heajuk_A1_Boss_0002" object2="npc:ME_WA_Heajuk_A1_Boss_0002" progress-mission="y" type="killed"/>
+				<case object="npc:ME_WA_Heajuk_A1_Boss_0001" object2="npc:ME_WA_Heajuk_A1_Boss_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.25107_2" required-register-value="1">
+				<case object="npc:ME_WA_Heajuk_A2_Nmd_0005" object2="npc:ME_WA_Heajuk_A2_Nmd_0005" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.25107_3" required-register-value="1">
+				<case object="npc:ME_WA_Heajuk_A2_Boss_0001" object2="npc:ME_WA_Heajuk_A2_Boss_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<transit id="3" zone="Zone_HaeMuJin_3_Default">
+			<destination mission-step-id="3" zone-index="1"/>
+		</transit>
+		<transit id="2" zone="Zone_HaeMuJin_2_Default">
+			<destination mission-step-id="2" zone-index="1"/>
+		</transit>
+		<transit id="1" zone="Zone_HaeMuJin_1_Default">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

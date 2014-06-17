@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_463" broadcast-category="field" category="normal" desc="q_463_sum" district-1="jeryoungrim" grade="1" group="제룡림(송암도)" group2="QG_SongAmDo" id="463" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.463" save-type="all">
+		<acquisition level="16" preceding-quest-1="q_epic_316" preceding-quest-check="and" recommended-level="18">
+			<case acquire-quest="y" indicator-social="q_463_s_indi_1" msg="q_463_s" npc-response="qrsp_463_1" object="npc:ch_jakyoungdan_037" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-17883.7852" location-y="48650.4805" map="songamdo">
+			<mission id="1" name2="Mission.Name2.463_1" required-register-value="1">
+				<case indicator-social="q_463_m1_indi_1" msg="q_463_m1" npc-response="qrsp_463_2" object="npc:ch_jakyoungdan_038" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="3" location-x="-15387.24" location-y="55044.54" map="songrimsa" mission-map-type="location">
+			<mission id="3" name="송림사에 있는 자경단원 맹도성과 대화" name2="Mission.Name2.463_3" required-register-value="1" reward-1="463_final_set1">
+				<case indicator-social="q_463_m3_indi_1" msg="q_463_m3" npc-response="qrsp_463_4" object="npc:ch_jakyoungdan_037" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_463_5" object="npc:ch_jakyoungdan_038" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-16225.127" location-y="54249.6172" map="songamdo">
+			<mission id="2" name2="Mission.Name2.463_2" required-register-value="1">
+				<case gadget="q_liquorpota" gadget-required="carry-and-remove" indicator-social="q_463_m2_indi_1" msg="q_463_m2" npc-response="qrsp_463_3" object="npc:ch_jakyoungdan_038" progress-mission="y" type="talk"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="2440_e_onoff_mushroompot_01" object="zoneenv:e_onoff_mushroompot_01" object2="zoneenv2:e_onoff_mushroompot_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_mushroompot_02" object2="zoneenv2:e_onoff_mushroompot_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_mushroompot_03" object2="zoneenv2:e_onoff_mushroompot_03" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

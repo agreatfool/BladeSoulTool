@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_712" broadcast-category="field" category="normal" desc="q_712_sum" grade="1" group2="QG_Hasijang" id="712" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.712" save-type="all">
+		<acquisition level="45" preceding-quest-1="q_epic_267" preceding-quest-check="and" preceding-quest-mission-step-1="4" recommended-level="47">
+			<case acquire-quest="y" npc-response="qrsp_712_1" object="npc:CH_CT_Homeless_0005" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.712_1" required-register-value="7">
+				<case looting="q_712_1_icon" object="npc:MH_CT_HaOBanng_0006" object2="npc:MH_CT_HaOBanng_0006" progress-mission="y" type="loot"/>
+				<case looting="q_712_1_icon" object="npc:MH_CT_HaOBanng_0005" object2="npc:MH_CT_HaOBanng_0005" progress-mission="y" type="loot"/>
+				<case looting="q_712_1_icon" object="npc:MH_CT_HaOBanng_0004" object2="npc:MH_CT_HaOBanng_0004" progress-mission="y" type="loot"/>
+				<case object="npc:ME_CT_HaOBanng_0003" object2="npc:ME_CT_HaOBanng_0003" prob="30" progress-mission="reaction-only" show-in-tooltip="y" type="killed"/>
+				<case object="npc:ME_CT_HaOBanng_0002" object2="npc:ME_CT_HaOBanng_0002" prob="30" progress-mission="reaction-only" show-in-tooltip="y" type="killed"/>
+				<case mapunit-1="5103_ME_CT_HaOBanng_0001_s712" object="npc:ME_CT_HaOBanng_0001" object2="npc:ME_CT_HaOBanng_0001" prob="30" progress-mission="reaction-only" show-in-tooltip="y" type="killed"/>
+				<case npc-response="qrsp_712_3" object="npc:CH_CT_Homeless_0005" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.712_2" required-register-value="1" reward-1="712_final_set1">
+				<case npc-response="qrsp_712_2" object="npc:CH_CT_Homeless_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_297" attraction-1="dungeon:Dungeon_BaekCheong_Sulokgoong" attraction-2="dungeon:Dungeon_SulinDongGul" attraction-3="dungeon:Dungeon_GuiMunGuan_Nightmare" broadcast-category="field" category="normal" desc="q_297_sum" grade="10" group2="QG_Sulokgoong" id="297" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.297">
+		<acquisition level="50" mastery-level="3" preceding-quest-1="q_sub_296" preceding-quest-2="q_sub_1209" preceding-quest-check="or" recommended-level="50">
+			<case acquire-quest="y" npc-response="qrsp_297_1" object="npc:ch_c3_seolokgung_0003" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.297_1" required-register-value="1">
+				<case object="npc:me_c3_seolokgungboss_0001" object2="npc:me_c3_seolokgungboss_0001" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.297_2" required-register-value="1">
+				<case object="npc:me_c3_seolokgungboss_0002" object2="npc:me_c3_seolokgungboss_0002" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.297_3" required-register-value="1" reward-1="297_final_set1">
+				<case npc-response="qrsp_297_2" object="npc:ch_c3_seolokgung_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

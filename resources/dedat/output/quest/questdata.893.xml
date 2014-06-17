@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_893" broadcast-category="field" category="normal" day-of-week="daily" desc="q_893_sum" grade="7" group2="QG_SnowMountSouth" id="893" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.893" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="47" preceding-quest-1="q_epic_282" preceding-quest-2="q_sub_831" preceding-quest-check="and" preceding-quest-mission-step-1="8" recommended-level="49">
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_893_4" object="npc:CE_CT_Board_0030" type="talk"/>
+			<case acquire-quest="y" completion-count="0" completion-count-op="ge" npc-response="qrsp_893_1" object="npc:CH_CT_Flower_0006" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.893_1" required-register-value="15">
+				<case object="npc:ME_CT_ChuAngKa_0003" object2="npc:ME_CT_ChuAngKa_0003" prob="100" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_ChuAngKa_0002" object2="npc:ME_CT_ChuAngKa_0002" prob="100" progress-mission="y" type="killed"/>
+				<case mapunit-1="5220_ME_CT_ChuAngKa_0001_s893" object="npc:ME_CT_ChuAngKa_0001" object2="npc:ME_CT_ChuAngKa_0001" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.893_2" required-register-value="1">
+				<case looting="q_893_1_icon" object="npc:ME_CT_SnowmanC_0003" object2="npc:ME_CT_SnowmanC_0003" prob="100" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.893_3" required-register-value="1" reward-1="893_final_set1" reward-2="893_final_set2">
+				<case fee="y" item="q_893_2_icon" msg="q_893_3" progress-mission="y" type="talk-to-self"/>
+				<case completion-count="0" completion-count-op="ge" npc-response="qrsp_893_2" object="npc:CH_CT_Hunter_0025" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

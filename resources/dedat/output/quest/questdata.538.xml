@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_538" broadcast-category="field" category="epic" completed-desc="q_538_completed" completed-list="y" desc="q_538_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="538" invoke-fx-msg="y" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.538" save-type="all">
+		<acquisition level="1" recommended-level="36" sort-no="341"/>
+		<mission-step id="1" location-x="30969.6875" location-y="13798.8066" map="musinreung">
+			<mission id="1" name2="Mission.Name2.538_1" required-register-value="1" reward-1="538_middle_set1">
+				<case object="zone:zone_mushinbeacha_2" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_538_m1_indi_1" msg="q_538_m1" npc-response="qrsp_538_1" object="npc:CH_SoYeonHwa_0008" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="30787.0566" location-y="71930.3906" map="oseakamdo">
+			<mission id="4" name2="Mission.Name2.538_4" required-register-value="1">
+				<case indicator-social="q_538_m4_indi_1" msg="q_538_m4" npc-response="qrsp_538_4" object="npc:ch_jinsoa_0012" progress-mission="y" type="talk"/>
+				<case object="zone:zone_MuShinBeaCha_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="30787.0566" location-y="71930.3906" map="oseakamdo">
+			<mission id="3" name2="Mission.Name2.538_3" required-register-value="1">
+				<case indicator-social="q_538_m3_indi_1" msg="q_538_m3" npc-response="qrsp_538_3" object="npc:ch_orakdang_0008" progress-mission="y" type="talk"/>
+				<case object="zone:zone_MuShinBeaCha_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="30787.0566" location-y="71930.3906" map="oseakamdo">
+			<mission id="2" name2="Mission.Name2.538_2" required-register-value="1">
+				<case indicator-social="q_538_m2_indi_1" msg="q_538_m2" npc-response="qrsp_538_2" object="npc:ch_tomungaekjan_0003" progress-mission="y" type="talk"/>
+				<case object="zone:zone_MuShinBeaCha_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="-12467.561" location-y="2760.651" map="toemungekjan_1" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.538_5" required-register-value="1">
+				<case indicator-social="q_538_m5_indi_1" mapunit-1="3030_Guide_E538" msg="q_538_m5" npc-response="qrsp_538_5" object="npc:CH_JinSoA_0015" progress-mission="y" type="talk"/>
+				<case object="zone:zone_syhbang" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:e_door_jinsoadoor_01" object2="zoneenv2:e_door_jinsoadoor_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_MuShinBeaCha_1">
+			<destination mission-step-id="4" zone-index="2"/>
+			<destination mission-step-id="3" zone-index="2"/>
+			<destination mission-step-id="2" zone-index="2"/>
+			<destination mission-step-id="1" zone-index="2"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_901"/>
+		</completion>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.538_6" required-register-value="1" reward-1="538_final_set1">
+				<case msg="q_538_m6" npc-response="qrsp_538_6" object="npc:ch_teachershaman_0001" progress-mission="y" type="talk">
+					<filter-set name="가능">
+						<filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="36"/>
+					</filter-set>
+				</case>
+				<case msg="q_538_m6_deny" npc-response="qrsp_538_7" object="npc:ch_teachershaman_0001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="35"/>
+					</filter-set>
+				</case>
+				<case object="zoneenv:3014_footswich_1" object2="zoneenv2:3014_footswich_1" progress-mission="reaction-only" type="env-entered"/>
+				<case object="zoneenv:e_door_jinsoadoor_01" object2="zoneenv2:e_door_jinsoadoor_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zone:zone_syhbang" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-idle="Jinsoa_soc_02" npc-response="qrsp_538_8" object="npc:CH_JinSoA_0015" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

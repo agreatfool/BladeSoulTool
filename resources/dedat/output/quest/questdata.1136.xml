@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1136" broadcast-category="field" category="normal" desc="q_1136_sum" district-1="suwal" grade="1" group2="QG_Wolho" id="1136" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1136" save-type="all">
+		<acquisition level="38" preceding-quest-1="q_epic_911" preceding-quest-check="and" recommended-level="40">
+			<case acquire-quest="y" item="Quest_Scroll_SoowolPyungwon_0042" msg="q_1136_1" type="talk-to-item"/>
+			<case loot-item="Quest_Scroll_SoowolPyungwon_0042" looting="q_1136_1_icon" object="npc:ME_EoInJok_0001" object2="npc:ME_EoInJok_0001" type="loot"/>
+			<case loot-item="Quest_Scroll_SoowolPyungwon_0042" looting="q_1136_1_icon" object="npc:ME_EoInJok_0002" object2="npc:ME_EoInJok_0002" type="loot"/>
+			<case loot-item="Quest_Scroll_SoowolPyungwon_0042" looting="q_1136_1_icon" object="npc:ME_FishmanC_0005" object2="npc:ME_FishmanC_0005" type="loot"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1136_1" required-register-value="1" reward-1="1136_final_set1">
+				<case npc-response="qrsp_1136_3" object="npc:mh_orakdang_0045" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Scroll_SoowolPyungwon_0042"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_SoowolPyungwon_0042"/>
+	</quest>
+</table>

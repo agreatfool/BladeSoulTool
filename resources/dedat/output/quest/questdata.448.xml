@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_448" broadcast-category="field" category="normal" desc="q_448_sum" grade="1" group2="QG_MoilBong" id="448" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.448" retired="y" save-type="all">
+		<acquisition level="43" preceding-quest-1="q_epic_928" preceding-quest-check="and" recommended-level="43">
+			<case acquire-quest="y" item="q_448_4_icon" msg="q_448_1" type="talk-to-self"/>
+		</acquisition>
+		<mission-step completion-type="or" id="1">
+			<mission id="1" name2="Mission.Name2.448_1" required-register-value="1">
+				<case looting="q_448_1_icon" object="npc:ME_HongUn_0001" object2="npc:ME_HongUn_0001" progress-mission="y" type="loot"/>
+				<case object="zone:zone_AckyoBattle_phase" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.448_2" required-register-value="5">
+				<case looting="q_448_2_icon" object="npc:me_pest_0010" object2="npc:me_pest_0010" progress-mission="y" type="loot"/>
+				<case looting="q_448_2_icon" object="npc:me_scorpion_0003" object2="npc:me_scorpion_0003" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.448_3" required-register-value="1">
+				<case npc-response="qrsp_448_8" object="npc:CE_CT_CrocodileSharkTribeAElder_0018" progress-mission="n" type="approach"/>
+				<case npc-response="qrsp_448_9" object="npc:CE_CT_SuWaJok_0035" progress-mission="n" type="approach"/>
+				<case npc-response="qrsp_448_10" object="npc:CE_CT_BelliedWaterFrog_0002" progress-mission="n" type="approach"/>
+				<case npc-response="qrsp_448_1" object="npc:CH_CT_AngSi_0020" progress-mission="y" type="talk"/>
+				<case object="zone:zone_AckyoBattle_phase" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="4" name2="Mission.Name2.448_4" required-register-value="1">
+				<case npc-response="qrsp_448_2" object="npc:CE_CT_CrocodileSharkTribeAElder_0018" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="5" name2="Mission.Name2.448_5" required-register-value="1">
+				<case npc-response="qrsp_448_3" object="npc:CE_CT_BelliedWaterFrog_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_448_des_5" id="5">
+			<mission id="6" name2="Mission.Name2.448_6" required-register-value="1">
+				<case npc-response="qrsp_448_16" object="npc:CE_CT_NakWonJok_0002" progress-mission="n" type="approach"/>
+				<case npc-response="qrsp_448_17" object="npc:CE_CT_CrocodileSharkTribeAElder_0017" progress-mission="n" type="approach"/>
+				<case npc-response="qrsp_448_18" object="npc:CE_CT_CrocodileSharkTribeAElder_0018" progress-mission="n" type="approach"/>
+				<case npc-response="qrsp_448_19" object="npc:CE_CT_SuWaJok_0035" progress-mission="n" type="approach"/>
+				<case npc-response="qrsp_448_20" object="npc:CH_CT_AngSi_0020" progress-mission="n" type="approach"/>
+				<case npc-response="qrsp_448_4" object="npc:CH_AnDuMae_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_448_des_6" id="6">
+			<mission id="7" name2="Mission.Name2.448_7" required-register-value="1">
+				<case npc-response="qrsp_448_5" object="npc:CH_CT_JaKyungDan_0023" progress-mission="y" type="talk"/>
+				<case button-text-accept="q_448_9_ok" button-text-cancel="q_448_9_no" npc-response="qrsp_448_21" object="npc:CH_AnDuMae_0001" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="8" name2="Mission.Name2.448_8" required-register-value="3">
+				<case gadget-required="dont-care" looting="q_448_6_icon" object="zoneenv:e_chest_fishbox_01" object2="zoneenv2:e_chest_fishbox_01" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_448_6_icon" object="zoneenv:e_chest_fishbox_02" object2="zoneenv2:e_chest_fishbox_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_448_6_icon" mapunit-1="4200_e_chest_fishbox_01_1" object="zoneenv:e_chest_fishbox_03" object2="zoneenv2:e_chest_fishbox_03" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_448_6_icon" object="zoneenv:e_chest_fishbox_04" object2="zoneenv2:e_chest_fishbox_04" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_448_6_icon" object="zoneenv:e_chest_fishbox_05" object2="zoneenv2:e_chest_fishbox_05" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_448_6_icon" object="zoneenv:e_chest_fishbox_06" object2="zoneenv2:e_chest_fishbox_06" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="9" name2="Mission.Name2.448_9" required-register-value="10">
+				<case looting="q_448_3_icon" object="npc:ME_PotAxParty_0011" object2="npc:ME_PotAxParty_0011" progress-mission="y" type="loot"/>
+				<case looting="q_448_3_icon" object="npc:ME_PotAxParty_0012" object2="npc:ME_PotAxParty_0012" progress-mission="y" type="loot"/>
+				<case looting="q_448_3_icon" object="npc:ME_PotAxPartyC_0006" object2="npc:ME_PotAxPartyC_0006" progress-mission="y" type="loot"/>
+				<case looting="q_448_3_icon" object="npc:ME_PotAxPartyA_0006" object2="npc:ME_PotAxPartyA_0006" progress-mission="y" type="loot"/>
+				<case looting="q_448_3_icon" object="npc:ME_PotAxPartyB_0007" object2="npc:ME_PotAxPartyB_0007" progress-mission="y" type="loot"/>
+				<case looting="q_448_3_icon" object="npc:ME_PotAxPartyC_0007" object2="npc:ME_PotAxPartyC_0007" progress-mission="y" type="loot"/>
+				<case looting="q_448_3_icon" object="npc:ME_PotAxPartyA2_0002" object2="npc:ME_PotAxPartyA2_0002" progress-mission="y" type="loot"/>
+				<case looting="q_448_3_icon" object="npc:ME_PotAxPartyB2_0003" object2="npc:ME_PotAxPartyB2_0003" progress-mission="y" type="loot"/>
+				<case looting="q_448_3_icon" object="npc:ME_PotAxPartyC2_0003" object2="npc:ME_PotAxPartyC2_0003" progress-mission="y" type="loot"/>
+				<case looting="q_448_3_icon" object="npc:ME_PotAxParty_0026" object2="npc:ME_PotAxParty_0026" progress-mission="y" type="loot"/>
+				<case looting="q_448_3_icon" object="npc:ME_PotAxParty_0027" object2="npc:ME_PotAxParty_0027" progress-mission="y" type="loot"/>
+				<case looting="q_448_3_icon" mapunit-1="4520_ME_PotAxParty_0011" mapunit-2="4520_ME_PotAxParty_0011_1" mapunit-3="4000_HangARiSulDoGa" object="npc:ME_PotAxParty_0028" object2="npc:ME_PotAxParty_0028" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="10" name2="Mission.Name2.448_10" required-register-value="6">
+				<case looting="q_448_5_icon" object="npc:ME_StrangeMonkeyTribeA_0001" object2="npc:ME_StrangeMonkeyTribeA_0001" progress-mission="y" type="loot"/>
+				<case looting="q_448_5_icon" object="npc:ME_StrangeMonkeyTribeA_0002" object2="npc:ME_StrangeMonkeyTribeA_0002" progress-mission="y" type="loot"/>
+				<case looting="q_448_5_icon" object="npc:ME_StrangeMonkeyTribeA_0003" object2="npc:ME_StrangeMonkeyTribeA_0003" progress-mission="y" type="loot"/>
+				<case looting="q_448_5_icon" object="npc:ME_StrangeMonkeyTribeB_0001" object2="npc:ME_StrangeMonkeyTribeB_0001" progress-mission="y" type="loot"/>
+				<case looting="q_448_5_icon" object="npc:ME_StrangeMonkeyTribeB_0003" object2="npc:ME_StrangeMonkeyTribeB_0003" progress-mission="y" type="loot"/>
+				<case looting="q_448_5_icon" object="npc:ME_StrangeMonkeyTribeA_0007" object2="npc:ME_StrangeMonkeyTribeA_0007" progress-mission="y" type="loot"/>
+				<case looting="q_448_5_icon" mapunit-1="4000_ME_StrangeMonkeyTribeA_0001_2" mapunit-2="4000_ME_StrangeMonkeyTribeA_0001_3" object="npc:ME_StrangeMonkeyTribeA_0008" object2="npc:ME_StrangeMonkeyTribeA_0008" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="11" name2="Mission.Name2.448_11" required-register-value="1">
+				<case npc-response="qrsp_448_6" object="npc:CH_CT_JaKyungDan_0023" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="12" name2="Mission.Name2.448_12" required-register-value="1">
+				<case mapunit-1="1201_e_chest_foodtable1_01" object="zoneenv:e_chest_foodtable1_01" object2="zoneenv2:e_chest_foodtable1_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="13" name2="Mission.Name2.448_13" required-register-value="1">
+				<case object="npc:CH_CT_Dummy_0012" object2="npc:CH_CT_Dummy_0012" progress-mission="y" social="talksocial_deepbow" type="pc-social"/>
+				<case object="npc:CH_CT_Dummy_0012" object2="npc:CH_CT_Dummy_0012" progress-mission="y" social="talksocial_bow1" type="pc-social"/>
+				<case object="zone:StartZone_Event_Hong" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="14" name2="Mission.Name2.448_14" required-register-value="1" reward-1="448_final_set1">
+				<case npc-response="qrsp_448_7" object="npc:CH_CT_JaKyungDan_0023" progress-mission="y" type="talk"/>
+				<case object="zone:StartZone_Event_Hong" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

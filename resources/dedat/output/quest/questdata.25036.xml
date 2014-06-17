@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25036" attraction-1="Dungeon:Dungeon_SnakeScalesVally" broadcast-category="field" category="attraction" desc="q_25036_sum" grade="9" group2="QG_SnakeValley" id="25036" map-group-1-1="baekchung" max-repeat="-1" name2="Quest.Name2.25036" reset-type="none" save-type="nothing">
+		<acquisition level="50" recommended-level="50"/>
+		<mission-step id="1" location-x="16248.98" location-y="-60079.03" map="BuHwalUiJeDan" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.25036_1" required-register-value="1">
+				<case object="npc:ME_CT_RewardBox_0034" object2="npc:ME_CT_RewardBox_0034" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" required-register-value="1" reward-1="25036_final_set1">
+				<case item="q_25036_1_icon" msg="q_25036_1" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

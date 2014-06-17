@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25015" broadcast-category="sextet" category="dungeon" dungeon="dungeon_lightningstorm" grade="17" id="25015" name2="quest.name2.25015" progress-party-duo="n" progress-party-quartet="n" progress-party-solo="n" save-type="nothing">
+		<acquisition level="1" preceding-quest-1="q_sub_708" preceding-quest-check="or" recommended-level="45">
+			<case acquire-quest="y" object="zoneenv:4110_lightningstorm_4718" object2="zoneenv2:4110_lightningstorm_4718" type="enter-portal"/>
+			<case acquire-quest="y" object="zoneenv:806_Portal_4718" object2="zoneenv2:806_Portal_4718" type="enter-portal"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1">
+			<mission id="1" name2="mission.name2.25015_1" required-register-value="1">
+				<case object="npc:ME_Minowoo_0001" object2="npc:ME_Minowoo_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2">
+			<mission id="2" name2="mission.name2.25015_2" required-register-value="1">
+				<case object="npc:MH_BaeYiDo_0001" object2="npc:MH_BaeYiDo_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="3">
+			<mission id="3" name2="mission.name2.25015_3" required-register-value="1">
+				<case object="npc:ME_RewardBox_0017" object2="npc:ME_RewardBox_0017" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="Zone_LightningStorm_C_1_Default">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+		<transit id="2" zone="Zone_LightningStorm_C_2_Default">
+			<destination mission-step-id="2" zone-index="1"/>
+		</transit>
+		<transit id="3" zone="Zone_LightningStorm_C_3_Default">
+			<destination mission-step-id="3" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

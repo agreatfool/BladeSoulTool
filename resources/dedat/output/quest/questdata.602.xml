@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="factionmain1" alias="q_sub_602" broadcast-category="field" category="normal" desc="q_602_sum" district-1="deasamak" grade="1" group2="QG_HyeolPungSaMak" id="602" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.602" save-type="all">
+		<acquisition faction="factionmain1" level="24" preceding-quest-1="q_epic_508" preceding-quest-check="and" recommended-level="26">
+			<case acquire-quest="y" indicator-social="q_602_s_indi_1" msg="q_602_s" npc-response="qrsp_602_1" object="npc:ch_yugachon_0014" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_602_des_1" id="1" location-x="-41584.4375" location-y="-19920.5781" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.602_1" required-register-value="1" reward-1="602_final_set1">
+				<case indicator-social="q_602_m1_indi_1" msg="q_602_m1" npc-response="qrsp_602_2" object="npc:ch_murimmeng_0003" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

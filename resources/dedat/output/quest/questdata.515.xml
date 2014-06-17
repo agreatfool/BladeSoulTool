@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_515" broadcast-category="field" category="epic" completed-desc="q_515_completed" completed-list="y" desc="q_515_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="515" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.515" save-type="all">
+		<acquisition level="1" recommended-level="27" sort-no="316"/>
+		<mission-step id="2" location-x="-52212.1328" location-y="11309.9375" map="yeolsajeedea">
+			<mission id="2" name2="Mission.Name2.515_2" required-register-value="1">
+				<case indicator-social="q_515_m2_indi_1" msg="q_515_m2" npc-response="qrsp_515_2" object="npc:ch_jinsoa_0001" progress-mission="y" type="talk" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-56686.9531" location-y="7860.5977" map="yeolsajeedea">
+			<mission id="3" name2="Mission.Name2.515_3" required-register-value="3">
+				<case looting="q_515_Grocery_leather_bag_1_icon" object="zoneenv:e_onoff_hunterbag_01" object2="zoneenv2:e_onoff_hunterbag_01" progress-mission="y" type="loot"/>
+				<case looting="q_515_Grocery_leather_bag_1_icon" object="zoneenv:e_onoff_hunterbag_02" object2="zoneenv2:e_onoff_hunterbag_02" progress-mission="y" type="loot"/>
+				<case looting="q_515_Grocery_leather_bag_1_icon" object="zoneenv:e_onoff_hunterbag_03" object2="zoneenv2:e_onoff_hunterbag_03" progress-mission="y" type="loot"/>
+				<case looting="q_515_Grocery_leather_bag_1_icon" object="zoneenv:e_onoff_hunterbag_04" object2="zoneenv2:e_onoff_hunterbag_04" progress-mission="y" type="loot"/>
+				<case looting="q_515_Grocery_leather_bag_1_icon" object="zoneenv:e_onoff_hunterbag_05" object2="zoneenv2:e_onoff_hunterbag_05" progress-mission="y" type="loot"/>
+				<case looting="q_515_Grocery_leather_bag_1_icon" object="zoneenv:e_onoff_hunterbag_06" object2="zoneenv2:e_onoff_hunterbag_06" progress-mission="y" type="loot"/>
+				<case looting="q_515_Grocery_leather_bag_1_icon" object="zoneenv:e_onoff_hunterbag_07" object2="zoneenv2:e_onoff_hunterbag_07" progress-mission="y" type="loot"/>
+				<case looting="q_515_Grocery_leather_bag_1_icon" mapunit-1="3010_e_onoff_hunterbag_01" object="zoneenv:e_onoff_hunterbag_08" object2="zoneenv2:e_onoff_hunterbag_08" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_515_5" object="npc:ch_jinsoa_0001" type="approach" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-56686.9531" location-y="7860.5977" map="yeolsajeedea">
+			<mission id="4" name2="Mission.Name2.515_4" required-register-value="1" reward-1="515_final_set1">
+				<case indicator-social="q_515_m4_indi_1" msg="q_515_m4" npc-response="qrsp_515_3" object="npc:ch_jinsoa_0013" progress-mission="y" type="talk" visible-object="y"/>
+				<case object="npc:ch_jinsoa_0001" type="approach" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_516"/>
+		</completion>
+		<mission-step id="1" location-x="-56686.9531" location-y="7860.5977">
+			<mission id="1" name2="Mission.Name2.515_1" required-register-value="1">
+				<case indicator-social="q_515_m1_indi_1" msg="q_515_m1" npc-response="qrsp_515_1" object="npc:ch_treasurehunter_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_515_4" object="npc:ch_unguksoldier_025" type="approach" visible-object="y"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

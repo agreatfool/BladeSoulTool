@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_567" broadcast-category="field" category="normal" desc="q_567_sum" district-1="deasamak" grade="1" group2="QG_ToMunJinSouth" id="567" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.567" save-type="all">
+		<acquisition level="21" preceding-quest-1="q_epic_504" preceding-quest-check="and" recommended-level="23">
+			<case acquire-quest="y" indicator-social="q_567_s_indi_1" msg="q_567_s" npc-response="qrsp_567_3" object="npc:ch_unguksoldier_010" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-48192.8281" location-y="-78465.7266" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.567_1" required-register-value="1">
+				<case loot-item="Quest_567_1" looting="q_567_Quest_old_letter_1_icon" mapunit-2="3003_e_onoff_drybody_02" object="zoneenv:e_onoff_drybody_02" object2="zoneenv2:e_onoff_drybody_02" progress-mission="y" type="loot"/>
+				<case loot-item="Quest_567_1" looting="q_567_Quest_old_letter_1_icon" mapunit-1="3003_e_onoff_drybody_01" object="zoneenv:e_onoff_drybody_01" object2="zoneenv2:e_onoff_drybody_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.567_2" required-register-value="1">
+				<case item="Quest_567_1" msg="q_567_m2" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-46720.6484" location-y="-75777.3984" map="toemunjean">
+			<mission id="3" name2="Mission.Name2.567_3" required-register-value="1" reward-1="567_final_set1">
+				<case indicator-social="q_567_m3_indi_1" msg="q_567_m3" npc-response="qrsp_567_2" object="npc:ch_unguksoldier_020" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_567_1"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_567_1"/>
+	</quest>
+</table>

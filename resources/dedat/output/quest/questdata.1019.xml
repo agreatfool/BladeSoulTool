@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1019" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1019_sum" district-1="suwal" grade="1" group2="QG_Wolchon" id="1019" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1019" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="36" preceding-quest-1="q_sub_1009" preceding-quest-check="and" recommended-level="38">
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1019_3" object="npc:CH_Hunter_0006" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1019_1" object="npc:CH_Hunter_0006" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_1019_5" object="npc:ce_board_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="2" name2="Mission.Name2.1019_2" required-register-value="1">
+				<case object="npc:mh_jegukgun_0001" object2="npc:mh_jegukgun_0001" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="1" name2="Mission.Name2.1019_1" required-register-value="7">
+				<case object="npc:mh_jegukgun_0281" object2="npc:mh_jegukgun_0281" progress-mission="y" type="killed"/>
+				<case mapunit-1="4000_MH_JeGukGun_0002_3" mapunit-2="4000_MH_JeGukGun_0002_4" mapunit-3="4000_MH_JeGukGun_0002_5" object="npc:mh_jegukgun_0002" object2="npc:mh_jegukgun_0002" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0282" object2="npc:mh_jegukgun_0282" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0003" object2="npc:mh_jegukgun_0003" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.1019_3" required-register-value="1" reward-1="1019_final_set1" reward-2="1019_final_set2">
+				<case completion-count="1" npc-response="qrsp_1019_4" object="npc:CH_Hunter_0006" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1019_2" object="npc:CH_Hunter_0006" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_1019_1_icon" msg="q_1019_6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

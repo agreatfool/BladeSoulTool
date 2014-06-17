@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_961" broadcast-category="field" category="normal" day-of-week="daily" desc="q_961_sum" grade="9" group2="QG_HwangGung" id="961" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.961" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="50" preceding-quest-1="q_epic_287" preceding-quest-2="q_epic_293" preceding-quest-check="or" recommended-level="50">
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_961_1" object="npc:CH_CT_TaeSanKwan_0018" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_961_1" object="npc:CH_CT_TaeSanKwan_0018" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_961_4" object="npc:ce_ct_board_0025" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.961_1" required-register-value="1" reward-1="961_final_set1" reward-2="961_final_set2">
+				<case completion-count="1" npc-response="qrsp_961_2" object="npc:CH_CT_TaeSanKwan_0019" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_961_2" object="npc:CH_CT_TaeSanKwan_0019" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_961_3" object="npc:CH_CT_TaeSanKwan_0018" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

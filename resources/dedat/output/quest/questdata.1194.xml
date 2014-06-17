@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1194" broadcast-category="field" category="normal" desc="q_1194_sum" district-1="suwal" grade="1" group2="QG_GuidosiNorth" id="1194" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1194" save-type="all">
+		<acquisition level="39" preceding-quest-1="q_epic_916" preceding-quest-check="and" preceding-quest-mission-step-1="3" recommended-level="41">
+			<case acquire-quest="y" npc-response="qrsp_1194_1" object="npc:ce_jukgyodan_0005" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_1194_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.1194_1" required-register-value="5">
+				<case gadget="q_bomba_2" gadget-required="carry-and-remove" mapunit-1="4300_me_crocodilesharktribebzombie_0004_1" object-1="npc:me_crocodilesharktribebzombie_0004" object-2="npc:me_crocodilesharktribed_0002" object-3="npc:me_crocodilesharktribedsorcerer_0001" object-4="npc:me_crocodilesharktribedsorcerer_0011" object-5="npc:me_crocodilesharktribed_0012" object-6="npc:me_crocodilesharktribebzombie_0005" object2-1="npc:me_crocodilesharktribebzombie_0004" object2-2="npc:me_crocodilesharktribed_0002" object2-3="npc:me_crocodilesharktribedsorcerer_0001" object2-4="npc:me_crocodilesharktribedsorcerer_0011" object2-5="npc:me_crocodilesharktribed_0012" object2-6="npc:me_crocodilesharktribebzombie_0005" prob="50" progress-mission="y" skill="gadget_q_bomba_2" skill3="gadget_q_bomba_2" type="skill"/>
+				<case gadget-required="empty" object="zoneenv:e_chest_bombbox_01" object2="zoneenv2:e_chest_bombbox_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" object="zoneenv:e_chest_bombbox_02" object2="zoneenv2:e_chest_bombbox_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" mapunit-1="4300_e_chest_bombbox_01" mapunit-2="4300_e_chest_bombbox_02" mapunit-3="4300_e_chest_bombbox_03" object="zoneenv:e_chest_bombbox_03" object2="zoneenv2:e_chest_bombbox_03" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1194_2" required-register-value="1" reward-1="1194_final_set1">
+				<case npc-response="qrsp_1194_2" object="npc:ce_jukgyodan_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

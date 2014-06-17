@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_531" broadcast-category="field" category="epic" completed-desc="q_531_completed" completed-list="y" desc="q_531_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="531" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.531" save-type="all">
+		<acquisition level="1" recommended-level="35" sort-no="333"/>
+		<mission-step id="1" location-x="6156.1499" location-y="51551.4766" map="junodg" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.531_1" required-register-value="1">
+				<case env-looting="q_531_Quest_large_feather_1_icon" mapunit-3="3076_e_onoff_lightshell_01" mapunit-4="3030_Guide_E531" object="zoneenv:e_onoff_lightshell_01" object2="zoneenv2:e_onoff_lightshell_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="19927.75" location-y="33870.5156" map="hoerangchon">
+			<mission id="2" name2="Mission.Name2.531_2" required-register-value="1" reward-1="531_final_set1">
+				<case npc-response="qrsp_531_1" object="npc:ce_hwerang_007" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_532"/>
+		</completion>
+	</quest>
+</table>

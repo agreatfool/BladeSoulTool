@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_912" broadcast-category="field" category="epic" completed-desc="q_912_completed" completed-list="y" desc="q_912_sum" district-1="suwal" grade="1" group2="QG_SuwalPWEpic" id="912" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.912" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="40" sort-no="413"/>
+		<mission-step id="1" location-x="-28590.87" location-y="-64730.05" map="wolho" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.912_1" required-register-value="1">
+				<case mapunit-1="4105_Guide_E912" npc-response="qrsp_912_1" object="npc:ch_daeeobang_0039" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-34124.00" location-y="-74336.57" map="eoinjoksogul" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.912_2" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_912_Quest_secret_mail_1_icon" mapunit-1="4560_ME_FishmanC_0005" object="npc:ME_FishmanC_0005" object2="npc:ME_FishmanC_0005" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_912_7" object="npc:ch_daeeobang_0039" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.912_3" required-register-value="1">
+				<case npc-response="qrsp_912_3" object="npc:ch_daeeobang_0039" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-43653.56" location-y="-71169.05" map="daeeobangmulpumchanggo" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.912_4" required-register-value="1">
+				<case npc-response="qrsp_912_4" object="npc:ch_daeeobang_0006" progress-mission="y" type="talk"/>
+				<case object="zone:zone_jekukbimileunsincher" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_912_7" object="npc:ch_daeeobang_0039" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.912_5" required-register-value="1">
+				<case mapunit-1="4565_footswitch_2" object="zoneenv:4565_footswitch_2" object2="zoneenv2:4565_footswitch_2" progress-mission="y" type="env-entered"/>
+				<case object="zone:zone_jekukbimileunsincher" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.912_6" required-register-value="1">
+				<case npc-response="qrsp_912_5" object="npc:ch_honghwadae_0001" progress-mission="y" type="talk"/>
+				<case object="zoneenv:4565_footswitch_1" object2="zoneenv2:4565_footswitch_1" progress-mission="reaction-only" type="env-entered"/>
+				<case object="zone:zone_jekukbimileunsincher" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.912_7" required-register-value="1" reward-1="912_final_set1">
+				<case npc-response="qrsp_912_6" object="npc:CH_DaeEoBang_0046" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_913"/>
+		</completion>
+	</quest>
+</table>

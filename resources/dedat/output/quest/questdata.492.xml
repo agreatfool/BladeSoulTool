@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_492" broadcast-category="field" category="epic" completed-desc="q_492_completed" completed-list="y" desc="q_492_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="492" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.492" save-type="all">
+		<acquisition level="1" recommended-level="14" sort-no="215"/>
+		<mission-step completion-type="and" desc="q_492_des_2" id="2" location-x="29927.912" location-y="24857.363" map="suryengol" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.492_2" required-register-value="3">
+				<case looting="q_491_Grocery_Meat_Loaf_1_icon" mapunit-1="2300_me_deer_0001" mapunit-2="2300_me_deer_0001_1" mapunit-3="2300_me_deer_0001_2" mapunit-4="2310_guide_E491" object="npc:ME_JR_bear_0002" object2="npc:ME_JR_bear_0002" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_491_3" object="npc:CE_JR_DokChoGeoSa_0001" type="approach"/>
+				<case npc-response="qrsp_492_5" object="npc:CH_JR_Citizen_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_492_des_3" id="3" location-x="14186.748" location-y="20482.25" map="nokmyeong">
+			<mission id="3" name2="Mission.Name2.492_3" required-register-value="1" reward-1="492_final_set1">
+				<case indicator-social="q_492_m2_indi_1" msg="q_492_m2" npc-response="qrsp_492_2" object="npc:CE_JR_DokChoGeoSa_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_313"/>
+		</completion>
+		<mission-step desc="q_492_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.492_1" required-register-value="1">
+				<case npc-response="qrsp_492_4" object="npc:CH_JR_Citizen_0003" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_491_3" object="npc:CE_JR_DokChoGeoSa_0001" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

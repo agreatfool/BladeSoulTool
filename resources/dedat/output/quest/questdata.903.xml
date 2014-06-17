@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_903" broadcast-category="field" category="epic" completed-desc="q_903_completed" completed-list="y" desc="q_903_sum" district-1="suwal" grade="1" group2="QG_SuwalPWEpic" id="903" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.903" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="37" sort-no="403"/>
+		<mission-step id="1" location-x="40806.20" location-y="58516.25" map="yeongsukgwangsan" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.903_1" required-register-value="1">
+				<case mapunit-1="4410_Guide_E903(1)" mapunit-2="4420_ch_yeonglin_0085_epic903" npc-response="qrsp_903_1" object="npc:ch_yeonglin_0085" progress-mission="y" type="talk"/>
+				<case object="zone:zone_ysmine" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.903_2" required-register-value="1">
+				<case mapunit-1="4420_foot_3" object="zone:zone_ysmine" progress-mission="y" type="convoy-arrived"/>
+				<case object="zoneenv:4420_foot_5" object2="zoneenv2:4420_foot_5" progress-mission="reaction-only" type="env-entered"/>
+				<case object="zoneenv:4420_foot_6" object2="zoneenv2:4420_foot_6" progress-mission="reaction-only" type="env-entered"/>
+				<case object="zoneenv:4420_foot_7" object2="zoneenv2:4420_foot_7" progress-mission="reaction-only" type="env-entered"/>
+				<case object="zoneenv:4420_foot_8" object2="zoneenv2:4420_foot_8" progress-mission="reaction-only" type="env-entered"/>
+			</mission>
+			<mission-step-fail>
+				<case convoy="epic_903_con" object="zone:zone_ysmine" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step id="3" location-x="46948.78" location-y="66610.00" map="yeongsukgwangsan" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.903_3" required-register-value="1">
+				<case mapunit-1="4420_CH_YeongLin_0085_E903(3)" npc-response="qrsp_903_2" object="npc:ch_yeonglin_0085" progress-mission="y" type="talk"/>
+				<case object="zoneenv:4420_foot_9" object2="zoneenv2:4420_foot_9" progress-mission="reaction-only" type="env-entered"/>
+				<case object="zoneenv:4420_foot_10" object2="zoneenv2:4420_foot_10" progress-mission="reaction-only" type="env-entered"/>
+			</mission>
+			<mission-step-fail/>
+		</mission-step>
+		<mission-step id="4" location-x="45792.53" location-y="62635.39" map="yeongsukgwangsan" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.903_4" required-register-value="7">
+				<case looting="q_903_Weapon_AB_030006_1_icon" mapunit-1="4420_MH_JeGukGun_0262" mapunit-2="4419_YeongSukGwangSan_E903" object="npc:mh_jegukgun_0262" object2="npc:mh_jegukgun_0262" progress-mission="y" type="loot"/>
+				<case looting="q_903_Weapon_AB_030006_1_icon" object="npc:MH_JeGukGun_0039" object2="npc:MH_JeGukGun_0039" progress-mission="y" type="loot"/>
+				<case object="zone:zone_ysmine" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.903_5" required-register-value="10">
+				<case object="npc:ch_wolgwanghoe_0004" progress-mission="y" type="npc-manipulate"/>
+				<case object="npc:ch_wolgwanghoe_0005" progress-mission="y" type="npc-manipulate"/>
+				<case object="npc:ch_wolgwanghoe_0011" progress-mission="y" type="npc-manipulate"/>
+				<case object="npc:ch_wolgwanghoe_0012" progress-mission="y" type="npc-manipulate"/>
+				<case object="npc:ch_wolgwanghoe_0013" progress-mission="y" type="npc-manipulate"/>
+				<case object="npc:ch_wolgwanghoe_0014" progress-mission="y" type="npc-manipulate"/>
+				<case object="npc:ch_wolgwanghoe_0015" progress-mission="y" type="npc-manipulate"/>
+				<case object="npc:ch_wolgwanghoe_0016" progress-mission="y" type="npc-manipulate"/>
+				<case object="npc:ch_wolgwanghoe_0017" progress-mission="y" type="npc-manipulate"/>
+				<case mapunit-1="4420_CH_WolGwangHoe_0004" object="npc:ch_wolgwanghoe_0018" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+			<mission-step-fail rollback-step-id="4"/>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.903_6" required-register-value="1">
+				<case npc-response="qrsp_903_3" object="npc:ch_yeonglin_0011" progress-mission="y" type="talk"/>
+				<case object="zoneenv:4420_foot_11" object2="zoneenv2:4420_foot_11" progress-mission="reaction-only" type="env-entered"/>
+				<case object="zoneenv:4420_foot_13" object2="zoneenv2:4420_foot_13" progress-mission="reaction-only" type="env-entered"/>
+				<case npc-response="qrsp_903_8" object="npc:ch_wolgwanghoe_0023" type="approach"/>
+				<case npc-response="qrsp_903_9" object="npc:ch_wolgwanghoe_0024" type="approach"/>
+				<case npc-response="qrsp_903_10" object="npc:ch_wolgwanghoe_0027" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="4"/>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.903_7" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="4420ch_wolgwanghoe_0034_1" object="npc:ch_wolgwanghoe_0034" progress-mission="y" type="npc-bleeding-occured"/>
+			</mission>
+			<mission-step-fail rollback-step-id="4"/>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.903_8" required-register-value="1" reward-1="903_middle_set1">
+				<case npc-response="qrsp_903_4" object="npc:ch_yeonglin_0011" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="4"/>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.903_9" required-register-value="1">
+				<case npc-response="qrsp_903_5" object="npc:ch_yeonglin_0010" progress-mission="y" type="talk"/>
+				<case object="zone:zone_youtaewal_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10" location-x="46377.39" location-y="44023.07" map="angaesup" mission-map-type="location">
+			<mission id="10" name2="Mission.Name2.903_10" required-register-value="1">
+				<case mapunit-1="4410_Guide_E903(10)" npc-response="qrsp_903_6" object="npc:ch_yeonglin_0004" progress-mission="y" type="talk"/>
+				<case object="zone:zone_youngrinbong_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.903_11" required-register-value="2">
+				<case object="zoneenv:e_chest_bignail_02" object2="zoneenv2:e_chest_bignail_02" progress-mission="y" type="manipulate"/>
+				<case mapunit-1="4411_e_chest_bignail_02" mapunit-2="4411_e_chest_bignail_04" object="zoneenv:e_chest_bignail_04" object2="zoneenv2:e_chest_bignail_04" progress-mission="y" type="manipulate"/>
+			</mission>
+			<mission-step-fail rollback-step-id="10"/>
+		</mission-step>
+		<mission-step id="12" location-x="-3486.98" location-y="11949.35" map="haenamumaeulicheung" mission-map-type="location">
+			<mission id="12" name2="Mission.Name2.903_12" required-register-value="1" reward-1="903_final_set1">
+				<case npc-response="qrsp_903_7" object="npc:ch_yeonglin_0005" progress-mission="y" type="talk"/>
+				<case object="zone:zone_iksanwoon_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_904"/>
+		</completion>
+		<transit id="1" zone="zone_youtaewal_0">
+			<destination mission-step-id="9" zone-index="1"/>
+		</transit>
+		<transit id="2" zone="zone_youngrinbong_6">
+			<destination mission-step-id="11" zone-index="1"/>
+			<destination mission-step-id="10" zone-index="1"/>
+		</transit>
+		<transit id="3" zone="zone_iksanwoon_default">
+			<destination mission-step-id="12" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

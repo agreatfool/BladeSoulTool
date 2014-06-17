@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_266" broadcast-category="field" category="epic" completed-desc="q_266_completed" completed-list="y" desc="q_266_sum" grade="1" group2="QG_BaeCheongEpic" id="266" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.266" save-type="all">
+		<acquisition level="1" recommended-level="46" sort-no="507"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.266_1" required-register-value="1">
+				<case npc-response="qrsp_266_1" object="npc:CH_CT_ORakDang_0019" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_266_2" object="npc:CH_CT_JeGukGun_0124" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.266_2" required-register-value="1">
+				<case npc-response="qrsp_266_3" object="npc:CH_CT_JeGukGun_0124" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.266_4" required-register-value="1">
+				<case object="zone:Zone_NokRim_YunHwa_Epic" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="npc:MH_CT_MokuJin_0098" object2="npc:MH_CT_MokuJin_0098" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_MokuJin_0099" object2="npc:MH_CT_MokuJin_0099" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_MokuJin_0100" object2="npc:MH_CT_MokuJin_0100" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_MokuJin_0101" object2="npc:MH_CT_MokuJin_0101" progress-mission="reaction-only" type="killed"/>
+				<case mapunit-1="5029_MH_CT_MokuJin_0098_e266" object="npc:MH_CT_MokuJin_0102" object2="npc:MH_CT_MokuJin_0102" progress-mission="reaction-only" type="killed"/>
+				<case gadget="Q_Mokujin_0002" gadget-required="carry-and-remove" mapunit-1="5029_CE_CT_MoKuJin_0007_e266" object="npc:CE_CT_MoKuJin_0007" progress-mission="reaction-only" type="npc-manipulate"/>
+				<case gadget="Q_Mokujin_0003" gadget-required="carry-and-remove" object="npc:CE_CT_MoKuJin_0008" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.266_5" required-register-value="1">
+				<case object="zone:Zone_NokRim_YunHwa_Epic" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_266_4" object="npc:CH_CT_MoKuJin_0009" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6" location-x="-52660.88" location-y="72571.69" map="SoYeonHwaUiSuRyeonBang" mission-map-type="location">
+			<mission id="6" name2="Mission.Name2.266_6" required-register-value="1">
+				<case object="zone:Zone_NokRim_YunHwa_Epic" progress-mission="reaction-only" type="enter-zone"/>
+				<case mapunit-1="5029_Guide_e266" npc-response="qrsp_266_5" object="npc:CH_CT_MoKuJin_0011" progress-mission="y" type="talk"/>
+				<case object="zoneenv:e_Chest_secretroom_01" object2="zoneenv2:e_Chest_secretroom_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.266_7" required-register-value="1">
+				<case object="zone:Zone_NokRim_YunHwa_Epic" progress-mission="reaction-only" type="enter-zone"/>
+				<case mapunit-1="5029_e_chest_soyeonhwabox_01_e266" object="zoneenv:e_Chest_soyeonhwabox_01" object2="zoneenv2:e_Chest_soyeonhwabox_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8" location-x="-52801.50" location-y="72372.47" map="SoYeonHwaUiSuRyeonBang" mission-map-type="location">
+			<mission id="8" name2="Mission.Name2.266_8" required-register-value="1">
+				<case object="zone:Zone_NokRim_YunHwa_Epic" progress-mission="reaction-only" type="enter-zone"/>
+				<case looting="q_266_1_icon" object="npc:MH_CT_Mokujin_0087" object2="npc:MH_CT_Mokujin_0087" progress-mission="y" type="loot"/>
+				<case object="npc:MH_CT_MokuJin_0093" object2="npc:MH_CT_MokuJin_0093" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_MokuJin_0094" object2="npc:MH_CT_MokuJin_0094" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_MokuJin_0095" object2="npc:MH_CT_MokuJin_0095" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_CT_MokuJin_0096" object2="npc:MH_CT_MokuJin_0096" show-in-tooltip="y" type="killed"/>
+				<case mapunit-1="5029_MH_CT_MokuJin_0093_e266" object="npc:MH_CT_MokuJin_0097" object2="npc:MH_CT_MokuJin_0097" show-in-tooltip="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.266_9" required-register-value="1">
+				<case object="zone:Zone_NokRim_YunHwa_Epic" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_266_6" object="npc:CH_CT_ORakDang_0024" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.266_10" required-register-value="1">
+				<case object="zone:Zone_NokRim_YunHwa_Epic" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="npc:CH_CT_ORakDang_0024" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="npc:CH_CT_ORakDang_0023" progress-mission="y" type="npc-bleeding-occured"/>
+			</mission>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.266_11" required-register-value="1">
+				<case object="zone:Zone_NokRim_YunHwa_Epic" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="npc:CH_CT_ORakDang_0021" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="12" location-x="-52141.25" location-y="71633.09" map="BuDuRyeongUiByeolChae" mission-map-type="location">
+			<mission id="12" name2="Mission.Name2.266_12" required-register-value="1">
+				<case object="zone:Zone_NokRim_YunHwa_Epic" progress-mission="reaction-only" type="enter-zone"/>
+				<case mapunit-1="5029_e_Chest_soyeonhwagate_04_e266" mapunit-2="5029_AirDash_GreatPlain_03A_e266" object="zoneenv:e_Chest_soyeonhwagate_04" object2="zoneenv2:e_Chest_soyeonhwagate_04" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_Chest_soyeonhwagate_06" object2="zoneenv2:e_Chest_soyeonhwagate_06" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="13" location-x="-49242.25" location-y="69595.92" map="SoYeonHwaUiBang" mission-map-type="location">
+			<mission id="13" name2="Mission.Name2.266_13" required-register-value="1">
+				<case object="zone:Zone_NokRim_YunHwa_Epic" progress-mission="reaction-only" type="enter-zone"/>
+				<case mapunit-1="5029_Guide_e266_1" object="npc:CH_CT_NokLimDo_0011" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="zoneenv:e_Chest_soyeonhwagate_06" object2="zoneenv2:e_Chest_soyeonhwagate_06" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_267"/>
+		</completion>
+		<mission-step id="14">
+			<mission id="14" name2="Mission.Name2.266_14" required-register-value="1">
+				<case object="zone:Zone_NokRim_YunHwa_Epic" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="npc:CH_CT_NokLimDo_0012" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="15" location-x="-44771.00" location-y="-26677.19" map="PungNyeonBuRak" mission-map-type="location">
+			<mission id="15" name2="Mission.Name2.266_15" required-register-value="1" reward-1="266_final_set1">
+				<case mapunit-1="5029_Guide_e266_2" mapunit-2="5029_Guide_e266_3" mapunit-3="5095_Guide_e266" npc-response="qrsp_266_7" object="npc:CH_CT_JeGukGun_0270" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_NokRim_YunHwa_Epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_yumsek_zekuk_na">
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+		<mission-step id="3" location-x="-62660.56" location-y="66646.27" map="NokRimDoSanChae" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.266_3" required-register-value="1">
+				<case mapunit-1="5095_Zone_NokRim_YunHwa_Epic_e266" mapunit-2="5002_Guide_e266" object="zone:Zone_NokRim_YunHwa_Epic" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

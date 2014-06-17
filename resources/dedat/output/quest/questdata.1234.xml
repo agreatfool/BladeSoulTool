@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1234" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1234_sum" grade="9" group2="QG_HeukRyong_Epic6" id="1234" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.1234" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="50" preceding-quest-1="q_epic_993" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1234_3" object="npc:CH_WB_ChungGak_0048" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1234_1" object="npc:CH_WB_ChungGak_0048" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1234_1" required-register-value="1">
+				<case object="npc:ME_WB_DemonShadowCBig_0002" object2="npc:ME_WB_DemonShadowCBig_0002" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1234_2" required-register-value="1" reward-1="1234_final_set1" reward-2="1234_final_set2">
+				<case completion-count="1" npc-response="qrsp_1234_4" object="npc:CH_WB_ChungGak_0048" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1234_2" object="npc:CH_WB_ChungGak_0048" progress-mission="y" type="talk"/>
+				<case item="q_1234_1_icon" msg="q_1234_5" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

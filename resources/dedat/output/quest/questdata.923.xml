@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_923" broadcast-category="field" category="epic" completed-desc="q_923_completed" completed-list="y" desc="q_923_sum" district-1="suwal" grade="1" group2="QG_SuwalPWEpic" id="923" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.923" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="42" sort-no="423"/>
+		<mission-step id="1" location-x="-3330.73" location-y="12371.22" map="haenamumaeulicheung" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.923_1" required-register-value="1">
+				<case npc-response="qrsp_923_1" object="npc:ch_honhwadae_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-3486.98" location-y="12308.72" map="haenamumaeulicheung" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.923_2" required-register-value="1">
+				<case npc-response="qrsp_923_2" object="npc:ch_barkmun_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-3065.11" location-y="12011.85" map="haenamumaeulicheung" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.923_3" required-register-value="1">
+				<case object="zone:zone_iksanwoon_3" progress-mission="reaction-only" type="enter-zone"/>
+				<case mapunit-1="4023_e_chest_iksanyongmak_01" mapunit-2="4023_e_chest_iksanyongmak_01+" object="zoneenv:e_chest_iksanyongmak_01" object2="zoneenv2:e_chest_iksanyongmak_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_926"/>
+		</completion>
+		<transit id="2" zone="zone_kyoungchenkiji">
+			<destination mission-step-id="11" zone-index="1"/>
+			<destination mission-step-id="10" zone-index="1"/>
+			<destination mission-step-id="9" zone-index="1"/>
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+		</transit>
+		<transit id="1" zone="zone_iksanwoon_default">
+			<destination mission-step-id="3" zone-index="3"/>
+			<destination mission-step-id="2" zone-index="3"/>
+			<destination mission-step-id="1" zone-index="3"/>
+			<destination mission-step-id="4" zone-index="3"/>
+		</transit>
+		<mission-step id="4" location-x="-1989.80" location-y="55153.93" map="angaesup_4408" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.923_4" required-register-value="1">
+				<case object="zone:zone_kyoungchenkiji_epic" progress-mission="reaction-only" type="enter-zone"/>
+				<case mapunit-1="4023_e_chest_iksanyongmak_01" mapunit-2="4023_e_chest_iksanyongmak_01+" object="npc:ch_gyeongchunmaeng_0035" progress-mission="y" type="approach"/>
+				<case object="zone:zone_iksanwoon_3" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:e_chest_iksanyongmak_01" object2="zoneenv2:e_chest_iksanyongmak_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.923_5" required-register-value="1">
+				<case npc-response="qrsp_923_3" object="npc:ch_gyeongchunmaeng_0035" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="4"/>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.923_6" required-register-value="1">
+				<case mapunit-1="4404_foot_1" object="zone:zone_kyoungchenkiji_epic" progress-mission="y" type="convoy-arrived"/>
+			</mission>
+			<mission-step-fail rollback-step-id="4">
+				<case convoy="epic_923_con_1" object="zone:zone_kyoungchenkiji_epic" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.923_7" required-register-value="1">
+				<case npc-response="qrsp_923_4" object="npc:ch_gyeongchunmaeng_0012" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="4"/>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.923_8" required-register-value="1">
+				<case object="npc:CH_GyeongChunMaeng_0045" progress-mission="y" type="approach"/>
+				<case object="zone:zone_kyoungchenkiji_epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.923_9" required-register-value="1">
+				<case npc-response="qrsp_923_5" object="npc:ch_gyeongchunmaeng_0044" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="8"/>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.923_10" required-register-value="1">
+				<case mapunit-1="4404_foot_2" object="zone:zone_kyoungchenkiji_epic" progress-mission="y" type="convoy-arrived"/>
+				<case npc-response="qrsp_923_8" object="npc:mh_geongchunmaeng_0072" type="approach"/>
+				<case npc-response="qrsp_923_7" object="npc:mh_geongchunmaeng_0070" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="8">
+				<case convoy="epic_923_con_2" object="zone:zone_kyoungchenkiji_epic" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.923_11" required-register-value="1" reward-1="923_final_set1">
+				<case npc-response="qrsp_923_6" object="npc:ch_gyeongchunmaeng_0044" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="8"/>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_850" broadcast-category="field" category="normal" day-of-week="daily" desc="q_850_sum" grade="1" group2="QG_SnowMountSouth" id="850" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.850" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="47" preceding-quest-1="q_epic_283" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="49">
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_850_6" object="npc:CE_CT_Board_0030" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_850_3" object="npc:CH_CT_Adventurer_0002" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_850_1" object="npc:CH_CT_Adventurer_0002" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.850_1" required-register-value="15">
+				<case looting="q_850_1_icon" object="npc:MH_CT_SulPung_0005" object2="npc:MH_CT_SulPung_0005" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+				<case looting="q_850_1_icon" object="npc:MH_CT_SulPung_0004" object2="npc:MH_CT_SulPung_0004" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+				<case looting="q_850_1_icon" object="npc:MH_CT_SulPung_0003" object2="npc:MH_CT_SulPung_0003" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+				<case looting="q_850_1_icon" object="npc:MH_CT_SulPung_0002" object2="npc:MH_CT_SulPung_0002" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+				<case looting="q_850_1_icon" mapunit-1="5285_MH_CT_SulPung_0001_s850" object="npc:MH_CT_SulPung_0001" object2="npc:MH_CT_SulPung_0001" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.850_2" required-register-value="4">
+				<case looting="q_850_2_icon" object="zoneenv:e_Chest_hunterbag_06" object2="zoneenv2:e_Chest_hunterbag_06" progress-mission="y" type="loot"/>
+				<case looting="q_850_2_icon" object="zoneenv:e_Chest_hunterbag_05" object2="zoneenv2:e_Chest_hunterbag_05" progress-mission="y" type="loot"/>
+				<case looting="q_850_2_icon" object="zoneenv:e_Chest_hunterbag_04" object2="zoneenv2:e_Chest_hunterbag_04" progress-mission="y" type="loot"/>
+				<case looting="q_850_2_icon" object="zoneenv:e_Chest_hunterbag_03" object2="zoneenv2:e_Chest_hunterbag_03" progress-mission="y" type="loot"/>
+				<case looting="q_850_2_icon" object="zoneenv:e_Chest_hunterbag_02" object2="zoneenv2:e_Chest_hunterbag_02" progress-mission="y" type="loot"/>
+				<case looting="q_850_2_icon" mapunit-1="5285_e_Chest_hunterbag_01_s850" object="zoneenv:e_Chest_hunterbag_01" object2="zoneenv2:e_Chest_hunterbag_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.850_3" required-register-value="1" reward-1="850_final_set1" reward-2="850_final_set2">
+				<case fee="y" item="q_850_4_icon" msg="q_850_5" progress-mission="y" type="talk-to-self"/>
+				<case completion-count="1" npc-response="qrsp_850_4" object="npc:CH_CT_Adventurer_0002" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_850_2" object="npc:CH_CT_Adventurer_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

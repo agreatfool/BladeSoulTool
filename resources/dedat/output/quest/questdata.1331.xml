@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1331" broadcast-category="field" category="job" desc="q_1331_sum" district-1="jeryoungrim" grade="1" group2="QG_MangJaSup" id="1331" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.1331" save-type="all" show-tutorial-tag="n" tutorial="y">
+		<acquisition job-1="암살자" level="8" preceding-quest-1="q_epic_307" preceding-quest-2="q_sub_1330" preceding-quest-check="and" recommended-level="8" talk-to-self-guide-msg="Msg.Job.quest3">
+			<case acquire-quest="y" item="q_1331_Quest_hair_growth_solution_manual_1_icon" msg="q_1331_s" type="talk-to-self"/>
+			<case acquire-quest="y" npc-response="qrsp_1331_9" object="npc:ch_jakyungdan_0006" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1331_1" required-register-value="1">
+				<case indicator-social="q_1331_m1_indi_1" msg="q_1331_m1" npc-response="qrsp_1331_1" object="npc:CH_HwaJung_0032" progress-mission="y" type="talk"/>
+				<case object="zone:zone_MangJa_ClassQ_3_C5" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" guide-message="gm_1331_1" guide-message-zone-1="zone_MangJa_ClassQ_3_C5" id="2">
+			<mission id="2" name2="Mission.Name2.1331_2" required-register-value="3" show-kill-mapunit="y">
+				<tutorial-case object-1="npc:ME_BelliedFireFrog_0003" object2-1="npc:ME_BelliedFireFrog_0003" progress-mission="y" skill-sequence="Assassin_Lv8_M11" type="skill-sequence"/>
+				<tutorial-case object-1="npc:ME_BelliedFireFrog_0004" object2-1="npc:ME_BelliedFireFrog_0004" progress-mission="y" skill-sequence="Assassin_Lv8_M11" type="skill-sequence"/>
+				<tutorial-case object-1="npc:ME_BelliedFireFrog_0005" object2-1="npc:ME_BelliedFireFrog_0005" progress-mission="y" skill-sequence="Assassin_Lv8_M11" type="skill-sequence"/>
+				<case object="zone:zone_MangJa_ClassQ_3_C5" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_1331_m2_indi_1" npc-response="qrsp_1331_2" object="npc:CH_HwaJung_0032" type="approach"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.1331_3" required-register-value="1">
+				<case npc-response="qrsp_1331_10" object="npc:CE_JR_JobBook_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="4" name2="Mission.Name2.1331_4" required-register-value="1">
+				<case indicator-social="q_1331_m3_indi_1" msg="q_1331_m3" npc-response="qrsp_1331_6" object="npc:CH_HwaJung_0032" progress-mission="y" type="talk"/>
+				<case object="zone:zone_MangJa_ClassQ_3_C5" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" guide-message="gm_1331_2" guide-message-zone-1="zone_MangJa_ClassQ_3_C5" id="4">
+			<mission id="5" name2="Mission.Name2.1331_5" required-register-value="3" show-kill-mapunit="y">
+				<tutorial-case object-1="npc:ME_KingFrog_0005" object2-1="npc:ME_KingFrog_0005" progress-mission="y" range-max="2" range-min="2" skill-sequence="Assassin_Lv8_M21" type="skill-sequence"/>
+				<case object="zone:zone_MangJa_ClassQ_3_C5" progress-mission="reaction-only" type="enter-zone"/>
+				<tutorial-case object-1="npc:ME_KingFrog_0005" object2-1="npc:ME_KingFrog_0005" progress-mission="y" range-max="1" range-min="1" skill-sequence="Assassin_Lv8_M21" type="skill-sequence"/>
+				<tutorial-case object-1="npc:ME_KingFrog_0005" object2-1="npc:ME_KingFrog_0005" progress-mission="y" range-max="0" range-min="0" skill-sequence="Assassin_Lv8_M21" type="skill-sequence"/>
+			</mission>
+			<mission id="6" name2="Mission.Name2.1331_6" required-register-value="1">
+				<case npc-response="qrsp_1331_11" object="npc:CE_JR_JobBook_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="7" name2="Mission.Name2.1331_7" required-register-value="1" reward-1="1331_final_set1">
+				<case indicator-social="q_1331_m5_indi_1" msg="q_1331_m5" npc-response="qrsp_1331_8" object="npc:CH_HwaJung_0032" progress-mission="y" type="talk"/>
+				<case object="zone:zone_MangJa_ClassQ_3_C5" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_MangJa_ClassQ_3_SP">
+			<destination mission-step-id="1" zone-index="4"/>
+			<destination mission-step-id="2" zone-index="4"/>
+			<destination mission-step-id="3" zone-index="4"/>
+			<destination mission-step-id="4" zone-index="4"/>
+			<destination mission-step-id="5" zone-index="4"/>
+		</transit>
+	</quest>
+</table>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_313" broadcast-category="field" category="epic" completed-desc="q_313_completed" completed-list="y" desc="q_313_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="313" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.313" save-type="all" tutorial="y">
+		<acquisition level="1" recommended-level="15" sort-no="216"/>
+		<mission-step completion-type="and" desc="q_313_des_1" id="1" location-x="43644.2109" location-y="20613.7832" map="SuRyun_Dun" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.313_1" required-register-value="1">
+				<case mapunit-1="2300_suryun_dun_e313" mapunit-2="2310_guide_E313" object="zone:zone_suryendonggul" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_313_m2_indi_1" npc-response="qrsp_313_13" object="npc:ch_hongsam_0001" progress-mission="y" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_313_des_2" id="2" location-x="43644.2109" location-y="20650.8926" map="SuRyun_Dun">
+			<mission id="2" name2="Mission.Name2.313_2" required-register-value="1">
+				<case msg="q_313_m2" npc-response="qrsp_313_1" object="npc:ch_hongsam_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_suryendonggul" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_313_des_3" id="3" location-x="45944.996" location-y="21318.861" map="SuRyun_Dun" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.313_3" required-register-value="1">
+				<case mapunit-1="2300_suryun_dun_e313" object="zone:zone_suryendonggul" progress-mission="y" type="convoy-arrived"/>
+			</mission>
+			<mission-step-fail rollback-step-id="2">
+				<case convoy="epic_313_con_1" object="zone:zone_suryendonggul" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_313_des_4" id="4" location-x="48357.105" location-y="22395.035" map="SuRyun_Dun" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.313_4" required-register-value="1">
+				<case indicator-social="q_313_m4_indi_1" msg="q_313_m4" npc-response="qrsp_313_2" object="npc:ch_hongsam_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_suryendonggul" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_313_des_5" id="5" location-x="52068.0469" location-y="20131.3613" map="SuRyun_Dun">
+			<mission id="5" name2="Mission.Name2.313_5" required-register-value="1">
+				<case mapunit-1="2350_e_footswitch_309_1_finish" object="zoneenv:e_footswitch_309_1_finish" object2="zoneenv2:e_footswitch_309_1_finish" progress-mission="y" type="env-entered"/>
+				<case object="zone:zone_suryendonggul" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_313_des_6" id="6" location-x="28349.2324" location-y="36810.2109" map="suryengol">
+			<mission id="6" name2="Mission.Name2.313_6" required-register-value="1">
+				<case object="zone:zone_suryengol" progress-mission="y" type="enter-zone"/>
+				<case npc-response="qrsp_313_4" object="npc:CH_DokChoGeoSa_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_494"/>
+		</completion>
+		<mission-step completion-type="and" desc="q_313_des_7" id="7" location-x="43644.2109" location-y="20650.8926" map="SuRyun_Dun">
+			<mission id="7" name2="Mission.Name2.313_7" required-register-value="1" reward-1="313_middle_set1">
+				<case npc-response="qrsp_313_3" object="npc:CH_DokChoGeoSa_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_313_17" object="npc:ch_beonyang_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_313_des_8" guide-message="gm_313_1" id="8">
+			<mission id="8" name2="Mission.Name2.313_8" required-register-value="1">
+				<tutorial-case env-response="qersp_313_1" mapunit-1="2300_airdash_E313(9)" object="zoneenv:airdash_giyeon_03_a" object2="zoneenv2:airdash_giyeon_03_a" progress-mission="y" type="airdash"/>
+				<case env-response="qersp_313_4" object="zoneenv:2300_footswitch_313_16" object2="zoneenv2:2300_footswitch_313_16" progress-mission="n" type="env-entered"/>
+				<case env-response="qersp_313_4" object="zoneenv:2300_footswitch_313_15" object2="zoneenv2:2300_footswitch_313_15" progress-mission="n" type="env-entered"/>
+				<case env-response="qersp_313_4" object="zoneenv:2300_footswitch_313_14" object2="zoneenv2:2300_footswitch_313_14" progress-mission="n" type="env-entered"/>
+				<case env-response="qersp_313_4" object="zoneenv:2300_footswitch_313_13" object2="zoneenv2:2300_footswitch_313_13" progress-mission="n" type="env-entered"/>
+				<case npc-response="qrsp_313_4" object="npc:CH_DokChoGeoSa_0001" type="approach"/>
+				<case npc-response="qrsp_313_17" object="npc:ch_beonyang_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_313_des_9" id="9">
+			<mission id="9" name2="Mission.Name2.313_9" required-register-value="1">
+				<tutorial-case env-response="qersp_313_2" mapunit-1="2300_airdash_E313_9(10)" object="zoneenv:airdash_giyeon_08_a" object2="zoneenv2:airdash_giyeon_08_a" progress-mission="y" type="airdash"/>
+				<case env-response="qersp_313_5" object="zoneenv:2300_footswitch_313_1" object2="zoneenv2:2300_footswitch_313_1" progress-mission="n" type="env-entered"/>
+				<case env-response="qersp_313_5" object="zoneenv:2300_footswitch_313_2" object2="zoneenv2:2300_footswitch_313_2" progress-mission="n" type="env-entered"/>
+				<case env-response="qersp_313_5" object="zoneenv:2300_footswitch_313_3" object2="zoneenv2:2300_footswitch_313_3" progress-mission="n" type="env-entered"/>
+				<case env-response="qersp_313_5" object="zoneenv:2300_footswitch_313_4" object2="zoneenv2:2300_footswitch_313_4" progress-mission="n" type="env-entered"/>
+				<case npc-response="qrsp_313_6" object="npc:ch_beonyang_0003" type="approach"/>
+				<case npc-response="qrsp_313_18" object="npc:ch_beonyang_0004" type="approach"/>
+				<case npc-response="qrsp_313_4" object="npc:CH_DokChoGeoSa_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_313_des_10" id="10">
+			<mission id="10" name2="Mission.Name2.313_10" required-register-value="1">
+				<tutorial-case env-response="qersp_313_3" mapunit-1="2300_airdash_E313(11)" object="zoneenv:airdash_giyeon_09_a" object2="zoneenv2:airdash_giyeon_09_a" progress-mission="y" type="airdash"/>
+				<case env-response="qersp_313_6" object="zoneenv:2300_footswitch_313_5" object2="zoneenv2:2300_footswitch_313_5" progress-mission="n" type="env-entered"/>
+				<case env-response="qersp_313_6" object="zoneenv:2300_footswitch_313_6" object2="zoneenv2:2300_footswitch_313_6" progress-mission="n" type="env-entered"/>
+				<case env-response="qersp_313_6" object="zoneenv:2300_footswitch_313_7" object2="zoneenv2:2300_footswitch_313_7" progress-mission="n" type="env-entered"/>
+				<case env-response="qersp_313_6" object="zoneenv:2300_footswitch_313_8" object2="zoneenv2:2300_footswitch_313_8" progress-mission="n" type="env-entered"/>
+				<case npc-response="qrsp_313_8" object="npc:ch_beonyang_0004" type="approach"/>
+				<case npc-response="qrsp_313_11" object="npc:ch_beonyang_0005" type="approach"/>
+				<case npc-response="qrsp_313_15" object="npc:CH_BeonA_0004" type="approach"/>
+				<case npc-response="qrsp_313_14" object="npc:ch_beonyang_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_313_des_11" id="11">
+			<mission id="11" name2="Mission.Name2.313_11" required-register-value="1" reward-1="313_final_set1">
+				<case npc-response="qrsp_313_12" object="npc:CH_BeonA_0004" progress-mission="y" type="talk"/>
+				<case env-response="qersp_313_7" object="zoneenv:2300_footswitch_313_9" object2="zoneenv2:2300_footswitch_313_9" progress-mission="n" type="env-entered"/>
+				<case env-response="qersp_313_7" object="zoneenv:2300_footswitch_313_10" object2="zoneenv2:2300_footswitch_313_10" progress-mission="n" type="env-entered"/>
+				<case env-response="qersp_313_7" object="zoneenv:2300_footswitch_313_11" object2="zoneenv2:2300_footswitch_313_11" progress-mission="n" type="env-entered"/>
+				<case env-response="qersp_313_7" object="zoneenv:2300_footswitch_313_12" object2="zoneenv2:2300_footswitch_313_12" progress-mission="n" type="env-entered"/>
+				<case npc-response="qrsp_313_16" object="npc:ch_beonyang_0005" type="approach"/>
+				<case npc-response="qrsp_313_10" object="npc:ch_beonyang_0004" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

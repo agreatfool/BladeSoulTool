@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_131" broadcast-category="field" category="normal" content-type="elite-skill" grade="1" group2="QG_Elite" id="131" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.131" save-type="all">
+		<acquisition job-1="기공사" level="50" recommended-level="50">
+			<case acquire-quest="y" grocery="Quest_Scroll_EliteSkill_0019" item="Quest_Scroll_EliteSkill_0019" msg="q_131_1" type="talk-to-item"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.131_1" required-register-value="1">
+				<case grocery="General_Grocery_Deed_0013" npc-response="qrsp_131_1" object="npc:ch_ct_hyundam_0008" progress-mission="y" type="talk"/>
+				<case object="zone:zone_baekrimsa_bondang" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

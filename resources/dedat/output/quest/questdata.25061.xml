@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25061" broadcast-category="solo-quartet" category="dungeon" dungeon="Dungeon_Labyrinth" grade="17" group2="null" id="25061" max-repeat="1" name2="Quest.Name2.25061" progress-party-duo="n" progress-party-sextet="n" progress-party-solo="n" save-type="nothing">
+		<acquisition level="1" preceding-quest-1="q_sub_1211" recommended-level="50">
+			<case acquire-quest="y" object="zoneenv:5919_portal_5915 " object2="zoneenv2:5919_portal_5915" type="enter-portal"/>
+			<case acquire-quest="y" object="zoneenv:810_Portal_5915" object2="zoneenv2:810_Portal_5915" type="enter-portal"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.25061_1" required-register-value="1">
+				<case object="npc:MH_C3_NoGongGu_0001" object2="npc:MH_C3_NoGongGu_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.25061_2" required-register-value="1">
+				<case object="npc:ME_C3_BaeYiDoMachine_0001" object2="npc:ME_C3_BaeYiDoMachine_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<transit id="2" zone="Zone_Labyrinth_2_Default">
+			<destination mission-step-id="2" zone-index="1"/>
+		</transit>
+		<transit id="1" zone="Zone_Labyrinth_1_Default">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

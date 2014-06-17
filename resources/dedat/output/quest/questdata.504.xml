@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_504" broadcast-category="field" category="epic" completed-desc="q_504_completed" completed-list="y" desc="q_504_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="504" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.504" save-type="all">
+		<acquisition level="1" recommended-level="22" sort-no="305"/>
+		<mission-step id="1" location-x="-43890.40" location-y="-62586.88" map="oemalri" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.504_1" required-register-value="1">
+				<case indicator-social="q_504_m1_indi_1" msg="q_504_m1" npc-response="qrsp_504_1" object="npc:ch_murimmaeng_0011" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HanSiRangHouse" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="npc:ch_soyeonhwa_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-44359.1523" location-y="-62430.625" map="oemalri">
+			<mission id="2" name2="Mission.Name2.504_2" required-register-value="1">
+				<case indicator-social="q_504_m2_indi_1" msg="q_504_m2" npc-response="qrsp_504_2" object="npc:ch_honchungyo_0009" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HanSiRangHouse" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-57729.9961" location-y="-61887.7031" map="toemunjean" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.504_3" required-register-value="1">
+				<case indicator-social="q_504_m3_indi_1" mapunit-1="3000_guide_e504" msg="q_504_m3" npc-response="qrsp_504_3" object="npc:ch_unguksoldier_002" progress-mission="y" type="talk"/>
+				<case approach-social="q_504_m3_app_1" npc-response="qrsp_504_4" object="npc:ch_murimmaeng_0011" type="approach"/>
+				<case object="zone:zone_HanSiRangHouse" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-57729.9961" location-y="-61887.7031" map="toemunjean">
+			<mission id="4" name2="Mission.Name2.504_4" required-register-value="1">
+				<case loot-item="quest_scroll_daesamak_0012" looting="q_504_Quest_old_letter_1_icon" object="zoneenv:e_onoff_3000drycorpse_01" object2="zoneenv2:e_onoff_3000drycorpse_01" progress-mission="y" type="loot"/>
+				<case loot-item="quest_scroll_daesamak_0012" looting="q_504_Quest_old_letter_1_icon" object="zoneenv:e_onoff_3000drycorpse_02" object2="zoneenv2:e_onoff_3000drycorpse_02" progress-mission="y" type="loot"/>
+				<case loot-item="quest_scroll_daesamak_0012" looting="q_504_Quest_old_letter_1_icon" mapunit-1="3000_e_onoff_3000drycorpse_01" mapunit-2="3000_e_onoff_3000drycorpse_02" mapunit-3="3000_e_onoff_3000drycorpse_03" object="zoneenv:e_onoff_3000drycorpse_03" object2="zoneenv2:e_onoff_3000drycorpse_03" progress-mission="y" type="loot"/>
+				<case object="zone:zone_HanSiRangHouse" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6" location-x="-44359.1523" location-y="-62430.625" map="oemalri">
+			<mission id="6" name2="Mission.Name2.504_6" required-register-value="1" reward-1="504_final_set1">
+				<case indicator-social="q_504_m6_indi_1" msg="q_504_m6" npc-response="qrsp_504_6" object="npc:ch_unguksoldier_001" progress-mission="y" type="talk"/>
+				<completion-loss item-1="quest_scroll_daesamak_0012"/>
+				<case object="zone:zone_HanSiRangHouse" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_505"/>
+		</completion>
+		<mission-step id="5" location-x="-44359.1523" location-y="-62430.625">
+			<mission id="5" name2="Mission.Name2.504_5" required-register-value="1">
+				<case item="Quest_Scroll_DaeSaMak_0012" msg="q_504_m5" progress-mission="y" type="talk-to-item"/>
+				<case object="zone:zone_HanSiRangHouse" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

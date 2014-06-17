@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1390" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1390_sum" district-1="suwal" grade="14" group2="QG_Musintap" id="1390" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1390" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="43" preceding-quest-1="q_sub_1381" preceding-quest-check="and" recommended-level="45">
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1390_2" object="npc:ch_musintower_baekwoon_0003" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" mapunit-1="4900_musinuitop_ds+" npc-response="qrsp_1390_1" object="npc:ch_musintower_baekwoon_0003" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-47293.75" location-y="11208.60" map="MuSinUiTop8cheung" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.1390_1" required-register-value="1">
+				<case mapunit-1="4900_musinuitop_d+" object="npc:MH_MuSinTower_0001" object2="npc:MH_MuSinTower_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-53418.21" location-y="6019.19" map="MuSinUiHoeDang1Cheung" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.1390_2" required-register-value="1" reward-1="1390_final_set1" reward-2="1390_final_set2">
+				<case npc-response="qrsp_1390_3" object="npc:ch_musintower_baekwoon_0001" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_1390_1_icon" msg="q_1390_4" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

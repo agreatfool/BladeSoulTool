@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_333" broadcast-category="field" category="normal" desc="q_333_sum" district-1="jeryoungrim" grade="1" group2="QG_Delete" id="333" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.333" retired="y" save-type="all" show-tutorial-tag="y" tutorial="y">
+		<acquisition level="3" preceding-quest-1="q_epic_305" preceding-quest-check="and" recommended-level="5">
+			<case acquire-quest="y" indicator-social="q_333_s_indi_1" msg="q_333_s" npc-response="qrsp_333_1" object="npc:ctzn_jinf_jakyungdan_changmilan_001" type="talk"/>
+			<fixed-reward sex-3="sex-none" slot-1="item:Quest_Tutorial_EquipGem_0012"/>
+		</acquisition>
+		<mission-step guide-message="gm_333_1" guide-message-zone-1="zone_MangJaSup" id="1" location-x="-35002.8359" location-y="-50278.1328">
+			<mission id="1" name2="Mission.Name2.333_1" required-register-value="1">
+				<tutorial-case item="Quest_Tutorial_EquipGem_0012" progress-mission="y" type="gem-decompose"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-31346.1875" location-y="-50697.75">
+			<mission id="2" name2="Mission.Name2.333_2" required-register-value="1">
+				<case indicator-social="q_333_m2_indi_1" msg="q_333_m2" npc-response="qrsp_333_2" object="npc:ctzn_jinf_jakyungdan_changmilan_001" progress-mission="y" type="talk"/>
+				<fixed-reward slot-1="item:Quest_Tutorial_EquipGem_0010" slot-2="item:Quest_Tutorial_EquipGem_0011"/>
+			</mission>
+		</mission-step>
+		<mission-step guide-message="gm_333_2" guide-message-zone-1="zone_MangJaSup" id="3">
+			<mission id="3" name2="Mission.Name2.333_3" required-register-value="1">
+				<tutorial-case material-item="Quest_Tutorial_EquipGem_0010" primary-item="Quest_Tutorial_EquipGem_0011" progress-mission="y" type="gem-compose"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.333_4" required-register-value="1" reward-1="333_final_set1">
+				<case indicator-social="q_333_m4_indi_1" msg="q_333_m4" npc-response="qrsp_333_3" object="npc:ctzn_jinf_jakyungdan_changmilan_001" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Tutorial_EquipGem_0010" item-2="Quest_Tutorial_EquipGem_0011"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Tutorial_EquipGem_0010" item-2="Quest_Tutorial_EquipGem_0011" item-3="Quest_Tutorial_EquipGem_0012" item-4="Quest_Grocery_EquipGemResolvent_0001"/>
+	</quest>
+</table>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1063" broadcast-category="field" category="normal" desc="q_1063_sum" grade="10" group2="QG_ZamsikHeukChng" id="1063" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.1063" save-type="all">
+		<acquisition level="50" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="n" grocery="general_equipgem_lee5_1084" grocery-count="1" npc-response="qrsp_1063_1" object="npc:CH_WB_TreasureHunter_0004" remove-grocery="n" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1063_1" required-register-value="1">
+				<case looting="q_1063_1_icon" mapunit-1="6000_Quest_05" mapunit-10="Guide_warp_HeukChang_CL" object="zoneenv:e_chest_HuekChang_treasurA_03" object2="zoneenv2:e_chest_HuekChang_treasurA_03" progress-mission="y" type="loot"/>
+				<case looting="q_1063_1_icon" mapunit-1="6000_Quest_05" mapunit-10="Guide_warp_HeukChang_CL" object="zoneenv:e_chest_HuekChang_treasurA_02" object2="zoneenv2:e_chest_HuekChang_treasurA_02" progress-mission="y" type="loot"/>
+				<case looting="q_1063_1_icon" mapunit-1="6000_Quest_05" mapunit-10="Guide_warp_HeukChang_CL" object="zoneenv:e_chest_HuekChang_treasurA_01" object2="zoneenv2:e_chest_HuekChang_treasurA_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1063_2" required-register-value="1" reward-1="1063_final_set1">
+				<case npc-response="qrsp_1063_2" object="npc:CH_WB_TreasureHunter_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

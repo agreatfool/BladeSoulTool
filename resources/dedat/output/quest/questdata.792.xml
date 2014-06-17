@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_792" broadcast-category="field" category="normal" desc="q_792_sum" district-1="deasamak" grade="1" group2="QG_SaJiSeokRimSouth" id="792" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.792" save-type="all">
+		<acquisition level="29" preceding-quest-1="q_epic_522" preceding-quest-2="q_sub_751" preceding-quest-check="and" recommended-level="31">
+			<case acquire-quest="y" indicator-social="q_792_s_indi_1" msg="q_792_s" npc-response="qrsp_792_1" object="npc:ch_mangnanja_0002" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="8681.665" location-y="-23776.246" map="sajisukrim">
+			<mission id="1" name2="Mission.Name2.792_1" required-register-value="12">
+				<case object="npc:me_potaxpartyc_0002" object2="npc:me_potaxpartyc_0002" progress-mission="y" type="killed"/>
+				<case object="npc:me_potaxpartyb_0003" object2="npc:me_potaxpartyb_0003" progress-mission="y" type="killed"/>
+				<case mapunit-1="3020_ME_PotAxPartyA_0003" object="npc:me_potaxpartya_0003" object2="npc:me_potaxpartya_0003" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="11625.815" location-y="-37054.531" map="hangari">
+			<mission id="2" name2="Mission.Name2.792_2" required-register-value="1" reward-1="792_final_set1">
+				<case indicator-social="q_792_m2_indi_1" msg="q_792_m2" npc-response="qrsp_792_2" object="npc:ch_pottery_014" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_600" broadcast-category="field" category="normal" day-of-week="daily" desc="q_600_sum" grade="7" group2="QG_Reservoir" id="600" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.600" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="44" preceding-quest-1="q_sub_690" preceding-quest-2="q_sub_702" preceding-quest-check="and" recommended-level="46">
+			<case acquire-quest="y" npc-response="qrsp_600_1" object="npc:CH_CT_JeGukGun_0220" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_600_3" object="npc:CE_CT_Board_0026" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.600_1" required-register-value="1">
+				<case looting="q_600_1_icon" object="npc:ME_CT_UryongLeader_0006" object2="npc:ME_CT_UryongLeader_0006" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.600_2" required-register-value="1" reward-1="600_final_set1" reward-2="600_final_set2">
+				<case npc-response="qrsp_600_2" object="npc:CH_CT_JeGukGun_0220" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_600_2_icon" msg="q_600_4" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

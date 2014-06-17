@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_798" broadcast-category="field" category="normal" day-of-week="daily" desc="q_798_sum" district-1="deasamak" grade="1" group2="QG_HeukChangJokSaWon" id="798" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.798" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="30" preceding-quest-1="q_epic_525" preceding-quest-2="q_sub_793" preceding-quest-check="and" recommended-level="32">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" indicator-social="q_798_s_indi_1" msg="q_798_s" npc-response="qrsp_798_1" object="npc:ch_mayeongganggun_0014" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator-social="q_798_re_s_indi_1" msg="q_798_re_s" npc-response="qrsp_798_3" object="npc:ch_mayeongganggun_0014" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_798_5" object="npc:ce_board_0013" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="46460.231" location-y="-35984.43" map="sajisukrim">
+			<mission id="1" name2="Mission.Name2.798_1" required-register-value="10">
+				<case looting="q_798_Quest_darktribe_deco001_1_icon" mapunit-1="3023_me_darkcrazytribe_0006" mapunit-2="3023_me_darkcrazytribe_0006_1" mapunit-3="3023_me_darkcrazytribe_0006_2" mapunit-4="3023_me_darkcrazytribe_0037" mapunit-5="3023_me_darkcrazytribe_0037_1" object="npc:me_darkcrazytribe_0006" object2="npc:me_darkcrazytribe_0006" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+				<case looting="q_798_Quest_darktribe_deco001_1_icon" object="npc:me_darkcrazytribe_008" object2="npc:me_darkcrazytribe_008" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+				<case looting="q_798_Quest_darktribe_deco001_1_icon" object="npc:me_darkcrazytribe_005" object2="npc:me_darkcrazytribe_005" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+				<case looting="q_798_Quest_darktribe_deco001_1_icon" object="npc:me_darkcrazytribe_009" object2="npc:me_darkcrazytribe_009" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+				<case looting="q_798_Quest_darktribe_deco001_1_icon" object="npc:ME_DarkCrazyTribe_0037" object2="npc:ME_DarkCrazyTribe_0037" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+				<case looting="q_798_Quest_darktribe_deco001_1_icon" object="npc:ME_DarkCrazyTribe_0038" object2="npc:ME_DarkCrazyTribe_0038" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+				<case looting="q_798_Quest_darktribe_deco001_1_icon" object="npc:ME_DarkCrazyTribe_0039" object2="npc:ME_DarkCrazyTribe_0039" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+				<case looting="q_798_Quest_darktribe_deco001_1_icon" object="npc:ME_DarkCrazyTribe_0040" object2="npc:ME_DarkCrazyTribe_0040" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="44577.375" location-y="-42604.789" map="sajisukrim">
+			<mission id="2" name2="Mission.Name2.798_2" required-register-value="1" reward-1="798_final_set1" reward-2="798_final_set2">
+				<case completion-count="1" completion-count-op="lt" indicator-social="q_798_m4_indi_1" msg="q_798_m4" npc-response="qrsp_798_2" object="npc:ch_mayeongganggun_0014" progress-mission="y" type="talk"/>
+				<case completion-count="1" indicator-social="q_798_re_m4_indi_1" msg="q_798_re_m4" npc-response="qrsp_798_4" object="npc:ch_mayeongganggun_0014" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_798_1_icon" msg="q_798_m6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

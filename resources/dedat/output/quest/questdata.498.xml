@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_498" attraction-1="dungeon:Dungeon_BaekCheong_Sulokgoong" attraction-2="dungeon:Dungeon_SulinDongGul" attraction-3="dungeon:Dungeon_GuiMunGuan_Nightmare" broadcast-category="field" category="normal" desc="q_498_sum" grade="10" group2="QG_GuiMun" id="498" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.498">
+		<acquisition level="50" preceding-quest-1="q_sub_960" preceding-quest-2="q_sub_1049" preceding-quest-check="or" recommended-level="50">
+			<case acquire-quest="y" npc-response="qrsp_498_1" object="npc:me_c3_akgyonojang_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.498_1" required-register-value="1" reward-1="498_final_set1">
+				<case npc-response="qrsp_498_2" object="npc:me_c3_akgyojok_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

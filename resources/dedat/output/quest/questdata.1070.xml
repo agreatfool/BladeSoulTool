@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1070" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1070_sum" grade="1" group2="QG_MoilBong" id="1070" map-group-1-1="startzone" max-repeat="1" name2="Quest.Name2.1070" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="50" preceding-quest-1="q_sub_1119" preceding-quest-2="q_sub_1069" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" completion-count="0" completion-count-op="ge" npc-response="qrsp_1070_1" object="npc:CH_SA_GuakChill_0004" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1070_1" required-register-value="1">
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="1252_ME_SA_PigBig_0002" object="npc:ME_SA_PigBig_0004" progress-mission="reaction-only" type="npc-manipulate"/>
+				<case gadget="Q_Deadbody_PigA_2" gadget-required="carry-and-remove" indicator="quest-gadget-required" mapunit-1="1254_e_chest_charcoal_01_1" object="zoneenv:e_chest_charcoal_01_1" object2="zoneenv2:e_chest_charcoal_01_1" progress-mission="y" type="manipulate"/>
+				<case npc-response="qrsp_1070_3" object="npc:CH_SA_BunYang_0009" type="approach"/>
+				<case gadget="Q_Deadbody_PigA_2" gadget-required="carry-and-remove" indicator="quest-gadget-required" mapunit-1="1254_e_chest_charcoal_02" object="zoneenv:e_chest_charcoal_02" object2="zoneenv2:e_chest_charcoal_02" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1070_2" required-register-value="1" reward-1="1070_final_set1" reward-2="1070_final_set2">
+				<case npc-response="qrsp_1070_2" object="npc:CH_SA_GuakChill_0004" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_1070_1_icon" msg="q_1070_3" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

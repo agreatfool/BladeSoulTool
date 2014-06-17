@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1201" broadcast-category="field" category="normal" desc="q_1201_sum" district-1="suwal" grade="1" group2="QG_GangsiGrave" id="1201" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1201" save-type="all">
+		<acquisition level="40" preceding-quest-1="q_sub_1187" preceding-quest-2="q_epic_921" preceding-quest-check="and" preceding-quest-mission-step-2="8" recommended-level="42">
+			<case acquire-quest="y" npc-response="qrsp_1201_1" object="npc:ch_taesangmun_0008" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1201_1" required-register-value="15">
+				<case object="npc:mh_samagyo_0048" object2="npc:mh_samagyo_0048" progress-mission="y" type="killed"/>
+				<case object="npc:mh_samagyo_0049" object2="npc:mh_samagyo_0049" progress-mission="y" type="killed"/>
+				<case object="npc:mh_samagyo_0050" object2="npc:mh_samagyo_0050" progress-mission="y" type="killed"/>
+				<case object="npc:mh_samagyo_0051" object2="npc:mh_samagyo_0051" progress-mission="y" type="killed"/>
+				<case object="npc:mh_samagyo_0053" object2="npc:mh_samagyo_0053" progress-mission="y" type="killed"/>
+				<case object="npc:mh_samagyo_0054" object2="npc:mh_samagyo_0054" progress-mission="y" type="killed"/>
+				<case object="npc:mh_samagyo_0055" object2="npc:mh_samagyo_0055" progress-mission="y" type="killed"/>
+				<case object="npc:mh_samagyo_0056" object2="npc:mh_samagyo_0056" progress-mission="y" type="killed"/>
+				<case object="npc:mh_samagyo_0057" object2="npc:mh_samagyo_0057" progress-mission="y" type="killed"/>
+				<case object="npc:mh_samagyo_0058" object2="npc:mh_samagyo_0058" progress-mission="y" type="killed"/>
+				<case object="npc:mh_samagyo_0059" object2="npc:mh_samagyo_0059" progress-mission="y" type="killed"/>
+				<case object="npc:mh_samagyo_0061" object2="npc:mh_samagyo_0061" progress-mission="y" type="killed"/>
+				<case object="npc:mh_samagyo_0062" object2="npc:mh_samagyo_0062" progress-mission="y" type="killed"/>
+				<case object="npc:me_zombieb_0003" object2="npc:me_zombieb_0003" progress-mission="y" type="killed"/>
+				<case object="npc:me_zombieb_0010" object2="npc:me_zombieb_0010" progress-mission="y" type="killed"/>
+				<case mapunit-1="4302_MH_Samagyo_0048" mapunit-2="4302_MH_Samagyo_0048_1" mapunit-3="4302_MH_Samagyo_0048_2" mapunit-4="4302_MH_Samagyo_0048_3" object="npc:me_zombieb_0011" object2="npc:me_zombieb_0011" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1201_2" required-register-value="1" reward-1="1201_final_set1">
+				<case npc-response="qrsp_1201_2" object="npc:ch_shaman_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

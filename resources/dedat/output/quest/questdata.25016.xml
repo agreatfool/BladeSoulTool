@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25016" broadcast-category="always" category="dungeon" dungeon="Dungeon_MusinTower" grade="#N/A" group2="QG_Musintap" id="25016" max-repeat="1" name2="Quest.Name2.25016" reset-type="none" save-type="nothing">
+		<acquisition faction-reputation="0" level="43" preceding-quest-1="q_sub_1381" preceding-quest-check="and" recommended-level="45">
+			<case acquire-quest="y" object="zoneenv:4900_4911_Potal" object2="zoneenv2:4900_4911_Potal" type="enter-portal"/>
+			<case acquire-quest="y" object="zoneenv:4900_4909_Potal" object2="zoneenv2:4900_4909_Potal" type="enter-portal"/>
+			<case acquire-quest="y" object="zoneenv:4900_4901_Potal" object2="zoneenv2:4900_4901_Potal" type="enter-portal"/>
+		</acquisition>
+		<mission-step completion-type="or" id="1">
+			<mission id="1" name2="Mission.Name2.25016_1" required-register-value="2">
+				<case object="npc:MH_MuSinTower1_DaMaCha_0001" object2="npc:MH_MuSinTower1_DaMaCha_0001" progress-mission="y" type="killed"/>
+				<case object="npc:MH_MuSinTower1_HeukSamAn_0001" object2="npc:MH_MuSinTower1_HeukSamAn_0001" progress-mission="y" type="killed"/>
+				<case object="npc:MH_MuSinTower1_SeolYe_0001" object2="npc:MH_MuSinTower1_SeolYe_0001" progress-mission="y" type="killed"/>
+				<case object="npc:MH_MuSinTower1_DangGoonMyung_0001" object2="npc:MH_MuSinTower1_DangGoonMyung_0001" progress-mission="y" type="killed"/>
+				<case object="npc:MH_MuSinTower1_TaeHoRan_0001" object2="npc:MH_MuSinTower1_TaeHoRan_0001" progress-mission="y" type="killed"/>
+				<case object="npc:MH_MuSinTower1_SukSamJa_0001" object2="npc:MH_MuSinTower1_SukSamJa_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" id="2">
+			<mission id="2" name2="Mission.Name2.25016_2" required-register-value="1">
+				<case object="npc:ME_MuSinTower2_GeumGangYukSa_0001" object2="npc:ME_MuSinTower2_GeumGangYukSa_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" id="3">
+			<mission id="3" name2="Mission.Name2.25016_3" required-register-value="1">
+				<case object="npc:MH_SuReonJa_0001" object2="npc:MH_SuReonJa_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" id="4">
+			<mission id="4" name2="Mission.Name2.25016_4" required-register-value="1">
+				<case object="npc:ME_MuSinTower4_ChunRyunGangSi_0001" object2="npc:ME_MuSinTower4_ChunRyunGangSi_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" id="5">
+			<mission id="5" name2="Mission.Name2.25016_5" required-register-value="1">
+				<case object="npc:ME_MuSinTower3_GoleamLeader_0001" object2="npc:ME_MuSinTower3_GoleamLeader_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" id="6">
+			<mission id="6" name2="Mission.Name2.25016_6" required-register-value="1">
+				<case object="npc:ME_MuSinTower6_PalDokMo_0001" object2="npc:ME_MuSinTower6_PalDokMo_0001" progress-mission="y" type="killed"/>
+				<case object="npc:ME_MuSinTower6_ChungPung_0001" object2="npc:ME_MuSinTower6_ChungPung_0001" progress-mission="y" type="killed"/>
+				<case object="npc:ME_MuSinTower6_NakWon_0001" object2="npc:ME_MuSinTower6_NakWon_0001" progress-mission="y" type="killed"/>
+				<case object="npc:ME_MuSinTower6_HongDon_0001" object2="npc:ME_MuSinTower6_HongDon_0001" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_PigBaby_0008" object2="npc:ME_CT_PigBaby_0008" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" id="7">
+			<mission id="7" name2="Mission.Name2.25016_7" required-register-value="1">
+				<case object="npc:MH_MuSinTower_0002" object2="npc:MH_MuSinTower_0002" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" id="8">
+			<mission id="8" name2="Mission.Name2.25016_8" required-register-value="1">
+				<case object="npc:me_musintower_0004" object2="npc:me_musintower_0004" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="Zone_MusinTower_1_Default">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+		<transit id="6" zone="Zone_MusinTower_6_Default">
+			<destination mission-step-id="6" zone-index="1"/>
+		</transit>
+		<transit id="5" zone="Zone_MusinTower_5_Default">
+			<destination mission-step-id="5" zone-index="1"/>
+		</transit>
+		<transit id="4" zone="Zone_MusinTower_4_Default">
+			<destination mission-step-id="4" zone-index="1"/>
+		</transit>
+		<transit id="3" zone="Zone_MusinTower_3_Default">
+			<destination mission-step-id="3" zone-index="1"/>
+		</transit>
+		<transit id="2" zone="Zone_MusinTower_2_Default">
+			<destination mission-step-id="2" zone-index="1"/>
+		</transit>
+		<transit id="7" zone="Zone_MusinTower_7_Default">
+			<destination mission-step-id="7" zone-index="1"/>
+		</transit>
+		<transit id="8" zone="Zone_MusinTower_8_Default">
+			<destination mission-step-id="8" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

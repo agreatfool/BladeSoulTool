@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_964" broadcast-category="field" category="normal" day-of-week="none" desc="q_964_sum" grade="1" group2="QG_MoilBong" id="964" map-group-1-1="startzone" max-repeat="1" name2="Quest.Name2.964" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="n" level="50" preceding-quest-1="q_sub_963" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" completion-count="0" npc-response="qrsp_964_1" object="npc:CH_SA_AhnNack_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.964_2" required-register-value="5">
+				<case gadget-required="empty" indicator="default" object="npc:ME_SA_PigBaby_0005" progress-mission="y" type="npc-manipulate"/>
+				<case gadget-required="empty" indicator="default" object="npc:ME_SA_PigBaby_0004" progress-mission="y" type="npc-manipulate"/>
+				<case gadget-required="empty" indicator="default" object="npc:ME_SA_PigBaby_0003" progress-mission="y" type="npc-manipulate"/>
+				<case gadget-required="empty" indicator="default" object="npc:ME_SA_PigBaby_0002" progress-mission="y" type="npc-manipulate"/>
+				<case gadget-required="empty" indicator="default" mapunit-1="1252_ME_SA_PigBaby_0001" mapunit-2="1252_ME_SA_PigBaby_0002" mapunit-3="1252_ME_SA_PigBaby_0005" object="npc:ME_SA_PigBaby_0001" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+			<mission-step-fail/>
+		</mission-step>
+		<mission-step id="3" progress-talksocial="TalkSocial_wiping">
+			<mission id="3" name2="Mission.Name2.964_3" required-register-value="5">
+				<case gadget="q_waterpot_0003" gadget-required="not-a" indicator="quest-gadget-drop" mapunit-1="1252_e_chest_muilbucket_03" object="zoneenv:e_chest_muilbucket_03" object2="zoneenv2:e_chest_muilbucket_03" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_WaterPot_0003" gadget-required="carry" indicator="default" mapunit-1="1252_ME_SA_PigBaby_0003" mapunit-2="1252_ME_SA_PigBaby_0004" object-1="npc:ME_SA_PigBaby_0001" object-2="npc:ME_SA_PigBaby_0002" object-3="npc:ME_SA_PigBaby_0003" object-4="npc:ME_SA_PigBaby_0004" object-5="npc:ME_SA_PigBaby_0005" object2-1="npc:ME_SA_PigBaby_0001" object2-2="npc:ME_SA_PigBaby_0002" object2-3="npc:ME_SA_PigBaby_0003" object2-4="npc:ME_SA_PigBaby_0004" object2-5="npc:ME_SA_PigBaby_0005" progress-mission="y" skill="Gadget_Q_WaterPot_0003" skill3="Gadget_Q_WaterPot_0003" type="skill"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="4" progress-talksocial="TalkSocial_whisking" progress-talksocial-delay="1">
+			<mission id="4" name2="Mission.Name2.964_4" required-register-value="2">
+				<case gadget="Q_Basket_0002" gadget-required="carry-and-remove" indicator="quest-gadget-required" object="zoneenv:e_chest_fodderbox_02" object2="zoneenv2:e_chest_fodderbox_02" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_Basket_0002" gadget-required="carry-and-remove" indicator="quest-gadget-required" mapunit-1="1252_e_chest_fodderbox_01" object="zoneenv:e_chest_fodderbox_01" object2="zoneenv2:e_chest_fodderbox_01" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_Basket_0002" gadget-required="not-a" indicator="quest-gadget-drop" object="zoneenv:e_chest_muilseedsbasket_02" object2="zoneenv2:e_chest_muilseedsbasket_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Basket_0002" gadget-required="not-a" indicator="quest-gadget-drop" mapunit-1="1252_e_chest_muilseedsbasket_02" object="zoneenv:e_chest_muilseedsbasket_01" object2="zoneenv2:e_chest_muilseedsbasket_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+			<mission-step-fail rollback-step-id="1"/>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.964_5" required-register-value="1" reward-1="964_final_set1">
+				<case completion-count="0" npc-response="qrsp_964_3" object="npc:CH_SA_GuakChill_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_964_4" object="npc:CH_SA_BunA_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="StartZone_Event">
+			<destination mission-step-id="4" zone-index="3"/>
+			<destination mission-step-id="3" zone-index="3"/>
+			<destination mission-step-id="2" zone-index="3"/>
+			<destination mission-step-id="1" zone-index="3"/>
+			<destination mission-step-id="5" zone-index="3"/>
+		</transit>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.964_1" required-register-value="1">
+				<case npc-response="qrsp_964_2" object="npc:CH_SA_GuakChill_0001" progress-mission="y" type="talk"/>
+				<case object="zone:StartZone_FarmIsland" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

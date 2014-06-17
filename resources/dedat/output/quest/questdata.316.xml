@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_316" broadcast-category="field" category="epic" completed-desc="q_316_completed" completed-list="y" desc="q_316_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="316" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.316" save-type="all">
+		<acquisition level="1" recommended-level="17" sort-no="221"/>
+		<mission-step completion-type="and" desc="q_316_des_1" id="1" location-x="-15924.3457" location-y="54271.1016" map="songrimsa">
+			<mission id="1" name2="Mission.Name2.316_1" required-register-value="1">
+				<case indicator-social="q_316_m1_indi_1" msg="q_316_m1" npc-response="qrsp_316_1" object="npc:ctzn_jinm_jakyungdan_seongjinha_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_316_des_2" id="2" location-x="-16418.4863" location-y="54378.5234" map="songrimsa">
+			<mission id="2" name2="Mission.Name2.316_2" required-register-value="1">
+				<case indicator-social="q_316_m2_indi_1" msg="q_316_m2" npc-response="qrsp_316_2" object="npc:ctzn_jinm_songrimsa_kildong_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_316_des_3" id="3" location-x="-23641.17" location-y="47516.45" map="songamdo" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.316_3" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_316_Grocery_Skin_Piece_1_icon" mapunit-1="2440_mob_jinm_bandit_member_sht_q_001" mapunit-2="2450_guide_E316" object="npc:mob_jinm_bandit_member_sht_q_001" object2="npc:mob_jinm_bandit_member_sht_q_001" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_316_des_4" id="4" location-x="-17535.6738" location-y="53819.9297" map="songrimsa">
+			<mission id="4" name2="Mission.Name2.316_4" required-register-value="1" reward-1="316_final_set1">
+				<case indicator-social="q_316_m4_indi_1" msg="q_316_m4" npc-response="qrsp_316_3" object="npc:ctzn_jinm_songrimsa_kildong_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_493"/>
+		</completion>
+	</quest>
+</table>

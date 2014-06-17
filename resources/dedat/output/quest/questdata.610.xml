@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="factionmain2" alias="q_sub_610" broadcast-category="field" category="normal" day-of-week="daily" desc="q_610_sum" district-1="deasamak" grade="1" group2="QG_HyeolPungSaMak" id="610" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.610" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" faction="factionmain2" level="24" preceding-quest-1="q_sub_602" preceding-quest-2="q_sub_603" preceding-quest-check="or" recommended-level="26">
+			<case acquire-quest="y" indicator-social="q_610_s_indi_1" msg="q_610_s" npc-response="qrsp_610_1" object="npc:ch_honchenogyo_0003" type="talk">
+				<filter-set>
+					<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain2"/>
+				</filter-set>
+			</case>
+		</acquisition>
+		<mission-step id="1" location-x="-41864.1133" location-y="-16378.0117" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.610_1" required-register-value="1">
+				<case gadget="Q_PrisonerB" gadget-required="carry-and-remove" indicator-social="q_610_m1_indi_1" msg="q_610_m1" npc-response="qrsp_610_3" object="npc:ch_honchenogyo_0001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain2"/>
+					</filter-set>
+				</case>
+				<case gadget="Q_PrisonerD" gadget-required="carry-and-remove" indicator-social="q_610_m1_2_indi_1" msg="q_610_m1_2" npc-response="qrsp_610_4" object="npc:ch_honchenogyo_0001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain2"/>
+					</filter-set>
+				</case>
+				<case gadget-required="empty" mapunit-1="3010_ch_prisoner_0003" object="npc:ch_prisoner_0003" progress-mission="reaction-only" type="npc-manipulate">
+					<filter-set>
+						<filter subject="case:npc-manipulate:pc" subject2="case:npc-manipulate:pc" type="active-faction" value="factionmain2"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-40558.957" location-y="-3140.0039" map="yeolsajeedea">
+			<mission id="2" name2="Mission.Name2.610_2" required-register-value="1" reward-1="610_final_set1" reward-2="610_final_set2">
+				<case indicator-social="q_610_m2_indi_1" msg="q_610_m2" npc-response="qrsp_610_2" object="npc:ch_honchenogyo_0003" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain2"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

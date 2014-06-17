@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1006" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1006_sum" district-1="suwal" grade="8" group2="QG_Wolchon" id="1006" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1006" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="36" preceding-quest-1="q_sub_1001" preceding-quest-check="and" recommended-level="38">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1006_1" object="npc:CH_IlMiMun_0009" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1006_3" object="npc:CH_IlMiMun_0009" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_1006_5" object="npc:ce_board_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1006_1" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="4520_ME_PotAxParty_0010" object="npc:ME_PotAxParty_0010" object2="npc:ME_PotAxParty_0010" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-5861.97" location-y="10464.98" map="haenamumaeulicheung" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.1006_2" required-register-value="1" reward-1="1006_final_set1" reward-2="1006_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1006_2" object="npc:CH_IlMiMun_0009" progress-mission="y" type="talk"/>
+				<case completion-count="1" npc-response="qrsp_1006_4" object="npc:CH_IlMiMun_0009" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_1006_1_icon" msg="q_1006_6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_457" broadcast-category="field" category="normal" day-of-week="daily" desc="q_457_sum" district-1="jeryoungrim" grade="8" group2="QG_SongAmDo" id="457" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.457" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="15" preceding-quest-1="q_epic_315" preceding-quest-check="and" recommended-level="17">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" indicator-social="q_457_s_indi_1" msg="q_457_s" npc-response="qrsp_457_1" object="npc:ch_jakyoungdan_035" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator-social="q_457_re_s_indi_1" msg="q_457_re_s" npc-response="qrsp_457_2" object="npc:ch_jakyoungdan_035" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_457_5" object="npc:ce_board_0012" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-4828.9082" location-y="47616.7773" map="songamgul_dun">
+			<mission id="1" name2="Mission.Name2.457_1" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="2612_me_heukryongchae_0001" object="npc:me_heukryongchae_0001" object2="npc:me_heukryongchae_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-7851.9766" location-y="49261.1133" map="songamdo">
+			<mission id="2" name2="Mission.Name2.457_2" required-register-value="1" reward-1="457_final_set1" reward-2="457_final_set2">
+				<case completion-count="1" completion-count-op="lt" indicator-social="q_457_m2_indi_1" msg="q_457_m2" npc-response="qrsp_457_3" object="npc:ch_jakyoungdan_035" progress-mission="y" type="talk"/>
+				<case completion-count="1" indicator-social="q_457_re_m2_indi_1" msg="q_457_re_m2" npc-response="qrsp_457_4" object="npc:ch_jakyoungdan_035" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_457_1_icon" msg="q_457_m4" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

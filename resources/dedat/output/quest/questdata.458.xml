@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_458" broadcast-category="field" category="normal" day-of-week="daily" desc="q_458_sum" district-1="jeryoungrim" grade="7" group2="QG_SongAmDo" id="458" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.458" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="16" preceding-quest-1="q_epic_316" preceding-quest-check="and" recommended-level="18">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" indicator-social="q_458_s_indi_1" msg="q_458_s" npc-response="qrsp_458_1" object="npc:ctzn_jinm_songrimsa_boun_001" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator-social="q_458_re_s_indi_1" msg="q_458_re_s" npc-response="qrsp_458_2" object="npc:ctzn_jinm_songrimsa_boun_001" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_458_5" object="npc:ce_board_0012" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-14568.9219" location-y="42369.6953" map="songamdo">
+			<mission id="1" name2="Mission.Name2.458_1" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_458_2_icon" mapunit-1="2440_me_potaxpartyleader_001" object="npc:me_potaxpartyleader_001" object2="npc:me_potaxpartyleader_001" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-19941.9238" location-y="54228.1328" map="songrimsa">
+			<mission id="2" name2="Mission.Name2.458_2" required-register-value="1" reward-1="458_final_set1" reward-2="458_final_set2">
+				<case completion-count="1" completion-count-op="lt" indicator-social="q_458_m2_indi_1" msg="q_458_m2" npc-response="qrsp_458_3" object="npc:ctzn_jinm_songrimsa_boun_001" progress-mission="y" type="talk"/>
+				<case completion-count="1" indicator-social="q_458_re_m2_indi_1" msg="q_458_re_m2" npc-response="qrsp_458_4" object="npc:ctzn_jinm_songrimsa_boun_001" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_458_1_icon" msg="q_458_m4" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

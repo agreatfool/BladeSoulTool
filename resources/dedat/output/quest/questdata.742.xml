@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_742" broadcast-category="field" category="normal" desc="q_742_sum" grade="1" group2="QG_Sigaji" id="742" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.742" save-type="all">
+		<acquisition level="45" preceding-quest-1="q_epic_269" preceding-quest-check="and" recommended-level="47">
+			<case acquire-quest="y" npc-response="qrsp_742_1" object="npc:CH_CT_Gardener_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.742_1" required-register-value="5">
+				<case object="zoneenv:e_chest_root_of_tree_09" object2="zoneenv2:e_chest_root_of_tree_09" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_root_of_tree_08" object2="zoneenv2:e_chest_root_of_tree_08" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_root_of_tree_07" object2="zoneenv2:e_chest_root_of_tree_07" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_root_of_tree_06" object2="zoneenv2:e_chest_root_of_tree_06" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_root_of_tree_05" object2="zoneenv2:e_chest_root_of_tree_05" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_root_of_tree_04" object2="zoneenv2:e_chest_root_of_tree_04" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_root_of_tree_03" object2="zoneenv2:e_chest_root_of_tree_03" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_root_of_tree_02" object2="zoneenv2:e_chest_root_of_tree_02" progress-mission="y" type="manipulate"/>
+				<case mapunit-1="5165_e_chest_root_of_tree_01_s742" object="zoneenv:e_chest_root_of_tree_01" object2="zoneenv2:e_chest_root_of_tree_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.742_2" required-register-value="1" reward-1="742_final_set1">
+				<case npc-response="qrsp_742_2" object="npc:CH_CT_Gardener_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

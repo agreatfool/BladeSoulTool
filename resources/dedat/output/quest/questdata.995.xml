@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_995" broadcast-category="field" category="epic" completed-desc="q_995_completed" completed-list="y" desc="q_995_sum" grade="1" group2="QG_NextbaeCheongEpic2" id="995" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.995" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="50" sort-no="538"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.995_1" required-register-value="1"/>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_946"/>
+		</completion>
+		<transit id="1" zone="StartZone_Event">
+			<destination mission-step-id="1" zone-index="3"/>
+		</transit>
+	</quest>
+</table>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="CombatData" release-mversion="0.0.0.1" release-side="client" type="TutorialSkillSequence" version="0.1">
+	<tutorialSkillSequence alias="BladeMaster_Lv4_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20115" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BladeMaster_Lv4_M21">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20126" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BladeMaster_Lv6_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20108" target-pass-state="down" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20115" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BladeMaster_Lv6_M21">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20108" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20115" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BladeMaster_Lv8_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20104" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20126" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BladeMaster_Lv10_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20127" target-pass-state="stun" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BladeMaster_Lv10_M21">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20127" target-pass-effect="BladeMaster_Sword_FrontKick_LV1_Attribute" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20100" target-pass-effect="BladeMaster_Sword_Rushing_Wind_LV1_Knockback" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BladeMaster_Lv10_M22">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20127" target-pass-effect="BladeMaster_Sword_FrontKick_LV1_Attribute" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20400" target-pass-effect="BladeMaster_Sword_Rushing_Wind_LV1_Knockback" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BladeMaster_Lv10_M31">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20127" target-pass-effect="BladeMaster_Sword_FrontKick_LV1_Attribute" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20100" target-pass-effect="BladeMaster_Sword_Rushing_Wind_LV1_Knockback" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20126" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BladeMaster_Lv10_M32">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20127" target-pass-effect="BladeMaster_Sword_FrontKick_LV1_Attribute" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20400" target-pass-effect="BladeMaster_Sword_Rushing_Wind_LV1_Knockback" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20421" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20126" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BladeMaster_Lv10_M33">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20127" target-pass-effect="BladeMaster_Sword_FrontKick_LV1_Attribute" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20100" target-pass-effect="BladeMaster_Sword_Rushing_Wind_LV1_Knockback" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20411" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20126" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BladeMaster_Lv10_M34">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20127" target-pass-effect="BladeMaster_Sword_FrontKick_LV1_Attribute" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20400" target-pass-effect="BladeMaster_Sword_Rushing_Wind_LV1_Knockback" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20421" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20422" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20126" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BladeMaster_Lv10_M35">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20127" target-pass-effect="BladeMaster_Sword_FrontKick_LV1_Attribute" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20100" target-pass-effect="BladeMaster_Sword_Rushing_Wind_LV1_Knockback" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20411" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20412" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20126" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BladeMaster_Lv10_M36">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20127" target-pass-effect="BladeMaster_Sword_FrontKick_LV1_Attribute" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20400" target-pass-effect="BladeMaster_Sword_Rushing_Wind_LV1_Knockback" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20126" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BladeMaster_Lv12_M11">
+		<step skill-1="20131" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20201" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20201" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20201" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BladeMaster_Lv12_M12">
+		<step skill-1="20227" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20201" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20201" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20201" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BladeMaster_Lv14_M11">
+		<step caster-fail-state="down" result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20130" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BladeMaster_Lv14_M21">
+		<step caster-fail-state="swoon" result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20130" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20108" target-pass-state="down" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20115" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BM_PvE_EliteSkill_0030_MachSlash_hit">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20202" skill-2="20208" skill-3="20240" skill-4="20241" skill-5="20250" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BM_PvE_EliteSkill_0037_SwordBlocking_hit">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20306" skill-2="20360" skill-3="20361" skill-4="20362" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BM_PvE_EliteSkill_0044_RushingWind_hit">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20100" skill-2="20410" skill-3="20420" skill-4="20101" skill-5="20411" skill-6="20421" skill-7="20102" skill-8="20412" skill-9="20422" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="BM_PvE_EliteSkill_0051_RushingWind_hit">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="20100" skill-2="20410" skill-3="20420" skill-4="20101" skill-5="20411" skill-6="20421" skill-7="20102" skill-8="20412" skill-9="20422" type="skill"/>
+	</tutorialSkillSequence>
+</table>

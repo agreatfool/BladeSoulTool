@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_661" broadcast-category="field" category="normal" desc="q_661_sum" district-1="deasamak" grade="1" group2="QG_GoYoSaMak" id="661" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.661" save-type="all">
+		<acquisition level="29" preceding-quest-1="q_epic_521" preceding-quest-check="and" recommended-level="31">
+			<case acquire-quest="y" indicator-social="q_661_s_indi_1" msg="q_661_s" npc-response="qrsp_661_3" object="npc:ch_togupa_001" progress-mission="n" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-16834.748" location-y="1618.0728" map="toemungekjan" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.661_1" required-register-value="1">
+				<case indicator-social="q_661_m1_indi_1" msg="q_661_m1" npc-response="qrsp_661_2" object="npc:ch_dweller_045" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-8396.1875" location-y="3199.3242" map="yeolsajeedea">
+			<mission id="2" name2="Mission.Name2.661_2" required-register-value="15">
+				<case looting="q_661_Quest_darktribe_deco002_1_icon" object="npc:me_darkcrazytribe_0010" object2="npc:me_darkcrazytribe_0010" progress-mission="y" quest-symbol-drop-prob="75" type="loot"/>
+				<case looting="q_661_Quest_darktribe_deco002_1_icon" object="npc:me_darkcrazytribe_0011" object2="npc:me_darkcrazytribe_0011" progress-mission="y" quest-symbol-drop-prob="75" type="loot"/>
+				<case looting="q_661_Quest_darktribe_deco002_1_icon" mapunit-1="3010_ME_DarkCrazyTribe_0010" object="npc:me_darkcrazytribe_0012" object2="npc:me_darkcrazytribe_0012" progress-mission="y" quest-symbol-drop-prob="75" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="11111.1553" location-y="-16548.5117" map="yeolsajeedea">
+			<mission id="3" name2="Mission.Name2.661_3" required-register-value="1" reward-1="661_final_set1">
+				<case indicator-social="q_661_m3_indi_1" msg="q_661_m3" npc-response="qrsp_661_1" object="npc:ch_mangnanja_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

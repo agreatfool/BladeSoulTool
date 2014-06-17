@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_317" broadcast-category="field" category="epic" completed-desc="q_317_completed" completed-list="y" desc="q_317_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="317" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.317" save-type="all">
+		<acquisition level="1" recommended-level="18" sort-no="223"/>
+		<mission-step completion-type="and" desc="q_317_des_1" id="1" location-x="-17844.84" location-y="39132.02" map="HeAn_Dun" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.317_1" required-register-value="1">
+				<case mapunit-1="2450_guide_E317" msg="q_317_m1" npc-response="qrsp_317_1" object="npc:mh_bumbak_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_SongAmDo_Dun_2_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_317_des_2" id="2" location-x="-15730.9863" location-y="54206.6484" map="songrimsa">
+			<mission id="2" name2="Mission.Name2.317_2" required-register-value="1">
+				<case indicator-social="q_317_m2_indi_1" msg="q_317_m2" npc-response="qrsp_317_2" object="npc:ch_docheonpung_003" progress-mission="y" type="talk"/>
+				<case object="zone:zone_songrimsa_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_317_des_3" id="3" location-x="-15795.4395" location-y="55216.4141" map="songrimsa">
+			<mission id="3" name2="Mission.Name2.317_3" required-register-value="1" reward-1="317_final_set1">
+				<case indicator-social="q_317_m3_indi_1" msg="q_317_m3" npc-response="qrsp_317_3" object="npc:ch_jakyoungdan_027" progress-mission="y" type="talk">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="18"/>
+					</filter-set>
+				</case>
+				<case object="zone:zone_songrimsa_1" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_317_4" object="npc:ch_jakyoungdan_027" progress-mission="y" type="talk">
+					<filter-set>
+						<filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="17"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_SongRimSa_1_sp">
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_318"/>
+		</completion>
+	</quest>
+</table>

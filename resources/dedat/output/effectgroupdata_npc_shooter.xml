@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="CombatData" release-side="client" type="effect-group" version="0.3">
+	<record alias="MH_Shooter_Rifle_Curtain_Fire_E1_01" effect-1="MH_Shooter_Rifle_Curtain_Fire_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="MH_Shooter_Rifle_Curtain_Fire_E1_p" effect-1="MH_Shooter_Rifle_Curtain_Fire_damage" skill-result="parry-perfect-parry-counter" target="first-target" target-state="enemy"/>
+	<record alias="MH_Shooter_Rifle_Piercing_shot_E1_01" effect-1="MH_Shooter_Rifle_Piercing_shot_damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="MH_Shooter_Rifle_Piercing_shot_E1_p" effect-1="MH_Shooter_Rifle_Piercing_shot_damage" skill-result="parry-perfect-parry-counter" target="first-target" target-state="enemy"/>
+	<record alias="MH_Shooter_Rifle_Piercing_shot_Q_E1_01" effect-1="MH_Shooter_Rifle_Piercing_shot_knockback" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="MH_Shooter_Rifle_Piercing_shot_Q_E1_p" effect-1="MH_Shooter_Rifle_Piercing_shot_damage" skill-result="parry-perfect-parry-counter" target="first-target" target-state="enemy"/>
+	<record alias="MH_Shooter_Rifle_reload_E1_01" effect-1="MH_Shooter_Rifle_reload" skill-result="hit-critical-hit" target="caster" target-state="all"/>
+	<record alias="MH_Shooter_Rifle_sharpshooting_E1_01" effect-1="MH_Shooter_Rifle_sharpshooting_RangeDamage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="MH_Shooter_Rifle_sharpshooting_E1_p" effect-1="MH_Shooter_Rifle_sharpshooting_RangeDamage" skill-result="parry-perfect-parry-counter" target="first-target" target-state="enemy"/>
+	<record alias="MH_Shooter_Rifle_sharpshooting_Q_E1_01" effect-1="MH_Shooter_Rifle_sharpshooting_Q_Damage" skill-result="hit-critical-hit" target="first-target" target-state="enemy"/>
+	<record alias="MH_Shooter_Rifle_sharpshooting_Q_E1_p" effect-1="MH_Shooter_Rifle_sharpshooting_Q_Damage" skill-result="parry-perfect-parry-counter" target="first-target" target-state="enemy"/>
+	<record alias="MH_Shooter_Rifle_Suppressing_Fire_E1_01" effect-1="MH_Shooter_Rifle_Suppressing_Fire_damage" effect-2="MH_Shooter_Rifle_Suppressing_Fire_speeddown" skill-result="hit-critical-hit" target="first-second-target" target-state="enemy"/>
+	<record alias="MH_Shooter_Rifle_Suppressing_Fire_E1_p" effect-1="MH_Shooter_Rifle_Suppressing_Fire_damage" skill-result="parry-perfect-parry-counter" target="first-second-target" target-state="enemy"/>
+</table>

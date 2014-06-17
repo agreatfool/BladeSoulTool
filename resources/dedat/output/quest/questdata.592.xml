@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_592" broadcast-category="field" category="normal" desc="q_592_sum" grade="1" group2="QG_MangJaSup" id="592" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.592" save-type="all" show-tutorial-tag="y">
+		<acquisition level="3" preceding-quest-1="q_epic_305" preceding-quest-check="and" recommended-level="5">
+			<fixed-reward slot-1="item:Quest_Tutorial_EquipGem_0012"/>
+			<case acquire-quest="y" npc-response="qrsp_592_1" object="npc:ctzn_jinf_jakyungdan_changmilan_001" type="talk"/>
+			<case acquire-quest="y" item="q_592_1_icon" msg="q_592_2" type="talk-to-self">
+				<filter-set>
+					<filter field="level" op="ge" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="prop" value="7"/>
+				</filter-set>
+			</case>
+		</acquisition>
+		<mission-step guide-message="gm_592_1" id="1">
+			<mission id="1" name2="Mission.Name2.592_1" required-register-value="1">
+				<tutorial-case item="Quest_Tutorial_EquipGem_0012" progress-mission="y" type="gem-decompose"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.592_2" required-register-value="1">
+				<fixed-reward slot-1="item:Quest_Tutorial_EquipGem_0010" slot-2="item:Quest_Tutorial_EquipGem_0011"/>
+				<case npc-response="qrsp_592_2" object="npc:ctzn_jinf_jakyungdan_changmilan_001" progress-mission="y" type="talk"/>
+				<case item="q_592_1_icon" msg="q_592_4" progress-mission="y" type="talk-to-self">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="prop" value="7"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step guide-message="gm_592_2" id="3">
+			<mission id="3" name2="Mission.Name2.592_3" required-register-value="1">
+				<tutorial-case material-item="Quest_Tutorial_EquipGem_0010" primary-item="Quest_Tutorial_EquipGem_0011" progress-mission="y" type="gem-compose"/>
+			</mission>
+		</mission-step>
+		<mission-step guide-message="gm_592_3" id="4">
+			<mission id="4" name2="Mission.Name2.592_4" required-register-value="1">
+				<fixed-reward job-1="귀검사" slot-1="item:Quest_Tutorial_Weapon_0007" slot-2="item:Quest_Tutorial_Weapon_0019"/>
+				<fixed-reward job-1="암살자" slot-1="item:Quest_Tutorial_Weapon_0012" slot-2="item:Quest_Tutorial_Weapon_0024"/>
+				<fixed-reward job-1="역사" slot-1="item:Quest_Tutorial_Weapon_0011" slot-2="item:Quest_Tutorial_Weapon_0023"/>
+				<fixed-reward job-1="기공사" slot-1="item:Quest_Tutorial_Weapon_0010" slot-2="item:Quest_Tutorial_Weapon_0022"/>
+				<fixed-reward job-1="소환사" slot-1="item:Quest_Tutorial_Weapon_0009" slot-2="item:Quest_Tutorial_Weapon_0021"/>
+				<fixed-reward job-1="권사" slot-1="item:Quest_Tutorial_Weapon_0008" slot-2="item:Quest_Tutorial_Weapon_0020"/>
+				<fixed-reward job-1="검사" slot-1="item:Quest_Tutorial_Weapon_0007" slot-2="item:Quest_Tutorial_Weapon_0019"/>
+				<case npc-response="qrsp_592_3" object="npc:ctzn_jinf_jakyungdan_changmilan_001" progress-mission="y" type="talk"/>
+				<case item="q_592_1_icon" msg="q_592_6" progress-mission="y" type="talk-to-self">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="prop" value="7"/>
+					</filter-set>
+				</case>
+				<completion-loss item-1="Quest_Tutorial_EquipGem_0010" item-2="Quest_Tutorial_EquipGem_0011" item-3="Quest_Grocery_EquipGemResolvent_0001"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.592_5" required-register-value="1">
+				<tutorial-case material-item="Quest_Tutorial_Weapon_0024" primary-item="Quest_Tutorial_Weapon_0012" progress-mission="y" type="grow-item"/>
+				<tutorial-case material-item="Quest_Tutorial_Weapon_0023" primary-item="Quest_Tutorial_Weapon_0011" progress-mission="y" type="grow-item"/>
+				<tutorial-case material-item="Quest_Tutorial_Weapon_0022" primary-item="Quest_Tutorial_Weapon_0010" progress-mission="y" type="grow-item"/>
+				<tutorial-case material-item="Quest_Tutorial_Weapon_0021" primary-item="Quest_Tutorial_Weapon_0009" progress-mission="y" type="grow-item"/>
+				<tutorial-case material-item="Quest_Tutorial_Weapon_0020" primary-item="Quest_Tutorial_Weapon_0008" progress-mission="y" type="grow-item"/>
+				<tutorial-case material-item="Quest_Tutorial_Weapon_0019" primary-item="Quest_Tutorial_Weapon_0007" progress-mission="y" type="grow-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.592_6" required-register-value="1" reward-1="592_final_set1">
+				<completion-loss item-1="Quest_Tutorial_Weapon_0013" item-2="Quest_Tutorial_Weapon_0007" item-3="Quest_Tutorial_Weapon_0019" job-1="귀검사"/>
+				<completion-loss item-1="Quest_Tutorial_Weapon_0018" item-2="Quest_Tutorial_Weapon_0012" item-3="Quest_Tutorial_Weapon_0024" job-1="암살자"/>
+				<completion-loss item-1="Quest_Tutorial_Weapon_0017" item-2="Quest_Tutorial_Weapon_0011" item-3="Quest_Tutorial_Weapon_0023" job-1="역사"/>
+				<completion-loss item-1="Quest_Tutorial_Weapon_0016" item-2="Quest_Tutorial_Weapon_0010" item-3="Quest_Tutorial_Weapon_0022" job-1="기공사"/>
+				<completion-loss item-1="Quest_Tutorial_Weapon_0015" item-2="Quest_Tutorial_Weapon_0009" item-3="Quest_Tutorial_Weapon_0021" job-1="소환사"/>
+				<completion-loss item-1="Quest_Tutorial_Weapon_0014" item-2="Quest_Tutorial_Weapon_0008" item-3="Quest_Tutorial_Weapon_0020" job-1="권사"/>
+				<completion-loss item-1="Quest_Tutorial_Weapon_0013" item-2="Quest_Tutorial_Weapon_0007" item-3="Quest_Tutorial_Weapon_0019" job-1="검사"/>
+				<case npc-response="qrsp_592_4" object="npc:ctzn_jinf_jakyungdan_changmilan_001" progress-mission="y" type="talk"/>
+				<case item="q_592_1_icon" msg="q_592_8" progress-mission="y" type="talk-to-self">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="prop" value="7"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Tutorial_EquipGem_0010" item-2="Quest_Tutorial_EquipGem_0011" item-3="Quest_Tutorial_EquipGem_0012" item-4="Quest_Grocery_EquipGemResolvent_0001"/>
+		<giveup-loss item-1="Quest_Tutorial_Weapon_0007" item-2="Quest_Tutorial_Weapon_0013" item-3="Quest_Tutorial_Weapon_0019" job-1="검사"/>
+		<giveup-loss item-1="Quest_Tutorial_Weapon_0008" item-2="Quest_Tutorial_Weapon_0014" item-3="Quest_Tutorial_Weapon_0020" job-1="권사"/>
+		<giveup-loss item-1="Quest_Tutorial_Weapon_0009" item-2="Quest_Tutorial_Weapon_0015" item-3="Quest_Tutorial_Weapon_0021" job-1="소환사"/>
+		<giveup-loss item-1="Quest_Tutorial_Weapon_0010" item-2="Quest_Tutorial_Weapon_0016" item-3="Quest_Tutorial_Weapon_0022" job-1="기공사"/>
+		<giveup-loss item-1="Quest_Tutorial_Weapon_0011" item-2="Quest_Tutorial_Weapon_0017" item-3="Quest_Tutorial_Weapon_0023" job-1="역사"/>
+		<giveup-loss item-1="Quest_Tutorial_Weapon_0012" item-2="Quest_Tutorial_Weapon_0018" item-3="Quest_Tutorial_Weapon_0024" job-1="암살자"/>
+		<giveup-loss item-1="Quest_Tutorial_Weapon_0007" item-2="Quest_Tutorial_Weapon_0013" item-3="Quest_Tutorial_Weapon_0019" job-1="귀검사"/>
+	</quest>
+</table>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25031" broadcast-category="field" category="dungeon" dungeon="Dungeon_DokGuMiGul" grade="#N/A" group2="#N/A" id="25031" max-repeat="1" name2="Quest.Name2.25031" progress-party-duo="n" progress-party-quartet="n" progress-party-solo="n" reset-type="none" save-type="nothing">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="44">
+			<case acquire-quest="y" object="zoneenv:4300_potal_4596" object2="zoneenv2:4300_potal_4596" type="enter-portal"/>
+			<case acquire-quest="y" object="zoneenv:923_potal_4595" object2="zoneenv2:923_potal_4595" type="enter-portal"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.25031_1" required-register-value="1">
+				<case object="npc:me_spiderqueen_0001" object2="npc:me_spiderqueen_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_DokGuMiGul_1_Default">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

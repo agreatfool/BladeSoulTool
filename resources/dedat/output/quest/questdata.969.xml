@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_969" broadcast-category="field" category="normal" day-of-week="daily" desc="q_969_sum" grade="7" group2="QG_KiYoenFall" id="969" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.969" reset-type="daily" save-type="all">
+		<acquisition level="12" preceding-quest-1="q_epic_491" preceding-quest-check="and" recommended-level="14">
+			<case acquire-quest="y" npc-response="qrsp_969_1" object="npc:CH_JR_Citizen_0002" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.969_1" required-register-value="1">
+				<case looting="q_969_1_icon" object="npc:ME_JR_KingFrog_0001" object2="npc:ME_JR_KingFrog_0001" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.969_2" required-register-value="1" reward-1="969_final_set1" reward-2="969_final_set2">
+				<case npc-response="qrsp_969_2" object="npc:CH_JR_Citizen_0002" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_969_2_icon" msg="q_969_m2" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="factionmain1" alias="q_sub_607" broadcast-category="field" category="normal" day-of-week="daily" desc="q_607_sum" district-1="deasamak" grade="1" group2="QG_HyeolPungSaMak" id="607" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.607" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" faction="factionmain1" level="24" preceding-quest-1="q_sub_602" preceding-quest-2="q_sub_603" preceding-quest-check="or" recommended-level="26">
+			<case acquire-quest="y" indicator-social="q_607_s_indi_1" msg="q_607_s" npc-response="qrsp_607_1" object="npc:ch_murimmeng_0004" type="talk">
+				<filter-set>
+					<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain1"/>
+				</filter-set>
+			</case>
+		</acquisition>
+		<mission-step id="1" location-x="-42050.5625" location-y="-6962.2461" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.607_1" required-register-value="12">
+				<case object="npc:mh_honchoengyo_0002" object2="npc:mh_honchoengyo_0002" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+				<case object="npc:mh_honchoengyo_0003" object2="npc:mh_honchoengyo_0003" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+				<case object="npc:mh_honchoengyo_0004" object2="npc:mh_honchoengyo_0004" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+				<case object="npc:mh_honchoengyo_0005" object2="npc:mh_honchoengyo_0005" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+				<case object="npc:mh_honchoengyo_0006" object2="npc:mh_honchoengyo_0006" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+				<case object="npc:mh_honchoengyo_0007" object2="npc:mh_honchoengyo_0007" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+				<case mapunit-1="3010_MH_HonChoenGyo_0003" mapunit-2="3010_MH_HonChoenGyo_0003_1" object="npc:mh_honchoengyo_0008" object2="npc:mh_honchoengyo_0008" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+				<case object="faction:factionmain2" object2="faction:factionmain2" progress-mission="y" type="killed" valid-zone-1="zone_yeolsajeedea">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+				<case object="npc:CH_HonChunGyo_0015" object2="npc:CH_HonChunGyo_0015" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+				<case object="npc:CH_HonChenoGyo_0003" object2="npc:CH_HonChenoGyo_0003" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+				<case object="npc:CH_HonChenoGyo_0002" object2="npc:CH_HonChenoGyo_0002" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+				<case object="npc:CH_HonChenoGyo_0001" object2="npc:CH_HonChenoGyo_0001" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+				<case object="npc:CH_HonChunGyo_0018" object2="npc:CH_HonChunGyo_0018" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+				<case object="npc:CH_HonChunGyo_0008" object2="npc:CH_HonChunGyo_0008" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+				<case object="npc:ch_honchungyo_0007" object2="npc:ch_honchungyo_0007" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-41491.2109" location-y="-19920.5781" map="yeolsajeedea">
+			<mission id="2" name2="Mission.Name2.607_2" required-register-value="1" reward-1="607_final_set1" reward-2="607_final_set2">
+				<case indicator-social="q_607_m2_indi_1" msg="q_607_m2" npc-response="qrsp_607_2" object="npc:ch_murimmeng_0004" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain1"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

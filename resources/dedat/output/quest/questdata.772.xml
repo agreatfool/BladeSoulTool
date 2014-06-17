@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_772" broadcast-category="field" category="normal" desc="q_772_sum" district-1="deasamak" grade="1" group2="QG_HeukChangJokSaWon" id="772" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.772" save-type="all">
+		<acquisition level="31" preceding-quest-1="q_epic_525" preceding-quest-check="and" recommended-level="33">
+			<case acquire-quest="y" indicator-social="q_772_s_indi_1" msg="q_772_s" npc-response="qrsp_772_1" object="npc:ch_mayeongganggun_0012" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="46460.231" location-y="-35984.43" map="sajisukrim">
+			<mission id="1" name2="Mission.Name2.772_1" required-register-value="10">
+				<case looting="q_772_grocery_leather_bag_1_icon" mapunit-1="3023_ME_DarkCrazyTribe_0028" mapunit-2="3023_ME_DarkCrazyTribe_0028_1" object="npc:me_darkcrazytribe_0028" object2="npc:me_darkcrazytribe_0028" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="45957.188" location-y="-20836.336" map="haerimchon">
+			<mission id="2" name2="Mission.Name2.772_2" required-register-value="1" reward-1="772_final_set1">
+				<case indicator-social="q_772_m2_indi_1" msg="q_772_m2" npc-response="qrsp_772_2" object="npc:ch_muun_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

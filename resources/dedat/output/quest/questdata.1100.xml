@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1100" broadcast-category="always" category="normal" day-of-week="daily" desc="q_1100_sum" district-1="suwal" grade="10" group2="QG_Delete" id="1100" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1100" reset-type="daily" retired="y" save-type="all">
+		<acquisition check-tencent-vitality="n" level="43" recommended-level="45">
+			<case acquire-quest="y" grocery="Quest_Scroll_SoowolPyungwon_0056" item="Quest_Scroll_SoowolPyungwon_0056" msg="q_1100_1" type="talk-to-item"/>
+		</acquisition>
+		<mission-step id="1" location-x="7967.27" location-y="-26645.06" map="BaDaBaemBoGeupGiJi" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.1100_1" required-register-value="1">
+				<case looting="q_1100_2_icon" mapunit-1="4707_me_chunggakaboss_0005_S1100" mapunit-2="4100_BaDaBaemBoGeupGiJi_S1100" object="npc:ME_ChungGakABoss_0005" object2="npc:ME_ChungGakABoss_0005" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1100_2" required-register-value="1" reward-1="1100_final_set1" reward-2="1100_final_set2">
+				<case npc-response="qrsp_1100_1" object="npc:CH_CT_MerChant_0102" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_1100_3_icon" msg="q_1100_3" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

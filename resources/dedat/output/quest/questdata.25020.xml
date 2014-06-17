@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25020" attraction-1="cave2:Cave_BaekChung_5" broadcast-category="field" category="attraction" desc="q_25020_sum" grade="8" group2="QG_SnowMountSouth" id="25020" map-group-1-1="baekchung" max-repeat="-1" name2="Quest.Name2.25020" save-type="nothing">
+		<acquisition level="44" preceding-quest-check="and" recommended-level="49"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.25020_1" required-register-value="1">
+				<case object="npc:ME_CT_SnowWoman_0001" object2="npc:ME_CT_SnowWoman_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" required-register-value="1" reward-1="25020_final_set1">
+				<case item="q_25020_1_icon" msg="q_25020_1" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

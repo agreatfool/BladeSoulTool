@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_864" broadcast-category="field" category="normal" desc="q_864_sum" district-1="deasamak" grade="1" group2="QG_OSaekAmDoEast" id="864" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.864" save-type="all">
+		<acquisition level="34" preceding-quest-1="q_epic_542" preceding-quest-2="q_sub_868" preceding-quest-check="and" recommended-level="36">
+			<case acquire-quest="y" indicator-social="q_864_s_indi_1" msg="q_864_s" npc-response="qrsp_864_1" object="npc:ch_mayeongganggun_0048" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_864_des_1" id="1" location-x="42713.8125" location-y="63350.4297" map="oseakamdo">
+			<mission id="1" name2="Mission.Name2.864_1" required-register-value="10">
+				<case mapunit-1="3037_MH_ORakDang_0010" object="npc:mh_orakdang_0010" object2="npc:mh_orakdang_0010" progress-mission="y" type="killed"/>
+				<case object="npc:mh_orakdang_0011" object2="npc:mh_orakdang_0011" progress-mission="y" type="killed"/>
+				<case object="npc:mh_orakdang_0009" object2="npc:mh_orakdang_0009" progress-mission="y" type="killed"/>
+				<case object="npc:mh_tanghong_0001" object2="npc:mh_tanghong_0001" progress-mission="y" type="killed"/>
+				<case object="npc:mh_tanghong_sol_0001" object2="npc:mh_tanghong_sol_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="39062.7656" location-y="61342.3516" map="oseakamdo">
+			<mission id="2" name2="Mission.Name2.864_2" required-register-value="1" reward-1="864_final_set1">
+				<case indicator-social="q_864_m2_indi_1" msg="q_864_m2" npc-response="qrsp_864_2" object="npc:ch_mayeongganggun_0048" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

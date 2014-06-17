@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_496" broadcast-category="field" category="epic" completed-desc="q_496_completed" completed-list="y" desc="q_496_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="496" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.496" save-type="all">
+		<acquisition level="1" recommended-level="16" sort-no="219"/>
+		<mission-step desc="q_496_des_2" id="2">
+			<mission id="2" name2="Mission.Name2.496_2" required-register-value="1">
+				<case indicator-social="q_496_m2_indi_1" msg="q_496_m2" npc-response="qrsp_496_1" object="npc:ch_jakyoungdan_0008" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_496_des_3" id="3">
+			<mission id="3" name2="Mission.Name2.496_3" required-register-value="15">
+				<case object="npc:me_kangsi_0001" object2="npc:me_kangsi_0001" progress-mission="y" type="killed"/>
+				<case object="npc:me_kangsi_0002" object2="npc:me_kangsi_0002" progress-mission="y" type="killed"/>
+				<case object="npc:me_kangsi_0004" object2="npc:me_kangsi_0004" progress-mission="y" type="killed"/>
+				<case object="npc:me_zombiea_0041" object2="npc:me_zombiea_0041" progress-mission="y" type="killed"/>
+				<case object="npc:me_zombiea_0036" object2="npc:me_zombiea_0036" progress-mission="y" type="killed"/>
+				<case object="npc:me_zombiea_0019" object2="npc:me_zombiea_0019" progress-mission="y" type="killed"/>
+				<case object="npc:me_kangsitall_0001" object2="npc:me_kangsitall_0001" progress-mission="y" type="killed"/>
+				<case object="npc:me_kangsitall_0002" object2="npc:me_kangsitall_0002" progress-mission="y" type="killed"/>
+				<case mapunit-1="2312_ME_KangSi_0001" mapunit-2="2312_ME_KangSi_0001_1" mapunit-3="2312_ME_KangSi_0001_2" object="npc:me_kangsitall_0004" object2="npc:me_kangsitall_0004" progress-mission="y" type="killed"/>
+				<case indicator-social="q_496_m3_indi_1" npc-response="qrsp_496_2" object="npc:ch_nokmyeongctzn_0001" type="talk"/>
+				<case object="npc:me_zombiea_0017" object2="npc:me_zombiea_0017" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="4" name2="Mission.Name2.496_4" required-register-value="1">
+				<case looting="q_496_Quest_red_talisman_1_icon" object="npc:me_kangsitall_0001" object2="npc:me_kangsitall_0001" progress-mission="y" type="loot"/>
+				<case looting="q_496_Quest_red_talisman_1_icon" object="npc:me_kangsitall_0002" object2="npc:me_kangsitall_0002" progress-mission="y" type="loot"/>
+				<case looting="q_496_Quest_red_talisman_1_icon" mapunit-4="2312_ME_KangSi_0001_3" mapunit-5="2312_ME_KangSi_0001_4" mapunit-6="2312_ME_KangSi_0001_5" object="npc:me_kangsitall_0004" object2="npc:me_kangsitall_0004" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_496_des_4" id="4">
+			<mission id="5" name2="Mission.Name2.496_5" required-register-value="1">
+				<case indicator-social="q_496_m5_indi_1" msg="q_496_m5" npc-response="qrsp_496_3" object="npc:ch_jakyoungdan_0008" progress-mission="y" type="talk"/>
+				<case indicator-social="q_496_m5_indi_2" npc-response="qrsp_496_4" object="npc:ch_shaman_0001" type="talk"/>
+				<case object="zone:zone_NokMyungCHN2_House" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_496_des_5" id="5">
+			<mission id="6" name2="Mission.Name2.496_6" required-register-value="1">
+				<case mapunit-1="Guide_PokPoSuDongGul_e" object="zone:zone_NokMyungCHN2_MaMulGul" progress-mission="y" type="enter-zone"/>
+				<case object="zone:zone_NokMyungCHN2_House" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_496_des_6" id="6">
+			<mission id="7" name2="Mission.Name2.496_7" required-register-value="1" show-kill-mapunit="y">
+				<case object="npc:mh_shaman_0004" object2="npc:mh_shaman_0004" progress-mission="y" type="killed"/>
+				<case object="zone:zone_nokmyungchn2_mamulgul" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_315"/>
+		</completion>
+		<transit id="1" zone="zone_nokmyungchn">
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+		<transit id="2" zone="zone_NokMyungCHN2_House_SP">
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+		</transit>
+		<transit id="3" zone="zone_SuRyenGol_Dun_1">
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+		<mission-step desc="q_496_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.496_1" required-register-value="1">
+				<case mapunit-1="2310_zone_NokMyungCHN2_KangSi" object="zone:zone_NokMyungCHN2_KangSi" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_496_des_7" id="7">
+			<mission id="8" name2="Mission.Name2.496_8" required-register-value="1" reward-1="496_final_set1">
+				<case indicator-social="q_496_m8_indi_1" msg="q_496_m8" npc-response="qrsp_496_5" object="npc:ch_jakyoungdan_024" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

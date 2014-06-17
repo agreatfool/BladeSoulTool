@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1066" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1066_sum" grade="10" group2="QG_HeukRyonjgyo" id="1066" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.1066" reset-type="daily" save-type="all">
+		<acquisition level="50" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1066_2" object="npc:CH_WA_Juyu_0001" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1066_1" object="npc:CH_WA_Juyu_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1066_1" required-register-value="3">
+				<case object="npc:MH_WA_Whanmadan_A2_Nmd_0015" object2="npc:MH_WA_Whanmadan_A2_Nmd_0015" progress-mission="y" type="killed"/>
+				<case object="npc:MH_WA_Whanmadan_A2_Nmd_0014" object2="npc:MH_WA_Whanmadan_A2_Nmd_0014" progress-mission="y" type="killed"/>
+				<case object="npc:MH_WA_Whanmadan_A2_Nmd_0013" object2="npc:MH_WA_Whanmadan_A2_Nmd_0013" progress-mission="y" type="killed"/>
+				<case object="npc:MH_WA_Whanmadan_A2_Nmd_0012" object2="npc:MH_WA_Whanmadan_A2_Nmd_0012" progress-mission="y" type="killed"/>
+				<case object="npc:MH_WA_Whanmadan_A2_Nmd_0011" object2="npc:MH_WA_Whanmadan_A2_Nmd_0011" progress-mission="y" type="killed"/>
+				<case object="npc:MH_WA_Whanmadan_A2_Nmd_0010" object2="npc:MH_WA_Whanmadan_A2_Nmd_0010" progress-mission="y" type="killed"/>
+				<case object="npc:MH_WA_Whanmadan_A2_Nmd_0009" object2="npc:MH_WA_Whanmadan_A2_Nmd_0009" progress-mission="y" type="killed"/>
+				<case object="npc:MH_WA_Whanmadan_A2_Nmd_0008" object2="npc:MH_WA_Whanmadan_A2_Nmd_0008" progress-mission="y" type="killed"/>
+				<case object="npc:MH_WA_Whanmadan_A2_Nmd_0007" object2="npc:MH_WA_Whanmadan_A2_Nmd_0007" progress-mission="y" type="killed"/>
+				<case object="npc:MH_WA_Whanmadan_A2_Nmd_0006" object2="npc:MH_WA_Whanmadan_A2_Nmd_0006" progress-mission="y" type="killed"/>
+				<case object="npc:MH_WA_Whanmadan_A2_Nmd_0005" object2="npc:MH_WA_Whanmadan_A2_Nmd_0005" progress-mission="y" type="killed"/>
+				<case object="npc:MH_WA_Whanmadan_A2_Nmd_0004" object2="npc:MH_WA_Whanmadan_A2_Nmd_0004" progress-mission="y" type="killed"/>
+				<case object="npc:MH_WA_Whanmadan_A2_Nmd_0003" object2="npc:MH_WA_Whanmadan_A2_Nmd_0003" progress-mission="y" type="killed"/>
+				<case object="npc:MH_WA_Whanmadan_A2_Nmd_0002" object2="npc:MH_WA_Whanmadan_A2_Nmd_0002" progress-mission="y" type="killed"/>
+				<case object="npc:MH_WA_Whanmadan_A2_Nmd_0001" object2="npc:MH_WA_Whanmadan_A2_Nmd_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1066_2" required-register-value="1" reward-1="1066_final_set1" reward-2="1066_final_set2">
+				<case fee="y" item="q_1066_1_icon" msg="q_1066_4" progress-mission="y" type="talk-to-self"/>
+				<case npc-response="qrsp_1066_3" object="npc:CH_WA_Juyu_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

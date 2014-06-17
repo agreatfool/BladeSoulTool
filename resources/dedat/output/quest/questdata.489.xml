@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_489" broadcast-category="field" category="normal" desc="q_489_sum" grade="1" group2="QG_Delete" id="489" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.489" retired="y" save-type="all">
+		<acquisition level="43" preceding-quest-1="q_sub_488" preceding-quest-check="and" recommended-level="45">
+			<case acquire-quest="y" npc-response="qrsp_489_1" object="npc:ch_yuran_0002" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_489_des_1" id="1" location-x="-3549.48" location-y="12339.97" map="haenamumaeulicheung" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.489_1" required-register-value="1">
+				<case grocery="General_Grocery_SpecialMaterial_0083" npc-response="qrsp_489_2" object="npc:ch_yuran_0002" progress-mission="y" remove-grocery="n" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_489_des_2" id="2" location-x="-3549.48" location-y="12339.97" map="haenamumaeulicheung" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.489_2" required-register-value="1" reward-1="489_final_set1">
+				<case npc-response="qrsp_489_3" object="npc:ch_yuran_0002" progress-mission="y" remove-grocery="n" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="암살자"/>
+						<filter item="General_Weapon_Dagger_1243_C3" subject="case:talked:pc" subject2="case:talked:pc" type="inventory"/>
+					</filter-set>
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="암살자"/>
+						<filter field="equip-hand" op="eq" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="618046"/>
+					</filter-set>
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="암살자"/>
+						<filter item="General_Weapon_Dagger_1243_C4" subject="case:talked:pc" subject2="case:talked:pc" type="inventory"/>
+					</filter-set>
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="암살자"/>
+						<filter field="equip-hand" op="eq" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="618052"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_489_3" object="npc:ch_yuran_0002" progress-mission="y" remove-grocery="n" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="역사"/>
+						<filter item="General_Weapon_Axe_1243_C3" subject="case:talked:pc" subject2="case:talked:pc" type="inventory"/>
+					</filter-set>
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="역사"/>
+						<filter field="equip-hand" op="eq" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="618045"/>
+					</filter-set>
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="역사"/>
+						<filter item="General_Weapon_Axe_1243_C4" subject="case:talked:pc" subject2="case:talked:pc" type="inventory"/>
+					</filter-set>
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="역사"/>
+						<filter field="equip-hand" op="eq" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="618051"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_489_3" object="npc:ch_yuran_0002" progress-mission="y" remove-grocery="n" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="기공사"/>
+						<filter item="General_Weapon_Aura-bangle_1243_C3" subject="case:talked:pc" subject2="case:talked:pc" type="inventory"/>
+					</filter-set>
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="기공사"/>
+						<filter field="equip-hand" op="eq" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="618044"/>
+					</filter-set>
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="기공사"/>
+						<filter item="General_Weapon_Aura-bangle_1243_C4" subject="case:talked:pc" subject2="case:talked:pc" type="inventory"/>
+					</filter-set>
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="기공사"/>
+						<filter field="equip-hand" op="eq" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="618050"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_489_3" object="npc:ch_yuran_0002" progress-mission="y" remove-grocery="n" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="소환사"/>
+						<filter item="General_Weapon_Staff_1243_C3" subject="case:talked:pc" subject2="case:talked:pc" type="inventory"/>
+					</filter-set>
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="소환사"/>
+						<filter field="equip-hand" op="eq" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="618043"/>
+					</filter-set>
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="소환사"/>
+						<filter item="General_Weapon_Staff_1243_C4" subject="case:talked:pc" subject2="case:talked:pc" type="inventory"/>
+					</filter-set>
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="소환사"/>
+						<filter field="equip-hand" op="eq" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="618049"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_489_3" object="npc:ch_yuran_0002" progress-mission="y" remove-grocery="n" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="권사"/>
+						<filter item="General_Weapon_Gauntlet_1243_C3" subject="case:talked:pc" subject2="case:talked:pc" type="inventory"/>
+					</filter-set>
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="권사"/>
+						<filter field="equip-hand" op="eq" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="618042"/>
+					</filter-set>
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="권사"/>
+						<filter item="General_Weapon_Gauntlet_1243_C4" subject="case:talked:pc" subject2="case:talked:pc" type="inventory"/>
+					</filter-set>
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="권사"/>
+						<filter field="equip-hand" op="eq" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="618048"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_489_3" object="npc:ch_yuran_0002" progress-mission="y" remove-grocery="n" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="검사" value-2="귀검사"/>
+						<filter item="General_Weapon_Sword_1243_C3" subject="case:talked:pc" subject2="case:talked:pc" type="inventory"/>
+					</filter-set>
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="검사" value-2="귀검사"/>
+						<filter field="equip-hand" op="eq" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="618041"/>
+					</filter-set>
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="검사" value-2="귀검사"/>
+						<filter item="General_Weapon_Sword_1243_C4" subject="case:talked:pc" subject2="case:talked:pc" type="inventory"/>
+					</filter-set>
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="job" value-1="검사" value-2="귀검사"/>
+						<filter field="equip-hand" op="eq" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="618047"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_489_5" object="npc:CH_CT_TreasureHunter_0014" progress-mission="n" type="approach"/>
+				<case npc-response="qrsp_489_4" object="npc:CH_CT_TreasureHunter_0009" progress-mission="n" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

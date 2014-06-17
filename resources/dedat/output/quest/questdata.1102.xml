@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1102" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1102_sum" district-1="suwal" grade="7" group2="QG_SouthCoast" id="1102" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1102" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="37" preceding-quest-1="q_epic_931" preceding-quest-check="and" preceding-quest-mission-step-1="4" recommended-level="39">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1102_1" object="npc:ch_pungjeohoe_0024" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1102_3" object="npc:ch_pungjeohoe_0024" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_1102_5" object="npc:ce_board_0002" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1102_1" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_1102_2_icon" mapunit-1="4105_ME_SeaMonsterLeader_0002" mapunit-2="4105_ME_PigBaby_0005" object="npc:me_seamonsterleader_0002" object2="npc:me_seamonsterleader_0002" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1102_2" required-register-value="1" reward-1="1102_final_set1" reward-2="1102_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1102_2" object="npc:ch_pungjeohoe_0024" progress-mission="y" type="talk"/>
+				<case completion-count="1" npc-response="qrsp_1102_4" object="npc:ch_pungjeohoe_0024" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_1102_1_icon" msg="q_1102_6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

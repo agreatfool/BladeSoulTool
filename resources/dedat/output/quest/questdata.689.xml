@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_689" broadcast-category="field" category="normal" desc="q_689_sum" grade="1" group2="QG_Reservoir" id="689" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.689" save-type="all">
+		<acquisition level="44" preceding-quest-1="q_epic_262" preceding-quest-2="q_sub_688" preceding-quest-check="and" recommended-level="46">
+			<case acquire-quest="y" npc-response="qrsp_689_1" object="npc:CH_CT_JeGukGun_0173" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.689_1" required-register-value="10">
+				<case looting="q_689_1_icon" object="npc:MH_CT_NokLimDo_0193" object2="npc:MH_CT_NokLimDo_0193" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+				<case looting="q_689_1_icon" object="npc:MH_CT_NokLimDo_0194" object2="npc:MH_CT_NokLimDo_0194" progress-mission="y" type="loot"/>
+				<case looting="q_689_1_icon" object="npc:MH_CT_NokLimDo_0195" object2="npc:MH_CT_NokLimDo_0195" progress-mission="y" type="loot"/>
+				<case looting="q_689_1_icon" object="npc:MH_CT_NokLimDo_0196" object2="npc:MH_CT_NokLimDo_0196" progress-mission="y" type="loot"/>
+				<case looting="q_689_1_icon" mapunit-1="5001_MH_CT_NokLimDo_0193_s689" object="npc:MH_CT_NokLimDo_0197" object2="npc:MH_CT_NokLimDo_0197" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.689_2" required-register-value="1" reward-1="689_final_set1">
+				<case npc-response="qrsp_689_5" object="npc:CH_CT_JeGukGun_0177" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

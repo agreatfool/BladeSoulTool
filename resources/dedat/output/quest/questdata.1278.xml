@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1278" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1278_sum" district-1="suwal" grade="1" group2="QG_AngaeForestNorth" id="1278" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1278" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="41" preceding-quest-1="q_epic_928" preceding-quest-check="and" recommended-level="43">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1278_1" object="npc:ch_gyeongchunmaeng_0017" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_1278_3" object="npc:CE_Board_0005" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1278_1" object="npc:ch_gyeongchunmaeng_0017" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-5993.705" location-y="55073.848" map="angaesup_4408" mission-map-type="mapunit">
+			<mission id="1" name2="Mission.Name2.1278_1" required-register-value="10">
+				<case object="npc:mh_jegukgun_0376" object2="npc:mh_jegukgun_0376" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0375" object2="npc:mh_jegukgun_0375" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0374" object2="npc:mh_jegukgun_0374" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0373" object2="npc:mh_jegukgun_0373" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0372" object2="npc:mh_jegukgun_0372" progress-mission="y" type="killed"/>
+				<case object="npc:mh_jegukgun_0371" object2="npc:mh_jegukgun_0371" progress-mission="y" type="killed"/>
+				<case mapunit-1="4400_MH_JeGukGun_0371" mapunit-2="4400_MH_JeGukGun_0371_1" mapunit-3="4400_MH_JeGukGun_0371_2" mapunit-4="4400_MH_JeGukGun_0371_3" object="npc:me_cannonfighter_0011" object2="npc:me_cannonfighter_0011" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1278_2" required-register-value="1" reward-1="1278_final_set1" reward-2="1278_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1278_2" object="npc:ch_gyeongchunmaeng_0017" progress-mission="y" type="talk"/>
+				<case acquire-quest="n" completion-count="0" fee="y" item="q_1278_1_icon" msg="q_1278_4" progress-mission="y" type="talk-to-self"/>
+				<case completion-count="1" npc-response="qrsp_1278_2" object="npc:ch_gyeongchunmaeng_0017" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

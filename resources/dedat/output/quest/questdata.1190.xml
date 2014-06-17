@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1190" broadcast-category="field" category="normal" desc="q_1190_sum" district-1="suwal" grade="1" group2="QG_GuidosiNorth" id="1190" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1190" save-type="all">
+		<acquisition level="39" preceding-quest-1="q_sub_1181" preceding-quest-2="q_epic_915" preceding-quest-check="and" recommended-level="41">
+			<case acquire-quest="y" npc-response="qrsp_1190_1" object="npc:ce_hoerangjok_0014" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1190_1" required-register-value="1">
+				<case npc-response="qrsp_1190_2" object="npc:ce_jukgyodan_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-42994.11" location-y="-1369.66" map="gwidosi" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.1190_2" required-register-value="1">
+				<case npc-response="qrsp_1190_3" object="npc:ce_hoerangjok_0016" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_1190_6" object="npc:ce_hoerangjok_0014" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-42851.53" location-y="-2795.44" map="gwidosi" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.1190_3" required-register-value="7">
+				<case object="npc:me_scorpion_0007" object2="npc:me_scorpion_0007" progress-mission="y" type="killed"/>
+				<case mapunit-1="4300_ME_Scorpion_0006" object="npc:me_scorpion_0006" object2="npc:me_scorpion_0006" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_1190_6" object="npc:ce_hoerangjok_0014" type="approach"/>
+				<case npc-response="qrsp_1190_7" object="npc:ce_hoerangjok_0016" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.1190_4" required-register-value="1">
+				<case npc-response="qrsp_1190_5" object="npc:ce_hoerangjok_0017" progress-mission="y" type="approach"/>
+				<case npc-response="qrsp_1190_6" object="npc:ce_hoerangjok_0018" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.1190_5" required-register-value="1" reward-1="1190_final_set1">
+				<case npc-response="qrsp_1190_4" object="npc:ce_hoerangjok_0018" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_1190_8" object="npc:ce_hoerangjok_0017" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

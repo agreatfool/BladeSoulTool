@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_702" broadcast-category="field" category="normal" desc="q_702_sum" grade="1" group2="QG_Reservoir" id="702" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.702" save-type="all">
+		<acquisition level="44" preceding-quest-1="q_sub_598" preceding-quest-2="q_sub_599" preceding-quest-check="and" recommended-level="46">
+			<case acquire-quest="y" npc-response="qrsp_702_1" object="npc:CH_CT_HeungBu_0013" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.702_1" required-register-value="1">
+				<case npc-response="qrsp_702_2" object="npc:CH_CT_SimBongSa_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.702_2" required-register-value="10">
+				<case looting="q_702_1_icon" object="npc:ME_CT_SoraCrab_0020" object2="npc:ME_CT_SoraCrab_0020" progress-mission="y" type="loot"/>
+				<case looting="q_702_1_icon" mapunit-1="5002_ME_CT_SoraCrab_0018_s702" object="npc:ME_CT_SoraCrab_0018" object2="npc:ME_CT_SoraCrab_0018" progress-mission="y" type="loot"/>
+				<case looting="q_702_1_icon" object="npc:ME_CT_SoraCrab_0019" object2="npc:ME_CT_SoraCrab_0019" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.702_3" required-register-value="1">
+				<case npc-response="qrsp_702_3" object="npc:CH_CT_SimBongSa_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.702_4" required-register-value="1" reward-1="702_final_set1">
+				<case npc-response="qrsp_702_4" object="npc:CH_CT_JeGukGun_0220" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

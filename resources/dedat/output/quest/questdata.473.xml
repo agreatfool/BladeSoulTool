@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_473" broadcast-category="field" category="normal" desc="q_473_sum" district-1="jeryoungrim" grade="1" group2="QG_Geoamgol" id="473" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.473" save-type="all">
+		<acquisition level="17" preceding-quest-1="q_epic_317" preceding-quest-check="and" recommended-level="19">
+			<case acquire-quest="y" indicator-social="q_473_s_indi_1" msg="q_473_s" npc-response="qrsp_473_1" object="npc:ch_foodmaster_002" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-27130.4922" location-y="60775.8828" map="songamdo">
+			<mission id="1" name2="Mission.Name2.473_1" required-register-value="1" reward-1="473_final_set1">
+				<case indicator-social="q_473_m1_indi_1" msg="q_473_m1" npc-response="qrsp_473_2" object="npc:CH_Scholar_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

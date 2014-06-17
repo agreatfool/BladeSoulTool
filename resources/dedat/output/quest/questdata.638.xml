@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_638" broadcast-category="field" category="normal" day-of-week="daily" desc="q_638_sum" district-1="deasamak" grade="9" group2="QG_GmmDalUJukJi" id="638" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.638" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="34" preceding-quest-1="q_epic_538" preceding-quest-2="q_sub_668" preceding-quest-check="and" recommended-level="37">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" indicator-social="q_638_s_indi_1" msg="q_638_s" npc-response="qrsp_638_1" object="npc:ch_tosok_0004" progress-mission="n" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator-social="q_638_re_s_indi_1" msg="q_638_re_s" npc-response="qrsp_638_3" object="npc:ch_tosok_0004" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_638_5" object="npc:CE_Board_0015" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-35920.7461" location-y="29657.8945" map="lakedg">
+			<mission id="1" name2="Mission.Name2.638_1" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_638_quest_blue_ball_1_icon" mapunit-1="3079_ME_IronTurtle_0001" object="npc:me_ironturtle_0001" object2="npc:me_ironturtle_0001" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.638_2" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_638_Quest_red_ball_1_icon" mapunit-2="3079_ME_HongUn_0001" object="npc:me_hongun_0001" object2="npc:me_hongun_0001" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-37948.6445" location-y="9352.2031" map="yeolsajeedea">
+			<mission id="3" name2="Mission.Name2.638_3" required-register-value="1" reward-1="638_final_set1" reward-2="638_final_set2">
+				<case completion-count="1" completion-count-op="lt" indicator-social="q_638_m3_indi_1" msg="q_638_m3" npc-response="qrsp_638_2" object="npc:ch_tosok_0004" progress-mission="y" type="talk"/>
+				<case completion-count="1" indicator-social="q_638_re_m3_indi_1" msg="q_638_re_m3" npc-response="qrsp_638_4" object="npc:ch_tosok_0004" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_638_1_icon" msg="q_638_6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

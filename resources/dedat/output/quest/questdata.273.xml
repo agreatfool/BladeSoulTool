@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_273" broadcast-category="field" category="epic" completed-desc="q_273_completed" completed-list="y" desc="q_273_sum" grade="1" group2="QG_BaeCheongEpic" id="273" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.273" save-type="all">
+		<acquisition level="1" recommended-level="47" sort-no="514"/>
+		<mission-step id="2" location-x="-8892.17" location-y="8025.30" map="KangRyuSi" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.273_2" required-register-value="1">
+				<case mapunit-1="5140_Guide_e273" npc-response="qrsp_273_2" object="npc:CH_CT_PungEmpire_0004" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_267_15" object="npc:CE_CT_ThiefCat_0012" type="approach"/>
+				<case npc-response="qrsp_273_8" object="npc:CH_CT_RyuHyunSung_0001" type="approach"/>
+				<case npc-response="qrsp_273_14" object="npc:CH_CT_JeGukGun_0048" type="approach"/>
+				<case npc-response="qrsp_280_20" object="npc:CH_CT_BiMoo_0012" type="approach"/>
+				<case npc-response="qrsp_280_19" object="npc:CH_CT_BiMoo_0011" type="approach"/>
+				<case npc-response="qrsp_280_18" object="npc:CH_CT_BiMoo_0010" type="approach"/>
+				<case npc-response="qrsp_280_17" object="npc:CH_CT_BiMoo_0009" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.273_3" required-register-value="1">
+				<case mapunit-1="5100_Zone_SinHyeJeon_p_e273" object="zone:Zone_SinHyeJeon_p" progress-mission="y" type="enter-zone"/>
+				<case npc-response="qrsp_267_15" object="npc:CE_CT_ThiefCat_0012" type="approach"/>
+				<case npc-response="qrsp_280_24" object="npc:CH_CT_BiMoo_0020" type="approach"/>
+				<case npc-response="qrsp_280_23" object="npc:CH_CT_BiMoo_0019" type="approach"/>
+				<case npc-response="qrsp_280_22" object="npc:CH_CT_BiMoo_0018" type="approach"/>
+				<case npc-response="qrsp_280_21" object="npc:CH_CT_BiMoo_0017" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.273_4" required-register-value="1">
+				<case object="npc:MH_CT_BokUnHoe_0121" object2="npc:MH_CT_BokUnHoe_0121" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.273_5" required-register-value="1">
+				<case mapunit-1="5147_footswitch_01_e273" object="zoneenv:5147_footswitch_01" object2="zoneenv2:5147_footswitch_01" progress-mission="y" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.273_6" required-register-value="1">
+				<case npc-response="qrsp_273_3" object="npc:CH_CT_JeongHaDo_0003" progress-mission="y" type="talk"/>
+				<case object="zoneenv:5147_footswitch_07" object2="zoneenv2:5147_footswitch_07" progress-mission="reaction-only" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_273_des_7" id="7" location-x="35346.11" location-y="23259.68" map="KangRyuSi" mission-map-type="location">
+			<mission id="7" name2="Mission.Name2.273_7" required-register-value="1">
+				<case mapunit-1="5147_Guide_e273" npc-response="qrsp_273_4" object="npc:CH_CT_Citizen_0033" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_273_11" object="npc:CH_CT_JeGukGun_0255" type="approach"/>
+				<case npc-response="qrsp_273_10" object="npc:CH_CT_JeGukGun_0254" type="approach"/>
+				<case npc-response="qrsp_273_9" object="npc:CH_CT_PungEmpire_0028" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.273_8" required-register-value="1">
+				<case mapunit-1="5165_e_chest_bigwastebasket_01_e273" object="zoneenv:e_chest_bigwastebasket_01" object2="zoneenv2:e_chest_bigwastebasket_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.273_9" required-register-value="1">
+				<case npc-response="qrsp_273_5" object="npc:CE_CT_ThiefCat_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.273_10" required-register-value="1">
+				<case mapunit-1="5165_footswitch_02_e273" object="zoneenv:5166_footswitch_02" object2="zoneenv2:5166_footswitch_02" progress-mission="y" type="env-entered"/>
+				<case npc-response="qrsp_273_12" object="npc:CE_CT_ThiefCat_0004" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.273_11" required-register-value="1">
+				<case mapunit-1="5165_footswitch_03_e273" object="zoneenv:5166_footswitch_03" object2="zoneenv2:5166_footswitch_03" progress-mission="y" type="env-entered"/>
+				<case npc-response="qrsp_273_13" object="npc:CE_CT_ThiefCat_0005" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="12">
+			<mission id="12" name2="Mission.Name2.273_12" required-register-value="1">
+				<case npc-response="qrsp_273_6" object="npc:CE_CT_ThiefCat_0006" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="13">
+			<mission id="13" name2="Mission.Name2.273_13" required-register-value="1">
+				<case mapunit-1="5134_e_chest_seopungbord_01_e273" object="zoneenv:e_chest_seopungbord_01" object2="zoneenv2:e_chest_seopungbord_01" progress-mission="y" type="manipulate"/>
+				<case npc-response="qrsp_273_15" object="npc:CE_CT_ThiefCat_0006" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="14">
+			<mission id="14" name2="Mission.Name2.273_14" required-register-value="4">
+				<case object="npc:CH_CT_BokUn_0020" object2="npc:CH_CT_BokUn_0020" progress-mission="y" type="killed"/>
+				<case object="npc:CH_CT_BokUn_0021" object2="npc:CH_CT_BokUn_0021" progress-mission="y" type="killed"/>
+				<case object="npc:CH_CT_BokUn_0022" object2="npc:CH_CT_BokUn_0022" progress-mission="y" type="killed"/>
+				<case mapunit-1="5134_CH_CT_BokUn_0020_e273" object="npc:CH_CT_BokUn_0023" object2="npc:CH_CT_BokUn_0023" progress-mission="y" type="killed"/>
+				<case object="zone:Zone_MuPungGaekJum_p" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="Zone_SinHyeJeon">
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_274"/>
+		</completion>
+		<mission-step id="15">
+			<mission id="15" name2="Mission.Name2.273_15" required-register-value="1" reward-1="273_final_set1">
+				<case npc-response="qrsp_273_7" object="npc:CE_CT_ThiefCat_0008" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_MuPungGaekJum_p" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.273_1" required-register-value="1">
+				<case npc-response="qrsp_273_1" object="npc:CH_CT_JeGukGun_0048" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<transit id="2" zone="Zone_MuPungGaekJum">
+			<destination mission-step-id="13" zone-index="1"/>
+			<destination mission-step-id="14" zone-index="1"/>
+			<destination mission-step-id="15" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

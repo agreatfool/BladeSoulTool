@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_329" broadcast-category="field" category="normal" desc="q_329_sum" district-1="jeryoungrim" grade="1" group="제룡림(망자의 숲)" group2="QG_MangJaSup" id="329" map-group-1-1="jeryoungrim" max-repeat="1" name="은근한 응급처치" name2="Quest.Name2.329" save-type="all">
+		<acquisition level="3" preceding-quest-1="q_epic_304" preceding-quest-check="and" recommended-level="5">
+			<case acquire-quest="y" indicator-social="q_329_s_indi_1" msg="q_329_s" npc-response="qrsp_329_1" object="npc:ctzn_jinm_jakyungdan_dangmunwi_foc_001" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" desc="q_329_des_1" id="1" location-x="-33684.0469" location-y="-48899.3984" map="mangjasup">
+			<mission id="1" name="풀숲 발발이의 약초 획득" name2="Mission.Name2.329_1" required-register-value="5">
+				<case looting="q_329_grocery_blue_east_flower_1_icon" mapunit-1="2000_mob_4legr_mlnd_spctr_grassbeast_green_001" mapunit-2="2000_mob_4legr_mlnd_spctr_grassbeast_green_001_1" object="npc:mob_4legr_mlnd_spctr_grassbeast_green_001" object2="npc:mob_4legr_mlnd_spctr_grassbeast_green_001" prob="100" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.329_2" required-register-value="5">
+				<case looting="q_329_Quest_yellow_liquor_glass_bottle_1_icon" object="npc:mh_chunggak_023" object2="npc:mh_chunggak_023" progress-mission="y" type="loot"/>
+				<case looting="q_329_Quest_yellow_liquor_glass_bottle_1_icon" object="npc:mh_chunggak_0084" object2="npc:mh_chunggak_0084" progress-mission="y" type="loot"/>
+				<case looting="q_329_Quest_yellow_liquor_glass_bottle_1_icon" mapunit-3="2000_MH_ChungGak_023" object="npc:mh_chunggak_0085" object2="npc:mh_chunggak_0085" progress-mission="y" type="loot"/>
+				<case looting="q_329_Quest_yellow_liquor_glass_bottle_1_icon" object="npc:mh_chunggak_0089" object2="npc:mh_chunggak_0089" progress-mission="y" type="loot"/>
+				<case looting="q_329_Quest_yellow_liquor_glass_bottle_1_icon" object="npc:mh_chunggak_0088" object2="npc:mh_chunggak_0088" progress-mission="y" type="loot"/>
+				<case looting="q_329_Quest_yellow_liquor_glass_bottle_1_icon" mapunit-1="2000_MH_ChungGak_020" object="npc:mh_chunggak_020" object2="npc:mh_chunggak_020" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_329_des_2" id="2" location-x="-33684.0469" location-y="-48899.3984" map="mangjasup">
+			<mission id="3" name="향초 망태기를 구해 자경단 초소의 당문위에게 보고" name2="Mission.Name2.329_3" required-register-value="1">
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="2000_e_onoff_basket_03" object="zoneenv:e_onoff_basket_03" object2="zoneenv2:e_onoff_basket_03" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_basket_04" object2="zoneenv2:e_onoff_basket_04" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_basket_05" object2="zoneenv2:e_onoff_basket_05" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_basket_06" object2="zoneenv2:e_onoff_basket_06" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="q_grass_baga" gadget-required="carry-and-remove" indicator-social="q_329_m3_indi_1" msg="q_329_m3" npc-response="qrsp_329_2" object="npc:ctzn_jinm_jakyungdan_dangmunwi_foc_001" progress-mission="y" type="talk"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_basket_01" object2="zoneenv2:e_onoff_basket_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_basket_02" object2="zoneenv2:e_onoff_basket_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_basket_07" object2="zoneenv2:e_onoff_basket_07" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_basket_08" object2="zoneenv2:e_onoff_basket_08" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="3" location-x="-33684.0469" location-y="-48899.3984" map="mangjasup">
+			<mission id="4" name="자경단 초소의 곽칠과 대화" name2="Mission.Name2.329_4" required-register-value="1" reward-1="329_final_set1">
+				<case indicator-social="q_329_m4_indi_1" msg="q_329_m4" npc-response="qrsp_329_3" object="npc:ctzn_jinm_jakyungdan_gwakchil_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

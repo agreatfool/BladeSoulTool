@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1041" attraction-1="classic-field-zone:Haemoojin_Classic" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1041_sum" district-1="suwal" grade="1" group2="QG_ChungGakEastJiBu" id="1041" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1041" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="43" preceding-quest-1="q_sub_1127" preceding-quest-2="q_sub_1035" preceding-quest-check="or" recommended-level="46">
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1041_3" object="npc:CH_KyeongChunMaeng_0068" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1041_1" object="npc:CH_KyeongChunMaeng_0068" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-12043.277" location-y="22951.172" map="dpibitsangeohang" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.1041_1" required-register-value="20">
+				<case object="npc:ME_FishmanA_0008" object2="npc:ME_FishmanA_0008" progress-mission="y" type="killed"/>
+				<case mapunit-1="4727_ME_FishmanBStaff_0009" mapunit-2="4727_ME_FishmanBStaff_0009_1" mapunit-3="4727_ME_FishmanBStaff_0009_2" mapunit-4="4113_DPiBitSangEoHang_S1041" object="npc:ME_FishmanBStaff_0009" object2="npc:ME_FishmanBStaff_0009" progress-mission="y" type="killed"/>
+				<case object="npc:ME_FishmanC_0014" object2="npc:ME_FishmanC_0014" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1041_2" required-register-value="1" reward-1="1041_final_set1" reward-2="1041_final_set2">
+				<case completion-count="1" npc-response="qrsp_1041_4" object="npc:CH_KyeongChunMaeng_0068" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1041_2" object="npc:CH_KyeongChunMaeng_0068" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_1041_1_icon" msg="q_1041_5" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

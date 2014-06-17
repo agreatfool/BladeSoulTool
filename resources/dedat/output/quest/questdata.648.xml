@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_648" broadcast-category="field" category="normal" desc="q_648_sum" district-1="deasamak" grade="1" group2="QG_GoYoSaMak" id="648" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.648" save-type="all">
+		<acquisition level="27" preceding-quest-1="q_epic_517" preceding-quest-2="q_sub_644" preceding-quest-check="and" recommended-level="29">
+			<case acquire-quest="y" indicator-social="q_648_s_indi_1" msg="q_648_s" npc-response="qrsp_648_1" object="npc:ch_geumeunbang_0002" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-21074.8438" location-y="-2300.9727" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.648_1" required-register-value="10">
+				<case mapunit-1="3010_MH_ORakDang_0024" object="npc:mh_orakdang_0024" object2="npc:mh_orakdang_0024" progress-mission="y" type="killed"/>
+				<case object="npc:mh_orakdang_0042" object2="npc:mh_orakdang_0042" progress-mission="y" type="killed"/>
+				<case object="npc:mh_orakdang_0043" object2="npc:mh_orakdang_0043" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-14778.1074" location-y="3852.4478" map="toemungekjan" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.648_2" required-register-value="1" reward-1="648_final_set1">
+				<case indicator-social="q_648_m2_indi_1" msg="q_648_m2" npc-response="qrsp_648_2" object="npc:ch_geumeunbang_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

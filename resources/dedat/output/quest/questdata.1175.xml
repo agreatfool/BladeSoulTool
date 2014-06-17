@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="factionmain1" alias="q_sub_1175" attraction-1="faction-battle-field-zone:BuYuDo" attraction-2="dungeon:Dungeon_Buyudo" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1175_sum" district-1="suwal" grade="1" group2="QG_Booyudo" id="1175" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.1175" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" faction="factionmain1" level="48" preceding-quest-1="q_sub_1169" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" completion-count="0" npc-response="qrsp_1175_1" object="npc:CE_CT_Board_0035" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1175_1" required-register-value="20">
+				<case looting="q_1175_1_icon" object="npc:ME_CT_MamMoSu_0002" object2="npc:ME_CT_MamMoSu_0002" progress-mission="y" progress-value="2" type="loot"/>
+				<case looting="q_1175_1_icon" object="npc:ME_CT_SeaMonsterLeader_0003" object2="npc:ME_CT_SeaMonsterLeader_0003" progress-mission="y" progress-value="2" type="loot"/>
+				<case looting="q_1175_1_icon" object="npc:ME_CT_UryongLeader_0001" object2="npc:ME_CT_UryongLeader_0001" progress-mission="y" progress-value="2" type="loot"/>
+				<case looting="q_1175_1_icon" object="npc:ME_CT_Scorpion_0021" object2="npc:ME_CT_Scorpion_0021" progress-mission="y" type="loot"/>
+				<case looting="q_1175_1_icon" object="npc:ME_Scorpion_0009" object2="npc:ME_Scorpion_0009" progress-mission="y" type="loot"/>
+				<case looting="q_1175_1_icon" object="npc:ME_CT_Uryong_0001" object2="npc:ME_CT_Uryong_0001" progress-mission="y" type="loot"/>
+				<case looting="q_1175_1_icon" object="npc:ME_CT_Uryong_0002" object2="npc:ME_CT_Uryong_0002" progress-mission="y" type="loot"/>
+				<case looting="q_1175_1_icon" object="npc:ME_CT_SeaMonster_0011" object2="npc:ME_CT_SeaMonster_0011" progress-mission="y" type="loot"/>
+				<case looting="q_1175_1_icon" mapunit-1="7100_ME_Scorpion_0009_s1175_s1210" mapunit-2="7100_ME_Scorpion_0009_s1175_s1210_1" mapunit-3="7100_ME_Scorpion_0009_s1175_s1210_2" mapunit-4="7100_ME_Scorpion_0009_s1175_s1210_3" object="npc:ME_CT_SeaMonster_0013" object2="npc:ME_CT_SeaMonster_0013" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1175_2" required-register-value="2">
+				<case object="zoneenv:e_chest_7100meteor_01" object2="zoneenv2:e_chest_7100meteor_01" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_7100meteor_03" object2="zoneenv2:e_chest_7100meteor_03" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_7100meteor_05" object2="zoneenv2:e_chest_7100meteor_05" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_7100meteor_07" object2="zoneenv2:e_chest_7100meteor_07" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_7100meteor_09" object2="zoneenv2:e_chest_7100meteor_09" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_7100meteor_10" object2="zoneenv2:e_chest_7100meteor_10" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_7100meteor_12" object2="zoneenv2:e_chest_7100meteor_12" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_7100meteor_14" object2="zoneenv2:e_chest_7100meteor_14" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_7100meteor_19" object2="zoneenv2:e_chest_7100meteor_19" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_7100meteor_20" object2="zoneenv2:e_chest_7100meteor_20" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_7100meteor_22" object2="zoneenv2:e_chest_7100meteor_22" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.1175_3" required-register-value="1" reward-1="1175_final_set1" reward-2="1175_final_set2">
+				<case completion-count="0" grocery="general_grocery_coin_0123" npc-response="qrsp_1175_2" object="npc:ch_murimmaeng_0043" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

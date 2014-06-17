@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_318" broadcast-category="field" category="epic" completed-desc="q_318_completed" completed-list="y" desc="q_318_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="318" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.318" save-type="all">
+		<acquisition level="1" recommended-level="19" sort-no="224"/>
+		<mission-step completion-type="and" desc="q_318_des_1" id="1" location-x="-32015.55" location-y="59292.92" map="songamdo" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.318_1" required-register-value="1">
+				<case indicator-social="q_318_m1_indi_1" mapunit-1="2450_guide_E318" msg="q_318_m1" npc-response="qrsp_318_1" object="npc:ctzn_jinm_jakyungdan_seomunbeom_001" progress-mission="y" type="talk">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="18"/>
+					</filter-set>
+				</case>
+				<case object="zone:zone_songrimsa_1" progress-mission="reaction-only" type="enter-zone"/>
+				<case mapunit-1="2450_guide_E318" npc-response="qrsp_318_3" object="npc:ctzn_jinm_jakyungdan_seomunbeom_001" type="talk">
+					<filter-set>
+						<filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="17"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_318_des_2" id="2" location-x="-34458.0742" location-y="66358.7969" map="songamdo">
+			<mission id="2" name2="Mission.Name2.318_2" required-register-value="1">
+				<case gadget-required="dont-care" mapunit-1="2420_e_onoff_chpigeon_01" object="zoneenv:e_onoff_dove_01" object2="zoneenv2:e_onoff_dove_01" progress-mission="y" type="manipulate"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.318_3" required-register-value="2">
+				<case mapunit-2="2420_mob_jinm_practitioner_crazy_swd_q_001" object="npc:mob_jinm_practitioner_crazy_swd_q_001" object2="npc:mob_jinm_practitioner_crazy_swd_q_001" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0096" object2="npc:mh_chunggak_0096" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0097" object2="npc:mh_chunggak_0097" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="4" name2="Mission.Name2.318_4" required-register-value="2">
+				<case mapunit-3="2420_mob_hmn_2legr_mlnd_spctr_deadswordman_q_001" object="npc:mob_hmn_2legr_mlnd_spctr_deadswordman_q_001" object2="npc:mob_hmn_2legr_mlnd_spctr_deadswordman_q_001" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0099" object2="npc:mh_chunggak_0099" progress-mission="y" type="killed"/>
+				<case object="npc:mh_chunggak_0098" object2="npc:mh_chunggak_0098" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_318_des_3" id="3" location-x="-33062.3438" location-y="63916.2773" map="songamdo">
+			<mission id="5" name2="Mission.Name2.318_5" required-register-value="1" reward-1="318_final_set1">
+				<case indicator-social="q_318_m5_indi_1" msg="q_318_m5" npc-response="qrsp_318_2" object="npc:ctzn_jinm_jakyungdan_seomunbeom_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_495"/>
+		</completion>
+		<transit id="1" zone="zone_SongRimSa_1_sp">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

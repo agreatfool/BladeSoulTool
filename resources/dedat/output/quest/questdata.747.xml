@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_747" broadcast-category="field" category="normal" desc="q_747_sum" grade="1" group2="QG_Sigaji" id="747" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.747" save-type="all">
+		<acquisition level="45" preceding-quest-1="q_epic_269" preceding-quest-check="and" preceding-quest-mission-step-1="6" recommended-level="47">
+			<case acquire-quest="y" npc-response="qrsp_747_1" object="npc:CH_CT_PungWeol_0030" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-15845.03" location-y="35814.25" map="PungWolGwan2Cheung" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.747_1" required-register-value="1">
+				<case mapunit-1="5165_e_chest_wardrobe_01_s747" mapunit-2="5165_e_chest_wardrobe_01_s747-" object="zoneenv:e_chest_wardrobe_01" object2="zoneenv2:e_chest_wardrobe_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-15845.03" location-y="35872.84" map="PungWolGwan2Cheung" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.747_2" required-register-value="1">
+				<case npc-response="qrsp_747_2" object="npc:CH_CT_InJeolMi_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-15552.06" location-y="35316.20" map="PungWolGwan" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.747_3" required-register-value="1" reward-1="747_final_set1">
+				<case npc-response="qrsp_747_3" object="npc:CH_CT_PungWeol_0030" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_747_4" object="npc:CH_CT_InJeolMi_0001" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

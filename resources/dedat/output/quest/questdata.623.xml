@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_623" broadcast-category="field" category="normal" desc="q_623_sum" district-1="deasamak" grade="1" group2="QG_HwangPungSaMak" id="623" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.623" save-type="all">
+		<acquisition level="26" preceding-quest-1="q_epic_515" preceding-quest-2="q_sub_619" preceding-quest-check="and" recommended-level="28">
+			<case acquire-quest="y" indicator-social="q_623_s_indi_1" msg="q_623_s" npc-response="qrsp_623_1" object="npc:ch_mabulpa_0002" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-48949.2422" location-y="20539.2539" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.623_1" required-register-value="10">
+				<case looting="q_623_Quest_black_gun_powder_1_icon" object="npc:me_hwangsadan_0006" object2="npc:me_hwangsadan_0006" progress-mission="y" type="loot"/>
+				<case looting="q_623_Quest_black_gun_powder_1_icon" mapunit-1="3010_ME_HwangSaDan_0006" mapunit-2="3010_ME_HwangSaDan_0006_1" object="npc:me_pungsadan_0003" object2="npc:me_pungsadan_0003" progress-mission="y" type="loot"/>
+				<case looting="q_623_Quest_black_gun_powder_1_icon" object="npc:me_hwangsadan_0013" object2="npc:me_hwangsadan_0013" progress-mission="y" type="loot"/>
+				<case looting="q_623_Quest_black_gun_powder_1_icon" object="npc:me_pungsadan_0009" object2="npc:me_pungsadan_0009" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.623_2" required-register-value="10">
+				<case object="npc:mh_pungsadan_0001" object2="npc:mh_pungsadan_0001" progress-mission="y" type="killed"/>
+				<case object="npc:mh_pungsadan_0005" object2="npc:mh_pungsadan_0005" progress-mission="y" type="killed"/>
+				<case object="npc:mh_pungsadan_0006" object2="npc:mh_pungsadan_0006" progress-mission="y" type="killed"/>
+				<case object="npc:mh_hwangsadan_0004" object2="npc:mh_hwangsadan_0004" progress-mission="y" type="killed"/>
+				<case object="npc:mh_hwangsadan_0009" object2="npc:mh_hwangsadan_0009" progress-mission="y" type="killed"/>
+				<case mapunit-3="3010_mh_hwangsadan_0010" mapunit-4="3010_mh_hwangsadan_0010_1" object="npc:mh_hwangsadan_0010" object2="npc:mh_hwangsadan_0010" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-56686.9531" location-y="7860.5977" map="yeolsajeedea">
+			<mission id="3" name2="Mission.Name2.623_3" required-register-value="1" reward-1="623_final_set1">
+				<case indicator-social="q_623_m3_indi_1" msg="q_623_m3" npc-response="qrsp_623_2" object="npc:ch_mabulpa_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

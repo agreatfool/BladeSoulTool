@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1306" broadcast-category="field" category="job" desc="q_1306_sum" district-1="jeryoungrim" grade="1" group2="QG_HuekUmmRim" id="1306" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.1306" save-type="all" show-tutorial-tag="n" tutorial="y">
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1306_1" required-register-value="1">
+				<case indicator-social="q_1306_m1_indi_1" msg="q_1306_m1" npc-response="qrsp_1306_1" object="npc:ch_hwajung_0012" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" guide-message="gm_1306_1" guide-message-zone-1="zone_HuekUmmRim_ClassQ_6" id="2">
+			<mission id="2" name2="Mission.Name2.1306_2" required-register-value="3" show-kill-mapunit="y">
+				<tutorial-case object-1="npc:ch_hwajung_0012" object2-1="npc:ch_hwajung_0012" progress-mission="y" skill-sequence="BladeMaster_Lv14_M11" type="skill-sequence"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.1306_3" required-register-value="1">
+				<case npc-response="qrsp_1306_7" object="npc:CE_JR_JobBook_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="4" name2="Mission.Name2.1306_4" required-register-value="1" reward-1="1306_final_set1">
+				<case indicator-social="q_1306_m5_indi_1" msg="q_1306_m5" npc-response="qrsp_1306_3" object="npc:ch_hwajung_0012" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<acquisition job-1="검사" level="14" preceding-quest-1="q_epic_311" preceding-quest-2="q_sub_1305" preceding-quest-check="and" recommended-level="14" talk-to-self-guide-msg="Msg.Job.quest6">
+			<case acquire-quest="y" item="q_1306_Quest_hair_growth_solution_manual_1_icon" msg="q_1306_s" type="talk-to-self"/>
+			<case acquire-quest="y" npc-response="qrsp_1306_6" object="npc:ch_dweller_023" type="talk"/>
+		</acquisition>
+		<completion>
+			<next-quest quest="q_sub_1307"/>
+		</completion>
+		<transit id="1" zone="zone_HuekUmmRim_ClassQ_6_SP">
+			<destination mission-step-id="3" zone-index="5"/>
+			<destination mission-step-id="2" zone-index="5"/>
+			<destination mission-step-id="1" zone-index="5"/>
+		</transit>
+	</quest>
+</table>

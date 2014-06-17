@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1013" broadcast-category="field" category="normal" desc="q_1013_sum" district-1="suwal" grade="1" group2="QG_Wolchon" id="1013" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1013" save-type="all">
+		<acquisition level="36" preceding-quest-1="q_epic_905" preceding-quest-2="q_sub_1019" preceding-quest-check="and" preceding-quest-mission-step-1="7" recommended-level="38">
+			<case acquire-quest="y" npc-response="qrsp_1013_1" object="npc:ch_sinryong_0045" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="26481.09" location-y="-16529.48" map="maengsugul" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.1013_1" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_1013_Quest_tiger_skin_1_icon" mapunit-1="4525_ME_Tiger_0009" object="npc:ME_Tiger_0009" object2="npc:ME_Tiger_0009" progress-mission="y" type="loot"/>
+				<case object="zone:zone_MaengSuGul" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_1013_2" object="npc:CH_Hunter_0011" type="approach"/>
+				<case npc-response="qrsp_1012_2" object="npc:CH_WolChon_0010" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="28098.28" location-y="-11361.51" map="maengsugul" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.1013_2" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_1013_Gather_shoulder_leather_of_roedeer_1_icon" mapunit-1="4525_ME_bear_0015" object="npc:ME_bear_0015" object2="npc:ME_bear_0015" progress-mission="y" type="loot"/>
+				<case object="zone:zone_MaengSuGul" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_1013_3" object="npc:CH_Hunter_0013" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1013_3" required-register-value="1" reward-1="1013_final_set1">
+				<case npc-response="qrsp_1013_4" object="npc:CH_Hunter_0006" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_1013_6" object="npc:CH_Hunter_0008" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1013_5" object="npc:CH_Hunter_0007" type="approach" visible-object="n"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_746" broadcast-category="field" category="normal" day-of-week="daily" desc="q_746_sum" grade="1" group2="QG_Sigaji" id="746" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.746" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="45" preceding-quest-1="q_epic_269" preceding-quest-check="and" preceding-quest-mission-step-1="6" recommended-level="47">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_746_1" object="npc:CH_CT_PungWeol_0027" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_746_4" object="npc:CH_CT_PungWeol_0027" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_746_7" object="npc:CE_CT_Board_0025" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-14614.56" location-y="35169.71" map="PungWolGwan" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.746_1" required-register-value="1">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_746_2" object="npc:CH_CT_Citizen_0031" progress-mission="y" type="talk"/>
+				<case completion-count="1" npc-response="qrsp_746_5" object="npc:CH_CT_Citizen_0031" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-16225.89" location-y="35374.79" map="PungWolGwan2Cheung" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.746_2" required-register-value="1">
+				<case object="npc:CH_CT_PungWeol_0028" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-16079.40" location-y="35374.795" map="PungWolGwan2Cheung" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.746_3" required-register-value="1">
+				<case object="npc:MH_CT_WangSeongHyeong_0001" object2="npc:MH_CT_WangSeongHyeong_0001" progress-mission="y" type="killed"/>
+				<case object="zone:Zone_PungWallGwan_p2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+			<mission id="4" name2="Mission.Name2.746_4" required-register-value="1">
+				<case object="npc:MH_CT_WangBoTok_0001" object2="npc:MH_CT_WangBoTok_0001" progress-mission="y" type="killed"/>
+				<case object="zone:Zone_PungWallGwan_p2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-14497.37" location-y="35257.61" map="PungWolGwan2Cheung" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.746_5" required-register-value="1" reward-1="746_final_set1" reward-2="746_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_746_3" object="npc:CH_CT_PungWeol_0054" progress-mission="y" type="talk"/>
+				<case completion-count="1" npc-response="qrsp_746_6" object="npc:CH_CT_PungWeol_0054" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_746_1_icon" msg="q_746_8" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="Zone_PungWallGwan">
+			<destination mission-step-id="2" zone-index="2"/>
+			<destination mission-step-id="3" zone-index="2"/>
+		</transit>
+	</quest>
+</table>

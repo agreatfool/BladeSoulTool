@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1111" broadcast-category="field" category="normal" desc="q_1111_sum" district-1="suwal" grade="1" group2="QG_Farmland" id="1111" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1111" save-type="all">
+		<acquisition level="37" preceding-quest-1="q_epic_908" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="39">
+			<case acquire-quest="y" npc-response="qrsp_1111_1" object="npc:ch_heungbu_0007" progress-mission="reaction-only" type="talk"/>
+		</acquisition>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1111_3" required-register-value="3">
+				<case gadget="RifleA_Lv39" gadget-required="carry" mapunit-1="4100_ME_Juno_0007" object-1="npc:ME_Juno_0007" object2-1="npc:ME_Juno_0007" progress-mission="y" skill="Gadget_RifleA_Lv39" skill3="Gadget_RifleA_Lv39" type="skill"/>
+				<case button-text-accept="q_1111_2_ok" button-text-cancel="q_1111_2_no" gadget-required="empty" indicator="quest-normal-can-progress" npc-response="qrsp_1111_2" object="npc:ch_heungbu_0007" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.1111_4" required-register-value="1" reward-1="1111_final_set1">
+				<case npc-response="qrsp_1111_3" object="npc:ch_heungbu_0007" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1111_1" required-register-value="10">
+				<case mapunit-1="4100_ME_Pest_0020" object="npc:ME_Pest_0020" object2="npc:ME_Pest_0020" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1111_2" required-register-value="1">
+				<case npc-response="qrsp_1111_4" object="npc:ch_heungbu_0007" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_278" broadcast-category="field" category="epic" completed-desc="q_278_completed" completed-list="y" desc="q_278_sum" grade="1" group2="QG_BaeCheongEpic" id="278" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.278" save-type="all">
+		<acquisition level="1" recommended-level="48" sort-no="520"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.278_1" required-register-value="1">
+				<case npc-response="qrsp_278_1" object="npc:CH_CT_HyunDam_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekRimSa_An1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.278_4" required-register-value="1">
+				<case object="zone:zone_BaekRimSa_An1" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_BaekRimSa_BonDang" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator="quest-epic-can-progress" object="npc:CH_CT_JinSoA_0021" progress-mission="reaction-only" type="npc-manipulate"/>
+				<case npc-response="qrsp_278_3" object="npc:CH_CT_JinSoA_0022" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.278_5" required-register-value="1">
+				<case object="zone:zone_BaekRimSa_An1" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_BaekRimSa_BonDang" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_BaekRimSa_Byul1" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator="quest-epic-can-progress" object="npc:CH_CT_YeHaRang_0007" progress-mission="reaction-only" type="npc-manipulate"/>
+				<case npc-response="qrsp_278_5" object="npc:CH_CT_YeHaRang_0008" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.278_7" required-register-value="1">
+				<case object="zone:zone_BaekRimSa_An1" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_BaekRimSa_BonDang" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_BaekRimSa_Byul1" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_BaekRimSa_Byul2" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator="quest-epic-can-progress" object="npc:CH_CT_JeongHaDo_0007" progress-mission="reaction-only" type="npc-manipulate"/>
+				<case npc-response="qrsp_278_7" object="npc:CH_CT_JeongHaDo_0008" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.278_8" required-register-value="1" reward-1="278_final_set1">
+				<case npc-response="qrsp_278_8" object="npc:CH_CT_HyunDam_0005" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekRimSa_BonDang" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_BaekRimSa_Byul1" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_BaekRimSa_Byul2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_279"/>
+		</completion>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.278_3" required-register-value="1">
+				<case indicator="quest-epic-can-progress" object="npc:CH_CT_ORakDang_0015" progress-mission="reaction-only" type="npc-manipulate"/>
+				<case npc-response="qrsp_278_4" object="npc:CH_CT_ORakDang_0016" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekRimSa_An1" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_BaekRimSa_BonDang" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.278_6" required-register-value="1">
+				<case indicator="quest-epic-can-progress" object="npc:CH_CT_SoYangSang_0003" progress-mission="reaction-only" type="npc-manipulate"/>
+				<case npc-response="qrsp_278_6" object="npc:CH_CT_SoYangSang_0004" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekRimSa_An1" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_BaekRimSa_Byul1" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_BaekRimSa_BonDang" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_278_9" object="npc:CH_CT_YeHaRang_0011" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.278_2" required-register-value="1">
+				<case mapunit-1="5230_zone_BaekRimSa_BonDang_e278" object="zone:zone_BaekRimSa_BonDang" progress-mission="y" type="enter-zone"/>
+				<case object="zone:zone_BaekRimSa_An1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

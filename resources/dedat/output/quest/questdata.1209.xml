@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1209" attraction-1="dungeon:Dungeon_BaekCheong_Sulokgoong" attraction-2="dungeon:Dungeon_SulinDongGul" attraction-3="dungeon:Dungeon_GuiMunGuan_Nightmare" broadcast-category="field" category="normal" desc="q_1209_sum" grade="10" group2="QG_Sulokgoong" id="1209" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.1209" save-type="all">
+		<acquisition faction="secondfaction2" level="50" mastery-level="3" preceding-quest-1="q_sub_483" preceding-quest-2="q_sub_698" preceding-quest-3="q_epic_293" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" item="q_1209_1_icon" msg="q_1209_1" type="talk-to-self"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1209_1" required-register-value="1" reward-1="1209_final_set1">
+				<case npc-response="qrsp_1209_1" object="npc:CH_C3_SeolOkGung_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

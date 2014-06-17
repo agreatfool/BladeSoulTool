@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_20028" broadcast-category="field" category="normal" desc="q_20028_sum" district-1="suwal" grade="9" group2="QG_Delete" id="20028" map-group-1-1="suwal" max-repeat="-1" name2="Quest.Name2.20028" retired="y" save-type="except-completion">
+		<acquisition level="43" preceding-quest-check="and" recommended-level="46">
+			<case acquire-quest="y" npc-response="qrsp_20028_1" object="npc:CE_CT_JukGyoDan_0006" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.20028_1" required-register-value="1">
+				<case object="npc:me_spiderqueen_0001" object2="npc:me_spiderqueen_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.20028_2" required-register-value="1" reward-1="20028_final_set1">
+				<case npc-response="qrsp_20028_2" object="npc:CE_CT_JukGyoDan_0006" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

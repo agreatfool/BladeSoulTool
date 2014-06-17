@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_187" broadcast-category="always" category="normal" content-type="production" craft-type="production" district-1="suwal" grade="1" group2="QG_Gathering" id="187" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.187" save-type="all" show-tutorial-tag="y" tutorial="y">
+		<acquisition level="11" production-exp="0" production-id="production-type-1" recommended-level="13" reward-1="187_final_set1">
+			<case acquire-quest="y" item="General_Grocery_ProduceRecipe_0066" msg="q_187_1" progress-mission="n" type="talk-to-item"/>
+			<acquisition-loss item-1="General_Grocery_ProduceRecipe_0066" item-count-1="1"/>
+		</acquisition>
+	</quest>
+</table>

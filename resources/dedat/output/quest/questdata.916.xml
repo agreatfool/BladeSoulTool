@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_916" broadcast-category="field" category="epic" completed-desc="q_916_completed" completed-list="y" desc="q_916_sum" district-1="suwal" grade="1" group2="QG_SuwalPWEpic" id="916" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.916" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="41" sort-no="417"/>
+		<mission-step id="1" location-x="-42637.66" location-y="5046.36" map="gwidosi" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.916_1" required-register-value="1">
+				<case npc-response="qrsp_916_1" object="npc:ce_crocodilesharktribebleader_0002" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_916_10" object="npc:ce_crocodilesharktribeaelder_0009" type="approach"/>
+				<case npc-response="qrsp_916_9" object="npc:ce_crocodilesharktribeaelder_0006" type="approach"/>
+				<case npc-response="qrsp_916_19" object="npc:ce_crocodilesharktribeaelder_0003" type="approach"/>
+				<case npc-response="qrsp_916_20" object="npc:ce_crocodilesharktribeaelder_0008" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.916_2" required-register-value="15">
+				<case mapunit-1="4300_me_spider_0007" mapunit-2="4300_me_spider_0007_1" object="npc:me_spider_0007" object2="npc:me_spider_0007" progress-mission="y" type="killed"/>
+				<case object="npc:ME_Spider_0021" object2="npc:ME_Spider_0021" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_916_13" object="npc:ce_crocodilesharktribeaelder_0009" type="approach"/>
+				<case npc-response="qrsp_916_12" object="npc:ce_crocodilesharktribeaelder_0006" type="approach"/>
+				<case npc-response="qrsp_916_11" object="npc:ce_crocodilesharktribebleader_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.916_3" required-register-value="1">
+				<case npc-response="qrsp_916_2" object="npc:ce_crocodilesharktribebleader_0002" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_916_15" object="npc:ce_crocodilesharktribeaelder_0009" type="approach"/>
+				<case npc-response="qrsp_916_14" object="npc:ce_crocodilesharktribeaelder_0006" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.916_4" required-register-value="1">
+				<case npc-response="qrsp_916_3" object="npc:ce_crocodilesharktribebleader_0003" progress-mission="y" type="talk"/>
+				<case object="zone:zone_mangjagul" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_916_21" object="npc:ce_crocodilesharktribeaelder_0009" type="approach"/>
+				<case npc-response="qrsp_916_22" object="npc:ce_crocodilesharktribeaelder_0006" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.916_5" required-register-value="1">
+				<case mapunit-1="4590_foot_4" object="zone:zone_mangjagul" progress-mission="y" type="convoy-arrived"/>
+				<case object="zoneenv:4590_foot_1" object2="zoneenv2:4590_foot_1" progress-mission="reaction-only" type="env-entered"/>
+				<case object="zoneenv:4590_foot_2" object2="zoneenv2:4590_foot_2" progress-mission="reaction-only" type="env-entered"/>
+				<case object="zoneenv:4590_foot_3" object2="zoneenv2:4590_foot_3" progress-mission="reaction-only" type="env-entered"/>
+			</mission>
+			<mission-step-fail rollback-step-id="4">
+				<case convoy="epic_916_con" object="zone:zone_mangjagul" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.916_6" required-register-value="1">
+				<case npc-response="qrsp_916_4" object="npc:ch_leeseunghui_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_mangjagul" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.916_7" required-register-value="1">
+				<case mapunit-1="4590_CE_SkullCaptain_0001" object="npc:ce_skullcaptain_0001" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="zoneenv:4590_foot_5" object2="zoneenv2:4590_foot_5" progress-mission="reaction-only" type="env-entered"/>
+			</mission>
+			<mission-step-fail rollback-step-id="6"/>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.916_8" required-register-value="1">
+				<case npc-response="qrsp_916_5" object="npc:ch_skullcaptain_0003" progress-mission="y" type="talk"/>
+				<case object="zone:zone_mangjagul" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.916_9" required-register-value="1">
+				<case mapunit-1="4590_me_zombiebunguk_0009" object="npc:me_zombiebunguk_0009" progress-mission="y" type="npc-bleeding-occured"/>
+			</mission>
+			<mission-step-fail rollback-step-id="8"/>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.916_10" required-register-value="1">
+				<case npc-response="qrsp_916_6" object="npc:ch_skullcaptain_0003" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="8"/>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.916_11" required-register-value="1">
+				<case npc-response="qrsp_916_7" object="npc:ce_crocodilesharktribeaelder_0007" progress-mission="y" type="talk"/>
+				<case object="zone:zone_mangjagul" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="12">
+			<mission id="12" name2="Mission.Name2.916_12" required-register-value="1" reward-1="916_final_set1">
+				<case npc-response="qrsp_916_8" object="npc:ch_doyunggun_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_916_18" object="npc:mh_doyunggoon_0008" progress-mission="reaction-only" type="approach"/>
+				<case npc-response="qrsp_916_17" object="npc:mh_doyunggoon_0007" progress-mission="reaction-only" type="approach"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_917"/>
+		</completion>
+		<transit id="1" zone="zone_guidosi">
+			<destination mission-step-id="12" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

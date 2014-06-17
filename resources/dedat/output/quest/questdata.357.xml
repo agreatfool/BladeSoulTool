@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_357" broadcast-category="field" category="normal" desc="q_357_sum" district-1="jeryoungrim" grade="1" group="제룡림(버려진 어촌)" group2="QG_Delete" id="357" map-group-1-1="jeryoungrim" max-repeat="1" name="드디어 임무!" name2="Quest.Name2.357" retired="y" save-type="all">
+		<acquisition level="50" preceding-quest-check="and" recommended-level="50"/>
+		<mission-step completion-type="and" id="2" location-x="-19070.7422" location-y="-5426.3594" map="huekummrim">
+			<mission id="2" name="버려진 어촌 북쪽의 자경단원 부용과 대화" name2="Mission.Name2.357_2" required-register-value="1" reward-1="357_final_set1"/>
+		</mission-step>
+		<mission-step id="1" location-x="-19070.7422" location-y="-5426.3594">
+			<mission id="1" name2="Mission.Name2.357_1" required-register-value="8"/>
+		</mission-step>
+	</quest>
+</table>

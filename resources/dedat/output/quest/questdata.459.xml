@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_459" broadcast-category="field" category="normal" desc="q_459_sum" district-1="jeryoungrim" grade="1" group="제룡림(송암도)" group2="QG_SongAmDo" id="459" map-group-1-1="jeryoungrim" max-repeat="1" name="세신 공양" name2="Quest.Name2.459" save-type="all">
+		<acquisition level="15" preceding-quest-1="q_epic_315" preceding-quest-check="and" recommended-level="17">
+			<case acquire-quest="y" indicator-social="q_459_s_indi_1" msg="q_459_s" npc-response="qrsp_459_1" object="npc:ctzn_jinm_songrimsa_jeongdam_001" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-17709.3164" location-y="50744.0742" map="songamdo">
+			<mission id="1" name="돌풍날개 석등비룡의 석등재 획득" name2="Mission.Name2.459_1" required-register-value="8">
+				<case looting="q_459_quest_golden_extract_1_icon" mapunit-1="2440_me_noctiluca_0002" mapunit-2="2440_me_noctiluca_0002_1" mapunit-3="2440_ME_Noctiluca_0002_2" object="npc:me_noctiluca_0002" object2="npc:me_noctiluca_0002" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-17428.252" location-y="57708.6016" map="songrimsa">
+			<mission id="2" name="송림사 주지승 정담 대사에게 보고" name2="Mission.Name2.459_2" required-register-value="1" reward-1="459_final_set1">
+				<case indicator-social="q_459_m2_indi_1" msg="q_459_m2" npc-response="qrsp_459_2" object="npc:ctzn_jinm_songrimsa_jeongdam_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

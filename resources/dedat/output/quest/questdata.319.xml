@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_319" broadcast-category="field" category="epic" completed-desc="q_319_completed" completed-list="y" desc="q_319_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="319" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.319" save-type="all">
+		<acquisition level="1" recommended-level="20" sort-no="226"/>
+		<mission-step completion-type="and" desc="q_319_des_1" id="1" location-x="-67252.17" location-y="70000.28" map="chunggakjibu" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.319_1" required-register-value="1" reward-1="319_middle_set1">
+				<case indicator-social="q_319_m1_indi_1" mapunit-1="2420_guide_E319" msg="q_319_m1" npc-response="qrsp_319_1" object="npc:ch_jakyoungdan_0009" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_319_des_2" id="2" location-x="-68961.1563" location-y="70000.2813" map="chunggakjibu">
+			<mission id="2" name2="Mission.Name2.319_2" required-register-value="1">
+				<case mapunit-2="2627_e_footswitch_312_2_finish" object="zoneenv:e_footswitch_312_2_finish" object2="zoneenv2:e_footswitch_312_2_finish" progress-mission="y" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_319_des_3" id="3" location-x="-68961.1563" location-y="70000.2813" map="chunggakjibu">
+			<mission id="3" name2="Mission.Name2.319_3" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="2627_mob_gonm_chunggak_eungwangsam_001" object="npc:mob_gonm_chunggak_eungwangsam_001" object2="npc:mob_gonm_chunggak_eungwangsam_001" progress-mission="y" type="killed"/>
+				<case object="zone:zone_chunggakjibu_ship" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_319_des_4" id="4" location-x="-68961.1563" location-y="70000.2813" map="chunggakjibu">
+			<mission id="4" name2="Mission.Name2.319_4" required-register-value="1">
+				<case indicator-social="q_319_m4_indi_1" msg="q_319_m4" npc-response="qrsp_319_2" object="npc:ctzn_jinf_nokmyeonctzn_namsoyu_002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_chunggakjibu_ship" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_ChungGakJiBu_Ship2">
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_320"/>
+		</completion>
+		<mission-step desc="q_319_des_5" id="5" location-x="-67252.17" location-y="70000.28" map="chunggakjibu" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.319_5" required-register-value="1" reward-1="319_final_set1">
+				<case indicator-social="q_319_m5_1_indi_1" msg="q_319_m5_1" npc-response="qrsp_319_3" object="npc:ch_jakyoungdan_0009" progress-mission="y" type="talk"/>
+				<case indicator-social="q_319_m5_2_indi_1" msg="q_319_m5_2" npc-response="qrsp_319_4" object="npc:ctzn_jinm_jakyungdan_seomunbeom_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

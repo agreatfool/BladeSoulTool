@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1092" broadcast-category="field" category="normal" desc="q_1092_sum" district-1="suwal" grade="1" group2="QG_Farmland" id="1092" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1092" save-type="all">
+		<acquisition level="37" preceding-quest-1="q_epic_931" preceding-quest-check="and" recommended-level="39">
+			<case acquire-quest="y" npc-response="qrsp_1092_1" object="npc:ch_pigfarm_0010" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1092_1" required-register-value="5">
+				<case object="zoneenv:e_breakwaterer_03" object2="zoneenv2:e_breakwaterer_03" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_breakwaterer_02" object2="zoneenv2:e_breakwaterer_02" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_breakwaterer_01" object2="zoneenv2:e_breakwaterer_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_drytealeaf_07" object2="zoneenv2:e_drytealeaf_07" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_drytealeaf_06" object2="zoneenv2:e_drytealeaf_06" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_drytealeaf_05" object2="zoneenv2:e_drytealeaf_05" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_drytealeaf_04" object2="zoneenv2:e_drytealeaf_04" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_drytealeaf_03" object2="zoneenv2:e_drytealeaf_03" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_drytealeaf_02" object2="zoneenv2:e_drytealeaf_02" progress-mission="y" type="manipulate"/>
+				<case mapunit-1="4100_e_breakwaterer_01" mapunit-2="4100_e_breakwaterer_02" mapunit-3="4100_e_breakwaterer_03" mapunit-4="4100_e_drytealeaf_01" mapunit-5="4100_e_drytealeaf_01_1" mapunit-6="4100_e_drytealeaf_01_2" object="zoneenv:e_drytealeaf_01" object2="zoneenv2:e_drytealeaf_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1092_2" required-register-value="1" reward-1="1092_final_set1">
+				<case npc-response="qrsp_1092_2" object="npc:ch_pigfarm_0010" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

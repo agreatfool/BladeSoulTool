@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1014" broadcast-category="field" category="normal" desc="q_1014_sum" district-1="suwal" grade="1" group2="QG_Wolchon" id="1014" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1014" save-type="all">
+		<acquisition level="36" preceding-quest-1="q_epic_905" preceding-quest-check="and" recommended-level="38">
+			<case acquire-quest="y" npc-response="qrsp_1014_1" object="npc:CH_Hunter_0006" type="talk"/>
+			<case npc-response="qrsp_1014_3" object="npc:CH_Hunter_0008" type="approach" visible-object="n"/>
+			<case npc-response="qrsp_1014_2" object="npc:CH_Hunter_0007" type="approach" visible-object="n"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1014_1" required-register-value="1" reward-1="1014_final_set1">
+				<case npc-response="qrsp_1014_4" object="npc:CH_Merchant_0013" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_1014_6" object="npc:CH_Hunter_0008" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1014_5" object="npc:CH_Hunter_0007" type="approach" visible-object="n"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

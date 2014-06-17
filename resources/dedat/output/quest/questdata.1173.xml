@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="factionmain1" alias="q_sub_1173" attraction-1="faction-battle-field-zone:BuYuDo" attraction-2="dungeon:Dungeon_Buyudo" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1173_sum" district-1="suwal" grade="6" group2="QG_Booyudo" id="1173" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.1173" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" faction="factionmain1" level="48" preceding-quest-1="q_sub_1169" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" completion-count="0" npc-response="qrsp_1173_1" object="npc:CE_CT_Board_0035" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="5008.08" location-y="56670.78" map="BuYuDo" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.1173_1" required-register-value="3">
+				<case object="npc:me_darkcrazytribec_0007" object2="npc:me_darkcrazytribec_0007" progress-mission="y" type="killed"/>
+				<case object="npc:me_darkcrazytribea_0003" object2="npc:me_darkcrazytribea_0003" show-in-tooltip="y" type="killed"/>
+				<case object="npc:ME_DarkCrazyTribeB_0005" object2="npc:ME_DarkCrazyTribeB_0005" show-in-tooltip="y" type="killed"/>
+				<case object="npc:ME_DarkCrazyTribeD_0002" object2="npc:ME_DarkCrazyTribeD_0002" show-in-tooltip="y" type="killed"/>
+				<case object="npc:ME_DarkCrazyTribe_0048" object2="npc:ME_DarkCrazyTribe_0048" show-in-tooltip="y" type="killed"/>
+				<case object="npc:ME_DarkCrazyTribe_0049" object2="npc:ME_DarkCrazyTribe_0049" show-in-tooltip="y" type="killed"/>
+				<case object="npc:ME_DarkCrazyTribeC_0004" object2="npc:ME_DarkCrazyTribeC_0004" show-in-tooltip="y" type="killed"/>
+				<case mapunit-1="7100_ME_DarkCrazyTribe_s1173_s1208" object="npc:ME_DarkCrazyTribeC_0005" object2="npc:ME_DarkCrazyTribeC_0005" show-in-tooltip="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1173_2" required-register-value="3">
+				<case object="npc:me_bonemaskbiga_0008" object2="npc:me_bonemaskbiga_0008" progress-mission="y" type="killed"/>
+				<case object="npc:ME_BoneMaskThinA_0010" object2="npc:ME_BoneMaskThinA_0010" show-in-tooltip="y" type="killed"/>
+				<case object="npc:ME_BoneMaskBigA_0007" object2="npc:ME_BoneMaskBigA_0007" show-in-tooltip="y" type="killed"/>
+				<case mapunit-1="7100_ME_CT_BoneMask_s1173_s1208" mapunit-2="7100_ME_CT_BoneMask_s1173_s1208_1" object="npc:ME_CT_BoneMaskBigA_0010" object2="npc:ME_CT_BoneMaskBigA_0010" show-in-tooltip="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.1173_3" required-register-value="1" reward-1="1173_final_set1" reward-2="1173_final_set2">
+				<case completion-count="0" npc-response="qrsp_1173_2" object="npc:ch_murimmaeng_0041" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

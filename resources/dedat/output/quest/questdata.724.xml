@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_724" broadcast-category="field" category="normal" desc="q_724_sum" grade="1" group2="QG_Haodong" id="724" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.724" save-type="all">
+		<acquisition level="45" preceding-quest-1="q_epic_268" preceding-quest-2="q_sub_722" preceding-quest-check="and" preceding-quest-mission-step-1="10" recommended-level="47">
+			<case acquire-quest="y" npc-response="qrsp_724_1" object="npc:CH_CT_HaoDong_0004" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.724_1" required-register-value="1">
+				<case mapunit-1="5110_footswitch_01_s724" object="zoneenv:5110_footswitch_01" object2="zoneenv2:5110_footswitch_01" progress-mission="y" type="env-entered"/>
+				<case npc-response="qrsp_724_3" object="npc:CH_CT_JeGukGun_0347" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.724_2" required-register-value="1">
+				<case loot-item="Quest_Scroll_BackChung_0011" looting="q_724_1_icon" mapunit-1="5110_e_chest_suspicousrock_s724" object="zoneenv:e_chest_suspicousrock_01" object2="zoneenv2:e_chest_suspicousrock_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.724_3" required-register-value="1">
+				<case item="Quest_Scroll_BackChung_0011" msg="q_724_2" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.724_4" required-register-value="1" reward-1="724_final_set1">
+				<case grocery="Quest_Scroll_BackChung_0011" npc-response="qrsp_724_2" object="npc:CH_CT_HaoDong_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_BackChung_0011"/>
+	</quest>
+</table>

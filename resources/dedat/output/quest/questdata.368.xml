@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_368" broadcast-category="field" category="normal" desc="q_368_sum" district-1="jeryoungrim" grade="1" group2="QG_HuekUmmRim" id="368" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.368" save-type="all">
+		<acquisition level="9" preceding-quest-1="q_sub_373" preceding-quest-check="and" recommended-level="11">
+			<case acquire-quest="y" indicator-social="q_368_s_indi_1" msg="q_368_s" npc-response="qrsp_368_1" object="npc:ctzn_jinf_cheongryeongctzn_millyeona_001" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_368_des_1" id="1" location-x="-18126.8203" location-y="-6037.1328">
+			<mission id="1" name2="Mission.Name2.368_1" required-register-value="7">
+				<case gadget-required="empty" object="zoneenv:e_onoff_bomberheap_01" object2="zoneenv2:e_onoff_bomberheap_01" progress-mission="reaction-only" type="manipulate"/>
+				<case mapunit-1="2200_Mob_2Leg_MLnd_Spctr_Mushroom_Walker_001" object="npc:mob_2leg_mlnd_spctr_mushroom_walker_001" object2="npc:mob_2leg_mlnd_spctr_mushroom_walker_001" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name="비단 버섯 채집" name2="Mission.Name2.368_2" required-register-value="4">
+				<case gadget-required="dont-care" looting="q_372_Quest_mushroom_spore_1_icon" mapunit-1="2200_e_onoff_silkmush_01" object="zoneenv:e_onoff_silkmush_01" object2="zoneenv2:e_onoff_silkmush_01" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_372_Quest_mushroom_spore_1_icon" object="zoneenv:e_onoff_silkmush_02" object2="zoneenv2:e_onoff_silkmush_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_372_Quest_mushroom_spore_1_icon" object="zoneenv:e_onoff_silkmush_03" object2="zoneenv2:e_onoff_silkmush_03" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_372_Quest_mushroom_spore_1_icon" object="zoneenv:e_onoff_silkmush_04" object2="zoneenv2:e_onoff_silkmush_04" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_372_Quest_mushroom_spore_1_icon" object="zoneenv:e_onoff_silkmush_05" object2="zoneenv2:e_onoff_silkmush_05" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_372_Quest_mushroom_spore_1_icon" object="zoneenv:e_onoff_silkmush_06" object2="zoneenv2:e_onoff_silkmush_06" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_372_Quest_mushroom_spore_1_icon" object="zoneenv:e_onoff_silkmush_07" object2="zoneenv2:e_onoff_silkmush_07" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_372_Quest_mushroom_spore_1_icon" object="zoneenv:e_onoff_silkmush_08" object2="zoneenv2:e_onoff_silkmush_08" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_372_Quest_mushroom_spore_1_icon" object="zoneenv:e_onoff_silkmush_09" object2="zoneenv2:e_onoff_silkmush_09" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_372_Quest_mushroom_spore_1_icon" object="zoneenv:e_onoff_silkmush_10" object2="zoneenv2:e_onoff_silkmush_10" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_372_Quest_mushroom_spore_1_icon" object="zoneenv:e_onoff_silkmush_11" object2="zoneenv2:e_onoff_silkmush_11" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_372_Quest_mushroom_spore_1_icon" object="zoneenv:e_onoff_silkmush_12" object2="zoneenv2:e_onoff_silkmush_12" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_372_Quest_mushroom_spore_1_icon" object="zoneenv:e_onoff_silkmush_13" object2="zoneenv2:e_onoff_silkmush_13" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_372_Quest_mushroom_spore_1_icon" object="zoneenv:e_onoff_silkmush_14" object2="zoneenv2:e_onoff_silkmush_14" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_372_Quest_mushroom_spore_1_icon" object="zoneenv:e_onoff_silkmush_15" object2="zoneenv2:e_onoff_silkmush_15" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-18126.8203" location-y="-6037.1328">
+			<mission id="3" name2="Mission.Name2.368_3" required-register-value="1" reward-1="368_final_set1">
+				<case indicator-social="q_368_m4_indi_1" msg="q_368_m4" npc-response="qrsp_368_3" object="npc:ctzn_jinf_cheongryeongctzn_millyeona_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

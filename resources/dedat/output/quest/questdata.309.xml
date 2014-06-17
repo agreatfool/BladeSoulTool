@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_309" broadcast-category="field" category="epic" completed-desc="q_309_completed" completed-list="y" desc="q_309_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="309" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.309" save-type="all">
+		<acquisition level="1" recommended-level="9" sort-no="210"/>
+		<mission-step completion-type="and" desc="q_309_des_1" id="1" location-x="-34283.5" location-y="-33973.0742" map="mangjasup">
+			<mission id="1" name2="Mission.Name2.309_1" required-register-value="1">
+				<case mapunit-1="2100_footswitch_103_E309" object="zone:zone_chunggakjuncho" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_309_des_2" id="2" location-x="-44114.4883" location-y="-19826.0391" map="mangjasup">
+			<mission id="2" name2="Mission.Name2.309_2" required-register-value="4">
+				<case object="npc:MH_ChungGak_0278" object2="npc:MH_ChungGak_0278" progress-mission="y" type="killed"/>
+				<case mapunit-1="2100_MH_ChungGak_0277" object="npc:MH_ChungGak_0277" object2="npc:MH_ChungGak_0277" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_309_2" object="npc:CH_Dweller_032" progress-mission="reaction-only" type="approach"/>
+				<case npc-response="qrsp_309_10" object="npc:CH_JaKyoungDan_0033" progress-mission="reaction-only" type="approach"/>
+				<case object="zone:zone_chunggakjuncho" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_309_des_3" id="3" location-x="-45972.7852" location-y="-20665.2695" map="mangjasup">
+			<mission id="3" name2="Mission.Name2.309_3" required-register-value="1">
+				<case npc-response="qrsp_309_1" object="npc:CH_JaKyoungDan_0033" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_309_2" object="npc:CH_Dweller_032" progress-mission="reaction-only" type="approach"/>
+				<case object="zone:zone_chunggakjuncho" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_309_des_4" id="4" location-x="-45972.7852" location-y="-20665.2695" map="mangjasup">
+			<mission id="4" name2="Mission.Name2.309_4" required-register-value="1">
+				<case gadget-required="dont-care" mapunit-1="2110_e_onoff_foodtable_01" object="zoneenv:e_onoff_foodtable_01" object2="zoneenv2:e_onoff_foodtable_01" progress-mission="y" type="manipulate"/>
+				<case npc-response="qrsp_309_3" object="npc:CH_Dweller_032" progress-mission="reaction-only" type="approach"/>
+				<case object="zone:zone_chunggakjuncho" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_310"/>
+		</completion>
+		<mission-step desc="q_309_des_6" id="6" location-x="-45972.7852" location-y="-20665.2695" map="mangjasup">
+			<mission id="6" name2="Mission.Name2.309_6" required-register-value="1">
+				<case npc-response="qrsp_309_7" object="npc:CH_EunGwangSam_0001" progress-mission="n" type="approach"/>
+				<case npc-response="qrsp_309_4" object="npc:ch_jakyoungdan_0007" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_309_5" object="npc:CH_Dweller_032" type="approach"/>
+				<case object="zone:zone_chunggakjuncho" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_309_des_7" id="7" location-x="-35662.2344" location-y="-35471.7031" map="mangjasup">
+			<mission id="7" name2="Mission.Name2.309_7" required-register-value="1">
+				<case mapunit-1="2110_CH_EunGwangSam_0001" npc-response="qrsp_309_7" object="npc:CH_EunGwangSam_0001" progress-mission="y" type="npc-manipulate"/>
+				<case npc-response="qrsp_309_8" object="npc:ch_jakyoungdan_0007" type="approach"/>
+				<case npc-response="qrsp_309_5" object="npc:CH_Dweller_032" progress-mission="reaction-only" type="approach"/>
+				<case object="zone:zone_chunggakjuncho" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_309_des_5" id="5" location-x="-45972.7852" location-y="-20665.2695" map="mangjasup">
+			<mission id="5" name2="Mission.Name2.309_5" required-register-value="1">
+				<case mapunit-1="2110_2110_footswich_102" object="zoneenv:2100_footswitch_102" object2="zoneenv2:2100_footswitch_102" progress-mission="y" type="env-entered"/>
+				<case npc-response="qrsp_309_3" object="npc:CH_Dweller_032" progress-mission="reaction-only" type="approach"/>
+				<case object="zone:zone_chunggakjuncho" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_309_des_8" id="8">
+			<mission id="8" name2="Mission.Name2.309_8" required-register-value="1">
+				<case npc-response="qrsp_309_6" object="npc:CH_Dweller_032" progress-mission="y" type="talk"/>
+				<case object="zoneenv:e_Gate_chunggakcase_01" object2="zoneenv2:e_Gate_chunggakcase_01" progress-mission="reaction-only" type="manipulate"/>
+				<case npc-response="qrsp_309_7" object="npc:CH_EunGwangSam_0001" type="approach"/>
+				<case npc-response="qrsp_309_8" object="npc:ch_jakyoungdan_0007" type="approach"/>
+				<case object="zone:zone_chunggakjuncho" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_309_des_10" id="10">
+			<mission id="10" name2="Mission.Name2.309_10" required-register-value="1">
+				<case object="npc:MH_ChungGak_0276" progress-mission="y" type="npc-bleeding-occured">
+					<filter-set>
+					</filter-set>
+				</case>
+			</mission>
+			<mission-step-fail rollback-step-id="8"/>
+		</mission-step>
+		<mission-step desc="q_309_des_11" id="11">
+			<mission id="11" name2="Mission.Name2.309_11" required-register-value="1" reward-1="309_final_set1">
+				<case npc-response="qrsp_309_9" object="npc:ctzn_jinm_jakyungdan_yeokgisan_kff_001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_309_11" object="npc:CH_citizen_0026" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_309_des_9" guide-message="gm_309_1" id="9">
+			<mission id="9" name2="Mission.Name2.309_9" required-register-value="1">
+				<case mapunit-1="2100_footswitch_103" object="zone:zone_chunggakjuncho" progress-mission="y" type="convoy-arrived"/>
+			</mission>
+			<mission-step-fail rollback-step-id="8">
+				<case convoy="epic_309_con_1" object="zone:zone_chunggakjuncho" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+	</quest>
+</table>

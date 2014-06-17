@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_748" broadcast-category="field" category="normal" desc="q_748_sum" grade="1" group2="QG_Sigaji" id="748" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.748" save-type="all">
+		<acquisition level="45" preceding-quest-1="q_epic_269" preceding-quest-check="and" preceding-quest-mission-step-1="6" recommended-level="47">
+			<case acquire-quest="y" npc-response="qrsp_748_1" object="npc:CH_CT_PungWeol_0031" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-15464.17" location-y="36517.37" map="PungWolGwan" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.748_1" required-register-value="2">
+				<case npc-response="qrsp_748_3" object="npc:CH_CT_PungWeol_0032" object2="npc:CH_CT_PungWeol_0032" progress-mission="y" state-social="statesocial_dance" type="pc-social"/>
+				<case npc-response="qrsp_748_4" object="npc:CH_CT_PungWeol_0034" object2="npc:CH_CT_PungWeol_0034" progress-mission="y" state-social="statesocial_dance" type="pc-social"/>
+				<case npc-response="qrsp_748_5" object="npc:CH_CT_PungWeol_0036" object2="npc:CH_CT_PungWeol_0036" progress-mission="y" state-social="statesocial_dance" type="pc-social"/>
+				<case npc-response="qrsp_748_6" object="npc:CH_CT_PungWeol_0038" object2="npc:CH_CT_PungWeol_0038" progress-mission="y" state-social="statesocial_dance" type="pc-social"/>
+				<case npc-response="qrsp_748_7" object="npc:CH_CT_PungWeol_0040" object2="npc:CH_CT_PungWeol_0040" progress-mission="y" state-social="statesocial_dance" type="pc-social"/>
+				<case npc-response="qrsp_748_8" object="npc:CH_CT_PungWeol_0042" object2="npc:CH_CT_PungWeol_0042" progress-mission="y" state-social="statesocial_dance" type="pc-social"/>
+				<case mapunit-1="5165_CH_CT_PungWeol_0032_s748" mapunit-2="5165_CH_CT_PungWeol_0032_s748+" npc-response="qrsp_748_9" object="npc:CH_CT_PungWeol_0044" object2="npc:CH_CT_PungWeol_0044" progress-mission="y" state-social="statesocial_dance" type="pc-social"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-15581.35" location-y="36927.53" map="PungWolGwan" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.748_2" required-register-value="1" reward-1="748_final_set1">
+				<case npc-response="qrsp_748_2" object="npc:CH_CT_PungWeol_0031" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

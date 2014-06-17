@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1333" broadcast-category="field" category="job" desc="q_1333_sum" district-1="jeryoungrim" grade="1" group2="QG_HuekUmmRim" id="1333" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.1333" save-type="all" show-tutorial-tag="n" tutorial="y">
+		<acquisition job-1="암살자" level="12" preceding-quest-1="q_epic_311" preceding-quest-2="q_sub_1332" preceding-quest-check="and" preceding-quest-mission-step-1="2" recommended-level="12" talk-to-self-guide-msg="Msg.Job.quest5">
+			<case acquire-quest="y" item="q_1333_Quest_hair_growth_solution_manual_1_icon" msg="q_1333_s" type="talk-to-self"/>
+			<case acquire-quest="y" npc-response="qrsp_1333_6" object="npc:ctzn_jinm_hogieum_shm_001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1333_1" required-register-value="1">
+				<case acquire-quest="n" grocery-count="1" npc-response="qrsp_1333_1" object="npc:CH_HwaJung_0034" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_5_C5" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" guide-message="gm_1333_1" guide-message-zone-1="zone_HuekUmmRim_ClassQ_5_C5" id="2">
+			<mission id="2" name2="Mission.Name2.1333_2" required-register-value="1" show-kill-mapunit="y">
+				<tutorial-case object-1="npc:CH_HwaJung_0059" object2-1="npc:CH_HwaJung_0059" progress-mission="y" skill-sequence="Assassin_Lv12_M11" type="skill-sequence"/>
+				<case npc-response="qrsp_1333_2" object="npc:CH_HwaJung_0034" type="approach"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_5_C5" progress-mission="reaction-only" type="enter-zone"/>
+				<tutorial-case object-1="npc:CH_HwaJung_0059" object2-1="npc:CH_HwaJung_0059" progress-mission="y" skill-sequence="Assassin_Lv12_M12" type="skill-sequence"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.1333_3" required-register-value="1">
+				<case npc-response="qrsp_1333_7" object="npc:CE_JR_JobBook_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" guide-message="gm_1333_2" guide-message-zone-1="zone_HuekUmmRim_ClassQ_5_C5" id="4">
+			<mission id="5" name2="Mission.Name2.1333_5" required-register-value="2" show-kill-mapunit="y">
+				<tutorial-case object-1="npc:MH_Practitioner_0009" object2-1="npc:MH_Practitioner_0009" progress-mission="y" skill-sequence="Assassin_Lv12_M21" type="skill-sequence"/>
+				<case npc-response="qrsp_1333_4" object="npc:CH_HwaJung_0034" type="approach"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_5_C5" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+			<mission id="6" name2="Mission.Name2.1333_6" required-register-value="1">
+				<case npc-response="qrsp_1333_8" object="npc:CE_JR_JobBook_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="7" name2="Mission.Name2.1333_7" required-register-value="1" reward-1="1333_final_set1">
+				<case npc-response="qrsp_1333_5" object="npc:CH_HwaJung_0034" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_5_C5" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="4" name2="Mission.Name2.1333_4" required-register-value="1">
+				<case npc-response="qrsp_1333_3" object="npc:CH_HwaJung_0034" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_5_C5" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_HuekUmmRim_ClassQ_5_SP">
+			<destination mission-step-id="1" zone-index="4"/>
+			<destination mission-step-id="2" zone-index="4"/>
+			<destination mission-step-id="3" zone-index="4"/>
+			<destination mission-step-id="4" zone-index="4"/>
+			<destination mission-step-id="5" zone-index="4"/>
+		</transit>
+	</quest>
+</table>

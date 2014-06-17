@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_836" broadcast-category="field" category="normal" desc="q_836_sum" grade="1" group2="QG_SnowMountSouth" id="836" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.836" save-type="all">
+		<acquisition level="47" preceding-quest-1="q_epic_282" preceding-quest-check="and" preceding-quest-mission-step-1="9" recommended-level="49">
+			<case acquire-quest="y" npc-response="qrsp_836_1" object="npc:CH_CT_CuteVoice_0004" type="talk"/>
+			<fixed-reward slot-1="item:Quest_Scroll_BackChung_0036"/>
+			<case npc-response="qrsp_836_6" object="npc:CE_CT_Lion_0003" type="approach"/>
+			<case npc-response="qrsp_836_5" object="npc:CE_CT_ScareCrow_0002" type="approach"/>
+			<case npc-response="qrsp_836_4" object="npc:CE_CT_LumberJack_0003" type="approach"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.836_1" required-register-value="1">
+				<case item="Quest_Scroll_BackChung_0036" msg="q_836_2" progress-mission="y" type="talk-to-item"/>
+				<case npc-response="qrsp_836_10" object="npc:CE_CT_Lion_0003" type="approach"/>
+				<case npc-response="qrsp_836_9" object="npc:CE_CT_ScareCrow_0002" type="approach"/>
+				<case npc-response="qrsp_836_8" object="npc:CE_CT_LumberJack_0003" type="approach"/>
+				<case npc-response="qrsp_836_7" object="npc:CH_CT_CuteVoice_0004" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.836_2" required-register-value="1" reward-1="836_final_set1">
+				<case npc-response="qrsp_836_3" object="npc:CH_CT_CuteVoice_0004" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Scroll_BackChung_0036"/>
+				<case npc-response="qrsp_836_13" object="npc:CE_CT_Lion_0003" type="approach"/>
+				<case npc-response="qrsp_836_12" object="npc:CE_CT_ScareCrow_0002" type="approach"/>
+				<case npc-response="qrsp_836_11" object="npc:CE_CT_LumberJack_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_BackChung_0036"/>
+	</quest>
+</table>

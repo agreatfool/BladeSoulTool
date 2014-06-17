@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_502" broadcast-category="field" category="epic" completed-desc="q_502_completed" completed-list="y" desc="q_502_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="502" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.502" save-type="all">
+		<acquisition level="1" recommended-level="22" sort-no="303"/>
+		<mission-step id="1" location-x="-64066.7734" location-y="-86210.6797" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.502_1" required-register-value="7">
+				<case mapunit-1="3000_e_onoff_movebrush_01" mapunit-2="3000_e_onoff_movebrush_01_1" object="npc:mh_criminal_003" object2="npc:mh_criminal_003" progress-mission="y" type="killed"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_movebrush_06" object2="zoneenv2:e_onoff_movebrush_06" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_movebrush_05" object2="zoneenv2:e_onoff_movebrush_05" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_movebrush_04" object2="zoneenv2:e_onoff_movebrush_04" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_movebrush_03" object2="zoneenv2:e_onoff_movebrush_03" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_movebrush_02" object2="zoneenv2:e_onoff_movebrush_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_movebrush_01" object2="zoneenv2:e_onoff_movebrush_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-64002.7656" location-y="-81730.125" map="toemunjean">
+			<mission id="2" name2="Mission.Name2.502_2" required-register-value="1">
+				<case indicator-social="q_502_m3_indi_1" msg="q_502_m3" npc-response="qrsp_502_1" object="npc:ch_unguksoldier_005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-63554.707" location-y="-84290.4375" map="toemunjean">
+			<mission id="3" name2="Mission.Name2.502_3" required-register-value="1" reward-1="502_final_set1">
+				<case indicator-social="q_502_m4_indi_1" msg="q_502_m4" npc-response="qrsp_502_2" object="npc:ch_ildong_001" progress-mission="y" type="talk" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_503"/>
+		</completion>
+	</quest>
+</table>

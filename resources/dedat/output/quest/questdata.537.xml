@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_537" broadcast-category="field" category="epic" completed-desc="q_537_completed" completed-list="y" desc="q_537_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="537" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.537" save-type="all">
+		<acquisition level="1" recommended-level="36" sort-no="340"/>
+		<mission-step id="3" location-x="30969.6875" location-y="13798.8066" map="musinreung" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.537_3" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-2="3032_e_onoff_3032altar_01" mapunit-3="3041_MH_MuSeong_002" object="npc:mh_museong_002" object2="npc:mh_museong_002" progress-mission="y" type="killed"/>
+				<case object="zoneenv:e_onoff_3032altar_01" object2="zoneenv2:e_onoff_3032altar_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zone:zone_MuoShinReungEpic" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:e_door_musindoor_01" object2="zoneenv2:e_door_musindoor_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zone:zone_mushinbeacha_epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="30969.688" location-y="14560.525" map="musinreung" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.537_4" required-register-value="1">
+				<case indicator-social="q_537_m4_indi_1" msg="q_537_m4" npc-response="qrsp_537_2" object="npc:CH_BaekWoon_0002" progress-mission="y" type="talk"/>
+				<case mapunit-2="3032_e_onoff_3032altar_01" object="zoneenv:e_onoff_3032altar_01" object2="zoneenv2:e_onoff_3032altar_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zone:zone_MuoShinReungEpic" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_mushinbeacha_epic" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_537_4" object="npc:ch_museong_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="30969.6875" location-y="13798.8066" map="musinreung" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.537_5" required-register-value="1" reward-1="537_final_set1">
+				<case gadget="Q_OrbA" gadget-required="carry-and-remove" indicator-social="q_537_m5_indi_1" msg="q_537_m5" npc-response="qrsp_537_3" object="npc:CH_BaekWoon_0002" progress-mission="y" type="talk"/>
+				<case gadget-required="empty" mapunit-1="3041_e_onoff_musintreasure_01" object="zoneenv:e_onoff_musintreasure_01" object2="zoneenv2:e_onoff_musintreasure_01" progress-mission="reaction-only" type="manipulate"/>
+				<case npc-response="qrsp_537_4" object="npc:ch_museong_0001" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="4"/>
+		</mission-step>
+		<transit id="1" zone="zone_MuShinBeaCha_1">
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="2"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_538"/>
+		</completion>
+		<mission-step id="1" location-x="26496.00" location-y="6994.09" map="musinreungf" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.537_1" required-register-value="1">
+				<case indicator-social="q_537_m1_indi_1" msg="q_537_m1" npc-response="qrsp_537_1" object="npc:ch_baekwoon_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_muoshinreungepic" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_mushinbeacha_epic" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:e_onoff_3032altar_01" object2="zoneenv2:e_onoff_3032altar_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_gate_hide_06" object2="zoneenv2:e_gate_hide_06" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_gate_hide_05" object2="zoneenv2:e_gate_hide_05" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_gate_hide_04" object2="zoneenv2:e_gate_hide_04" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_gate_hide_03" object2="zoneenv2:e_gate_hide_03" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_gate_hide_02" object2="zoneenv2:e_gate_hide_02" progress-mission="reaction-only" type="manipulate"/>
+				<case mapunit-1="3032_e_onoff_3032altar_01" object="zoneenv:e_gate_hide_01" object2="zoneenv2:e_gate_hide_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="31071.250" location-y="10269.510" map="musinreung" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.537_2" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="3041_mh_musin_0003" object="npc:mh_musin_0003" object2="npc:mh_musin_0003" progress-mission="y" type="killed"/>
+				<case object="zone:zone_muoshinreungepic" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_mushinbeacha_epic" progress-mission="reaction-only" type="enter-zone"/>
+				<case mapunit-1="3032_e_onoff_3032altar_01" object="zoneenv:e_onoff_3032altar_01" object2="zoneenv2:e_onoff_3032altar_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.537_6" required-register-value="1">
+				<case object="zone:zone_mushinbeacha_2" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

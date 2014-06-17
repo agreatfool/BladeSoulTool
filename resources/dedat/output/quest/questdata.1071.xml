@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1071" broadcast-category="field" category="normal" desc="q_1071_sum" district-1="suwal" grade="1" group2="QG_Farmland" id="1071" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1071" save-type="all">
+		<acquisition level="37" preceding-quest-1="q_epic_908" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="39">
+			<case acquire-quest="y" npc-response="qrsp_1071_1" object="npc:ch_pigfarm_0003" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1071_1" required-register-value="3">
+				<case looting="q_1071_Grocery_Needleleaf_1_icon" object="zoneenv:e_poisongrass_06" object2="zoneenv2:e_poisongrass_06" progress-mission="y" type="loot"/>
+				<case looting="q_1071_Grocery_Needleleaf_1_icon" object="zoneenv:e_poisongrass_05" object2="zoneenv2:e_poisongrass_05" progress-mission="y" type="loot"/>
+				<case looting="q_1071_Grocery_Needleleaf_1_icon" object="zoneenv:e_poisongrass_04" object2="zoneenv2:e_poisongrass_04" progress-mission="y" type="loot"/>
+				<case looting="q_1071_Grocery_Needleleaf_1_icon" object="zoneenv:e_poisongrass_03" object2="zoneenv2:e_poisongrass_03" progress-mission="y" type="loot"/>
+				<case looting="q_1071_Grocery_Needleleaf_1_icon" object="zoneenv:e_poisongrass_02" object2="zoneenv2:e_poisongrass_02" progress-mission="y" type="loot"/>
+				<case looting="q_1071_Grocery_Needleleaf_1_icon" mapunit-1="4100_e_poisongrass_01" object="zoneenv:e_poisongrass_01" object2="zoneenv2:e_poisongrass_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1071_3" required-register-value="1" reward-1="1071_final_set1">
+				<case npc-response="qrsp_1071_2" object="npc:ch_pigfarm_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1071_2" required-register-value="3">
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_bucket_03" object2="zoneenv2:e_bucket_03" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_bucket_02" object2="zoneenv2:e_bucket_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="4100_e_bucket_01" object="zoneenv:e_bucket_01" object2="zoneenv2:e_bucket_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_WaterPotA_2" gadget-required="carry-and-remove" object="zoneenv:e_bugcrop_05" object2="zoneenv2:e_bugcrop_05" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_WaterPotA_2" gadget-required="carry-and-remove" object="zoneenv:e_bugcrop_04" object2="zoneenv2:e_bugcrop_04" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_WaterPotA_2" gadget-required="carry-and-remove" object="zoneenv:e_bugcrop_03" object2="zoneenv2:e_bugcrop_03" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_WaterPotA_2" gadget-required="carry-and-remove" object="zoneenv:e_bugcrop_02" object2="zoneenv2:e_bugcrop_02" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_WaterPotA_2" gadget-required="carry-and-remove" mapunit-1="4100_e_bugcrop_01" object="zoneenv:e_bugcrop_01" object2="zoneenv2:e_bugcrop_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

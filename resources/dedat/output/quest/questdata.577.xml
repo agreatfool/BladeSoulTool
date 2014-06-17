@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_577" attraction-1="classic-field-zone:NoklimdovillageClassic" attraction-2="cave2:cave_baekchung_13" attraction-3="dungeon:dungeon_noklimdotreasurehouse" attraction-4="dungeon:dungeon_takmagul" broadcast-category="field" category="normal" desc="q_577_sum" grade="1" group2="QG_NokRimDo" id="577" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.577" save-type="all">
+		<acquisition level="50" preceding-quest-1="q_sub_481" preceding-quest-2="q_sub_575" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" loot-item="Quest_Scroll_BackChung_0024" looting="q_575_2_icon" object="npc:MH_CT_NokLimDo_0192" object2="npc:MH_CT_NokLimDo_0192" type="loot"/>
+		</acquisition>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.577_2" required-register-value="1" reward-1="577_final_set1">
+				<case npc-response="qrsp_577_1" object="npc:CH_CT_EungGaMan_0004" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Scroll_BackChung_0024" item-count-1="1"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_BackChung_0024" item-count-1="1"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.577_1" required-register-value="1">
+				<case item="Quest_Scroll_BackChung_0024" msg="q_577_1" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

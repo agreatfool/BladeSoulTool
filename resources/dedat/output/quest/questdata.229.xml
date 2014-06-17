@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_229" broadcast-category="field" category="epic" completed-desc="q_229_completed" completed-list="y" desc="q_229_sum" district-1="startzone" grade="1" group2="QG_Toturial" id="229" map-group-1-1="startzone" max-repeat="1" name2="Quest.Name2.229" save-type="all" show-tutorial-tag="n" tutorial="y">
+		<acquisition job-1="권사" level="1" recommended-level="1" sort-no="106"/>
+		<mission-step completion-type="and" desc="q_229_des_1" id="1" location-x="-8378.602" location-y="40751.602" map="startzone">
+			<mission id="1" name2="Mission.Name2.229_1" required-register-value="1" reward-1="229_final_set1">
+				<case indicator-social="q_229_m1_indi_1" mapunit-1="225_1_CH_YungMook_0001" msg="q_229_m1" npc-response="qrsp_229_1" object="npc:ch_youngmook_0009" progress-mission="y" type="talk"/>
+				<case object="zone:startzone_renew_kungfu" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" desc="q_229_des_2" guide-message="gm_229_1" id="2">
+			<mission id="2" name2="Mission.Name2.229_2" required-register-value="3">
+				<tutorial-case object-1="npc:mh_redmokujin_0001" object2-1="npc:mh_redmokujin_0001" progress-mission="y" skill="kungfumaster_attack_counterenemy_counter_lv1" skill3="kungfumaster_attack_counterenemy_counter_lv1" type="skill"/>
+				<case object="zone:startzone_renew_kungfu" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_229_m2_indi_2" npc-response="qrsp_229_3" object="npc:mh_redmokujin_0001" type="approach"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.229_3" required-register-value="1">
+				<case npc-response="qrsp_229_2" object="npc:CH_WB_YoungMook_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" desc="q_229_des_3" guide-message="gm_229_2" id="3">
+			<mission id="4" name2="Mission.Name2.229_4" required-register-value="3">
+				<tutorial-case object-1="npc:mh_bluemokujin_0001" object2-1="npc:mh_bluemokujin_0001" progress-mission="y" skill="kungfumaster_attack_powerfulattack_lv1" skill3="kungfumaster_attack_powerfulattack_lv1" type="skill"/>
+				<case object="zone:startzone_renew_kungfu" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_229_m3_indi_2" npc-response="qrsp_229_5" object="npc:mh_bluemokujin_0001" type="approach"/>
+				<tutorial-case object-1="npc:mh_bluemokujin_0001" object2-1="npc:mh_bluemokujin_0001" progress-mission="y" skill="kungfumaster_attack_powerfulattack_lv1_hidden" skill3="kungfumaster_attack_powerfulattack_lv1_hidden" type="skill"/>
+			</mission>
+			<mission id="5" name2="Mission.Name2.229_5" required-register-value="1">
+				<case npc-response="qrsp_229_4" object="npc:CH_WB_YoungMook_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_227"/>
+		</completion>
+		<transit id="1" zone="startzone_renew_blade">
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

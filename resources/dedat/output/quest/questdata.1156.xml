@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1156" broadcast-category="field" category="normal" desc="q_1156_sum" district-1="suwal" grade="1" group2="QG_AkgyojokVillage" id="1156" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1156" save-type="all">
+		<acquisition level="38" preceding-quest-1="q_epic_914" preceding-quest-check="and" preceding-quest-mission-step-1="3" recommended-level="40">
+			<case acquire-quest="y" npc-response="qrsp_1156_1" object="npc:ce_crocodilesharktribeb_0005" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1156_1" required-register-value="10">
+				<case mapunit-1="4250_ME_CrocodileSharkTribeB_0022" object="npc:ME_CrocodileSharkTribeB_0022" object2="npc:ME_CrocodileSharkTribeB_0022" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1156_2" required-register-value="3">
+				<case object="zoneenv:e_chest_sacrifice_03" object2="zoneenv2:e_chest_sacrifice_03" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_sacrifice_02" object2="zoneenv2:e_chest_sacrifice_02" progress-mission="y" type="manipulate"/>
+				<case mapunit-1="4250_e_chest_sacrifice_01" mapunit-2="4250_e_chest_sacrifice_02" mapunit-3="4250_e_chest_sacrifice_03" object="zoneenv:e_chest_sacrifice_01" object2="zoneenv2:e_chest_sacrifice_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.1156_3" required-register-value="1" reward-1="1156_final_set1">
+				<case npc-response="qrsp_1156_2" object="npc:ce_crocodilesharktribeb_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

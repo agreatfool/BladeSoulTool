@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_284" broadcast-category="field" category="epic" completed-desc="q_284_completed" completed-list="y" desc="q_284_sum" grade="1" group2="QG_BaeCheongEpic" id="284" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.284" save-type="all">
+		<acquisition level="1" recommended-level="50" sort-no="526"/>
+		<mission-step id="1" location-x="-8937.75" location-y="1683.17" map="BaekChungPaBonSan" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.284_1" required-register-value="1">
+				<case mapunit-1="5225_zone_BaekCheongPa_Epic_e284" mapunit-2="5240_Guide_e284" object="zone:zone_BaekCheongPa_Epic" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.284_2" required-register-value="1">
+				<case npc-response="qrsp_284_1" object="npc:CH_CT_YeHaRang_0009" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.284_3" required-register-value="1">
+				<case object="npc:MH_CT_BeakChung_0005" object2="npc:MH_CT_BeakChung_0005" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.284_4" required-register-value="1">
+				<case mapunit-1="5291_Foot_SYH_e284" object="zoneenv:5291_Foot_SYH" object2="zoneenv2:5291_Foot_SYH" progress-mission="y" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_284_des_5" id="5">
+			<mission id="5" name2="Mission.Name2.284_5" required-register-value="1">
+				<case mapunit-1="5291_Foot_YR_e284" object="zoneenv:5291_Foot_YR" object2="zoneenv2:5291_Foot_YR" progress-mission="y" type="env-entered"/>
+				<case object="zone:zone_BaekCheongPa_Epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.284_6" required-register-value="1">
+				<case npc-response="qrsp_284_2" object="npc:CH_CT_YuRan_0008" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekCheongPa_Epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_285"/>
+		</completion>
+		<transit id="1" zone="zone_BaekCheongPa_Party">
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+		</transit>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.284_7" required-register-value="1" reward-1="284_final_set1">
+				<case npc-response="qrsp_284_3" object="npc:CH_CT_YuRan_0008" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekCheongPa_Epic" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

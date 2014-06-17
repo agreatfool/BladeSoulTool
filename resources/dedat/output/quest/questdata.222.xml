@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_222" broadcast-category="field" category="epic" completed-desc="q_222_completed" completed-list="y" desc="q_222_sum" district-1="startzone" grade="1" group2="QG_Toturial" id="222" map-group-1-1="startzone" max-repeat="1" name2="Quest.Name2.222" save-type="all" show-tutorial-tag="n" tutorial="y">
+		<acquisition level="1" recommended-level="1" sort-no="102"/>
+		<mission-step completion-type="and" desc="q_222_des_1" guide-message="gm_222_3" id="1" location-x="-11253.597" location-y="38325.828" map="startzone">
+			<mission id="1" name2="Mission.Name2.222_1" required-register-value="1">
+				<case object="zone:startzone_renew_all" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="npc:CH_JinYoung_0001" progress-mission="y" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_222_des_2" guide-message="gm_222_1" id="2" location-x="-11253.597" location-y="38325.828" map="startzone" retired="y">
+			<mission id="2" name2="Mission.Name2.222_2" required-register-value="1">
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="222_3_e_onoff_stfirewood_re_01" object="zoneenv:e_onoff_stfirewood_re_01" object2="zoneenv2:e_onoff_stfirewood_re_01" progress-mission="y" type="manipulate"/>
+				<case object="zone:startzone_renew_all" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_222_m2_indi_1" msg="q_222_m2" npc-response="qrsp_222_2" object="npc:ch_gilhong_0003" type="talk"/>
+				<case msg="q_222_m2_1" npc-response="qrsp_222_3" object="npc:ch_jinyoung_0001" type="talk"/>
+				<case msg="q_222_m2_2" npc-response="qrsp_222_4" object="npc:ch_hwajoong_0002" type="talk"/>
+				<case indicator-social="q_222_m2_indi_3" npc-response="qrsp_222_5" object="npc:ch_yungmook_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_222_des_3" guide-message="gm_222_2" id="3" location-x="-11253.597" location-y="38325.828" map="startzone" retired="y">
+			<mission id="3" name2="Mission.Name2.222_3" required-register-value="1">
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_stfirewood_re_01" object2="zoneenv2:e_onoff_stfirewood_re_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zone:startzone_renew_all" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_222_m3_indi_1" msg="q_222_m3" npc-response="qrsp_222_6" object="npc:ch_hwajoong_0002" type="talk"/>
+				<case msg="q_222_m3_1" npc-response="qrsp_222_7" object="npc:ch_jinyoung_0001" type="talk"/>
+				<case msg="q_222_m3_2" npc-response="qrsp_222_8" object="npc:ch_gilhong_0003" type="talk"/>
+				<case indicator-social="q_222_m3_indi_3" npc-response="qrsp_222_9" object="npc:ch_yungmook_0001" type="approach"/>
+				<case gadget="q_firewoodc" gadget-required="carry-and-remove" indicator="quest-gadget-required" mapunit-1="222_3_e_onoff_stfire_re_01" object="zoneenv:e_onoff_stfire_re_01" object2="zoneenv2:e_onoff_stfire_re_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_222_des_4" id="4" location-x="-11253.597" location-y="38325.828" map="startzone">
+			<mission id="4" name2="Mission.Name2.222_4" required-register-value="1">
+				<case indicator-social="q_222_m4_indi_1" mapunit-1="222_4_CH_JinYoung_0001" msg="q_222_m4" npc-response="qrsp_222_15" object="npc:ch_jinyoung_0001" progress-mission="y" type="talk"/>
+				<case object="zone:startzone_renew_all" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_222_m4_indi_4" npc-response="qrsp_222_13" object="npc:ch_yungmook_0001" type="approach"/>
+				<case npc-response="qrsp_222_14" object="npc:ch_gilhong_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_223"/>
+		</completion>
+	</quest>
+</table>

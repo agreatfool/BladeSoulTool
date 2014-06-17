@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_353" broadcast-category="field" category="normal" desc="q_353_sum" district-1="jeryoungrim" grade="1" group="제룡림(월영 공동묘지)" group2="QG_WalYoungCemetery" id="353" map-group-1-1="jeryoungrim" max-repeat="1" name="원한은 원한을 낳고 (완)" name2="Quest.Name2.353" save-type="all">
+		<acquisition level="4" preceding-quest-1="q_epic_306" preceding-quest-check="and" recommended-level="6">
+			<case acquire-quest="y" indicator-social="q_353_s_indi_1" msg="q_353_s" npc-response="qrsp_353_1" object="npc:ctzn_jinm_jakyungdan_sobung_001" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-36321.6328" location-y="-35891.3164" map="mangjasup">
+			<mission id="1" name="각토시의 원한령을 불러내어 처치" name2="Mission.Name2.353_1" required-register-value="1">
+				<case indicator-social="q_353_m1_indi_1" msg="q_353_m1" npc-response="qrsp_353_2" object="npc:ch_shaman_021" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-30626.8477" location-y="-32894.0625" map="mangjasup">
+			<mission id="2" name="숲속 야영지에 있는 팽만호와 대화" name2="Mission.Name2.353_2" required-register-value="1">
+				<case looting="q_353_Quest_yujangill_necklet_1_icon" mapunit-1="2000_Mob_Hmn_MLnd_Soul_Zombie_001" mapunit-2="2000_Mob_Hmn_MLnd_Soul_Zombie_001_1" object="npc:mob_hmn_mlnd_soul_pdungn_zombie_q_001" object2="npc:mob_hmn_mlnd_soul_pdungn_zombie_q_001" progress-mission="y" type="loot"/>
+				<case object="npc:mob_hmn_mlnd_soul_zombie_001" object2="npc:mob_hmn_mlnd_soul_zombie_001" show-in-tooltip="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-24752.2305" location-y="-30436.3164" map="mangjasup">
+			<mission id="3" name2="Mission.Name2.353_3" required-register-value="1" reward-1="353_final_set1">
+				<case indicator-social="q_353_m3_indi_1" msg="q_353_m3" npc-response="qrsp_353_3" object="npc:ch_jakyungdan_0010" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

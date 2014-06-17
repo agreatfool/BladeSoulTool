@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_582" broadcast-category="field" category="normal" desc="q_582_sum" district-1="deasamak" grade="1" group2="QG_ToMunJinSouth" id="582" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.582" save-type="all">
+		<acquisition level="23" preceding-quest-1="q_epic_508" preceding-quest-check="and" recommended-level="25">
+			<case acquire-quest="y" indicator-social="q_582_s_indi_1" msg="q_582_s" npc-response="qrsp_582_1" object="npc:ch_dweller_039" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-46592.6328" location-y="-54590.8086" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.582_1" required-register-value="5">
+				<case looting="q_582_quest_shit_1_icon" object="zoneenv:e_onoff_balbalddong_07" object2="zoneenv2:e_onoff_balbalddong_07" progress-mission="y" type="loot"/>
+				<case looting="q_582_quest_shit_1_icon" object="zoneenv:e_onoff_balbalddong_06" object2="zoneenv2:e_onoff_balbalddong_06" progress-mission="y" type="loot"/>
+				<case looting="q_582_quest_shit_1_icon" object="zoneenv:e_onoff_balbalddong_05" object2="zoneenv2:e_onoff_balbalddong_05" progress-mission="y" type="loot"/>
+				<case looting="q_582_quest_shit_1_icon" object="zoneenv:e_onoff_balbalddong_04" object2="zoneenv2:e_onoff_balbalddong_04" progress-mission="y" type="loot"/>
+				<case looting="q_582_quest_shit_1_icon" object="zoneenv:e_onoff_balbalddong_03" object2="zoneenv2:e_onoff_balbalddong_03" progress-mission="y" type="loot"/>
+				<case looting="q_582_quest_shit_1_icon" object="zoneenv:e_onoff_balbalddong_02" object2="zoneenv2:e_onoff_balbalddong_02" progress-mission="y" type="loot"/>
+				<case looting="q_582_quest_shit_1_icon" mapunit-1="3000_e_onoff_balbalddong_01" mapunit-2="3000_e_onoff_balbalddong_01_1" object="zoneenv:e_onoff_balbalddong_01" object2="zoneenv2:e_onoff_balbalddong_01" progress-mission="y" type="loot"/>
+				<case acquire-quest="n" approach-talk="n" npc-response="qrsp_582_3" object="npc:ch_dweller_039" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-44416.3672" location-y="-55294.8945" map="toemunjean">
+			<mission id="2" name2="Mission.Name2.582_2" required-register-value="1">
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_bluepot_02" object2="zoneenv2:e_onoff_bluepot_02" progress-mission="y" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="3000_e_onoff_bluepot_01" mapunit-2="3000_e_onoff_bluepot_02" object="zoneenv:e_onoff_bluepot_01" object2="zoneenv2:e_onoff_bluepot_01" progress-mission="y" type="manipulate"/>
+				<case approach-talk="n" npc-response="qrsp_582_4" object="npc:ch_dweller_039" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_582_des_3" id="3" location-x="-44416.3672" location-y="-55294.8945" map="toemunjean">
+			<mission id="3" name2="Mission.Name2.582_3" required-register-value="1" reward-1="582_final_set1">
+				<case gadget="Q_PotA" gadget-required="carry-and-remove" mapunit-3="3000_e_onoff_3000kiln_01" object="zoneenv:e_onoff_3000kiln_01" object2="zoneenv2:e_onoff_3000kiln_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-2="3000_e_onoff_bluepot_02" object="zoneenv:e_onoff_bluepot_02" object2="zoneenv2:e_onoff_bluepot_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="3000_e_onoff_bluepot_01" object="zoneenv:e_onoff_bluepot_01" object2="zoneenv2:e_onoff_bluepot_01" progress-mission="reaction-only" type="manipulate"/>
+				<case approach-talk="n" npc-response="qrsp_582_5" object="npc:ch_dweller_039" type="approach"/>
+				<case gadget="q_secretion_pota" gadget-required="carry-and-remove" npc-response="qrsp_582_2" object="npc:ch_dweller_039" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

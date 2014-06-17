@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25017" attraction-1="cave2:Cave_SuWal_7" broadcast-category="field" category="attraction" grade="9" group2="QG_AngaeForestNorth" id="25017" map-group-1-1="suwal" max-repeat="-1" name2="Quest.Name2.25017" save-type="nothing">
+		<acquisition level="41" preceding-quest-check="and" recommended-level="46"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.25017_1" required-register-value="1">
+				<case object="npc:MH_Scholar_0001" object2="npc:MH_Scholar_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" required-register-value="1" reward-1="25017_final_set1">
+				<case item="q_25017_1_icon" msg="q_25017_1" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

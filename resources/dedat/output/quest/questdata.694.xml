@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_694" broadcast-category="field" category="normal" desc="q_694_sum" grade="1" group2="QG_Reservoir" id="694" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.694" save-type="all">
+		<acquisition level="44" preceding-quest-1="q_epic_263" preceding-quest-2="q_sub_686" preceding-quest-check="and" preceding-quest-count-1="1" preceding-quest-mission-step-1="4" recommended-level="46">
+			<case acquire-quest="y" npc-response="qrsp_694_1" object="npc:CH_CT_JeGukGun_0179" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.694_1" required-register-value="1">
+				<case npc-response="qrsp_694_2" object="npc:CH_CT_Citizen_0170" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.694_2" required-register-value="1">
+				<case npc-response="qrsp_694_3" object="npc:CH_CT_YunBunHong_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_694_4" object="npc:CE_CT_flower_0010" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.694_3" required-register-value="1" reward-1="694_final_set1">
+				<case npc-response="qrsp_694_5" object="npc:CH_CT_JeGukGun_0179" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_694_7" object="npc:CE_CT_flower_0010" type="approach"/>
+				<case npc-response="qrsp_694_6" object="npc:CH_CT_YunBunHong_0001" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

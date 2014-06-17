@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_525" broadcast-category="field" category="epic" completed-desc="q_525_completed" completed-list="y" desc="q_525_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="525" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.525" save-type="all">
+		<acquisition level="1" recommended-level="32" sort-no="326"/>
+		<mission-step id="1" location-x="27874.6328" location-y="-32340.1953" map="sajisukrim" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.525_1" required-register-value="1">
+				<case indicator-social="q_525_m1_indi_1" mapunit-1="3020_Guide_E525" msg="q_525_m1" npc-response="qrsp_525_1" object="npc:ch_unguksoldier_0007" progress-mission="y" type="talk" visible-object="y"/>
+				<case npc-response="qrsp_525_6" object="npc:ch_jinsoa_0006" type="approach" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="27874.6328" location-y="-32340.1953" map="sajisukrim">
+			<mission id="2" name2="Mission.Name2.525_2" required-register-value="1">
+				<case indicator-social="q_525_m2_indi_1" msg="q_525_m2" npc-response="qrsp_525_2" object="npc:ch_jinsoa_0006" progress-mission="y" type="talk" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="37106.6953" location-y="-39082.0313" map="sajisukrim">
+			<mission id="3" name2="Mission.Name2.525_3" required-register-value="1">
+				<case mapunit-1="3020_Epic_3020_HukChangToTem" object="zone:zone_HukChangToTem" progress-mission="y" type="enter-zone" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="38355.7188" location-y="-36561.6836" map="hukchangtotem">
+			<mission id="4" name2="Mission.Name2.525_4" required-register-value="1">
+				<case indicator-social="q_525_m4_indi_1" msg="q_525_m4" npc-response="qrsp_525_3" object="npc:ch_orakdang_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HukChangToTem" progress-mission="reaction-only" type="enter-zone" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_525_des_5" id="5" location-x="38853.7656" location-y="-32212.0742" map="hukchangtotem">
+			<mission id="5" name2="Mission.Name2.525_5" required-register-value="1">
+				<case mapunit-1="3067_3067_footswitch_3" object="zone:zone_HukChangToTem" progress-mission="y" type="convoy-arrived"/>
+			</mission>
+			<mission-step-fail rollback-step-id="4">
+				<case convoy="epic_525_con" object="zone:zone_HukChangToTem" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step id="6" location-x="38853.7656" location-y="-32212.0742" map="hukchangtotem">
+			<mission id="6" name2="Mission.Name2.525_6" required-register-value="1">
+				<case indicator-social="q_525_m6_indi_1" msg="q_525_m6" npc-response="qrsp_525_4" object="npc:ch_muun_0014" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HukChangToTem" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:e_destroy_hukcagedoor_01" object2="zoneenv2:e_destroy_hukcagedoor_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7" location-x="27874.6328" location-y="-32340.1953" map="sajisukrim">
+			<mission id="7" name2="Mission.Name2.525_7" required-register-value="1" reward-1="525_final_set1">
+				<case indicator-social="q_525_m7_indi_1" msg="q_525_m7" npc-response="qrsp_525_5" object="npc:ch_unguksoldier_0007" progress-mission="y" type="talk" visible-object="y"/>
+				<case npc-response="qrsp_525_7" object="npc:ch_muun_0012" type="approach"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_526"/>
+		</completion>
+	</quest>
+</table>

@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="gang2_chungkak" alias="q_sub_480" broadcast-category="field" category="normal" day-of-week="daily" desc="q_480_sum" district-1="jeryoungrim" grade="1" group2="QG_Geoamgol" id="480" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.480" reset-type="daily" save-type="all">
+		<mission-step id="1" map="songamdo">
+			<mission id="1" name2="Mission.Name2.480_1" required-register-value="15">
+				<case object="npc:ch_factiona_guard_0031" object2="npc:ch_factiona_guard_0031" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang2_chungkak"/>
+					</filter-set>
+				</case>
+				<case mapunit-1="2420_CH_JaKyungDan" object="npc:ch_jakyeongdan_0003" object2="npc:ch_jakyeongdan_0003" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang2_chungkak"/>
+					</filter-set>
+				</case>
+				<case object="npc:CH_jakyeongDan_0002" object2="npc:CH_jakyeongDan_0002" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang2_chungkak"/>
+					</filter-set>
+				</case>
+				<case object="npc:ch_jakyeongdan_0001" object2="npc:ch_jakyeongdan_0001" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang2_chungkak"/>
+					</filter-set>
+				</case>
+				<case object="npc:ch_docheonpung_0004" object2="npc:ch_docheonpung_0004" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang2_chungkak"/>
+					</filter-set>
+				</case>
+				<case object="npc:ch_jakyeongdan_0010" object2="npc:ch_jakyeongdan_0010" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang2_chungkak"/>
+					</filter-set>
+				</case>
+				<case object="npc:ch_jakyeongdan_0009" object2="npc:ch_jakyeongdan_0009" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang2_chungkak"/>
+					</filter-set>
+				</case>
+				<case object="npc:ch_jakyeongdan_0008" object2="npc:ch_jakyeongdan_0008" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang2_chungkak"/>
+					</filter-set>
+				</case>
+				<case object="npc:ch_jakyeongdan_0007" object2="npc:ch_jakyeongdan_0007" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang2_chungkak"/>
+					</filter-set>
+				</case>
+				<case object="npc:ch_jakyeongdan_0006" object2="npc:ch_jakyeongdan_0006" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang2_chungkak"/>
+					</filter-set>
+				</case>
+				<case object="npc:ch_jakyeongdan_0005" object2="npc:ch_jakyeongdan_0005" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang2_chungkak"/>
+					</filter-set>
+				</case>
+				<case object="npc:ch_jakyeongdan_0004" object2="npc:ch_jakyeongdan_0004" progress-mission="y" type="killed">
+					<filter-set>
+						<filter subject="case:killed:pc" subject2="case:killed:pc" type="active-faction" value="gang2_chungkak"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_480_3" object="npc:ch_faction_0004" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" map="songamdo">
+			<mission id="2" name2="Mission.Name2.480_2" required-register-value="1" reward-1="480_final_set1" reward-2="480_final_set2">
+				<case msg="q_480_m2" npc-response="qrsp_480_2" object="npc:ch_faction_0004" progress-mission="y" type="talk" visible-object="y">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="gang2_chungkak"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<acquisition check-tencent-vitality="n" level="18" preceding-quest-1="q_sub_479" preceding-quest-check="and" recommended-level="20">
+			<case acquire-quest="y" msg="q_480_s" npc-response="qrsp_480_1" object="npc:ch_faction_0004" type="talk" visible-object="y">
+				<filter-set>
+					<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="gang2_chungkak"/>
+				</filter-set>
+			</case>
+		</acquisition>
+	</quest>
+</table>

@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_247" broadcast-category="field" category="epic" completed-desc="q_247_completed" completed-list="y" desc="q_247_sum" district-1="startzone" grade="1" group2="QG_Toturial" id="247" map-group-1-1="startzone" max-repeat="1" name2="Quest.Name2.247" save-type="all" show-tutorial-tag="n" tutorial="y">
+		<acquisition job-1="소환사" level="1" recommended-level="1" sort-no="107"/>
+		<mission-step completion-type="and" desc="q_247_des_2" id="2" location-x="-8378.602" location-y="40751.602" map="startzone">
+			<mission id="2" name2="Mission.Name2.247_2" required-register-value="1" reward-1="247_middle_set1">
+				<case indicator-social="q_247_m1_indi_1" mapunit-1="225_1_CH_YungMook_0001" msg="q_247_m1" npc-response="qrsp_247_1" object="npc:ch_youngmook_0013" progress-mission="y" type="talk"/>
+				<case object="zone:startzone_renew_minstrel" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_247_1" object="npc:CH_YoungMook_0009" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_247_des_3" id="3" location-x="-13319.999" location-y="43401.992" map="startzone">
+			<mission id="3" name2="Mission.Name2.247_3" required-register-value="1">
+				<case mapunit-1="227_1_CH_YungMook_0001" object="zoneenv:1107_foot_2" object2="zoneenv2:1107_foot_2" progress-mission="y" type="env-entered"/>
+				<case object="zone:startzone_renew_minstrel" progress-mission="reaction-only" type="enter-zone"/>
+				<case msg="q_247_m2" npc-response="qrsp_247_2" object="npc:ch_youngmook_0013" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_247_des_4" id="4" location-x="-21523.76" location-y="44144.25" map="startzone_dun" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.247_4" required-register-value="4">
+				<case mapunit-1="227_3_MH_MokuJin_0002_2" mapunit-2="2000_start_zone_dun" object="npc:mh_mokujin_0002" object2="npc:mh_mokujin_0002" progress-mission="y" type="killed"/>
+				<case indicator-social="q_247_m3_indi_1" msg="q_247_m3" npc-response="qrsp_247_3" object="npc:ch_youngmook_0013" type="talk"/>
+				<case indicator-social="q_247_m3_indi_2" npc-response="qrsp_247_4" object="npc:ch_musung_0004" type="approach"/>
+				<case object="zone:startzone_renew_donggul" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_247_des_5" id="5">
+			<mission id="5" name2="Mission.Name2.247_5" required-register-value="1">
+				<tutorial-case percent="0" progress-mission="y" type="pc-bleeding"/>
+				<case indicator-social="q_247_m4_indi_1" mapunit-1="227_mh_musung_0001" npc-response="qrsp_247_6" object="npc:mh_musung_0001" type="approach"/>
+				<case indicator-social="q_247_m4_indi_3" msg="q_247_m4" npc-response="qrsp_247_5" object="npc:ch_youngmook_0013" type="talk"/>
+				<case object="zone:startzone_renew_donggul" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_247_des_6" guide-message="gm_247_1" id="6">
+			<mission id="6" name2="Mission.Name2.247_6" required-register-value="1">
+				<tutorial-case progress-mission="y" type="complete-self-revival"/>
+				<case indicator-social="q_247_m5_indi_1" npc-response="qrsp_247_7" object="npc:mh_musung_0001" type="approach"/>
+				<case indicator-social="q_247_m5_indi_2" msg="q_247_m5_1" npc-response="qrsp_247_8" object="npc:ch_youngmook_0013" type="talk"/>
+				<case object="zone:startzone_renew_donggul" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+			<mission-step-fail rollback-step-id="5"/>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_247_des_8" guide-message="gm_247_3" id="8" location-x="-20243.307" location-y="44035.27" retired="n">
+			<mission id="8" name2="Mission.Name2.247_8" required-register-value="1">
+				<tutorial-case item="Merchant_Grocery_Potion_1010" progress-mission="y" type="use-item"/>
+				<case indicator-social="q_247_m7_indi_1" msg="q_247_m7" npc-response="qrsp_247_11" object="npc:ch_musung_0001" type="talk"/>
+				<case indicator-social="q_247_m7_indi_2" msg="q_247_m7_1" npc-response="qrsp_247_12" object="npc:ch_youngmook_0013" type="talk"/>
+				<case object="zone:startzone_renew_donggul" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_247_des_11" id="11" location-x="-20243.307" location-y="44035.27" map="startzone_dun">
+			<mission id="11" name2="Mission.Name2.247_11" required-register-value="1" reward-1="247_final_set1">
+				<case indicator-social="q_247_m10_indi_1" mapunit-1="227_7_CH_MuSung_0001" msg="q_247_m10" npc-response="qrsp_247_17" object="npc:ch_musung_0001" progress-mission="y" type="talk"/>
+				<case indicator-social="q_247_m10_indi_2" msg="q_247_m10_1" npc-response="qrsp_247_18" object="npc:ch_youngmook_0009" type="talk"/>
+				<case object="zone:startzone_renew_donggul" progress-mission="reaction-only" type="enter-zone"/>
+				<completion-loss item-1="quest_grocery_repairtool_0001"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest job-1="소환사" quest="q_epic_243"/>
+		</completion>
+		<transit id="1" zone="startzone_renew_blade">
+			<destination mission-step-id="8" zone-index="7"/>
+			<destination mission-step-id="7" zone-index="7"/>
+			<destination mission-step-id="6" zone-index="7"/>
+			<destination mission-step-id="5" zone-index="7"/>
+			<destination mission-step-id="4" zone-index="7"/>
+			<destination mission-step-id="1" zone-index="5"/>
+			<destination mission-step-id="2" zone-index="5"/>
+			<destination mission-step-id="10" zone-index="7"/>
+			<destination mission-step-id="9" zone-index="7"/>
+			<destination mission-step-id="11" zone-index="7"/>
+			<destination mission-step-id="3" zone-index="5"/>
+		</transit>
+		<mission-step desc="q_247_des_9" guide-message="gm_247_4" id="9" location-x="-20243.307" location-y="44035.27" retired="y">
+			<mission id="9" name2="Mission.Name2.247_9" required-register-value="1">
+				<fixed-reward item-count-1="10" slot-1="item:quest_grocery_repairtool_0001"/>
+				<case indicator-social="q_227_m8_indi_1" mapunit-1="227_MH_MuSung_0001" msg="q_247_m8" npc-response="qrsp_247_13" object="npc:ch_musung_0001" progress-mission="y" type="talk"/>
+				<case msg="q_247_m8_1" npc-response="qrsp_247_14" object="npc:ch_youngmook_0009" type="talk"/>
+				<case object="zone:startzone_renew_donggul" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_247_des_10" guide-message="gm_247_4" id="10" retired="y">
+			<mission id="10" name2="Mission.Name2.247_10" required-register-value="1">
+				<tutorial-case item="quest_grocery_repairtool_0001" mapunit-1="1130_SuRiDoGu" progress-mission="y" type="repair-with-campfire"/>
+				<case msg="q_247_m9" npc-response="qrsp_247_15" object="npc:ch_youngmook_0009" type="talk"/>
+				<case npc-response="qrsp_247_16" object="npc:ch_musung_0001" type="approach"/>
+				<case object="zone:startzone_renew_donggul" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_247_des_7" guide-message="gm_247_2" id="7">
+			<mission id="7" name2="Mission.Name2.247_7" required-register-value="1">
+				<tutorial-case progress-mission="y" skill="summoner_summon_tear_lv1" skill3="summoner_summon_tear_lv1" type="skill"/>
+				<case indicator-social="q_247_m6_indi_1" msg="q_247_m6" npc-response="qrsp_247_9" object="npc:ch_musung_0001" type="talk"/>
+				<case object="zone:startzone_renew_donggul" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_247_10" object="npc:ch_youngmook_0013" type="approach"/>
+				<fixed-reward slot-1="item:Merchant_Grocery_Potion_1010"/>
+			</mission>
+			<mission-step-fail rollback-step-id="5"/>
+		</mission-step>
+		<mission-step desc="q_247_des_1" guide-message="gm_227_7" id="1">
+			<mission id="1" name2="Mission.Name2.247_1" required-register-value="1">
+				<case item="q_247_1_icon" msg="q_247_s" progress-mission="y" type="talk-to-self"/>
+				<case npc-response="qrsp_247_19" object="npc:ch_youngmook_0013" type="approach"/>
+				<case object="zone:startzone_renew_minstrel" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_247_19" object="npc:CH_YoungMook_0009" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

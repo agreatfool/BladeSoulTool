@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_900" broadcast-category="field" category="normal" day-of-week="none" desc="q_900_sum" grade="1" group2="QG_ZazakWoodWest" id="900" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.900" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="n" level="46" preceding-quest-1="q_epic_282" preceding-quest-2="q_sub_815" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="48">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_900_1" object="npc:CH_CT_Citizen_0506" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.900_1" required-register-value="10">
+				<case looting="q_900_1_icon" mapunit-1="5200_ME_CT_Wolf_0027_s900" object="npc:ME_CT_Wolf_0027" object2="npc:ME_CT_Wolf_0027" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.900_2" required-register-value="7">
+				<case looting="q_900_3_icon" mapunit-1="5200_ME_CT_Wolf_0028_s900" object="npc:ME_CT_Wolf_0028" object2="npc:ME_CT_Wolf_0028" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.900_3" required-register-value="1" reward-1="900_final_set1">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_900_2" object="npc:CH_CT_Mercenary_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

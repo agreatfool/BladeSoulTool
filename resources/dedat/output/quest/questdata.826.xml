@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_826" broadcast-category="field" category="normal" day-of-week="daily" desc="q_826_sum" grade="8" group2="QG_ZazakWoodEast" id="826" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.826" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="46" preceding-quest-1="q_epic_282" preceding-quest-2="q_sub_821" preceding-quest-3="q_sub_825" preceding-quest-check="and" preceding-quest-mission-step-1="2" recommended-level="48">
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_826_6" object="npc:CE_CT_Board_0027" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_826_3" object="npc:CH_CT_Monk_0025" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_826_1" object="npc:CH_CT_Monk_0025" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.826_1" required-register-value="1">
+				<case object="npc:ME_CT_MeiOne_0009" object2="npc:ME_CT_MeiOne_0009" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.826_2" required-register-value="1" reward-1="826_final_set1" reward-2="826_final_set2">
+				<case fee="y" item="q_826_1_icon" msg="q_826_6" progress-mission="y" type="talk-to-self"/>
+				<case completion-count="1" npc-response="qrsp_826_4" object="npc:CH_CT_Monk_0008" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_826_2" object="npc:CH_CT_Monk_0008" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

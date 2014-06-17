@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_293" broadcast-category="field" category="epic" desc="q_293_sum" grade="1" group2="QG_BaeCheongEpic" id="293" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.293" save-type="all">
+		<acquisition level="1" recommended-level="49"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.293_1" required-register-value="1" reward-1="293_middle_set1">
+				<case npc-response="qrsp_293_1" object="npc:CH_CT_HyunDam_0008" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekRimSa_BonDang" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_293_des_2" id="2">
+			<mission id="2" name2="Mission.Name2.293_2" required-register-value="1" reward-1="293_final_set1">
+				<case mapunit-1="4900_MaDoSinGong_ed-" npc-response="qrsp_293_2" object="npc:CH_CT_Citizen_0450" progress-mission="y" type="talk">
+					<filter-set name="50이상">
+						<filter field="level" op="ge" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="50"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_293_3" object="npc:CH_CT_Citizen_0450" type="talk">
+					<filter-set name="49이하">
+						<filter field="level" op="le" subject="case:talked:pc" subject2="case:talked:pc" type="prop" value="49"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest faction="SecondFaction2" quest="q_epic_294"/>
+			<next-quest faction="SecondFaction1" quest="q_epic_289"/>
+		</completion>
+		<transit id="1" zone="Zone_MaDoSingong_Defalt">
+			<destination mission-step-id="2" zone-index="1"/>
+		</transit>
+		<transit id="2" zone="zone_SnakeScalesVally_Default">
+			<complete zone-index="1"/>
+		</transit>
+		<transit id="3" zone="zone_ResurrectionAltar_Default">
+			<complete zone-index="1"/>
+		</transit>
+		<transit id="4" zone="Zone_ChunMyungJiWii">
+			<complete zone-index="2"/>
+		</transit>
+	</quest>
+</table>

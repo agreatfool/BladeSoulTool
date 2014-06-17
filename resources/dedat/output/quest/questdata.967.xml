@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_967" broadcast-category="field" category="normal" content-type="festival" day-of-week="daily" desc="q_967_sum" grade="1" group2="QG_Event" id="967" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.967" reset-type="daily" retired="y" save-type="all">
+		<acquisition check-tencent-vitality="n" level="15" preceding-quest-1="q_epic_313" preceding-quest-check="and" recommended-level="17">
+			<case acquire-quest="y" item="q_967_1_icon" msg="q_967_2" type="talk-to-self">
+				<filter-set>
+					<filter field="level" op="ge" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="prop" value="15"/>
+				</filter-set>
+			</case>
+			<case acquire-quest="y" npc-response="qrsp_967_1" object="npc:ch_merchantcharm_001" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_967_des_1" id="1">
+			<mission check-tencent-vitality="n" id="1" name2="Mission.Name2.967_1" required-register-value="1">
+				<case looting="q_967_2_icon" mapunit-1="2603_ME_SaMyoJeong_0011" mapunit-2="2603_ME_SaMyoJeong_0011_1" mapunit-3="2603_ME_SaMyoJeong_0011_2" mapunit-4="2603_ME_SaMyoJeong_0011_3" object="npc:me_samyojeong_0011" object2="npc:me_samyojeong_0011" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case looting="q_967_2_icon" mapunit-1="2603_ME_SaMyoJeong_0011" mapunit-2="2603_ME_SaMyoJeong_0011_1" mapunit-3="2603_ME_SaMyoJeong_0011_2" mapunit-4="2603_ME_SaMyoJeong_0011_3" object="npc:me_treegoblin_0014" object2="npc:me_treegoblin_0014" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+			</mission>
+			<mission check-tencent-vitality="n" id="2" name2="Mission.Name2.967_2" required-register-value="1">
+				<case looting="q_967_3_icon" mapunit-1="2603_ME_Moran_0001" object="npc:me_moran_0001" object2="npc:me_moran_0001" prob="100" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			</mission>
+			<mission check-tencent-vitality="n" id="3" name2="Mission.Name2.967_3" required-register-value="1">
+				<case looting="q_967_5_icon" object="npc:me_pest_0010" object2="npc:me_pest_0010" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			</mission>
+			<mission check-tencent-vitality="n" id="4" name2="Mission.Name2.967_4" required-register-value="1">
+				<case looting="q_967_4_icon" object="npc:me_jr_kingfrog_0001" object2="npc:me_jr_kingfrog_0001" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_967_des_2" id="2">
+			<mission check-tencent-vitality="n" id="5" name2="Mission.Name2.967_5" required-register-value="1">
+				<case mapunit-1="2300_e_chest_2300small_burner_01" object="zoneenv:e_chest_2300small_burner_01" object2="zoneenv2:e_chest_2300small_burner_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission check-tencent-vitality="n" id="6" name2="Mission.Name2.967_6" required-register-value="1" reward-1="967_final_set1" reward-2="967_final_set2">
+				<case item="q_967_6_icon" msg="q_967_4" progress-mission="y" type="talk-to-self">
+					<filter-set>
+						<filter field="level" op="ge" subject="case:talk-to-self:pc" subject2="case:talk-to-self:pc" type="prop" value="15"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_967_3" object="npc:ch_merchantcharm_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

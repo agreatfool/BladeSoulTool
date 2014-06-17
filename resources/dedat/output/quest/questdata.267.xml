@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_267" broadcast-category="field" category="epic" completed-desc="q_267_completed" completed-list="y" desc="q_267_sum" grade="1" group2="QG_BaeCheongEpic" id="267" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.267" save-type="all">
+		<acquisition level="1" recommended-level="47" sort-no="508"/>
+		<mission-step id="1" location-x="-26079.67" location-y="6951.08" map="KangRyuSi" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.267_1" required-register-value="1">
+				<case mapunit-1="5004_Guide_e267" mapunit-2="5001_Guide_e267" npc-response="qrsp_267_1" object="npc:CH_CT_Hasijang_0004" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_267_8" object="npc:CE_CT_ThiefCat_0001" type="approach"/>
+				<case npc-response="qrsp_267_4" object="npc:CH_CT_Hasijang_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.267_2" required-register-value="10">
+				<case mapunit-1="5100_ME_CT_HaOBanng_0100_e267" object="npc:ME_CT_HaOBanng_0100" object2="npc:ME_CT_HaOBanng_0100" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_HaOBanng_0101" object2="npc:ME_CT_HaOBanng_0101" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_HaOBanng_0102" object2="npc:ME_CT_HaOBanng_0102" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_HaOBanng_0103" object2="npc:ME_CT_HaOBanng_0103" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_HaOBanng_0104" object2="npc:ME_CT_HaOBanng_0104" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_HaOBanng_0105" object2="npc:ME_CT_HaOBanng_0105" progress-mission="y" type="killed"/>
+				<case npc-response="qrsp_267_8" object="npc:CE_CT_ThiefCat_0001" type="approach"/>
+				<case npc-response="qrsp_267_5" object="npc:CH_CT_Hasijang_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.267_8" required-register-value="1">
+				<case npc-response="qrsp_267_2" object="npc:CH_CT_Hasijang_0004" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_267_5" object="npc:CH_CT_Hasijang_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.267_9" required-register-value="1" reward-1="267_final_set1">
+				<case npc-response="qrsp_267_3" object="npc:CH_CT_JeGukGun_0236" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_DoSungSuBiDae" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_267_9" object="npc:CE_CT_ThiefCat_0009" type="approach"/>
+				<case npc-response="qrsp_267_7" object="npc:CH_CT_JeGukGun_0047" type="approach"/>
+				<case npc-response="qrsp_267_6" object="npc:CH_CT_JeGukGun_0046" type="approach"/>
+				<case npc-response="qrsp_267_5" object="npc:CH_CT_Hasijang_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_268"/>
+		</completion>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.267_3" required-register-value="1">
+				<case npc-response="qrsp_267_16" object="npc:CH_CT_BaekRim_0029" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.267_5" required-register-value="1">
+				<case mapunit-1="5114_Zone_HaSiJangInZone_e267" object="zone:Zone_HaSiJangInZone" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.267_7" required-register-value="1">
+				<case object="npc:CH_CT_BaekRim_0030" object2="npc:CH_CT_BaekRim_0030" progress-mission="y" type="killed"/>
+				<case object="zone:Zone_HaSiJangInZone" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.267_4" required-register-value="1">
+				<case npc-response="qrsp_267_23" object="npc:CE_CT_Book_0006" progress-mission="y" type="npc-manipulate"/>
+				<case npc-response="qrsp_267_24" object="npc:CH_CT_BaekRim_0029" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.267_6" required-register-value="1">
+				<case object="npc:ME_CT_HaOBanng_0092" object2="npc:ME_CT_HaOBanng_0092" progress-mission="y" type="killed"/>
+				<case object="zone:Zone_HaSiJangInZone" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_267_20" object="npc:ME_CT_HaOBanng_0018" type="approach"/>
+				<case npc-response="qrsp_267_19" object="npc:ME_CT_HaOBanng_0017" type="approach"/>
+				<case npc-response="qrsp_267_18" object="npc:ME_CT_HaOBanng_0016" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

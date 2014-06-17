@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_291" broadcast-category="field" category="normal" content-type="festival" desc="q_291_sum" grade="1" group2="QG_Delete" id="291" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.291" retired="y" save-type="all">
+		<acquisition level="15" preceding-quest-1="q_sub_290" preceding-quest-check="and" recommended-level="15">
+			<case acquire-quest="y" npc-response="qrsp_291_1" object="npc:CH_CT_Dinos_0002" type="talk"/>
+			<case npc-response="qrsp_291_16" object="npc:CH_CT_Dinos_0004" type="approach"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.291_1" required-register-value="1">
+				<case npc-response="qrsp_291_2" object="npc:Ctzn_JinM_Fisherman_AnNakIn_001" object2="npc:Ctzn_JinM_Fisherman_AnNakIn_001" progress-mission="y" social="talksocial_hooray" type="pc-social">
+					<filter-set name="착용">
+						<filter field="equip-head" op="eq" subject="case:pc-social:pc" subject2="case:pc-social:pc" type="prop" value="90072"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_291_11" object="npc:CH_CT_Dinos_0004" type="approach"/>
+				<case npc-response="qrsp_291_17" object="npc:CH_CT_Dinos_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_291_des_2" id="2">
+			<mission id="2" name2="Mission.Name2.291_2" required-register-value="1">
+				<case npc-response="qrsp_291_4" object="npc:Ctzn_JinM_JaKyungDan_GeomKwang_Swd_001" object2="npc:Ctzn_JinM_JaKyungDan_GeomKwang_Swd_001" progress-mission="y" social="talksocial_hooray" type="pc-social">
+					<filter-set name="착용">
+						<filter field="equip-head" op="eq" subject="case:pc-social:pc" subject2="case:pc-social:pc" type="prop" value="90072"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_291_3" object="npc:Ctzn_JinM_Fisherman_AnNakIn_001" type="approach"/>
+				<case npc-response="qrsp_291_11" object="npc:CH_CT_Dinos_0004" type="approach"/>
+				<case npc-response="qrsp_291_17" object="npc:CH_CT_Dinos_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_291_des_3" id="3">
+			<mission id="3" name2="Mission.Name2.291_3" required-register-value="1">
+				<case npc-response="qrsp_291_6" object="npc:CH_JaKyoungDan_036" object2="npc:CH_JaKyoungDan_036" progress-mission="y" social="talksocial_hooray" type="pc-social">
+					<filter-set name="착용">
+						<filter field="equip-head" op="eq" subject="case:pc-social:pc" subject2="case:pc-social:pc" type="prop" value="90072"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_291_5" object="npc:Ctzn_JinM_JaKyungDan_GeomKwang_Swd_001" type="approach"/>
+				<case npc-response="qrsp_291_11" object="npc:CH_CT_Dinos_0004" type="approach"/>
+				<case npc-response="qrsp_291_17" object="npc:CH_CT_Dinos_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_291_des_4" id="4">
+			<mission id="4" name2="Mission.Name2.291_4" required-register-value="1">
+				<case npc-response="qrsp_291_8" object="npc:CH_TanYeonBang_0001" object2="npc:CH_TanYeonBang_0001" progress-mission="y" social="talksocial_hooray" type="pc-social">
+					<filter-set name="착용">
+						<filter field="equip-head" op="eq" subject="case:pc-social:pc" subject2="case:pc-social:pc" type="prop" value="90072"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_291_7" object="npc:CH_JaKyoungDan_036" type="approach"/>
+				<case npc-response="qrsp_291_11" object="npc:CH_CT_Dinos_0004" type="approach"/>
+				<case npc-response="qrsp_291_17" object="npc:CH_CT_Dinos_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.291_5" required-register-value="1" reward-1="291_final_set1">
+				<case npc-response="qrsp_291_10" object="npc:CH_CT_Dinos_0002" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_291_12" object="npc:CH_CT_Dinos_0005" type="approach"/>
+				<case npc-response="qrsp_291_13" object="npc:CH_CT_Dinos_0006" type="approach"/>
+				<case npc-response="qrsp_291_14" object="npc:CH_CT_Dinos_0007" type="approach"/>
+				<case npc-response="qrsp_291_15" object="npc:CH_CT_Dinos_0008" type="approach"/>
+				<case npc-response="qrsp_291_9" object="npc:CH_TanYeonBang_0001" type="approach"/>
+				<case npc-response="qrsp_291_11" object="npc:CH_CT_Dinos_0004" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

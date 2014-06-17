@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25024" attraction-1="dungeon:dungeon_baekcheong_sulokgoong" broadcast-category="field" category="attraction" grade="10" group2="QG_Sulokgoong" id="25024" map-group-1-1="baekchung" max-repeat="-1" name2="Quest.Name2.25024" save-type="nothing">
+		<acquisition level="50" preceding-quest-check="and" recommended-level="50"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.25024_1" required-register-value="1">
+				<case object="npc:ME_C3_SeolOkGungBoss_0003" object2="npc:ME_C3_SeolOkGungBoss_0003" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.25024_2" required-register-value="1" reward-1="25024_final_set1">
+				<case item="q_25024_1_icon" msg="q_25024_1" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

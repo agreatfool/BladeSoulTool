@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_262" broadcast-category="field" category="epic" completed-desc="q_262_completed" completed-list="y" desc="q_262_sum" grade="1" group2="QG_BaeCheongEpic" id="262" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.262" save-type="all">
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.262_1" required-register-value="1">
+				<case mapunit-1="5013_Zone_Haori_Fell_e262" object="zone:Zone_Haori_Fell" progress-mission="y" type="enter-zone"/>
+				<case npc-response="qrsp_262_11" object="npc:CH_CT_Citizen_0607" type="approach"/>
+				<case npc-response="qrsp_262_10" object="npc:CH_CT_JeGukGun_0081" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.262_2" required-register-value="2">
+				<case object="zone:Zone_Haori_Fell" progress-mission="reaction-only" type="enter-zone"/>
+				<case looting="q_262_2_icon" mapunit-1="5013_CE_CT_RewardBox_0003_e262" mapunit-2="5013_CE_CT_RewardBox_0003_e262_1" object="npc:CE_CT_RewardBox_0003" object2="npc:CE_CT_RewardBox_0003" progress-mission="y" type="loot"/>
+				<case looting="q_262_3_icon" object="npc:CE_CT_RewardBox_0002" object2="npc:CE_CT_RewardBox_0002" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_262_14" object="npc:CH_CT_JeGukGun_0081" type="approach"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.262_3" required-register-value="1">
+				<case looting="q_262_1_icon" object="npc:MH_CT_HaOBang_0011" object2="npc:MH_CT_HaOBang_0011" progress-mission="y" type="loot"/>
+				<case object="zone:Zone_Haori_Fell" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_262_14" object="npc:CH_CT_JeGukGun_0081" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" mission-map-type="mapunit">
+			<mission id="5" name2="Mission.Name2.262_5" required-register-value="1">
+				<case item="Quest_Scroll_BackChung_0046" msg="q_262_8" progress-mission="y" type="talk-to-item"/>
+				<case npc-response="qrsp_262_3" object="npc:CH_CT_Citizen_0606" type="approach"/>
+				<case npc-response="qrsp_262_14" object="npc:CH_CT_JeGukGun_0081" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="4" name2="Mission.Name2.262_4" required-register-value="1">
+				<case npc-response="qrsp_262_1" object="npc:CH_CT_Citizen_0606" progress-mission="y" type="talk"/>
+				<fixed-reward slot-1="item:Quest_Scroll_BackChung_0046"/>
+				<case npc-response="qrsp_262_14" object="npc:CH_CT_JeGukGun_0081" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="-78793.25" location-y="-22918.46" map="GreatPlain" mission-map-type="location">
+			<mission id="6" name2="Mission.Name2.262_6" required-register-value="1">
+				<case mapunit-1="5013_Guide_e262" npc-response="qrsp_262_2" object="npc:CH_CT_BeaSaGon_0001" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Scroll_BackChung_0046"/>
+				<case npc-response="qrsp_262_12" object="npc:CH_CT_JeGukGun_0312" type="approach"/>
+				<case npc-response="qrsp_262_14" object="npc:CH_CT_JeGukGun_0081" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="7" name2="Mission.Name2.262_7" required-register-value="1">
+				<case npc-response="qrsp_262_5" object="npc:CH_CT_JeGukGun_0312" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_262_14" object="npc:CH_CT_JeGukGun_0081" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="8" name2="Mission.Name2.262_8" required-register-value="1">
+				<case npc-response="qrsp_262_6" object="npc:CH_CT_SoYangSang_0007" type="approach"/>
+				<case npc-response="qrsp_262_8" object="npc:CH_CT_YungOk_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_262_4" object="npc:CH_CT_JeGukGun_0312" type="approach"/>
+				<case npc-response="qrsp_262_14" object="npc:CH_CT_JeGukGun_0081" type="approach"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="Zone_HaoBang">
+			<destination mission-step-id="8" zone-index="1"/>
+		</transit>
+		<acquisition level="1" recommended-level="45" sort-no="503"/>
+		<completion>
+			<next-quest quest="q_epic_263"/>
+		</completion>
+		<mission-step id="8">
+			<mission id="9" name2="Mission.Name2.262_9" required-register-value="1" reward-1="262_final_set1">
+				<case npc-response="qrsp_262_9" object="npc:CH_CT_Gambler_0002" progress-mission="y" type="talk"/>
+				<case object="zoneenv:e_Chest_haobanggate_01" object2="zoneenv2:e_Chest_haobanggate_01" progress-mission="reaction-only" type="manipulate"/>
+				<case npc-response="qrsp_262_4" object="npc:CH_CT_JeGukGun_0312" type="approach"/>
+				<case npc-response="qrsp_262_14" object="npc:CH_CT_JeGukGun_0081" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

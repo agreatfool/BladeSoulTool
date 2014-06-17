@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_469" broadcast-category="field" category="normal" desc="q_469_sum" grade="1" group2="QG_Reservoir" id="469" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.469" save-type="all">
+		<acquisition level="44" preceding-quest-1="q_epic_263" preceding-quest-2="q_sub_599" preceding-quest-check="and" recommended-level="46">
+			<case acquire-quest="y" npc-response="qrsp_469_1" object="npc:CH_CT_JalNanChae_0003" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.469_1" required-register-value="7">
+				<case npc-response="qrsp_469_5" object="npc:CH_CT_JalNanChae_0003" type="approach"/>
+				<case looting="q_469_1_icon" object="npc:MH_CT_BokUnHoe_0043" object2="npc:MH_CT_BokUnHoe_0043" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+				<case looting="q_469_1_icon" object="npc:MH_CT_BokUnHoe_0042" object2="npc:MH_CT_BokUnHoe_0042" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+				<case looting="q_469_1_icon" object="npc:MH_CT_BokUnHoe_0041" object2="npc:MH_CT_BokUnHoe_0041" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+				<case looting="q_469_1_icon" object="npc:MH_CT_BokUnHoe_0040" object2="npc:MH_CT_BokUnHoe_0040" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+				<case looting="q_469_1_icon" object="npc:MH_CT_BokUnHoe_0039" object2="npc:MH_CT_BokUnHoe_0039" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+				<case looting="q_469_1_icon" object="npc:MH_CT_BokUnHoe_0038" object2="npc:MH_CT_BokUnHoe_0038" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+				<case looting="q_469_1_icon" mapunit-1="5023_MH_CT_BokUnHoe_0037_s469" mapunit-2="5023_MH_CT_BokUnHoe_0037_s469_1" object="npc:MH_CT_BokUnHoe_0037" object2="npc:MH_CT_BokUnHoe_0037" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+				<case looting="q_469_1_icon" object="npc:MH_CT_BokUnHoe_0030" object2="npc:MH_CT_BokUnHoe_0030" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+				<case looting="q_469_1_icon" object="npc:MH_CT_BokUnHoe_0031" object2="npc:MH_CT_BokUnHoe_0031" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.469_2" required-register-value="1" reward-1="469_final_set1">
+				<case npc-response="qrsp_469_2" object="npc:CH_CT_JalNanChae_0004" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_469_4" object="npc:CH_CT_PungGaek_0003" type="approach"/>
+				<case npc-response="qrsp_469_6" object="npc:CH_CT_PungGaek_0002" type="approach"/>
+				<case npc-response="qrsp_469_5" object="npc:CH_CT_JalNanChae_0003" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_418" broadcast-category="field" category="normal" day-of-week="daily" desc="q_418_sum" district-1="jeryoungrim" grade="2" group="제룡림(흑음림)" group2="QG_HuekUmmRim" id="418" map-group-1-1="jeryoungrim" max-repeat="1" name="탄연방의 사정 (완)" name2="Quest.Name2.418" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="12" preceding-quest-1="q_epic_311" preceding-quest-check="and" recommended-level="14">
+			<case acquire-quest="y" completion-count="0" npc-response="qrsp_418_2" object="npc:ch_dweller_023" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_418_5" object="npc:CE_Board_0014" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-5446.9395" location-y="6855.3071" map="KyeIeHan_Dun">
+			<mission id="1" name="탄연방의 흑강목 탈환" name2="Mission.Name2.418_1" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_418_Quest_cubic_package_1_icon" object="npc:mh_nokrimdo_0052" object2="npc:mh_nokrimdo_0052" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-5689.2422" location-y="-8369.1797" map="huekummrim">
+			<mission id="2" name="흑음림 숯 가마터의 탄연방주 서문연상에게 보고" name2="Mission.Name2.418_2" required-register-value="1">
+				<case indicator-social="q_418_m3_indi_1" msg="q_418_m3" npc-response="qrsp_418_3" object="npc:ch_dweller_023" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="3" location-x="-4745.3203" location-y="-11034.3751" map="huekummrim">
+			<mission id="3" name="흑음림 숯 가마터에 있는 자경단원 고붕에게 보고" name2="Mission.Name2.418_3" required-register-value="1" reward-1="418_final_set1" reward-2="418_final_set2">
+				<case indicator-social="q_418_m4_indi_1" mapunit-1="2200_ctzn_jinm_jakyungdan_gobung_kff_001" msg="q_418_m4" npc-response="qrsp_418_4" object="npc:ctzn_jinm_jakyungdan_gobung_kff_001" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_418_1_icon" msg="q_418_6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_240" attraction-1="classic-field-zone:SnakeScalesVally_classic" attraction-2="dungeon:dungeon_SnakeScalesVally" attraction-3="classic-field-zone:NoklimdovillageClassic" attraction-4="dungeon:dungeon_TakMaGul" broadcast-category="always" category="normal" content-type="elite-skill" grade="1" group2="QG_Elite" id="240" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.240" save-type="all">
+		<acquisition job-1="기공사" level="1" recommended-level="50">
+			<case acquire-quest="y" grocery="Quest_Scroll_EliteSkill_0033" item="Quest_Scroll_EliteSkill_0033" msg="q_240_1" type="talk-to-item"/>
+			<case acquire-quest="y" grocery="Quest_Scroll_EliteSkill_0089" item="Quest_Scroll_EliteSkill_0089" msg="q_240_1" type="talk-to-item"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.240_1" required-register-value="30">
+				<tutorial-case object-1="npc:me_chunggakaboss_0005" object2-1="npc:me_chunggakaboss_0005" progress-mission="y" skill-sequence="FM_PvE_EliteSkill_0033_FireBall_hit" type="skill-sequence"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.240_2" required-register-value="30">
+				<tutorial-case object-1="npc:MH_CT_NokLimDo_0002" object2-1="npc:MH_CT_NokLimDo_0002" progress-mission="y" skill-sequence="FM_PvE_EliteSkill_0033_FireBall_hit" type="skill-sequence"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="3">
+			<mission id="3" name2="Mission.Name2.240_3" required-register-value="30">
+				<tutorial-case object-1="npc:ME_CT_DesertDragon_0002" object-2="npc:ME_CT_DesertDragon_0005" object-3="npc:ME_CT_DesertDragon_0006" object-4="npc:ME_CT_DesertDragon_0009" object-5="npc:ME_CT_DesertDragon_0010" object-6="npc:ME_CT_DesertDragon_0011" object2-1="npc:ME_CT_DesertDragon_0002" object2-2="npc:ME_CT_DesertDragon_0005" object2-3="npc:ME_CT_DesertDragon_0006" object2-4="npc:ME_CT_DesertDragon_0009" object2-5="npc:ME_CT_DesertDragon_0010" object2-6="npc:ME_CT_DesertDragon_0011" progress-mission="y" skill-sequence="FM_PvE_EliteSkill_0033_FireBall_hit" type="skill-sequence"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="4">
+			<mission id="4" name2="Mission.Name2.240_4" required-register-value="30">
+				<tutorial-case object-1="npc:ME_CT_SnakeQueen_0001" object-2="npc:ME_CT_SnakeSoldier_0001" object-3="npc:ME_MuSinTower_0004" object2-1="npc:ME_CT_SnakeQueen_0001" object2-2="npc:ME_CT_SnakeSoldier_0001" object2-3="npc:ME_MuSinTower_0004" progress-mission="y" skill-sequence="FM_PvE_EliteSkill_0033_FireBall_hit" type="skill-sequence"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.240_5" required-register-value="30">
+				<tutorial-case object-1="npc:ME_C3_YettyCaveBoss_0002" object2-1="npc:ME_C3_YettyCaveBoss_0002" progress-mission="y" skill-sequence="FM_PvE_EliteSkill_0033_FireBall_hit" type="skill-sequence"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

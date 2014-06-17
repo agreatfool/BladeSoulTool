@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_831" broadcast-category="field" category="normal" day-of-week="none" desc="q_831_sum" grade="1" group2="QG_SnowMountSouth" id="831" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.831" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="n" level="47" preceding-quest-1="q_epic_282" preceding-quest-check="and" preceding-quest-mission-step-1="8" recommended-level="49">
+			<case acquire-quest="y" completion-count="0" completion-count-op="ge" npc-response="qrsp_831_1" object="npc:CH_CT_Flower_0004" type="talk"/>
+		</acquisition>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.831_3" required-register-value="1" reward-1="831_final_set1">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_831_2" object="npc:CH_CT_Flower_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1">
+			<mission id="2" name2="Mission.Name2.831_2" required-register-value="4">
+				<case looting="q_831_1_icon" object="zoneenv:e_Chest_insam_07" object2="zoneenv2:e_Chest_insam_07" progress-mission="y" type="loot"/>
+				<case looting="q_831_1_icon" object="zoneenv:e_Chest_insam_06" object2="zoneenv2:e_Chest_insam_06" progress-mission="y" type="loot"/>
+				<case looting="q_831_1_icon" object="zoneenv:e_Chest_insam_05" object2="zoneenv2:e_Chest_insam_05" progress-mission="y" type="loot"/>
+				<case looting="q_831_1_icon" object="zoneenv:e_Chest_insam_04" object2="zoneenv2:e_Chest_insam_04" progress-mission="y" type="loot"/>
+				<case looting="q_831_1_icon" object="zoneenv:e_Chest_insam_03" object2="zoneenv2:e_Chest_insam_03" progress-mission="y" type="loot"/>
+				<case looting="q_831_1_icon" object="zoneenv:e_Chest_insam_02" object2="zoneenv2:e_Chest_insam_02" progress-mission="y" type="loot"/>
+				<case looting="q_831_1_icon" mapunit-1="5220_e_Chest_insam_01_s831" object="zoneenv:e_Chest_insam_01" object2="zoneenv2:e_Chest_insam_01" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="1" name2="Mission.Name2.831_1" required-register-value="10">
+				<case object="npc:MH_CT_NokLimDo_0206" object2="npc:MH_CT_NokLimDo_0206" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_NokLimDo_0205" object2="npc:MH_CT_NokLimDo_0205" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_NokLimDo_0203" object2="npc:MH_CT_NokLimDo_0203" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_NokLimDo_0208" object2="npc:MH_CT_NokLimDo_0208" progress-mission="y" type="killed"/>
+				<case mapunit-1="5220_MH_CT_NokLimDo_0203_s831" object="npc:ME_CT_RuneMechaB_0007" object2="npc:ME_CT_RuneMechaB_0007" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_NokLimDo_0204" object2="npc:MH_CT_NokLimDo_0204" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

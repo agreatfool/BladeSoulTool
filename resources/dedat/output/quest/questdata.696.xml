@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_696" broadcast-category="field" category="normal" desc="q_696_sum" grade="1" group2="QG_BooNongEast" id="696" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.696" save-type="all">
+		<acquisition level="44" preceding-quest-1="q_epic_263" preceding-quest-2="q_sub_694" preceding-quest-check="and" recommended-level="46">
+			<case acquire-quest="y" npc-response="qrsp_696_1" object="npc:CH_CT_JeGukGun_0179" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-104370.97" location-y="38861.08" map="YuChaeKkotBat" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.696_1" required-register-value="4">
+				<case gadget="Q_Torchlight_0009" gadget-required="carry-and-remove" object="zoneenv:e_chest_rape_blossoms_01" object2="zoneenv2:e_chest_rape_blossoms_01" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_Torchlight_0009" gadget-required="carry-and-remove" object="zoneenv:e_chest_rape_blossoms_02" object2="zoneenv2:e_chest_rape_blossoms_02" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_Torchlight_0009" gadget-required="carry-and-remove" object="zoneenv:e_chest_rape_blossoms_03" object2="zoneenv2:e_chest_rape_blossoms_03" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_Torchlight_0009" gadget-required="carry-and-remove" object="zoneenv:e_chest_rape_blossoms_04" object2="zoneenv2:e_chest_rape_blossoms_04" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_Torchlight_0009" gadget-required="carry-and-remove" mapunit-1="5023_e_chest_rape_blossoms_01_s696" object="zoneenv:e_chest_rape_blossoms_05" object2="zoneenv2:e_chest_rape_blossoms_05" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_Torchlight_0009" gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="5023_e_chest_fire_shorse_01_s696" object="zoneenv:e_chest_fire_shorse_01" object2="zoneenv2:e_chest_fire_shorse_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Torchlight_0009" gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="5023_e_chest_fire_shorse_02_s696" object="zoneenv:e_chest_fire_shorse_02" object2="zoneenv2:e_chest_fire_shorse_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Torchlight_0009" gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="5023_e_chest_fire_shorse_03_s696" object="zoneenv:e_chest_fire_shorse_03" object2="zoneenv2:e_chest_fire_shorse_03" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Torchlight_0009" gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="5023_e_chest_fire_shorse_04_s696" object="zoneenv:e_chest_fire_shorse_04" object2="zoneenv2:e_chest_fire_shorse_04" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Torchlight_0009" gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="5023_e_chest_fire_shorse_05_s696" mapunit-2="5023_e_chest_fire_shorse_01_s696_1" object="zoneenv:e_chest_fire_shorse_05" object2="zoneenv2:e_chest_fire_shorse_05" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.696_2" required-register-value="1" reward-1="696_final_set1">
+				<case npc-response="qrsp_696_2" object="npc:CH_CT_JeGukGun_0179" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

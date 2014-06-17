@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_246" broadcast-category="field" category="epic" completed-desc="q_246_completed" completed-list="y" desc="q_246_sum" district-1="startzone" grade="1" group2="QG_Toturial" id="246" map-group-1-1="startzone" max-repeat="1" name2="Quest.Name2.246" save-type="all" show-tutorial-tag="n" tutorial="y">
+		<acquisition job-1="소환사" level="1" recommended-level="1" sort-no="106"/>
+		<mission-step completion-type="and" desc="q_246_des_1" id="1" location-x="-8378.602" location-y="40751.602" map="startzone">
+			<mission id="1" name2="Mission.Name2.246_1" required-register-value="1" reward-1="246_final_set1">
+				<case indicator-social="q_246_m1_indi_1" mapunit-1="225_1_CH_YungMook_0001" msg="q_246_m1" npc-response="qrsp_246_1" object="npc:ch_youngmook_0013" progress-mission="y" type="talk"/>
+				<case object="zone:startzone_renew_minstrel" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" desc="q_246_des_2" guide-message="gm_246_1" id="2">
+			<mission id="2" name2="Mission.Name2.246_2" required-register-value="3">
+				<tutorial-case object-1="npc:mh_redmokujin_0002" object2-1="npc:mh_redmokujin_0002" progress-mission="y" skill="Summoner_Summon_Hornet_Lv1" skill3="Summoner_Summon_Hornet_Lv1" type="skill"/>
+				<case object="zone:startzone_renew_minstrel" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_246_m2_indi_2" npc-response="qrsp_246_2" object="npc:mh_redmokujin_0002" type="approach"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.246_3" required-register-value="1">
+				<case npc-response="qrsp_246_3" object="npc:CH_WB_YoungMook_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" desc="q_246_des_3" guide-message="gm_246_2" id="3">
+			<mission id="4" name2="Mission.Name2.246_4" required-register-value="3">
+				<tutorial-case object-1="npc:MH_BlueMokuJin_0004" object2-1="npc:MH_BlueMokuJin_0004" progress-mission="y" skill="Summoned_Summon_Tackle_Lv1" skill3="Summoned_Summon_Tackle_Lv1" type="skill"/>
+				<case object="zone:startzone_renew_minstrel" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_246_m3_indi_2" npc-response="qrsp_246_4" object="npc:MH_BlueMokuJin_0004" type="approach"/>
+				<tutorial-case object-1="npc:MH_BlueMokuJin_0004" object2-1="npc:MH_BlueMokuJin_0004" progress-mission="y" skill="Summoned_Summon_Tackle_Lv1_hid" skill3="Summoned_Summon_Tackle_Lv1_hid" type="skill"/>
+			</mission>
+			<mission id="5" name2="Mission.Name2.246_5" required-register-value="1">
+				<case npc-response="qrsp_246_5" object="npc:CH_WB_YoungMook_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest job-1="소환사" quest="q_epic_247"/>
+		</completion>
+		<transit id="1" zone="startzone_renew_blade">
+			<destination mission-step-id="3" zone-index="5"/>
+			<destination mission-step-id="2" zone-index="5"/>
+			<destination mission-step-id="1" zone-index="5"/>
+			<destination mission-step-id="4" zone-index="5"/>
+		</transit>
+		<mission-step completion-type="or" desc="q_246_des_4" guide-message="gm_246_3" id="4">
+			<mission id="6" name2="Mission.Name2.246_6" required-register-value="3">
+				<case object="zone:startzone_renew_minstrel" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_246_m4_indi_2" npc-response="qrsp_246_6" object="npc:MH_BlueMokuJin_0001" type="approach"/>
+				<tutorial-case object-1="npc:MH_BlueMokuJin_0001" object-2="npc:mh_redmokujin_0003" object-3="npc:mh_mokujin_0001" object2-1="npc:MH_BlueMokuJin_0001" object2-2="npc:mh_redmokujin_0003" object2-3="npc:mh_mokujin_0001" progress-mission="y" skill="Summoner_Summon_Drain_Lv1" skill3="Summoner_Summon_Drain_Lv1" target-effect-count="1" target-required-effect="Summoner_Summon_Ivy_Lv1_MoveBlock" type="skill"/>
+			</mission>
+			<mission id="7" name2="Mission.Name2.246_7" required-register-value="1">
+				<case npc-response="qrsp_246_7" object="npc:CH_YoungMook_0009" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

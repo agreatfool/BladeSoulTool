@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_430" broadcast-category="field" category="normal" desc="q_430_sum" district-1="jeryoungrim" grade="1" group2="QG_NokMyungCHN" id="430" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.430" save-type="all">
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.430_1" required-register-value="8">
+				<case looting="q_430_Quest_oil_barrel_1_icon" mapunit-1="Guide_NokMyungHoSu_s" mapunit-2="2608_me_belliedfirefrog_0001" mapunit-3="2608_me_belliedfirefrog_0001_1" mapunit-4="2608_me_belliedfirefrog_0001_2" mapunit-5="2608_me_belliedfirefrog_0001_3" mapunit-6="2608_me_belliedfirefrog_0001_4" object="npc:me_belliedfirefrog_0001" object2="npc:me_belliedfirefrog_0001" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.430_2" required-register-value="8">
+				<case looting="q_430_Grocery_wooden_horn_1_icon" mapunit-1="Guide_NokMyungHoSu_s" mapunit-2="2608_me_belliedfrog_0002" mapunit-3="2608_me_belliedfrog_0002_1" mapunit-4="2608_me_belliedfrog_0002_3" object="npc:me_belliedfrog_0002" object2="npc:me_belliedfrog_0002" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.430_3" required-register-value="1" reward-1="430_final_set1">
+				<case indicator-social="q_430_m2_indi_1" msg="q_430_m2" npc-response="qrsp_430_2" object="npc:ctzn_jinf_nokmyeonctzn_hajinhwa_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<acquisition level="12" preceding-quest-1="q_epic_311" preceding-quest-check="and" recommended-level="14">
+			<case acquire-quest="y" indicator-social="q_430_s_indi_1" msg="q_430_s" npc-response="qrsp_430_1" object="npc:ctzn_jinf_nokmyeonctzn_hajinhwa_001" type="talk"/>
+		</acquisition>
+	</quest>
+</table>

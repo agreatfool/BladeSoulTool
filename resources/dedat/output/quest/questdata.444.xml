@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_444" broadcast-category="field" category="normal" desc="q_444_sum" district-1="jeryoungrim" grade="1" group="제룡림(송암도)" group2="QG_SongAmDo" id="444" map-group-1-1="jeryoungrim" max-repeat="1" name="그들의 수련법" name2="Quest.Name2.444" save-type="all">
+		<acquisition level="14" preceding-quest-1="q_epic_496" preceding-quest-check="and" recommended-level="16">
+			<case acquire-quest="y" indicator-social="q_444_s_indi_1" msg="q_444_s" npc-response="qrsp_444_1" object="npc:ctzn_jinm_fisherman_annakin_001" progress-mission="n" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-7764.7422" location-y="35478.2813" map="songamdo">
+			<mission id="1" name="송암도에 있는 사냥꾼 낙고영과 대화" name2="Mission.Name2.444_1" required-register-value="1" reward-1="444_final_set1">
+				<case indicator-social="q_444_m1_indi_1" msg="q_444_m1" npc-response="qrsp_444_2" object="npc:ctzn_jinm_hunter_nakgoyoung_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

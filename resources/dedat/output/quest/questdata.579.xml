@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_579" broadcast-category="field" category="normal" desc="q_579_sum" district-1="deasamak" grade="1" group2="QG_ToMunJinNorth" id="579" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.579" save-type="all">
+		<acquisition level="22" preceding-quest-1="q_epic_506" preceding-quest-check="and" recommended-level="24">
+			<case acquire-quest="y" indicator-social="q_579_s_indi_1" msg="q_579_s" npc-response="qrsp_579_2" object="npc:ch_shaman_028" type="talk" visible-object="n"/>
+		</acquisition>
+		<mission-step desc="q_579_des_1" id="1" location-x="-38783.6797" location-y="-59263.3828" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.579_1" required-register-value="1">
+				<case object="npc:me_belliedfrog_0001" progress-mission="y" type="approach"/>
+				<case object="zone:zone_gagurigul" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_579_des_2" id="2" location-x="-38783.6797" location-y="-59263.3828" map="toemunjean">
+			<mission id="2" name2="Mission.Name2.579_2" required-register-value="1">
+				<case indicator-social="q_579_m2_indi_1" msg="q_579_m2" npc-response="qrsp_579_3" object="npc:me_belliedfrog_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_gagurigul" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_579_des_3" id="3" location-x="-38079.5938" location-y="-54654.8164" map="toemunjean">
+			<mission id="3" name2="Mission.Name2.579_3" required-register-value="1">
+				<case indicator-social="q_579_m3_indi_1" msg="q_579_m3" npc-response="qrsp_579_1" object="npc:ch_collector_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-31806.8242" location-y="-58559.293" map="toemunjean">
+			<mission id="4" name2="Mission.Name2.579_4" required-register-value="5">
+				<case looting="q_579_Grocery_white_gypsophila_elegans_1_icon" object="zoneenv:e_onoff_herbgrass_07" object2="zoneenv2:e_onoff_herbgrass_07" progress-mission="y" type="loot"/>
+				<case looting="q_579_Grocery_white_gypsophila_elegans_1_icon" object="zoneenv:e_onoff_herbgrass_06" object2="zoneenv2:e_onoff_herbgrass_06" progress-mission="y" type="loot"/>
+				<case looting="q_579_Grocery_white_gypsophila_elegans_1_icon" object="zoneenv:e_onoff_herbgrass_05" object2="zoneenv2:e_onoff_herbgrass_05" progress-mission="y" type="loot"/>
+				<case looting="q_579_Grocery_white_gypsophila_elegans_1_icon" object="zoneenv:e_onoff_herbgrass_04" object2="zoneenv2:e_onoff_herbgrass_04" progress-mission="y" type="loot"/>
+				<case looting="q_579_Grocery_white_gypsophila_elegans_1_icon" object="zoneenv:e_onoff_herbgrass_03" object2="zoneenv2:e_onoff_herbgrass_03" progress-mission="y" type="loot"/>
+				<case looting="q_579_Grocery_white_gypsophila_elegans_1_icon" object="zoneenv:e_onoff_herbgrass_02" object2="zoneenv2:e_onoff_herbgrass_02" progress-mission="y" type="loot"/>
+				<case looting="q_579_Grocery_white_gypsophila_elegans_1_icon" mapunit-1="3004_e_onoff_herbgrass_01" object="zoneenv:e_onoff_herbgrass_01" object2="zoneenv2:e_onoff_herbgrass_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_579_des_5" id="5" location-x="-38079.5938" location-y="-54654.8164" map="toemunjean">
+			<mission id="5" name2="Mission.Name2.579_5" required-register-value="1" reward-1="579_final_set1">
+				<case indicator-social="q_579_m5_indi_1" msg="q_579_m5" npc-response="qrsp_579_4" object="npc:ce_belliedfrog_004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

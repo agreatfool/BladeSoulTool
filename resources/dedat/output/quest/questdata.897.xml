@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_897" broadcast-category="field" category="normal" content-type="elite-skill" grade="1" group2="QG_Elite" id="897" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.897" save-type="all">
+		<acquisition job-1="역사" level="1" recommended-level="46">
+			<case acquire-quest="y" grocery="Quest_Scroll_EliteSkill_0048" item="Quest_Scroll_EliteSkill_0048" msg="q_897_1" type="talk-to-item"/>
+			<case acquire-quest="y" grocery="Quest_Scroll_EliteSkill_0104" item="Quest_Scroll_EliteSkill_0104" msg="q_897_1" type="talk-to-item"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.897_1" required-register-value="100">
+				<tutorial-case object-1="npc:ME_GuGuBung_0003" object2-1="npc:ME_GuGuBung_0003" progress-mission="y" skill-sequence="DE_PvE_EliteSkill_0048_Judgement_hit" type="skill-sequence"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.897_2" required-register-value="50">
+				<case npc="ME_FireGorilla_0001" progress-mission="y" progress-value="2" skill3-id-1="24001" skill3-id-10="24312" skill3-id-11="24313" skill3-id-2="24002" skill3-id-3="24003" skill3-id-4="24004" skill3-id-5="24005" skill3-id-6="24006" skill3-id-7="24007" skill3-id-8="24008" skill3-id-9="24311" type="finish-blow"/>
+				<case npc="MH_ORakDang_0030" progress-mission="y" skill3-id-1="24001" skill3-id-10="24312" skill3-id-11="24313" skill3-id-2="24002" skill3-id-3="24003" skill3-id-4="24004" skill3-id-5="24005" skill3-id-6="24006" skill3-id-7="24007" skill3-id-8="24008" skill3-id-9="24311" type="finish-blow"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.897_3" required-register-value="50">
+				<case npc="ME_NakWonDaeSung_0002" progress-mission="y" progress-value="2" skill3-id-1="24001" skill3-id-10="24312" skill3-id-11="24313" skill3-id-2="24002" skill3-id-3="24003" skill3-id-4="24004" skill3-id-5="24005" skill3-id-6="24006" skill3-id-7="24007" skill3-id-8="24008" skill3-id-9="24311" type="finish-blow"/>
+				<case npc="MH_JungYun_0001" progress-mission="y" show-in-tooltip="n" skill3-id-1="24001" skill3-id-10="24312" skill3-id-11="24313" skill3-id-2="24002" skill3-id-3="24003" skill3-id-4="24004" skill3-id-5="24005" skill3-id-6="24006" skill3-id-7="24007" skill3-id-8="24008" skill3-id-9="24311" type="finish-blow"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.897_4" required-register-value="10">
+				<case npc="ME_SpiderQueen_0001" progress-mission="y" skill3-id-1="24001" skill3-id-10="24312" skill3-id-11="24313" skill3-id-2="24002" skill3-id-3="24003" skill3-id-4="24004" skill3-id-5="24005" skill3-id-6="24006" skill3-id-7="24007" skill3-id-8="24008" skill3-id-9="24311" type="finish-blow"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

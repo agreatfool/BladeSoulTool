@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_818" broadcast-category="field" category="normal" day-of-week="none" desc="q_818_sum" grade="1" group2="QG_ZazakWoodEast" id="818" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.818" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="n" level="46" preceding-quest-1="q_epic_282" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="48">
+			<case acquire-quest="y" completion-count="0" completion-count-op="ge" npc-response="qrsp_818_1" object="npc:CH_CT_GolAPa_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.818_1" required-register-value="1">
+				<case object="zoneenv:e_chest_table_03" object2="zoneenv2:e_chest_table_03" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_table_02" object2="zoneenv2:e_chest_table_02" progress-mission="y" type="manipulate"/>
+				<case mapunit-1="5200_e_chest_table_01_s818" object="zoneenv:e_chest_table_01" object2="zoneenv2:e_chest_table_01" progress-mission="y" type="manipulate"/>
+				<case npc-response="qrsp_818_4" object="npc:CH_CT_Mercenary_0004" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.818_2" required-register-value="1">
+				<case npc-response="qrsp_818_6" object-1="npc:ch_ct_makyori_0001" object2-1="npc:ch_ct_makyori_0001" progress-mission="y" skill="Gadget_Q_WaterPot_0001" skill3="Gadget_Q_WaterPot_0001" type="skill"/>
+				<case mapunit-1="5200_e_Chest_waterjar_01_s818" object="zoneenv:e_Chest_waterjar_01" object2="zoneenv2:e_Chest_waterjar_01" progress-mission="reaction-only" type="manipulate"/>
+				<case npc-response="qrsp_818_5" object="npc:CH_CT_Mercenary_0004" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.818_3" required-register-value="1">
+				<case npc-response="qrsp_818_8" object="npc:CH_CT_Citizen_0361" object2="npc:CH_CT_Citizen_0361" progress-mission="y" social="talksocial_anger" type="pc-social"/>
+				<case npc-response="qrsp_818_7" object="npc:CH_CT_MakYoRi_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.818_4" required-register-value="1">
+				<case npc-response="qrsp_818_3" object="npc:ch_ct_mercenary_0007" progress-mission="y" type="talk"/>
+				<case object="zone:zone_borderoffice" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_818_9" object="npc:CH_CT_Citizen_0361" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" time-limit="20" time-limit-type="until">
+			<mission id="5" name2="Mission.Name2.818_5" required-register-value="1">
+				<case object="npc:ch_ct_mercenary_0007" progress-mission="y" type="npc-bleeding-occured"/>
+			</mission>
+			<mission-step-fail rollback-step-id="4"/>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.818_6" required-register-value="1" reward-1="818_final_set1">
+				<case completion-count="0" completion-count-op="ge" npc-response="qrsp_818_2" object="npc:CH_CT_GolAPa_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

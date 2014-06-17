@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="gang2_chungkak" alias="q_sub_479" broadcast-category="field" category="normal" desc="q_479_sum" district-1="jeryoungrim" grade="1" group2="QG_Geoamgol" id="479" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.479" save-type="all">
+		<mission-step id="1" map="songamdo">
+			<mission id="1" name2="Mission.Name2.479_1" required-register-value="1" reward-1="479_final_set1">
+				<case acquire-quest="n" grocery="quest_scroll_jeryunglim_0013" npc-response="qrsp_479_2" object="npc:ch_faction_0004" progress-mission="y" remove-grocery="n" type="talk" visible-object="y">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="gang2_chungkak"/>
+					</filter-set>
+				</case>
+				<completion-loss item-1="quest_scroll_jeryunglim_0013"/>
+			</mission>
+		</mission-step>
+		<acquisition level="18" preceding-quest-check="and" recommended-level="20">
+			<case acquire-quest="y" item="quest_scroll_jeryunglim_0013" msg="q_479_s" progress-mission="n" type="talk-to-item"/>
+			<case acquire-quest="n" loot-item="quest_scroll_jeryunglim_0013" looting="q_480_Quest_old_letter_1_icon" object="npc:ch_factiona_guard_0031" object2="npc:ch_factiona_guard_0031" type="loot">
+				<filter-set>
+					<filter subject="case:loot:pc" subject2="case:loot:pc" type="active-faction" value="gang2_chungkak"/>
+				</filter-set>
+			</case>
+			<case acquire-quest="n" loot-item="quest_scroll_jeryunglim_0013" looting="q_480_Quest_old_letter_1_icon" object="npc:ch_jakyeongdan_0001" object2="npc:ch_jakyeongdan_0001" type="loot">
+				<filter-set>
+					<filter subject="case:loot:pc" subject2="case:loot:pc" type="active-faction" value="gang2_chungkak"/>
+				</filter-set>
+			</case>
+			<case acquire-quest="n" loot-item="quest_scroll_jeryunglim_0013" looting="q_480_Quest_old_letter_1_icon" object="npc:ch_docheonpung_0004" object2="npc:ch_docheonpung_0004" type="loot">
+				<filter-set>
+					<filter subject="case:loot:pc" subject2="case:loot:pc" type="active-faction" value="gang2_chungkak"/>
+				</filter-set>
+			</case>
+			<case acquire-quest="n" loot-item="quest_scroll_jeryunglim_0013" looting="q_480_Quest_old_letter_1_icon" object="npc:CH_jakyeongDan_0002" object2="npc:CH_jakyeongDan_0002" type="loot">
+				<filter-set>
+					<filter subject="case:loot:pc" subject2="case:loot:pc" type="active-faction" value="gang2_chungkak"/>
+				</filter-set>
+			</case>
+			<case loot-item="quest_scroll_jeryunglim_0013" looting="q_480_Quest_old_letter_1_icon" object="npc:ch_jakyeongdan_0003" object2="npc:ch_jakyeongdan_0003" type="loot">
+				<filter-set>
+					<filter subject="case:loot:pc" subject2="case:loot:pc" type="active-faction" value="gang2_chungkak"/>
+				</filter-set>
+			</case>
+			<case loot-item="quest_scroll_jeryunglim_0013" looting="q_480_Quest_old_letter_1_icon" object="npc:ch_jakyeongdan_0004" object2="npc:ch_jakyeongdan_0004" type="loot">
+				<filter-set>
+					<filter subject="case:loot:pc" subject2="case:loot:pc" type="active-faction" value="gang2_chungkak"/>
+				</filter-set>
+			</case>
+			<case loot-item="quest_scroll_jeryunglim_0013" looting="q_480_Quest_old_letter_1_icon" object="npc:ch_jakyeongdan_0005" object2="npc:ch_jakyeongdan_0005" type="loot">
+				<filter-set>
+					<filter subject="case:loot:pc" subject2="case:loot:pc" type="active-faction" value="gang2_chungkak"/>
+				</filter-set>
+			</case>
+			<case loot-item="quest_scroll_jeryunglim_0013" looting="q_480_Quest_old_letter_1_icon" object="npc:ch_jakyeongdan_0006" object2="npc:ch_jakyeongdan_0006" type="loot">
+				<filter-set>
+					<filter subject="case:loot:pc" subject2="case:loot:pc" type="active-faction" value="gang2_chungkak"/>
+				</filter-set>
+			</case>
+			<case loot-item="quest_scroll_jeryunglim_0013" looting="q_480_Quest_old_letter_1_icon" object="npc:ch_jakyeongdan_0007" object2="npc:ch_jakyeongdan_0007" type="loot">
+				<filter-set>
+					<filter subject="case:loot:pc" subject2="case:loot:pc" type="active-faction" value="gang2_chungkak"/>
+				</filter-set>
+			</case>
+			<case loot-item="quest_scroll_jeryunglim_0013" looting="q_480_Quest_old_letter_1_icon" object="npc:ch_jakyeongdan_0008" object2="npc:ch_jakyeongdan_0008" type="loot">
+				<filter-set>
+					<filter subject="case:loot:pc" subject2="case:loot:pc" type="active-faction" value="gang2_chungkak"/>
+				</filter-set>
+			</case>
+			<case loot-item="quest_scroll_jeryunglim_0013" looting="q_480_Quest_old_letter_1_icon" object="npc:ch_jakyeongdan_0009" object2="npc:ch_jakyeongdan_0009" type="loot">
+				<filter-set>
+					<filter subject="case:loot:pc" subject2="case:loot:pc" type="active-faction" value="gang2_chungkak"/>
+				</filter-set>
+			</case>
+			<case loot-item="quest_scroll_jeryunglim_0013" looting="q_480_Quest_old_letter_1_icon" object="npc:ch_jakyeongdan_0010" object2="npc:ch_jakyeongdan_0010" type="loot">
+				<filter-set>
+					<filter subject="case:loot:pc" subject2="case:loot:pc" type="active-faction" value="gang2_chungkak"/>
+				</filter-set>
+			</case>
+		</acquisition>
+		<giveup-loss item-1="quest_scroll_jeryunglim_0013"/>
+	</quest>
+</table>

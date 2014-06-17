@@ -1,0 +1,1226 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="CombatData" release-mversion="0.0.0.1" release-side="client" version="0.1">
+	<contextscript job="귀검사">
+		<stance link="mount">
+			<layer>
+				<decision>
+					<condition skill="27139"/>
+					<result control-mode="classic" skillbar-2="27139"/>
+					<result control-mode="bns" skillbar-2="27139"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<result control-mode="classic" skillbar-2="27143"/>
+					<result control-mode="bns" skillbar-2="27143"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27729"/>
+					<result control-mode="classic" stance="27729"/>
+					<result control-mode="bns" stance="27729"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<result control-mode="classic" skillbar-1="501" skillbar-2="501" skillbar-3="501" skillbar-4="501"/>
+					<result control-mode="bns" skillbar-1="501" skillbar-2="501" skillbar-3="501" skillbar-4="501"/>
+				</decision>
+			</layer>
+		</stance>
+		<stance abnormal-flag="swoon">
+			<layer>
+				<decision>
+					<condition skill="27129"/>
+					<result control-mode="classic" stance="27129"/>
+					<result control-mode="bns" stance="27129"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27151"/>
+					<result context-3="27151" control-mode="classic" skillbar-ui-effect="key-change"/>
+					<result context-3="27151" control-mode="bns" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<result control-mode="classic" skillbar-1="501" skillbar-2="501" skillbar-3="501" skillbar-4="501"/>
+					<result control-mode="bns" skillbar-1="501" skillbar-2="501" skillbar-3="501" skillbar-4="501"/>
+				</decision>
+			</layer>
+		</stance>
+		<stance abnormal-flag="kneel">
+			<layer>
+				<decision>
+					<condition skill="27129"/>
+					<result control-mode="classic" stance="27129"/>
+					<result control-mode="bns" stance="27129"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27151"/>
+					<result context-3="27151" control-mode="classic" skillbar-ui-effect="key-change"/>
+					<result context-3="27151" control-mode="bns" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<result control-mode="classic" skillbar-1="501" skillbar-2="501" skillbar-3="501" skillbar-4="501"/>
+					<result control-mode="bns" skillbar-1="501" skillbar-2="501" skillbar-3="501" skillbar-4="501"/>
+				</decision>
+			</layer>
+		</stance>
+		<stance abnormal-flag="down">
+			<layer>
+				<decision>
+					<condition skill="27129"/>
+					<result control-mode="classic" stance="27129"/>
+					<result control-mode="bns" stance="27129"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27151"/>
+					<result context-3="27151" control-mode="classic" skillbar-ui-effect="key-change"/>
+					<result context-3="27151" control-mode="bns" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<result control-mode="classic" skillbar-1="27117" skillbar-2="27152" skillbar-ui-effect="key-change"/>
+					<result control-mode="bns" skillbar-1="27117" skillbar-2="27152" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<result control-mode="classic" skillbar-1="501" skillbar-2="501" skillbar-3="501" skillbar-4="501"/>
+					<result control-mode="bns" skillbar-1="501" skillbar-2="501" skillbar-3="501" skillbar-4="501"/>
+				</decision>
+			</layer>
+		</stance>
+		<stance abnormal-flag="stun">
+			<layer>
+				<decision>
+					<condition skill="27129"/>
+					<result control-mode="classic" stance="27129"/>
+					<result control-mode="bns" stance="27129"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<result control-mode="classic" skillbar-1="501" skillbar-2="501" skillbar-3="501" skillbar-4="501"/>
+					<result control-mode="bns" skillbar-1="501" skillbar-2="501" skillbar-3="501" skillbar-4="501"/>
+				</decision>
+			</layer>
+		</stance>
+		<stance link="inhalation-catch">
+			<layer>
+				<decision>
+					<condition skill="27929"/>
+					<result control-mode="classic" skillbar-ui-effect="key-change" stance="27929"/>
+					<result control-mode="bns" skillbar-ui-effect="key-change" stance="27929"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27133"/>
+					<result control-mode="classic" skillbar-1="27133" skillbar-ui-effect="key-change"/>
+					<result control-mode="bns" skillbar-1="27133" skillbar-ui-effect="key-change"/>
+				</decision>
+				<decision>
+					<condition skill="27201"/>
+					<result control-mode="classic" skillbar-1="27201" skillbar-ui-effect="key-change"/>
+					<result control-mode="bns" skillbar-1="27201" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27374"/>
+					<result control-mode="bns" skillbar-2="27374" skillbar-ui-effect="combo"/>
+					<result control-mode="classic" skillbar-2="27374" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27371"/>
+					<result control-mode="bns" skillbar-2="27371" skillbar-ui-effect="combo"/>
+					<result control-mode="classic" skillbar-2="27371" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27136"/>
+					<result control-mode="classic" skillbar-2="27136"/>
+					<result control-mode="bns" skillbar-2="27136"/>
+				</decision>
+				<decision>
+					<condition skill="27155"/>
+					<result control-mode="classic" skillbar-2="27155"/>
+					<result control-mode="bns" skillbar-2="27155"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27202"/>
+					<result control-mode="classic" skillbar-3="27202" skillbar-ui-effect="key-change"/>
+					<result control-mode="bns" skillbar-3="27202" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27203"/>
+					<result control-mode="classic" skillbar-6="27203" skillbar-ui-effect="key-change"/>
+					<result control-mode="bns" skillbar-6="27203" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27311"/>
+					<result context-3="27311" control-mode="bns" skillbar-ui-effect="key-change"/>
+					<result context-3="27311" control-mode="classic" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27326"/>
+					<result context-1="27326" control-mode="classic" skillbar-ui-effect="key-change"/>
+					<result context-1="27326" control-mode="bns" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27325"/>
+					<result context-2="27325" control-mode="classic" skillbar-ui-effect="key-change"/>
+					<result context-2="27325" control-mode="bns" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27310"/>
+					<result context-1="27310" control-mode="classic" skillbar-ui-effect="key-change"/>
+					<result context-1="27310" control-mode="bns" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27302"/>
+					<result context-2="27302" control-mode="classic" skillbar-ui-effect="key-change"/>
+					<result context-2="27302" control-mode="bns" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27330"/>
+					<result control-mode="classic" skillbar-5="27330" skillbar-ui-effect="key-change"/>
+					<result control-mode="bns" skillbar-5="27330" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27272"/>
+					<result cmd-key-left="27272" control-mode="classic"/>
+					<result cmd-key-left="27272" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27273"/>
+					<result cmd-key-right="27273" control-mode="classic"/>
+					<result cmd-key-right="27273" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27168"/>
+					<result cmd-key-down="27168" control-mode="classic"/>
+					<result cmd-key-down="27168" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27140"/>
+					<result control-mode="classic" skillbar-2="27140"/>
+					<result control-mode="bns" skillbar-2="27140"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<result cmd-key-left="27165" cmd-key-right="27164" control-mode="classic" skillbar-1="501" skillbar-2="27155" skillbar-3="501" skillbar-4="501" skillbar-5="501" skillbar-6="501" skillbar-7="501" skillbar-8="501"/>
+					<result cmd-key-left="27165" cmd-key-right="27164" control-mode="bns" skillbar-1="501" skillbar-2="27155" skillbar-3="501" skillbar-4="501" skillbar-5="501" skillbar-6="501" skillbar-7="501" skillbar-8="501"/>
+				</decision>
+			</layer>
+		</stance>
+		<stance link="catch-none-human">
+			<layer>
+				<decision>
+					<condition skill="27361"/>
+					<result context-3="27361" control-mode="bns" skillbar-ui-effect="key-change"/>
+					<result context-3="27361" control-mode="classic" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27356"/>
+					<result context-1="27356" control-mode="classic" skillbar-ui-effect="key-change"/>
+					<result context-1="27356" control-mode="bns" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27355"/>
+					<result context-2="27355" control-mode="classic" skillbar-ui-effect="key-change"/>
+					<result context-2="27355" control-mode="bns" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27350"/>
+					<result context-1="27350" control-mode="classic" skillbar-ui-effect="key-change"/>
+					<result context-1="27350" control-mode="bns" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27342"/>
+					<result context-2="27342" control-mode="classic" skillbar-ui-effect="key-change"/>
+					<result context-2="27342" control-mode="bns" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27360"/>
+					<result control-mode="classic" skillbar-5="27360" skillbar-ui-effect="key-change"/>
+					<result control-mode="bns" skillbar-5="27360" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27274"/>
+					<result cmd-key-left="27274" control-mode="classic"/>
+					<result cmd-key-left="27274" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27275"/>
+					<result cmd-key-right="27275" control-mode="classic"/>
+					<result cmd-key-right="27275" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27268"/>
+					<result cmd-key-down="27268" control-mode="classic"/>
+					<result cmd-key-down="27268" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27375"/>
+					<result control-mode="bns" skillbar-2="27375" skillbar-ui-effect="combo"/>
+					<result control-mode="classic" skillbar-2="27375" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27372"/>
+					<result control-mode="bns" skillbar-2="27372" skillbar-ui-effect="combo"/>
+					<result control-mode="classic" skillbar-2="27372" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<result cmd-key-left="27171" cmd-key-right="27170" control-mode="classic" skillbar-1="27211" skillbar-2="27255" skillbar-3="27212" skillbar-4="501" skillbar-5="501" skillbar-6="27213" skillbar-7="501" skillbar-8="501"/>
+					<result cmd-key-left="27171" cmd-key-right="27170" control-mode="bns" skillbar-1="27211" skillbar-2="27255" skillbar-3="27212" skillbar-4="501" skillbar-5="501" skillbar-6="27213" skillbar-7="501" skillbar-8="501"/>
+				</decision>
+			</layer>
+		</stance>
+		<stance link="catch">
+			<layer>
+				<decision>
+					<condition skill="27829"/>
+					<result control-mode="classic" skillbar-ui-effect="key-change" stance="27829"/>
+					<result control-mode="bns" skillbar-ui-effect="key-change" stance="27829"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27137"/>
+					<result control-mode="classic" skillbar-2="27137"/>
+					<result control-mode="bns" skillbar-2="27137"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<result control-mode="classic" skillbar-1="27134" skillbar-2="27141"/>
+					<result control-mode="bns" skillbar-1="27134" skillbar-2="27141"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<result control-mode="classic" skillbar-1="501" skillbar-2="501" skillbar-3="501" skillbar-4="501"/>
+					<result control-mode="bns" skillbar-1="501" skillbar-2="501" skillbar-3="501" skillbar-4="501"/>
+				</decision>
+			</layer>
+		</stance>
+		<stance link="inhalation">
+			<layer>
+				<decision>
+					<condition skill="27138"/>
+					<result control-mode="classic" skillbar-2="27138"/>
+					<result control-mode="bns" skillbar-2="27138"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<result control-mode="classic" skillbar-1="27135" skillbar-2="27142"/>
+					<result control-mode="bns" skillbar-1="27135" skillbar-2="27142"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<result control-mode="classic" skillbar-1="501" skillbar-2="501" skillbar-3="501" skillbar-4="501"/>
+					<result control-mode="bns" skillbar-1="501" skillbar-2="501" skillbar-3="501" skillbar-4="501"/>
+				</decision>
+			</layer>
+		</stance>
+		<stance stance="검술" status="stance">
+			<layer>
+				<decision>
+					<condition skill="27150"/>
+					<result context-3="27150" control-mode="classic"/>
+					<result context-3="27150" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27132"/>
+					<result context-2="27132" context-ui-effect="key-change" control-mode="classic"/>
+					<result context-2="27132" context-ui-effect="key-change" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27130"/>
+					<result context-1="27130" context-ui-effect="key-change" control-mode="classic"/>
+					<result context-1="27130" context-ui-effect="key-change" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27131"/>
+					<result context-1="27131" context-ui-effect="key-change" control-mode="classic"/>
+					<result context-1="27131" context-ui-effect="key-change" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27121"/>
+					<result context-1="27121" context-2="27122" context-ui-effect="event" control-mode="classic"/>
+					<result context-1="27121" context-2="27122" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+				<decision>
+					<condition skill="27122"/>
+					<result context-1="27121" context-2="27122" context-ui-effect="event" control-mode="classic"/>
+					<result context-1="27121" context-2="27122" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27120"/>
+					<result context-1="27120" context-2="27127" context-ui-effect="event" control-mode="classic"/>
+					<result context-1="27120" context-2="27127" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+				<decision>
+					<condition skill="27127"/>
+					<result context-1="27120" context-2="27127" context-ui-effect="event" control-mode="classic"/>
+					<result context-1="27120" context-2="27127" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27110"/>
+					<result context-3="27110" context-ui-effect="event" control-mode="classic"/>
+					<result context-3="27110" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27192"/>
+					<result context-2="27192" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27192" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27125"/>
+					<result context-2="27125" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27125" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27191"/>
+					<result context-2="27191" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27191" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27190"/>
+					<result context-2="27190" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27190" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27124"/>
+					<result context-2="27124" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27124" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27180"/>
+					<result context-2="27180" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27180" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27108"/>
+					<result context-2="27108" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27108" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27107"/>
+					<result context-2="27107" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27107" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27106"/>
+					<result context-2="27106" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27106" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27105"/>
+					<result context-2="27105" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27105" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27210"/>
+					<result context-1="27210" control-mode="classic"/>
+					<result context-1="27210" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27195"/>
+					<result context-1="27195" context-ui-effect="combo" control-mode="classic"/>
+					<result context-1="27195" context-ui-effect="combo" control-mode="bns"/>
+				</decision>
+				<decision>
+					<condition skill="27194"/>
+					<result context-1="27194" context-ui-effect="combo" control-mode="classic"/>
+					<result context-1="27194" context-ui-effect="combo" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27193"/>
+					<result context-1="27193" control-mode="classic"/>
+					<result context-1="27193" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27101"/>
+					<result context-1="27101" context-ui-effect="combo" control-mode="classic"/>
+					<result context-1="27101" context-ui-effect="combo" control-mode="bns"/>
+				</decision>
+				<decision>
+					<condition skill="27102"/>
+					<result context-1="27102" context-ui-effect="combo" control-mode="classic"/>
+					<result context-1="27102" context-ui-effect="combo" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27100"/>
+					<result context-1="27100" control-mode="classic"/>
+					<result context-1="27100" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27149"/>
+					<result control-mode="classic" skillbar-8="27149" skillbar-ui-effect="combo"/>
+					<result control-mode="bns" skillbar-8="27149" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27146"/>
+					<result control-mode="classic" skillbar-8="27146" skillbar-ui-effect="combo"/>
+					<result control-mode="bns" skillbar-8="27146" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27145"/>
+					<result control-mode="classic" skillbar-8="27145" skillbar-ui-effect="combo"/>
+					<result control-mode="bns" skillbar-8="27145" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27144"/>
+					<result control-mode="classic" skillbar-8="27144"/>
+					<result control-mode="bns" skillbar-8="27144"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27119"/>
+					<result context-3="27119" context-ui-effect="event" control-mode="classic"/>
+					<result context-3="27119" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27305"/>
+					<result control-mode="classic" skillbar-2="27305"/>
+					<result control-mode="bns" skillbar-2="27305"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27324"/>
+					<result control-mode="classic" skillbar-1="27324"/>
+					<result control-mode="bns" skillbar-1="27324"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27323"/>
+					<result control-mode="classic" skillbar-1="27323"/>
+					<result control-mode="bns" skillbar-1="27323"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27301"/>
+					<result control-mode="classic" skillbar-1="27301"/>
+					<result control-mode="bns" skillbar-1="27301"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27300"/>
+					<result control-mode="classic" skillbar-1="27300"/>
+					<result control-mode="bns" skillbar-1="27300"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27112"/>
+					<result control-mode="classic" skillbar-1="27112"/>
+					<result control-mode="bns" skillbar-1="27112"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27204"/>
+					<result control-mode="bns" skillbar-4="27204"/>
+					<result control-mode="classic" skillbar-4="27204"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27205"/>
+					<result control-mode="bns" skillbar-4="27205"/>
+					<result control-mode="classic" skillbar-4="27205"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27200"/>
+					<result control-mode="bns" skillbar-4="27200"/>
+					<result control-mode="classic" skillbar-4="27200"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27206"/>
+					<result control-mode="bns" skillbar-4="27206"/>
+					<result control-mode="classic" skillbar-4="27206"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27207"/>
+					<result control-mode="bns" skillbar-4="27207"/>
+					<result control-mode="classic" skillbar-4="27207"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27208"/>
+					<result control-mode="bns" skillbar-4="27208"/>
+					<result control-mode="classic" skillbar-4="27208"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27309"/>
+					<result context-3="27309" control-mode="bns" skillbar-ui-effect="key-change"/>
+					<result context-3="27309" control-mode="classic" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27307"/>
+					<result context-3="27307" control-mode="bns" skillbar-ui-effect="key-change"/>
+					<result context-3="27307" control-mode="classic" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27304"/>
+					<result control-mode="bns" skillbar-5="27304"/>
+					<result control-mode="classic" skillbar-5="27304"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27148"/>
+					<result control-mode="bns" skillbar-7="27148" skillbar-ui-effect="combo"/>
+					<result control-mode="classic" skillbar-7="27148" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27156"/>
+					<result control-mode="bns" skillbar-7="27156"/>
+					<result control-mode="classic" skillbar-7="27156"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27147"/>
+					<result control-mode="bns" skillbar-7="27147" skillbar-ui-effect="combo"/>
+					<result control-mode="classic" skillbar-7="27147" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27373"/>
+					<result control-mode="bns" skillbar-2="27373" skillbar-ui-effect="combo"/>
+					<result control-mode="classic" skillbar-2="27373" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27370"/>
+					<result control-mode="bns" skillbar-2="27370" skillbar-ui-effect="combo"/>
+					<result control-mode="classic" skillbar-2="27370" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27128"/>
+					<result control-mode="bns" skillbar-3="27128" skillbar-ui-effect="combo"/>
+					<result control-mode="classic" skillbar-3="27128" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27116"/>
+					<result control-mode="bns" skillbar-3="27116" skillbar-ui-effect="combo"/>
+					<result control-mode="classic" skillbar-3="27116" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27270"/>
+					<result cmd-key-right="27270" control-mode="bns" skillbar-ui-effect="combo"/>
+					<result cmd-key-right="27270" control-mode="classic" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27271"/>
+					<result cmd-key-left="27271" control-mode="bns" skillbar-ui-effect="combo"/>
+					<result cmd-key-left="27271" control-mode="classic" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<result cmd-key-down="27118" cmd-key-left="27115" cmd-key-right="27114" context-1="27100" context-2="27104" control-mode="classic" skillbar-1="27109" skillbar-2="27111" skillbar-3="27113" skillbar-4="27200" skillbar-5="27304" skillbar-6="27407" skillbar-7="27126" skillbar-8="27144" stance="27103"/>
+					<result cmd-key-down="27118" cmd-key-left="27115" cmd-key-right="27114" context-1="27100" context-2="27104" control-mode="bns" skillbar-1="27109" skillbar-2="27111" skillbar-3="27113" skillbar-4="27200" skillbar-5="27304" skillbar-6="27407" skillbar-7="27126" skillbar-8="27144" stance="27103"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<result control-mode="classic" skillbar-1="501" skillbar-2="501" skillbar-3="501" skillbar-4="501"/>
+					<result control-mode="bns" skillbar-1="501" skillbar-2="501" skillbar-3="501" skillbar-4="501"/>
+				</decision>
+			</layer>
+		</stance>
+		<stance stance="발도" status="stance">
+			<layer>
+				<decision>
+					<condition skill="27150"/>
+					<result context-3="27150" control-mode="classic"/>
+					<result context-3="27150" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27132"/>
+					<result context-2="27132" context-ui-effect="key-change" control-mode="classic"/>
+					<result context-2="27132" context-ui-effect="key-change" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27130"/>
+					<result context-1="27130" context-ui-effect="key-change" control-mode="classic"/>
+					<result context-1="27130" context-ui-effect="key-change" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27131"/>
+					<result context-1="27131" context-ui-effect="key-change" control-mode="classic"/>
+					<result context-1="27131" context-ui-effect="key-change" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27121"/>
+					<result context-1="27121" context-2="27122" context-ui-effect="event" control-mode="classic"/>
+					<result context-1="27121" context-2="27122" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+				<decision>
+					<condition skill="27122"/>
+					<result context-1="27121" context-2="27122" context-ui-effect="event" control-mode="classic"/>
+					<result context-1="27121" context-2="27122" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27120"/>
+					<result context-1="27120" context-2="27127" context-ui-effect="event" control-mode="classic"/>
+					<result context-1="27120" context-2="27127" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+				<decision>
+					<condition skill="27127"/>
+					<result context-1="27120" context-2="27127" context-ui-effect="event" control-mode="classic"/>
+					<result context-1="27120" context-2="27127" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27192"/>
+					<result context-2="27192" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27192" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27125"/>
+					<result context-2="27125" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27125" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27191"/>
+					<result context-2="27191" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27191" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27190"/>
+					<result context-2="27190" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27190" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27124"/>
+					<result context-2="27124" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27124" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27180"/>
+					<result context-2="27180" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27180" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27108"/>
+					<result context-2="27108" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27108" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27107"/>
+					<result context-2="27107" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27107" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27106"/>
+					<result context-2="27106" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27106" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27105"/>
+					<result context-2="27105" context-ui-effect="event" control-mode="classic"/>
+					<result context-2="27105" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27119"/>
+					<result context-3="27119" context-ui-effect="event" control-mode="classic"/>
+					<result context-3="27119" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27406"/>
+					<result context-3="27406" context-ui-effect="event" control-mode="classic"/>
+					<result context-3="27406" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27405"/>
+					<result context-3="27405" context-ui-effect="event" control-mode="classic"/>
+					<result context-3="27405" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27404"/>
+					<result context-3="27404" context-ui-effect="event" control-mode="classic"/>
+					<result context-3="27404" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27501"/>
+					<result context-1="27501" context-ui-effect="event" control-mode="classic"/>
+					<result context-1="27501" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27500"/>
+					<result context-1="27500" context-ui-effect="event" control-mode="classic"/>
+					<result context-1="27500" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27403"/>
+					<result context-1="27403" context-ui-effect="event" control-mode="classic"/>
+					<result context-1="27403" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27402"/>
+					<result context-1="27402" context-ui-effect="event" control-mode="classic"/>
+					<result context-1="27402" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27401"/>
+					<result context-1="27401" context-ui-effect="event" control-mode="classic"/>
+					<result context-1="27401" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27400"/>
+					<result context-1="27400" context-ui-effect="event" control-mode="classic"/>
+					<result context-1="27400" context-ui-effect="event" control-mode="bns"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27149"/>
+					<result control-mode="classic" skillbar-8="27149" skillbar-ui-effect="combo"/>
+					<result control-mode="bns" skillbar-8="27149" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27146"/>
+					<result control-mode="classic" skillbar-8="27146" skillbar-ui-effect="combo"/>
+					<result control-mode="bns" skillbar-8="27146" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27145"/>
+					<result control-mode="classic" skillbar-8="27145" skillbar-ui-effect="combo"/>
+					<result control-mode="bns" skillbar-8="27145" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27144"/>
+					<result control-mode="classic" skillbar-8="27144"/>
+					<result control-mode="bns" skillbar-8="27144"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27306"/>
+					<result control-mode="classic" skillbar-2="27306"/>
+					<result control-mode="bns" skillbar-2="27306"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27328"/>
+					<result control-mode="classic" skillbar-1="27328"/>
+					<result control-mode="bns" skillbar-1="27328"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27327"/>
+					<result control-mode="classic" skillbar-1="27327"/>
+					<result control-mode="bns" skillbar-1="27327"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27322"/>
+					<result control-mode="classic" skillbar-1="27322"/>
+					<result control-mode="bns" skillbar-1="27322"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27321"/>
+					<result control-mode="classic" skillbar-1="27321"/>
+					<result control-mode="bns" skillbar-1="27321"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27112"/>
+					<result control-mode="classic" skillbar-1="27112"/>
+					<result control-mode="bns" skillbar-1="27112"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27204"/>
+					<result control-mode="bns" skillbar-4="27204"/>
+					<result control-mode="classic" skillbar-4="27204"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27205"/>
+					<result control-mode="bns" skillbar-4="27205"/>
+					<result control-mode="classic" skillbar-4="27205"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27200"/>
+					<result control-mode="bns" skillbar-4="27200"/>
+					<result control-mode="classic" skillbar-4="27200"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27206"/>
+					<result control-mode="bns" skillbar-4="27206"/>
+					<result control-mode="classic" skillbar-4="27206"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27207"/>
+					<result control-mode="bns" skillbar-4="27207"/>
+					<result control-mode="classic" skillbar-4="27207"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27208"/>
+					<result control-mode="bns" skillbar-4="27208"/>
+					<result control-mode="classic" skillbar-4="27208"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27312"/>
+					<result context-3="27312" control-mode="bns" skillbar-ui-effect="key-change"/>
+					<result context-3="27312" control-mode="classic" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27308"/>
+					<result context-3="27308" control-mode="bns" skillbar-ui-effect="key-change"/>
+					<result context-3="27308" control-mode="classic" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27913"/>
+					<result context-3="27913" control-mode="bns" skillbar-ui-effect="key-change"/>
+					<result context-3="27913" control-mode="classic" skillbar-ui-effect="key-change"/>
+				</decision>
+				<decision>
+					<condition skill="27912"/>
+					<result context-3="27912" control-mode="bns" skillbar-ui-effect="key-change"/>
+					<result context-3="27912" control-mode="classic" skillbar-ui-effect="key-change"/>
+				</decision>
+				<decision>
+					<condition skill="27917"/>
+					<result context-3="27917" control-mode="bns" skillbar-ui-effect="key-change"/>
+					<result context-3="27917" control-mode="classic" skillbar-ui-effect="key-change"/>
+				</decision>
+				<decision>
+					<condition skill="27916"/>
+					<result context-3="27916" control-mode="bns" skillbar-ui-effect="key-change"/>
+					<result context-3="27916" control-mode="classic" skillbar-ui-effect="key-change"/>
+				</decision>
+				<decision>
+					<condition skill="27911"/>
+					<result context-3="27911" control-mode="bns" skillbar-ui-effect="key-change"/>
+					<result context-3="27911" control-mode="classic" skillbar-ui-effect="key-change"/>
+				</decision>
+				<decision>
+					<condition skill="27910"/>
+					<result context-3="27910" control-mode="bns" skillbar-ui-effect="key-change"/>
+					<result context-3="27910" control-mode="classic" skillbar-ui-effect="key-change"/>
+				</decision>
+				<decision>
+					<condition skill="27909"/>
+					<result context-3="27909" control-mode="bns" skillbar-ui-effect="key-change"/>
+					<result context-3="27909" control-mode="classic" skillbar-ui-effect="key-change"/>
+				</decision>
+				<decision>
+					<condition skill="27908"/>
+					<result context-3="27908" control-mode="bns" skillbar-ui-effect="key-change"/>
+					<result context-3="27908" control-mode="classic" skillbar-ui-effect="key-change"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27331"/>
+					<result control-mode="bns" skillbar-5="27331"/>
+					<result control-mode="classic" skillbar-5="27331"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27148"/>
+					<result control-mode="bns" skillbar-7="27148" skillbar-ui-effect="combo"/>
+					<result control-mode="classic" skillbar-7="27148" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27156"/>
+					<result control-mode="bns" skillbar-7="27156"/>
+					<result control-mode="classic" skillbar-7="27156"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27147"/>
+					<result control-mode="bns" skillbar-7="27147" skillbar-ui-effect="combo"/>
+					<result control-mode="classic" skillbar-7="27147" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27128"/>
+					<result control-mode="bns" skillbar-3="27128" skillbar-ui-effect="combo"/>
+					<result control-mode="classic" skillbar-3="27128" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27116"/>
+					<result control-mode="bns" skillbar-3="27116" skillbar-ui-effect="combo"/>
+					<result control-mode="classic" skillbar-3="27116" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27373"/>
+					<result control-mode="bns" skillbar-2="27373" skillbar-ui-effect="combo"/>
+					<result control-mode="classic" skillbar-2="27373" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27370"/>
+					<result control-mode="bns" skillbar-2="27370" skillbar-ui-effect="combo"/>
+					<result control-mode="classic" skillbar-2="27370" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27276"/>
+					<result cmd-key-right="27276" control-mode="bns" skillbar-ui-effect="combo"/>
+					<result cmd-key-right="27276" control-mode="classic" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<condition skill="27277"/>
+					<result cmd-key-left="27277" control-mode="bns" skillbar-ui-effect="combo"/>
+					<result cmd-key-left="27277" control-mode="classic" skillbar-ui-effect="combo"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<result cmd-key-down="27118" cmd-key-left="27167" cmd-key-right="27166" context-1="27400" context-2="27104" control-mode="classic" skillbar-1="27109" skillbar-2="27111" skillbar-3="27113" skillbar-4="27200" skillbar-5="27326" skillbar-6="27407" skillbar-7="27126" skillbar-8="27144" stance="27103"/>
+					<result cmd-key-down="27118" cmd-key-left="27167" cmd-key-right="27166" context-1="27400" context-2="27104" control-mode="bns" skillbar-1="27109" skillbar-2="27111" skillbar-3="27113" skillbar-4="27200" skillbar-5="27326" skillbar-6="27407" skillbar-7="27126" skillbar-8="27144" stance="27103"/>
+				</decision>
+			</layer>
+			<layer>
+				<decision>
+					<result control-mode="classic" skillbar-1="501" skillbar-2="501" skillbar-3="501" skillbar-4="501"/>
+					<result control-mode="bns" skillbar-1="501" skillbar-2="501" skillbar-3="501" skillbar-4="501"/>
+				</decision>
+			</layer>
+		</stance>
+	</contextscript>
+</table>

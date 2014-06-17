@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_758" broadcast-category="field" category="normal" desc="q_758_sum" district-1="deasamak" grade="1" group2="QG_SaJiSeokRimSouth" id="758" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.758" save-type="all">
+		<acquisition level="30" preceding-quest-1="q_epic_523" preceding-quest-check="and" recommended-level="31">
+			<case acquire-quest="y" indicator-social="q_758_s_indi_1" msg="q_758_s" npc-response="qrsp_758_1" object="npc:ch_baekmuhan_0001" progress-mission="reaction-only" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="9946.126" location-y="-35980.313" map="hangari">
+			<mission id="1" name2="Mission.Name2.758_1" required-register-value="3">
+				<case gadget="q_ironhammera" gadget-required="carry" mapunit-1="3020_e_destroy_ceramics_01" object-1="zoneenv:e_destroy_ceramics_01" object-2="zoneenv:e_destroy_ceramics_02" object-3="zoneenv:e_destroy_ceramics_03" object2-1="zoneenv2:e_destroy_ceramics_01" object2-2="zoneenv2:e_destroy_ceramics_02" object2-3="zoneenv2:e_destroy_ceramics_03" progress-mission="y" skill="gadget_q_ironhammera" skill3="gadget_q_ironhammera" type="skill"/>
+				<case button-text-accept="q_758_m1_re_ok" button-text-cancel="q_758_m1_re_no" gadget-required="empty" indicator="quest-normal-can-progress" indicator-social="q_758_m1_re_indi_1" msg="q_758_m1_re" npc-response="qrsp_758_2" object="npc:ch_baekmuhan_0001" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="12035.971" location-y="-35687.344" map="hangari">
+			<mission id="2" name2="Mission.Name2.758_2" required-register-value="1" reward-1="758_final_set1">
+				<case indicator-social="q_758_m2_indi_1" msg="q_758_m2" npc-response="qrsp_758_3" object="npc:ch_baekmuhan_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

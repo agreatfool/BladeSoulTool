@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1159" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1159_sum" district-1="suwal" grade="1" group2="QG_Wolho" id="1159" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1159" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="38" preceding-quest-1="q_sub_1153" preceding-quest-check="and" recommended-level="40">
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1159_3" object="npc:ch_daeeobang_0076" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1159_1" object="npc:ch_daeeobang_0076" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_1159_5" object="npc:ce_board_0008" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1159_1" required-register-value="5">
+				<case looting="q_1159_1_icon" mapunit-1="4250_ME_Juno_0008_1159" object="npc:me_juno_0008" object2="npc:me_juno_0008" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1159_2" required-register-value="1">
+				<case looting="q_1159_2_icon" mapunit-1="4250_ME_Juno_0009_1159" mapunit-2="4250_ME_Juno_0009_1159_1" object="npc:me_juno_0009" object2="npc:me_juno_0009" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.1159_3" required-register-value="5">
+				<case looting="q_1159_3_icon" mapunit-1="4250_ME_SoraCrab_0004_1159" object="npc:me_soracrab_0004" object2="npc:me_soracrab_0004" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="4" name2="Mission.Name2.1159_4" required-register-value="1" reward-1="1159_final_set1" reward-2="1159_final_set2">
+				<case completion-count="1" npc-response="qrsp_1159_4" object="npc:ch_daeeobang_0076" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1159_2" object="npc:ch_daeeobang_0076" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_1159_4_icon" msg="q_1159_6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

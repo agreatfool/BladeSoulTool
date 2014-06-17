@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_268" broadcast-category="field" category="epic" completed-desc="q_268_completed" completed-list="y" desc="q_268_sum" grade="1" group2="QG_BaeCheongEpic" id="268" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.268" save-type="all">
+		<acquisition level="1" recommended-level="47" sort-no="509"/>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.268_5" required-register-value="1">
+				<case npc-response="qrsp_268_1" object="npc:CH_CT_HaoBang_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.268_6" required-register-value="1">
+				<case npc-response="qrsp_268_2" object="npc:CH_CT_HaoBang_0009" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.268_7" required-register-value="1">
+				<case object="npc:CH_CT_HaoBang_0009" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="zone:Zone_PiMatStreet_p" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.268_8" required-register-value="1">
+				<case npc-response="qrsp_268_9" object="npc:CH_CT_Iorak_0001" progress-mission="y" type="npc-manipulate"/>
+				<case object="zone:Zone_PiMatStreet_p" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.268_9" required-register-value="1">
+				<case looting="q_268_1_icon" object="npc:CH_CT_HaoBang_0002" object2="npc:CH_CT_HaoBang_0002" progress-mission="y" type="loot"/>
+				<case object="zoneenv:5121_footswitch_01" object2="zoneenv2:5121_footswitch_01" progress-mission="reaction-only" type="env-entered"/>
+				<case object="zone:Zone_PiMatStreet_p" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10" location-x="-16021.08" location-y="-22638.76" map="KangRyuSi" mission-map-type="location">
+			<mission id="10" name2="Mission.Name2.268_10" required-register-value="1">
+				<case mapunit-1="5121_Guide_e268" npc-response="qrsp_268_3" object="npc:CH_CT_HaoDong_0009" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_267_10" object="npc:CH_CT_ThiefCat_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_268_des_11" id="11">
+			<mission id="11" name2="Mission.Name2.268_11" required-register-value="1">
+				<case npc-response="qrsp_268_4" object="npc:CH_CT_JeongHaDo_0002" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_267_10" object="npc:CH_CT_ThiefCat_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="12">
+			<mission id="12" name2="Mission.Name2.268_12" required-register-value="1">
+				<case npc-response="qrsp_268_5" object="npc:CH_CT_JeGukGun_0015" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_DoSungSuBiDae" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_268_11" object="npc:CH_CT_JeGukGun_0253" type="approach"/>
+				<case npc-response="qrsp_268_10" object="npc:CH_CT_JeGukGun_0252" type="approach"/>
+				<case npc-response="qrsp_268_15" object="npc:CH_CT_JeGukGun_0237" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="13">
+			<mission id="13" name2="Mission.Name2.268_13" required-register-value="1">
+				<case object="npc:CH_CT_JeGukGun_0237" object2="npc:CH_CT_JeGukGun_0237" progress-mission="y" type="killed"/>
+				<case object="zone:Zone_DoSungSuBiDae" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_268_11" object="npc:CH_CT_JeGukGun_0253" type="approach"/>
+				<case npc-response="qrsp_268_10" object="npc:CH_CT_JeGukGun_0252" type="approach"/>
+				<case npc-response="qrsp_268_14" object="npc:CH_CT_JeGukGun_0015" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="14">
+			<mission id="14" name2="Mission.Name2.268_14" required-register-value="1" reward-1="268_final_set1">
+				<case npc-response="qrsp_268_6" object="npc:CH_CT_JeGukGun_0015" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_DoSungSuBiDae" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_267_11" object="npc:CE_CT_ThiefCat_0009" type="approach"/>
+				<case npc-response="qrsp_268_11" object="npc:CH_CT_JeGukGun_0253" type="approach"/>
+				<case npc-response="qrsp_268_10" object="npc:CH_CT_JeGukGun_0252" type="approach"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="Zone_PiMatStreet">
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="9" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_269"/>
+		</completion>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.268_1" required-register-value="1">
+				<case mapunit-1="5100_e_chest_cashbox_01_e268" object="zoneenv:e_chest_cashbox_01" object2="zoneenv2:e_chest_cashbox_01" progress-mission="y" type="manipulate"/>
+				<case npc-response="qrsp_267_9" object="npc:CE_CT_ThiefCat_0009" type="approach"/>
+				<case npc-response="qrsp_268_8" object="npc:CH_CT_JeGukGun_0047" type="approach"/>
+				<case npc-response="qrsp_268_7" object="npc:CH_CT_JeGukGun_0046" type="approach"/>
+				<case object="zoneenv:e_chest_cashbox_05" object2="zoneenv2:e_chest_cashbox_05" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_cashbox_04" object2="zoneenv2:e_chest_cashbox_04" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_cashbox_03" object2="zoneenv2:e_chest_cashbox_03" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_chest_cashbox_02" object2="zoneenv2:e_chest_cashbox_02" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.268_2" required-register-value="1">
+				<case npc-response="qrsp_268_16" object="npc:CH_CT_Citizen_0522" object2="npc:CH_CT_Citizen_0522" progress-mission="y" social="talksocial_clap" type="pc-social"/>
+				<case npc-response="qrsp_267_9" object="npc:CE_CT_ThiefCat_0009" type="approach"/>
+				<case npc-response="qrsp_268_8" object="npc:CH_CT_JeGukGun_0047" type="approach"/>
+				<case npc-response="qrsp_268_7" object="npc:CH_CT_JeGukGun_0046" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.268_3" required-register-value="1">
+				<case npc-response="qrsp_268_18" object="npc:CH_CT_Citizen_0034" object2="npc:CH_CT_Citizen_0034" progress-mission="y" social="talksocial_clap" type="pc-social"/>
+				<case npc-response="qrsp_268_17" object="npc:CH_CT_Citizen_0522" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.268_4" required-register-value="1">
+				<case npc-response="qrsp_268_20" object="npc:CH_CT_MerChant_0119" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_268_19" object="npc:CH_CT_Citizen_0034" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

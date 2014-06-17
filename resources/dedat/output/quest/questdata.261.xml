@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_261" broadcast-category="field" category="epic" completed-desc="q_261_completed" completed-list="y" desc="q_261_sum" grade="1" group2="QG_BaeCheongEpic" id="261" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.261" save-type="all">
+		<acquisition level="1" recommended-level="45" sort-no="502"/>
+		<mission-step id="1" location-x="-64887.00" location-y="-4793.46" map="GreatPlain" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.261_1" required-register-value="1">
+				<case mapunit-1="5009_Zone_FarmTower_ChonZang_e261" mapunit-2="5004_Guide_e260" object="zone:Zone_FarmTower_ChonZang" progress-mission="y" type="enter-zone"/>
+				<case npc-response="qrsp_261_1" object="npc:CH_CT_JeGukGun_0308" progress-mission="n" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" mission-map-type="mapunit">
+			<mission id="2" name2="Mission.Name2.261_2" required-register-value="1">
+				<case npc-response="qrsp_261_2" object="npc:CH_CT_Citizen_0604" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_FarmTower_ChonZang" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_261_1" object="npc:CH_CT_JeGukGun_0308" type="approach"/>
+				<case npc-response="qrsp_261_5" object="npc:CH_CT_JeGukGun_0083" type="approach"/>
+				<case npc-response="qrsp_261_5" object="npc:CH_CT_JeGukGun_0084" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.261_4" required-register-value="1">
+				<case npc-response="qrsp_261_3" object="npc:CH_CT_Citizen_0406" type="approach"/>
+				<case object="zone:Zone_FarmTower_ChonZang" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_261_4" object="npc:CH_CT_JeGukGun_0089" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_261_5" object="npc:CH_CT_JeGukGun_0308" type="approach"/>
+				<case npc-response="qrsp_261_3" object="npc:CH_CT_Citizen_0203" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.261_5" required-register-value="1">
+				<case object="zone:Zone_FarmTower_ChonZang" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_261_6" object="npc:CH_CT_JeGukGun_0087" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_261_7" object="npc:CH_CT_Citizen_0406" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.261_6" required-register-value="1">
+				<case object="zone:Zone_BuNongChon_L_Phase" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_261_8" object="npc:CH_CT_Citizen_0398" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.261_3" required-register-value="5">
+				<case gadget="Q_FireWood_0003" gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="5009_e_Chest_firewood_01_e261" object="zoneenv:e_Chest_firewood_01" object2="zoneenv2:e_Chest_firewood_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zone:Zone_FarmTower_ChonZang" progress-mission="reaction-only" type="enter-zone"/>
+				<case gadget="Q_FireWood_0003" gadget-required="carry" object-1="npc:CH_CT_Citizen_0406" object-2="npc:CH_CT_Citizen_0203" object2-1="npc:CH_CT_Citizen_0406" object2-2="npc:CH_CT_Citizen_0203" progress-mission="y" range-max="-1" range-min="-1" skill="Gadget_Q_FireWood_0003" skill3="Gadget_Q_FireWood_0003" type="skill"/>
+				<case npc-response="qrsp_261_1" object="npc:CH_CT_JeGukGun_0308" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.261_7" required-register-value="3">
+				<case object="zone:Zone_BuNongChon_L_Phase" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="npc:CH_CT_Citizen_0586" object2="npc:CH_CT_Citizen_0586" progress-mission="y" type="killed"/>
+				<case object="npc:CH_CT_Citizen_0204" object2="npc:CH_CT_Citizen_0204" progress-mission="y" type="killed"/>
+				<case mapunit-1="5009_CH_CT_Citizen_0588_e261" object="npc:CH_CT_Citizen_0399" object2="npc:CH_CT_Citizen_0399" progress-mission="y" type="killed"/>
+				<case button-text-accept="q_261_18_ok" button-text-cancel="q_261_18_no" gadget="Q_Rifle_0008" gadget-required="empty" indicator="quest-gadget-drop" npc-response="qrsp_261_9" object="npc:CH_CT_Citizen_0605" progress-mission="reaction-only" type="talk"/>
+				<case npc-response="qrsp_261_21" object="npc:CH_CT_Citizen_0398" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.261_8" required-register-value="1">
+				<case npc-response="qrsp_261_10" object="npc:CH_CT_Citizen_0398" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_BuNongChon_L_Phase" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="Zone_FarmTower_ChonZang_NA">
+			<destination mission-step-id="11" zone-index="1"/>
+			<destination mission-step-id="10" zone-index="1"/>
+			<destination mission-step-id="9" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+			<destination mission-step-id="12" zone-index="1"/>
+			<destination mission-step-id="13" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_262"/>
+		</completion>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.261_9" required-register-value="1">
+				<case mapunit-1="5009_foot_1_e261" object="zoneenv:5009_foot_1" object2="zoneenv2:5009_foot_1" progress-mission="y" type="env-entered"/>
+				<case object="zoneenv:e_Chest_secretgate_01" object2="zoneenv2:e_Chest_secretgate_01" progress-mission="reaction-only" type="manipulate"/>
+				<case npc-response="qrsp_261_20" object="npc:CH_CT_JeGukGun_0334" type="approach"/>
+				<case object="zone:Zone_BuNongChon_L_Phase" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:Zone_FarmTower_ChonZang" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_261_11" object="npc:CH_CT_JeGukGun_0087" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.261_10" required-register-value="1">
+				<case object="zone:Zone_FarmTower_ChonZang" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_261_12" object="npc:CH_CT_JeGukGun_0088" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.261_11" required-register-value="1">
+				<case object="zone:Zone_FarmTower_ChonZang" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_261_13" object="npc:CH_CT_Citizen_0607" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_261_15" object="npc:CH_CT_JeGukGun_0081" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="12">
+			<mission id="12" name2="Mission.Name2.261_12" required-register-value="1">
+				<case object="zone:Zone_FarmTower_ChonZang" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_261_15" object="npc:CH_CT_JeGukGun_0081" type="approach"/>
+				<case gadget="Q_StoneA_3" mapunit-1="5001_CH_CT_Citizen_0603_e261" object-1="npc:CH_CT_Citizen_0603" object2-1="npc:CH_CT_Citizen_0603" progress-mission="y" skill="Gadget_Q_StoneA_3" skill3="Gadget_Q_StoneA_3" type="skill"/>
+				<case button-text-accept="q_261_14_ok" button-text-cancel="q_261_14_no" gadget="Q_StoneA_3" gadget-required="dont-care" indicator="quest-gadget-drop" mapunit-1="5001_CH_CT_Citizen_0607_e261" npc-response="qrsp_261_17" object="npc:CH_CT_Citizen_0607" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="13">
+			<mission id="13" name2="Mission.Name2.261_13" required-register-value="1" reward-1="261_final_set1">
+				<case npc-response="qrsp_261_16" object="npc:CH_CT_JeGukGun_0081" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_FarmTower_ChonZang" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_261_14" object="npc:CH_CT_Citizen_0607" type="approach"/>
+			</mission>
+		</mission-step>
+		<transit id="2" zone="zone_bunongchon_l">
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="9" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

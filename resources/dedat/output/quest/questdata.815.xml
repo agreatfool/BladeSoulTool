@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_815" broadcast-category="field" category="normal" day-of-week="none" desc="q_815_sum" grade="1" group2="QG_ZazakWoodWest" id="815" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.815" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="n" level="46" preceding-quest-1="q_epic_282" preceding-quest-2="q_sub_814" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="48">
+			<case acquire-quest="y" completion-count="0" completion-count-op="ge" npc-response="qrsp_815_1" object="npc:CH_CT_Citizen_0061" type="talk"/>
+		</acquisition>
+		<mission-step id="3" time-limit="60" time-limit-type="until">
+			<mission id="3" name2="Mission.Name2.815_3" required-register-value="9">
+				<case mapunit-1="5200_e_Chest_campfire_01_s815" object="zoneenv:e_Chest_campfire_01" object2="zoneenv2:e_Chest_campfire_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="5200_e_chest_firearmbox_01_s815" object="zoneenv:e_chest_firearmbox_01" object2="zoneenv2:e_chest_firearmbox_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="Q_Rifle_0002" gadget-required="carry" mapunit-1="5200_ME_CT_DarkCrazyTribe_0055_s815" object-1="npc:ME_CT_DarkCrazyTribeC_0012" object-2="npc:ME_CT_DarkCrazyTribeD_0008" object-3="npc:ME_CT_DarkCrazyTribe_0055" object-4="npc:ME_CT_DarkCrazyTribe_0056" object-5="npc:ME_CT_DarkCrazyTribeD_0009" object-6="npc:ME_CT_DarkCrazyTribeC_0013" object-7="npc:ME_CT_DarkCrazyTribeD_0010" object-8="npc:ME_CT_DarkCrazyTribe_0057" object-9="npc:ME_CT_DarkCrazyTribeC_0014" object2-1="npc:ME_CT_DarkCrazyTribeC_0012" object2-2="npc:ME_CT_DarkCrazyTribeD_0008" object2-3="npc:ME_CT_DarkCrazyTribe_0055" object2-4="npc:ME_CT_DarkCrazyTribe_0056" object2-5="npc:ME_CT_DarkCrazyTribeD_0009" object2-6="npc:ME_CT_DarkCrazyTribeC_0013" object2-7="npc:ME_CT_DarkCrazyTribeD_0010" object2-8="npc:ME_CT_DarkCrazyTribe_0057" object2-9="npc:ME_CT_DarkCrazyTribeC_0014" progress-mission="y" skill="Gadget_Q_Rifle_0002" skill3="Gadget_Q_Rifle_0002" type="skill"/>
+				<case npc-response="qrsp_815_5" object="NPC:CH_CT_YuBeaHak_0002" type="approach"/>
+				<case npc-response="qrsp_815_4" object="npc:CH_CT_Citizen_0506" type="approach"/>
+			</mission>
+			<mission-step-fail rollback-step-id="2"/>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.815_4" required-register-value="1" reward-1="815_final_set1">
+				<case completion-count="0" completion-count-op="ge" npc-response="qrsp_815_3" object="npc:CH_CT_YuBeaHak_0002" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_815_4" object="npc:CH_CT_Citizen_0506" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.815_2" required-register-value="1">
+				<case completion-count="0" completion-count-op="ge" npc-response="qrsp_815_2" object="npc:CH_CT_YuBeaHak_0002" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_815_4" object="npc:CH_CT_Citizen_0506" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.815_1" required-register-value="7">
+				<case looting="q_815_2_icon" mapunit-1="5200_ME_CT_ToGa_0002_s815" object="npc:ME_CT_ToGa_0002" object2="npc:ME_CT_ToGa_0002" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+				<case npc-response="qrsp_815_4" object="npc:CH_CT_Citizen_0506" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

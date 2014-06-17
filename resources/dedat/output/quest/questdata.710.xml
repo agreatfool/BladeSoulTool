@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_710" broadcast-category="field" category="normal" desc="q_710_sum" grade="1" group2="QG_Hasijang" id="710" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.710" save-type="all">
+		<acquisition level="45" preceding-quest-1="q_epic_267" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="47">
+			<case acquire-quest="y" npc-response="qrsp_710_1" object="npc:CH_CT_DanGunBo_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.710_1" required-register-value="7">
+				<case looting="q_710_1_icon" object="npc:MH_CT_Tramp_0006" object2="npc:MH_CT_Tramp_0006" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+				<case looting="q_710_1_icon" object="npc:MH_CT_Tramp_0005" object2="npc:MH_CT_Tramp_0005" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+				<case looting="q_710_1_icon" object="npc:MH_CT_Tramp_0004" object2="npc:MH_CT_Tramp_0004" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+				<case looting="q_710_1_icon" object="npc:MH_CT_Tramp_0002" object2="npc:MH_CT_Tramp_0002" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+				<case looting="q_710_1_icon" mapunit-1="5100_MH_CT_Tramp_0001_s710" object="npc:MH_CT_Tramp_0001" object2="npc:MH_CT_Tramp_0001" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+				<case npc-response="qrsp_710_3" object="npc:CH_CT_DanGunBo_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.710_2" required-register-value="1" reward-1="710_final_set1">
+				<case npc-response="qrsp_710_2" object="npc:ch_ct_merchant_0036" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

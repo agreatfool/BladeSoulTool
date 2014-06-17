@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1024" broadcast-category="field" category="normal" desc="q_1024_sum" district-1="suwal" grade="1" group2="QG_AncyJokVillage" id="1024" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1024" save-type="all">
+		<acquisition level="36" preceding-quest-1="q_epic_906" preceding-quest-2="q_sub_1021" preceding-quest-check="and" preceding-quest-mission-step-1="4" recommended-level="38">
+			<case acquire-quest="y" npc-response="qrsp_1024_1" object="npc:CH_SinRyong_0046" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1024_1" required-register-value="1">
+				<case npc-response="qrsp_1024_2" object="npc:CH_SinRyong_0047" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1024_2" required-register-value="1">
+				<case npc-response="qrsp_1024_3" object="npc:CH_Slave_0001" progress-mission="y" type="talk" visible-object="n"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1024_3" required-register-value="1">
+				<case npc-response="qrsp_1024_4" object="npc:CH_Merchant_0012" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_1024_5" object="npc:CH_Slave_0001" type="approach" visible-object="n"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.1024_4" required-register-value="1">
+				<case npc-response="qrsp_1024_6" object="npc:CH_Slave_0001" progress-mission="y" type="talk" visible-object="n"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.1024_5" required-register-value="1" reward-1="1024_final_set1">
+				<case npc-response="qrsp_1024_8" object="npc:CH_SinRyong_0047" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_1024_7" object="npc:CH_Slave_0002" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

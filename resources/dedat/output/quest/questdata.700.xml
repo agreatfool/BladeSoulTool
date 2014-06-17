@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_700" broadcast-category="field" category="normal" desc="q_700_sum" grade="1" group2="QG_Reservoir" id="700" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.700" save-type="all">
+		<acquisition level="44" preceding-quest-1="q_sub_598" preceding-quest-2="q_sub_599" preceding-quest-check="and" recommended-level="46">
+			<case acquire-quest="y" npc-response="qrsp_700_1" object="npc:CH_CT_JeGukGun_0182" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.700_1" required-register-value="10">
+				<case looting="q_700_1_icon" mapunit-1="5002_ME_CT_RockMonster_0009_s700" object="npc:ME_CT_RockMonster_0009" object2="npc:ME_CT_RockMonster_0009" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.700_3" required-register-value="1" reward-1="700_final_set1">
+				<case npc-response="qrsp_700_3" object="npc:CH_CT_JeGukGun_0183" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.700_2" required-register-value="1">
+				<case npc-response="qrsp_700_2" object="npc:CH_CT_JeGukGun_0182" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

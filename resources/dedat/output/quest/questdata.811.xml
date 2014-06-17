@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_811" broadcast-category="field" category="normal" day-of-week="none" desc="q_811_sum" grade="1" group2="QG_ZazakWoodWest" id="811" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.811" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="n" level="46" preceding-quest-1="q_epic_282" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="48">
+			<case acquire-quest="y" npc-response="qrsp_811_1" object="npc:CH_CT_Monk_0021" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.811_1" required-register-value="10">
+				<case object="npc:ME_CT_InsectTribeGrasshopperB_0011" object2="npc:ME_CT_InsectTribeGrasshopperB_0011" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_InsectTribeMantis_0007" object2="npc:ME_CT_InsectTribeMantis_0007" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_InsectTribeGrasshopperB_0010" object2="npc:ME_CT_InsectTribeGrasshopperB_0010" progress-mission="y" type="killed"/>
+				<case mapunit-1="5200_ME_CT_InsectTribeMantis_0007_s811" object="npc:ME_CT_InsectTribeGrasshopperA_0010" object2="npc:ME_CT_InsectTribeGrasshopperA_0010" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.811_2" required-register-value="1">
+				<case npc-response="qrsp_811_2" object="npc:CH_CT_YuINa_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.811_3" required-register-value="10">
+				<case object="npc:MH_CT_JeGukGun_0585" object2="npc:MH_CT_JeGukGun_0585" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_JeGukGun_0584" object2="npc:MH_CT_JeGukGun_0584" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_JeGukGun_0583" object2="npc:MH_CT_JeGukGun_0583" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_JeGukGun_0582" object2="npc:MH_CT_JeGukGun_0582" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_JeGukGun_0581" object2="npc:MH_CT_JeGukGun_0581" progress-mission="y" type="killed"/>
+				<case mapunit-1="5200_MH_CT_JeGukGun_0580_s811" object="npc:MH_CT_JeGukGun_0580" object2="npc:MH_CT_JeGukGun_0580" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.811_4" required-register-value="1" reward-1="811_final_set1">
+				<case npc-response="qrsp_811_3" object="npc:CH_CT_LumberJack_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_398" broadcast-category="field" category="normal" desc="q_398_sum" district-1="jeryoungrim" grade="1" group="제룡림(송암도)" group2="QG_SongAmDo" id="398" map-group-1-1="jeryoungrim" max-repeat="1" name="소녀와 보살님 (1)" name2="Quest.Name2.398" save-type="all">
+		<acquisition level="16" preceding-quest-1="q_epic_316" preceding-quest-check="and" recommended-level="18">
+			<case acquire-quest="y" indicator-social="q_398_s_indi_1" msg="q_398_s" npc-response="qrsp_398_1" object="npc:ctzn_jinf_songrimsa_heweolsim_001" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-16313.5859" location-y="38095.2734" map="songamdo">
+			<mission id="1" name="우산 광대버섯의 갓 획득" name2="Mission.Name2.398_1" required-register-value="5">
+				<case looting="q_398_quest_swampmushroom_cap_1_icon" mapunit-1="2440_Mob_2Leg_MLnd_Spctr_Mushroom_Walker_002" mapunit-2="2440_Mob_2Leg_MLnd_Spctr_Mushroom_Walker_002_1" object="npc:mob_2leg_mlnd_spctr_mushroom_walker_002" object2="npc:mob_2leg_mlnd_spctr_mushroom_walker_002" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.398_3" required-register-value="3">
+				<case gadget-required="dont-care" looting="q_398_Grocery_Fluid_tree_1_icon" mapunit-3="2440_e_onoff_straw_01" object="zoneenv:e_onoff_straw_01" object2="zoneenv2:e_onoff_straw_01" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_398_Grocery_Fluid_tree_1_icon" object="zoneenv:e_onoff_straw_02" object2="zoneenv2:e_onoff_straw_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_398_Grocery_Fluid_tree_1_icon" object="zoneenv:e_onoff_straw_03" object2="zoneenv2:e_onoff_straw_03" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_398_Grocery_Fluid_tree_1_icon" object="zoneenv:e_onoff_straw_04" object2="zoneenv2:e_onoff_straw_04" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_398_Grocery_Fluid_tree_1_icon" object="zoneenv:e_onoff_straw_05" object2="zoneenv2:e_onoff_straw_05" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_398_Grocery_Fluid_tree_1_icon" object="zoneenv:e_onoff_straw_06" object2="zoneenv2:e_onoff_straw_06" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_398_Grocery_Fluid_tree_1_icon" object="zoneenv:e_onoff_straw_07" object2="zoneenv2:e_onoff_straw_07" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.398_2" required-register-value="5">
+				<case looting="q_461_quest_baemmushroom_cap_1_icon" mapunit-1="2440_mob_etc_mset_spctr_mushroom_snake_001" mapunit-2="2440_mob_etc_mset_spctr_mushroom_snake_001_1" mapunit-3="2440_Mob_Etc_Mset_Spctr_Mushroom_Snake_001_2" object="npc:mob_etc_mset_spctr_mushroom_snake_001" object2="npc:mob_etc_mset_spctr_mushroom_snake_001" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-17428.252" location-y="57901.9609" map="songrimsa">
+			<mission id="4" name="송림사 보살 해월에게 보고" name2="Mission.Name2.398_4" required-register-value="1" reward-1="398_final_set1">
+				<case indicator-social="q_398_m2_indi_1" msg="q_398_m2" npc-response="qrsp_398_2" object="npc:ctzn_jinf_songrimsa_heweolsim_001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

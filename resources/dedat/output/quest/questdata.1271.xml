@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1271" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1271_sum" district-1="suwal" grade="9" group2="QG_AngaeForestNorth" id="1271" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1271" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="43" preceding-quest-check="and" recommended-level="46">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1271_1" object="npc:CH_KyeongChunMaeng_0030" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_1271_3" object="npc:CE_Board_0006" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1271_1" object="npc:CH_KyeongChunMaeng_0030" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1271_1" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="4505_ME_RuneMechaFireGorillaA_0002" object="npc:ME_RuneMechaFireGorillaA_0002" object2="npc:ME_RuneMechaFireGorillaA_0002" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1271_2" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="4505_ME_RuneMechaFireGorillaA_0001" object="npc:ME_RuneMechaFireGorillaA_0001" object2="npc:ME_RuneMechaFireGorillaA_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.1271_3" required-register-value="1" reward-1="1271_final_set1" reward-2="1271_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1271_2" object="npc:CH_KyeongChunMaeng_0030" progress-mission="y" type="talk"/>
+				<case acquire-quest="n" completion-count="0" fee="y" item="q_1271_1_icon" msg="q_1271_4" progress-mission="y" type="talk-to-self"/>
+				<case completion-count="1" npc-response="qrsp_1271_2" object="npc:CH_KyeongChunMaeng_0030" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

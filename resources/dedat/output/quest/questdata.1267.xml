@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="factionmain2" alias="q_sub_1267" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1267_sum" district-1="suwal" grade="1" group2="QG_AngaeForestSouth" id="1267" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1267" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" faction="factionmain2" faction-level="2" faction-reputation="200" level="41" preceding-quest-1="q_epic_928" preceding-quest-check="and" recommended-level="43">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1267_1" object="npc:CH_HonChunGyo_0022" type="talk">
+				<filter-set>
+					<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain2"/>
+				</filter-set>
+			</case>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1267_1" object="npc:CH_HonChunGyo_0022" type="talk">
+				<filter-set>
+					<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain2"/>
+				</filter-set>
+			</case>
+		</acquisition>
+		<mission-step id="1" location-x="-7915.580" location-y="38417.598" map="jegukgunyeongsukgwangsan" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.1267_1" required-register-value="2" show-kill-mapunit="y">
+				<case object="npc:MH_JeGukGun_0180" object2="npc:MH_JeGukGun_0180" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0181" object2="npc:MH_JeGukGun_0181" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0182" object2="npc:MH_JeGukGun_0182" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0183" object2="npc:MH_JeGukGun_0183" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0184" object2="npc:MH_JeGukGun_0184" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1267_2" required-register-value="10" show-kill-mapunit="y">
+				<case object="npc:MH_JeGukGun_0185" object2="npc:MH_JeGukGun_0185" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0186" object2="npc:MH_JeGukGun_0186" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0187" object2="npc:MH_JeGukGun_0187" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0188" object2="npc:MH_JeGukGun_0188" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0189" object2="npc:MH_JeGukGun_0189" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0190" object2="npc:MH_JeGukGun_0190" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0191" object2="npc:MH_JeGukGun_0191" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0192" object2="npc:MH_JeGukGun_0192" progress-mission="y" type="killed"/>
+				<case object="npc:ME_JeGukGun_0193" object2="npc:ME_JeGukGun_0193" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0194" object2="npc:MH_JeGukGun_0194" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0195" object2="npc:MH_JeGukGun_0195" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0196" object2="npc:MH_JeGukGun_0196" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0197" object2="npc:MH_JeGukGun_0197" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0198" object2="npc:MH_JeGukGun_0198" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0199" object2="npc:MH_JeGukGun_0199" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0200" object2="npc:MH_JeGukGun_0200" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0201" object2="npc:MH_JeGukGun_0201" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0202" object2="npc:MH_JeGukGun_0202" progress-mission="y" type="killed"/>
+				<case object="npc:MH_JeGukGun_0203" object2="npc:MH_JeGukGun_0203" progress-mission="y" type="killed"/>
+				<case object="npc:ME_RuneMechaBattle_0011" object2="npc:ME_RuneMechaBattle_0011" progress-mission="y" type="killed"/>
+				<case mapunit-1="4400_MH_JeGukGun_0200" mapunit-2="4400_MH_JeGukGun_0200_1" mapunit-3="4400_MH_JeGukGun_0200_2" mapunit-4="4400_MH_JeGukGun_0200_3" mapunit-5="4400_JeGukGunYeongSukGwangSan_S1262" object="npc:ME_WolfEmpire_0003" object2="npc:ME_WolfEmpire_0003" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.1267_3" required-register-value="1" reward-1="1267_final_set1" reward-2="1267_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1267_2" object="npc:CH_HonChunGyo_0022" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain2"/>
+					</filter-set>
+				</case>
+				<case completion-count="1" npc-response="qrsp_1267_2" object="npc:CH_HonChunGyo_0022" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain2"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

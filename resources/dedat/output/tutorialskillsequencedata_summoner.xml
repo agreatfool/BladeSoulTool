@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="CombatData" release-mversion="0.0.0.1" release-side="client" type="TutorialSkillSequence" version="0.1">
+	<tutorialSkillSequence alias="Summoner_Lv4_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="26202" target-pass-state="down" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="26211" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="Summoner_Lv6_M11">
+		<step skill-1="26111" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="Summoner_Lv6_M12">
+		<step result-1="miss" result-event-type-1="attack" skill-1="26111" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="Summoner_Lv6_M21">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="26109" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="Summoner_Lv8_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="26104" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="Summoner_Lv10_M11">
+		<step skill-1="26116" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="Summoner_Lv12_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="26206" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="Summoner_Lv14_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="26114" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="SU_PvE_EliteSkill_0032_PlantingBomb_hit">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="26202" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="SU_PvE_EliteSkill_0039_DandelionSeed_counter">
+		<step skill-1="26116" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="26307" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="SU_PvE_EliteSkill_0046_Rose_hit">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="26101" skill-2="26102" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="SU_PvE_EliteSkill_0053_Rose_hit">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="26101" skill-2="26102" type="skill"/>
+	</tutorialSkillSequence>
+</table>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_301" broadcast-category="field" category="epic" completed-desc="q_301_completed" completed-list="y" desc="q_301_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="301" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.301" save-type="all">
+		<acquisition level="1" recommended-level="3" sort-no="201"/>
+		<mission-step completion-type="and" desc="q_301_des_1" id="1" location-x="-55683.8867" location-y="-52795.8281" map="mangjasup">
+			<mission id="1" name2="Mission.Name2.301_1" required-register-value="1">
+				<case indicator-social="q_301_m1_indi_1" msg="q_301_m1" npc-response="qrsp_301_1" object="npc:ctzn_jinf_nokmyeonctzn_namsoyu_001" progress-mission="y" type="talk"/>
+				<case approach-talk="y" object="npc:ctzn_jinf_nokmyeonctzn_namsoyu_001" progress-mission="n" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_301_des_2" id="2" location-x="-55683.8867" location-y="-52795.8281" map="mangjasup">
+			<mission id="2" name2="Mission.Name2.301_2" required-register-value="1">
+				<case gadget-required="empty" npc-response="qrsp_301_2" object="npc:ch_gosuljun_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_301_des_3" guide-message="gm_301_3" id="3" location-x="-55683.8867" location-y="-52795.8281" map="mangjasup" mission-map-type="mapunit">
+			<mission id="3" name2="Mission.Name2.301_3" required-register-value="1">
+				<case gadget="Q_AmmBoxA" gadget-required="carry-and-remove" indicator-social="q_301_m3_indi_1" npc-response="qrsp_301_3" object="npc:ch_okkyungwon_0001" progress-mission="y" type="approach"/>
+				<case button-text-accept="q_301_1_ok" button-text-cancel="q_301_1_no" gadget-required="empty" indicator="default" npc-response="qrsp_301_2" object="npc:ch_gosuljun_0001" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_301_des_4" id="4" location-x="-55683.8867" location-y="-52795.8281" map="mangjasup">
+			<mission id="4" name2="Mission.Name2.301_4" required-register-value="1" reward-1="301_final_set1">
+				<case indicator-social="q_301_m4_indi_1" msg="q_301_m4" npc-response="qrsp_301_5" object="npc:ch_okkyungwon_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_302"/>
+		</completion>
+	</quest>
+</table>

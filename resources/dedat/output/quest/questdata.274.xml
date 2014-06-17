@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_274" broadcast-category="field" category="epic" completed-desc="q_274_completed" completed-list="y" desc="q_274_sum" grade="1" group2="QG_BaeCheongEpic" id="274" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.274" save-type="all">
+		<acquisition level="1" recommended-level="47" sort-no="515"/>
+		<mission-step id="1" location-x="-16651.66" location-y="-31566.57" map="JajakSup" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.274_1" required-register-value="1">
+				<case mapunit-1="5200_zone_SecretGarden_e274" mapunit-2="5134_Guide_e274" mapunit-3="5166_Guide_e274" object="zone:zone_SecretGarden_Epic" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.274_2" required-register-value="1">
+				<case npc-response="qrsp_274_1" object="npc:CH_CT_PungEmpire_0141" progress-mission="y" type="talk"/>
+				<case object="npc:CH_CT_GunMaHye_0001" progress-mission="reaction-only" type="npc-manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.274_7" required-register-value="1">
+				<case object="npc:CH_CT_JeongHaDo_0006" progress-mission="y" type="npc-manipulate"/>
+				<case object="zone:zone_BaekRimSa_Byul1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_275"/>
+		</completion>
+		<transit id="1" zone="zone_SecretGarden_Party">
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+		</transit>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.274_8" required-register-value="1" reward-1="274_final_set1">
+				<case npc-response="qrsp_274_2" object="npc:CH_CT_HyunDam_0007" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekRimSa_Byul1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.274_3" required-register-value="1">
+				<case mapunit-1="5256_e_chest_5256_stonelantern_01_e274" object="zone:zone_SecretGarden_Epic" progress-mission="y" type="convoy-arrived"/>
+			</mission>
+			<mission-step-fail rollback-step-id="2">
+				<case convoy="epic_274_con" object="zone:zone_SecretGarden_Epic" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step desc="q_274_des_4" id="4" location-x="-19033.50" location-y="-18099.25" map="BiMilUiJeongWon" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.274_4" required-register-value="1">
+				<case mapunit-1="5256_e_Button_5256_Yongmak_01_e274" mapunit-2="5230_zone_BaekRimSa_Byul1_e274" object="zone:zone_BaekRimSa_Byul1" progress-mission="y" type="enter-zone"/>
+				<case object="zoneenv:e_chest_5256_stonelantern_01" object2="zoneenv2:e_chest_5256_stonelantern_01" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_Button_5256_Yongmak_01" object2="zoneenv2:e_Button_5256_Yongmak_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.274_5" required-register-value="1">
+				<case npc-response="qrsp_274_3" object="npc:CH_CT_JeongHaDo_0005" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekRimSa_Byul1" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_274_3" object="npc:CH_CT_JeongHaDo_0015" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.274_6" required-register-value="1">
+				<case npc-response="qrsp_274_4" object="npc:CH_CT_PungEmpire_0038" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekRimSa_Byul1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

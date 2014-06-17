@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_660" broadcast-category="field" category="normal" district-1="deasamak" grade="1" group2="QG_ToMunGaekJan" id="660" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.660" save-type="all">
+		<acquisition level="29" preceding-quest-1="q_epic_521" preceding-quest-check="and" recommended-level="31" reward-1="660_final_set1">
+			<case acquire-quest="y" indicator-social="q_660_s_indi_1" msg="q_660_s" npc-response="qrsp_660_1" object="npc:CH_ToMun_013" type="talk"/>
+		</acquisition>
+	</quest>
+</table>

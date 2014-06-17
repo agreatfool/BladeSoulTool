@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_385" broadcast-category="field" category="normal" desc="q_385_sum" district-1="jeryoungrim" grade="1" group2="QG_HuekUmmRim" id="385" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.385" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="10">
+			<case acquire-quest="y" npc-response="qrsp_385_2" object="npc:ctzn_jinf_cheongryeongctzn_millyeona_001" type="talk"/>
+			<fixed-reward slot-1="item:quest_scroll_soowolpyungwon_0037"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.385_1" required-register-value="1" reward-1="385_final_set1">
+				<case npc-response="qrsp_385_1" object="npc:ch_faction_0001" progress-mission="y" type="talk"/>
+				<completion-loss item-1="quest_scroll_soowolpyungwon_0037"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_SoowolPyungwon_0037"/>
+	</quest>
+</table>

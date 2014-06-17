@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_544" broadcast-category="field" category="normal" desc="q_544_sum" grade="1" group2="QG_BooNongWestNorth" id="544" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.544" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="n" level="43" preceding-quest-1="q_epic_260" preceding-quest-check="and" recommended-level="45">
+			<case acquire-quest="y" npc-response="qrsp_544_1" object="npc:CH_CT_JeGukGun_0131" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.544_1" required-register-value="1">
+				<case npc-response="qrsp_544_2" object="npc:CH_CT_EungGaMan_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.544_2" required-register-value="1">
+				<case npc-response="qrsp_544_8" object="npc:CE_CT_Book_0007" progress-mission="y" type="npc-manipulate"/>
+				<fixed-reward slot-1="item:quest_scroll_backchung_0023"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.544_3" required-register-value="1">
+				<case item="Quest_Scroll_BackChung_0023" msg="q_544_3" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.544_4" required-register-value="1">
+				<case npc-response="qrsp_544_3" object="npc:CH_CT_EungGaMan_0004" progress-mission="y" type="talk"/>
+				<completion-loss item-1="quest_scroll_backchung_0023" item-count-1="1"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.544_7" required-register-value="1">
+				<case npc-response="qrsp_544_4" object="npc:CH_CT_JeGukGun_0219" object2="npc:CH_CT_JeGukGun_0219" progress-mission="y" social="talksocial_console" type="pc-social"/>
+				<case object="zone:Zone_HideTower" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.544_8" required-register-value="1" reward-1="544_final_set1">
+				<case npc-response="qrsp_544_5" object="npc:CH_CT_JeGukGun_0143" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_544_6" object="npc:CH_CT_JeGukGun_0250" type="approach"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="quest_scroll_backchung_0023" item-count-1="1"/>
+		<mission-step id="5" location-x="-62855.75" location-y="-9949.71" map="GreatPlain" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.544_5" required-register-value="1">
+				<case mapunit-1="5004_Guide_s544" npc-response="qrsp_544_7" object="npc:CH_CT_JeGukGun_0349" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.544_6" required-register-value="1">
+				<case mapunit-1="5034_Zone_HideTower_s544" object="zone:Zone_HideTower" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

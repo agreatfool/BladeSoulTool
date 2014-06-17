@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_904" broadcast-category="field" category="epic" completed-desc="q_904_completed" completed-list="y" desc="q_904_sum" district-1="suwal" grade="1" group2="QG_SuwalPWEpic" id="904" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.904" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="38" sort-no="404"/>
+		<mission-step id="1" location-x="-3518.23" location-y="12277.47" map="haenamumaeulicheung" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.904_1" required-register-value="1">
+				<case npc-response="qrsp_904_1" object="npc:ch_baekmoon_0001" progress-mission="y" type="talk"/>
+				<case object="zoneenv:4021_Foot1" object2="zoneenv2:4021_Foot1" progress-mission="reaction-only" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="5112.877" location-y="29789.256" map="hangarisuldoga" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.904_2" required-register-value="1">
+				<case mapunit-1="4520_CE_Deer_0001" mapunit-2="4020_Guide_E904(2)" mapunit-3="4020_Guide_E904(2)+" object="npc:CE_Deer_0001" progress-mission="y" type="npc-manipulate"/>
+				<case object="zone:zone_DlsoSeosicji" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.904_3" required-register-value="1">
+				<case gadget-required="dont-care" looting="q_905_Quest_clear_extract_1_icon" mapunit-1="4520_e_onoff_mineralwater_01" mapunit-2="4020_Guide_E904(3)" mapunit-3="4020_Guide_E904(3)+" object="zoneenv:e_onoff_mineralwater_01" object2="zoneenv2:e_onoff_mineralwater_01" progress-mission="y" type="loot"/>
+				<case object="zone:zone_DlsoSeosicji" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="4" name2="Mission.Name2.904_4" required-register-value="1">
+				<case npc-response="qrsp_904_2" object="npc:ch_gyeokmul_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-3518.23" location-y="12277.47" map="haenamumaeulicheung" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.904_5" required-register-value="1" reward-1="904_final_set1">
+				<case npc-response="qrsp_904_3" object="npc:ch_baekmoon_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_905"/>
+		</completion>
+		<transit id="1" zone="zone_IkSanWoon_Default">
+			<destination mission-step-id="4" zone-index="2"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

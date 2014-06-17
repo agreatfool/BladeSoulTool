@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_287" broadcast-category="field" category="epic" completed-desc="q_287_completed" completed-list="y" desc="q_287_sum" grade="6" group2="QG_BaeCheongEpic" id="287" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.287" save-type="all">
+		<acquisition level="1" recommended-level="50" sort-no="528"/>
+		<mission-step id="2" location-x="27529.79" location-y="-11472.93" map="GyeongHoeRu" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.287_2" required-register-value="1">
+				<case mapunit-1="5150_Zone_ChunMyungJiWii" object="zone:Zone_ChunMyungJiWii_p2" progress-mission="y" type="enter-zone"/>
+				<case npc-response="qrsp_287_4" object="npc:CH_CT_HyunDam_0006" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_287_des_4" id="4" mission-map-type="mapunit">
+			<mission id="4" name2="Mission.Name2.287_4" required-register-value="1">
+				<case object="npc:ME_CT_JinSeoYeonM_0001" object2="npc:ME_CT_JinSeoYeonM_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="StartZone_Event">
+			<destination mission-step-id="5" zone-index="2"/>
+		</transit>
+		<mission-step desc="q_287_des_5" id="5">
+			<mission id="5" name2="Mission.Name2.287_5" required-register-value="1" reward-1="287_final_set1">
+				<case npc-response="qrsp_287_2" object="npc:CH_CT_JinYoung_0005" progress-mission="y" type="talk"/>
+				<case button-text-accept="q_287_3_ok" button-text-cancel="q_287_3_no" npc-response="qrsp_287_3" object="npc:CH_CT_HyunDam_0006" progress-mission="reaction-only" type="talk"/>
+				<case object="zone:StartZone_Ending" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_288"/>
+		</completion>
+		<mission-step id="1" location-x="26873.54" location-y="-10222.93" map="GyeongHoeRu" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.287_1" required-register-value="1">
+				<case grocery-count="0" mapunit-1="5293_e_Button_5293_Yongmak_01" npc-response="qrsp_287_1" object="npc:CH_CT_HyunDam_0006" progress-mission="y" type="talk">
+					<filter-set>
+						<filter quest="q_sub_960" subject="case:talked:pc" subject2="case:talked:pc" type="quest-complete"/>
+					</filter-set>
+				</case>
+				<case acquire-quest="n" npc-response="qrsp_287_5" object="npc:CH_CT_HyunDam_0006" progress-mission="n" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_287_des_3" id="3">
+			<mission id="3" name2="Mission.Name2.287_3" required-register-value="1">
+				<case mapunit-1="5162_e_Button_ChunMyungJiWii_01_e287" object="zone:Zone_ChunMyungJiWii_p3" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

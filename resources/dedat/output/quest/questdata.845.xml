@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_845" broadcast-category="field" category="normal" desc="q_845_sum" district-1="deasamak" grade="1" group2="QG_OSaekAmDoWest" id="845" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.845" save-type="all">
+		<acquisition level="35" preceding-quest-1="q_epic_538" preceding-quest-2="q_sub_879" preceding-quest-check="and" recommended-level="37">
+			<case acquire-quest="y" indicator-social="q_845_s_indi_1" msg="q_845_s" npc-response="qrsp_845_1" object="npc:ch_wangjoyeon_0001" type="talk"/>
+			<fixed-reward item-count-2="1" item-count-3="1" item-count-4="1" race-3="race-none" sex-3="sex-none" slot-1="item:quest_845_1"/>
+		</acquisition>
+		<mission-step desc="q_845_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.845_1" required-register-value="1" reward-1="845_final_set1">
+				<case item="quest_845_1" msg="q_845_m1" progress-mission="y" type="talk-to-item"/>
+				<completion-loss item-1="quest_845_1" item-count-1="0"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="quest_845_1" item-count-1="0"/>
+	</quest>
+</table>

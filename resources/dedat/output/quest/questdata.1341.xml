@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1341" broadcast-category="field" category="job" desc="q_1341_sum" district-1="jeryoungrim" grade="1" group2="QG_HuekUmmRim" id="1341" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.1341" save-type="all" show-tutorial-tag="n" tutorial="y">
+		<acquisition job-1="소환사" level="14" preceding-quest-1="q_epic_311" preceding-quest-2="q_sub_1340" preceding-quest-check="and" preceding-quest-mission-step-1="0" recommended-level="14" talk-to-self-guide-msg="Msg.Job.quest6">
+			<case acquire-quest="y" item="q_1341_Quest_hair_growth_solution_manual_1_icon" msg="q_1341_s" type="talk-to-self"/>
+			<case acquire-quest="y" npc-response="qrsp_1341_4" object="npc:ch_dweller_023" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1341_1" required-register-value="1">
+				<case indicator-social="q_1341_m1_indi_1" msg="q_1341_s" npc-response="qrsp_1341_1" object="npc:CH_HwaJung_0058" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_6_C6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" guide-message="gm_1341_1" guide-message-zone-1="zone_HuekUmmRim_ClassQ_6_C6" id="2">
+			<mission id="2" name2="Mission.Name2.1341_2" required-register-value="3">
+				<case object="zone:zone_HuekUmmRim_ClassQ_6_C6" progress-mission="reaction-only" type="enter-zone"/>
+				<tutorial-case progress-mission="y" skill-sequence="Summoner_Lv14_M11" type="skill-sequence"/>
+				<case indicator-social="q_1341_m2_indi_1" npc-response="qrsp_1341_2" object="npc:MH_MokuJin_0051" type="approach"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.1341_3" required-register-value="1">
+				<case npc-response="qrsp_1341_5" object="npc:CE_JR_JobBook_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="4" name2="Mission.Name2.1341_4" required-register-value="1" reward-1="1341_final_set1">
+				<case indicator-social="q_1341_m3_indi_1" msg="q_1341_m3" npc-response="qrsp_1341_3" object="npc:CH_HwaJung_0058" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_6_C6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_HuekUmmRim_ClassQ_6_SP">
+			<destination mission-step-id="3" zone-index="6"/>
+			<destination mission-step-id="2" zone-index="6"/>
+			<destination mission-step-id="1" zone-index="6"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_sub_1307"/>
+		</completion>
+	</quest>
+</table>

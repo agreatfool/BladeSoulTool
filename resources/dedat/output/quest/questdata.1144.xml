@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1144" broadcast-category="field" category="normal" desc="q_1144_sum" district-1="suwal" grade="1" group2="QG_AkgyojokVillage" id="1144" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1144" save-type="all">
+		<acquisition level="38" preceding-quest-1="q_epic_913" preceding-quest-2="q_sub_1142" preceding-quest-check="and" recommended-level="40">
+			<case acquire-quest="y" npc-response="qrsp_1144_1" object="npc:ce_suwajok_0012" type="talk"/>
+		</acquisition>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1144_2" required-register-value="1">
+				<case gadget-required="dont-care" mapunit-1="4250_CE_SuWaJok_0020" object="npc:CE_SuWaJok_0020" progress-mission="y" type="npc-manipulate"/>
+				<fixed-reward race-3="race-none" slot-1="item:Quest_Scroll_SoowolPyungwon_0046"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.1144_4" required-register-value="1" reward-1="1144_final_set1">
+				<case npc-response="qrsp_1144_2" object="npc:CE_SuWaJok_0015" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Scroll_SoowolPyungwon_0046"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1144_3" required-register-value="1">
+				<case item="Quest_Scroll_SoowolPyungwon_0046" msg="q_1144_2" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_SoowolPyungwon_0046"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1144_1" required-register-value="10">
+				<case mapunit-1="4250_ME_SeaMonster_0001" mapunit-2="4250_ME_SeaMonster_0001_1" object="npc:me_monster_0001" object2="npc:me_monster_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

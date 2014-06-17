@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_400" broadcast-category="field" category="normal" desc="q_400_sum" district-1="jeryoungrim" grade="1" group="제룡림(송암도)" group2="QG_SongAmDo" id="400" map-group-1-1="jeryoungrim" max-repeat="1" name="심금을 울리는 버섯 (1)" name2="Quest.Name2.400" save-type="all">
+		<acquisition level="15" preceding-quest-1="q_epic_496" preceding-quest-check="and" recommended-level="17">
+			<case acquire-quest="y" indicator-social="q_400_s_indi_1" msg="q_400_s" npc-response="qrsp_400_1" object="npc:ch_dweller_029" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="2" location-x="-7764.7422" location-y="47080.2852" map="songamdo">
+			<mission id="2" name="송암도 암자에 있는 소연신과 대화" name2="Mission.Name2.400_2" required-register-value="1" reward-1="400_final_set1">
+				<case indicator-social="q_400_m2_indi_1" msg="q_400_m2" npc-response="qrsp_400_2" object="npc:ch_dweller_031" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1" location-x="-7503.0469" location-y="42631.3984" map="songamdo">
+			<mission id="1" name2="Mission.Name2.400_1" required-register-value="12">
+				<case looting="q_393_quest_gallbladder_1_icon" mapunit-1="2440_Mob_4LegR_MLnd_Spctr_GrassBeast_Green_003" mapunit-2="2440_Mob_4LegR_MLnd_Spctr_GrassBeast_Green_003_1" object="npc:mob_4legr_mlnd_spctr_grassbeast_green_003" object2="npc:mob_4legr_mlnd_spctr_grassbeast_green_003" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_547" broadcast-category="field" category="normal" desc="q_547_sum" grade="1" group2="QG_BooNongWestNorth" id="547" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.547" save-type="all">
+		<acquisition level="43" preceding-quest-1="q_epic_261" preceding-quest-check="and" recommended-level="45">
+			<case acquire-quest="y" indicator="default" npc-response="qrsp_547_1" object="npc:CE_CT_Board_0016" progress-mission="n" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.547_1" required-register-value="1" reward-1="547_final_set1">
+				<case npc-response="qrsp_547_4" object="npc:CH_CT_JeGukGun_0088" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_547_3" object="npc:CH_CT_JeGukGun_0142" type="approach"/>
+				<case npc-response="qrsp_547_2" object="npc:CH_CT_JeGukGun_0141" type="approach"/>
+				<case object="zone:Zone_FarmTower_ChonZang_NA" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_96" broadcast-category="always" category="normal" craft-type="none" desc="q_96_sum" district-1="jeryoungrim" grade="1" group2="QG_Gathering" id="96" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.96" production="gathering-type-2" save-type="all" show-tutorial-tag="y" tutorial="y">
+		<acquisition level="11" preceding-quest-check="and" production-exp="0" production-id="gathering-type-2" recommended-level="11">
+			<case acquire-quest="y" indicator-social="q_96_s_indi_1" msg="q_96_s" npc-response="qrsp_96_1" object="npc:ch_gather_farmer_0004" type="talk"/>
+		</acquisition>
+		<mission-step guide-message="gm_96_1" guide-message-zone-1="zone_nokmyungchn" id="1" location-x="19483.625" location-y="23529.1289" map="nokmyeong">
+			<mission id="1" name2="Mission.Name2.96_1" required-register-value="1">
+				<case env-looting="q_96_gather_clay_1_icon" gadget-required="dont-care" mapunit-1="2310_e_onoff_2310soil_01" object="zoneenv:e_onoff_2310soil_01" object2="zoneenv2:e_onoff_2310soil_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.96_2" required-register-value="1" reward-1="96_final_set1">
+				<case indicator-social="q_96_m2_indi_1" msg="q_96_m2" npc-response="qrsp_96_2" object="npc:ch_gather_farmer_0004" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

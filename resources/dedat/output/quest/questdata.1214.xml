@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1214" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1214_sum" grade="10" group2="QG_Labyrinth" id="1214" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.1214" reset-type="daily">
+		<acquisition level="50" mastery-level="0" preceding-quest-1="q_sub_1211" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" npc-response="qrsp_1214_1" object="npc:ch_c3_muyeongdan_0002" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1214_1" required-register-value="30">
+				<case object="npc:mh_c3_jegukgun_0043" progress-mission="y" type="killed"/>
+				<case object="npc:mh_c3_jegukgun_0042" progress-mission="y" type="killed"/>
+				<case object="npc:mh_c3_jegukgun_0041" progress-mission="y" type="killed"/>
+				<case object="npc:MH_C3_JeGukGun_0039" progress-mission="y" type="killed"/>
+				<case object="npc:mh_c3_jegukgun_0038" progress-mission="y" type="killed"/>
+				<case object="npc:mh_c3_jegukgun_0037" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1214_2" required-register-value="1" reward-1="1214_final_set1" reward-2="1214_final_set2">
+				<case item="q_1214_1_icon" msg="qrsp_1214_3" progress-mission="y" type="talk-to-self"/>
+				<case npc-response="qrsp_1214_1" object="npc:ch_c3_muyeongdan_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

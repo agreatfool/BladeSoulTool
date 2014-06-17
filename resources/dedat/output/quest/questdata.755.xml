@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_755" broadcast-category="field" category="normal" desc="q_755_sum" district-1="deasamak" grade="1" group2="QG_SaJiSeokRimSouth" id="755" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.755" save-type="all">
+		<acquisition level="29" preceding-quest-1="q_epic_522" preceding-quest-check="and" recommended-level="31">
+			<case acquire-quest="y" indicator-social="q_755_s_indi_1" msg="q_755_s" npc-response="qrsp_755_1" object="npc:ce_padol_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="8111.877" location-y="-28237.133" map="dogimudom">
+			<mission id="1" name2="Mission.Name2.755_1" required-register-value="1">
+				<case indicator-social="q_755_m1_indi_1" msg="q_755_m1" npc-response="qrsp_755_2" object="npc:ce_jindol_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_dogimudom" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="4525.94" location-y="-27205.883" map="dogimudom">
+			<mission id="2" name2="Mission.Name2.755_2" required-register-value="1">
+				<case mapunit-1="3074_e_footswitch_755_01" object="zone:zone_dogimudom" progress-mission="y" type="convoy-arrived"/>
+			</mission>
+			<mission-step-fail dispose-quest="y">
+				<case convoy="sub_755_zcon" object="zone:zone_dogimudom" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step id="3" location-x="8560.191" location-y="-26813.106" map="sajisukrim">
+			<mission id="3" name2="Mission.Name2.755_3" required-register-value="1" reward-1="755_final_set1">
+				<case indicator-social="q_755_m3_indi_1" msg="q_755_m3" npc-response="qrsp_755_3" object="npc:ce_padol_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

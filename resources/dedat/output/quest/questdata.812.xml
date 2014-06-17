@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_812" broadcast-category="field" category="normal" day-of-week="none" desc="q_812_sum" grade="1" group2="QG_ZazakWoodWest" id="812" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.812" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="n" level="46" preceding-quest-1="q_epic_282" preceding-quest-2="q_sub_811" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="48">
+			<case acquire-quest="y" completion-count="0" completion-count-op="ge" npc-response="qrsp_812_1" object="npc:CH_CT_LumberJack_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.812_1" required-register-value="3">
+				<case object="npc:CH_CT_Slave_0047" progress-mission="y" type="npc-manipulate"/>
+				<case object="npc:CH_CT_Slave_0043" progress-mission="y" type="npc-manipulate"/>
+				<case object="npc:CH_CT_Slave_0012" progress-mission="y" type="npc-manipulate"/>
+				<case mapunit-1="5200_CH_CT_Slave_0010_s812" object="npc:CH_CT_Slave_0010" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.812_2" required-register-value="8">
+				<case object="npc:MH_CT_JeGukGun_0504" object2="npc:MH_CT_JeGukGun_0504" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_JeGukGun_0501" object2="npc:MH_CT_JeGukGun_0501" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_JeGukGun_0503" object2="npc:MH_CT_JeGukGun_0503" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_JeGukGun_0500" object2="npc:MH_CT_JeGukGun_0500" progress-mission="y" type="killed"/>
+				<case mapunit-1="5200_MH_CT_JeGukGun_0499_s812" object="npc:MH_CT_JeGukGun_0499" object2="npc:MH_CT_JeGukGun_0499" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.812_3" required-register-value="1" reward-1="812_final_set1">
+				<case completion-count="0" completion-count-op="ge" npc-response="qrsp_812_2" object="npc:CH_CT_Monk_0006" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_584" broadcast-category="field" category="normal" desc="q_584_sum" district-1="deasamak" grade="1" group2="QG_ToMunJinNorth" id="584" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.584" save-type="all">
+		<acquisition level="22" preceding-quest-1="q_epic_505" preceding-quest-check="and" recommended-level="24">
+			<case acquire-quest="y" indicator-social="q_584_s_indi_1" msg="q_584_s" npc-response="qrsp_584_1" object="npc:ch_shaman_028" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_584_des_1" id="1" location-x="-37183.4844" location-y="-69120.5859" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.584_1" required-register-value="1">
+				<case gadget="q_SapA" gadget-required="carry-and-remove" indicator-social="q_584_m1_indi_1" msg="q_584_m1" npc-response="qrsp_584_2" object="npc:ch_shaman_028" progress-mission="y" type="talk"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_skytreebaby_03" object2="zoneenv2:e_onoff_skytreebaby_03" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" object="zoneenv:e_onoff_skytreebaby_02" object2="zoneenv2:e_onoff_skytreebaby_02" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="3003_e_onoff_skytreebaby_01" object="zoneenv:e_onoff_skytreebaby_01" object2="zoneenv2:e_onoff_skytreebaby_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-36607.4141" location-y="-70400.7422" map="toemunjean">
+			<mission id="2" name2="Mission.Name2.584_2" required-register-value="1" reward-1="584_final_set1">
+				<case indicator-social="q_584_m2_indi_1" msg="q_584_m2" npc-response="qrsp_584_3" object="npc:ch_dweller_041" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

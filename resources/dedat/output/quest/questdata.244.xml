@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_244" broadcast-category="field" category="epic" completed-desc="q_244_completed" completed-list="y" desc="q_244_sum" district-1="startzone" grade="1" group2="QG_Toturial" id="244" map-group-1-1="startzone" max-repeat="1" name2="Quest.Name2.244" save-type="all" show-tutorial-tag="n" tutorial="y">
+		<acquisition job-1="소환사" level="1" recommended-level="1" sort-no="104"/>
+		<mission-step desc="q_244_des_1" guide-message="gm_244_1" id="1" location-x="-8737.976" location-y="37157.859" map="startzone">
+			<mission id="1" name2="Mission.Name2.244_1" required-register-value="1">
+				<case mapunit-1="222_4_CH_HongSukKeun_0001" object="zoneenv:1101_foot_6" object2="zoneenv2:1101_foot_6" progress-mission="y" type="env-entered"/>
+				<case object="zone:startzone_renew_all" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_244_m1_indi_1" msg="q_244_m1" npc-response="qrsp_244_1" object="npc:ch_jinyoung_0001" type="talk"/>
+				<case npc-response="qrsp_244_24" object="npc:ch_hongsukkeun_0001" type="approach"/>
+				<case npc-response="qrsp_244_25" object="npc:ch_yungmook_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_244_des_2" id="2" location-x="-8737.976" location-y="37157.859" map="startzone">
+			<mission id="2" name2="Mission.Name2.244_2" required-register-value="1">
+				<case indicator-social="q_244_m2_indi_3" mapunit-1="223_1_CH_HongSukKeun_0001" msg="q_244_m2" npc-response="qrsp_244_7" object="npc:ch_hongsukkeun_0001" progress-mission="y" type="talk"/>
+				<case object="zone:startzone_renew_all" progress-mission="reaction-only" type="enter-zone"/>
+				<case msg="q_244_m2_1" npc-response="qrsp_244_6" object="npc:ch_yungmook_0001" type="talk"/>
+				<case msg="q_244_m2_2" npc-response="qrsp_244_5" object="npc:ch_musung_0001" type="talk"/>
+				<case msg="q_244_m2_3" npc-response="qrsp_244_4" object="npc:ch_jinyoung_0001" type="talk"/>
+				<case indicator-social="q_244_m2_indi_1" msg="q_244_m2_4" npc-response="qrsp_244_3" object="npc:ch_gilhong_0003" type="talk"/>
+				<case msg="q_244_m2_5" npc-response="qrsp_244_2" object="npc:ch_hwajoong_0002" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_244_des_3" id="3" location-x="-8737.976" location-y="37157.859" map="startzone">
+			<mission id="3" name2="Mission.Name2.244_3" required-register-value="1">
+				<case mapunit-1="223_2_CH_HongSukKeun_0001" object="zoneenv:1101_foot_7" object2="zoneenv2:1101_foot_7" progress-mission="y" type="env-entered"/>
+				<case object="zone:startzone_renew_all" progress-mission="reaction-only" type="enter-zone"/>
+				<case msg="q_244_m3" npc-response="qrsp_244_13" object="npc:ch_hongsukkeun_0001" type="talk"/>
+				<case msg="q_244_m3_1" npc-response="qrsp_244_12" object="npc:ch_yungmook_0001" type="talk"/>
+				<case msg="q_244_m3_2" npc-response="qrsp_244_11" object="npc:ch_musung_0001" type="talk"/>
+				<case msg="q_244_m3_3" npc-response="qrsp_244_10" object="npc:ch_jinyoung_0001" type="talk"/>
+				<case msg="q_244_m3_4" npc-response="qrsp_244_9" object="npc:ch_gilhong_0003" type="talk"/>
+				<case msg="q_244_m3_5" npc-response="qrsp_244_8" object="npc:ch_hwajoong_0002" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_244_des_4" guide-message="gm_244_2" id="4" location-x="-8737.976" location-y="37157.859" map="startzone">
+			<mission id="4" name2="Mission.Name2.244_4" required-register-value="1">
+				<case loot-item="start_zone_book" looting="q_224_Quest_marshal_art_book_1_icon" mapunit-1="223_5_e_onoff_bookshelf_re_01" object="zoneenv:e_onoff_bookshelf_re_01" object2="zoneenv2:e_onoff_bookshelf_re_01" progress-mission="y" type="loot"/>
+				<case object="zone:startzone_renew_all" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_244_m4_indi_1" msg="q_244_m4" npc-response="qrsp_244_14" object="npc:ch_hongsukkeun_0001" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_244_des_5" guide-message="gm_244_3" id="5">
+			<mission id="5" name2="Mission.Name2.244_5" required-register-value="1">
+				<case indicator-social="q_244_m5_indi_1" msg="q_244_m5" npc-response="qrsp_244_15" object="npc:ch_hongsukkeun_0001" type="talk"/>
+				<tutorial-case progress-mission="y" type="window-open" window-type="skill"/>
+				<case object="zone:startzone_renew_all" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_244_des_6" id="6" location-x="-8737.976" location-y="37157.859" map="startzone">
+			<mission id="6" name2="Mission.Name2.244_6" required-register-value="1">
+				<case indicator-social="q_244_m6_indi_1" mapunit-1="223_3_CH_HongSukKeun_0001_1" msg="q_244_m6" npc-response="qrsp_244_16" object="npc:ch_hongsukkeun_0001" progress-mission="y" type="talk"/>
+				<case object="zone:startzone_renew_all" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_244_des_7" id="7">
+			<mission id="7" name2="Mission.Name2.244_7" required-register-value="1">
+				<case mapunit-1="1107_startzone_renew_minstrel" object="zone:startzone_renew_minstrel" progress-mission="y" type="enter-zone"/>
+				<case object="zone:startzone_renew_all" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_244_des_8" guide-message="gm_244_4" id="8">
+			<mission id="8" name2="Mission.Name2.244_8" required-register-value="1" reward-1="244_middle_set1">
+				<case msg="q_244_m8" npc-response="qrsp_244_17" object="npc:ch_hongsukkeun_0001" progress-mission="n" type="talk"/>
+				<case object="zone:startzone_renew_minstrel" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_244_m8_1_indi_1" msg="q_244_m8_1" npc-response="qrsp_244_19" object="npc:ce_summoned_0001" progress-mission="y" summoned-preset="Summoned_Cat_Preset_0001" type="acquire-summoned"/>
+				<case indicator-social="q_244_m8_2_indi_1" msg="q_244_m8_2" npc-response="qrsp_244_20" object="npc:ce_summoned_0002" progress-mission="y" summoned-preset="Summoned_Cat_Preset_0002" type="acquire-summoned"/>
+				<case indicator-social="q_244_m8_3_indi_1" msg="q_244_m8_3" npc-response="qrsp_244_21" object="npc:ce_summoned_0003" progress-mission="y" summoned-preset="Summoned_Cat_Preset_0003" type="acquire-summoned"/>
+				<case indicator-social="q_244_m8_4_indi_1" msg="q_244_m8_4" npc-response="qrsp_244_22" object="npc:ce_summoned_0004" progress-mission="y" summoned-preset="Summoned_Cat_Preset_0004" type="acquire-summoned"/>
+				<case msg="q_244_m8_5" npc-response="qrsp_244_23" object="npc:ce_summoned_0005" progress-mission="y" summoned-preset="Summoned_Cat_Preset_0005" type="acquire-summoned"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_244_des_9" id="9">
+			<mission id="9" name2="Mission.Name2.244_9" required-register-value="1" reward-1="244_final_set1">
+				<case indicator-social="q_244_m9_indi_1" mapunit-1="223_3_CH_HongSukKeun_0001_2" msg="q_244_m9" npc-response="qrsp_244_18" object="npc:ch_hongsukkeun_0001" progress-mission="y" type="talk"/>
+				<case object="zone:startzone_renew_minstrel" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest job-1="소환사" quest="q_epic_245"/>
+		</completion>
+		<transit id="1" zone="startzone_renew_blade">
+			<destination mission-step-id="9" zone-index="5"/>
+			<destination mission-step-id="8" zone-index="5"/>
+			<destination mission-step-id="7" zone-index="5"/>
+		</transit>
+	</quest>
+</table>

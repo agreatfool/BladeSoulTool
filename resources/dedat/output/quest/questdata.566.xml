@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_566" broadcast-category="field" category="normal" desc="q_566_sum" district-1="deasamak" grade="1" group2="QG_ToMunJinSouth" id="566" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.566" save-type="all">
+		<acquisition level="20" preceding-quest-1="q_epic_503" preceding-quest-check="and" recommended-level="22">
+			<case acquire-quest="y" indicator-social="q_566_s_indi_1" msg="q_566_s" npc-response="qrsp_566_3" object="npc:ch_sunwooyeon_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-56961.9023" location-y="-64832.0625" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.566_1" required-register-value="1">
+				<case indicator-social="q_566_m1_indi_1" msg="q_566_m1" npc-response="qrsp_566_2" object="npc:ch_namhwadang_0001" progress-mission="y" type="talk" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_566_des_2" id="2" location-x="-54721.6289" location-y="-57663.1836" map="toemunjean">
+			<mission id="2" name2="Mission.Name2.566_2" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_566_quest_old_book_1_icon" mapunit-1="3000_MH_Samagyo_0006" object="npc:mh_samagyo_0006" object2="npc:mh_samagyo_0006" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_566_4" object="npc:ch_namhwadang_0001" type="approach" visible-object="y"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.566_3" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_566_grocery_letter_1_icon" mapunit-2="3000_MH_Samagyo_0007" object="npc:mh_samagyo_0007" object2="npc:mh_samagyo_0007" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-46527.12" location-y="-64520.47" map="OeMalRi" mission-map-type="location">
+			<mission id="4" name2="Mission.Name2.566_4" required-register-value="1" reward-1="566_final_set1">
+				<case indicator-social="q_566_m4_indi_1" msg="q_566_m4" npc-response="qrsp_566_1" object="npc:ch_unguksoldier_013" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_566_4" object="npc:ch_namhwadang_0001" type="approach" visible-object="y"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

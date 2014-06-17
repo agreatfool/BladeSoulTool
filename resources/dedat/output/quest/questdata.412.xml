@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_412" broadcast-category="field" category="normal" desc="q_412_sum" district-1="jeryoungrim" grade="1" group2="QG_HuekUmmRim" id="412" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.412" save-type="all">
+		<acquisition level="11" preceding-quest-1="q_epic_311" preceding-quest-check="and" preceding-quest-mission-step-1="6" recommended-level="13">
+			<case acquire-quest="y" indicator-social="q_412_s_indi_1" msg="q_412_s" npc-response="qrsp_412_1" object="npc:ch_tanyeonbang_0001" progress-mission="n" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.412_1" required-register-value="4">
+				<case looting="q_412_Grocery_Small_Stone_1_icon" mapunit-1="2200_e_door_geomial_01" mapunit-2="2200_e_door_geomial_01_1" mapunit-3="2200_e_door_geomial_01_2" object="zoneenv:e_door_geomial_01" object2="zoneenv2:e_door_geomial_01" progress-mission="y" type="loot"/>
+				<case looting="q_412_Grocery_Small_Stone_1_icon" object="zoneenv:e_door_geomial_02" object2="zoneenv2:e_door_geomial_02" progress-mission="y" type="loot"/>
+				<case looting="q_412_Grocery_Small_Stone_1_icon" object="zoneenv:e_door_geomial_03" object2="zoneenv2:e_door_geomial_03" progress-mission="y" type="loot"/>
+				<case looting="q_412_Grocery_Small_Stone_1_icon" object="zoneenv:e_door_geomial_04" object2="zoneenv2:e_door_geomial_04" progress-mission="y" type="loot"/>
+				<case looting="q_412_Grocery_Small_Stone_1_icon" object="zoneenv:e_door_geomial_05" object2="zoneenv2:e_door_geomial_05" progress-mission="y" type="loot"/>
+				<case looting="q_412_Grocery_Small_Stone_1_icon" object="zoneenv:e_door_geomial_06" object2="zoneenv2:e_door_geomial_06" progress-mission="y" type="loot"/>
+				<case looting="q_412_Grocery_Small_Stone_1_icon" object="zoneenv:e_door_geomial_07" object2="zoneenv2:e_door_geomial_07" progress-mission="y" type="loot"/>
+				<case looting="q_412_Grocery_Small_Stone_1_icon" object="zoneenv:e_door_geomial_08" object2="zoneenv2:e_door_geomial_08" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.412_2" required-register-value="1" reward-1="412_final_set1">
+				<case indicator-social="q_412_m2_indi_1" msg="q_412_m2" npc-response="qrsp_412_2" object="npc:ch_tanyeonbang_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

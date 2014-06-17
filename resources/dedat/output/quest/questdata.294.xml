@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_294" broadcast-category="field" category="epic" desc="q_294_sum" grade="1" group2="QG_BaeCheongEpic" id="294" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.294" save-type="all">
+		<acquisition level="1" recommended-level="50"/>
+		<mission-step desc="q_294_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.294_1" required-register-value="1">
+				<case object="npc:CH_CT_Citizen_0450" type="approach"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest faction="SecondFaction1" quest="q_epic_289"/>
+		</completion>
+	</quest>
+</table>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_506" broadcast-category="field" category="epic" completed-desc="q_506_completed" completed-list="y" desc="q_506_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="506" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.506" save-type="all">
+		<acquisition level="1" recommended-level="24" sort-no="307"/>
+		<mission-step id="1" location-x="-36607.4141" location-y="-70400.7422" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.506_1" required-register-value="1">
+				<case indicator-social="q_506_m1_indi_1" msg="q_506_m1" npc-response="qrsp_506_1" object="npc:ch_shaman_025" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekMoo" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-36431.4023" location-y="-78292.2813" map="yeogwegul">
+			<mission id="3" name2="Mission.Name2.506_3" required-register-value="1">
+				<case mapunit-1="3061_worm1" object="zoneenv:3061_worm2" object2="zoneenv2:3061_worm2" progress-mission="y" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-36267.3398" location-y="-82940.7188" map="toemunjean">
+			<mission id="4" name2="Mission.Name2.506_4" required-register-value="1" reward-1="506_final_set1">
+				<case indicator-social="q_506_m4_indi_1" msg="q_506_m4" npc-response="qrsp_506_3" object="npc:ch_shaman_025" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_507"/>
+		</completion>
+		<mission-step id="2" location-x="-36431.4023" location-y="-78292.2813" map="yeogwegul">
+			<mission id="2" name2="Mission.Name2.506_2" required-register-value="1">
+				<case msg="q_506_m2" npc-response="qrsp_506_2" object="npc:ch_seonggundang_0005" progress-mission="y" type="talk"/>
+				<case object="zone:zone_namudungchi" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_takki_party_2">
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

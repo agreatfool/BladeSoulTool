@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_752" broadcast-category="field" category="normal" desc="q_752_sum" district-1="deasamak" grade="1" group2="QG_SaJiSeokRimSouth" id="752" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.752" save-type="all">
+		<acquisition level="29" preceding-quest-1="q_epic_521" preceding-quest-check="and" recommended-level="31">
+			<case acquire-quest="y" indicator-social="q_752_s_indi_1" msg="q_752_s" npc-response="qrsp_752_1" object="npc:ch_sinryong_0017" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="14998.338" location-y="-25416.15" map="sajisukrim">
+			<mission id="1" name2="Mission.Name2.752_1" required-register-value="1">
+				<case indicator-social="q_752_m1_indi_1" msg="q_752_m1" npc-response="qrsp_752_2" object="npc:ch_chungyi_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="14087.279" location-y="-20739.383" map="sajisukrim">
+			<mission id="2" name2="Mission.Name2.752_2" required-register-value="10">
+				<case mapunit-1="3020_ME_RockMonster_0006" object="npc:me_rockmonster_0006" object2="npc:me_rockmonster_0006" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.752_3" required-register-value="10">
+				<case gadget-required="dont-care" looting="q_752_quest_younga_plant_1_icon" object="zoneenv:e_onoff_child_01" object2="zoneenv2:e_onoff_child_01" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_752_quest_younga_plant_1_icon" object="zoneenv:e_onoff_child_02" object2="zoneenv2:e_onoff_child_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_752_quest_younga_plant_1_icon" object="zoneenv:e_onoff_child_03" object2="zoneenv2:e_onoff_child_03" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_752_quest_younga_plant_1_icon" object="zoneenv:e_onoff_child_04" object2="zoneenv2:e_onoff_child_04" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_752_quest_younga_plant_1_icon" object="zoneenv:e_onoff_child_05" object2="zoneenv2:e_onoff_child_05" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_752_quest_younga_plant_1_icon" object="zoneenv:e_onoff_child_06" object2="zoneenv2:e_onoff_child_06" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_752_quest_younga_plant_1_icon" object="zoneenv:e_onoff_child_07" object2="zoneenv2:e_onoff_child_07" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_752_quest_younga_plant_1_icon" mapunit-1="3020_e_onoff_child_01" object="zoneenv:e_onoff_child_08" object2="zoneenv2:e_onoff_child_08" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="11111.155" location-y="-16548.512" map="sajisukrim">
+			<mission id="4" name2="Mission.Name2.752_4" required-register-value="1" reward-1="752_final_set1">
+				<case indicator-social="q_752_m4_indi_1" msg="q_752_m4" npc-response="qrsp_752_3" object="npc:ch_sinryong_0017" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

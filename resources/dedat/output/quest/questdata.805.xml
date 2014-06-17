@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_805" broadcast-category="field" category="normal" day-of-week="daily" desc="q_805_sum" district-1="deasamak" grade="1" group2="QG_SaJiSeokRimEast" id="805" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.805" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="31" preceding-quest-1="q_epic_527" preceding-quest-check="and" recommended-level="33">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" indicator-social="q_805_s_indi_1" msg="q_805_s" npc-response="qrsp_805_1" object="npc:ch_muun_0002" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator-social="q_805_re_s_indi_1" msg="q_805_re_s" npc-response="qrsp_805_3" object="npc:ch_muun_0002" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_805_5" object="npc:ce_board_0013" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="34737.941" location-y="-12904.277" map="sajisukrim">
+			<mission id="1" name2="Mission.Name2.805_1" required-register-value="12">
+				<case looting="q_783_Grocery_Gem_dust_1_icon" mapunit-1="3024_ME_HwangSaDan_0008" mapunit-2="3024_ME_HwangSaDan_0008_1" mapunit-3="3024_ME_HwangSaDan_0008_2" object="npc:MH_HwangPungDan_0014" object2="npc:MH_HwangPungDan_0014" prob="100" progress-mission="y" quest-symbol-drop-prob="10" type="loot"/>
+				<case looting="q_783_Grocery_Gem_dust_1_icon" object="npc:MH_HwangPungDan_0013" object2="npc:MH_HwangPungDan_0013" prob="100" progress-mission="y" quest-symbol-drop-prob="10" type="loot"/>
+				<case looting="q_783_Grocery_Gem_dust_1_icon" object="npc:MH_BigulBogul_0003" object2="npc:MH_BigulBogul_0003" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+				<case looting="q_783_Grocery_Gem_dust_1_icon" object="npc:MH_BigulBogul_0002" object2="npc:MH_BigulBogul_0002" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+				<case looting="q_783_Grocery_Gem_dust_1_icon" object="npc:ME_HwangSaDan_0008" object2="npc:ME_HwangSaDan_0008" progress-mission="y" quest-symbol-drop-prob="70" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="34434.254" location-y="-18674.316" map="sajisukrim">
+			<mission id="2" name2="Mission.Name2.805_2" required-register-value="1" reward-1="805_final_set1" reward-2="805_final_set2">
+				<case completion-count="1" completion-count-op="lt" indicator-social="q_805_m2_indi_1" msg="q_805_m2" npc-response="qrsp_805_2" object="npc:ch_muun_0002" progress-mission="y" type="talk"/>
+				<case completion-count="1" indicator-social="q_805_re_m2_indi_1" msg="q_805_re_m2" npc-response="qrsp_805_4" object="npc:ch_muun_0002" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_805_1_icon" msg="q_805_m4" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

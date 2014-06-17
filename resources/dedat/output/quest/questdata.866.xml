@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_866" broadcast-category="always" category="normal" day-of-week="daily" desc="q_866_sum" district-1="deasamak" district-2="suwal" grade="10" group2="QG_OSaekAmDoWest" id="866" map-group-1-1="deasamak" map-group-1-2="suwal" max-repeat="1" name2="Quest.Name2.866" reset-type="daily" save-type="all">
+		<mission-step id="1" location-x="58000" location-y="36586.7969" map="heasangmudom">
+			<mission id="1" name2="Mission.Name2.866_1" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="3064_MH_BokGonPe_0001" object="npc:mh_bokgonpe_0001" object2="npc:mh_bokgonpe_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="63812.5" location-y="32774.2969" map="heasangmudom">
+			<mission id="2" name2="Mission.Name2.866_2" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="3064_MH_BokGonPe_0025" object="npc:mh_bokgonpe_0025" object2="npc:mh_bokgonpe_0025" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="65375" location-y="28086.7949" map="heasangmudom">
+			<mission id="3" name2="Mission.Name2.866_3" required-register-value="1">
+				<case indicator-social="q_866_m3_indi_1" msg="q_866_m3" npc-response="qrsp_866_2" object="npc:ch_mayeongganggun_0056" progress-mission="y" type="talk" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="65625" location-y="24211.7949" map="heasangmudom">
+			<mission id="4" name2="Mission.Name2.866_4" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="3064_ME_FireGorilla_0001" object="npc:me_firegorilla_0001" object2="npc:me_firegorilla_0001" progress-mission="y" type="killed"/>
+				<case object="npc:ch_mayeongganggun_0056" type="approach" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<acquisition check-tencent-vitality="n" level="35" preceding-quest-1="q_epic_538" preceding-quest-2="q_sub_865" preceding-quest-check="and" recommended-level="39">
+			<case acquire-quest="y" indicator-social="q_866_s_indi_1" msg="q_866_s" npc-response="qrsp_866_1" object="npc:ch_graverobber_0001" type="talk"/>
+			<case acquire-quest="y" indicator-social="q_866_s_1_indi_1" msg="q_866_s_1" npc-response="qrsp_866_4" object="npc:ch_taesangmun_0005" type="talk"/>
+		</acquisition>
+		<mission-step id="5" location-x="44356.78" location-y="38340.76" map="oseakamdo" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.866_5" required-register-value="1" reward-1="866_final_set1" reward-2="866_final_set2">
+				<case indicator-social="q_866_m5_indi_1" msg="q_866_m5" npc-response="qrsp_866_3" object="npc:ch_graverobber_0001" prob="100" progress-mission="y" type="talk"/>
+				<case indicator-social="q_866_m5_1_indi_1" msg="q_866_m5_1" npc-response="qrsp_866_5" object="npc:ch_taesangmun_0005" prob="100" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_866_1_icon" msg="q_866_m6_1" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

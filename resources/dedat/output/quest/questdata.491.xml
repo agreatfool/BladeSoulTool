@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_491" broadcast-category="field" category="epic" completed-desc="q_491_completed" completed-list="y" desc="q_491_sum" district-1="jeryoungrim" grade="1" group2="QG_JeRyoungRimEpic" id="491" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.491" save-type="all">
+		<acquisition level="1" recommended-level="14" sort-no="214"/>
+		<mission-step completion-type="and" desc="q_491_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.491_1" required-register-value="1">
+				<case npc-response="qrsp_491_2" object="npc:mh_practitioner_002" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_312_5" object="npc:ctzn_lynm_dokchogeosa_foc_001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" desc="q_491_des_2" id="2">
+			<mission id="2" name2="Mission.Name2.491_2" required-register-value="1" reward-1="491_final_set1">
+				<case indicator-social="q_491_m2_indi_1" mapunit-1="2608_Guide_n" msg="q_491_m2" npc-response="qrsp_491_1" object="npc:CE_JR_DokChoGeoSa_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_492"/>
+		</completion>
+	</quest>
+</table>

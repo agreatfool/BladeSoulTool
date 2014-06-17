@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_503" broadcast-category="field" category="epic" completed-desc="q_503_completed" completed-list="y" desc="q_503_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="503" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.503" save-type="all">
+		<acquisition level="1" recommended-level="22" sort-no="304"/>
+		<mission-step id="1" location-x="-68525.86" location-y="-73338.81" map="sadangzeeha" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.503_1" required-register-value="1">
+				<case indicator-social="q_503_m1_indi_1" msg="q_503_m1" npc-response="qrsp_503_1" object="npc:ch_inspector_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_SaDangZeeHa" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_503_6" object="npc:ch_soyeonhwa_0002" type="approach" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-68728.01" location-y="-73630.80" map="sadangzeeha" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.503_2" required-register-value="1">
+				<case mapunit-1="3060_e_door_samajail_01" object="zoneenv:e_door_samajail_01" object2="zoneenv2:e_door_samajail_01" progress-mission="y" type="manipulate"/>
+				<case object="zone:zone_SaDangZeeHa" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_503_7" object="npc:ch_soyeonhwa_0002" type="approach" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_503_des_3" id="3" location-x="-71108.87" location-y="-73316.35" map="sadangzeeha" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.503_3" required-register-value="1">
+				<case mapunit-1="3060_MH_Samagyo_0018" object="npc:ce_secretbook_0001" progress-mission="y" type="npc-manipulate"/>
+				<case object="zone:zone_SaDangZeeHa" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_503_8" object="npc:ch_soyeonhwa_0002" type="approach" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-71108.8672" location-y="-73540.9609" map="sadangzeeha">
+			<mission id="4" name2="Mission.Name2.503_4" required-register-value="1">
+				<case msg="q_503_m4" npc-response="qrsp_503_3" object="npc:ch_inspector_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_SaDangZeeHa" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_503_9" object="npc:ch_soyeonhwa_0002" type="approach" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="-72007.3047" location-y="-75450.1406" map="sadangzeeha">
+			<mission id="5" name2="Mission.Name2.503_5" required-register-value="3">
+				<case object="zoneenv:e_door_samajail_02" object2="zoneenv2:e_door_samajail_02" progress-mission="y" type="manipulate"/>
+				<case object="zoneenv:e_door_samajail_03" object2="zoneenv2:e_door_samajail_03" progress-mission="y" type="manipulate"/>
+				<case mapunit-1="3060_e_door_samajail_02" mapunit-2="3060_e_door_samajail_03" mapunit-3="3060_e_door_samajail_04" object="zoneenv:e_door_samajail_04" object2="zoneenv2:e_door_samajail_04" progress-mission="y" type="manipulate"/>
+				<case object="zone:zone_SaDangZeeHa" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+			<mission id="6" name2="Mission.Name2.503_6" required-register-value="1" reward-1="503_middle_set1">
+				<case indicator-social="q_503_m6_indi_1" msg="q_503_m6" npc-response="qrsp_503_4" object="npc:ch_soyeonhwa_0002" progress-mission="y" type="talk" visible-object="y"/>
+				<case object="zone:zone_SaDangZeeHa" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:e_door_samajail_02" object2="zoneenv2:e_door_samajail_02" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_door_samajail_03" object2="zoneenv2:e_door_samajail_03" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zoneenv:e_door_samajail_04" object2="zoneenv2:e_door_samajail_04" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6" location-x="-44359.1523" location-y="-62430.625" map="oemalri">
+			<mission id="7" name2="Mission.Name2.503_7" required-register-value="1" reward-1="503_final_set1">
+				<case indicator-social="q_503_m7_indi_1" msg="q_503_m7" npc-response="qrsp_503_5" object="npc:ch_unguksoldier_001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HanSiRangHouse" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_503_2" object="npc:CH_GilDong_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_504"/>
+		</completion>
+	</quest>
+</table>

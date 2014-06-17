@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_619" broadcast-category="field" category="normal" desc="q_619_sum" district-1="deasamak" grade="1" group2="QG_HwangPungSaMak" id="619" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.619" save-type="all">
+		<acquisition level="25" preceding-quest-1="q_epic_514" preceding-quest-2="q_sub_618" preceding-quest-check="and" recommended-level="27">
+			<case acquire-quest="y" indicator-social="q_619_s_indi_1" msg="q_619_s" npc-response="qrsp_619_1" object="npc:ch_mayeongganggun_0043" type="talk"/>
+			<case npc-response="qrsp_619_4" object="npc:ch_mabulpa_0001" type="approach" visible-object="y"/>
+		</acquisition>
+		<mission-step id="1" location-x="-48389.8906" location-y="2267.0703" map="yeolsajeedea">
+			<mission id="1" name2="Mission.Name2.619_1" required-register-value="1">
+				<case indicator-social="q_619_m1_indi_1" msg="q_619_m1" npc-response="qrsp_619_2" object="npc:ch_mabulpa_0001" progress-mission="y" type="talk" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_619_des_2" id="2" location-x="-51093.4297" location-y="3572.2266" map="yeolsajeedea">
+			<mission id="2" name2="Mission.Name2.619_2" required-register-value="8">
+				<case object="npc:ch_stones_0001" progress-mission="y" type="npc-manipulate"/>
+				<case object="npc:ch_stones_0002" progress-mission="y" type="npc-manipulate"/>
+				<case mapunit-2="3010_ME_RockMonster_0004" object="npc:ch_stones_0003" progress-mission="y" type="npc-manipulate"/>
+				<case object="npc:mh_jukryongchae_0005" object2="npc:mh_jukryongchae_0005" progress-mission="reaction-only" type="killed"/>
+				<case object="npc:mh_jukryongchae_0004" object2="npc:mh_jukryongchae_0004" progress-mission="reaction-only" type="killed"/>
+				<case npc-response="qrsp_619_5" object="npc:ch_mabulpa_0001" type="approach" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-56686.9531" location-y="7860.5977" map="yeolsajeedea">
+			<mission id="3" name2="Mission.Name2.619_3" required-register-value="1" reward-1="619_final_set1">
+				<case indicator-social="q_619_m3_indi_1" msg="q_619_m3" npc-response="qrsp_619_3" object="npc:CH_MaBulPa_0002" progress-mission="y" type="talk" visible-object="n"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

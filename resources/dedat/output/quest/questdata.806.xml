@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_806" broadcast-category="field" category="normal" day-of-week="daily" desc="q_806_sum" grade="1" group2="QG_ZazakWoodWest" id="806" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.806" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="46" preceding-quest-1="q_epic_278" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="48">
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_806_9" object="npc:CE_CT_Board_0027" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_806_6" object="npc:CH_CT_Monk_0015" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_806_1" object="npc:CH_CT_Monk_0015" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.806_1" required-register-value="2">
+				<case npc-response="qrsp_806_4" object="npc:CH_CT_Citizen_0181" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_806_3" object="npc:CH_CT_Citizen_0180" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_806_2" object="npc:CH_CT_Citizen_0179" progress-mission="y" type="talk"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.806_2" required-register-value="3">
+				<case object="npc:CH_CT_Monk_0034" progress-mission="y" type="npc-manipulate"/>
+				<case object="npc:CH_CT_Monk_0033" progress-mission="y" type="npc-manipulate"/>
+				<case object="npc:CH_CT_Monk_0032" progress-mission="y" type="npc-manipulate"/>
+				<case object="npc:CH_CT_Monk_0013" progress-mission="y" type="npc-manipulate"/>
+				<case object="npc:CH_CT_Monk_0012" progress-mission="y" type="npc-manipulate"/>
+				<case mapunit-1="5232_CH_CT_Monk_0011_s806" object="npc:CH_CT_Monk_0011" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.806_3" required-register-value="1">
+				<case gadget="Q_FireWood_0002" gadget-required="carry-and-remove" indicator="quest-gadget-required" mapunit-1="5230_e_chest_jajakstfiresub_01_s806" object="zoneenv:e_chest_jajakstfiresub_01" object2="zoneenv2:e_chest_jajakstfiresub_01" progress-mission="y" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="5230_e_chest_jajaktreesub_01_s806" object="zoneenv:e_chest_jajaktreesub_01" object2="zoneenv2:e_chest_jajaktreesub_01" progress-mission="reaction-only" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="4" name2="Mission.Name2.806_4" required-register-value="5">
+				<case looting="q_806_1_icon" object="zoneenv:e_Chest_silkmush_10" object2="zoneenv2:e_Chest_silkmush_10" progress-mission="y" type="loot"/>
+				<case looting="q_806_1_icon" object="zoneenv:e_Chest_silkmush_09" object2="zoneenv2:e_Chest_silkmush_09" progress-mission="y" type="loot"/>
+				<case looting="q_806_1_icon" object="zoneenv:e_Chest_silkmush_08" object2="zoneenv2:e_Chest_silkmush_08" progress-mission="y" type="loot"/>
+				<case looting="q_806_1_icon" object="zoneenv:e_Chest_silkmush_07" object2="zoneenv2:e_Chest_silkmush_07" progress-mission="y" type="loot"/>
+				<case looting="q_806_1_icon" object="zoneenv:e_Chest_silkmush_06" object2="zoneenv2:e_Chest_silkmush_06" progress-mission="y" type="loot"/>
+				<case looting="q_806_1_icon" object="zoneenv:e_Chest_silkmush_05" object2="zoneenv2:e_Chest_silkmush_05" progress-mission="y" type="loot"/>
+				<case looting="q_806_1_icon" object="zoneenv:e_Chest_silkmush_04" object2="zoneenv2:e_Chest_silkmush_04" progress-mission="y" type="loot"/>
+				<case looting="q_806_1_icon" object="zoneenv:e_Chest_silkmush_03" object2="zoneenv2:e_Chest_silkmush_03" progress-mission="y" type="loot"/>
+				<case looting="q_806_1_icon" object="zoneenv:e_Chest_silkmush_02" object2="zoneenv2:e_Chest_silkmush_02" progress-mission="y" type="loot"/>
+				<case looting="q_806_1_icon" mapunit-1="5230_e_Chest_silkmush_01_s806" mapunit-2="5230_e_Chest_silkmush_01_s806_1" object="zoneenv:e_Chest_silkmush_01" object2="zoneenv2:e_Chest_silkmush_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="5" name2="Mission.Name2.806_5" required-register-value="1">
+				<case mapunit-1="5230_e_Chest_sorapot_01_s806" object="zoneenv:e_Chest_sorapot_01" object2="zoneenv2:e_Chest_sorapot_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="6" name2="Mission.Name2.806_6" required-register-value="1" reward-1="806_final_set1" reward-2="806_final_set2">
+				<case fee="y" item="q_806_2_icon" msg="q_806_8" progress-mission="y" type="talk-to-self"/>
+				<case completion-count="1" npc-response="qrsp_806_7" object="npc:CH_CT_Monk_0015" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_806_5" object="npc:CH_CT_Monk_0015" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

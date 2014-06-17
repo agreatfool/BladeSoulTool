@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_331" broadcast-category="field" category="normal" desc="q_331_sum" district-1="jeryoungrim" grade="1" group="제룡림(망자의 숲)" group2="QG_MangJaSup" id="331" map-group-1-1="jeryoungrim" max-repeat="1" name="지피지기면 백전백승" name2="Quest.Name2.331" save-type="all">
+		<acquisition level="2" preceding-quest-1="q_epic_304" preceding-quest-check="and" preceding-quest-mission-step-1="9" recommended-level="4">
+			<case acquire-quest="y" indicator-social="q_331_s_indi_1" msg="q_331_s" npc-response="qrsp_331_1" object="npc:CH_Citizen_0027" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="-31466.08" location-y="-51177.31" map="mangjasup" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.331_1" required-register-value="1">
+				<case indicator-social="q_331_m1_indi_1" mapunit-1="2010_guide_S331" msg="q_331_m1" npc-response="qrsp_331_2" object="npc:ch_jakyoungdan_009" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_331_5" object="npc:ch_citizen_0027" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="4" location-x="-33384.3203" location-y="-52256.3203" map="mangjasup">
+			<mission id="4" name="자경단 초소의 묵언도에게 보고" name2="Mission.Name2.331_4" required-register-value="1" reward-1="331_final_set1">
+				<case indicator-social="q_331_m4_indi_1" msg="q_331_m4" npc-response="qrsp_331_4" object="npc:ch_jakyoungdan_009" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Scroll_Jeryunglim_0010"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_331_des_3" id="3">
+			<mission id="3" name2="Mission.Name2.331_3" required-register-value="1">
+				<case item="Quest_Scroll_Jeryunglim_0010" msg="q_331_m3" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.331_2" required-register-value="1" show-kill-mapunit="y">
+				<case loot-item="Quest_Scroll_Jeryunglim_0010" looting="q_331_Quest_old_letter_1_icon" object="npc:mh_chunggak_0070" object2="npc:mh_chunggak_0070" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_Jeryunglim_0010"/>
+	</quest>
+</table>

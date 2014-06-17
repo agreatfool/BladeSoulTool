@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_356" broadcast-category="field" category="normal" desc="q_356_sum" district-1="jeryoungrim" grade="1" group="제룡림(충각단 제룡림 전초기지)" group2="QG_Delete" id="356" map-group-1-1="jeryoungrim" max-repeat="1" name="여인의 한" name2="Quest.Name2.356" retired="y" save-type="all">
+		<acquisition level="50" preceding-quest-1="q_epic_308" preceding-quest-check="and" recommended-level="50"/>
+		<mission-step completion-type="and" desc="q_356_des_1" id="1" location-x="-35362.5078" location-y="-31515.3281" map="mangjasup">
+			<mission id="1" name="호숙이의 무덤에서 호숙이를 불러내 대화" name2="Mission.Name2.356_1" required-register-value="1"/>
+		</mission-step>
+		<mission-step completion-type="and" id="3" location-x="-43874.7109" location-y="-19826.0391" map="mangjasup">
+			<mission id="5" name="충각단 전초기지에 있는 남해 함대 수송대장 당자강 처치" name2="Mission.Name2.356_5" required-register-value="1" show-kill-mapunit="y"/>
+			<mission id="4" name2="Mission.Name2.356_4" required-register-value="1"/>
+			<mission id="3" name2="Mission.Name2.356_3" required-register-value="8"/>
+		</mission-step>
+		<mission-step completion-type="and" id="4" location-x="-35662.2344" location-y="-35471.7031" map="mangjasup">
+			<mission id="6" name="화장터에 있는 영환도사 도백균에게 보고" name2="Mission.Name2.356_6" required-register-value="1" reward-1="356_final_set1"/>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.356_2" required-register-value="1"/>
+		</mission-step>
+	</quest>
+</table>

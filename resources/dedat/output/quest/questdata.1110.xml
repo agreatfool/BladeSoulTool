@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1110" broadcast-category="field" category="normal" desc="q_1110_sum" district-1="suwal" grade="1" group2="QG_Farmland" id="1110" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1110" save-type="all">
+		<acquisition level="37" preceding-quest-1="q_epic_908" preceding-quest-check="and" preceding-quest-mission-step-1="4" recommended-level="39">
+			<case loot-item="Quest_Scroll_SoowolPyungwon_0027" looting="q_1110_Quest_brown_book_1_icon" object="npc:me_hyeolpung_0002" object2="npc:me_hyeolpung_0002" prob="50" progress-mission="y" type="loot"/>
+			<case loot-item="Quest_Scroll_SoowolPyungwon_0027" looting="q_1110_Quest_brown_book_1_icon" object="npc:me_hyeolpung_0001" object2="npc:me_hyeolpung_0001" prob="50" progress-mission="y" type="loot"/>
+			<case loot-item="Quest_Scroll_SoowolPyungwon_0027" looting="q_1110_Quest_brown_book_1_icon" object="npc:me_hyeolpung_0003" object2="npc:me_hyeolpung_0003" prob="50" progress-mission="y" type="loot"/>
+			<case loot-item="Quest_Scroll_SoowolPyungwon_0027" looting="q_1110_Quest_brown_book_1_icon" object="npc:me_pigtribeb_0003" object2="npc:me_pigtribeb_0003" prob="50" progress-mission="y" type="loot"/>
+			<case loot-item="Quest_Scroll_SoowolPyungwon_0027" looting="q_1110_Quest_brown_book_1_icon" object="npc:ME_PigTribeB_0008" object2="npc:ME_PigTribeB_0008" prob="50" progress-mission="y" type="loot"/>
+			<case loot-item="Quest_Scroll_SoowolPyungwon_0027" looting="q_1110_Quest_brown_book_1_icon" object="npc:ME_HyeolPung_0005" object2="npc:ME_HyeolPung_0005" prob="50" progress-mission="y" type="loot"/>
+			<case loot-item="Quest_Scroll_SoowolPyungwon_0027" looting="q_1110_Quest_brown_book_1_icon" object="npc:ME_HyeolPung_0006" object2="npc:ME_HyeolPung_0006" prob="50" progress-mission="y" type="loot"/>
+			<case loot-item="Quest_Scroll_SoowolPyungwon_0027" looting="q_1110_Quest_brown_book_1_icon" object="npc:ME_HyeolPung_0007" object2="npc:ME_HyeolPung_0007" prob="50" progress-mission="y" type="loot"/>
+			<case acquire-quest="y" item="Quest_Scroll_SoowolPyungwon_0027" msg="q_1110_1" type="talk-to-item"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1110_1" required-register-value="1" reward-1="1110_final_set1">
+				<case npc-response="qrsp_1110_1" object="npc:ch_cheongnyeonhoe_0002" progress-mission="y" type="talk"/>
+				<completion-loss item-1="Quest_Scroll_SoowolPyungwon_0027"/>
+			</mission>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_SoowolPyungwon_0027"/>
+	</quest>
+</table>

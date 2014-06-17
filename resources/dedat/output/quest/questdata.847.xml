@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_847" broadcast-category="field" category="normal" desc="q_847_sum" district-1="deasamak" grade="1" group2="QG_OSaekAmDoWest" id="847" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.847" save-type="all">
+		<acquisition level="33" preceding-quest-1="q_epic_530" preceding-quest-check="and" recommended-level="35">
+			<case acquire-quest="y" indicator-social="q_847_s_indi_1" msg="q_847_s" npc-response="qrsp_847_1" object="npc:ch_unguk_0001" type="talk"/>
+			<case indicator-social="q_847_s_indi_2" npc-response="qrsp_847_3" object="npc:ce_hoerangjok_0002" type="approach"/>
+			<case indicator-social="q_847_s_indi_3" npc-response="qrsp_847_4" object="npc:ch_subfactioncostume_0006" type="approach"/>
+		</acquisition>
+		<mission-step desc="q_847_des_1" id="1" location-x="11558.2109" location-y="43026.2734" map="oseakamdo">
+			<mission id="1" name2="Mission.Name2.847_1" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_847_Quest_tooth_1_icon" mapunit-1="3030_ME_JunoLeader_0001" object="npc:me_junoleader_0001" object2="npc:me_junoleader_0001" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="16962.9063" location-y="33849.0313" map="hoerangchon">
+			<mission id="2" name2="Mission.Name2.847_2" required-register-value="1" reward-1="847_final_set1">
+				<case indicator-social="q_847_m2_indi_1" msg="q_847_m2" npc-response="qrsp_847_2" object="npc:ch_unguk_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

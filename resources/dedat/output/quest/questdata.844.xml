@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_844" broadcast-category="field" category="normal" day-of-week="daily" desc="q_844_sum" grade="8" group2="QG_SnowMountSouth" id="844" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.844" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="47" preceding-quest-1="q_epic_283" preceding-quest-2="q_epic_293" preceding-quest-check="or" preceding-quest-mission-step-1="1" recommended-level="49">
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_844_6" object="npc:CE_CT_Board_0030" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_844_3" object="npc:CH_CT_Hunter_0025" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_844_1" object="npc:CH_CT_Hunter_0025" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.844_1" required-register-value="3">
+				<case gadget-required="dont-care" indicator="default" object="zoneenv:e_Gate_icedoorsub_04" object2="zoneenv2:e_Gate_icedoorsub_04" progress-mission="y" type="killed"/>
+				<case gadget-required="dont-care" indicator="default" object="zoneenv:e_Gate_icedoorsub_03" object2="zoneenv2:e_Gate_icedoorsub_03" progress-mission="y" type="killed"/>
+				<case gadget-required="dont-care" object="zoneenv:e_Gate_icedoorsub_02" object2="zoneenv2:e_Gate_icedoorsub_02" progress-mission="y" type="killed"/>
+				<case gadget-required="dont-care" mapunit-1="5280_e_Gate_icedoorsub_01_s844" mapunit-2="5280_e_Gate_icedoorsub_02_s844" mapunit-3="5280_e_Gate_icedoorsub_03_s844" mapunit-4="5280_e_Gate_icedoorsub_04_s844" object="zoneenv:e_Gate_icedoorsub_01" object2="zoneenv2:e_Gate_icedoorsub_01" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.844_2" required-register-value="1">
+				<case gadget-required="dont-care" object="npc:ME_CT_ChuAngKa_0009" object2="npc:ME_CT_ChuAngKa_0009" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.844_3" required-register-value="1" reward-1="844_final_set1" reward-2="844_final_set2">
+				<case fee="y" item="q_844_1_icon" msg="q_844_5" progress-mission="y" type="talk-to-self"/>
+				<case completion-count="1" npc-response="qrsp_844_4" object="npc:CH_CT_Hunter_0025" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_844_2" object="npc:CH_CT_Hunter_0025" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_340" broadcast-category="field" category="normal" desc="q_340_sum" district-1="jeryoungrim" grade="1" group="제룡림(망자의 숲)" group2="QG_MangJaSup" id="340" map-group-1-1="jeryoungrim" max-repeat="1" name="진상남녀 (1)" name2="Quest.Name2.340" save-type="all">
+		<acquisition level="6" preceding-quest-1="q_epic_307" preceding-quest-check="and" preceding-quest-mission-step-1="3" recommended-level="8">
+			<case acquire-quest="y" indicator-social="q_340_s_indi_1" msg="q_340_s" npc-response="qrsp_340_1" object="npc:ch_jakyungdan_0006" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" desc="q_340_des_1" id="1" location-x="-9719.8125" location-y="-31581.9102" map="BukJJok_Dun">
+			<mission id="1" name="망자의 숲 동쪽에 있는 흑룡채 정찰조장 마조만 처치하고 추화연의 옷 탈환" name2="Mission.Name2.340_1" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_340_grocery_cheap_white_cloth_1_icon" mapunit-1="2000_mob_jinm_bandit_member_fst_q_001" object="npc:mob_jinm_bandit_member_fst_q_001" object2="npc:mob_jinm_bandit_member_fst_q_001" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="-20855.8008" location-y="-29597.0859" map="mangjasup">
+			<mission id="2" name="숲속 야영지에 있는 대나무 마을 자경단 진화려에게 보고" name2="Mission.Name2.340_2" required-register-value="1" reward-1="340_final_set1">
+				<case indicator-social="q_340_m2_indi_1" msg="q_340_m2" npc-response="qrsp_340_2" object="npc:ch_jakyungdan_0006" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

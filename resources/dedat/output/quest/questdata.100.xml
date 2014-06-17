@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_100" broadcast-category="always" category="normal" content-type="production" craft-type="production" district-1="jeryoungrim" grade="1" group2="QG_Gathering" id="100" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.100" save-type="all" show-tutorial-tag="n" tutorial="n">
+		<acquisition level="11" production-exp="0" production-id="production-type-1" recommended-level="13">
+			<case acquire-quest="y" item="general_grocery_producerecipe_0011" msg="q_100_s" type="talk-to-item"/>
+			<acquisition-loss item-1="general_grocery_producerecipe_0011" item-count-1="1"/>
+		</acquisition>
+	</quest>
+</table>

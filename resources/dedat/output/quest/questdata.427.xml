@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_427" broadcast-category="field" category="normal" content-type="none" desc="q_427_sum" grade="1" group2="QG_Delete" id="427" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.427" reset-type="daily" retired="y" save-type="all">
+		<acquisition level="16" recommended-level="16"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.427_1" required-register-value="1"/>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.427_2" required-register-value="1"/>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.427_3" required-register-value="1"/>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.427_4" required-register-value="1"/>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.427_5" required-register-value="1" reward-1="427_final_set1" reward-2="427_final_set2"/>
+		</mission-step>
+	</quest>
+</table>

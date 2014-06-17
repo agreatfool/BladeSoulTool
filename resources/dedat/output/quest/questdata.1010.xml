@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1010" broadcast-category="field" category="normal" desc="q_1010_sum" district-1="suwal" grade="1" group2="QG_Wolchon" id="1010" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1010" save-type="all">
+		<acquisition level="36" preceding-quest-1="q_sub_1008" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="38">
+			<case acquire-quest="y" npc-response="qrsp_1010_1" object="npc:CH_SinRyong_0045" type="talk"/>
+			<case npc-response="qrsp_1011_10" object="npc:CH_Bounty Hunter_0012" type="approach"/>
+			<case npc-response="qrsp_1011_9" object="npc:CH_Bounty Hunter_0011" type="approach"/>
+			<case npc-response="qrsp_1011_8" object="npc:CH_Bounty Hunter_0010" type="approach"/>
+			<case npc-response="qrsp_1011_7" object="npc:CH_Bounty Hunter_0009" type="approach"/>
+			<case npc-response="qrsp_1011_6" object="npc:CH_Bounty Hunter_0008" type="approach"/>
+			<case npc-response="qrsp_1011_5" object="npc:CH_Bounty Hunter_0007" type="approach"/>
+			<case npc-response="qrsp_1011_4" object="npc:CH_Hunter_0008" type="approach"/>
+			<case npc-response="qrsp_1011_3" object="npc:CH_Hunter_0007" type="approach"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1010_1" required-register-value="1">
+				<case looting="q_1010_Quest_blue_book_1_icon" object="npc:MH_JeGukGun_0002" object2="npc:MH_JeGukGun_0002" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case looting="q_1010_Quest_blue_book_1_icon" object="npc:MH_JeGukGun_0003" object2="npc:MH_JeGukGun_0003" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case looting="q_1010_Quest_blue_book_1_icon" object="npc:MH_JeGukGun_0281" object2="npc:MH_JeGukGun_0281" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case looting="q_1010_Quest_blue_book_1_icon" mapunit-1="4000_MH_JeGukGun_0002" mapunit-2="4000_MH_JeGukGun_0002_1" mapunit-3="4000_MH_JeGukGun_0002_2" object="npc:MH_JeGukGun_0282" object2="npc:MH_JeGukGun_0282" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case npc-response="qrsp_1011_10" object="npc:CH_Bounty Hunter_0012" type="approach"/>
+				<case npc-response="qrsp_1011_9" object="npc:CH_Bounty Hunter_0011" type="approach"/>
+				<case npc-response="qrsp_1011_8" object="npc:CH_Bounty Hunter_0010" type="approach"/>
+				<case npc-response="qrsp_1011_7" object="npc:CH_Bounty Hunter_0009" type="approach"/>
+				<case npc-response="qrsp_1011_6" object="npc:CH_Bounty Hunter_0008" type="approach"/>
+				<case npc-response="qrsp_1011_5" object="npc:CH_Bounty Hunter_0007" type="approach"/>
+				<case npc-response="qrsp_1011_4" object="npc:CH_Hunter_0008" type="approach"/>
+				<case npc-response="qrsp_1011_3" object="npc:CH_Hunter_0007" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1010_2" required-register-value="1" reward-1="1010_final_set1">
+				<case npc-response="qrsp_1010_2" object="npc:CH_SinRyong_0045" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

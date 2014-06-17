@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_688" broadcast-category="field" category="normal" desc="q_688_sum" grade="1" group2="QG_BooNongWestSouth" id="688" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.688" save-type="all">
+		<acquisition level="43" preceding-quest-1="q_epic_262" preceding-quest-2="q_sub_685" preceding-quest-check="and" recommended-level="45">
+			<case acquire-quest="y" npc-response="qrsp_688_1" object="npc:CH_CT_LeeMoongRyong_0003" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.688_1" required-register-value="1">
+				<case looting="q_688_1_icon" object="npc:ME_CT_HaOBang_0066" object2="npc:ME_CT_HaOBang_0066" progress-mission="y" quest-symbol-drop-prob="20" type="loot"/>
+				<case looting="q_688_1_icon" object="npc:ME_CT_HaOBang_0064" object2="npc:ME_CT_HaOBang_0064" progress-mission="y" quest-symbol-drop-prob="20" type="loot"/>
+				<case looting="q_688_1_icon" mapunit-1="5002_ME_CT_HaOBang_0065_s688" object="npc:ME_CT_HaOBang_0065" object2="npc:ME_CT_HaOBang_0065" progress-mission="y" quest-symbol-drop-prob="20" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.688_2" required-register-value="7">
+				<case mapunit-1="5001_ME_CT_HaOBang_0101_s688" object="npc:ME_CT_HaOBang_0101" object2="npc:ME_CT_HaOBang_0101" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.688_3" required-register-value="1">
+				<case npc-response="qrsp_688_2" object="npc:CH_CT_LeeMoongRyong_0004" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_688_3" object="npc:CH_CT_LeeMoongRyong_0003" type="approach"/>
+				<case npc-response="qrsp_688_9" object="npc:CH_CT_ChungYangI_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="4" name2="Mission.Name2.688_4" required-register-value="1" reward-1="688_final_set1">
+				<case npc-response="qrsp_688_3" object="npc:CH_CT_LeeMoongRyong_0003" type="approach"/>
+				<case npc-response="qrsp_688_4" object="npc:CH_CT_YungOk_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_688_6" object="npc:CH_CT_ChungYangI_0001" progress-mission="n" type="approach"/>
+				<case npc-response="qrsp_688_8" object="npc:CH_CT_LeeMoongRyong_0004" progress-mission="n" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

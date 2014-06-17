@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_762" broadcast-category="field" category="normal" desc="q_762_sum" district-1="deasamak" grade="1" group2="QG_SaJiSeokRimSouth" id="762" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.762" save-type="all">
+		<acquisition level="32" preceding-quest-1="q_epic_528" preceding-quest-2="q_sub_787" preceding-quest-check="and" recommended-level="34">
+			<case acquire-quest="y" indicator-social="q_762_s_indi_1" msg="q_762_s" npc-response="qrsp_762_1" object="npc:ch_mayeongganggun_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="2" location-x="14106.283" location-y="-37581.875" map="hangari">
+			<mission id="2" name2="Mission.Name2.762_2" required-register-value="1">
+				<case mapunit-1="3020_ch_mayeongganggun_0020_1" object="npc:ch_mayeongganggun_0020" object2="npc:ch_mayeongganggun_0020" progress-mission="y" type="killed"/>
+				<case object="zone:zone_sunjinhan" progress-mission="reaction-only" type="enter-zone"/>
+				<case mapunit-1="3020_ch_mayeongganggun_0020_1" object="npc:ch_mayeongganggun_0054" object2="npc:ch_mayeongganggun_0054" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="13461.752" location-y="-37503.75" map="hangari">
+			<mission id="3" name2="Mission.Name2.762_3" required-register-value="1" reward-1="762_final_set1">
+				<case indicator-social="q_762_m3_indi_1" msg="q_762_m3" npc-response="qrsp_762_3" object="npc:ch_mayeongganggun_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1" location-x="14106.283" location-y="-37581.875" map="hangari">
+			<mission id="1" name2="Mission.Name2.762_1" required-register-value="1">
+				<case indicator-social="q_762_m1_indi_1" msg="q_762_m1" npc-response="qrsp_762_2" object="npc:ch_mayeongganggun_0020" progress-mission="y" type="talk"/>
+				<case object="zone:zone_sunjinhan" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_SunJinhan_SP">
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_512" broadcast-category="field" category="epic" completed-desc="q_512_completed" completed-list="y" desc="q_512_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="512" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.512" save-type="all">
+		<acquisition level="1" recommended-level="27" sort-no="313"/>
+		<mission-step id="1" location-x="-62940.1406" location-y="192.6328" map="hwangsailjok" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.512_1" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="3063_MH_MaYeongGangGun_0016" mapunit-2="3050_Guide_E512" object="npc:mh_mayeongganggun_0016" object2="npc:mh_mayeongganggun_0016" progress-mission="y" type="killed"/>
+				<case object="zone:zone_HwangSaIlJok" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_YuGaCHN_Musung_2" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_512_m1_2_indi_1" npc-response="qrsp_512_4" object="npc:ch_yugachon_0035" type="talk"/>
+				<case indicator-social="q_512_m1_1_indi_3" npc-response="qrsp_512_3" object="npc:ch_yugachon_0034" type="talk"/>
+				<case indicator-social="q_512_m1_1_indi_1" npc-response="qrsp_512_2" object="npc:ch_yugachon_0032" type="talk"/>
+				<case object="zoneenv:3063_Footswich_1" object2="zoneenv2:3063_Footswich_1" progress-mission="reaction-only" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-62940.1406" location-y="192.6328" map="yugachon">
+			<mission id="2" name2="Mission.Name2.512_2" required-register-value="1">
+				<case mapunit-1="3010_e_onoff_stranepot_01_1_1" object="zone:zone_YuGaCHN_Musung_2" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-67224.1797" location-y="-23102.5625" map="yugachon">
+			<mission id="3" name2="Mission.Name2.512_3" required-register-value="1" reward-1="512_final_set1">
+				<case indicator-social="q_512_m3_indi_1" msg="q_512_m3" npc-response="qrsp_512_1" object="npc:ch_chinchin_0003" progress-mission="y" type="talk"/>
+				<case object="zone:zone_YuGaCHN_Musung_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_YuGaCHN_Musung_1">
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_513"/>
+		</completion>
+	</quest>
+</table>

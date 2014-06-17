@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_25092" attraction-1="cave2:Cave_SuWal_22" broadcast-category="field" category="attraction" grade="8" group2="QG_Farmland" id="25092" map-group-1-1="suwal" max-repeat="-1" name2="Quest.Name2.25092" save-type="nothing">
+		<acquisition level="35" preceding-quest-check="and" recommended-level="40"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.25092_1" required-register-value="1">
+				<case object="npc:ME_GolemLeader_0003" object2="npc:ME_GolemLeader_0003" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" required-register-value="1" reward-1="25092_final_set1">
+				<case item="q_25092_1_icon" msg="q_25092_1" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

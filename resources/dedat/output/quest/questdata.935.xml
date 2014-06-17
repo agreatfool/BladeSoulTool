@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_935" broadcast-category="field" category="epic" completed-desc="q_935_completed" completed-list="y" desc="q_935_sum" grade="1" group2="QG_NextbaeCheongEpic" id="935" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.935" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="50" sort-no="537"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.935_1" required-register-value="1" reward-1="935_middle_set1">
+				<case mapunit-1="3011_e_button_buntayongmak" mapunit-2="Guide_SaMaGyoBT" mapunit-3="Guide_SaMaGyoBT_1" npc-response="qrsp_935_1" object="npc:CH_SA_JungHaDo_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_935_4" object="npc:CH_SA_NamGung_0001" type="approach"/>
+				<case npc-response="qrsp_935_5" object="npc:CH_SA_TaeGwang_0001" type="approach"/>
+				<case object="zoneenv:e_button_buntayongmak" object2="zoneenv2:e_button_buntayongmak" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zone:zone_SamaBunta_Epic5" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.935_2" required-register-value="1">
+				<case npc-response="qrsp_935_6" object="npc:CH_SA_TaeGwang_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_935_5" object="npc:CH_SA_NamGung_0001" type="approach"/>
+				<case npc-response="qrsp_935_9" object="npc:CH_SA_JungHaDo_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.935_7" required-register-value="6">
+				<case npc-response="qrsp_935_9" object="npc:CH_SA_JungHaDo_0001" type="approach"/>
+				<case npc-response="qrsp_935_5" object="npc:CH_SA_TaeGwang_0001" type="approach"/>
+				<case npc-response="qrsp_935_4" object="npc:CH_SA_NamGung_0001" type="approach"/>
+				<case object="npc:MH_SA_HaOBanng_0002" object2="npc:MH_SA_HaOBanng_0002" progress-mission="y" type="killed"/>
+				<case object="npc:MH_SA_HaOBanng_0003" object2="npc:MH_SA_HaOBanng_0003" progress-mission="y" type="killed"/>
+				<case mapunit-1="5117_MH_SA_HaOBanng_0004" object="npc:MH_SA_HaOBanng_0004" object2="npc:MH_SA_HaOBanng_0004" progress-mission="y" type="killed"/>
+				<case object="zone:Zone_PickpocketBase_p" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+			<mission-step-fail rollback-step-id="6"/>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.935_8" required-register-value="1">
+				<case npc-response="qrsp_935_10" object="npc:CH_SA_YoMaMa_0001" progress-mission="y" type="talk"/>
+				<case object="zoneenv:e_gate_desertedhouse_01_1" object2="zoneenv2:e_gate_desertedhouse_01_1" progress-mission="reaction-only" type="manipulate"/>
+				<case object="zone:Zone_PickpocketBase_p" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.935_9" required-register-value="1">
+				<case mapunit-1="M_5117_footswitch_01" object="zoneenv:5117_footswitch_01" object2="zoneenv2:5117_footswitch_01" progress-mission="y" type="env-entered"/>
+			</mission>
+			<mission-step-fail rollback-step-id="8"/>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.935_10" required-register-value="6">
+				<case object="npc:ME_SA_ZombieA_0004" object2="npc:ME_SA_ZombieA_0004" progress-mission="y" type="killed"/>
+				<case object="npc:ME_SA_ZombieA_0003" object2="npc:ME_SA_ZombieA_0003" progress-mission="y" type="killed"/>
+				<case mapunit-1="5117_ME_SA_ZombieA_0002" object="npc:ME_SA_ZombieA_0002" object2="npc:ME_SA_ZombieA_0002" progress-mission="y" type="killed"/>
+			</mission>
+			<mission-step-fail rollback-step-id="8"/>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.935_11" required-register-value="1">
+				<case grocery="Quest_Scroll_BackChung_0058" npc-response="qrsp_935_11" object="npc:CH_SA_YoMaMa_0002" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_PickpocketBase_p" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="12">
+			<mission id="12" name2="Mission.Name2.935_12" required-register-value="1">
+				<case object="npc:CH_SA_YoMaMa_0004" progress-mission="y" type="npc-manipulate"/>
+				<case object="npc:MH_SA_BlackDragon_0001" object2="npc:MH_SA_BlackDragon_0001" show-in-tooltip="y" type="killed"/>
+				<case object="zone:Zone_PickpocketBase_p" progress-mission="reaction-only" type="enter-zone"/>
+				<fixed-reward slot-1="item:Quest_Scroll_BackChung_0052"/>
+			</mission>
+		</mission-step>
+		<mission-step id="13">
+			<mission id="13" name2="Mission.Name2.935_13" required-register-value="1">
+				<case npc-response="qrsp_935_12" object="npc:CH_SA_NamGung_0002" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_MuPungGaekJum_p2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="14">
+			<mission id="14" name2="Mission.Name2.935_14" required-register-value="1" reset-teleport-recycle-time="y" reward-1="935_final_set1">
+				<case grocery="Quest_Scroll_BackChung_0052" npc-response="qrsp_935_15" object="npc:CH_SA_TaeGwang_0002" progress-mission="y" type="talk"/>
+				<case object="zone:Zone_MuPungGaekJum_p2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_936"/>
+		</completion>
+		<transit id="1" zone="Zone_PickpocketBase">
+			<destination mission-step-id="10" zone-index="1"/>
+			<destination mission-step-id="11" zone-index="1"/>
+			<destination mission-step-id="12" zone-index="1"/>
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="9" zone-index="1"/>
+		</transit>
+		<transit id="2" zone="Zone_MuPungGaekJum">
+			<destination mission-step-id="14" zone-index="2"/>
+			<destination mission-step-id="13" zone-index="2"/>
+		</transit>
+		<transit id="3" zone="StartZone_Event">
+			<destination mission-step-id="11" zone-index="2"/>
+			<destination mission-step-id="10" zone-index="2"/>
+			<destination mission-step-id="9" zone-index="2"/>
+			<destination mission-step-id="8" zone-index="2"/>
+			<destination mission-step-id="7" zone-index="2"/>
+			<destination mission-step-id="6" zone-index="2"/>
+			<destination mission-step-id="5" zone-index="2"/>
+			<destination mission-step-id="4" zone-index="2"/>
+			<destination mission-step-id="3" zone-index="2"/>
+			<destination mission-step-id="2" zone-index="2"/>
+			<destination mission-step-id="1" zone-index="2"/>
+			<destination mission-step-id="12" zone-index="2"/>
+			<destination mission-step-id="13" zone-index="2"/>
+			<destination mission-step-id="14" zone-index="2"/>
+		</transit>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.935_6" required-register-value="1">
+				<case mapunit-1="5117_MH_SA_HaOBanng_0004" object="zone:Zone_PickpocketBase_p" progress-mission="y" type="enter-zone"/>
+				<case npc-response="qrsp_935_4" object="npc:CH_SA_JungHaDo_0001" type="approach"/>
+				<case npc-response="qrsp_935_4" object="npc:CH_SA_TaeGwang_0001" type="approach"/>
+				<case npc-response="qrsp_935_4" object="npc:CH_SA_NamGung_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.935_3" required-register-value="1">
+				<case mapunit-1="Guide_SinHyeWon" npc-response="qrsp_935_18" object="npc:CH_CT_HaoDong_0009" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_935_5" object="npc:CH_SA_NamGung_0001" type="approach"/>
+				<case npc-response="qrsp_935_9" object="npc:CH_SA_JungHaDo_0001" type="approach"/>
+				<case npc-response="qrsp_935_5" object="npc:CH_SA_TaeGwang_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.935_4" required-register-value="1">
+				<case loot-item="Quest_Scroll_BackChung_0058" looting="q_935_1_icon" object="npc:MH_CT_HaOBanng_0064" object2="npc:MH_CT_HaOBanng_0064" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case loot-item="Quest_Scroll_BackChung_0058" looting="q_935_1_icon" object="npc:MH_CT_HaOBanng_0065" object2="npc:MH_CT_HaOBanng_0065" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case loot-item="Quest_Scroll_BackChung_0058" looting="q_935_1_icon" object="npc:MH_CT_HaOBanng_0066" object2="npc:MH_CT_HaOBanng_0066" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case loot-item="Quest_Scroll_BackChung_0058" looting="q_935_1_icon" object="npc:MH_CT_HaOBanng_0067" object2="npc:MH_CT_HaOBanng_0067" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case loot-item="Quest_Scroll_BackChung_0058" looting="q_935_1_icon" object="npc:MH_CT_HaOBanng_0068" object2="npc:MH_CT_HaOBanng_0068" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case loot-item="Quest_Scroll_BackChung_0058" looting="q_935_1_icon" object="npc:MH_CT_HaOBanng_0069" object2="npc:MH_CT_HaOBanng_0069" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case loot-item="Quest_Scroll_BackChung_0058" looting="q_935_1_icon" object="npc:MH_CT_HaOBanng_0070" object2="npc:MH_CT_HaOBanng_0070" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case loot-item="Quest_Scroll_BackChung_0058" looting="q_935_1_icon" object="npc:MH_CT_HaOBanng_0071" object2="npc:MH_CT_HaOBanng_0071" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case loot-item="Quest_Scroll_BackChung_0058" looting="q_935_1_icon" object="npc:MH_CT_HaOBanng_0072" object2="npc:MH_CT_HaOBanng_0072" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case loot-item="Quest_Scroll_BackChung_0058" looting="q_935_1_icon" object="npc:MH_CT_HaOBanng_0073" object2="npc:MH_CT_HaOBanng_0073" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case loot-item="Quest_Scroll_BackChung_0058" looting="q_935_1_icon" object="npc:MH_CT_HaOBanng_0099" object2="npc:MH_CT_HaOBanng_0099" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case loot-item="Quest_Scroll_BackChung_0058" looting="q_935_1_icon" object="npc:MH_CT_HaOBanng_0112" object2="npc:MH_CT_HaOBanng_0112" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+				<case loot-item="Quest_Scroll_BackChung_0058" looting="q_935_1_icon" mapunit-1="5110_MH_CT_HaOBanng_0064_s723" mapunit-2="5110_MH_CT_HaOBanng_0064_s723_1" object="npc:MH_CT_HaOBanng_0113" object2="npc:MH_CT_HaOBanng_0113" progress-mission="y" quest-symbol-drop-prob="30" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.935_5" required-register-value="1">
+				<case item="Quest_Scroll_BackChung_0058" msg="q_935_8" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<transit id="4" zone="zone_samabunta">
+			<destination mission-step-id="1" zone-index="2"/>
+		</transit>
+	</quest>
+</table>

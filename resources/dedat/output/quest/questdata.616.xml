@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_616" broadcast-category="field" category="normal" day-of-week="daily" desc="q_616_sum" district-1="deasamak" grade="1" group2="QG_HwangPungSaMak" id="616" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.616" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="25" preceding-quest-1="q_epic_511" preceding-quest-check="and" recommended-level="27">
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_616_3" object="npc:ch_honggichul_0001" progress-mission="n" remove-grocery="y" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_616_1" object="npc:ch_honggichul_0001" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_616_5" object="npc:CE_Board_0015" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_616_des_1" id="1">
+			<mission id="1" name2="Mission.Name2.616_1" required-register-value="1">
+				<case looting="q_616_1_icon" mapunit-1="3063_e_chest_tomestone_01" object="zoneenv:e_chest_tomestone_01" object2="zoneenv2:e_chest_tomestone_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.616_2" required-register-value="1" reward-1="616_final_set1" reward-2="616_final_set2">
+				<case completion-count="1" npc-response="qrsp_616_4" object="npc:ch_honggichul_0001" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_616_2" object="npc:ch_honggichul_0001" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_616_2_icon" msg="q_616_6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

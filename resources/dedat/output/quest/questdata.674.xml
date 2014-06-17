@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="factionmain2" alias="q_sub_674" broadcast-category="field" category="normal" day-of-week="daily" desc="q_674_sum" district-1="deasamak" grade="1" group2="QG_ToMunJinNorth" id="674" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.674" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" faction="factionmain2" level="22" preceding-quest-1="q_sub_657" preceding-quest-2="q_sub_666" preceding-quest-check="or" recommended-level="24">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_674_1" object="npc:CH_HonChenoGyo_0004" type="talk">
+				<filter-set>
+					<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain2"/>
+				</filter-set>
+			</case>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_674_3" object="npc:CH_HonChenoGyo_0004" type="talk">
+				<filter-set>
+					<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain2"/>
+				</filter-set>
+			</case>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.674_1" required-register-value="10">
+				<case looting="q_674_Quest_coin_MuRimMeng_1_icon" object="npc:mh_murimmaeng_0007" object2="npc:mh_murimmaeng_0007" progress-mission="y" type="loot">
+					<filter-set>
+						<filter subject="case:loot:pc" subject2="case:loot:pc" type="active-faction" value="factionmain2"/>
+					</filter-set>
+				</case>
+				<case looting="q_674_Quest_coin_MuRimMeng_1_icon" mapunit-1="3086_mh_murimmeng_0001" mapunit-2="3086_mh_murimmeng_0001_1" mapunit-3="3086_mh_murimmeng_0001_2" object="npc:mh_murimmeng_0001" object2="npc:mh_murimmeng_0001" progress-mission="y" type="loot">
+					<filter-set>
+						<filter subject="case:loot:pc" subject2="case:loot:pc" type="active-faction" value="factionmain2"/>
+					</filter-set>
+				</case>
+				<case npc-response="qrsp_674_5" object="npc:CH_HonChenoGyo_0004" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.674_2" required-register-value="1" reward-1="674_final_set1" reward-2="674_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_674_2" object="npc:CH_HonChenoGyo_0004" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain2"/>
+					</filter-set>
+				</case>
+				<case completion-count="1" npc-response="qrsp_674_4" object="npc:CH_HonChenoGyo_0004" progress-mission="y" type="talk">
+					<filter-set>
+						<filter subject="case:talked:pc" subject2="case:talked:pc" type="active-faction" value="factionmain2"/>
+					</filter-set>
+				</case>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

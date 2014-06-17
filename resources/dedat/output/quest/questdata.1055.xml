@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1055" broadcast-category="field" category="normal" desc="q_1055_sum" grade="1" group2="QG_MoilBong" id="1055" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.1055" save-type="all">
+		<acquisition level="50" preceding-quest-1="q_epic_938" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" item="q_1055_1_icon" msg="q_1055_1" type="talk-to-self"/>
+		</acquisition>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.1055_3" required-register-value="1">
+				<case npc-response="qrsp_1055_3" object="npc:CH_SA_GwanChulSu_0001" progress-mission="y" type="talk"/>
+				<case button-text-accept="q_1055_5_ok" button-text-cancel="q_1055_5_no" npc-response="qrsp_1055_2" object="npc:CH_AnDuMae_0001" progress-mission="reaction-only" type="talk"/>
+				<case npc-response="qrsp_1055_6" object="npc:CH_SA_GwanChulHee_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.1055_5" required-register-value="1" reward-1="1055_final_set1">
+				<case grocery="General_Grocery_Coin_0129" grocery-count="4" npc-response="qrsp_1055_4" object="npc:CH_SA_GwanChulHee_0001" progress-mission="y" type="talk"/>
+				<case button-text-accept="q_1055_5_ok" button-text-cancel="q_1055_5_no" npc-response="qrsp_1055_2" object="npc:CH_AnDuMae_0001" progress-mission="reaction-only" type="talk"/>
+				<case npc-response="qrsp_1055_6" object="npc:CH_SA_GwanChulHee_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1055_1" required-register-value="1">
+				<case npc-response="qrsp_1055_1" object="npc:CH_SA_GwanChulHee_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1055_2" required-register-value="1">
+				<case npc-response="qrsp_1055_5" object="npc:CH_AnDuMae_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_1055_6" object="npc:CH_SA_GwanChulHee_0001" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.1055_4" required-register-value="1">
+				<case npc-response="qrsp_1055_6" object="npc:CH_SA_GwanChulHee_0001" type="approach"/>
+				<case button-text-accept="q_1055_5_ok" button-text-cancel="q_1055_5_no" npc-response="qrsp_1055_2" object="npc:CH_AnDuMae_0001" progress-mission="reaction-only" type="talk"/>
+				<case npc-response="qrsp_1055_8" object="npc:CH_SA_GwanChulSu_0001" progress-mission="n" type="approach"/>
+				<case grocery="General_Grocery_Coin_0129" grocery-count="4" npc-response="qrsp_1055_7" object="npc:CH_SA_GwanChulSu_0001" progress-mission="y" remove-grocery="n" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

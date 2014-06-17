@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_978" broadcast-category="field" category="normal" desc="q_978_sum" district-1="suwal" grade="1" group2="QG_YounglinVillage" id="978" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.978" save-type="all">
+		<acquisition level="35" preceding-quest-1="q_sub_977" preceding-quest-check="and" recommended-level="37">
+			<case acquire-quest="y" npc-response="qrsp_978_1" object="npc:ch_yeonglin_0016" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-4658.85" location-y="13355.59" map="haenamumaeul" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.978_1" required-register-value="1" reward-1="978_final_set1">
+				<case npc-response="qrsp_978_2" object="npc:ch_taesangmun_0005" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

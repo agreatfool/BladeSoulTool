@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_877" broadcast-category="field" category="normal" desc="q_877_sum" district-1="deasamak" grade="1" group2="QG_OSaekAmDoEast" id="877" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.877" save-type="all">
+		<acquisition level="34" preceding-quest-1="q_epic_535" preceding-quest-check="and" recommended-level="36">
+			<case acquire-quest="y" indicator-social="q_877_s_indi_1" msg="q_877_s" npc-response="qrsp_877_1" object="npc:ch_mayeongganggun_0035" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_877_des_1" id="1" location-x="39853.8203" location-y="66758.0781" map="oseakamdo">
+			<mission id="1" name2="Mission.Name2.877_1" required-register-value="12">
+				<case object="npc:mh_hwangpungdan_0004" object2="npc:mh_hwangpungdan_0004" progress-mission="y" type="killed"/>
+				<case object="npc:mh_hwangpungdan_0005" object2="npc:mh_hwangpungdan_0005" progress-mission="y" type="killed"/>
+				<case mapunit-1="3037_MH_HwangPungDan_0004" mapunit-2="3037_MH_HwangPungDan_0004_1" object="npc:mh_hwangpungdan_0006" object2="npc:mh_hwangpungdan_0006" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="34133.8516" location-y="69374.6563" map="oseakamdo">
+			<mission id="2" name2="Mission.Name2.877_2" required-register-value="1" reward-1="877_final_set1">
+				<case indicator-social="q_877_m2_indi_1" msg="q_877_m2" npc-response="qrsp_877_2" object="npc:ch_mayeongganggun_0047" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

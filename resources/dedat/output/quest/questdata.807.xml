@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_807" broadcast-category="field" category="normal" day-of-week="daily" desc="q_807_sum" grade="1" group2="QG_ZazakWoodWest" id="807" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.807" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="46" preceding-quest-1="q_epic_278" preceding-quest-check="and" preceding-quest-mission-step-1="1" recommended-level="48">
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_807_7" object="npc:CE_CT_Board_0027" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_807_4" object="npc:CH_CT_Monk_0003" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_807_1" object="npc:CH_CT_Monk_0003" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_807_des_1" id="1" location-x="-7610.45" location-y="-54172.58" map="SuRyeonGul" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.807_1" required-register-value="1">
+				<case object="npc:CH_CT_Monk_0002" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="npc:CH_CT_Monk_0009" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="npc:CH_CT_Monk_0016" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="npc:CH_CT_Monk_0005" progress-mission="y" type="npc-bleeding-occured"/>
+				<case mapunit-1="5250_CH_CT_Monk_0002_s807" mapunit-2="5230_SuRyeonGul_s807" object="npc:CH_CT_Monk_0014" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="npc:CH_CT_Monk_0002" progress-mission="reaction-only" type="npc-manipulate"/>
+				<case object="npc:CH_CT_Monk_0009" progress-mission="reaction-only" type="npc-manipulate"/>
+				<case object="npc:CH_CT_Monk_0016" progress-mission="reaction-only" type="npc-manipulate"/>
+				<case object="npc:CH_CT_Monk_0005" progress-mission="reaction-only" type="npc-manipulate"/>
+				<case object="npc:CH_CT_Monk_0014" progress-mission="reaction-only" type="npc-manipulate"/>
+				<case button-text-accept="q_807_1_ok" button-text-cancel="q_807_1_no" npc-response="qrsp_807_2" object="npc:CH_CT_Monk_0010" progress-mission="reaction-only" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.807_2" required-register-value="1" reward-1="807_final_set1" reward-2="807_final_set2">
+				<case fee="y" item="q_807_1_icon" msg="q_807_6" progress-mission="y" type="talk-to-self"/>
+				<case completion-count="1" npc-response="qrsp_807_5" object="npc:CH_CT_Monk_0003" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_807_3" object="npc:CH_CT_Monk_0003" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

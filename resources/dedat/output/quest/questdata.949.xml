@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_949" broadcast-category="field" category="epic" completed-desc="q_949_completed" completed-list="y" desc="q_949_sum" grade="1" group2="QG_NextbaeCheongEpic2" id="949" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.949" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="50" sort-no="541"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.949_1" required-register-value="1">
+				<case mapunit-1="Guide_Inside" object="zone:zone_YuGaCHN_BaekUn_Act6_before" progress-mission="y" type="enter-zone"/>
+				<case npc-response="qrsp_948_46" object="npc:CH_WB_Ryu_0010" type="approach"/>
+				<case npc-response="qrsp_948_47" object="npc:CH_WB_KwakJun_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.949_4" required-register-value="15">
+				<case npc-response="qrsp_949_1" object="npc:CH_WB_YuGaChon_0001" type="approach"/>
+				<case npc-response="qrsp_949_34" object="npc:CH_WB_YuGaChon_0005" type="approach"/>
+				<case npc-response="qrsp_949_37" object="npc:CH_WB_YuGaChon_0040" type="approach"/>
+				<case mapunit-1="3114_M_ME_WB_DarkCrazyTribeB_0001" mapunit-2="3114_M_ME_WB_DarkCrazyTribeC_0001" object="npc:ME_WB_DarkCrazyTribeB_0001" object2="npc:ME_WB_DarkCrazyTribeB_0001" progress-mission="y" type="killed"/>
+				<case mapunit-1="3114_M_ME_WB_DarkCrazyTribeB_0001" mapunit-2="3114_M_ME_WB_DarkCrazyTribeC_0001" object="npc:ME_WB_DarkCrazyTribeC_0001" object2="npc:ME_WB_DarkCrazyTribeC_0001" progress-mission="y" type="killed"/>
+				<case mapunit-1="3114_M_ME_WB_DarkCrazyTribeB_0001" mapunit-2="3114_M_ME_WB_DarkCrazyTribeC_0001" object="npc:ME_WB_DarkCrazyTribeB_0012" object2="npc:ME_WB_DarkCrazyTribeB_0012" progress-mission="y" type="killed"/>
+				<case mapunit-1="3114_M_ME_WB_DarkCrazyTribeB_0001" mapunit-2="3114_M_ME_WB_DarkCrazyTribeC_0001" object="npc:ME_WB_DarkCrazyTribeD_0009" object2="npc:ME_WB_DarkCrazyTribeD_0009" progress-mission="y" type="killed"/>
+				<case mapunit-1="3114_M_ME_WB_DarkCrazyTribeB_0001" mapunit-2="3114_M_ME_WB_DarkCrazyTribeC_0001" object="npc:ME_WB_DarkCrazyTribeBigB_0009" object2="npc:ME_WB_DarkCrazyTribeBigB_0009" progress-mission="y" type="killed"/>
+				<case mapunit-1="3114_M_ME_WB_DarkCrazyTribeB_0001" mapunit-2="3114_M_ME_WB_DarkCrazyTribeC_0001" object="npc:ME_WB_DarkCrazyTribeA_0015" object2="npc:ME_WB_DarkCrazyTribeA_0015" progress-mission="y" type="killed"/>
+				<case mapunit-1="3114_M_ME_WB_DarkCrazyTribeB_0001" mapunit-2="3114_M_ME_WB_DarkCrazyTribeC_0001" object="npc:ME_WB_DarkCrazyTribeCLeader_0004" object2="npc:ME_WB_DarkCrazyTribeCLeader_0004" progress-mission="y" type="killed"/>
+				<case mapunit-1="3114_M_ME_WB_DarkCrazyTribeB_0001" mapunit-2="3114_M_ME_WB_DarkCrazyTribeC_0001" object="npc:ME_WB_DarkCrazyTribeBigB_0008" object2="npc:ME_WB_DarkCrazyTribeBigB_0008" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.949_5" required-register-value="1">
+				<case npc-response="qrsp_949_2" object="npc:CH_WB_YuGaChon_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_Yugachon_Act6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.949_6" required-register-value="6">
+				<case mapunit-1="3114_M_ME_WB_DarkCrazyTribeC_0001" object="npc:ME_WB_DarkCrazyTribeCLeader_0004" object2="npc:ME_WB_DarkCrazyTribeCLeader_0004" progress-mission="y" type="killed"/>
+				<case object="zone:zone_Yugachon_Act6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.949_7" required-register-value="1">
+				<case mapunit-1="Guide_Yugachon_Epic6" object="zone:zone_GeoAm_Act6" progress-mission="y" type="enter-zone"/>
+				<case object="zone:zone_Yugachon_Act6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.949_8" required-register-value="15">
+				<case object="zone:zone_Yugachon_Act6" progress-mission="reaction-only" type="enter-zone"/>
+				<case mapunit-1="2732_ME_WB_DarkCrazyTribeC_0001" mapunit-2="2732_ME_WB_DarkCrazyTribeC_0002" mapunit-3="2732_ME_WB_DarkCrazyTribeC_0003" object="npc:ME_WB_DarkCrazyTribeA_0002" object2="npc:ME_WB_DarkCrazyTribeA_0002" progress-mission="y" type="killed"/>
+				<case mapunit-1="2732_ME_WB_DarkCrazyTribeC_0001" mapunit-2="2732_ME_WB_DarkCrazyTribeC_0002" mapunit-3="2732_ME_WB_DarkCrazyTribeC_0003" object="npc:ME_WB_DarkCrazyTribeB_0003" object2="npc:ME_WB_DarkCrazyTribeB_0003" progress-mission="y" type="killed"/>
+				<case mapunit-1="2732_ME_WB_DarkCrazyTribeC_0001" mapunit-2="2732_ME_WB_DarkCrazyTribeC_0002" mapunit-3="2732_ME_WB_DarkCrazyTribeC_0003" object="npc:ME_WB_DarkCrazyTribeD_0002" object2="npc:ME_WB_DarkCrazyTribeD_0002" progress-mission="y" type="killed"/>
+				<case mapunit-1="2732_ME_WB_DarkCrazyTribeC_0001" mapunit-2="2732_ME_WB_DarkCrazyTribeC_0002" mapunit-3="2732_ME_WB_DarkCrazyTribeC_0003" object="npc:ME_WB_DarkCrazyTribeC_0002" object2="npc:ME_WB_DarkCrazyTribeC_0002" progress-mission="y" type="killed"/>
+				<case mapunit-1="2732_ME_WB_DarkCrazyTribeC_0001" mapunit-2="2732_ME_WB_DarkCrazyTribeC_0002" mapunit-3="2732_ME_WB_DarkCrazyTribeC_0003" object="npc:ME_WB_DarkCrazyTribeBigB_0001" object2="npc:ME_WB_DarkCrazyTribeBigB_0001" progress-mission="y" type="killed"/>
+				<case object="npc:ME_WB_DarkCrazyTribeCLeader_0001" object2="npc:ME_WB_DarkCrazyTribeCLeader_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.949_9" required-register-value="1">
+				<case mapunit-1="2732_ME_WB_DarkCrazyTribeC_0001" object="npc:ME_WB_DarkCrazyTribeBigA_0001" object2="npc:ME_WB_DarkCrazyTribeBigA_0001" progress-mission="y" type="killed"/>
+				<case object="zone:zone_Yugachon_Act6" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_949_13" object="npc:CH_WB_YuGaChon_0007" type="approach"/>
+				<case npc-response="qrsp_949_14" object="npc:CH_WB_YuGaChon_0009" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.949_10" required-register-value="1">
+				<case npc-response="qrsp_949_3" object="npc:CH_WB_YuGaChon_0010" type="approach"/>
+				<case npc-response="qrsp_949_4" object="npc:CH_WB_YuGaChon_0012" type="approach"/>
+				<case npc-response="qrsp_949_5" object="npc:CH_WB_YuGaChon_0015" type="approach"/>
+				<case object="zone:zone_GeoAm_Act6" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zone:zone_Yugachon_Act6" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_949_22" object="npc:CH_WB_YuGaChon_0007" type="approach"/>
+				<case npc-response="qrsp_949_23" object="npc:CH_WB_YuGaChon_0009" type="approach"/>
+				<case npc-response="qrsp_949_15" object="npc:CH_WB_YuGaChon_0032" type="approach"/>
+				<case npc-response="qrsp_949_16" object="npc:CH_WB_YuGaChon_0016" type="approach"/>
+				<case npc-response="qrsp_949_17" object="npc:CH_WB_YuGaChon_0017" type="approach"/>
+				<case npc-response="qrsp_949_18" object="npc:CH_WB_YuGaChon_0018" type="approach"/>
+				<case npc-response="qrsp_949_19" object="npc:CH_WB_YuGaChon_0021" type="approach"/>
+				<case npc-response="qrsp_949_20" object="npc:CH_WB_YuGaChon_0023" type="approach"/>
+				<case npc-response="qrsp_949_21" object="npc:CH_WB_YuGaChon_0024" type="approach"/>
+				<case npc-response="qrsp_949_31" object="npc:CH_WB_YuGaChon_0008" type="approach"/>
+				<case object="npc:MH_WB_ChungGak_0080" progress-mission="y" type="npc-bleeding-occured"/>
+			</mission>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.949_11" required-register-value="1" reward-1="949_final_set1">
+				<case object="zone:zone_GeoAm_Act6" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="npc:CH_WB_BaekWoon_0001" progress-mission="reaction-only" type="approach"/>
+				<case npc-response="qrsp_949_8" object="npc:CH_WB_YuGaChon_0010" type="approach"/>
+				<case npc-response="qrsp_949_9" object="npc:CH_WB_YuGaChon_0012" type="approach"/>
+				<case npc-response="qrsp_949_10" object="npc:CH_WB_YuGaChon_0015" type="approach"/>
+				<case npc-response="qrsp_949_7" object="npc:CH_WB_BaekWoon_0001" progress-mission="n" type="approach"/>
+				<case npc-response="qrsp_949_22" object="npc:CH_WB_YuGaChon_0007" type="approach"/>
+				<case npc-response="qrsp_949_23" object="npc:CH_WB_YuGaChon_0009" type="approach"/>
+				<case npc-response="qrsp_949_24" object="npc:CH_WB_YuGaChon_0032" type="approach"/>
+				<case npc-response="qrsp_949_25" object="npc:CH_WB_YuGaChon_0016" type="approach"/>
+				<case npc-response="qrsp_949_26" object="npc:CH_WB_YuGaChon_0017" type="approach"/>
+				<case npc-response="qrsp_949_27" object="npc:CH_WB_YuGaChon_0018" type="approach"/>
+				<case npc-response="qrsp_949_28" object="npc:CH_WB_YuGaChon_0021" type="approach"/>
+				<case npc-response="qrsp_949_29" object="npc:CH_WB_YuGaChon_0023" type="approach"/>
+				<case npc-response="qrsp_949_30" object="npc:CH_WB_YuGaChon_0024" type="approach"/>
+				<case npc-response="qrsp_949_31" object="npc:CH_WB_YuGaChon_0008" type="approach"/>
+				<case npc-response="qrsp_949_7" object="npc:CH_WB_BaekWoon_0001" type="approach"/>
+				<case npc-response="qrsp_949_6" object="npc:CH_WB_BaekWoon_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_Yugachon_Act6" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="2" zone="zone_YuGaCHN_1">
+			<destination mission-step-id="5" zone-index="2"/>
+			<destination mission-step-id="4" zone-index="2"/>
+			<destination mission-step-id="9" zone-index="2"/>
+			<destination mission-step-id="8" zone-index="2"/>
+			<destination mission-step-id="7" zone-index="2"/>
+			<destination mission-step-id="6" zone-index="2"/>
+			<destination mission-step-id="10" zone-index="2"/>
+			<destination mission-step-id="11" zone-index="2"/>
+		</transit>
+		<transit id="3" zone="zone_SongAmDo_Dun_4_sp">
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="10" zone-index="1"/>
+			<destination mission-step-id="9" zone-index="1"/>
+			<destination mission-step-id="11" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_950"/>
+		</completion>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.949_3" required-register-value="1">
+				<case npc-response="qrsp_949_11" object="npc:CH_WB_YuGaChon_0005" progress-mission="y" type="talk"/>
+				<case object="zone:zone_YuGaCHN_BaekUn_Act6_before" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_949_36" object="npc:CH_WB_YuGaChon_0040" type="approach"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_YuGaCHN_BaekUn_1">
+			<destination mission-step-id="1" zone-index="4"/>
+			<destination mission-step-id="2" zone-index="4"/>
+			<destination mission-step-id="3" zone-index="4"/>
+		</transit>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.949_2" required-register-value="1">
+				<case mapunit-1="Guide_Inside" npc-response="qrsp_949_35" object="npc:CH_WB_YuGaChon_0040" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<transit id="4" zone="StartZone_Event">
+			<destination mission-step-id="1" zone-index="5"/>
+			<destination mission-step-id="2" zone-index="5"/>
+			<destination mission-step-id="3" zone-index="5"/>
+			<destination mission-step-id="4" zone-index="5"/>
+			<destination mission-step-id="5" zone-index="5"/>
+			<destination mission-step-id="6" zone-index="5"/>
+			<destination mission-step-id="7" zone-index="5"/>
+			<destination mission-step-id="8" zone-index="5"/>
+			<destination mission-step-id="9" zone-index="5"/>
+			<destination mission-step-id="10" zone-index="5"/>
+			<destination mission-step-id="11" zone-index="5"/>
+		</transit>
+		<transit id="5" zone="zone_HukChang_Classic_default">
+			<complete zone-index="1"/>
+		</transit>
+	</quest>
+</table>

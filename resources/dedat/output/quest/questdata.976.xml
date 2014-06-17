@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_976" broadcast-category="field" category="normal" desc="q_976_sum" district-1="suwal" grade="1" group2="QG_YounglinVillage" id="976" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.976" save-type="all">
+		<acquisition level="35" preceding-quest-1="q_sub_974" preceding-quest-check="and" recommended-level="37">
+			<case acquire-quest="y" npc-response="qrsp_976_1" object="npc:ch_yeonglin_0044" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.976_1" required-register-value="1">
+				<case npc-response="qrsp_976_2" object="npc:ch_yeonglin_0016" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="41023.00" location-y="76221.33" map="yeongsukgwangsan" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.976_2" required-register-value="1">
+				<case npc-response="qrsp_976_3" object="npc:ch_yeonglin_0051" progress-mission="y" type="talk"/>
+				<case object="zone:zone_ysmine" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_976_5" object="npc:ch_yeonglin_0044" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.976_3" required-register-value="1" reward-1="976_final_set1">
+				<case npc-response="qrsp_976_4" object="npc:ch_yeonglin_0015" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_976_6" object="npc:ch_yeonglin_0044" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1003" broadcast-category="field" category="normal" desc="q_1003_sum" district-1="suwal" grade="1" group2="QG_Wolchon" id="1003" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1003" save-type="all">
+		<acquisition level="36" preceding-quest-1="q_sub_1001" preceding-quest-check="and" recommended-level="38">
+			<case acquire-quest="y" npc-response="qrsp_1003_1" object="npc:CH_WolChon_0015" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-6783.84" location-y="12746.22" map="haenamumaeulicheung" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.1003_1" required-register-value="1">
+				<case gadget-required="dont-care" npc-response="qrsp_1003_2" object="npc:CH_IlMiMun_0010" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_1003_9" object="npc:CH_Hunter_0005" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1003_8" object="npc:CH_Hunter_0004" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1003_7" object="npc:CH_Hunter_0003" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1003_3" object="npc:CH_WolChon_0015" type="approach" visible-object="n"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-6596.34" location-y="12402.47" map="haenamumaeulicheung" mission-map-type="location">
+			<mission id="2" name2="Mission.Name2.1003_2" required-register-value="1">
+				<case gadget="Q_GrilledA" gadget-required="carry-and-remove" npc-response="qrsp_1003_10" object="npc:CH_Master_0001" progress-mission="y" type="talk"/>
+				<case button-text-accept="q_1003_4_ok" button-text-cancel="q_1003_4_no" gadget-required="empty" indicator="quest-normal-can-progress" npc-response="qrsp_1003_11" object="npc:CH_IlMiMun_0010" progress-mission="reaction-only" type="talk"/>
+				<case npc-response="qrsp_1003_9" object="npc:CH_Hunter_0005" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1003_8" object="npc:CH_Hunter_0004" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1003_7" object="npc:CH_Hunter_0003" type="approach" visible-object="n"/>
+				<case npc-response="qrsp_1003_3" object="npc:CH_WolChon_0015" type="approach" visible-object="n"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-6783.84" location-y="12746.22" map="haenamumaeulicheung" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.1003_3" required-register-value="1" reward-1="1003_final_set1">
+				<case npc-response="qrsp_1003_12" object="npc:CH_IlMiMun_0010" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

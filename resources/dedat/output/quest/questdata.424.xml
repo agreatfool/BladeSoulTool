@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_424" broadcast-category="field" category="normal" desc="q_424_sum" district-1="jeryoungrim" grade="1" group="제룡림(녹명촌)" group2="QG_NokMyungCHN" id="424" map-group-1-1="jeryoungrim" max-repeat="1" name="수련자들의 마을" name2="Quest.Name2.424" save-type="all">
+		<acquisition level="11" preceding-quest-1="q_epic_311" preceding-quest-check="and" recommended-level="13">
+			<case acquire-quest="y" indicator-social="q_424_s_indi_1" msg="q_424_s" npc-response="qrsp_424_1" object="npc:ch_wanderer_004" type="talk"/>
+		</acquisition>
+		<mission-step completion-type="and" id="1" location-x="6999.498" location-y="10949.9668" map="suryengol" map-zoom-rate="none">
+			<mission id="2" name="골짜기 큰뿔 산양의 간 획득" name2="Mission.Name2.424_2" required-register-value="7">
+				<case mapunit-1="2300_mob_4legr_mlnd_beast_pungjer_001" mapunit-2="2300_mob_4legr_mlnd_beast_pungjer_001_1" object="npc:mob_4legr_mlnd_beast_pungjer_001" object2="npc:mob_4legr_mlnd_beast_pungjer_001" progress-mission="y" type="killed"/>
+				<case indicator-social="q_424_m1_indi_1" npc-response="qrsp_424_2" object="npc:ch_wanderer_005" type="approach"/>
+			</mission>
+			<mission id="1" name2="Mission.Name2.424_1" required-register-value="1">
+				<case looting="q_424_Grocery_Damaged_martial_arts_manual_1_icon" object="npc:mob_4legr_mlnd_beast_pungjer_001" object2="npc:mob_4legr_mlnd_beast_pungjer_001" progress-mission="y" type="loot"/>
+				<case npc-response="qrsp_424_4" object="npc:ch_wanderer_005" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="and" id="2" location-x="6999.498" location-y="10949.9668" map="suryengol" map-zoom-rate="none">
+			<mission id="3" name="녹명촌 초입에 있는 방랑거사 심봉사에게 보고" name2="Mission.Name2.424_3" required-register-value="1" reward-1="424_final_set1">
+				<case indicator-social="q_424_m2_indi_1" msg="q_424_m2" npc-response="qrsp_424_3" object="npc:CH_JR_Wanderer_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

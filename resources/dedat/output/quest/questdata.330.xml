@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_330" broadcast-category="field" category="normal" desc="q_330_sum" district-1="jeryoungrim" grade="1" group="제룡림(망자의 숲)" group2="QG_Delete" id="330" map-group-1-1="jeryoungrim" max-repeat="1" name="착각의 늪" name2="Quest.Name2.330" retired="y" save-type="all">
+		<acquisition level="50" preceding-quest-1="q_epic_304" preceding-quest-check="and" recommended-level="50"/>
+		<mission-step completion-type="and" desc="q_330_des_1" id="1" location-x="-35002.8359" location-y="-50278.1328" map="mangjasup">
+			<mission id="1" name="남해함대 탐색병의 보고서 획득" name2="Mission.Name2.330_1" required-register-value="1"/>
+			<mission id="2" name2="Mission.Name2.330_2" required-register-value="6"/>
+		</mission-step>
+		<mission-step desc="q_330_des_2" id="2" map="mangjasup">
+			<mission id="3" name2="Mission.Name2.330_3" required-register-value="1"/>
+		</mission-step>
+		<mission-step desc="q_330_des_3" id="3" map="mangjasup">
+			<mission id="4" name2="Mission.Name2.330_4" required-register-value="1" reward-1="330_final_set1"/>
+		</mission-step>
+		<giveup-loss item-1="Quest_Scroll_Jeryunglim_0014" item-count-1="0"/>
+	</quest>
+</table>

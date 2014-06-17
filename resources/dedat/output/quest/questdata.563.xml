@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_563" broadcast-category="field" category="normal" desc="q_563_sum" district-1="deasamak" grade="1" group2="QG_ToMunJinSouth" id="563" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.563" save-type="all">
+		<acquisition level="20" preceding-quest-1="q_epic_503" preceding-quest-check="and" recommended-level="22">
+			<case acquire-quest="y" indicator-social="q_563_s_indi_1" msg="q_563_s" npc-response="qrsp_563_2" object="npc:ch_dweller_036" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_563_des_1" id="1" location-x="-56001.7852" location-y="-61119.6094" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.563_1" required-register-value="3">
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_pdogdung_07" object2="zoneenv2:e_onoff_pdogdung_07" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_pdogdung_06" object2="zoneenv2:e_onoff_pdogdung_06" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_pdogdung_05" object2="zoneenv2:e_onoff_pdogdung_05" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_pdogdung_04" object2="zoneenv2:e_onoff_pdogdung_04" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_pdogdung_03" object2="zoneenv2:e_onoff_pdogdung_03" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" object="zoneenv:e_onoff_pdogdung_02" object2="zoneenv2:e_onoff_pdogdung_02" progress-mission="y" type="manipulate"/>
+				<case gadget-required="dont-care" mapunit-1="3000_e_onoff_pdogdung_01" object="zoneenv:e_onoff_pdogdung_01" object2="zoneenv2:e_onoff_pdogdung_01" progress-mission="y" type="manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-57729.9961" location-y="-61887.7031" map="toemunjean">
+			<mission id="2" name2="Mission.Name2.563_2" required-register-value="1" reward-1="563_final_set1">
+				<case indicator-social="q_563_m2_indi_1" msg="q_563_m2" npc-response="qrsp_563_1" object="npc:ch_dweller_034" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

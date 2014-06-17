@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest activated-faction="factionmain2" alias="q_sub_1179" attraction-1="faction-battle-field-zone:BuYuDo" attraction-2="dungeon:Dungeon_Buyudo" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1179_sum" district-1="suwal" grade="1" group2="QG_Booyudo" id="1179" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.1179" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" faction="factionmain2" level="48" preceding-quest-1="q_sub_1170" preceding-quest-check="and" recommended-level="50">
+			<case acquire-quest="y" completion-count="0" npc-response="qrsp_1179_1" object="npc:CE_CT_Board_0036" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1179_1" required-register-value="5">
+				<case object="faction:factionmain1" object2="faction:factionmain1" progress-mission="y" type="killed" valid-zone-1="Zone_BuYouDo_New"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1179_2" required-register-value="30">
+				<case object="npc:mh_murimmaeng_0034" object2="npc:mh_murimmaeng_0034" progress-mission="y" type="killed"/>
+				<case object="npc:mh_murimmaeng_0035" object2="npc:mh_murimmaeng_0035" progress-mission="y" type="killed"/>
+				<case object="npc:mh_murimmaeng_0037" object2="npc:mh_murimmaeng_0037" progress-mission="y" type="killed"/>
+				<case object="npc:mh_murimmaeng_0043" object2="npc:mh_murimmaeng_0043" progress-mission="y" type="killed"/>
+				<case object="npc:mh_murimmaeng_0047" object2="npc:mh_murimmaeng_0047" progress-mission="y" type="killed"/>
+				<case object="npc:mh_murimmaeng_0055" object2="npc:mh_murimmaeng_0055" progress-mission="y" type="killed"/>
+				<case object="npc:mh_murimmaeng_0067" object2="npc:mh_murimmaeng_0067" progress-mission="y" type="killed"/>
+				<case object="npc:mh_murimmaeng_0075" object2="npc:mh_murimmaeng_0075" progress-mission="y" type="killed"/>
+				<case object="npc:mh_murimmaeng_0087" object2="npc:mh_murimmaeng_0087" progress-mission="y" type="killed"/>
+				<case object="npc:mh_murimmaeng_0093" object2="npc:mh_murimmaeng_0093" progress-mission="y" type="killed"/>
+				<case object="npc:mh_murimmaeng_0094" object2="npc:mh_murimmaeng_0094" progress-mission="y" type="killed"/>
+				<case object="npc:mh_murimmaeng_0095" object2="npc:mh_murimmaeng_0095" progress-mission="y" type="killed"/>
+				<case object="npc:mh_murimmaeng_0097" object2="npc:mh_murimmaeng_0097" progress-mission="y" type="killed"/>
+				<case object="npc:mh_murimmaeng_0112" object2="npc:mh_murimmaeng_0112" progress-mission="y" type="killed"/>
+				<case object="npc:CH_MuRimMaeng_0043" object2="npc:CH_MuRimMaeng_0043" progress-mission="y" type="killed"/>
+				<case object="npc:CH_MuRimMaeng_0042" object2="npc:CH_MuRimMaeng_0042" progress-mission="y" type="killed"/>
+				<case object="npc:CH_MuRimMaeng_0041" object2="npc:CH_MuRimMaeng_0041" progress-mission="y" type="killed"/>
+				<case object="npc:CH_MuRimMaeng_0040" object2="npc:CH_MuRimMaeng_0040" progress-mission="y" type="killed"/>
+				<case object="npc:CH_CT_MuRimMaeng_0075" object2="npc:CH_CT_MuRimMaeng_0075" progress-mission="y" type="killed"/>
+				<case object="npc:CH_CT_MuRimMaeng_0076" object2="npc:CH_CT_MuRimMaeng_0076" progress-mission="y" type="killed"/>
+				<case mapunit-1="7100_MuRimMaeng_s1179" object="npc:CH_CT_MuRimMaeng_0078" object2="npc:CH_CT_MuRimMaeng_0078" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.1179_3" required-register-value="1" reward-1="1179_final_set1" reward-2="1179_final_set2">
+				<case completion-count="0" npc-response="qrsp_1179_2" object="npc:ch_honchungyo_0042" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

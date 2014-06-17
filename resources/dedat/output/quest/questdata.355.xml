@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_355" broadcast-category="field" category="normal" day-of-week="daily" desc="q_355_sum" district-1="jeryoungrim" grade="7" group2="QG_WalYoungCemetery" id="355" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.355" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="3" preceding-quest-1="q_epic_305" preceding-quest-check="and" recommended-level="6">
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_355_3" object="npc:ch_shaman_021" progress-mission="n" remove-grocery="y" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_355_1" object="npc:ch_shaman_021" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_355_5" object="npc:CE_Board_0014" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.355_1" required-register-value="1">
+				<case looting="q_355_1_icon" object="npc:mh_kangsitall_001" object2="npc:mh_kangsitall_001" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.355_2" required-register-value="1" reward-1="355_final_set1" reward-2="355_final_set2">
+				<case completion-count="1" npc-response="qrsp_355_4" object="npc:ch_shaman_021" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_355_2" object="npc:ch_shaman_021" progress-mission="y" type="talk"/>
+				<case acquire-quest="n" completion-count="0" fee="y" item="q_355_2_icon" msg="q_355_6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1207" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1207_sum" district-1="suwal" grade="1" group2="QG_GuidosiNorth" id="1207" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1207" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="39" preceding-quest-1="q_sub_1181" preceding-quest-2="q_epic_915" preceding-quest-check="and" recommended-level="41">
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1207_3" object="npc:CE_JukGyoDan_0002" progress-mission="n" remove-grocery="y" type="talk"/>
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1207_1" object="npc:CE_JukGyoDan_0002" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_1207_5" object="npc:CE_Board_0003" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1207_1" required-register-value="8">
+				<case object="npc:ME_Scorpion_0006" object2="npc:ME_Scorpion_0006" progress-mission="y" type="killed"/>
+				<case object="npc:ME_Scorpion_0007" object2="npc:ME_Scorpion_0007" progress-mission="y" type="killed"/>
+				<case object="npc:ME_Spider_0003" object2="npc:ME_Spider_0003" progress-mission="y" type="killed"/>
+				<case object="npc:ME_Spider_0007" object2="npc:ME_Spider_0007" progress-mission="y" type="killed"/>
+				<case mapunit-1="4300_me_spider_0007_1207" mapunit-2="4300_me_spider_0007_1207_1" object="npc:ME_Spider_0021" object2="npc:ME_Spider_0021" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1207_2" required-register-value="1" reward-1="1207_final_set1" reward-2="1207_final_set2">
+				<case completion-count="1" npc-response="qrsp_1207_4" object="npc:CE_JukGyoDan_0002" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1207_2" object="npc:CE_JukGyoDan_0002" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_1207_1_icon" msg="q_1207_6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

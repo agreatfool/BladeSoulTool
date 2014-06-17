@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_561" broadcast-category="field" category="normal" day-of-week="daily" desc="q_561_sum" district-1="deasamak" grade="2" group2="QG_ToMunJinNorth" id="561" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.561" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="23" preceding-quest-1="q_epic_507" preceding-quest-check="and" recommended-level="25">
+			<case acquire-quest="y" indicator-social="q_561_s_indi_1" msg="q_561_s" npc-response="qrsp_561_1" object="npc:ch_unguksoldier_022" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_561_3" object="npc:ce_board_0010" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="-19389.3086" location-y="-63679.9219" map="toemunjean">
+			<mission id="1" name2="Mission.Name2.561_1" required-register-value="5" show-kill-mapunit="n">
+				<case looting="q_561_Quest_dog_tag_1_icon" object="npc:mh_samagyo_0044" object2="npc:mh_samagyo_0044" progress-mission="y" type="loot"/>
+				<case looting="q_561_Quest_dog_tag_1_icon" object="npc:mh_samagyo_0043" object2="npc:mh_samagyo_0043" progress-mission="y" type="loot"/>
+				<case looting="q_561_quest_dog_tag_1_icon" object="npc:mh_hwanyeongcho_0002" object2="npc:mh_hwanyeongcho_0002" progress-mission="y" type="loot"/>
+				<case looting="q_561_quest_dog_tag_1_icon" mapunit-1="3006_me_samagyo_051" mapunit-2="3006_me_samagyo_051_1" object="npc:mh_hwanyeongcho_0001" object2="npc:mh_hwanyeongcho_0001" progress-mission="y" type="loot"/>
+				<case object="npc:mh_samagyo_0042" object2="npc:mh_samagyo_0042" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_HwanYeongCho_0012" object2="npc:MH_HwanYeongCho_0012" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_HwanYeongCho_0011" object2="npc:MH_HwanYeongCho_0011" show-in-tooltip="y" type="killed"/>
+				<case object="npc:MH_HwanYeongCho_0010" object2="npc:MH_HwanYeongCho_0010" show-in-tooltip="y" type="killed"/>
+				<case object="npc:me_samagyo_051" object2="npc:me_samagyo_051" show-in-tooltip="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-45589.6211" location-y="-63407.1875" map="OeMalRi">
+			<mission id="2" name2="Mission.Name2.561_2" required-register-value="1" reward-1="561_final_set1" reward-2="561_final_set2">
+				<case indicator-social="q_561_m2_indi_1" msg="q_561_m2" npc-response="qrsp_561_2" object="npc:ch_unguksoldier_010" progress-mission="y" type="talk"/>
+				<case completion-count="0" fee="y" item="q_561_1_icon" msg="q_561_m4" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

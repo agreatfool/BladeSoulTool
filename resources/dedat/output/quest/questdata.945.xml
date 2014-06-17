@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_945" broadcast-category="field" category="normal" day-of-week="daily" desc="q_945_sum" grade="1" group2="QG_KiYoenFall" id="945" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.945" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="12" preceding-quest-1="q_epic_492" preceding-quest-check="and" recommended-level="14">
+			<case acquire-quest="y" npc-response="qrsp_945_1" object="npc:CH_JR_Citizen_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.945_1" required-register-value="12">
+				<case object="npc:me_belliedfrog_002" object2="npc:me_belliedfrog_002" progress-mission="y" type="killed"/>
+				<case mapunit-1="2300_ME_BelliedFrog_002" object="npc:me_kingfrog_003" object2="npc:me_kingfrog_003" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.945_2" required-register-value="5">
+				<case looting="q_945_2_icon" object="zoneenv:e_chest_2300grass_01" object2="zoneenv2:e_chest_2300grass_01" progress-mission="y" type="loot"/>
+				<case looting="q_945_2_icon" object="zoneenv:e_chest_2300grass_02" object2="zoneenv2:e_chest_2300grass_02" progress-mission="y" type="loot"/>
+				<case looting="q_945_2_icon" object="zoneenv:e_chest_2300grass_03" object2="zoneenv2:e_chest_2300grass_03" progress-mission="y" type="loot"/>
+				<case looting="q_945_2_icon" object="zoneenv:e_chest_2300grass_04" object2="zoneenv2:e_chest_2300grass_04" progress-mission="y" type="loot"/>
+				<case looting="q_945_2_icon" object="zoneenv:e_chest_2300grass_05" object2="zoneenv2:e_chest_2300grass_05" progress-mission="y" type="loot"/>
+				<case looting="q_945_2_icon" object="zoneenv:e_chest_2300grass_06" object2="zoneenv2:e_chest_2300grass_06" progress-mission="y" type="loot"/>
+				<case looting="q_945_2_icon" object="zoneenv:e_chest_2300grass_07" object2="zoneenv2:e_chest_2300grass_07" progress-mission="y" type="loot"/>
+				<case looting="q_945_2_icon" mapunit-1="2300_e_chest_2300grass_01" object="zoneenv:e_chest_2300grass_08" object2="zoneenv2:e_chest_2300grass_08" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.945_3" required-register-value="1" reward-1="945_final_set1" reward-2="945_final_set2">
+				<case npc-response="qrsp_945_2" object="npc:CH_JR_Citizen_0001" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_945_1_icon" msg="q_945_m2" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

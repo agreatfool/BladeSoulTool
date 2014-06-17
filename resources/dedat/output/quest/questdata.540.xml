@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_540" broadcast-category="field" category="epic" completed-desc="q_540_completed" completed-list="y" desc="q_540_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="540" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.540" save-type="all">
+		<acquisition level="1" recommended-level="21" sort-no="302"/>
+		<mission-step id="1" location-x="-64002.7656" location-y="-81730.125" map="toemunjean" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.540_1" required-register-value="1" reward-1="540_final_set1">
+				<case indicator-social="q_540_m1_indi_1" mapunit-1="3000_Guide_E540" msg="q_540_m1" npc-response="qrsp_540_1" object="npc:ch_unguksoldier_005" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HanSiRangHouse" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-idle="W_idle_06" npc-response="qrsp_540_2" object="npc:CH_SungGunDang_0007" type="approach"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_502"/>
+		</completion>
+	</quest>
+</table>

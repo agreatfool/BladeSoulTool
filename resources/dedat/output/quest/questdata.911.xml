@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_911" broadcast-category="field" category="epic" completed-desc="q_911_completed" completed-list="y" desc="q_911_sum" district-1="suwal" grade="1" group2="QG_SuwalPWEpic" id="911" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.911" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="39" sort-no="412"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.911_1" required-register-value="1">
+				<case object="zone:zone_eastchunggakjibu_naruter" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_911_1" object="npc:CH_ChungGak_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_changgo_sungwoo" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.911_3" required-register-value="1">
+				<case npc-response="qrsp_911_2" object="npc:CH_ChungGak_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_eastchunggakjibu_naruter" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.911_4" required-register-value="1">
+				<case npc-response="qrsp_911_3" object="npc:ch_pigfarm_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_EastChungGakJiBu_Epic_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.911_5" required-register-value="1">
+				<case looting="q_911_Quest_Scopolia_1_icon" mapunit-1="4110_e_chest_crazygrass_01" object="zoneenv:e_chest_crazygrass_01" object2="zoneenv2:e_chest_crazygrass_01" progress-mission="y" quest-symbol-drop-prob="100" type="loot"/>
+				<case object="zone:zone_EastChungGakJiBu_Epic_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+			<mission id="6" name2="Mission.Name2.911_6" required-register-value="5">
+				<case looting="q_911_Grocery_Ointment_1_icon" object="npc:MH_ChungGak_0200" object2="npc:MH_ChungGak_0200" progress-mission="y" type="loot"/>
+				<case looting="q_911_Grocery_Ointment_1_icon" object="npc:MH_ChungGak_0199" object2="npc:MH_ChungGak_0199" progress-mission="y" type="loot"/>
+				<case looting="q_911_Grocery_Ointment_1_icon" object="npc:MH_ChungGak_0198" object2="npc:MH_ChungGak_0198" progress-mission="y" type="loot"/>
+				<case looting="q_911_Grocery_Ointment_1_icon" object="npc:MH_ChungGak_0197" object2="npc:MH_ChungGak_0197" progress-mission="y" type="loot"/>
+				<case looting="q_911_Grocery_Ointment_1_icon" mapunit-1="4110_MH_ChungGak_0226" mapunit-2="4110_MH_ChungGak_0226_1" mapunit-3="4110_MH_ChungGak_0226_2" object="npc:MH_ChungGak_0226" object2="npc:MH_ChungGak_0226" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="8" name2="Mission.Name2.911_8" required-register-value="1">
+				<case npc-response="qrsp_911_4" object="npc:ch_pigfarm_0001" progress-mission="y" type="talk"/>
+				<case object="zoneenv:4112_footswitch_1" object2="zoneenv2:4112_footswitch_1" progress-mission="reaction-only" type="env-entered"/>
+				<case object="zone:zone_EastChungGakJiBu_Epic_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="9" name2="Mission.Name2.911_9" required-register-value="1">
+				<case npc-response="qrsp_911_5" object="npc:ch_donghaehamdae_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_EastChungGakJiBu_Epic_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="10" name2="Mission.Name2.911_10" required-register-value="1">
+				<case npc-response="qrsp_911_6" object="npc:ch_gyeongchunmaeng_0006" progress-mission="y" type="talk"/>
+				<case object="zone:zone_EastChungGakJiBu_Epic_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="12" name2="Mission.Name2.911_12" required-register-value="1">
+				<case mapunit-1="4111_CH_GyeongChunMaeng_0007" npc-response="qrsp_911_7" object="npc:CH_GyeongChunMaeng_0007" progress-mission="y" type="talk"/>
+				<case object="zone:zone_EastChungGakJiBu_NaRuTer_P" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="12">
+			<mission id="13" name2="Mission.Name2.911_13" required-register-value="1">
+				<case mapunit-1="4114_footswitch_1" object="zone:zone_EastChungGakJiBu_NaRuTer_P" progress-mission="y" type="convoy-arrived"/>
+				<case object="zoneenv:4114_footswitch_5" object2="zoneenv2:4114_footswitch_5" progress-mission="reaction-only" type="env-entered"/>
+			</mission>
+			<mission-step-fail rollback-step-id="11">
+				<case convoy="epic_911_con" object="zone:zone_EastChungGakJiBu_NaRuTer_P" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step id="13">
+			<mission id="14" name2="Mission.Name2.911_14" required-register-value="1" reward-1="911_final_set1">
+				<case mapunit-1="4114_CH_GyeongChunMaeng_0007_1" npc-response="qrsp_911_8" object="npc:CH_GyeongChunMaeng_0007" progress-mission="y" type="talk"/>
+				<case object="zone:zone_EastChungGakJiBu_NaRuTer_P" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_912"/>
+		</completion>
+		<transit id="1" zone="zone_EastChungGakJiBu_NaRuTer_D">
+			<destination mission-step-id="13" zone-index="3"/>
+			<destination mission-step-id="12" zone-index="3"/>
+			<destination mission-step-id="11" zone-index="3"/>
+			<destination mission-step-id="10" zone-index="2"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+		<mission-step id="10">
+			<mission id="11" name2="Mission.Name2.911_11" required-register-value="1">
+				<case mapunit-1="4116_footswitch_1" object="zoneenv:4116_footswitch_1" object2="zoneenv2:4116_footswitch_1" progress-mission="y" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.911_2" required-register-value="1" show-kill-mapunit="y">
+				<case mapunit-1="4111_CH_ChungGak_0002_1" object="npc:ch_chunggak_0002" progress-mission="y" type="npc-bleeding-occured"/>
+				<case object="zone:zone_eastchunggakjibu_naruter" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="7" name2="Mission.Name2.911_7" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_911_Quest_cubic_package_1_icon" object="npc:MH_ChungGak_0234" object2="npc:MH_ChungGak_0234" progress-mission="y" type="loot"/>
+				<case looting="q_911_Quest_cubic_package_1_icon" object="npc:MH_ChungGak_0233" object2="npc:MH_ChungGak_0233" progress-mission="y" type="loot"/>
+				<case looting="q_911_Quest_cubic_package_1_icon" object="npc:mh_chunggak_0027" object2="npc:mh_chunggak_0027" progress-mission="y" type="loot"/>
+				<case object="zone:zone_EastChungGakJiBu_Epic_1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

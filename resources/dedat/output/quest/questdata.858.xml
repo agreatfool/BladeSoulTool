@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_858" broadcast-category="field" category="normal" desc="q_858_sum" district-1="deasamak" grade="1" group2="QG_OSaekAmDoWest" id="858" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.858" save-type="all">
+		<acquisition level="33" preceding-quest-1="q_epic_532" preceding-quest-check="and" recommended-level="35">
+			<case acquire-quest="y" indicator-social="q_858_s_indi_1" msg="q_858_s" npc-response="qrsp_858_1" object="npc:ch_mayeongganggun_0027" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_858_des_1" id="1" location-x="24154.3223" location-y="44608.3906" map="oseakamdo">
+			<mission id="1" name2="Mission.Name2.858_1" required-register-value="1">
+				<case indicator-social="q_858_m1_indi_1" msg="q_858_m1" npc-response="qrsp_858_2" object="npc:ch_mayeongganggun_0032" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_858_des_2" id="2" location-x="27683.666" location-y="44243.2891" map="oseakamdo">
+			<mission id="2" name2="Mission.Name2.858_2" required-register-value="9">
+				<case looting="q_858_Grocery_rice_bag_1_icon" object="npc:mh_jukryongchae_0002" object2="npc:mh_jukryongchae_0002" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+				<case looting="q_858_grocery_rice_bag_1_icon" object="npc:mh_jukryongchae_0003" object2="npc:mh_jukryongchae_0003" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+				<case looting="q_858_Grocery_rice_bag_1_icon" mapunit-1="3030_MH_JukRyongChae_0002" mapunit-2="3030_MH_JukRyongChae_0002_1" object="npc:mh_jukryongchae_0001" object2="npc:mh_jukryongchae_0001" progress-mission="y" quest-symbol-drop-prob="80" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_858_des_3" id="3" location-x="34194.7031" location-y="34446.3125" map="dalgokchon">
+			<mission id="3" name2="Mission.Name2.858_3" required-register-value="1" reward-1="858_final_set1">
+				<case indicator-social="q_858_m3_indi_1" msg="q_858_m3" npc-response="qrsp_858_3" object="npc:ch_mayeongganggun_0031" progress-mission="y" type="talk"/>
+				<case indicator-social="q_858_m3_indi_2" npc-response="qrsp_858_4" object="npc:ch_blackmarket_0004" type="approach"/>
+				<case indicator-social="q_858_m3_indi_3" npc-response="qrsp_858_5" object="npc:ch_dojuksang_0001" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

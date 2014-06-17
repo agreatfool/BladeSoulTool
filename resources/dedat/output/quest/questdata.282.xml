@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_282" broadcast-category="field" category="epic" completed-desc="q_282_completed" completed-list="y" desc="q_282_sum" grade="1" group2="QG_BaeCheongEpic" id="282" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.282" save-type="all">
+		<acquisition level="1" recommended-level="49" sort-no="524"/>
+		<mission-step id="5" location-x="-84347.28" location-y="37710.50" map="YakChoKkunChongTa" mission-map-type="location">
+			<mission id="5" name2="Mission.Name2.282_5" required-register-value="1">
+				<case mapunit-1="5200_Guide_e282_2" npc-response="qrsp_282_1" object="npc:CH_CT_JeongHaDo_0010" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6" location-x="-91471.45" location-y="25830.86" map="NorthField" mission-map-type="location">
+			<mission id="6" name2="Mission.Name2.282_6" required-register-value="3">
+				<case looting="q_282_1_icon" object="zoneenv:e_chest_snowgrass_07" object2="zoneenv2:e_chest_snowgrass_07" progress-mission="y" type="loot"/>
+				<case looting="q_282_1_icon" object="zoneenv:e_chest_snowgrass_06" object2="zoneenv2:e_chest_snowgrass_06" progress-mission="y" type="loot"/>
+				<case looting="q_282_1_icon" object="zoneenv:e_chest_snowgrass_05" object2="zoneenv2:e_chest_snowgrass_05" progress-mission="y" type="loot"/>
+				<case looting="q_282_1_icon" object="zoneenv:e_chest_snowgrass_04" object2="zoneenv2:e_chest_snowgrass_04" progress-mission="y" type="loot"/>
+				<case looting="q_282_1_icon" object="zoneenv:e_chest_snowgrass_03" object2="zoneenv2:e_chest_snowgrass_03" progress-mission="y" type="loot"/>
+				<case looting="q_282_1_icon" object="zoneenv:e_chest_snowgrass_02" object2="zoneenv2:e_chest_snowgrass_02" progress-mission="y" type="loot"/>
+				<case looting="q_282_1_icon" mapunit-1="5220_e_chest_snowgrass_01_e282" mapunit-2="5270_Guide_e282" object="zoneenv:e_chest_snowgrass_01" object2="zoneenv2:e_chest_snowgrass_01" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.282_7" required-register-value="1">
+				<case npc-response="qrsp_282_2" object="npc:CH_CT_JeongHaDo_0010" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8" location-x="-80724.37" location-y="-4593.98" map="NorthField" mission-map-type="location">
+			<mission id="8" name2="Mission.Name2.282_8" required-register-value="1">
+				<case mapunit-1="5270_Guide_e282_1" npc-response="qrsp_282_3" object="npc:CH_CT_DoCheonPung_0010" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="12">
+			<mission id="12" name2="Mission.Name2.282_12" required-register-value="4">
+				<case gadget="Q_BlueBall_0003" gadget-required="carry-and-remove" object="zoneenv:e_chest_iceprison_04" object2="zoneenv2:e_chest_iceprison_04" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_BlueBall_0003" gadget-required="carry-and-remove" object="zoneenv:e_chest_iceprison_03" object2="zoneenv2:e_chest_iceprison_03" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_BlueBall_0003" gadget-required="carry-and-remove" object="zoneenv:e_chest_iceprison_02" object2="zoneenv2:e_chest_iceprison_02" progress-mission="y" type="manipulate"/>
+				<case gadget="Q_BlueBall_0003" gadget-required="carry-and-remove" mapunit-1="5276_e_chest_iceprison_01_e282" object="zoneenv:e_chest_iceprison_01" object2="zoneenv2:e_chest_iceprison_01" progress-mission="y" type="manipulate"/>
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="5276_CE_CT_SeolOkGungBoss_0001_e282" object="npc:CE_CT_SeolOkGungBoss_0001" progress-mission="reaction-only" type="npc-manipulate"/>
+			</mission>
+			<mission-step-fail rollback-step-id="10"/>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_283"/>
+		</completion>
+		<transit id="1" zone="zone_BaekRimSa_BonDang">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.282_2" required-register-value="1">
+				<case npc-response="qrsp_282_8" object="npc:CH_CT_Citizen_0048" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="13143.26" location-y="46743.98" map="JajakSup" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.282_3" required-register-value="7">
+				<case looting="q_282_2_icon" mapunit-1="5210_ME_CT_Frog_0003_e282" mapunit-2="5200_Guide_e282" mapunit-3="5200_Guide_e282_3" object="npc:ME_CT_Frog_0003" object2="npc:ME_CT_Frog_0003" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.282_4" required-register-value="1">
+				<case npc-response="qrsp_282_9" object="npc:CH_CT_Citizen_0048" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.282_9" required-register-value="1">
+				<case npc-response="qrsp_282_10" object="npc:CH_CT_Citizen_0046" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="13">
+			<mission id="13" name2="Mission.Name2.282_13" required-register-value="1" reward-1="282_final_set1">
+				<case npc-response="qrsp_282_5" object="npc:CH_CT_DongHyun_0001" progress-mission="y" type="talk"/>
+			</mission>
+			<mission-step-fail rollback-step-id="10"/>
+		</mission-step>
+		<mission-step id="1" location-x="-10191.70" location-y="-36312.66" map="JajakSup" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.282_1" required-register-value="10">
+				<case looting="q_282_3_icon" object="npc:MH_CT_BokUn_0006" object2="npc:MH_CT_BokUn_0006" progress-mission="y" type="loot"/>
+				<case looting="q_282_3_icon" mapunit-1="5200_MH_CT_BokUn_0005_e282" object="npc:MH_CT_BokUn_0005" object2="npc:MH_CT_BokUn_0005" progress-mission="y" type="loot"/>
+				<case looting="q_282_3_icon" mapunit-1="5231_Guide_e282" mapunit-2="5230_Guide_e282" object="npc:MH_CT_BokUn_0033" object2="npc:MH_CT_BokUn_0033" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.282_10" required-register-value="1">
+				<case mapunit-1="5276_Foot_1_e282" object="zoneenv:5276_Foot_1" object2="zoneenv2:5276_Foot_1" progress-mission="y" type="env-entered"/>
+				<case object="zone:zone_SnowWoman_Party" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="11">
+			<mission id="11" name2="Mission.Name2.282_11" required-register-value="4">
+				<case mapunit-1="5276_ME_CT_SnowLady_0003_e282" object="npc:ME_CT_SnowLady_0003" object2="npc:ME_CT_SnowLady_0003" progress-mission="y" type="killed"/>
+				<case object="npc:ME_CT_SeolOkGungBoss_0001" progress-mission="reaction-only" type="npc-bleeding-occured"/>
+			</mission>
+			<mission-step-fail rollback-step-id="10"/>
+		</mission-step>
+	</quest>
+</table>

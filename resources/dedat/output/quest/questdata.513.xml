@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_513" broadcast-category="field" category="epic" completed-desc="q_513_completed" completed-list="y" desc="q_513_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="513" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.513" save-type="all">
+		<acquisition level="1" recommended-level="27" sort-no="314"/>
+		<mission-step id="1" location-x="-67524.9609" location-y="-21254.9063" map="yugachon">
+			<mission id="1" name2="Mission.Name2.513_1" required-register-value="1">
+				<case indicator-social="q_513_m1_indi_1" msg="q_513_m1" npc-response="qrsp_513_1" object="npc:ch_yugachon_0003" progress-mission="y" type="talk" visible-object="y"/>
+				<case object="zone:zone_YuGaCHN_Musung_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="-64388.2422" location-y="-19729.5156" map="yugachon">
+			<mission id="2" name2="Mission.Name2.513_2" required-register-value="1">
+				<case mapunit-1="3010_e_onoff_stranepot_01_1_1_1" object="zone:zone_YuGaCHN_BaekUn_2" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="-64388.2422" location-y="-19729.5156" map="yugachon">
+			<mission id="3" name2="Mission.Name2.513_3" required-register-value="1">
+				<case mapunit-1="3055_CH_YuGaChon_0009" object="npc:ch_yugachon_0009" progress-mission="y" type="npc-manipulate"/>
+				<case indicator-social="q_513_m3_indi_2" npc-response="qrsp_513_26" object="npc:ch_yugachon_0010" type="approach"/>
+				<case object="zone:zone_YuGaCHN_BaekUn_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="-64388.2422" location-y="-19729.5156" map="yugachon">
+			<mission id="5" name2="Mission.Name2.513_5" required-register-value="1">
+				<case mapunit-1="3010_e_onoff_stranepot_01_1_1_1_1" object="zone:zone_YuGaCHN_2" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6" location-x="-64989.8047" location-y="-21383.8125" map="yugachon_3051">
+			<mission id="6" name2="Mission.Name2.513_6" required-register-value="1">
+				<case mapunit-1="3051_me_zombiea_0027" object="npc:me_zombiea_0027" object2="npc:me_zombiea_0027" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7" location-x="-63937.07" location-y="-19600.61" map="yugachon" mission-map-type="location">
+			<mission id="7" name2="Mission.Name2.513_7" required-register-value="1">
+				<case indicator-social="q_513_m7_indi_1" msg="q_513_m7" npc-response="qrsp_513_5" object="npc:ch_baekun_0001" progress-mission="y" type="talk"/>
+				<case npc-response="qrsp_513_6" object="npc:ch_chinchin_0004" type="approach"/>
+				<case object="zone:zone_YuGaCHN_BaekUn_2" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_513_38" object="npc:ch_yugachon_0035" type="talk"/>
+				<case indicator-social="q_513_m7_2_indi_3" npc-response="qrsp_513_37" object="npc:ch_yugachon_0034" type="talk"/>
+				<case indicator-social="q_513_m7_2_indi_1" npc-response="qrsp_513_36" object="npc:ch_yugachon_0032" type="talk"/>
+				<case approach-talk="y" object="npc:ch_baekun_0001" type="approach"/>
+				<case npc-response="qrsp_513_13" object="npc:ch_yugachon_0004" type="approach" visible-object="y"/>
+				<case npc-response="qrsp_513_12" object="npc:ch_yugachon_0005" type="approach" visible-object="y"/>
+				<case npc-response="qrsp_513_11" object="npc:ch_yugachon_0006" type="approach" visible-object="y"/>
+				<case npc-response="qrsp_513_10" object="npc:ch_yugachon_0007" type="approach" visible-object="y"/>
+				<case npc-response="qrsp_513_9" object="npc:ch_yugachon_0008" type="approach" visible-object="y"/>
+				<case npc-response="qrsp_513_27" object="npc:ch_yugachon_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8" location-x="-64366.76" location-y="-19557.64" map="yugachon" mission-map-type="location">
+			<mission id="8" name2="Mission.Name2.513_8" required-register-value="1">
+				<case indicator-social="q_513_m8_indi_1" msg="q_513_m8" npc-response="qrsp_513_7" object="npc:ch_chinchin_0004" progress-mission="y" type="talk"/>
+				<case object="zone:zone_YuGaCHN_BaekUn_2" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_513_m8_3_indi_1" npc-response="qrsp_513_41" object="npc:ch_yugachon_0035" type="talk"/>
+				<case indicator-social="q_513_m8_2_indi_3" npc-response="qrsp_513_40" object="npc:ch_yugachon_0034" type="talk"/>
+				<case indicator-social="q_513_m8_2_indi_1" npc-response="qrsp_513_39" object="npc:ch_yugachon_0032" type="talk"/>
+				<case npc-response="qrsp_513_19" object="npc:ch_yugachon_0003" type="approach" visible-object="y"/>
+				<case npc-response="qrsp_513_18" object="npc:ch_yugachon_0004" type="approach" visible-object="y"/>
+				<case npc-response="qrsp_513_17" object="npc:ch_yugachon_0005" progress-mission="n" type="approach" visible-object="y"/>
+				<case npc-response="qrsp_513_16" object="npc:ch_yugachon_0006" type="approach" visible-object="y"/>
+				<case npc-response="qrsp_513_15" object="npc:ch_yugachon_0007" progress-mission="n" type="approach" visible-object="y"/>
+				<case npc-response="qrsp_513_14" object="npc:ch_yugachon_0008" type="approach" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_YuGaCHN_Musung_1">
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+		<transit id="2" zone="zone_YuGaCHN_BaekUn_1">
+			<destination mission-step-id="8" zone-index="1"/>
+			<destination mission-step-id="7" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="9" zone-index="1"/>
+		</transit>
+		<transit id="3" zone="zone_YuGaCHN_1">
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_514"/>
+		</completion>
+		<mission-step id="9" location-x="-59483.72" location-y="-5377.41" map="yeolsajeedea" mission-map-type="location">
+			<mission id="9" name2="Mission.Name2.513_9" required-register-value="1" reward-1="513_final_set1">
+				<case indicator-social="q_513_m9_indi_1" mapunit-1="3050_guide_e513" msg="q_513_m9" npc-response="qrsp_513_8" object="npc:ch_unguksoldier_025" progress-mission="y" type="talk" visible-object="y"/>
+				<case object="zone:zone_YuGaCHN_BaekUn_2" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_513_m9_3_indi_1" npc-response="qrsp_513_44" object="npc:ch_yugachon_0035" type="talk"/>
+				<case indicator-social="q_513_m9_2_indi_3" npc-response="qrsp_513_43" object="npc:ch_yugachon_0034" type="talk"/>
+				<case indicator-social="q_513_m9_2_indi_1" npc-response="qrsp_513_42" object="npc:ch_yugachon_0032" type="talk"/>
+				<case npc-response="qrsp_513_25" object="npc:ch_yugachon_0003" type="approach" visible-object="y"/>
+				<case npc-response="qrsp_513_24" object="npc:ch_yugachon_0004" type="approach" visible-object="y"/>
+				<case npc-response="qrsp_513_23" object="npc:ch_yugachon_0005" type="approach" visible-object="y"/>
+				<case npc-response="qrsp_513_22" object="npc:ch_yugachon_0006" type="approach" visible-object="y"/>
+				<case npc-response="qrsp_513_21" object="npc:ch_yugachon_0007" type="approach" visible-object="y"/>
+				<case npc-response="qrsp_513_20" object="npc:ch_yugachon_0008" type="approach" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="-64388.2422" location-y="-19729.5156" map="yugachon">
+			<mission id="4" name2="Mission.Name2.513_4" required-register-value="1">
+				<case msg="q_513_m4" npc-response="qrsp_513_4" object="npc:ch_baekun_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_YuGaCHN_BaekUn_2" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-idle="M_idle_03" npc-response="qrsp_513_35" object="npc:ch_yugachon_0011" type="approach"/>
+				<case indicator-idle="M_idle_02" npc-response="qrsp_513_34" object="npc:ch_yugachon_0010" type="approach"/>
+				<case indicator-idle="M_idle_01" npc-response="qrsp_513_33" object="npc:ch_yugachon_0009" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

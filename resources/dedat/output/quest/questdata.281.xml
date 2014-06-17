@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_281" broadcast-category="field" category="epic" completed-desc="q_281_completed" completed-list="y" desc="q_281_sum" grade="1" group2="QG_BaeCheongEpic" id="281" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.281" save-type="all">
+		<acquisition level="1" recommended-level="48" sort-no="523"/>
+		<mission-step id="1" location-x="-963.18" location-y="-46332.20" map="JajakSup" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.281_1" required-register-value="1">
+				<case mapunit-1="5200_zone_BaekRimSa_Phase_e281" mapunit-2="Guide_CheonMyeongJiWiJeDan_down" mapunit-3="Guide_GyeongHoeRu_down" mapunit-4="Guide_KangRyuSi" mapunit-5="Guide_SeolRinGung_right" object="zone:zone_BaekRimSa_Phase" progress-mission="y" type="enter-zone"/>
+				<case npc-response="qrsp_280_15" object="npc:CH_CT_JeGukGun_0052" type="approach"/>
+				<case npc-response="qrsp_280_14" object="npc:CH_CT_JeGukGun_0257" type="approach"/>
+				<case npc-response="qrsp_280_13" object="npc:CH_CT_JeGukGun_0256" type="approach"/>
+				<case npc-response="qrsp_280_12" object="npc:CH_CT_PungEmpire_0060" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.281_3" required-register-value="5">
+				<case object="npc:CH_CT_BaekRim_0021" progress-mission="y" type="npc-manipulate"/>
+				<case object="npc:CH_CT_BaekRim_0020" progress-mission="y" type="npc-manipulate"/>
+				<case mapunit-1="5231_CH_CT_BaekRim_0019_e281" object="npc:CH_CT_BaekRim_0019" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+			<mission id="4" name2="Mission.Name2.281_4" required-register-value="1">
+				<case object="npc:CH_CT_JeongHaDo_0009" progress-mission="y" type="approach"/>
+			</mission>
+			<mission id="5" name2="Mission.Name2.281_5" required-register-value="1">
+				<case object="npc:CH_CT_ORakDang_0017" progress-mission="y" type="approach"/>
+			</mission>
+			<mission id="6" name2="Mission.Name2.281_6" required-register-value="1">
+				<case object="npc:CH_CT_JinSoA_0024" progress-mission="y" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.281_2" required-register-value="1">
+				<case npc-response="qrsp_281_1" object="npc:CH_CT_Citizen_0573" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="7" name2="Mission.Name2.281_7" required-register-value="1">
+				<case object="npc:CH_CT_HyunDam_0003" progress-mission="y" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="8" name2="Mission.Name2.281_8" required-register-value="10">
+				<case object="npc:MH_CT_PungGek_0021" object2="npc:MH_CT_PungGek_0021" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_PungGek_0020" object2="npc:MH_CT_PungGek_0020" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_PungGek_0019" object2="npc:MH_CT_PungGek_0019" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_PungGek_0018" object2="npc:MH_CT_PungGek_0018" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_PungGek_0017" object2="npc:MH_CT_PungGek_0017" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_PungGek_0016" object2="npc:MH_CT_PungGek_0016" progress-mission="y" type="killed"/>
+				<case object="npc:MH_CT_PungGek_0015" object2="npc:MH_CT_PungGek_0015" progress-mission="y" type="killed"/>
+				<case mapunit-1="5231_MH_CT_PungGek_0014_e281" object="npc:MH_CT_PungGek_0014" object2="npc:MH_CT_PungGek_0014" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="9" name2="Mission.Name2.281_9" required-register-value="1">
+				<case object="npc:MH_CT_PungGek_0007" object2="npc:MH_CT_PungGek_0007" progress-mission="y" type="killed"/>
+			</mission>
+			<mission-step-fail rollback-step-id="4"/>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="10" name2="Mission.Name2.281_10" required-register-value="1" reward-1="281_final_set1">
+				<case npc-response="qrsp_281_5" object="npc:CH_CT_HyunDam_0004" progress-mission="y" type="talk"/>
+				<case object="zone:zone_BaekRimSa_BonDang_2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_282"/>
+		</completion>
+		<transit id="1" zone="zone_BaekRimSa">
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+		<transit id="2" zone="zone_BaekRimSa_BonDang">
+			<destination mission-step-id="6" zone-index="1"/>
+			<destination mission-step-id="5" zone-index="1"/>
+			<destination mission-step-id="4" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="1" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

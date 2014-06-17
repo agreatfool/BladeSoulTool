@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_549" broadcast-category="field" category="normal" day-of-week="none" desc="q_549_sum" grade="1" group2="QG_BooNongWestNorth" id="549" map-group-1-1="baekchung" max-repeat="1" name2="Quest.Name2.549" reset-type="none" save-type="all">
+		<acquisition check-tencent-vitality="n" level="43" preceding-quest-1="q_sub_545" preceding-quest-2="q_sub_546" preceding-quest-check="and" recommended-level="45">
+			<case acquire-quest="y" npc-response="qrsp_549_1" object="npc:CH_CT_JeGukGun_0144" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.549_1" required-register-value="1">
+				<case npc-response="qrsp_549_2" object="npc:CH_CT_Citizen_0609" progress-mission="y" type="talk"/>
+				<case object="zone:zone_haori_fell" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_549_6" object="npc:CH_CT_JeGukGun_0239" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.549_2" required-register-value="1">
+				<case mapunit-1="5013_CH_CT_Citizen_0613_s549" npc-response="qrsp_549_3" object="npc:CH_CT_Citizen_0613" progress-mission="reaction-only" type="npc-manipulate"/>
+				<case mapunit-1="5013_CH_CT_Citizen_0616_s549" object="zone:zone_haori_fell" progress-mission="y" type="convoy-arrived"/>
+				<case mapunit-1="5013_CH_CT_Citizen_0615_s549" npc-response="qrsp_549_3" object="npc:CH_CT_Citizen_0615" progress-mission="reaction-only" type="npc-manipulate"/>
+				<case npc-response="qrsp_549_6" object="npc:CH_CT_JeGukGun_0239" type="approach"/>
+			</mission>
+			<mission-step-fail>
+				<case convoy="sub_549_con" object="zone:zone_haori_fell" progress-mission="reaction-only" type="convoy-failed"/>
+			</mission-step-fail>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="4" name2="Mission.Name2.549_4" required-register-value="1" reward-1="549_final_set1">
+				<case npc-response="qrsp_549_4" object="npc:CH_CT_JeGukGun_0239" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.549_3" required-register-value="1">
+				<case npc-response="qrsp_549_3" object="npc:CH_CT_Citizen_0616" progress-mission="y" type="npc-manipulate"/>
+				<case npc-response="qrsp_549_6" object="npc:CH_CT_JeGukGun_0239" type="approach"/>
+				<case object="zone:zone_haori_fell" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_856" broadcast-category="field" category="normal" desc="q_856_sum" district-1="deasamak" grade="1" group2="QG_OSaekAmDoWest" id="856" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.856" save-type="all">
+		<acquisition level="33" preceding-quest-1="q_epic_531" preceding-quest-check="and" recommended-level="35">
+			<case acquire-quest="y" indicator-social="q_856_s_indi_1" msg="q_856_s" npc-response="qrsp_856_1" object="npc:ch_mayeongganggun_0034" type="talk"/>
+		</acquisition>
+		<mission-step desc="q_856_des_1" id="1" location-x="20320.7227" location-y="43939.0313" map="oseakamdo">
+			<mission id="1" name2="Mission.Name2.856_1" required-register-value="7">
+				<case mapunit-1="3030_me_orakdang_015" mapunit-2="3030_me_orakdang_015_1" object="npc:me_orakdang_015" object2="npc:me_orakdang_015" progress-mission="y" type="killed"/>
+				<case object="npc:mh_orakdang_0044" object2="npc:mh_orakdang_0044" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.856_2" required-register-value="7">
+				<case mapunit-3="3030_me_orakdang_014" mapunit-4="3030_me_orakdang_014_1" object="npc:me_orakdang_014" object2="npc:me_orakdang_014" progress-mission="y" type="killed"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.856_3" required-register-value="7">
+				<case mapunit-5="3030_mh_orakdang_0008" mapunit-6="3030_mh_orakdang_0008_1" object="npc:mh_orakdang_0008" object2="npc:mh_orakdang_0008" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="22207.0977" location-y="49111.3516" map="oseakamdo">
+			<mission id="4" name2="Mission.Name2.856_4" required-register-value="1" reward-1="856_final_set1">
+				<case indicator-social="q_856_m4_indi_1" msg="q_856_m4" npc-response="qrsp_856_2" object="npc:ch_mayeongganggun_0034" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

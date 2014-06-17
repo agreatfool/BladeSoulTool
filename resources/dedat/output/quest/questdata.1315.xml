@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1315" broadcast-category="field" category="job" desc="q_1315_sum" district-1="jeryoungrim" grade="1" group2="QG_MangJaSup" id="1315" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.1315" save-type="all" show-tutorial-tag="n" tutorial="y">
+		<acquisition job-1="역사" level="4" preceding-quest-1="q_epic_304" preceding-quest-check="and" recommended-level="4" talk-to-self-guide-msg="Msg.Job.quest1">
+			<case acquire-quest="y" item="q_1315_Quest_old_letter_1_icon" msg="q_1315_s" type="talk-to-self"/>
+			<case acquire-quest="y" npc-response="qrsp_1315_3" object="npc:ctzn_jinm_jakyungdan_gongsamsik_kff_001" type="talk"/>
+		</acquisition>
+		<mission-step guide-message="gm_1315_2" guide-message-zone-1="zone_MangJaSup_Dun_1" id="1">
+			<mission id="1" name2="Mission.Name2.1315_1" required-register-value="1">
+				<case mapunit-1="2026_footswitch_CQ1_1" object="zoneenv:2026_footswitch_CQ1_1" object2="zoneenv2:2026_footswitch_CQ1_1" progress-mission="y" type="env-entered"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1315_2" required-register-value="1">
+				<case indicator-social="q_1315_m2_indi_1" msg="q_1315_m2" npc-response="qrsp_1315_1" object="npc:ch_ghost_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_MangJaSup_Gerjeum_1_C3" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4">
+			<mission id="5" name2="Mission.Name2.1315_5" required-register-value="1" reward-1="1315_final_set1">
+				<case indicator-social="q_1315_m4_indi_1" msg="q_1315_m4" npc-response="qrsp_1315_2" object="npc:ch_hwajung_0001" progress-mission="y" type="talk"/>
+				<case object="zone:zone_MangJaSup_Gerjeum_1_C3" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" guide-message="gm_1315_1" guide-message-zone-1="zone_MangJaSup_Gerjeum_1_C3" id="3" location-x="-33412.00" location-y="-47141.25" map="memaryun_dun" mission-map-type="location">
+			<mission id="3" name2="Mission.Name2.1315_3" required-register-value="1">
+				<case object="zone:zone_MangJaSup_Gerjeum_1_C3" progress-mission="reaction-only" type="enter-zone"/>
+				<tutorial-case mapunit-1="2038_MH_Ghost_0014" mapunit-2="2000_MeMaRyun_Dun_S1315" object-1="npc:MH_Ghost_0014" object2-1="npc:MH_Ghost_0014" progress-mission="y" skill-sequence="Destroyer_Lv4_M11" type="skill-sequence"/>
+				<tutorial-case object-1="npc:MH_Ghost_0020" object2-1="npc:MH_Ghost_0020" progress-mission="reaction-only" skill-sequence="Destroyer_Lv4_M11" type="skill-sequence"/>
+				<tutorial-case object-1="npc:MH_Ghost_0019" object2-1="npc:MH_Ghost_0019" progress-mission="reaction-only" skill-sequence="Destroyer_Lv4_M11" type="skill-sequence"/>
+				<tutorial-case object-1="npc:MH_Ghost_0015" object2-1="npc:MH_Ghost_0015" progress-mission="reaction-only" skill-sequence="Destroyer_Lv4_M11" type="skill-sequence"/>
+			</mission>
+			<mission id="4" name2="Mission.Name2.1315_4" required-register-value="1">
+				<case npc-response="qrsp_1315_4" object="npc:CE_JR_JobBook_0006" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_MangJaSup_Gerjeum_1_sp">
+			<destination mission-step-id="4" zone-index="3"/>
+			<destination mission-step-id="3" zone-index="3"/>
+			<destination mission-step-id="2" zone-index="3"/>
+			<destination mission-step-id="1" zone-index="3"/>
+		</transit>
+	</quest>
+</table>

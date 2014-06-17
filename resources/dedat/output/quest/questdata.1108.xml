@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1108" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1108_sum" district-1="suwal" grade="8" group2="QG_Farmland" id="1108" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1108" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="37" preceding-quest-1="q_epic_910" preceding-quest-check="and" preceding-quest-mission-step-1="2" recommended-level="39">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1108_1" object="npc:ch_pigfarm_0024" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1108_5" object="npc:ch_pigfarm_0024" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_1108_7" object="npc:ce_board_0002" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1108_1" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_1108_Quest_spiritual_stone002_1_icon" mapunit-1="4555_ME_GolemLeader_0003" object="npc:me_golemleader_0003" object2="npc:me_golemleader_0003" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1108_2" required-register-value="1" show-kill-mapunit="y">
+				<case looting="q_1108_Quest_spiritual_stone001_1_icon" mapunit-2="4555_ME_GolemLeader_0002" object="npc:me_golemleader_0002" object2="npc:me_golemleader_0002" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.1108_3" required-register-value="1" reward-1="1108_final_set1" reward-2="1108_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1108_2" object="npc:ch_pigfarm_0024" progress-mission="y" type="talk"/>
+				<case completion-count="1" npc-response="qrsp_1108_6" object="npc:ch_pigfarm_0024" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_1108_1_icon" msg="q_1108_6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

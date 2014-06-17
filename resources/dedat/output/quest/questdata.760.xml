@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_760" broadcast-category="field" category="normal" desc="q_760_sum" district-1="deasamak" grade="1" group2="QG_SaJiSeokRimSouth" id="760" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.760" save-type="all">
+		<acquisition level="30" preceding-quest-1="q_epic_522" preceding-quest-2="q_sub_754" preceding-quest-check="and" recommended-level="32">
+			<case acquire-quest="y" indicator-social="q_760_s_indi_1" msg="q_760_s" npc-response="qrsp_760_1" object="npc:ch_haeyoung_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="17124.143" location-y="-31975.772" map="sajisukrim">
+			<mission id="1" name2="Mission.Name2.760_1" required-register-value="1">
+				<case indicator-social="q_760_m1_indi_1" msg="q_760_m1" npc-response="qrsp_760_2" object="npc:ch_shinryong_044" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="20619.375" location-y="-39450.949" map="sanghumadang">
+			<mission id="2" name2="Mission.Name2.760_2" required-register-value="3">
+				<case gadget-required="empty" indicator="quest-gadget-drop" mapunit-1="3020_e_onoff_drygrass_01" object="zoneenv:e_onoff_drygrass_01" object2="zoneenv2:e_onoff_drygrass_01" progress-mission="reaction-only" type="manipulate"/>
+				<case gadget="q_haystacka" gadget-required="carry-and-remove" indicator="quest-gadget-required" mapunit-1="3020_e_onoff_brazier_01" object="zoneenv:e_onoff_brazier_01" object2="zoneenv2:e_onoff_brazier_01" progress-mission="reaction-only" type="manipulate"/>
+				<case looting="q_760_grocery_chinese_liquor_bottle_1_icon" mapunit-1="3066_me_belliedfirefrog_0002" object="npc:me_belliedfirefrog_0002" object2="npc:me_belliedfirefrog_0002" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="17124.143" location-y="-31975.772" map="sajisukrim">
+			<mission id="3" name2="Mission.Name2.760_3" required-register-value="1">
+				<case indicator-social="q_760_m3_indi_1" msg="q_760_m3" npc-response="qrsp_760_3" object="npc:ch_shinryong_044" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="12875.815" location-y="-33480.313" map="hangari">
+			<mission id="4" name2="Mission.Name2.760_4" required-register-value="1" reward-1="760_final_set1">
+				<case indicator-social="q_760_m4_indi_1" msg="q_760_m4" npc-response="qrsp_760_4" object="npc:ch_haeyoung_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

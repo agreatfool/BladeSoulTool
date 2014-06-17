@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_933" broadcast-category="field" category="epic" completed-desc="q_933_completed" completed-list="y" desc="q_933_sum" grade="1" group2="QG_NextbaeCheongEpic" id="933" map-group-1-1="startzone" max-repeat="1" name2="Quest.Name2.933" save-type="all">
+		<acquisition level="1" preceding-quest-check="and" recommended-level="50" sort-no="532"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.933_1" required-register-value="1">
+				<case mapunit-1="M_1253_footswitch_03" object="zoneenv:1253_footswitch_03" object2="zoneenv2:1253_footswitch_03" progress-mission="y" type="env-entered"/>
+				<case object="zone:StartZone_Epic5thCurtain_p1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step desc="q_933_des_3" id="3">
+			<mission id="3" name2="Mission.Name2.933_3" required-register-value="2">
+				<case object="npc:CH_SA_mumyang_0001" progress-mission="y" type="npc-manipulate"/>
+				<case object="zone:StartZone_Epic5thCurtain_p1" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="npc:CH_SA_youmyang_0001" progress-mission="y" type="npc-manipulate"/>
+			</mission>
+		</mission-step>
+		<mission-step guide-message="gm_933_2" guide-message-zone-1="startzone_epic5thcurtain_p1" id="4">
+			<mission id="4" name2="Mission.Name2.933_4" required-register-value="1">
+				<case gadget-required="dont-care" indicator="default" object="npc:CH_SA_youmyang_0002" object2="npc:CH_SA_youmyang_0002" progress-mission="y" social="talksocial_anger" type="pc-social"/>
+				<case object="zone:StartZone_Epic5thCurtain_p1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5">
+			<mission id="5" name2="Mission.Name2.933_5" required-register-value="1">
+				<case npc-response="qrsp_933_2" object="npc:CH_SA_GuakChill_0002" progress-mission="y" type="talk"/>
+				<case object="zone:StartZone_Epic5thCurtain_p1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="7">
+			<mission id="7" name2="Mission.Name2.933_7" required-register-value="1">
+				<case npc-response="qrsp_933_3" object="npc:CH_SA_GuakChill_0002" progress-mission="y" type="talk"/>
+				<case object="zone:StartZone_Epic5thCurtain_p1" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_933_26" object="npc:CH_SA_mumyang_0002" type="approach"/>
+				<case npc-response="qrsp_933_29" object="npc:CH_SA_youmyang_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="8">
+			<mission id="8" name2="Mission.Name2.933_8" required-register-value="1">
+				<case npc-response="qrsp_933_4" object="npc:CH_SA_MuSung_0001" progress-mission="y" type="talk"/>
+				<case object="zone:StartZone_Epic5thCurtain_p1" progress-mission="reaction-only" type="enter-zone"/>
+				<case object="zoneenv:1253_footswitch_01" object2="zoneenv2:1253_footswitch_01" progress-mission="reaction-only" type="env-entered"/>
+				<case npc-response="qrsp_933_10" object="npc:CH_SA_HongMun_0007" type="approach"/>
+				<case npc-response="qrsp_933_20" object="npc:CH_SA_HongMun_0008" type="approach"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="StartZone_Event">
+			<destination mission-step-id="2" zone-index="4"/>
+			<destination mission-step-id="3" zone-index="4"/>
+			<destination mission-step-id="4" zone-index="4"/>
+			<destination mission-step-id="5" zone-index="4"/>
+			<destination mission-step-id="6" zone-index="4"/>
+			<destination mission-step-id="7" zone-index="4"/>
+			<destination mission-step-id="8" zone-index="4"/>
+			<destination mission-step-id="9" zone-index="4"/>
+			<destination mission-step-id="10" zone-index="4"/>
+			<destination mission-step-id="1" zone-index="4"/>
+		</transit>
+		<completion>
+			<next-quest quest="q_epic_998"/>
+		</completion>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.933_2" required-register-value="1">
+				<case npc-response="qrsp_933_1" object="npc:CH_SA_GuakChill_0002" progress-mission="y" type="talk"/>
+				<case object="zone:StartZone_Epic5thCurtain_p1" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="9">
+			<mission id="9" name2="Mission.Name2.933_9" required-register-value="1">
+				<case object="npc:CH_SA_MuSung_0002" progress-mission="y" type="npc-manipulate"/>
+				<case object="zone:StartZone_Epic5thCurtain_p1" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_933_11" object="npc:CH_SA_GuakChill_0003" type="approach"/>
+				<case npc-response="qrsp_933_16" object="npc:CH_SA_mumyang_0003" type="approach"/>
+				<case npc-response="qrsp_933_23" object="npc:CH_SA_HongMun_0008" type="approach"/>
+				<case npc-response="qrsp_933_24" object="npc:CH_SA_HongMun_0007" type="approach"/>
+				<case npc-response="qrsp_933_29" object="npc:CH_SA_youmyang_0003" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="10">
+			<mission id="10" name2="Mission.Name2.933_10" required-register-value="1" reward-1="933_final_set1">
+				<case npc-response="qrsp_933_5" object="npc:CH_SA_GuakChill_0003" progress-mission="y" type="talk"/>
+				<case object="zone:StartZone_Epic5thCurtain_p1" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_933_13" object="npc:CH_SA_MuSung_0003" type="approach"/>
+				<case npc-response="qrsp_933_14" object="npc:CH_SA_youmyang_0003" type="approach"/>
+				<case npc-response="qrsp_933_17" object="npc:CH_SA_HongMun_0007" type="approach"/>
+				<case npc-response="qrsp_933_18" object="npc:CH_SA_HongMun_0008" type="approach"/>
+				<case npc-response="qrsp_933_17" object="npc:CH_SA_mumyang_0003" type="approach"/>
+				<case npc-response="qrsp_933_25" object="npc:CH_SA_YeongMok_0002" type="approach"/>
+			</mission>
+		</mission-step>
+		<mission-step id="6">
+			<mission id="6" name2="Mission.Name2.933_6" required-register-value="1">
+				<case object="npc:ME_SA_Pig_0001" object2="npc:ME_SA_Pig_0001" progress-mission="y" type="killed"/>
+				<case object="zone:StartZone_Epic5thCurtain_p1" progress-mission="reaction-only" type="enter-zone"/>
+				<case npc-response="qrsp_933_19" object="npc:CH_SA_HongMun_0004" type="approach"/>
+				<case npc-response="qrsp_933_21" object="npc:CH_SA_HongMun_0005" type="approach"/>
+				<case npc-response="qrsp_933_22" object="npc:CH_SA_HongMun_0006" type="approach"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

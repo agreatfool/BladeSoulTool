@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1099" broadcast-category="field" category="normal" desc="q_1099_sum" district-1="suwal" grade="1" group2="QG_SouthCoast" id="1099" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1099" save-type="all">
+		<acquisition level="37" preceding-quest-1="q_epic_909" preceding-quest-check="and" recommended-level="39">
+			<case acquire-quest="y" npc-response="qrsp_1099_1" object="npc:ch_hanmanun_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1099_1" required-register-value="10">
+				<case object="npc:me_pigtribea_0008" object2="npc:me_pigtribea_0008" progress-mission="y" type="killed"/>
+				<case mapunit-1="4105_ME_PigTribeA_0001" mapunit-2="4105_ME_PigTribeA_0001_1" object="npc:me_pigtribea_0001" object2="npc:me_pigtribea_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1099_2" required-register-value="1" reward-1="1099_final_set1">
+				<case npc-response="qrsp_1099_2" object="npc:ch_pungjeohoe_0013" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

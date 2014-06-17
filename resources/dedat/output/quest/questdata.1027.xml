@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1027" broadcast-category="field" category="normal" desc="q_1027_sum" district-1="suwal" grade="1" group2="QG_AncyJokVillage" id="1027" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1027" save-type="all">
+		<acquisition level="36" preceding-quest-1="q_epic_906" preceding-quest-2="q_sub_1024" preceding-quest-check="and" recommended-level="38">
+			<case acquire-quest="y" npc-response="qrsp_1027_1" object="npc:CH_SinRyong_0047" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1027_1" required-register-value="2">
+				<case gadget-required="dont-care" looting="q_1027_Quest_tiger_skin_1_icon" mapunit-1="4000_e_chest_tigerleather_01" object="zoneenv:e_chest_tigerleather_01" object2="zoneenv2:e_chest_tigerleather_01" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1027_Quest_tiger_skin_1_icon" object="zoneenv:e_chest_tigerleather_02" object2="zoneenv2:e_chest_tigerleather_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1027_Quest_tiger_skin_1_icon" object="zoneenv:e_chest_tigerleather_03" object2="zoneenv2:e_chest_tigerleather_03" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1027_Quest_tiger_skin_1_icon" object="zoneenv:e_chest_tigerleather_04" object2="zoneenv2:e_chest_tigerleather_04" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1027_Quest_tiger_skin_1_icon" object="zoneenv:e_chest_tigerleather_05" object2="zoneenv2:e_chest_tigerleather_05" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1027_Quest_tiger_skin_1_icon" object="zoneenv:e_chest_tigerleather_01_1" object2="zoneenv2:e_chest_tigerleather_01_1" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1027_Quest_tiger_skin_1_icon" object="zoneenv:e_chest_tigerleather_02_1" object2="zoneenv2:e_chest_tigerleather_02_1" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1027_Quest_tiger_skin_1_icon" object="zoneenv:e_chest_tigerleather_03_1" object2="zoneenv2:e_chest_tigerleather_03_1" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1027_Quest_tiger_skin_1_icon" object="zoneenv:e_chest_tigerleather_04_1" object2="zoneenv2:e_chest_tigerleather_04_1" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1027_Quest_tiger_skin_1_icon" object="zoneenv:e_chest_tigerleather_05_1" object2="zoneenv2:e_chest_tigerleather_05_1" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.1027_2" required-register-value="1" reward-1="1027_final_set1">
+				<case npc-response="qrsp_1027_2" object="npc:CH_SinRyong_0047" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

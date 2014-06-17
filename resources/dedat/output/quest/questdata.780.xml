@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_780" broadcast-category="field" category="normal" desc="q_780_sum" district-1="deasamak" grade="1" group2="QG_SaJiSeokRimEast" id="780" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.780" save-type="all">
+		<acquisition level="31" preceding-quest-1="q_epic_526" preceding-quest-check="and" recommended-level="33">
+			<case acquire-quest="y" indicator-social="q_780_s_indi_1" msg="q_780_s" npc-response="qrsp_780_1" object="npc:ch_muun_0007" type="talk"/>
+		</acquisition>
+		<mission-step id="1" location-x="46399.492" location-y="-14301.234" map="sajisukrim">
+			<mission id="1" name2="Mission.Name2.780_1" required-register-value="10">
+				<case object="npc:me_samagyo_0033" object2="npc:me_samagyo_0033" progress-mission="y" type="killed"/>
+				<case object="npc:ME_Samagyo_0034" object2="npc:ME_Samagyo_0034" progress-mission="y" type="killed"/>
+				<case mapunit-1="3024_ME_Samagyo_0033" object="npc:ME_Samagyo_0035" object2="npc:ME_Samagyo_0035" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="46704.258" location-y="-19679.109" map="haerimchon">
+			<mission id="2" name2="Mission.Name2.780_2" required-register-value="1" reward-1="780_final_set1">
+				<case indicator-social="q_780_m2_indi_1" msg="q_780_m2" npc-response="qrsp_780_2" object="npc:ch_muun_0007" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_411" broadcast-category="field" category="normal" desc="q_411_sum" district-1="jeryoungrim" grade="1" group2="QG_Delete" id="411" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.411" retired="y" save-type="all">
+		<acquisition level="50" preceding-quest-1="q_epic_311" preceding-quest-check="and" preceding-quest-mission-step-1="2" recommended-level="50"/>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.411_1" required-register-value="10"/>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="2" name2="Mission.Name2.411_2" required-register-value="1" reward-1="411_final_set1"/>
+		</mission-step>
+	</quest>
+</table>

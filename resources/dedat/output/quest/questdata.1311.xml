@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1311" broadcast-category="field" category="job" desc="q_1311_sum" district-1="jeryoungrim" grade="1" group2="QG_HuekUmmRim" id="1311" map-group-1-1="jeryoungrim" max-repeat="1" name2="Quest.Name2.1311" save-type="all" tutorial="y">
+		<acquisition job-1="권사" level="10" preceding-quest-1="q_epic_310" preceding-quest-2="q_sub_1310" preceding-quest-check="and" recommended-level="10" talk-to-self-guide-msg="Msg.Job.quest4">
+			<case acquire-quest="y" item="q_1311_Quest_hair_growth_solution_manual_1_icon" msg="q_1311_s" type="talk-to-self"/>
+			<case acquire-quest="y" npc-response="qrsp_1311_5" object="npc:ctzn_jinf_jakyungdan_buyoung_kff_001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1311_1" required-register-value="1">
+				<case indicator-social="q_1311_m1_indi_1" msg="q_1311_m1" npc-response="qrsp_1311_1" object="npc:CH_HwaJung_0020" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_4_C2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step completion-type="or" guide-message="gm_1311_1" guide-message-zone-1="zone_HuekUmmRim_ClassQ_4_C2" id="2">
+			<mission id="2" name2="Mission.Name2.1311_2" required-register-value="3" show-kill-mapunit="y">
+				<tutorial-case object-1="npc:MH_MokuJin_0012" object2-1="npc:MH_MokuJin_0012" progress-mission="y" skill-sequence="KungfuFighter_Lv10_M11" type="skill-sequence"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_4_C2" progress-mission="reaction-only" type="enter-zone"/>
+				<case indicator-social="q_1311_m2_indi_1" npc-response="qrsp_1311_2" object="npc:CH_HwaJung_0020" type="approach"/>
+				<case indicator-social="q_1311_m2_indi_4" npc-response="qrsp_1311_3" object="npc:MH_MokuJin_0012" type="approach"/>
+				<tutorial-case object-1="npc:MH_MokuJin_0012" object2-1="npc:MH_MokuJin_0012" progress-mission="y" skill-sequence="KungfuFighter_Lv10_M12" type="skill-sequence"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.1311_3" required-register-value="1">
+				<case npc-response="qrsp_1311_6" object="npc:CE_JR_JobBook_0002" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="4" name2="Mission.Name2.1311_4" required-register-value="1" reward-1="1311_final_set1">
+				<case npc-response="qrsp_1311_4" object="npc:CH_HwaJung_0020" progress-mission="y" type="talk"/>
+				<case object="zone:zone_HuekUmmRim_ClassQ_4_C2" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_HuekUmmRim_ClassQ_4_SP">
+			<destination mission-step-id="1" zone-index="1"/>
+			<destination mission-step-id="2" zone-index="1"/>
+			<destination mission-step-id="3" zone-index="1"/>
+		</transit>
+	</quest>
+</table>

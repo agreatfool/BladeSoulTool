@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_epic_532" broadcast-category="field" category="epic" completed-desc="q_532_completed" completed-list="y" desc="q_532_sum" district-1="deasamak" grade="1" group2="QG_DaeSaMakEpic" id="532" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.532" save-type="all">
+		<acquisition level="1" recommended-level="35" sort-no="334"/>
+		<mission-step id="1" location-x="22207.0977" location-y="49111.3516" map="oseakamdo" mission-map-type="location">
+			<mission id="1" name2="Mission.Name2.532_1" required-register-value="1">
+				<case indicator-social="q_532_m1_indi_1" mapunit-1="3030_Guide_E532" msg="q_532_m1" npc-response="qrsp_532_1" object="npc:ch_jinsoa_0008" progress-mission="y" type="talk" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2" location-x="22876.4551" location-y="42600.3164" map="oseakamdo">
+			<mission id="2" name2="Mission.Name2.532_2" required-register-value="1">
+				<case mapunit-1="3030_Epic_JeolBukTuom" object="zone:zone_JeolBukTuom" progress-mission="y" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3" location-x="27436.1875" location-y="33415.9727" map="jeolbuktuom">
+			<mission id="3" name2="Mission.Name2.532_3" required-register-value="1">
+				<case indicator-social="q_532_m3_indi_1" msg="q_532_m3" npc-response="qrsp_532_2" object="npc:ch_ildong_0002" progress-mission="y" type="talk"/>
+				<case object="zone:zone_JeolBukTuom" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="27436.1875" location-y="33415.9727" map="jeolbuktuom">
+			<mission id="4" name2="Mission.Name2.532_4" required-register-value="1" reward-1="532_final_set1">
+				<case indicator-social="q_532_m4_indi_1" msg="q_532_m4" npc-response="qrsp_532_3" object="npc:ch_orakdang_0003" progress-mission="y" type="talk"/>
+				<case object="zone:zone_JeolBukTuom" progress-mission="reaction-only" type="enter-zone"/>
+			</mission>
+		</mission-step>
+		<completion>
+			<next-quest quest="q_epic_533"/>
+		</completion>
+	</quest>
+</table>

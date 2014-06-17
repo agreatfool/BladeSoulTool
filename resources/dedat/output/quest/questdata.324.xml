@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_324" broadcast-category="field" category="normal" content-type="duel" desc="q_324_sum" grade="16" group2="QG_Duel" id="324" map-group-1-1="anywhere" max-repeat="1" name2="Quest.Name2.324" save-type="all">
+		<acquisition level="36" recommended-level="36">
+			<case acquire-quest="y" item="q_324_1_icon" msg="q_324_1" type="talk-to-self"/>
+		</acquisition>
+		<mission-step completion-type="or" id="1">
+			<mission id="1" name2="Mission.Name2.324_1" required-register-value="1" reward-1="324_final_set1">
+				<case indicator="quest-vsboard-end" npc-response="qrsp_324_1" object="npc:CE_CT_Board_0018" progress-mission="y" type="talk"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.324_2" required-register-value="1" reward-1="324_final_set1">
+				<case indicator="quest-vsboard-end" npc-response="qrsp_324_1" object="npc:CE_CT_Board_0019" progress-mission="y" type="talk"/>
+			</mission>
+			<mission id="3" name2="Mission.Name2.324_3" required-register-value="1" reward-1="324_final_set1">
+				<case indicator="quest-vsboard-end" npc-response="qrsp_324_1" object="npc:CE_CT_Board_0020" progress-mission="y" type="talk"/>
+			</mission>
+			<mission id="4" name2="Mission.Name2.324_4" required-register-value="1" reward-1="324_final_set1">
+				<case indicator="quest-vsboard-end" mapunit-1="Guide_BiMuJang_se" npc-response="qrsp_324_1" object="npc:CE_CT_Board_0021" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

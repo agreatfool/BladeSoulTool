@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_1021" broadcast-category="field" category="normal" day-of-week="daily" desc="q_1021_sum" district-1="suwal" grade="1" group2="QG_AncyJokVillage" id="1021" map-group-1-1="suwal" max-repeat="1" name2="Quest.Name2.1021" reset-type="daily" save-type="all">
+		<acquisition check-tencent-vitality="n" level="36" preceding-quest-1="q_epic_906" preceding-quest-check="and" preceding-quest-mission-step-1="2" recommended-level="38">
+			<case acquire-quest="y" completion-count="1" completion-count-op="lt" npc-response="qrsp_1021_1" object="npc:CH_SinRyong_0046" type="talk"/>
+			<case acquire-quest="y" completion-count="1" npc-response="qrsp_1021_3" object="npc:CH_SinRyong_0046" type="talk"/>
+			<case acquire-quest="y" completion-count="1" indicator="quest-board-start" npc-response="qrsp_1021_5" object="npc:ce_board_0001" type="talk"/>
+		</acquisition>
+		<mission-step id="1">
+			<mission id="1" name2="Mission.Name2.1021_1" required-register-value="3">
+				<case gadget-required="dont-care" looting="q_1021_Quest_dried_medicinal_stuff_1_icon" mapunit-1="4000_e_chest_shipment_01" object="zoneenv:e_chest_shipment_01" object2="zoneenv2:e_chest_shipment_01" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1021_Quest_dried_medicinal_stuff_1_icon" object="zoneenv:e_chest_shipment_02" object2="zoneenv2:e_chest_shipment_02" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1021_Quest_dried_medicinal_stuff_1_icon" object="zoneenv:e_chest_shipment_03" object2="zoneenv2:e_chest_shipment_03" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1021_Quest_dried_medicinal_stuff_1_icon" object="zoneenv:e_chest_shipment_04" object2="zoneenv2:e_chest_shipment_04" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1021_Quest_dried_medicinal_stuff_1_icon" object="zoneenv:e_chest_shipment_05" object2="zoneenv2:e_chest_shipment_05" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1021_Quest_dried_medicinal_stuff_1_icon" object="zoneenv:e_chest_shipment_06" object2="zoneenv2:e_chest_shipment_06" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1021_Quest_dried_medicinal_stuff_1_icon" object="zoneenv:e_chest_shipment_07" object2="zoneenv2:e_chest_shipment_07" progress-mission="y" type="loot"/>
+				<case gadget-required="dont-care" looting="q_1021_Quest_dried_medicinal_stuff_1_icon" object="zoneenv:e_chest_shipment_08" object2="zoneenv2:e_chest_shipment_08" progress-mission="y" type="loot"/>
+			</mission>
+			<mission id="2" name2="Mission.Name2.1021_2" required-register-value="5">
+				<case mapunit-1="4000_ME_WolfAngSi_0001" object="npc:ME_WolfAngSi_0001" object2="npc:ME_WolfAngSi_0001" progress-mission="y" type="killed"/>
+			</mission>
+		</mission-step>
+		<mission-step id="2">
+			<mission id="3" name2="Mission.Name2.1021_3" required-register-value="1" reward-1="1021_final_set1" reward-2="1021_final_set2">
+				<case completion-count="1" completion-count-op="lt" npc-response="qrsp_1021_2" object="npc:CH_SinRyong_0046" progress-mission="y" type="talk"/>
+				<case completion-count="1" completion-count-op="ge" npc-response="qrsp_1021_4" object="npc:CH_SinRyong_0046" progress-mission="y" type="talk"/>
+				<case fee="y" item="q_1021_1_icon" msg="q_1021_6" progress-mission="y" type="talk-to-self"/>
+			</mission>
+		</mission-step>
+	</quest>
+</table>

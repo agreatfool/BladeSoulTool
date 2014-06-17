@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="QuestData" release-side="client" type="quest" version="1.218">
+	<quest alias="q_sub_757" broadcast-category="field" category="normal" desc="q_757_sum" district-1="deasamak" grade="1" group2="QG_SaJiSeokRimSouth" id="757" map-group-1-1="deasamak" max-repeat="1" name2="Quest.Name2.757" save-type="all">
+		<acquisition level="29" preceding-quest-1="q_epic_523" preceding-quest-check="and" recommended-level="31">
+			<case acquire-quest="y" indicator-social="q_757_s_indi_1" msg="q_757_s" npc-response="qrsp_757_1" object="npc:ch_potfactory_0001" type="talk" visible-object="n"/>
+		</acquisition>
+		<mission-step id="2" location-x="20646.902" location-y="-21954.129" map="sajisukrim">
+			<mission id="2" name2="Mission.Name2.757_2" required-register-value="1" show-kill-mapunit="y">
+				<case loot-item="Quest_757" looting="q_757_Quest_old_letter_1_icon" mapunit-1="3020_MH_BokGonPe_0009" object="npc:mh_bokgonpe_0009" object2="npc:mh_bokgonpe_0009" progress-mission="y" type="loot"/>
+			</mission>
+		</mission-step>
+		<mission-step id="3">
+			<mission id="3" name2="Mission.Name2.757_3" required-register-value="1">
+				<case item="Quest_757" msg="q_757_m3" progress-mission="y" type="talk-to-item"/>
+			</mission>
+		</mission-step>
+		<mission-step id="4" location-x="14067.221" location-y="-37562.344" map="hangari">
+			<mission id="4" name2="Mission.Name2.757_4" required-register-value="1">
+				<case indicator-social="q_757_m4_indi_1" msg="q_757_m4" npc-response="qrsp_757_4" object="npc:ch_mayeongganggun_0001" progress-mission="y" type="talk"/>
+			</mission>
+		</mission-step>
+		<mission-step id="5" location-x="14067.221" location-y="-37562.344" map="hangari">
+			<mission id="5" name2="Mission.Name2.757_5" required-register-value="1" reward-1="757_final_set1">
+				<case indicator-social="q_757_m5_indi_1" msg="q_757_m5" npc-response="qrsp_757_5" object="npc:ch_mayeongganggun_0020" progress-mission="y" type="talk"/>
+				<case object="zone:zone_SunJinhan" progress-mission="reaction-only" type="enter-zone"/>
+				<completion-loss item-1="Quest_757"/>
+			</mission>
+		</mission-step>
+		<mission-step id="1" location-x="16577.506" location-y="-24687.305" map="sajisukrim">
+			<mission id="1" name2="Mission.Name2.757_1" required-register-value="1">
+				<case indicator-social="q_757_m1_indi_1" msg="q_757_m1" npc-response="qrsp_757_2" object="npc:ch_mayeongganggun_0053" progress-mission="y" type="talk" visible-object="y"/>
+			</mission>
+		</mission-step>
+		<transit id="1" zone="zone_SunJinhan_SP">
+			<destination mission-step-id="5" zone-index="1"/>
+		</transit>
+		<giveup-loss item-1="Quest_757"/>
+	</quest>
+</table>

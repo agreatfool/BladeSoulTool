@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<table release-module="CombatData" release-mversion="0.0.0.1" release-side="client" type="TutorialSkillSequence" version="0.1">
+	<tutorialSkillSequence alias="ForceMaster_Lv4_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22235" target-pass-state="frostbite" target-pass-state-count="3" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="ForceMaster_Lv6_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22311" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="ForceMaster_Lv6_M21">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22312" target-pass-effect="ForceMaster_Deal_embers_explosion" type="skill"/>
+		'
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="ForceMaster_Lv8_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22256" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22256" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22256" target-pass-state="frostbite" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="ForceMaster_Lv8_M21">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22256" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22256" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22256" target-pass-state="frostbite" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22112" target-pass-effect="ForceMaster_Deal_fast_energy_missile_knockback" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="ForceMaster_Lv10_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22235" target-pass-state="frostbite" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22255" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22239" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="ForceMaster_Lv10_M12">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22235" target-pass-state="frostbite" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22255" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22139" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="ForceMaster_Lv10_M21">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22255" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22300" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22331" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="ForceMaster_Lv10_M22">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22255" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22300" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22361" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="ForceMaster_Lv12_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22237" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="ForceMaster_Lv12_M21">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22340" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="ForceMaster_Lv14_M11">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22255" type="skill"/>
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22263" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="FM_PvE_EliteSkill_0033_FireBall_hit">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22241" skill-2="22332" skill-3="22336" skill-4="22337" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="FM_PvE_EliteSkill_0040_EnergyMissile_critical-hit">
+		<step result-1="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22106" skill-10="22134" skill-2="22107" skill-3="22111" skill-4="22112" skill-5="22113" skill-6="22114" skill-7="22131" skill-8="22132" skill-9="22133" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="FM_PvE_EliteSkill_0047_FireBall_hit">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22255" skill-2="22295" skill-3="22321" type="skill"/>
+	</tutorialSkillSequence>
+	<tutorialSkillSequence alias="FM_PvE_EliteSkill_0054_FireBall_hit">
+		<step result-1="hit" result-2="critical-hit" result-event-type-1="attack" result-event-type-2="attack" skill-1="22255" skill-2="22295" skill-3="22321" type="skill"/>
+	</tutorialSkillSequence>
+</table>
