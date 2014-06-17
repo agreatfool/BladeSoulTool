@@ -779,7 +779,7 @@ BstUpkParser.prototype.buildData = function(skeletonData) {
     if (_.keys(textureData['materials']).length == 0) {
         self.grunt.log.writeln('[BstUpkParser] No materials info collected for texture: ' + textureId + ', scanning all upk logs ...');
         /**
-         * 没有为该texture找到对应的material数据，可能某些描述material信息的upk文件，在关键行[3]里没有以
+         * 没有为该texture找到对应的material数据，可能某些描述material信息的upk文件，在关键行[3]里没有以 MaterialInstanceConstant
          * 的格式进行描述，参考例子：
          * skeleton：00017488，texture：00017486，material：00017487
          * material关键行为：Loading Material3 Basic_FX from package 00017487.upk
