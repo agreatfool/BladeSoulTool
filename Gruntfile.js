@@ -279,9 +279,6 @@ module.exports = function(grunt) {
     // Tasks
     //-------------------------------------------------------------------------------------------
     grunt.registerTask('default', Task_Default);
-    grunt.registerTask('parser', Task_MeshParser);
-    grunt.registerTask('parser_prepare', Task_MeshParser_Prepare);
-    grunt.registerTask('parser_check', Task_MeshParser_Check);
     grunt.registerTask('shooter', Task_ScreenShooter);
     grunt.registerTask('shooter_check', Task_ScreenShooter_Check);
     grunt.registerTask('icon_dumper', Task_IconDumper);
