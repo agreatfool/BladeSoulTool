@@ -1,4 +1,4 @@
-Found 16187 game files (144 skipped)
+Found 16186 game files (0 skipped)
 Loading package: 00009758.upk Ver: 573/1 Engine: 4205 Names: 227 Exports: 158 Imports: 22 Game: 801A
 Loading SkeletalMesh3 80017_GonF from package 00009758.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
@@ -16,16 +16,17 @@ WARNING: StructProperty "USkeletalMesh3::HeightRatio" was not found
 WARNING: StructProperty "USkeletalMesh3::HandRatio" was not found
 WARNING: ByteProperty "USkeletalMesh3::CommonPhysicsUseFlag" was not found
 WARNING: FloatProperty "USkeletalMesh3::PhysicalHitScale" was not found
-Loading package: 00007501.upk Ver: 573/1 Engine: 4205 Names: 86 Exports: 1 Imports: 21 Game: 801A
+Loading package: 00007501.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 1 Imports: 21 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00007501.upk
-Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading package: 00007500.upk Ver: 573/1 Engine: 4205 Names: 39 Exports: 11 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
-Loading TextureCube eye2 from package 00002640.upk
+Loading Texture2D Cloth_80014_GonF_col1_N from package 00007500.upk
+Loading Texture2D Cloth_80014_GonF_col1_M from package 00007500.upk
 Loading Texture2D Cloth_80014_GonF_col1_D2 from package 00007500.upk
 Loading Texture2D Cloth_80014_GonF_col1_S2 from package 00007500.upk
-Loading Texture2D Cloth_80014_GonF_col1_M from package 00007500.upk
-Loading Texture2D Cloth_80014_GonF_col1_N from package 00007500.upk
+Loading TextureCube eye2 from package 00002640.upk
+Loading Texture2D check from package 00002620.upk
 Loading Material3 Body from package 00002620.upk
 Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
@@ -39,9 +40,8 @@ Loading Texture2D Noise_Glass_000 from package 00012963.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loading Texture2D check from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.11 sec, 2941 allocs, 1.89 MBytes serialized in 299523 calls.
+Loaded in 0.11 sec, 2947 allocs, 1.88 MBytes serialized in 299937 calls.
 
 Object info:
 ============

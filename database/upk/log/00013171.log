@@ -1,5 +1,5 @@
-Found 16187 game files (144 skipped)
-Loading package: 00013171.upk Ver: 573/1 Engine: 4205 Names: 211 Exports: 107 Imports: 21 Game: 801A
+Found 16186 game files (0 skipped)
+Loading package: 00013171.upk Ver: 573/1 Engine: 4205 Names: 219 Exports: 142 Imports: 22 Game: 801A
 Loading SkeletalMesh3 00002_JinF from package 00013171.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
 WARNING: FloatProperty "USkeletalMesh3::EffectScale" was not found
@@ -17,7 +17,7 @@ WARNING: StructProperty "USkeletalMesh3::HandRatio" was not found
 WARNING: ByteProperty "USkeletalMesh3::CommonPhysicsUseFlag" was not found
 Loading package: 00013170.upk Ver: 573/1 Engine: 4205 Names: 92 Exports: 1 Imports: 20 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00013170.upk
-Loading package: 00013169.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 4 Imports: 2 Game: 801A
+Loading package: 00013169.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
 Loading Texture2D 00002_JinF_N from package 00013169.upk
@@ -40,7 +40,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.11 sec, 2898 allocs, 2.69 MBytes serialized in 316981 calls.
+Loaded in 0.12 sec, 2932 allocs, 3.02 MBytes serialized in 358887 calls.
 
 Object info:
 ============
@@ -76,20 +76,20 @@ ClassName: SkeletalMesh3 ObjectName: 00002_JinF
         {
             Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=4982 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=5769 }
             }
-            NumVerts = 3238
-            IndexCount = 14946
+            NumVerts = 3947
+            IndexCount = 17307
             NumTexCoords = 1
         }
         Lods[1] =
         {
             Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1554 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1737 }
             }
-            NumVerts = 1156
-            IndexCount = 4662
+            NumVerts = 1428
+            IndexCount = 5211
             NumTexCoords = 1
         }
     }
@@ -97,4 +97,4 @@ ClassName: SkeletalMesh3 ObjectName: 00002_JinF
     MeshOrigin = { X=-0, Y=-0, Z=-0 }
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
-    BoneCount = 81
+    BoneCount = 91

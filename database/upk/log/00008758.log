@@ -1,5 +1,5 @@
-Found 16187 game files (144 skipped)
-Loading package: 00008758.upk Ver: 573/1 Engine: 4205 Names: 5844 Exports: 8499 Imports: 4 Game: 801A
+Found 16186 game files (0 skipped)
+Loading package: 00008758.upk Ver: 573/1 Engine: 4205 Names: 5845 Exports: 8500 Imports: 4 Game: 801A
 Loading Texture2D Acc_Bangle_Baekchung_1-1Phase from package 00008758.upk
 Loading Texture2D Acc_Bangle_Baekchung_1-2Phase from package 00008758.upk
 Loading Texture2D Acc_Bangle_Baekchung_1-3Phase from package 00008758.upk
@@ -5452,6 +5452,7 @@ Loading Texture2D Pouch_Grade04 from package 00008758.upk
 Loading Texture2D Pouch_Grade05 from package 00008758.upk
 Loading Texture2D Pouch_Grade06 from package 00008758.upk
 Loading Texture2D Pouch_Grade07 from package 00008758.upk
+Loading Texture2D Pouch_Grade08 from package 00008758.upk
 Loading Texture2D Product_Drug_1 from package 00008758.upk
 Loading Texture2D Product_Drug_2 from package 00008758.upk
 Loading Texture2D Product_Equipgem_1 from package 00008758.upk
@@ -8469,7 +8470,7 @@ Loading Texture2D Weapon_TA_110073_col1 from package 00008758.upk
 Loading Texture2D Weapon_TA_110074_col1 from package 00008758.upk
 Loading Texture2D Weapon_TA_110076_col1 from package 00008758.upk
 Loading Texture2D Weapon_TA_110085_col1 from package 00008758.upk
-Loaded in 6.6 sec, 51381 allocs, 25.69 MBytes serialized in 915067 calls.
+Loaded in 8.3 sec, 51387 allocs, 25.69 MBytes serialized in 915176 calls.
 
 Object info:
 ============
@@ -90243,6 +90244,21 @@ ClassName: Texture2D ObjectName: Pouch_Grade07
     SizeX = 64
     SizeY = 64
     Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Pouch_Grade08
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
     TextureFileCacheName = None
