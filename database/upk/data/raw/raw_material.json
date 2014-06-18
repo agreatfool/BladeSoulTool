@@ -1872,11 +1872,10 @@
     "col": "col1",
     "texture": "00005717",
     "objs": [
+      "11001_KunN_S",
       "11001_KunN_N",
       "11001_KunN_M",
-      "11001_KunN_D",
-      "11001_KunN_S",
-      "11001_KunN_D_ex"
+      "11001_KunN_D"
     ]
   },
   "00005722": {
@@ -4269,10 +4268,10 @@
     "col": "col1",
     "texture": "00007500",
     "objs": [
-      "Cloth_80014_GonF_col1_D2",
-      "Cloth_80014_GonF_col1_S2",
+      "Cloth_80014_GonF_col1_N",
       "Cloth_80014_GonF_col1_M",
-      "Cloth_80014_GonF_col1_N"
+      "Cloth_80014_GonF_col1_D2",
+      "Cloth_80014_GonF_col1_S2"
     ]
   },
   "00007505": {
@@ -6804,10 +6803,10 @@
     "col": "col2",
     "texture": "00006011",
     "objs": [
-      "JinF_80002_d_col2",
-      "JinF_80002_s_col2",
+      "JinF_80002__n",
       "JinF_80002__m",
-      "JinF_80002__n"
+      "JinF_80002_d_col2",
+      "JinF_80002_s_col2"
     ]
   },
   "00009129": {
@@ -6826,10 +6825,10 @@
     "col": "col3",
     "texture": "00006011",
     "objs": [
-      "JinF_80002_d_col3",
-      "JinF_80002_s_col3",
+      "JinF_80002__n",
       "JinF_80002__m",
-      "JinF_80002__n"
+      "JinF_80002_d_col3",
+      "JinF_80002_s_col3"
     ]
   },
   "00009163": {
@@ -7457,10 +7456,10 @@
     "col": "col3",
     "texture": "00007500",
     "objs": [
-      "Cloth_80014_GonF_col1_D3",
-      "Cloth_80014_GonF_col1_S3",
+      "Cloth_80014_GonF_col1_N",
       "Cloth_80014_GonF_col1_M",
-      "Cloth_80014_GonF_col1_N"
+      "Cloth_80014_GonF_col1_D3",
+      "Cloth_80014_GonF_col1_S3"
     ]
   },
   "00009530": {
@@ -7523,10 +7522,10 @@
     "col": "col4",
     "texture": "00007500",
     "objs": [
-      "GonF_80014_col4_d",
-      "GonF_80014_col4_s",
+      "Cloth_80014_GonF_col1_N",
       "Cloth_80014_GonF_col1_M",
-      "Cloth_80014_GonF_col1_N"
+      "GonF_80014_col4_d",
+      "GonF_80014_col4_s"
     ]
   },
   "00009536": {
@@ -7688,10 +7687,10 @@
     "col": "col1",
     "texture": "00009620",
     "objs": [
-      "D",
-      "S",
+      "N",
       "M",
-      "N"
+      "D",
+      "S"
     ]
   },
   "00009628": {
@@ -16781,10 +16780,27 @@
       "Weapon_990086_col1_e"
     ]
   },
+  "00013149": {
+    "upkId": "00013149",
+    "col": "col1",
+    "texture": "00013149",
+    "objs": [
+      "00001_KunN_d",
+      "00001_KunN_m",
+      "00001_KunN_n",
+      "00001_KunN_s"
+    ]
+  },
   "00013150": {
     "upkId": "00013150",
     "col": "col1",
-    "texture": null
+    "texture": "00013149",
+    "objs": [
+      "00001_KunN_s",
+      "00001_KunN_n",
+      "00001_KunN_m",
+      "00001_KunN_d"
+    ]
   },
   "00013152": {
     "upkId": "00013152",
@@ -17415,7 +17431,7 @@
     "col": "col1",
     "texture": "00013380",
     "objs": [
-      "n1",
+      "N",
       "M",
       "D",
       "S"
@@ -53874,12 +53890,13 @@
   "00027283": {
     "upkId": "00027283",
     "col": "col1",
-    "texture": "00016122",
+    "texture": "00027282",
     "objs": [
-      "Item_0041_n",
-      "Item_0041_m",
-      "Item_0041_d",
-      "Item_0041_s"
+      "item_0051_col1_N",
+      "item_0051_col1_M",
+      "item_0051_col1_D",
+      "item_0051_col1_S",
+      "item_0051_col1_E"
     ]
   }
 }

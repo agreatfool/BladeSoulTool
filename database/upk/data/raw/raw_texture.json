@@ -2984,7 +2984,6 @@
     "upkId": "00005717",
     "objs": [
       "11001_KunN_D",
-      "11001_KunN_D_ex",
       "11001_KunN_M",
       "11001_KunN_N",
       "11001_KunN_S"
@@ -7867,10 +7866,10 @@
   "00008394": {
     "upkId": "00008394",
     "objs": [
-      "Cloth_21003_GonF_coll_n",
-      "Cloth_21003_GonF_coll_s",
       "Cloth_21003_GonF_col1_m",
-      "Cloth_21003_GonF_coll_d"
+      "Cloth_21003_GonF_coll_d",
+      "Cloth_21003_GonF_coll_n",
+      "Cloth_21003_GonF_coll_s"
     ],
     "materials": {
       "col1": "00008393"
@@ -14820,6 +14819,7 @@
       "Pouch_Grade05",
       "Pouch_Grade06",
       "Pouch_Grade07",
+      "Pouch_Grade08",
       "Product_Drug_1",
       "Product_Drug_2",
       "Product_Equipgem_1",
@@ -28525,16 +28525,6 @@
       "col1": "00013141"
     }
   },
-  "00013149": {
-    "upkId": "00013149",
-    "objs": [
-      "00001_KunN_d",
-      "00001_KunN_m",
-      "00001_KunN_n",
-      "00001_KunN_s"
-    ],
-    "materials": {}
-  },
   "00013169": {
     "upkId": "00013169",
     "objs": [
@@ -29202,7 +29192,7 @@
       "D2",
       "M",
       "M2",
-      "n1",
+      "N",
       "n2",
       "S",
       "S2"
@@ -36117,7 +36107,7 @@
       "Item_0041_s"
     ],
     "materials": {
-      "col1": "00027283"
+      "col1": "00023971"
     }
   },
   "00016127": {
@@ -54754,11 +54744,14 @@
   "00027282": {
     "upkId": "00027282",
     "objs": [
-      "Item_0051_d",
-      "Item_0051_m",
-      "Item_0051_n",
-      "Item_0051_s"
+      "item_0051_col1_D",
+      "item_0051_col1_E",
+      "item_0051_col1_M",
+      "item_0051_col1_N",
+      "item_0051_col1_S"
     ],
-    "materials": {}
+    "materials": {
+      "col1": "00027283"
+    }
   }
 }
