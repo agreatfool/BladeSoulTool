@@ -149,17 +149,32 @@ BstReplace.prototype.processCostume = function() {
              * 因为只有一层文件夹结构，所以不用担心多层嵌套问题
              */
             if (filename === 'working_dir') { return; } // 忽略占位文件
-            var targetTencentPath = path.join(self.util.getTencentPath(), filename);
-//            var targetTencentBackupPath = self.util.getBackupFilePathViaOriginPath(targetTencentPath);
-//            if (self.grunt.file.exists(targetTencentBackupPath)) {
-//                // 已经存在备份，直接覆盖，有备份文件，则肯定在backup.json里有数据
-//                self.util.copyFile(abspath, targetTencentPath);
-//            }
-            // FIXME 这里需要检查目标对象是否存在，存在的话需要备份！
-            self.util.copyFile(abspath, targetTencentPath);
-            self.util.deleteFile(abspath);
-            if (self.backup['delete'].indexOf(targetTencentPath) === -1) { // 未存在于备份列表中
-                self.backup['delete'].push(targetTencentPath);
+            var targetTencentPath = path.join(self.util.getTencentPath(), filename); // 目标文件位置
+            var targetTencentBackupPath = self.util.getBackupFilePathViaOriginPath(targetTencentPath); // 目标文件的备份位置
+            if (self.grunt.file.exists(targetTencentBackupPath)) {
+                // 已经存在备份，直接覆盖。有备份文件，则肯定在backup.json里有数据
+                self.util.copyFile(abspath, targetTencentPath);
+                self.util.deleteFile(abspath);
+            } else {
+                // 没有备份文件
+                if (self.grunt.file.exists(targetTencentPath) // 文件已经存在
+                    && self.backup['delete'].indexOf(targetTencentPath) === -1) { // 未存在于删除列表中
+                    // 表示游戏系统中该文件本来就存在，备份文件，并保存回滚信息
+                    self.util.backupFile(targetTencentPath);
+                    self.util.copyFile(abspath, targetTencentPath);
+                    self.util.deleteFile(abspath);
+                    self.backup['restore'].push(targetTencentBackupPath);
+                } else if (self.grunt.file.exists(targetTencentPath) // 文件已经存在
+                    && self.backup['delete'].indexOf(targetTencentPath) !== -1) { // 存在于删除列表中
+                    // 表示该文件是前次替换时拷贝过来的，直接覆盖，不需要保存删除信息
+                    self.util.copyFile(abspath, targetTencentPath);
+                    self.util.deleteFile(abspath);
+                } else {
+                    // 文件不存在，保存删除信息
+                    self.util.copyFile(abspath, targetTencentPath);
+                    self.util.deleteFile(abspath);
+                    self.backup['delete'].push(targetTencentPath);
+                }
             }
         });
         // 将更新过的备份列表重新写回文件
