@@ -778,7 +778,7 @@ BstUpkParser.prototype.buildData = function(skeletonKey, skeletonData) {
     // 根据skeleton数据，获得texture数据
     var textureId = skeletonData['texture'];
     var textureData = null;
-    if (self.upkDataTexture.hasOwnProperty(textureId)) {
+    if (self.upkDataTexture.hasOwnProperty(textureId)) { // FIXME 给这个if判断添加一个 else if，将部分预存储的白名单 texture 拿出来判断，后续的unrecognizedUpkIds也必须拓展，因为可能部分material在preprocess material的时候是存在的，问题那个时候texture信息不存在
         textureData = self.upkDataTexture[textureId];
     } else {
         self.utilBuildDataInvalidInfo(skeletonType, skeletonCode);
