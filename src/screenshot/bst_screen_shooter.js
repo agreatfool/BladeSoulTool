@@ -30,6 +30,8 @@ var BstScreenShooter = function(grunt, done) {
     this.statusTotalCount = 0; // 总共需要处理的模型个数
     this.statusFinishedCount = 0; // 处理完成的模型个数
     this.statusIsWorking = false; // 因为需要截图，必须单进程，这里存储是否在工作的状态
+
+    this.backupList = []; // 存储为了截图修改过的骨骼备份文件，统一删除
 };
 
 BstScreenShooter.prototype.start = function() {
@@ -80,6 +82,16 @@ BstScreenShooter.prototype.processType = function(type) {
                 self.process(self.types.shift()); // 处理下一个类型的数据
             } else {
                 // 所有数据类型都已处理完毕，任务完成
+                self.grunt.log.writeln('[BstScreenShooter] All types of works done.');
+                // 删除备份文件
+                if (self.backupList.length > 0) {
+                    self.grunt.log.writeln('[BstScreenShooter] Delete backup skeleton upk files.');
+                    self.util.setGruntWorkingDir(self.util.getBnsPath()); // 为了截图修改的骨骼文件应该都在bns目录下
+                    _.each(self.backupList, function(backupPath) {
+                        self.util.deleteFile(backupPath);
+                    });
+                    self.util.restoreGruntWorkingDir();
+                }
                 self.taskDone();
             }
         }
@@ -206,12 +218,8 @@ BstScreenShooter.prototype.processSingle = function(type, element) {
         if (hasBackupToRestore) {
             // 恢复文件
             self.util.restoreFile(backupPath);
-            // 删除旧的备份文件
-            // FIXME 之后应该需要一个统一删除备份文件的处理函数
-//            var gruntCwd = process.cwd();
-//            self.grunt.file.setBase(path.dirname(backupPath));
-//            self.util.deleteFile(backupPath);
-//            self.grunt.file.setBase(gruntCwd);
+            // 存储需要删除的备份文件
+            self.backupList.push(backupPath);
             self.grunt.log.writeln('[BstScreenShooter] Skeleton file restored: ' + skeletonPath);
         }
         self.finishSingle(name);
