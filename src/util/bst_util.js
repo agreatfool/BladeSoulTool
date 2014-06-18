@@ -158,10 +158,26 @@ BstUtil.prototype.registerAsyncEvent = function(eventName) {
     }
 };
 
-BstUtil.prototype.backupFile = function(originPath) { // 这里的path是需要备份的原始文件
+BstUtil.prototype.setGruntWorkingDir = function(targetDir) {
+    this.grunt.file.setBase(targetDir);
+};
+
+BstUtil.prototype.restoreGruntWorkingDir = function() {
+    this.grunt.file.setBase(this.gruntWorkingPath);
+};
+
+BstUtil.prototype.getBackupFileNameViaOriginPath = function(originPath) {
+    return path.basename(originPath) + BstConst.BACKUP_TAIL;
+};
+
+BstUtil.prototype.getBackupFilePathViaOriginPath = function(originPath) {
     var dir = path.dirname(originPath);
-    var backupName = path.basename(originPath) + BstConst.BACKUP_TAIL;
-    var backupPath = path.join(dir, backupName);
+    var backupName = this.getBackupFileNameViaOriginPath(originPath);
+    return path.join(dir, backupName);
+};
+
+BstUtil.prototype.backupFile = function(originPath) { // 这里的path是需要备份的原始文件
+    var backupPath = this.getBackupFilePathViaOriginPath(originPath);
     if (this.grunt.file.exists(originPath) // 备份的原始文件存在
         && !this.grunt.file.exists(backupPath)) { // 目标备份文件不存在
         this.copyFile(originPath, backupPath);

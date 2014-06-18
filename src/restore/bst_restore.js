@@ -34,6 +34,9 @@ BstRestore.prototype.start = function() {
         'delete': [], 'restore': []
     }));
 
+    // 重置工作路径
+    this.util.restoreGruntWorkingDir();
+
     this.taskDone();
 };
 
@@ -51,7 +54,7 @@ BstRestore.prototype.processDelete = function() {
     if (self.backup['delete'].length > 0) {
         _.each(self.backup['delete'], function(deletePath) {
             var dir = path.dirname(deletePath);
-            self.grunt.file.setBase(dir);
+            self.util.setGruntWorkingDir(dir);
             self.util.deleteFile(deletePath);
         });
     }
