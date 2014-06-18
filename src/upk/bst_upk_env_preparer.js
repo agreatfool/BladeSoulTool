@@ -17,7 +17,7 @@ var BstConst = require('../const/bst_const.js');
 var BstUpkEnvPreparer = function(grunt, done, forceDedat) {
     this.grunt       = grunt;
     this.util        = new BstUtil(grunt);
-    this.taskDone    = done;
+    this.taskDone    = done; // notify grunt: tasks done
     this.forceDedat  = forceDedat;
 
     this.conf = this.util.readJsonFile('./config/setting.json');
@@ -53,6 +53,8 @@ BstUpkEnvPreparer.prototype.start = function() {
         || (!self.forceDedat && !self.grunt.file.exists(BstConst.PATH_MESH_XML))) { // 没有已经被解包的dat文件内容，需要现场解包
         var xmlDatPath = path.join(self.conf['path']['game'], self.conf['path']['data'], 'xml.dat');
         this.grunt.log.writeln('[BstUpkEnvPreparer] Start to dedat xml.dat: ' + xmlDatPath);
+
+        this.util.checkFileExists(xmlDatPath);
 
         var worker = cp.spawn('dated_from208.exe', [xmlDatPath, '--', 'output', '--', 'd'], {"cwd": './resources/dedat/'});
         worker.stdout.on('data', function (data) { self.util.logChildProcessStdout(data); });

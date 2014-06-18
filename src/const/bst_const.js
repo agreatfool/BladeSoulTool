@@ -21,6 +21,8 @@ BstConst.PART_TYPE_ATTACH  = 'attach';
 BstConst.PART_TYPE_WEAPON  = 'weapon';
 BstConst.PART_TYPE_UNRECOGNIZED = 'unrecognized';
 
+BstConst.PATH_PNG_CPS_FAILURE = path.join(process.cwd(), 'database', 'png_cps_failure.json');
+
 //------------------------------------------------------------------------
 //- MESH XML
 //------------------------------------------------------------------------
@@ -148,5 +150,6 @@ BstConst.PATH_ICON_BASE = 'database/icon';
 BstConst.PATH_ICON_TGA = path.join(process.cwd(), BstConst.PATH_ICON_BASE, 'tga');
 BstConst.PATH_ICON_PNG = path.join(process.cwd(), BstConst.PATH_ICON_BASE, 'png');
 BstConst.PATH_ICON_PNG_CPS = path.join(process.cwd(), BstConst.PATH_ICON_BASE, 'png-cps');
+BstConst.PATH_ICON_CONVERSION_FAILURE = path.join(process.cwd(), BstConst.PATH_ICON_BASE, 'conversion_failure.json');
 
 module.exports = BstConst;

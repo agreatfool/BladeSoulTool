@@ -17,7 +17,7 @@ var BstConst = require('../const/bst_const.js');
 var BstIconDumper = function(grunt, done) {
     this.grunt    = grunt;
     this.util     = new BstUtil(grunt);
-    this.taskDone = done;
+    this.taskDone = done; // notify grunt: tasks done
 
     this.conf = this.util.readJsonFile('./config/setting.json');
     this.childProcess = this.conf['icon_dumper']['childProcess'];
@@ -26,6 +26,8 @@ var BstIconDumper = function(grunt, done) {
     this.gruntWorkingPath = process.cwd();
 
     this.workingList = [];
+
+    this.statusErrorList = []; // 在tga转换png的过程中出错的图片名
 
     this.statusTotalCount = 0;
     this.statusFinishedCount = 0;
@@ -80,6 +82,12 @@ BstIconDumper.prototype.process = function() {
         }
         if (self.statusFinishedCount >= self.statusTotalCount) {
             clearInterval(workingTimer);
+            if (self.statusErrorList.length > 0) {
+                // 有错误，记录错误
+                self.grunt.log.writeln('[BstIconDumper] ' + self.statusErrorList.length + ' conversions failed: ' +
+                    self.util.formatJson(self.statusErrorList));
+                self.util.writeFile(BstConst.PATH_ICON_CONVERSION_FAILURE, self.util.formatJson(self.statusErrorList));
+            }
             self.grunt.log.writeln('[BstIconDumper] All works done ...');
             self.taskDone();
         }
@@ -89,7 +97,7 @@ BstIconDumper.prototype.process = function() {
 BstIconDumper.prototype.processTgaConvert = function(tgaFileName) {
     var self = this;
 
-    self.startProcess(tgaFileName);
+    self.startConvert(tgaFileName);
 
     var tgaFilePath = path.join(BstConst.PATH_ICON_TGA, tgaFileName);
     cp.exec(
@@ -98,6 +106,7 @@ BstIconDumper.prototype.processTgaConvert = function(tgaFileName) {
         function(error, stdout) {
             if (error) {
                 self.grunt.log.error('[BstIconDumper] Error in converting tga file ' + tgaFileName + ': ' + error.stack);
+                self.statusErrorList.push(tgaFileName);
             } else if (stdout === '') {
                 self.grunt.log.error('[BstIconDumper] Error in converting tga file ' + tgaFileName + ', empty output ...');
             }
@@ -106,7 +115,7 @@ BstIconDumper.prototype.processTgaConvert = function(tgaFileName) {
     );
 };
 
-BstIconDumper.prototype.startProcess = function(tgaFileName) {
+BstIconDumper.prototype.startConvert = function(tgaFileName) {
     this.grunt.log.writeln('[BstIconDumper] Start to covnert tga file ' + tgaFileName);
     this.statusWorkingChildProcess++;
 };

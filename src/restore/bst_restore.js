@@ -11,7 +11,7 @@ var BstUtil = require('../util/bst_util.js');
 var BstRestore = function(grunt, done) {
     this.grunt    = grunt;
     this.util     = new BstUtil(grunt);
-    this.taskDone = done;
+    this.taskDone = done; // notify grunt: tasks done
 
     this.backup = this.util.readJsonFile('./config/backup.json');
 };

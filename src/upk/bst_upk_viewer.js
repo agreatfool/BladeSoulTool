@@ -17,7 +17,7 @@ var BstConst = require('../const/bst_const.js');
 var BstUpkViewer = function(grunt, done) {
     this.grunt    = grunt;
     this.util     = new BstUtil(grunt);
-    this.taskDone = done;
+    this.taskDone = done; // notify grunt: tasks done
 
     this.conf = this.util.readJsonFile('./config/setting.json');
 

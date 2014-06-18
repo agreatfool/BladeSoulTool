@@ -17,7 +17,7 @@ var BstConst = require('../const/bst_const.js');
 var BstPngOptimizer = function(grunt, done) {
     this.grunt    = grunt;
     this.util     = new BstUtil(grunt);
-    this.taskDone = done;
+    this.taskDone = done; // notify grunt: tasks done
 
     this.conf = this.util.readJsonFile('./config/setting.json');
     this.tasks = this.conf['png_optimizer']['tasks'];
@@ -34,6 +34,8 @@ var BstPngOptimizer = function(grunt, done) {
     this.taskName = '';
     this.outputDir = '';
     this.optiLevel = 3;
+
+    this.statusErrorList = []; // 在图片压缩的过程中出错的图片名
 
     this.statusTotalCount = 0;
     this.statusFinishedCount = 0;
@@ -80,6 +82,12 @@ BstPngOptimizer.prototype.start = function() {
 
         if (self.statusFinishedTaskCount >= self.statusTotalTaskCount) {
             clearInterval(taskTimer);
+            if (self.statusErrorList.length > 0) {
+                // 有错误，记录错误
+                self.grunt.log.writeln('[BstPngOptimizer] ' + self.statusErrorList.length + ' compressions failed: ' +
+                    self.util.formatJson(self.statusErrorList));
+                self.util.writeFile(BstConst.PATH_PNG_CPS_FAILURE, self.util.formatJson(self.statusErrorList));
+            }
             self.grunt.log.writeln('[BstPngOptimizer] All tasks done ...');
             self.taskDone();
         }
@@ -129,6 +137,7 @@ BstPngOptimizer.prototype.processCompress = function(pngFilePath) {
         function(error) {
             if (error) {
                 self.grunt.log.error('[BstPngOptimizer] Error in compressing png file ' + pngFilePath + ': ' + error.stack);
+                self.statusErrorList.push(pngFilePath);
             }
             self.finishCompress(pngFilePath);
         }

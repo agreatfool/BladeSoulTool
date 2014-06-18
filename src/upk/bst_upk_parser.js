@@ -19,7 +19,7 @@ var BstUpkParser = function(grunt, done) {
     this.grunt    = grunt;
     this.util     = new BstUtil(grunt);
     this.parser   = new xml2js.Parser();
-    this.taskDone = done;
+    this.taskDone = done; // notify grunt: tasks done
 
     this.meshXml = [];
 
