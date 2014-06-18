@@ -150,6 +150,11 @@ BstReplace.prototype.processCostume = function() {
              */
             if (filename === 'working_dir') { return; } // 忽略占位文件
             var targetTencentPath = path.join(self.util.getTencentPath(), filename);
+//            var targetTencentBackupPath = self.util.getBackupFilePathViaOriginPath(targetTencentPath);
+//            if (self.grunt.file.exists(targetTencentBackupPath)) {
+//                // 已经存在备份，直接覆盖，有备份文件，则肯定在backup.json里有数据
+//                self.util.copyFile(abspath, targetTencentPath);
+//            }
             // FIXME 这里需要检查目标对象是否存在，存在的话需要备份！
             self.util.copyFile(abspath, targetTencentPath);
             self.util.deleteFile(abspath);
