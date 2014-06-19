@@ -44,10 +44,12 @@ BstIconDumper.prototype.start = function() {
     // 解包icon的upk
     self.grunt.log.writeln('[BstIconDumper] Umodel exporting ' + BstConst.ICON_UPK_ID + '.upk ...');
 
-    var exec = 'umodel.exe -export -path=' + self.util.getBnsPath() + ' -game=bns -out=output ' + BstConst.ICON_UPK_ID;
-    self.grunt.log.writeln('[BstIconDumper] Exec: ' + exec);
-    cp.exec('umodel.exe -export -path=' + self.util.getBnsPath() + ' -game=bns -out=output ' + BstConst.ICON_UPK_ID,
-        {"cwd": './resources/umodel', "maxBuffer": 5 * 1024 * 1024}, // max buff 5M
+    var iconUpkPath = self.util.findUpkPath(BstConst.ICON_UPK_ID);
+    var umodelWorkingPath = path.dirname(iconUpkPath);
+
+    var exec = 'umodel.exe -export -path=' + umodelWorkingPath + ' -game=bns -out=output ' + BstConst.ICON_UPK_ID;
+    self.grunt.log.writeln('[BstIconDumper] Dump command: ' + exec);
+    cp.exec(exec, {"cwd": './resources/umodel', "maxBuffer": 5 * 1024 * 1024}, // max buff 5M
         function(error) {
             if (error) {
                 self.grunt.fail.fatal('[BstIconDumper] Error in umodel exporting ' + BstConst.ICON_UPK_ID + '.upk: ' + error.stack);
