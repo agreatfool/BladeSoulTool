@@ -168,7 +168,8 @@ var BstUpkParser = function(grunt, done) {
      *         "notFound": ["texture", "col"]
      *         "invalid": {
      *             "col": "Acc_990097_GuardianShield_INST"
-     *         }
+     *         },
+     *         "noTexture": "00021611"
      *     },
      *     ...
      * }
