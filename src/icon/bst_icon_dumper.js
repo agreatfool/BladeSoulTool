@@ -43,6 +43,9 @@ BstIconDumper.prototype.start = function() {
 
     // 解包icon的upk
     self.grunt.log.writeln('[BstIconDumper] Umodel exporting ' + BstConst.ICON_UPK_ID + '.upk ...');
+
+    var exec = 'umodel.exe -export -path=' + self.util.getBnsPath() + ' -game=bns -out=output ' + BstConst.ICON_UPK_ID;
+    self.grunt.log.writeln('[BstIconDumper] Exec: ' + exec);
     cp.exec('umodel.exe -export -path=' + self.util.getBnsPath() + ' -game=bns -out=output ' + BstConst.ICON_UPK_ID,
         {"cwd": './resources/umodel', "maxBuffer": 5 * 1024 * 1024}, // max buff 5M
         function(error) {
