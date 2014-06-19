@@ -79,6 +79,13 @@ BstIconDumper.prototype.process = function() {
     self.statusTotalCount = self.workingList.length;
     self.grunt.log.writeln('[BstIconDumper] Copying all tga done ...');
 
+    // 清理png文件输出文件夹
+    if (self.grunt.file.exists(BstConst.PATH_ICON_PNG)) {
+        self.grunt.log.writeln('[BstIconDumper] Clear previous png outputs ...');
+        self.util.deleteDir(BstConst.PATH_ICON_PNG);
+        self.util.mkdir(BstConst.PATH_ICON_PNG);
+    }
+
     // 开始将tga转成png，方便预览
     var workingTimer = setInterval(function() {
         if (self.statusWorkingChildProcess < self.childProcess // 有空余的进程数
