@@ -1025,35 +1025,42 @@ BstUpkParser.prototype.utilRecognizeSkeletonType = function(skeletonId, upkLog) 
         // costume & attachment
         var type = BstConst.PART_TYPE_ATTACH; // 默认 attach
 
-        // 01. 检查icon，在icon数据集的costume分类下存在code的，是衣服
         var codeMatch = coreLineOfContent.match(/(\d+)_(KunN|JinF|JinM|GonF|GonM|LynF|LynM)/i);
         var code = codeMatch[1];
-        if (self.iconData['costume'].hasOwnProperty(code)) {
+
+// 新的做法，通过code长度进行识别，长度为6的，是饰品，5的是服装
+        if (code.length === 5) {
             type = BstConst.PART_TYPE_COSTUME;
-        } else if (self.iconData['attach'].hasOwnProperty(code)) {
-            // 在icon的attach分类里已经找到了，说明必然是attach，后续不必做了
-            return type;
         }
 
-        // 02. 检查mesh.xml里的数据，数据存在，且类型是"body-mesh"的，是衣服
-        if (type === BstConst.PART_TYPE_ATTACH) {
-            var meshElement = self.utilSearchMeshXmlViaSkeletonId(skeletonId);
-            if (meshElement !== null
-                && meshElement.hasOwnProperty('type-mesh')
-                && meshElement['$']['type-mesh'] == 'body-mesh') {
-                type = BstConst.PART_TYPE_COSTUME;
-            }
-        }
-
-        // 03. 首先检查upk log里有没有含body的Material3信息，有的话，是衣服（注意：有部分饰品因为和身体相关的，也有这个代码，会串）
-        if (type === BstConst.PART_TYPE_ATTACH) {
-            _.each(upkLog, function(line) {
-                var match = line.match(/Loading\sMaterial3\s(.+)\sfrom\spackage\s\d+.upk/);
-                if (match !== null && match[1].toLowerCase().match(/.*body.*/i) !== null) {
-                    type = BstConst.PART_TYPE_COSTUME;
-                }
-            });
-        }
+// 老的做法：
+//        // 01. 检查icon，在icon数据集的costume分类下存在code的，是衣服
+//        if (self.iconData['costume'].hasOwnProperty(code)) {
+//            type = BstConst.PART_TYPE_COSTUME;
+//        } else if (self.iconData['attach'].hasOwnProperty(code)) {
+//            // 在icon的attach分类里已经找到了，说明必然是attach，后续不必做了
+//            return type;
+//        }
+//
+//        // 02. 检查mesh.xml里的数据，数据存在，且类型是"body-mesh"的，是衣服
+//        if (type === BstConst.PART_TYPE_ATTACH) {
+//            var meshElement = self.utilSearchMeshXmlViaSkeletonId(skeletonId);
+//            if (meshElement !== null
+//                && meshElement.hasOwnProperty('type-mesh')
+//                && meshElement['$']['type-mesh'] == 'body-mesh') {
+//                type = BstConst.PART_TYPE_COSTUME;
+//            }
+//        }
+//
+//        // 03. 首先检查upk log里有没有含body的Material3信息，有的话，是衣服（注意：有部分饰品因为和身体相关的，也有这个代码，会串）
+//        if (type === BstConst.PART_TYPE_ATTACH) {
+//            _.each(upkLog, function(line) {
+//                var match = line.match(/Loading\sMaterial3\s(.+)\sfrom\spackage\s\d+.upk/);
+//                if (match !== null && match[1].toLowerCase().match(/.*body.*/i) !== null) {
+//                    type = BstConst.PART_TYPE_COSTUME;
+//                }
+//            });
+//        }
 
         return type;
 
