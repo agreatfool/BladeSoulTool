@@ -766,7 +766,7 @@ BstUpkParser.prototype.buildData = function(skeletonKey, skeletonData) {
     var types = ["costume", "attach", "weapon"];
     _.each(types, function(typeName) {
         if (self.iconData[typeName].hasOwnProperty(skeletonCode)) {
-            iconData = self.iconData[typeName][skeletonCode];
+            iconData = _.clone(self.iconData[typeName][skeletonCode]);
         }
     });
     if (iconData === null
@@ -905,19 +905,34 @@ BstUpkParser.prototype.buildData = function(skeletonKey, skeletonData) {
             }
             if (pic === null && _.keys(icons).length > 0) {
                 // icon图片未找到，但是icon图片配置列表里是有东西的，则随便给一个
-                var firstIconKey = _.keys(icons).shift();
-                if (_.isArray(icons[firstIconKey])) {
-                    pic = icons[firstIconKey].shift();
-                } else {
-                    pic = icons[firstIconKey];
+                for (var iconKey in icons) {
+                    if (!icons.hasOwnProperty(iconKey)) { continue; }
+                    if (_.isArray(icons[iconKey]) && icons[iconKey].length > 0) {
+                        pic = _.clone(icons[iconKey]).shift();
+                        break;
+                    } else if (icons[iconKey] !== '' && icons[iconKey] !== null && typeof icons[iconKey] !== 'undefined') {
+                        pic = icons[iconKey];
+                        break;
+                    }
                 }
+            }
+            if (pic !== null && pic.match(new RegExp(skeletonType, 'i')) === null) {
+                /**
+                 * 最后检查一次icon类型是否错误匹配，发现过虽然code相同，但其实完全不是一类的
+                 * 例子：skeleton：00006912，code：010003，对应的icon只有一张Weapon_SW_010003_2.png，其实物品并不是武器
+                 * 如果匹配错误，重新给pic赋null值
+                 */
+                pic = null;
             }
             if (pic === null) {
                 // 没有找到icon，记录日志
-                self.utilBuildDataInvalidInfo(skeletonType, skeletonCode);
-                self.dbInvalid[skeletonType][skeletonCode]['notFound'].push('pic:[skeleton:' + skeletonId + ',texture:' + textureId + ',material:' + materialId + ']');
-                self.grunt.log.error('[BstUpkParser] Icon pic has not been found, code: ' + skeletonCode +
-                    ', skeleton: ' + skeletonId + ', texture: ' + textureId + ', material: ' + materialId);
+                /**
+                 * UPDATE: 这里不再打log，日志过多
+                 * self.utilBuildDataInvalidInfo(skeletonType, skeletonCode);
+                 * self.dbInvalid[skeletonType][skeletonCode]['notFound'].push('pic:[skeleton:' + skeletonId + ',texture:' + textureId + ',material:' + materialId + ']');
+                 * self.grunt.log.error('[BstUpkParser] Icon pic has not been found, code: ' + skeletonCode +
+                 *     ', skeleton: ' + skeletonId + ', texture: ' + textureId + ', material: ' + materialId);
+                 */
             }
         }
 
@@ -1015,6 +1030,9 @@ BstUpkParser.prototype.utilRecognizeSkeletonType = function(skeletonId, upkLog) 
         var code = codeMatch[1];
         if (self.iconData['costume'].hasOwnProperty(code)) {
             type = BstConst.PART_TYPE_COSTUME;
+        } else if (self.iconData['attach'].hasOwnProperty(code)) {
+            // 在icon的attach分类里已经找到了，说明必然是attach，后续不必做了
+            return type;
         }
 
         // 02. 检查mesh.xml里的数据，数据存在，且类型是"body-mesh"的，是衣服
@@ -1027,7 +1045,7 @@ BstUpkParser.prototype.utilRecognizeSkeletonType = function(skeletonId, upkLog) 
             }
         }
 
-        // 03. 首先检查upk log里有没有含body的Material3信息，有的话，是衣服
+        // 03. 首先检查upk log里有没有含body的Material3信息，有的话，是衣服（注意：有部分饰品因为和身体相关的，也有这个代码，会串）
         if (type === BstConst.PART_TYPE_ATTACH) {
             _.each(upkLog, function(line) {
                 var match = line.match(/Loading\sMaterial3\s(.+)\sfrom\spackage\s\d+.upk/);
