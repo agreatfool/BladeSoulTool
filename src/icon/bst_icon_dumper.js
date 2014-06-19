@@ -49,7 +49,7 @@ BstIconDumper.prototype.start = function() {
 
     var exec = 'umodel.exe -export -path=' + umodelWorkingPath + ' -game=bns -out=output ' + BstConst.ICON_UPK_ID;
     self.grunt.log.writeln('[BstIconDumper] Dump command: ' + exec);
-    cp.exec(exec, {"cwd": './resources/umodel', "maxBuffer": 5 * 1024 * 1024}, // max buff 5M
+    cp.exec(exec, {"cwd": path.join(self.gruntWorkingPath, 'resources/umodel'), "maxBuffer": 5 * 1024 * 1024}, // max buff 5M
         function(error) {
             if (error) {
                 self.grunt.fail.fatal('[BstIconDumper] Error in umodel exporting ' + BstConst.ICON_UPK_ID + '.upk: ' + error.stack);
@@ -62,6 +62,13 @@ BstIconDumper.prototype.start = function() {
 
 BstIconDumper.prototype.process = function() {
     var self = this;
+
+    // 清理tga拷贝文件夹
+    if (self.grunt.file.exists(BstConst.PATH_ICON_TGA)) {
+        self.grunt.log.writeln('[BstIconDumper] Clear previous tga outputs ...');
+        self.util.deleteDir(BstConst.PATH_ICON_TGA);
+        self.util.mkdir(BstConst.PATH_ICON_TGA);
+    }
 
     // 拷贝tga文件到database文件夹
     self.grunt.log.writeln('[BstIconDumper] Copying all tga icon resources from output dir to database dir ...');
@@ -100,6 +107,8 @@ BstIconDumper.prototype.process = function() {
                     self.util.formatJson(self.statusErrorList));
                 self.util.writeFile(BstConst.PATH_ICON_CONVERSION_FAILURE, self.util.formatJson(self.statusErrorList));
             }
+            self.grunt.log.writeln('[BstIconDumper] Clear umodel output dir ...');
+            self.util.deleteDir(path.join(self.gruntWorkingPath, 'resources/umodel/output', BstConst.ICON_UPK_ID));
             self.grunt.log.writeln('[BstIconDumper] All works done ...');
             self.taskDone();
         }
