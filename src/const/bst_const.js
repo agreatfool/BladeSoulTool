@@ -107,7 +107,7 @@ BstConst.UPK_INVALID_TEXTURE_UPK_IDS = [
  *     }
  * }
  */
-BstConst.UPK_PRE_PROCESS_MATERIAL_INFO = {
+BstConst.UPK_PRE_DEFINED_MATERIAL_INFO = {
     "00022168": {
         "col": "col1",
         "texture": "00022167",

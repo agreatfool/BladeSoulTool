@@ -627,9 +627,9 @@ BstUpkParser.prototype.preProcessMaterial = function() {
         var textureId = null; // 真正的贴图upk的id
         var textureObjs = {}; // upkId => [object, object, ...]
 
-        if (BstConst.UPK_PRE_PROCESS_MATERIAL_INFO.hasOwnProperty(upkId)) {
+        if (BstConst.UPK_PRE_DEFINED_MATERIAL_INFO.hasOwnProperty(upkId)) {
             // 找到预设的特例数值
-            var info = BstConst.UPK_PRE_PROCESS_MATERIAL_INFO[upkId];
+            var info = BstConst.UPK_PRE_DEFINED_MATERIAL_INFO[upkId];
             colInfo = info['col'];
             textureId = info['texture'];
             textureObjs = info['objs'];
