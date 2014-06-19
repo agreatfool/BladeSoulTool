@@ -783,8 +783,11 @@ BstUpkParser.prototype.buildData = function(skeletonKey, skeletonData) {
     // 根据skeleton数据，获得texture数据
     var textureId = skeletonData['texture'];
     var textureData = null;
-    if (self.upkDataTexture.hasOwnProperty(textureId)) { // FIXME 给这个if判断添加一个 else if，将部分预存储的白名单 texture 拿出来判断，后续的unrecognizedUpkIds也必须拓展，因为可能部分material在preprocess material的时候是存在的，问题那个时候texture信息不存在
+    if (self.upkDataTexture.hasOwnProperty(textureId)) {
         textureData = self.upkDataTexture[textureId];
+    } else if (BstConst.UPK_PRE_DEFINED_TEXTURE_INFO.hasOwnProperty(textureId)) {
+        // 检查预设的贴图数据，目标贴图数据存在的话，直接赋予
+        textureData = BstConst.UPK_PRE_DEFINED_TEXTURE_INFO[textureId];
     } else {
         self.utilBuildDataInvalidInfo(skeletonType, skeletonCode);
         self.dbInvalid[skeletonType][skeletonCode]['notFound'].push('texture:[skeleton:' + skeletonId + ',texture:' + textureId + ']');
@@ -801,6 +804,8 @@ BstUpkParser.prototype.buildData = function(skeletonKey, skeletonData) {
          * 的格式进行描述，参考例子：
          * skeleton：00017488，texture：00017486，material：00017487
          * material关键行为：Loading Material3 Basic_FX from package 00017487.upk
+         * 或
+         * 贴图数据在预处理的时候没找到，是被定义在 BstConst.UPK_PRE_DEFINED_TEXTURE_INFO 里的，那么这个贴图数据就肯定没有对应的material数据
          * 这里我们需要全局重新扫描upk文件，查找拥有两个关键特征的upk文件：
          * 1. 文件中拥有材质信息：
          *     Loading MaterialInstanceConstant col1 from package 00017487.upk
@@ -810,7 +815,7 @@ BstUpkParser.prototype.buildData = function(skeletonKey, skeletonData) {
          *     Loading Texture2D 60071_GonM_col1_D from package 00017486.upk
          *     Loading Texture2D 60071_GonM_col1_S from package 00017486.upk
          */
-        _.each(unrecognizedUpkIds, function(scanUpkId) {
+        _.each(self.upkIdsRescanMaterial, function(scanUpkId) {
             var scanUpkPath = path.join(BstConst.PATH_UPK_LOG, scanUpkId + '.log');
             var scanUpkLog = self.util.readFileSplitWithLineBreak(scanUpkPath);
 
@@ -865,7 +870,12 @@ BstUpkParser.prototype.buildData = function(skeletonKey, skeletonData) {
     // 组装数据
     _.each(materials, function(materialId, col) { // 轮询所有的materials数据
         // 检查material数据
-        if (self.upkDataMaterialInvalid.hasOwnProperty(materialId)) {
+        if (self.upkDataMaterialInvalid.hasOwnProperty(materialId)
+            && self.upkDataMaterialInvalid[materialId]['notFound'].length === 0 // 没有未找到信息错误
+            && _.keys(self.upkDataMaterialInvalid[materialId]['invalid']).length === 0 // 没有不合法元素错误
+            && self.upkDataMaterialInvalid[materialId]['noTexture'] == textureId) { // 贴图信息没找到错误
+            // 这里不需要处理错误，因为能跑到这里，说明上面的贴图数据肯定已经找到了，所以贴图没找到的错误可以忽略
+        } else if (self.upkDataMaterialInvalid.hasOwnProperty(materialId)) {
             self.utilBuildDataInvalidInfo(skeletonType, skeletonCode);
             self.dbInvalid[skeletonType][skeletonCode]['invalid'].push('material:[skeleton:' + skeletonId + ',texture:' + textureId + ',material:' + materialId + ']');
             self.grunt.log.error('[BstUpkParser] Material has invalid data, code: ' + skeletonCode +
