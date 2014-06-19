@@ -26,6 +26,9 @@ var BstUpkParser = function(grunt, done) {
     this.upkIdsSkeleton = [];
     this.upkIdsTexture = [];
     this.upkIdsMaterial = [];
+
+    this.upkIdsRescanMaterial = [];
+
     this.upkSkeletonTypes = {}; // { upkId: "costume", upkId: "attach", upkId: "weapon", ... }
 
     /**
@@ -269,6 +272,11 @@ BstUpkParser.prototype.preProcess = function() {
             upkListUnrecognized[upkId] = coreLineOfContent;
         }
     });
+
+    // 为 buildDatabase 阶段预先准备好需要扫描的材质 upkIds 列表
+    self.upkIdsRescanMaterial = _.keys(upkListSkeletonUnrecognized) // 未能辨认的骨骼upkIds
+        .concat(_.keys(upkListUnrecognized)) // 未能辨认的骨骼upkIds
+        .concat(_.keys(upkListMaterial)); // 所有的材质upkIds
 
     self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_SKELETON_COSTUME), self.util.formatJson(upkListSkeletonCostume));
     self.util.writeFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_SKELETON_ATTACH), self.util.formatJson(upkListSkeletonAttach));
@@ -748,10 +756,6 @@ BstUpkParser.prototype.buildDatabase = function() {
 
 BstUpkParser.prototype.buildData = function(skeletonKey, skeletonData) {
     var self = this;
-
-    var unrecognizedSkeletonUpkIds = _.keys(self.util.readJsonFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_SKELETON_UNRECOGNIZED)));
-    var unrecognizedNonSkUpkIds = _.keys(self.util.readJsonFile(path.join(BstConst.PATH_UPK_DATA_LIST, BstConst.LIST_FILE_UNRECOGNIZED)));
-    var unrecognizedUpkIds = unrecognizedSkeletonUpkIds.concat(unrecognizedNonSkUpkIds); // 将两组未能识别的upk id列表合并
 
     var skeletonId = skeletonData['upkId'];
     var skeletonCode = skeletonData['code'];
