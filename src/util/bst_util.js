@@ -39,6 +39,17 @@ BstUtil.prototype.printHr = function() {
     this.grunt.log.writeln('-------------------------------------------------------------------------------');
 };
 
+BstUtil.prototype.trim = function(str, remove) {
+    if (_.isArray(remove)) {
+        _.each(remove, function(target) {
+            str = str.replace(new RegExp('^' + target, 'g'), '').replace(new RegExp(target + '$', 'g'), '');
+        });
+    } else {
+        str = str.replace(new RegExp('^' + remove, 'g'), '').replace(new RegExp(remove + '$', 'g'), '');
+    }
+    return str;
+};
+
 BstUtil.prototype.strUtf8ToHex = function(str) {
     var result = new Buffer(str).toString('hex');
     this.grunt.log.writeln('[BstUtil] Convert UTF8 to HEX, FROM: ' + str + ', TO: ' + result);
