@@ -69,7 +69,10 @@ BstPngOptimizer.prototype.start = function() {
             self.taskName = taskConf[0];
             self.outputDir = path.join(self.gruntWorkingPath, taskConf[1]['dest']);
             self.optiLevel = taskConf[1]['level'];
-            self.grunt.file.recurse(path.join(self.gruntWorkingPath, taskConf[1]['src']), function(abspath) {
+            self.grunt.file.recurse(path.join(self.gruntWorkingPath, taskConf[1]['src']), function(abspath, rootdir, subdir, filename) {
+                if (filename === 'png_dir') {
+                    return; // 文件夹占位文件，忽略之
+                }
                 self.workingList.push(abspath);
             });
             self.statusTotalCount = self.workingList.length;
