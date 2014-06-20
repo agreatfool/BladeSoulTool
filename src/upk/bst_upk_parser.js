@@ -234,7 +234,7 @@ BstUpkParser.prototype.preProcess = function() {
         }
         var upkId = filename.substr(0, filename.indexOf('.'));
         var upkLog = self.util.readFileSplitWithLineBreak(abspath);
-        var coreLineOfContent = upkLog[BstConst.UPK_ENTRANCE_LINE_NO];
+        var coreLineOfContent = self.util.trim(upkLog[BstConst.UPK_ENTRANCE_LINE_NO], ["\r"]);
 
         if (coreLineOfContent.match(new RegExp(BstConst.UPK_TYPE_SKELETON)) !== null) {
             // skeleton
