@@ -57,38 +57,40 @@ BstUtil.prototype.strUtf8ToHex = function(str) {
     return result;
 };
 
-BstUtil.prototype.checkFileExists = function(path) {
-    if (!this.grunt.file.exists(path)) {
+BstUtil.prototype.checkFileExists = function(path, needFail) {
+    if (typeof needFail !== 'boolean') {
+        needFail = true;
+    }
+    if (!this.grunt.file.exists(path) && needFail) {
         this.grunt.fail.fatal('[BstUtil] File not found, path: ' + path);
+        return false;
+    } else if (!this.grunt.file.exists(path) && needFail) {
+        this.grunt.fail.fatal('[BstUtil] File not found, path: ' + path);
+        return false;
+    } else {
+        return true;
     }
 };
 
-BstUtil.prototype.copyFile = function(fromPath, toPath) {
-    this.checkFileExists(fromPath);
-    this.grunt.file.copy(fromPath, toPath);
-    this.grunt.log.writeln('[BstUtil] Copy file FROM: ' + fromPath + ', TO: ' + toPath);
+BstUtil.prototype.copyFile = function(fromPath, toPath, needFail) {
+    if (this.checkFileExists(fromPath, needFail)) {
+        this.grunt.file.copy(fromPath, toPath);
+        this.grunt.log.writeln('[BstUtil] Copy file FROM: ' + fromPath + ', TO: ' + toPath);
+    }
 };
 
-BstUtil.prototype.deleteDir = function(path, check) {
-    if (typeof check === 'undefined') {
-        check = true; // 默认会检查删除目标是否存在
-    }
-    if (check) {
-        this.checkFileExists(path);
+BstUtil.prototype.deleteDir = function(path, needFail) {
+    if (this.checkFileExists(path, needFail)) {
         this.grunt.file.delete(path);
         this.grunt.log.writeln('[BstUtil] Delete dir: ' + path);
-    } else {
-        if (this.grunt.file.exists(path)) {
-            this.grunt.file.delete(path);
-            this.grunt.log.writeln('[BstUtil] Delete dir: ' + path);
-        }
     }
 };
 
-BstUtil.prototype.deleteFile = function(path) {
-    this.checkFileExists(path);
-    this.grunt.file.delete(path);
-    this.grunt.log.writeln('[BstUtil] Delete file: ' + path);
+BstUtil.prototype.deleteFile = function(path, needFail) {
+    if (this.checkFileExists(path, needFail)) {
+        this.grunt.file.delete(path);
+        this.grunt.log.writeln('[BstUtil] Delete file: ' + path);
+    }
 };
 
 BstUtil.prototype.mkdir = function(path) {
@@ -127,16 +129,20 @@ BstUtil.prototype.writeHexFile = function(path, data) {
     this.grunt.log.writeln('[BstUtil] Write file: ' + path);
 };
 
-BstUtil.prototype.readJsonFile = function(path) {
-    this.checkFileExists(path);
-
-    return this.grunt.file.readJSON(path);
+BstUtil.prototype.readJsonFile = function(path, needFail) {
+    if (this.checkFileExists(path, needFail)) {
+        return this.grunt.file.readJSON(path);
+    } else {
+        return null;
+    }
 };
 
-BstUtil.prototype.readFile = function(path) {
-    this.checkFileExists(path);
-
-    return this.grunt.file.read(path);
+BstUtil.prototype.readFile = function(path, needFail) {
+    if (this.checkFileExists(path, needFail)) {
+        return this.grunt.file.read(path);
+    } else {
+        return null;
+    }
 };
 
 BstUtil.prototype.readHexFile = function(path, callback) {
