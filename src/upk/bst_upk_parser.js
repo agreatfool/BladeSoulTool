@@ -743,8 +743,7 @@ BstUpkParser.prototype.buildDatabase = function() {
     });
 
     // 写入数据
-    var types = ["costume", "attach", "weapon"];
-    _.each(types, function(type) {
+    _.each(BstConst.PART_TYPES, function(type) {
         self.util.writeFile(path.join(BstConst.PATH_DATABASE, type, 'data', 'data.json'), self.util.formatJson(self.db[type]));
         self.util.writeFile(path.join(BstConst.PATH_DATABASE, type, 'data', 'data_invalid.json'), self.util.formatJson(self.dbInvalid[type]));
         self.grunt.log.writeln('[BstUpkParser] Database build of ' + type + ' done ...');
@@ -763,8 +762,7 @@ BstUpkParser.prototype.buildData = function(skeletonKey, skeletonData) {
 
     // 查找对应code的icon数据
     var iconData = null;
-    var types = ["costume", "attach", "weapon"];
-    _.each(types, function(typeName) {
+    _.each(BstConst.PART_TYPES, function(typeName) {
         if (self.iconData[typeName].hasOwnProperty(skeletonCode)) {
             iconData = _.clone(self.iconData[typeName][skeletonCode]);
         }
