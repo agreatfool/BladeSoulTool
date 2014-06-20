@@ -304,4 +304,8 @@ module.exports = function(grunt) {
         'shooter',
         'png_optimizer'
     ]);
+    grunt.registerTask('build_shot', [
+        'shooter',
+        'png_optimizer'
+    ]);
 };
