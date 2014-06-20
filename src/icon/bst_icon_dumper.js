@@ -75,9 +75,10 @@ BstIconDumper.prototype.process = function() {
     self.grunt.file.recurse(
         './resources/umodel/output/' + BstConst.ICON_UPK_ID + '/Texture2D',
         function(abspath, rootdir, subdir, filename) {
-            if (filename.match(/^attach.+/i) !== null // 装饰品icon
+            if ((filename.match(/^attach.+/i) !== null // 装饰品icon
                 || filename.match(/^costume.+/i) !== null // 时装icon
-                || (filename.match(/^weapon.+/i) !== null && filename.match(/^Weapon_Lock.+/i) === null)) { // 有效的武器icon
+                || (filename.match(/^weapon.+/i) !== null && filename.match(/^Weapon_Lock.+/i) === null) // 有效的武器icon
+                ) && filename.match(/_\d+.png$/) === null) { // 且icon文件名不可以是..._2.png这样的格式，这种格式一般是无意义的，忽略
                 self.workingList.push(filename);
                 self.util.copyFile(abspath, path.join(BstConst.PATH_ICON_TGA, filename));
             }
