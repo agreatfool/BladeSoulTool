@@ -64,8 +64,7 @@ BstUtil.prototype.checkFileExists = function(path, needFail) {
     if (!this.grunt.file.exists(path) && needFail) {
         this.grunt.fail.fatal('[BstUtil] File not found, path: ' + path);
         return false;
-    } else if (!this.grunt.file.exists(path) && needFail) {
-        this.grunt.fail.fatal('[BstUtil] File not found, path: ' + path);
+    } else if (!this.grunt.file.exists(path) && !needFail) {
         return false;
     } else {
         return true;

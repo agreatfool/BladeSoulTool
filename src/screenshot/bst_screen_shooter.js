@@ -88,7 +88,7 @@ BstScreenShooter.prototype.processType = function(type) {
                     self.grunt.log.writeln('[BstScreenShooter] Delete backup skeleton upk files.');
                     self.util.setGruntWorkingDir(self.util.getBnsPath()); // 为了截图修改的骨骼文件应该都在bns目录下
                     _.each(self.backupList, function(backupPath) {
-                        self.util.deleteFile(backupPath);
+                        self.util.deleteFile(backupPath, false);
                     });
                     self.util.restoreGruntWorkingDir();
                 }
