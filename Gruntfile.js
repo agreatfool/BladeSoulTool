@@ -267,6 +267,16 @@ module.exports = function(grunt) {
         restore.start();
     };
 
+    var Task_BuildPreparer = function() {
+        var util = new BstUtil(grunt);
+        // 事先删除上次截屏流程产生出来的中间png文件
+        _.each(BstConst.PART_TYPES, function(type) {
+            var pngOutputPath = path.join(BstConst.PATH_DATABASE, type, 'pics');
+            util.deleteDir(pngOutputPath, false);
+            util.mkdir(pngOutputPath);
+        });
+    };
+
     //-------------------------------------------------------------------------------------------
     // Tasks
     //-------------------------------------------------------------------------------------------
@@ -283,8 +293,11 @@ module.exports = function(grunt) {
     grunt.registerTask('replace', Task_Replace);
     grunt.registerTask('restore', Task_Restore);
 
+    grunt.registerTask('build_preparer', Task_BuildPreparer);
     grunt.registerTask('build', [
+        'build_preparer',
         'icon_dumper',
+        'png_optimizer',
         'upk_preparer',
         'upk_scanner',
         'upk_parser',
