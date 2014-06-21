@@ -14,7 +14,7 @@ namespace BladeSoulTool
         private Form _formWeapon;
         private Form _formUtil;
 
-        private BstI18NLoader _i18n;
+        private BstI18NLoader _i18N;
 
         public App()
         {
@@ -33,12 +33,12 @@ namespace BladeSoulTool
 
         private void InitI18N()
         {
-            this._i18n = BstI18NLoader.Instance;
-            this.tabCostume.Text = this._i18n.LoadI18NValue("App", "tabCostume");
-            this.tabAttach.Text = this._i18n.LoadI18NValue("App", "tabAttach");
-            this.tabWeapon.Text = this._i18n.LoadI18NValue("App", "tabWeapon");
-            this.tabUtil.Text = this._i18n.LoadI18NValue("App", "tabUtil");
-            this.Text = this._i18n.LoadI18NValue("App", "title");
+            this._i18N = BstI18NLoader.Instance;
+            this.tabCostume.Text = this._i18N.LoadI18NValue("App", "tabCostume");
+            this.tabAttach.Text = this._i18N.LoadI18NValue("App", "tabAttach");
+            this.tabWeapon.Text = this._i18N.LoadI18NValue("App", "tabWeapon");
+            this.tabUtil.Text = this._i18N.LoadI18NValue("App", "tabUtil");
+            this.Text = this._i18N.LoadI18NValue("App", "title");
         }
 
         private void Init()
@@ -60,9 +60,9 @@ namespace BladeSoulTool
                 if (currentVer != releasedVer)
                 {
                     var result = BstManager.DisplayConfirmMessageBox(
-                        this._i18n.LoadI18NValue("App", "newVerTitle"),
+                        this._i18N.LoadI18NValue("App", "newVerTitle"),
                         string.Format(
-                            this._i18n.LoadI18NValue("App", "newVerContent"),
+                            this._i18N.LoadI18NValue("App", "newVerContent"),
                             currentVer,
                             releasedVer,
                             BstI18NLoader.Instance.LoadI18NValue("App", "releaseSiteUrl"))
