@@ -132,6 +132,7 @@ module.exports = function(grunt) {
                         "!.idea", // exclude the .idea dir
                         "!**/*.zip", // exclude all *.zip files
                         "!**/*.png", // exclude all *.png files
+                        "resources/others/**/*.png", // include all *.png under resources/others
                         "!**/*.tga", // exclude all *.tga files
                         "!logs/*.log", // exclude all grunt *.log files
                         "!resources/dedat/output/**/*", // exclude dedat output

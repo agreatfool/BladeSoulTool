@@ -64,6 +64,8 @@ namespace BladeSoulTool.lib
         public const string PathVsConfig = "config/";
 
         public const string PathLoadingGif = BstManager.PathRoot + BstManager.PathResources + "others/loading.gif";
+        public const string PathNoIcon = BstManager.PathRoot + BstManager.PathResources + "others/no_icon_64x64.png";
+        public const string PathErrorIcon = BstManager.PathRoot + BstManager.PathResources + "others/error_icon_64x64.png";
 
         public const string GithubRoot = "https://raw.githubusercontent.com/agreatfool/BladeSoulTool/";
         public const string GithubBranch = "master";
@@ -75,6 +77,8 @@ namespace BladeSoulTool.lib
         public const string PathI18N = BstManager.PathVsRoot + BstManager.PathVsConfig + "i18n-";
 
         public byte[] LoadingGifBytes { get; set; }
+        public byte[] NoIconBytes { get; set; }
+        public byte[] ErrorIconBytes { get; set; }
 
         public JObject SystemSettings { get; set; }
         public JObject DataCostume { get; set; }
@@ -129,6 +133,8 @@ namespace BladeSoulTool.lib
             });
 
             this.LoadingGifBytes = BstManager.GetBytesFromFile(BstManager.PathLoadingGif);
+            this.NoIconBytes = BstManager.GetBytesFromFile(BstManager.PathNoIcon);
+            this.ErrorIconBytes = BstManager.GetBytesFromFile(BstManager.PathErrorIcon);
 
             // 检查已配置的游戏地址配置
             var gamePath = (string) this.SystemSettings["path"]["game"];
@@ -440,6 +446,10 @@ namespace BladeSoulTool.lib
             if (!string.IsNullOrEmpty(iconPicName))
             {
                 path = BstManager.PathVsRoot + BstManager.PathVsTmp + "icon/" + iconPicName;
+            }
+            else
+            {
+                path = BstManager.PathNoIcon; // 图片设置为空，说明该物品没有icon，直接给默认icon路径
             }
 
             return path;

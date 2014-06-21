@@ -84,8 +84,24 @@ namespace BladeSoulTool.lib
                     blob = BstManager.DownloadImageFile(url, path);
                     if (blob == null)
                     {
+                        // 图片下载失败
                         BstManager.ShowMsgInTextBox(box, string.Format(BstI18NLoader.Instance.LoadI18NValue("BstPicLoader", "picDownloadFailed"), url));
-                        return; // 图片下载失败
+                        // 停止动态图更新
+                        loadingTimer.Enabled = false;
+                        BstPicLoader.LoadingTimers.Remove(picture);
+                        loadingTimer.Dispose();
+                        // 更新下载失败icon
+                        var errorIconBitmap = BstManager.ConvertByteToImage(BstManager.Instance.ErrorIconBytes);
+                        MethodInvoker updateErrorAction = () => picture.Image = errorIconBitmap;
+                        try
+                        {
+                            picture.BeginInvoke(updateErrorAction);
+                        }
+                        catch (Exception ex)
+                        {
+                            BstLogger.Instance.Log(ex.ToString());
+                        }
+                        return;
                     }
                 }
 

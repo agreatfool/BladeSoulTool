@@ -59,27 +59,30 @@ namespace BladeSoulTool.lib
                 if (pic == null)
                 {
                     BstManager.ShowMsgInTextBox(task.Box, string.Format(BstI18NLoader.Instance.LoadI18NValue("BstIconLoader", "iconDownloadFailed"), downloadUrl));
+                    // 更新加载失败icon
+                    task.Table.Rows[task.RowId][task.ColId] = BstManager.Instance.ErrorIconBytes;
                 }
                 else
                 {
                     BstManager.ShowMsgInTextBox(task.Box, string.Format(BstI18NLoader.Instance.LoadI18NValue("BstIconLoader", "iconDownloadSucceed"), downloadUrl));
-
                     // 更新图片
                     task.Table.Rows[task.RowId][task.ColId] = pic;
-                    updatedCount++;
-                    if (updatedCount >= BstIconLoader.UpdateThrottle)
+                }
+
+                // 检查icon加载进度，并刷新ui
+                updatedCount++;
+                if (updatedCount >= BstIconLoader.UpdateThrottle)
+                {
+                    MethodInvoker tableUpdateAction = () => task.Grid.Refresh();
+                    try
                     {
-                        MethodInvoker tableUpdateAction = () => task.Grid.Refresh();
-                        try
-                        {
-                            task.Grid.BeginInvoke(tableUpdateAction);
-                        }
-                        catch (Exception ex)
-                        {
-                            BstLogger.Instance.Log(ex.ToString());
-                        }
-                        updatedCount = 0;
+                        task.Grid.BeginInvoke(tableUpdateAction);
                     }
+                    catch (Exception ex)
+                    {
+                        BstLogger.Instance.Log(ex.ToString());
+                    }
+                    updatedCount = 0;
                 }
 
                 if (this._queue.Count != 0) continue; // 仍旧还有工作未完成，继续轮询
