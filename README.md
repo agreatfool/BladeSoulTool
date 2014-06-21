@@ -47,6 +47,10 @@
 ## 4. 使用
 执行根目录下的`BladeSoulTool.bat`，打开软件界面
 
+### 4.0 预览
+* 物品列表中的部分物品，因为不是玩家可用的模型，所以是没有官方icon的，这种物品，软件会给与默认的icon：![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/resources/others/no_icon_64x64.png)
+* 此外，所有的icon及物品2D截图都是从网络下载的，如果下载失败，会显示失败的icon：![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/resources/others/error_icon_64x64.png)
+
 ### 4.1 替换
 * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/ui-replace.png)
 * 在物品列表中选中一项物品，点击中间下方的`选为原始模型`按钮，设定原始模型
