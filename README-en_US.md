@@ -51,6 +51,10 @@ One click costume replacement mod tool
 ## 4. Usage
 Execute the bat file at the root dir `BladeSoulTool.bat` to open the software
 
+### 4.0 预览
+* 物品列表中的部分物品，因为不是玩家可用的模型，所以是没有官方icon的，这种物品，软件会给与默认的icon：![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/resources/others/no_icon_64x64.png)
+* 此外，所有的icon及物品2D截图都是从网络下载的，如果下载失败，会显示失败的icon：![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/resources/others/error_icon_64x64.png)
+
 ### 4.1 Replace
 * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/ui-replace-en_US.png)
 * Select an item in the items table, click the `Select as origin model` button
@@ -95,13 +99,8 @@ GPLv2
 ## 6. Known Issues
 * Attach & Weapon replacement functionality not done
 * Origin model cannot use models whose col is not col1
-* Costume database is not complete yet
-* Some attach data is now described in weapon config, and some weapon is described in attach config
-* Hair data are all not collected
-* Some icons of weapon have issue
 
 ## 7. TODO List
-* Find ways to collect data more correctly
 * Add attach & weapon replacement functionality
 
 ## 8. Change Log
@@ -109,3 +108,4 @@ GPLv2
 * 2014-06-06: v1.0.1: Fix 3D view log not zipped
 * 2014-06-11: v1.0.2: Add new version notification functionality, fix scroll bar issue
 * 2014-06-11: v1.0.3: Add I18N
+* 2014-06-21: v1.0.4: Fix database built algorithm, enhance the database. Fix UI of undefined icons & download failed icons.
