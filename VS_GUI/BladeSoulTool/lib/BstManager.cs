@@ -135,15 +135,6 @@ namespace BladeSoulTool.lib
             this.LoadingGifBytes = BstManager.GetBytesFromFile(BstManager.PathLoadingGif);
             this.NoIconBytes = BstManager.GetBytesFromFile(BstManager.PathNoIcon);
             this.ErrorIconBytes = BstManager.GetBytesFromFile(BstManager.PathErrorIcon);
-
-            // 检查已配置的游戏地址配置
-            var gamePath = (string) this.SystemSettings["path"]["game"];
-            if (!string.IsNullOrEmpty(gamePath) && !Directory.Exists(gamePath))
-            {
-                // 游戏地址配置不存在，更新为null
-                this.SystemSettings["path"]["game"] = null;
-                BstManager.WriteJsonFile(BstManager.PathJsonSettings, this.SystemSettings);
-            }
         }
 
         public static JObject ReadJsonFile(string path)

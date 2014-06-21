@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.IO;
 using System.Threading;
 using System.Windows.Forms;
 using BladeSoulTool.lib;
@@ -26,6 +27,8 @@ namespace BladeSoulTool
             var loader = BstIconLoader.Instance;
             // 检查新版本
             this.CheckNewVersion();
+            // 检查游戏安装路径设置
+            this.CheckBnsGamePath();
 
             this.InitI18N();
             this.Init();
@@ -49,6 +52,24 @@ namespace BladeSoulTool
             this.tabCostume.Controls.Add(this._formCostume);
             // 注册tab切换事件
             this.tabControl.SelectedIndexChanged += new EventHandler(tabControl_SelectedIndexChanged);
+        }
+
+        private void CheckBnsGamePath()
+        {
+            new Thread(() =>
+            {
+                var gamePath = (string) BstManager.Instance.SystemSettings["path"]["game"];
+                if (!Directory.Exists(gamePath) || !File.Exists(gamePath + "/bin/Client.exe"))
+                {
+                    // 游戏地址配置不存在或不正确，更新为null
+                    BstManager.Instance.SystemSettings["path"]["game"] = null;
+                    BstManager.WriteJsonFile(BstManager.PathJsonSettings, BstManager.Instance.SystemSettings);
+                    BstManager.DisplayErrorMessageBox(
+                        BstI18NLoader.Instance.LoadI18NValue("App", "gamePathErrTitle"),
+                        BstI18NLoader.Instance.LoadI18NValue("App", "gamePathErrContent")
+                    );
+                }
+            }).Start();
         }
 
         private void CheckNewVersion()
