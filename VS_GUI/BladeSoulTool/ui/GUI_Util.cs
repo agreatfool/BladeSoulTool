@@ -12,7 +12,7 @@ namespace BladeSoulTool.ui
 {
     public partial class GuiUtil : Form
     {
-        private BstI18NLoader _i18n;
+        private BstI18NLoader _i18N;
 
         public GuiUtil()
         {
@@ -23,10 +23,10 @@ namespace BladeSoulTool.ui
 
         private void InitI18N()
         {
-            this._i18n = BstI18NLoader.Instance;
-            this.labelSelectGameDir.Text = this._i18n.LoadI18NValue("GuiUtil", "labelSelectGameDir");
-            this.btnSelectGameDir.Text = this._i18n.LoadI18NValue("GuiUtil", "btnSelectGameDir");
-            this.labelSelectLang.Text = this._i18n.LoadI18NValue("GuiUtil", "labelSelectLang");
+            this._i18N = BstI18NLoader.Instance;
+            this.labelSelectGameDir.Text = this._i18N.LoadI18NValue("GuiUtil", "labelSelectGameDir");
+            this.btnSelectGameDir.Text = this._i18N.LoadI18NValue("GuiUtil", "btnSelectGameDir");
+            this.labelSelectLang.Text = this._i18N.LoadI18NValue("GuiUtil", "labelSelectLang");
         }
 
         private void Init()
@@ -42,7 +42,7 @@ namespace BladeSoulTool.ui
             this.comboBoxSelectLang.SelectedIndexChanged += new EventHandler(comboBoxSelectLang_SelectedIndexChanged);
 
             // license文字内容
-            this.textBoxLicense.Text = string.Format(this._i18n.LoadI18NValue("GuiUtil", "license"), BstManager.ReleaseUrl17173);
+            this.textBoxLicense.Text = string.Format(this._i18N.LoadI18NValue("GuiUtil", "license"), BstManager.ReleaseUrl17173);
 
             // 选择游戏安装路径
             this.btnSelectGameDir.Click += new EventHandler(btnSelectGameDir_Click);
@@ -61,8 +61,8 @@ namespace BladeSoulTool.ui
                 if (!File.Exists(path + "/bin/Client.exe"))
                 {
                     BstManager.DisplayErrorMessageBox(
-                        this._i18n.LoadI18NValue("GuiUtil", "boxTitle"),
-                        this._i18n.LoadI18NValue("GuiUtil", "boxMessage")
+                        this._i18N.LoadI18NValue("GuiUtil", "boxTitle"),
+                        this._i18N.LoadI18NValue("GuiUtil", "boxMessage")
                     );
                 }
                 else
