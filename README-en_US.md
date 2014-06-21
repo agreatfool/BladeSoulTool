@@ -51,9 +51,9 @@ One click costume replacement mod tool
 ## 4. Usage
 Execute the bat file at the root dir `BladeSoulTool.bat` to open the software
 
-### 4.0 预览
-* 物品列表中的部分物品，因为不是玩家可用的模型，所以是没有官方icon的，这种物品，软件会给与默认的icon：![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/resources/others/no_icon_64x64.png)
-* 此外，所有的icon及物品2D截图都是从网络下载的，如果下载失败，会显示失败的icon：![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/resources/others/error_icon_64x64.png)
+### 4.0 Preview
+* Since some items in the list is not possible to be owned by player, there is no official icon for those items. Software will display default icon for those items: ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/resources/others/no_icon_64x64.png)
+* And every item icon & 2d preview images are all downloaded from network, if download failed, error icon will be displayed: ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/resources/others/error_icon_64x64.png)
 
 ### 4.1 Replace
 * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/ui-replace-en_US.png)
