@@ -25,7 +25,7 @@ namespace BladeSoulTool.ui
 
         private JObject _originSettings;
 
-        private BstI18NLoader _i18n;
+        private BstI18NLoader _i18N;
 
         public GuiItems(int formType)
         {
@@ -37,20 +37,20 @@ namespace BladeSoulTool.ui
 
         private void InitI18N()
         {
-            this._i18n = BstI18NLoader.Instance;
-            this.labelRace.Text = this._i18n.LoadI18NValue("GuiItems", "labelRace");
-            this.btnView2DOrigin.Text = this._i18n.LoadI18NValue("GuiItems", "btnView2D");
-            this.btnView3DOrigin.Text = this._i18n.LoadI18NValue("GuiItems", "btnView3D");
-            this.labelOrigin.Text = this._i18n.LoadI18NValue("GuiItems", "labelOrigin");
-            this.btnView2DTarget.Text = this._i18n.LoadI18NValue("GuiItems", "btnView2D");
-            this.btnView3DTarget.Text = this._i18n.LoadI18NValue("GuiItems", "btnView3D");
-            this.labelTarget.Text = this._i18n.LoadI18NValue("GuiItems", "labelTarget");
-            this.btnTopRestoreAll.Text = this._i18n.LoadI18NValue("GuiItems", "btnTopRestoreAll");
-            this.btnView3DInfo.Text = this._i18n.LoadI18NValue("GuiItems", "btnView3D");
-            this.btnSelectTarget.Text = this._i18n.LoadI18NValue("GuiItems", "btnSelectTarget");
-            this.btnSelectOrigin.Text = this._i18n.LoadI18NValue("GuiItems", "btnSelectOrigin");
-            this.labelInfoHead.Text = this._i18n.LoadI18NValue("GuiItems", "labelInfoHead");
-            this.btnReplace.Text = this._i18n.LoadI18NValue("GuiItems", "btnReplace");
+            this._i18N = BstI18NLoader.Instance;
+            this.labelRace.Text = this._i18N.LoadI18NValue("GuiItems", "labelRace");
+            this.btnView2DOrigin.Text = this._i18N.LoadI18NValue("GuiItems", "btnView2D");
+            this.btnView3DOrigin.Text = this._i18N.LoadI18NValue("GuiItems", "btnView3D");
+            this.labelOrigin.Text = this._i18N.LoadI18NValue("GuiItems", "labelOrigin");
+            this.btnView2DTarget.Text = this._i18N.LoadI18NValue("GuiItems", "btnView2D");
+            this.btnView3DTarget.Text = this._i18N.LoadI18NValue("GuiItems", "btnView3D");
+            this.labelTarget.Text = this._i18N.LoadI18NValue("GuiItems", "labelTarget");
+            this.btnTopRestoreAll.Text = this._i18N.LoadI18NValue("GuiItems", "btnTopRestoreAll");
+            this.btnView3DInfo.Text = this._i18N.LoadI18NValue("GuiItems", "btnView3D");
+            this.btnSelectTarget.Text = this._i18N.LoadI18NValue("GuiItems", "btnSelectTarget");
+            this.btnSelectOrigin.Text = this._i18N.LoadI18NValue("GuiItems", "btnSelectOrigin");
+            this.labelInfoHead.Text = this._i18N.LoadI18NValue("GuiItems", "labelInfoHead");
+            this.btnReplace.Text = this._i18N.LoadI18NValue("GuiItems", "btnReplace");
         }
 
         private void Init(int formType)
@@ -64,13 +64,13 @@ namespace BladeSoulTool.ui
             {
                 DataType = Type.GetType("System.Byte[]"),
                 AllowDBNull = true,
-                ColumnName = this._i18n.LoadI18NValue("GuiItems", "tableColIcon")
+                ColumnName = this._i18N.LoadI18NValue("GuiItems", "tableColIcon")
             };
             //columnIcon.ReadOnly = true;
             this._dataTable.Columns.Add(columnIcon);
             // code列
             var columnCode = new DataColumn("Code") {
-                ColumnName = this._i18n.LoadI18NValue("GuiItems", "tableColCode"),
+                ColumnName = this._i18N.LoadI18NValue("GuiItems", "tableColCode"),
                 ReadOnly = true
             };
             this._dataTable.Columns.Add(columnCode);
@@ -141,7 +141,7 @@ namespace BladeSoulTool.ui
             // 启动新的线程来处理数据加载内容
             this._loadingThread = new Thread(() =>
             {
-                BstManager.ShowMsgInTextBox(this.textBoxOut, this._i18n.LoadI18NValue("GuiItems", "logStartToLoadDataList"));
+                BstManager.ShowMsgInTextBox(this.textBoxOut, this._i18N.LoadI18NValue("GuiItems", "logStartToLoadDataList"));
 
                 BstManager.HideDataGridViewVerticalScrollBar(this.gridItems); // 隐藏滚动条
 
@@ -200,7 +200,7 @@ namespace BladeSoulTool.ui
                     ));
                 }
 
-                BstManager.ShowMsgInTextBox(this.textBoxOut, this._i18n.LoadI18NValue("GuiItems", "logEndLoadDataList"));
+                BstManager.ShowMsgInTextBox(this.textBoxOut, this._i18N.LoadI18NValue("GuiItems", "logEndLoadDataList"));
                 BstIconLoader.Instance.Start(); // 启动图片加载器
             });
             this._loadingThread.Start();
@@ -272,8 +272,8 @@ namespace BladeSoulTool.ui
         {
             // 恢复全部模型
             if (BstManager.DisplayConfirmMessageBox(
-                this._i18n.LoadI18NValue("GuiItems", "actionConfirmTitle"),
-                this._i18n.LoadI18NValue("GuiItems", "actionRestoreMsg")) == DialogResult.OK)
+                this._i18N.LoadI18NValue("GuiItems", "actionConfirmTitle"),
+                this._i18N.LoadI18NValue("GuiItems", "actionRestoreMsg")) == DialogResult.OK)
             {
                 BstManager.Instance.RunGrunt(this.textBoxOut, "restore");
             }
@@ -285,8 +285,8 @@ namespace BladeSoulTool.ui
             if (this._originElementId == null)
             {
                 BstManager.DisplayErrorMessageBox(
-                    this._i18n.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
-                    this._i18n.LoadI18NValue("GuiItems", "actionSelectOriginErrorMsg")
+                    this._i18N.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
+                    this._i18N.LoadI18NValue("GuiItems", "actionSelectOriginErrorMsg")
                 );
                 return;
             }
@@ -299,8 +299,8 @@ namespace BladeSoulTool.ui
             if (this._originElementId == null)
             {
                 BstManager.DisplayErrorMessageBox(
-                    this._i18n.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
-                    this._i18n.LoadI18NValue("GuiItems", "actionSelectOriginErrorMsg")
+                    this._i18N.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
+                    this._i18N.LoadI18NValue("GuiItems", "actionSelectOriginErrorMsg")
                 );
                 return;
             }
@@ -317,8 +317,8 @@ namespace BladeSoulTool.ui
             if (this._targetElementId == null)
             {
                 BstManager.DisplayErrorMessageBox(
-                    this._i18n.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
-                    this._i18n.LoadI18NValue("GuiItems", "actionSelectTargetErrorMsg")
+                    this._i18N.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
+                    this._i18N.LoadI18NValue("GuiItems", "actionSelectTargetErrorMsg")
                 );
                 return;
             }
@@ -331,8 +331,8 @@ namespace BladeSoulTool.ui
             if (this._targetElementId == null)
             {
                 BstManager.DisplayErrorMessageBox(
-                    this._i18n.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
-                    this._i18n.LoadI18NValue("GuiItems", "actionSelectTargetErrorMsg")
+                    this._i18N.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
+                    this._i18N.LoadI18NValue("GuiItems", "actionSelectTargetErrorMsg")
                 );
                 return;
             }
@@ -349,24 +349,24 @@ namespace BladeSoulTool.ui
             if (this._originElementId == null)
             {
                 BstManager.DisplayErrorMessageBox(
-                    this._i18n.LoadI18NValue("GuiItems", "actionReplaceErrorTitle"),
-                    this._i18n.LoadI18NValue("GuiItems", "actionOriginEmptyErrorMsg")
+                    this._i18N.LoadI18NValue("GuiItems", "actionReplaceErrorTitle"),
+                    this._i18N.LoadI18NValue("GuiItems", "actionOriginEmptyErrorMsg")
                 );
                 return;
             }
             if (this._targetElementId == null)
             {
                 BstManager.DisplayErrorMessageBox(
-                    this._i18n.LoadI18NValue("GuiItems", "actionReplaceErrorTitle"),
-                    this._i18n.LoadI18NValue("GuiItems", "actionTargetEmptyErrorMsg")
+                    this._i18N.LoadI18NValue("GuiItems", "actionReplaceErrorTitle"),
+                    this._i18N.LoadI18NValue("GuiItems", "actionTargetEmptyErrorMsg")
                 );
                 return;
             }
             if (this._originElementId == this._targetElementId)
             {
                 BstManager.DisplayErrorMessageBox(
-                    this._i18n.LoadI18NValue("GuiItems", "actionReplaceErrorTitle"),
-                    this._i18n.LoadI18NValue("GuiItems", "actionTargetSameErrorMsg")
+                    this._i18N.LoadI18NValue("GuiItems", "actionReplaceErrorTitle"),
+                    this._i18N.LoadI18NValue("GuiItems", "actionTargetSameErrorMsg")
                 );
                 return;
             }
@@ -374,14 +374,14 @@ namespace BladeSoulTool.ui
             {
                 // FIXME
                 BstManager.DisplayErrorMessageBox(
-                    this._i18n.LoadI18NValue("GuiItems", "actionFuncNotDoneTitle"),
-                    this._i18n.LoadI18NValue("GuiItems", "actionWaitForFuncMsg")
+                    this._i18N.LoadI18NValue("GuiItems", "actionFuncNotDoneTitle"),
+                    this._i18N.LoadI18NValue("GuiItems", "actionWaitForFuncMsg")
                 );
                 return;
             }
             if (BstManager.DisplayConfirmMessageBox(
-                this._i18n.LoadI18NValue("GuiItems", "actionConfirmTitle"),
-                this._i18n.LoadI18NValue("GuiItems", "actionReplaceMsg")) == DialogResult.OK)
+                this._i18N.LoadI18NValue("GuiItems", "actionConfirmTitle"),
+                this._i18N.LoadI18NValue("GuiItems", "actionReplaceMsg")) == DialogResult.OK)
             {
                 string race = null;
                 if (this._formType == BstManager.TypeAttach
@@ -404,8 +404,8 @@ namespace BladeSoulTool.ui
             if (this._selectedElementId == null)
             {
                 BstManager.DisplayErrorMessageBox(
-                    this._i18n.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
-                    this._i18n.LoadI18NValue("GuiItems", "actionSelectTargetErrorMsg")
+                    this._i18N.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
+                    this._i18N.LoadI18NValue("GuiItems", "actionSelectTargetErrorMsg")
                 );
                 return;
             }
@@ -422,8 +422,8 @@ namespace BladeSoulTool.ui
             if (this._selectedElementId == null)
             {
                 BstManager.DisplayErrorMessageBox(
-                    this._i18n.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
-                    this._i18n.LoadI18NValue("GuiItems", "actionSelectTargetErrorMsg")
+                    this._i18N.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
+                    this._i18N.LoadI18NValue("GuiItems", "actionSelectTargetErrorMsg")
                 );
                 return; // 没有选中的元素，直接退出
             }
@@ -433,8 +433,8 @@ namespace BladeSoulTool.ui
             if (col != "col1")
             {
                 BstManager.DisplayErrorMessageBox(
-                    this._i18n.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
-                    this._i18n.LoadI18NValue("GuiItems", "actionOnlyCol1DataMsg")
+                    this._i18N.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
+                    this._i18N.LoadI18NValue("GuiItems", "actionOnlyCol1DataMsg")
                 );
                 return;
             }
@@ -465,8 +465,8 @@ namespace BladeSoulTool.ui
             if (this._selectedElementId == null)
             {
                 BstManager.DisplayErrorMessageBox(
-                    this._i18n.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
-                    this._i18n.LoadI18NValue("GuiItems", "actionSelectTargetErrorMsg")
+                    this._i18N.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
+                    this._i18N.LoadI18NValue("GuiItems", "actionSelectTargetErrorMsg")
                 );
                 return; // 没有选中的元素，直接退出
             }
