@@ -120,6 +120,8 @@ BstReplace.prototype.processCostume = function() {
         }
         self.util.registerAsyncEvent(paths[editKey]);
         self.util.readHexFile(paths[editKey], function(data, editPath) {
+            var editPart = _.keys(paths.findByVal(editPath)).shift(); // skeleton | material | texture
+
             // 先获取双方的模型核心名，并验证其是否为头发，是头发的话，需要添加前缀"Hair_"
             var targetCore = self.targetModelInfo['core'];
             if (targetCore.match(/(KunN|JinF|JinM|GonF|GonM|LynF|LynM)_\d+/i) !== null) {
@@ -133,15 +135,7 @@ BstReplace.prototype.processCostume = function() {
             // 获取目标模型核心名（即会被替换掉的）在文件中出现次数，之后可能会用来计算长度差
             var targetCoreCount = self.util.findStrCount(data, self.util.strUtf8ToHex(targetCore));
 
-            // 计算双方核心名的长度差异，因为转换是从目标模型的模型名转换为原始模型的模型名
-            // 这里 delta 是：目标长度 - 原始长度
-            // delta：
-            // = 0：表示双方长度一致，不需要额外操作
-            // < 0：表示目标长度比原始长度短，修改完成文件长度会变长（短改长：需要额外操作删掉upk内部分内容）
-            // > 0：表是目标长度比原始长度长，修改完成文件长度会变短（长改短：需要额外操作以HEX空字符补足长度）
-            var delta = targetCore.length - originCore.length;
-
-            // 拷贝过来的文件内原来的：目标服装模型名 => 改为原始服装的模型名
+            // 拷贝过来的文件内原来的：目标服装模型名 改为 原始服装的模型名
             data = self.util.replaceStrAll(data, self.util.strUtf8ToHex(targetCore), self.util.strUtf8ToHex(originCore));
 
             // 替换各upk的id名，包括texture, material, skeleton
@@ -149,8 +143,28 @@ BstReplace.prototype.processCostume = function() {
             data = self.util.replaceStrAll(data, self.util.strUtf8ToHex(self.targetModelInfo['material']), self.util.strUtf8ToHex(self.originModelInfo['material']));
             data = self.util.replaceStrAll(data, self.util.strUtf8ToHex(self.targetModelInfo['skeleton']), self.util.strUtf8ToHex(self.originModelInfo['skeleton']));
 
+            // 计算双方核心名的长度差异，因为转换是从目标模型的模型名转换为原始模型的模型名
+            // 这里 delta 是：目标长度 - 原始长度
+            // delta：
+            // = 0：表示双方长度一致，不需要额外操作
+            // < 0：表示目标长度比原始长度短，修改完成文件长度会变长（短改长：需要额外操作删掉upk内部分内容）
+            // > 0：表是目标长度比原始长度长，修改完成文件长度会变短（长改短：需要额外操作以HEX空字符补足长度）
+            var delta = (targetCore.length - originCore.length) * targetCoreCount;
+            if (delta < 0) {
+                if (Math.abs(delta) > BstConst.UPK_REPLACE_SHORT_TO_LONG_LIMIT) {
+                    self.grunt.fail.fatal('[BstReplace] Upk replacement exceed the length abs value, from origin core: ' + originCore + ', to target core: ' + targetCore);
+                }
+                var upkFileNameCanbeModified = self.originModelInfo[editPart];
+                var shortenedName = '';
+                for (var i = 0; i < BstConst.UPK_REPLACE_SHORT_TO_LONG_LIMIT + delta; i++) {
+                    shortenedName += '0'; // 改短的占位名无所谓什么内容，用字符串0来占位
+                }
+                data = self.util.replaceStrAll(data, self.util.strUtf8ToHex(upkFileNameCanbeModified), self.util.strUtf8ToHex(shortenedName));
+            } else if (delta > 0) {
+                // TODO
+            }
+
             // 如果是多色模型的material的话，还需要修改当前模型的col
-            var editPart = _.keys(paths.findByVal(editPath)).shift();
             if (editPart === 'material' && 'col1' !== self.targetModelInfo['col']) {
                 data = self.util.replaceStrLast(
                     data,
