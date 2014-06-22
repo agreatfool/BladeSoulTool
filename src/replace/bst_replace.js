@@ -74,10 +74,10 @@ BstReplace.prototype.start = function(part, race, modelId) {
 BstReplace.prototype.process = function() {
     switch (this.part) {
         case BstConst.PART_TYPE_COSTUME:
-            this.processCostume();
+            this.processCostumeAndAttach();
             break;
         case BstConst.PART_TYPE_ATTACH:
-            this.processAttach();
+            this.processCostumeAndAttach();
             break;
         case BstConst.PART_TYPE_WEAPON:
             this.processWeapon();
@@ -87,7 +87,7 @@ BstReplace.prototype.process = function() {
     }
 };
 
-BstReplace.prototype.processCostume = function() {
+BstReplace.prototype.processCostumeAndAttach = function() {
     var self = this;
 
     // 准备目标模型upk路径，并验证存在
@@ -219,10 +219,6 @@ BstReplace.prototype.processCostume = function() {
         self.util.writeFile('./config/backup.json', self.util.formatJson(self.backup));
         self.taskDone();
     });
-};
-
-BstReplace.prototype.processAttach = function() {
-
 };
 
 BstReplace.prototype.processWeapon = function() {
