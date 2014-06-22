@@ -163,6 +163,15 @@ BstUtil.prototype.replaceStrAll = function(str, fromStr, toStr) {
     return str.replace(new RegExp(fromStr, 'g'), toStr);
 };
 
+BstUtil.prototype.findStrCount = function(str, findStr) {
+    var match = str.match(new RegExp(findStr, 'g'));
+    if (match === null) {
+        return 0;
+    } else {
+        return match.length;
+    }
+};
+
 BstUtil.prototype.replaceStrLast = function(str, fromStr, toStr) {
     return str.substr(0, str.lastIndexOf(fromStr)) + toStr + str.substr(str.lastIndexOf(fromStr) + fromStr.length);
 };

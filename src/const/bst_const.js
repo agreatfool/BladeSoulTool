@@ -62,6 +62,8 @@ BstConst.RAW_FILE_TEXTURE = 'raw_texture.json';
 BstConst.RAW_FILE_MATERIAL = 'raw_material.json';
 BstConst.RAW_FILE_MATERIAL_INVALID = 'raw_material_invalid.json';
 
+BstConst.HAIR_UPK_CORE_PREFIX = 'Hair_';
+
 BstConst.UPK_INVALID_TEXTURE_UPK_IDS = [
     '00002620', // Material3：常见于costume类型数据中：core：Material3 Basic
     '00002640', // Texture2D：大量材质相关obj

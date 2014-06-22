@@ -120,21 +120,45 @@ BstReplace.prototype.processCostume = function() {
         }
         self.util.registerAsyncEvent(paths[editKey]);
         self.util.readHexFile(paths[editKey], function(data, editPath) {
+            // 先获取双方的模型核心名，并验证其是否为头发，是头发的话，需要添加前缀"Hair_"
+            var targetCore = self.targetModelInfo['core'];
+            if (targetCore.match(/(KunN|JinF|JinM|GonF|GonM|LynF|LynM)_\d+/i) !== null) {
+                targetCore = BstConst.HAIR_UPK_CORE_PREFIX + targetCore;
+            }
+            var originCore = self.originModelInfo['core'];
+            if (originCore.match(/(KunN|JinF|JinM|GonF|GonM|LynF|LynM)_\d+/i) !== null) {
+                originCore = BstConst.HAIR_UPK_CORE_PREFIX + originCore;
+            }
+
+            // 获取目标模型核心名（即会被替换掉的）在文件中出现次数，之后可能会用来计算长度差
+            var targetCoreCount = self.util.findStrCount(data, self.util.strUtf8ToHex(targetCore));
+
+            // 计算双方核心名的长度差异，因为转换是从目标模型的模型名转换为原始模型的模型名
+            // 这里 delta 是：目标长度 - 原始长度
+            // delta：
+            // = 0：表示双方长度一致，不需要额外操作
+            // < 0：表示目标长度比原始长度短，修改完成文件长度会变长（短改长：需要额外操作删掉upk内部分内容）
+            // > 0：表是目标长度比原始长度长，修改完成文件长度会变短（长改短：需要额外操作以HEX空字符补足长度）
+            var delta = targetCore.length - originCore.length;
+
             // 拷贝过来的文件内原来的：目标服装模型名 => 改为原始服装的模型名
-            data = self.util.replaceStrAll(data, self.util.strUtf8ToHex(self.targetModelInfo['core']), self.util.strUtf8ToHex(self.originModelInfo['core']));
+            data = self.util.replaceStrAll(data, self.util.strUtf8ToHex(targetCore), self.util.strUtf8ToHex(originCore));
+
             // 替换各upk的id名，包括texture, material, skeleton
             data = self.util.replaceStrAll(data, self.util.strUtf8ToHex(self.targetModelInfo['texture']), self.util.strUtf8ToHex(self.originModelInfo['texture']));
             data = self.util.replaceStrAll(data, self.util.strUtf8ToHex(self.targetModelInfo['material']), self.util.strUtf8ToHex(self.originModelInfo['material']));
             data = self.util.replaceStrAll(data, self.util.strUtf8ToHex(self.targetModelInfo['skeleton']), self.util.strUtf8ToHex(self.originModelInfo['skeleton']));
+
             // 如果是多色模型的material的话，还需要修改当前模型的col
             var editPart = _.keys(paths.findByVal(editPath)).shift();
-            if (editPart == 'material' && 'col1' !== self.targetModelInfo['col']) {
+            if (editPart === 'material' && 'col1' !== self.targetModelInfo['col']) {
                 data = self.util.replaceStrLast(
                     data,
                     self.util.strUtf8ToHex(self.targetModelInfo['col']), // 原始：替换目标模型的col
                     self.util.strUtf8ToHex('col1') // 目标：永远是 col1，只允许替换为col1的服装
                 );
             }
+
             // 写入到working文件内
             self.util.writeHexFile(editPath, data);
             self.util.cancelAsyncEvent(editPath);
