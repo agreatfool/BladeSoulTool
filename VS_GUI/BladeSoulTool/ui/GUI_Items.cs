@@ -370,9 +370,9 @@ namespace BladeSoulTool.ui
                 );
                 return;
             }
-            if (this._formType != BstManager.TypeCostume)
+            if (this._formType == BstManager.TypeWeapon) // 只有武器不可替换
             {
-                // FIXME
+                // FIXME 后续制作功能，并开发这个限制
                 BstManager.DisplayErrorMessageBox(
                     this._i18N.LoadI18NValue("GuiItems", "actionFuncNotDoneTitle"),
                     this._i18N.LoadI18NValue("GuiItems", "actionWaitForFuncMsg")
