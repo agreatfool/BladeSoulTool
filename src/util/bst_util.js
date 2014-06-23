@@ -172,6 +172,26 @@ BstUtil.prototype.findStrCount = function(str, findStr) {
     }
 };
 
+BstUtil.prototype.buildSpecialHairCore = function(core) {
+    if (BstConst.HAIR_UPK_SPECIAL_CORES.indexOf(core) !== -1) {
+        core = BstConst.HAIR_UPK_CORE_PREFIX + core;
+    }
+    return core;
+};
+
+BstUtil.prototype.buildHexCoreStrWithHexNull = function(str, additionalHexNullNum) {
+    var base = this.strUtf8ToHex(str);
+
+    if (typeof additionalHexNullNum === 'number') {
+        for (var i = 0; i < additionalHexNullNum; i++) {
+            base += BstConst.UPK_HEX_STR_NULL;
+        }
+    }
+
+    // 这个Hex的null值是本来就需要加的
+    return base + BstConst.UPK_HEX_STR_NULL;
+};
+
 BstUtil.prototype.replaceStrLast = function(str, fromStr, toStr) {
     return str.substr(0, str.lastIndexOf(fromStr)) + toStr + str.substr(str.lastIndexOf(fromStr) + fromStr.length);
 };

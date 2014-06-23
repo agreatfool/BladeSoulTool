@@ -62,8 +62,13 @@ BstConst.RAW_FILE_TEXTURE = 'raw_texture.json';
 BstConst.RAW_FILE_MATERIAL = 'raw_material.json';
 BstConst.RAW_FILE_MATERIAL_INVALID = 'raw_material_invalid.json';
 
+BstConst.HAIR_UPK_SPECIAL_CORES = [
+    'JinM_029', 'JinF_023', 'JinF_020', 'GonF_010', 'KunN_014'
+];
 BstConst.HAIR_UPK_CORE_PREFIX = 'Hair_';
 BstConst.UPK_REPLACE_SHORT_TO_LONG_LIMIT = 8; // upk内容短改长的极限长度，因为是使用当前upk文件名进行短改长的补足，所以最多就8位长度
+BstConst.UPK_CORE_PHYSICS_SUFFIX = '_Physics';
+BstConst.UPK_HEX_STR_NULL = '00';
 
 BstConst.UPK_INVALID_TEXTURE_UPK_IDS = [
     '00002620', // Material3：常见于costume类型数据中：core：Material3 Basic
