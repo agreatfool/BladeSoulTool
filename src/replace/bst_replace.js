@@ -184,15 +184,6 @@ BstReplace.prototype.processCostumeAndAttach = function() {
                 }
                 // 写入文件
                 self.util.writeHexFile(editPath, data);
-            } else if (editPart === 'material' && 'col1' !== self.targetModelInfo['col']) { // FIXME 这步真的还需要么？
-                // 如果是多色模型的material的话，还需要修改当前模型的col
-                data = self.util.replaceStrLast(
-                    data,
-                    self.util.strUtf8ToHex(self.targetModelInfo['col']), // 原始：替换目标模型的col
-                    self.util.strUtf8ToHex('col1') // 目标：永远是 col1，只允许替换为col1的服装
-                );
-                // 写入文件
-                self.util.writeHexFile(editPath, data);
             }
             // 完成操作
             self.util.cancelAsyncEvent(editPath);
