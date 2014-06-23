@@ -43,8 +43,15 @@ BstRestore.prototype.start = function() {
 BstRestore.prototype.processRestore = function() {
     var self = this;
     if (self.backup['restore'].length > 0) {
+        // 恢复文件
         _.each(self.backup['restore'], function(backupPath) {
             self.util.restoreFile(backupPath);
+        });
+        // 删除备份文件
+        _.each(self.backup['restore'], function(backupPath) {
+            var dir = path.dirname(backupPath);
+            self.util.setGruntWorkingDir(dir);
+            self.util.deleteFile(backupPath);
         });
     }
 };
