@@ -67,6 +67,7 @@ BstReplace.prototype.start = function(part, race, modelId) {
             this.grunt.log.writeln('[BstReplace] Origin model info read: ' + this.util.formatJson(this.originModelInfo));
         }
     }
+    this.util.printHr();
 
     this.process();
 };
@@ -105,6 +106,10 @@ BstReplace.prototype.processCostumeAndAttach = function() {
             self.grunt.fail.fatal('[BstReplace] upk file of target model not found, id: ' + self.targetModelInfo[checkKey] + '.upk');
         }
     }
+    // 检查原始模型是否为头发（被替换的目标），如果是的话，材质upk是不需要的
+    if (self.originModelInfo['core'].match(/(KunN|JinF|JinM|GonF|GonM|LynF|LynM)_\d+/i) !== null) {
+        delete paths['material'];
+    }
     self.grunt.log.writeln('[BstReplace] All upk files of target model found: ' + self.util.formatJson(paths));
 
     // 拷贝目标upk到working路径下，并重命名为原始模型的upk名
@@ -113,6 +118,7 @@ BstReplace.prototype.processCostumeAndAttach = function() {
         self.util.copyFile(copyPath, workingPath);
         paths[copyKey] = workingPath;
     });
+    self.util.printHr();
 
     // 修改内容
     for (var editKey in paths) { // skeleton | material
@@ -122,6 +128,7 @@ BstReplace.prototype.processCostumeAndAttach = function() {
         self.util.registerAsyncEvent(paths[editKey]);
         self.util.readHexFile(paths[editKey], function(data, editPath) {
             var editPart = _.keys(paths.findByVal(editPath)).shift(); // skeleton | material
+            self.grunt.log.writeln('[BstReplace] Start to handle "' + editPart + '" file: ' + editPath);
 
             if (editPart === 'skeleton') {
                 // 骨骼内容修改
@@ -131,10 +138,14 @@ BstReplace.prototype.processCostumeAndAttach = function() {
                 // 替换头发的话，有几个模型的规则和普通的不通，需要添加前缀 "Hair_"
                 targetCore = self.util.buildSpecialHairCore(targetCore);
                 originCore = self.util.buildSpecialHairCore(originCore);
+                self.grunt.log.writeln('[BstReplace] Target Core: ' + targetCore);
+                self.grunt.log.writeln('[BstReplace] Origin Core: ' + originCore);
 
                 // 获取目标模型核心名（即会被替换掉的）在文件中出现次数，之后可能会用来计算长度差
                 var targetCoreFoundCount = self.util.findStrCount(data, self.util.buildHexCoreStrWithHexNull(targetCore));
                 var targetCorePhysicsFoundCount = self.util.findStrCount(data, self.util.buildHexCoreStrWithHexNull(targetCore + BstConst.UPK_CORE_PHYSICS_SUFFIX));
+                self.grunt.log.writeln('[BstReplace] Target core found times: ' + targetCoreFoundCount);
+                self.grunt.log.writeln('[BstReplace] Target core with Physics found times: ' + targetCorePhysicsFoundCount);
 
                 // 计算双方核心名的长度差异，因为转换是从目标模型的模型名转换为原始模型的模型名
                 // 这里 delta 是：目标长度 - 原始长度
@@ -143,11 +154,14 @@ BstReplace.prototype.processCostumeAndAttach = function() {
                 // < 0：表示目标长度比原始长度短，修改完成文件长度会变长（短改长：需要额外操作删掉upk内部分内容）
                 // > 0：表是目标长度比原始长度长，修改完成文件长度会变短（长改短：需要额外操作以HEX空字符补足长度）
                 var delta = targetCore.length - originCore.length;
+                self.grunt.log.writeln('[BstReplace] Core delta: ' + delta);
 
                 if (delta == 0) {
+                    self.grunt.log.writeln('[BstReplace] Normal edit ...');
                     data = self.util.replaceStrAll(data, self.util.buildHexCoreStrWithHexNull(targetCore), self.util.buildHexCoreStrWithHexNull(originCore));
                     data = self.util.replaceStrAll(data, self.util.buildHexCoreStrWithHexNull(targetCore + BstConst.UPK_CORE_PHYSICS_SUFFIX), self.util.buildHexCoreStrWithHexNull(originCore + BstConst.UPK_CORE_PHYSICS_SUFFIX));
                 } else if (delta < 0) {
+                    self.grunt.log.writeln('[BstReplace] Short to long edit ...');
                     var shortenLength = Math.abs(delta * (targetCoreFoundCount + targetCorePhysicsFoundCount));
                     if (shortenLength > BstConst.UPK_REPLACE_SHORT_TO_LONG_LIMIT) {
                         self.grunt.fail.fatal('[BstReplace] Upk replacement character length change exceed the limit, from origin core: ' + originCore + ', to target core: ' + targetCore);
@@ -156,19 +170,21 @@ BstReplace.prototype.processCostumeAndAttach = function() {
                     data = self.util.replaceStrAll(data, self.util.buildHexCoreStrWithHexNull(targetCore), self.util.buildHexCoreStrWithHexNull(originCore));
                     data = self.util.replaceStrAll(data, self.util.buildHexCoreStrWithHexNull(targetCore + BstConst.UPK_CORE_PHYSICS_SUFFIX), self.util.buildHexCoreStrWithHexNull(originCore + BstConst.UPK_CORE_PHYSICS_SUFFIX));
                     // 修改长度
-                    var upkFileNameCanbeModified = self.originModelInfo[editPart];
+                    var upkFileNameCanbeModified = self.targetModelInfo[editPart];
                     var shortenedName = '';
                     for (var i = 0; i < BstConst.UPK_REPLACE_SHORT_TO_LONG_LIMIT - shortenLength; i++) {
                         shortenedName += '0'; // 改短的占位名无所谓什么内容，用字符串0来占位
                     }
+                    self.grunt.log.writeln('[BstReplace] Shorten upk file name from: ' + upkFileNameCanbeModified + ', to: ' + shortenedName);
                     data = self.util.replaceStrAll(data, self.util.strUtf8ToHex(upkFileNameCanbeModified), self.util.strUtf8ToHex(shortenedName));
                 } else if (delta > 0) {
+                    self.grunt.log.writeln('[BstReplace] Long to short edit ...');
                     data = self.util.replaceStrAll(data, self.util.buildHexCoreStrWithHexNull(targetCore), self.util.buildHexCoreStrWithHexNull(originCore, delta));
                     data = self.util.replaceStrAll(data, self.util.buildHexCoreStrWithHexNull(targetCore + BstConst.UPK_CORE_PHYSICS_SUFFIX), self.util.buildHexCoreStrWithHexNull(originCore + BstConst.UPK_CORE_PHYSICS_SUFFIX, delta));
                 }
                 // 写入文件
                 self.util.writeHexFile(editPath, data);
-            } else if (editPart === 'material' && 'col1' !== self.targetModelInfo['col']) {
+            } else if (editPart === 'material' && 'col1' !== self.targetModelInfo['col']) { // FIXME 这步真的还需要么？
                 // 如果是多色模型的material的话，还需要修改当前模型的col
                 data = self.util.replaceStrLast(
                     data,
@@ -180,6 +196,7 @@ BstReplace.prototype.processCostumeAndAttach = function() {
             }
             // 完成操作
             self.util.cancelAsyncEvent(editPath);
+            self.util.printHr();
         });
     }
 
