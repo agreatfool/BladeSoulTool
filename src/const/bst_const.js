@@ -23,6 +23,8 @@ BstConst.PART_TYPE_UNRECOGNIZED = 'unrecognized';
 
 BstConst.PATH_PNG_CPS_FAILURE = path.join(process.cwd(), 'database', 'png_cps_failure.json');
 
+BstConst.PATH_TENCENT_SUB_DIR = 'mod';
+
 //------------------------------------------------------------------------
 //- MESH XML
 //------------------------------------------------------------------------

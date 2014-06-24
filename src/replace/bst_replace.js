@@ -183,8 +183,9 @@ BstReplace.prototype.processCostumeAndAttach = function() {
                     data = self.util.replaceStrAll(data, self.util.buildHexCoreStrWithHexNull(targetCore + BstConst.UPK_CORE_PHYSICS_SUFFIX), self.util.buildHexCoreStrWithHexNull(originCore + BstConst.UPK_CORE_PHYSICS_SUFFIX, delta));
                 }
 
-                // 在处理饰品替换的时候，还需要修改骨骼upk文件中的材质upk指向
-                if (self.part === BstConst.PART_TYPE_ATTACH) {
+                // 在处理饰品替换的时候，且原始模型不是头发的时候（原始模型是头发的时候只会改骨骼，所以没有材质upk指向需要替换），还需要修改骨骼upk文件中的材质upk指向
+                if (self.part === BstConst.PART_TYPE_ATTACH
+                    && self.originModelInfo['core'].match(/(KunN|JinF|JinM|GonF|GonM|LynF|LynM)_\d+/i) === null) {
                     // 骨骼文件中的材质upk名都是col1的upk名，所以这里需要将目标模型的col1Material替换成原始模型的material
                     data = self.util.replaceStrAll(data, self.util.strUtf8ToHex(self.targetModelInfo['col1Material']), self.util.strUtf8ToHex(self.originModelInfo['material']));
                 }
@@ -192,11 +193,8 @@ BstReplace.prototype.processCostumeAndAttach = function() {
                 // 写入文件
                 self.util.writeHexFile(editPath, data);
 
-            } else if (self.part === BstConst.PART_TYPE_ATTACH
-                && editPart === 'material'
-                && self.originModelInfo['col'] !== self.targetModelInfo['col']) {
+            } else if (editPart === 'material' && self.originModelInfo['col'] !== self.targetModelInfo['col']) {
 
-                // 虽然这一步在服装修改是不需要的，但是在饰品修改中还是必要的
                 // 如果是多色模型替换的情况，在处理材质upk的时候，还需要将最后一处"core"上面的"colX"从目标模型的值改成原始模型的值
                 data = self.util.replaceStrLast(
                     data,
@@ -222,7 +220,7 @@ BstReplace.prototype.processCostumeAndAttach = function() {
              * 因为只有一层文件夹结构，所以不用担心多层嵌套问题
              */
             if (filename === 'working_dir') { return; } // 忽略占位文件
-            var targetTencentPath = path.join(self.util.getTencentPath(), filename); // 目标文件位置
+            var targetTencentPath = path.join(self.util.getTencentPath(), BstConst.PATH_TENCENT_SUB_DIR, filename); // 目标文件位置
             var targetTencentBackupPath = self.util.getBackupFilePathViaOriginPath(targetTencentPath); // 目标文件的备份位置
             if (self.grunt.file.exists(targetTencentBackupPath)) {
                 // 已经存在备份，直接覆盖。有备份文件，则肯定在backup.json里有数据
