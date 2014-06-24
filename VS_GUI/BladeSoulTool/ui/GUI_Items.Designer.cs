@@ -53,6 +53,10 @@
             this.textBoxInfo = new System.Windows.Forms.TextBox();
             this.labelInfoHead = new System.Windows.Forms.Label();
             this.btnReplace = new System.Windows.Forms.Button();
+            this.textBoxFilter = new System.Windows.Forms.TextBox();
+            this.labelFilter = new System.Windows.Forms.Label();
+            this.btnFilter = new System.Windows.Forms.Button();
+            this.labelRestore = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUmodel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridItems)).BeginInit();
             this.panelTarget.SuspendLayout();
@@ -223,9 +227,9 @@
             // 
             // btnTopRestoreAll
             // 
-            this.btnTopRestoreAll.Location = new System.Drawing.Point(219, 5);
+            this.btnTopRestoreAll.Location = new System.Drawing.Point(714, 4);
             this.btnTopRestoreAll.Name = "btnTopRestoreAll";
-            this.btnTopRestoreAll.Size = new System.Drawing.Size(75, 21);
+            this.btnTopRestoreAll.Size = new System.Drawing.Size(75, 23);
             this.btnTopRestoreAll.TabIndex = 6;
             this.btnTopRestoreAll.UseVisualStyleBackColor = true;
             // 
@@ -302,11 +306,46 @@
             this.btnReplace.TabIndex = 10;
             this.btnReplace.UseVisualStyleBackColor = true;
             // 
-            // GUI_Items
+            // textBoxFilter
+            // 
+            this.textBoxFilter.Location = new System.Drawing.Point(302, 5);
+            this.textBoxFilter.Name = "textBoxFilter";
+            this.textBoxFilter.Size = new System.Drawing.Size(118, 21);
+            this.textBoxFilter.TabIndex = 11;
+            // 
+            // labelFilter
+            // 
+            this.labelFilter.Location = new System.Drawing.Point(221, 5);
+            this.labelFilter.Name = "labelFilter";
+            this.labelFilter.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.labelFilter.Size = new System.Drawing.Size(75, 20);
+            this.labelFilter.TabIndex = 12;
+            // 
+            // btnFilter
+            // 
+            this.btnFilter.Location = new System.Drawing.Point(434, 4);
+            this.btnFilter.Name = "btnFilter";
+            this.btnFilter.Size = new System.Drawing.Size(75, 23);
+            this.btnFilter.TabIndex = 13;
+            this.btnFilter.UseVisualStyleBackColor = true;
+            // 
+            // labelRestore
+            // 
+            this.labelRestore.Location = new System.Drawing.Point(620, 5);
+            this.labelRestore.Name = "labelRestore";
+            this.labelRestore.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.labelRestore.Size = new System.Drawing.Size(88, 20);
+            this.labelRestore.TabIndex = 14;
+            // 
+            // GuiItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1177, 742);
+            this.Controls.Add(this.labelRestore);
+            this.Controls.Add(this.btnFilter);
+            this.Controls.Add(this.labelFilter);
+            this.Controls.Add(this.textBoxFilter);
             this.Controls.Add(this.btnReplace);
             this.Controls.Add(this.panelInfo);
             this.Controls.Add(this.textBoxOut);
@@ -361,6 +400,10 @@
         private System.Windows.Forms.TextBox textBoxTarget;
         private System.Windows.Forms.Button btnView2DOrigin;
         private System.Windows.Forms.Button btnView2DTarget;
+        private System.Windows.Forms.TextBox textBoxFilter;
+        private System.Windows.Forms.Label labelFilter;
+        private System.Windows.Forms.Button btnFilter;
+        private System.Windows.Forms.Label labelRestore;
         
 
     }

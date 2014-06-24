@@ -51,6 +51,9 @@ namespace BladeSoulTool.ui
             this.btnSelectOrigin.Text = this._i18N.LoadI18NValue("GuiItems", "btnSelectOrigin");
             this.labelInfoHead.Text = this._i18N.LoadI18NValue("GuiItems", "labelInfoHead");
             this.btnReplace.Text = this._i18N.LoadI18NValue("GuiItems", "btnReplace");
+            this.labelRestore.Text = this._i18N.LoadI18NValue("GuiItems", "labelRestore");
+            this.labelFilter.Text = this._i18N.LoadI18NValue("GuiItems", "labelFilter");
+            this.btnFilter.Text = this._i18N.LoadI18NValue("GuiItems", "btnFilter");
         }
 
         private void Init(int formType)
@@ -92,6 +95,9 @@ namespace BladeSoulTool.ui
             this.comboBoxRace.Items.AddRange(BstManager.Instance.RaceNames.ToArray());
             this.comboBoxRace.SelectedIndex = 0;
             this.comboBoxRace.SelectedIndexChanged += new EventHandler(this.comboBoxRace_SelectedIndexChanged);
+
+            // 查找模型控件
+            this.btnFilter.Click += new EventHandler(this.btnFilter_Click);
 
             // 全部恢复按钮
             this.btnTopRestoreAll.Click += new EventHandler(this.btnTopRestoreAll_Click);
@@ -266,6 +272,13 @@ namespace BladeSoulTool.ui
         {
             // 重新选择种族，即重新加载界面
             this.LoadItemList(this.comboBoxRace.SelectedIndex);
+        }
+
+        private void btnFilter_Click(Object sender, EventArgs e)
+        {
+            // 查找模型
+            var targetModelCode = this.textBoxFilter.Text;
+            Console.WriteLine(targetModelCode);
         }
 
         private void btnTopRestoreAll_Click(Object sender, EventArgs e)
