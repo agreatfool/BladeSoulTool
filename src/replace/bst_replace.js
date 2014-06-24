@@ -130,8 +130,8 @@ BstReplace.prototype.processCostumeAndAttach = function() {
             var editPart = _.keys(paths.findByVal(editPath)).shift(); // skeleton | material
             self.grunt.log.writeln('[BstReplace] Start to handle "' + editPart + '" file: ' + editPath);
 
-            if (editPart === 'skeleton') {
-                // 骨骼内容修改
+            if (editPart === 'skeleton') { // 骨骼内容修改
+
                 var targetCore = self.targetModelInfo['core'];
                 var originCore = self.originModelInfo['core'];
 
@@ -182,9 +182,32 @@ BstReplace.prototype.processCostumeAndAttach = function() {
                     data = self.util.replaceStrAll(data, self.util.buildHexCoreStrWithHexNull(targetCore), self.util.buildHexCoreStrWithHexNull(originCore, delta));
                     data = self.util.replaceStrAll(data, self.util.buildHexCoreStrWithHexNull(targetCore + BstConst.UPK_CORE_PHYSICS_SUFFIX), self.util.buildHexCoreStrWithHexNull(originCore + BstConst.UPK_CORE_PHYSICS_SUFFIX, delta));
                 }
+
+                // 在处理饰品替换的时候，还需要修改骨骼upk文件中的材质upk指向
+                if (self.part === BstConst.PART_TYPE_ATTACH) {
+                    // 骨骼文件中的材质upk名都是col1的upk名，所以这里需要将目标模型的col1Material替换成原始模型的material
+                    data = self.util.replaceStrAll(data, self.util.strUtf8ToHex(self.targetModelInfo['col1Material']), self.util.strUtf8ToHex(self.originModelInfo['material']));
+                }
+
                 // 写入文件
                 self.util.writeHexFile(editPath, data);
+
+            } else if (self.part === BstConst.PART_TYPE_ATTACH
+                && editPart === 'material'
+                && self.originModelInfo['col'] !== self.targetModelInfo['col']) {
+
+                // 虽然这一步在服装修改是不需要的，但是在饰品修改中还是必要的
+                // 如果是多色模型替换的情况，在处理材质upk的时候，还需要将最后一处"core"上面的"colX"从目标模型的值改成原始模型的值
+                data = self.util.replaceStrLast(
+                    data,
+                    self.util.strUtf8ToHex(self.targetModelInfo['col']),
+                    self.util.strUtf8ToHex(self.originModelInfo['col'])
+                );
+                // 写入文件
+                self.util.writeHexFile(editPath, data);
+
             }
+
             // 完成操作
             self.util.cancelAsyncEvent(editPath);
             self.util.printHr();
