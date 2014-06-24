@@ -278,7 +278,43 @@ namespace BladeSoulTool.ui
         {
             // 查找模型
             var targetModelCode = this.textBoxFilter.Text;
-            Console.WriteLine(targetModelCode);
+            if (String.IsNullOrEmpty(targetModelCode))
+            {
+                return; // 查找字符串未空，忽略
+            }
+
+            // 决定开始查找行，查找行为只会顺序向下查找，不会回归到第一行
+            var startRowIndex = 0;
+            if (this.gridItems.SelectedRows.Count > 0) // 如果有选中的行，则从选中那行之后开始查找
+            {
+                Console.WriteLine("Has selected items ...");
+                startRowIndex = this.gridItems.SelectedRows[0].Index + 1;
+                if (startRowIndex > this.gridItems.RowCount - 1)
+                {
+                    startRowIndex = this.gridItems.RowCount - 1;
+                }
+            }
+
+            for (var i = startRowIndex; i < this.gridItems.RowCount - 1; i++)
+            {
+                var elementId = (string) this.gridItems.Rows[i].Cells[1].Value;
+                var elementData = (JObject) this._data[elementId];
+                var core = (string) elementData["core"];
+                if (System.Text.RegularExpressions.Regex.IsMatch(core, targetModelCode))
+                {
+                    // 数据展示列表的点击事件
+                    this.gridItems.Rows[i].Selected = true;
+                    this.gridItems.Refresh();
+                    // 更新查找到的内容对应的数据
+                    this._selectedElementId = elementId;
+                    this.textBoxInfo.Text = elementData.ToString();
+                    // 模型截图控件
+                    BstPicLoader.LoadPic(this._formType, elementData, pictureBoxUmodel, this.textBoxOut);
+                    // 更新列表展示位置
+                    this.gridItems.FirstDisplayedScrollingRowIndex = i;
+                    break;
+                }
+            }
         }
 
         private void btnTopRestoreAll_Click(Object sender, EventArgs e)
