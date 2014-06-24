@@ -235,17 +235,17 @@ namespace BladeSoulTool.lib
 
         public static void DisplayErrorMessageBox(string boxTitle, string boxMsg)
         {
-            MessageBox.Show(boxMsg, boxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(App.Instance, boxMsg, boxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         public static DialogResult DisplayConfirmMessageBox(string boxTitle, string boxMsg)
         {
-            return MessageBox.Show(boxMsg, boxTitle, MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            return MessageBox.Show(App.Instance, boxMsg, boxTitle, MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
         }
 
         public static DialogResult DisplayInfoMessageBox(string boxTitle, string boxMsg)
         {
-            return MessageBox.Show(boxMsg, boxTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            return MessageBox.Show(App.Instance, boxMsg, boxTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public static void HideDataGridViewVerticalScrollBar(DataGridView grid)

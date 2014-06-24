@@ -10,6 +10,20 @@ namespace BladeSoulTool
 {
     public partial class App : Form
     {
+        private static App _instance;
+
+        public static App Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new App();
+                }
+                return _instance;
+            }
+        }
+
         private Form _formCostume;
         private Form _formAttach;
         private Form _formWeapon;
@@ -17,7 +31,7 @@ namespace BladeSoulTool
 
         private BstI18NLoader _i18N;
 
-        public App()
+        private App()
         {
             InitializeComponent();
 
