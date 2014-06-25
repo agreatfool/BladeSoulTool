@@ -45,6 +45,8 @@ namespace BladeSoulTool.lib
         public const int TypeWeapon = 2;
         public const int TypeUtil = 3;
 
+        public readonly string[] Types = {"costume", "attach", "weapon"};
+
         public const string PathRoot = "../../../../";
         public const string PathConfig = "config/";
         public const string PathDatabase = "database/";

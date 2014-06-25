@@ -5,14 +5,19 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Text;
+using System.Threading;
 using System.Windows.Forms;
 using BladeSoulTool.lib;
+using Newtonsoft.Json.Linq;
+using Timer = System.Timers.Timer;
 
 namespace BladeSoulTool.ui
 {
     public partial class GuiUtil : Form
     {
         private BstI18NLoader _i18N;
+
+        private Thread _loadingThread;
 
         public GuiUtil()
         {
@@ -27,6 +32,9 @@ namespace BladeSoulTool.ui
             this.labelSelectGameDir.Text = this._i18N.LoadI18NValue("GuiUtil", "labelSelectGameDir");
             this.btnSelectGameDir.Text = this._i18N.LoadI18NValue("GuiUtil", "btnSelectGameDir");
             this.labelSelectLang.Text = this._i18N.LoadI18NValue("GuiUtil", "labelSelectLang");
+            this.labelDownloadAll.Text = this._i18N.LoadI18NValue("GuiUtil", "labelDownloadAll");
+            this.btnDownloadAll.Text = this._i18N.LoadI18NValue("GuiUtil", "btnDownloadAll");
+            this.btnStopDownload.Text = this._i18N.LoadI18NValue("GuiUtil", "btnStopDownload");
         }
 
         private void Init()
@@ -44,8 +52,16 @@ namespace BladeSoulTool.ui
             // license文字内容
             this.textBoxLicense.Text = string.Format(this._i18N.LoadI18NValue("GuiUtil", "license"), BstManager.ReleaseUrl17173);
 
-            // 选择游戏安装路径
-            this.btnSelectGameDir.Click += new EventHandler(btnSelectGameDir_Click);
+            // 选择游戏安装路径控件
+            this.btnSelectGameDir.Click += new EventHandler(this.btnSelectGameDir_Click);
+
+            // 下载所有图片资源控件
+            this.btnDownloadAll.Click += new EventHandler(this.btnDownloadAll_Click);
+            this.btnStopDownload.Click += new EventHandler(this.btnStopDownload_Click);
+
+            // 进度条
+            this.progBarDownloadAll.Maximum = (BstManager.Instance.DataAttach.Count + BstManager.Instance.DataCostume.Count + BstManager.Instance.DataWeapon.Count) * 2;
+            this.progBarDownloadAll.Value = 0;
         }
 
         private void btnSelectGameDir_Click(Object sender, EventArgs e)
@@ -71,6 +87,131 @@ namespace BladeSoulTool.ui
                     BstManager.Instance.SystemSettings["path"]["game"] = path;
                     BstManager.WriteJsonFile(BstManager.PathJsonSettings, BstManager.Instance.SystemSettings);
                 }
+            }
+        }
+
+        private void btnDownloadAll_Click(Object sender, EventArgs e)
+        {
+            if (this._loadingThread != null && this._loadingThread.IsAlive)
+            {
+                return; // 之前启动的加载线程还活着
+            }
+            this._loadingThread = new Thread(this.DownloadAllImageResources) { IsBackground = true };
+            this._loadingThread.Start();
+        }
+
+        private void btnStopDownload_Click(Object sender, EventArgs e)
+        {
+            if (this._loadingThread != null && this._loadingThread.IsAlive)
+            {
+                try
+                {
+                    this._loadingThread.Abort();
+                }
+                catch (Exception ex)
+                {
+                    BstLogger.Instance.Log(ex.ToString());
+                }
+                this._loadingThread = null;
+                BstManager.ShowMsgInTextBox(this.textBoxOut, this._i18N.LoadI18NValue("GuiUtil", "downloadStopped"));
+            }
+            this.UpdateDownloadProgressBar(0); // 更新进度条为0
+        }
+
+        private void DownloadAllImageResources()
+        {
+            var finishedCount = 0;
+            var types = BstManager.Instance.Types;
+
+            foreach (var type in types)
+            {
+                JObject data = null;
+                switch (Array.IndexOf(types, type))
+                {
+                    case BstManager.TypeAttach:
+                        data = BstManager.Instance.DataAttach;
+                        break;
+                    case BstManager.TypeCostume:
+                        data = BstManager.Instance.DataCostume;
+                        break;
+                    case BstManager.TypeWeapon:
+                        data = BstManager.Instance.DataWeapon;
+                        break;
+                }
+
+                foreach (var element in data.Properties())
+                {
+                    var elementData = (JObject) element.Value;
+                    var iconUrl = BstManager.GetIconPicUrl(elementData);
+                    var iconTmpPath = BstManager.GetIconPicTmpPath(elementData);
+                    var itemPicUrl = BstManager.GetItemPicUrl(Array.IndexOf(types, type), elementData);
+                    var itemPicTmpPath = BstManager.GetItemPicTmpPath(Array.IndexOf(types, type), elementData);
+
+                    if (File.Exists(iconTmpPath))
+                    {
+                        // 无需下载
+                        BstManager.ShowMsgInTextBox(this.textBoxOut, string.Format(this._i18N.LoadI18NValue("BstIconLoader", "iconDownloadSucceed"), iconUrl));
+                    }
+                    else
+                    {
+                        var icon = BstManager.DownloadImageFile(iconUrl, iconTmpPath);
+                        if (icon == null)
+                        {
+                            // 下载失败
+                            BstManager.ShowMsgInTextBox(this.textBoxOut, string.Format(this._i18N.LoadI18NValue("BstIconLoader", "iconDownloadFailed"), iconUrl));
+                        }
+                        else
+                        {
+                            // 下载成功
+                            BstManager.ShowMsgInTextBox(this.textBoxOut, string.Format(this._i18N.LoadI18NValue("BstIconLoader", "iconDownloadSucceed"), iconUrl));
+                        }
+                    }
+
+                    if (File.Exists(itemPicTmpPath))
+                    {
+                        // 无需下载
+                        BstManager.ShowMsgInTextBox(this.textBoxOut, string.Format(this._i18N.LoadI18NValue("BstPicLoader", "picDownloadSucceed"), itemPicUrl));
+                    }
+                    else
+                    {
+                        var pic = BstManager.DownloadImageFile(itemPicUrl, itemPicTmpPath);
+                        if (pic == null)
+                        {
+                            // 下载失败
+                            BstManager.ShowMsgInTextBox(this.textBoxOut, string.Format(this._i18N.LoadI18NValue("BstPicLoader", "picDownloadFailed"), itemPicUrl));
+                        }
+                        else
+                        {
+                            // 下载成功
+                            BstManager.ShowMsgInTextBox(this.textBoxOut, string.Format(this._i18N.LoadI18NValue("BstPicLoader", "picDownloadSucceed"), itemPicUrl));
+                        }
+                    }
+
+                    finishedCount += 2;
+                    if (finishedCount >= this.progBarDownloadAll.Maximum)
+                    {
+                        this.UpdateDownloadProgressBar(0);
+                        BstManager.ShowMsgInTextBox(this.textBoxOut, this._i18N.LoadI18NValue("GuiUtil", "downloadAllDone"));
+                    }
+                    else
+                    {
+                        this.UpdateDownloadProgressBar(finishedCount);
+                    }
+                }
+            }
+        }
+
+        delegate void SetValueCallback(int value);
+        private void UpdateDownloadProgressBar(int value)
+        {
+            if (this.progBarDownloadAll.InvokeRequired)
+            {
+                var d = new SetValueCallback(UpdateDownloadProgressBar);
+                this.Invoke(d, new object[] { value });
+            }
+            else
+            {
+                this.progBarDownloadAll.Value = value;
             }
         }
 

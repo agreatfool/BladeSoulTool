@@ -35,6 +35,10 @@
             this.textBoxLicense = new System.Windows.Forms.TextBox();
             this.labelSelectLang = new System.Windows.Forms.Label();
             this.comboBoxSelectLang = new System.Windows.Forms.ComboBox();
+            this.labelDownloadAll = new System.Windows.Forms.Label();
+            this.progBarDownloadAll = new System.Windows.Forms.ProgressBar();
+            this.btnDownloadAll = new System.Windows.Forms.Button();
+            this.btnStopDownload = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelSelectGameDir
@@ -89,7 +93,7 @@
             this.labelSelectLang.AutoSize = true;
             this.labelSelectLang.Location = new System.Drawing.Point(973, 14);
             this.labelSelectLang.Name = "labelSelectLang";
-            this.labelSelectLang.Size = new System.Drawing.Size(65, 12);
+            this.labelSelectLang.Size = new System.Drawing.Size(0, 12);
             this.labelSelectLang.TabIndex = 5;
             // 
             // comboBoxSelectLang
@@ -100,11 +104,46 @@
             this.comboBoxSelectLang.Size = new System.Drawing.Size(121, 20);
             this.comboBoxSelectLang.TabIndex = 6;
             // 
+            // labelDownloadAll
+            // 
+            this.labelDownloadAll.Location = new System.Drawing.Point(10, 38);
+            this.labelDownloadAll.Name = "labelDownloadAll";
+            this.labelDownloadAll.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.labelDownloadAll.Size = new System.Drawing.Size(115, 23);
+            this.labelDownloadAll.TabIndex = 7;
+            // 
+            // progBarDownloadAll
+            // 
+            this.progBarDownloadAll.Location = new System.Drawing.Point(136, 38);
+            this.progBarDownloadAll.Name = "progBarDownloadAll";
+            this.progBarDownloadAll.Size = new System.Drawing.Size(577, 23);
+            this.progBarDownloadAll.TabIndex = 8;
+            // 
+            // btnDownloadAll
+            // 
+            this.btnDownloadAll.Location = new System.Drawing.Point(720, 38);
+            this.btnDownloadAll.Name = "btnDownloadAll";
+            this.btnDownloadAll.Size = new System.Drawing.Size(75, 23);
+            this.btnDownloadAll.TabIndex = 9;
+            this.btnDownloadAll.UseVisualStyleBackColor = true;
+            // 
+            // btnStopDownload
+            // 
+            this.btnStopDownload.Location = new System.Drawing.Point(801, 38);
+            this.btnStopDownload.Name = "btnStopDownload";
+            this.btnStopDownload.Size = new System.Drawing.Size(75, 23);
+            this.btnStopDownload.TabIndex = 10;
+            this.btnStopDownload.UseVisualStyleBackColor = true;
+            // 
             // GuiUtil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1177, 742);
+            this.Controls.Add(this.btnStopDownload);
+            this.Controls.Add(this.btnDownloadAll);
+            this.Controls.Add(this.progBarDownloadAll);
+            this.Controls.Add(this.labelDownloadAll);
             this.Controls.Add(this.comboBoxSelectLang);
             this.Controls.Add(this.labelSelectLang);
             this.Controls.Add(this.textBoxLicense);
@@ -128,6 +167,10 @@
         private System.Windows.Forms.TextBox textBoxLicense;
         private System.Windows.Forms.Label labelSelectLang;
         private System.Windows.Forms.ComboBox comboBoxSelectLang;
+        private System.Windows.Forms.Label labelDownloadAll;
+        private System.Windows.Forms.ProgressBar progBarDownloadAll;
+        private System.Windows.Forms.Button btnDownloadAll;
+        private System.Windows.Forms.Button btnStopDownload;
 
 
     }
