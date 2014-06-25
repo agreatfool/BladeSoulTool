@@ -37,8 +37,7 @@ namespace BladeSoulTool.lib
         public const int RaceIdJinm = 2;
         public const int RaceIdGonf = 3;
         public const int RaceIdGonm = 4;
-        public const int RaceIdLynf = 5;
-        public const int RaceIdLynm = 6;
+        public const int RaceIdLyn = 5;
 
         public const int TypeCostume = 0;
         public const int TypeAttach = 1;
@@ -120,7 +119,7 @@ namespace BladeSoulTool.lib
             this.RaceTypes = new List<string>();
             this.RaceTypes.AddRange(new string[] 
             {
-                "KunN", "JinF", "JinM", "GonF", "GonM", "LynF", "LynM"
+                "KunN", "JinF", "JinM", "GonF", "GonM", "Lyn"
             });
 
             this.LanguageNames = new List<string>();
@@ -177,7 +176,9 @@ namespace BladeSoulTool.lib
             {
                 var elementId = element.Name;
                 var elementData = (JObject) element.Value;
-                if ((string) elementData["race"] == raceType) 
+                var race = (string) elementData["race"];
+                if (race == raceType
+                    || System.Text.RegularExpressions.Regex.IsMatch(race, raceType, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                 {
                     filtered.Add(elementId, elementData);
                 }
@@ -198,7 +199,9 @@ namespace BladeSoulTool.lib
             {
                 var elementId = element.Name;
                 var elementData = (JObject) element.Value;
-                if ((string) elementData["race"] == raceType)
+                var race = (string) elementData["race"];
+                if (race == raceType
+                    || System.Text.RegularExpressions.Regex.IsMatch(race, raceType, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                 {
                     filtered.Add(elementId, elementData);
                 }
