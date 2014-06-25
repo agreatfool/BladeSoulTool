@@ -92,7 +92,8 @@ namespace BladeSoulTool
             new Thread(() =>
             {
                 var releasedVer = BstManager.GetStringFromWeb(BstManager.GithubVersionTxt);
-                if (currentVer != releasedVer)
+                // releasedVer是从网络下载的，在网络无法访问或下载失败的情况下，可能为null，需要做验证
+                if (!String.IsNullOrEmpty(releasedVer) && currentVer != releasedVer)
                 {
                     var result = BstManager.DisplayConfirmMessageBox(
                         this._i18N.LoadI18NValue("App", "newVerTitle"),
