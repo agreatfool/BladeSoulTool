@@ -160,6 +160,7 @@ BstUtil.prototype.readHexFile = function(path, callback) {
 };
 
 BstUtil.prototype.replaceStrAll = function(str, fromStr, toStr) {
+    this.grunt.log.writeln('[BstUtil] Replace string all appearance from: ' + fromStr + ', to: ' + toStr);
     return str.replace(new RegExp(fromStr, 'g'), toStr);
 };
 
@@ -193,6 +194,7 @@ BstUtil.prototype.buildHexCoreStrWithHexNull = function(str, additionalHexNullNu
 };
 
 BstUtil.prototype.replaceStrLast = function(str, fromStr, toStr) {
+    this.grunt.log.writeln('[BstUtil] Replace string last appearance from: ' + fromStr + ', to: ' + toStr);
     return str.substr(0, str.lastIndexOf(fromStr)) + toStr + str.substr(str.lastIndexOf(fromStr) + fromStr.length);
 };
 
