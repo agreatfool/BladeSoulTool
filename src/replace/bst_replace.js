@@ -21,6 +21,9 @@ var BstReplace = function(grunt, done) {
 
     this.backup = this.util.readJsonFile('./config/backup.json');
 
+    this.dataCollection = {}; // 改模的数据总集：./database/' + this.part + '/data/data.json
+    this.modelIds = []; // 上述数据集合的键值数组
+
     this.part = null; // 当前替换的是哪个部分的模型：costume、attach、weapon
     this.targetModelInfo = {}; // 目标模型数据，来自：database/[costume|attach|weapon]/data/data.json
     this.originModelInfo = {}; // 原始模型数据，来自：database/[costume|attach|weapon]/data/origin.json
@@ -35,14 +38,14 @@ BstReplace.prototype.start = function(part, race, modelId) {
     this.util.partTypeCheck(part);
 
     this.part = part;
-    var dataCollection = this.util.readJsonFile('./database/' + this.part + '/data/data.json');
-    var modelIds = _.keys(dataCollection);
+    this.dataCollection = this.util.readJsonFile('./database/' + this.part + '/data/data.json');
+    this.modelIds = _.keys(this.dataCollection);
 
     // 确定替换目标模型数据
-    if (!modelIds.indexOf(modelId)) {
+    if (!this.modelIds.indexOf(modelId)) {
         this.grunt.fail.fatal('[BstReplace] Invalid target model id specified: ' + modelId);
     } else {
-        this.targetModelInfo = dataCollection[modelId];
+        this.targetModelInfo = this.dataCollection[modelId];
         this.grunt.log.writeln('[BstReplace] Target model info read: ' + this.util.formatJson(this.targetModelInfo));
     }
 
@@ -103,7 +106,7 @@ BstReplace.prototype.processCostumeAndAttach = function() {
         }
         if (paths[checkKey] === null) {
             // 如果upk没找到，直接失败，并报错给子进程，这样才能返回信息给客户端
-            self.grunt.fail.fatal('[BstReplace] upk file of target model not found, id: ' + self.targetModelInfo[checkKey] + '.upk');
+            self.grunt.fail.fatal('[BstReplace] Upk file of target model not found, id: ' + self.targetModelInfo[checkKey] + '.upk');
         }
     }
     // 检查原始模型是否为头发（被替换的目标），如果是的话，材质upk是不需要的
@@ -119,6 +122,33 @@ BstReplace.prototype.processCostumeAndAttach = function() {
         paths[copyKey] = workingPath;
     });
     self.util.printHr();
+
+    // 检查原始模型为多色的情况
+    var colMatch = self.originModelInfo['col'].match(/^col(\d+)/i);
+    if (self.originModelInfo['core'].match(/(KunN|JinF|JinM|GonF|GonM|LynF|LynM)_\d+/i) === null // 头发不需要做这步检查
+        && colMatch !== null && parseInt(colMatch[1]) > 1) {
+        var multiColMaterialIds = {}; // colX => material upk id
+        // 是多色
+        self.grunt.log.writeln('[BstReplace] Origin model is multi color status, col: ' + self.originModelInfo['col']);
+        // 查找相同core的模型
+        var filtered = _.filter(self.dataCollection, function(element) { // filtered里面肯定有东西，至少原始模型自己在里面
+            return element['core'] === self.originModelInfo['core'];
+        });
+        _.each(filtered, function(element) {
+            if (element['material'] !== self.originModelInfo['material']) { // 非当前原始模型
+                multiColMaterialIds[element['col']] = element['material'];
+            }
+        });
+        self.grunt.log.writeln('[BstReplace] Origin model related other col materials: ' + self.util.formatJson(multiColMaterialIds));
+        multiColMaterialIds = _.values(multiColMaterialIds); // 重新获取所有的路径，后续工作只需要路径
+        // 拷贝并重命名目标模型材质文件为原始模型的多色材质名
+        var targetMaterialPath = self.util.findUpkPath(self.targetModelInfo['material']); // 路径在之前已经验证过了，这里不需要再验证
+        _.each(multiColMaterialIds, function(multiMaterialUpkId) {
+            var workingPath = path.join('working', multiMaterialUpkId + '.upk');
+            self.util.copyFile(targetMaterialPath, workingPath);
+        });
+        self.util.printHr();
+    }
 
     // 修改内容
     for (var editKey in paths) { // skeleton | material

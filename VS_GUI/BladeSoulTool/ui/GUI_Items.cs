@@ -477,16 +477,6 @@ namespace BladeSoulTool.ui
                 return; // 没有选中的元素，直接退出
             }
             var element = (JObject) this._data[this._selectedElementId];
-            // 只有col1的模型才可以被设为原始模型
-            var col = (string) element["col"];
-            if (col != "col1")
-            {
-                BstManager.DisplayErrorMessageBox(
-                    this._i18N.LoadI18NValue("GuiItems", "actionSelectErrorTitle"),
-                    this._i18N.LoadI18NValue("GuiItems", "actionOnlyCol1DataMsg")
-                );
-                return;
-            }
             this._originElementId = this._selectedElementId;
             // 展示icon，该icon应该已经有本地缓存，直接读取本地缓存
             this.LoadOriginAndTargetIconPic(this.pictureBoxOrigin, element);
