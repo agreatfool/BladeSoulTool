@@ -489,7 +489,12 @@ namespace BladeSoulTool.ui
             if (this._formType == BstManager.TypeAttach
                 || this._formType == BstManager.TypeCostume)
             {
-                this._originSettings[(string) element["race"]] = originData;
+                var originRace = (string) element["race"];
+                if (System.Text.RegularExpressions.Regex.IsMatch(originRace, BstManager.Instance.RaceTypes[BstManager.RaceIdLyn], System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                {
+                    originRace = BstManager.Instance.RaceTypes[BstManager.RaceIdLyn];
+                }
+                this._originSettings[originRace] = originData;
             }
             else
             {
