@@ -5,7 +5,7 @@ class Issues extends \Phalcon\Mvc\Model
 
     /**
      *
-     * @var integer
+     * @var string
      */
     public $id;
 
@@ -34,6 +34,12 @@ class Issues extends \Phalcon\Mvc\Model
     public $console;
 
     /**
+     *
+     * @var integer
+     */
+    public $solved;
+
+    /**
      * Independent Column Mapping.
      */
     public function columnMap()
@@ -43,7 +49,8 @@ class Issues extends \Phalcon\Mvc\Model
             'ip' => 'ip', 
             'origin' => 'origin', 
             'target' => 'target', 
-            'console' => 'console'
+            'console' => 'console', 
+            'solved' => 'solved'
         );
     }
 
