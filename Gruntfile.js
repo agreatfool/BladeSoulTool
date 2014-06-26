@@ -123,6 +123,7 @@ module.exports = function(grunt) {
                     "expand": true,
                     "src": [
                         "**", // including all files first
+                        "!server", // exclude all server codes
                         "!**/.DS_Store", // exclude MAC Finder dirs
                         "!**/Thumbs.db", // exclude Thumbs.db files
                         "!run.bat", // exclude run.bat file
