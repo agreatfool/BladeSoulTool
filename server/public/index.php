@@ -7,25 +7,40 @@ try {
     /**
      * Read the configuration
      */
-    $config = include __DIR__ . "/../app/config/config.php";
+    $config = include __DIR__ . "/../config/config.php";
 
     /**
-     * Read auto-loader
+     * Include Services
      */
-    include __DIR__ . "/../app/config/loader.php";
+    include __DIR__ . '/../config/services.php';
 
     /**
-     * Read services
+     * Include Autoloader
      */
-    include __DIR__ . "/../app/config/services.php";
+    include __DIR__ . '/../config/loader.php';
+
+    /**
+     * Starting the application
+    */
+    $app = new \Phalcon\Mvc\Micro();
+
+    /**
+     * Assign service locator to the application
+     */
+    $app->setDi($di);
+
+    /**
+     * Incude Application
+     */
+    include __DIR__ . '/../app.php';
 
     /**
      * Handle the request
      */
-    $application = new \Phalcon\Mvc\Application($di);
+    $app->handle();
 
-    echo $application->handle()->getContent();
-
-} catch (\Exception $e) {
+} catch (Phalcon\Exception $e) {
+    echo $e->getMessage();
+} catch (PDOException $e) {
     echo $e->getMessage();
 }
