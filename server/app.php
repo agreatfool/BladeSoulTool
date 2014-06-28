@@ -38,6 +38,15 @@ $app->map('/issues/page/{page:[0-9]+}', function ($page) use ($app) {
         )
     ))->toArray());
 });
+/**
+ * TODO
+ * 单独做一个搜索入口，需要auth，专门做一个单独的template来显示这个搜索结果页面
+ * 此外，需要稍微看下模板引擎，如何将layout拆出来，不要每个页面都单独写自己的script head标签
+ * angular这边需要做一个展示页面用来展示issue的细节（模态窗口？）、分页功能
+ * 此外还需要添加一个mark solved的功能入口
+ * ---
+ * 进游戏的时候upk重复的情况那个弹窗，需要截图
+ */
 
 /**
  * Create issue
