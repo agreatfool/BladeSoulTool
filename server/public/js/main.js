@@ -1,0 +1,84 @@
+'use strict';
+
+var app = angular.module('Bst', [
+    'ngRoute', 'ui.bootstrap',
+    'Bst.Controllers', 'Bst.Services'
+]);
+app.config(['$routeProvider', function($routeProvider) {
+    $routeProvider.otherwise({redirectTo: '/'});
+}]);
+
+//-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+//- CONTROLLERS
+//-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+var controllers = angular.module('Bst.Controllers', []);
+controllers.controller('BstIndexCtrl', [
+    '$scope', 'BstService',
+function ($scope, service) {
+    $scope.listOnPage = [];
+    service.loadListOfPage(1).then(function(list) {
+        console.log(list);
+        $scope.listOnPage = list;
+    });
+}]);
+
+//-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+//- SERVICES
+//-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+var services = angular.module('Bst.Services', []);
+services.factory('BstService', ['$http', '$q', '$location', function($http, $q, $location) {
+    var list = {}; // pageId => listOnPage
+
+    var loadListOfPage = function(page) {
+        var deferred = $q.defer();
+        if (list.hasOwnProperty(page)) {
+            deferred.resolve(list[page]);
+        } else {
+            $http({
+                method: 'GET',
+                url: 'issues/page/' + page + '?token=' + getUrlVars()['token'],
+                headers: {'Content-type': 'application/x-www-form-urlencoded'}
+            }).success(function(result) {
+                if (typeof result !== 'undefined' && result !== null && result.length > 0) {
+                    _.each(result, function(row, rowIndex) {
+                        result[rowIndex]['origin'] = angular.fromJson(row['origin']);
+                        result[rowIndex]['target'] = angular.fromJson(row['target']);
+                        result[rowIndex]['time'] = row['time'] * 1000;
+                    });
+                    _.sortBy(result, function(row) {
+                        return parseInt(row['time']);
+                    });
+                    deferred.resolve(result);
+                } else {
+                    deferred.reject([]);
+                }
+            });
+        }
+        return deferred.promise;
+    };
+
+    return {
+        'loadListOfPage': loadListOfPage
+    };
+}]);
+
+//-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+//- ANGULAR BOOTSTRAP
+//-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+angular.element(document).ready(function() {
+    angular.bootstrap(document, ['Bst']);
+});
+
+//-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+//- UTILITIES
+//-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+function getUrlVars() {
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for (var i = 0; i < hashes.length; i++) {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
