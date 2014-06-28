@@ -28,7 +28,7 @@ $app->map('/', function () use ($app) {
     echo $view->getRender(null, 'index');
 });
 
-$app->map('/issues/{page:[0-9]+}', function ($page) use ($app) {
+$app->map('/issues/page/{page:[0-9]+}', function ($page) use ($app) {
     auth($app);
     echo json_encode(Issues::find(array(
         'order' => 'time ASC',
@@ -79,6 +79,55 @@ $app->map('/issues/new', function () use ($app) {
 
     echo $id;
 });
+
+//$app->map('/issues/dummy', function () use ($app) {
+//    // 获取参数
+//    $time = time();
+//    for ($i = 0; $i < 400; $i++) {
+//        $origin = array(
+//            'skeleton' => 'skeleton' . $i,
+//            'texture' => 'texture' . $i,
+//            'material' => 'material' . $i,
+//            'col1Material' => 'col1Material' . $i,
+//            'col' => 'col1',
+//            'core' => 'core' . $i,
+//            'code' => 'code' . $i,
+//            'race' => 'race' . $i,
+//            'pic' => 'pic' . $i
+//        );
+//        $target = array(
+//            'skeleton' => 'skeleton' . $i,
+//            'texture' => 'texture' . $i,
+//            'material' => 'material' . $i,
+//            'col1Material' => 'col1Material' . $i,
+//            'col' => 'col1',
+//            'core' => 'core' . $i,
+//            'code' => 'code' . $i,
+//            'race' => 'race' . $i,
+//            'pic' => 'pic' . $i
+//        );
+//
+//        // 重新encode成json字符串，用来存储
+//        $origin = json_encode($origin);
+//        $target = json_encode($target);
+//        $id = md5($origin . $target);
+//
+//        $issue = new Issues();
+//        $issue->id = $id;
+//        $issue->ip = '127.0.0.1';
+//        $issue->origin = $origin;
+//        $issue->target = $target;
+//        $issue->console = '["console"]';
+//        $issue->solved = 0;
+//        $issue->time = $time + $i;
+//
+//        if ($issue->create() === false) {
+//            echo -2 . '|' . $id; return; // 报单已存在
+//        }
+//    }
+//
+//    echo 'done';
+//});
 
 /**
  * Not found handler
