@@ -40,6 +40,12 @@ class Issues extends \Phalcon\Mvc\Model
     public $solved;
 
     /**
+     *
+     * @var integer
+     */
+    public $time;
+
+    /**
      * Independent Column Mapping.
      */
     public function columnMap()
@@ -50,7 +56,8 @@ class Issues extends \Phalcon\Mvc\Model
             'origin' => 'origin', 
             'target' => 'target', 
             'console' => 'console', 
-            'solved' => 'solved'
+            'solved' => 'solved', 
+            'time' => 'time'
         );
     }
 

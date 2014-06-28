@@ -1,5 +1,8 @@
 <?php
 
+define('ADMIN_USER_ID', 1);
+define('SINGLE_PAGE_COUNT', 30);
+
 /**
  * Auth the actor role
  *
@@ -9,7 +12,7 @@
 function auth($app) {
     $token = $app->request->get('token', 'string');
     /* @var Users $admin */
-    $admin = Users::findFirst(array('id' => 1));
+    $admin = Users::findFirst(array('id' => ADMIN_USER_ID));
     if (!$admin || !($admin instanceof Users) || $admin->token !== $token) {
         echo -999; die;
     }
@@ -23,6 +26,17 @@ $app->map('/', function () use ($app) {
     /* @var Phalcon\Mvc\View $view */
     $view = $app['view'];
     echo $view->getRender(null, 'index');
+});
+
+$app->map('/issues/{page:[0-9]+}', function ($page) use ($app) {
+    auth($app);
+    echo json_encode(Issues::find(array(
+        'order' => 'time ASC',
+        'limit' => array(
+            'offset' => ($page - 1) * SINGLE_PAGE_COUNT + 1,
+            'number' => SINGLE_PAGE_COUNT
+        )
+    ))->toArray());
 });
 
 /**
@@ -57,6 +71,7 @@ $app->map('/issues/new', function () use ($app) {
     $issue->target = $target;
     $issue->console = $console;
     $issue->solved = 0;
+    $issue->time = time();
 
     if ($issue->create() === false) {
         echo -2 . '|' . $id; return; // 报单已存在

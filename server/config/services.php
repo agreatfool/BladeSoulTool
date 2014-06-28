@@ -4,6 +4,9 @@ use Phalcon\Mvc\View;
 use Phalcon\Mvc\Url as UrlResolver;
 use Phalcon\DI\FactoryDefault;
 use Phalcon\Db\Adapter\Pdo\Mysql as DbAdapter;
+use Phalcon\Logger as Logger;
+use Phalcon\Logger\Adapter\File as FileAdapter;
+use Phalcon\Events\Manager as EventsManager;
 
 $di = new FactoryDefault();
 
@@ -31,10 +34,30 @@ $di['url'] = function () use ($config) {
  * Database connection is created based in the parameters defined in the configuration file
  */
 $di['db'] = function () use ($config) {
-    return new DbAdapter(array(
+    $eventsManager = new EventsManager();
+
+    $logger = new FileAdapter("/tmp/phalcon-general-sql.log");
+
+    // Listen all the database events
+    $eventsManager->attach('db', function($event, $connection) use ($logger) {
+            /**
+             * @var Phalcon\Events\Event $event
+             * @var DbAdapter $connection
+             */
+        if ($event->getType() == 'beforeQuery') {
+            $logger->log($connection->getSQLStatement(), Logger::DEBUG);
+        }
+    });
+
+    $connection = new DbAdapter(array(
         "host" => $config->database->host,
         "username" => $config->database->username,
         "password" => $config->database->password,
         "dbname" => $config->database->dbname
     ));
+
+    // Assign the eventsManager to the db adapter instance
+    $connection->setEventsManager($eventsManager);
+
+    return $connection;
 };
