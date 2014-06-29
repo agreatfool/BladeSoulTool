@@ -7,12 +7,12 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <h3>BladeSoulTool Issues List</h3>
                 </div>
             </div>
             <div class="row" ng-controller="BstIndexCtrl">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <table class="table table-striped">
                         <thead>
                         <tr>
@@ -36,12 +36,29 @@
                     </table>
                 </div>
             </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <pagination
+                        boundary-links="true"
+                        total-items="paginationTotalItems"
+                        items-per-page="itemsPerPage"
+                        page="paginationCurrentPage"
+                        class="pagination-sm"
+                        num-pages="paginationNumPages"
+                        on-select-page="loadPageData(page)"
+                        previous-text="&lsaquo;"
+                        next-text="&rsaquo;"
+                        first-text="&laquo;"
+                        last-text="&raquo;">
+                    </pagination>
+                </div>
+            </div>
         </div>
 
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
         <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
-        <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
         <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
         <script type="text/javascript" src="js/main.js"></script>

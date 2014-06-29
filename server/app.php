@@ -28,6 +28,9 @@ $app->map('/', function () use ($app) {
     echo $view->getRender(null, 'index');
 });
 
+/**
+ * Display issue list via page
+ */
 $app->map('/issues/page/{page:[0-9]+}', function ($page) use ($app) {
     auth($app);
     echo json_encode(Issues::find(array(
@@ -47,6 +50,25 @@ $app->map('/issues/page/{page:[0-9]+}', function ($page) use ($app) {
  * ---
  * 进游戏的时候upk重复的情况那个弹窗，需要截图
  */
+
+/**
+ * Search issue
+ */
+$app->map('/issues/search/{id}', function ($id) use ($app) {
+    auth($app);
+    /* @var Phalcon\Mvc\View $view */
+    $view = $app['view'];
+    $view->setVar('issue', Issues::findFirst(array('id' => $id)));
+    echo $view->getRender(null, 'search');
+});
+
+/**
+ * Get total issues count
+ */
+$app->map('/issues/total', function () use ($app) {
+    auth($app);
+    echo count(Issues::find());
+});
 
 /**
  * Create issue

@@ -16,9 +16,20 @@ controllers.controller('BstIndexCtrl', [
     '$scope', 'BstService',
 function ($scope, service) {
     $scope.listOnPage = [];
-    service.loadListOfPage(1).then(function(list) {
-        console.log(list);
-        $scope.listOnPage = list;
+
+    var loadPageData = function(pageNo) {
+        $scope.paginationCurrentPage = pageNo;
+        service.loadListOfPage(pageNo).then(function(list) {
+            $scope.listOnPage = list;
+        });
+    };
+    $scope.loadPageData = loadPageData;
+
+    service.loadTotalItemsCount().then(function(count) {
+        $scope.paginationTotalItems = count;
+        $scope.paginationCurrentPage = 1;
+        $scope.itemsPerPage = 30;
+        loadPageData(1);
     });
 }]);
 
@@ -28,6 +39,18 @@ function ($scope, service) {
 var services = angular.module('Bst.Services', []);
 services.factory('BstService', ['$http', '$q', '$location', function($http, $q, $location) {
     var list = {}; // pageId => listOnPage
+
+    var loadTotalItemsCount = function() {
+        var deferred = $q.defer();
+        $http({
+            method: 'GET',
+            url: 'issues/total?token=' + getUrlVars()['token'],
+            headers: {'Content-type': 'application/x-www-form-urlencoded'}
+        }).success(function(result) {
+            deferred.resolve(result);
+        });
+        return deferred.promise;
+    };
 
     var loadListOfPage = function(page) {
         var deferred = $q.defer();
@@ -58,6 +81,7 @@ services.factory('BstService', ['$http', '$q', '$location', function($http, $q, 
     };
 
     return {
+        'loadTotalItemsCount': loadTotalItemsCount,
         'loadListOfPage': loadListOfPage
     };
 }]);
