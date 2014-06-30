@@ -17,9 +17,8 @@ controllers.controller('BstIndexCtrl', [
 function ($scope, service) {
     $scope.listOnPage = [];
 
-    $scope.loadPageData = function(pageNo) {
-        $scope.paginationCurrentPage = pageNo;
-        service.loadListOfPage(pageNo).then(function(list) {
+    $scope.loadPageData = function() {
+        service.loadListOfPage($scope.paginationCurrentPage).then(function(list) {
             $scope.listOnPage = list;
         });
     };
@@ -28,8 +27,10 @@ function ($scope, service) {
         $scope.paginationTotalItems = count;
         $scope.paginationCurrentPage = 1;
         $scope.itemsPerPage = 30;
+        $scope.paginationMaxButtonsSize = 10;
         $scope.loadPageData(1);
     });
+
 }]);
 
 //-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
