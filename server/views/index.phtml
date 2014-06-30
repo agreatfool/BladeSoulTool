@@ -1,66 +1,49 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>BladeSoulTool Issues List</title>
-        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>BladeSoulTool Issues List</h3>
-                </div>
-            </div>
-            <div class="row" ng-controller="BstIndexCtrl">
-                <div class="col-md-12">
-                    <table class="table table-striped">
-                        <thead>
-                        <tr>
-                            <th>Id</th>
-                            <th>Origin</th>
-                            <th>Target</th>
-                            <th>Solved</th>
-                            <th>Time</th>
-                            <th>Action</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr ng-repeat="row in listOnPage">
-                            <td>{{ row.id }}</td>
-                            <td>{{ row.origin.core + '_' + row.origin.col }}</td>
-                            <td>{{ row.origin.core + '_' + row.origin.col }}</td>
-                            <td>{{ row.solved }}</td>
-                            <td>{{ row.time | date:'yyyy-MM-dd HH:mm:ss' }}</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="row">
-                    <pagination
-                        boundary-links="true"
-                        total-items="paginationTotalItems"
-                        items-per-page="itemsPerPage"
-                        page="paginationCurrentPage"
-                        class="pagination-sm"
-                        num-pages="paginationNumPages"
-                        on-select-page="loadPageData(page)"
-                        previous-text="&lsaquo;"
-                        next-text="&rsaquo;"
-                        first-text="&laquo;"
-                        last-text="&raquo;">
-                    </pagination>
-                </div>
-            </div>
-        </div>
-
-        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
-        <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
-        <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-        <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
-</html>
+<?php $this->partial('layouts/header') ?>
+<div class="row">
+    <div class="col-md-12">
+        <h3>BladeSoulTool Issues List</h3>
+    </div>
+</div>
+<div class="row" ng-controller="BstIndexCtrl">
+    <div class="col-md-12">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Origin</th>
+                <th>Target</th>
+                <th>Solved</th>
+                <th>Time</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="row in listOnPage">
+                <td>{{ row.id }}</td>
+                <td>{{ row.origin.core + '_' + row.origin.col }}</td>
+                <td>{{ row.origin.core + '_' + row.origin.col }}</td>
+                <td>{{ row.solved }}</td>
+                <td>{{ row.time | date:'yyyy-MM-dd HH:mm:ss' }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="row">
+        <pagination
+            boundary-links="true"
+            total-items="paginationTotalItems"
+            items-per-page="itemsPerPage"
+            ng-model="paginationCurrentPage"
+            class="pagination-sm"
+            num-pages="paginationNumPages"
+            on-select-page="loadPageData(page)"
+            previous-text="&lsaquo;"
+            next-text="&rsaquo;"
+            first-text="&laquo;"
+            last-text="&raquo;">
+        </pagination>
+    </div>
+</div>
+<?php $this->partial('layouts/footer') ?>

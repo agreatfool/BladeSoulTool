@@ -17,19 +17,18 @@ controllers.controller('BstIndexCtrl', [
 function ($scope, service) {
     $scope.listOnPage = [];
 
-    var loadPageData = function(pageNo) {
+    $scope.loadPageData = function(pageNo) {
         $scope.paginationCurrentPage = pageNo;
         service.loadListOfPage(pageNo).then(function(list) {
             $scope.listOnPage = list;
         });
     };
-    $scope.loadPageData = loadPageData;
 
     service.loadTotalItemsCount().then(function(count) {
         $scope.paginationTotalItems = count;
         $scope.paginationCurrentPage = 1;
         $scope.itemsPerPage = 30;
-        loadPageData(1);
+        $scope.loadPageData(1);
     });
 }]);
 
@@ -37,7 +36,7 @@ function ($scope, service) {
 //- SERVICES
 //-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 var services = angular.module('Bst.Services', []);
-services.factory('BstService', ['$http', '$q', '$location', function($http, $q, $location) {
+services.factory('BstService', ['$http', '$q', function($http, $q) {
     var list = {}; // pageId => listOnPage
 
     var loadTotalItemsCount = function() {
@@ -66,7 +65,7 @@ services.factory('BstService', ['$http', '$q', '$location', function($http, $q, 
                     _.each(result, function(row, rowIndex) {
                         result[rowIndex]['origin'] = angular.fromJson(row['origin']);
                         result[rowIndex]['target'] = angular.fromJson(row['target']);
-                        result[rowIndex]['time'] = row['time'] * 1000;
+                        result[rowIndex]['time'] = row['time'] * 1000; // convert unix timestamp to Date
                     });
                     _.sortBy(result, function(row) {
                         return parseInt(row['time']);
