@@ -25,13 +25,17 @@
                     <td>{{ row.origin.core + '_' + row.origin.col }}</td>
                     <td>{{ row.solved }}</td>
                     <td>{{ row.time | date:'yyyy-MM-dd HH:mm:ss' }}</td>
+                    <td>
+                        <button ng-click="viewIssue(row.id)" class="btn btn-primary btn-info">view</button>
+                        <button ng-click="markSolved(row.id)" class="btn btn-primary btn-info">solve</button>
+                    </td>
                 </tr>
                 </tbody>
             </table>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-5 col-md-offset-3">
+        <div class="col-md-5 col-md-offset-3" ng-show="listOnPage">
             <pagination
                 boundary-links="true"
                 total-items="paginationTotalItems"
