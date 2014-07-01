@@ -23,12 +23,22 @@ function ($scope, service) {
         });
     };
 
+    $scope.viewIssue = function(id) {
+        window.open('issues/search/' + id + '?token=' + getUrlVars()['token']);
+    };
+
+    $scope.markSolved = function(id) {
+        service.markSolved($scope.paginationCurrentPage, id).then(function() {
+            $scope.listOnPage = service.getListOfPage($scope.paginationCurrentPage);
+        });
+    };
+
     service.loadTotalItemsCount().then(function(count) {
         $scope.paginationTotalItems = count;
         $scope.paginationCurrentPage = 1;
         $scope.itemsPerPage = 30;
         $scope.paginationMaxButtonsSize = 10;
-        $scope.loadPageData(1);
+        $scope.loadPageData();
     });
 
 }]);
@@ -39,6 +49,14 @@ function ($scope, service) {
 var services = angular.module('Bst.Services', []);
 services.factory('BstService', ['$http', '$q', function($http, $q) {
     var list = {}; // pageId => listOnPage
+
+    var getListOfPage = function(page) {
+        if (list.hasOwnProperty(page)) {
+            return list[page];
+        } else {
+            return [];
+        }
+    };
 
     var loadTotalItemsCount = function() {
         var deferred = $q.defer();
@@ -71,6 +89,7 @@ services.factory('BstService', ['$http', '$q', function($http, $q) {
                     _.sortBy(result, function(row) {
                         return parseInt(row['time']);
                     });
+                    list[page] = result;
                     deferred.resolve(result);
                 } else {
                     deferred.reject([]);
@@ -80,9 +99,30 @@ services.factory('BstService', ['$http', '$q', function($http, $q) {
         return deferred.promise;
     };
 
+    var markSolved = function(page, id) {
+        var deferred = $q.defer();
+        $http({
+            method: 'GET',
+            url: 'issues/solve/' + id + '?token=' + getUrlVars()['token'],
+            headers: {'Content-type': 'application/x-www-form-urlencoded'}
+        }).success(function(result) {
+            if (parseInt(result) === 1) {
+                _.each(list[page], function(row, rowIndex) {
+                    if (row['id'] === id) {
+                        list[page][rowIndex]['solved'] = 1;
+                    }
+                });
+            }
+            deferred.resolve(result);
+        });
+        return deferred.promise;
+    };
+
     return {
+        'getListOfPage': getListOfPage,
         'loadTotalItemsCount': loadTotalItemsCount,
-        'loadListOfPage': loadListOfPage
+        'loadListOfPage': loadListOfPage,
+        'markSolved': markSolved
     };
 }]);
 

@@ -12,7 +12,7 @@ define('SINGLE_PAGE_COUNT', 30);
 function auth($app) {
     $token = $app->request->get('token', 'string');
     /* @var Users $admin */
-    $admin = Users::findFirst(array('id' => ADMIN_USER_ID));
+    $admin = Users::findFirst("id = " . ADMIN_USER_ID);
     if (!$admin || !($admin instanceof Users) || $admin->token !== $token) {
         echo -999; die;
     }
@@ -23,9 +23,9 @@ function auth($app) {
  */
 $app->map('/', function () use ($app) {
     auth($app);
-    /* @var Phalcon\Mvc\View $view */
+    /* @var Phalcon\Mvc\View\Simple $view */
     $view = $app['view'];
-    echo $view->getRender(null, 'index');
+    echo $view->render('index');
 });
 
 /**
@@ -36,30 +36,36 @@ $app->map('/issues/page/{page:[0-9]+}', function ($page) use ($app) {
     echo json_encode(Issues::find(array(
         'order' => 'time ASC',
         'limit' => array(
-            'offset' => ($page - 1) * SINGLE_PAGE_COUNT + 1,
+            'offset' => ($page - 1) * SINGLE_PAGE_COUNT,
             'number' => SINGLE_PAGE_COUNT
         )
     ))->toArray());
 });
-/**
- * TODO
- * 单独做一个搜索入口，需要auth，专门做一个单独的template来显示这个搜索结果页面
- * 此外，需要稍微看下模板引擎，如何将layout拆出来，不要每个页面都单独写自己的script head标签
- * angular这边需要做一个展示页面用来展示issue的细节（模态窗口？）、分页功能
- * 此外还需要添加一个mark solved的功能入口
- * ---
- * 进游戏的时候upk重复的情况那个弹窗，需要截图
- */
 
 /**
  * Search issue
  */
 $app->map('/issues/search/{id}', function ($id) use ($app) {
-    auth($app);
-    /* @var Phalcon\Mvc\View $view */
+    $issue = Issues::findFirst("id = '{$id}'");
+    /* @var Phalcon\Mvc\View\Simple $view */
     $view = $app['view'];
-    $view->setVar('issue', Issues::findFirst(array('id' => $id)));
-    echo $view->getRender(null, 'search');
+    if ($issue) {
+        $view->setVar('issue', $issue);
+    }
+    echo $view->render('search');
+});
+
+$app->map('/issues/solve/{id}', function ($id) use ($app) {
+    auth($app);
+    /* @var Issues $issue */
+    $issue = Issues::findFirst("id = '{$id}'");
+    if ($issue) {
+        $issue->solved = 1;
+        $issue->update();
+        echo 1;
+    } else {
+        echo -1;
+    }
 });
 
 /**
@@ -67,7 +73,7 @@ $app->map('/issues/search/{id}', function ($id) use ($app) {
  */
 $app->map('/issues/total', function () use ($app) {
     auth($app);
-    echo count(Issues::find());
+    echo Issues::count();
 });
 
 /**
@@ -110,55 +116,6 @@ $app->map('/issues/new', function () use ($app) {
 
     echo $id;
 });
-
-//$app->map('/issues/dummy', function () use ($app) {
-//    // 获取参数
-//    $time = time();
-//    for ($i = 0; $i < 400; $i++) {
-//        $origin = array(
-//            'skeleton' => 'skeleton' . $i,
-//            'texture' => 'texture' . $i,
-//            'material' => 'material' . $i,
-//            'col1Material' => 'col1Material' . $i,
-//            'col' => 'col1',
-//            'core' => 'core' . $i,
-//            'code' => 'code' . $i,
-//            'race' => 'race' . $i,
-//            'pic' => 'pic' . $i
-//        );
-//        $target = array(
-//            'skeleton' => 'skeleton' . $i,
-//            'texture' => 'texture' . $i,
-//            'material' => 'material' . $i,
-//            'col1Material' => 'col1Material' . $i,
-//            'col' => 'col1',
-//            'core' => 'core' . $i,
-//            'code' => 'code' . $i,
-//            'race' => 'race' . $i,
-//            'pic' => 'pic' . $i
-//        );
-//
-//        // 重新encode成json字符串，用来存储
-//        $origin = json_encode($origin);
-//        $target = json_encode($target);
-//        $id = md5($origin . $target);
-//
-//        $issue = new Issues();
-//        $issue->id = $id;
-//        $issue->ip = '127.0.0.1';
-//        $issue->origin = $origin;
-//        $issue->target = $target;
-//        $issue->console = '["console"]';
-//        $issue->solved = 0;
-//        $issue->time = $time + $i;
-//
-//        if ($issue->create() === false) {
-//            echo -2 . '|' . $id; return; // 报单已存在
-//        }
-//    }
-//
-//    echo 'done';
-//});
 
 /**
  * Not found handler
