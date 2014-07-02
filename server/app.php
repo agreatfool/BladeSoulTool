@@ -81,9 +81,9 @@ $app->map('/issues/total', function () use ($app) {
  */
 $app->map('/issues/new', function () use ($app) {
     // 获取参数
-    $origin = $app->request->get('origin', 'string');
-    $target = $app->request->get('target', 'string');
-    $console = $app->request->get('console', 'string');
+    $origin = $app->request->get('origin');
+    $target = $app->request->get('target');
+    $console = $app->request->get('console');
     $ip = $app->request->getClientAddress();
     if (!$origin || !$target || !$console) {
         echo -1; return; // 必须项为空
@@ -93,7 +93,7 @@ $app->map('/issues/new', function () use ($app) {
     $origin = json_decode($origin, true);
     $target = json_decode($target, true);
     if (!$origin || !$target) {
-        echo -1; return;
+        echo -2; return;
     }
 
     // 重新encode成json字符串，用来存储
@@ -111,7 +111,7 @@ $app->map('/issues/new', function () use ($app) {
     $issue->time = time();
 
     if ($issue->create() === false) {
-        echo -2 . '|' . $id; return; // 报单已存在
+        echo -3 . '|' . $id; return; // 报单已存在
     }
 
     echo $id;

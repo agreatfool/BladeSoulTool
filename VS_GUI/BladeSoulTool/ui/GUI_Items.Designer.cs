@@ -57,6 +57,7 @@
             this.labelFilter = new System.Windows.Forms.Label();
             this.btnFilter = new System.Windows.Forms.Button();
             this.labelRestore = new System.Windows.Forms.Label();
+            this.btnReportIssue = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUmodel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridItems)).BeginInit();
             this.panelTarget.SuspendLayout();
@@ -337,11 +338,20 @@
             this.labelRestore.Size = new System.Drawing.Size(88, 20);
             this.labelRestore.TabIndex = 14;
             // 
+            // btnReportIssue
+            // 
+            this.btnReportIssue.Location = new System.Drawing.Point(1046, 4);
+            this.btnReportIssue.Name = "btnReportIssue";
+            this.btnReportIssue.Size = new System.Drawing.Size(119, 23);
+            this.btnReportIssue.TabIndex = 15;
+            this.btnReportIssue.UseVisualStyleBackColor = true;
+            // 
             // GuiItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1177, 742);
+            this.Controls.Add(this.btnReportIssue);
             this.Controls.Add(this.labelRestore);
             this.Controls.Add(this.btnFilter);
             this.Controls.Add(this.labelFilter);
@@ -404,6 +414,7 @@
         private System.Windows.Forms.Label labelFilter;
         private System.Windows.Forms.Button btnFilter;
         private System.Windows.Forms.Label labelRestore;
+        private System.Windows.Forms.Button btnReportIssue;
         
 
     }

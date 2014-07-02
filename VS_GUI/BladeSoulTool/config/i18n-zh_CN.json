@@ -56,7 +56,16 @@
         "actionReplaceMsg": "确认执行替换操作？",
         "labelFilter": "查找模型：",
         "btnFilter": "查找",
-        "labelRestore": "全部还原："
+        "labelRestore": "全部还原：",
+        "btnReportIssue": "报告错误",
+        "actionReportErrorTitle": "错误的提交信息",
+        "actionReportErrorMsg": "你还未运行任何替换、还原功能，没有可提交的信息",
+        "reportErrorTitle": "信息提交错误",
+        "reportMissingInfo": "需要的信息确实，无法创建报单",
+        "reportInvalidJson": "错误的模型信息，无法创建报单",
+        "reportAlreadyExists": "报单已经存在，报单id：{0}",
+        "reportSucceedTitle": "信息提交成功",
+        "reportSucceedMsg": "错误报单创建完成，报单id：{0}"
     },
     "BstIconLoader": {
         "iconDownloadFailed": "图片下载失败：{0}",

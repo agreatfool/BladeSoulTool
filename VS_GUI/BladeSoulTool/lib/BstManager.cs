@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Net;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -76,6 +77,12 @@ namespace BladeSoulTool.lib
         public const string ReleaseUrl17173 = "http://bbs.17173.com/thread-8018028-1-1.html";
 
         public const string PathI18N = BstManager.PathVsRoot + BstManager.PathVsConfig + "i18n-";
+
+        public const string BstReportServerUrl = "http://bst.xenojoshua.com/issues/new";
+        public const string GruntRunSign = "Grunt and task output will also be logged to";
+        public const string BstReportMissingInfo = "-1";
+        public const string BstReportInvalidJson = "-2";
+        public const string BstReportAlreadyExists = "-3";
 
         public byte[] LoadingGifBytes { get; set; }
         public byte[] NoIconBytes { get; set; }
@@ -178,7 +185,7 @@ namespace BladeSoulTool.lib
                 var elementData = (JObject) element.Value;
                 var race = (string) elementData["race"];
                 if (race == raceType
-                    || System.Text.RegularExpressions.Regex.IsMatch(race, raceType, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                    || Regex.IsMatch(race, raceType, RegexOptions.IgnoreCase))
                 {
                     filtered.Add(elementId, elementData);
                 }
@@ -201,7 +208,7 @@ namespace BladeSoulTool.lib
                 var elementData = (JObject) element.Value;
                 var race = (string) elementData["race"];
                 if (race == raceType
-                    || System.Text.RegularExpressions.Regex.IsMatch(race, raceType, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                    || Regex.IsMatch(race, raceType, RegexOptions.IgnoreCase))
                 {
                     filtered.Add(elementId, elementData);
                 }
@@ -240,17 +247,35 @@ namespace BladeSoulTool.lib
 
         public static void DisplayErrorMessageBox(string boxTitle, string boxMsg)
         {
-            MessageBox.Show(App.Instance, boxMsg, boxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            try {
+                MessageBox.Show(App.Instance, boxMsg, boxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (InvalidOperationException ex)
+            {
+            }
         }
 
         public static DialogResult DisplayConfirmMessageBox(string boxTitle, string boxMsg)
         {
-            return MessageBox.Show(App.Instance, boxMsg, boxTitle, MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            try {
+                return MessageBox.Show(App.Instance, boxMsg, boxTitle, MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return DialogResult.Cancel;
+            }
         }
 
         public static DialogResult DisplayInfoMessageBox(string boxTitle, string boxMsg)
         {
-            return MessageBox.Show(App.Instance, boxMsg, boxTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            try
+            {
+                return MessageBox.Show(App.Instance, boxMsg, boxTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return DialogResult.Cancel;
+            }
         }
 
         public static void HideDataGridViewVerticalScrollBar(DataGridView grid)

@@ -56,7 +56,16 @@
         "actionReplaceMsg": "Confirm replacement?",
         "labelFilter": "Find model: ",
         "btnFilter": "Find",
-        "labelRestore": "Restore All: "
+        "labelRestore": "Restore All: ",
+        "btnReportIssue": "Report Issue",
+        "actionReportErrorTitle": "Wrong issue info",
+        "actionReportErrorMsg": "You have not run any replace or restore script yet, no info to report",
+        "reportErrorTitle": "Report issue error",
+        "reportMissingInfo": "Required info not found, no report generated",
+        "reportInvalidJson": "Wrong model info, no report generated",
+        "reportAlreadyExists": "Report already exists, id: {0}",
+        "reportSucceedTitle": "Report succeeded",
+        "reportSucceedMsg": "Report generated, id: {0}"
     },
     "BstIconLoader": {
         "iconDownloadFailed": "Icon download failed: {0}",
