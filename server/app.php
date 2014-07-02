@@ -68,6 +68,18 @@ $app->map('/issues/solve/{id}', function ($id) use ($app) {
     }
 });
 
+$app->map('/issues/delete/{id}', function ($id) use ($app) {
+    auth($app);
+    /* @var Issues $issue */
+    $issue = Issues::findFirst("id = '{$id}'");
+    if ($issue) {
+        $issue->delete();
+        echo 1;
+    } else {
+        echo -1;
+    }
+});
+
 /**
  * Get total issues count
  */

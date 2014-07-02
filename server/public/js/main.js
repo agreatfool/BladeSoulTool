@@ -33,6 +33,12 @@ function ($scope, service) {
         });
     };
 
+    $scope.deleteIssue = function(id) {
+        service.deleteIssue($scope.paginationCurrentPage, id).then(function() {
+            $scope.listOnPage = service.getListOfPage($scope.paginationCurrentPage);
+        });
+    };
+
     service.loadTotalItemsCount().then(function(count) {
         $scope.paginationTotalItems = count;
         $scope.paginationCurrentPage = 1;
@@ -118,11 +124,31 @@ services.factory('BstService', ['$http', '$q', function($http, $q) {
         return deferred.promise;
     };
 
+    var deleteIssue = function(page, id) {
+        var deferred = $q.defer();
+        $http({
+            method: 'GET',
+            url: 'issues/delete/' + id + '?token=' + getUrlVars()['token'],
+            headers: {'Content-type': 'application/x-www-form-urlencoded'}
+        }).success(function(result) {
+            if (parseInt(result) === 1) {
+                _.each(list[page], function(row, rowIndex) {
+                    if (row['id'] === id) {
+                        delete list[page][rowIndex];
+                    }
+                });
+            }
+            deferred.resolve(result);
+        });
+        return deferred.promise;
+    };
+
     return {
         'getListOfPage': getListOfPage,
         'loadTotalItemsCount': loadTotalItemsCount,
         'loadListOfPage': loadListOfPage,
-        'markSolved': markSolved
+        'markSolved': markSolved,
+        'deleteIssue': deleteIssue
     };
 }]);
 
