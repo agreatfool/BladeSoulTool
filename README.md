@@ -2,21 +2,23 @@
 【17173模型组】一键换装还原工具，再也不用担心没衣服穿了
 
 ## 1. 效果
-* 冲角团军官改情人节服装：
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set1-1.png)
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set1-2.png)
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set1-3.png)
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set1-4.png)
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set1-5.png)
+* 效果1：
+    * 效果展示，注意看装备栏内已装备的道具及服装：
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/effect-set1-01.png)
+    * 万魂换白鸟，暗蓝换白口罩：
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/effect-set1-02.png)
+    * 人女默认36号头发换47号头发：
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/effect-set-03.png)
+    * 冲角团换纯白青狼：
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/effect-set1-04.png)
 
 ---
 
-* 白鬼改贵族：
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set2-1.png)
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set2-2.png)
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set2-3.png)
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set2-4.png)
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set2-5.png)
+* 效果2：
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/effect-set2-01.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/effect-set2-02.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/effect-set-03.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/effect-set2-04.png)
 
 ## 2. 下载
 * 分流文件夹：[百度网盘](http://pan.baidu.com/s/1dD7slaD)，下面找BladeSoulTool_vx.x.x.zip，后面序列数字越大版本越新，压缩包都有加密
