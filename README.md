@@ -93,7 +93,7 @@
 * 模型搜索功能只会从当前选中的模型，或者当前所在的模型行开始向下搜索，所以最好在搜索开始之前选中第一行模型
 
 ### 4.7 mod文件位置
-* 2.0版本之后，模型补丁文件统一放在一个位置
+* 2.0版本之后，模型补丁文件统一放在：
 * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/ui-mod-files-dir.png)
 * 在某些情况下，全部恢复失败的时候，可以直接删除该文件夹来恢复所有的mod修改
 
