@@ -61,6 +61,9 @@
 * 确认弹出的对话框
 * 等待`操作执行完成`对话框弹出
 * 进游戏看效果
+* EDIT：
+* 2.0版本之后，服装替换功能添加了多换多功能，原始模型不再局限于col1的模型
+* 2.0版本之后，饰品也能替换了，记住一点，带发型的饰品不能同时有多个，否则会破相
 
 ### 4.2 还原
 * 点击面板顶端种族选择框旁边的`全部还原`按钮
@@ -77,6 +80,39 @@
 * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/ui-3d-btn.png)
 * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/ui-3d-effect-1.png)
 * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/ui-3d-effect-2.png)
+
+### 4.5 关于灵族
+* 灵族的服装中，大量衣服都男女使用一个相同的骨骼
+* 在2.0版本之前（男女分开），你会发现很多衣服在灵女的分类内是找不到的
+* 2.0版本之后，我把这两个种族分类合并成了一个大的“灵族”，方便模型查找及替换
+* ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/ui-race-lyn.png)
+
+### 4.6 模型搜索
+* 2.0版本之后添加模型搜索功能，只要你知道模型的短码，就能直接找到模型
+* ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/ui-search.png)
+* 模型搜索功能只会从当前选中的模型，或者当前所在的模型行开始向下搜索，所以最好在搜索开始之前选中第一行模型
+
+### 4.7 mod文件位置
+* 2.0版本之后，模型补丁文件统一放在一个位置
+* ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/ui-mod-files-dir.png)
+* 在某些情况下，全部恢复失败的时候，可以直接删除该文件夹来恢复所有的mod修改
+
+### 4.8 图片资源下载
+* 所有的icon及模型截图的图片都是从网络下载的，软件包内并未包含，在预览的时候下载有的时候会影响用户体验
+* 2.0版本之后添加了一个下载所有图片的功能：
+* ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/ui-download-all.png)
+
+### 4.9 模型冲突
+* 在某些时候，游戏客户端会提示：
+* ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/ui-notify-conflict.png)
+* 这是因为2.0版本之后的mod文件都放在子文件夹内，不会覆盖原来的客户端upk文件了，那么就有可能出现多个同名upk同时存在在客户端内
+* 进入游戏的时候客户端会报告有重名文件
+* 这里不影响正常游戏，点击确定即可
+
+### 4.10 报告改模错误
+* 在模型修改界面的最右上角现在添加了“报告错误”按钮
+* 请在正常的改模步骤之后点击该按钮，软件将会向服务器发送一条错误报告
+* 正常的改模步骤：选择原始模型，选择目标模型，点击替换按钮，等待成功提示框弹出
 
 ## 5. 申明
 发布申明：<br/>
