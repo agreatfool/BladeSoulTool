@@ -3,20 +3,19 @@ One click costume replacement mod tool
 
 ## 1. Effect
 * Sample 1：
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set1-1.png)
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set1-2.png)
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set1-3-en_US.png)
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set1-4.png)
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set1-5.png)
+    * Note what's the items in the equipment columns:
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/effect-set1-01.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/effect-set1-02-en_US.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/effect-set-03.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/effect-set1-04-en_US.png)
 
 ---
 
 * Sample 2：
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set2-1.png)
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set2-2.png)
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set2-3-en_US.png)
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set2-4.png)
-    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/effect-set2-5.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/effect-set2-01.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/effect-set2-02-en_US.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/effect-set-03.png)
+    * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/effect-set2-04-en_US.png)
 
 ## 2. Download
 * Download Dir: [Baidu Pan](http://pan.baidu.com/s/1dD7slaD), find archives named BladeSoulTool_vx.x.x.zip, the bigger later numbers are the newer version is, all archives share the same password
@@ -63,6 +62,9 @@ Execute the bat file at the root dir `BladeSoulTool.bat` to open the software
 * Confirm the dialogue
 * Wait till `Specified grunt task done` dialogue pop up
 * Enter game to see your avatar change
+* EDIT：
+* Version 2.0, now origin model is no longer limited to "col1"
+* Version 2.0, attachment replacement functionality done
 
 ### 4.2 Restore
 * Click `Restore` button
@@ -80,6 +82,42 @@ Execute the bat file at the root dir `BladeSoulTool.bat` to open the software
 * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/ui-3d-effect-1-en_US.png)
 * ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/ui-3d-effect-2-en_US.png)
 
+### 4.5 Race Lyn
+* Lots of Lyn costumes are under the race of LynM, since a lot of costumes of Lyn share the same skeleton of male & female
+* before version 2.0, you found there is only a little choices under race of LynF
+* after version 2.0, I combined those two races into on big "Lyn", you would no longer have the problem of finding LynF models
+* ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/ui-race-lyn-en_US.png)
+
+### 4.6 Model Search
+* Version 2.0, use code to find target model:
+* ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/ui-search-en_US.png)
+* Search action will only search from the line selected to bottom, it's better to select the first line before your search
+
+### 4.7 mod files generated
+* Version 2.0 mod files generated are all put under sub dir "mod" in tencent dir:
+* ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/ui-mod-files-dir.png)
+* If restore action failed, you can delete this dir to restore all models modified
+
+### 4.8 Download all resource images
+* All icons & screenshot images are all downloaded from web when you click the model, sometimes it's annoying since download action took a lot of time
+* Version 2.0, download all images functionality added:
+* ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/ui-download-all-en_US.png)
+* I added a serial of zip archives: BladeSoulTool_ImageResources_vx.x.x.zip
+* Naming rule is the same as software itself
+* Download this zip archive, unzip to `BladeSoulTool/VS_GUI/BladeSoulTool/tmp`
+
+### 4.9 upk conflict
+* Sometimes, when you start the game, client will pop up:
+* ![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/ui-notify-conflict.png)
+* Version 2.0, all mod files will be put under sub dir "mod", there is no longer any overwrite of upk files, this means there will be several upk have the same name
+* Client will notify that there is some upk have the same name
+* Click the "确定" button, you can play with this notification, no worry
+
+### 4.10 Report issue
+* "Report Issue" button added on replacement UI
+* Please finish the replace action, and click this button, software will make a report to server
+* Replace action: select the origin model, select target model, click the replace button
+
 ## 5. Announcement
 Publish Announcement: <br/>
 Author: Jonathan, forum id: xenojoshua, support team: 17173 bns mod group<br/>
@@ -96,12 +134,11 @@ Contact me if you want to spread to some place.<br/>
 License: <br/>
 GPLv2
 
-## 6. Known Issues
-* Attach & Weapon replacement functionality not done
-* Origin model cannot use models whose col is not col1
+## 6. FAQ & Tips
+* Don't use those model has col20
 
 ## 7. TODO List
-* Add attach & weapon replacement functionality
+* Add favorite list
 
 ## 8. Change Log
 * 2014-06-06: v1.0.0 release
@@ -109,3 +146,10 @@ GPLv2
 * 2014-06-11: v1.0.2: Add new version notification functionality, fix scroll bar issue
 * 2014-06-11: v1.0.3: Add I18N
 * 2014-06-21: v1.0.4: Fix database built algorithm, enhance the database. Fix UI of undefined icons & download failed icons.
+* 2014-07-03: v2.0.1:
+    * Add costume colX to colX functionality
+    * Add attachment replacement functionality
+    * Add download all images functionality
+    * Add model search functionality
+    * Add report issue functionality
+    * Combine LynM with LynF to Lyn
