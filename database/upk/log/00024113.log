@@ -1,24 +1,26 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00024113.upk Ver: 573/1 Engine: 4205 Names: 60 Exports: 5 Imports: 10 Game: 801A
 Loading SkeletalMesh3 040122_GonM from package 00024113.upk
 Loading package: 00018657.upk Ver: 573/1 Engine: 4205 Names: 52 Exports: 1 Imports: 14 Game: 801A
 Loading package: 00024115.upk Ver: 573/1 Engine: 4205 Names: 89 Exports: 1 Imports: 19 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00018657.upk
-Loading package: 00018656.upk Ver: 573/1 Engine: 4205 Names: 27 Exports: 2 Imports: 2 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00018656.upk Ver: 573/1 Engine: 4205 Names: 28 Exports: 2 Imports: 2 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00024115.upk
-Loading package: 00024106.upk Ver: 573/1 Engine: 4205 Names: 36 Exports: 7 Imports: 4 Game: 801A
+Loading package: 00024106.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 7 Imports: 4 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading Texture2D GonM_029_col1_N from package 00018656.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D GonM_029_col1_D from package 00018656.upk
 Loading Material3 Beard_Fur from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D 040122_JinM_col1_N from package 00024106.upk
 Loading Texture2D 040122_JinM_col1_M from package 00024106.upk
 Loading Texture2D 040122_JinM_col1_D from package 00024106.upk
 Loading Texture2D 040122_JinM_col1_S from package 00024106.upk
 Loading TextureCube lenscube_a from package 00002640.upk
 Loading Texture2D 040122_JinM_col1_E from package 00024106.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Material3 Basic from package 00002620.upk
 Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D Noise_Glass_000 from package 00012963.upk
@@ -33,7 +35,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.13 sec, 2961 allocs, 2.21 MBytes serialized in 234548 calls.
+Loaded in 0.13 sec, 3044 allocs, 2.27 MBytes serialized in 251263 calls.
 
 Object info:
 ============

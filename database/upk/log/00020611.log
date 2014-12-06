@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00020611.upk Ver: 573/1 Engine: 4205 Names: 47 Exports: 20 Imports: 4 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00020611.upk Ver: 573/1 Engine: 4205 Names: 48 Exports: 20 Imports: 4 Game: 801A
 Loading Texture2D JinSeoYeonM_col1_D from package 00020611.upk
 Loading Texture2D JinSeoYeonM_col1_E from package 00020611.upk
 Loading Texture2D JinSeoYeonM_col1_FX from package 00020611.upk
@@ -10,7 +10,7 @@ Loading Texture2D kunF_face_D from package 00020611.upk
 Loading Texture2D kunF_face_M from package 00020611.upk
 Loading Texture2D kunF_face_n from package 00020611.upk
 Loading Texture2D kunF_face_s from package 00020611.upk
-Loaded in 0.082 sec, 409 allocs, 3.63 MBytes serialized in 2747 calls.
+Loaded in 0.12 sec, 425 allocs, 9.51 MBytes serialized in 3076 calls.
 
 Object info:
 ============
@@ -33,7 +33,7 @@ ClassName: Texture2D ObjectName: JinSeoYeonM_col1_E
 
     SizeX = 1024
     SizeY = 1024
-    Format = PF_DXT5 (7)
+    Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
@@ -46,13 +46,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: JinSeoYeonM_col1_FX
 
-    SizeX = 2048
-    SizeY = 2048
-    Format = PF_DXT5 (7)
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 11
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -61,13 +61,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: JinSeoYeonM_col1_M
 
-    SizeX = 512
-    SizeY = 512
+    SizeX = 1024
+    SizeY = 1024
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 9
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -91,13 +91,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: JinSeoYeonM_col1_S
 
-    SizeX = 1024
-    SizeY = 1024
+    SizeX = 2048
+    SizeY = 2048
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 11
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

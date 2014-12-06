@@ -1,17 +1,19 @@
-Found 16186 game files (0 skipped)
-Loading package: 00024711.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00024711.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 5 Imports: 2 Game: 801A
 Loading Texture2D 090020_JinF_col1_D from package 00024711.upk
+Loading Texture2D 090020_JinF_col1_E from package 00024711.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D 090020_JinF_col1_M from package 00024711.upk
 Loading Texture2D 090020_JinF_col1_N from package 00024711.upk
 Loading Texture2D 090020_JinF_col1_S from package 00024711.upk
-Loaded in 0.029 sec, 178 allocs, 0.64 MBytes serialized in 1019 calls.
+Loaded in 0.041 sec, 213 allocs, 1.02 MBytes serialized in 1256 calls.
 
 Object info:
 ============
 ClassName: Texture2D ObjectName: 090020_JinF_col1_D
 
     SizeX = 1024
-    SizeY = 512
+    SizeY = 1024
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
@@ -23,10 +25,25 @@ ClassName: Texture2D ObjectName: 090020_JinF_col1_D
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: 090020_JinF_col1_E
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: 090020_JinF_col1_M
 
     SizeX = 512
-    SizeY = 256
+    SizeY = 512
     Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
@@ -41,7 +58,7 @@ Object info:
 ClassName: Texture2D ObjectName: 090020_JinF_col1_N
 
     SizeX = 1024
-    SizeY = 512
+    SizeY = 1024
     Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
@@ -56,7 +73,7 @@ Object info:
 ClassName: Texture2D ObjectName: 090020_JinF_col1_S
 
     SizeX = 1024
-    SizeY = 512
+    SizeY = 1024
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)

@@ -1,13 +1,13 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00019976.upk Ver: 573/1 Engine: 4205 Names: 25 Exports: 1 Imports: 5 Game: 801A
 Loading SkeletalMesh3 DarkRatKing from package 00019976.upk
 Loading package: 00019977.upk Ver: 573/1 Engine: 4205 Names: 99 Exports: 2 Imports: 22 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00019977.upk
 Loading package: 00019978.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
-Loading MaterialInstanceConstant Col1_A from package 00019977.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading MaterialInstanceConstant col1_A from package 00019977.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D Monster_Human_DarkRatKing_col1_N from package 00019978.upk
 Loading Texture2D Monster_Human_DarkRatKing_col1_M from package 00019978.upk
 Loading Texture2D Monster_Human_DarkRatKing_col1_D from package 00019978.upk
@@ -29,7 +29,7 @@ Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D Noise_Glass_000 from package 00012963.upk
-Loaded in 0.12 sec, 2785 allocs, 2.48 MBytes serialized in 405637 calls.
+Loaded in 0.14 sec, 2865 allocs, 2.54 MBytes serialized in 422330 calls.
 
 Object info:
 ============
@@ -49,7 +49,7 @@ ClassName: SkeletalMesh3 ObjectName: DarkRatKing
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
-    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'Col1_A' }
+    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'col1_A' }
 
 
     Lods[1] =
@@ -59,7 +59,7 @@ ClassName: SkeletalMesh3 ObjectName: DarkRatKing
             Sections[2] =
             {
                 Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=8044 }
-                Sections[1] = { Material=MaterialInstanceConstant'Col1_A', FirstIndex=24132, NumFaces=1564 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1_A', FirstIndex=24132, NumFaces=1564 }
             }
             NumVerts = 8078
             IndexCount = 28824

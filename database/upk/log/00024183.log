@@ -1,4 +1,4 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00024183.upk Ver: 573/1 Engine: 4205 Names: 236 Exports: 209 Imports: 20 Game: 801A
 Loading SkeletalMesh3 65081_JinM from package 00024183.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
@@ -17,9 +17,9 @@ Loading package: 00024182.upk Ver: 573/1 Engine: 4205 Names: 105 Exports: 2 Impo
 Loading MaterialInstanceConstant col1 from package 00024182.upk
 Loading package: 00024181.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 8 Imports: 4 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
-Loading MaterialInstanceConstant col1_Fur from package 00024182.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading MaterialInstanceConstant col1_fur from package 00024182.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D 65009_JinM_col2_N from package 00024181.upk
 Loading Texture2D 65009_JinM_col2_M from package 00024181.upk
 Loading Texture2D 65009_JinM_col2_D from package 00024181.upk
@@ -40,7 +40,7 @@ Loading Texture2D Noise_Glass_000 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.12 sec, 2992 allocs, 2.15 MBytes serialized in 371691 calls.
+Loaded in 0.13 sec, 3072 allocs, 2.22 MBytes serialized in 388384 calls.
 
 Object info:
 ============
@@ -67,7 +67,7 @@ ClassName: SkeletalMesh3 ObjectName: 65081_JinM
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
-    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'col1_Fur' }
+    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'col1_fur' }
 
 
     Lods[2] =
@@ -78,7 +78,7 @@ ClassName: SkeletalMesh3 ObjectName: 65081_JinM
             {
                 Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=5111 }
                 Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=15333, NumFaces=277 }
-                Sections[2] = { Material=MaterialInstanceConstant'col1_Fur', FirstIndex=16164, NumFaces=294 }
+                Sections[2] = { Material=MaterialInstanceConstant'col1_fur', FirstIndex=16164, NumFaces=294 }
             }
             NumVerts = 4117
             IndexCount = 17046

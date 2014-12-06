@@ -1,11 +1,13 @@
-Found 16186 game files (0 skipped)
-Loading package: 00024132.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 5 Imports: 2 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00024132.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 6 Imports: 2 Game: 801A
 Loading Texture2D 990176_Autoscale_col1_D from package 00024132.upk
 Loading Texture2D 990176_Autoscale_col1_E from package 00024132.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D 990176_Autoscale_col1_M from package 00024132.upk
 Loading Texture2D 990176_Autoscale_col1_N from package 00024132.upk
 Loading Texture2D 990176_Autoscale_col1_S from package 00024132.upk
-Loaded in 0.03 sec, 201 allocs, 0.22 MBytes serialized in 1169 calls.
+Loading Texture2D FX_Autoscale_col1_Mask from package 00024132.upk
+Loaded in 0.039 sec, 236 allocs, 0.25 MBytes serialized in 1385 calls.
 
 Object info:
 ============
@@ -70,6 +72,21 @@ ClassName: Texture2D ObjectName: 990176_Autoscale_col1_N
 Object info:
 ============
 ClassName: Texture2D ObjectName: 990176_Autoscale_col1_S
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FX_Autoscale_col1_Mask
 
     SizeX = 512
     SizeY = 256

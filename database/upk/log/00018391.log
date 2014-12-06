@@ -1,17 +1,18 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00018391.upk Ver: 573/1 Engine: 4205 Names: 102 Exports: 13 Imports: 13 Game: 801A
 Loading SkeletalMesh3 040014_GonM from package 00018391.upk
 Loading package: 00018390.upk Ver: 573/1 Engine: 4205 Names: 107 Exports: 2 Imports: 26 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00018390.upk
-Loading package: 00003410.upk Ver: 573/1 Engine: 4205 Names: 30 Exports: 3 Imports: 4 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
-Loading MaterialInstanceConstant col1_hat from package 00018390.upk
+Loading package: 00003410.upk Ver: 573/1 Engine: 4205 Names: 31 Exports: 3 Imports: 4 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading MaterialInstanceConstant col1_Hat from package 00018390.upk
 Loading package: 00018389.upk Ver: 573/1 Engine: 4205 Names: 45 Exports: 11 Imports: 9 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading Texture2D GonM_004_col1_d from package 00003410.upk
 Loading Texture2D GonM_004_col1_n from package 00003410.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Material3 Beard_Ac from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
 Loading Texture2D 040014_GonM_col1_N from package 00018389.upk
 Loading Texture2D 040014_GonM_col1_M from package 00018389.upk
@@ -33,7 +34,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.1 sec, 3056 allocs, 1.60 MBytes serialized in 178224 calls.
+Loaded in 0.12 sec, 3137 allocs, 1.67 MBytes serialized in 194927 calls.
 
 Object info:
 ============
@@ -53,7 +54,7 @@ ClassName: SkeletalMesh3 ObjectName: 040014_GonM
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
-    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'col1_hat' }
+    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'col1_Hat' }
 
 
     Lods[1] =
@@ -63,7 +64,7 @@ ClassName: SkeletalMesh3 ObjectName: 040014_GonM
             Sections[2] =
             {
                 Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=282 }
-                Sections[1] = { Material=MaterialInstanceConstant'col1_hat', FirstIndex=846, NumFaces=812 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1_Hat', FirstIndex=846, NumFaces=812 }
             }
             NumVerts = 795
             IndexCount = 3282

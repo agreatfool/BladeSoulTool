@@ -1,22 +1,29 @@
-Found 16186 game files (0 skipped)
-Loading package: 00024059.upk Ver: 573/1 Engine: 4205 Names: 133 Exports: 1 Imports: 4 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00024059.upk Ver: 573/1 Engine: 4205 Names: 200 Exports: 408 Imports: 11 Game: 801A
 Loading SkeletalMesh3 GiganToad from package 00024059.upk
 WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
-Loading package: 00024058.upk Ver: 573/1 Engine: 4205 Names: 90 Exports: 1 Imports: 19 Game: 801A
+Loading package: 00024058.upk Ver: 573/1 Engine: 4205 Names: 185 Exports: 219 Imports: 51 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_79 from package 00024059.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_82 from package 00024059.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_83 from package 00024059.upk
 Loading MaterialInstanceConstant col1 from package 00024058.upk
-Loading package: 00024057.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 2 Game: 801A
+Loading package: 00024057.upk Ver: 573/1 Engine: 4205 Names: 41 Exports: 11 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D GiganToad_col1_N from package 00024057.upk
 Loading Texture2D GiganToad_col1_M from package 00024057.upk
 Loading Texture2D GiganToad_col1_D from package 00024057.upk
 Loading Texture2D GiganToad_col1_S from package 00024057.upk
 Loading TextureCube Cube_D from package 00002640.upk
 Loading Texture2D GiganToad_col1_E from package 00024057.upk
-Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading Texture2D GiganToad_fx_mask from package 00024057.upk
+Loading Texture2D Noise_Wave_000 from package 00012963.upk
+Loading Texture2D GiganToad_col2_D from package 00024057.upk
+Loading Material3 gigantoad_Basic from package 00024058.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -29,7 +36,8 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.12 sec, 2833 allocs, 3.11 MBytes serialized in 375849 calls.
+Loading Texture2D Gradient_Line_005 from package 00012963.upk
+Loaded in 0.15 sec, 3198 allocs, 3.46 MBytes serialized in 405881 calls.
 
 Object info:
 ============
@@ -45,7 +53,12 @@ ClassName: SkeletalMesh3 ObjectName: GiganToad
             bEnableShadowCasting[2] = { true, true }
         }
     }
-    Sockets[0] = {}
+    Sockets[3] =
+    {
+        Sockets[0] = SkeletalMeshSocket'GiganToad.SkeletalMeshSocket_79'
+        Sockets[1] = SkeletalMeshSocket'GiganToad.SkeletalMeshSocket_82'
+        Sockets[2] = SkeletalMeshSocket'GiganToad.SkeletalMeshSocket_83'
+    }
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
@@ -58,10 +71,10 @@ ClassName: SkeletalMesh3 ObjectName: GiganToad
         {
             Sections[2] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=6806 }
-                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=20418, NumFaces=1984 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=6858 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=20574, NumFaces=1932 }
             }
-            NumVerts = 5890
+            NumVerts = 5896
             IndexCount = 26370
             NumTexCoords = 1
         }
@@ -71,3 +84,33 @@ ClassName: SkeletalMesh3 ObjectName: GiganToad
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
     BoneCount = 107
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_79
+
+    SocketName = head_fx
+    BoneName = Bip01Head
+    RelativeLocation = { X=120, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=-16384 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_82
+
+    SocketName = horn_L
+    BoneName = Bip01Head
+    RelativeLocation = { X=315.42, Y=-25.25, Z=-107 }
+    RelativeRotation = { Yaw=6270, Pitch=0, Roll=-16384 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_83
+
+    SocketName = Horn_R
+    BoneName = Bip01Head
+    RelativeLocation = { X=315.42, Y=-25.25, Z=107 }
+    RelativeRotation = { Yaw=6270, Pitch=0, Roll=-16384 }
+    RelativeScale = { X=1, Y=1, Z=1 }

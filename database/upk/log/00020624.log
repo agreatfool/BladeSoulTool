@@ -1,4 +1,4 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00020624.upk Ver: 573/1 Engine: 4205 Names: 67 Exports: 7 Imports: 12 Game: 801A
 Loading SkeletalMesh3 990169_Autoscale from package 00020624.upk
 WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
@@ -8,7 +8,7 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_161 from package 00020624.upk
 Loading MaterialInstanceConstant col2 from package 00013358.upk
 Loading package: 00013198.upk Ver: 573/1 Engine: 4205 Names: 36 Exports: 8 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D Weapon_110024_col2_n from package 00013198.upk
 Loading Texture2D Weapon_110024_col2_d from package 00013198.upk
 Loading Texture2D Weapon_110024_col2_s from package 00013198.upk
@@ -16,7 +16,7 @@ Loading TextureCube Cube_D from package 00002640.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Weapon_110024_FX from package 00013198.upk
 Loading Material3 Basic_00013358 from package 00013358.upk
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -26,7 +26,7 @@ Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D check from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.079 sec, 2746 allocs, 0.92 MBytes serialized in 166131 calls.
+Loaded in 0.081 sec, 2826 allocs, 0.98 MBytes serialized in 182848 calls.
 
 Object info:
 ============
@@ -61,7 +61,7 @@ ClassName: SkeletalMesh3 ObjectName: 990169_Autoscale
             {
                 Sections[0] = { Material=MaterialInstanceConstant'col2', FirstIndex=0, NumFaces=688 }
             }
-            NumVerts = 554
+            NumVerts = 555
             IndexCount = 2064
             NumTexCoords = 1
         }

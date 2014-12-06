@@ -1,11 +1,27 @@
-Found 16186 game files (0 skipped)
-Loading package: 00025267.upk Ver: 573/1 Engine: 4205 Names: 176 Exports: 54 Imports: 41 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00025267.upk Ver: 573/1 Engine: 4205 Names: 609 Exports: 40996 Imports: 132 Game: 801A
 Loading Texture2D GuildCustomize_CustomizeScene_Preview from package 00025267.upk
-Loaded in 0.002 sec, 199 allocs, 0.02 MBytes serialized in 1876 calls.
+Loading Texture2D GuildCustomize_Purchase_Preview from package 00025267.upk
+Loaded in 0.091 sec, 637 allocs, 2.87 MBytes serialized in 740828 calls.
 
 Object info:
 ============
 ClassName: Texture2D ObjectName: GuildCustomize_CustomizeScene_Preview
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GuildCustomize_Purchase_Preview
 
     SizeX = 256
     SizeY = 256

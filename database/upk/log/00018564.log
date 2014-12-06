@@ -1,4 +1,4 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00018564.upk Ver: 573/1 Engine: 4205 Names: 212 Exports: 221 Imports: 20 Game: 801A
 Loading SkeletalMesh3 SnowmanA from package 00018564.upk
 WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
@@ -24,9 +24,9 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_283 from package 00018564.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_284 from package 00018564.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_285 from package 00018564.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_286 from package 00018564.upk
-Loading MaterialInstanceConstant col1_Fur from package 00018563.upk
+Loading MaterialInstanceConstant col1_fur from package 00018563.upk
 Loading package: 00018560.upk Ver: 573/1 Engine: 4205 Names: 39 Exports: 11 Imports: 2 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00018563.upk
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading Texture2D Monster_Human_SnowmanA_col1_N from package 00018560.upk
@@ -36,7 +36,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Monster_Human_SnowmanA_col1_S from package 00018560.upk
 Loading Texture2D Monster_Human_SnowmanA_col1_FX_Line from package 00018560.upk
 Loading Material3 Fur_SnowmanA from package 00018563.upk
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading TextureCube Cube_D from package 00002640.upk
 Loading Texture2D Monster_Human_SnowmanA_col1_E from package 00018560.upk
 Loading Material3 Basic_SnowmanA from package 00018563.upk
@@ -52,7 +52,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.12 sec, 3085 allocs, 1.71 MBytes serialized in 308169 calls.
+Loaded in 0.12 sec, 3165 allocs, 1.78 MBytes serialized in 324862 calls.
 
 Object info:
 ============
@@ -91,7 +91,7 @@ ClassName: SkeletalMesh3 ObjectName: SnowmanA
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
-    Materials[2] = { MaterialInstanceConstant'col1_Fur', MaterialInstanceConstant'col1' }
+    Materials[2] = { MaterialInstanceConstant'col1_fur', MaterialInstanceConstant'col1' }
 
 
     Lods[1] =
@@ -100,7 +100,7 @@ ClassName: SkeletalMesh3 ObjectName: SnowmanA
         {
             Sections[2] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1_Fur', FirstIndex=0, NumFaces=4442 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1_fur', FirstIndex=0, NumFaces=4442 }
                 Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=13326, NumFaces=1423 }
             }
             NumVerts = 4051

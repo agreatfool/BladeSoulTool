@@ -1,12 +1,11 @@
-Found 16186 game files (0 skipped)
-Loading package: 00020610.upk Ver: 573/1 Engine: 4205 Names: 239 Exports: 279 Imports: 18 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00020610.upk Ver: 573/1 Engine: 4205 Names: 238 Exports: 279 Imports: 18 Game: 801A
 Loading SkeletalMesh3 JinSeoYeonM from package 00020610.upk
 WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PlayParticleSet" was not found
 WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
-WARNING: FloatProperty "USkeletalMesh3::PhysicalHitScale" was not found
 Loading package: 00020609.upk Ver: 573/1 Engine: 4205 Names: 188 Exports: 264 Imports: 55 Game: 801A
 Loading SkeletalMeshSocket SkeletalMeshSocket_191 from package 00020610.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_192 from package 00020610.upk
@@ -24,10 +23,10 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_90 from package 00020610.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_91 from package 00020610.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_92 from package 00020610.upk
 Loading MaterialInstanceConstant col1 from package 00020609.upk
-Loading package: 00020611.upk Ver: 573/1 Engine: 4205 Names: 47 Exports: 20 Imports: 4 Game: 801A
+Loading package: 00020611.upk Ver: 573/1 Engine: 4205 Names: 48 Exports: 20 Imports: 4 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading MaterialInstanceConstant col1_1 from package 00020609.upk
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D JinSeoYeonM_col1_E from package 00020611.upk
 Loading TextureCube lenscube from package 00002640.upk
 Loading Texture2D JinSeoYeonM_col1_S from package 00020611.upk
@@ -36,7 +35,7 @@ Loading Texture2D JinSeoYeonM_col1_M from package 00020611.upk
 Loading Texture2D JinSeoYeonM_col1_D from package 00020611.upk
 Loading Texture2D JinSeoYeonM_col1_FX from package 00020611.upk
 Loading Material3 body_JinSeoYeonM from package 00020609.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D check from package 00002620.upk
 Loading TextureCube lenscube_a from package 00002640.upk
 Loading Texture2D kunF_face_s from package 00020611.upk
@@ -62,7 +61,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.22 sec, 3471 allocs, 6.18 MBytes serialized in 669347 calls.
+Loaded in 0.26 sec, 3566 allocs, 12.11 MBytes serialized in 680803 calls.
 
 Object info:
 ============
@@ -111,7 +110,7 @@ ClassName: SkeletalMesh3 ObjectName: JinSeoYeonM
                 Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=33147, NumFaces=6950 }
                 Sections[2] = { Material=MaterialInstanceConstant'col1_1', FirstIndex=53997, NumFaces=1718 }
             }
-            NumVerts = 13905
+            NumVerts = 13708
             IndexCount = 59151
             NumTexCoords = 1
         }

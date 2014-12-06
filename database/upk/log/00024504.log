@@ -1,4 +1,4 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00024504.upk Ver: 573/1 Engine: 4205 Names: 114 Exports: 33 Imports: 13 Game: 801A
 Loading SkeletalMesh3 040133_JinF from package 00024504.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
@@ -13,19 +13,20 @@ WARNING: StructProperty "USkeletalMesh3::HeightRatio" was not found
 WARNING: StructProperty "USkeletalMesh3::HandRatio" was not found
 Loading package: 00024487.upk Ver: 573/1 Engine: 4205 Names: 102 Exports: 2 Imports: 22 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00024487.upk
-Loading package: 00012677.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 2 Game: 801A
-Loading package: 00024486.upk Ver: 573/1 Engine: 4205 Names: 24 Exports: 3 Imports: 2 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
-Loading MaterialInstanceConstant Hat from package 00024487.upk
+Loading package: 00012677.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 5 Imports: 2 Game: 801A
+Loading package: 00024486.upk Ver: 573/1 Engine: 4205 Names: 26 Exports: 3 Imports: 2 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading MaterialInstanceConstant hat from package 00024487.upk
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading Texture2D 040021_JinF_N from package 00012677.upk
 Loading Texture2D 040133_JinF_D from package 00024486.upk
 Loading Texture2D 040133_JinF_S from package 00024486.upk
 Loading Texture2D 040021_JinF_M from package 00012677.upk
 Loading Material3 Hair from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading TextureCube Cube_D from package 00002640.upk
 Loading Texture2D 040133_JinF_E from package 00024486.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Material3 Basic from package 00002620.upk
 Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D Noise_Glass_000 from package 00012963.upk
@@ -40,7 +41,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.11 sec, 2883 allocs, 1.34 MBytes serialized in 201050 calls.
+Loaded in 0.11 sec, 2967 allocs, 1.41 MBytes serialized in 217761 calls.
 
 Object info:
 ============
@@ -60,7 +61,7 @@ ClassName: SkeletalMesh3 ObjectName: 040133_JinF
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
-    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'Hat' }
+    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'hat' }
 
 
     Lods[1] =
@@ -70,7 +71,7 @@ ClassName: SkeletalMesh3 ObjectName: 040133_JinF
             Sections[2] =
             {
                 Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1402 }
-                Sections[1] = { Material=MaterialInstanceConstant'Hat', FirstIndex=4206, NumFaces=644 }
+                Sections[1] = { Material=MaterialInstanceConstant'hat', FirstIndex=4206, NumFaces=644 }
             }
             NumVerts = 1583
             IndexCount = 6138

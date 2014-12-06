@@ -1,4 +1,4 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00019441.upk Ver: 573/1 Engine: 4205 Names: 237 Exports: 468 Imports: 21 Game: 801A
 Loading SkeletalMesh3 SnowmanB from package 00019441.upk
 WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
@@ -25,9 +25,9 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_61 from package 00019441.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_62 from package 00019441.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_63 from package 00019441.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_64 from package 00019441.upk
-Loading MaterialInstanceConstant col1_Fur from package 00019439.upk
+Loading MaterialInstanceConstant col1_fur from package 00019439.upk
 Loading package: 00019438.upk Ver: 573/1 Engine: 4205 Names: 39 Exports: 11 Imports: 2 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00019439.upk
 Loading Texture2D Monster_Human_SnowmanB_col1_N from package 00019438.upk
 Loading Texture2D Monster_Human_SnowmanB_col1_M from package 00019438.upk
@@ -36,7 +36,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Monster_Human_SnowmanB_col1_S from package 00019438.upk
 Loading Texture2D Monster_Human_SnowmanB_col1_FX_Line from package 00019438.upk
 Loading Material3 Fur_SnowmanB from package 00019439.upk
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D Monster_Human_SnowmanB_col1_E from package 00019438.upk
 Loading Material3 Basic_SnowmanB from package 00019439.upk
 Loading Texture2D check from package 00002620.upk
@@ -45,7 +45,7 @@ Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Noise_Glass_000 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.11 sec, 2651 allocs, 3.48 MBytes serialized in 382216 calls.
+Loaded in 0.11 sec, 2731 allocs, 3.54 MBytes serialized in 398909 calls.
 
 Object info:
 ============
@@ -85,7 +85,7 @@ ClassName: SkeletalMesh3 ObjectName: SnowmanB
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
-    Materials[2] = { MaterialInstanceConstant'col1_Fur', MaterialInstanceConstant'col1' }
+    Materials[2] = { MaterialInstanceConstant'col1_fur', MaterialInstanceConstant'col1' }
 
 
     Lods[1] =
@@ -94,9 +94,9 @@ ClassName: SkeletalMesh3 ObjectName: SnowmanB
         {
             Sections[4] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1_Fur', FirstIndex=0, NumFaces=3321 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1_fur', FirstIndex=0, NumFaces=3321 }
                 Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=9963, NumFaces=2394 }
-                Sections[2] = { Material=MaterialInstanceConstant'col1_Fur', FirstIndex=17145, NumFaces=1444 }
+                Sections[2] = { Material=MaterialInstanceConstant'col1_fur', FirstIndex=17145, NumFaces=1444 }
                 Sections[3] = { Material=MaterialInstanceConstant'col1', FirstIndex=21477, NumFaces=390 }
             }
             NumVerts = 5964

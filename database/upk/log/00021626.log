@@ -1,4 +1,4 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00021626.upk Ver: 573/1 Engine: 4205 Names: 237 Exports: 316 Imports: 23 Game: 801A
 Loading SkeletalMesh3 MoonStoneDragon from package 00021626.upk
 WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
@@ -66,8 +66,8 @@ WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not 
 Loading SkeletalMeshSocket SkeletalMeshSocket_99 from package 00021626.upk
 WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
 Loading MaterialInstanceConstant col1 from package 00021625.upk
-Loading package: 00010374.upk Ver: 573/1 Engine: 4205 Names: 43 Exports: 14 Imports: 4 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00010374.upk Ver: 573/1 Engine: 4205 Names: 45 Exports: 14 Imports: 4 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading package: 00010375.upk Ver: 573/1 Engine: 4205 Names: 173 Exports: 173 Imports: 45 Game: 801A
 Loading Texture2D DesertDragon_col2_N from package 00010374.upk
@@ -77,9 +77,10 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D DesertDragon_col2_S from package 00010374.upk
 Loading TextureCube Cube_D from package 00002640.upk
 Loading Texture2D DesertDragon_col2_E from package 00010374.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D DesertDragon_FX_Line from package 00010374.upk
 Loading Material3 Basic_DesertDragon from package 00010375.upk
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -91,7 +92,7 @@ Loading Texture2D check from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.13 sec, 3222 allocs, 3.27 MBytes serialized in 366441 calls.
+Loaded in 0.13 sec, 3304 allocs, 3.34 MBytes serialized in 383146 calls.
 
 Object info:
 ============

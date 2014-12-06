@@ -1,16 +1,33 @@
-Found 16186 game files (0 skipped)
-Loading package: 00020452.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 10 Imports: 2 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00020452.upk Ver: 573/1 Engine: 4205 Names: 51 Exports: 21 Imports: 2 Game: 801A
 Loading Texture2D Monster_Beast_SnakeSoldier_col1_D from package 00020452.upk
 Loading Texture2D Monster_Beast_SnakeSoldier_col1_E from package 00020452.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D Monster_Beast_SnakeSoldier_col1_FX from package 00020452.upk
 Loading Texture2D Monster_Beast_SnakeSoldier_col1_M1 from package 00020452.upk
 Loading Texture2D Monster_Beast_SnakeSoldier_col1_N from package 00020452.upk
 Loading Texture2D Monster_Beast_SnakeSoldier_col1_S from package 00020452.upk
+Loading Texture2D Monster_beast_SnakeSoldier_col6_D from package 00020452.upk
+Loading Texture2D Monster_beast_SnakeSoldier_col6_E from package 00020452.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading Texture2D Monster_beast_SnakeSoldier_col6_S from package 00020452.upk
 Loading Texture2D SnakeSoldier_col2_D from package 00020452.upk
 Loading Texture2D SnakeSoldier_col2_E from package 00020452.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading Texture2D SnakeSoldier_col2_FX from package 00020452.upk
 Loading Texture2D SnakeSoldier_col2_N from package 00020452.upk
 Loading Texture2D SnakeSoldier_col2_S from package 00020452.upk
-Loaded in 0.074 sec, 379 allocs, 3.06 MBytes serialized in 2395 calls.
+Loading Texture2D SnakeSoldier_col3_E from package 00020452.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading Texture2D SnakeSoldier_col4_D from package 00020452.upk
+Loading Texture2D SnakeSoldier_col4_E from package 00020452.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading Texture2D SnakeSoldier_col4_S from package 00020452.upk
+Loading Texture2D SnakeSoldier_col5_D from package 00020452.upk
+Loading Texture2D SnakeSoldier_col5_E from package 00020452.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading Texture2D SnakeSoldier_col5_S from package 00020452.upk
+Loaded in 0.16 sec, 741 allocs, 5.82 MBytes serialized in 4792 calls.
 
 Object info:
 ============
@@ -104,6 +121,51 @@ ClassName: Texture2D ObjectName: Monster_Beast_SnakeSoldier_col1_S
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Monster_beast_SnakeSoldier_col6_D
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_beast_SnakeSoldier_col6_E
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_beast_SnakeSoldier_col6_S
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: SnakeSoldier_col2_D
 
     SizeX = 1024
@@ -134,6 +196,21 @@ ClassName: Texture2D ObjectName: SnakeSoldier_col2_E
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: SnakeSoldier_col2_FX
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: SnakeSoldier_col2_N
 
     SizeX = 1024
@@ -150,6 +227,111 @@ ClassName: Texture2D ObjectName: SnakeSoldier_col2_N
 Object info:
 ============
 ClassName: Texture2D ObjectName: SnakeSoldier_col2_S
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SnakeSoldier_col3_E
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SnakeSoldier_col4_D
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SnakeSoldier_col4_E
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SnakeSoldier_col4_S
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SnakeSoldier_col5_D
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SnakeSoldier_col5_E
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SnakeSoldier_col5_S
 
     SizeX = 1024
     SizeY = 1024

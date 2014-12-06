@@ -1,19 +1,25 @@
-Found 16186 game files (0 skipped)
-Loading package: 00024138.upk Ver: 573/1 Engine: 4205 Names: 53 Exports: 5 Imports: 8 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00024138.upk Ver: 573/1 Engine: 4205 Names: 65 Exports: 7 Imports: 12 Game: 801A
 Loading SkeletalMesh3 990177_Autoscale from package 00024138.upk
-Loading package: 00024137.upk Ver: 573/1 Engine: 4205 Names: 91 Exports: 1 Imports: 20 Game: 801A
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
+Loading package: 00024137.upk Ver: 573/1 Engine: 4205 Names: 94 Exports: 1 Imports: 22 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_123 from package 00024138.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_124 from package 00024138.upk
 Loading MaterialInstanceConstant col1 from package 00024137.upk
-Loading package: 00024136.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 2 Game: 801A
+Loading package: 00024136.upk Ver: 573/1 Engine: 4205 Names: 36 Exports: 6 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00024133.upk Ver: 573/1 Engine: 4205 Names: 173 Exports: 152 Imports: 47 Game: 801A
 Loading Texture2D Weapon_990177_col1_N from package 00024136.upk
 Loading Texture2D Weapon_990177_col1_M from package 00024136.upk
 Loading Texture2D Weapon_990177_col1_D from package 00024136.upk
 Loading Texture2D Weapon_990177_col1_S from package 00024136.upk
 Loading TextureCube MatelR3 from package 00002640.upk
 Loading Texture2D Weapon_990177_col1_E from package 00024136.upk
-Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading Texture2D FX_990177_col1_Mask from package 00024136.upk
+Loading Material3 Basic_FX from package 00024133.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -26,7 +32,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.11 sec, 2747 allocs, 1.88 MBytes serialized in 237742 calls.
+Loaded in 0.12 sec, 3065 allocs, 2.00 MBytes serialized in 258503 calls.
 
 Object info:
 ============
@@ -42,7 +48,11 @@ ClassName: SkeletalMesh3 ObjectName: 990177_Autoscale
             bEnableShadowCasting[1] = { true }
         }
     }
-    Sockets[0] = {}
+    Sockets[2] =
+    {
+        Sockets[0] = SkeletalMeshSocket'990177_Autoscale.SkeletalMeshSocket_123'
+        Sockets[1] = SkeletalMeshSocket'990177_Autoscale.SkeletalMeshSocket_124'
+    }
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
@@ -67,3 +77,23 @@ ClassName: SkeletalMesh3 ObjectName: 990177_Autoscale
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
     BoneCount = 2
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_123
+
+    SocketName = trail_start
+    BoneName = WeaponRoot
+    RelativeLocation = { X=-3.75001, Y=0, Z=105.5 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_124
+
+    SocketName = trail_end
+    BoneName = WeaponRoot
+    RelativeLocation = { X=88, Y=0, Z=58 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }

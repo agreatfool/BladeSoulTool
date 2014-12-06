@@ -1,5 +1,6 @@
-Found 16186 game files (0 skipped)
-Loading package: 00026915.upk Ver: 573/1 Engine: 4205 Names: 284 Exports: 266 Imports: 40 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00026915.upk Ver: 573/1 Engine: 4205 Names: 341 Exports: 325 Imports: 54 Game: 801A
+Loading Material3 box_mat01 from package 00026915.upk
 Loading Material3 Indicator_attraction_running from package 00026915.upk
 Loading Material3 Indicator_epic_running from package 00026915.upk
 Loading Material3 Indicator_faction_running from package 00026915.upk
@@ -12,11 +13,13 @@ Loading Material3 Indicator_once_running from package 00026915.upk
 Loading Material3 Indicator_repeat_running from package 00026915.upk
 Loading MaterialInstanceConstant box_mat from package 00026915.upk
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading MaterialInstanceConstant box_mat001 from package 00026915.upk
 Loading MaterialInstanceConstant col1_ar from package 00026915.upk
 Loading MaterialInstanceConstant col1_ar_P from package 00026915.upk
 Loading MaterialInstanceConstant col1_ar_R from package 00026915.upk
 Loading MaterialInstanceConstant col1_ar_Y from package 00026915.upk
+Loading MaterialInstanceConstant col1_ar_Y01 from package 00026915.upk
 Loading MaterialInstanceConstant col2_ar from package 00026915.upk
 Loading MaterialInstanceConstant col2_ar_R from package 00026915.upk
 Loading MaterialInstanceConstant festival_mat from package 00026915.upk
@@ -30,6 +33,7 @@ Loading StaticMesh3 Arrow_Map from package 00026915.upk
 Loading StaticMesh3 Box from package 00026915.upk
 Loading StaticMesh3 festival_01 from package 00026915.upk
 Loading StaticMesh3 festival_02 from package 00026915.upk
+Loading Texture2D 2box_1_d from package 00026915.upk
 Loading Texture2D 2box_d from package 00026915.upk
 Loading Texture2D 2box_e from package 00026915.upk
 Loading Texture2D 2box_m from package 00026915.upk
@@ -71,7 +75,7 @@ Loading Texture2D Specular_ar from package 00026915.upk
 Loading Texture2D yellow_1_d from package 00026915.upk
 Loading TextureCube Cube_D from package 00002640.upk
 Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -84,7 +88,25 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.27 sec, 3828 allocs, 3.43 MBytes serialized in 210026 calls.
+Loaded in 0.33 sec, 4005 allocs, 3.63 MBytes serialized in 228728 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: box_mat01
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'2box_1_d' }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
 
 Object info:
 ============
@@ -290,7 +312,7 @@ ClassName: MaterialInstanceConstant ObjectName: box_mat
         TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'2box_d' }
         TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'2box_s' }
         TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'Cube_D' }
-        TextureParameterValues[5] = { ParameterName=Emissive, ParameterValue=Texture2D'2box_e' }
+        TextureParameterValues[5] = { ParameterName=Emissive, ParameterValue=Texture2D'2box_d' }
     }
     VectorParameterValues[11] =
     {
@@ -351,6 +373,41 @@ ClassName: MaterialInstanceConstant ObjectName: box_mat
         }
     }
     Parent = Material3'Basic'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: box_mat001
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[5] =
+    {
+        TextureParameterValues[0] = { ParameterName=Diffuse1, ParameterValue=Texture2D'Box_map_d' }
+        TextureParameterValues[1] = { ParameterName=Normal, ParameterValue=Texture2D'2box_n' }
+        TextureParameterValues[2] = { ParameterName=Emissive1, ParameterValue=Texture2D'Box_map_e' }
+        TextureParameterValues[3] = { ParameterName=Diffuse, ParameterValue=Texture2D'2box_d' }
+        TextureParameterValues[4] = { ParameterName=Emissive, ParameterValue=Texture2D'2box_d' }
+    }
+    VectorParameterValues[2] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+    }
+    Parent = Material3'box_mat01'
     FlattenedTexture = None
     MobileBaseTexture = None
     MobileNormalTexture = None
@@ -723,6 +780,41 @@ ClassName: MaterialInstanceConstant ObjectName: col1_ar_Y
         }
     }
     Parent = Material3'Basic'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1_ar_Y01
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[5] =
+    {
+        TextureParameterValues[0] = { ParameterName=Diffuse1, ParameterValue=Texture2D'Box_map_d' }
+        TextureParameterValues[1] = { ParameterName=Normal, ParameterValue=Texture2D'Normal_ar' }
+        TextureParameterValues[2] = { ParameterName=Emissive1, ParameterValue=Texture2D'Box_map_e' }
+        TextureParameterValues[3] = { ParameterName=Diffuse, ParameterValue=Texture2D'diffuse_Y' }
+        TextureParameterValues[4] = { ParameterName=Emissive, ParameterValue=Texture2D'diffuse_Y' }
+    }
+    VectorParameterValues[2] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+    }
+    Parent = Material3'box_mat01'
     FlattenedTexture = None
     MobileBaseTexture = None
     MobileNormalTexture = None
@@ -1485,6 +1577,21 @@ ClassName: StaticMesh3 ObjectName: festival_02
         }
     }
     LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 2box_1_d
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
 
 Object info:
 ============

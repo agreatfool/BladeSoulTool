@@ -1,17 +1,18 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00024425.upk Ver: 573/1 Engine: 4205 Names: 91 Exports: 1 Imports: 21 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00024425.upk
-Loading package: 00024426.upk Ver: 573/1 Engine: 4205 Names: 78 Exports: 46 Imports: 5 Game: 801A
+Loading package: 00024426.upk Ver: 573/1 Engine: 4205 Names: 68 Exports: 34 Imports: 5 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D 010173_Autoscale_col1_N from package 00024426.upk
 Loading Texture2D 010173_Autoscale_col1_M from package 00024426.upk
 Loading Texture2D 010173_Autoscale_col1_D from package 00024426.upk
 Loading Texture2D 010173_Autoscale_col1_S from package 00024426.upk
 Loading TextureCube lenscube from package 00002640.upk
 Loading Texture2D 010173_Autoscale_col1_E from package 00024426.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -24,7 +25,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.098 sec, 2714 allocs, 0.97 MBytes serialized in 146583 calls.
+Loaded in 0.1 sec, 2787 allocs, 1.30 MBytes serialized in 163030 calls.
 
 Object info:
 ============
@@ -50,17 +51,9 @@ ClassName: MaterialInstanceConstant ObjectName: col1
             ParameterName = Normal
             ParameterValue = Texture2D'Weapon_110003_col1.010173_Autoscale_col1_N'
         }
-        TextureParameterValues[1] =
-        {
-            ParameterName = Mask_GB
-            ParameterValue = Texture2D'Weapon_110003_col1.010173_Autoscale_col1_M'
-        }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'010173_Autoscale_col1_M' }
         TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'010173_Autoscale_col1_D' }
-        TextureParameterValues[3] =
-        {
-            ParameterName = Specular
-            ParameterValue = Texture2D'Weapon_110003_col1.010173_Autoscale_col1_S'
-        }
+        TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'010173_Autoscale_col1_S' }
         TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'lenscube' }
         TextureParameterValues[5] = { ParameterName=Emissive, ParameterValue=Texture2D'010173_Autoscale_col1_E' }
     }

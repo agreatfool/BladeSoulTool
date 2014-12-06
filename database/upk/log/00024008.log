@@ -1,4 +1,4 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00024008.upk Ver: 573/1 Engine: 4205 Names: 228 Exports: 369 Imports: 20 Game: 801A
 Loading SkeletalMesh3 DemonChungGak from package 00024008.upk
 WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
@@ -38,7 +38,7 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_147 from package 00024008.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_148 from package 00024008.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_149 from package 00024008.upk
 Loading MaterialInstanceConstant col1 from package 00024007.upk
-Loading package: 00024006.upk Ver: 573/1 Engine: 4205 Names: 34 Exports: 6 Imports: 2 Game: 801A
+Loading package: 00024006.upk Ver: 573/1 Engine: 4205 Names: 42 Exports: 14 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading Texture2D DemonChungGak_col1_N from package 00024006.upk
 Loading Texture2D DemonChungGak_col1_M from package 00024006.upk
@@ -47,8 +47,8 @@ Loading Texture2D DemonChungGak_col1_S from package 00024006.upk
 Loading TextureCube lenscube_a from package 00002640.upk
 Loading Texture2D DemonChungGak_col1_E from package 00024006.upk
 Loading Material3 DemonChungGak_Basic from package 00024007.upk
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -61,7 +61,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.14 sec, 3072 allocs, 3.63 MBytes serialized in 523253 calls.
+Loaded in 0.14 sec, 3160 allocs, 3.69 MBytes serialized in 540114 calls.
 
 Object info:
 ============
@@ -353,7 +353,7 @@ ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_127
 
     SocketName = L_throw
     BoneName = Bip01LHand_2
-    RelativeLocation = { X=25.6891, Y=-21.5019, Z=-1.69413 }
+    RelativeLocation = { X=51.0664, Y=-42.7246, Z=11.1869 }
     RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
     RelativeScale = { X=1, Y=1, Z=1 }
 

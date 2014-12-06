@@ -1,3 +1,37 @@
-Found 16186 game files (0 skipped)
-Loading package: 00020753.upk Ver: 573/1 Engine: 4205 Names: 1393 Exports: 44157 Imports: 588 Game: 801A
-Specified package(s) has no supported objects
+Found 18875 game files (36 skipped)
+Loading package: 00020753.upk Ver: 573/1 Engine: 4205 Names: 1912 Exports: 66712 Imports: 776 Game: 801A
+Loading Material3 FireDecal001_MatM_Blue from package 00020753.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading Texture2D Normal_Stone_001 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
+Loading Texture2D Decal_DarkSmoke_000 from package 00012963.upk
+Loading Texture2D Noise_013 from package 00012963.upk
+Loading Texture2D Noise_007 from package 00012963.upk
+Loading Texture2D Sparkle_005 from package 00012963.upk
+Loaded in 0.18 sec, 3301 allocs, 5.01 MBytes serialized in 1238230 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: FireDecal001_MatM_Blue
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'Normal_Stone_001'
+        ReferencedTextures[1] = Texture2D'Decal_DarkSmoke_000'
+        ReferencedTextures[2] = Texture2D'Noise_013'
+        ReferencedTextures[3] = Texture2D'Noise_007'
+        ReferencedTextures[4] = Texture2D'Sparkle_005'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

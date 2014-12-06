@@ -1,12 +1,13 @@
-Found 16186 game files (0 skipped)
-Loading package: 00024035.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 6 Imports: 2 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00024035.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 7 Imports: 2 Game: 801A
 Loading Texture2D FX_AncientMechTwinsA_col1_Mask from package 00024035.upk
 Loading Texture2D Monster_Human_AncientMechTwinsA_col1_D from package 00024035.upk
 Loading Texture2D Monster_Human_AncientMechTwinsA_col1_E from package 00024035.upk
 Loading Texture2D Monster_Human_AncientMechTwinsA_col1_M from package 00024035.upk
 Loading Texture2D Monster_Human_AncientMechTwinsA_col1_N from package 00024035.upk
 Loading Texture2D Monster_Human_AncientMechTwinsA_col1_S from package 00024035.upk
-Loaded in 0.06 sec, 266 allocs, 4.50 MBytes serialized in 1633 calls.
+Loading Texture2D Monster_Human_AncientMechTwinsB_col1_E from package 00024035.upk
+Loaded in 0.063 sec, 298 allocs, 3.00 MBytes serialized in 1824 calls.
 
 Object info:
 ============
@@ -94,6 +95,21 @@ ClassName: Texture2D ObjectName: Monster_Human_AncientMechTwinsA_col1_S
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
     MipTailBaseIdx = 11
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_AncientMechTwinsB_col1_E
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

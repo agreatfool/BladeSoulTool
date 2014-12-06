@@ -1,15 +1,20 @@
-Found 16186 game files (0 skipped)
-Loading package: 00020342.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 9 Imports: 2 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00020342.upk Ver: 573/1 Engine: 4205 Names: 42 Exports: 12 Imports: 2 Game: 801A
 Loading Texture2D Monster_Beast_UryongLeader_col1_D from package 00020342.upk
 Loading Texture2D Monster_Beast_UryongLeader_col1_E from package 00020342.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D Monster_Beast_UryongLeader_col1_FX from package 00020342.upk
 Loading Texture2D Monster_Beast_UryongLeader_col1_M from package 00020342.upk
 Loading Texture2D Monster_Beast_UryongLeader_col1_N from package 00020342.upk
 Loading Texture2D Monster_Beast_UryongLeader_col1_S from package 00020342.upk
 Loading Texture2D Monster_Beast_UryongLeader_col2_D from package 00020342.upk
 Loading Texture2D Monster_Beast_UryongLeader_col2_E from package 00020342.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D Monster_Beast_UryongLeader_col2_S from package 00020342.upk
-Loaded in 0.061 sec, 340 allocs, 2.45 MBytes serialized in 2104 calls.
+Loading Texture2D Monster_Beast_UryongLeader_col3_D from package 00020342.upk
+Loading Texture2D Monster_Beast_UryongLeader_col3_E from package 00020342.upk
+Loading Texture2D Monster_Beast_UryongLeader_col3_S from package 00020342.upk
+Loaded in 0.086 sec, 438 allocs, 3.26 MBytes serialized in 2769 calls.
 
 Object info:
 ============
@@ -134,6 +139,51 @@ ClassName: Texture2D ObjectName: Monster_Beast_UryongLeader_col2_E
 Object info:
 ============
 ClassName: Texture2D ObjectName: Monster_Beast_UryongLeader_col2_S
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Beast_UryongLeader_col3_D
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Beast_UryongLeader_col3_E
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Beast_UryongLeader_col3_S
 
     SizeX = 1024
     SizeY = 1024

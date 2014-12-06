@@ -1,19 +1,18 @@
-Found 16186 game files (0 skipped)
-Loading package: 00024463.upk Ver: 573/1 Engine: 4205 Names: 92 Exports: 1 Imports: 20 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00024463.upk Ver: 573/1 Engine: 4205 Names: 90 Exports: 1 Imports: 20 Game: 801A
 Loading MaterialInstanceConstant col2 from package 00024463.upk
-Loading package: 00024426.upk Ver: 573/1 Engine: 4205 Names: 78 Exports: 46 Imports: 5 Game: 801A
+Loading package: 00024426.upk Ver: 573/1 Engine: 4205 Names: 68 Exports: 34 Imports: 5 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D 010173_Autoscale_col2_N from package 00024426.upk
 Loading Texture2D 010173_Autoscale_col2_M from package 00024426.upk
 Loading Texture2D 010173_Autoscale_col2_D from package 00024426.upk
 Loading Texture2D 010173_Autoscale_col2_S from package 00024426.upk
 Loading TextureCube lenscube from package 00002640.upk
 Loading Texture2D 010173_Autoscale_col2_E from package 00024426.upk
-Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
-Loading Texture2D check from package 00002620.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -21,10 +20,12 @@ Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.097 sec, 2715 allocs, 0.96 MBytes serialized in 146563 calls.
+Loaded in 0.11 sec, 2786 allocs, 1.29 MBytes serialized in 163020 calls.
 
 Object info:
 ============
@@ -43,7 +44,7 @@ ClassName: MaterialInstanceConstant ObjectName: col2
         ScalarParameterValues[8] = { ParameterName=Fresnel Value, ParameterValue=1 }
         ScalarParameterValues[9] = { ParameterName=Fresnel exponent, ParameterValue=30 }
     }
-    TextureParameterValues[8] =
+    TextureParameterValues[6] =
     {
         TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'010173_Autoscale_col2_N' }
         TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'010173_Autoscale_col2_M' }
@@ -51,10 +52,8 @@ ClassName: MaterialInstanceConstant ObjectName: col2
         TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'010173_Autoscale_col2_S' }
         TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'lenscube' }
         TextureParameterValues[5] = { ParameterName=Emissive, ParameterValue=Texture2D'010173_Autoscale_col2_E' }
-        TextureParameterValues[6] = { ParameterName=Mask_FX_Texture, ParameterValue=Texture2D'Smoke_Pattern_001' }
-        TextureParameterValues[7] = { ParameterName=FX_Add, ParameterValue=Texture2D'check' }
     }
-    VectorParameterValues[9] =
+    VectorParameterValues[11] =
     {
         VectorParameterValues[0] =
         {
@@ -100,6 +99,16 @@ ClassName: MaterialInstanceConstant ObjectName: col2
         {
             ParameterName = Fx_Glow_color
             ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = AC_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[10] =
+        {
+            ParameterName = AC_specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
         }
     }
     Parent = Material3'Basic'
