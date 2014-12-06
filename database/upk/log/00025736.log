@@ -1,0 +1,72 @@
+Found 18875 game files (36 skipped)
+Loading package: 00025736.upk Ver: 573/1 Engine: 4205 Names: 103 Exports: 25 Imports: 12 Game: 801A
+Loading SkeletalMesh3 090049_GonF from package 00025736.upk
+Loading package: 00025737.upk Ver: 573/1 Engine: 4205 Names: 126 Exports: 2 Imports: 24 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00025737.upk
+Loading package: 00025713.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 4 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00025178.upk Ver: 573/1 Engine: 4205 Names: 69 Exports: 39 Imports: 2 Game: 801A
+Loading Texture2D 090049_JinM_col1_N from package 00025713.upk
+Loading TextureCube lenscube_a from package 00002640.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D 090049_JinM_col1_S from package 00025713.upk
+Loading Texture2D 090049_JinM_col1_M from package 00025713.upk
+Loading Texture2D 090049_JinM_col1_D from package 00025713.upk
+Loading Texture2D Mask_ck from package 00025178.upk
+Loading Material3 Moonpa_Body from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D Mask_Default from package 00025178.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loaded in 0.12 sec, 3039 allocs, 1.26 MBytes serialized in 198883 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 090049_GonF
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1203 }
+            }
+            NumVerts = 814
+            IndexCount = 3609
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 15

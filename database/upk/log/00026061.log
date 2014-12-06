@@ -1,0 +1,223 @@
+Found 18875 game files (36 skipped)
+Loading package: 00026061.upk Ver: 573/1 Engine: 4205 Names: 16 Exports: 6 Imports: 4 Game: 801A
+Loading StaticMesh3 RE_Core01__Mesh from package 00026061.upk
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
+Loading StaticMesh3 RE_Core02__Mesh from package 00026061.upk
+Loading StaticMesh3 RE_Core03__Mesh from package 00026061.upk
+Loading StaticMesh3 RE_ETC00__Mesh from package 00026061.upk
+Loading StaticMesh3 SorcererCHwanMa___Mesh from package 00026061.upk
+Loading StaticMesh3 SorcererCHwanMa__Mesh from package 00026061.upk
+Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Texture2D Cube000_Tex from package 00012892.upk
+Loaded in 0.03 sec, 1102 allocs, 1.24 MBytes serialized in 287990 calls.
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: RE_Core01__Mesh
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=8.04931, Y=-0.182747, Z=2.75854 }
+        BoxExtent = { X=8.05987, Y=4.01021, Z=6.49338 }
+        SphereRadius = 10.319
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=1432 }
+            }
+            NumVerts = 1744
+            IndexCount = 4296
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: RE_Core02__Mesh
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-7.96614, Y=-0.182747, Z=2.66392 }
+        BoxExtent = { X=7.9767, Y=4.01021, Z=6.58397 }
+        SphereRadius = 10.343
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=1432 }
+            }
+            NumVerts = 1744
+            IndexCount = 4296
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: RE_Core03__Mesh
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0.124623, Y=-0.182746, Z=-9.39831 }
+        BoxExtent = { X=7.51081, Y=4.01021, Z=8.74353 }
+        SphereRadius = 9.53733
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=1432 }
+            }
+            NumVerts = 1744
+            IndexCount = 4296
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: RE_ETC00__Mesh
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0.0579863, Y=-0.14976, Z=1.38404 }
+        BoxExtent = { X=7.7286, Y=2.50331, Z=6.74338 }
+        SphereRadius = 9.59392
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=12 }
+            }
+            NumVerts = 48
+            IndexCount = 36
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: SorcererCHwanMa___Mesh
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.83844, Y=0, Z=10.8301 }
+        BoxExtent = { X=10.1597, Y=9.4986, Z=10.3764 }
+        SphereRadius = 13.1397
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=2444 }
+            }
+            NumVerts = 3276
+            IndexCount = 7332
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: SorcererCHwanMa__Mesh
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-7.91585, Y=0, Z=10.8301 }
+        BoxExtent = { X=17.2371, Y=9.49856, Z=10.3764 }
+        SphereRadius = 17.6925
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=2444 }
+            }
+            NumVerts = 3276
+            IndexCount = 7332
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1

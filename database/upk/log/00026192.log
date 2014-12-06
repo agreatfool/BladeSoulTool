@@ -1,0 +1,33 @@
+Found 18875 game files (36 skipped)
+Loading package: 00026192.upk Ver: 573/1 Engine: 4205 Names: 73 Exports: 12 Imports: 8 Game: 801A
+Loading AnimSet SorcererEBird_Anim from package 00026192.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+Loading AnimSequence AnimSequence_0 from package 00026192.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_1 from package 00026192.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading SkeletalMesh3 SorcererEBird_Mesh from package 00026192.upk
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_104 from package 00026192.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_105 from package 00026192.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_106 from package 00026192.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_108 from package 00026192.upk
+Loading StaticMesh3 SorcererEBird__Mesh from package 00026192.upk
+Loading StaticMesh3 SorcererEBird_A_SorcererEBirdMesh from package 00026192.upk
+Loading StaticMesh3 SorcererEBird_B_SorcererEBirdMesh from package 00026192.upk
+Loading StaticMesh3 SorcererEBird_C_SorcererEBirdMesh from package 00026192.upk
+Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Texture2D Cube000_Tex from package 00012892.upk
+Error: Command failed: ******** 00026192 ********
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** ERROR: Unknown rotation compression method: 255
+UAnimSet::ConvertAnims <- PostLoad:SorcererEBird_Anim <- UObject::EndLoad <- LoadWholePackage:00026192 <- Main
+
+
+    at ChildProcess.exithandler (child_process.js:637:15)
+    at ChildProcess.EventEmitter.emit (events.js:98:17)
+    at maybeClose (child_process.js:743:16)
+    at Process.ChildProcess._handle.onexit (child_process.js:810:5)

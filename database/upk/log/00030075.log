@@ -1,0 +1,109 @@
+Found 18875 game files (36 skipped)
+Loading package: 00030075.upk Ver: 573/1 Engine: 4205 Names: 107 Exports: 32 Imports: 16 Game: 801A
+Loading SkeletalMesh3 BalloonBig from package 00030075.upk
+WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
+WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::PhysicalHitScale" was not found
+Loading package: 00030070.upk Ver: 573/1 Engine: 4205 Names: 57 Exports: 1 Imports: 16 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_124 from package 00030075.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_125 from package 00030075.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_85 from package 00030075.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading MaterialInstanceConstant col1 from package 00030070.upk
+Loading package: 00030063.upk Ver: 573/1 Engine: 4205 Names: 34 Exports: 7 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading Texture2D Normal from package 00030063.upk
+Loading Texture2D diffuse_blue from package 00030063.upk
+Loading Texture2D Specular from package 00030063.upk
+Loading TextureCube eye1 from package 00002640.upk
+Loading Material3 Blend_OP from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loaded in 0.077 sec, 2726 allocs, 0.88 MBytes serialized in 197448 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: BalloonBig
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[3] =
+    {
+        Sockets[0] = SkeletalMeshSocket'BalloonBig.SkeletalMeshSocket_85'
+        Sockets[1] = SkeletalMeshSocket'BalloonBig.SkeletalMeshSocket_124'
+        Sockets[2] = SkeletalMeshSocket'BalloonBig.SkeletalMeshSocket_125'
+    }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1428 }
+            }
+            NumVerts = 1056
+            IndexCount = 4284
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 13
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_124
+
+    SocketName = ATTACH_EFFECT
+    BoneName = Bip01Spine1
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_125
+
+    SocketName = target_high
+    BoneName = Bip01Spine1
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_85
+
+    SocketName = fX
+    BoneName = Bip01Spine1
+    RelativeLocation = { X=40, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }

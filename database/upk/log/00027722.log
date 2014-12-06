@@ -1,0 +1,36 @@
+Found 18875 game files (36 skipped)
+Loading package: 00027722.upk Ver: 573/1 Engine: 4205 Names: 844 Exports: 1 Imports: 944 Game: 801A
+Loading AnimSet YuCheon_Animset from package 00027722.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+WARNING: ArrayProperty "UAnimSet::PhysicalHitBoneNames" was not found
+WARNING: AnimSet YuCheon_Animset has 0 sequences, but empty TrackBoneNames
+Loaded in 0.003 sec, 865 allocs, 0.06 MBytes serialized in 9240 calls.
+
+Object info:
+============
+ClassName: AnimSet ObjectName: YuCheon_Animset
+
+    bAnimRotationOnly = true
+    TrackBoneNames[0] = {}
+    Sequences[0] = {}
+    UseTranslationBoneNames[9] =
+    {
+        UseTranslationBoneNames[0] = Bip01
+        UseTranslationBoneNames[1] = WeaponL
+        UseTranslationBoneNames[2] = WeaponR
+        UseTranslationBoneNames[3] = AdB01LForearmMuscleBone
+        UseTranslationBoneNames[4] = AdB01RForearmMuscleBone
+        UseTranslationBoneNames[5] = AdB01LHipBone
+        UseTranslationBoneNames[6] = AdB01RHipBone
+        UseTranslationBoneNames[7] = AdB01LKneeBone
+        UseTranslationBoneNames[8] = AdB01RKneeBone
+    }
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = None
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None

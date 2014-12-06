@@ -1,0 +1,74 @@
+Found 18875 game files (36 skipped)
+Loading package: 00029193.upk Ver: 573/1 Engine: 4205 Names: 173 Exports: 98 Imports: 16 Game: 801A
+Loading SkeletalMesh3 Cloth_0027 from package 00029193.upk
+Loading package: 00029192.upk Ver: 573/1 Engine: 4205 Names: 101 Exports: 2 Imports: 23 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00029192.upk
+Loading package: 00029191.upk Ver: 573/1 Engine: 4205 Names: 36 Exports: 6 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading MaterialInstanceConstant col1_fur from package 00029192.upk
+Loading Texture2D Cat_Cloth_0027_col1_N from package 00029191.upk
+Loading Texture2D Cat_Cloth_0027_col1_M from package 00029191.upk
+Loading Texture2D Cat_Cloth_0027_col1_D from package 00029191.upk
+Loading Texture2D Cat_Cloth_0027_col1_S from package 00029191.upk
+Loading TextureCube lenscube from package 00002640.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading Texture2D Fur_Tape1_N from package 00029191.upk
+Loading Texture2D Fur_Tape1_D from package 00029191.upk
+Loading Material3 Beard_Fur from package 00002620.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loaded in 0.13 sec, 3021 allocs, 2.86 MBytes serialized in 355824 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: Cloth_0027
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[2] = { true, true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'col1_fur' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=3990 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1_fur', FirstIndex=11970, NumFaces=1140 }
+            }
+            NumVerts = 4997
+            IndexCount = 15390
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 83

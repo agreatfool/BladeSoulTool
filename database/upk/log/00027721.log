@@ -1,0 +1,36 @@
+Found 18875 game files (36 skipped)
+Loading package: 00027721.upk Ver: 573/1 Engine: 4205 Names: 745 Exports: 1 Imports: 692 Game: 801A
+Loading AnimSet GunMaHye_Animset from package 00027721.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+WARNING: ArrayProperty "UAnimSet::PhysicalHitBoneNames" was not found
+WARNING: AnimSet GunMaHye_Animset has 0 sequences, but empty TrackBoneNames
+Loaded in 0.002 sec, 766 allocs, 0.05 MBytes serialized in 7179 calls.
+
+Object info:
+============
+ClassName: AnimSet ObjectName: GunMaHye_Animset
+
+    bAnimRotationOnly = true
+    TrackBoneNames[0] = {}
+    Sequences[0] = {}
+    UseTranslationBoneNames[9] =
+    {
+        UseTranslationBoneNames[0] = Bip01
+        UseTranslationBoneNames[1] = WeaponL
+        UseTranslationBoneNames[2] = WeaponR
+        UseTranslationBoneNames[3] = AdB01LForearmMuscleBone
+        UseTranslationBoneNames[4] = AdB01RForearmMuscleBone
+        UseTranslationBoneNames[5] = AdB01LHipBone
+        UseTranslationBoneNames[6] = AdB01RHipBone
+        UseTranslationBoneNames[7] = AdB01LKneeBone
+        UseTranslationBoneNames[8] = AdB01RKneeBone
+    }
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = None
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None

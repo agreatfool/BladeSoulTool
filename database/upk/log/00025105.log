@@ -1,0 +1,488 @@
+Found 18875 game files (36 skipped)
+Loading package: 00025105.upk Ver: 573/1 Engine: 4205 Names: 145 Exports: 5 Imports: 31 Game: 801A
+Loading MaterialInstanceConstant Col_Emblem from package 00025105.upk
+Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading MaterialInstanceConstant Col_Top from package 00025105.upk
+Loading package: 00025104.upk Ver: 573/1 Engine: 4205 Names: 54 Exports: 27 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00025178.upk Ver: 573/1 Engine: 4205 Names: 69 Exports: 39 Imports: 2 Game: 801A
+Loading MaterialInstanceConstant Col_Under from package 00025105.upk
+Loading Texture2D Nothing_A from package 00008613.upk
+Loading Material3 Moonpa_Mark from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading Texture2D 70004_KunN_col1_Top_N from package 00025104.upk
+Loading TextureCube lenscube_a from package 00002640.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D 70004_KunN_col1_Top_S from package 00025104.upk
+Loading Texture2D 70004_KunN_col1_Top_M from package 00025104.upk
+Loading Texture2D 70004_KunN_col1_Top_D from package 00025104.upk
+Loading Texture2D Mask_ck from package 00025178.upk
+Loading Material3 Moonpa_Body_KunN from package 00002620.upk
+Loading Texture2D 70004_KunN_col1_Under_N from package 00025104.upk
+Loading Texture2D 70004_KunN_col1_Under_S from package 00025104.upk
+Loading Texture2D 70004_KunN_col1_Under_M from package 00025104.upk
+Loading Texture2D 70004_KunN_col1_Under_D from package 00025104.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D Mask_Default from package 00025178.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loaded in 0.17 sec, 3235 allocs, 2.38 MBytes serialized in 168990 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Col_Emblem
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[1] =
+    {
+        TextureParameterValues[0] = { ParameterName=mask_D, ParameterValue=Texture2D'Nothing_A' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Moonpa_Mark'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Col_Top
+
+    ScalarParameterValues[25] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=0 }
+        ScalarParameterValues[1] = { ParameterName=Skin_glossiness, ParameterValue=10 }
+        ScalarParameterValues[2] = { ParameterName=Skin_Spec_value, ParameterValue=2 }
+        ScalarParameterValues[3] = { ParameterName=HighLight_Value, ParameterValue=0 }
+        ScalarParameterValues[4] = { ParameterName=HighLight_glossiness, ParameterValue=100 }
+        ScalarParameterValues[5] = { ParameterName=Emissive_value, ParameterValue=2 }
+        ScalarParameterValues[6] = { ParameterName=Emissive_value2, ParameterValue=0 }
+        ScalarParameterValues[7] = { ParameterName=Fresnel Value, ParameterValue=1 }
+        ScalarParameterValues[8] = { ParameterName=Fresnel exponent, ParameterValue=30 }
+        ScalarParameterValues[9] = { ParameterName=Skin_Spec_value_X, ParameterValue=1 }
+        ScalarParameterValues[10] = { ParameterName=Top_M, ParameterValue=0 }
+        ScalarParameterValues[11] = { ParameterName=Under_M, ParameterValue=0 }
+        ScalarParameterValues[12] = { ParameterName=Wear_SP, ParameterValue=2 }
+        ScalarParameterValues[13] = { ParameterName=Top_SP, ParameterValue=6 }
+        ScalarParameterValues[14] = { ParameterName=Under_SP, ParameterValue=6 }
+        ScalarParameterValues[15] = { ParameterName=Point_SP, ParameterValue=6 }
+        ScalarParameterValues[16] = { ParameterName=Ac1_SP, ParameterValue=4 }
+        ScalarParameterValues[17] = { ParameterName=Ac2_SP, ParameterValue=3 }
+        ScalarParameterValues[18] = { ParameterName=Ac3_SP, ParameterValue=5 }
+        ScalarParameterValues[19] = { ParameterName=long, ParameterValue=1 }
+        ScalarParameterValues[20] = { ParameterName=Pattern_Fresnel exponent, ParameterValue=5 }
+        ScalarParameterValues[21] = { ParameterName=Pattern_Fresnel Value, ParameterValue=1 }
+        ScalarParameterValues[22] = { ParameterName=over_exponent, ParameterValue=5 }
+        ScalarParameterValues[23] = { ParameterName=Fresnel_Exp, ParameterValue=0.5 }
+        ScalarParameterValues[24] = { ParameterName=Wear_Spec_value, ParameterValue=1 }
+    }
+    TextureParameterValues[8] =
+    {
+        TextureParameterValues[0] = { ParameterName=N, ParameterValue=Texture2D'70004_KunN_col1_Top_N' }
+        TextureParameterValues[1] = { ParameterName=rf_cube, ParameterValue=TextureCube'lenscube_a' }
+        TextureParameterValues[2] = { ParameterName=Emissive, ParameterValue=Texture2D'check' }
+        TextureParameterValues[3] = { ParameterName=S, ParameterValue=Texture2D'70004_KunN_col1_Top_S' }
+        TextureParameterValues[4] = { ParameterName=M, ParameterValue=Texture2D'70004_KunN_col1_Top_M' }
+        TextureParameterValues[5] = { ParameterName=D, ParameterValue=Texture2D'70004_KunN_col1_Top_D' }
+        TextureParameterValues[6] = { ParameterName=Top_Pattern, ParameterValue=Texture2D'Mask_ck' }
+        TextureParameterValues[7] = { ParameterName=Under_Pattern, ParameterValue=Texture2D'Mask_ck' }
+    }
+    VectorParameterValues[32] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Skin_Specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=0.804559, G=0.804559, B=0.804559, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = HighLight_Color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = skin_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = Burn_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = Top_S
+            ParameterValue = { R=0.774227, G=0.476177, B=0.078057, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = Top_L
+            ParameterValue = { R=0.447871, G=0.238828, B=0.139022, A=1 }
+        }
+        VectorParameterValues[10] =
+        {
+            ParameterName = Top_D
+            ParameterValue = { R=0.147998, G=0.139022, B=0.176774, A=1 }
+        }
+        VectorParameterValues[11] =
+        {
+            ParameterName = Under_S
+            ParameterValue = { R=0.774227, G=0.476177, B=0.078057, A=1 }
+        }
+        VectorParameterValues[12] =
+        {
+            ParameterName = Under_L
+            ParameterValue = { R=0.447871, G=0.238828, B=0.139022, A=1 }
+        }
+        VectorParameterValues[13] =
+        {
+            ParameterName = Under_D
+            ParameterValue = { R=0.147998, G=0.139022, B=0.176774, A=1 }
+        }
+        VectorParameterValues[14] =
+        {
+            ParameterName = Point_S
+            ParameterValue = { R=0.774227, G=0.476177, B=0.078057, A=1 }
+        }
+        VectorParameterValues[15] =
+        {
+            ParameterName = Point_L
+            ParameterValue = { R=0.447871, G=0.238828, B=0.139022, A=1 }
+        }
+        VectorParameterValues[16] =
+        {
+            ParameterName = Point_D
+            ParameterValue = { R=0.147998, G=0.139022, B=0.176774, A=1 }
+        }
+        VectorParameterValues[17] =
+        {
+            ParameterName = Ac1_S
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[18] =
+        {
+            ParameterName = Ac1_L
+            ParameterValue = { R=0.932277, G=0.835528, B=0.45908, A=1 }
+        }
+        VectorParameterValues[19] =
+        {
+            ParameterName = Ac1_D
+            ParameterValue = { R=0.45908, G=0.45908, B=0.45908, A=1 }
+        }
+        VectorParameterValues[20] =
+        {
+            ParameterName = Ac2_S
+            ParameterValue = { R=0.353741, G=0.315763, B=0.242796, A=1 }
+        }
+        VectorParameterValues[21] =
+        {
+            ParameterName = Ac2_L
+            ParameterValue = { R=0.030257, G=0.024223, B=0.024223, A=1 }
+        }
+        VectorParameterValues[22] =
+        {
+            ParameterName = Ac2_D
+            ParameterValue = { R=0.003303, G=0.003303, B=0.003303, A=1 }
+        }
+        VectorParameterValues[23] =
+        {
+            ParameterName = Ac3_S
+            ParameterValue = { R=0.948965, G=0.88318, B=0.598942, A=1 }
+        }
+        VectorParameterValues[24] =
+        {
+            ParameterName = Ac3_L
+            ParameterValue = { R=0.535642, G=0.373615, B=0.21952, A=1 }
+        }
+        VectorParameterValues[25] =
+        {
+            ParameterName = Ac3_D
+            ParameterValue = { R=0.024223, G=0.022013, B=0.014311, A=1 }
+        }
+        VectorParameterValues[26] =
+        {
+            ParameterName = Pattern_Size
+            ParameterValue = { R=2.5, G=5, B=3.5, A=3.5 }
+        }
+        VectorParameterValues[27] =
+        {
+            ParameterName = Top_over
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[28] =
+        {
+            ParameterName = Under_over
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[29] =
+        {
+            ParameterName = Point_over
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[30] =
+        {
+            ParameterName = Fresnel_skin_color2
+            ParameterValue = { R=1, G=1.2, B=1.8, A=1 }
+        }
+        VectorParameterValues[31] =
+        {
+            ParameterName = Fresnel_skin_color1
+            ParameterValue = { R=0.8, G=1.5, B=1.5, A=1 }
+        }
+    }
+    Parent = Material3'Moonpa_Body_KunN'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Col_Under
+
+    ScalarParameterValues[25] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=0 }
+        ScalarParameterValues[1] = { ParameterName=Skin_glossiness, ParameterValue=10 }
+        ScalarParameterValues[2] = { ParameterName=Skin_Spec_value, ParameterValue=2 }
+        ScalarParameterValues[3] = { ParameterName=HighLight_Value, ParameterValue=0 }
+        ScalarParameterValues[4] = { ParameterName=HighLight_glossiness, ParameterValue=100 }
+        ScalarParameterValues[5] = { ParameterName=Emissive_value, ParameterValue=2 }
+        ScalarParameterValues[6] = { ParameterName=Emissive_value2, ParameterValue=0 }
+        ScalarParameterValues[7] = { ParameterName=Fresnel Value, ParameterValue=1 }
+        ScalarParameterValues[8] = { ParameterName=Fresnel exponent, ParameterValue=30 }
+        ScalarParameterValues[9] = { ParameterName=Skin_Spec_value_X, ParameterValue=1 }
+        ScalarParameterValues[10] = { ParameterName=Top_M, ParameterValue=0 }
+        ScalarParameterValues[11] = { ParameterName=Under_M, ParameterValue=0 }
+        ScalarParameterValues[12] = { ParameterName=Wear_SP, ParameterValue=2 }
+        ScalarParameterValues[13] = { ParameterName=Top_SP, ParameterValue=4 }
+        ScalarParameterValues[14] = { ParameterName=Under_SP, ParameterValue=5 }
+        ScalarParameterValues[15] = { ParameterName=Point_SP, ParameterValue=5 }
+        ScalarParameterValues[16] = { ParameterName=Ac1_SP, ParameterValue=3 }
+        ScalarParameterValues[17] = { ParameterName=Ac2_SP, ParameterValue=4 }
+        ScalarParameterValues[18] = { ParameterName=Ac3_SP, ParameterValue=5 }
+        ScalarParameterValues[19] = { ParameterName=long, ParameterValue=1 }
+        ScalarParameterValues[20] = { ParameterName=Pattern_Fresnel exponent, ParameterValue=5 }
+        ScalarParameterValues[21] = { ParameterName=Pattern_Fresnel Value, ParameterValue=1 }
+        ScalarParameterValues[22] = { ParameterName=over_exponent, ParameterValue=5 }
+        ScalarParameterValues[23] = { ParameterName=Fresnel_Exp, ParameterValue=0.5 }
+        ScalarParameterValues[24] = { ParameterName=Wear_Spec_value, ParameterValue=1 }
+    }
+    TextureParameterValues[8] =
+    {
+        TextureParameterValues[0] = { ParameterName=N, ParameterValue=Texture2D'70004_KunN_col1_Under_N' }
+        TextureParameterValues[1] = { ParameterName=rf_cube, ParameterValue=TextureCube'lenscube_a' }
+        TextureParameterValues[2] = { ParameterName=Emissive, ParameterValue=Texture2D'check' }
+        TextureParameterValues[3] = { ParameterName=S, ParameterValue=Texture2D'70004_KunN_col1_Under_S' }
+        TextureParameterValues[4] = { ParameterName=M, ParameterValue=Texture2D'70004_KunN_col1_Under_M' }
+        TextureParameterValues[5] = { ParameterName=D, ParameterValue=Texture2D'70004_KunN_col1_Under_D' }
+        TextureParameterValues[6] = { ParameterName=Top_Pattern, ParameterValue=Texture2D'Mask_ck' }
+        TextureParameterValues[7] = { ParameterName=Under_Pattern, ParameterValue=Texture2D'Mask_ck' }
+    }
+    VectorParameterValues[32] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Skin_Specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=0.804559, G=0.804559, B=0.804559, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = HighLight_Color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = skin_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = Burn_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = Top_S
+            ParameterValue = { R=0.43134, G=0.344026, B=0.193972, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = Top_L
+            ParameterValue = { R=0.14198, G=0.12753, B=0.119264, A=1 }
+        }
+        VectorParameterValues[10] =
+        {
+            ParameterName = Top_D
+            ParameterValue = { R=0.049433, G=0.037029, B=0.035614, A=1 }
+        }
+        VectorParameterValues[11] =
+        {
+            ParameterName = Under_S
+            ParameterValue = { R=0.948965, G=0.88318, B=0.598942, A=1 }
+        }
+        VectorParameterValues[12] =
+        {
+            ParameterName = Under_L
+            ParameterValue = { R=0.91575, G=0.819964, B=0.425905, A=1 }
+        }
+        VectorParameterValues[13] =
+        {
+            ParameterName = Under_D
+            ParameterValue = { R=0.554227, G=0.511398, B=0.45908, A=1 }
+        }
+        VectorParameterValues[14] =
+        {
+            ParameterName = Point_S
+            ParameterValue = { R=2, G=2, B=1, A=1 }
+        }
+        VectorParameterValues[15] =
+        {
+            ParameterName = Point_L
+            ParameterValue = { R=0.47044, G=0.325037, B=0.183549, A=1 }
+        }
+        VectorParameterValues[16] =
+        {
+            ParameterName = Point_D
+            ParameterValue = { R=0.136099, G=0.096266, B=0.042987, A=1 }
+        }
+        VectorParameterValues[17] =
+        {
+            ParameterName = Ac1_S
+            ParameterValue = { R=0.353741, G=0.315763, B=0.2468, A=1 }
+        }
+        VectorParameterValues[18] =
+        {
+            ParameterName = Ac1_L
+            ParameterValue = { R=0.030257, G=0.024223, B=0.024223, A=1 }
+        }
+        VectorParameterValues[19] =
+        {
+            ParameterName = Ac1_D
+            ParameterValue = { R=0.003303, G=0.003303, B=0.003303, A=1 }
+        }
+        VectorParameterValues[20] =
+        {
+            ParameterName = Ac2_S
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[21] =
+        {
+            ParameterName = Ac2_L
+            ParameterValue = { R=0.932277, G=0.835528, B=0.45908, A=1 }
+        }
+        VectorParameterValues[22] =
+        {
+            ParameterName = Ac2_D
+            ParameterValue = { R=0.45908, G=0.45908, B=0.45908, A=1 }
+        }
+        VectorParameterValues[23] =
+        {
+            ParameterName = Ac3_S
+            ParameterValue = { R=0.948965, G=0.88318, B=0.598942, A=1 }
+        }
+        VectorParameterValues[24] =
+        {
+            ParameterName = Ac3_L
+            ParameterValue = { R=0.535642, G=0.373615, B=0.21952, A=1 }
+        }
+        VectorParameterValues[25] =
+        {
+            ParameterName = Ac3_D
+            ParameterValue = { R=0.024223, G=0.022013, B=0.014311, A=1 }
+        }
+        VectorParameterValues[26] =
+        {
+            ParameterName = Pattern_Size
+            ParameterValue = { R=3.5, G=3.5, B=5, A=2.5 }
+        }
+        VectorParameterValues[27] =
+        {
+            ParameterName = Top_over
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[28] =
+        {
+            ParameterName = Under_over
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[29] =
+        {
+            ParameterName = Point_over
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[30] =
+        {
+            ParameterName = Fresnel_skin_color2
+            ParameterValue = { R=1, G=1.2, B=1.8, A=1 }
+        }
+        VectorParameterValues[31] =
+        {
+            ParameterName = Fresnel_skin_color1
+            ParameterValue = { R=0.8, G=1.5, B=1.5, A=1 }
+        }
+    }
+    Parent = Material3'Moonpa_Body_KunN'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

@@ -1,0 +1,469 @@
+Found 18875 game files (36 skipped)
+Loading package: 00028284.upk Ver: 573/1 Engine: 4205 Names: 533 Exports: 992 Imports: 173 Game: 801A
+Loading Material3 Basic_Base_IF_Masked_Mat from package 00028284.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading MaterialInstanceConstant FX_col1 from package 00028284.upk
+Loading package: 00026447.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 8 Imports: 4 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading SkeletalMesh3 020189_Autoscale_L from package 00028284.upk
+WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
+WARNING: ByteProperty "USkeletalMesh3::ItemPreviewLocType" was not found
+Loading package: 00028285.upk Ver: 573/1 Engine: 4205 Names: 89 Exports: 1 Imports: 19 Game: 801A
+Loading SkeletalMesh3 020189_Autoscale_R from package 00028284.upk
+WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
+WARNING: ByteProperty "USkeletalMesh3::ItemPreviewLocType" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_219 from package 00028284.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+WARNING: BoolProperty "USkeletalMeshSocket::bParticleApplyAutoScale" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_237 from package 00028284.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+WARNING: BoolProperty "USkeletalMeshSocket::bParticleApplyAutoScale" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_87 from package 00028284.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+WARNING: BoolProperty "USkeletalMeshSocket::bParticleApplyAutoScale" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_250 from package 00028284.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+WARNING: BoolProperty "USkeletalMeshSocket::bParticleApplyAutoScale" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_253 from package 00028284.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+WARNING: BoolProperty "USkeletalMeshSocket::bParticleApplyAutoScale" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_94 from package 00028284.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+WARNING: BoolProperty "USkeletalMeshSocket::bParticleApplyAutoScale" was not found
+Loading StaticMesh3 020176_Body_L__Mesh from package 00028284.upk
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
+Loading StaticMesh3 020176_Body_R__Mesh from package 00028284.upk
+Loading StaticMesh3 020176_Edge_L__Mesh from package 00028284.upk
+Loading StaticMesh3 020176_Edge_R__Mesh from package 00028284.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Noise_007 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D 020176_Autoscale_col1_N from package 00026447.upk
+Loading Texture2D 020176_Autoscale_col1_M from package 00026447.upk
+Loading Texture2D 020176_Autoscale_col1_S from package 00026447.upk
+Loading TextureCube mirror2 from package 00002640.upk
+Loading Texture2D 020176_Autoscale_col1_D from package 00026447.upk
+Loading MaterialInstanceConstant col1 from package 00028285.upk
+Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Material3 Basic from package 00002620.upk
+Loading Texture2D Cube000_Tex from package 00012892.upk
+Loaded in 0.13 sec, 4395 allocs, 2.33 MBytes serialized in 463922 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Basic_Base_IF_Masked_Mat
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'check_n'
+        ReferencedTextures[1] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[2] = Texture2D'Gradient_Wipe_BurnOut_Mask_TEST'
+        ReferencedTextures[3] = Texture2D'Gradient_Wipe_BurnOut_Mask'
+        ReferencedTextures[4] = Texture2D'check'
+        ReferencedTextures[5] = Texture2D'Noise_007'
+        ReferencedTextures[6] = Texture2D'Gradient_Line_003'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: FX_col1
+
+    ScalarParameterValues[9] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Glossiness1, ParameterValue=5 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness2, ParameterValue=30 }
+        ScalarParameterValues[2] = { ParameterName=Specular_value, ParameterValue=2 }
+        ScalarParameterValues[3] = { ParameterName=HighLight_Value, ParameterValue=2 }
+        ScalarParameterValues[4] = { ParameterName=HighLight_glossiness, ParameterValue=50 }
+        ScalarParameterValues[5] = { ParameterName=Emissive_value, ParameterValue=2 }
+        ScalarParameterValues[6] = { ParameterName=Emissive_value2, ParameterValue=0 }
+        ScalarParameterValues[7] = { ParameterName=Fresnel Value, ParameterValue=2 }
+        ScalarParameterValues[8] = { ParameterName=Fresnel exponent, ParameterValue=100 }
+    }
+    TextureParameterValues[6] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'020176_Autoscale_col1_N' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'020176_Autoscale_col1_M' }
+        TextureParameterValues[2] = { ParameterName=Specular, ParameterValue=Texture2D'020176_Autoscale_col1_S' }
+        TextureParameterValues[3] = { ParameterName=rf_cube, ParameterValue=TextureCube'mirror2' }
+        TextureParameterValues[4] = { ParameterName=Emissive, ParameterValue=None }
+        TextureParameterValues[5] = { ParameterName=Diffuse, ParameterValue=Texture2D'020176_Autoscale_col1_D' }
+    }
+    VectorParameterValues[10] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Diffuse_trangition
+            ParameterValue = { R=0, G=0.65, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = Diffuse_Fresnel
+            ParameterValue = { R=3, G=1.6, B=0.32, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = AC_specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = HighLight_Color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = Burn_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = AC_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+    }
+    Parent = Material3'Basic_Base_IF_Masked_Mat'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 020189_Autoscale_L
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[3] =
+    {
+        Sockets[0] = SkeletalMeshSocket'020189_Autoscale_L.SkeletalMeshSocket_219'
+        Sockets[1] = SkeletalMeshSocket'020189_Autoscale_L.SkeletalMeshSocket_237'
+        Sockets[2] = SkeletalMeshSocket'020189_Autoscale_L.SkeletalMeshSocket_87'
+    }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1986 }
+            }
+            NumVerts = 1789
+            IndexCount = 5958
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 9
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 020189_Autoscale_R
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[3] =
+    {
+        Sockets[0] = SkeletalMeshSocket'020189_Autoscale_R.SkeletalMeshSocket_250'
+        Sockets[1] = SkeletalMeshSocket'020189_Autoscale_R.SkeletalMeshSocket_253'
+        Sockets[2] = SkeletalMeshSocket'020189_Autoscale_R.SkeletalMeshSocket_94'
+    }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1986 }
+            }
+            NumVerts = 1788
+            IndexCount = 5958
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 9
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_219
+
+    SocketName = FX_Add
+    BoneName = BoneGT_L
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_237
+
+    SocketName = FX_01
+    BoneName = BoneGT_L
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_87
+
+    SocketName = FX_Add01
+    BoneName = Bip01LHand
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_250
+
+    SocketName = FX_Add
+    BoneName = BoneGT_R
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_253
+
+    SocketName = FX_01
+    BoneName = BoneGT_R
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_94
+
+    SocketName = FX_Add02
+    BoneName = Bip01RHand
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: 020176_Body_L__Mesh
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-2.71657, Y=1.43096, Z=0.142529 }
+        BoxExtent = { X=8.50373, Y=2.29366, Z=3.61083 }
+        SphereRadius = 8.64834
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=509 }
+            }
+            NumVerts = 2004
+            IndexCount = 1527
+            NumTexCoords = 2
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: 020176_Body_R__Mesh
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-2.71655, Y=1.43095, Z=-0.142526 }
+        BoxExtent = { X=8.50373, Y=2.29366, Z=3.61083 }
+        SphereRadius = 8.64833
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=509 }
+            }
+            NumVerts = 1890
+            IndexCount = 1527
+            NumTexCoords = 2
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: 020176_Edge_L__Mesh
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=6.28447, Y=-0.272258, Z=-0.443352 }
+        BoxExtent = { X=2.31663, Y=2.66496, Z=4.85698 }
+        SphereRadius = 5.09986
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=468 }
+            }
+            NumVerts = 1538
+            IndexCount = 1404
+            NumTexCoords = 2
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: 020176_Edge_R__Mesh
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=6.28456, Y=-0.272355, Z=0.443351 }
+        BoxExtent = { X=2.31525, Y=2.66366, Z=4.85561 }
+        SphereRadius = 5.09839
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=468 }
+            }
+            NumVerts = 860
+            IndexCount = 1404
+            NumTexCoords = 2
+        }
+    }
+    LodCount = 1

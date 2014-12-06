@@ -1,0 +1,453 @@
+Found 18875 game files (36 skipped)
+Loading package: 00026060.upk Ver: 573/1 Engine: 4205 Names: 220 Exports: 259 Imports: 66 Game: 801A
+Loading Material3 Basic_RE_HwanMa from package 00026060.upk
+WARNING: StructProperty "UMaterial3::WorldPositionOffset" was not found
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading Material3 HwanMa_Parent from package 00026060.upk
+Loading package: 00026059.upk Ver: 573/1 Engine: 4205 Names: 47 Exports: 16 Imports: 4 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00026060.upk
+Loading MaterialInstanceConstant RE_col1 from package 00026060.upk
+Loading MaterialInstanceConstant RE_col2 from package 00026060.upk
+Loading MaterialInstanceConstant RE_col3 from package 00026060.upk
+Loading MaterialInstanceConstant RE_etc from package 00026060.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Noise_007 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading TextureCube Cube_D from package 00002640.upk
+Loading Texture2D SorcererCHwanMa_col1_N from package 00026059.upk
+Loading Texture2D SorcererCHwanMa_col1_S from package 00026059.upk
+Loading Texture2D SorcererCHwanMa_col1_M from package 00026059.upk
+Loading Texture2D SorcererCHwanMa_col1_D from package 00026059.upk
+Loading Texture2D SorcererCHwanMa_col1_E from package 00026059.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading TextureCube eye3 from package 00002640.upk
+Loading Texture2D RE_Nm from package 00026059.upk
+Loading Texture2D RE_Mm from package 00026059.upk
+Loading Texture2D RE_SM from package 00026059.upk
+Loading TextureCube lenscube_a from package 00002640.upk
+Loading Texture2D RE_Dm from package 00026059.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.18 sec, 3275 allocs, 1.26 MBytes serialized in 172843 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Basic_RE_HwanMa
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'check_n'
+        ReferencedTextures[1] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[2] = Texture2D'check'
+        ReferencedTextures[3] = Texture2D'Noise_007'
+        ReferencedTextures[4] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[5] = TextureCube'Cube_D'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: HwanMa_Parent
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'SorcererCHwanMa_col1_N'
+        ReferencedTextures[1] = Texture2D'SorcererCHwanMa_col1_S'
+        ReferencedTextures[2] = Texture2D'SorcererCHwanMa_col1_M'
+        ReferencedTextures[3] = Texture2D'SorcererCHwanMa_col1_D'
+        ReferencedTextures[4] = Texture2D'SorcererCHwanMa_col1_E'
+        ReferencedTextures[5] = TextureCube'Cube_D'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 1
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[5] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Hw_Fresnel Value, ParameterValue=50 }
+        ScalarParameterValues[1] = { ParameterName=Hw_Fresnel exponent, ParameterValue=4 }
+        ScalarParameterValues[2] = { ParameterName=Hw_Fresnel2 exponent, ParameterValue=8 }
+        ScalarParameterValues[3] = { ParameterName=Hw_Fresnel2 Value, ParameterValue=1.5 }
+        ScalarParameterValues[4] = { ParameterName=Hw_Emmissive_Value, ParameterValue=5 }
+    }
+    TextureParameterValues[6] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'SorcererCHwanMa_col1_N' }
+        TextureParameterValues[1] = { ParameterName=Specular, ParameterValue=Texture2D'SorcererCHwanMa_col1_S' }
+        TextureParameterValues[2] = { ParameterName=rf_cube, ParameterValue=TextureCube'eye3' }
+        TextureParameterValues[3] = { ParameterName=Emissive, ParameterValue=Texture2D'SorcererCHwanMa_col1_E' }
+        TextureParameterValues[4] = { ParameterName=Diffuse, ParameterValue=Texture2D'SorcererCHwanMa_col1_D' }
+        TextureParameterValues[5] = { ParameterName=Mask, ParameterValue=Texture2D'SorcererCHwanMa_col1_M' }
+    }
+    VectorParameterValues[2] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Hw_Reflection_value
+            ParameterValue = { R=2, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Hw_Fresnel2_color
+            ParameterValue = { R=-5, G=3, B=0, A=1 }
+        }
+    }
+    Parent = Material3'HwanMa_Parent'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: RE_col1
+
+    ScalarParameterValues[11] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Glossiness1, ParameterValue=3 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness2, ParameterValue=15 }
+        ScalarParameterValues[2] = { ParameterName=Specular_value, ParameterValue=4 }
+        ScalarParameterValues[3] = { ParameterName=HighLight_Value, ParameterValue=1 }
+        ScalarParameterValues[4] = { ParameterName=HighLight_glossiness, ParameterValue=100 }
+        ScalarParameterValues[5] = { ParameterName=SpeedX, ParameterValue=1 }
+        ScalarParameterValues[6] = { ParameterName=LargeWaveScaleX, ParameterValue=0.1 }
+        ScalarParameterValues[7] = { ParameterName=WaveXPower, ParameterValue=0.05 }
+        ScalarParameterValues[8] = { ParameterName=SpeedY, ParameterValue=1 }
+        ScalarParameterValues[9] = { ParameterName=LargeWaveScaleY, ParameterValue=0.05 }
+        ScalarParameterValues[10] = { ParameterName=WaveYPower, ParameterValue=0.1 }
+    }
+    TextureParameterValues[5] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'RE_Nm' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'RE_Mm' }
+        TextureParameterValues[2] = { ParameterName=Specular, ParameterValue=Texture2D'RE_SM' }
+        TextureParameterValues[3] = { ParameterName=rf_cube, ParameterValue=TextureCube'lenscube_a' }
+        TextureParameterValues[4] = { ParameterName=Diffuse, ParameterValue=Texture2D'RE_Dm' }
+    }
+    VectorParameterValues[10] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = AC_specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = HighLight_Color
+            ParameterValue = { R=0.325037, G=0.320382, B=0.201096, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = AC_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=0.325037, G=0.399293, B=0.399293, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Diffuse_Fresnel
+            ParameterValue = { R=0.64, G=3.2, B=6, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Diffuse_trangition
+            ParameterValue = { R=0, G=0.6, B=0, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = LargeWaveScale
+            ParameterValue = { R=0.1, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = WavePower
+            ParameterValue = { R=0.1, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = Speed
+            ParameterValue = { R=1, G=0, B=0, A=1 }
+        }
+    }
+    Parent = Material3'Basic_RE_HwanMa'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: RE_col2
+
+    ScalarParameterValues[11] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Glossiness1, ParameterValue=3 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness2, ParameterValue=15 }
+        ScalarParameterValues[2] = { ParameterName=Specular_value, ParameterValue=4 }
+        ScalarParameterValues[3] = { ParameterName=HighLight_Value, ParameterValue=1 }
+        ScalarParameterValues[4] = { ParameterName=HighLight_glossiness, ParameterValue=100 }
+        ScalarParameterValues[5] = { ParameterName=SpeedX, ParameterValue=1 }
+        ScalarParameterValues[6] = { ParameterName=LargeWaveScaleX, ParameterValue=0.1 }
+        ScalarParameterValues[7] = { ParameterName=WaveXPower, ParameterValue=0.05 }
+        ScalarParameterValues[8] = { ParameterName=SpeedY, ParameterValue=1 }
+        ScalarParameterValues[9] = { ParameterName=LargeWaveScaleY, ParameterValue=0.05 }
+        ScalarParameterValues[10] = { ParameterName=WaveYPower, ParameterValue=0.1 }
+    }
+    TextureParameterValues[5] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'RE_Nm' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'RE_Mm' }
+        TextureParameterValues[2] = { ParameterName=Specular, ParameterValue=Texture2D'RE_SM' }
+        TextureParameterValues[3] = { ParameterName=rf_cube, ParameterValue=TextureCube'lenscube_a' }
+        TextureParameterValues[4] = { ParameterName=Diffuse, ParameterValue=Texture2D'RE_Dm' }
+    }
+    VectorParameterValues[7] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = AC_specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = HighLight_Color
+            ParameterValue = { R=0.325037, G=0.320382, B=0.201096, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = AC_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=0.325037, G=0.399293, B=0.399293, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Diffuse_Fresnel
+            ParameterValue = { R=0.64, G=3.2, B=6, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Diffuse_trangition
+            ParameterValue = { R=0, G=0.6, B=0, A=1 }
+        }
+    }
+    Parent = Material3'Basic_RE_HwanMa'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: RE_col3
+
+    ScalarParameterValues[11] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Glossiness1, ParameterValue=3 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness2, ParameterValue=15 }
+        ScalarParameterValues[2] = { ParameterName=Specular_value, ParameterValue=4 }
+        ScalarParameterValues[3] = { ParameterName=HighLight_Value, ParameterValue=1 }
+        ScalarParameterValues[4] = { ParameterName=HighLight_glossiness, ParameterValue=100 }
+        ScalarParameterValues[5] = { ParameterName=SpeedX, ParameterValue=1 }
+        ScalarParameterValues[6] = { ParameterName=LargeWaveScaleX, ParameterValue=0.1 }
+        ScalarParameterValues[7] = { ParameterName=WaveXPower, ParameterValue=0.05 }
+        ScalarParameterValues[8] = { ParameterName=SpeedY, ParameterValue=1 }
+        ScalarParameterValues[9] = { ParameterName=LargeWaveScaleY, ParameterValue=0.05 }
+        ScalarParameterValues[10] = { ParameterName=WaveYPower, ParameterValue=0.1 }
+    }
+    TextureParameterValues[5] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'RE_Nm' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'RE_Mm' }
+        TextureParameterValues[2] = { ParameterName=Specular, ParameterValue=Texture2D'RE_SM' }
+        TextureParameterValues[3] = { ParameterName=rf_cube, ParameterValue=TextureCube'lenscube_a' }
+        TextureParameterValues[4] = { ParameterName=Diffuse, ParameterValue=Texture2D'RE_Dm' }
+    }
+    VectorParameterValues[7] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = AC_specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = HighLight_Color
+            ParameterValue = { R=0.325037, G=0.320382, B=0.201096, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = AC_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=0.325037, G=0.399293, B=0.399293, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Diffuse_Fresnel
+            ParameterValue = { R=0.64, G=3.2, B=6, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Diffuse_trangition
+            ParameterValue = { R=0, G=0.6, B=0, A=1 }
+        }
+    }
+    Parent = Material3'Basic_RE_HwanMa'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: RE_etc
+
+    ScalarParameterValues[11] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Glossiness1, ParameterValue=3 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness2, ParameterValue=15 }
+        ScalarParameterValues[2] = { ParameterName=Specular_value, ParameterValue=4 }
+        ScalarParameterValues[3] = { ParameterName=HighLight_Value, ParameterValue=1 }
+        ScalarParameterValues[4] = { ParameterName=HighLight_glossiness, ParameterValue=100 }
+        ScalarParameterValues[5] = { ParameterName=SpeedX, ParameterValue=1 }
+        ScalarParameterValues[6] = { ParameterName=LargeWaveScaleX, ParameterValue=0.1 }
+        ScalarParameterValues[7] = { ParameterName=WaveXPower, ParameterValue=0.05 }
+        ScalarParameterValues[8] = { ParameterName=SpeedY, ParameterValue=1 }
+        ScalarParameterValues[9] = { ParameterName=LargeWaveScaleY, ParameterValue=0.05 }
+        ScalarParameterValues[10] = { ParameterName=WaveYPower, ParameterValue=0.1 }
+    }
+    TextureParameterValues[5] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'RE_Nm' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'RE_Mm' }
+        TextureParameterValues[2] = { ParameterName=Specular, ParameterValue=Texture2D'RE_SM' }
+        TextureParameterValues[3] = { ParameterName=rf_cube, ParameterValue=TextureCube'lenscube_a' }
+        TextureParameterValues[4] = { ParameterName=Diffuse, ParameterValue=Texture2D'RE_Dm' }
+    }
+    VectorParameterValues[7] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = AC_specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = HighLight_Color
+            ParameterValue = { R=0.325037, G=0.320382, B=0.201096, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = AC_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=0.325037, G=0.399293, B=0.399293, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Diffuse_Fresnel
+            ParameterValue = { R=0.64, G=3.2, B=6, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Diffuse_trangition
+            ParameterValue = { R=1, G=1, B=0, A=1 }
+        }
+    }
+    Parent = Material3'Basic_RE_HwanMa'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
