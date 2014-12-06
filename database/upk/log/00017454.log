@@ -1,17 +1,24 @@
-Found 16186 game files (0 skipped)
-Loading package: 00017454.upk Ver: 573/1 Engine: 4205 Names: 45 Exports: 16 Imports: 4 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00017454.upk Ver: 573/1 Engine: 4205 Names: 50 Exports: 19 Imports: 4 Game: 801A
 Loading Texture2D Acc_990067_DokkebiGon_D from package 00017454.upk
 Loading Texture2D Acc_990067_DokkebiGon_D2 from package 00017454.upk
+Loading Texture2D Acc_990067_DokkebiGon_D_col4 from package 00017454.upk
 Loading Texture2D Acc_990067_DokkebiGon_D_new from package 00017454.upk
 Loading Texture2D Acc_990067_DokkebiGon_E from package 00017454.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D Acc_990067_DokkebiGon_E2 from package 00017454.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading Texture2D Acc_990067_DokkebiGon_E_col4 from package 00017454.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D Acc_990067_DokkebiGon_E_new from package 00017454.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D Acc_990067_DokkebiGon_M from package 00017454.upk
 Loading Texture2D Acc_990067_DokkebiGon_N from package 00017454.upk
 Loading Texture2D Acc_990067_DokkebiGon_S from package 00017454.upk
 Loading Texture2D Acc_990067_DokkebiGon_S2 from package 00017454.upk
+Loading Texture2D Acc_990067_DokkebiGon_S_col4 from package 00017454.upk
 Loading Texture2D Acc_990067_DokkebiGon_S_new from package 00017454.upk
-Loaded in 0.065 sec, 385 allocs, 0.51 MBytes serialized in 2481 calls.
+Loaded in 0.082 sec, 477 allocs, 0.64 MBytes serialized in 3108 calls.
 
 Object info:
 ============
@@ -31,6 +38,21 @@ ClassName: Texture2D ObjectName: Acc_990067_DokkebiGon_D
 Object info:
 ============
 ClassName: Texture2D ObjectName: Acc_990067_DokkebiGon_D2
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Acc_990067_DokkebiGon_D_col4
 
     SizeX = 512
     SizeY = 256
@@ -76,6 +98,21 @@ ClassName: Texture2D ObjectName: Acc_990067_DokkebiGon_E
 Object info:
 ============
 ClassName: Texture2D ObjectName: Acc_990067_DokkebiGon_E2
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Acc_990067_DokkebiGon_E_col4
 
     SizeX = 512
     SizeY = 256
@@ -151,6 +188,21 @@ ClassName: Texture2D ObjectName: Acc_990067_DokkebiGon_S
 Object info:
 ============
 ClassName: Texture2D ObjectName: Acc_990067_DokkebiGon_S2
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Acc_990067_DokkebiGon_S_col4
 
     SizeX = 512
     SizeY = 256

@@ -1,3 +1,91 @@
-Found 16186 game files (0 skipped)
-Loading package: 00014432.upk Ver: 573/1 Engine: 4205 Names: 1478 Exports: 50326 Imports: 687 Game: 801A
-Specified package(s) has no supported objects
+Found 18875 game files (36 skipped)
+Loading package: 00014432.upk Ver: 573/1 Engine: 4205 Names: 1586 Exports: 51495 Imports: 731 Game: 801A
+Loading Material3 Demonshadow_smoke02 from package 00014432.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading Material3 fire_shockwave from package 00014432.upk
+Loading Material3 fire_smoke from package 00014432.upk
+Loading Texture2D Smoke_Fractal_002 from package 00012963.upk
+Loading Texture2D Smoke_Dusts_003 from package 00012963.upk
+Loading Texture2D Smoke_014 from package 00012963.upk
+Loading Texture2D Gradient_Color_RedToOrange_000 from package 00012963.upk
+Loading Texture2D Gradient_Beam_007 from package 00012963.upk
+Loading Texture2D Noise_017 from package 00012963.upk
+Loading Texture2D Gradient_Light_Line_000_V from package 00012963.upk
+Loading Texture2D Gradient_010 from package 00012963.upk
+Loading Texture2D Glow_ShockWave_004 from package 00012963.upk
+Loading Texture2D Unique_WaterFall_000_Des from package 00012963.upk
+Loading Texture2D Noise_020 from package 00012963.upk
+Loaded in 0.18 sec, 3150 allocs, 4.16 MBytes serialized in 964231 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Demonshadow_smoke02
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Smoke_Fractal_002'
+        ReferencedTextures[1] = Texture2D'Smoke_Dusts_003'
+        ReferencedTextures[2] = Texture2D'Smoke_014'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: fire_shockwave
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Color_RedToOrange_000'
+        ReferencedTextures[1] = Texture2D'Gradient_Beam_007'
+        ReferencedTextures[2] = Texture2D'Noise_017'
+        ReferencedTextures[3] = Texture2D'Gradient_Light_Line_000_V'
+        ReferencedTextures[4] = Texture2D'Gradient_010'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: fire_smoke
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Smoke_Fractal_002'
+        ReferencedTextures[1] = Texture2D'Glow_ShockWave_004'
+        ReferencedTextures[2] = Texture2D'Unique_WaterFall_000_Des'
+        ReferencedTextures[3] = Texture2D'Noise_020'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

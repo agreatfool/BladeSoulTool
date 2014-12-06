@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00015405.upk Ver: 573/1 Engine: 4205 Names: 353 Exports: 141 Imports: 108 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00015405.upk Ver: 573/1 Engine: 4205 Names: 358 Exports: 152 Imports: 108 Game: 801A
 Loading AnimSet FrogTribeC_AnimSet from package 00015405.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::NonAniScaleBoneNames" was not found
@@ -18,6 +18,16 @@ WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_13 from package 00015405.upk
+WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+Loading AnimSequence AnimSequence_14 from package 00015405.upk
+WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
 Loading AnimSequence AnimSequence_17 from package 00015405.upk
 WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
@@ -167,6 +177,8 @@ WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Error: Command failed: ******** 00015405 ********
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat

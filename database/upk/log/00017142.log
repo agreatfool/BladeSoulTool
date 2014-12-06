@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00017142.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 10 Imports: 2 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00017142.upk Ver: 573/1 Engine: 4205 Names: 44 Exports: 14 Imports: 2 Game: 801A
 Loading Texture2D 110035_Autoscale_col1_D from package 00017142.upk
 Loading Texture2D 110035_Autoscale_col1_M from package 00017142.upk
 Loading Texture2D 110035_Autoscale_col1_N from package 00017142.upk
@@ -10,7 +10,12 @@ Loading Texture2D 110035_Autoscale_col3_D from package 00017142.upk
 Loading Texture2D 110035_Autoscale_col3_S from package 00017142.upk
 Loading Texture2D 110035_Autoscale_col4_D from package 00017142.upk
 Loading Texture2D 110035_Autoscale_col4_S from package 00017142.upk
-Loaded in 0.058 sec, 349 allocs, 0.52 MBytes serialized in 2144 calls.
+Loading Texture2D 110035_Autoscale_col5_D from package 00017142.upk
+Loading Texture2D 110035_Autoscale_col5_E from package 00017142.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading Texture2D 110035_Autoscale_col5_M from package 00017142.upk
+Loading Texture2D 110035_Autoscale_col5_S from package 00017142.upk
+Loaded in 0.087 sec, 474 allocs, 0.67 MBytes serialized in 2957 calls.
 
 Object info:
 ============
@@ -150,6 +155,66 @@ ClassName: Texture2D ObjectName: 110035_Autoscale_col4_D
 Object info:
 ============
 ClassName: Texture2D ObjectName: 110035_Autoscale_col4_S
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 110035_Autoscale_col5_D
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 110035_Autoscale_col5_E
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 110035_Autoscale_col5_M
+
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 110035_Autoscale_col5_S
 
     SizeX = 512
     SizeY = 256

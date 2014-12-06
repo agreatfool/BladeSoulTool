@@ -1,4 +1,4 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00016515.upk Ver: 573/1 Engine: 4205 Names: 202 Exports: 97 Imports: 21 Game: 801A
 Loading SkeletalMesh3 60078_GonF from package 00016515.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
@@ -18,18 +18,19 @@ WARNING: StructProperty "USkeletalMesh3::HandRatio" was not found
 WARNING: ByteProperty "USkeletalMesh3::CommonPhysicsUseFlag" was not found
 WARNING: FloatProperty "USkeletalMesh3::PhysicalHitScale" was not found
 Loading package: 00018078.upk Ver: 573/1 Engine: 4205 Names: 85 Exports: 1 Imports: 21 Game: 801A
-Loading MaterialInstanceConstant Col9 from package 00018078.upk
-Loading package: 00010495.upk Ver: 573/1 Engine: 4205 Names: 77 Exports: 53 Imports: 4 Game: 801A
+Loading MaterialInstanceConstant col9 from package 00018078.upk
+Loading package: 00010495.upk Ver: 573/1 Engine: 4205 Names: 79 Exports: 53 Imports: 4 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D 65051_JinM_col9_N from package 00010495.upk
 Loading Texture2D 65051_JinM_col9_M from package 00010495.upk
 Loading Texture2D 65051_JinM_col9_D from package 00010495.upk
 Loading Texture2D 65051_JinM_col9_S from package 00010495.upk
 Loading TextureCube Cube_Suicide2 from package 00002640.upk
 Loading Texture2D 65051_JinM_E from package 00010495.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Material3 Basic_view_reflect from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -43,7 +44,7 @@ Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D check from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.11 sec, 2988 allocs, 1.25 MBytes serialized in 210067 calls.
+Loaded in 0.11 sec, 3070 allocs, 1.32 MBytes serialized in 226772 calls.
 
 Object info:
 ============
@@ -70,7 +71,7 @@ ClassName: SkeletalMesh3 ObjectName: 60078_GonF
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
-    Materials[1] = { MaterialInstanceConstant'Col9' }
+    Materials[1] = { MaterialInstanceConstant'col9' }
 
 
     Lods[2] =
@@ -79,7 +80,7 @@ ClassName: SkeletalMesh3 ObjectName: 60078_GonF
         {
             Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'Col9', FirstIndex=0, NumFaces=1846 }
+                Sections[0] = { Material=MaterialInstanceConstant'col9', FirstIndex=0, NumFaces=1846 }
             }
             NumVerts = 1337
             IndexCount = 5538
@@ -89,7 +90,7 @@ ClassName: SkeletalMesh3 ObjectName: 60078_GonF
         {
             Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'Col9', FirstIndex=0, NumFaces=506 }
+                Sections[0] = { Material=MaterialInstanceConstant'col9', FirstIndex=0, NumFaces=506 }
             }
             NumVerts = 485
             IndexCount = 1518

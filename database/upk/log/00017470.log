@@ -1,4 +1,4 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00017470.upk Ver: 573/1 Engine: 4205 Names: 241 Exports: 656 Imports: 25 Game: 801A
 Loading AnimSet Fx_AnimFx_Anim from package 00017470.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
@@ -8,7 +8,7 @@ WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_1 from package 00017470.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading SkeletalMesh3 FX_Mesh_SalivaFx_Anim from package 00017470.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 886 Exports: 4211 Imports: 257 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
 Loading SkeletalMesh3 SeamonsterBoss from package 00017470.upk
 WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PlayParticleSet" was not found
@@ -30,8 +30,8 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading MaterialInstanceConstant col1 from package 00017469.upk
 Loading package: 00014391.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 8 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading package: 00014392.upk Ver: 573/1 Engine: 4205 Names: 173 Exports: 150 Imports: 46 Game: 801A
 Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -66,6 +66,4 @@ UAnimSet::ConvertAnims <- PostLoad:Fx_AnimFx_Anim <- UObject::EndLoad <- LoadWho
     at ChildProcess.exithandler (child_process.js:637:15)
     at ChildProcess.EventEmitter.emit (events.js:98:17)
     at maybeClose (child_process.js:743:16)
-    at Socket.<anonymous> (child_process.js:956:11)
-    at Socket.EventEmitter.emit (events.js:95:17)
-    at Pipe.close (net.js:465:12)
+    at Process.ChildProcess._handle.onexit (child_process.js:810:5)

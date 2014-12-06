@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00014533.upk Ver: 573/1 Engine: 4205 Names: 40 Exports: 12 Imports: 2 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00014533.upk Ver: 573/1 Engine: 4205 Names: 42 Exports: 14 Imports: 2 Game: 801A
 Loading Texture2D Human_FrogTribeC_col2_D from package 00014533.upk
 Loading Texture2D Human_FrogTribeC_col3_D from package 00014533.upk
 Loading Texture2D Human_FrogTribeC_col3_S from package 00014533.upk
@@ -7,12 +7,14 @@ Loading Texture2D Human_FrogTribeC_col4_D from package 00014533.upk
 Loading Texture2D Human_FrogTribeC_col4_S from package 00014533.upk
 Loading Texture2D Human_FrogTribeC_col5_D from package 00014533.upk
 Loading Texture2D Human_FrogTribeC_col5_S from package 00014533.upk
+Loading Texture2D Human_FrogTribeC_col6_D from package 00014533.upk
+Loading Texture2D Human_FrogTribeC_col6_S from package 00014533.upk
 Loading Texture2D Human_FrogTribeC_D from package 00014533.upk
 Loading Texture2D Human_FrogTribeC_FX from package 00014533.upk
 Loading Texture2D Human_FrogTribeC_M from package 00014533.upk
 Loading Texture2D Human_FrogTribeC_N from package 00014533.upk
 Loading Texture2D Human_FrogTribeC_S from package 00014533.upk
-Loaded in 0.085 sec, 433 allocs, 2.46 MBytes serialized in 2708 calls.
+Loaded in 0.11 sec, 496 allocs, 2.86 MBytes serialized in 3130 calls.
 
 Object info:
 ============
@@ -107,6 +109,36 @@ ClassName: Texture2D ObjectName: Human_FrogTribeC_col5_D
 Object info:
 ============
 ClassName: Texture2D ObjectName: Human_FrogTribeC_col5_S
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Human_FrogTribeC_col6_D
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Human_FrogTribeC_col6_S
 
     SizeX = 1024
     SizeY = 512

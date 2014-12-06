@@ -1,6 +1,6 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00015112.upk Ver: 573/1 Engine: 4205 Names: 611 Exports: 722 Imports: 56 Game: 801A
-Loading AnimSet nakwondaesung_animset from package 00015112.upk
+Loading AnimSet NakWonDaeSung_Animset from package 00015112.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::NonAniScaleBoneNames" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -853,7 +853,7 @@ Error: Command failed: ******** 00015112 ********
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** ERROR: Unknown rotation compression method: 255
-UAnimSet::ConvertAnims <- PostLoad:nakwondaesung_animset <- UObject::EndLoad <- LoadWholePackage:00015112 <- Main
+UAnimSet::ConvertAnims <- PostLoad:NakWonDaeSung_Animset <- UObject::EndLoad <- LoadWholePackage:00015112 <- Main
 
 
     at ChildProcess.exithandler (child_process.js:637:15)

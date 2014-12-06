@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00014685.upk Ver: 573/1 Engine: 4205 Names: 374 Exports: 377 Imports: 27 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00014685.upk Ver: 573/1 Engine: 4205 Names: 423 Exports: 380 Imports: 27 Game: 801A
 Loading AnimSet Skill_Summon_Cat_Animset from package 00014685.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -17,6 +17,9 @@ Loading AnimSet Skill_Summon_A_Animset from package 00014685.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
 WARNING: ArrayProperty "UAnimSet::DynamicFixedBones" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+Loading AnimSequence AnimSequence_0 from package 00014685.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_1 from package 00014685.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_10 from package 00014685.upk
@@ -44,6 +47,10 @@ WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_7 from package 00014685.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_8 from package 00014685.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_85 from package 00014685.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_86 from package 00014685.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_9 from package 00014685.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
@@ -276,6 +283,9 @@ WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
 Error: Command failed: ******** 00014685 ********
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat

@@ -1,5 +1,7 @@
-Found 16186 game files (0 skipped)
-Loading package: 00014825.upk Ver: 573/1 Engine: 4205 Names: 48 Exports: 20 Imports: 2 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00014825.upk Ver: 573/1 Engine: 4205 Names: 60 Exports: 32 Imports: 2 Game: 801A
+Loading Texture2D PilebunkerEmpire_col10_D from package 00014825.upk
+Loading Texture2D PilebunkerEmpire_col10_S from package 00014825.upk
 Loading Texture2D PilebunkerEmpire_col2_D from package 00014825.upk
 Loading Texture2D PilebunkerEmpire_col2_S from package 00014825.upk
 Loading Texture2D PilebunkerEmpire_col3_D from package 00014825.upk
@@ -10,6 +12,16 @@ Loading Texture2D PilebunkerEmpire_col4_FX_Line from package 00014825.upk
 Loading Texture2D PilebunkerEmpire_col4_M from package 00014825.upk
 Loading Texture2D PilebunkerEmpire_col4_N from package 00014825.upk
 Loading Texture2D PilebunkerEmpire_col4_S from package 00014825.upk
+Loading Texture2D PilebunkerEmpire_col6_E from package 00014825.upk
+Loading Texture2D PilebunkerEmpire_col7_D from package 00014825.upk
+Loading Texture2D PilebunkerEmpire_col7_N from package 00014825.upk
+Loading Texture2D PilebunkerEmpire_col7_S from package 00014825.upk
+Loading Texture2D PilebunkerEmpire_col8_D from package 00014825.upk
+Loading Texture2D PilebunkerEmpire_col8_S from package 00014825.upk
+Loading Texture2D PilebunkerEmpire_col9_D from package 00014825.upk
+Loading Texture2D PilebunkerEmpire_col9_M from package 00014825.upk
+Loading Texture2D PilebunkerEmpire_col9_N from package 00014825.upk
+Loading Texture2D PilebunkerEmpire_col9_S from package 00014825.upk
 Loading Texture2D PilebunkerEmpire_D from package 00014825.upk
 Loading Texture2D PilebunkerEmpire_D5 from package 00014825.upk
 Loading Texture2D PilebunkerEmpire_E from package 00014825.upk
@@ -20,7 +32,37 @@ Loading Texture2D PilebunkerEmpire_M5 from package 00014825.upk
 Loading Texture2D PilebunkerEmpire_N from package 00014825.upk
 Loading Texture2D PilebunkerEmpire_S from package 00014825.upk
 Loading Texture2D PilebunkerEmpire_S5 from package 00014825.upk
-Loaded in 0.16 sec, 703 allocs, 5.82 MBytes serialized in 4557 calls.
+Loaded in 0.27 sec, 1093 allocs, 9.94 MBytes serialized in 7242 calls.
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PilebunkerEmpire_col10_D
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PilebunkerEmpire_col10_S
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
 
 Object info:
 ============
@@ -160,6 +202,156 @@ ClassName: Texture2D ObjectName: PilebunkerEmpire_col4_N
 Object info:
 ============
 ClassName: Texture2D ObjectName: PilebunkerEmpire_col4_S
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PilebunkerEmpire_col6_E
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PilebunkerEmpire_col7_D
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PilebunkerEmpire_col7_N
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PilebunkerEmpire_col7_S
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PilebunkerEmpire_col8_D
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PilebunkerEmpire_col8_S
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PilebunkerEmpire_col9_D
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PilebunkerEmpire_col9_M
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PilebunkerEmpire_col9_N
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PilebunkerEmpire_col9_S
 
     SizeX = 1024
     SizeY = 1024
