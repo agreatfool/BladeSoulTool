@@ -1,4 +1,4 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00022396.upk Ver: 573/1 Engine: 4205 Names: 207 Exports: 117 Imports: 21 Game: 801A
 Loading SkeletalMesh3 60060_GonF from package 00022396.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
@@ -20,8 +20,8 @@ Loading package: 00022395.upk Ver: 573/1 Engine: 4205 Names: 100 Exports: 2 Impo
 Loading MaterialInstanceConstant col1 from package 00022395.upk
 Loading package: 00022394.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
-Loading MaterialInstanceConstant col1_op from package 00022395.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading MaterialInstanceConstant Col1_Op from package 00022395.upk
 Loading Texture2D 60060_GonF_col1_N from package 00022394.upk
 Loading Texture2D 60060_GonF_col1_M from package 00022394.upk
 Loading Texture2D 60060_GonF_col1_D from package 00022394.upk
@@ -29,7 +29,7 @@ Loading Texture2D 60060_GonF_col1_S from package 00022394.upk
 Loading TextureCube lenscube_c from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Material3 body_reflect from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading TextureCube eye_s from package 00002640.upk
 Loading Material3 Blend_OP from package 00002620.upk
 Loading Texture2D CubemapFace0 from package 00002640.upk
@@ -50,7 +50,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.14 sec, 3092 allocs, 2.15 MBytes serialized in 407113 calls.
+Loaded in 0.16 sec, 3172 allocs, 2.22 MBytes serialized in 423806 calls.
 
 Object info:
 ============
@@ -77,7 +77,7 @@ ClassName: SkeletalMesh3 ObjectName: 60060_GonF
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
-    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'col1_op' }
+    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'Col1_Op' }
 
 
     Lods[2] =
@@ -87,7 +87,7 @@ ClassName: SkeletalMesh3 ObjectName: 60060_GonF
             Sections[2] =
             {
                 Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=6322 }
-                Sections[1] = { Material=MaterialInstanceConstant'col1_op', FirstIndex=18966, NumFaces=756 }
+                Sections[1] = { Material=MaterialInstanceConstant'Col1_Op', FirstIndex=18966, NumFaces=756 }
             }
             NumVerts = 5011
             IndexCount = 21234

@@ -1,19 +1,20 @@
-Found 16186 game files (0 skipped)
-Loading package: 00023451.upk Ver: 573/1 Engine: 4205 Names: 88 Exports: 1 Imports: 5 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00023451.upk Ver: 573/1 Engine: 4205 Names: 60 Exports: 5 Imports: 9 Game: 801A
 Loading SkeletalMesh3 040113_GonF from package 00023451.upk
 Loading package: 00023450.upk Ver: 573/1 Engine: 4205 Names: 113 Exports: 3 Imports: 30 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00023450.upk
-Loading package: 00019949.upk Ver: 573/1 Engine: 4205 Names: 31 Exports: 4 Imports: 4 Game: 801A
+Loading package: 00019949.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 4 Game: 801A
 Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading MaterialInstanceConstant col1_hat from package 00023450.upk
 Loading package: 00023449.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 6 Imports: 6 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading Texture2D JinF_043_col1_D from package 00019949.upk
 Loading Texture2D JinF_043_col1_N from package 00019949.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Nothing_A from package 00008613.upk
 Loading Material3 Beard_Ac from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D 040113_GonF_col1_N from package 00023449.upk
 Loading Texture2D 040113_GonF_col1_M from package 00023449.upk
 Loading Texture2D 040113_GonF_col1_D from package 00023449.upk
@@ -33,7 +34,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.12 sec, 3039 allocs, 1.40 MBytes serialized in 186426 calls.
+Loaded in 0.12 sec, 3093 allocs, 1.46 MBytes serialized in 204145 calls.
 
 Object info:
 ============
@@ -62,8 +63,8 @@ ClassName: SkeletalMesh3 ObjectName: 040113_GonF
         {
             Sections[2] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1_hat', FirstIndex=0, NumFaces=412 }
-                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=1236, NumFaces=975 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=975 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1_hat', FirstIndex=2925, NumFaces=412 }
             }
             NumVerts = 1164
             IndexCount = 4161
@@ -74,4 +75,4 @@ ClassName: SkeletalMesh3 ObjectName: 040113_GonF
     MeshOrigin = { X=-0, Y=-0, Z=-0 }
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
-    BoneCount = 64
+    BoneCount = 9

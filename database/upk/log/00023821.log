@@ -1,12 +1,13 @@
-Found 16186 game files (0 skipped)
-Loading package: 00023821.upk Ver: 573/1 Engine: 4205 Names: 176 Exports: 156 Imports: 48 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00023821.upk Ver: 573/1 Engine: 4205 Names: 187 Exports: 156 Imports: 53 Game: 801A
 Loading Material3 zakan_arm from package 00023821.upk
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00023821.upk
-Loading package: 00023820.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 8 Imports: 4 Game: 801A
-Loading package: 00023734.upk Ver: 573/1 Engine: 4205 Names: 34 Exports: 6 Imports: 2 Game: 801A
+Loading package: 00023820.upk Ver: 573/1 Engine: 4205 Names: 40 Exports: 9 Imports: 4 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00023734.upk Ver: 573/1 Engine: 4205 Names: 39 Exports: 8 Imports: 2 Game: 801A
+Loading package: 00023735.upk Ver: 573/1 Engine: 4205 Names: 183 Exports: 206 Imports: 52 Game: 801A
 Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D check from package 00002620.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
@@ -14,18 +15,22 @@ Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D 990120_ZakanArm_col1_N from package 00023820.upk
-Loading Texture2D Zakan_M from package 00023734.upk
+Loading Texture2D ZakanArm_M from package 00023820.upk
 Loading Texture2D 990120_ZakanArm_col1_D from package 00023820.upk
 Loading Texture2D 990120_ZakanArm_col1_S from package 00023820.upk
-Loading TextureCube Cube_D from package 00002640.upk
+Loading TextureCube lenscube from package 00002640.upk
 Loading Texture2D 990120_ZakanArm_col1_E from package 00023820.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading Texture2D zakan_fx_mask from package 00023734.upk
+Loading Texture2D Noise_Wave_000 from package 00012963.upk
+Loading Material3 Basic_zakan from package 00023735.upk
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.097 sec, 2782 allocs, 1.53 MBytes serialized in 149210 calls.
+Loaded in 0.12 sec, 3165 allocs, 1.76 MBytes serialized in 171373 calls.
 
 Object info:
 ============
@@ -70,21 +75,23 @@ ClassName: MaterialInstanceConstant ObjectName: col1
         ScalarParameterValues[8] = { ParameterName=Fresnel Value, ParameterValue=1 }
         ScalarParameterValues[9] = { ParameterName=Fresnel exponent, ParameterValue=30 }
     }
-    TextureParameterValues[6] =
+    TextureParameterValues[8] =
     {
         TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'990120_ZakanArm_col1_N' }
-        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'Zakan_M' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'ZakanArm_M' }
         TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'990120_ZakanArm_col1_D' }
         TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'990120_ZakanArm_col1_S' }
-        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'Cube_D' }
+        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'lenscube' }
         TextureParameterValues[5] = { ParameterName=Emissive, ParameterValue=Texture2D'990120_ZakanArm_col1_E' }
+        TextureParameterValues[6] = { ParameterName=FX_Mask, ParameterValue=Texture2D'zakan_fx_mask' }
+        TextureParameterValues[7] = { ParameterName=FX_pattern, ParameterValue=Texture2D'Noise_Wave_000' }
     }
     VectorParameterValues[13] =
     {
         VectorParameterValues[0] =
         {
-            ParameterName = arm_transition
-            ParameterValue = { R=12, G=12, B=0, A=1 }
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
         }
         VectorParameterValues[1] =
         {
@@ -138,16 +145,16 @@ ClassName: MaterialInstanceConstant ObjectName: col1
         }
         VectorParameterValues[11] =
         {
-            ParameterName = arm_Fresnel_Power
+            ParameterName = dissolve_color
             ParameterValue = { R=0, G=0, B=0, A=1 }
         }
         VectorParameterValues[12] =
         {
-            ParameterName = arm_Fresnel_color
-            ParameterValue = { R=0, G=0, B=0, A=1 }
+            ParameterName = dissolve_acc
+            ParameterValue = { R=1, G=0, B=0, A=1 }
         }
     }
-    Parent = Material3'zakan_arm'
+    Parent = Material3'Basic_zakan'
     FlattenedTexture = None
     MobileBaseTexture = None
     MobileNormalTexture = None

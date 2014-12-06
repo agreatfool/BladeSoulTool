@@ -1,10 +1,10 @@
-Found 16186 game files (0 skipped)
-Loading package: 00023735.upk Ver: 573/1 Engine: 4205 Names: 179 Exports: 182 Imports: 49 Game: 801A
-Loading Material3 zakan_basic_mat from package 00023735.upk
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00023735.upk Ver: 573/1 Engine: 4205 Names: 183 Exports: 206 Imports: 52 Game: 801A
+Loading Material3 Basic_zakan from package 00023735.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00023735.upk
-Loading package: 00023734.upk Ver: 573/1 Engine: 4205 Names: 34 Exports: 6 Imports: 2 Game: 801A
+Loading package: 00023734.upk Ver: 573/1 Engine: 4205 Names: 39 Exports: 8 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D check from package 00002620.upk
@@ -16,21 +16,21 @@ Loading Texture2D Zakan_N from package 00023734.upk
 Loading Texture2D Zakan_M from package 00023734.upk
 Loading Texture2D Zakan_D from package 00023734.upk
 Loading Texture2D Zakan_S from package 00023734.upk
-Loading TextureCube Cube_D from package 00002640.upk
+Loading TextureCube lenscube from package 00002640.upk
 Loading Texture2D Zakan_E from package 00023734.upk
-Loading Texture2D Noise_018 from package 00012963.upk
-Loading Texture2D Zakan_cape_mask from package 00023734.upk
+Loading Texture2D zakan_fx_mask from package 00023734.upk
+Loading Texture2D Noise_Wave_000 from package 00012963.upk
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.12 sec, 2798 allocs, 5.98 MBytes serialized in 149940 calls.
+Loaded in 0.14 sec, 2923 allocs, 6.04 MBytes serialized in 167321 calls.
 
 Object info:
 ============
-ClassName: Material3 ObjectName: zakan_basic_mat
+ClassName: Material3 ObjectName: Basic_zakan
 
     TwoSided = true
     bDisableDepthTest = false
@@ -77,10 +77,10 @@ ClassName: MaterialInstanceConstant ObjectName: col1
         TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'Zakan_M' }
         TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'Zakan_D' }
         TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'Zakan_S' }
-        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'Cube_D' }
+        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'lenscube' }
         TextureParameterValues[5] = { ParameterName=Emissive, ParameterValue=Texture2D'Zakan_E' }
-        TextureParameterValues[6] = { ParameterName=zakan_cape_dissolve_tex, ParameterValue=Texture2D'Noise_018' }
-        TextureParameterValues[7] = { ParameterName=zakan_mask, ParameterValue=Texture2D'Zakan_cape_mask' }
+        TextureParameterValues[6] = { ParameterName=FX_Mask, ParameterValue=Texture2D'zakan_fx_mask' }
+        TextureParameterValues[7] = { ParameterName=FX_pattern, ParameterValue=Texture2D'Noise_Wave_000' }
     }
     VectorParameterValues[13] =
     {
@@ -141,16 +141,16 @@ ClassName: MaterialInstanceConstant ObjectName: col1
         }
         VectorParameterValues[11] =
         {
-            ParameterName = cape_dissolve
+            ParameterName = dissolve_color
             ParameterValue = { R=0, G=0, B=0, A=1 }
         }
         VectorParameterValues[12] =
         {
-            ParameterName = cape_dissolve_burn_color
-            ParameterValue = { R=0, G=0, B=0, A=1 }
+            ParameterName = dissolve_acc
+            ParameterValue = { R=1, G=0, B=0, A=1 }
         }
     }
-    Parent = Material3'zakan_basic_mat'
+    Parent = Material3'Basic_zakan'
     FlattenedTexture = None
     MobileBaseTexture = None
     MobileNormalTexture = None

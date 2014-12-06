@@ -1,20 +1,24 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00023822.upk Ver: 573/1 Engine: 4205 Names: 114 Exports: 35 Imports: 12 Game: 801A
 Loading SkeletalMesh3 990120_ZakanArm from package 00023822.upk
-Loading package: 00023821.upk Ver: 573/1 Engine: 4205 Names: 176 Exports: 156 Imports: 48 Game: 801A
+Loading package: 00023821.upk Ver: 573/1 Engine: 4205 Names: 187 Exports: 156 Imports: 53 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00023821.upk
-Loading package: 00023820.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 8 Imports: 4 Game: 801A
-Loading package: 00023734.upk Ver: 573/1 Engine: 4205 Names: 34 Exports: 6 Imports: 2 Game: 801A
+Loading package: 00023820.upk Ver: 573/1 Engine: 4205 Names: 40 Exports: 9 Imports: 4 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00023734.upk Ver: 573/1 Engine: 4205 Names: 39 Exports: 8 Imports: 2 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00023735.upk Ver: 573/1 Engine: 4205 Names: 183 Exports: 206 Imports: 52 Game: 801A
 Loading Texture2D 990120_ZakanArm_col1_N from package 00023820.upk
-Loading Texture2D Zakan_M from package 00023734.upk
+Loading Texture2D ZakanArm_M from package 00023820.upk
 Loading Texture2D 990120_ZakanArm_col1_D from package 00023820.upk
 Loading Texture2D 990120_ZakanArm_col1_S from package 00023820.upk
-Loading TextureCube Cube_D from package 00002640.upk
+Loading TextureCube lenscube from package 00002640.upk
 Loading Texture2D 990120_ZakanArm_col1_E from package 00023820.upk
-Loading Material3 zakan_arm from package 00023821.upk
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading Texture2D zakan_fx_mask from package 00023734.upk
+Loading Texture2D Noise_Wave_000 from package 00012963.upk
+Loading Material3 Basic_zakan from package 00023735.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -27,7 +31,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.12 sec, 2931 allocs, 2.03 MBytes serialized in 298381 calls.
+Loaded in 0.13 sec, 3312 allocs, 2.25 MBytes serialized in 320431 calls.
 
 Object info:
 ============

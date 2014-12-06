@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00023156.upk Ver: 573/1 Engine: 4205 Names: 67 Exports: 10 Imports: 14 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00023156.upk Ver: 573/1 Engine: 4205 Names: 245 Exports: 153 Imports: 78 Game: 801A
 Loading SkeletalMesh3 120067_1_Autoscale from package 00023156.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
@@ -8,17 +8,19 @@ Loading package: 00023158.upk Ver: 573/1 Engine: 4205 Names: 89 Exports: 1 Impor
 Loading SkeletalMesh3 120067_2_Autoscale from package 00023156.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
 WARNING: ByteProperty "USkeletalMesh3::ItemPreviewLocType" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_227 from package 00023156.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
 Loading MaterialInstanceConstant col1 from package 00023158.upk
 Loading package: 00023157.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D 120067_Autoscale_col1_N from package 00023157.upk
 Loading Texture2D 120067_Autoscale_col1_M from package 00023157.upk
 Loading Texture2D 120067_Autoscale_col1_D from package 00023157.upk
 Loading Texture2D 120067_Autoscale_col1_S from package 00023157.upk
 Loading TextureCube lenscube from package 00002640.upk
 Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -31,7 +33,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.1 sec, 2764 allocs, 1.18 MBytes serialized in 221853 calls.
+Loaded in 0.1 sec, 3025 allocs, 1.23 MBytes serialized in 233135 calls.
 
 Object info:
 ============
@@ -47,7 +49,7 @@ ClassName: SkeletalMesh3 ObjectName: 120067_1_Autoscale
             bEnableShadowCasting[1] = { true }
         }
     }
-    Sockets[0] = {}
+    Sockets[1] = { SkeletalMeshSocket'120067_1_Autoscale.SkeletalMeshSocket_227' }
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
@@ -100,10 +102,10 @@ ClassName: SkeletalMesh3 ObjectName: 120067_2_Autoscale
         {
             Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=2250 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1784 }
             }
-            NumVerts = 1420
-            IndexCount = 6750
+            NumVerts = 1164
+            IndexCount = 5352
             NumTexCoords = 1
         }
     }
@@ -112,3 +114,13 @@ ClassName: SkeletalMesh3 ObjectName: 120067_2_Autoscale
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
     BoneCount = 1
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_227
+
+    SocketName = weapon_fx
+    BoneName = WeaponRoot
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }

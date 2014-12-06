@@ -1,22 +1,24 @@
-Found 16186 game files (0 skipped)
-Loading package: 00023818.upk Ver: 573/1 Engine: 4205 Names: 64 Exports: 10 Imports: 11 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00023818.upk Ver: 573/1 Engine: 4205 Names: 69 Exports: 10 Imports: 14 Game: 801A
 Loading SkeletalMesh3 990178_Autoscale from package 00023818.upk
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
 Loading package: 00023817.upk Ver: 573/1 Engine: 4205 Names: 89 Exports: 1 Imports: 19 Game: 801A
 Loading SkeletalMeshSocket SkeletalMeshSocket_115 from package 00023818.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_116 from package 00023818.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_81 from package 00023818.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_82 from package 00023818.upk
 Loading MaterialInstanceConstant col1 from package 00023817.upk
-Loading package: 00023816.upk Ver: 573/1 Engine: 4205 Names: 31 Exports: 4 Imports: 2 Game: 801A
+Loading package: 00023816.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D 990178_Autoscale_col1_N from package 00023816.upk
 Loading Texture2D 990178_Autoscale_col1_M from package 00023816.upk
 Loading Texture2D 990178_Autoscale_col1_D from package 00023816.upk
 Loading Texture2D 990178_Autoscale_col1_S from package 00023816.upk
-Loading TextureCube Cube_crr from package 00002640.upk
+Loading TextureCube lenscube from package 00002640.upk
+Loading Texture2D check from package 00002620.upk
 Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -24,12 +26,11 @@ Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Texture2D check_n from package 00002620.upk
-Loading Texture2D check from package 00002620.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.093 sec, 2722 allocs, 1.06 MBytes serialized in 208475 calls.
+Loaded in 0.1 sec, 2838 allocs, 1.61 MBytes serialized in 210860 calls.
 
 Object info:
 ============
@@ -64,10 +65,10 @@ ClassName: SkeletalMesh3 ObjectName: 990178_Autoscale
         {
             Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=2360 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1756 }
             }
-            NumVerts = 1945
-            IndexCount = 7080
+            NumVerts = 1504
+            IndexCount = 5268
             NumTexCoords = 1
         }
     }

@@ -1,4 +1,4 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00022441.upk Ver: 573/1 Engine: 4205 Names: 164 Exports: 210 Imports: 15 Game: 801A
 Loading SkeletalMesh3 RuneMechaRepair from package 00022441.upk
 WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
@@ -17,10 +17,10 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_115 from package 00022441.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_116 from package 00022441.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_117 from package 00022441.upk
 Loading MaterialInstanceConstant col1 from package 00022440.upk
-Loading package: 00013584.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 8 Imports: 8 Game: 801A
-Loading package: 00022439.upk Ver: 573/1 Engine: 4205 Names: 36 Exports: 8 Imports: 2 Game: 801A
+Loading package: 00013584.upk Ver: 573/1 Engine: 4205 Names: 40 Exports: 8 Imports: 8 Game: 801A
+Loading package: 00022439.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 8 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading MaterialInstanceConstant attatch from package 00022440.upk
 Loading Texture2D Etc_RuneMechaBase_N from package 00013584.upk
 Loading Texture2D Etc_RuneMechaBase_M from package 00013584.upk
@@ -28,14 +28,16 @@ Loading Texture2D RuneMechaRepair_D_col1 from package 00022439.upk
 Loading Texture2D RuneMechaRepair_S_col1 from package 00022439.upk
 Loading TextureCube Cube_A from package 00002640.upk
 Loading Texture2D RuneMechaRepair_E_col1 from package 00022439.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D RuneMechaRepair_A_col1_N from package 00022439.upk
 Loading Texture2D RuneMechaRepair_A_col1_M from package 00022439.upk
 Loading Texture2D RuneMechaRepair_A_col1_D from package 00022439.upk
 Loading Texture2D RuneMechaRepair_A_col1_S from package 00022439.upk
 Loading TextureCube MatelR2 from package 00002640.upk
 Loading Texture2D RuneMechaRepair_A_col1_E from package 00022439.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -54,7 +56,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.17 sec, 3232 allocs, 2.20 MBytes serialized in 384917 calls.
+Loaded in 0.18 sec, 3316 allocs, 2.27 MBytes serialized in 401634 calls.
 
 Object info:
 ============
