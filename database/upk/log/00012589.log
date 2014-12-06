@@ -1,15 +1,15 @@
-Found 16186 game files (0 skipped)
-Loading package: 00012589.upk Ver: 573/1 Engine: 4205 Names: 356 Exports: 2053 Imports: 154 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00012589.upk Ver: 573/1 Engine: 4205 Names: 361 Exports: 2115 Imports: 157 Game: 801A
 Loading Material3 Blob_Add_volume from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Material3 Blob_volume from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Blood_Sparkle001 from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BloodSplatter008_MatB from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: EngineMaterials.upk Ver: 573/1 Engine: 4205 Names: 429 Exports: 370 Imports: 97 Game: 801A
+Loading package: EngineMaterials.upk Ver: 573/1 Engine: 4205 Names: 430 Exports: 451 Imports: 97 Game: 801A
 Loading Material3 Bubble001_MatM from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Bubble002_MatM from package 00012589.upk
@@ -19,7 +19,7 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Damage02_Poison_signal_stone from package 00012589.upk
 Loading Material3 Damage_Fire_Signal_Gradient004 from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 69 Imports: 11 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
 Loading Material3 Damage_Fire_Signal_Gradient004_4 from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Damage_Ice_signal_outside_m from package 00012589.upk
@@ -74,6 +74,7 @@ Loading Material3 Gradient005_MatB_2 from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Gradient005_Mesh from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 GukMaLevelu_Flare002 from package 00012589.upk
 Loading Material3 LenzFlare000_MatB from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 LenzFlare000_ScaleRoof_MatB from package 00012589.upk
@@ -96,7 +97,7 @@ Loading Material3 ShockWave__mesh from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 ShockWave__mesh1 from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: cubemap_001.upk Ver: 573/1 Engine: 4205 Names: 193 Exports: 539 Imports: 29 Game: 801A
+Loading package: cubemap_001.upk Ver: 573/1 Engine: 4205 Names: 177 Exports: 517 Imports: 34 Game: 801A
 Loading Material3 ShockWave__mesh2 from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 ShockWave__mesh23 from package 00012589.upk
@@ -109,6 +110,7 @@ Loading Material3 ShockWave__Sword from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 ShockWave_Distortion_matM from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 sparcle_sub01 from package 00012589.upk
 Loading Material3 Sparkle001_MatB from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Sparkle002_MatB from package 00012589.upk
@@ -172,10 +174,12 @@ Loading Texture2D Noise_005 from package 00012963.upk
 Loading Texture2D TooManyMaterials from package EngineMaterials.upk
 Loading Texture2D Noise_002 from package 00012963.upk
 Loading Texture2D Normal_Stone_000 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Smoke_000 from package 00012963.upk
 Loading Texture2D Ring_Rad_000 from package 00012963.upk
 Loading Texture2D Unique_Count5_000 from package 00012963.upk
 Loading Texture2D Noise_Wave_000_Normal from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Normal_Noise_004 from package 00012963.upk
 Loading Texture2D Smoke_Fractal_002 from package 00012963.upk
 Loading Texture2D Glow_Flare_010_B from package 00012963.upk
@@ -190,6 +194,7 @@ Loading Texture2D Noise_017 from package 00012963.upk
 Loading Texture2D Gradient_Light_Line_000_V from package 00012963.upk
 Loading Texture2D DefaultTexture from package EngineResources.upk
 Loading Texture2D Normal_Stone_001 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Noise_Distortion_000 from package 00012963.upk
 Loading Texture2D Gradient_001_Left from package 00012963.upk
 Loading Texture2D Smoke_Dark_000 from package 00012963.upk
@@ -221,6 +226,7 @@ Loading Texture2D Env_Fx_SandFall from package 00012963.upk
 Loading Texture2D Smoke_Dust_000 from package 00012963.upk
 Loading Texture2D Gradient_007 from package 00012963.upk
 Loading Texture2D Gradient_Beam_001 from package 00012963.upk
+Loading Texture2D Glow_ShockWave_005 from package 00012963.upk
 Loading Texture2D Glow_Flar_003 from package 00012963.upk
 Loading Texture2D Noise_006 from package 00012963.upk
 Loading Texture2D Sparkle_005 from package 00012963.upk
@@ -235,6 +241,7 @@ Loading Texture2D Color_Ring_001 from package 00012963.upk
 Loading Texture2D Ring_ShockWave_001 from package 00012963.upk
 Loading Texture2D Glow_Flare_010 from package 00012963.upk
 Loading Texture2D Normal_Noise_000 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Gradient_010 from package 00012963.upk
 Loading Texture2D Ref_Cool from package 00012963.upk
 Loading Texture2D Gradient_Beam_000 from package 00012963.upk
@@ -244,6 +251,8 @@ Loading TextureCube Cube_D from package cubemap_001.upk
 Loading Texture2D Gradient_Line_000 from package 00012963.upk
 Loading Texture2D Noise_Bubble_000 from package 00012963.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Unique_Stone_001 from package 00012963.upk
+Loading Texture2D Sparkle_Sprite_003 from package 00012963.upk
 Loading Texture2D Noise_007 from package 00012963.upk
 Loading Texture2D Sparkle_004 from package 00012963.upk
 Loading Texture2D Sparkle_001 from package 00012963.upk
@@ -251,7 +260,6 @@ Loading Texture2D Sparkle_Sprite_001 from package 00012963.upk
 Loading Texture2D Sparkle_Sprite_002 from package 00012963.upk
 Loading Texture2D Sparkle_Sprite_005 from package 00012963.upk
 Loading Texture2D Sparkle_Sprite_006 from package 00012963.upk
-Loading Texture2D Sparkle_Sprite_003 from package 00012963.upk
 Loading Texture2D Sparkle_Sprite_007 from package 00012963.upk
 Loading Texture2D Sparkle_Ink_002 from package 00012963.upk
 Loading Texture2D Noise_Plazma_002 from package 00012963.upk
@@ -277,7 +285,7 @@ Loading Texture2D CubemapFace2 from package cubemap_001.upk
 Loading Texture2D CubemapFace3 from package cubemap_001.upk
 Loading Texture2D CubemapFace4 from package cubemap_001.upk
 Loading Texture2D CubemapFace5 from package cubemap_001.upk
-Loaded in 0.81 sec, 5611 allocs, 2.62 MBytes serialized in 109837 calls.
+Loaded in 1.3 sec, 5691 allocs, 2.74 MBytes serialized in 113329 calls.
 
 Object info:
 ============
@@ -1094,6 +1102,24 @@ ClassName: Material3 ObjectName: Gradient005_Mesh
 
 Object info:
 ============
+ClassName: Material3 ObjectName: GukMaLevelu_Flare002
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Glow_ShockWave_005' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
 ClassName: Material3 ObjectName: LenzFlare000_MatB
 
     TwoSided = false
@@ -1484,6 +1510,29 @@ ClassName: Material3 ObjectName: ShockWave_Distortion_matM
     bDisableDepthTest = false
     bIsMasked = false
     ReferencedTextures[1] = { Texture2D'Gradient_001_Left' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: sparcle_sub01
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_005'
+        ReferencedTextures[1] = Texture2D'Unique_Stone_001'
+        ReferencedTextures[2] = Texture2D'Sparkle_Sprite_003'
+    }
     BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None

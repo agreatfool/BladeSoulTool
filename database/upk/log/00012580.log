@@ -1,8 +1,8 @@
-Found 16186 game files (0 skipped)
-Loading package: 00012580.upk Ver: 573/1 Engine: 4205 Names: 272 Exports: 2162 Imports: 104 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00012580.upk Ver: 573/1 Engine: 4205 Names: 286 Exports: 2321 Imports: 109 Game: 801A
 Loading Material3 airdash_mat from package 00012580.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 69 Imports: 11 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
 Loading Material3 Dst_Type4_WorldPosition from package 00012580.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 DST_Type_normal from package 00012580.upk
@@ -98,10 +98,14 @@ Loading Material3 Smoke024_Mat from package 00012580.upk
 Loading Material3 Smoke025_1_Mat from package 00012580.upk
 Loading Material3 Smoke025_2_Mat from package 00012580.upk
 Loading Material3 Smoke025_Mat from package 00012580.upk
+Loading Material3 Smoke_003a from package 00012580.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 smoke_app01 from package 00012580.upk
 Loading Material3 smoke_Backup from package 00012580.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 smoke_Backup_optimiz from package 00012580.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 smoke_depthalpha_fresnel from package 00012580.upk
 Loading Material3 Smoke_Ink_Blending_Mat from package 00012580.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 SmokeDust000_MatB from package 00012580.upk
@@ -111,6 +115,10 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 SmokeVolume001_MatB from package 00012580.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 SnowSparkle001_MatB_NoDepthBias from package 00012580.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 TwinsA_M01_dst_03_dark from package 00012580.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 TwinsA_Smoke022_MatB_NoDepthBias_Dark from package 00012580.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Volume_smoke_1 from package 00012580.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -137,6 +145,7 @@ Loading Texture2D Smoke_Dusts_003 from package 00012963.upk
 Loading Texture2D Smoke_014 from package 00012963.upk
 Loading Texture2D Normal_Noise_004 from package 00012963.upk
 Loading Texture2D Normal_Stone_001 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Unique_Stone_001 from package 00012963.upk
 Loading Texture2D Glow_Flair_001 from package 00012963.upk
 Loading Texture2D Unique_WarterFall_001_Normal from package 00012963.upk
@@ -182,8 +191,11 @@ Loading Texture2D Noise_Wave_000 from package 00012963.upk
 Loading Texture2D Gradient_Beam_004 from package 00012963.upk
 Loading Texture2D Gradient_Beam_003 from package 00012963.upk
 Loading Texture2D Gradient_Line_R from package 00012963.upk
+Loading Texture2D Glow_ink_000 from package 00012963.upk
+Loading Texture2D RippleSprite000_Tex from package 00012963.upk
 Loading Texture2D Smoke_Dust_004 from package 00012963.upk
 Loading Texture2D Glow_001 from package 00012963.upk
+Loading Texture2D Color_Ring_002 from package 00012963.upk
 Loading Texture2D Sparkle_Ink_000 from package 00012963.upk
 Loading Texture2D Smoke_Dust_000 from package 00012963.upk
 Loading Texture2D Smoke_Sprite_000 from package 00012963.upk
@@ -191,7 +203,7 @@ Loading Texture2D Noise_010 from package 00012963.upk
 Loading Texture2D Smoke_Dark from package 00012963.upk
 Loading Texture2D Smoke_Sprite_001 from package 00012963.upk
 Loading Texture2D Smoke_Sprite_001_Blur from package 00012963.upk
-Loaded in 0.38 sec, 3532 allocs, 1.90 MBytes serialized in 82133 calls.
+Loaded in 0.45 sec, 3674 allocs, 1.98 MBytes serialized in 86686 calls.
 
 Object info:
 ============
@@ -1378,6 +1390,48 @@ ClassName: Material3 ObjectName: Smoke025_Mat
 
 Object info:
 ============
+ClassName: Material3 ObjectName: Smoke_003a
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Glow_ink_000'
+        ReferencedTextures[1] = Texture2D'Noise_005'
+        ReferencedTextures[2] = Texture2D'Smoke_Dust_002'
+        ReferencedTextures[3] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: smoke_app01
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'Noise_005', Texture2D'RippleSprite000_Tex' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
 ClassName: Material3 ObjectName: smoke_Backup
 
     TwoSided = false
@@ -1410,6 +1464,24 @@ ClassName: Material3 ObjectName: smoke_Backup_optimiz
     bIsMasked = false
     ReferencedTextures[2] = { Texture2D'Smoke_Dust_004', Texture2D'Glow_001' }
     BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: smoke_depthalpha_fresnel
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Color_Ring_002' }
+    BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
     MobileBaseTexture = None
@@ -1515,6 +1587,56 @@ ClassName: Material3 ObjectName: SnowSparkle001_MatB_NoDepthBias
         ReferencedTextures[0] = Texture2D'Sparkle_Sprite_004'
         ReferencedTextures[1] = Texture2D'Smoke_001'
         ReferencedTextures[2] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: TwinsA_M01_dst_03_dark
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_Distortion_000'
+        ReferencedTextures[1] = Texture2D'Noise_Plazma_002'
+        ReferencedTextures[2] = Texture2D'Smoke_Fractal_002'
+        ReferencedTextures[3] = Texture2D'Smoke_013'
+        ReferencedTextures[4] = Texture2D'Smoke_012'
+        ReferencedTextures[5] = Texture2D'Smoke_Dust_006'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: TwinsA_Smoke022_MatB_NoDepthBias_Dark
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Smoke_Dusts_001'
+        ReferencedTextures[1] = Texture2D'Smoke_Dust_007'
+        ReferencedTextures[2] = Texture2D'Smoke_Fractal_002'
+        ReferencedTextures[3] = Texture2D'Smoke_Dust_002'
     }
     BlendMode = BLEND_Translucent (2)
     OpacityMaskClipValue = 0.333

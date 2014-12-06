@@ -1,4 +1,4 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00008064.upk Ver: 573/1 Engine: 4205 Names: 278 Exports: 676 Imports: 53 Game: 801A
 Loading SkeletalMesh3 RagDoll_Beast from package 00008064.upk
 WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
@@ -129,12 +129,12 @@ WARNING: ObjectProperty "USkeletalMeshSocket::PreviewSkelMesh" was not found
 Loading SkeletalMeshSocket SkeletalMeshSocket_9 from package 00008064.upk
 WARNING: ObjectProperty "USkeletalMeshSocket::PreviewSkelMesh" was not found
 Loading MaterialInstanceConstant col1 from package 00010240.upk
-Loading package: 00010239.upk Ver: 573/1 Engine: 4205 Names: 57 Exports: 28 Imports: 4 Game: 801A
+Loading package: 00010239.upk Ver: 573/1 Engine: 4205 Names: 59 Exports: 28 Imports: 4 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00002653.upk
 Loading package: 00002652.upk Ver: 573/1 Engine: 4205 Names: 31 Exports: 4 Imports: 2 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00002705.upk
 Loading package: 00002704.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00002713.upk
@@ -151,6 +151,7 @@ Loading Texture2D Haetae_D from package 00010239.upk
 Loading Texture2D Haetae_S from package 00010239.upk
 Loading TextureCube cube_orb from package 00002640.upk
 Loading Texture2D haetae_e from package 00010239.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D haetae_e2 from package 00010239.upk
 Loading Material3 Basic_NPC from package 00010240.upk
@@ -201,7 +202,7 @@ Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Texture2D Noise_Glass_000 from package 00012963.upk
-Loaded in 0.43 sec, 5424 allocs, 7.13 MBytes serialized in 1247649 calls.
+Loaded in 0.44 sec, 5506 allocs, 7.19 MBytes serialized in 1264354 calls.
 
 Object info:
 ============

@@ -1,6 +1,6 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00010064.upk Ver: 573/1 Engine: 4205 Names: 544 Exports: 37 Imports: 321 Game: 801A
-Loading AnimSet eungwangil_animset from package 00010064.upk
+Loading AnimSet EunGwangIl_AnimSet from package 00010064.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
 WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
@@ -38,7 +38,7 @@ Error: Command failed: ******** 00010064 ********
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** ERROR: Unknown rotation compression method: 255
-UAnimSet::ConvertAnims <- PostLoad:eungwangil_animset <- UObject::EndLoad <- LoadWholePackage:00010064 <- Main
+UAnimSet::ConvertAnims <- PostLoad:EunGwangIl_AnimSet <- UObject::EndLoad <- LoadWholePackage:00010064 <- Main
 
 
     at ChildProcess.exithandler (child_process.js:637:15)

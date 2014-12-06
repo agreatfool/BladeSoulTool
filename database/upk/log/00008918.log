@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00008918.upk Ver: 573/1 Engine: 4205 Names: 53 Exports: 20 Imports: 4 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00008918.upk Ver: 573/1 Engine: 4205 Names: 56 Exports: 23 Imports: 4 Game: 801A
 Loading Texture2D Cloth_55003_JinF_col1_d from package 00008918.upk
 Loading Texture2D Cloth_55003_JinF_col1_m from package 00008918.upk
 Loading Texture2D Cloth_55003_JinF_col1_n from package 00008918.upk
@@ -16,7 +16,10 @@ Loading Texture2D Cloth_55003_JinF_col4_D from package 00008918.upk
 Loading Texture2D Cloth_55003_JinF_col4_M from package 00008918.upk
 Loading Texture2D Cloth_55003_JinF_col4_N from package 00008918.upk
 Loading Texture2D Cloth_55003_JinF_col4_S from package 00008918.upk
-Loaded in 0.093 sec, 559 allocs, 2.35 MBytes serialized in 3812 calls.
+Loading Texture2D Cloth_55003_JinF_col5_d from package 00008918.upk
+Loading Texture2D Cloth_55003_JinF_col5_m from package 00008918.upk
+Loading Texture2D Cloth_55003_JinF_col5_S from package 00008918.upk
+Loaded in 0.13 sec, 670 allocs, 3.41 MBytes serialized in 4501 calls.
 
 Object info:
 ============
@@ -254,6 +257,51 @@ ClassName: Texture2D ObjectName: Cloth_55003_JinF_col4_S
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
     MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Cloth_55003_JinF_col5_d
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Cloth_55003_JinF_col5_m
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Cloth_55003_JinF_col5_S
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

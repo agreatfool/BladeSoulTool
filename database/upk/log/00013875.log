@@ -1,11 +1,13 @@
-Found 16186 game files (0 skipped)
-Loading package: 00013875.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 5 Imports: 2 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00013875.upk Ver: 573/1 Engine: 4205 Names: 40 Exports: 9 Imports: 4 Game: 801A
 Loading Texture2D 990033_NaHanWind_col1_d from package 00013875.upk
 Loading Texture2D 990033_NaHanWind_col1_FX_Line from package 00013875.upk
 Loading Texture2D 990033_NaHanWind_col1_m from package 00013875.upk
 Loading Texture2D 990033_NaHanWind_col1_n from package 00013875.upk
 Loading Texture2D 990033_NaHanWind_col1_s from package 00013875.upk
-Loaded in 0.032 sec, 201 allocs, 0.57 MBytes serialized in 1183 calls.
+Loading Texture2D 990033_NaHanWind_col2_D from package 00013875.upk
+Loading Texture2D 990033_NaHanWind_col2_s from package 00013875.upk
+Loaded in 0.043 sec, 261 allocs, 0.80 MBytes serialized in 1632 calls.
 
 Object info:
 ============
@@ -70,6 +72,36 @@ ClassName: Texture2D ObjectName: 990033_NaHanWind_col1_n
 Object info:
 ============
 ClassName: Texture2D ObjectName: 990033_NaHanWind_col1_s
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990033_NaHanWind_col2_D
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990033_NaHanWind_col2_s
 
     SizeX = 512
     SizeY = 512

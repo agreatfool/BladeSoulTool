@@ -1,4 +1,4 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00010922.upk Ver: 573/1 Engine: 4205 Names: 223 Exports: 166 Imports: 23 Game: 801A
 Loading SkeletalMesh3 41006_JinM from package 00010922.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
@@ -17,8 +17,8 @@ Loading package: 00010921.upk Ver: 573/1 Engine: 4205 Names: 107 Exports: 4 Impo
 Loading MaterialInstanceConstant col1 from package 00010921.upk
 Loading package: 00010920.upk Ver: 573/1 Engine: 4205 Names: 36 Exports: 4 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
-Loading MaterialInstanceConstant col1_Fur from package 00010921.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading MaterialInstanceConstant col1_fur from package 00010921.upk
 Loading Texture2D Cloth_41006_JinM_col1_n from package 00010920.upk
 Loading Texture2D Cloth_41006_JinM_col1_mask from package 00010920.upk
 Loading Texture2D Cloth_41006_JinM_col1_d from package 00010920.upk
@@ -26,7 +26,7 @@ Loading Texture2D Cloth_41006_JinM_col1_s from package 00010920.upk
 Loading TextureCube cube_orb from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Material3 Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Material3 Fur from package 00002620.upk
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
@@ -40,7 +40,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.12 sec, 2981 allocs, 2.09 MBytes serialized in 367182 calls.
+Loaded in 0.12 sec, 3061 allocs, 2.15 MBytes serialized in 383875 calls.
 
 Object info:
 ============
@@ -67,7 +67,7 @@ ClassName: SkeletalMesh3 ObjectName: 41006_JinM
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
-    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'col1_Fur' }
+    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'col1_fur' }
 
 
     Lods[2] =
@@ -77,7 +77,7 @@ ClassName: SkeletalMesh3 ObjectName: 41006_JinM
             Sections[3] =
             {
                 Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=4707 }
-                Sections[1] = { Material=MaterialInstanceConstant'col1_Fur', FirstIndex=14121, NumFaces=318 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1_fur', FirstIndex=14121, NumFaces=318 }
                 Sections[2] = { Material=MaterialInstanceConstant'col1', FirstIndex=15075, NumFaces=69 }
             }
             NumVerts = 3961

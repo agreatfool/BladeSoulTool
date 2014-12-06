@@ -1,11 +1,17 @@
-Found 16186 game files (0 skipped)
-Loading package: 00004696.upk Ver: 573/1 Engine: 4205 Names: 49 Exports: 21 Imports: 2 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00004696.upk Ver: 573/1 Engine: 4205 Names: 62 Exports: 33 Imports: 4 Game: 801A
 Loading Texture2D CrocodileSharkTribeB_D4 from package 00004696.upk
 Loading Texture2D CrocodileSharkTribeB_E4 from package 00004696.upk
 Loading Texture2D CrocodileSharkTribeB_M4 from package 00004696.upk
 Loading Texture2D CrocodileSharkTribeB_N4 from package 00004696.upk
 Loading Texture2D CrocodileSharkTribeB_S4 from package 00004696.upk
 Loading Texture2D Monster_Human_CrocodileSharkTribeB_col2 from package 00004696.upk
+Loading Texture2D Monster_Human_CrocodileSharkTribeB_col6_D from package 00004696.upk
+Loading Texture2D Monster_Human_CrocodileSharkTribeB_col6_Emissive from package 00004696.upk
+Loading Texture2D Monster_Human_CrocodileSharkTribeB_col6_S from package 00004696.upk
+Loading Texture2D Monster_Human_CrocodileSharkTribeB_col7_D from package 00004696.upk
+Loading Texture2D Monster_Human_CrocodileSharkTribeB_col7_Emissive from package 00004696.upk
+Loading Texture2D Monster_Human_CrocodileSharkTribeB_col7_S from package 00004696.upk
 Loading Texture2D Monster_Human_CrocodileSharkTribeB_D from package 00004696.upk
 Loading Texture2D Monster_Human_CrocodileSharkTribeB_D_col2 from package 00004696.upk
 Loading Texture2D Monster_Human_CrocodileSharkTribeB_D_Col3 from package 00004696.upk
@@ -21,7 +27,7 @@ Loading Texture2D Monster_Human_CrocodileSharkTribeB_N_col2 from package 0000469
 Loading Texture2D Monster_Human_CrocodileSharkTribeB_S from package 00004696.upk
 Loading Texture2D Monster_Human_CrocodileSharkTribeB_S_Col3 from package 00004696.upk
 Loading Texture2D Monster_Human_CrocodileSharkTribeB_S_col5 from package 00004696.upk
-Loaded in 0.13 sec, 685 allocs, 1.66 MBytes serialized in 4412 calls.
+Loaded in 0.16 sec, 866 allocs, 2.07 MBytes serialized in 5729 calls.
 
 Object info:
 ============
@@ -101,6 +107,96 @@ ClassName: Texture2D ObjectName: CrocodileSharkTribeB_S4
 Object info:
 ============
 ClassName: Texture2D ObjectName: Monster_Human_CrocodileSharkTribeB_col2
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_CrocodileSharkTribeB_col6_D
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_CrocodileSharkTribeB_col6_Emissive
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_CrocodileSharkTribeB_col6_S
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_CrocodileSharkTribeB_col7_D
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_CrocodileSharkTribeB_col7_Emissive
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_CrocodileSharkTribeB_col7_S
 
     SizeX = 512
     SizeY = 512

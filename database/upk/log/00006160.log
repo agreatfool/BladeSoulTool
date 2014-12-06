@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00006160.upk Ver: 573/1 Engine: 4205 Names: 159 Exports: 133 Imports: 19 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00006160.upk Ver: 573/1 Engine: 4205 Names: 160 Exports: 134 Imports: 19 Game: 801A
 Loading SkeletalMesh3 Bigpig from package 00006160.upk
 WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PlayParticleSet" was not found
@@ -19,8 +19,9 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_39 from package 00006160.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_40 from package 00006160.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_41 from package 00006160.upk
 WARNING: BoolProperty "USkeletalMeshSocket::bParticleAttachPosOnly" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_79 from package 00006160.upk
 Loading MaterialInstanceConstant col2 from package 00007682.upk
-Loading package: 00006158.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 11 Imports: 2 Game: 801A
+Loading package: 00006158.upk Ver: 573/1 Engine: 4205 Names: 42 Exports: 15 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading package: env_common.upk Ver: 573/1 Engine: 4205 Names: 259 Exports: 210 Imports: 55 Game: 801A
 Loading Texture2D Monster_Beast_Bigpig_col2_N from package 00006158.upk
@@ -29,8 +30,8 @@ Loading Texture2D Monster_Beast_Bigpig_col2_D from package 00006158.upk
 Loading Texture2D Monster_Beast_Bigpig_col2_S from package 00006158.upk
 Loading TextureCube cube_orb from package 00002640.upk
 Loading Material3 Basic_color from package env_common.upk
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -43,7 +44,7 @@ Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D check from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.11 sec, 3119 allocs, 1.44 MBytes serialized in 255670 calls.
+Loaded in 0.1 sec, 3205 allocs, 1.50 MBytes serialized in 272499 calls.
 
 Object info:
 ============
@@ -66,7 +67,7 @@ ClassName: SkeletalMesh3 ObjectName: Bigpig
             bEnableShadowCasting[1] = { true }
         }
     }
-    Sockets[8] =
+    Sockets[9] =
     {
         Sockets[0] = SkeletalMeshSocket'Bigpig.SkeletalMeshSocket_38'
         Sockets[1] = SkeletalMeshSocket'Bigpig.SkeletalMeshSocket_35'
@@ -76,6 +77,7 @@ ClassName: SkeletalMesh3 ObjectName: Bigpig
         Sockets[5] = SkeletalMeshSocket'Bigpig.SkeletalMeshSocket_39'
         Sockets[6] = SkeletalMeshSocket'Bigpig.SkeletalMeshSocket_40'
         Sockets[7] = SkeletalMeshSocket'Bigpig.SkeletalMeshSocket_41'
+        Sockets[8] = SkeletalMeshSocket'Bigpig.SkeletalMeshSocket_79'
     }
     bHasVertexColors = false
     EnableTwistBoneFixers = true
@@ -189,5 +191,15 @@ ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_41
     SocketName = ATTACH_EFFECT
     BoneName = Bip01
     RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_79
+
+    SocketName = Gadget_UI
+    BoneName = Root
+    RelativeLocation = { X=0, Y=0, Z=64.5 }
     RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
     RelativeScale = { X=1, Y=1, Z=1 }

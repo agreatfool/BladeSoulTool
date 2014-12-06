@@ -1,14 +1,18 @@
-Found 16186 game files (0 skipped)
-Loading package: 00009049.upk Ver: 573/1 Engine: 4205 Names: 36 Exports: 8 Imports: 2 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00009049.upk Ver: 573/1 Engine: 4205 Names: 41 Exports: 11 Imports: 2 Game: 801A
 Loading Texture2D 65016_GonM_col2_D from package 00009049.upk
 Loading Texture2D 65016_GonM_col2_N from package 00009049.upk
 Loading Texture2D 65016_GonM_col2_S from package 00009049.upk
+Loading Texture2D 65016_GonM_col3_D from package 00009049.upk
+Loading Texture2D 65016_GonM_col3_N from package 00009049.upk
+Loading Texture2D 65016_GonM_col3_S from package 00009049.upk
 Loading Texture2D Cloth_65016_JinM_col1_D from package 00009049.upk
 Loading Texture2D Cloth_65016_JinM_col1_e from package 00009049.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D Cloth_65016_JinM_col1_M from package 00009049.upk
 Loading Texture2D Cloth_65016_JinM_col1_N from package 00009049.upk
 Loading Texture2D Cloth_65016_JinM_col1_S from package 00009049.upk
-Loaded in 0.057 sec, 310 allocs, 1.49 MBytes serialized in 1911 calls.
+Loaded in 0.079 sec, 411 allocs, 2.26 MBytes serialized in 2605 calls.
 
 Object info:
 ============
@@ -43,6 +47,51 @@ ClassName: Texture2D ObjectName: 65016_GonM_col2_N
 Object info:
 ============
 ClassName: Texture2D ObjectName: 65016_GonM_col2_S
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 65016_GonM_col3_D
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 65016_GonM_col3_N
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 65016_GonM_col3_S
 
     SizeX = 1024
     SizeY = 512

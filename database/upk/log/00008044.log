@@ -1,16 +1,16 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00008044.upk Ver: 573/1 Engine: 4205 Names: 82 Exports: 2 Imports: 20 Game: 801A
 Loading MaterialInstanceConstant col2 from package 00008044.upk
 Loading package: 00008042.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
-Loading Texture2D n1 from package 00008042.upk
-Loading Texture2D m1 from package 00008042.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading Texture2D N1 from package 00008042.upk
+Loading Texture2D M1 from package 00008042.upk
 Loading Texture2D D2 from package 00008042.upk
 Loading Texture2D s1 from package 00008042.upk
 Loading TextureCube eye1 from package 00002640.upk
 Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -23,7 +23,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.087 sec, 2610 allocs, 1.09 MBytes serialized in 144866 calls.
+Loaded in 0.092 sec, 2690 allocs, 1.16 MBytes serialized in 161559 calls.
 
 Object info:
 ============
@@ -37,8 +37,8 @@ ClassName: MaterialInstanceConstant ObjectName: col2
     }
     TextureParameterValues[5] =
     {
-        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'n1' }
-        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'm1' }
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'N1' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'M1' }
         TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'D2' }
         TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D's1' }
         TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'eye1' }

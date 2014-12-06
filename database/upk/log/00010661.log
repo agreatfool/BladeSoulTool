@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00010661.upk Ver: 573/1 Engine: 4205 Names: 46 Exports: 18 Imports: 2 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00010661.upk Ver: 573/1 Engine: 4205 Names: 59 Exports: 30 Imports: 4 Game: 801A
 Loading Texture2D BoneMaskThinA_D from package 00010661.upk
 Loading Texture2D BoneMaskThinA_E from package 00010661.upk
 Loading Texture2D BoneMaskThinA_FX_Line from package 00010661.upk
@@ -18,7 +18,15 @@ Loading Texture2D Monster_Human_BoneMaskThinA_col3_S from package 00010661.upk
 Loading Texture2D Monster_Human_BoneMaskThinA_col4_D from package 00010661.upk
 Loading Texture2D Monster_Human_BoneMaskThinA_col4_E from package 00010661.upk
 Loading Texture2D Monster_Human_BoneMaskThinA_col4_S from package 00010661.upk
-Loaded in 0.11 sec, 598 allocs, 1.35 MBytes serialized in 3806 calls.
+Loading Texture2D Monster_Human_BoneMaskThinA_Col5_D from package 00010661.upk
+Loading Texture2D Monster_Human_BoneMaskThinA_Col5_E from package 00010661.upk
+Loading Texture2D Monster_Human_BoneMaskThinA_Col5_M from package 00010661.upk
+Loading Texture2D Monster_Human_BoneMaskThinA_Col5_S from package 00010661.upk
+Loading Texture2D Monster_Human_BoneMaskThinA_col6_D from package 00010661.upk
+Loading Texture2D Monster_Human_BoneMaskThinA_col6_E from package 00010661.upk
+Loading Texture2D Monster_Human_BoneMaskThinA_col6_FX_Line from package 00010661.upk
+Loading Texture2D Monster_Human_BoneMaskThinA_col6_S from package 00010661.upk
+Loaded in 0.15 sec, 843 allocs, 1.84 MBytes serialized in 5495 calls.
 
 Object info:
 ============
@@ -278,6 +286,126 @@ ClassName: Texture2D ObjectName: Monster_Human_BoneMaskThinA_col4_E
 Object info:
 ============
 ClassName: Texture2D ObjectName: Monster_Human_BoneMaskThinA_col4_S
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_BoneMaskThinA_Col5_D
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_BoneMaskThinA_Col5_E
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_BoneMaskThinA_Col5_M
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_BoneMaskThinA_Col5_S
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_BoneMaskThinA_col6_D
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_BoneMaskThinA_col6_E
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_BoneMaskThinA_col6_FX_Line
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_BoneMaskThinA_col6_S
 
     SizeX = 512
     SizeY = 512

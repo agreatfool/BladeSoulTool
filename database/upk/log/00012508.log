@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00012508.upk Ver: 573/1 Engine: 4205 Names: 512 Exports: 1191 Imports: 223 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00012508.upk Ver: 573/1 Engine: 4205 Names: 526 Exports: 1338 Imports: 230 Game: 801A
 Loading AnimSet BladeMaster_Martial_Anim from package 00012508.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -28,7 +28,7 @@ WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_9 from package 00012508.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading Material3 BladeMaster_Baldo_Slash_Matm from package 00012508.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Material3 BladeMaster_Defence_Mesh from package 00012508.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BladeMaster_Electric_Decal from package 00012508.upk
@@ -36,6 +36,7 @@ Loading Material3 BladeMaster_Electric_Decal2 from package 00012508.upk
 Loading Material3 BladeMaster_Gaurd_Reflection_MatM from package 00012508.upk
 Loading Material3 BladeMaster_Guard_ShockWave_MatB from package 00012508.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 BladeMaster_LightningSmash_Area_MATM from package 00012508.upk
 Loading Material3 BladeMaster_ProtectSoulBlade_Brush from package 00012508.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BladeMaster_ProtectSoulBlade_Decal_MatM from package 00012508.upk
@@ -76,10 +77,10 @@ Loading Material3 Reflection_Slash from package 00012508.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Scan005_MatM from package 00012508.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 69 Imports: 11 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
 Loading Material3 test_barrieer from package 00012508.upk
 Loading StaticMesh3 BladeMaster_FlameRagne_Mesh from package 00012508.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 886 Exports: 4211 Imports: 257 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
 Loading StaticMesh3 BladeMaster_Sixcombo_Slash_Mesh from package 00012508.upk
 Loading StaticMesh3 BladeMaster_SoulBlade_DualSword_Mesh from package 00012508.upk
 Loading StaticMesh3 BladeMaster_SoulBlade_DualSword_Trail_Mesh from package 00012508.upk
@@ -108,10 +109,16 @@ Loading Texture2D Noise_Plazma_000 from package 00012963.upk
 Loading Texture2D Gradient_001 from package 00012963.upk
 Loading Texture2D Noise_017 from package 00012963.upk
 Loading Texture2D Normal_Stone_001 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Noise_Plazma_002 from package 00012963.upk
 Loading Texture2D Gradient_Line_001_YClamp from package 00012963.upk
 Loading Texture2D Ring_ShockWave_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D SystemDecal_Circle_ray_01 from package 00012963.upk
+Loading Texture2D Noise_Distortion_000 from package 00012963.upk
+Loading Texture2D Fire_003 from package 00012963.upk
+Loading Texture2D SystemDecal2_Circle_Full_001 from package 00012963.upk
+Loading Texture2D SystemDecal_Circle_ring from package 00012963.upk
 Loading Texture2D Sparkle_ink_017 from package 00012963.upk
 Loading Texture2D Gradient_Flow_000 from package 00012963.upk
 Loading Texture2D Decal_Mask_000 from package 00012963.upk
@@ -134,6 +141,7 @@ Loading Texture2D T_GL_WaterNormal_02_Macro from package 00012963.upk
 Loading Texture2D Env_Fx_SandFall from package 00012963.upk
 Loading Texture2D Color_Sphere_000 from package 00012963.upk
 Loading Texture2D Noise_Wave_000_Normal from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Noise_Wave_000 from package 00012963.upk
 Loading Texture2D Noise_Ripple_000 from package 00012963.upk
 Loading Texture2D Sparkle_Sprite_006 from package 00012963.upk
@@ -158,7 +166,6 @@ Loading Texture2D T_Liquid_SM_NanoBlack_Mask_01 from package 00012963.upk
 Loading Texture2D SmokeMesh000_Tex from package 00012963.upk
 Loading Texture2D DefaultTexture from package EngineResources.upk
 Loading Texture2D Smoke_Cloud_005 from package 00012963.upk
-Loading Texture2D Noise_Distortion_000 from package 00012963.upk
 Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Texture2D Cube000_Tex from package 00012892.upk

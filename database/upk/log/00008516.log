@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00008516.upk Ver: 573/1 Engine: 4205 Names: 583 Exports: 1018 Imports: 49 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00008516.upk Ver: 573/1 Engine: 4205 Names: 602 Exports: 1163 Imports: 49 Game: 801A
 Loading AnimSet FireGorilla_AnimSet from package 00008516.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -89,6 +89,7 @@ WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_124 from package 00008516.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_125 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
@@ -101,6 +102,7 @@ WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_129 from package 00008516.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_13 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
@@ -137,6 +139,7 @@ WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_14 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_140 from package 00008516.upk
@@ -172,9 +175,6 @@ Loading AnimSequence AnimSequence_149 from package 00008516.upk
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
-Loading AnimSequence AnimSequence_15 from package 00008516.upk
-WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
-WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_150 from package 00008516.upk
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
@@ -207,10 +207,12 @@ Loading AnimSequence AnimSequence_16 from package 00008516.upk
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_161 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_162 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
@@ -223,14 +225,12 @@ WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_167 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_168 from package 00008516.upk
-WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
-WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
-WARNING: BoolProperty "UAnimSequence::bServiced" was not found
-Loading AnimSequence AnimSequence_169 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
@@ -238,11 +238,96 @@ Loading AnimSequence AnimSequence_17 from package 00008516.upk
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_170 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_171 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_173 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_174 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_175 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_176 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_177 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_178 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_179 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_18 from package 00008516.upk
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_180 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_181 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_183 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_184 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_185 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_186 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_187 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_188 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_189 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_19 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_190 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_191 from package 00008516.upk
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
@@ -252,8 +337,6 @@ Loading AnimSequence AnimSequence_21 from package 00008516.upk
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_22 from package 00008516.upk
-WARNING: BoolProperty "UAnimSequence::bServiced" was not found
-Loading AnimSequence AnimSequence_23 from package 00008516.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_24 from package 00008516.upk
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
@@ -271,6 +354,7 @@ WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_30 from package 00008516.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_31 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_33 from package 00008516.upk
@@ -313,6 +397,7 @@ WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_48 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
@@ -375,10 +460,6 @@ Loading AnimSequence AnimSequence_69 from package 00008516.upk
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
-Loading AnimSequence AnimSequence_7 from package 00008516.upk
-WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
-WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
-WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_72 from package 00008516.upk
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
@@ -413,14 +494,17 @@ WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
 Loading AnimSequence AnimSequence_82 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_83 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_84 from package 00008516.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
@@ -463,6 +547,22 @@ WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_99 from package 00008516.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Error: Command failed: ******** 00008516 ********
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat

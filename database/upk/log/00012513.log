@@ -1,12 +1,12 @@
-Found 16186 game files (0 skipped)
-Loading package: 00012513.upk Ver: 573/1 Engine: 4205 Names: 293 Exports: 1037 Imports: 104 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00012513.upk Ver: 573/1 Engine: 4205 Names: 298 Exports: 1148 Imports: 108 Game: 801A
 Loading Material3 Assassin_Defualt_FX_Test from package 00012513.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Material3 Bee from package 00012513.upk
 Loading Material3 Cat_Coil from package 00012513.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 69 Imports: 11 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
 Loading Material3 CAt_Mine_MatM from package 00012513.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Dog_Plant from package 00012513.upk
@@ -30,18 +30,20 @@ Loading package: 00015362.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Impor
 Loading Material3 Thorn_Grow_Target_ from package 00012513.upk
 Loading Material3 Thornbus_ from package 00012513.upk
 Loading Material3 Thornbus_Needle from package 00012513.upk
+Loading Material3 Thornbus_Needle_legend from package 00012513.upk
 Loading Material3 Thornbus_Needlee from package 00012513.upk
 Loading Material3 Vine_Grow from package 00012513.upk
 Loading Material3 Vine_Grow_Target from package 00012513.upk
+Loading Material3 Vine_Grow_Target_legend from package 00012513.upk
 Loading Material3 Vine_Grow_Target_proj from package 00012513.upk
 Loading Material3 Vine_Leaf from package 00012513.upk
 Loading Material3 Vine_Leaf_Grow from package 00012513.upk
 Loading Material3 Vine_Leaf_Proj from package 00012513.upk
 Loading MaterialInstanceConstant col1 from package 00012513.upk
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading StaticMesh3 Summoner_Missile_Mesh from package 00012513.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 886 Exports: 4211 Imports: 257 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
 Loading Texture2D 030006_Mine_D_Cat from package 00012513.upk
 Loading Texture2D 030006_Mine_N_Cat from package 00012513.upk
 Loading Texture2D 030006_Mine_S_Cat from package 00012513.upk
@@ -82,6 +84,7 @@ Loading Texture2D Gradient_Color_RedToOrange_000 from package 00012963.upk
 Loading Texture2D Smoke_009 from package 00012963.upk
 Loading Texture2D Normal_Noise_002 from package 00012963.upk
 Loading Texture2D Noise_Wave_000_Normal from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Normal_Noise_004 from package 00012963.upk
 Loading Texture2D Smoke_Fractal_002 from package 00012963.upk
 Loading Texture2D Glow_Flare_010_B from package 00012963.upk
@@ -104,6 +107,11 @@ Loading Texture2D Tornbus_normal from package 00012963.upk
 Loading Texture2D Tornbus from package 00012963.upk
 Loading Texture2D Gradient_Needle_normal from package 00012963.upk
 Loading Texture2D Gradient_Needle from package 00012963.upk
+Loading Texture2D Gradient_Color_YellowToOrange_000 from package 00012963.upk
+Loading Texture2D Dragon_body_outside_NRM from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
+Loading Texture2D Smoke_Pattern_001_128 from package 00012963.upk
+Loading Texture2D Dragon_body_outside from package 00012963.upk
 Loading Texture2D Leaf from package 00012963.upk
 Loading Texture2D Nm from package 00012963.upk
 Loading Texture2D Mm from package 00012963.upk
@@ -123,7 +131,7 @@ Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Cube000_Tex from package 00012892.upk
-Loaded in 0.63 sec, 5724 allocs, 3.24 MBytes serialized in 275235 calls.
+Loaded in 0.78 sec, 5981 allocs, 3.51 MBytes serialized in 305272 calls.
 
 Object info:
 ============
@@ -574,6 +582,29 @@ ClassName: Material3 ObjectName: Thornbus_Needle
 
 Object info:
 ============
+ClassName: Material3 ObjectName: Thornbus_Needle_legend
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Color_YellowToOrange_000'
+        ReferencedTextures[1] = Texture2D'Gradient_Needle_normal'
+        ReferencedTextures[2] = Texture2D'Gradient_Needle'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
 ClassName: Material3 ObjectName: Thornbus_Needlee
 
     TwoSided = true
@@ -647,6 +678,37 @@ ClassName: Material3 ObjectName: Vine_Grow_Target
         ReferencedTextures[6] = Texture2D'Vine01'
         ReferencedTextures[7] = Texture2D'Normal_Noise_004'
         ReferencedTextures[8] = Texture2D'Gradient_Line_003'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Vine_Grow_Target_legend
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[11] =
+    {
+        ReferencedTextures[0] = Texture2D'Dragon_body_outside_NRM'
+        ReferencedTextures[1] = Texture2D'Gradient_Color_YellowToOrange_000'
+        ReferencedTextures[2] = Texture2D'Smoke_Pattern_001_128'
+        ReferencedTextures[3] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[4] = Texture2D'Gradient_Wipe_BurnOut_Mask'
+        ReferencedTextures[5] = Texture2D'Plant_004_06_D'
+        ReferencedTextures[6] = Texture2D'Dragon_body_outside'
+        ReferencedTextures[7] = Texture2D'Plant_004_06_M'
+        ReferencedTextures[8] = Texture2D'Normal_Noise_004'
+        ReferencedTextures[9] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[10] = Texture2D'Vine01'
     }
     BlendMode = BLEND_Masked (1)
     OpacityMaskClipValue = 0.333

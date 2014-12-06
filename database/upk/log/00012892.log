@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 886 Exports: 4211 Imports: 257 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
 Loading AnimSet GhostFire_Anim from package 00012892.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -20,14 +20,14 @@ Loading Material3 Bamboo_Leaf2_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BG_Cloud_001_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: clouds_001.upk Ver: 573/1 Engine: 4205 Names: 19 Exports: 3 Imports: 2 Game: 801A
+Loading package: clouds_001.upk Ver: 573/1 Engine: 4205 Names: 22 Exports: 5 Imports: 3 Game: 801A
 Loading Material3 BG_Cloud_002_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BG_Cloud_003A_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BG_DarkSandFog_001_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Material3 BG_DarkSandFog_002_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BG_Env_Snow_001_Mat from package 00012892.upk
@@ -46,7 +46,7 @@ Loading Material3 BG_FX_Cloud_001_Mat from package 00012892.upk
 Loading Material3 BG_FX_Cloud_002_Mat from package 00012892.upk
 Loading Material3 BG_FX_Electric_ani_gradient from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 69 Imports: 11 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
 Loading Material3 BG_FX_Electric_Marble from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BG_FX_FlowerLeaf_001_Mat from package 00012892.upk
@@ -87,8 +87,8 @@ Loading Material3 BG_FX_Guidosi_Screw_Wave from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BG_FX_LightMesh_001_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: light_001.upk Ver: 573/1 Engine: 4205 Names: 362 Exports: 166 Imports: 41 Game: 801A
-Loading package: parent_normal.upk Ver: 573/1 Engine: 4205 Names: 1079 Exports: 9486 Imports: 96 Game: 801A
+Loading package: light_001.upk Ver: 573/1 Engine: 4205 Names: 366 Exports: 167 Imports: 42 Game: 801A
+Loading package: parent_normal.upk Ver: 573/1 Engine: 4205 Names: 1089 Exports: 9880 Imports: 96 Game: 801A
 Loading Material3 BG_FX_Poison_001_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BG_FX_Snow_001_Mat from package 00012892.upk
@@ -114,9 +114,15 @@ Loading Material3 BGFX_Battlearea_Fire_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BGFX_BattleArea_FireAsh001_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 BGFX_Blackhole_001_Mat from package 00012892.upk
+Loading Material3 BGFX_Blackhole_001_Out_Mat from package 00012892.upk
 Loading Material3 BGFX_Chillyair_001_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BGFX_Chillyair_002_Mat from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 BGFX_DragonFly_001_Mat from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 BGFX_DragonFly_002_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BGFX_Dust_001_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -131,7 +137,11 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BGFX_IceAsh_001_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BGFX_JaJak_Bubble_001_Mat from package 00012892.upk
-Loading package: cubemap_001.upk Ver: 573/1 Engine: 4205 Names: 193 Exports: 539 Imports: 29 Game: 801A
+Loading package: cubemap_001.upk Ver: 573/1 Engine: 4205 Names: 177 Exports: 517 Imports: 34 Game: 801A
+Loading Material3 BGFX_Mesh_HaeMuJin_002_Mat from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 BGFX_Mesh_HaeMuJin_003_Mat from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BGFX_Meteorites_001_Mat from package 00012892.upk
 Loading Material3 BGFX_Meteorites_002_Mat from package 00012892.upk
 Loading Material3 BGFX_NightmareDarkCloud_001_Mat from package 00012892.upk
@@ -155,6 +165,14 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BGFX_TreeLeaf_014_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BGFX_TreeLeaf_015_Mat from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 BGFX_TreeLeaf_016_Mat from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 BGFX_TreeLeaf_017_Mat from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 BGFX_TreeLeaf_018_Mat from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 BGFX_TreeLeaf_019_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Blob_volume_opt from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -193,7 +211,7 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Firefly_002_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 FireGorilla_exp_Mat from package 00012892.upk
-Loading package: musinreung_d_003.upk Ver: 573/1 Engine: 4205 Names: 291 Exports: 85 Imports: 30 Game: 801A
+Loading package: musinreung_d_003.upk Ver: 573/1 Engine: 4205 Names: 268 Exports: 49 Imports: 29 Game: 801A
 Loading Material3 FX_Leaf_001_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 FX_Leaf_002_Mat from package 00012892.upk
@@ -237,7 +255,7 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 HellGate_Potal_trail_Mat2 from package 00012892.upk
 Loading Material3 Herotower_Rain_001_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: fx_weather_001.upk Ver: 573/1 Engine: 4205 Names: 460 Exports: 1327 Imports: 156 Game: 801A
+Loading package: fx_weather_001.upk Ver: 573/1 Engine: 4205 Names: 475 Exports: 1479 Imports: 168 Game: 801A
 Loading Material3 M01_dst_03_opt from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M01_Ripple_opt from package 00012892.upk
@@ -284,12 +302,20 @@ Loading Material3 Mesh_NightmareSky_001_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Mesh_NightmareStone_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: stone_003.upk Ver: 573/1 Engine: 4205 Names: 333 Exports: 107 Imports: 40 Game: 801A
+Loading package: stonetextures_001a.upk Ver: 573/1 Engine: 4205 Names: 143 Exports: 114 Imports: 5 Game: 801A
 Loading Material3 Mesh_NightmareWaveBeam_001_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 NightmareCloud_001_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 NightmareDust_001_Mat from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Raid_Potal_MatM from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Raid_Potal_MatM2 from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Raid_Potal_MatM3 from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Raid_Potal_MatM_2 from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Rose_Leaf from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -323,8 +349,10 @@ Loading MaterialInstanceConstant BG_FX_CircleEmitte_001_INST from package 000128
 WARNING: BoolProperty "UMaterialInstanceConstant::bAcceptRenderDecal" was not found
 Loading MaterialInstanceConstant BG_FX_CircleEmitte_002_INST from package 00012892.upk
 WARNING: BoolProperty "UMaterialInstanceConstant::bAcceptRenderDecal" was not found
+Loading MaterialInstanceConstant BG_FX_Guidosi_Screw_Center2_Mat from package 00012892.upk
 Loading MaterialInstanceConstant BG_FX_Guidosi_Screw_Center_INST from package 00012892.upk
 Loading MaterialInstanceConstant BG_FX_Guidosi_Screw_Center_INST2 from package 00012892.upk
+Loading MaterialInstanceConstant BG_FX_Guidosi_Screw_Wave2_Mat from package 00012892.upk
 Loading MaterialInstanceConstant BG_FX_Guidosi_Screw_Wave_INST from package 00012892.upk
 Loading MaterialInstanceConstant BG_FX_Guidosi_Screw_Wave_INST2 from package 00012892.upk
 Loading MaterialInstanceConstant M_Exhausted_INST from package 00012892.upk
@@ -344,14 +372,19 @@ Loading StaticMesh3 BG_FX_GeneralCircleMesh_001 from package 00012892.upk
 Loading StaticMesh3 BG_FX_GeneralCircleMesh_002 from package 00012892.upk
 Loading StaticMesh3 BG_FX_GeneralCircleMesh_003 from package 00012892.upk
 Loading StaticMesh3 BG_FX_GeneralCircleMesh_004 from package 00012892.upk
+Loading StaticMesh3 BG_FX_Mesh_FlowerLeaf_000 from package 00012892.upk
 Loading StaticMesh3 BG_FX_Mesh_FlowerLeaf_001 from package 00012892.upk
 Loading StaticMesh3 BG_FX_Mesh_FlowerLeaf_002 from package 00012892.upk
 Loading StaticMesh3 BG_FX_Mesh_FlowerLeaf_003 from package 00012892.upk
 Loading StaticMesh3 BG_FX_Mesh_FlowerLeaf_004 from package 00012892.upk
 Loading StaticMesh3 BG_FX_Mesh_FlowerLeaf_005 from package 00012892.upk
 Loading StaticMesh3 BG_FX_Mesh_Guidosi_Screw from package 00012892.upk
+Loading StaticMesh3 BG_FX_Mesh_Guidosi_Screw2 from package 00012892.upk
 Loading StaticMesh3 BG_Mesh_Sandfall_001 from package 00012892.upk
 Loading StaticMesh3 BG_Mesh_Sandfall_002 from package 00012892.upk
+Loading StaticMesh3 BGFX_Mesh_HaeMuJin_001 from package 00012892.upk
+Loading StaticMesh3 BGFX_Mesh_HaeMuJin_002 from package 00012892.upk
+Loading StaticMesh3 BGFX_Mesh_HaeMuJin_003 from package 00012892.upk
 Loading StaticMesh3 BGFX_Mesh_HR_DragonTrail_001 from package 00012892.upk
 Loading StaticMesh3 BGFX_Mesh_HR_DragonTrail_002 from package 00012892.upk
 Loading StaticMesh3 BGFX_Mesh_HR_DragonTrail_003 from package 00012892.upk
@@ -397,6 +430,8 @@ Loading Texture2D BG_FX_Snow_001_D from package 00012892.upk
 Loading Texture2D BGFX_Bamboo_Leaf_D1 from package 00012892.upk
 Loading Texture2D BGFX_Bamboo_Leaf_D2 from package 00012892.upk
 Loading Texture2D BGFX_Dots from package 00012892.upk
+Loading Texture2D BGFX_DragonFly_001_D from package 00012892.upk
+Loading Texture2D BGFX_DragonFly_002_D from package 00012892.upk
 Loading Texture2D BGFX_Dust_001 from package 00012892.upk
 Loading Texture2D BGFX_NightmareBeamColor_001 from package 00012892.upk
 Loading Texture2D BGFX_TreeLeaf_001_D from package 00012892.upk
@@ -414,6 +449,10 @@ Loading Texture2D BGFX_TreeLeaf_012_D from package 00012892.upk
 Loading Texture2D BGFX_TreeLeaf_013_D from package 00012892.upk
 Loading Texture2D BGFX_TreeLeaf_014_D from package 00012892.upk
 Loading Texture2D BGFX_TreeLeaf_015_D from package 00012892.upk
+Loading Texture2D BGFX_TreeLeaf_016_D from package 00012892.upk
+Loading Texture2D BGFX_TreeLeaf_017_D from package 00012892.upk
+Loading Texture2D BGFX_TreeLeaf_018_D from package 00012892.upk
+Loading Texture2D BGFX_TreeLeaf_019_D from package 00012892.upk
 Loading Texture2D BGFX_waterFall_Mask from package 00012892.upk
 Loading Texture2D BGFX_waterfalls_D01 from package 00012892.upk
 Loading Texture2D BGFX_WaterForm_D from package 00012892.upk
@@ -467,6 +506,7 @@ Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D BG_FX_GeneralCircle_Logo_002 from package 00012963.upk
 Loading Texture2D BG_FX_GeneralCircle_Logo_003 from package 00012963.upk
 Loading Texture2D Normal_Noise_000 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D BG_SandfallNoise_001_D from package 00012963.upk
 Loading Texture2D Electric_Light_001 from package 00012963.upk
 Loading Texture2D Unique_Stone_001 from package 00012963.upk
@@ -490,6 +530,9 @@ Loading Texture2D Gradient_Flow_000 from package 00012963.upk
 Loading Texture2D BG_Sandfall_002_D from package 00012963.upk
 Loading Texture2D Fire_Sprite_000 from package 00012963.upk
 Loading Texture2D Fire_Sprite_006 from package 00012963.upk
+Loading Texture2D Noise_Wave_000 from package 00012963.upk
+Loading Texture2D Noise_005 from package 00012963.upk
+Loading Texture2D Gradient_009 from package 00012963.upk
 Loading Texture2D Smoke_Cloud_TR_004 from package 00012963.upk
 Loading Texture2D Smoke_Dust_002 from package 00012963.upk
 Loading Texture2D Noise_013 from package 00012963.upk
@@ -501,12 +544,14 @@ Loading Texture2D Marble011_Tex from package cine_effect_texture.upk
 Loading Texture2D Noise_Plazma_002 from package cine_effect_texture.upk
 Loading Texture2D Smoke_Dust_000 from package 00012963.upk
 Loading Texture2D Smoke_001 from package 00012963.upk
-Loading Texture2D Noise_005 from package 00012963.upk
 Loading Texture2D Noise_003 from package 00012963.upk
 Loading Texture2D Gradient_Beam_001 from package 00012963.upk
 Loading Texture2D Smoke_002 from package 00012963.upk
 Loading Texture2D Glow_001 from package 00012963.upk
 Loading TextureCube Water_cube3 from package cubemap_001.upk
+Loading Texture2D Glow_Twiri_000 from package 00012963.upk
+Loading Texture2D Smoke_009 from package 00012963.upk
+Loading Texture2D Smoke_005 from package 00012963.upk
 Loading Texture2D Gradient_Beam_002 from package 00012963.upk
 Loading Texture2D Sparkle_Ink_007 from package 00012963.upk
 Loading Texture2D Smoke_011 from package 00012963.upk
@@ -530,7 +575,6 @@ Loading Texture2D Env_SpaKles from package 00012963.upk
 Loading Texture2D Env_Fx_Water_Dust from package 00012963.upk
 Loading Texture2D Fire_Torch_Sample_001_D from package 00012963.upk
 Loading Texture2D Smoke_Cloud_001 from package 00012963.upk
-Loading Texture2D Smoke_005 from package 00012963.upk
 Loading Texture2D Glow_003 from package 00012963.upk
 Loading Texture2D CA_Jin_A_pr_038_Norm from package musinreung_d_003.upk
 Loading Texture2D CA_Jin_A_pr_038_Diff from package musinreung_d_003.upk
@@ -539,12 +583,10 @@ Loading Texture2D Sparkle_Sprite_005 from package 00012963.upk
 Loading Texture2D Smoke_Inc_002 from package 00012963.upk
 Loading Texture2D Portal_CircleTrail_001_D from package 00023713.upk
 Loading Texture2D Gradient_Color_001 from package 00012963.upk
-Loading Texture2D Gradient_009 from package 00012963.upk
 Loading Texture2D T_Liquid_SM_NanoBlack_Mask_01 from package 00012963.upk
 Loading Texture2D Noise_010 from package 00012963.upk
 Loading Texture2D Gradient_001_Left from package 00012963.upk
 Loading Texture2D Ring_000 from package 00012963.upk
-Loading Texture2D Glow_Twiri_000 from package 00012963.upk
 Loading Texture2D Gradient_Color_RedToOrange_000 from package 00012963.upk
 Loading Texture2D Glow_011 from package 00012963.upk
 Loading Texture2D Gradient_Color_PurpleToBlue_000 from package 00012963.upk
@@ -569,7 +611,7 @@ Loading Texture2D White from package EngineResources.upk
 Loading Texture2D Unique_Exhausted_000 from package 00012963.upk
 Loading Texture2D Sparkle_Ink_000 from package 00012963.upk
 Loading Texture2D Normal_Stone_001 from package 00012963.upk
-Loading Texture2D Smoke_009 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Unique_WarterFall_001 from package 00012963.upk
 Loading Texture2D Noise_016 from package 00012963.upk
 Loading Texture2D Noise_002 from package 00012963.upk
@@ -589,9 +631,12 @@ Loading Texture2D Normal_Noise_004 from package 00012963.upk
 Loading Texture2D Smoke_014 from package 00012963.upk
 Loading Texture2D Smoke_Pattern_000_128 from package 00012963.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
-Loading Texture2D Rock_003_01_D_NRM from package stone_003.upk
-Loading Texture2D Stone_003_03_D_Test from package stone_003.upk
+Loading Texture2D StoneTexture_001_037A_D from package stonetextures_001a.upk
+Loading Texture2D StoneTexture_001_036A_D from package stonetextures_001a.upk
 Loading Texture2D Glow_006 from package 00012963.upk
+Loading Texture2D Raid_Potal_01 from package 00012963.upk
+Loading Texture2D Raid_Potal_02 from package 00012963.upk
+Loading Texture2D Raid_Potal_03 from package 00012963.upk
 Loading Texture2D Rose_1 from package 00012963.upk
 Loading Texture2D Clouds from package EngineResources.upk
 Loading Texture2D Normal_Ripple_000 from package 00012963.upk

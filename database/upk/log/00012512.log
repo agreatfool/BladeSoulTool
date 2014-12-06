@@ -1,4 +1,4 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00012512.upk Ver: 573/1 Engine: 4205 Names: 565 Exports: 1552 Imports: 174 Game: 801A
 Loading AnimSet Assassin_Butterfly_anim from package 00012512.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
@@ -25,17 +25,17 @@ WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
 Loading AnimSequence AnimSequence_0 from package 00012512.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading Material3 Asassin_BombSmoke_MatM from package 00012512.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Material3 Assassin_BlashBack_MatM from package 00012512.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Assassin_Bomb_Decal from package 00012512.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Assassin_Butterfly_MatM from package 00012512.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 69 Imports: 11 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
 Loading Material3 Assassin_CaltLop000_MatM from package 00012512.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: cubemap_001.upk Ver: 573/1 Engine: 4205 Names: 193 Exports: 539 Imports: 29 Game: 801A
+Loading package: cubemap_001.upk Ver: 573/1 Engine: 4205 Names: 177 Exports: 517 Imports: 34 Game: 801A
 Loading Material3 Assassin_Defualt_FX_Test from package 00012512.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Assassin_Defualt_FX_Test2 from package 00012512.upk
@@ -44,7 +44,7 @@ Loading Material3 Assassin_Defualt_FX_test3 from package 00012512.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Assassin_Doll000_MatM from package 00012512.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00007928.upk Ver: 573/1 Engine: 4205 Names: 887 Exports: 646 Imports: 112 Game: 801A
+Loading package: 00007928.upk Ver: 573/1 Engine: 4205 Names: 902 Exports: 663 Imports: 114 Game: 801A
 Loading Material3 Assassin_Flash_Loof_Scenmaterial from package 00012512.upk
 Loading Material3 Assassin_Flower2_MatM from package 00012512.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -129,7 +129,7 @@ Loading SkeletalMesh3 Asassin_Doll_Mesh from package 00012512.upk
 Loading SkeletalMesh3 Assassin_Butterfly_Mes from package 00012512.upk
 Loading SkeletalMesh3 Assassin_Tree_000 from package 00012512.upk
 Loading SkeletalMesh3 ShadowPenentration_Mesh from package 00012512.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 886 Exports: 4211 Imports: 257 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
 Loading StaticMesh3 Assassin_Caltlop000_Mes from package 00012512.upk
 Loading StaticMesh3 Assassin_Caltlop001_Mes from package 00012512.upk
 Loading StaticMesh3 Assassin_CaltLop_Area_Mes from package 00012512.upk
@@ -198,6 +198,7 @@ Loading Texture2D BG_Sandfall_001_D from package 00012963.upk
 Loading Texture2D Gradient_Line_000 from package 00012963.upk
 Loading Texture2D Unique_Bone_D_000 from package 00012963.upk
 Loading Texture2D Normal_Noise_003 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Aura_Tail_000 from package 00012963.upk
 Loading Texture2D Noise_009 from package 00012963.upk
 Loading Texture2D Noise_018 from package 00012963.upk
@@ -208,10 +209,10 @@ Loading Texture2D Gradient_007 from package 00012963.upk
 Loading Texture2D Gradient_Color_YtoG001_Tex from package 00012963.upk
 Loading Texture2D Smoke_005 from package 00012963.upk
 Loading Texture2D Gradient_Color_Rainbow_001 from package 00012963.upk
-Loading Texture2D Electric_Sprite_000 from package 00012963.upk
+Loading Texture2D Electric_Sprite_Fade from package 00012963.upk
 Loading Texture2D Gradient_Flow_000 from package 00012963.upk
 Loading Texture2D Gradient_Color_Rainbow_000 from package 00012963.upk
-Loading Texture2D Electric_Sprite_001 from package 00012963.upk
+Loading Texture2D Electric_Sprite_Part from package 00012963.upk
 Loading Texture2D Assassin_Plant001_Tex from package 00007928.upk
 Loading Texture2D Smoke_Fractal_002 from package 00012963.upk
 Loading Texture2D Smoke_Dust_000 from package 00012963.upk

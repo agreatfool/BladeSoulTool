@@ -1,10 +1,10 @@
-Found 16186 game files (0 skipped)
-Loading package: 00012584.upk Ver: 573/1 Engine: 4205 Names: 224 Exports: 1648 Imports: 79 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00012584.upk Ver: 573/1 Engine: 4205 Names: 225 Exports: 1648 Imports: 80 Game: 801A
 Loading Material3 Ice000_Diffuse from package 00012584.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
-Loading package: stone_001.upk Ver: 573/1 Engine: 4205 Names: 335 Exports: 135 Imports: 38 Game: 801A
-Loading package: cubemap_001.upk Ver: 573/1 Engine: 4205 Names: 193 Exports: 539 Imports: 29 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: stone_001.upk Ver: 573/1 Engine: 4205 Names: 339 Exports: 134 Imports: 41 Game: 801A
+Loading package: cubemap_001.upk Ver: 573/1 Engine: 4205 Names: 177 Exports: 517 Imports: 34 Game: 801A
 Loading Material3 Ice000_Mat_RE from package 00012584.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Ice000_MatM from package 00012584.upk
@@ -71,24 +71,30 @@ Loading Material3 IceWave_Line_MatM2_Center0 from package 00012584.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading MaterialInstanceConstant Ice_Stone_Mat_x3_opaque_Panning_re_DynamicParam_INST from package 00012584.upk
 Loading Texture2D Normal_Noise_003 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Noise_006 from package 00012963.upk
 Loading Texture2D Stone_001_01_D_Reflex from package stone_001.upk
 Loading Texture2D Unique_Stone_001 from package 00012963.upk
 Loading Texture2D Fire_Blending_Pattern_Tex_Big from package 00012963.upk
 Loading TextureCube Stone_001_01_Cube from package cubemap_001.upk
 Loading Texture2D Noise_Wave_000_Normal from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Normal_Noise_000 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Noise_017 from package 00012963.upk
 Loading Texture2D REFSKY-01 from package 00012963.upk
 Loading Texture2D Normal_Stone_000 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Unique_Ice_000 from package 00012963.upk
 Loading Texture2D Noise_005 from package 00012963.upk
 Loading Texture2D Normal_Stone_001 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Noise_Distortion_000 from package 00012963.upk
 Loading Texture2D Gradient_Half_000 from package 00012963.upk
 Loading Texture2D Gradient_001_Left from package 00012963.upk
 Loading Texture2D Ice_Dot_NRM from package 00025242.upk
 Loading Texture2D Smoke_Fractal_002 from package 00012963.upk
+Loading Texture2D Unique_Reflection_000 from package 00012963.upk
 Loading Texture2D Ice_Dot from package 00025242.upk
 Loading Texture2D Noise_Ripple_000 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
@@ -98,11 +104,14 @@ Loading Texture2D Smoke_Ice_000 from package 00012963.upk
 Loading Texture2D Smoke_Cloud_001 from package 00012963.upk
 Loading Texture2D Glow_006 from package 00012963.upk
 Loading Texture2D Dragon_body_WW from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Dr_Di2_NRM from package 00012963.upk
 Loading Texture2D Dragon_body_outside from package 00012963.upk
 Loading TextureCube Water_cube4 from package cubemap_001.upk
 Loading Texture2D Dragon_body_outside_NRM from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Ref_Cool_NRM from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Noise_Wave_000 from package 00012963.upk
 Loading Texture2D Ref_Cool from package 00012963.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
@@ -122,7 +131,7 @@ Loading Texture2D CubemapFace2 from package cubemap_001.upk
 Loading Texture2D CubemapFace3 from package cubemap_001.upk
 Loading Texture2D CubemapFace4 from package cubemap_001.upk
 Loading Texture2D CubemapFace5 from package cubemap_001.upk
-Loaded in 0.32 sec, 3675 allocs, 2.61 MBytes serialized in 111817 calls.
+Loaded in 0.51 sec, 3713 allocs, 2.66 MBytes serialized in 112320 calls.
 
 Object info:
 ============
@@ -260,14 +269,14 @@ Object info:
 ============
 ClassName: Material3 ObjectName: Ice_Dot
 
-    TwoSided = false
+    TwoSided = true
     bDisableDepthTest = false
     bIsMasked = false
     ReferencedTextures[6] =
     {
         ReferencedTextures[0] = Texture2D'Ice_Dot_NRM'
         ReferencedTextures[1] = Texture2D'Smoke_Fractal_002'
-        ReferencedTextures[2] = Texture2D'Unique_Ice_000'
+        ReferencedTextures[2] = Texture2D'Unique_Reflection_000'
         ReferencedTextures[3] = Texture2D'Ice_Dot'
         ReferencedTextures[4] = Texture2D'Noise_Ripple_000'
         ReferencedTextures[5] = Texture2D'Gradient_Line_003'

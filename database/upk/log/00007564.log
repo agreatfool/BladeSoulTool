@@ -1,13 +1,16 @@
-Found 16186 game files (0 skipped)
-Loading package: 00007564.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 7 Imports: 2 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00007564.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 10 Imports: 2 Game: 801A
 Loading Texture2D 80015_GonM_col2_D from package 00007564.upk
 Loading Texture2D 80015_GonM_col2_N from package 00007564.upk
 Loading Texture2D 80015_GonM_col2_S from package 00007564.upk
+Loading Texture2D 80015_GonM_col3_D from package 00007564.upk
+Loading Texture2D 80015_GonM_col3_N from package 00007564.upk
+Loading Texture2D 80015_GonM_col3_S from package 00007564.upk
 Loading Texture2D body_d from package 00007564.upk
 Loading Texture2D body_m from package 00007564.upk
 Loading Texture2D body_n from package 00007564.upk
 Loading Texture2D body_s from package 00007564.upk
-Loaded in 0.049 sec, 277 allocs, 1.32 MBytes serialized in 1701 calls.
+Loaded in 0.067 sec, 376 allocs, 2.07 MBytes serialized in 2383 calls.
 
 Object info:
 ============
@@ -42,6 +45,51 @@ ClassName: Texture2D ObjectName: 80015_GonM_col2_N
 Object info:
 ============
 ClassName: Texture2D ObjectName: 80015_GonM_col2_S
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 80015_GonM_col3_D
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 80015_GonM_col3_N
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 80015_GonM_col3_S
 
     SizeX = 1024
     SizeY = 512

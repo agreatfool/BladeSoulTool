@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00006074.upk Ver: 573/1 Engine: 4205 Names: 203 Exports: 118 Imports: 22 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00006074.upk Ver: 573/1 Engine: 4205 Names: 204 Exports: 119 Imports: 22 Game: 801A
 Loading SkeletalMesh3 BelliedFrog from package 00006074.upk
 WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PlayParticleSet" was not found
@@ -18,12 +18,13 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_330 from package 00006074.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_331 from package 00006074.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_332 from package 00006074.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_333 from package 00006074.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_79 from package 00006074.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_80 from package 00006074.upk
 Loading MaterialInstanceConstant col1 from package 00004348.upk
 Loading package: 00004347.upk Ver: 573/1 Engine: 4205 Names: 46 Exports: 17 Imports: 4 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D mudang_n from package 00004347.upk
 Loading Texture2D mudang_m from package 00004347.upk
 Loading Texture2D mudang_d from package 00004347.upk
@@ -43,7 +44,7 @@ Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.11 sec, 3029 allocs, 1.37 MBytes serialized in 242839 calls.
+Loaded in 0.11 sec, 3111 allocs, 1.44 MBytes serialized in 259584 calls.
 
 Object info:
 ============
@@ -66,7 +67,7 @@ ClassName: SkeletalMesh3 ObjectName: BelliedFrog
             bEnableShadowCasting[1] = { true }
         }
     }
-    Sockets[9] =
+    Sockets[10] =
     {
         Sockets[0] = SkeletalMeshSocket'BelliedFrog.SkeletalMeshSocket_0'
         Sockets[1] = SkeletalMeshSocket'BelliedFrog.SkeletalMeshSocket_17'
@@ -77,6 +78,7 @@ ClassName: SkeletalMesh3 ObjectName: BelliedFrog
         Sockets[6] = SkeletalMeshSocket'BelliedFrog.SkeletalMeshSocket_332'
         Sockets[7] = SkeletalMeshSocket'BelliedFrog.SkeletalMeshSocket_333'
         Sockets[8] = SkeletalMeshSocket'BelliedFrog.SkeletalMeshSocket_80'
+        Sockets[9] = SkeletalMeshSocket'BelliedFrog.SkeletalMeshSocket_79'
     }
     bHasVertexColors = false
     EnableTwistBoneFixers = true
@@ -190,6 +192,16 @@ ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_333
     SocketName = Decap_Socket
     BoneName = Bip01Neck
     RelativeLocation = { X=2.96474, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_79
+
+    SocketName = WeaponR_Beam
+    BoneName = WeaponR
+    RelativeLocation = { X=1.98249, Y=0, Z=27.7872 }
     RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
     RelativeScale = { X=1, Y=1, Z=1 }
 

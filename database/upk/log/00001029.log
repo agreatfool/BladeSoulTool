@@ -1,8 +1,8 @@
-Found 16186 game files (0 skipped)
-Loading package: 00001029.upk Ver: 573/1 Engine: 4205 Names: 325 Exports: 280 Imports: 27 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00001029.upk Ver: 573/1 Engine: 4205 Names: 336 Exports: 291 Imports: 27 Game: 801A
 Loading Material3 Ice_ball_Absorb_Mat from package 00001029.upk
 Loading StaticMesh3 Aura_Simple001_Mes from package 00001029.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 886 Exports: 4211 Imports: 257 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
 Loading StaticMesh3 Aura_Simple002_Mes from package 00001029.upk
 Loading StaticMesh3 Aura_wave2_UV_Mes from package 00001029.upk
 Loading StaticMesh3 Aura_wave_Mes from package 00001029.upk
@@ -73,6 +73,12 @@ Loading StaticMesh3 Electric_Damage_Middle_UV from package 00001029.upk
 Loading StaticMesh3 Electric_Damage_UV from package 00001029.upk
 Loading StaticMesh3 Electric_Sword_closs from package 00001029.upk
 Loading StaticMesh3 Electric_Sword_closs_PivotUV180 from package 00001029.upk
+Loading StaticMesh3 electronic_mesh01 from package 00001029.upk
+Loading StaticMesh3 electronic_mesh02 from package 00001029.upk
+Loading StaticMesh3 electronic_mesh03 from package 00001029.upk
+Loading StaticMesh3 electronic_mesh04 from package 00001029.upk
+Loading StaticMesh3 electronic_mesh05 from package 00001029.upk
+Loading StaticMesh3 electronic_mesh06 from package 00001029.upk
 Loading StaticMesh3 feather from package 00001029.upk
 Loading StaticMesh3 feather_ from package 00001029.upk
 Loading StaticMesh3 Flare_Strip from package 00001029.upk
@@ -82,6 +88,7 @@ Loading StaticMesh3 fx_windblow04_mesh_Dup_2337 from package 00001029.upk
 Loading StaticMesh3 gem_mesh from package 00001029.upk
 Loading StaticMesh3 geosphere001 from package 00001029.upk
 Loading StaticMesh3 geosphere002 from package 00001029.upk
+Loading StaticMesh3 geosphere002_axisX from package 00001029.upk
 Loading StaticMesh3 geosphere002a from package 00001029.upk
 Loading StaticMesh3 geosphere003 from package 00001029.upk
 Loading StaticMesh3 geosphere_spiral001 from package 00001029.upk
@@ -90,6 +97,7 @@ Loading StaticMesh3 GlassPiece000_Mes from package 00001029.upk
 Loading StaticMesh3 GlassPiece001_Mes from package 00001029.upk
 Loading StaticMesh3 grass_2 from package 00001029.upk
 Loading StaticMesh3 Ground_Particle_Mes from package 00001029.upk
+Loading StaticMesh3 GukMaLevelup_RisingForce from package 00001029.upk
 Loading StaticMesh3 halfgeosphere001 from package 00001029.upk
 Loading StaticMesh3 halfgeosphere002 from package 00001029.upk
 Loading StaticMesh3 halfsphere001 from package 00001029.upk
@@ -127,6 +135,8 @@ Loading StaticMesh3 Magic_word_Cylinder_Mes from package 00001029.upk
 Loading StaticMesh3 ME_DemonBoss_Decal_Wave_Mesh from package 00001029.upk
 Loading StaticMesh3 Mesh_Buff_DodgeUP from package 00001029.upk
 Loading StaticMesh3 mesh_di from package 00001029.upk
+Loading StaticMesh3 meshtrail001 from package 00001029.upk
+Loading StaticMesh3 meshtrail002 from package 00001029.upk
 Loading StaticMesh3 Mirror_Cycle_Mesh from package 00001029.upk
 Loading StaticMesh3 Moebius000_Mes from package 00001029.upk
 Loading StaticMesh3 Plane000_Decal000_Mes from package 00001029.upk
@@ -135,6 +145,7 @@ Loading StaticMesh3 Plane_Flat001_Mes from package 00001029.upk
 Loading StaticMesh3 Plane_Flat001_X_Mes from package 00001029.upk
 Loading StaticMesh3 Plane_Rectangle000_Mes from package 00001029.upk
 Loading StaticMesh3 Plane_Rectangle001_Mes from package 00001029.upk
+Loading StaticMesh3 poison_Cry from package 00001029.upk
 Loading StaticMesh3 quake from package 00001029.upk
 Loading StaticMesh3 Rick_Fragle_2 from package 00001029.upk
 Loading StaticMesh3 Rick_Fragle_3 from package 00001029.upk
@@ -229,7 +240,7 @@ Loading StaticMesh3 Wind000_Mes from package 00001029.upk
 Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Texture2D Cube000_Tex from package 00012892.upk
-Loaded in 0.36 sec, 5336 allocs, 7.61 MBytes serialized in 1730938 calls.
+Loaded in 0.16 sec, 5586 allocs, 7.88 MBytes serialized in 1793602 calls.
 
 Object info:
 ============
@@ -2736,6 +2747,216 @@ ClassName: StaticMesh3 ObjectName: Electric_Sword_closs_PivotUV180
 
 Object info:
 ============
+ClassName: StaticMesh3 ObjectName: electronic_mesh01
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.1073, Y=0.3375, Z=-0.5139 }
+        BoxExtent = { X=32.3101, Y=3.5037, Z=3.2428 }
+        SphereRadius = 32.3805
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=20 }
+            }
+            NumVerts = 48
+            IndexCount = 60
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: electronic_mesh02
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0.13815, Z=0.0757499 }
+        BoxExtent = { X=32.0965, Y=3.18315, Z=3.12945 }
+        SphereRadius = 32.1135
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=24 }
+            }
+            NumVerts = 56
+            IndexCount = 72
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: electronic_mesh03
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=-16.9044, Z=-0.28405 }
+        BoxExtent = { X=33.85, Y=16.9044, Z=2.41395 }
+        SphereRadius = 37.8413
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=18 }
+            }
+            NumVerts = 40
+            IndexCount = 54
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: electronic_mesh04
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.0700989, Y=-17.1211, Z=0.45825 }
+        BoxExtent = { X=33.7619, Y=17.1211, Z=2.40625 }
+        SphereRadius = 37.8661
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=36 }
+            }
+            NumVerts = 76
+            IndexCount = 108
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: electronic_mesh05
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-31.8038, Y=0.11335, Z=-0.3003 }
+        BoxExtent = { X=32.3101, Y=2.84675, Z=3.0748 }
+        SphereRadius = 32.3948
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=20 }
+            }
+            NumVerts = 48
+            IndexCount = 60
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: electronic_mesh06
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=32.2884, Y=0.3935, Z=-1.54655 }
+        BoxExtent = { X=32.2028, Y=5.0174, Z=4.48345 }
+        SphereRadius = 32.5497
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=10 }
+            }
+            NumVerts = 24
+            IndexCount = 30
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
 ClassName: StaticMesh3 ObjectName: feather
 
     BodySetup = None
@@ -3025,9 +3246,9 @@ ClassName: StaticMesh3 ObjectName: geosphere002
     UseFullPrecisionUVs = false
     Bounds =
     {
-        Origin = { X=0, Y=5.14984e-005, Z=0 }
-        BoxExtent = { X=24.1746, Y=24.3078, Z=0 }
-        SphereRadius = 24.3078
+        Origin = { X=0, Y=5.14984e-005, Z=0.57225 }
+        BoxExtent = { X=24.1746, Y=24.3078, Z=0.69165 }
+        SphereRadius = 24.3177
     }
     CanCompressPositions = false
     CanStripNormalsAndTangents = false
@@ -3044,6 +3265,41 @@ ClassName: StaticMesh3 ObjectName: geosphere002
             }
             NumVerts = 418
             IndexCount = 1080
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: geosphere002_axisX
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=0 }
+        BoxExtent = { X=0, Y=24.3078, Z=24.1746 }
+        SphereRadius = 24.3079
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=350 }
+            }
+            NumVerts = 408
+            IndexCount = 1050
             NumTexCoords = 1
         }
     }
@@ -3324,6 +3580,41 @@ ClassName: StaticMesh3 ObjectName: Ground_Particle_Mes
             }
             NumVerts = 148
             IndexCount = 156
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: GukMaLevelup_RisingForce
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-12.8452, Y=-0.6453, Z=72.7074 }
+        BoxExtent = { X=17.8085, Y=23.1458, Z=75.448 }
+        SphereRadius = 76.7338
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=240 }
+            }
+            NumVerts = 366
+            IndexCount = 720
             NumTexCoords = 1
         }
     }
@@ -4557,6 +4848,76 @@ ClassName: StaticMesh3 ObjectName: mesh_di
 
 Object info:
 ============
+ClassName: StaticMesh3 ObjectName: meshtrail001
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0.0945492, Y=-7.34705, Z=0 }
+        BoxExtent = { X=23.2778, Y=16.5343, Z=1.8194 }
+        SphereRadius = 26.741
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=160 }
+            }
+            NumVerts = 210
+            IndexCount = 480
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: meshtrail002
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.1828, Y=-8.04785, Z=0 }
+        BoxExtent = { X=24.4284, Y=17.5872, Z=3.6678 }
+        SphereRadius = 27.9615
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=160 }
+            }
+            NumVerts = 210
+            IndexCount = 480
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
 ClassName: StaticMesh3 ObjectName: Mirror_Cycle_Mesh
 
     BodySetup = None
@@ -4830,6 +5191,41 @@ ClassName: StaticMesh3 ObjectName: Plane_Rectangle001_Mes
             }
             NumVerts = 8
             IndexCount = 6
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: poison_Cry
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=0 }
+        BoxExtent = { X=14.1924, Y=13.5899, Z=13.3904 }
+        SphereRadius = 16.7528
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=1306 }
+            }
+            NumVerts = 1646
+            IndexCount = 3918
             NumTexCoords = 1
         }
     }

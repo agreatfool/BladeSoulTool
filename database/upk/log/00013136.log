@@ -1,12 +1,76 @@
-Found 16186 game files (0 skipped)
-Loading package: 00013136.upk Ver: 573/1 Engine: 4205 Names: 40 Exports: 7 Imports: 6 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00013136.upk Ver: 573/1 Engine: 4205 Names: 61 Exports: 26 Imports: 6 Game: 801A
+Loading Texture2D 990092_Autoscale_col7_D from package 00013136.upk
+Loading Texture2D 990092_Autoscale_col7_E from package 00013136.upk
+Loading Texture2D 990092_Autoscale_col7_S from package 00013136.upk
 Loading Texture2D weapon_990092_col1_d from package 00013136.upk
 Loading Texture2D Weapon_990092_col1_e from package 00013136.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D weapon_990092_col1_FX from package 00013136.upk
 Loading Texture2D weapon_990092_col1_mask from package 00013136.upk
 Loading Texture2D weapon_990092_col1_n from package 00013136.upk
 Loading Texture2D weapon_990092_col1_s from package 00013136.upk
-Loaded in 0.036 sec, 241 allocs, 0.22 MBytes serialized in 1452 calls.
+Loading Texture2D weapon_990092_col2_d from package 00013136.upk
+Loading Texture2D Weapon_990092_col2_e from package 00013136.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading Texture2D weapon_990092_col2_s from package 00013136.upk
+Loading Texture2D weapon_990092_col3_d from package 00013136.upk
+Loading Texture2D Weapon_990092_col3_e from package 00013136.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading Texture2D weapon_990092_col3_s from package 00013136.upk
+Loading Texture2D Weapon_990092_col4_e from package 00013136.upk
+Loading Texture2D weapon_990092_col5_d from package 00013136.upk
+Loading Texture2D Weapon_990092_col5_e from package 00013136.upk
+Loading Texture2D weapon_990092_col5_s from package 00013136.upk
+Loading Texture2D weapon_990092_col6_d from package 00013136.upk
+Loading Texture2D Weapon_990092_col6_e from package 00013136.upk
+Loading Texture2D weapon_990092_col6_s from package 00013136.upk
+Loaded in 0.13 sec, 750 allocs, 0.86 MBytes serialized in 4769 calls.
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990092_Autoscale_col7_D
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990092_Autoscale_col7_E
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990092_Autoscale_col7_S
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
 
 Object info:
 ============
@@ -86,6 +150,201 @@ ClassName: Texture2D ObjectName: weapon_990092_col1_n
 Object info:
 ============
 ClassName: Texture2D ObjectName: weapon_990092_col1_s
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: weapon_990092_col2_d
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Weapon_990092_col2_e
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: weapon_990092_col2_s
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: weapon_990092_col3_d
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Weapon_990092_col3_e
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: weapon_990092_col3_s
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Weapon_990092_col4_e
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: weapon_990092_col5_d
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Weapon_990092_col5_e
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: weapon_990092_col5_s
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: weapon_990092_col6_d
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Weapon_990092_col6_e
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: weapon_990092_col6_s
 
     SizeX = 256
     SizeY = 512

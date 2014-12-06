@@ -1,11 +1,11 @@
-Found 16186 game files (0 skipped)
-Loading package: 00012588.upk Ver: 573/1 Engine: 4205 Names: 214 Exports: 689 Imports: 91 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00012588.upk Ver: 573/1 Engine: 4205 Names: 219 Exports: 775 Imports: 93 Game: 801A
 Loading Material3 Aura000_Ring_MatB from package 00012588.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Material3 DistortBlur2Ring_mat from package 00012588.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 69 Imports: 11 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
 Loading Material3 DistortionRing000_MatB from package 00012588.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Glow_ShineRing000_MatB from package 00012588.upk
@@ -16,6 +16,8 @@ Loading Material3 M01_Crush_matt_line from package 00012588.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M01_Crush_matt_line2 from package 00012588.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 M01_Crush_matt_line_MatM from package 00012588.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M01_Cycle_2_mat from package 00012588.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M01_Cycle_mat from package 00012588.upk
@@ -23,6 +25,10 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M01_Cycle_mat_Cen from package 00012588.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M01_Cycle_mat_Cen2 from package 00012588.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 M01_Cycle_mat_Cen3 from package 00012588.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 M01_Cycle_mat_Cen4 from package 00012588.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M_DistortBlur2Ring_01 from package 00012588.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -84,6 +90,8 @@ Loading Texture2D Smoke_Dusts_002 from package 00012963.upk
 Loading Texture2D Smoke_ShockWave_004 from package 00012963.upk
 Loading Texture2D Glow_ink_000 from package 00012963.upk
 Loading Texture2D Gradient_Beam_005_YClamp from package 00012963.upk
+Loading Texture2D Tk_Image from package 00012963.upk
+Loading Texture2D Gradient_Beam_006_Yclamp from package 00012963.upk
 Loading Texture2D Ring_Twiri_001 from package 00012963.upk
 Loading Texture2D Ring_Twiri_000 from package 00012963.upk
 Loading Texture2D Ring_000 from package 00012963.upk
@@ -117,7 +125,7 @@ Loading Texture2D TargetDecal_011 from package 00012963.upk
 Loading Texture2D Glow_Flair_001 from package 00012963.upk
 Loading Texture2D Tornbus from package 00012963.upk
 Loading Texture2D Glow_008 from package 00012963.upk
-Loaded in 0.48 sec, 3142 allocs, 2.06 MBytes serialized in 51883 calls.
+Loaded in 0.61 sec, 3237 allocs, 2.17 MBytes serialized in 54804 calls.
 
 Object info:
 ============
@@ -268,6 +276,29 @@ ClassName: Material3 ObjectName: M01_Crush_matt_line2
 
 Object info:
 ============
+ClassName: Material3 ObjectName: M01_Crush_matt_line_MatM
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Smoke_Fractal_002'
+        ReferencedTextures[1] = Texture2D'Noise_017'
+        ReferencedTextures[2] = Texture2D'UI_QuestApproach_Range_Tex'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
 ClassName: Material3 ObjectName: M01_Cycle_2_mat
 
     TwoSided = false
@@ -352,6 +383,52 @@ ClassName: Material3 ObjectName: M01_Cycle_mat_Cen2
         ReferencedTextures[3] = Texture2D'Glow_ink_000'
         ReferencedTextures[4] = Texture2D'Gradient_001_Left'
         ReferencedTextures[5] = Texture2D'Gradient_Beam_005_YClamp'
+        ReferencedTextures[6] = Texture2D'Noise_Ripple_000'
+        ReferencedTextures[7] = Texture2D'Gradient_Line_003'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: M01_Cycle_mat_Cen3
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Tk_Image' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: M01_Cycle_mat_Cen4
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[8] =
+    {
+        ReferencedTextures[0] = Texture2D'Smoke_Dusts_002'
+        ReferencedTextures[1] = Texture2D'Smoke_ShockWave_004'
+        ReferencedTextures[2] = Texture2D'Glow_Twiri_000'
+        ReferencedTextures[3] = Texture2D'Glow_ink_000'
+        ReferencedTextures[4] = Texture2D'Gradient_001_Left'
+        ReferencedTextures[5] = Texture2D'Gradient_Beam_006_Yclamp'
         ReferencedTextures[6] = Texture2D'Noise_Ripple_000'
         ReferencedTextures[7] = Texture2D'Gradient_Line_003'
     }

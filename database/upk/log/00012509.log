@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00012509.upk Ver: 573/1 Engine: 4205 Names: 351 Exports: 368 Imports: 122 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00012509.upk Ver: 573/1 Engine: 4205 Names: 407 Exports: 543 Imports: 142 Game: 801A
 Loading AnimSet KungfuFighter_Martial_Anim from package 00012509.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -29,23 +29,30 @@ WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading Material3 Decal_Dragon_Normal_MatM from package 00012509.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Material3 FireDecal001_Dragon_MatM from package 00012509.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Ground_MeshPar_Mat from package 00012509.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Heavypunch_Ahead_Decal from package 00012509.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 KungFuFighter_Dragon_MatM from package 00012509.upk
+Loading package: cubemap_001.upk Ver: 573/1 Engine: 4205 Names: 177 Exports: 517 Imports: 34 Game: 801A
 Loading Material3 KungfuFighter_DragonIce_Decal from package 00012509.upk
 Loading Material3 KungfuFighter_DragonIce_Decal_2 from package 00012509.upk
 Loading Material3 KungfuFighter_Heavypunch_Exe from package 00012509.upk
+Loading Material3 KungfuFighter_Heavypunch_Exe2 from package 00012509.upk
+Loading Material3 KungfuFighter_Heavypunch_MatM from package 00012509.upk
+Loading package: 00012850.upk Ver: 573/1 Engine: 4205 Names: 1312 Exports: 15143 Imports: 519 Game: 801A
 Loading Material3 KungfuFighter_Martial_MatM from package 00012509.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Kungufighter_HeavyFunch_Wave from package 00012509.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Tiger_Tooth_mat from package 00012509.upk
 Loading SkeletalMesh3 KungfuFighter_Mesh from package 00012509.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 886 Exports: 4211 Imports: 257 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
+Loading SkeletalMesh3 KungFuFighter_Tiger from package 00012509.upk
+Loading StaticMesh3 Kungfufighter_Dragon_Mesh from package 00012509.upk
 Loading StaticMesh3 KungfuFighter_DragonIce01_Mesh from package 00012509.upk
 Loading StaticMesh3 KungfuFighter_DragonIce02_Mesh from package 00012509.upk
 Loading StaticMesh3 KungfuFighter_DragonIce03_Mesh from package 00012509.upk
@@ -64,7 +71,16 @@ Loading Texture2D Noise_010 from package 00012963.upk
 Loading Texture2D Gradient_Beam_007 from package 00012963.upk
 Loading Texture2D Gradient_001 from package 00012963.upk
 Loading Texture2D Env_Fx_waterFall_D from package 00012963.upk
+Loading Texture2D Dragon_body_WW from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
+Loading Texture2D Normal_Noise_000 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
+Loading Texture2D Dragon_body_outside from package 00012963.upk
+Loading Texture2D Noise_002 from package 00012963.upk
+Loading Texture2D Gradient_Line_000 from package 00012963.upk
+Loading TextureCube Stone_001_01_Cube from package cubemap_001.upk
 Loading Texture2D Normal_Stone_000 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Unique_Ice_000 from package 00012963.upk
 Loading Texture2D Glow_ink_000 from package 00012963.upk
 Loading Texture2D Glow_008 from package 00012963.upk
@@ -73,9 +89,13 @@ Loading Texture2D Sparkle_Ink_Small from package 00012963.upk
 Loading Texture2D Gradient_Color_RedToOrange_000 from package 00012963.upk
 Loading Texture2D Gradient_001_Left from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Color_BlueToPurple_001 from package 00012963.upk
+Loading Texture2D FX_Fatman_Invincible_PC_N from package 00012850.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Noise_018 from package 00012963.upk
 Loading Texture2D Noise_009 from package 00012963.upk
 Loading Texture2D Normal_Noise_003 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Noise_Ripple_000_Inverse from package 00012963.upk
 Loading Texture2D Ring_Rad_000 from package 00012963.upk
 Loading Texture2D Glow_Twiri_003 from package 00012963.upk
@@ -85,6 +105,12 @@ Loading Texture2D Glow_006 from package 00012963.upk
 Loading Texture2D Unique_Waterfall_000_Mask from package 00012963.upk
 Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Texture2D CubemapFace0 from package cubemap_001.upk
+Loading Texture2D CubemapFace1 from package cubemap_001.upk
+Loading Texture2D CubemapFace2 from package cubemap_001.upk
+Loading Texture2D CubemapFace3 from package cubemap_001.upk
+Loading Texture2D CubemapFace4 from package cubemap_001.upk
+Loading Texture2D CubemapFace5 from package cubemap_001.upk
 Loading Texture2D Cube000_Tex from package 00012892.upk
 Error: Command failed: ******** 00012509 ********
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat

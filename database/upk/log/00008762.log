@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00008762.upk Ver: 573/1 Engine: 4205 Names: 170 Exports: 145 Imports: 18 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00008762.upk Ver: 573/1 Engine: 4205 Names: 171 Exports: 146 Imports: 18 Game: 801A
 Loading SkeletalMesh3 KangSi from package 00008762.upk
 WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PlayParticleSet" was not found
@@ -19,10 +19,11 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_311 from package 00008762.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_313 from package 00008762.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_314 from package 00008762.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_33 from package 00008762.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_80 from package 00008762.upk
 Loading MaterialInstanceConstant col1 from package 00008761.upk
 Loading package: 00008760.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 10 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D Monster_Human_KangSi_col1_N from package 00008760.upk
 Loading Texture2D Monster_Human_KangSi_col1_M from package 00008760.upk
 Loading Texture2D Monster_Human_KangSi_col1_D from package 00008760.upk
@@ -30,7 +31,7 @@ Loading Texture2D Monster_Human_KangSi_col1_S from package 00008760.upk
 Loading TextureCube cube_orb from package 00002640.upk
 Loading Texture2D Monster_Human_KangSi_col1_em from package 00008760.upk
 Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -43,7 +44,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.14 sec, 2896 allocs, 1.50 MBytes serialized in 263453 calls.
+Loaded in 0.12 sec, 2978 allocs, 1.56 MBytes serialized in 280198 calls.
 
 Object info:
 ============
@@ -66,7 +67,7 @@ ClassName: SkeletalMesh3 ObjectName: KangSi
             bEnableShadowCasting[1] = { true }
         }
     }
-    Sockets[9] =
+    Sockets[10] =
     {
         Sockets[0] = SkeletalMeshSocket'KangSi.SkeletalMeshSocket_0'
         Sockets[1] = SkeletalMeshSocket'KangSi.SkeletalMeshSocket_33'
@@ -77,6 +78,7 @@ ClassName: SkeletalMesh3 ObjectName: KangSi
         Sockets[6] = SkeletalMeshSocket'KangSi.SkeletalMeshSocket_184'
         Sockets[7] = SkeletalMeshSocket'KangSi.SkeletalMeshSocket_185'
         Sockets[8] = SkeletalMeshSocket'KangSi.SkeletalMeshSocket_186'
+        Sockets[9] = SkeletalMeshSocket'KangSi.SkeletalMeshSocket_80'
     }
     bHasVertexColors = false
     EnableTwistBoneFixers = true
@@ -200,5 +202,15 @@ ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_33
     SocketName = target_high
     BoneName = Bip01Head
     RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_80
+
+    SocketName = Gadget_UI
+    BoneName = Root
+    RelativeLocation = { X=14.4237, Y=0, Z=26.75 }
     RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
     RelativeScale = { X=1, Y=1, Z=1 }

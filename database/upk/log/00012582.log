@@ -1,9 +1,9 @@
-Found 16186 game files (0 skipped)
-Loading package: 00012582.upk Ver: 573/1 Engine: 4205 Names: 253 Exports: 825 Imports: 108 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00012582.upk Ver: 573/1 Engine: 4205 Names: 260 Exports: 918 Imports: 112 Game: 801A
 Loading Material3 electric_ani_mat_gradient from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 69 Imports: 11 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
 Loading Material3 Electric_Damage_01m from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Electric_Damage_02m from package 00012582.upk
@@ -36,6 +36,8 @@ Loading Material3 light_streak_tr_nodepth from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Lightning000-1_MatM from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Lightning000-2_MatM from package 00012582.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Lightning003_MatM from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Lightning004_MatB from package 00012582.upk
@@ -55,6 +57,10 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Lightning_Sprite001_MatB from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Lightning_Sprite001_MatM from package 00012582.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Lightning_Sprite001_Part from package 00012582.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Lightning_Sprite002_MatM from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 LightningUV002_MatM from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -106,6 +112,10 @@ Loading Texture2D Noise_016 from package 00012963.upk
 Loading Texture2D Smoke_Blur_000 from package 00012963.upk
 Loading Texture2D Noise_002 from package 00012963.upk
 Loading Texture2D Gradient_Line_001_YClamp from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Electric_tile from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D Gradient_Beam_007_Clamp from package 00012963.upk
 Loading Texture2D Gradient_Line_001 from package 00012963.upk
 Loading Texture2D Noise_014 from package 00012963.upk
 Loading Texture2D Glow_Flar_004 from package 00012963.upk
@@ -137,7 +147,6 @@ Loading Texture2D Smoke_ShockWave_004 from package 00012963.upk
 Loading Texture2D Noise_015 from package 00012963.upk
 Loading Texture2D Smoke_003 from package 00012963.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
-Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Electric_Lightning_Straight_01 from package 00012963.upk
 Loading Texture2D Electric_Lightning_Straight_02 from package 00012963.upk
 Loading Texture2D Electric1_sample_001 from package 00012963.upk
@@ -146,7 +155,7 @@ Loading Texture2D Electric1_sample_003 from package 00012963.upk
 Loading Texture2D Electric1_sample_004 from package 00012963.upk
 Loading Texture2D Electric1_sample_005 from package 00012963.upk
 Loading Texture2D Electric1_Sample_006 from package 00012963.upk
-Loaded in 0.55 sec, 3569 allocs, 4.01 MBytes serialized in 57328 calls.
+Loaded in 0.68 sec, 3702 allocs, 4.31 MBytes serialized in 60573 calls.
 
 Object info:
 ============
@@ -513,6 +522,31 @@ ClassName: Material3 ObjectName: Lightning000-1_MatM
 
 Object info:
 ============
+ClassName: Material3 ObjectName: Lightning000-2_MatM
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[1] = Texture2D'Electric_tile'
+        ReferencedTextures[2] = Texture2D'Gradient_Wipe_BurnOut_Mask'
+        ReferencedTextures[3] = Texture2D'Gradient_Beam_007_Clamp'
+        ReferencedTextures[4] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
 ClassName: Material3 ObjectName: Lightning003_MatM
 
     TwoSided = false
@@ -703,6 +737,42 @@ ClassName: Material3 ObjectName: Lightning_Sprite001_MatB
 Object info:
 ============
 ClassName: Material3 ObjectName: Lightning_Sprite001_MatM
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Electric_Sprite_001' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Lightning_Sprite001_Part
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Electric_Sprite_Part' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Lightning_Sprite002_MatM
 
     TwoSided = true
     bDisableDepthTest = false

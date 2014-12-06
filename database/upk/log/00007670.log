@@ -1,10 +1,14 @@
-Found 16186 game files (0 skipped)
-Loading package: 00007670.upk Ver: 573/1 Engine: 4205 Names: 31 Exports: 4 Imports: 2 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00007670.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 8 Imports: 2 Game: 801A
 Loading Texture2D Weapon_990049_col1_D from package 00007670.upk
 Loading Texture2D Weapon_990049_col1_M from package 00007670.upk
 Loading Texture2D Weapon_990049_col1_N from package 00007670.upk
 Loading Texture2D Weapon_990049_col1_S from package 00007670.upk
-Loaded in 0.018 sec, 159 allocs, 0.05 MBytes serialized in 920 calls.
+Loading Texture2D Weapon_990049_col2_D from package 00007670.upk
+Loading Texture2D Weapon_990049_col2_S from package 00007670.upk
+Loading Texture2D Weapon_990049_col3_D from package 00007670.upk
+Loading Texture2D Weapon_990049_col3_S from package 00007670.upk
+Loaded in 0.041 sec, 267 allocs, 0.09 MBytes serialized in 1656 calls.
 
 Object info:
 ============
@@ -54,6 +58,66 @@ ClassName: Texture2D ObjectName: Weapon_990049_col1_N
 Object info:
 ============
 ClassName: Texture2D ObjectName: Weapon_990049_col1_S
+
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Weapon_990049_col2_D
+
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Weapon_990049_col2_S
+
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Weapon_990049_col3_D
+
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Weapon_990049_col3_S
 
     SizeX = 256
     SizeY = 128

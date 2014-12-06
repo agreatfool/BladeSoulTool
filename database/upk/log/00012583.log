@@ -1,8 +1,8 @@
-Found 16186 game files (0 skipped)
-Loading package: 00012583.upk Ver: 573/1 Engine: 4205 Names: 309 Exports: 1960 Imports: 120 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00012583.upk Ver: 573/1 Engine: 4205 Names: 312 Exports: 2124 Imports: 121 Game: 801A
 Loading Material3 Blob_volume_Mat from package 00012583.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Material3 M01_fresnel_water from package 00012583.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M01_Ripple from package 00012583.upk
@@ -22,15 +22,18 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M02_Water_Splash_Dynamic from package 00012583.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M_BasicWater_01M_Water_01 from package 00012583.upk
-Loading package: parent_normal.upk Ver: 573/1 Engine: 4205 Names: 1079 Exports: 9486 Imports: 96 Game: 801A
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 69 Imports: 11 Game: 801A
+Loading package: parent_normal.upk Ver: 573/1 Engine: 4205 Names: 1089 Exports: 9880 Imports: 96 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
 Loading Material3 MA_melt_set02_Dup000_804 from package 00012583.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 poisonwater_002 from package 00012583.upk
 Loading Material3 Ring_Type_normal from package 00012583.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 T03_WaterSplash from package 00012583.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 T03_WaterSplash_DynamicParameter from package 00012583.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 T03_WaterSplash_transition from package 00012583.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 water_001 from package 00012583.upk
 Loading Material3 water_002_tile from package 00012583.upk
@@ -93,15 +96,17 @@ Loading Texture2D Parent_Mask from package parent_normal.upk
 Loading Texture2D DefaultTexture from package EngineResources.upk
 Loading Texture2D Gradient_Line_004 from package 00012963.upk
 Loading Texture2D Noise_014 from package 00012963.upk
+Loading Texture2D Normal_Noise_003 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
+Loading Texture2D Unique_Stone_001 from package 00012963.upk
+Loading Texture2D Noise_005 from package 00012963.upk
+Loading Texture2D Gradient_Beam_004 from package 00012963.upk
 Loading Texture2D Normal_Noise_004 from package 00012963.upk
 Loading Texture2D Normal_Stone_001 from package 00012963.upk
-Loading Texture2D Unique_Stone_001 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Water_Spalsh_ALL_NRMWater_Spalsh_ALL from package 00012963.upk
 Loading Texture2D Water_Spalsh_ALLWater_Spalsh_ALL from package 00012963.upk
 Loading TextureCube T_waterRefection_CubeMap_002 from package 00012963.upk
-Loading Texture2D Normal_Noise_003 from package 00012963.upk
-Loading Texture2D Noise_005 from package 00012963.upk
-Loading Texture2D Gradient_Beam_004 from package 00012963.upk
 Loading Texture2D Env_Fx_Fire_Seed from package 00012963.upk
 Loading Texture2D Blood_Sparkle_Sprite_000 from package 00012963.upk
 Loading Texture2D Sparkle_Ink_Small from package 00012963.upk
@@ -135,7 +140,7 @@ Loading Texture2D CubemapFace2 from package 00012963.upk
 Loading Texture2D CubemapFace3 from package 00012963.upk
 Loading Texture2D CubemapFace4 from package 00012963.upk
 Loading Texture2D CubemapFace5 from package 00012963.upk
-Loaded in 0.52 sec, 4720 allocs, 2.81 MBytes serialized in 253739 calls.
+Loaded in 0.93 sec, 4766 allocs, 2.89 MBytes serialized in 264799 calls.
 
 Object info:
 ============
@@ -408,6 +413,30 @@ ClassName: Material3 ObjectName: MA_melt_set02_Dup000_804
 
 Object info:
 ============
+ClassName: Material3 ObjectName: poisonwater_002
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Normal_Noise_003'
+        ReferencedTextures[1] = Texture2D'Unique_Stone_001'
+        ReferencedTextures[2] = Texture2D'Noise_005'
+        ReferencedTextures[3] = Texture2D'Gradient_Beam_004'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
 ClassName: Material3 ObjectName: Ring_Type_normal
 
     TwoSided = false
@@ -458,6 +487,32 @@ ClassName: Material3 ObjectName: T03_WaterSplash
 Object info:
 ============
 ClassName: Material3 ObjectName: T03_WaterSplash_DynamicParameter
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'Water_Spalsh_ALL_NRMWater_Spalsh_ALL'
+        ReferencedTextures[1] = Texture2D'Water_Spalsh_ALLWater_Spalsh_ALL'
+        ReferencedTextures[2] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[3] = Texture2D'Noise_Distortion_000'
+        ReferencedTextures[4] = Texture2D'Noise_Plazma_002'
+        ReferencedTextures[5] = TextureCube'T_waterRefection_CubeMap_002'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: T03_WaterSplash_transition
 
     TwoSided = false
     bDisableDepthTest = false

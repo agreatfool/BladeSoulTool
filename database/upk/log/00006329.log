@@ -1,6 +1,6 @@
-Found 16186 game files (0 skipped)
+Found 18875 game files (36 skipped)
 Loading package: 00006329.upk Ver: 573/1 Engine: 4205 Names: 439 Exports: 446 Imports: 15 Game: 801A
-Loading AnimSet kingfrog_animset from package 00006329.upk
+Loading AnimSet Kingfrog_animset from package 00006329.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::NonAniScaleBoneNames" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -417,7 +417,7 @@ Error: Command failed: ******** 00006329 ********
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** ERROR: Unknown rotation compression method: 255
-UAnimSet::ConvertAnims <- PostLoad:kingfrog_animset <- UObject::EndLoad <- LoadWholePackage:00006329 <- Main
+UAnimSet::ConvertAnims <- PostLoad:Kingfrog_animset <- UObject::EndLoad <- LoadWholePackage:00006329 <- Main
 
 
     at ChildProcess.exithandler (child_process.js:637:15)

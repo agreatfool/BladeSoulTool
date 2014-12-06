@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00010077.upk Ver: 573/1 Engine: 4205 Names: 369 Exports: 91 Imports: 138 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00010077.upk Ver: 573/1 Engine: 4205 Names: 381 Exports: 102 Imports: 138 Game: 801A
 Loading AnimSet PotAxPartyLeader_AnimSet from package 00010077.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -47,6 +47,18 @@ Loading AnimSequence AnimSequence_20 from package 00010077.upk
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_22 from package 00010077.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_23 from package 00010077.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
 Loading AnimSequence AnimSequence_3 from package 00010077.upk
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
@@ -72,6 +84,8 @@ WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
 Error: Command failed: ******** 00010077 ********
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat

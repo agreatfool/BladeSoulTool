@@ -1,11 +1,11 @@
-Found 16186 game files (0 skipped)
-Loading package: 00005413.upk Ver: 573/1 Engine: 4205 Names: 540 Exports: 4704 Imports: 127 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00005413.upk Ver: 573/1 Engine: 4205 Names: 600 Exports: 5479 Imports: 147 Game: 801A
 Loading Material3 fx_cloudblow_mat_Dup_2388_Dup_2207_Dup from package 00005413.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 69 Imports: 11 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
 Loading Material3 Assassin_MistSlash_Slash_MatB from package 00005413.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Material3 AuraMaster_EnergyMissile_Cast_Trl from package 00005413.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Beam_HalfmoonSlash_Cast from package 00005413.upk
@@ -28,6 +28,7 @@ Loading Material3 fx_cloudblow_mat from package 00005413.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 fx_cloudblow_mat3 from package 00005413.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 PilebunkerEmpire_KangRyu_trail from package 00005413.upk
 Loading Material3 shadow_tail_mat from package 00005413.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 T_AuraMaster_InfinityMissile_Cast from package 00005413.upk
@@ -87,22 +88,28 @@ Loading Texture2D Gradient_Trail_004 from package 00012963.upk
 Loading Texture2D Sparkle_Ink_002 from package 00012963.upk
 Loading Texture2D Glow_ink_001 from package 00012963.upk
 Loading Texture2D Normal_Noise_003 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Gradient_Light_Line_000 from package 00012963.upk
 Loading Texture2D Smoke_Cloud_001 from package 00012963.upk
 Loading Texture2D Smoke_005 from package 00012963.upk
 Loading Texture2D Noise_Wave_000 from package 00012963.upk
 Loading Texture2D Aura_Tail_002 from package 00012963.upk
 Loading Texture2D Gradient_Color_WhiteToPurple_000 from package 00012963.upk
+Loading Texture2D Gradient_Color_PurpleToBlue_000 from package 00012963.upk
+Loading Texture2D Smoke_Fractal_002 from package 00012963.upk
+Loading Texture2D T_Liquid_SM_NanoBlack_Mask_01 from package 00012963.upk
+Loading Texture2D Unique_Waterfall_000_Mask from package 00012963.upk
+Loading Texture2D Gradient_Beam_004 from package 00012963.upk
 Loading Texture2D Noise_003 from package 00012963.upk
 Loading Texture2D Ring_Thick_000 from package 00012963.upk
 Loading Texture2D Gradient_Trail_001 from package 00012963.upk
 Loading Texture2D Noise_Wave_000_Normal from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Noise_007 from package 00012963.upk
-Loading Texture2D Smoke_Fractal_002 from package 00012963.upk
 Loading Texture2D Noise_001 from package 00012963.upk
 Loading Texture2D Glow_002 from package 00012963.upk
 Loading Texture2D Fire_002 from package 00012963.upk
-Loaded in 0.22 sec, 2997 allocs, 1.16 MBytes serialized in 122068 calls.
+Loaded in 0.23 sec, 3206 allocs, 1.43 MBytes serialized in 137881 calls.
 
 Object info:
 ============
@@ -385,6 +392,37 @@ ClassName: Material3 ObjectName: fx_cloudblow_mat3
         ReferencedTextures[1] = Texture2D'Aura_Tail_002'
         ReferencedTextures[2] = Texture2D'Gradient_Color_WhiteToPurple_000'
         ReferencedTextures[3] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: PilebunkerEmpire_KangRyu_trail
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[11] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Color_PurpleToBlue_000'
+        ReferencedTextures[1] = Texture2D'Noise_005'
+        ReferencedTextures[2] = Texture2D'Gradient_001_Left'
+        ReferencedTextures[3] = Texture2D'Noise_Wave_000'
+        ReferencedTextures[4] = Texture2D'Smoke_Fractal_002'
+        ReferencedTextures[5] = Texture2D'Glow_Trail_001'
+        ReferencedTextures[6] = Texture2D'Gradient_Trail_002'
+        ReferencedTextures[7] = Texture2D'T_Liquid_SM_NanoBlack_Mask_01'
+        ReferencedTextures[8] = Texture2D'Unique_Waterfall_000_Mask'
+        ReferencedTextures[9] = Texture2D'Gradient_Beam_004'
+        ReferencedTextures[10] = Texture2D'Normal_Noise_002'
     }
     BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333

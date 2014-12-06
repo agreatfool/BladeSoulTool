@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00006037.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 9 Imports: 2 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00006037.upk Ver: 573/1 Engine: 4205 Names: 40 Exports: 12 Imports: 2 Game: 801A
 Loading Texture2D Monster_Human_UnbalanceZombie_col1_D from package 00006037.upk
 Loading Texture2D Monster_Human_UnbalanceZombie_col1_M from package 00006037.upk
 Loading Texture2D Monster_Human_UnbalanceZombie_col1_N from package 00006037.upk
@@ -9,7 +9,10 @@ Loading Texture2D Monster_Human_UnbalanceZombie_col2_S from package 00006037.upk
 Loading Texture2D Monster_Human_UnbalanceZombie_col3_D from package 00006037.upk
 Loading Texture2D Monster_Human_UnbalanceZombie_col3_E from package 00006037.upk
 Loading Texture2D Monster_Human_UnbalanceZombie_col3_S from package 00006037.upk
-Loaded in 0.058 sec, 322 allocs, 1.07 MBytes serialized in 1966 calls.
+Loading Texture2D Monster_Human_UnbalanceZombie_col4_D from package 00006037.upk
+Loading Texture2D Monster_Human_UnbalanceZombie_col4_E from package 00006037.upk
+Loading Texture2D Monster_Human_UnbalanceZombie_col4_S from package 00006037.upk
+Loaded in 0.069 sec, 403 allocs, 1.23 MBytes serialized in 2554 calls.
 
 Object info:
 ============
@@ -138,6 +141,51 @@ ClassName: Texture2D ObjectName: Monster_Human_UnbalanceZombie_col3_S
     SizeX = 512
     SizeY = 512
     Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_UnbalanceZombie_col4_D
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_UnbalanceZombie_col4_E
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_UnbalanceZombie_col4_S
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None

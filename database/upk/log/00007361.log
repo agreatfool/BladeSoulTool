@@ -1,11 +1,77 @@
-Found 16186 game files (0 skipped)
-Loading package: 00007361.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 9 Imports: 4 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00007361.upk Ver: 573/1 Engine: 4205 Names: 44 Exports: 13 Imports: 4 Game: 801A
+Loading Texture2D 20002_JinM_col2_D from package 00007361.upk
+Loading Texture2D 20002_JinM_col2_E from package 00007361.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading Texture2D 20002_JinM_col2_M from package 00007361.upk
+Loading Texture2D 20002_JinM_col2_S from package 00007361.upk
 Loading Texture2D Jin_D from package 00007361.upk
 Loading Texture2D Jin_EM from package 00007361.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D Jin_M from package 00007361.upk
 Loading Texture2D Jin_N from package 00007361.upk
 Loading Texture2D Jin_S from package 00007361.upk
-Loaded in 0.028 sec, 213 allocs, 0.69 MBytes serialized in 1317 calls.
+Loaded in 0.06 sec, 341 allocs, 1.10 MBytes serialized in 2164 calls.
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 20002_JinM_col2_D
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 20002_JinM_col2_E
+
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 20002_JinM_col2_M
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 20002_JinM_col2_S
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
 
 Object info:
 ============

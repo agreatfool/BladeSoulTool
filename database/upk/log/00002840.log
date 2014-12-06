@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00002840.upk Ver: 573/1 Engine: 4205 Names: 425 Exports: 237 Imports: 127 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00002840.upk Ver: 573/1 Engine: 4205 Names: 435 Exports: 246 Imports: 127 Game: 801A
 Loading AnimSet PotAxPartyA_AnimSet from package 00002840.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::NonAniScaleBoneNames" was not found
@@ -51,6 +51,13 @@ WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_19 from package 00002840.upk
 WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_2 from package 00002840.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
 WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
 Loading AnimSequence AnimSequence_23 from package 00002840.upk
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
@@ -155,6 +162,7 @@ WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
 Error: Command failed: ******** 00002840 ********
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat

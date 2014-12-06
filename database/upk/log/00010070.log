@@ -1,11 +1,13 @@
-Found 16186 game files (0 skipped)
-Loading package: 00010070.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 5 Imports: 2 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00010070.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 7 Imports: 2 Game: 801A
 Loading Texture2D weapon_990073_col1_d from package 00010070.upk
 Loading Texture2D weapon_990073_col1_mask from package 00010070.upk
 Loading Texture2D weapon_990073_col1_n from package 00010070.upk
 Loading Texture2D weapon_990073_col1_s from package 00010070.upk
+Loading Texture2D weapon_990073_col2_d from package 00010070.upk
+Loading Texture2D weapon_990073_col2_s from package 00010070.upk
 Loading Texture2D weapon_990073_FX_Glow from package 00010070.upk
-Loaded in 0.028 sec, 201 allocs, 0.15 MBytes serialized in 1171 calls.
+Loaded in 0.04 sec, 261 allocs, 0.23 MBytes serialized in 1565 calls.
 
 Object info:
 ============
@@ -55,6 +57,36 @@ ClassName: Texture2D ObjectName: weapon_990073_col1_n
 Object info:
 ============
 ClassName: Texture2D ObjectName: weapon_990073_col1_s
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: weapon_990073_col2_d
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: weapon_990073_col2_s
 
     SizeX = 256
     SizeY = 512

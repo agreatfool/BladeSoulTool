@@ -1,8 +1,27 @@
-Found 16186 game files (0 skipped)
-Loading package: 00010047.upk Ver: 573/1 Engine: 4205 Names: 129 Exports: 144 Imports: 20 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00010047.upk Ver: 573/1 Engine: 4205 Names: 242 Exports: 273 Imports: 34 Game: 801A
+Loading Texture2D GameUI_ItamCommend from package 00010047.upk
+Loading Texture2D GameUI_Jackpot from package 00010047.upk
 Loading Texture2D GameUI_window_03_new from package 00010047.upk
 Loading Texture2D Gem_Base from package 00010047.upk
 Loading Texture2D Gem_Current from package 00010047.upk
+Loading Texture2D Img_Party_BossAggro_Black from package 00010047.upk
+Loading Texture2D Img_Party_BossAggro_Blue from package 00010047.upk
+Loading Texture2D Img_Party_BossAggro_Gold from package 00010047.upk
+Loading Texture2D Img_Party_BossAggro_Green from package 00010047.upk
+Loading Texture2D Img_Party_BossAggro_Purple from package 00010047.upk
+Loading Texture2D Img_Party_BossAggro_Red from package 00010047.upk
+Loading Texture2D Img_Party_BossAggro_Silver from package 00010047.upk
+Loading Texture2D Img_Party_BossAggro_White from package 00010047.upk
+Loading Texture2D Img_Party_BossAggro_Yellow from package 00010047.upk
+Loading Texture2D Img_Spirit_Bomber from package 00010047.upk
+Loading Texture2D Img_Spirit_Drain from package 00010047.upk
+Loading Texture2D Img_Spirit_Heal from package 00010047.upk
+Loading Texture2D Img_Spirit_Poison from package 00010047.upk
+Loading Texture2D Img_Spirit_Reflect from package 00010047.upk
+Loading Texture2D Img_Spirit_Strong from package 00010047.upk
+Loading Texture2D Img_Spirit_Summoner from package 00010047.upk
+Loading Texture2D Img_Spirit_Teleport from package 00010047.upk
 Loading Texture2D ItemIcon_Bg_Grade_1 from package 00010047.upk
 Loading Texture2D ItemIcon_Bg_Grade_2 from package 00010047.upk
 Loading Texture2D ItemIcon_Bg_Grade_3 from package 00010047.upk
@@ -14,7 +33,37 @@ Loading Texture2D ItemIcon_Bg_Grade_8 from package 00010047.upk
 Loading Texture2D ItemIcon_Bg_Quest from package 00010047.upk
 Loading Texture2D ScoringSystem from package 00010047.upk
 Loading Texture2D Talk_Balloon from package 00010047.upk
-Loaded in 0.011 sec, 217 allocs, 0.22 MBytes serialized in 4392 calls.
+Loaded in 0.025 sec, 437 allocs, 0.35 MBytes serialized in 8857 calls.
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GameUI_ItamCommend
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GameUI_Jackpot
+
+    SizeX = 64
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
 
 Object info:
 ============
@@ -52,6 +101,261 @@ ClassName: Texture2D ObjectName: Gem_Current
 
     SizeX = 512
     SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Party_BossAggro_Black
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Party_BossAggro_Blue
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Party_BossAggro_Gold
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Party_BossAggro_Green
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Party_BossAggro_Purple
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Party_BossAggro_Red
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Party_BossAggro_Silver
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Party_BossAggro_White
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Party_BossAggro_Yellow
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Spirit_Bomber
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Spirit_Drain
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Spirit_Heal
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Spirit_Poison
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Spirit_Reflect
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Spirit_Strong
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Spirit_Summoner
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Spirit_Teleport
+
+    SizeX = 32
+    SizeY = 32
     Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)

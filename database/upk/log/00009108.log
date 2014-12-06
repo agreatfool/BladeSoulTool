@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00009108.upk Ver: 573/1 Engine: 4205 Names: 110 Exports: 62 Imports: 9 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00009108.upk Ver: 573/1 Engine: 4205 Names: 117 Exports: 70 Imports: 9 Game: 801A
 Loading Texture2D Assasin_CharSelect_002 from package 00009108.upk
 Loading Texture2D BladeMaster_CharSelect_002 from package 00009108.upk
 Loading Texture2D common_001 from package 00009108.upk
@@ -10,6 +10,13 @@ Loading Texture2D GonF_001 from package 00009108.upk
 Loading Texture2D GonF_002 from package 00009108.upk
 Loading Texture2D GonM_001 from package 00009108.upk
 Loading Texture2D GonM_002 from package 00009108.upk
+Loading Texture2D GuildUniform_DesignerPreset_001 from package 00009108.upk
+Loading Texture2D GuildUniform_Face_001 from package 00009108.upk
+Loading Texture2D GuildUniform_Head_001 from package 00009108.upk
+Loading Texture2D GuildUniform_Inner_Top_001 from package 00009108.upk
+Loading Texture2D GuildUniform_Inner_Under_001 from package 00009108.upk
+Loading Texture2D GuildUniform_Style_001 from package 00009108.upk
+Loading Texture2D GuildUniformIcon_001 from package 00009108.upk
 Loading Texture2D Gun_CharCreate_001 from package 00009108.upk
 Loading Texture2D Jin_CharCreate_001 from package 00009108.upk
 Loading Texture2D JinF_001 from package 00009108.upk
@@ -34,7 +41,7 @@ Loading Texture2D LynM_001 from package 00009108.upk
 Loading Texture2D LynM_002 from package 00009108.upk
 Loading Texture2D Summoner_CharSelect_002 from package 00009108.upk
 Loading Texture2D SwordMaster_CharSelect_002 from package 00009108.upk
-Loaded in 0.062 sec, 337 allocs, 3.83 MBytes serialized in 5208 calls.
+Loaded in 0.068 sec, 379 allocs, 4.09 MBytes serialized in 6064 calls.
 
 Object info:
 ============
@@ -174,6 +181,111 @@ ClassName: Texture2D ObjectName: GonM_001
 Object info:
 ============
 ClassName: Texture2D ObjectName: GonM_002
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GuildUniform_DesignerPreset_001
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GuildUniform_Face_001
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GuildUniform_Head_001
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GuildUniform_Inner_Top_001
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GuildUniform_Inner_Under_001
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GuildUniform_Style_001
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GuildUniformIcon_001
 
     SizeX = 1024
     SizeY = 1024

@@ -1,9 +1,11 @@
-Found 16186 game files (0 skipped)
-Loading package: 00012594.upk Ver: 573/1 Engine: 4205 Names: 294 Exports: 687 Imports: 119 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00012594.upk Ver: 573/1 Engine: 4205 Names: 302 Exports: 725 Imports: 124 Game: 801A
 Loading Material3 Buff_bb from package 00012594.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
 Loading Material3 Buff_bb_2 from package 00012594.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Buff_bb_2_mask from package 00012594.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Buff_Point_box from package 00012594.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -21,7 +23,7 @@ Loading Material3 Letter003_MatM from package 00012594.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Letters0000_MatB from package 00012594.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 69 Imports: 11 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
 Loading Material3 Letters000_MatB from package 00012594.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Letters001_MatB from package 00012594.upk
@@ -55,12 +57,15 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Rune_Potal_S000_MatB from package 00012594.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Rune_Reflect from package 00012594.upk
+Loading Material3 Rune_Ring_Gradiation_000_MatM from package 00012594.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 RuneJin001_MatB_Small from package 00012594.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading MaterialInstanceConstant Demon_dra from package 00012594.upk
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading MaterialInstanceConstant Demon_Face from package 00012594.upk
+Loading MaterialInstanceConstant DemonFace2_col1 from package 00012594.upk
 Loading MaterialInstanceConstant DemonStar from package 00012594.upk
 Loading MaterialInstanceConstant Mon_Rune from package 00012594.upk
 Loading Texture2D Glow_009 from package 00012963.upk
@@ -112,13 +117,16 @@ Loading Texture2D Rune_Heal_004_Glow from package 00012963.upk
 Loading Texture2D NormalSkull_Diffuse from package 00012963.upk
 Loading Texture2D Noise_017 from package 00012963.upk
 Loading Texture2D Normal_Noise_000 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Noise_Plazma_002 from package 00012963.upk
-Loading Texture2D DemonFace_Nm from package 00012963.upk
+Loading Texture2D DemonFace2_Nm from package 00012963.upk
 Loading Texture2D Rune_Potal_000_Line from package 00012963.upk
 Loading Texture2D Rune_Potal_000 from package 00012963.upk
 Loading Texture2D Rune_Potal_001_Line from package 00012963.upk
 Loading Texture2D Rune_Potal_001 from package 00012963.upk
 Loading Texture2D Demon_Normal from package 00012963.upk
+Loading Texture2D Rune_Target_Decal_000 from package 00012963.upk
+Loading Texture2D SystemDecal_Circle_ring from package 00012963.upk
 Loading Texture2D Rune_Heal_002 from package 00012963.upk
 Loading Texture2D DemonDr_Nm_dra from package 00012963.upk
 Loading Texture2D DemonDr_Mm_dra from package 00012963.upk
@@ -126,11 +134,15 @@ Loading Texture2D DemonDr_Dm_dra from package 00012963.upk
 Loading Texture2D DemonDr_Sm_dra from package 00012963.upk
 Loading TextureCube Cube_D from package 00002640.upk
 Loading Material3 Basic from package 00002620.upk
+Loading Texture2D DemonFace_Nm from package 00012963.upk
 Loading Texture2D DemonFace_Mm from package 00012963.upk
 Loading Texture2D DemonFace_Dm from package 00012963.upk
 Loading Texture2D DemonFace_SM from package 00012963.upk
 Loading Texture2D DemonFace_Em from package 00012963.upk
 Loading Material3 Basic_local_reflect from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D DemonFace2_Dm from package 00012963.upk
+Loading Texture2D DemonFace2_SM from package 00012963.upk
 Loading Texture2D Demon_Mask from package 00012963.upk
 Loading Texture2D Demon_Diffuse from package 00012963.upk
 Loading Texture2D Demon_Specular from package 00012963.upk
@@ -145,12 +157,11 @@ Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Texture2D check_n from package 00002620.upk
-Loading Texture2D check from package 00002620.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D Noise_Glass_000 from package 00012963.upk
-Loaded in 0.79 sec, 4864 allocs, 2.45 MBytes serialized in 176447 calls.
+Loaded in 0.91 sec, 5108 allocs, 2.62 MBytes serialized in 195843 calls.
 
 Object info:
 ============
@@ -189,6 +200,29 @@ ClassName: Material3 ObjectName: Buff_bb_2
         ReferencedTextures[2] = Texture2D'Gradient_Line_003'
     }
     BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Buff_bb_2_mask
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Unique_Star_000'
+        ReferencedTextures[1] = Texture2D'Noise_Distortion_000'
+        ReferencedTextures[2] = Texture2D'Gradient_Line_003'
+    }
+    BlendMode = BLEND_Masked (1)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
     MobileBaseTexture = None
@@ -704,7 +738,7 @@ ClassName: Material3 ObjectName: Rune_Poison
     bIsMasked = false
     ReferencedTextures[4] =
     {
-        ReferencedTextures[0] = Texture2D'DemonFace_Nm'
+        ReferencedTextures[0] = Texture2D'DemonFace2_Nm'
         ReferencedTextures[1] = Texture2D'Noise_017'
         ReferencedTextures[2] = Texture2D'Normal_Noise_000'
         ReferencedTextures[3] = Texture2D'Noise_Plazma_002'
@@ -806,6 +840,29 @@ ClassName: Material3 ObjectName: Rune_Reflect
         ReferencedTextures[3] = Texture2D'Noise_Plazma_002'
     }
     BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Rune_Ring_Gradiation_000_MatM
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Rune_Target_Decal_000'
+        ReferencedTextures[1] = Texture2D'SystemDecal_Circle_ring'
+        ReferencedTextures[2] = Texture2D'Gra_ring'
+    }
+    BlendMode = BLEND_Translucent (2)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
     MobileBaseTexture = None
@@ -981,6 +1038,99 @@ ClassName: MaterialInstanceConstant ObjectName: Demon_Face
         }
     }
     Parent = Material3'Basic_local_reflect'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: DemonFace2_col1
+
+    ScalarParameterValues[10] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=0.5 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness1, ParameterValue=3 }
+        ScalarParameterValues[2] = { ParameterName=Glossiness2, ParameterValue=5 }
+        ScalarParameterValues[3] = { ParameterName=Specular_value, ParameterValue=3 }
+        ScalarParameterValues[4] = { ParameterName=HighLight_Value, ParameterValue=5 }
+        ScalarParameterValues[5] = { ParameterName=HighLight_glossiness, ParameterValue=100 }
+        ScalarParameterValues[6] = { ParameterName=Emissive_value, ParameterValue=1 }
+        ScalarParameterValues[7] = { ParameterName=Emissive_value2, ParameterValue=0 }
+        ScalarParameterValues[8] = { ParameterName=Fresnel Value, ParameterValue=1 }
+        ScalarParameterValues[9] = { ParameterName=Fresnel exponent, ParameterValue=30 }
+    }
+    TextureParameterValues[6] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'DemonFace2_Nm' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'check' }
+        TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'DemonFace2_Dm' }
+        TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'DemonFace2_SM' }
+        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'Cube_D' }
+        TextureParameterValues[5] = { ParameterName=Emissive, ParameterValue=Texture2D'check' }
+    }
+    VectorParameterValues[11] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=2, G=2, B=2, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = HighLight_Color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Burn_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Glow_Trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = Fx_Glow_power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = Fx_Glow_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = AC_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[10] =
+        {
+            ParameterName = AC_specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+    }
+    Parent = Material3'Basic'
     FlattenedTexture = None
     MobileBaseTexture = None
     MobileNormalTexture = None

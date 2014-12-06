@@ -1,17 +1,19 @@
-Found 16186 game files (0 skipped)
-Loading package: 00010063.upk Ver: 573/1 Engine: 4205 Names: 39 Exports: 11 Imports: 2 Game: 801A
+Found 18875 game files (36 skipped)
+Loading package: 00010063.upk Ver: 573/1 Engine: 4205 Names: 41 Exports: 13 Imports: 2 Game: 801A
 Loading Texture2D boss_col2_d from package 00010063.upk
 Loading Texture2D boss_col2_s from package 00010063.upk
 Loading Texture2D Default from package 00010063.upk
 Loading Texture2D E from package 00010063.upk
 Loading Texture2D M from package 00010063.upk
+Loading Texture2D potaxpartyleader_col4_D from package 00010063.upk
+Loading Texture2D potaxpartyleader_col4_S from package 00010063.upk
 Loading Texture2D Potboss_n from package 00010063.upk
 Loading Texture2D PotpartyLeader_D3 from package 00010063.upk
 Loading Texture2D PotpartyLeader_M3 from package 00010063.upk
 Loading Texture2D PotpartyLeader_N3 from package 00010063.upk
 Loading Texture2D PotpartyLeader_S3 from package 00010063.upk
 Loading Texture2D S from package 00010063.upk
-Loaded in 0.064 sec, 385 allocs, 0.98 MBytes serialized in 2428 calls.
+Loaded in 0.082 sec, 442 allocs, 1.09 MBytes serialized in 2815 calls.
 
 Object info:
 ============
@@ -84,6 +86,36 @@ ClassName: Texture2D ObjectName: M
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
     MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: potaxpartyleader_col4_D
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: potaxpartyleader_col4_S
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
