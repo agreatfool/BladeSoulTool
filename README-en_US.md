@@ -153,3 +153,4 @@ GPLv2
     * Add model search functionality
     * Add report issue functionality
     * Combine LynM with LynF to Lyn
+* 2014-12-08: v2.0.2: Update database, contains the latest "枫情万种", no functionality update
