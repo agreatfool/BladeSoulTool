@@ -1,9 +1,9 @@
-Found 18875 game files (36 skipped)
+Found 19856 game files (132 skipped)
 Loading package: 00028282.upk Ver: 573/1 Engine: 4205 Names: 569 Exports: 770 Imports: 195 Game: 801A
 Loading Material3 Basic_Base_IF_Masked_Mat from package 00028282.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading Material3 Sword_Body_MAT from package 00028282.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Sword_EdgeDeco_MAT from package 00028282.upk
@@ -64,7 +64,7 @@ Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Material3 Basic from package 00002620.upk
 Loading Texture2D Cube000_Tex from package 00012892.upk
-Loaded in 0.19 sec, 5514 allocs, 1.99 MBytes serialized in 346154 calls.
+Loaded in 0.22 sec, 5521 allocs, 2.02 MBytes serialized in 346251 calls.
 
 Object info:
 ============
@@ -212,7 +212,7 @@ ClassName: MaterialInstanceConstant ObjectName: FX_col1
         VectorParameterValues[2] =
         {
             ParameterName = Diffuse_Fresnel
-            ParameterValue = { R=6, G=3.2, B=0.64, A=1 }
+            ParameterValue = { R=1.3, G=0.7, B=0.1, A=1 }
         }
         VectorParameterValues[3] =
         {

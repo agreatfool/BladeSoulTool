@@ -1,5 +1,5 @@
-Found 18875 game files (36 skipped)
-Loading package: 00015863.upk Ver: 573/1 Engine: 4205 Names: 102 Exports: 25 Imports: 20 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00015863.upk Ver: 573/1 Engine: 4205 Names: 104 Exports: 25 Imports: 20 Game: 801A
 Loading SkeletalMesh3 120034_1_Autoscale from package 00015863.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
@@ -11,7 +11,7 @@ WARNING: ByteProperty "USkeletalMesh3::ItemPreviewLocType" was not found
 Loading MaterialInstanceConstant col1 from package 00015862.upk
 Loading package: 00015861.upk Ver: 573/1 Engine: 4205 Names: 59 Exports: 27 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D Weapon_120034_col1_n from package 00015861.upk
 Loading Texture2D Weapon_120034_col1_m from package 00015861.upk
@@ -34,7 +34,7 @@ Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.11 sec, 3062 allocs, 1.19 MBytes serialized in 183065 calls.
+Loaded in 0.13 sec, 3071 allocs, 1.21 MBytes serialized in 183220 calls.
 
 Object info:
 ============
@@ -63,10 +63,10 @@ ClassName: SkeletalMesh3 ObjectName: 120034_1_Autoscale
         {
             Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=554 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=556 }
             }
-            NumVerts = 378
-            IndexCount = 1662
+            NumVerts = 380
+            IndexCount = 1668
             NumTexCoords = 1
         }
     }

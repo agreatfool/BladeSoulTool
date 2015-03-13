@@ -1,12 +1,14 @@
-Found 18875 game files (36 skipped)
-Loading package: 00014443.upk Ver: 573/1 Engine: 4205 Names: 1119 Exports: 16556 Imports: 452 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00014443.upk Ver: 573/1 Engine: 4205 Names: 1139 Exports: 16935 Imports: 461 Game: 801A
 Loading Material3 Dst_volume_fall_2_opt from package 00014443.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading Material3 zzz_Gem__mesh from package 00014443.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading StaticMesh3 BGFX_Blackhole_001 from package 00014443.upk
 Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
+Loading StaticMesh3 BGFX_BuffTree_001 from package 00014443.upk
+Loading package: 00012586.upk Ver: 573/1 Engine: 4205 Names: 450 Exports: 5354 Imports: 197 Game: 801A
 Loading Texture2D Glow_Flair_001 from package 00012963.upk
 Loading Texture2D Unique_WarterFall_001_Normal from package 00012963.upk
 Loading Texture2D Smoke_Dusts_002 from package 00012963.upk
@@ -19,6 +21,7 @@ Loading Texture2D Glow_ShockWave_004 from package 00012963.upk
 Loading Texture2D Gradient_Flow_000 from package 00012963.upk
 Loading Material3 BGFX_Blackhole_001_Mat from package 00012892.upk
 Loading Material3 BGFX_Blackhole_001_Out_Mat from package 00012892.upk
+Loading Material3 fractal_spread01_app2 from package 00012586.upk
 Loading Texture2D Noise_011 from package 00012963.upk
 Loading Texture2D Unique_Stone_001 from package 00012963.upk
 Loading Texture2D Gradient_Trail_003 from package 00012963.upk
@@ -26,7 +29,8 @@ Loading Texture2D BG_SandfallNoise_001_D from package 00012963.upk
 Loading Texture2D Noise_006 from package 00012963.upk
 Loading Texture2D Noise_005 from package 00012963.upk
 Loading Texture2D Gradient_009 from package 00012963.upk
-Loaded in 0.15 sec, 3785 allocs, 2.49 MBytes serialized in 499305 calls.
+Loading Texture2D Noise_Plazma_002 from package 00012963.upk
+Loaded in 0.19 sec, 4314 allocs, 3.19 MBytes serialized in 665648 calls.
 
 Object info:
 ============
@@ -109,6 +113,42 @@ ClassName: StaticMesh3 ObjectName: BGFX_Blackhole_001
             }
             NumVerts = 4012
             IndexCount = 11103
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: BGFX_BuffTree_001
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0.0803986, Y=-15.9392, Z=172.553 }
+        BoxExtent = { X=188.634, Y=124.111, Z=214.9 }
+        SphereRadius = 300.417
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'fractal_spread01_app2', FirstIndex=0, NumFaces=2789 }
+                Sections[1] = { Material=None, FirstIndex=0, NumFaces=0 }
+            }
+            NumVerts = 3660
+            IndexCount = 8367
             NumTexCoords = 1
         }
     }

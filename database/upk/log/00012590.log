@@ -1,8 +1,8 @@
-Found 18875 game files (36 skipped)
-Loading package: 00012590.upk Ver: 573/1 Engine: 4205 Names: 306 Exports: 1203 Imports: 124 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00012590.upk Ver: 573/1 Engine: 4205 Names: 313 Exports: 1214 Imports: 126 Game: 801A
 Loading Material3 FireWork_Burst_Sparkle_Light from package 00012590.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading Material3 FireWork_Burst_Sparkle_T from package 00012590.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 FireWork_Heart_Flare_Blur_01 from package 00012590.upk
@@ -36,6 +36,8 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 GlowGray002_MatB from package 00012590.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 GlowGray003_MatB from package 00012590.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 GlowGray003_MatB_additive from package 00012590.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 GlowGray003_MatB_Depth from package 00012590.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -117,6 +119,8 @@ Loading Material3 Weapon_gem_mesh from package 00012590.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading MaterialInstanceConstant FireWork_Burst_Sparkle_Light_INST from package 00012590.upk
 Loading MaterialInstanceConstant FireWork_Burst_Sparkle_T2_INST from package 00012590.upk
+Loading MaterialInstanceConstant FireWork_Burst_Sparkle_T3_INST from package 00012590.upk
+Loading MaterialInstanceConstant FireWork_Burst_Sparkle_T4_INST from package 00012590.upk
 Loading MaterialInstanceConstant FireWork_Burst_Sparkle_T_INST from package 00012590.upk
 Loading MaterialInstanceConstant FireWork_Heart_Flare_Blur_02_INST from package 00012590.upk
 Loading MaterialInstanceConstant FireWork_Heart_Line2_INST from package 00012590.upk
@@ -182,8 +186,10 @@ Loading Texture2D Glow_Flar_010 from package 00012963.upk
 Loading Texture2D Glow_Flair_001 from package 00012963.upk
 Loading Texture2D Ring_ShockWave_002 from package 00012963.upk
 Loading Texture2D FireWork_burst_mask01 from package 00012963.upk
+Loading Texture2D Glow_ShockWave_000 from package 00012963.upk
+Loading Texture2D Glow_ShockWave_001 from package 00012963.upk
 Loading Texture2D FireWork_Burst_Heart_Line_01 from package 00012963.upk
-Loaded in 0.68 sec, 3576 allocs, 1.86 MBytes serialized in 65959 calls.
+Loaded in 0.63 sec, 3657 allocs, 1.97 MBytes serialized in 67116 calls.
 
 Object info:
 ============
@@ -537,6 +543,24 @@ ClassName: Material3 ObjectName: GlowGray003_MatB
     bIsMasked = false
     ReferencedTextures[1] = { Texture2D'Glow_004' }
     BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.2
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: GlowGray003_MatB_additive
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Glow_004' }
+    BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.2
     FlattenedTexture = None
     MobileBaseTexture = None
@@ -1413,6 +1437,60 @@ ClassName: MaterialInstanceConstant ObjectName: FireWork_Burst_Sparkle_T2_INST
         TextureParameterValues[0] = { ParameterName=Subtract_Tex1, ParameterValue=Texture2D'Gradient_Line_003' }
         TextureParameterValues[1] = { ParameterName=Subtract_Tex2, ParameterValue=Texture2D'FireWork_burst_mask01' }
         TextureParameterValues[2] = { ParameterName=Tex1, ParameterValue=Texture2D'Glow_ink_000' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'FireWork_Burst_Sparkle_T'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: FireWork_Burst_Sparkle_T3_INST
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Tex_OnOff, ParameterValue=1 }
+        ScalarParameterValues[1] = { ParameterName=Lerp, ParameterValue=0.7 }
+        ScalarParameterValues[2] = { ParameterName=Strength, ParameterValue=8 }
+    }
+    TextureParameterValues[4] =
+    {
+        TextureParameterValues[0] = { ParameterName=Subtract_Tex1, ParameterValue=Texture2D'Gradient_Line_003' }
+        TextureParameterValues[1] = { ParameterName=Subtract_Tex2, ParameterValue=Texture2D'FireWork_burst_mask01' }
+        TextureParameterValues[2] = { ParameterName=tex2, ParameterValue=Texture2D'Glow_ShockWave_000' }
+        TextureParameterValues[3] = { ParameterName=Tex1, ParameterValue=Texture2D'Glow_ink_000' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'FireWork_Burst_Sparkle_T'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: FireWork_Burst_Sparkle_T4_INST
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Tex_OnOff, ParameterValue=1 }
+        ScalarParameterValues[1] = { ParameterName=Lerp, ParameterValue=0.5 }
+        ScalarParameterValues[2] = { ParameterName=Strength, ParameterValue=8 }
+    }
+    TextureParameterValues[4] =
+    {
+        TextureParameterValues[0] = { ParameterName=Subtract_Tex1, ParameterValue=Texture2D'Gradient_Line_003' }
+        TextureParameterValues[1] = { ParameterName=Subtract_Tex2, ParameterValue=Texture2D'FireWork_burst_mask01' }
+        TextureParameterValues[2] = { ParameterName=tex2, ParameterValue=Texture2D'Glow_ShockWave_001' }
+        TextureParameterValues[3] = { ParameterName=Tex1, ParameterValue=Texture2D'Glow_ShockWave_000' }
     }
     VectorParameterValues[0] = {}
     Parent = Material3'FireWork_Burst_Sparkle_T'

@@ -1,5 +1,5 @@
-Found 18875 game files (36 skipped)
-Loading package: 00025078.upk Ver: 573/1 Engine: 4205 Names: 194 Exports: 94 Imports: 21 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00025078.upk Ver: 573/1 Engine: 4205 Names: 193 Exports: 94 Imports: 21 Game: 801A
 Loading SkeletalMesh3 70004_JinM from package 00025078.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
@@ -7,14 +7,13 @@ WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
 WARNING: FloatProperty "USkeletalMesh3::AddFootOffsetValue" was not found
 WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
-WARNING: BoolProperty "USkeletalMesh3::bRenderAllSections" was not found
 WARNING: ArrayProperty "USkeletalMesh3::NameplateMeshScaleRatio" was not found
 WARNING: StructProperty "USkeletalMesh3::NameplateHeightRatio" was not found
 WARNING: ArrayProperty "USkeletalMesh3::MeshScaleRatio" was not found
 WARNING: StructProperty "USkeletalMesh3::HeightRatio" was not found
 WARNING: StructProperty "USkeletalMesh3::HandRatio" was not found
 WARNING: ByteProperty "USkeletalMesh3::CommonPhysicsUseFlag" was not found
-Loading package: 00025076.upk Ver: 573/1 Engine: 4205 Names: 141 Exports: 6 Imports: 31 Game: 801A
+Loading package: 00025076.upk Ver: 573/1 Engine: 4205 Names: 142 Exports: 6 Imports: 31 Game: 801A
 Loading MaterialInstanceConstant Col_Top from package 00025076.upk
 Loading package: 00025075.upk Ver: 573/1 Engine: 4205 Names: 56 Exports: 28 Imports: 4 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
@@ -31,7 +30,7 @@ Loading Texture2D 70004_JinM_col1_Top_M from package 00025075.upk
 Loading Texture2D 70004_JinM_col1_Top_D from package 00025075.upk
 Loading Texture2D Mask_ck from package 00025178.upk
 Loading Material3 Moonpa_Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading Texture2D 70004_JinM_col1_Under_N from package 00025075.upk
 Loading Texture2D 70004_JinM_col1_Under_S from package 00025075.upk
 Loading Texture2D 70004_JinM_col1_Under_M from package 00025075.upk
@@ -51,7 +50,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.22 sec, 3468 allocs, 2.83 MBytes serialized in 305541 calls.
+Loaded in 0.19 sec, 3472 allocs, 2.83 MBytes serialized in 305649 calls.
 
 Object info:
 ============
@@ -89,7 +88,7 @@ ClassName: SkeletalMesh3 ObjectName: 70004_JinM
                 Sections[1] = { Material=MaterialInstanceConstant'Col_Under', FirstIndex=9432, NumFaces=1938 }
                 Sections[2] = { Material=MaterialInstanceConstant'Col_Emblem', FirstIndex=15246, NumFaces=154 }
             }
-            NumVerts = 3390
+            NumVerts = 3391
             IndexCount = 15708
             NumTexCoords = 1
         }

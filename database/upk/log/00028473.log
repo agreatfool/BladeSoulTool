@@ -1,5 +1,5 @@
-Found 18875 game files (36 skipped)
-Loading package: 00028473.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 25 Imports: 4 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00028473.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 28 Imports: 4 Game: 801A
 Loading Texture2D LoadingTip_BCReboot_01 from package 00028473.upk
 Loading Texture2D LoadingTip_BCReboot_02 from package 00028473.upk
 Loading Texture2D LoadingTip_BCReboot_03 from package 00028473.upk
@@ -24,7 +24,10 @@ Loading Texture2D LoadingTip_BCReboot_21 from package 00028473.upk
 Loading Texture2D LoadingTip_BCReboot_22 from package 00028473.upk
 Loading Texture2D LoadingTip_BCReboot_23 from package 00028473.upk
 Loading Texture2D LoadingTip_BCReboot_24 from package 00028473.upk
-Loaded in 0.12 sec, 179 allocs, 23.86 MBytes serialized in 3804 calls.
+Loading Texture2D LoadingTip_BCReboot_25 from package 00028473.upk
+Loading Texture2D LoadingTip_BCReboot_26 from package 00028473.upk
+Loading Texture2D LoadingTip_BCReboot_27 from package 00028473.upk
+Loaded in 0.15 sec, 194 allocs, 26.79 MBytes serialized in 4257 calls.
 
 Object info:
 ============
@@ -374,6 +377,51 @@ ClassName: Texture2D ObjectName: LoadingTip_BCReboot_23
 Object info:
 ============
 ClassName: Texture2D ObjectName: LoadingTip_BCReboot_24
+
+    SizeX = 2048
+    SizeY = 2048
+    Format = PF_DXT1 (5)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: LoadingTip_BCReboot_25
+
+    SizeX = 2048
+    SizeY = 2048
+    Format = PF_DXT1 (5)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: LoadingTip_BCReboot_26
+
+    SizeX = 2048
+    SizeY = 2048
+    Format = PF_DXT1 (5)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: LoadingTip_BCReboot_27
 
     SizeX = 2048
     SizeY = 2048

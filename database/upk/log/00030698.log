@@ -1,0 +1,189 @@
+Found 19856 game files (132 skipped)
+Loading package: 00030698.upk Ver: 573/1 Engine: 4205 Names: 169 Exports: 180 Imports: 16 Game: 801A
+Loading SkeletalMesh3 DarkCarzyTribeNightB from package 00030698.upk
+WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
+WARNING: FloatProperty "USkeletalMesh3::AddFootOffsetValue" was not found
+WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::PhysicalHitScale" was not found
+Loading package: 00030704.upk Ver: 573/1 Engine: 4205 Names: 93 Exports: 1 Imports: 22 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_129 from package 00030698.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::PreviewSkelMesh" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_130 from package 00030698.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_131 from package 00030698.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_132 from package 00030698.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_133 from package 00030698.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_134 from package 00030698.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_135 from package 00030698.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_136 from package 00030698.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_137 from package 00030698.upk
+Loading MaterialInstanceConstant col1 from package 00030704.upk
+Loading package: 00030705.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 5 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00030727.upk Ver: 573/1 Engine: 4205 Names: 176 Exports: 170 Imports: 49 Game: 801A
+Loading Texture2D DarkCarzyTribeNightB_col1_N from package 00030705.upk
+Loading Texture2D DarkCarzyTribeNightB_col1_M from package 00030705.upk
+Loading Texture2D DarkCarzyTribeNightB_col1_D from package 00030705.upk
+Loading Texture2D DarkCarzyTribeNightB_col1_S from package 00030705.upk
+Loading TextureCube cube_orb from package 00002640.upk
+Loading Texture2D DarkCarzyTribeNightB_col1_E from package 00030705.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading Material3 Basic_Night_fx from package 00030727.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D Plant_004_06_D from package 00012963.upk
+Loaded in 0.14 sec, 3200 allocs, 2.34 MBytes serialized in 384581 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: DarkCarzyTribeNightB
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[9] =
+    {
+        Sockets[0] = SkeletalMeshSocket'DarkCarzyTribeNightB.SkeletalMeshSocket_129'
+        Sockets[1] = SkeletalMeshSocket'DarkCarzyTribeNightB.SkeletalMeshSocket_130'
+        Sockets[2] = SkeletalMeshSocket'DarkCarzyTribeNightB.SkeletalMeshSocket_131'
+        Sockets[3] = SkeletalMeshSocket'DarkCarzyTribeNightB.SkeletalMeshSocket_132'
+        Sockets[4] = SkeletalMeshSocket'DarkCarzyTribeNightB.SkeletalMeshSocket_133'
+        Sockets[5] = SkeletalMeshSocket'DarkCarzyTribeNightB.SkeletalMeshSocket_134'
+        Sockets[6] = SkeletalMeshSocket'DarkCarzyTribeNightB.SkeletalMeshSocket_135'
+        Sockets[7] = SkeletalMeshSocket'DarkCarzyTribeNightB.SkeletalMeshSocket_136'
+        Sockets[8] = SkeletalMeshSocket'DarkCarzyTribeNightB.SkeletalMeshSocket_137'
+    }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=7574 }
+            }
+            NumVerts = 6022
+            IndexCount = 22722
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 66
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_129
+
+    SocketName = WeaponR
+    BoneName = WeaponR
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_130
+
+    SocketName = target_high
+    BoneName = Bip01Head
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_131
+
+    SocketName = socket_force
+    BoneName = Root
+    RelativeLocation = { X=44, Y=33, Z=25 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_132
+
+    SocketName = Catch_Neck
+    BoneName = Bip01Neck
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_133
+
+    SocketName = Mount_Ambar_Socket
+    BoneName = Bip01LClavicle
+    RelativeLocation = { X=-8, Y=-8.285, Z=-5.604 }
+    RelativeRotation = { Yaw=-285, Pitch=9970, Roll=22850 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_134
+
+    SocketName = Mount_Choke_Socket
+    BoneName = Root
+    RelativeLocation = { X=13, Y=-1.73889e-016, Z=0 }
+    RelativeRotation = { Yaw=32768, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_135
+
+    SocketName = Mount_Socket
+    BoneName = Root
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=32768, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_136
+
+    SocketName = Decap_Socket
+    BoneName = Bip01Neck
+    RelativeLocation = { X=2.76134, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_137
+
+    SocketName = ATTACH_EFFECT
+    BoneName = Bip01
+    RelativeLocation = { X=10, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }

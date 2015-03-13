@@ -1,8 +1,8 @@
-Found 18875 game files (36 skipped)
-Loading package: 00028330.upk Ver: 573/1 Engine: 4205 Names: 452 Exports: 491 Imports: 151 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00028330.upk Ver: 573/1 Engine: 4205 Names: 454 Exports: 497 Imports: 151 Game: 801A
 Loading Material3 T3-5_AuraBangle_e from package 00028330.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading Material3 T3-5_AuraBangle_edge from package 00028330.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading package: 00028712.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 8 Imports: 4 Game: 801A
@@ -65,6 +65,7 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_411 from package 00028330.upk
 WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
 Loading StaticMesh3 T3-5_030136_Mesh from package 00028330.upk
 Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
+Loading StaticMesh3 T3-5_Mesh_Resize from package 00028330.upk
 Loading Texture2D T3-5_030136_Mask from package 00028330.upk
 Loading Texture2D Noise_006 from package 00012963.upk
 Loading Texture2D Ref_Cool from package 00012963.upk
@@ -109,7 +110,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.21 sec, 5333 allocs, 2.48 MBytes serialized in 388596 calls.
+Loaded in 0.26 sec, 5362 allocs, 2.57 MBytes serialized in 403690 calls.
 
 Object info:
 ============
@@ -589,6 +590,41 @@ ClassName: StaticMesh3 ObjectName: T3-5_030136_Mesh
         Origin = { X=-9.5159, Y=2.4026, Z=2.1301 }
         BoxExtent = { X=15.7388, Y=3.3665, Z=7.2174 }
         SphereRadius = 16.5584
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=648 }
+            }
+            NumVerts = 936
+            IndexCount = 1944
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: T3-5_Mesh_Resize
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-2.08885, Y=3.70035, Z=-0.75605 }
+        BoxExtent = { X=7.86745, Y=3.16435, Z=4.12075 }
+        SphereRadius = 8.20421
     }
     CanCompressPositions = false
     CanStripNormalsAndTangents = false

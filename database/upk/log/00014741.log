@@ -1,4 +1,4 @@
-Found 18875 game files (36 skipped)
+Found 19856 game files (132 skipped)
 Loading package: 00014741.upk Ver: 573/1 Engine: 4205 Names: 39 Exports: 11 Imports: 2 Game: 801A
 Loading Texture2D 65032_GonM_col2_D from package 00014741.upk
 Loading Texture2D 65032_GonM_col2_M from package 00014741.upk
@@ -11,7 +11,7 @@ Loading Texture2D Cloth_65032_GonM_D from package 00014741.upk
 Loading Texture2D Cloth_65032_GonM_M from package 00014741.upk
 Loading Texture2D Cloth_65032_GonM_N from package 00014741.upk
 Loading Texture2D Cloth_65032_GonM_S from package 00014741.upk
-Loaded in 0.079 sec, 406 allocs, 1.70 MBytes serialized in 2543 calls.
+Loaded in 0.097 sec, 430 allocs, 3.08 MBytes serialized in 2662 calls.
 
 Object info:
 ============
@@ -47,13 +47,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: 65032_GonM_col2_N
 
-    SizeX = 1024
-    SizeY = 512
+    SizeX = 2048
+    SizeY = 1024
     Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 11
     bForcePVRTC4 = false
     UnpackMin[4] = { -1, -1, -1, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

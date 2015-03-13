@@ -1,0 +1,100 @@
+Found 19856 game files (132 skipped)
+Loading package: 00028794.upk Ver: 573/1 Engine: 4205 Names: 83 Exports: 1 Imports: 2 Game: 801A
+Loading AnimSet AnthroCrocodile_AnimSet from package 00028794.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::PhysicalHitBoneNames" was not found
+Loaded in 0.003 sec, 108 allocs, 0.00 MBytes serialized in 500 calls.
+
+Object info:
+============
+ClassName: AnimSet ObjectName: AnthroCrocodile_AnimSet
+
+    bAnimRotationOnly = true
+    TrackBoneNames[65] =
+    {
+        TrackBoneNames[0] = Root
+        TrackBoneNames[1] = Bip01
+        TrackBoneNames[2] = Bip01Pelvis
+        TrackBoneNames[3] = Bip01Spine
+        TrackBoneNames[4] = Bip01Spine1
+        TrackBoneNames[5] = Bip01Spine2
+        TrackBoneNames[6] = Bip01Neck
+        TrackBoneNames[7] = Bip01Neck1
+        TrackBoneNames[8] = Bip01-Neck2
+        TrackBoneNames[9] = Bip01Head
+        TrackBoneNames[10] = Bip01Mouse
+        TrackBoneNames[11] = Bip01Mouse1
+        TrackBoneNames[12] = Bip01LClavicle
+        TrackBoneNames[13] = Bip01LUpperArm
+        TrackBoneNames[14] = Bip01LForeArm
+        TrackBoneNames[15] = Bip01LHand
+        TrackBoneNames[16] = Bip01LFinger0
+        TrackBoneNames[17] = Bip01LFinger01
+        TrackBoneNames[18] = Bip01LFinger02
+        TrackBoneNames[19] = Bip01LFinger1
+        TrackBoneNames[20] = Bip01LFinger11
+        TrackBoneNames[21] = Bip01LFinger12
+        TrackBoneNames[22] = Bip01LFinger2
+        TrackBoneNames[23] = Bip01LFinger21
+        TrackBoneNames[24] = Bip01LFinger22
+        TrackBoneNames[25] = Bip01LFinger3
+        TrackBoneNames[26] = Bip01LFinger31
+        TrackBoneNames[27] = Bip01LFinger32
+        TrackBoneNames[28] = WeaponL
+        TrackBoneNames[29] = Weapon_03
+        TrackBoneNames[30] = BoneShoulderTwistL01
+        TrackBoneNames[31] = Bip01RClavicle
+        TrackBoneNames[32] = Bip01RUpperArm
+        TrackBoneNames[33] = Bip01RForeArm
+        TrackBoneNames[34] = Bip01RHand
+        TrackBoneNames[35] = Bip01RFinger0
+        TrackBoneNames[36] = Bip01RFinger01
+        TrackBoneNames[37] = Bip01RFinger02
+        TrackBoneNames[38] = Bip01RFinger1
+        TrackBoneNames[39] = Bip01RFinger11
+        TrackBoneNames[40] = Bip01RFinger12
+        TrackBoneNames[41] = Bip01RFinger2
+        TrackBoneNames[42] = Bip01RFinger21
+        TrackBoneNames[43] = Bip01RFinger22
+        TrackBoneNames[44] = Bip01RFinger3
+        TrackBoneNames[45] = Bip01RFinger31
+        TrackBoneNames[46] = Bip01RFinger32
+        TrackBoneNames[47] = WeaponR
+        TrackBoneNames[48] = Weapon_02
+        TrackBoneNames[49] = BoneShoulderTwistR01
+        TrackBoneNames[50] = Bip01LThigh
+        TrackBoneNames[51] = Bip01LCalf
+        TrackBoneNames[52] = Bip01LFoot
+        TrackBoneNames[53] = Bip01LToe0
+        TrackBoneNames[54] = Bip01LToe01
+        TrackBoneNames[55] = Bip01RThigh
+        TrackBoneNames[56] = Bip01RCalf
+        TrackBoneNames[57] = Bip01RFoot
+        TrackBoneNames[58] = Bip01RToe0
+        TrackBoneNames[59] = Bip01RToe01
+        TrackBoneNames[60] = Bip01Tail
+        TrackBoneNames[61] = Bip01Tail1
+        TrackBoneNames[62] = Bip01Tail2
+        TrackBoneNames[63] = Bip01Tail3
+        TrackBoneNames[64] = Bip01-Tail4
+    }
+    Sequences[0] = {}
+    UseTranslationBoneNames[8] =
+    {
+        UseTranslationBoneNames[0] = Bip01
+        UseTranslationBoneNames[1] = Bip01Tail
+        UseTranslationBoneNames[2] = Bip01Spine
+        UseTranslationBoneNames[3] = Bip01Neck
+        UseTranslationBoneNames[4] = Bip01Head
+        UseTranslationBoneNames[5] = Bip01RClavicle
+        UseTranslationBoneNames[6] = Bip01LClavicle
+        UseTranslationBoneNames[7] = Bip01Mouse
+    }
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00028793.AnthroCrocodile
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None

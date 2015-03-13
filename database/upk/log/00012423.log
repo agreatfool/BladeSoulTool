@@ -1,5 +1,5 @@
-Found 18875 game files (36 skipped)
-Loading package: 00012423.upk Ver: 573/1 Engine: 4205 Names: 208 Exports: 121 Imports: 19 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00012423.upk Ver: 573/1 Engine: 4205 Names: 208 Exports: 122 Imports: 21 Game: 801A
 Loading SkeletalMesh3 60039_LynM from package 00012423.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
 WARNING: FloatProperty "USkeletalMesh3::EffectScale" was not found
@@ -16,16 +16,17 @@ WARNING: ArrayProperty "USkeletalMesh3::MeshScaleRatio" was not found
 WARNING: StructProperty "USkeletalMesh3::HeightRatio" was not found
 WARNING: StructProperty "USkeletalMesh3::HandRatio" was not found
 WARNING: ByteProperty "USkeletalMesh3::CommonPhysicsUseFlag" was not found
-Loading package: 00012422.upk Ver: 573/1 Engine: 4205 Names: 67 Exports: 1 Imports: 13 Game: 801A
+Loading package: 00012422.upk Ver: 573/1 Engine: 4205 Names: 77 Exports: 1 Imports: 13 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00012422.upk
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00012421.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00012421.upk Ver: 573/1 Engine: 4205 Names: 39 Exports: 9 Imports: 2 Game: 801A
 Loading TextureCube cube_orb from package 00002640.upk
-Loading Texture2D 60039_LynM_d from package 00012421.upk
-Loading Texture2D 60039_LynM_s from package 00012421.upk
-Loading Texture2D 60039_LynM_m from package 00012421.upk
-Loading Texture2D 60039_LynM_n from package 00012421.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Cloth_60039_LynM_col1_D from package 00012421.upk
+Loading Texture2D Cloth_60039_LynM_col1_S from package 00012421.upk
+Loading Texture2D Cloth_60039_LynM_col1_M from package 00012421.upk
+Loading Texture2D Cloth_60039_LynM_col1_N from package 00012421.upk
 Loading Material3 body_bk from package 00002620.upk
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
@@ -34,8 +35,7 @@ Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Texture2D check_n from package 00002620.upk
-Loading Texture2D check from package 00002620.upk
-Loaded in 0.088 sec, 1620 allocs, 1.78 MBytes serialized in 308880 calls.
+Loaded in 0.098 sec, 1641 allocs, 1.65 MBytes serialized in 285944 calls.
 
 Object info:
 ============
@@ -71,20 +71,20 @@ ClassName: SkeletalMesh3 ObjectName: 60039_LynM
         {
             Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=4326 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=3622 }
             }
-            NumVerts = 3205
-            IndexCount = 12978
+            NumVerts = 2673
+            IndexCount = 10866
             NumTexCoords = 1
         }
         Lods[1] =
         {
             Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1389 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1241 }
             }
-            NumVerts = 1179
-            IndexCount = 4167
+            NumVerts = 1102
+            IndexCount = 3723
             NumTexCoords = 1
         }
     }
@@ -92,4 +92,4 @@ ClassName: SkeletalMesh3 ObjectName: 60039_LynM
     MeshOrigin = { X=-0, Y=-0, Z=-0 }
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
-    BoneCount = 84
+    BoneCount = 82

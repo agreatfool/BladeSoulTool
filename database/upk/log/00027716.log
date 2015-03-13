@@ -1,9 +1,9 @@
-Found 18875 game files (36 skipped)
+Found 19856 game files (132 skipped)
 Loading package: 00027716.upk Ver: 573/1 Engine: 4205 Names: 41 Exports: 13 Imports: 2 Game: 801A
-Loading Texture2D Weapon_110092_col1_D from package 00027716.upk
-Loading Texture2D Weapon_110092_col1_M from package 00027716.upk
+Loading Texture2D 110092_Autosclae_col1_D from package 00027716.upk
+Loading Texture2D 110092_Autosclae_col1_M from package 00027716.upk
+Loading Texture2D 110092_Autosclae_col1_S from package 00027716.upk
 Loading Texture2D Weapon_110092_col1_N from package 00027716.upk
-Loading Texture2D Weapon_110092_col1_S from package 00027716.upk
 Loading Texture2D Weapon_110092_col2_D from package 00027716.upk
 Loading Texture2D Weapon_110092_col2_M from package 00027716.upk
 Loading Texture2D Weapon_110092_col2_S from package 00027716.upk
@@ -13,11 +13,11 @@ Loading Texture2D Weapon_110092_col3_S from package 00027716.upk
 Loading Texture2D Weapon_110092_col4_D from package 00027716.upk
 Loading Texture2D Weapon_110092_col4_M from package 00027716.upk
 Loading Texture2D Weapon_110092_col4_S from package 00027716.upk
-Loaded in 0.066 sec, 448 allocs, 0.76 MBytes serialized in 2774 calls.
+Loaded in 0.11 sec, 463 allocs, 0.94 MBytes serialized in 2839 calls.
 
 Object info:
 ============
-ClassName: Texture2D ObjectName: Weapon_110092_col1_D
+ClassName: Texture2D ObjectName: 110092_Autosclae_col1_D
 
     SizeX = 512
     SizeY = 256
@@ -32,15 +32,30 @@ ClassName: Texture2D ObjectName: Weapon_110092_col1_D
 
 Object info:
 ============
-ClassName: Texture2D ObjectName: Weapon_110092_col1_M
+ClassName: Texture2D ObjectName: 110092_Autosclae_col1_M
 
-    SizeX = 256
-    SizeY = 128
-    Format = PF_DXT1 (5)
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 8
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 110092_Autosclae_col1_S
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -58,21 +73,6 @@ ClassName: Texture2D ObjectName: Weapon_110092_col1_N
     MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { -1, -1, -1, 0 }
-    UnpackMax[4] = { 1, 1, 1, 1 }
-
-Object info:
-============
-ClassName: Texture2D ObjectName: Weapon_110092_col1_S
-
-    SizeX = 512
-    SizeY = 256
-    Format = PF_DXT5 (7)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
-    TextureFileCacheName = None
-    MipTailBaseIdx = 9
-    bForcePVRTC4 = false
-    UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
 
 Object info:

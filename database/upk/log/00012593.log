@@ -1,8 +1,8 @@
-Found 18875 game files (36 skipped)
-Loading package: 00012593.upk Ver: 573/1 Engine: 4205 Names: 337 Exports: 3291 Imports: 136 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00012593.upk Ver: 573/1 Engine: 4205 Names: 350 Exports: 3498 Imports: 140 Game: 801A
 Loading Material3 AuraMaster_Spread_Ice from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading Material3 Beam_001_6 from package 00012593.upk
 Loading Material3 beam_gra001 from package 00012593.upk
 Loading Material3 beam_gra001_trans from package 00012593.upk
@@ -93,10 +93,13 @@ Loading Material3 MunPa_Return_Beam_Sepia03 from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Nail_CR from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Night_Capture_Beam01 from package 00012593.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 PilebunkerEmpire_Capture_Beam from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Shadow_Trail_Mat2 from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 shield_beam01 from package 00012593.upk
 Loading Material3 soyangsang_trail01 from package 00012593.upk
 Loading Material3 soyangsang_trail02 from package 00012593.upk
 Loading Material3 Sparkle32002_Ghost_trail from package 00012593.upk
@@ -111,6 +114,9 @@ Loading Material3 Sparkle32002_Wind_trail from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Sparkle32002_Wind_trail2 from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Sparkle32002_Wind_trail_Chain from package 00012593.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00023412.upk Ver: 573/1 Engine: 4205 Names: 911 Exports: 4969 Imports: 228 Game: 801A
 Loading Material3 Takgi_Breath_Beam01 from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Takgi_Breath_Beam01_loop from package 00012593.upk
@@ -207,11 +213,13 @@ Loading Texture2D Smoke_Cloud_005 from package 00012963.upk
 Loading Texture2D Smoke_Ice_000 from package 00012963.upk
 Loading Texture2D Gradient_Trail_000 from package 00012963.upk
 Loading Texture2D Gradient_Flow_000 from package 00012963.upk
-Loading Texture2D Gradient_Color_PurpleToBlue_000 from package 00012963.upk
+Loading Texture2D Gradient_Color_YtoG000_Tex from package 00012963.upk
 Loading Texture2D Glow_Twiri_001 from package 00012963.upk
 Loading Texture2D PilebunkerEmpire_Capture_lvy from package 00012963.upk
+Loading Texture2D Gradient_Color_PurpleToBlue_000 from package 00012963.upk
 Loading Texture2D Smoke_Inc_002 from package 00012963.upk
 Loading Texture2D Sparkle_Ink_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_010 from package 00012963.upk
 Loading Texture2D Gradient_Line_R_clamp from package 00012963.upk
 Loading Texture2D Gradient_Beam_003 from package 00012963.upk
 Loading Texture2D Aura_Blood_003 from package 00012963.upk
@@ -224,6 +232,7 @@ Loading Texture2D Nail_decal_01 from package 00012963.upk
 Loading Texture2D Gradient_Light_Line_000 from package 00012963.upk
 Loading Texture2D Fire_Blending_Mask_Tex from package 00012963.upk
 Loading Texture2D Aura_Tail_002 from package 00012963.upk
+Loading Texture2D Warlock_RangeMoveBlock_Tex01 from package 00023412.upk
 Loading Texture2D Fire_Cloud_001_Tex from package 00012963.upk
 Loading Texture2D Normal_Noise_002 from package 00012963.upk
 Loading Texture2D Noise_017 from package 00012963.upk
@@ -236,7 +245,7 @@ Loading Texture2D Gradient_Color_Rainbow_003 from package 00012963.upk
 Loading Texture2D Smoke_Dusts_001 from package 00012963.upk
 Loading Texture2D Noise_010 from package 00012963.upk
 Loading Texture2D Noise_022 from package 00012963.upk
-Loaded in 0.92 sec, 4371 allocs, 2.46 MBytes serialized in 111137 calls.
+Loaded in 0.79 sec, 5379 allocs, 2.89 MBytes serialized in 209542 calls.
 
 Object info:
 ============
@@ -1376,6 +1385,38 @@ ClassName: Material3 ObjectName: Nail_CR
 
 Object info:
 ============
+ClassName: Material3 ObjectName: Night_Capture_Beam01
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[12] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Color_YtoG000_Tex'
+        ReferencedTextures[1] = Texture2D'Noise_005'
+        ReferencedTextures[2] = Texture2D'Gradient_001_Left'
+        ReferencedTextures[3] = Texture2D'Noise_Wave_000'
+        ReferencedTextures[4] = Texture2D'Takgi_Beam_001'
+        ReferencedTextures[5] = Texture2D'Glow_Twiri_000'
+        ReferencedTextures[6] = Texture2D'Gradient_Beam_002'
+        ReferencedTextures[7] = Texture2D'Gradient_Beam_001'
+        ReferencedTextures[8] = Texture2D'Noise_Plazma_002'
+        ReferencedTextures[9] = Texture2D'Env_Fx_LightningCloud_Lightning'
+        ReferencedTextures[10] = Texture2D'Glow_Twiri_001'
+        ReferencedTextures[11] = Texture2D'PilebunkerEmpire_Capture_lvy'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
 ClassName: Material3 ObjectName: PilebunkerEmpire_Capture_Beam
 
     TwoSided = false
@@ -1420,6 +1461,24 @@ ClassName: Material3 ObjectName: Shadow_Trail_Mat2
         ReferencedTextures[2] = Texture2D'Sparkle_Ink_001'
     }
     BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: shield_beam01
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'Noise_005', Texture2D'Gradient_Line_010' }
+    BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
     MobileBaseTexture = None
@@ -1625,6 +1684,31 @@ ClassName: Material3 ObjectName: Sparkle32002_Wind_trail2
         ReferencedTextures[3] = Texture2D'Noise_Fractal_008_Blur'
         ReferencedTextures[4] = Texture2D'Fire_Blending_Mask_Tex'
         ReferencedTextures[5] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Sparkle32002_Wind_trail_Chain
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'Sparkle_Ink_Small'
+        ReferencedTextures[1] = Texture2D'Warlock_RangeMoveBlock_Tex01'
+        ReferencedTextures[2] = Texture2D'Aura_Blood_003'
+        ReferencedTextures[3] = Texture2D'Aura_Tail_002'
+        ReferencedTextures[4] = Texture2D'DefaultTexture'
     }
     BlendMode = BLEND_Translucent (2)
     OpacityMaskClipValue = 0.333

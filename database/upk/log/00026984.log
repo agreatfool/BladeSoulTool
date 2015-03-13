@@ -1,5 +1,5 @@
-Found 18875 game files (36 skipped)
-Loading package: 00026984.upk Ver: 573/1 Engine: 4205 Names: 132 Exports: 5 Imports: 9 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00026984.upk Ver: 573/1 Engine: 4205 Names: 63 Exports: 5 Imports: 9 Game: 801A
 Loading SkeletalMesh3 040126_JinM from package 00026984.upk
 Loading package: 00026985.upk Ver: 573/1 Engine: 4205 Names: 144 Exports: 2 Imports: 29 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00026985.upk
@@ -12,7 +12,7 @@ Loading package: 00025178.upk Ver: 573/1 Engine: 4205 Names: 69 Exports: 39 Impo
 Loading Texture2D JinM_029_col1_D from package 00015224.upk
 Loading Texture2D JinM_029_col1_N from package 00015224.upk
 Loading Material3 Beard_Ac from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
 Loading Texture2D 040126_JinM_col1_N from package 00026983.upk
 Loading TextureCube lenscube from package 00002640.upk
@@ -36,7 +36,7 @@ Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Texture2D Mask_Default from package 00025178.upk
-Loaded in 0.14 sec, 3319 allocs, 1.65 MBytes serialized in 211509 calls.
+Loaded in 0.15 sec, 3257 allocs, 1.64 MBytes serialized in 210019 calls.
 
 Object info:
 ============
@@ -65,8 +65,8 @@ ClassName: SkeletalMesh3 ObjectName: 040126_JinM
         {
             Sections[2] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=997 }
-                Sections[1] = { Material=MaterialInstanceConstant'Col_Hair_Acc', FirstIndex=2991, NumFaces=642 }
+                Sections[0] = { Material=MaterialInstanceConstant'Col_Hair_Acc', FirstIndex=0, NumFaces=642 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=1926, NumFaces=997 }
             }
             NumVerts = 1173
             IndexCount = 4917
@@ -77,4 +77,4 @@ ClassName: SkeletalMesh3 ObjectName: 040126_JinM
     MeshOrigin = { X=-0, Y=-0, Z=-0 }
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
-    BoneCount = 78
+    BoneCount = 9

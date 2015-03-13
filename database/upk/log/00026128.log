@@ -1,8 +1,8 @@
-Found 18875 game files (36 skipped)
-Loading package: 00026128.upk Ver: 573/1 Engine: 4205 Names: 208 Exports: 287 Imports: 60 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00026128.upk Ver: 573/1 Engine: 4205 Names: 207 Exports: 287 Imports: 59 Game: 801A
 Loading Material3 Basic_Base_IF from package 00026128.upk
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading Material3 SorcererDWolf_Basic01 from package 00026128.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
@@ -10,6 +10,7 @@ Loading MaterialInstanceConstant col1 from package 00026128.upk
 Loading package: 00026127.upk Ver: 573/1 Engine: 4205 Names: 39 Exports: 9 Imports: 2 Game: 801A
 Loading MaterialInstanceConstant col1_1 from package 00026128.upk
 Loading MaterialInstanceConstant col1_1_test from package 00026128.upk
+Loading package: 00023412.upk Ver: 573/1 Engine: 4205 Names: 911 Exports: 4969 Imports: 228 Game: 801A
 Loading MaterialInstanceConstant col1_test from package 00026128.upk
 Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
@@ -31,6 +32,8 @@ Loading Texture2D SorcererDWolfBack_col1_M from package 00026127.upk
 Loading Texture2D SorcererDWolfBack_col1_D from package 00026127.upk
 Loading Texture2D SorcererDWolfBack_col1_S from package 00026127.upk
 Loading Material3 Basic from package 00002620.upk
+Loading Material3 Basic_Base_IF_Mat from package 00023412.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -43,7 +46,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.17 sec, 3175 allocs, 1.13 MBytes serialized in 172524 calls.
+Loaded in 0.19 sec, 4105 allocs, 1.52 MBytes serialized in 266559 calls.
 
 Object info:
 ============
@@ -363,7 +366,7 @@ ClassName: MaterialInstanceConstant ObjectName: col1_1_test
             ParameterValue = { R=1, G=1, B=1, A=1 }
         }
     }
-    Parent = None
+    Parent = Material3'Basic_Base_IF_Mat'
     FlattenedTexture = None
     MobileBaseTexture = None
     MobileNormalTexture = None

@@ -1,3 +1,3 @@
 @echo off
 
-grunt compress --stack --verbose & pause > nul
+grunt build_shot --stack --verbose & pause > nul

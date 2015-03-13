@@ -1,10 +1,74 @@
-Found 18875 game files (36 skipped)
-Loading package: 00016480.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00016480.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 9 Imports: 4 Game: 801A
+Loading Texture2D 65023_GonM_Col2_D from package 00016480.upk
+Loading Texture2D 65023_GonM_Col2_M from package 00016480.upk
+Loading Texture2D 65023_GonM_Col2_N from package 00016480.upk
+Loading Texture2D 65023_GonM_Col2_S from package 00016480.upk
 Loading Texture2D 65023_GonM_D from package 00016480.upk
 Loading Texture2D 65023_GonM_M from package 00016480.upk
 Loading Texture2D 65023_GonM_N from package 00016480.upk
 Loading Texture2D 65023_GonM_S from package 00016480.upk
-Loaded in 0.026 sec, 181 allocs, 0.81 MBytes serialized in 1035 calls.
+Loaded in 0.068 sec, 321 allocs, 1.55 MBytes serialized in 1991 calls.
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 65023_GonM_Col2_D
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 65023_GonM_Col2_M
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 65023_GonM_Col2_N
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 65023_GonM_Col2_S
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
 
 Object info:
 ============

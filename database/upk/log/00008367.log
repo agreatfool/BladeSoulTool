@@ -1,4 +1,4 @@
-Found 18875 game files (36 skipped)
+Found 19856 game files (132 skipped)
 Loading package: 00008367.upk Ver: 573/1 Engine: 4205 Names: 44 Exports: 16 Imports: 2 Game: 801A
 Loading Texture2D 60005_KunN_col2_D from package 00008367.upk
 Loading Texture2D 60005_KunN_col2_M from package 00008367.upk
@@ -16,7 +16,7 @@ Loading Texture2D Cloth_60005_KunN_col1_D from package 00008367.upk
 Loading Texture2D Cloth_60005_KunN_col1_M from package 00008367.upk
 Loading Texture2D Cloth_60005_KunN_col1_N from package 00008367.upk
 Loading Texture2D Cloth_60005_KunN_col1_S from package 00008367.upk
-Loaded in 0.11 sec, 550 allocs, 2.46 MBytes serialized in 3579 calls.
+Loaded in 0.13 sec, 562 allocs, 2.63 MBytes serialized in 3646 calls.
 
 Object info:
 ============
@@ -24,7 +24,7 @@ ClassName: Texture2D ObjectName: 60005_KunN_col2_D
 
     SizeX = 1024
     SizeY = 1024
-    Format = PF_DXT1 (5)
+    Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
@@ -69,7 +69,7 @@ ClassName: Texture2D ObjectName: 60005_KunN_col2_S
 
     SizeX = 512
     SizeY = 512
-    Format = PF_DXT1 (5)
+    Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None

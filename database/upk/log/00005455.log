@@ -1,12 +1,61 @@
-Found 18875 game files (36 skipped)
-Loading package: 00005455.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 6 Imports: 2 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00005455.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 10 Imports: 2 Game: 801A
+Loading Texture2D 80001_JinM_col3_D from package 00005455.upk
+Loading Texture2D 80001_JinM_col3_M from package 00005455.upk
+Loading Texture2D 80001_JinM_col3_S from package 00005455.upk
 Loading Texture2D D from package 00005455.upk
 Loading Texture2D D_2 from package 00005455.upk
 Loading Texture2D M from package 00005455.upk
 Loading Texture2D N from package 00005455.upk
+Loading Texture2D N_3 from package 00005455.upk
 Loading Texture2D S from package 00005455.upk
 Loading Texture2D S_2 from package 00005455.upk
-Loaded in 0.036 sec, 239 allocs, 0.91 MBytes serialized in 1435 calls.
+Loaded in 0.08 sec, 382 allocs, 1.70 MBytes serialized in 2379 calls.
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 80001_JinM_col3_D
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 80001_JinM_col3_M
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 80001_JinM_col3_S
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
 
 Object info:
 ============
@@ -56,6 +105,21 @@ ClassName: Texture2D ObjectName: M
 Object info:
 ============
 ClassName: Texture2D ObjectName: N
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: N_3
 
     SizeX = 1024
     SizeY = 512

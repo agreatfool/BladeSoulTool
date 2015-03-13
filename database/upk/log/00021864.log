@@ -1,12 +1,11 @@
-Found 18875 game files (36 skipped)
-Loading package: 00021864.upk Ver: 573/1 Engine: 4205 Names: 233 Exports: 279 Imports: 22 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00021864.upk Ver: 573/1 Engine: 4205 Names: 232 Exports: 279 Imports: 22 Game: 801A
 Loading SkeletalMesh3 JinSeoYeonM2 from package 00021864.upk
 WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PlayParticleSet" was not found
 WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
-WARNING: FloatProperty "USkeletalMesh3::PhysicalHitScale" was not found
 Loading package: 00021863.upk Ver: 573/1 Engine: 4205 Names: 191 Exports: 268 Imports: 56 Game: 801A
 Loading SkeletalMeshSocket SkeletalMeshSocket_191 from package 00021864.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_192 from package 00021864.upk
@@ -37,7 +36,7 @@ Loading Texture2D Monster_Human_JinSeoYeonM2_col1_M from package 00021862.upk
 Loading Texture2D Monster_Human_JinSeoYeonM2_col1_D from package 00021862.upk
 Loading Texture2D JinSeoYeonM_col1_FX from package 00020611.upk
 Loading Material3 body_JinSeoYeonM2 from package 00021863.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading Texture2D kunF_face_n from package 00020611.upk
 Loading Texture2D kunF_face_M2 from package 00021862.upk
 Loading Texture2D kunF_face_D from package 00020611.upk
@@ -63,7 +62,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.27 sec, 3584 allocs, 9.92 MBytes serialized in 686531 calls.
+Loaded in 0.33 sec, 3593 allocs, 11.79 MBytes serialized in 681177 calls.
 
 Object info:
 ============
@@ -112,7 +111,7 @@ ClassName: SkeletalMesh3 ObjectName: JinSeoYeonM2
                 Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=33147, NumFaces=6950 }
                 Sections[2] = { Material=MaterialInstanceConstant'col1_1', FirstIndex=53997, NumFaces=1718 }
             }
-            NumVerts = 13905
+            NumVerts = 13708
             IndexCount = 59151
             NumTexCoords = 1
         }

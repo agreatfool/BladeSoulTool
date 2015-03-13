@@ -1,7 +1,7 @@
-Found 18875 game files (36 skipped)
-Loading package: 00012586.upk Ver: 573/1 Engine: 4205 Names: 431 Exports: 4432 Imports: 193 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00012586.upk Ver: 573/1 Engine: 4205 Names: 450 Exports: 5354 Imports: 197 Game: 801A
 Loading Material3 Blob_volume from package 00012586.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading Material3 Check_Shine_001_Mat from package 00012586.upk
 Loading Material3 Chinese_VIP_Dash_KungfuFighter_VIP_Dragon_MAT from package 00012586.upk
 WARNING: BoolProperty "UMaterial3::bUsedWithMaterialEffect" was not found
@@ -36,6 +36,11 @@ Loading Material3 DustUV003_MatM from package 00012586.upk
 Loading Material3 Fire_Anger_2 from package 00012586.upk
 Loading Material3 Fire_Spr from package 00012586.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 fractal_spread01_app from package 00012586.upk
+Loading Material3 fractal_spread01_app1 from package 00012586.upk
+Loading Material3 fractal_spread01_app1_depthalpha from package 00012586.upk
+Loading Material3 fractal_spread01_app1_distortion from package 00012586.upk
+Loading Material3 fractal_spread01_app2 from package 00012586.upk
 Loading Material3 Glass_Break from package 00012586.upk
 Loading Material3 GlowCore000_MatB from package 00012586.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -73,6 +78,14 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 LegendBuff_Fresnel from package 00012586.upk
 WARNING: BoolProperty "UMaterial3::bUsedWithMaterialEffect" was not found
 WARNING: BoolProperty "UMaterial3::bSupportsSinglePassSHLight" was not found
+Loading Material3 LegendDark_Edge from package 00012586.upk
+WARNING: BoolProperty "UMaterial3::bUsedWithMaterialEffect" was not found
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 LegendDark_Fresnel from package 00012586.upk
+WARNING: BoolProperty "UMaterial3::bUsedWithMaterialEffect" was not found
+WARNING: BoolProperty "UMaterial3::bSupportsSinglePassSHLight" was not found
+Loading Material3 LegendDark_Pin_Mat from package 00012586.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 LensFlareSprite000_MatB from package 00012586.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M01_Bl_volume from package 00012586.upk
@@ -127,6 +140,8 @@ Loading Material3 Marble010_Dust002_MatB from package 00012586.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Marble014_MatM from package 00012586.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Marble014_MatM_additive from package 00012586.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Marble021_MatB from package 00012586.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Marble022_MatB from package 00012586.upk
@@ -155,6 +170,10 @@ Loading Material3 ring_transition from package 00012586.upk
 Loading Material3 Smoke015_MatB from package 00012586.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Smoke018_MatB from package 00012586.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 SoulNPC_Aura_trans from package 00012586.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 SoulNPC_TwistSmoke from package 00012586.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 SwordTrail005_MatB from package 00012586.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -234,6 +253,7 @@ Loading Texture2D Normal_Noise_002 from package 00012963.upk
 Loading Texture2D Smoke_ShockWave_002 from package 00012963.upk
 Loading Texture2D Smoke_Fractal_001 from package 00012963.upk
 Loading Texture2D Smoke_ShockWave_004 from package 00012963.upk
+Loading Texture2D Gradient_Beam_Clamp from package 00012963.upk
 Loading Texture2D Gradient_Color_BtoS000_Tex from package 00012963.upk
 Loading Texture2D Noise_010 from package 00012963.upk
 Loading Texture2D Env_Fx_LightningCloud_Lightning from package 00012963.upk
@@ -310,12 +330,15 @@ Loading Texture2D Normal_Noise_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_001 from package 00012963.upk
 Loading Texture2D Glow_ShockWave_000 from package 00012963.upk
 Loading Texture2D Glow_Twiri_002 from package 00012963.upk
+Loading Texture2D Smoke_Cloud_005 from package 00012963.upk
+Loading Texture2D Ring_Shockwave_003 from package 00012963.upk
+Loading Texture2D Smoke_011 from package 00012963.upk
+Loading Texture2D Gradient_Color_RedToOrange_000 from package 00012963.upk
+Loading Texture2D Takgi_Beam_001 from package 00012963.upk
 Loading Texture2D Smoke_ShockWave_000 from package 00012963.upk
 Loading Texture2D Smoke_ShockWave_001 from package 00012963.upk
 Loading Texture2D Noise_008 from package 00012963.upk
 Loading Texture2D Ring_002 from package 00012963.upk
-Loading Texture2D Smoke_Cloud_005 from package 00012963.upk
-Loading Texture2D Ring_Shockwave_003 from package 00012963.upk
 Loading Texture2D Glow_004 from package 00012963.upk
 Loading Texture2D Smoke_Dusts_001 from package 00012963.upk
 Loading Texture2D Decal_Mask_000 from package 00012963.upk
@@ -332,7 +355,7 @@ Loading Texture2D CubemapFace2 from package cubemap_001.upk
 Loading Texture2D CubemapFace3 from package cubemap_001.upk
 Loading Texture2D CubemapFace4 from package cubemap_001.upk
 Loading Texture2D CubemapFace5 from package cubemap_001.upk
-Loaded in 1.4 sec, 6251 allocs, 5.80 MBytes serialized in 152824 calls.
+Loaded in 1.4 sec, 6413 allocs, 6.01 MBytes serialized in 171217 calls.
 
 Object info:
 ============
@@ -1058,6 +1081,116 @@ ClassName: Material3 ObjectName: Fire_Spr
 
 Object info:
 ============
+ClassName: Material3 ObjectName: fractal_spread01_app
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Beam_Clamp'
+        ReferencedTextures[1] = Texture2D'Noise_005'
+        ReferencedTextures[2] = Texture2D'Noise_Plazma_002'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: fractal_spread01_app1
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Beam_Clamp'
+        ReferencedTextures[1] = Texture2D'Noise_005'
+        ReferencedTextures[2] = Texture2D'Noise_Plazma_002'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: fractal_spread01_app1_depthalpha
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Beam_Clamp'
+        ReferencedTextures[1] = Texture2D'Noise_005'
+        ReferencedTextures[2] = Texture2D'Noise_Plazma_002'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: fractal_spread01_app1_distortion
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Beam_Clamp'
+        ReferencedTextures[1] = Texture2D'Noise_005'
+        ReferencedTextures[2] = Texture2D'Noise_Plazma_002'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: fractal_spread01_app2
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'Noise_005', Texture2D'Noise_Plazma_002' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
 ClassName: Material3 ObjectName: Glass_Break
 
     TwoSided = true
@@ -1537,6 +1670,100 @@ ClassName: Material3 ObjectName: LegendBuff_Fresnel
         ReferencedTextures[13] = Texture2D'Smoke_Cloud_003'
         ReferencedTextures[14] = Texture2D'T_wave'
         ReferencedTextures[15] = TextureCube'Stone_001_01_Cube'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: LegendDark_Edge
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'Dragon_body_outside_NRM'
+        ReferencedTextures[1] = Texture2D'Normal_Noise_000'
+        ReferencedTextures[2] = Texture2D'Noise_006'
+        ReferencedTextures[3] = Texture2D'Ref_Cool'
+        ReferencedTextures[4] = Texture2D'Gradient_004'
+        ReferencedTextures[5] = Texture2D'Gradient_Beam_001'
+        ReferencedTextures[6] = Texture2D'HongMunDaragon_Body'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: LegendDark_Fresnel
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[16] =
+    {
+        ReferencedTextures[0] = Texture2D'HongMunDaragon_Body'
+        ReferencedTextures[1] = Texture2D'Noise_Distortion_000'
+        ReferencedTextures[2] = Texture2D'Gradient_001_Left'
+        ReferencedTextures[3] = Texture2D'Dragon_body_outside_NRM'
+        ReferencedTextures[4] = Texture2D'Normal_Noise_000'
+        ReferencedTextures[5] = Texture2D'Ref_Cool_NRM'
+        ReferencedTextures[6] = Texture2D'Unique_Stone_001'
+        ReferencedTextures[7] = Texture2D'HongMunDaragon_Tile'
+        ReferencedTextures[8] = Texture2D'Noise_Wave_000'
+        ReferencedTextures[9] = Texture2D'REFSKY-01'
+        ReferencedTextures[10] = Texture2D'Fire_Blending_Pattern_Tex_Big2'
+        ReferencedTextures[11] = Texture2D'Check_Shine_001_Tex'
+        ReferencedTextures[12] = Texture2D'Unique_WaterFall_000_Des'
+        ReferencedTextures[13] = Texture2D'Smoke_Cloud_003'
+        ReferencedTextures[14] = Texture2D'T_wave'
+        ReferencedTextures[15] = TextureCube'Stone_001_01_Cube'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: LegendDark_Pin_Mat
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[11] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_Wave_000'
+        ReferencedTextures[1] = Texture2D'REFSKY-01'
+        ReferencedTextures[2] = Texture2D'Unique_Stone_001'
+        ReferencedTextures[3] = Texture2D'Fire_Blending_Pattern_Tex_Big2'
+        ReferencedTextures[4] = Texture2D'Check_Shine_001_Tex'
+        ReferencedTextures[5] = Texture2D'Dragon_body_outside_NRM'
+        ReferencedTextures[6] = Texture2D'HongMunDaragon_Tile'
+        ReferencedTextures[7] = Texture2D'HongMunDragon_Pin'
+        ReferencedTextures[8] = Texture2D'Fire_Cloud_001_Tex'
+        ReferencedTextures[9] = Texture2D'Gradient_Color_Rainbow_004'
+        ReferencedTextures[10] = TextureCube'Stone_001_01_Cube'
     }
     BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
@@ -2204,6 +2431,30 @@ ClassName: Material3 ObjectName: Marble014_MatM
 
 Object info:
 ============
+ClassName: Material3 ObjectName: Marble014_MatM_additive
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_005'
+        ReferencedTextures[1] = Texture2D'Smoke_Dust_002'
+        ReferencedTextures[2] = Texture2D'Glow_ink_000'
+        ReferencedTextures[3] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
 ClassName: Material3 ObjectName: Marble021_MatB
 
     TwoSided = false
@@ -2617,6 +2868,60 @@ ClassName: Material3 ObjectName: Smoke018_MatB
         ReferencedTextures[4] = Texture2D'DefaultTexture'
     }
     BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: SoulNPC_Aura_trans
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'Smoke_Cloud_005'
+        ReferencedTextures[1] = Texture2D'Noise_005'
+        ReferencedTextures[2] = Texture2D'Ring_Shockwave_003'
+        ReferencedTextures[3] = Texture2D'Gradient_001'
+        ReferencedTextures[4] = Texture2D'Smoke_005'
+        ReferencedTextures[5] = Texture2D'Smoke_011'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: SoulNPC_TwistSmoke
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[8] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Color_RedToOrange_000'
+        ReferencedTextures[1] = Texture2D'Noise_005'
+        ReferencedTextures[2] = Texture2D'Gradient_001_Left'
+        ReferencedTextures[3] = Texture2D'Noise_Wave_000'
+        ReferencedTextures[4] = Texture2D'Glow_ink_000'
+        ReferencedTextures[5] = Texture2D'Smoke_Dust_002'
+        ReferencedTextures[6] = Texture2D'Takgi_Beam_001'
+        ReferencedTextures[7] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
     MobileBaseTexture = None

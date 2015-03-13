@@ -1,5 +1,5 @@
-Found 18875 game files (36 skipped)
-Loading package: 00014477.upk Ver: 573/1 Engine: 4205 Names: 42 Exports: 12 Imports: 2 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00014477.upk Ver: 573/1 Engine: 4205 Names: 52 Exports: 22 Imports: 2 Game: 801A
 Loading Texture2D Monster_Bug_SpiderQueen_col2_D from package 00014477.upk
 Loading Texture2D Monster_Bug_SpiderQueen_col2_E from package 00014477.upk
 WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
@@ -8,6 +8,16 @@ Loading Texture2D Monster_Bug_SpiderQueen_col3_D from package 00014477.upk
 Loading Texture2D Monster_Bug_SpiderQueen_col3_E from package 00014477.upk
 WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D Monster_Bug_SpiderQueen_col3_S from package 00014477.upk
+Loading Texture2D SpiderQueen_col4_D from package 00014477.upk
+Loading Texture2D SpiderQueen_col4_E from package 00014477.upk
+Loading Texture2D SpiderQueen_col4_M from package 00014477.upk
+Loading Texture2D SpiderQueen_col4_N from package 00014477.upk
+Loading Texture2D SpiderQueen_col4_S from package 00014477.upk
+Loading Texture2D SpiderQueen_col5_D from package 00014477.upk
+Loading Texture2D SpiderQueen_col5_E from package 00014477.upk
+Loading Texture2D SpiderQueen_col5_M from package 00014477.upk
+Loading Texture2D SpiderQueen_col5_N from package 00014477.upk
+Loading Texture2D SpiderQueen_col5_S from package 00014477.upk
 Loading Texture2D SpiderQueen_D from package 00014477.upk
 Loading Texture2D SpiderQueen_E from package 00014477.upk
 WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
@@ -15,7 +25,7 @@ Loading Texture2D SpiderQueen_FX from package 00014477.upk
 Loading Texture2D SpiderQueen_M from package 00014477.upk
 Loading Texture2D SpiderQueen_N from package 00014477.upk
 Loading Texture2D SpiderQueen_S from package 00014477.upk
-Loaded in 0.08 sec, 417 allocs, 1.49 MBytes serialized in 2624 calls.
+Loaded in 0.18 sec, 768 allocs, 5.18 MBytes serialized in 4935 calls.
 
 Object info:
 ============
@@ -103,6 +113,156 @@ ClassName: Texture2D ObjectName: Monster_Bug_SpiderQueen_col3_S
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
     MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SpiderQueen_col4_D
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SpiderQueen_col4_E
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SpiderQueen_col4_M
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SpiderQueen_col4_N
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SpiderQueen_col4_S
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SpiderQueen_col5_D
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SpiderQueen_col5_E
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SpiderQueen_col5_M
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SpiderQueen_col5_N
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SpiderQueen_col5_S
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

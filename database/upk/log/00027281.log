@@ -1,4 +1,4 @@
-Found 18875 game files (36 skipped)
+Found 19856 game files (132 skipped)
 Loading package: 00027281.upk Ver: 573/1 Engine: 4205 Names: 126 Exports: 15 Imports: 20 Game: 801A
 Loading AnimSet item_0051_Anim from package 00027281.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
@@ -20,7 +20,7 @@ Loading Texture2D item_0051_col1_S from package 00027282.upk
 Loading TextureCube lenscube from package 00002640.upk
 Loading Texture2D item_0051_col1_E from package 00027282.upk
 Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -42,4 +42,6 @@ UAnimSet::ConvertAnims <- PostLoad:item_0051_Anim <- UObject::EndLoad <- LoadWho
     at ChildProcess.exithandler (child_process.js:637:15)
     at ChildProcess.EventEmitter.emit (events.js:98:17)
     at maybeClose (child_process.js:743:16)
-    at Process.ChildProcess._handle.onexit (child_process.js:810:5)
+    at Socket.<anonymous> (child_process.js:956:11)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at Pipe.close (net.js:465:12)

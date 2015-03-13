@@ -1,15 +1,15 @@
-Found 18875 game files (36 skipped)
-Loading package: 00028336.upk Ver: 573/1 Engine: 4205 Names: 482 Exports: 895 Imports: 161 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00028336.upk Ver: 573/1 Engine: 4205 Names: 452 Exports: 884 Imports: 157 Game: 801A
 Loading Material3 T3-5_120046_2_Edge from package 00028336.upk
 WARNING: BoolProperty "UMaterial3::bUsedWithMaterialEffect" was not found
 Loading package: 00018336.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 10 Imports: 2 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading Material3 T3-5_Dagger_e from package 00028336.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 T3-5_Dagger_ee from package 00028336.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading MaterialInstanceConstant T3-5_Dagger_Edge_INST from package 00028336.upk
-Loading package: 00028326.upk Ver: 573/1 Engine: 4205 Names: 468 Exports: 889 Imports: 178 Game: 801A
+Loading package: 00028326.upk Ver: 573/1 Engine: 4205 Names: 470 Exports: 914 Imports: 179 Game: 801A
 Loading SkeletalMesh3 120101_1_Autoscale from package 00028336.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
@@ -27,6 +27,7 @@ WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not 
 Loading StaticMesh3 T3-5_120046_1 from package 00028336.upk
 Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
 Loading StaticMesh3 T3-5_120046_2 from package 00028336.upk
+Loading StaticMesh3 Weapon_120046_2_re from package 00028336.upk
 Loading Texture2D T3-5_120101_Mask from package 00028336.upk
 Loading Texture2D 120046_Autoscale_col1_N1 from package 00018336.upk
 Loading Texture2D Normal_Noise_000 from package 00012963.upk
@@ -72,7 +73,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.22 sec, 5245 allocs, 2.25 MBytes serialized in 348246 calls.
+Loaded in 0.27 sec, 5245 allocs, 2.31 MBytes serialized in 350299 calls.
 
 Object info:
 ============
@@ -266,10 +267,10 @@ ClassName: SkeletalMesh3 ObjectName: 120101_2_Autoscale
         {
             Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=229 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=159 }
             }
-            NumVerts = 183
-            IndexCount = 687
+            NumVerts = 129
+            IndexCount = 477
             NumTexCoords = 1
         }
     }
@@ -277,7 +278,7 @@ ClassName: SkeletalMesh3 ObjectName: 120101_2_Autoscale
     MeshOrigin = { X=-0, Y=-0, Z=-0 }
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
-    BoneCount = 4
+    BoneCount = 1
 
 Object info:
 ============
@@ -377,6 +378,42 @@ ClassName: StaticMesh3 ObjectName: T3-5_120046_2
             NumVerts = 366
             IndexCount = 687
             NumTexCoords = 2
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Weapon_120046_2_re
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.9733, Y=0.3465, Z=11.5651 }
+        BoxExtent = { X=6.2444, Y=3.7899, Z=11.476 }
+        SphereRadius = 11.947
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=159 }
+                Sections[1] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=0 }
+            }
+            NumVerts = 258
+            IndexCount = 477
+            NumTexCoords = 1
         }
     }
     LodCount = 1

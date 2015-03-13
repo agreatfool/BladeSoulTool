@@ -1,9 +1,12 @@
-Found 18875 game files (36 skipped)
-Loading package: 00028293.upk Ver: 573/1 Engine: 4205 Names: 518 Exports: 587 Imports: 174 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00028293.upk Ver: 573/1 Engine: 4205 Names: 537 Exports: 652 Imports: 185 Game: 801A
 Loading Material3 Basic_Base_IF_Masked_Mat from package 00028293.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading Material3 Dagger_EdgeDeco_MAT from package 00028293.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading MaterialInstanceConstant Dagger_EdgeDeco_INST from package 00028293.upk
 Loading MaterialInstanceConstant FX_col1 from package 00028293.upk
 Loading package: 00026436.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
@@ -24,6 +27,7 @@ WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not 
 Loading StaticMesh3 120086_Body__Mesh from package 00028293.upk
 Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
 Loading StaticMesh3 120086_Deco__Mesh from package 00028293.upk
+Loading StaticMesh3 120086_Deco__Mesh_New from package 00028293.upk
 Loading StaticMesh3 120086_Edge__Mesh from package 00028293.upk
 Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
@@ -32,6 +36,13 @@ Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D check from package 00002620.upk
 Loading Texture2D Noise_007 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Noise_006 from package 00012963.upk
+Loading Texture2D Ref_Cool from package 00012963.upk
+Loading Texture2D Unique_Stone_001 from package 00012963.upk
+Loading Texture2D Gradient_Flow_000 from package 00012963.upk
+Loading Texture2D Noise_Plazma_002 from package 00012963.upk
+Loading Texture2D Gradient_Line_R from package 00012963.upk
+Loading Texture2D Noise_013 from package 00012963.upk
 Loading Texture2D 120086_Autoscale_col1_N from package 00026436.upk
 Loading Texture2D 120086_Autoscale_col1_M from package 00026436.upk
 Loading Texture2D 120086_Autoscale_col1_S from package 00026436.upk
@@ -48,7 +59,7 @@ Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Material3 Basic from package 00002620.upk
 Loading Texture2D Cube000_Tex from package 00012892.upk
-Loaded in 0.13 sec, 4346 allocs, 1.80 MBytes serialized in 359355 calls.
+Loaded in 0.19 sec, 4589 allocs, 2.09 MBytes serialized in 381917 calls.
 
 Object info:
 ============
@@ -69,6 +80,56 @@ ClassName: Material3 ObjectName: Basic_Base_IF_Masked_Mat
     }
     BlendMode = BLEND_Masked (1)
     OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Dagger_EdgeDeco_MAT
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_006'
+        ReferencedTextures[1] = Texture2D'Ref_Cool'
+        ReferencedTextures[2] = Texture2D'Unique_Stone_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Flow_000'
+        ReferencedTextures[4] = Texture2D'Noise_Plazma_002'
+        ReferencedTextures[5] = Texture2D'Gradient_Line_R'
+        ReferencedTextures[6] = Texture2D'Noise_013'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Dagger_EdgeDeco_INST
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[0] = {}
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Color
+            ParameterValue = { R=2.33333, G=1.4, B=0.333333, A=0.6 }
+        }
+    }
+    Parent = Material3'Dagger_EdgeDeco_MAT'
     FlattenedTexture = None
     MobileBaseTexture = None
     MobileNormalTexture = None
@@ -117,7 +178,7 @@ ClassName: MaterialInstanceConstant ObjectName: FX_col1
         VectorParameterValues[2] =
         {
             ParameterName = Diffuse_Fresnel
-            ParameterValue = { R=3, G=1.6, B=0.32, A=1 }
+            ParameterValue = { R=1.3, G=0.7, B=0.1, A=1 }
         }
         VectorParameterValues[3] =
         {
@@ -289,9 +350,9 @@ ClassName: StaticMesh3 ObjectName: 120086_Body__Mesh
     UseFullPrecisionUVs = false
     Bounds =
     {
-        Origin = { X=-1.05119, Y=0.01055, Z=16.8028 }
-        BoxExtent = { X=1.10223, Y=0.258161, Z=11.088 }
-        SphereRadius = 11.1427
+        Origin = { X=-1.3336, Y=0.01055, Z=16.8027 }
+        BoxExtent = { X=1.3944, Y=0.36745, Z=11.088 }
+        SphereRadius = 11.1754
     }
     CanCompressPositions = false
     CanStripNormalsAndTangents = false
@@ -306,9 +367,9 @@ ClassName: StaticMesh3 ObjectName: 120086_Body__Mesh
             {
                 Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=18 }
             }
-            NumVerts = 72
+            NumVerts = 44
             IndexCount = 54
-            NumTexCoords = 3
+            NumTexCoords = 2
         }
     }
     LodCount = 1
@@ -324,9 +385,9 @@ ClassName: StaticMesh3 ObjectName: 120086_Deco__Mesh
     UseFullPrecisionUVs = false
     Bounds =
     {
-        Origin = { X=-2.1624, Y=0.279896, Z=9.41885 }
-        BoxExtent = { X=7.01214, Y=2.45272, Z=12.8686 }
-        SphereRadius = 14.4805
+        Origin = { X=-2.1624, Y=0.2527, Z=9.41885 }
+        BoxExtent = { X=7.0121, Y=2.4828, Z=12.8685 }
+        SphereRadius = 14.4803
     }
     CanCompressPositions = false
     CanStripNormalsAndTangents = false
@@ -343,7 +404,42 @@ ClassName: StaticMesh3 ObjectName: 120086_Deco__Mesh
             }
             NumVerts = 1432
             IndexCount = 2451
-            NumTexCoords = 3
+            NumTexCoords = 2
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: 120086_Deco__Mesh_New
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-2.1984, Y=0.2549, Z=9.4054 }
+        BoxExtent = { X=7.0718, Y=2.5009, Z=12.8821 }
+        SphereRadius = 14.5203
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=817 }
+            }
+            NumVerts = 1432
+            IndexCount = 2451
+            NumTexCoords = 2
         }
     }
     LodCount = 1
@@ -359,9 +455,9 @@ ClassName: StaticMesh3 ObjectName: 120086_Edge__Mesh
     UseFullPrecisionUVs = false
     Bounds =
     {
-        Origin = { X=-0.657156, Y=0.01055, Z=16.8049 }
-        BoxExtent = { X=1.49626, Y=0.258161, Z=11.0859 }
-        SphereRadius = 11.1865
+        Origin = { X=-0.8878, Y=0.01055, Z=16.8048 }
+        BoxExtent = { X=1.8402, Y=0.36745, Z=11.0859 }
+        SphereRadius = 11.2376
     }
     CanCompressPositions = false
     CanStripNormalsAndTangents = false
@@ -376,9 +472,9 @@ ClassName: StaticMesh3 ObjectName: 120086_Edge__Mesh
             {
                 Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=18 }
             }
-            NumVerts = 76
+            NumVerts = 44
             IndexCount = 54
-            NumTexCoords = 3
+            NumTexCoords = 2
         }
     }
     LodCount = 1

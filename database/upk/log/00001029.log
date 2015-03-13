@@ -1,5 +1,5 @@
-Found 18875 game files (36 skipped)
-Loading package: 00001029.upk Ver: 573/1 Engine: 4205 Names: 336 Exports: 291 Imports: 27 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00001029.upk Ver: 573/1 Engine: 4205 Names: 342 Exports: 297 Imports: 27 Game: 801A
 Loading Material3 Ice_ball_Absorb_Mat from package 00001029.upk
 Loading StaticMesh3 Aura_Simple001_Mes from package 00001029.upk
 Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
@@ -103,6 +103,8 @@ Loading StaticMesh3 halfgeosphere002 from package 00001029.upk
 Loading StaticMesh3 halfsphere001 from package 00001029.upk
 Loading StaticMesh3 halfsphere002 from package 00001029.upk
 Loading StaticMesh3 halfsphere002flip from package 00001029.upk
+Loading StaticMesh3 hole_Sphere01 from package 00001029.upk
+Loading StaticMesh3 HuekChang_Deco_tree from package 00001029.upk
 Loading StaticMesh3 Ice_Absorb_Cylinder_Mes2 from package 00001029.upk
 Loading StaticMesh3 Ice_Type_2 from package 00001029.upk
 WARNING: Unknown class "RB_BodySetup" for object "RB_BodySetup_26"
@@ -203,7 +205,10 @@ Loading StaticMesh3 Tree_vane from package 00001029.upk
 Loading StaticMesh3 Tree_vane2 from package 00001029.upk
 Loading StaticMesh3 Twiri_Rotation000_Mes from package 00001029.upk
 Loading StaticMesh3 Twiri_Wave000_Mes from package 00001029.upk
+Loading StaticMesh3 Twisted from package 00001029.upk
+Loading StaticMesh3 Twisted2 from package 00001029.upk
 Loading StaticMesh3 Twisted_summon from package 00001029.upk
+Loading StaticMesh3 Twisted_summon2 from package 00001029.upk
 Loading StaticMesh3 Bomb000_Mes from package 00001029.upk
 Loading StaticMesh3 Character_Dummy from package 00001029.upk
 Loading StaticMesh3 DDong000_Mes from package 00001029.upk
@@ -240,7 +245,7 @@ Loading StaticMesh3 Wind000_Mes from package 00001029.upk
 Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Texture2D Cube000_Tex from package 00012892.upk
-Loaded in 0.16 sec, 5586 allocs, 7.88 MBytes serialized in 1793602 calls.
+Loaded in 0.17 sec, 5687 allocs, 7.98 MBytes serialized in 1816124 calls.
 
 Object info:
 ============
@@ -3797,6 +3802,77 @@ ClassName: StaticMesh3 ObjectName: halfsphere002flip
 
 Object info:
 ============
+ClassName: StaticMesh3 ObjectName: hole_Sphere01
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=0.4685 }
+        BoxExtent = { X=42.8292, Y=42.8292, Z=0.4685 }
+        SphereRadius = 42.8318
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=384 }
+            }
+            NumVerts = 462
+            IndexCount = 1152
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: HuekChang_Deco_tree
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-12.09, Y=-38.6944, Z=260.277 }
+        BoxExtent = { X=190.986, Y=155.212, Z=293.642 }
+        SphereRadius = 339.054
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=133 }
+                Sections[1] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=399, NumFaces=190 }
+            }
+            NumVerts = 468
+            IndexCount = 969
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
 ClassName: StaticMesh3 ObjectName: Ice_Absorb_Cylinder_Mes2
 
     BodySetup = None
@@ -7219,6 +7295,76 @@ ClassName: StaticMesh3 ObjectName: Twiri_Wave000_Mes
 
 Object info:
 ============
+ClassName: StaticMesh3 ObjectName: Twisted
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=4.6652, Y=0, Z=101.803 }
+        BoxExtent = { X=72.4207, Y=60, Z=107.194 }
+        SphereRadius = 122.549
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=84 }
+            }
+            NumVerts = 176
+            IndexCount = 252
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Twisted2
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-39.9863, Y=0.17165, Z=102.249 }
+        BoxExtent = { X=96.0234, Y=61.2822, Z=103.863 }
+        SphereRadius = 139.921
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=84 }
+            }
+            NumVerts = 176
+            IndexCount = 252
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
 ClassName: StaticMesh3 ObjectName: Twisted_summon
 
     BodySetup = None
@@ -7247,6 +7393,41 @@ ClassName: StaticMesh3 ObjectName: Twisted_summon
             }
             NumVerts = 864
             IndexCount = 1248
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Twisted_summon2
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=2.16945, Y=-1.2848, Z=100 }
+        BoxExtent = { X=34.6694, Y=36.8208, Z=100 }
+        SphereRadius = 105.847
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=80 }
+            }
+            NumVerts = 128
+            IndexCount = 240
             NumTexCoords = 1
         }
     }

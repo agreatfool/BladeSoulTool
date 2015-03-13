@@ -1,4 +1,4 @@
-Found 18875 game files (36 skipped)
+Found 19856 game files (132 skipped)
 Loading package: 00021643.upk Ver: 573/1 Engine: 4205 Names: 215 Exports: 130 Imports: 22 Game: 801A
 Loading SkeletalMesh3 65048_GonF from package 00021643.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
@@ -28,7 +28,7 @@ Loading Texture2D 65048_GonF_col1_S from package 00021641.upk
 Loading TextureCube MatelR5 from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Material3 Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -41,7 +41,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.12 sec, 3004 allocs, 2.15 MBytes serialized in 359270 calls.
+Loaded in 0.13 sec, 3011 allocs, 2.17 MBytes serialized in 360303 calls.
 
 Object info:
 ============
@@ -77,10 +77,10 @@ ClassName: SkeletalMesh3 ObjectName: 65048_GonF
         {
             Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=5045 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=5074 }
             }
-            NumVerts = 3647
-            IndexCount = 15135
+            NumVerts = 3667
+            IndexCount = 15222
             NumTexCoords = 1
         }
         Lods[1] =

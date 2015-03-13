@@ -1,5 +1,5 @@
-Found 18875 game files (36 skipped)
-Loading package: 00027918.upk Ver: 573/1 Engine: 4205 Names: 654 Exports: 687 Imports: 7 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00027918.upk Ver: 573/1 Engine: 4205 Names: 676 Exports: 709 Imports: 7 Game: 801A
 Loading Texture2D Duel_1vs1 from package 00027918.upk
 Loading Texture2D Duel_3vs3 from package 00027918.upk
 Loading Texture2D Duel_Unrated from package 00027918.upk
@@ -14,6 +14,7 @@ Loading Texture2D InterD_Img_BaekChung_8 from package 00027918.upk
 Loading Texture2D InterD_Img_BlackDragon_Cave from package 00027918.upk
 Loading Texture2D InterD_Img_BlackDragon_Dungeon from package 00027918.upk
 Loading Texture2D InterD_Img_BlackDragon_Grave from package 00027918.upk
+Loading Texture2D InterD_Img_BossChallenge_Night_windplain_score from package 00027918.upk
 Loading Texture2D InterD_Img_ChungGakjiBu from package 00027918.upk
 Loading Texture2D InterD_Img_Classic_Haemoojin from package 00027918.upk
 Loading Texture2D InterD_Img_Classic_HuekChangvillage from package 00027918.upk
@@ -198,6 +199,12 @@ Loading Texture2D Portrait_Img_ME_SA_UnbalanceZombieBScaleUp1_0001 from package 
 Loading Texture2D Portrait_Img_ME_SA_Valak_0001 from package 00027918.upk
 Loading Texture2D Portrait_Img_ME_SA_YuRanM_0001 from package 00027918.upk
 Loading Texture2D Portrait_Img_ME_WA_DemonShadowBoss_0001 from package 00027918.upk
+Loading Texture2D Portrait_Img_ME_WA_NightWindPlain_Boss_0001 from package 00027918.upk
+Loading Texture2D Portrait_Img_ME_WA_NightWindPlain_Boss_Mid_0005 from package 00027918.upk
+Loading Texture2D Portrait_Img_ME_WA_NightWindPlain_Boss_Mid_0006 from package 00027918.upk
+Loading Texture2D Portrait_Img_ME_WA_NightWindPlain_Boss_Mid_0007 from package 00027918.upk
+Loading Texture2D Portrait_Img_ME_WA_NightWindPlain_Boss_Mid_0008 from package 00027918.upk
+Loading Texture2D Portrait_Img_ME_WA_NightWindPlain_Boss_Mid_0009 from package 00027918.upk
 Loading Texture2D Portrait_Img_ME_WA_UnbalanceZombieBScaleUp1_0002 from package 00027918.upk
 Loading Texture2D Portrait_Img_ME_WB_DarkCrazyTribeCLeader_0006 from package 00027918.upk
 Loading Texture2D Portrait_Img_ME_WB_DemonShadowCBig_0005 from package 00027918.upk
@@ -244,6 +251,9 @@ Loading Texture2D Portrait_Img_PilebunkerEmpire_000012_X from package 00027918.u
 Loading Texture2D Portrait_Img_PotAxPartyC_Gold_01 from package 00027918.upk
 Loading Texture2D Portrait_Img_PotAxPartyLeader_000003 from package 00027918.upk
 Loading Texture2D Portrait_Img_PungEmpire_0002 from package 00027918.upk
+Loading Texture2D Portrait_Img_SaintTurtleUnique_01 from package 00027918.upk
+Loading Texture2D Portrait_Img_SaintTurtleUnique_02 from package 00027918.upk
+Loading Texture2D Portrait_Img_SaintTurtleUnique_04 from package 00027918.upk
 Loading Texture2D Portrait_Img_SaintWildboar from package 00027918.upk
 Loading Texture2D Portrait_Img_SeaMonsterBoss_0001 from package 00027918.upk
 Loading Texture2D Portrait_Img_SeobGwang_000001 from package 00027918.upk
@@ -268,6 +278,7 @@ Loading Texture2D Portrait_Img_SnowmanC_000001 from package 00027918.upk
 Loading Texture2D Portrait_Img_SnowmanC_000004 from package 00027918.upk
 Loading Texture2D Portrait_Img_SnowWoman_000003 from package 00027918.upk
 Loading Texture2D Portrait_Img_SoYangSang_000001 from package 00027918.upk
+Loading Texture2D Portrait_Img_SpiderQueenUnique from package 00027918.upk
 Loading Texture2D Portrait_Img_TeacherBladeMaster from package 00027918.upk
 Loading Texture2D Portrait_Img_TeacherDestroyer_0001 from package 00027918.upk
 Loading Texture2D Portrait_Img_TeacherForceMaster from package 00027918.upk
@@ -289,7 +300,7 @@ Loading Texture2D Portrait_Img_YuRanM2_000001 from package 00027918.upk
 Loading Texture2D Portrait_Img_YuRanM2_000002 from package 00027918.upk
 Loading Texture2D Portrait_Img_YuRanM2_000003 from package 00027918.upk
 Loading Texture2D PortraitTooltip_Alert from package 00027918.upk
-Loaded in 0.24 sec, 2225 allocs, 6.99 MBytes serialized in 39851 calls.
+Loaded in 0.25 sec, 2302 allocs, 7.31 MBytes serialized in 41281 calls.
 
 Object info:
 ============
@@ -489,6 +500,21 @@ ClassName: Texture2D ObjectName: InterD_Img_BlackDragon_Dungeon
 Object info:
 ============
 ClassName: Texture2D ObjectName: InterD_Img_BlackDragon_Grave
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: InterD_Img_BossChallenge_Night_windplain_score
 
     SizeX = 256
     SizeY = 256
@@ -3263,6 +3289,96 @@ ClassName: Texture2D ObjectName: Portrait_Img_ME_WA_DemonShadowBoss_0001
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Portrait_Img_ME_WA_NightWindPlain_Boss_0001
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Portrait_Img_ME_WA_NightWindPlain_Boss_Mid_0005
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Portrait_Img_ME_WA_NightWindPlain_Boss_Mid_0006
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Portrait_Img_ME_WA_NightWindPlain_Boss_Mid_0007
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Portrait_Img_ME_WA_NightWindPlain_Boss_Mid_0008
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Portrait_Img_ME_WA_NightWindPlain_Boss_Mid_0009
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Portrait_Img_ME_WA_UnbalanceZombieBScaleUp1_0002
 
     SizeX = 256
@@ -3953,6 +4069,51 @@ ClassName: Texture2D ObjectName: Portrait_Img_PungEmpire_0002
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Portrait_Img_SaintTurtleUnique_01
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Portrait_Img_SaintTurtleUnique_02
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Portrait_Img_SaintTurtleUnique_04
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Portrait_Img_SaintWildboar
 
     SizeX = 256
@@ -4299,6 +4460,21 @@ ClassName: Texture2D ObjectName: Portrait_Img_SnowWoman_000003
 Object info:
 ============
 ClassName: Texture2D ObjectName: Portrait_Img_SoYangSang_000001
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Portrait_Img_SpiderQueenUnique
 
     SizeX = 256
     SizeY = 256

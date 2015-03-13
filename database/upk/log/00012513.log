@@ -1,8 +1,8 @@
-Found 18875 game files (36 skipped)
-Loading package: 00012513.upk Ver: 573/1 Engine: 4205 Names: 298 Exports: 1148 Imports: 108 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00012513.upk Ver: 573/1 Engine: 4205 Names: 321 Exports: 1369 Imports: 119 Game: 801A
 Loading Material3 Assassin_Defualt_FX_Test from package 00012513.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading Material3 Bee from package 00012513.upk
 Loading Material3 Cat_Coil from package 00012513.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -25,8 +25,15 @@ Loading package: 00015374.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 5 Impor
 Loading Material3 Seed_Center from package 00012513.upk
 Loading Material3 Summoner_Missile_MatM from package 00012513.upk
 Loading package: 00023621.upk Ver: 573/1 Engine: 4205 Names: 39 Exports: 6 Imports: 8 Game: 801A
+Loading Material3 Sumoned_Wing from package 00012513.upk
+WARNING: StructProperty "UMaterial3::WorldPositionOffset" was not found
+Loading Material3 Sumoned_Wing2 from package 00012513.upk
+Loading Material3 Sumoned_Wing3 from package 00012513.upk
+Loading Material3 Sumoned_Wing4 from package 00012513.upk
 Loading Material3 Sword_s from package 00012513.upk
 Loading package: 00015362.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 2 Game: 801A
+Loading Material3 Test_T from package 00012513.upk
+WARNING: BoolProperty "UMaterial3::bUsedWithMaterialEffect" was not found
 Loading Material3 Thorn_Grow_Target_ from package 00012513.upk
 Loading Material3 Thornbus_ from package 00012513.upk
 Loading Material3 Thornbus_Needle from package 00012513.upk
@@ -100,7 +107,18 @@ Loading Texture2D 800003_Autoscale_col1_Glow from package 00015374.upk
 Loading Texture2D 850001_autoscale_col1_n from package 00023621.upk
 Loading Texture2D 850001_autoscale_col1_d from package 00023621.upk
 Loading Texture2D 850001_autoscale_col1_s from package 00023621.upk
+Loading Texture2D Gradient_Color_BlueToPurple_000 from package 00012963.upk
+Loading Texture2D Glow_Trail_001 from package 00012963.upk
+Loading Texture2D Aura_Blood_003 from package 00012963.upk
+Loading Texture2D Gradient_Line_R from package 00012963.upk
+Loading Texture2D Gradient_Needle2 from package 00012963.upk
+Loading Texture2D Gradient_Beam_006_Yclamp from package 00012963.upk
+Loading Texture2D Sparkle_Ink_000 from package 00012963.upk
+Loading Texture2D Ring_Skew_000 from package 00012963.upk
 Loading Texture2D Cat_Sword_Glow from package 00015362.upk
+Loading Texture2D Nm from package 00012963.upk
+Loading Texture2D Dm from package 00012963.upk
+Loading Texture2D SM from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D Gradient_Color_YtoG001_Tex from package 00012963.upk
 Loading Texture2D Tornbus_normal from package 00012963.upk
@@ -113,10 +131,7 @@ WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Smoke_Pattern_001_128 from package 00012963.upk
 Loading Texture2D Dragon_body_outside from package 00012963.upk
 Loading Texture2D Leaf from package 00012963.upk
-Loading Texture2D Nm from package 00012963.upk
 Loading Texture2D Mm from package 00012963.upk
-Loading Texture2D Dm from package 00012963.upk
-Loading Texture2D SM from package 00012963.upk
 Loading TextureCube Cube_D from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Material3 Basic from package 00002620.upk
@@ -131,7 +146,7 @@ Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Cube000_Tex from package 00012892.upk
-Loaded in 0.78 sec, 5981 allocs, 3.51 MBytes serialized in 305272 calls.
+Loaded in 0.78 sec, 6246 allocs, 3.63 MBytes serialized in 311305 calls.
 
 Object info:
 ============
@@ -489,6 +504,104 @@ ClassName: Material3 ObjectName: Summoner_Missile_MatM
 
 Object info:
 ============
+ClassName: Material3 ObjectName: Sumoned_Wing
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Color_BlueToPurple_000'
+        ReferencedTextures[1] = Texture2D'Noise_005'
+        ReferencedTextures[2] = Texture2D'Glow_Trail_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Line_001_YClamp'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Sumoned_Wing2
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_005'
+        ReferencedTextures[1] = Texture2D'Aura_Blood_003'
+        ReferencedTextures[2] = Texture2D'Gradient_Line_R'
+        ReferencedTextures[3] = Texture2D'Gradient_Needle2'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Sumoned_Wing3
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Color_BlueToPurple_000'
+        ReferencedTextures[1] = Texture2D'Noise_005'
+        ReferencedTextures[2] = Texture2D'Gradient_Beam_006_Yclamp'
+        ReferencedTextures[3] = Texture2D'Sparkle_Ink_000'
+        ReferencedTextures[4] = Texture2D'Ring_Skew_000'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Sumoned_Wing4
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Color_BlueToPurple_000'
+        ReferencedTextures[1] = Texture2D'Noise_005'
+        ReferencedTextures[2] = Texture2D'Gradient_Line_R'
+        ReferencedTextures[3] = Texture2D'Aura_Blood_003'
+        ReferencedTextures[4] = Texture2D'Gradient_Needle2'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
 ClassName: Material3 ObjectName: Sword_s
 
     TwoSided = false
@@ -496,6 +609,24 @@ ClassName: Material3 ObjectName: Sword_s
     bIsMasked = false
     ReferencedTextures[1] = { Texture2D'Cat_Sword_Glow' }
     BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Test_T
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] = { Texture2D'Nm', Texture2D'Dm', Texture2D'SM' }
+    BlendMode = BLEND_Masked (1)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
     MobileBaseTexture = None

@@ -1,0 +1,247 @@
+Found 19856 game files (132 skipped)
+Loading package: 00031033.upk Ver: 573/1 Engine: 4205 Names: 366 Exports: 605 Imports: 144 Game: 801A
+Loading MaterialInstanceConstant Axe_Body_Trans_INST from package 00031033.upk
+Loading package: 00031038.upk Ver: 573/1 Engine: 4205 Names: 471 Exports: 639 Imports: 171 Game: 801A
+Loading MaterialInstanceConstant Axe_e_Mesh_INST from package 00031033.upk
+Loading package: 00031031.upk Ver: 573/1 Engine: 4205 Names: 31 Exports: 5 Imports: 2 Game: 801A
+Loading package: 00028336.upk Ver: 573/1 Engine: 4205 Names: 452 Exports: 884 Imports: 157 Game: 801A
+Loading MaterialInstanceConstant T2-1_Axe_Trans_INST from package 00031033.upk
+Loading package: 00030825.upk Ver: 573/1 Engine: 4205 Names: 427 Exports: 739 Imports: 167 Game: 801A
+Loading SkeletalMesh3 110131_Autoscale from package 00031033.upk
+WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
+WARNING: ByteProperty "USkeletalMesh3::ItemPreviewLocType" was not found
+Loading package: 00031032.upk Ver: 573/1 Engine: 4205 Names: 92 Exports: 1 Imports: 20 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_554 from package 00031033.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading StaticMesh3 T2_1_Axe110044_mesh from package 00031033.upk
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
+Loading Texture2D T2_1_Axe110044_mask from package 00031033.upk
+Loading Material3 Dagger_Body_MAT_Trans_02 from package 00031038.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading Texture2D 110131_Autoscale_N from package 00031031.upk
+Loading Texture2D 110131_Autoscale_col1_D from package 00031031.upk
+Loading Material3 T3-5_Dagger_e from package 00028336.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00018336.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 10 Imports: 2 Game: 801A
+Loading Material3 T3-5_Sword_e from package 00030825.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading MaterialInstanceConstant col1 from package 00031032.upk
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Texture2D Noise_006 from package 00012963.upk
+Loading Texture2D Noise_Plazma_002 from package 00012963.upk
+Loading Texture2D Gradient_Line_R from package 00012963.upk
+Loading Texture2D Ref_Cool from package 00012963.upk
+Loading Texture2D Unique_Stone_001 from package 00012963.upk
+Loading Texture2D Gradient_Flow_000 from package 00012963.upk
+Loading Texture2D Noise_013 from package 00012963.upk
+Loading Texture2D 120133_Autoscale_col1_Mask from package 00031038.upk
+Loading Texture2D 120046_Autoscale_col2_D from package 00018336.upk
+Loading Texture2D 120046_Autoscale_col1_N1 from package 00018336.upk
+Loading Texture2D 110131_Autoscale_M from package 00031031.upk
+Loading Texture2D 110131_Autoscale_col1_S from package 00031031.upk
+Loading TextureCube lenscube from package 00002640.upk
+Loading Texture2D 110131_Autoscale_col1_E from package 00031031.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Material3 Ghost_Basic from package 00002620.upk
+Loading Texture2D Cube000_Tex from package 00012892.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.23 sec, 5898 allocs, 2.42 MBytes serialized in 368576 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Axe_Body_Trans_INST
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[2] =
+    {
+        TextureParameterValues[0] = { ParameterName=D, ParameterValue=Texture2D'T2_1_Axe110044_mask' }
+        TextureParameterValues[1] = { ParameterName=Mask, ParameterValue=Texture2D'T2_1_Axe110044_mask' }
+    }
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Color
+            ParameterValue = { R=0.7, G=0.16666, B=1.16667, A=1 }
+        }
+    }
+    Parent = Material3'Dagger_Body_MAT_Trans_02'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Axe_e_Mesh_INST
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[2] =
+    {
+        TextureParameterValues[0] = { ParameterName=N_Mask, ParameterValue=Texture2D'110131_Autoscale_N' }
+        TextureParameterValues[1] = { ParameterName=D_Mask, ParameterValue=Texture2D'110131_Autoscale_col1_D' }
+    }
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = None
+            ParameterValue = { R=0.722673, G=0.632043, B=0.329729, A=1 }
+        }
+    }
+    Parent = Material3'T3-5_Dagger_e'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: T2-1_Axe_Trans_INST
+
+    ScalarParameterValues[1] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Change, ParameterValue=1 }
+    }
+    TextureParameterValues[2] =
+    {
+        TextureParameterValues[0] = { ParameterName=D_Alpha, ParameterValue=Texture2D'110131_Autoscale_col1_D' }
+        TextureParameterValues[1] = { ParameterName=Mask, ParameterValue=Texture2D'T2_1_Axe110044_mask' }
+    }
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = None
+            ParameterValue = { R=0.722673, G=0.632043, B=0.329729, A=1 }
+        }
+    }
+    Parent = Material3'T3-5_Sword_e'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 110131_Autoscale
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[1] = { SkeletalMeshSocket'110131_Autoscale.SkeletalMeshSocket_554' }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1007 }
+            }
+            NumVerts = 745
+            IndexCount = 3021
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 1
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_554
+
+    SocketName = FX_Add
+    BoneName = WeaponRoot
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: T2_1_Axe110044_mesh
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-1.0645, Y=-0.45135, Z=-0.48275 }
+        BoxExtent = { X=26.1376, Y=3.40885, Z=39.1236 }
+        SphereRadius = 41.7682
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=1001 }
+            }
+            NumVerts = 1474
+            IndexCount = 3003
+            NumTexCoords = 2
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T2_1_Axe110044_mask
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }

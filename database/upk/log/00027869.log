@@ -1,0 +1,810 @@
+Found 19856 game files (132 skipped)
+Loading package: 00027869.upk Ver: 573/1 Engine: 4205 Names: 391 Exports: 2250 Imports: 131 Game: 801A
+Loading Material3 M_Epic5_DemonCBig_Takgi_energy_2_DepthBias from package 00027869.upk
+Loading package: 00011426.upk Ver: 573/1 Engine: 4205 Names: 2914 Exports: 101700 Imports: 354 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading Material3 M_Flare_03_ab from package 00027869.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 M_nightWind_gage_stone30 from package 00027869.upk
+Loading Material3 M_nightWind_gageInnerGlow from package 00027869.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 M_nightWind_gageOutline from package 00027869.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 M_nightWind_Number30 from package 00027869.upk
+Loading Material3 M_nightWind_Number30_ins from package 00027869.upk
+Loading Material3 M_nightWind_stone_particle from package 00027869.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 M_nightWind_T10_sample from package 00027869.upk
+Loading Material3 M_trainnig_progress from package 00027869.upk
+Loading MaterialInstanceConstant M_nightWind_Number10_INST from package 00027869.upk
+Loading MaterialInstanceConstant M_nightWind_Number15_INST from package 00027869.upk
+Loading MaterialInstanceConstant M_nightWind_Number20_INST from package 00027869.upk
+Loading MaterialInstanceConstant M_nightWind_Number25_INST from package 00027869.upk
+Loading MaterialInstanceConstant M_nightWind_Number30_INST from package 00027869.upk
+Loading MaterialInstanceConstant M_nightWind_Number5_INST from package 00027869.upk
+Loading MaterialInstanceConstant M_nightWind_T10_INST from package 00027869.upk
+Loading MaterialInstanceConstant M_nightWind_T15_INST from package 00027869.upk
+Loading MaterialInstanceConstant M_nightWind_T20_INST from package 00027869.upk
+Loading MaterialInstanceConstant M_nightWind_T25_INST from package 00027869.upk
+Loading MaterialInstanceConstant M_nightWind_T30_INST from package 00027869.upk
+Loading MaterialInstanceConstant M_nightWind_T5_INST from package 00027869.upk
+Loading Texture2D T_col_10 from package 00027869.upk
+Loading Texture2D T_col_15 from package 00027869.upk
+Loading Texture2D T_col_20 from package 00027869.upk
+Loading Texture2D T_col_25 from package 00027869.upk
+Loading Texture2D T_col_30 from package 00027869.upk
+Loading Texture2D T_col_5 from package 00027869.upk
+Loading Texture2D T_col_round_circle from package 00027869.upk
+Loading Texture2D T_gage_innerGlow from package 00027869.upk
+Loading Texture2D T_gage_outline from package 00027869.upk
+Loading Texture2D T_gage_outline_stone from package 00027869.upk
+Loading Texture2D T_Glow_ink_000 from package 00027869.upk
+Loading Texture2D T_grow_shine_light from package 00027869.upk
+Loading Texture2D T_Smoke_000 from package 00027869.upk
+Loading Texture2D T_text_number10 from package 00027869.upk
+Loading Texture2D T_text_number15 from package 00027869.upk
+Loading Texture2D T_text_number20 from package 00027869.upk
+Loading Texture2D T_text_number25 from package 00027869.upk
+Loading Texture2D T_text_number30 from package 00027869.upk
+Loading Texture2D T_text_number5 from package 00027869.upk
+Loading Texture2D T_Unique_Bone_D_000 from package 00027869.upk
+Loading Texture2D Tex_Inventory_ExpandBreak01 from package 00027869.upk
+Loading Texture2D Smoke_Fractal_002 from package 00011426.upk
+Loading Texture2D Smoke_Dusts_003 from package 00011426.upk
+Loading Texture2D Smoke_000 from package 00012963.upk
+Loading Texture2D Noise_Wave_000 from package 00011426.upk
+Loading Texture2D T_training_progress_128 from package 00011426.upk
+Loaded in 0.23 sec, 4767 allocs, 7.57 MBytes serialized in 1912798 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: M_Epic5_DemonCBig_Takgi_energy_2_DepthBias
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'Textures.Smoke_Fractal_002'
+        ReferencedTextures[1] = Texture2D'Textures.Smoke_Dusts_003'
+        ReferencedTextures[2] = Texture2D'Textures.T_Smoke_000'
+        ReferencedTextures[3] = Texture2D'Smoke_000'
+        ReferencedTextures[4] = Texture2D'Textures.Noise_Wave_000'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: M_Flare_03_ab
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Textures.T_grow_shine_light' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: M_nightWind_gage_stone30
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Textures.T_gage_outline_stone' }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: M_nightWind_gageInnerGlow
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Textures.T_gage_innerGlow' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: M_nightWind_gageOutline
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Textures.T_gage_outline' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: M_nightWind_Number30
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Textures.T_text_number30' }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: M_nightWind_Number30_ins
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Textures.T_text_number30' }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: M_nightWind_stone_particle
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Textures.T_Unique_Bone_D_000'
+        ReferencedTextures[1] = Texture2D'Textures.Tex_Inventory_ExpandBreak01'
+        ReferencedTextures[2] = Texture2D'Textures.T_Glow_ink_000'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: M_nightWind_T10_sample
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Textures.T_col_10' }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: M_trainnig_progress
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] =
+    {
+        ReferencedTextures[0] = Texture2D'Textures.T_training_progress_128'
+        ReferencedTextures[1] = Texture2D'Textures.T_col_round_circle'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: M_nightWind_Number10_INST
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[1] =
+    {
+        TextureParameterValues[0] =
+        {
+            ParameterName = Textures_number
+            ParameterValue = Texture2D'Textures.T_text_number10'
+        }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Materials.M_nightWind_Number30_ins'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: M_nightWind_Number15_INST
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[1] =
+    {
+        TextureParameterValues[0] =
+        {
+            ParameterName = Textures_number
+            ParameterValue = Texture2D'Textures.T_text_number15'
+        }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Materials.M_nightWind_Number30_ins'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: M_nightWind_Number20_INST
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[1] =
+    {
+        TextureParameterValues[0] =
+        {
+            ParameterName = Textures_number
+            ParameterValue = Texture2D'Textures.T_text_number20'
+        }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Materials.M_nightWind_Number30_ins'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: M_nightWind_Number25_INST
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[1] =
+    {
+        TextureParameterValues[0] =
+        {
+            ParameterName = Textures_number
+            ParameterValue = Texture2D'Textures.T_text_number25'
+        }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Materials.M_nightWind_Number30_ins'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: M_nightWind_Number30_INST
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[0] = {}
+    VectorParameterValues[0] = {}
+    Parent = Material3'Materials.M_nightWind_Number30_ins'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: M_nightWind_Number5_INST
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[1] =
+    {
+        TextureParameterValues[0] =
+        {
+            ParameterName = Textures_number
+            ParameterValue = Texture2D'Textures.T_text_number5'
+        }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Materials.M_nightWind_Number30_ins'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: M_nightWind_T10_INST
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[0] = {}
+    VectorParameterValues[0] = {}
+    Parent = Material3'Materials.M_nightWind_T10_sample'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: M_nightWind_T15_INST
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[1] =
+    {
+        TextureParameterValues[0] = { ParameterName=textures11, ParameterValue=Texture2D'Textures.T_col_15' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Materials.M_nightWind_T10_sample'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: M_nightWind_T20_INST
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[1] =
+    {
+        TextureParameterValues[0] = { ParameterName=textures11, ParameterValue=Texture2D'Textures.T_col_20' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Materials.M_nightWind_T10_sample'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: M_nightWind_T25_INST
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[1] =
+    {
+        TextureParameterValues[0] = { ParameterName=textures11, ParameterValue=Texture2D'Textures.T_col_25' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Materials.M_nightWind_T10_sample'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: M_nightWind_T30_INST
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[1] =
+    {
+        TextureParameterValues[0] = { ParameterName=textures11, ParameterValue=Texture2D'Textures.T_col_30' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Materials.M_nightWind_T10_sample'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: M_nightWind_T5_INST
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[1] =
+    {
+        TextureParameterValues[0] = { ParameterName=textures11, ParameterValue=Texture2D'Textures.T_col_5' }
+    }
+    VectorParameterValues[0] = {}
+    Parent = Material3'Materials.M_nightWind_T10_sample'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_col_10
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_col_15
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_col_20
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_col_25
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_col_30
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_col_5
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_col_round_circle
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_gage_innerGlow
+
+    SizeX = 512
+    SizeY = 64
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_gage_outline
+
+    SizeX = 512
+    SizeY = 64
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_gage_outline_stone
+
+    SizeX = 512
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_Glow_ink_000
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_G8 (3)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_grow_shine_light
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_G8 (3)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_Smoke_000
+
+    SizeX = 128
+    SizeY = 128
+    Format = PF_G8 (3)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_text_number10
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_text_number15
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_text_number20
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_text_number25
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_text_number30
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_text_number5
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_Unique_Bone_D_000
+
+    SizeX = 128
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Tex_Inventory_ExpandBreak01
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }

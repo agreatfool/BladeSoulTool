@@ -1,5 +1,5 @@
-Found 18875 game files (36 skipped)
-Loading package: 00015678.upk Ver: 573/1 Engine: 4205 Names: 41 Exports: 14 Imports: 2 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00015678.upk Ver: 573/1 Engine: 4205 Names: 43 Exports: 15 Imports: 2 Game: 801A
 Loading Texture2D Decal_0001_2_N from package 00015678.upk
 Loading Texture2D Decal_0001_D from package 00015678.upk
 Loading Texture2D Decal_0002_D from package 00015678.upk
@@ -14,7 +14,8 @@ Loading Texture2D Decal_0007_D from package 00015678.upk
 Loading Texture2D Decal_0008_D from package 00015678.upk
 Loading Texture2D Decal_0009_D from package 00015678.upk
 Loading Texture2D Decal_0010_D from package 00015678.upk
-Loaded in 0.091 sec, 522 allocs, 0.07 MBytes serialized in 3298 calls.
+Loading Texture2D no_decal from package 00015678.upk
+Loaded in 0.12 sec, 562 allocs, 0.10 MBytes serialized in 3640 calls.
 
 Object info:
 ============
@@ -95,13 +96,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: Decal_0004_6_8_N
 
-    SizeX = 512
-    SizeY = 256
+    SizeX = 1024
+    SizeY = 512
     Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 9
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { -1, -1, -1, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -110,13 +111,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: Decal_0004_D
 
-    SizeX = 512
-    SizeY = 256
+    SizeX = 1024
+    SizeY = 512
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 9
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -125,13 +126,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: Decal_0005_D
 
-    SizeX = 512
-    SizeY = 256
+    SizeX = 1024
+    SizeY = 512
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 9
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -140,13 +141,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: Decal_0005_N
 
-    SizeX = 512
-    SizeY = 256
+    SizeX = 1024
+    SizeY = 512
     Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 9
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { -1, -1, -1, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -155,13 +156,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: Decal_0006_D
 
-    SizeX = 512
-    SizeY = 256
+    SizeX = 1024
+    SizeY = 512
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 9
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -170,13 +171,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: Decal_0007_D
 
-    SizeX = 512
-    SizeY = 256
+    SizeX = 1024
+    SizeY = 512
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 9
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -185,13 +186,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: Decal_0008_D
 
-    SizeX = 512
-    SizeY = 256
+    SizeX = 1024
+    SizeY = 512
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 9
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -200,13 +201,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: Decal_0009_D
 
-    SizeX = 512
-    SizeY = 256
+    SizeX = 1024
+    SizeY = 512
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 9
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -215,13 +216,28 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: Decal_0010_D
 
-    SizeX = 512
-    SizeY = 256
+    SizeX = 1024
+    SizeY = 512
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 9
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: no_decal
+
+    SizeX = 4
+    SizeY = 4
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 2
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

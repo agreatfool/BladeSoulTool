@@ -1,8 +1,11 @@
-Found 18875 game files (36 skipped)
-Loading package: 00005433.upk Ver: 573/1 Engine: 4205 Names: 76 Exports: 17 Imports: 12 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00005433.upk Ver: 573/1 Engine: 4205 Names: 82 Exports: 19 Imports: 15 Game: 801A
 Loading SkeletalMesh3 990023_autoscale from package 00005433.upk
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
 Loading package: 00005432.upk Ver: 573/1 Engine: 4205 Names: 73 Exports: 2 Imports: 17 Game: 801A
 Loading SkeletalMesh3 CrocodileSharkTribeB_W2 from package 00005433.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_112 from package 00005433.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_113 from package 00005433.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_4 from package 00005433.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_5 from package 00005433.upk
 Loading MaterialInstanceConstant col1 from package 00005432.upk
@@ -12,14 +15,14 @@ Loading Texture2D Monster_Human_CrocodileSharkTribeB_W_N from package 00005431.u
 Loading Texture2D Monster_Human_CrocodileSharkTribeB_W_D from package 00005431.upk
 Loading Texture2D Monster_Human_CrocodileSharkTribeB_W_S from package 00005431.upk
 Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D check from package 00002620.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.052 sec, 2296 allocs, 0.87 MBytes serialized in 171128 calls.
+Loaded in 0.066 sec, 2315 allocs, 0.87 MBytes serialized in 171368 calls.
 
 Object info:
 ============
@@ -35,10 +38,12 @@ ClassName: SkeletalMesh3 ObjectName: 990023_autoscale
             bEnableShadowCasting[1] = { true }
         }
     }
-    Sockets[2] =
+    Sockets[4] =
     {
         Sockets[0] = SkeletalMeshSocket'990023_autoscale.SkeletalMeshSocket_4'
         Sockets[1] = SkeletalMeshSocket'990023_autoscale.SkeletalMeshSocket_5'
+        Sockets[2] = SkeletalMeshSocket'990023_autoscale.SkeletalMeshSocket_112'
+        Sockets[3] = SkeletalMeshSocket'990023_autoscale.SkeletalMeshSocket_113'
     }
     bHasVertexColors = false
     EnableTwistBoneFixers = true
@@ -107,11 +112,31 @@ ClassName: SkeletalMesh3 ObjectName: CrocodileSharkTribeB_W2
 
 Object info:
 ============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_112
+
+    SocketName = trail_end2
+    BoneName = WeaponRoot
+    RelativeLocation = { X=3.38014, Y=-2.9457, Z=26.25 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_113
+
+    SocketName = trail_end1
+    BoneName = WeaponRoot
+    RelativeLocation = { X=3.4758, Y=3.49609, Z=26 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
 ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_4
 
     SocketName = trail_start
     BoneName = WeaponRoot
-    RelativeLocation = { X=0, Y=0, Z=10 }
+    RelativeLocation = { X=3.04506, Y=0.000960559, Z=19 }
     RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
     RelativeScale = { X=1, Y=1, Z=1 }
 

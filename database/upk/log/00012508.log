@@ -1,5 +1,5 @@
-Found 18875 game files (36 skipped)
-Loading package: 00012508.upk Ver: 573/1 Engine: 4205 Names: 526 Exports: 1338 Imports: 230 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00012508.upk Ver: 573/1 Engine: 4205 Names: 533 Exports: 1425 Imports: 235 Game: 801A
 Loading AnimSet BladeMaster_Martial_Anim from package 00012508.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -28,7 +28,7 @@ WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_9 from package 00012508.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading Material3 BladeMaster_Baldo_Slash_Matm from package 00012508.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading Material3 BladeMaster_Defence_Mesh from package 00012508.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BladeMaster_Electric_Decal from package 00012508.upk
@@ -79,6 +79,7 @@ Loading Material3 Scan005_MatM from package 00012508.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
 Loading Material3 test_barrieer from package 00012508.upk
+Loading Material3 Thunder_Lightning_Slash from package 00012508.upk
 Loading StaticMesh3 BladeMaster_FlameRagne_Mesh from package 00012508.upk
 Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
 Loading StaticMesh3 BladeMaster_Sixcombo_Slash_Mesh from package 00012508.upk
@@ -166,6 +167,10 @@ Loading Texture2D T_Liquid_SM_NanoBlack_Mask_01 from package 00012963.upk
 Loading Texture2D SmokeMesh000_Tex from package 00012963.upk
 Loading Texture2D DefaultTexture from package EngineResources.upk
 Loading Texture2D Smoke_Cloud_005 from package 00012963.upk
+Loading Texture2D BG_Sandfall_001_D from package 00012963.upk
+Loading Texture2D Noise_006 from package 00012963.upk
+Loading Texture2D Unique_Stone_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_R_clamp from package 00012963.upk
 Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Texture2D Cube000_Tex from package 00012892.upk
@@ -189,4 +194,6 @@ UAnimSet::ConvertAnims <- PostLoad:BladeMaster_Martial_Anim <- UObject::EndLoad 
     at ChildProcess.exithandler (child_process.js:637:15)
     at ChildProcess.EventEmitter.emit (events.js:98:17)
     at maybeClose (child_process.js:743:16)
-    at Process.ChildProcess._handle.onexit (child_process.js:810:5)
+    at Socket.<anonymous> (child_process.js:956:11)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at Pipe.close (net.js:465:12)

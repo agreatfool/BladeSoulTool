@@ -1,5 +1,5 @@
-Found 18875 game files (36 skipped)
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading Texture2D Aura_Blood_000 from package 00012963.upk
 Loading Texture2D Aura_Blood_001 from package 00012963.upk
 Loading Texture2D Aura_Blood_002 from package 00012963.upk
@@ -328,6 +328,7 @@ Loading Texture2D Gradient_Line_002 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Line_004 from package 00012963.upk
 Loading Texture2D Gradient_Line_005 from package 00012963.upk
+Loading Texture2D Gradient_Line_010 from package 00012963.upk
 Loading Texture2D Gradient_Line_R from package 00012963.upk
 Loading Texture2D Gradient_Line_R_clamp from package 00012963.upk
 Loading Texture2D Gradient_Needle from package 00012963.upk
@@ -349,6 +350,9 @@ Loading Texture2D Hex000_Tex from package 00012963.upk
 Loading Texture2D HongMunDaragon_Body from package 00012963.upk
 Loading Texture2D HongMunDaragon_Tile from package 00012963.upk
 Loading Texture2D HongMunDragon_Pin from package 00012963.upk
+Loading Texture2D HuekChang_tent_01_D from package 00012963.upk
+Loading Texture2D HuekChang_tent_01_E from package 00012963.upk
+Loading Texture2D HuekChang_tent_01_N from package 00012963.upk
 Loading Texture2D Ice_Decal_ from package 00012963.upk
 Loading Texture2D Ice_Decal_001 from package 00012963.upk
 Loading Texture2D Ice_Decal_001_Color from package 00012963.upk
@@ -798,7 +802,7 @@ Loading Texture2D Waveform_001 from package 00012963.upk
 Loading Texture2D Wing from package 00012963.upk
 Loading Texture2D XXXXXXX from package 00012963.upk
 Loading TextureCube Cube_001 from package 00012963.upk
-Loaded in 5.6 sec, 23582 allocs, 28.12 MBytes serialized in 162608 calls.
+Loaded in 5.9 sec, 23843 allocs, 40.65 MBytes serialized in 164738 calls.
 
 Object info:
 ============
@@ -5692,6 +5696,21 @@ ClassName: Texture2D ObjectName: Gradient_Line_005
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Gradient_Line_010
+
+    SizeX = 64
+    SizeY = 256
+    Format = PF_G8 (3)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Gradient_Line_R
 
     SizeX = 256
@@ -6001,6 +6020,51 @@ ClassName: Texture2D ObjectName: HongMunDragon_Pin
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
     MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: HuekChang_tent_01_D
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: HuekChang_tent_01_E
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: HuekChang_tent_01_N
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

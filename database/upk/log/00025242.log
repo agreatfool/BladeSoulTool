@@ -1,8 +1,81 @@
-Found 18875 game files (36 skipped)
-Loading package: 00025242.upk Ver: 573/1 Engine: 4205 Names: 349 Exports: 1585 Imports: 149 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00025242.upk Ver: 573/1 Engine: 4205 Names: 488 Exports: 2699 Imports: 209 Game: 801A
+Loading Material3 Warlock_Bat_Trail_Trans from package 00025242.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading Material3 Warlock_Hand_Trail_Trans from package 00025242.upk
 Loading Texture2D Ice_Dot from package 00025242.upk
 Loading Texture2D Ice_Dot_NRM from package 00025242.upk
-Loaded in 0.014 sec, 419 allocs, 0.15 MBytes serialized in 30969 calls.
+Loading Texture2D Gradient_Trail_002 from package 00012963.upk
+Loading Texture2D Gradient_Color_PurpleToBlue_000 from package 00012963.upk
+Loading Texture2D Gradient_Slash_001_Tex from package 00012963.upk
+Loading Texture2D Smoke_Fractal_002 from package 00012963.upk
+Loading Texture2D Glow_Trail_001 from package 00012963.upk
+Loading Texture2D Noise_Crack_000 from package 00012963.upk
+Loading Texture2D Aura_Blood_003 from package 00012963.upk
+Loading Texture2D Sparkle_Ink_007 from package 00012963.upk
+Loading Texture2D Gradient_Beam_007 from package 00012963.upk
+Loading Texture2D Glow_VolumeLight_000 from package 00012963.upk
+Loading Texture2D Glow_Twiri_000 from package 00012963.upk
+Loading Texture2D Gradient_Beam_002 from package 00012963.upk
+Loading Texture2D Gradient_Beam_001 from package 00012963.upk
+Loading Texture2D Noise_Plazma_002 from package 00012963.upk
+Loading Texture2D Env_Fx_LightningCloud_Lightning from package 00012963.upk
+Loaded in 0.12 sec, 2207 allocs, 0.64 MBytes serialized in 79897 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Warlock_Bat_Trail_Trans
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Trail_002'
+        ReferencedTextures[1] = Texture2D'Gradient_Color_PurpleToBlue_000'
+        ReferencedTextures[2] = Texture2D'Gradient_Slash_001_Tex'
+        ReferencedTextures[3] = Texture2D'Smoke_Fractal_002'
+        ReferencedTextures[4] = Texture2D'Glow_Trail_001'
+        ReferencedTextures[5] = Texture2D'Noise_Crack_000'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Warlock_Hand_Trail_Trans
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[9] =
+    {
+        ReferencedTextures[0] = Texture2D'Aura_Blood_003'
+        ReferencedTextures[1] = Texture2D'Sparkle_Ink_007'
+        ReferencedTextures[2] = Texture2D'Gradient_Beam_007'
+        ReferencedTextures[3] = Texture2D'Glow_VolumeLight_000'
+        ReferencedTextures[4] = Texture2D'Glow_Twiri_000'
+        ReferencedTextures[5] = Texture2D'Gradient_Beam_002'
+        ReferencedTextures[6] = Texture2D'Gradient_Beam_001'
+        ReferencedTextures[7] = Texture2D'Noise_Plazma_002'
+        ReferencedTextures[8] = Texture2D'Env_Fx_LightningCloud_Lightning'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
 
 Object info:
 ============

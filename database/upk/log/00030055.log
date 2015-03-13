@@ -1,0 +1,61 @@
+Found 19856 game files (132 skipped)
+Loading package: 00030055.upk Ver: 573/1 Engine: 4205 Names: 107 Exports: 65 Imports: 13 Game: 801A
+Loading SkeletalMesh3 KunN_037 from package 00030055.upk
+Loading package: 00030017.upk Ver: 573/1 Engine: 4205 Names: 54 Exports: 1 Imports: 16 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00030017.upk
+Loading package: 00030016.upk Ver: 573/1 Engine: 4205 Names: 29 Exports: 2 Imports: 2 Game: 801A
+Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading Texture2D JinF_052_col1_D from package 00030016.upk
+Loading Texture2D JinF_052_col1_N from package 00030016.upk
+Loading Texture2D Nothing_A from package 00008613.upk
+Loading Material3 Beard_Ac from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loaded in 0.077 sec, 2401 allocs, 1.34 MBytes serialized in 217216 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: KunN_037
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=2152 }
+            }
+            NumVerts = 1773
+            IndexCount = 6456
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 21

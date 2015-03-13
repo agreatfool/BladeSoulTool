@@ -1,4 +1,4 @@
-Found 18875 game files (36 skipped)
+Found 19856 game files (132 skipped)
 Loading package: 00008305.upk Ver: 573/1 Engine: 4205 Names: 44 Exports: 16 Imports: 2 Game: 801A
 Loading Texture2D 60005_GonF_col3_D from package 00008305.upk
 Loading Texture2D 60005_GonF_col3_M from package 00008305.upk
@@ -16,7 +16,7 @@ Loading Texture2D Cloth_60005_GonF_col2_d from package 00008305.upk
 Loading Texture2D Cloth_60005_GonF_col2_m from package 00008305.upk
 Loading Texture2D Cloth_60005_GonF_col2_n from package 00008305.upk
 Loading Texture2D Cloth_60005_GonF_col2_s from package 00008305.upk
-Loaded in 0.11 sec, 550 allocs, 2.64 MBytes serialized in 3597 calls.
+Loaded in 0.1 sec, 550 allocs, 1.54 MBytes serialized in 3558 calls.
 
 Object info:
 ============
@@ -67,13 +67,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: 60005_GonF_col3_S
 
-    SizeX = 1024
-    SizeY = 1024
+    SizeX = 512
+    SizeY = 512
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -112,13 +112,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: 60005_GonF_col4_N
 
-    SizeX = 1024
-    SizeY = 1024
+    SizeX = 512
+    SizeY = 512
     Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { -1, -1, -1, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -172,13 +172,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: Cloth_60005_GonF_col1_n
 
-    SizeX = 1024
-    SizeY = 1024
+    SizeX = 512
+    SizeY = 512
     Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { -1, -1, -1, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -202,13 +202,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: Cloth_60005_GonF_col2_d
 
-    SizeX = 1024
-    SizeY = 1024
+    SizeX = 512
+    SizeY = 512
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

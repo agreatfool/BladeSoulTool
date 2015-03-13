@@ -1,10 +1,10 @@
-Found 18875 game files (36 skipped)
+Found 19856 game files (132 skipped)
 Loading package: 00021862.upk Ver: 573/1 Engine: 4205 Names: 24 Exports: 4 Imports: 2 Game: 801A
 Loading Texture2D kunF_face_M2 from package 00021862.upk
 Loading Texture2D Monster_Human_JinSeoYeonM2_col1_D from package 00021862.upk
 Loading Texture2D Monster_Human_JinSeoYeonM2_col1_E from package 00021862.upk
 Loading Texture2D Monster_Human_JinSeoYeonM2_col1_M from package 00021862.upk
-Loaded in 0.033 sec, 173 allocs, 0.99 MBytes serialized in 989 calls.
+Loaded in 0.05 sec, 179 allocs, 2.87 MBytes serialized in 1117 calls.
 
 Object info:
 ============
@@ -25,13 +25,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: Monster_Human_JinSeoYeonM2_col1_D
 
-    SizeX = 1024
-    SizeY = 1024
+    SizeX = 2048
+    SizeY = 2048
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 11
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -40,13 +40,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: Monster_Human_JinSeoYeonM2_col1_E
 
-    SizeX = 512
-    SizeY = 512
+    SizeX = 1024
+    SizeY = 1024
     Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 9
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

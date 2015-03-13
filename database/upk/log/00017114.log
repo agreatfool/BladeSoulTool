@@ -1,10 +1,12 @@
-Found 18875 game files (36 skipped)
-Loading package: 00017114.upk Ver: 573/1 Engine: 4205 Names: 70 Exports: 6 Imports: 15 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00017114.upk Ver: 573/1 Engine: 4205 Names: 174 Exports: 68 Imports: 50 Game: 801A
 Loading SkeletalMesh3 110044_Autoscale from package 00017114.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
 WARNING: ByteProperty "USkeletalMesh3::ItemPreviewLocType" was not found
 Loading package: 00017113.upk Ver: 573/1 Engine: 4205 Names: 90 Exports: 1 Imports: 20 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_563 from package 00017114.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
 Loading MaterialInstanceConstant col1 from package 00017113.upk
 Loading package: 00017112.upk Ver: 573/1 Engine: 4205 Names: 48 Exports: 16 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
@@ -17,7 +19,7 @@ Loading TextureCube MatelR7 from package 00002640.upk
 Loading Texture2D 110044_Autoscale_E from package 00017112.upk
 WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -30,7 +32,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.091 sec, 2849 allocs, 1.03 MBytes serialized in 187678 calls.
+Loaded in 0.12 sec, 2963 allocs, 1.05 MBytes serialized in 189481 calls.
 
 Object info:
 ============
@@ -46,7 +48,7 @@ ClassName: SkeletalMesh3 ObjectName: 110044_Autoscale
             bEnableShadowCasting[1] = { true }
         }
     }
-    Sockets[0] = {}
+    Sockets[1] = { SkeletalMeshSocket'110044_Autoscale.SkeletalMeshSocket_563' }
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
@@ -71,3 +73,13 @@ ClassName: SkeletalMesh3 ObjectName: 110044_Autoscale
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
     BoneCount = 1
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_563
+
+    SocketName = FX_Add
+    BoneName = WeaponRoot
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }

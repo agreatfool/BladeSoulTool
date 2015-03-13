@@ -1,15 +1,17 @@
-Found 18875 game files (36 skipped)
-Loading package: 00004217.upk Ver: 573/1 Engine: 4205 Names: 57 Exports: 23 Imports: 9 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00004217.upk Ver: 573/1 Engine: 4205 Names: 60 Exports: 26 Imports: 9 Game: 801A
 Loading Texture2D Pest-d from package 00004217.upk
 Loading Texture2D Pest-d2_Col9 from package 00004217.upk
 Loading Texture2D Pest-d_col2 from package 00004217.upk
 Loading Texture2D Pest-d_col3 from package 00004217.upk
 Loading Texture2D Pest-d_col5 from package 00004217.upk
+Loading Texture2D Pest-d_col6 from package 00004217.upk
 Loading Texture2D Pest-em from package 00004217.upk
 Loading Texture2D Pest-em2_Col9 from package 00004217.upk
 Loading Texture2D Pest-em_col2 from package 00004217.upk
 Loading Texture2D Pest-em_col3 from package 00004217.upk
 Loading Texture2D Pest-em_col5 from package 00004217.upk
+Loading Texture2D Pest-em_col6 from package 00004217.upk
 Loading Texture2D Pest-m_col2 from package 00004217.upk
 Loading Texture2D Pest-n from package 00004217.upk
 Loading Texture2D Pest-n_Col9 from package 00004217.upk
@@ -17,8 +19,9 @@ Loading Texture2D Pest-s from package 00004217.upk
 Loading Texture2D Pest-s_col2 from package 00004217.upk
 Loading Texture2D Pest-s_col3 from package 00004217.upk
 Loading Texture2D Pest-s_col5 from package 00004217.upk
+Loading Texture2D Pest-s_col6 from package 00004217.upk
 Loading Texture2D Pest-s_Col9 from package 00004217.upk
-Loaded in 0.095 sec, 558 allocs, 0.42 MBytes serialized in 3748 calls.
+Loaded in 0.13 sec, 657 allocs, 0.51 MBytes serialized in 4384 calls.
 
 Object info:
 ============
@@ -97,6 +100,21 @@ ClassName: Texture2D ObjectName: Pest-d_col5
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Pest-d_col6
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Pest-em
 
     SizeX = 256
@@ -158,6 +176,21 @@ ClassName: Texture2D ObjectName: Pest-em_col3
 Object info:
 ============
 ClassName: Texture2D ObjectName: Pest-em_col5
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Pest-em_col6
 
     SizeX = 256
     SizeY = 256
@@ -263,6 +296,21 @@ ClassName: Texture2D ObjectName: Pest-s_col3
 Object info:
 ============
 ClassName: Texture2D ObjectName: Pest-s_col5
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Pest-s_col6
 
     SizeX = 256
     SizeY = 256

@@ -1,5 +1,5 @@
-Found 18875 game files (36 skipped)
-Loading package: 00008524.upk Ver: 573/1 Engine: 4205 Names: 55 Exports: 28 Imports: 2 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00008524.upk Ver: 573/1 Engine: 4205 Names: 57 Exports: 30 Imports: 2 Game: 801A
 Loading Texture2D kunF_A_Decal_Bruise from package 00008524.upk
 Loading Texture2D kunF_A_Decal_dot1 from package 00008524.upk
 Loading Texture2D kunF_A_Decal_dot2 from package 00008524.upk
@@ -18,6 +18,8 @@ Loading Texture2D KunF_A_Decal_scratch7 from package 00008524.upk
 Loading Texture2D KunF_A_Decal_scratch8 from package 00008524.upk
 Loading Texture2D KunF_A_Decal_scratch9 from package 00008524.upk
 Loading Texture2D kunF_A_Decal_scratch_n from package 00008524.upk
+Loading Texture2D KunF_B_Decal_MukHa from package 00008524.upk
+Loading Texture2D KunF_B_Decal_MukHa_n from package 00008524.upk
 Loading Texture2D KunF_D_Decal01 from package 00008524.upk
 Loading Texture2D KunF_D_Decal02 from package 00008524.upk
 Loading Texture2D KunF_D_Decal03 from package 00008524.upk
@@ -28,7 +30,7 @@ Loading Texture2D KunF_D_Decal07 from package 00008524.upk
 Loading Texture2D KunF_D_Decal08 from package 00008524.upk
 Loading Texture2D KunF_D_Decal09 from package 00008524.upk
 Loading Texture2D KunF_D_Decal10 from package 00008524.upk
-Loaded in 0.18 sec, 975 allocs, 0.25 MBytes serialized in 6140 calls.
+Loaded in 0.23 sec, 1041 allocs, 0.30 MBytes serialized in 6594 calls.
 
 Object info:
 ============
@@ -288,6 +290,36 @@ ClassName: Texture2D ObjectName: KunF_A_Decal_scratch9
 Object info:
 ============
 ClassName: Texture2D ObjectName: kunF_A_Decal_scratch_n
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: KunF_B_Decal_MukHa
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: KunF_B_Decal_MukHa_n
 
     SizeX = 512
     SizeY = 256

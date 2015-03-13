@@ -1,5 +1,5 @@
-Found 18875 game files (36 skipped)
-Loading package: 00027718.upk Ver: 573/1 Engine: 4205 Names: 67 Exports: 5 Imports: 13 Game: 801A
+Found 19856 game files (132 skipped)
+Loading package: 00027718.upk Ver: 573/1 Engine: 4205 Names: 71 Exports: 5 Imports: 13 Game: 801A
 Loading SkeletalMesh3 110092_Autoscale from package 00027718.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
@@ -10,13 +10,13 @@ Loading package: 00027716.upk Ver: 573/1 Engine: 4205 Names: 41 Exports: 13 Impo
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D Weapon_110092_col1_N from package 00027716.upk
-Loading Texture2D Weapon_110092_col1_M from package 00027716.upk
-Loading Texture2D Weapon_110092_col1_D from package 00027716.upk
-Loading Texture2D Weapon_110092_col1_S from package 00027716.upk
-Loading TextureCube MatelW5 from package 00002640.upk
+Loading Texture2D 110092_Autosclae_col1_M from package 00027716.upk
+Loading Texture2D 110092_Autosclae_col1_D from package 00027716.upk
+Loading Texture2D 110092_Autosclae_col1_S from package 00027716.upk
+Loading TextureCube lenscube_a from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1219 Exports: 1194 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -28,7 +28,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.084 sec, 2809 allocs, 1.22 MBytes serialized in 233934 calls.
+Loaded in 0.12 sec, 2841 allocs, 1.34 MBytes serialized in 229988 calls.
 
 Object info:
 ============
@@ -57,10 +57,10 @@ ClassName: SkeletalMesh3 ObjectName: 110092_Autoscale
         {
             Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=2372 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=2258 }
             }
-            NumVerts = 2311
-            IndexCount = 7116
+            NumVerts = 2168
+            IndexCount = 6774
             NumTexCoords = 1
         }
     }
