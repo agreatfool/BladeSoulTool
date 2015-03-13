@@ -673,11 +673,14 @@
       "code": "50003",
       "races": [
         "All",
-        "JinF"
+        "JinF",
+        "JinM"
       ],
       "col": [
         "col1",
-        "col2"
+        "col2",
+        "col3",
+        "col4"
       ],
       "colIcons": {
         "All_col1": "costume_50003_col1_All.png",
@@ -691,7 +694,16 @@
           "costume_50003_col2_All_N.png",
           "costume_faction_50003_col2_All.png"
         ],
-        "JinF": "Costume_50003_JinF.png"
+        "JinF": "Costume_50003_JinF.png",
+        "JinM_col3": "Costume_50003_JinM_col3.png",
+        "col3": [
+          "Costume_50003_JinM_col3.png"
+        ],
+        "JinM": "Costume_50003_JinM_col3.png",
+        "JinM_col4": "Costume_50003_JinM_col4.png",
+        "col4": [
+          "Costume_50003_JinM_col4.png"
+        ]
       }
     },
     "50004": {
@@ -1064,11 +1076,35 @@
     "60006": {
       "code": "60006",
       "races": [
-        "All"
+        "All",
+        "JinM"
       ],
-      "col": [],
+      "col": [
+        "col4"
+      ],
       "colIcons": {
-        "All": "Costume_60006_All.png"
+        "All": "Costume_60006_All.png",
+        "JinM_col4": "Costume_60006_JinM_col4.png",
+        "col4": [
+          "Costume_60006_JinM_col4.png"
+        ],
+        "JinM": "Costume_60006_JinM_col4.png"
+      }
+    },
+    "60007": {
+      "code": "60007",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col4"
+      ],
+      "colIcons": {
+        "JinM_col4": "Costume_60007_JinM_col4.png",
+        "col4": [
+          "Costume_60007_JinM_col4.png"
+        ],
+        "JinM": "Costume_60007_JinM_col4.png"
       }
     },
     "60010": {
@@ -1097,6 +1133,22 @@
       "col": [],
       "colIcons": {
         "GonM": "Costume_60013_GonM.png"
+      }
+    },
+    "60018": {
+      "code": "60018",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col2"
+      ],
+      "colIcons": {
+        "JinM_col2": "Costume_60018_JinM_col2.png",
+        "col2": [
+          "Costume_60018_JinM_col2.png"
+        ],
+        "JinM": "Costume_60018_JinM_col2.png"
       }
     },
     "60022": {
@@ -1204,6 +1256,22 @@
         "GonM": "costume_60036_col1_gonM.png",
         "JinM_col1": "costume_60036_col1_jinM.png",
         "JinM": "costume_60036_col1_jinM.png"
+      }
+    },
+    "60037": {
+      "code": "60037",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Costume_60037_JinM_col1.png",
+        "col1": [
+          "Costume_60037_JinM_col1.png"
+        ],
+        "JinM": "Costume_60037_JinM_col1.png"
       }
     },
     "60039": {
@@ -1607,14 +1675,19 @@
         "JinM"
       ],
       "col": [
-        "col1"
+        "col1",
+        "col2"
       ],
       "colIcons": {
         "JinM_col1": "Costume_60067_JinM_col1.png",
         "col1": [
           "Costume_60067_JinM_col1.png"
         ],
-        "JinM": "Costume_60067_JinM_col1.png"
+        "JinM": "Costume_60067_JinM_col1.png",
+        "JinM_col2": "Costume_60067_JinM_col2.png",
+        "col2": [
+          "Costume_60067_JinM_col2.png"
+        ]
       }
     },
     "60068": {
@@ -1624,7 +1697,8 @@
         "JinM"
       ],
       "col": [
-        "col1"
+        "col1",
+        "col2"
       ],
       "colIcons": {
         "JinF_col1": "Costume_60068_JinF_col1.png",
@@ -1634,7 +1708,11 @@
         ],
         "JinF": "Costume_60068_JinF_col1.png",
         "JinM_col1": "Costume_60068_JinM_col1.png",
-        "JinM": "Costume_60068_JinM_col1.png"
+        "JinM": "Costume_60068_JinM_col1.png",
+        "JinM_col2": "Costume_60068_JinM_col2.png",
+        "col2": [
+          "Costume_60068_JinM_col2.png"
+        ]
       }
     },
     "60069": {
@@ -2201,7 +2279,9 @@
         "LynM"
       ],
       "col": [
-        "col1"
+        "col1",
+        "col2",
+        "col3"
       ],
       "colIcons": {
         "GonF_col1": "Costume_60100_GonF_col1.png",
@@ -2217,16 +2297,30 @@
         "GonF": "Costume_60100_GonF_col1.png",
         "GonM_col1": "Costume_60100_GonM_col1.png",
         "GonM": "Costume_60100_GonM_col1.png",
+        "GonM_col2": "Costume_60100_GonM_col2.png",
+        "col2": [
+          "Costume_60100_GonM_col2.png",
+          "Costume_60100_JinM_col2.png",
+          "Costume_60100_KunN_col2.png",
+          "Costume_60100_LynM_col2.png"
+        ],
         "JinF_col1": "Costume_60100_JinF_col1.png",
         "JinF": "Costume_60100_JinF_col1.png",
         "JinM_col1": "Costume_60100_JinM_col1.png",
         "JinM": "Costume_60100_JinM_col1.png",
+        "JinM_col2": "Costume_60100_JinM_col2.png",
         "KunN_col1": "Costume_60100_KunN_col1.png",
         "KunN": "Costume_60100_KunN_col1.png",
+        "KunN_col2": "Costume_60100_KunN_col2.png",
         "LynF_col1": "Costume_60100_LynF_col1.png",
         "LynF": "Costume_60100_LynF_col1.png",
+        "LynF_col3": "Costume_60100_LynF_col3.png",
+        "col3": [
+          "Costume_60100_LynF_col3.png"
+        ],
         "LynM_col1": "Costume_60100_LynM_col1.png",
-        "LynM": "Costume_60100_LynM_col1.png"
+        "LynM": "Costume_60100_LynM_col1.png",
+        "LynM_col2": "Costume_60100_LynM_col2.png"
       }
     },
     "60104": {
@@ -2327,6 +2421,95 @@
         "JinF": "costume_60114_JinF_col1.png",
         "JinM_col1": "costume_60114_JinM_col1.png",
         "JinM": "costume_60114_JinM_col1.png"
+      }
+    },
+    "60121": {
+      "code": "60121",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Costume_60121_JinM_col1.png",
+        "col1": [
+          "Costume_60121_JinM_col1.png"
+        ],
+        "JinM": "Costume_60121_JinM_col1.png"
+      }
+    },
+    "60122": {
+      "code": "60122",
+      "races": [
+        "GonF",
+        "JinF"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "GonF_col1": "Costume_60122_GonF_col1.png",
+        "col1": [
+          "Costume_60122_GonF_col1.png",
+          "Costume_60122_JinF_col1.png"
+        ],
+        "GonF": "Costume_60122_GonF_col1.png",
+        "JinF_col1": "Costume_60122_JinF_col1.png",
+        "JinF": "Costume_60122_JinF_col1.png"
+      }
+    },
+    "60123": {
+      "code": "60123",
+      "races": [
+        "JinF"
+      ],
+      "col": [
+        "col1",
+        "col2"
+      ],
+      "colIcons": {
+        "JinF_col1": "Costume_60123_JinF_col1.png",
+        "col1": [
+          "Costume_60123_JinF_col1.png"
+        ],
+        "JinF": "Costume_60123_JinF_col1.png",
+        "JinF_col2": "Costume_60123_JinF_col2.png",
+        "col2": [
+          "Costume_60123_JinF_col2.png"
+        ]
+      }
+    },
+    "60125": {
+      "code": "60125",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Costume_60125_JinM_col1.png",
+        "col1": [
+          "Costume_60125_JinM_col1.png"
+        ],
+        "JinM": "Costume_60125_JinM_col1.png"
+      }
+    },
+    "60127": {
+      "code": "60127",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Costume_60127_JinM_col1.png",
+        "col1": [
+          "Costume_60127_JinM_col1.png"
+        ],
+        "JinM": "Costume_60127_JinM_col1.png"
       }
     },
     "65008": {
@@ -2532,14 +2715,19 @@
         "JinM"
       ],
       "col": [
+        "col1",
         "col4"
       ],
       "colIcons": {
+        "JinM_col1": "Costume_65032_JinM_col1.png",
+        "col1": [
+          "Costume_65032_JinM_col1.png"
+        ],
+        "JinM": "Costume_65032_JinM_col1.png",
         "JinM_col4": "Costume_65032_JinM_col4.png",
         "col4": [
           "Costume_65032_JinM_col4.png"
-        ],
-        "JinM": "Costume_65032_JinM_col4.png"
+        ]
       }
     },
     "65033": {
@@ -2583,6 +2771,22 @@
         ]
       }
     },
+    "65048": {
+      "code": "65048",
+      "races": [
+        "JinF"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinF_col1": "Costume_65048_JinF_col1.png",
+        "col1": [
+          "Costume_65048_JinF_col1.png"
+        ],
+        "JinF": "Costume_65048_JinF_col1.png"
+      }
+    },
     "65049": {
       "code": "65049",
       "races": [
@@ -2606,6 +2810,22 @@
         ],
         "JinM_col1": "costume_65049_JinM_col1.png",
         "JinM": "costume_65049_JinM_col1.png"
+      }
+    },
+    "65050": {
+      "code": "65050",
+      "races": [
+        "JinF"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinF_col1": "Costume_65050_JinF_col1.png",
+        "col1": [
+          "Costume_65050_JinF_col1.png"
+        ],
+        "JinF": "Costume_65050_JinF_col1.png"
       }
     },
     "65051": {
@@ -2722,14 +2942,19 @@
         "JinM"
       ],
       "col": [
-        "col1"
+        "col1",
+        "col2"
       ],
       "colIcons": {
         "JinM_col1": "Costume_65067_JinM_col1.png",
         "col1": [
           "Costume_65067_JinM_col1.png"
         ],
-        "JinM": "Costume_65067_JinM_col1.png"
+        "JinM": "Costume_65067_JinM_col1.png",
+        "JinM_col2": "Costume_65067_JinM_col2.png",
+        "col2": [
+          "Costume_65067_JinM_col2.png"
+        ]
       }
     },
     "65074": {
@@ -2746,6 +2971,22 @@
           "Costume_65074_JinM_col1.png"
         ],
         "JinM": "Costume_65074_JinM_col1.png"
+      }
+    },
+    "65081": {
+      "code": "65081",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Costume_65081_JinM_col1.png",
+        "col1": [
+          "Costume_65081_JinM_col1.png"
+        ],
+        "JinM": "Costume_65081_JinM_col1.png"
       }
     },
     "70002": {
@@ -3069,6 +3310,118 @@
           "Costume_70023_col1_JinF.png"
         ],
         "JinF": "Costume_70023_col1_JinF.png"
+      }
+    },
+    "70027": {
+      "code": "70027",
+      "races": [
+        "GonF",
+        "GonM",
+        "JinF",
+        "JinM",
+        "KunN",
+        "LynF",
+        "LynM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "GonF_col1": "Costume_70027_GonF_col1.png",
+        "col1": [
+          "Costume_70027_GonF_col1.png",
+          "Costume_70027_GonM_col1.png",
+          "Costume_70027_JinF_col1.png",
+          "Costume_70027_JinM_col1.png",
+          "Costume_70027_KunN_col1.png",
+          "Costume_70027_LynF_col1.png",
+          "Costume_70027_LynM_col1.png"
+        ],
+        "GonF": "Costume_70027_GonF_col1.png",
+        "GonM_col1": "Costume_70027_GonM_col1.png",
+        "GonM": "Costume_70027_GonM_col1.png",
+        "JinF_col1": "Costume_70027_JinF_col1.png",
+        "JinF": "Costume_70027_JinF_col1.png",
+        "JinM_col1": "Costume_70027_JinM_col1.png",
+        "JinM": "Costume_70027_JinM_col1.png",
+        "KunN_col1": "Costume_70027_KunN_col1.png",
+        "KunN": "Costume_70027_KunN_col1.png",
+        "LynF_col1": "Costume_70027_LynF_col1.png",
+        "LynF": "Costume_70027_LynF_col1.png",
+        "LynM_col1": "Costume_70027_LynM_col1.png",
+        "LynM": "Costume_70027_LynM_col1.png"
+      }
+    },
+    "70028": {
+      "code": "70028",
+      "races": [
+        "GonF",
+        "GonM",
+        "JinF",
+        "JinM",
+        "KunN",
+        "LynF",
+        "LynM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "GonF_col1": "Costume_70028_GonF_col1.png",
+        "col1": [
+          "Costume_70028_GonF_col1.png",
+          "Costume_70028_GonM_col1.png",
+          "Costume_70028_JinF_col1.png",
+          "Costume_70028_JinM_col1.png",
+          "Costume_70028_KunN_col1.png",
+          "Costume_70028_LynF_col1.png",
+          "Costume_70028_LynM_col1.png"
+        ],
+        "GonF": "Costume_70028_GonF_col1.png",
+        "GonM_col1": "Costume_70028_GonM_col1.png",
+        "GonM": "Costume_70028_GonM_col1.png",
+        "JinF_col1": "Costume_70028_JinF_col1.png",
+        "JinF": "Costume_70028_JinF_col1.png",
+        "JinM_col1": "Costume_70028_JinM_col1.png",
+        "JinM": "Costume_70028_JinM_col1.png",
+        "KunN_col1": "Costume_70028_KunN_col1.png",
+        "KunN": "Costume_70028_KunN_col1.png",
+        "LynF_col1": "Costume_70028_LynF_col1.png",
+        "LynF": "Costume_70028_LynF_col1.png",
+        "LynM_col1": "Costume_70028_LynM_col1.png",
+        "LynM": "Costume_70028_LynM_col1.png"
+      }
+    },
+    "70029": {
+      "code": "70029",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Costume_70029_JinM_col1.png",
+        "col1": [
+          "Costume_70029_JinM_col1.png"
+        ],
+        "JinM": "Costume_70029_JinM_col1.png"
+      }
+    },
+    "70031": {
+      "code": "70031",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Costume_70031_JinM_col1.png",
+        "col1": [
+          "Costume_70031_JinM_col1.png"
+        ],
+        "JinM": "Costume_70031_JinM_col1.png"
       }
     },
     "80001": {
@@ -3485,6 +3838,38 @@
         "JinM": "Attach_60023_JinM_col1.png"
       }
     },
+    "90041": {
+      "code": "90041",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_90041_JinM_col1.png",
+        "col1": [
+          "Attach_90041_JinM_col1.png"
+        ],
+        "JinM": "Attach_90041_JinM_col1.png"
+      }
+    },
+    "010001": {
+      "code": "010001",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_010001_JinM_col1.png",
+        "col1": [
+          "Attach_010001_JinM_col1.png"
+        ],
+        "JinM": "Attach_010001_JinM_col1.png"
+      }
+    },
     "010002": {
       "code": "010002",
       "races": [
@@ -3499,6 +3884,22 @@
           "Attach_010002_JInM_col1.png"
         ],
         "JinM": "Attach_010002_JInM_col1.png"
+      }
+    },
+    "010003": {
+      "code": "010003",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_010003_JinM_col1.png",
+        "col1": [
+          "Attach_010003_JinM_col1.png"
+        ],
+        "JinM": "Attach_010003_JinM_col1.png"
       }
     },
     "010004": {
@@ -3616,7 +4017,9 @@
       ],
       "col": [
         "col2",
-        "col3"
+        "col3",
+        "col4",
+        "col5"
       ],
       "colIcons": {
         "All_col2": "attach_010011_col2_All.png",
@@ -3628,7 +4031,15 @@
         "col3": [
           "attach_010011_JinM_col3.png"
         ],
-        "JinM": "attach_010011_JinM_col3.png"
+        "JinM": "attach_010011_JinM_col3.png",
+        "JinM_col4": "Attach_010011_JinM_col4.png",
+        "col4": [
+          "Attach_010011_JinM_col4.png"
+        ],
+        "JinM_col5": "Attach_010011_JinM_col5.png",
+        "col5": [
+          "Attach_010011_JinM_col5.png"
+        ]
       }
     },
     "010015": {
@@ -4263,6 +4674,38 @@
         "JinM": "Attach_010070_JinM_col1.png"
       }
     },
+    "010072": {
+      "code": "010072",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_010072_JinM_col1.png",
+        "col1": [
+          "Attach_010072_JinM_col1.png"
+        ],
+        "JinM": "Attach_010072_JinM_col1.png"
+      }
+    },
+    "010075": {
+      "code": "010075",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_010075_JinM_col1.png",
+        "col1": [
+          "Attach_010075_JinM_col1.png"
+        ],
+        "JinM": "Attach_010075_JinM_col1.png"
+      }
+    },
     "010076": {
       "code": "010076",
       "races": [
@@ -4349,14 +4792,88 @@
         "JinM"
       ],
       "col": [
-        "col1"
+        "col1",
+        "col2",
+        "col3"
       ],
       "colIcons": {
         "JinM_col1": "Attach_010082_JinM_col1.png",
         "col1": [
           "Attach_010082_JinM_col1.png"
         ],
-        "JinM": "Attach_010082_JinM_col1.png"
+        "JinM": "Attach_010082_JinM_col1.png",
+        "JinM_col2": "Attach_010082_JinM_col2.png",
+        "col2": [
+          "Attach_010082_JinM_col2.png"
+        ],
+        "JinM_col3": "Attach_010082_JinM_col3.png",
+        "col3": [
+          "Attach_010082_JinM_col3.png"
+        ]
+      }
+    },
+    "010084": {
+      "code": "010084",
+      "races": [
+        "JinF"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinF_col1": "Attach_010084_JinF_col1.png",
+        "col1": [
+          "Attach_010084_JinF_col1.png"
+        ],
+        "JinF": "Attach_010084_JinF_col1.png"
+      }
+    },
+    "010085": {
+      "code": "010085",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_010085_JinM_col1.png",
+        "col1": [
+          "Attach_010085_JinM_col1.png"
+        ],
+        "JinM": "Attach_010085_JinM_col1.png"
+      }
+    },
+    "010098": {
+      "code": "010098",
+      "races": [
+        "JinF"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinF_col1": "Attach_010098_JinF_col1.png",
+        "col1": [
+          "Attach_010098_JinF_col1.png"
+        ],
+        "JinF": "Attach_010098_JinF_col1.png"
+      }
+    },
+    "010099": {
+      "code": "010099",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_010099_JinM_col1.png",
+        "col1": [
+          "Attach_010099_JinM_col1.png"
+        ],
+        "JinM": "Attach_010099_JinM_col1.png"
       }
     },
     "040002": {
@@ -4463,6 +4980,22 @@
           "Attach_040012_JinM_col1.png"
         ],
         "JinM": "Attach_040012_JinM_col1.png"
+      }
+    },
+    "040014": {
+      "code": "040014",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_040014_JinM_col1.png",
+        "col1": [
+          "Attach_040014_JinM_col1.png"
+        ],
+        "JinM": "Attach_040014_JinM_col1.png"
       }
     },
     "040020": {
@@ -5485,6 +6018,22 @@
         "JinM": "Attach_040142_JinM_col1.png"
       }
     },
+    "040143": {
+      "code": "040143",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_040143_JinM_col1.png",
+        "col1": [
+          "Attach_040143_JinM_col1.png"
+        ],
+        "JinM": "Attach_040143_JinM_col1.png"
+      }
+    },
     "040148": {
       "code": "040148",
       "races": [
@@ -5547,6 +6096,186 @@
           "Attach_040151_JinM_col1.png"
         ],
         "JinM": "Attach_040151_JinM_col1.png"
+      }
+    },
+    "040159": {
+      "code": "040159",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_040159_JinM_col1.png",
+        "col1": [
+          "Attach_040159_JinM_col1.png"
+        ],
+        "JinM": "Attach_040159_JinM_col1.png"
+      }
+    },
+    "040163": {
+      "code": "040163",
+      "races": [
+        "JinF"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinF_col1": "Attach_040163_JinF_col1.png",
+        "col1": [
+          "Attach_040163_JinF_col1.png"
+        ],
+        "JinF": "Attach_040163_JinF_col1.png"
+      }
+    },
+    "040164": {
+      "code": "040164",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_040164_JinM_col1.png",
+        "col1": [
+          "Attach_040164_JinM_col1.png"
+        ],
+        "JinM": "Attach_040164_JinM_col1.png"
+      }
+    },
+    "040167": {
+      "code": "040167",
+      "races": [
+        "JinF"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinF_col1": "Attach_040167_JinF_col1.png",
+        "col1": [
+          "Attach_040167_JinF_col1.png"
+        ],
+        "JinF": "Attach_040167_JinF_col1.png"
+      }
+    },
+    "040168": {
+      "code": "040168",
+      "races": [
+        "LynF",
+        "LynM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "LynF_col1": "Attach_040168_LynF_col1.png",
+        "col1": [
+          "Attach_040168_LynF_col1.png",
+          "Attach_040168_LynM_col1.png"
+        ],
+        "LynF": "Attach_040168_LynF_col1.png",
+        "LynM_col1": "Attach_040168_LynM_col1.png",
+        "LynM": "Attach_040168_LynM_col1.png"
+      }
+    },
+    "040170": {
+      "code": "040170",
+      "races": [
+        "JinF"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinF_col1": "Attach_040170_JinF_col1.png",
+        "col1": [
+          "Attach_040170_JinF_col1.png"
+        ],
+        "JinF": "Attach_040170_JinF_col1.png"
+      }
+    },
+    "040172": {
+      "code": "040172",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_040172_JinM_col1.png",
+        "col1": [
+          "Attach_040172_JinM_col1.png"
+        ],
+        "JinM": "Attach_040172_JinM_col1.png"
+      }
+    },
+    "040173": {
+      "code": "040173",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_040173_JinM_col1.png",
+        "col1": [
+          "Attach_040173_JinM_col1.png"
+        ],
+        "JinM": "Attach_040173_JinM_col1.png"
+      }
+    },
+    "040174": {
+      "code": "040174",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_040174_JinM_col1.png",
+        "col1": [
+          "Attach_040174_JinM_col1.png"
+        ],
+        "JinM": "Attach_040174_JinM_col1.png"
+      }
+    },
+    "040175": {
+      "code": "040175",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_040175_JinM_col1.png",
+        "col1": [
+          "Attach_040175_JinM_col1.png"
+        ],
+        "JinM": "Attach_040175_JinM_col1.png"
+      }
+    },
+    "040180": {
+      "code": "040180",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_040180_JinM_col1.png",
+        "col1": [
+          "Attach_040180_JinM_col1.png"
+        ],
+        "JinM": "Attach_040180_JinM_col1.png"
       }
     },
     "050005": {
@@ -5658,6 +6387,22 @@
           "Attach_060005_JinM_col1.png"
         ],
         "JinM": "Attach_060005_JinM_col1.png"
+      }
+    },
+    "060011": {
+      "code": "060011",
+      "races": [
+        "JinF"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinF_col1": "Attach_060011_JinF_col1.png",
+        "col1": [
+          "Attach_060011_JinF_col1.png"
+        ],
+        "JinF": "Attach_060011_JinF_col1.png"
       }
     },
     "060013": {
@@ -5780,6 +6525,54 @@
           "Attach_060022_JinM_col1.png"
         ],
         "JinM": "Attach_060022_JinM_col1.png"
+      }
+    },
+    "060025": {
+      "code": "060025",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_060025_JinM_col1.png",
+        "col1": [
+          "Attach_060025_JinM_col1.png"
+        ],
+        "JinM": "Attach_060025_JinM_col1.png"
+      }
+    },
+    "060026": {
+      "code": "060026",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_060026_JinM_col1.png",
+        "col1": [
+          "Attach_060026_JinM_col1.png"
+        ],
+        "JinM": "Attach_060026_JinM_col1.png"
+      }
+    },
+    "060027": {
+      "code": "060027",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_060027_JinM_col1.png",
+        "col1": [
+          "Attach_060027_JinM_col1.png"
+        ],
+        "JinM": "Attach_060027_JinM_col1.png"
       }
     },
     "070097": {
@@ -5946,6 +6739,22 @@
         "JinM": "Attach_090011_JinM_col1.png"
       }
     },
+    "090013": {
+      "code": "090013",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_090013_JinM_col1.png",
+        "col1": [
+          "Attach_090013_JinM_col1.png"
+        ],
+        "JinM": "Attach_090013_JinM_col1.png"
+      }
+    },
     "090017": {
       "code": "090017",
       "races": [
@@ -6086,6 +6895,22 @@
           "Attach_090050_JinM_col1.png"
         ],
         "JinM": "Attach_090050_JinM_col1.png"
+      }
+    },
+    "090072": {
+      "code": "090072",
+      "races": [
+        "JinM"
+      ],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "JinM_col1": "Attach_090072_JinM_col1.png",
+        "col1": [
+          "Attach_090072_JinM_col1.png"
+        ],
+        "JinM": "Attach_090072_JinM_col1.png"
       }
     }
   },
@@ -6606,10 +7431,14 @@
       "code": "110030",
       "races": [],
       "col": [
+        "col1",
         "col2",
         "col3"
       ],
       "colIcons": {
+        "col1": [
+          "Weapon_TA_110030_col1.png"
+        ],
         "col2": [
           "Weapon_TA_110030_col2.png"
         ],
@@ -6860,7 +7689,8 @@
       "col": [
         "col1",
         "col2",
-        "col3"
+        "col3",
+        "col4"
       ],
       "colIcons": {
         "col1": [
@@ -6871,6 +7701,9 @@
         ],
         "col3": [
           "Weapon_TA_110044_col3.png"
+        ],
+        "col4": [
+          "Weapon_TA_110044_col4.png"
         ]
       }
     },
@@ -6918,11 +7751,23 @@
       "code": "110047",
       "races": [],
       "col": [
-        "col1"
+        "col1",
+        "col2",
+        "col3",
+        "col4"
       ],
       "colIcons": {
         "col1": [
           "Weapon_TA_110047_col1.png"
+        ],
+        "col2": [
+          "Weapon_TA_110047_col2.png"
+        ],
+        "col3": [
+          "Weapon_TA_110047_col3.png"
+        ],
+        "col4": [
+          "Weapon_TA_110047_col4.png"
         ]
       }
     },
@@ -6974,11 +7819,15 @@
       "code": "110050",
       "races": [],
       "col": [
-        "col1"
+        "col1",
+        "col2"
       ],
       "colIcons": {
         "col1": [
           "Weapon_TA_110050_col1.png"
+        ],
+        "col2": [
+          "Weapon_TA_110050_col2.png"
         ]
       }
     },
@@ -7103,6 +7952,26 @@
         ]
       }
     },
+    "110060": {
+      "code": "110060",
+      "races": [],
+      "col": [
+        "col1",
+        "col3",
+        "col4"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110060_col1.png"
+        ],
+        "col3": [
+          "Weapon_TA_110060_col3.png"
+        ],
+        "col4": [
+          "Weapon_TA_110060_col4.png"
+        ]
+      }
+    },
     "110061": {
       "code": "110061",
       "races": [],
@@ -7183,6 +8052,26 @@
         ]
       }
     },
+    "110068": {
+      "code": "110068",
+      "races": [],
+      "col": [
+        "col1",
+        "col2",
+        "col3"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110068_col1.png"
+        ],
+        "col2": [
+          "Weapon_TA_110068_col2.png"
+        ],
+        "col3": [
+          "Weapon_TA_110068_col3.png"
+        ]
+      }
+    },
     "110069": {
       "code": "110069",
       "races": [],
@@ -7200,6 +8089,18 @@
         ],
         "col3": [
           "Weapon_TA_110069_col3.png"
+        ]
+      }
+    },
+    "110070": {
+      "code": "110070",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110070_col1.png"
         ]
       }
     },
@@ -7247,6 +8148,18 @@
         ]
       }
     },
+    "110075": {
+      "code": "110075",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110075_col1.png"
+        ]
+      }
+    },
     "110076": {
       "code": "110076",
       "races": [],
@@ -7259,6 +8172,42 @@
         ]
       }
     },
+    "110078": {
+      "code": "110078",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110078_col1.png"
+        ]
+      }
+    },
+    "110079": {
+      "code": "110079",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110079_col1.png"
+        ]
+      }
+    },
+    "110084": {
+      "code": "110084",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110084_col1.png"
+        ]
+      }
+    },
     "110085": {
       "code": "110085",
       "races": [],
@@ -7268,6 +8217,270 @@
       "colIcons": {
         "col1": [
           "Weapon_TA_110085_col1.png"
+        ]
+      }
+    },
+    "110094": {
+      "code": "110094",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110094_col1.png"
+        ]
+      }
+    },
+    "110095": {
+      "code": "110095",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110095_col1.png"
+        ]
+      }
+    },
+    "110096": {
+      "code": "110096",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110096_col1.png"
+        ]
+      }
+    },
+    "110097": {
+      "code": "110097",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110097_col1.png"
+        ]
+      }
+    },
+    "110098": {
+      "code": "110098",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110098_col1.png"
+        ]
+      }
+    },
+    "110099": {
+      "code": "110099",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110099_col1.png"
+        ]
+      }
+    },
+    "110100": {
+      "code": "110100",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110100_col1.png"
+        ]
+      }
+    },
+    "110101": {
+      "code": "110101",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110101_col1.png"
+        ]
+      }
+    },
+    "110102": {
+      "code": "110102",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110102_col1.png"
+        ]
+      }
+    },
+    "110105": {
+      "code": "110105",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110105_col1.png"
+        ]
+      }
+    },
+    "110106": {
+      "code": "110106",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110106_col1.png"
+        ]
+      }
+    },
+    "110107": {
+      "code": "110107",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110107_col1.png"
+        ]
+      }
+    },
+    "110108": {
+      "code": "110108",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110108_col1.png"
+        ]
+      }
+    },
+    "110109": {
+      "code": "110109",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110109_col1.png"
+        ]
+      }
+    },
+    "110110": {
+      "code": "110110",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110110_col1.png"
+        ]
+      }
+    },
+    "110111": {
+      "code": "110111",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110111_col1.png"
+        ]
+      }
+    },
+    "110112": {
+      "code": "110112",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110112_col1.png"
+        ]
+      }
+    },
+    "110113": {
+      "code": "110113",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110113_col1.png"
+        ]
+      }
+    },
+    "110114": {
+      "code": "110114",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110114_col1.png"
+        ]
+      }
+    },
+    "110115": {
+      "code": "110115",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110115_col1.png"
+        ]
+      }
+    },
+    "110116": {
+      "code": "110116",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110116_col1.png"
+        ]
+      }
+    },
+    "110117": {
+      "code": "110117",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_TA_110117_col1.png"
         ]
       }
     },
@@ -7929,7 +9142,8 @@
       "col": [
         "col1",
         "col2",
-        "col3"
+        "col3",
+        "col4"
       ],
       "colIcons": {
         "col1": [
@@ -7940,6 +9154,9 @@
         ],
         "col3": [
           "Weapon_DG_120043_col3.png"
+        ],
+        "col4": [
+          "Weapon_DG_120043_col4.png"
         ]
       }
     },
@@ -8051,11 +9268,15 @@
       "code": "120049",
       "races": [],
       "col": [
-        "col1"
+        "col1",
+        "col3"
       ],
       "colIcons": {
         "col1": [
           "Weapon_DG_120049_col1.png"
+        ],
+        "col3": [
+          "Weapon_DG_120049_col3.png"
         ]
       }
     },
@@ -8084,11 +9305,23 @@
       "code": "120051",
       "races": [],
       "col": [
-        "col1"
+        "col1",
+        "col2",
+        "col3",
+        "col4"
       ],
       "colIcons": {
         "col1": [
           "Weapon_DG_120051_col1.png"
+        ],
+        "col2": [
+          "Weapon_DG_120051_col2.png"
+        ],
+        "col3": [
+          "Weapon_DG_120051_col3.png"
+        ],
+        "col4": [
+          "Weapon_DG_120051_col4.png"
         ]
       }
     },
@@ -8140,9 +9373,17 @@
       "code": "120055",
       "races": [],
       "col": [
+        "col1",
+        "col2",
         "col3"
       ],
       "colIcons": {
+        "col1": [
+          "Weapon_DG_120055_col1.png"
+        ],
+        "col2": [
+          "Weapon_DG_120055_col2.png"
+        ],
         "col3": [
           "Weapon_DG_120055_col3.png"
         ]
@@ -8260,6 +9501,26 @@
         ]
       }
     },
+    "120062": {
+      "code": "120062",
+      "races": [],
+      "col": [
+        "col1",
+        "col2",
+        "col3"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120062_col1.png"
+        ],
+        "col2": [
+          "Weapon_DG_120062_col2.png"
+        ],
+        "col3": [
+          "Weapon_DG_120062_col3.png"
+        ]
+      }
+    },
     "120063": {
       "code": "120063",
       "races": [],
@@ -8301,6 +9562,18 @@
         ],
         "col3": [
           "Weapon_DG_120066_col3.png"
+        ]
+      }
+    },
+    "120067": {
+      "code": "120067",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120067_col1.png"
         ]
       }
     },
@@ -8392,6 +9665,18 @@
         ]
       }
     },
+    "120075": {
+      "code": "120075",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120075_col1.png"
+        ]
+      }
+    },
     "120076": {
       "code": "120076",
       "races": [],
@@ -8404,6 +9689,62 @@
         ]
       }
     },
+    "120078": {
+      "code": "120078",
+      "races": [],
+      "col": [
+        "col1",
+        "col3",
+        "col4"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120078_col1.png"
+        ],
+        "col3": [
+          "Weapon_DG_120078_col3.png"
+        ],
+        "col4": [
+          "Weapon_DG_120078_col4.png"
+        ]
+      }
+    },
+    "120080": {
+      "code": "120080",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120080_col1.png"
+        ]
+      }
+    },
+    "120081": {
+      "code": "120081",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120081_col1.png"
+        ]
+      }
+    },
+    "120086": {
+      "code": "120086",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120086_col1.png"
+        ]
+      }
+    },
     "120087": {
       "code": "120087",
       "races": [],
@@ -8413,6 +9754,270 @@
       "colIcons": {
         "col1": [
           "Weapon_DG_120087_col1.png"
+        ]
+      }
+    },
+    "120096": {
+      "code": "120096",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120096_col1.png"
+        ]
+      }
+    },
+    "120097": {
+      "code": "120097",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120097_col1.png"
+        ]
+      }
+    },
+    "120098": {
+      "code": "120098",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120098_col1.png"
+        ]
+      }
+    },
+    "120099": {
+      "code": "120099",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120099_col1.png"
+        ]
+      }
+    },
+    "120100": {
+      "code": "120100",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120100_col1.png"
+        ]
+      }
+    },
+    "120101": {
+      "code": "120101",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120101_col1.png"
+        ]
+      }
+    },
+    "120102": {
+      "code": "120102",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120102_col1.png"
+        ]
+      }
+    },
+    "120103": {
+      "code": "120103",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120103_col1.png"
+        ]
+      }
+    },
+    "120104": {
+      "code": "120104",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120104_col1.png"
+        ]
+      }
+    },
+    "120107": {
+      "code": "120107",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120107_col1.png"
+        ]
+      }
+    },
+    "120108": {
+      "code": "120108",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120108_col1.png"
+        ]
+      }
+    },
+    "120109": {
+      "code": "120109",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120109_col1.png"
+        ]
+      }
+    },
+    "120110": {
+      "code": "120110",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120110_col1.png"
+        ]
+      }
+    },
+    "120111": {
+      "code": "120111",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120111_col1.png"
+        ]
+      }
+    },
+    "120112": {
+      "code": "120112",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120112_col1.png"
+        ]
+      }
+    },
+    "120113": {
+      "code": "120113",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120113_col1.png"
+        ]
+      }
+    },
+    "120114": {
+      "code": "120114",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120114_col1.png"
+        ]
+      }
+    },
+    "120115": {
+      "code": "120115",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120115_col1.png"
+        ]
+      }
+    },
+    "120116": {
+      "code": "120116",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120116_col1.png"
+        ]
+      }
+    },
+    "120117": {
+      "code": "120117",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120117_col1.png"
+        ]
+      }
+    },
+    "120118": {
+      "code": "120118",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120118_col1.png"
+        ]
+      }
+    },
+    "120119": {
+      "code": "120119",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_DG_120119_col1.png"
         ]
       }
     },
@@ -8810,7 +10415,8 @@
       "col": [
         "col1",
         "col2",
-        "col3"
+        "col3",
+        "col4"
       ],
       "colIcons": {
         "col1": [
@@ -8821,6 +10427,9 @@
         ],
         "col3": [
           "Weapon_AB_030123_col3.png"
+        ],
+        "col4": [
+          "Weapon_AB_030123_col4.png"
         ]
       }
     },
@@ -9189,11 +10798,15 @@
       "code": "030141",
       "races": [],
       "col": [
-        "col1"
+        "col1",
+        "col2"
       ],
       "colIcons": {
         "col1": [
           "Weapon_AB_030141_col1.png"
+        ],
+        "col2": [
+          "Weapon_AB_030141_col2.png"
         ]
       }
     },
@@ -9201,11 +10814,23 @@
       "code": "030142",
       "races": [],
       "col": [
-        "col1"
+        "col1",
+        "col2",
+        "col3",
+        "col4"
       ],
       "colIcons": {
         "col1": [
           "Weapon_AB_030142_col1.png"
+        ],
+        "col2": [
+          "Weapon_AB_030142_col2.png"
+        ],
+        "col3": [
+          "Weapon_AB_030142_col3.png"
+        ],
+        "col4": [
+          "Weapon_AB_030142_col4.png"
         ]
       }
     },
@@ -9257,9 +10882,17 @@
       "code": "030146",
       "races": [],
       "col": [
+        "col1",
+        "col2",
         "col3"
       ],
       "colIcons": {
+        "col1": [
+          "Weapon_AB_030146_col1.png"
+        ],
+        "col2": [
+          "Weapon_AB_030146_col2.png"
+        ],
         "col3": [
           "Weapon_AB_030146_col3.png"
         ]
@@ -9377,6 +11010,26 @@
         ]
       }
     },
+    "030153": {
+      "code": "030153",
+      "races": [],
+      "col": [
+        "col1",
+        "col2",
+        "col3"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030153_col1.png"
+        ],
+        "col2": [
+          "Weapon_AB_030153_col2.png"
+        ],
+        "col3": [
+          "Weapon_AB_030153_col3.png"
+        ]
+      }
+    },
     "030154": {
       "code": "030154",
       "races": [],
@@ -9418,6 +11071,18 @@
         ],
         "col3": [
           "Weapon_AB_030157_col3.png"
+        ]
+      }
+    },
+    "030158": {
+      "code": "030158",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030158_col1.png"
         ]
       }
     },
@@ -9509,6 +11174,18 @@
         ]
       }
     },
+    "030166": {
+      "code": "030166",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030166_col1.png"
+        ]
+      }
+    },
     "030167": {
       "code": "030167",
       "races": [],
@@ -9521,6 +11198,62 @@
         ]
       }
     },
+    "030169": {
+      "code": "030169",
+      "races": [],
+      "col": [
+        "col1",
+        "col3",
+        "col4"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030169_col1.png"
+        ],
+        "col3": [
+          "Weapon_AB_030169_col3.png"
+        ],
+        "col4": [
+          "Weapon_AB_030169_col4.png"
+        ]
+      }
+    },
+    "030171": {
+      "code": "030171",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030171_col1.png"
+        ]
+      }
+    },
+    "030172": {
+      "code": "030172",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030172_col1.png"
+        ]
+      }
+    },
+    "030177": {
+      "code": "030177",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030177_col1.png"
+        ]
+      }
+    },
     "030178": {
       "code": "030178",
       "races": [],
@@ -9530,6 +11263,270 @@
       "colIcons": {
         "col1": [
           "Weapon_AB_030178_col1.png"
+        ]
+      }
+    },
+    "030187": {
+      "code": "030187",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030187_col1.png"
+        ]
+      }
+    },
+    "030188": {
+      "code": "030188",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030188_col1.png"
+        ]
+      }
+    },
+    "030189": {
+      "code": "030189",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030189_col1.png"
+        ]
+      }
+    },
+    "030190": {
+      "code": "030190",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030190_col1.png"
+        ]
+      }
+    },
+    "030191": {
+      "code": "030191",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030191_col1.png"
+        ]
+      }
+    },
+    "030192": {
+      "code": "030192",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030192_col1.png"
+        ]
+      }
+    },
+    "030193": {
+      "code": "030193",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030193_col1.png"
+        ]
+      }
+    },
+    "030194": {
+      "code": "030194",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030194_col1.png"
+        ]
+      }
+    },
+    "030195": {
+      "code": "030195",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030195_col1.png"
+        ]
+      }
+    },
+    "030198": {
+      "code": "030198",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030198_col1.png"
+        ]
+      }
+    },
+    "030199": {
+      "code": "030199",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030199_col1.png"
+        ]
+      }
+    },
+    "030200": {
+      "code": "030200",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030200_col1.png"
+        ]
+      }
+    },
+    "030201": {
+      "code": "030201",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030201_col1.png"
+        ]
+      }
+    },
+    "030202": {
+      "code": "030202",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030202_col1.png"
+        ]
+      }
+    },
+    "030203": {
+      "code": "030203",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030203_col1.png"
+        ]
+      }
+    },
+    "030204": {
+      "code": "030204",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030204_col1.png"
+        ]
+      }
+    },
+    "030205": {
+      "code": "030205",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030205_col1.png"
+        ]
+      }
+    },
+    "030206": {
+      "code": "030206",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030206_col1.png"
+        ]
+      }
+    },
+    "030207": {
+      "code": "030207",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030207_col1.png"
+        ]
+      }
+    },
+    "030208": {
+      "code": "030208",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030208_col1.png"
+        ]
+      }
+    },
+    "030209": {
+      "code": "030209",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030209_col1.png"
+        ]
+      }
+    },
+    "030210": {
+      "code": "030210",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_AB_030210_col1.png"
         ]
       }
     },
@@ -10129,6 +12126,26 @@
         ]
       }
     },
+    "020128": {
+      "code": "020128",
+      "races": [],
+      "col": [
+        "col1",
+        "col2",
+        "col3"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020128_col1.png"
+        ],
+        "col2": [
+          "Weapon_GT_020128_col2.png"
+        ],
+        "col3": [
+          "Weapon_GT_020128_col3.png"
+        ]
+      }
+    },
     "020130": {
       "code": "020130",
       "races": [],
@@ -10211,7 +12228,8 @@
       "col": [
         "col1",
         "col2",
-        "col3"
+        "col3",
+        "col4"
       ],
       "colIcons": {
         "col1": [
@@ -10222,6 +12240,9 @@
         ],
         "col3": [
           "Weapon_GT_020133_col3.png"
+        ],
+        "col4": [
+          "Weapon_GT_020133_col4.png"
         ]
       }
     },
@@ -10309,11 +12330,15 @@
       "code": "020140",
       "races": [],
       "col": [
-        "col1"
+        "col1",
+        "col2"
       ],
       "colIcons": {
         "col1": [
           "Weapon_GT_020140_col1.png"
+        ],
+        "col2": [
+          "Weapon_GT_020140_col2.png"
         ]
       }
     },
@@ -10366,11 +12391,23 @@
       "code": "020143",
       "races": [],
       "col": [
-        "col1"
+        "col1",
+        "col2",
+        "col3",
+        "col4"
       ],
       "colIcons": {
         "col1": [
           "Weapon_GT_020143_col1.png"
+        ],
+        "col2": [
+          "Weapon_GT_020143_col2.png"
+        ],
+        "col3": [
+          "Weapon_GT_020143_col3.png"
+        ],
+        "col4": [
+          "Weapon_GT_020143_col4.png"
         ]
       }
     },
@@ -10422,9 +12459,17 @@
       "code": "020147",
       "races": [],
       "col": [
+        "col1",
+        "col2",
         "col3"
       ],
       "colIcons": {
+        "col1": [
+          "Weapon_GT_020147_col1.png"
+        ],
+        "col2": [
+          "Weapon_GT_020147_col2.png"
+        ],
         "col3": [
           "Weapon_GT_020147_col3.png"
         ]
@@ -10586,6 +12631,18 @@
         ]
       }
     },
+    "020158": {
+      "code": "020158",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020158_col1.png"
+        ]
+      }
+    },
     "020159": {
       "code": "020159",
       "races": [],
@@ -10674,6 +12731,18 @@
         ]
       }
     },
+    "020166": {
+      "code": "020166",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020166_col1.png"
+        ]
+      }
+    },
     "020167": {
       "code": "020167",
       "races": [],
@@ -10686,6 +12755,62 @@
         ]
       }
     },
+    "020169": {
+      "code": "020169",
+      "races": [],
+      "col": [
+        "col1",
+        "col3",
+        "col4"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020169_col1.png"
+        ],
+        "col3": [
+          "Weapon_GT_020169_col3.png"
+        ],
+        "col4": [
+          "Weapon_GT_020169_col4.png"
+        ]
+      }
+    },
+    "020171": {
+      "code": "020171",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020171_col1.png"
+        ]
+      }
+    },
+    "020172": {
+      "code": "020172",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020172_col1.png"
+        ]
+      }
+    },
+    "020176": {
+      "code": "020176",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020176_col1.png"
+        ]
+      }
+    },
     "020177": {
       "code": "020177",
       "races": [],
@@ -10695,6 +12820,270 @@
       "colIcons": {
         "col1": [
           "Weapon_GT_020177_col1.png"
+        ]
+      }
+    },
+    "020186": {
+      "code": "020186",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020186_col1.png"
+        ]
+      }
+    },
+    "020187": {
+      "code": "020187",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020187_col1.png"
+        ]
+      }
+    },
+    "020188": {
+      "code": "020188",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020188_col1.png"
+        ]
+      }
+    },
+    "020189": {
+      "code": "020189",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020189_col1.png"
+        ]
+      }
+    },
+    "020190": {
+      "code": "020190",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020190_col1.png"
+        ]
+      }
+    },
+    "020191": {
+      "code": "020191",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020191_col1.png"
+        ]
+      }
+    },
+    "020192": {
+      "code": "020192",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020192_col1.png"
+        ]
+      }
+    },
+    "020193": {
+      "code": "020193",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020193_col1.png"
+        ]
+      }
+    },
+    "020194": {
+      "code": "020194",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020194_col1.png"
+        ]
+      }
+    },
+    "020197": {
+      "code": "020197",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020197_col1.png"
+        ]
+      }
+    },
+    "020198": {
+      "code": "020198",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020198_col1.png"
+        ]
+      }
+    },
+    "020199": {
+      "code": "020199",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020199_col1.png"
+        ]
+      }
+    },
+    "020200": {
+      "code": "020200",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020200_col1.png"
+        ]
+      }
+    },
+    "020201": {
+      "code": "020201",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020201_col1.png"
+        ]
+      }
+    },
+    "020202": {
+      "code": "020202",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020202_col1.png"
+        ]
+      }
+    },
+    "020203": {
+      "code": "020203",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020203_col1.png"
+        ]
+      }
+    },
+    "020204": {
+      "code": "020204",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020204_col1.png"
+        ]
+      }
+    },
+    "020205": {
+      "code": "020205",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020205_col1.png"
+        ]
+      }
+    },
+    "020206": {
+      "code": "020206",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020206_col1.png"
+        ]
+      }
+    },
+    "020207": {
+      "code": "020207",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020207_col1.png"
+        ]
+      }
+    },
+    "020208": {
+      "code": "020208",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020208_col1.png"
+        ]
+      }
+    },
+    "020209": {
+      "code": "020209",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_GT_020209_col1.png"
         ]
       }
     },
@@ -11472,7 +13861,8 @@
       "col": [
         "col1",
         "col2",
-        "col3"
+        "col3",
+        "col4"
       ],
       "colIcons": {
         "col1": [
@@ -11483,6 +13873,9 @@
         ],
         "col3": [
           "Weapon_ST_060048_col3.png"
+        ],
+        "col4": [
+          "Weapon_ST_060048_col4.png"
         ]
       }
     },
@@ -11635,11 +14028,15 @@
       "code": "060056",
       "races": [],
       "col": [
-        "col1"
+        "col1",
+        "col2"
       ],
       "colIcons": {
         "col1": [
           "Weapon_ST_060056_col1.png"
+        ],
+        "col2": [
+          "Weapon_ST_060056_col2.png"
         ]
       }
     },
@@ -11647,11 +14044,23 @@
       "code": "060057",
       "races": [],
       "col": [
-        "col1"
+        "col1",
+        "col2",
+        "col3",
+        "col4"
       ],
       "colIcons": {
         "col1": [
           "Weapon_ST_060057_col1.png"
+        ],
+        "col2": [
+          "Weapon_ST_060057_col2.png"
+        ],
+        "col3": [
+          "Weapon_ST_060057_col3.png"
+        ],
+        "col4": [
+          "Weapon_ST_060057_col4.png"
         ]
       }
     },
@@ -11703,9 +14112,17 @@
       "code": "060061",
       "races": [],
       "col": [
+        "col1",
+        "col2",
         "col3"
       ],
       "colIcons": {
+        "col1": [
+          "Weapon_ST_060061_col1.png"
+        ],
+        "col2": [
+          "Weapon_ST_060061_col2.png"
+        ],
         "col3": [
           "Weapon_ST_060061_col3.png"
         ]
@@ -11823,6 +14240,26 @@
         ]
       }
     },
+    "060068": {
+      "code": "060068",
+      "races": [],
+      "col": [
+        "col1",
+        "col2",
+        "col3"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060068_col1.png"
+        ],
+        "col2": [
+          "Weapon_ST_060068_col2.png"
+        ],
+        "col3": [
+          "Weapon_ST_060068_col3.png"
+        ]
+      }
+    },
     "060069": {
       "code": "060069",
       "races": [],
@@ -11864,6 +14301,18 @@
         ],
         "col3": [
           "Weapon_ST_060072_col3.png"
+        ]
+      }
+    },
+    "060073": {
+      "code": "060073",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060073_col1.png"
         ]
       }
     },
@@ -11955,6 +14404,18 @@
         ]
       }
     },
+    "060081": {
+      "code": "060081",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060081_col1.png"
+        ]
+      }
+    },
     "060082": {
       "code": "060082",
       "races": [],
@@ -11967,6 +14428,62 @@
         ]
       }
     },
+    "060084": {
+      "code": "060084",
+      "races": [],
+      "col": [
+        "col1",
+        "col3",
+        "col4"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060084_col1.png"
+        ],
+        "col3": [
+          "Weapon_ST_060084_col3.png"
+        ],
+        "col4": [
+          "Weapon_ST_060084_col4.png"
+        ]
+      }
+    },
+    "060086": {
+      "code": "060086",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060086_col1.png"
+        ]
+      }
+    },
+    "060087": {
+      "code": "060087",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060087_col1.png"
+        ]
+      }
+    },
+    "060092": {
+      "code": "060092",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060092_col1.png"
+        ]
+      }
+    },
     "060093": {
       "code": "060093",
       "races": [],
@@ -11976,6 +14493,270 @@
       "colIcons": {
         "col1": [
           "Weapon_ST_060093_col1.png"
+        ]
+      }
+    },
+    "060102": {
+      "code": "060102",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060102_col1.png"
+        ]
+      }
+    },
+    "060103": {
+      "code": "060103",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060103_col1.png"
+        ]
+      }
+    },
+    "060104": {
+      "code": "060104",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060104_col1.png"
+        ]
+      }
+    },
+    "060105": {
+      "code": "060105",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060105_col1.png"
+        ]
+      }
+    },
+    "060106": {
+      "code": "060106",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060106_col1.png"
+        ]
+      }
+    },
+    "060107": {
+      "code": "060107",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060107_col1.png"
+        ]
+      }
+    },
+    "060108": {
+      "code": "060108",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060108_col1.png"
+        ]
+      }
+    },
+    "060109": {
+      "code": "060109",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060109_col1.png"
+        ]
+      }
+    },
+    "060110": {
+      "code": "060110",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060110_col1.png"
+        ]
+      }
+    },
+    "060113": {
+      "code": "060113",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060113_col1.png"
+        ]
+      }
+    },
+    "060114": {
+      "code": "060114",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060114_col1.png"
+        ]
+      }
+    },
+    "060115": {
+      "code": "060115",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060115_col1.png"
+        ]
+      }
+    },
+    "060116": {
+      "code": "060116",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060116_col1.png"
+        ]
+      }
+    },
+    "060117": {
+      "code": "060117",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060117_col1.png"
+        ]
+      }
+    },
+    "060118": {
+      "code": "060118",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060118_col1.png"
+        ]
+      }
+    },
+    "060119": {
+      "code": "060119",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060119_col1.png"
+        ]
+      }
+    },
+    "060120": {
+      "code": "060120",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060120_col1.png"
+        ]
+      }
+    },
+    "060121": {
+      "code": "060121",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060121_col1.png"
+        ]
+      }
+    },
+    "060122": {
+      "code": "060122",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060122_col1.png"
+        ]
+      }
+    },
+    "060123": {
+      "code": "060123",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060123_col1.png"
+        ]
+      }
+    },
+    "060124": {
+      "code": "060124",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060124_col1.png"
+        ]
+      }
+    },
+    "060125": {
+      "code": "060125",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_ST_060125_col1.png"
         ]
       }
     },
@@ -12693,7 +15474,8 @@
       "col": [
         "col1",
         "col2",
-        "col3"
+        "col3",
+        "col4"
       ],
       "colIcons": {
         "col1": [
@@ -12704,6 +15486,9 @@
         ],
         "col3": [
           "Weapon_SW_010138_col3.png"
+        ],
+        "col4": [
+          "Weapon_SW_010138_col4.png"
         ]
       }
     },
@@ -12871,11 +15656,15 @@
       "code": "010147",
       "races": [],
       "col": [
-        "col1"
+        "col1",
+        "col2"
       ],
       "colIcons": {
         "col1": [
           "Weapon_SW_010147_col1.png"
+        ],
+        "col2": [
+          "Weapon_SW_010147_col2.png"
         ]
       }
     },
@@ -12904,11 +15693,23 @@
       "code": "010149",
       "races": [],
       "col": [
-        "col1"
+        "col1",
+        "col2",
+        "col3",
+        "col4"
       ],
       "colIcons": {
         "col1": [
           "Weapon_SW_010149_col1.png"
+        ],
+        "col2": [
+          "Weapon_SW_010149_col2.png"
+        ],
+        "col3": [
+          "Weapon_SW_010149_col3.png"
+        ],
+        "col4": [
+          "Weapon_SW_010149_col4.png"
         ]
       }
     },
@@ -12960,9 +15761,17 @@
       "code": "010153",
       "races": [],
       "col": [
+        "col1",
+        "col2",
         "col3"
       ],
       "colIcons": {
+        "col1": [
+          "Weapon_SW_010153_col1.png"
+        ],
+        "col2": [
+          "Weapon_SW_010153_col2.png"
+        ],
         "col3": [
           "Weapon_SW_010153_col3.png"
         ]
@@ -13080,6 +15889,26 @@
         ]
       }
     },
+    "010160": {
+      "code": "010160",
+      "races": [],
+      "col": [
+        "col1",
+        "col2",
+        "col3"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010160_col1.png"
+        ],
+        "col2": [
+          "Weapon_SW_010160_col2.png"
+        ],
+        "col3": [
+          "Weapon_SW_010160_col3.png"
+        ]
+      }
+    },
     "010161": {
       "code": "010161",
       "races": [],
@@ -13121,6 +15950,18 @@
         ],
         "col3": [
           "Weapon_SW_010164_col3.png"
+        ]
+      }
+    },
+    "010166": {
+      "code": "010166",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010166_col1.png"
         ]
       }
     },
@@ -13212,6 +16053,18 @@
         ]
       }
     },
+    "010174": {
+      "code": "010174",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010174_col1.png"
+        ]
+      }
+    },
     "010175": {
       "code": "010175",
       "races": [],
@@ -13224,6 +16077,66 @@
         ]
       }
     },
+    "010177": {
+      "code": "010177",
+      "races": [],
+      "col": [
+        "col1",
+        "col2",
+        "col3",
+        "col4"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010177_col1.png"
+        ],
+        "col2": [
+          "Weapon_SW_010177_col2.png"
+        ],
+        "col3": [
+          "Weapon_SW_010177_col3.png"
+        ],
+        "col4": [
+          "Weapon_SW_010177_col4.png"
+        ]
+      }
+    },
+    "010179": {
+      "code": "010179",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010179_col1.png"
+        ]
+      }
+    },
+    "010180": {
+      "code": "010180",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010180_col1.png"
+        ]
+      }
+    },
+    "010185": {
+      "code": "010185",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010185_col1.png"
+        ]
+      }
+    },
     "010186": {
       "code": "010186",
       "races": [],
@@ -13233,6 +16146,270 @@
       "colIcons": {
         "col1": [
           "Weapon_SW_010186_col1.png"
+        ]
+      }
+    },
+    "010195": {
+      "code": "010195",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010195_col1.png"
+        ]
+      }
+    },
+    "010196": {
+      "code": "010196",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010196_col1.png"
+        ]
+      }
+    },
+    "010197": {
+      "code": "010197",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010197_col1.png"
+        ]
+      }
+    },
+    "010198": {
+      "code": "010198",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010198_col1.png"
+        ]
+      }
+    },
+    "010199": {
+      "code": "010199",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010199_col1.png"
+        ]
+      }
+    },
+    "010200": {
+      "code": "010200",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010200_col1.png"
+        ]
+      }
+    },
+    "010201": {
+      "code": "010201",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010201_col1.png"
+        ]
+      }
+    },
+    "010202": {
+      "code": "010202",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010202_col1.png"
+        ]
+      }
+    },
+    "010203": {
+      "code": "010203",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010203_col1.png"
+        ]
+      }
+    },
+    "010206": {
+      "code": "010206",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010206_col1.png"
+        ]
+      }
+    },
+    "010207": {
+      "code": "010207",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010207_col1.png"
+        ]
+      }
+    },
+    "010208": {
+      "code": "010208",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010208_col1.png"
+        ]
+      }
+    },
+    "010209": {
+      "code": "010209",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010209_col1.png"
+        ]
+      }
+    },
+    "010210": {
+      "code": "010210",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010210_col1.png"
+        ]
+      }
+    },
+    "010211": {
+      "code": "010211",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010211_col1.png"
+        ]
+      }
+    },
+    "010212": {
+      "code": "010212",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010212_col1.png"
+        ]
+      }
+    },
+    "010213": {
+      "code": "010213",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010213_col1.png"
+        ]
+      }
+    },
+    "010214": {
+      "code": "010214",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010214_col1.png"
+        ]
+      }
+    },
+    "010215": {
+      "code": "010215",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010215_col1.png"
+        ]
+      }
+    },
+    "010217": {
+      "code": "010217",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010217_col1.png"
+        ]
+      }
+    },
+    "010218": {
+      "code": "010218",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010218_col1.png"
+        ]
+      }
+    },
+    "010219": {
+      "code": "010219",
+      "races": [],
+      "col": [
+        "col1"
+      ],
+      "colIcons": {
+        "col1": [
+          "Weapon_SW_010219_col1.png"
         ]
       }
     }
