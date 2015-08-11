@@ -1,5 +1,5 @@
-Found 19856 game files (132 skipped)
-Loading package: 00008451.upk Ver: 573/1 Engine: 4205 Names: 535 Exports: 565 Imports: 6 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00008451.upk Ver: 573/1 Engine: 4205 Names: 550 Exports: 573 Imports: 6 Game: 801A
 Loading AnimSet GonF_Standrad_Facial_AnimSet from package 00008451.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::UseMovementBoneNames" was not found
@@ -305,6 +305,10 @@ WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_73 from package 00008451.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_74 from package 00008451.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_77 from package 00008451.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_78 from package 00008451.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_8 from package 00008451.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
@@ -823,6 +827,10 @@ Loading AnimSequence AnimSequence_39 from package 00008451.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_4 from package 00008451.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_40 from package 00008451.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_41 from package 00008451.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_48 from package 00008451.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_49 from package 00008451.upk
@@ -933,6 +941,10 @@ Loading AnimSequence AnimSequence_31 from package 00008451.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_32 from package 00008451.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_33 from package 00008451.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_34 from package 00008451.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_35 from package 00008451.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_36 from package 00008451.upk
@@ -1002,6 +1014,10 @@ WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_10 from package 00008451.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_105 from package 00008451.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_11 from package 00008451.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_12 from package 00008451.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_158 from package 00008451.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
@@ -1706,6 +1722,14 @@ Error: Command failed: ******** 00008451 ********
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** ERROR: Unknown rotation compression method: 255
 UAnimSet::ConvertAnims <- PostLoad:GonF_Standrad_Facial_AnimSet <- UObject::EndLoad <- LoadWholePackage:00008451 <- Main
 
@@ -1713,6 +1737,4 @@ UAnimSet::ConvertAnims <- PostLoad:GonF_Standrad_Facial_AnimSet <- UObject::EndL
     at ChildProcess.exithandler (child_process.js:637:15)
     at ChildProcess.EventEmitter.emit (events.js:98:17)
     at maybeClose (child_process.js:743:16)
-    at Socket.<anonymous> (child_process.js:956:11)
-    at Socket.EventEmitter.emit (events.js:95:17)
-    at Pipe.close (net.js:465:12)
+    at Process.ChildProcess._handle.onexit (child_process.js:810:5)

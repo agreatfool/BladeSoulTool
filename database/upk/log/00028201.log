@@ -1,4 +1,4 @@
-Found 19856 game files (132 skipped)
+Found 21310 game files (132 skipped)
 Loading package: 00028201.upk Ver: 573/1 Engine: 4205 Names: 259 Exports: 173 Imports: 85 Game: 801A
 Loading SkeletalMesh3 010199_Autoscale from package 00028201.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
@@ -7,7 +7,7 @@ Loading package: 00028202.upk Ver: 573/1 Engine: 4205 Names: 96 Exports: 2 Impor
 Loading SkeletalMeshSocket SkeletalMeshSocket_91 from package 00028201.upk
 WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
 Loading StaticMesh3 Cutlassfish_Mes from package 00028201.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 934 Exports: 4850 Imports: 265 Game: 801A
 Loading MaterialInstanceConstant col1_ac from package 00028202.upk
 Loading package: 00028199.upk Ver: 573/1 Engine: 4205 Names: 34 Exports: 5 Imports: 4 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
@@ -20,7 +20,7 @@ Loading Texture2D 010199_Autoscale_col1_D from package 00028199.upk
 Loading Texture2D 010199_Autoscale_col1_S from package 00028199.upk
 Loading TextureCube Cube_D from package 00002640.upk
 Loading Material3 Blend_OP_TSx from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Texture2D 010199_Autoscale_col1_M from package 00028199.upk
 Loading TextureCube lenscube_a from package 00002640.upk
 Loading Material3 Basic from package 00002620.upk
@@ -43,7 +43,7 @@ Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.16 sec, 4156 allocs, 1.56 MBytes serialized in 285121 calls.
+Loaded in 0.2 sec, 4176 allocs, 1.56 MBytes serialized in 286750 calls.
 
 Object info:
 ============
@@ -91,8 +91,8 @@ Object info:
 ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_91
 
     SocketName = Particle
-    BoneName = WeaponRoot
-    RelativeLocation = { X=-0.0773558, Y=0, Z=0 }
+    BoneName = WeaponPivot
+    RelativeLocation = { X=-0.0013794, Y=0, Z=-19.75 }
     RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
     RelativeScale = { X=1, Y=1, Z=1 }
 

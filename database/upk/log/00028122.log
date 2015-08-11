@@ -1,10 +1,14 @@
-Found 19856 game files (132 skipped)
-Loading package: 00028122.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 4 Imports: 2 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00028122.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 8 Imports: 2 Game: 801A
 Loading Texture2D 70027_LynF_col1_D from package 00028122.upk
 Loading Texture2D 70027_LynF_col1_M from package 00028122.upk
 Loading Texture2D 70027_LynF_col1_N from package 00028122.upk
 Loading Texture2D 70027_LynF_col1_S from package 00028122.upk
-Loaded in 0.046 sec, 164 allocs, 3.28 MBytes serialized in 1068 calls.
+Loading Texture2D 70027_LynF_col2_D from package 00028122.upk
+Loading Texture2D 70027_LynF_col2_M from package 00028122.upk
+Loading Texture2D 70027_LynF_col2_N from package 00028122.upk
+Loading Texture2D 70027_LynF_col2_S from package 00028122.upk
+Loaded in 0.079 sec, 308 allocs, 4.65 MBytes serialized in 2024 calls.
 
 Object info:
 ============
@@ -62,6 +66,66 @@ ClassName: Texture2D ObjectName: 70027_LynF_col1_S
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
     MipTailBaseIdx = 11
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 70027_LynF_col2_D
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 70027_LynF_col2_M
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 70027_LynF_col2_N
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 70027_LynF_col2_S
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

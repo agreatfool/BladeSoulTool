@@ -1,9 +1,9 @@
-Found 19856 game files (132 skipped)
+Found 21310 game files (132 skipped)
 Loading package: 00028336.upk Ver: 573/1 Engine: 4205 Names: 452 Exports: 884 Imports: 157 Game: 801A
 Loading Material3 T3-5_120046_2_Edge from package 00028336.upk
 WARNING: BoolProperty "UMaterial3::bUsedWithMaterialEffect" was not found
 Loading package: 00018336.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 10 Imports: 2 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Material3 T3-5_Dagger_e from package 00028336.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 T3-5_Dagger_ee from package 00028336.upk
@@ -25,7 +25,7 @@ WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not 
 Loading SkeletalMeshSocket SkeletalMeshSocket_443 from package 00028336.upk
 WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
 Loading StaticMesh3 T3-5_120046_1 from package 00028336.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 934 Exports: 4850 Imports: 265 Game: 801A
 Loading StaticMesh3 T3-5_120046_2 from package 00028336.upk
 Loading StaticMesh3 Weapon_120046_2_re from package 00028336.upk
 Loading Texture2D T3-5_120101_Mask from package 00028336.upk
@@ -73,7 +73,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.27 sec, 5245 allocs, 2.31 MBytes serialized in 350299 calls.
+Loaded in 0.28 sec, 5265 allocs, 2.32 MBytes serialized in 351928 calls.
 
 Object info:
 ============
@@ -183,7 +183,7 @@ ClassName: MaterialInstanceConstant ObjectName: T3-5_Dagger_Edge_INST
         }
         VectorParameterValues[1] =
         {
-            ParameterName = None
+            ParameterName = Color
             ParameterValue = { R=0.687031, G=0.851252, B=1, A=1 }
         }
     }

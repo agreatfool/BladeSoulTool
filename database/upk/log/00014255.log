@@ -1,5 +1,7 @@
-Found 19856 game files (132 skipped)
-Loading package: 00014255.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 7 Imports: 2 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00014255.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 9 Imports: 2 Game: 801A
+Loading Texture2D 40010_KunN_col3_D from package 00014255.upk
+Loading Texture2D 40010_KunN_col3_S from package 00014255.upk
 Loading Texture2D 40010_KunN_D from package 00014255.upk
 Loading Texture2D 40010_KunN_D2 from package 00014255.upk
 Loading Texture2D 40010_KunN_M from package 00014255.upk
@@ -7,7 +9,37 @@ Loading Texture2D 40010_KunN_M2 from package 00014255.upk
 Loading Texture2D 40010_KunN_N from package 00014255.upk
 Loading Texture2D 40010_KunN_S from package 00014255.upk
 Loading Texture2D 40010_KunN_S2 from package 00014255.upk
-Loaded in 0.059 sec, 280 allocs, 1.10 MBytes serialized in 1677 calls.
+Loaded in 0.081 sec, 346 allocs, 1.44 MBytes serialized in 2112 calls.
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 40010_KunN_col3_D
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 40010_KunN_col3_S
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
 
 Object info:
 ============

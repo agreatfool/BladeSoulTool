@@ -1,5 +1,18 @@
-Found 19856 game files (132 skipped)
-Loading package: 00030842.upk Ver: 573/1 Engine: 4205 Names: 358 Exports: 1026 Imports: 148 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00030842.upk Ver: 573/1 Engine: 4205 Names: 465 Exports: 1298 Imports: 182 Game: 801A
+Loading Material3 Dagger_Body_MAT_Trans from package 00030842.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading package: 00030840.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
+Loading Material3 T3-5_120046_2_Edge from package 00030842.upk
+WARNING: BoolProperty "UMaterial3::bUsedWithMaterialEffect" was not found
+Loading package: 00018336.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 10 Imports: 2 Game: 801A
+Loading Material3 T3-5_Dagger_e from package 00030842.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 T3-5_Dagger_e_Trans from package 00030842.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 T3-5_Dagger_ee from package 00030842.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading SkeletalMesh3 120130_1_Autoscale from package 00030842.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
@@ -14,14 +27,29 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_393 from package 00030842.upk
 WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
 Loading SkeletalMeshSocket SkeletalMeshSocket_397 from package 00030842.upk
 WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading Texture2D Noise_006 from package 00012963.upk
+Loading Texture2D Noise_Plazma_002 from package 00012963.upk
+Loading Texture2D Gradient_Line_R from package 00012963.upk
+Loading Texture2D Ref_Cool from package 00012963.upk
+Loading Texture2D Unique_Stone_001 from package 00012963.upk
+Loading Texture2D Gradient_Flow_000 from package 00012963.upk
+Loading Texture2D Noise_013 from package 00012963.upk
+Loading Texture2D 120114_Autoscale_col1_D from package 00030840.upk
+Loading Texture2D 120046_Autoscale_col1_N1 from package 00018336.upk
+Loading Texture2D Normal_Noise_000 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
+Loading Texture2D Gradient_004 from package 00012963.upk
+Loading Texture2D Gradient_Beam_001 from package 00012963.upk
+Loading Texture2D HongMunDaragon_Tile from package 00012963.upk
+Loading Texture2D 120046_Autoscale_col1_D from package 00018336.upk
+Loading Texture2D 120046_Autoscale_col2_D from package 00018336.upk
+Loading Texture2D 120046_Autoscale_col1_S from package 00018336.upk
+Loading Texture2D Noise_Plazma_000 from package 00012963.upk
 Loading MaterialInstanceConstant col1 from package 00030841.upk
-Loading package: 00030840.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
 Loading Texture2D 120114_Autoscale_col1_N1 from package 00030840.upk
 Loading Texture2D 120114_Autoscale_col1_M from package 00030840.upk
-Loading Texture2D 120114_Autoscale_col1_D from package 00030840.upk
 Loading Texture2D 120114_Autoscale_col1_S from package 00030840.upk
 Loading TextureCube lenscube from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
@@ -37,7 +65,147 @@ Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.12 sec, 3151 allocs, 1.24 MBytes serialized in 210473 calls.
+Loaded in 0.28 sec, 3786 allocs, 1.95 MBytes serialized in 219683 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Dagger_Body_MAT_Trans
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[8] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_006'
+        ReferencedTextures[1] = Texture2D'Noise_Plazma_002'
+        ReferencedTextures[2] = Texture2D'Gradient_Line_R'
+        ReferencedTextures[3] = Texture2D'Ref_Cool'
+        ReferencedTextures[4] = Texture2D'Unique_Stone_001'
+        ReferencedTextures[5] = Texture2D'Gradient_Flow_000'
+        ReferencedTextures[6] = Texture2D'Noise_013'
+        ReferencedTextures[7] = Texture2D'120114_Autoscale_col1_D'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.16666
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: T3-5_120046_2_Edge
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[8] =
+    {
+        ReferencedTextures[0] = Texture2D'120046_Autoscale_col1_N1'
+        ReferencedTextures[1] = Texture2D'Normal_Noise_000'
+        ReferencedTextures[2] = Texture2D'Noise_006'
+        ReferencedTextures[3] = Texture2D'Ref_Cool'
+        ReferencedTextures[4] = Texture2D'Gradient_004'
+        ReferencedTextures[5] = Texture2D'Gradient_Beam_001'
+        ReferencedTextures[6] = Texture2D'HongMunDaragon_Tile'
+        ReferencedTextures[7] = Texture2D'120046_Autoscale_col1_D'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: T3-5_Dagger_e
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[8] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_006'
+        ReferencedTextures[1] = Texture2D'Ref_Cool'
+        ReferencedTextures[2] = Texture2D'Unique_Stone_001'
+        ReferencedTextures[3] = Texture2D'120046_Autoscale_col2_D'
+        ReferencedTextures[4] = Texture2D'120046_Autoscale_col1_N1'
+        ReferencedTextures[5] = Texture2D'Noise_Plazma_002'
+        ReferencedTextures[6] = Texture2D'Gradient_Line_R'
+        ReferencedTextures[7] = Texture2D'Noise_013'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: T3-5_Dagger_e_Trans
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_006'
+        ReferencedTextures[1] = Texture2D'Ref_Cool'
+        ReferencedTextures[2] = Texture2D'Unique_Stone_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Flow_000'
+        ReferencedTextures[4] = Texture2D'Noise_Plazma_002'
+        ReferencedTextures[5] = Texture2D'Gradient_Line_R'
+        ReferencedTextures[6] = Texture2D'Noise_013'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: T3-5_Dagger_ee
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[9] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_006'
+        ReferencedTextures[1] = Texture2D'Ref_Cool'
+        ReferencedTextures[2] = Texture2D'Unique_Stone_001'
+        ReferencedTextures[3] = Texture2D'120046_Autoscale_col1_D'
+        ReferencedTextures[4] = Texture2D'120046_Autoscale_col1_N1'
+        ReferencedTextures[5] = Texture2D'120046_Autoscale_col1_S'
+        ReferencedTextures[6] = Texture2D'Noise_Plazma_000'
+        ReferencedTextures[7] = Texture2D'Gradient_Line_R'
+        ReferencedTextures[8] = Texture2D'Noise_013'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
 
 Object info:
 ============

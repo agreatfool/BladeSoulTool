@@ -1,15 +1,17 @@
-Found 19856 game files (132 skipped)
-Loading package: 00012581.upk Ver: 573/1 Engine: 4205 Names: 355 Exports: 3341 Imports: 159 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00012581.upk Ver: 573/1 Engine: 4205 Names: 376 Exports: 3501 Imports: 163 Game: 801A
 Loading Material3 Aura_OutRing_mat_FireBall from package 00012581.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Material3 Aura_OutRing_mat_FireBall_masked from package 00012581.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Aura_OutRing_mat_IceBall_masked from package 00012581.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Beam000_MatB from package 00012581.upk
 Loading Material3 Body_flame from package 00012581.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Body_flame_purple from package 00012581.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Cloudblow000_MatM from package 00012581.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -121,6 +123,8 @@ Loading Material3 fx_cloudblow_mat_test2 from package 00012581.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Ink_Fire_Blending_Mat from package 00012581.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 lava_mtl from package 00012581.upk
+WARNING: StructProperty "UMaterial3::WorldPositionOffset" was not found
 Loading Material3 M01_Dst_exp_volume from package 00012581.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M01_Dst_exp_volume_Dynamic from package 00012581.upk
@@ -132,6 +136,8 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M01_exp_sub2 from package 00012581.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M01_exp_sub3 from package 00012581.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 M01_exp_sub3a from package 00012581.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M01_exp_sub4 from package 00012581.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -262,6 +268,9 @@ Loading Texture2D Noise_003 from package 00012963.upk
 Loading Texture2D Fire_Torch_Sample_001_D from package 00012963.upk
 Loading Texture2D Fire_003 from package 00012963.upk
 Loading Texture2D Noise_Swarm_000 from package 00012963.upk
+Loading Texture2D lava01N from package 00012963.upk
+Loading Texture2D lava01 from package 00012963.upk
+Loading Texture2D Noise_Bubble_000 from package 00012963.upk
 Loading Texture2D Noise_Fractal_002 from package 00012963.upk
 Loading Texture2D Smoke_Pattern_000_128 from package 00012963.upk
 Loading Texture2D Fire_Explode_Sprite_000 from package 00012963.upk
@@ -284,7 +293,7 @@ Loading Texture2D Prop_Fire_001_05_Mask1 from package prop_fire_001.upk
 Loading Texture2D Fire_Flash_Sprite_000 from package 00012963.upk
 Loading Texture2D Noise_010 from package 00012963.upk
 Loading Texture2D Gradient_001 from package 00012963.upk
-Loaded in 1 sec, 5680 allocs, 5.77 MBytes serialized in 124444 calls.
+Loaded in 1.5 sec, 5822 allocs, 5.94 MBytes serialized in 128715 calls.
 
 Object info:
 ============
@@ -374,6 +383,30 @@ ClassName: Material3 ObjectName: Beam000_MatB
 Object info:
 ============
 ClassName: Material3 ObjectName: Body_flame
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_Wave_000_Normal'
+        ReferencedTextures[1] = Texture2D'Noise_017'
+        ReferencedTextures[2] = Texture2D'Normal_Stone_001'
+        ReferencedTextures[3] = Texture2D'Noise_Plazma_002'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Body_flame_purple
 
     TwoSided = false
     bDisableDepthTest = false
@@ -1801,6 +1834,30 @@ ClassName: Material3 ObjectName: Ink_Fire_Blending_Mat
 
 Object info:
 ============
+ClassName: Material3 ObjectName: lava_mtl
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'lava01N'
+        ReferencedTextures[1] = Texture2D'lava01'
+        ReferencedTextures[2] = Texture2D'Noise_Distortion_000'
+        ReferencedTextures[3] = Texture2D'Noise_Bubble_000'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
 ClassName: Material3 ObjectName: M01_Dst_exp_volume
 
     TwoSided = false
@@ -1913,6 +1970,24 @@ ClassName: Material3 ObjectName: M01_exp_sub3
     bDisableDepthTest = false
     bIsMasked = false
     ReferencedTextures[1] = { Texture2D'Fire_Sprite_004' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: M01_exp_sub3a
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Fire_Sprite_006' }
     BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None

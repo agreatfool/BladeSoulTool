@@ -1,0 +1,26 @@
+Found 21310 game files (132 skipped)
+Loading package: 00031946.upk Ver: 573/1 Engine: 4205 Names: 42 Exports: 4 Imports: 3 Game: 801A
+Loading AnimSet AncientRuneMechImprison_Animset from package 00031946.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+Loading AnimSequence AnimSequence_0 from package 00031946.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_1 from package 00031946.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_2 from package 00031946.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Error: Command failed: ******** 00031946 ********
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** ERROR: Unknown rotation compression method: 255
+UAnimSet::ConvertAnims <- PostLoad:AncientRuneMechImprison_Animset <- UObject::EndLoad <- LoadWholePackage:00031946 <- Main
+
+
+    at ChildProcess.exithandler (child_process.js:637:15)
+    at ChildProcess.EventEmitter.emit (events.js:98:17)
+    at maybeClose (child_process.js:743:16)
+    at Process.ChildProcess._handle.onexit (child_process.js:810:5)

@@ -1,9 +1,9 @@
-Found 19856 game files (132 skipped)
-Loading package: 00012582.upk Ver: 573/1 Engine: 4205 Names: 260 Exports: 918 Imports: 112 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00012582.upk Ver: 573/1 Engine: 4205 Names: 263 Exports: 966 Imports: 113 Game: 801A
 Loading Material3 electric_ani_mat_gradient from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Material3 Electric_Damage_01m from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Electric_Damage_02m from package 00012582.upk
@@ -12,6 +12,7 @@ Loading Material3 Electric_Damage_03m from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Electric_Lightning_Straight_03_Rotate from package 00012582.upk
 Loading Material3 Electric_sample_000 from package 00012582.upk
+Loading Material3 Electric_sample_001 from package 00012582.upk
 Loading Material3 Electric_Sword_001_M from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Electric_Sword_002_M from package 00012582.upk
@@ -62,6 +63,8 @@ Loading Material3 Lightning_Sprite001_Part from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Lightning_Sprite002_MatM from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Lightning_Sprite002a_MatM from package 00012582.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 LightningUV002_MatM from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M01_noise_elec from package 00012582.upk
@@ -98,6 +101,7 @@ Loading Texture2D Electric_Damage_01 from package 00012963.upk
 Loading Texture2D Electric_Damage_02 from package 00012963.upk
 Loading Texture2D Electric1_sample_007 from package 00012963.upk
 Loading Texture2D Electric_Lightning_Straight_03 from package 00012963.upk
+Loading Texture2D Electric1_sample_001 from package 00012963.upk
 Loading Texture2D Electric_Sword_001 from package 00012963.upk
 Loading Texture2D Electric_Sword_002 from package 00012963.upk
 Loading Texture2D Electric_Sword_003 from package 00012963.upk
@@ -149,13 +153,12 @@ Loading Texture2D Smoke_003 from package 00012963.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Electric_Lightning_Straight_01 from package 00012963.upk
 Loading Texture2D Electric_Lightning_Straight_02 from package 00012963.upk
-Loading Texture2D Electric1_sample_001 from package 00012963.upk
 Loading Texture2D Electric1_sample_002 from package 00012963.upk
 Loading Texture2D Electric1_sample_003 from package 00012963.upk
 Loading Texture2D Electric1_sample_004 from package 00012963.upk
 Loading Texture2D Electric1_sample_005 from package 00012963.upk
 Loading Texture2D Electric1_Sample_006 from package 00012963.upk
-Loaded in 0.81 sec, 3775 allocs, 12.01 MBytes serialized in 61439 calls.
+Loaded in 1.1 sec, 3810 allocs, 12.02 MBytes serialized in 62971 calls.
 
 Object info:
 ============
@@ -264,6 +267,24 @@ ClassName: Material3 ObjectName: Electric_sample_000
     bDisableDepthTest = false
     bIsMasked = false
     ReferencedTextures[1] = { Texture2D'Electric1_sample_007' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Electric_sample_001
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Electric1_sample_001' }
     BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
@@ -773,6 +794,24 @@ ClassName: Material3 ObjectName: Lightning_Sprite001_Part
 Object info:
 ============
 ClassName: Material3 ObjectName: Lightning_Sprite002_MatM
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Electric_Sprite_001' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Lightning_Sprite002a_MatM
 
     TwoSided = true
     bDisableDepthTest = false

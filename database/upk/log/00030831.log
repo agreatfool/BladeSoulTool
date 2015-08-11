@@ -1,7 +1,7 @@
-Found 19856 game files (132 skipped)
-Loading package: 00030831.upk Ver: 573/1 Engine: 4205 Names: 331 Exports: 1355 Imports: 133 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00030831.upk Ver: 573/1 Engine: 4205 Names: 331 Exports: 1344 Imports: 133 Game: 801A
 Loading MaterialInstanceConstant T3-5_Guntlet_ee_INST from package 00030831.upk
-Loading package: 00028328.upk Ver: 573/1 Engine: 4205 Names: 402 Exports: 895 Imports: 145 Game: 801A
+Loading package: 00028328.upk Ver: 573/1 Engine: 4205 Names: 401 Exports: 876 Imports: 145 Game: 801A
 Loading package: 00028326.upk Ver: 573/1 Engine: 4205 Names: 470 Exports: 914 Imports: 179 Game: 801A
 Loading SkeletalMesh3 020220_Autoscale_L from package 00030831.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
@@ -27,7 +27,7 @@ WARNING: BoolProperty "USkeletalMeshSocket::bParticleApplyAutoScale" was not fou
 Loading Texture2D T3-5_020135_Mask from package 00028328.upk
 Loading Material3 T3-5_Sword_ee from package 00028326.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading package: 00016534.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 10 Imports: 2 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00030830.upk
 Loading package: 00028686.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 8 Imports: 4 Game: 801A
@@ -59,7 +59,7 @@ Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.19 sec, 4329 allocs, 1.82 MBytes serialized in 271918 calls.
+Loaded in 0.21 sec, 4339 allocs, 1.82 MBytes serialized in 271606 calls.
 
 Object info:
 ============
@@ -78,7 +78,7 @@ ClassName: MaterialInstanceConstant ObjectName: T3-5_Guntlet_ee_INST
     {
         VectorParameterValues[0] =
         {
-            ParameterName = None
+            ParameterName = Color
             ParameterValue = { R=0.286275, G=0.070588, B=0.831373, A=1 }
         }
     }

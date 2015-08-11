@@ -1,5 +1,5 @@
-Found 19856 game files (132 skipped)
-Loading package: 00022096.upk Ver: 573/1 Engine: 4205 Names: 165 Exports: 114 Imports: 16 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00022096.upk Ver: 573/1 Engine: 4205 Names: 128 Exports: 114 Imports: 16 Game: 801A
 Loading SkeletalMesh3 Cloth_0020 from package 00022096.upk
 Loading package: 00022095.upk Ver: 573/1 Engine: 4205 Names: 89 Exports: 1 Imports: 19 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00022095.upk
@@ -13,7 +13,7 @@ Loading Texture2D Cat_Cloth_0020_col1_S from package 00022094.upk
 Loading TextureCube lenscube from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -25,7 +25,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.12 sec, 2933 allocs, 1.71 MBytes serialized in 247859 calls.
+Loaded in 0.13 sec, 2907 allocs, 1.71 MBytes serialized in 247467 calls.
 
 Object info:
 ============
@@ -56,7 +56,7 @@ ClassName: SkeletalMesh3 ObjectName: Cloth_0020
             {
                 Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=2897 }
             }
-            NumVerts = 2057
+            NumVerts = 2056
             IndexCount = 8691
             NumTexCoords = 1
         }
@@ -65,4 +65,4 @@ ClassName: SkeletalMesh3 ObjectName: Cloth_0020
     MeshOrigin = { X=-0, Y=-0, Z=-0 }
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
-    BoneCount = 75
+    BoneCount = 38

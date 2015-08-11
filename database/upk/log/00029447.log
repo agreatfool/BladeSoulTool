@@ -1,22 +1,22 @@
-Found 19856 game files (132 skipped)
-Loading package: 00029447.upk Ver: 573/1 Engine: 4205 Names: 30 Exports: 4 Imports: 2 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00029447.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
 Loading Texture2D Weapon_990179_col1_D from package 00029447.upk
 Loading Texture2D Weapon_990179_col1_M from package 00029447.upk
 Loading Texture2D Weapon_990179_col1_N from package 00029447.upk
 Loading Texture2D Weapon_990179_col1_S from package 00029447.upk
-Loaded in 0.034 sec, 188 allocs, 1.22 MBytes serialized in 1059 calls.
+Loaded in 0.025 sec, 172 allocs, 0.19 MBytes serialized in 975 calls.
 
 Object info:
 ============
 ClassName: Texture2D ObjectName: Weapon_990179_col1_D
 
-    SizeX = 1024
-    SizeY = 512
+    SizeX = 512
+    SizeY = 256
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -25,13 +25,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: Weapon_990179_col1_M
 
-    SizeX = 1024
-    SizeY = 512
-    Format = PF_DXT5 (7)
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 8
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -40,13 +40,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: Weapon_990179_col1_N
 
-    SizeX = 1024
-    SizeY = 512
+    SizeX = 512
+    SizeY = 256
     Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { -1, -1, -1, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -55,13 +55,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: Weapon_990179_col1_S
 
-    SizeX = 1024
-    SizeY = 512
-    Format = PF_DXT5 (7)
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

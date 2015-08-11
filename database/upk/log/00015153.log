@@ -1,5 +1,5 @@
-Found 19856 game files (132 skipped)
-Loading package: 00015153.upk Ver: 573/1 Engine: 4205 Names: 47 Exports: 2 Imports: 10 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00015153.upk Ver: 573/1 Engine: 4205 Names: 44 Exports: 2 Imports: 10 Game: 801A
 Loading SkeletalMesh3 020126_Autoscale_L from package 00015153.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
@@ -20,7 +20,7 @@ Loading Texture2D 020126_Autoscale_col1_S from package 00015151.upk
 Loading TextureCube cube_orb from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -32,7 +32,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.11 sec, 2842 allocs, 1.11 MBytes serialized in 198833 calls.
+Loaded in 0.13 sec, 2850 allocs, 1.11 MBytes serialized in 198990 calls.
 
 Object info:
 ============
@@ -72,7 +72,7 @@ ClassName: SkeletalMesh3 ObjectName: 020126_Autoscale_L
     MeshOrigin = { X=-0, Y=-0, Z=-0 }
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
-    BoneCount = 2
+    BoneCount = 3
 
 Object info:
 ============
@@ -112,4 +112,4 @@ ClassName: SkeletalMesh3 ObjectName: 020126_Autoscale_R
     MeshOrigin = { X=-0, Y=-0, Z=-0 }
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
-    BoneCount = 9
+    BoneCount = 3

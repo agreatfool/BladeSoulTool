@@ -1,4 +1,4 @@
-Found 19856 game files (132 skipped)
+Found 21310 game files (132 skipped)
 Loading package: 00023597.upk Ver: 573/1 Engine: 4205 Names: 221 Exports: 166 Imports: 19 Game: 801A
 Loading SkeletalMesh3 SorcererA from package 00023597.upk
 WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
@@ -18,7 +18,7 @@ Loading Texture2D SorcererA_Col1_S from package 00023595.upk
 Loading TextureCube cube_orb2 from package 00002640.upk
 Loading Texture2D SorcererA_Col1_E from package 00023595.upk
 Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -31,13 +31,13 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.16 sec, 3034 allocs, 3.82 MBytes serialized in 607111 calls.
+Loaded in 0.2 sec, 3063 allocs, 4.70 MBytes serialized in 886666 calls.
 
 Object info:
 ============
 ClassName: SkeletalMesh3 ObjectName: SorcererA
 
-    LODInfo[1] =
+    LODInfo[2] =
     {
         LODInfo[0] =
         {
@@ -45,6 +45,13 @@ ClassName: SkeletalMesh3 ObjectName: SorcererA
             LODHysteresis = 0.02
             LODMaterialMap[0] = {}
             bEnableShadowCasting[2] = { true, true }
+        }
+        LODInfo[1] =
+        {
+            DisplayFactor = 0.42
+            LODHysteresis = 0.02
+            LODMaterialMap[1] = { 0 }
+            bEnableShadowCasting[1] = { true }
         }
     }
     Sockets[1] = { SkeletalMeshSocket'SorcererA.SkeletalMeshSocket_139' }
@@ -54,7 +61,7 @@ ClassName: SkeletalMesh3 ObjectName: SorcererA
     Materials[1] = { MaterialInstanceConstant'col1' }
 
 
-    Lods[1] =
+    Lods[2] =
     {
         Lods[0] =
         {
@@ -67,8 +74,18 @@ ClassName: SkeletalMesh3 ObjectName: SorcererA
             IndexCount = 46362
             NumTexCoords = 1
         }
+        Lods[1] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=9438 }
+            }
+            NumVerts = 7852
+            IndexCount = 28314
+            NumTexCoords = 1
+        }
     }
-    LodCount = 1
+    LodCount = 2
     MeshOrigin = { X=-0, Y=-0, Z=-0 }
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }

@@ -1,5 +1,5 @@
-Found 19856 game files (132 skipped)
-Loading package: 00009393.upk Ver: 573/1 Engine: 4205 Names: 580 Exports: 235 Imports: 35 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00009393.upk Ver: 573/1 Engine: 4205 Names: 590 Exports: 239 Imports: 37 Game: 801A
 Loading AnimSet Cat_NATK_1 from package 00009393.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -60,6 +60,13 @@ Loading AnimSequence AnimSequence_1 from package 00009393.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_2 from package 00009393.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSet sunflower_Anim from package 00009393.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+Loading AnimSequence AnimSequence_1 from package 00009393.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_2 from package 00009393.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSet Warlock_Rosary_Animset from package 00009393.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -91,7 +98,7 @@ Loading SkeletalMesh3 cat_Box from package 00009393.upk
 Loading SkeletalMesh3 Chinese_Sprint_Dragon from package 00009393.upk
 Loading SkeletalMesh3 coil from package 00009393.upk
 Loading SkeletalMesh3 Dealer01 from package 00009393.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 934 Exports: 4850 Imports: 265 Game: 801A
 Loading SkeletalMesh3 Epic_Item_Scroll from package 00009393.upk
 Loading SkeletalMesh3 HongMunDragon_Mesh from package 00009393.upk
 Loading SkeletalMesh3 LegendWeapon_Dragon from package 00009393.upk
@@ -99,6 +106,8 @@ Loading SkeletalMesh3 Rosary_Mesh from package 00009393.upk
 Loading SkeletalMesh3 SorcererA_HandR from package 00009393.upk
 Loading SkeletalMesh3 Summon_Dealer_Torso from package 00009393.upk
 Loading SkeletalMesh3 Summon_Dealer_UV_Planar from package 00009393.upk
+Loading SkeletalMesh3 sunflower_Mesh from package 00009393.upk
+Loading package: 00027532.upk Ver: 573/1 Engine: 4205 Names: 98 Exports: 4 Imports: 26 Game: 801A
 Loading SkeletalMesh3 Trail_bone_mesh from package 00009393.upk
 Loading SkeletalMesh3 Warlock_Talisman_Mesh from package 00009393.upk
 Loading SkeletalMesh3 Warlock_Talisman_Mesh01 from package 00009393.upk
@@ -116,8 +125,33 @@ Loading Texture2D Dm from package 00008545.upk
 Loading Texture2D SM from package 00008545.upk
 Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading MaterialInstanceConstant col1 from package 00027532.upk
+Loading package: 00027530.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 8 Imports: 4 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D Cube000_Tex from package 00012892.upk
+Loading Texture2D 060026_JinM_col1_N from package 00027530.upk
+Loading Texture2D 060026_JinM_col1_M from package 00027530.upk
+Loading Texture2D 060026_JinM_col1_D from package 00027530.upk
+Loading Texture2D 060026_JinM_col1_S from package 00027530.upk
+Loading TextureCube Cube_D from package 00002640.upk
+Loading Texture2D check from package 00002620.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Error: Command failed: ******** 00009393 ********
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
@@ -148,6 +182,4 @@ UAnimSet::ConvertAnims <- PostLoad:Chinese_VIP_Sprint_Dragon <- UObject::EndLoad
     at ChildProcess.exithandler (child_process.js:637:15)
     at ChildProcess.EventEmitter.emit (events.js:98:17)
     at maybeClose (child_process.js:743:16)
-    at Socket.<anonymous> (child_process.js:956:11)
-    at Socket.EventEmitter.emit (events.js:95:17)
-    at Pipe.close (net.js:465:12)
+    at Process.ChildProcess._handle.onexit (child_process.js:810:5)

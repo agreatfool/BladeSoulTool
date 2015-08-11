@@ -1,13 +1,14 @@
-Found 19856 game files (132 skipped)
-Loading package: 00010123.upk Ver: 573/1 Engine: 4205 Names: 1451 Exports: 15036 Imports: 148 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00010123.upk Ver: 573/1 Engine: 4205 Names: 1673 Exports: 17824 Imports: 149 Game: 801A
 Loading Texture2D Game_ArenaLobby_ConfirmScene_Preview from package 00010123.upk
 Loading Texture2D Game_ConfirmNotificationScene_Preview from package 00010123.upk
 Loading Texture2D Game_ConfirmScene_Preview from package 00010123.upk
 Loading Texture2D Global_ConfirmScene_Preview from package 00010123.upk
 Loading Texture2D GlobalConfirmBackgroundScene_Preview from package 00010123.upk
 Loading Texture2D Lobby_ConfirmScene_Preview from package 00010123.upk
+Loading Texture2D PlayReportScene_Preview from package 00010123.upk
 Loading Texture2D WindowConfirmScene_Preview from package 00010123.upk
-Loaded in 0.04 sec, 1504 allocs, 1.15 MBytes serialized in 276486 calls.
+Loaded in 0.047 sec, 1731 allocs, 1.37 MBytes serialized in 327403 calls.
 
 Object info:
 ============
@@ -87,6 +88,21 @@ ClassName: Texture2D ObjectName: GlobalConfirmBackgroundScene_Preview
 Object info:
 ============
 ClassName: Texture2D ObjectName: Lobby_ConfirmScene_Preview
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PlayReportScene_Preview
 
     SizeX = 256
     SizeY = 256

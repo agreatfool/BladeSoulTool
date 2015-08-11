@@ -1,11 +1,12 @@
-Found 19856 game files (132 skipped)
-Loading package: 00020454.upk Ver: 573/1 Engine: 4205 Names: 250 Exports: 373 Imports: 20 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00020454.upk Ver: 573/1 Engine: 4205 Names: 254 Exports: 374 Imports: 20 Game: 801A
 Loading SkeletalMesh3 SnakeSoldier from package 00020454.upk
 WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PlayParticleSet" was not found
 WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::ShowEffectDistanceScale" was not found
 WARNING: FloatProperty "USkeletalMesh3::PhysicalHitScale" was not found
 Loading package: 00020453.upk Ver: 573/1 Engine: 4205 Names: 173 Exports: 148 Imports: 48 Game: 801A
 Loading SkeletalMeshSocket SkeletalMeshSocket_111 from package 00020454.upk
@@ -22,6 +23,8 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_86 from package 00020454.upk
 WARNING: ObjectProperty "USkeletalMeshSocket::PreviewSkelMesh" was not found
 Loading SkeletalMeshSocket SkeletalMeshSocket_87 from package 00020454.upk
 WARNING: ObjectProperty "USkeletalMeshSocket::PreviewSkelMesh" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_89 from package 00020454.upk
+WARNING: BoolProperty "USkeletalMeshSocket::bParticleAttachPosOnly" was not found
 Loading MaterialInstanceConstant col1 from package 00020453.upk
 Loading package: 00020452.upk Ver: 573/1 Engine: 4205 Names: 51 Exports: 21 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
@@ -35,7 +38,7 @@ WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D Monster_Beast_SnakeSoldier_col1_FX from package 00020452.upk
 Loading Material3 Basic_snakesoldier from package 00020453.upk
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -49,7 +52,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.17 sec, 3235 allocs, 3.30 MBytes serialized in 415525 calls.
+Loaded in 0.18 sec, 3251 allocs, 3.30 MBytes serialized in 415830 calls.
 
 Object info:
 ============
@@ -65,7 +68,7 @@ ClassName: SkeletalMesh3 ObjectName: SnakeSoldier
             bEnableShadowCasting[2] = { true, true }
         }
     }
-    Sockets[12] =
+    Sockets[13] =
     {
         Sockets[0] = SkeletalMeshSocket'SnakeSoldier.SkeletalMeshSocket_86'
         Sockets[1] = SkeletalMeshSocket'SnakeSoldier.SkeletalMeshSocket_87'
@@ -79,6 +82,7 @@ ClassName: SkeletalMesh3 ObjectName: SnakeSoldier
         Sockets[9] = SkeletalMeshSocket'SnakeSoldier.SkeletalMeshSocket_119'
         Sockets[10] = SkeletalMeshSocket'SnakeSoldier.SkeletalMeshSocket_120'
         Sockets[11] = SkeletalMeshSocket'SnakeSoldier.SkeletalMeshSocket_79'
+        Sockets[12] = SkeletalMeshSocket'SnakeSoldier.SkeletalMeshSocket_89'
     }
     bHasVertexColors = false
     EnableTwistBoneFixers = true
@@ -225,3 +229,13 @@ ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_87
     RelativeLocation = { X=0, Y=0, Z=0 }
     RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
     RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_89
+
+    SocketName = FX_Ghost_Bone
+    BoneName = Bip01
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=0.8, Y=0.8, Z=0.8 }

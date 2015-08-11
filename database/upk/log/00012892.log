@@ -1,5 +1,5 @@
-Found 19856 game files (132 skipped)
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 934 Exports: 4850 Imports: 265 Game: 801A
 Loading AnimSet GhostFire_Anim from package 00012892.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -27,7 +27,7 @@ Loading Material3 BG_Cloud_003A_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BG_DarkSandFog_001_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Material3 BG_DarkSandFog_002_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BG_Env_Snow_001_Mat from package 00012892.upk
@@ -46,7 +46,7 @@ Loading Material3 BG_FX_Cloud_001_Mat from package 00012892.upk
 Loading Material3 BG_FX_Cloud_002_Mat from package 00012892.upk
 Loading Material3 BG_FX_Electric_ani_gradient from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Material3 BG_FX_Electric_Marble from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 BG_FX_FlowerLeaf_001_Mat from package 00012892.upk
@@ -212,6 +212,9 @@ Loading Material3 Firefly_002_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 FireGorilla_exp_Mat from package 00012892.upk
 Loading package: musinreung_d_003.upk Ver: 573/1 Engine: 4205 Names: 268 Exports: 49 Imports: 29 Game: 801A
+Loading Material3 Foot_Print from package 00012892.upk
+Loading Material3 Foot_Prints from package 00012892.upk
+Loading Material3 Foot_Prints2 from package 00012892.upk
 Loading Material3 FX_Leaf_001_Mat from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 FX_Leaf_002_Mat from package 00012892.upk
@@ -579,6 +582,8 @@ Loading Texture2D Glow_003 from package 00012963.upk
 Loading Texture2D CA_Jin_A_pr_038_Norm from package musinreung_d_003.upk
 Loading Texture2D CA_Jin_A_pr_038_Diff from package musinreung_d_003.upk
 Loading Texture2D CA_Jin_A_pr_038_Spec from package musinreung_d_003.upk
+Loading Texture2D Unique_WarterFall_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_000 from package 00012963.upk
 Loading Texture2D Sparkle_Sprite_005 from package 00012963.upk
 Loading Texture2D Smoke_Inc_002 from package 00012963.upk
 Loading Texture2D Portal_CircleTrail_001_D from package 00023713.upk
@@ -612,7 +617,6 @@ Loading Texture2D Unique_Exhausted_000 from package 00012963.upk
 Loading Texture2D Sparkle_Ink_000 from package 00012963.upk
 Loading Texture2D Normal_Stone_001 from package 00012963.upk
 WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
-Loading Texture2D Unique_WarterFall_001 from package 00012963.upk
 Loading Texture2D Noise_016 from package 00012963.upk
 Loading Texture2D Noise_002 from package 00012963.upk
 Loading Texture2D Noise_012 from package 00012963.upk
@@ -661,4 +665,6 @@ UAnimSet::ConvertAnims <- PostLoad:GhostFire_Anim <- UObject::EndLoad <- LoadWho
     at ChildProcess.exithandler (child_process.js:637:15)
     at ChildProcess.EventEmitter.emit (events.js:98:17)
     at maybeClose (child_process.js:743:16)
-    at Process.ChildProcess._handle.onexit (child_process.js:810:5)
+    at Socket.<anonymous> (child_process.js:956:11)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at Pipe.close (net.js:465:12)

@@ -1,4 +1,4 @@
-Found 19856 game files (132 skipped)
+Found 21310 game files (132 skipped)
 Loading package: 00030274.upk Ver: 573/1 Engine: 4205 Names: 238 Exports: 201 Imports: 21 Game: 801A
 Loading SkeletalMesh3 70030_GonM from package 00030274.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
@@ -31,7 +31,7 @@ Loading Texture2D 70030_GonM_Col1_S from package 00030272.upk
 Loading TextureCube MatelR3 from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Material3 Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Texture2D Fur_Tape1_N from package 00029398.upk
 Loading Texture2D Fur_Tape1_D from package 00029398.upk
 Loading Material3 Beard_Fur from package 00002620.upk
@@ -55,7 +55,7 @@ Loading Texture2D CubemapFace2 from package 00029398.upk
 Loading Texture2D CubemapFace3 from package 00029398.upk
 Loading Texture2D CubemapFace4 from package 00029398.upk
 Loading Texture2D CubemapFace5 from package 00029398.upk
-Loaded in 0.23 sec, 3319 allocs, 3.86 MBytes serialized in 656332 calls.
+Loaded in 0.24 sec, 3327 allocs, 3.80 MBytes serialized in 677797 calls.
 
 Object info:
 ============
@@ -74,8 +74,8 @@ ClassName: SkeletalMesh3 ObjectName: 70030_GonM
         {
             DisplayFactor = 0.25
             LODHysteresis = 0.02
-            LODMaterialMap[2] = { 0, 1 }
-            bEnableShadowCasting[2] = { true, true }
+            LODMaterialMap[1] = { 0 }
+            bEnableShadowCasting[1] = { true }
         }
     }
     Sockets[0] = {}
@@ -107,12 +107,11 @@ ClassName: SkeletalMesh3 ObjectName: 70030_GonM
         }
         Lods[1] =
         {
-            Sections[2] =
+            Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=3086 }
-                Sections[1] = { Material=MaterialInstanceConstant'Op', FirstIndex=9258, NumFaces=28 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=3114 }
             }
-            NumVerts = 2670
+            NumVerts = 3366
             IndexCount = 9342
             NumTexCoords = 1
         }

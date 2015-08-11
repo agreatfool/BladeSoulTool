@@ -20280,7 +20280,7 @@
     "col": "col2",
     "texture": "00008184",
     "objs": [
-      "N2",
+      "n2",
       "M2",
       "D2",
       "S2"
@@ -20358,7 +20358,7 @@
     "texture": "00013380",
     "objs": [
       "n2",
-      "m2",
+      "M2",
       "D2",
       "S2"
     ]
@@ -21070,7 +21070,7 @@
     "texture": "00008025",
     "objs": [
       "N2",
-      "m2",
+      "M2",
       "D2",
       "S2"
     ]
@@ -38584,7 +38584,7 @@
     "col": "col20",
     "texture": "00008184",
     "objs": [
-      "N2",
+      "n2",
       "M2",
       "D2",
       "S2"
@@ -52022,13 +52022,7 @@
   "00024650": {
     "upkId": "00024650",
     "col": "col3",
-    "texture": "00015043",
-    "objs": [
-      "60050_JinF_col3_N",
-      "60050_JinF_Col3_M",
-      "60050_JinF_Col3_D",
-      "60050_JinF_col3_S"
-    ]
+    "texture": null
   },
   "00024653": {
     "upkId": "00024653",
@@ -52159,13 +52153,7 @@
   "00024692": {
     "upkId": "00024692",
     "col": "col3",
-    "texture": "00014359",
-    "objs": [
-      "60050_GonF_Col3_N",
-      "60050_GonF_Col3_M",
-      "60050_GonF_Col3_D",
-      "60050_GonF_Col3_S"
-    ]
+    "texture": null
   },
   "00024698": {
     "upkId": "00024698",
@@ -57755,6 +57743,18 @@
       "090028_JinM_col1_D"
     ]
   },
+  "00026269": {
+    "upkId": "00026269",
+    "col": "col1",
+    "texture": "00026268",
+    "objs": [
+      "60101_KunN_col1_E",
+      "60101_KunN_col1_S",
+      "60101_KunN_col1_N",
+      "60101_KunN_col1_M",
+      "60101_KunN_col1_D"
+    ]
+  },
   "00026271": {
     "upkId": "00026271",
     "col": "col1",
@@ -58336,6 +58336,18 @@
       "090041_JinM_col1_D"
     ]
   },
+  "00026483": {
+    "upkId": "00026483",
+    "col": "col1",
+    "texture": "00026482",
+    "objs": [
+      "60101_GonM_col1_N",
+      "60101_GonM_col1_M",
+      "60101_GonM_col1_D",
+      "60101_GonM_col1_S",
+      "60101_GonM_col1_E"
+    ]
+  },
   "00026485": {
     "upkId": "00026485",
     "col": "col1",
@@ -58848,6 +58860,17 @@
       "Monster_Human_UnbalanceZombieB_col7_D",
       "Monster_Human_UnbalanceZombieB_col3_S",
       "Monster_Human_UnbalanceZombieB_col7_E"
+    ]
+  },
+  "00026665": {
+    "upkId": "00026665",
+    "col": "col1",
+    "texture": "00026664",
+    "objs": [
+      "65040_JinF_col1_N",
+      "65040_JinF_col1_M",
+      "65040_JinF_col1_D",
+      "65040_JinF_col1_S"
     ]
   },
   "00026685": {
@@ -59608,9 +59631,7 @@
       "GiganToad_col1_M",
       "GiganToad_col3_D",
       "GiganToad_col3_S",
-      "GiganToad_fx_mask",
-      "GiganToad_col3_E",
-      "GiganToad_col2_D"
+      "GiganToad_col3_E"
     ]
   },
   "00026973": {
@@ -60754,6 +60775,17 @@
       "990196_Autoscale_col1_S"
     ]
   },
+  "00027320": {
+    "upkId": "00027320",
+    "col": "col1",
+    "texture": "00027319",
+    "objs": [
+      "090057_JinM_col1_N",
+      "090057_JinM_col1_S",
+      "090057_JinM_col1_M",
+      "090057_JinM_col1_D"
+    ]
+  },
   "00027324": {
     "upkId": "00027324",
     "col": "col1",
@@ -60763,6 +60795,19 @@
       "60121_JinM_col1_M",
       "60121_JinM_col1_D",
       "60121_JinM_col1_S"
+    ]
+  },
+  "00027326": {
+    "upkId": "00027326",
+    "col": "col2",
+    "texture": "00023734",
+    "objs": [
+      "Zakan_N",
+      "Zakan_M",
+      "Zakan_col2_D",
+      "Zakan_col2_S",
+      "Zakan_E",
+      "zakan_fx_mask"
     ]
   },
   "00027329": {
@@ -60775,6 +60820,18 @@
       "Monster_Human_WoodenGigant_col1_D",
       "Monster_Human_WoodenGigant_col1_S",
       "Monster_Human_WoodenGigant_col1_E"
+    ]
+  },
+  "00027336": {
+    "upkId": "00027336",
+    "col": "col1",
+    "texture": "00027337",
+    "objs": [
+      "990157_zakan_col1_N",
+      "990157_zakan_col1_M",
+      "990157_zakan_col1_D",
+      "990157_zakan_col1_S",
+      "990157_zakan_col1_E"
     ]
   },
   "00027369": {
@@ -60846,6 +60903,55 @@
       "RuneMechaCGiant_S_col3",
       "RuneMechaCGiant_E_col3",
       "RuneMechaCGiant_FX_Line"
+    ]
+  },
+  "00027386": {
+    "upkId": "00027386",
+    "col": "col8",
+    "texture": "00014554",
+    "objs": [
+      "Monster_Human_DokkebiGon_N8",
+      "Monster_Human_DokkebiGon_M8",
+      "Monster_Human_DokkebiGon_D8",
+      "Monster_Human_DokkebiGon_S8",
+      "Monster_Human_DokkebiGon_E8",
+      "Monster_Human_DokkebiGon_FX"
+    ]
+  },
+  "00027387": {
+    "upkId": "00027387",
+    "col": "col4",
+    "texture": "00017454",
+    "objs": [
+      "Acc_990067_DokkebiGon_N",
+      "Acc_990067_DokkebiGon_M",
+      "Acc_990067_DokkebiGon_D_col4",
+      "Acc_990067_DokkebiGon_S_col4",
+      "Acc_990067_DokkebiGon_E_col4"
+    ]
+  },
+  "00027388": {
+    "upkId": "00027388",
+    "col": "col4",
+    "texture": "00017380",
+    "objs": [
+      "Acc_990049_DokkebiGonLeader_col1_N",
+      "Acc_990049_DokkebiGonLeader_col1_M",
+      "Acc_990049_DokkebiGonLeader_col4_D",
+      "Acc_990049_DokkebiGonLeader_col4_S",
+      "Acc_990049_DokkebiGonLeader_col4_E"
+    ]
+  },
+  "00027390": {
+    "upkId": "00027390",
+    "col": "col3",
+    "texture": "00015794",
+    "objs": [
+      "990115_N",
+      "990115_M",
+      "990115_D_col4",
+      "990115_S_col2",
+      "990115_FX"
     ]
   },
   "00027391": {
@@ -60925,6 +61031,30 @@
       "040132_JinF_col1_E"
     ]
   },
+  "00027421": {
+    "upkId": "00027421",
+    "col": "col1",
+    "texture": "00027109",
+    "objs": [
+      "990154_Fatmangold_Col1_N",
+      "990154_Fatmangold_Col1_M",
+      "990154_Fatmangold_Col1_D",
+      "990154_Fatmangold_Col1_S"
+    ]
+  },
+  "00027422": {
+    "upkId": "00027422",
+    "col": "col4",
+    "texture": "00008472",
+    "objs": [
+      "AdamantineManA_N",
+      "AdamantineManA_col4_M",
+      "AdamantineManA__col4_D",
+      "AdamantineManA__col4_S",
+      "AdamantineManA_col4_E",
+      "AdamantineManA_S_FX_Line"
+    ]
+  },
   "00027425": {
     "upkId": "00027425",
     "col": "col3",
@@ -60947,6 +61077,18 @@
       "020169_Autoscale_col4_D",
       "020169_Autoscale_col4_S",
       "020169_Autoscale_col4_E"
+    ]
+  },
+  "00027427": {
+    "upkId": "00027427",
+    "col": "col3",
+    "texture": "00008842",
+    "objs": [
+      "Weapon_99054_col1_N",
+      "Weapon_99054_col1_M",
+      "Weapon_99054_col3_D",
+      "Weapon_99054_col1_S",
+      "Weapon_99054_col1_Glow"
     ]
   },
   "00027428": {
@@ -61152,9 +61294,7 @@
     "texture": "00008184",
     "objs": [
       "N",
-      "M",
-      "Cloth_50004_JinF_Col3_D",
-      "Cloth_50004_JinF_Col3_S"
+      "M"
     ]
   },
   "00027448": {
@@ -61186,8 +61326,18 @@
     "objs": [
       "Cloth_51003_GonF_col1_N",
       "Cloth_51003_GonF_col1_M",
-      "Cloth_51003_GonF_col3_D",
       "Cloth_51003_GonF_col1_S"
+    ]
+  },
+  "00027456": {
+    "upkId": "00027456",
+    "col": "col1",
+    "texture": "00027457",
+    "objs": [
+      "090060_GonM_col1_N",
+      "090060_GonM_col1_M",
+      "090060_GonM_col1_D",
+      "090060_GonM_col1_S"
     ]
   },
   "00027462": {
@@ -61416,6 +61566,18 @@
       "Cloth_53003_JinF_col3_M",
       "Colth_53003_JinF_col3_D",
       "Cloth_53003_JinF_col3_S"
+    ]
+  },
+  "00027512": {
+    "upkId": "00027512",
+    "col": "col1",
+    "texture": "00027513",
+    "objs": [
+      "RuneMechaKingAsura_col1_N",
+      "RuneMechaKingAsura_col1_M",
+      "RuneMechaKingAsura_col1_D",
+      "RuneMechaKingAsura_col1_S",
+      "RuneMechaKingAsura_col1_E"
     ]
   },
   "00027519": {
@@ -62247,10 +62409,18 @@
     "col": "col6",
     "texture": "00006856",
     "objs": [
-      "Cloth_80008_GonF_col6_N",
-      "Cloth_80008_GonF_col1_M",
-      "Cloth_80008_GonF_col6_D",
-      "Cloth_80008_GonF_col6_S"
+      "Cloth_80008_GonF_col1_M"
+    ]
+  },
+  "00027827": {
+    "upkId": "00027827",
+    "col": "col1",
+    "texture": "00027826",
+    "objs": [
+      "60090_JinM_col1_N",
+      "60090_JinM_col1_M",
+      "60090_JinM_col1_D",
+      "60090_JinM_col1_S"
     ]
   },
   "00027832": {
@@ -62848,9 +63018,7 @@
     "texture": "00008343",
     "objs": [
       "Cloth_51003_JinF_col1_N",
-      "Cloth_51003_JinF_col1_M",
-      "Cloth_51003_JinF_col3_D",
-      "Cloth_51003_JinF_col3_S"
+      "Cloth_51003_JinF_col1_M"
     ]
   },
   "00027933": {
@@ -62895,6 +63063,17 @@
       "M",
       "Cloth_80008_JinM_col6_D",
       "Cloth_80008_JinM_col6_S"
+    ]
+  },
+  "00027953": {
+    "upkId": "00027953",
+    "col": "col1",
+    "texture": "00027954",
+    "objs": [
+      "65010_KunN_col1_N",
+      "65010_KunN_col1_M",
+      "65010_KunN_col1_D",
+      "65010_KunN_col1_S"
     ]
   },
   "00027956": {
@@ -62990,6 +63169,17 @@
       "CrocodileSharkTribeC2_D6",
       "CrocodileSharkTribeC2_S6",
       "CrocodileSharkTribeC2_FX"
+    ]
+  },
+  "00028002": {
+    "upkId": "00028002",
+    "col": "col1",
+    "texture": "00028001",
+    "objs": [
+      "Cloth_65044_LynF_col1_N",
+      "Cloth_65044_LynF_col1_M",
+      "Cloth_65044_LynF_col1_D",
+      "Cloth_65044_LynF_col1_S"
     ]
   },
   "00028004": {
@@ -64460,13 +64650,7 @@
   "00028388": {
     "upkId": "00028388",
     "col": "col2",
-    "texture": "00022149",
-    "objs": [
-      "60100_KunN_col2_S",
-      "60100_KunN_col2_N",
-      "60100_KunN_col2_M",
-      "60100_KunN_col2_D"
-    ]
+    "texture": null
   },
   "00028398": {
     "upkId": "00028398",
@@ -64491,13 +64675,7 @@
   "00028404": {
     "upkId": "00028404",
     "col": "col2",
-    "texture": "00022077",
-    "objs": [
-      "60100_LynM_col2_N",
-      "60100_LynM_col2_M",
-      "60100_LynM_col2_D",
-      "60100_LynM_col2_S"
-    ]
+    "texture": null
   },
   "00028407": {
     "upkId": "00028407",
@@ -65665,8 +65843,7 @@
       "990149_AnthroCrocodile_col1_N",
       "990149_AnthroCrocodile_col1_M",
       "990149_AnthroCrocodile_col1_D",
-      "990149_AnthroCrocodile_col1_S",
-      "990149_AnthroCrocodile_col1_E"
+      "990149_AnthroCrocodile_col1_S"
     ]
   },
   "00028811": {
@@ -66467,6 +66644,17 @@
       "70028_JinM_col1_S"
     ]
   },
+  "00029056": {
+    "upkId": "00029056",
+    "col": "col1",
+    "texture": "00029055",
+    "objs": [
+      "Monster_Human_SnowBandit_col1_N",
+      "Monster_Human_SnowBandit_col1_M",
+      "Monster_Human_SnowBandit_col1_D",
+      "Monster_Human_SnowBandit_col1_S"
+    ]
+  },
   "00029059": {
     "upkId": "00029059",
     "col": "col1",
@@ -66477,6 +66665,17 @@
       "030196_Autoscale_col1_D",
       "030196_Autoscale_col1_S",
       "030196_Autoscale_col1_E"
+    ]
+  },
+  "00029066": {
+    "upkId": "00029066",
+    "col": "col1",
+    "texture": "00029067",
+    "objs": [
+      "60124_JinF_Col1_N",
+      "60124_JinF_Col1_M",
+      "60124_JinF_Col1_D",
+      "60124_JinF_Col1_S"
     ]
   },
   "00029073": {
@@ -66618,6 +66817,18 @@
       "70028_GonM_Col1_S"
     ]
   },
+  "00029126": {
+    "upkId": "00029126",
+    "col": "col1",
+    "texture": "00029125",
+    "objs": [
+      "DemonEmperorFat_col1_N",
+      "DemonEmperorFat_col1_M",
+      "DemonEmperorFat_col1_D",
+      "DemonEmperorFat_col1_S",
+      "DemonEmperorFat_col1_E"
+    ]
+  },
   "00029129": {
     "upkId": "00029129",
     "col": "col1",
@@ -66693,10 +66904,8 @@
     "col": "col3",
     "texture": "00013188",
     "objs": [
-      "50003_KunN_col3_S",
       "Cloth_50003_KunN_col1_N",
-      "Cloth_50003_KunN_col1_M",
-      "50003_KunN_col3_D"
+      "Cloth_50003_KunN_col1_M"
     ]
   },
   "00029153": {
@@ -66705,9 +66914,7 @@
     "texture": "00013189",
     "objs": [
       "Cloth_50003_GonF_col1_N",
-      "Cloth_50003_GonF_col1_M",
-      "50003_GonF_col3_D",
-      "50003_GonF_col3_S"
+      "Cloth_50003_GonF_col1_M"
     ]
   },
   "00029154": {
@@ -66726,10 +66933,7 @@
     "col": "col3",
     "texture": "00014289",
     "objs": [
-      "50003_LynF_col3_N",
-      "50003_LynF_col2_M",
-      "50003_LynF_col3_D",
-      "50003_LynF_col3_S"
+      "50003_LynF_col2_M"
     ]
   },
   "00029156": {
@@ -66759,10 +66963,7 @@
     "col": "col4",
     "texture": "00013188",
     "objs": [
-      "50003_KunN_col4_S",
-      "50003_KunN_col4_N",
-      "Cloth_50003_KunN_col1_M",
-      "50003_KunN_col4_D"
+      "Cloth_50003_KunN_col1_M"
     ]
   },
   "00029159": {
@@ -66770,10 +66971,7 @@
     "col": "col4",
     "texture": "00013189",
     "objs": [
-      "50003_GonF_col4_N",
-      "Cloth_50003_GonF_col1_M",
-      "50003_GonF_col4_D",
-      "50003_GonF_col4_S"
+      "Cloth_50003_GonF_col1_M"
     ]
   },
   "00029160": {
@@ -66790,12 +66988,18 @@
   "00029161": {
     "upkId": "00029161",
     "col": "col4",
-    "texture": "00014289",
+    "texture": null
+  },
+  "00029164": {
+    "upkId": "00029164",
+    "col": "col1",
+    "texture": "00029165",
     "objs": [
-      "50003_LynF_col4_N",
-      "50003_LynF_col3_M",
-      "50003_LynF_col4_D",
-      "50003_LynF_col4_S"
+      "RuneMechaYacha_col1_N",
+      "RuneMechaYacha_col1_M",
+      "RuneMechaYacha_col1_D",
+      "RuneMechaYacha_col1_S",
+      "RuneMechaYacha_col1_E"
     ]
   },
   "00029178": {
@@ -69184,6 +69388,17 @@
       "Gadget_MachineGunA_S_col2"
     ]
   },
+  "00030142": {
+    "upkId": "00030142",
+    "col": "col1",
+    "texture": "00030141",
+    "objs": [
+      "70034_JinF_col1_N",
+      "70034_JinF_col1_M",
+      "70034_JinF_col1_D",
+      "70034_JinF_col1_S"
+    ]
+  },
   "00030144": {
     "upkId": "00030144",
     "col": "col2",
@@ -69306,7 +69521,8 @@
       "Weapon_990208_col1_N",
       "Weapon_990208_col1_M",
       "Weapon_990208_col1_D",
-      "Weapon_990208_col1_S"
+      "Weapon_990208_col1_S",
+      "Weapon_990208_col1_E"
     ]
   },
   "00030187": {
@@ -69404,6 +69620,17 @@
       "060029_LynM_col1_D"
     ]
   },
+  "00030233": {
+    "upkId": "00030233",
+    "col": "col1",
+    "texture": "00030232",
+    "objs": [
+      "70033_GonM_col1_N",
+      "70033_GonM_col1_M",
+      "70033_GonM_col1_D",
+      "70033_GonM_col1_S"
+    ]
+  },
   "00030237": {
     "upkId": "00030237",
     "col": "col1",
@@ -69436,6 +69663,30 @@
       "60128_LynF_col1_M",
       "60128_LynF_col1_D",
       "60128_LynF_col1_S"
+    ]
+  },
+  "00030252": {
+    "upkId": "00030252",
+    "col": "col1",
+    "texture": "00030251",
+    "objs": [
+      "70035_KunN_col1_N",
+      "70035_KunN_col1_M",
+      "70035_KunN_col1_D",
+      "70035_KunN_col1_S"
+    ]
+  },
+  "00030257": {
+    "upkId": "00030257",
+    "col": "col1",
+    "texture": "00030256",
+    "objs": [
+      "040182_JinF_col1_D",
+      "040182_JinF_col1_N",
+      "nn2",
+      "mm2",
+      "dd2",
+      "ss2"
     ]
   },
   "00030265": {
@@ -69502,6 +69753,81 @@
       "70030_LynF_col1_M",
       "70030_LynF_col1_D",
       "70030_LynF_col1_S"
+    ]
+  },
+  "00030286": {
+    "upkId": "00030286",
+    "col": "col1",
+    "texture": "00030256",
+    "objs": [
+      "040182_JinF_col1_D",
+      "040182_JinF_col1_N",
+      "nn2",
+      "mm2",
+      "dd2",
+      "ss2"
+    ]
+  },
+  "00030289": {
+    "upkId": "00030289",
+    "col": "col1",
+    "texture": "00030256",
+    "objs": [
+      "040182_JinF_col1_D",
+      "040182_JinF_col1_N",
+      "nn2",
+      "mm2",
+      "dd2",
+      "ss2"
+    ]
+  },
+  "00030291": {
+    "upkId": "00030291",
+    "col": "col1",
+    "texture": "00030256",
+    "objs": [
+      "040182_JinF_col1_D",
+      "040182_JinF_col1_N",
+      "nn2",
+      "mm2",
+      "dd2",
+      "ss2"
+    ]
+  },
+  "00030296": {
+    "upkId": "00030296",
+    "col": "col1",
+    "texture": "00030295",
+    "objs": [
+      "110120_Autoscale_N",
+      "110120_Autoscale_M",
+      "110120_Autoscale_D",
+      "110120_Autoscale_S",
+      "110120_Autoscale_E"
+    ]
+  },
+  "00030298": {
+    "upkId": "00030298",
+    "col": "col2",
+    "texture": "00030295",
+    "objs": [
+      "110120_Autoscale_N",
+      "110120_Autoscale_col2_M",
+      "110120_Autoscale_col2_D",
+      "110120_Autoscale_col2_S",
+      "110120_Autoscale_col2_E"
+    ]
+  },
+  "00030299": {
+    "upkId": "00030299",
+    "col": "col3",
+    "texture": "00030295",
+    "objs": [
+      "110120_Autoscale_N",
+      "110120_Autoscale_col3_M",
+      "110120_Autoscale_col3_D",
+      "110120_Autoscale_col3_S",
+      "110120_Autoscale_col3_E"
     ]
   },
   "00030310": {
@@ -69581,6 +69907,28 @@
       "70036_LynF_Col1_S"
     ]
   },
+  "00030338": {
+    "upkId": "00030338",
+    "col": "col1",
+    "texture": "00030340",
+    "objs": [
+      "Summon_Cat_Cloth_0024_col1_N",
+      "Summon_Cat_Cloth_0024_col1_M",
+      "Summon_Cat_Cloth_0024_col1_D",
+      "Summon_Cat_Cloth_0024_col1_S"
+    ]
+  },
+  "00030342": {
+    "upkId": "00030342",
+    "col": "col1",
+    "texture": "00030343",
+    "objs": [
+      "Summon_Cat_Hat_0024_col1_N",
+      "Summon_Cat_Hat_0024_col1_M",
+      "Summon_Cat_Hat_0024_col1_D",
+      "Summon_Cat_Hat_0024_col1_S"
+    ]
+  },
   "00030355": {
     "upkId": "00030355",
     "col": "col1",
@@ -69656,6 +70004,18 @@
       "060030_col1_M",
       "060030_col1_D",
       "060030_col1_S"
+    ]
+  },
+  "00030377": {
+    "upkId": "00030377",
+    "col": "col2",
+    "texture": "00016277",
+    "objs": [
+      "Cloth_0004_col2_N",
+      "Cloth_0004_col2_M",
+      "Cloth_0004_col2_D",
+      "Cloth_0004_col2_S",
+      "Cloth_0004_col2_E"
     ]
   },
   "00030380": {
@@ -69895,6 +70255,45 @@
       "060130_Autoscale_col1_S"
     ]
   },
+  "00030467": {
+    "upkId": "00030467",
+    "col": "col1",
+    "texture": "00030468",
+    "objs": [
+      "040181_GonM_Col1_D",
+      "040181_GonM_Col1_N",
+      "040181_GonM_Col1_N_ACC",
+      "040181_GonM_Col1_M_ACC",
+      "040181_GonM_Col1_D_ACC",
+      "040181_GonM_Col1_S_ACC"
+    ]
+  },
+  "00030470": {
+    "upkId": "00030470",
+    "col": "col1",
+    "texture": "00030468",
+    "objs": [
+      "040181_GonM_Col1_D",
+      "040181_GonM_Col1_N",
+      "040181_GonM_Col1_N_ACC",
+      "040181_GonM_Col1_M_ACC",
+      "040181_GonM_Col1_D_ACC",
+      "040181_GonM_Col1_S_ACC"
+    ]
+  },
+  "00030472": {
+    "upkId": "00030472",
+    "col": "col1",
+    "texture": "00030468",
+    "objs": [
+      "040181_GonM_Col1_D",
+      "040181_GonM_Col1_N",
+      "040181_GonM_Col1_N_ACC",
+      "040181_GonM_Col1_M_ACC",
+      "040181_GonM_Col1_D_ACC",
+      "040181_GonM_Col1_S_ACC"
+    ]
+  },
   "00030476": {
     "upkId": "00030476",
     "col": "col1",
@@ -69937,6 +70336,29 @@
       "120124_Autoscale_col1_M",
       "120124_Autoscale_col1_D",
       "120124_Autoscale_col1_S"
+    ]
+  },
+  "00030499": {
+    "upkId": "00030499",
+    "col": "col1",
+    "texture": "00030496",
+    "objs": [
+      "020212_Autoscale_col1_N",
+      "020212_Autoscale_col1_M",
+      "020212_Autoscale_col1_D",
+      "020212_Autoscale_col1_S",
+      "020212_Autoscale_col1_E"
+    ]
+  },
+  "00030511": {
+    "upkId": "00030511",
+    "col": "col1",
+    "texture": "00030512",
+    "objs": [
+      "70033_JinM_col1_N",
+      "70033_JinM_col1_M",
+      "70033_JinM_col1_D",
+      "70033_JinM_col1_S"
     ]
   },
   "00030517": {
@@ -69997,6 +70419,17 @@
       "fur_Nfur_D",
       "fur_Dfur_D",
       "fur_Sfur_D"
+    ]
+  },
+  "00030540": {
+    "upkId": "00030540",
+    "col": "col1",
+    "texture": "00030539",
+    "objs": [
+      "70033_LynM_col1_N",
+      "70033_LynM_col1_M",
+      "70033_LynM_col1_D",
+      "70033_LynM_col1_S"
     ]
   },
   "00030560": {
@@ -70062,6 +70495,31 @@
       "LynF_007_col1_n"
     ]
   },
+  "00030578": {
+    "upkId": "00030578",
+    "col": "col1",
+    "texture": "00030577",
+    "objs": [
+      "040183_KunN_Col1_D",
+      "040183_KunN_Col1_N",
+      "040183_KunN_Col1_N_Acc",
+      "040183_KunN_Col1_M_Acc",
+      "040183_KunN_Col1_D_Acc",
+      "040183_KunN_Col1_S_Acc"
+    ]
+  },
+  "00030582": {
+    "upkId": "00030582",
+    "col": "col1",
+    "texture": "00030581",
+    "objs": [
+      "060128_Autoscale_col1_N",
+      "060128_Autoscale_col1_M",
+      "060128_Autoscale_col1_D",
+      "060128_Autoscale_col1_S",
+      "060128_Autoscale_col1_E"
+    ]
+  },
   "00030590": {
     "upkId": "00030590",
     "col": "col3",
@@ -70120,6 +70578,39 @@
       "PigTribeCNight_col1_E"
     ]
   },
+  "00030626": {
+    "upkId": "00030626",
+    "col": "col1",
+    "texture": "00030629",
+    "objs": [
+      "040187_LynF_col1_N",
+      "040187_LynF_col1_M",
+      "040187_LynF_col1_D",
+      "040187_LynF_col1_S"
+    ]
+  },
+  "00030632": {
+    "upkId": "00030632",
+    "col": "col1",
+    "texture": "00031954",
+    "objs": [
+      "040187_JinM_col1_N",
+      "040187_JinM_col1_M",
+      "040187_JinM_col1_D",
+      "040187_JinM_col1_S"
+    ]
+  },
+  "00030634": {
+    "upkId": "00030634",
+    "col": "col1",
+    "texture": "00030629",
+    "objs": [
+      "040187_LynF_col1_N",
+      "040187_LynF_col1_M",
+      "040187_LynF_col1_D",
+      "040187_LynF_col1_S"
+    ]
+  },
   "00030637": {
     "upkId": "00030637",
     "col": "col1",
@@ -70129,6 +70620,17 @@
       "60117_KunN_col1_M",
       "60117_KunN_col1_D",
       "60117_KunN_col1_S"
+    ]
+  },
+  "00030639": {
+    "upkId": "00030639",
+    "col": "col1",
+    "texture": "00031954",
+    "objs": [
+      "040187_JinM_col1_N",
+      "040187_JinM_col1_M",
+      "040187_JinM_col1_D",
+      "040187_JinM_col1_S"
     ]
   },
   "00030642": {
@@ -70142,6 +70644,39 @@
       "60117_GonF_col1_S"
     ]
   },
+  "00030646": {
+    "upkId": "00030646",
+    "col": "col1",
+    "texture": "00030629",
+    "objs": [
+      "040187_LynF_col1_N",
+      "040187_LynF_col1_M",
+      "040187_LynF_col1_D",
+      "040187_LynF_col1_S"
+    ]
+  },
+  "00030648": {
+    "upkId": "00030648",
+    "col": "col1",
+    "texture": "00031954",
+    "objs": [
+      "040187_JinM_col1_N",
+      "040187_JinM_col1_M",
+      "040187_JinM_col1_D",
+      "040187_JinM_col1_S"
+    ]
+  },
+  "00030649": {
+    "upkId": "00030649",
+    "col": "col1",
+    "texture": "00030629",
+    "objs": [
+      "040187_LynF_col1_N",
+      "040187_LynF_col1_M",
+      "040187_LynF_col1_D",
+      "040187_LynF_col1_S"
+    ]
+  },
   "00030653": {
     "upkId": "00030653",
     "col": "col1",
@@ -70151,6 +70686,56 @@
       "60117_GonM_col1_M",
       "60117_GonM_col1_D",
       "60117_GonM_col1_S"
+    ]
+  },
+  "00030659": {
+    "upkId": "00030659",
+    "col": "col1",
+    "texture": "00030658",
+    "objs": [
+      "060031_LynM_col1_N",
+      "060031_LynM_col1_M",
+      "060031_LynM_col1_D",
+      "060031_LynM_col1_S"
+    ]
+  },
+  "00030663": {
+    "upkId": "00030663",
+    "col": "col1",
+    "texture": "00030577",
+    "objs": [
+      "040183_KunN_Col1_D",
+      "040183_KunN_Col1_N",
+      "040183_KunN_Col1_N_Acc",
+      "040183_KunN_Col1_M_Acc",
+      "040183_KunN_Col1_D_Acc",
+      "040183_KunN_Col1_S_Acc"
+    ]
+  },
+  "00030665": {
+    "upkId": "00030665",
+    "col": "col1",
+    "texture": "00030577",
+    "objs": [
+      "040183_KunN_Col1_D",
+      "040183_KunN_Col1_N",
+      "040183_KunN_Col1_N_Acc",
+      "040183_KunN_Col1_M_Acc",
+      "040183_KunN_Col1_D_Acc",
+      "040183_KunN_Col1_S_Acc"
+    ]
+  },
+  "00030667": {
+    "upkId": "00030667",
+    "col": "col1",
+    "texture": "00030577",
+    "objs": [
+      "040183_KunN_Col1_D",
+      "040183_KunN_Col1_N",
+      "040183_KunN_Col1_N_Acc",
+      "040183_KunN_Col1_M_Acc",
+      "040183_KunN_Col1_D_Acc",
+      "040183_KunN_Col1_S_Acc"
     ]
   },
   "00030676": {
@@ -70255,6 +70840,65 @@
       "60129_JinM_col1_M",
       "60129_JinM_col1_D",
       "60129_JinM_col1_S"
+    ]
+  },
+  "00030724": {
+    "upkId": "00030724",
+    "col": "col1",
+    "texture": "00030723",
+    "objs": [
+      "60130_JinM_col1_N",
+      "60130_JinM_col1_M",
+      "60130_JinM_col1_D",
+      "60130_JinM_col1_S"
+    ]
+  },
+  "00030736": {
+    "upkId": "00030736",
+    "col": "col1",
+    "texture": "00030735",
+    "objs": [
+      "60101_JinM_col1_N",
+      "60101_JinM_col1_M",
+      "60101_JinM_col1_D",
+      "60101_JinM_col1_S",
+      "60101_JinM_col1_E"
+    ]
+  },
+  "00030739": {
+    "upkId": "00030739",
+    "col": "col1",
+    "texture": "00030737",
+    "objs": [
+      "Cloth_60101_JinF_col1_N",
+      "Cloth_60101_JinF_col1_M",
+      "Cloth_60101_JinF_col1_D",
+      "Cloth_60101_JinF_col1_S",
+      "Cloth_60101_JinF_col1_E"
+    ]
+  },
+  "00030742": {
+    "upkId": "00030742",
+    "col": "col1",
+    "texture": "00030740",
+    "objs": [
+      "Cloth_60101_GonF_col1_N",
+      "Cloth_60101_GonF_col1_M",
+      "Cloth_60101_GonF_col1_D",
+      "Cloth_60101_GonF_col1_S",
+      "Cloth_60101_GonF_col1_E"
+    ]
+  },
+  "00030745": {
+    "upkId": "00030745",
+    "col": "col1",
+    "texture": "00030743",
+    "objs": [
+      "60101_LynM_col1_N",
+      "60101_LynM_col1_M",
+      "60101_LynM_col1_D",
+      "60101_LynM_col1_S",
+      "60101_LynM_col1_E"
     ]
   },
   "00030749": {
@@ -70759,6 +71403,28 @@
       "PileBunkerNight_E"
     ]
   },
+  "00030899": {
+    "upkId": "00030899",
+    "col": "col1",
+    "texture": "00030898",
+    "objs": [
+      "70035_GonF_col1_N",
+      "70035_GonF_col1_M",
+      "70035_GonF_col1_D",
+      "70035_GonF_col1_S"
+    ]
+  },
+  "00030905": {
+    "upkId": "00030905",
+    "col": "col1",
+    "texture": "00030902",
+    "objs": [
+      "70035_LynF_col1_N",
+      "70035_LynF_col1_M",
+      "70035_LynF_col1_D",
+      "70035_LynF_col1_S"
+    ]
+  },
   "00030907": {
     "upkId": "00030907",
     "col": "col1",
@@ -70791,6 +71457,61 @@
       "60129_JinM_col1_M",
       "60129_JinM_col3_D",
       "60129_JinM_col3_S"
+    ]
+  },
+  "00030917": {
+    "upkId": "00030917",
+    "col": "col1",
+    "texture": "00031956",
+    "objs": [
+      "060031_LynF_col1_N",
+      "060031_LynF_col1_M",
+      "060031_LynF_col1_D",
+      "060031_LynF_col1_S"
+    ]
+  },
+  "00030922": {
+    "upkId": "00030922",
+    "col": "col1",
+    "texture": "00030658",
+    "objs": [
+      "060031_LynM_col1_N",
+      "060031_LynM_col1_M",
+      "060031_LynM_col1_D",
+      "060031_LynM_col1_S"
+    ]
+  },
+  "00030923": {
+    "upkId": "00030923",
+    "col": "col1",
+    "texture": "00030658",
+    "objs": [
+      "060031_LynM_col1_N",
+      "060031_LynM_col1_M",
+      "060031_LynM_col1_D",
+      "060031_LynM_col1_S"
+    ]
+  },
+  "00030924": {
+    "upkId": "00030924",
+    "col": "col1",
+    "texture": "00031956",
+    "objs": [
+      "060031_LynF_col1_N",
+      "060031_LynF_col1_M",
+      "060031_LynF_col1_D",
+      "060031_LynF_col1_S"
+    ]
+  },
+  "00030925": {
+    "upkId": "00030925",
+    "col": "col1",
+    "texture": "00031956",
+    "objs": [
+      "060031_LynF_col1_N",
+      "060031_LynF_col1_M",
+      "060031_LynF_col1_D",
+      "060031_LynF_col1_S"
     ]
   },
   "00030926": {
@@ -70861,6 +71582,17 @@
       "60129_LynF_col1_S"
     ]
   },
+  "00030947": {
+    "upkId": "00030947",
+    "col": "col1",
+    "texture": "00030946",
+    "objs": [
+      "70035_JinF_col1_N",
+      "70035_JinF_col1_M",
+      "70035_JinF_col1_D",
+      "70035_JinF_col1_S"
+    ]
+  },
   "00030952": {
     "upkId": "00030952",
     "col": "col1",
@@ -70871,6 +71603,64 @@
       "BabaNightA_col1_D",
       "BabaNightA_col1_S",
       "BabaNightA_col1_E"
+    ]
+  },
+  "00030969": {
+    "upkId": "00030969",
+    "col": "col1",
+    "texture": "00030968",
+    "objs": [
+      "60116_GonM_col1_N",
+      "60116_GonM_col1_M",
+      "60116_GonM_col1_D",
+      "60116_GonM_col1_S"
+    ]
+  },
+  "00030972": {
+    "upkId": "00030972",
+    "col": "col1",
+    "texture": "00030971",
+    "objs": [
+      "60116_GonF_col1_N",
+      "60116_GonF_col1_M",
+      "60116_GonF_col1_D",
+      "60116_GonF_col1_S",
+      "60116_GonF_col1_E"
+    ]
+  },
+  "00030976": {
+    "upkId": "00030976",
+    "col": "col1",
+    "texture": "00030974",
+    "objs": [
+      "60116_KunN_col1_E",
+      "60116_KunN_col1_S",
+      "60116_KunN_col1_N",
+      "60116_KunN_col1_M",
+      "60116_KunN_col1_D"
+    ]
+  },
+  "00030978": {
+    "upkId": "00030978",
+    "col": "col1",
+    "texture": "00030977",
+    "objs": [
+      "60116_LynF_col1_N",
+      "60116_LynF_col1_M",
+      "60116_LynF_col1_D",
+      "60116_LynF_col1_S",
+      "60116_LynF_col1_E"
+    ]
+  },
+  "00030981": {
+    "upkId": "00030981",
+    "col": "col1",
+    "texture": "00030980",
+    "objs": [
+      "60116_LynM_col1_N",
+      "60116_LynM_col1_M",
+      "60116_LynM_col1_D",
+      "60116_LynM_col1_S"
     ]
   },
   "00030998": {
@@ -70893,6 +71683,17 @@
       "Weapon_990211_col1_M",
       "Weapon_990211_col1_D",
       "Weapon_990211_col1_S"
+    ]
+  },
+  "00031008": {
+    "upkId": "00031008",
+    "col": "col1",
+    "texture": "00031004",
+    "objs": [
+      "70039_JinM_col1_N",
+      "70039_JinM_col1_M",
+      "70039_JinM_col1_D",
+      "70039_JinM_col1_S"
     ]
   },
   "00031016": {
@@ -71168,6 +71969,174 @@
       "JinF_043_col1_N"
     ]
   },
+  "00031077": {
+    "upkId": "00031077",
+    "col": "col1",
+    "texture": "00031076",
+    "objs": [
+      "10001_JinM_col1_N",
+      "10001_JinM_col1_M",
+      "10001_JinM_col1_D",
+      "10001_JinM_col1_S"
+    ]
+  },
+  "00031081": {
+    "upkId": "00031081",
+    "col": "col1",
+    "texture": "00031080",
+    "objs": [
+      "Cloth_70034_GonF_col1_N",
+      "Cloth_70034_GonF_col1_M",
+      "Cloth_70034_GonF_col1_D",
+      "Cloth_70034_GonF_col1_S"
+    ]
+  },
+  "00031085": {
+    "upkId": "00031085",
+    "col": "col1",
+    "texture": "00031084",
+    "objs": [
+      "Cloth_70034_KunN_col1_S",
+      "Cloth_70034_KunN_col1_N",
+      "Cloth_70034_KunN_col1_M",
+      "Cloth_70034_KunN_col1_D"
+    ]
+  },
+  "00031089": {
+    "upkId": "00031089",
+    "col": "col1",
+    "texture": "00031088",
+    "objs": [
+      "Cloth_70034_LynF_col1_N",
+      "Cloth_70034_LynF_col1_M",
+      "Cloth_70034_LynF_col1_D",
+      "Cloth_70034_LynF_col1_S"
+    ]
+  },
+  "00031097": {
+    "upkId": "00031097",
+    "col": "col1",
+    "texture": "00031096",
+    "objs": [
+      "70038_JinM_col1_N",
+      "70038_JinM_col1_M",
+      "70038_JinM_col1_D",
+      "70038_JinM_col1_S"
+    ]
+  },
+  "00031101": {
+    "upkId": "00031101",
+    "col": "col1",
+    "texture": "00031102",
+    "objs": [
+      "70037_JinF_col1_N",
+      "70037_JinF_col1_M",
+      "70037_JinF_col1_D",
+      "70037_JinF_col1_S"
+    ]
+  },
+  "00031109": {
+    "upkId": "00031109",
+    "col": "col1",
+    "texture": "00031096",
+    "objs": [
+      "70038_JinM_col1_N",
+      "70038_JinM_col1_M",
+      "70038_JinM_col1_D",
+      "70038_JinM_col1_S"
+    ]
+  },
+  "00031114": {
+    "upkId": "00031114",
+    "col": "col1",
+    "texture": "00031096",
+    "objs": [
+      "70038_JinM_col1_N",
+      "70038_JinM_col1_M",
+      "70038_JinM_col1_D",
+      "70038_JinM_col1_S"
+    ]
+  },
+  "00031118": {
+    "upkId": "00031118",
+    "col": "col1",
+    "texture": "00031117",
+    "objs": [
+      "Weapon_990189_col1_N",
+      "Weapon_990189_col1_M",
+      "Weapon_990189_col1_D",
+      "Weapon_990189_col1_S",
+      "Weapon_990189_col1_E"
+    ]
+  },
+  "00031123": {
+    "upkId": "00031123",
+    "col": "col1",
+    "texture": "00031122",
+    "objs": [
+      "110129_Autoscale_col1_N",
+      "110129_Autoscale_col1_M",
+      "110129_Autoscale_col1_D",
+      "110129_Autoscale_col1_S",
+      "110129_Autoscale_col1_E"
+    ]
+  },
+  "00031139": {
+    "upkId": "00031139",
+    "col": "col1",
+    "texture": "00031153",
+    "objs": [
+      "060032_JinM_col1_n",
+      "060032_JinM_col1_m",
+      "060032_JinM_col1_d",
+      "060032_JinM_col1_s"
+    ]
+  },
+  "00031146": {
+    "upkId": "00031146",
+    "col": "col1",
+    "texture": "00031154",
+    "objs": [
+      "060033_JinM_col1_N",
+      "060033_JinM_col1_m",
+      "060033_JinM_col1_d",
+      "060033_JinM_col1_s"
+    ]
+  },
+  "00031160": {
+    "upkId": "00031160",
+    "col": "col1",
+    "texture": "00031161",
+    "objs": [
+      "990181_FireGorilla_col1_N",
+      "990181_FireGorilla_col1_M",
+      "990181_FireGorilla_col1_D",
+      "990181_FireGorilla_col1_S",
+      "990181_FireGorilla_col1_E"
+    ]
+  },
+  "00031167": {
+    "upkId": "00031167",
+    "col": "col1",
+    "texture": "00031102",
+    "objs": [
+      "70037_JinF_col1_N",
+      "70037_JinF_col1_M",
+      "70037_JinF_col1_D",
+      "70037_JinF_col1_S"
+    ]
+  },
+  "00031169": {
+    "upkId": "00031169",
+    "col": "col1",
+    "texture": "00031102",
+    "objs": [
+      "70037_JinF_col1_N",
+      "70037_JinF_col1_M",
+      "70037_JinF_col1_D",
+      "70037_JinF_col1_S"
+    ]
+  },
   "00031173": {
     "upkId": "00031173",
     "col": "col2",
@@ -71180,6 +72149,44 @@
       "ChainKnuckleBanditNight_col2_E"
     ]
   },
+  "00031175": {
+    "upkId": "00031175",
+    "col": "col1",
+    "texture": "00020130",
+    "objs": [
+      "KunN_034_col1_D",
+      "KunN_034_col1_N"
+    ]
+  },
+  "00031176": {
+    "upkId": "00031176",
+    "col": "col1",
+    "texture": "00014445",
+    "objs": [
+      "LynM_014_col1_D",
+      "LynM_014_col1_N"
+    ]
+  },
+  "00031177": {
+    "upkId": "00031177",
+    "col": "col1",
+    "texture": "00003440",
+    "objs": [
+      "KunN_001_col1_D",
+      "KunN_001_col1_n"
+    ]
+  },
+  "00031180": {
+    "upkId": "00031180",
+    "col": "col1",
+    "texture": "00031102",
+    "objs": [
+      "70037_JinF_col1_N",
+      "70037_JinF_col1_M",
+      "70037_JinF_col1_D",
+      "70037_JinF_col1_S"
+    ]
+  },
   "00031181": {
     "upkId": "00031181",
     "col": "col2",
@@ -71190,6 +72197,44 @@
       "PigTribeCNight_col2_D",
       "PigTribeCNight_col2_S",
       "PigTribeCNight_col2_E"
+    ]
+  },
+  "00031182": {
+    "upkId": "00031182",
+    "col": "col1",
+    "texture": "00014445",
+    "objs": [
+      "LynM_014_col1_D",
+      "LynM_014_col1_N"
+    ]
+  },
+  "00031183": {
+    "upkId": "00031183",
+    "col": "col1",
+    "texture": "00029379",
+    "objs": [
+      "JinM_049_col1_D",
+      "JinM_049_col1_N"
+    ]
+  },
+  "00031184": {
+    "upkId": "00031184",
+    "col": "col1",
+    "texture": "00009888",
+    "objs": [
+      "LynF_006_col1_d",
+      "LynF_006_col1_N"
+    ]
+  },
+  "00031187": {
+    "upkId": "00031187",
+    "col": "col1",
+    "texture": "00031186",
+    "objs": [
+      "65044_JinM_col1_N",
+      "65044_JinM_col1_M",
+      "65044_JinM_col1_D",
+      "65044_JinM_col1_S"
     ]
   },
   "00031191": {
@@ -71209,10 +72254,40 @@
     "col": "col1",
     "texture": "00031194",
     "objs": [
-      "Acc_990185_col1_N",
       "Acc_990185_col1_M",
       "Acc_990185_col1_D",
       "Acc_990185_col1_S"
+    ]
+  },
+  "00031224": {
+    "upkId": "00031224",
+    "col": "col1",
+    "texture": "00031223",
+    "objs": [
+      "Item_0056_col1_N",
+      "Item_0056_col1_S",
+      "Item_0056_col1_D"
+    ]
+  },
+  "00031227": {
+    "upkId": "00031227",
+    "col": "col1",
+    "texture": "00031226",
+    "objs": [
+      "Item_0057_col1_N",
+      "Item_0057_col1_S",
+      "Item_0057_col1_D"
+    ]
+  },
+  "00031230": {
+    "upkId": "00031230",
+    "col": "col1",
+    "texture": "00031229",
+    "objs": [
+      "Item_0058_col1_N",
+      "Item_0058_col1_M",
+      "Item_0058_col1_D",
+      "Item_0058_col1_S"
     ]
   },
   "00031232": {
@@ -71322,6 +72397,30 @@
       "060034_JinF_col1_E"
     ]
   },
+  "00031244": {
+    "upkId": "00031244",
+    "col": "col1",
+    "texture": "00031243",
+    "objs": [
+      "Item_0059_col1_N",
+      "Item_0059_col1_M",
+      "Item_0059_col1_D",
+      "Item_0059_col1_S"
+    ]
+  },
+  "00031248": {
+    "upkId": "00031248",
+    "col": "col1",
+    "texture": "00031247",
+    "objs": [
+      "Item_0060_col1_N",
+      "Item_0060_col1_S",
+      "Item_0060_col1_D",
+      "Item_0060_col1_N_2",
+      "Item_0060_col1_D_2",
+      "Item_0060_col1_S_2"
+    ]
+  },
   "00031254": {
     "upkId": "00031254",
     "col": "col1",
@@ -71408,6 +72507,29 @@
       "Beast_SeaMonsterNight_col1_S_FX_Line_B"
     ]
   },
+  "00031273": {
+    "upkId": "00031273",
+    "col": "col1",
+    "texture": "00031272",
+    "objs": [
+      "Item_0061_col1_N",
+      "Item_0061_col1_M",
+      "Item_0061_col1_D",
+      "Item_0061_col1_S"
+    ]
+  },
+  "00031277": {
+    "upkId": "00031277",
+    "col": "col1",
+    "texture": "00031276",
+    "objs": [
+      "Item_0062_col1_N",
+      "Item_0062_col1_M",
+      "Item_0062_col1_D",
+      "Item_0062_col1_S",
+      "Item_0062_col1_E"
+    ]
+  },
   "00031279": {
     "upkId": "00031279",
     "col": "col2",
@@ -71426,10 +72548,21 @@
     "texture": "00030895",
     "objs": [
       "PileBunkerNight_N",
-      "PileBunkerNight_M1",
-      "PileBunkerNight_D",
-      "PileBunkerNight_S",
-      "PileBunkerNight_E"
+      "PileBunkerNight_M2",
+      "PileBunkerNight_D3",
+      "PileBunkerNight_S3",
+      "PileBunkerNight_E3"
+    ]
+  },
+  "00031283": {
+    "upkId": "00031283",
+    "col": "col1",
+    "texture": "00031282",
+    "objs": [
+      "110130_Autoscale_col1_N",
+      "110130_Autoscale_col1_M",
+      "110130_Autoscale_col1_D",
+      "110130_Autoscale_col1_S"
     ]
   },
   "00031289": {
@@ -71606,6 +72739,18 @@
       "65023_GonF_col2_S"
     ]
   },
+  "00031342": {
+    "upkId": "00031342",
+    "col": "col1",
+    "texture": "00031341",
+    "objs": [
+      "RuneMechaTransformC_col1_N",
+      "RuneMechaTransformC_col1_M",
+      "RuneMechaTransformC_col1_D",
+      "RuneMechaTransformC_col1_S",
+      "RuneMechaTransformC_col1_E"
+    ]
+  },
   "00031347": {
     "upkId": "00031347",
     "col": "col1",
@@ -71628,6 +72773,73 @@
       "70042_LynF_col1_S"
     ]
   },
+  "00031357": {
+    "upkId": "00031357",
+    "col": "col1",
+    "texture": "00031356",
+    "objs": [
+      "60132_JinF_col1_N",
+      "60132_JinF_col1_M",
+      "60132_JinF_col1_D",
+      "60132_JinF_col1_S",
+      "CubemapFace0",
+      "CubemapFace1",
+      "CubemapFace2",
+      "CubemapFace3",
+      "CubemapFace4",
+      "CubemapFace5"
+    ]
+  },
+  "00031367": {
+    "upkId": "00031367",
+    "col": "col1",
+    "texture": "00031366",
+    "objs": [
+      "70040_JinF_col1_N",
+      "70040_JinF_col1_M",
+      "70040_JinF_col1_D",
+      "70040_JinF_col1_S",
+      "70040_JinF_col1_E",
+      "Fur_Tape1_N",
+      "Fur_Tape1_D"
+    ]
+  },
+  "00031369": {
+    "upkId": "00031369",
+    "col": "col2",
+    "texture": "00031122",
+    "objs": [
+      "110129_Autoscale_col1_N",
+      "110129_Autoscale_col2_M",
+      "110129_Autoscale_col2_D",
+      "110129_Autoscale_col2_S",
+      "110129_Autoscale_col2_E"
+    ]
+  },
+  "00031370": {
+    "upkId": "00031370",
+    "col": "col3",
+    "texture": "00031122",
+    "objs": [
+      "110129_Autoscale_col1_N",
+      "110129_Autoscale_col2_M",
+      "110129_Autoscale_col3_D",
+      "110129_Autoscale_col3_S",
+      "110129_Autoscale_col3_E"
+    ]
+  },
+  "00031373": {
+    "upkId": "00031373",
+    "col": "col2",
+    "texture": "00024057",
+    "objs": [
+      "GiganToad_col1_N",
+      "GiganToad_col1_M",
+      "GiganToad_col2_D",
+      "GiganToad_col1_S",
+      "GiganToad_col1_E"
+    ]
+  },
   "00031375": {
     "upkId": "00031375",
     "col": "col6",
@@ -71638,6 +72850,28 @@
       "Pest-s_col6",
       "Pest-em_col6",
       "Pest-d_col3"
+    ]
+  },
+  "00031376": {
+    "upkId": "00031376",
+    "col": "col2",
+    "texture": "00031282",
+    "objs": [
+      "110130_Autoscale_col2_N",
+      "110130_Autoscale_col2_M",
+      "110130_Autoscale_col2_D",
+      "110130_Autoscale_col2_S"
+    ]
+  },
+  "00031377": {
+    "upkId": "00031377",
+    "col": "col3",
+    "texture": "00031282",
+    "objs": [
+      "110130_Autoscale_col3_N",
+      "110130_Autoscale_col3_M",
+      "110130_Autoscale_col3_D",
+      "110130_Autoscale_col3_S"
     ]
   },
   "00031378": {
@@ -71653,6 +72887,18 @@
       "SpiderQueen_FX"
     ]
   },
+  "00031382": {
+    "upkId": "00031382",
+    "col": "col1",
+    "texture": "00031381",
+    "objs": [
+      "Item_0063_col1_N",
+      "Item_0063_col1_M",
+      "Item_0063_col1_D",
+      "Item_0063_col1_S",
+      "Item_0063_col1_E"
+    ]
+  },
   "00031383": {
     "upkId": "00031383",
     "col": "col2",
@@ -71664,6 +72910,35 @@
       "990221_Autoscale_col2_S"
     ]
   },
+  "00031386": {
+    "upkId": "00031386",
+    "col": "col1",
+    "texture": "00031385",
+    "objs": [
+      "60132_JinM_col1_N",
+      "60132_JinM_col1_M",
+      "60132_JinM_col1_D",
+      "60132_JinM_col1_S",
+      "CubemapFace0",
+      "CubemapFace1",
+      "CubemapFace2",
+      "CubemapFace3",
+      "CubemapFace4",
+      "CubemapFace5"
+    ]
+  },
+  "00031390": {
+    "upkId": "00031390",
+    "col": "col1",
+    "texture": "00031389",
+    "objs": [
+      "70040_JinM_col1_N",
+      "70040_JinM_col1_M",
+      "70040_JinM_col1_D",
+      "70040_JinM_col1_S",
+      "70040_JinM_col1_E"
+    ]
+  },
   "00031395": {
     "upkId": "00031395",
     "col": "col1",
@@ -71673,6 +72948,17 @@
       "70042_JinF_col1_m",
       "70042_JinF_col1_D",
       "70042_JinF_col1_s"
+    ]
+  },
+  "00031403": {
+    "upkId": "00031403",
+    "col": "col1",
+    "texture": "00031402",
+    "objs": [
+      "60133_JinF_col1_N",
+      "60133_JinF_col1_M",
+      "60133_JinF_col1_D",
+      "60133_JinF_col1_S"
     ]
   },
   "00031406": {
@@ -71697,6 +72983,54 @@
       "70042_GonM_Col1_S"
     ]
   },
+  "00031415": {
+    "upkId": "00031415",
+    "col": "col1",
+    "texture": "00031414",
+    "objs": [
+      "60133_JinM_col1_N",
+      "60133_JinM_col1_M",
+      "60133_JinM_col1_D",
+      "60133_JinM_col1_S"
+    ]
+  },
+  "00031420": {
+    "upkId": "00031420",
+    "col": "col1",
+    "texture": "00031419",
+    "objs": [
+      "60134_JinF_col1_N",
+      "60134_JinF_col1_M",
+      "60134_JinF_col1_D",
+      "60134_JinF_col1_S"
+    ]
+  },
+  "00031425": {
+    "upkId": "00031425",
+    "col": "col1",
+    "texture": "00031424",
+    "objs": [
+      "60136_JinF_col1_N",
+      "60136_JinF_col1_M",
+      "60136_JinF_col1_D",
+      "60136_JinF_col1_S",
+      "60136_JinF_col1_E",
+      "fur_Nfur_D",
+      "fur_Dfur_D",
+      "fur_Sfur_D"
+    ]
+  },
+  "00031433": {
+    "upkId": "00031433",
+    "col": "col1",
+    "texture": "00031432",
+    "objs": [
+      "70039_JinF_col1_N",
+      "70039_JinF_col1_M",
+      "70039_JinF_col1_D",
+      "70039_JinF_col1_S"
+    ]
+  },
   "00031438": {
     "upkId": "00031438",
     "col": "col1",
@@ -71719,6 +73053,41 @@
       "70042_LynM_Col1_S"
     ]
   },
+  "00031456": {
+    "upkId": "00031456",
+    "col": "col1",
+    "texture": "00031455",
+    "objs": [
+      "GolemLeaderLava_col1_N",
+      "GolemLeaderLava_col1_M",
+      "GolemLeaderLava_col1_D",
+      "GolemLeaderLava_col1_S",
+      "GolemLeaderLava_col1_E"
+    ]
+  },
+  "00031459": {
+    "upkId": "00031459",
+    "col": "col2",
+    "texture": "00006986",
+    "objs": [
+      "40001_GonF_col2_N",
+      "40001_GonF_col2_M",
+      "40001_GonF_col2_D",
+      "40001_GonF_col2_S"
+    ]
+  },
+  "00031473": {
+    "upkId": "00031473",
+    "col": "col1",
+    "texture": "00031472",
+    "objs": [
+      "Zuirak_col1_N",
+      "Zuirak_col1_M",
+      "Zuirak_col1_D",
+      "Zuirak_col1_S",
+      "Zuirak_col1_E"
+    ]
+  },
   "00031477": {
     "upkId": "00031477",
     "col": "col1",
@@ -71737,6 +73106,4955 @@
       "010052_JinF_col1_N",
       "010052_JinF_col1_D",
       "010052_JinF_col1_S"
+    ]
+  },
+  "00031490": {
+    "upkId": "00031490",
+    "col": "col1",
+    "texture": "00031489",
+    "objs": [
+      "090076_GonF_col1_N",
+      "090076_GonF_col1_M",
+      "090076_GonF_col1_D",
+      "090076_GonF_col1_S"
+    ]
+  },
+  "00031503": {
+    "upkId": "00031503",
+    "col": "col1",
+    "texture": "00031502",
+    "objs": [
+      "120131_Autoscale_col1_N",
+      "120131_Autoscale_col1_M",
+      "120131_Autoscale_col1_D",
+      "120131_Autoscale_col1_S",
+      "120131_Autoscale_col1_E"
+    ]
+  },
+  "00031510": {
+    "upkId": "00031510",
+    "col": "col1",
+    "texture": "00031509",
+    "objs": [
+      "70043_GonF_col1_N",
+      "70043_GonF_col1_M",
+      "70043_GonF_col1_D",
+      "70043_GonF_col1_S"
+    ]
+  },
+  "00031511": {
+    "upkId": "00031511",
+    "col": "col2",
+    "texture": "00031509",
+    "objs": [
+      "70043_GonF_col2_N",
+      "70043_GonF_col2_M",
+      "70043_GonF_col2_D",
+      "70043_GonF_col2_S"
+    ]
+  },
+  "00031518": {
+    "upkId": "00031518",
+    "col": "col1",
+    "texture": "00031517",
+    "objs": [
+      "70041_JinM_col1_n",
+      "70041_JinM_col1_m",
+      "70041_JinM_col1_d",
+      "70041_JinM_col1_s"
+    ]
+  },
+  "00031521": {
+    "upkId": "00031521",
+    "col": "col1",
+    "texture": "00031520",
+    "objs": [
+      "70041_GonM_col1_n",
+      "70041_GonM_col1_m",
+      "70041_GonM_col1_d",
+      "70041_GonM_col1_s"
+    ]
+  },
+  "00031529": {
+    "upkId": "00031529",
+    "col": "col1",
+    "texture": "00031528",
+    "objs": [
+      "70043_JinF_col1_N",
+      "70043_JinF_col1_M",
+      "70043_JinF_col1_D",
+      "70043_JinF_col1_S"
+    ]
+  },
+  "00031531": {
+    "upkId": "00031531",
+    "col": "col2",
+    "texture": "00031528",
+    "objs": [
+      "70043_JinF_col2_N",
+      "70043_JinF_col2_M",
+      "70043_JinF_col2_D",
+      "70043_JinF_col2_S"
+    ]
+  },
+  "00031532": {
+    "upkId": "00031532",
+    "col": "col3",
+    "texture": "00006986",
+    "objs": [
+      "40001_GonF_col3_N",
+      "40001_GonF_col3_M",
+      "40001_GonF_col3_D",
+      "40001_GonF_col3_S"
+    ]
+  },
+  "00031536": {
+    "upkId": "00031536",
+    "col": "col1",
+    "texture": "00031535",
+    "objs": [
+      "70045_JinF_col1_N",
+      "70045_JinF_col1_M",
+      "70045_JinF_col1_D",
+      "70045_JinF_col1_S"
+    ]
+  },
+  "00031540": {
+    "upkId": "00031540",
+    "col": "col1",
+    "texture": "00031539",
+    "objs": [
+      "020221_Autoscale_col1_N",
+      "020221_Autoscale_col1_M",
+      "020221_Autoscale_col1_D",
+      "020221_Autoscale_col1_S",
+      "020221_Autoscale_col1_E"
+    ]
+  },
+  "00031545": {
+    "upkId": "00031545",
+    "col": "col1",
+    "texture": "00031544",
+    "objs": [
+      "60136_JinM_col1_N",
+      "60136_JinM_col1_M",
+      "60136_JinM_col1_D",
+      "60136_JinM_col1_S",
+      "60136_JinM_col1_E"
+    ]
+  },
+  "00031550": {
+    "upkId": "00031550",
+    "col": "col1",
+    "texture": "00031551",
+    "objs": [
+      "70046_JinF_col1_N",
+      "70046_JinF_col1_M",
+      "70046_JinF_col1_D",
+      "70046_JinF_col1_S"
+    ]
+  },
+  "00031554": {
+    "upkId": "00031554",
+    "col": "col1",
+    "texture": "00031553",
+    "objs": [
+      "020222_Autoscale_col1_N",
+      "020222_Autoscale_col1_M",
+      "020222_Autoscale_col1_D",
+      "020222_Autoscale_col1_S"
+    ]
+  },
+  "00031559": {
+    "upkId": "00031559",
+    "col": "col1",
+    "texture": "00031558",
+    "objs": [
+      "60137_LynF_col1_N",
+      "60137_LynF_col1_M",
+      "60137_LynF_col1_D",
+      "60137_LynF_col1_S"
+    ]
+  },
+  "00031567": {
+    "upkId": "00031567",
+    "col": "col1",
+    "texture": "00031566",
+    "objs": [
+      "70001_JinF_col1_N",
+      "70001_JinF_col1_M",
+      "70001_JinF_col1_D",
+      "70001_JinF_col1_S"
+    ]
+  },
+  "00031577": {
+    "upkId": "00031577",
+    "col": "col1",
+    "texture": "00031576",
+    "objs": [
+      "090057_JinF_col1_N",
+      "090057_JinF_col1_S",
+      "090057_JinF_col1_M",
+      "090057_JinF_col1_D"
+    ]
+  },
+  "00031579": {
+    "upkId": "00031579",
+    "col": "col1",
+    "texture": "00027319",
+    "objs": [
+      "090057_JinM_col1_N",
+      "090057_JinM_col1_S",
+      "090057_JinM_col1_M",
+      "090057_JinM_col1_D"
+    ]
+  },
+  "00031581": {
+    "upkId": "00031581",
+    "col": "col1",
+    "texture": "00031576",
+    "objs": [
+      "090057_JinF_col1_N",
+      "090057_JinF_col1_S",
+      "090057_JinF_col1_M",
+      "090057_JinF_col1_D"
+    ]
+  },
+  "00031583": {
+    "upkId": "00031583",
+    "col": "col1",
+    "texture": "00031576",
+    "objs": [
+      "090057_JinF_col1_N",
+      "090057_JinF_col1_S",
+      "090057_JinF_col1_M",
+      "090057_JinF_col1_D"
+    ]
+  },
+  "00031585": {
+    "upkId": "00031585",
+    "col": "col1",
+    "texture": "00027319",
+    "objs": [
+      "090057_JinM_col1_N",
+      "090057_JinM_col1_S",
+      "090057_JinM_col1_M",
+      "090057_JinM_col1_D"
+    ]
+  },
+  "00031590": {
+    "upkId": "00031590",
+    "col": "col1",
+    "texture": "00031589",
+    "objs": [
+      "70043_KunN_col1_S",
+      "70043_KunN_col1_N",
+      "70043_KunN_col1_M",
+      "70043_KunN_col1_D"
+    ]
+  },
+  "00031592": {
+    "upkId": "00031592",
+    "col": "col2",
+    "texture": "00031589",
+    "objs": [
+      "70043_KunN_col2_N",
+      "70043_KunN_col2_M",
+      "70043_KunN_col2_D",
+      "70043_KunN_col2_S"
+    ]
+  },
+  "00031597": {
+    "upkId": "00031597",
+    "col": "col1",
+    "texture": "00031595",
+    "objs": [
+      "70045_JinM_Col1_N",
+      "70045_JinM_Col1_m",
+      "70045_JinM_Col1_D",
+      "70045_JinM_Col1_s"
+    ]
+  },
+  "00031603": {
+    "upkId": "00031603",
+    "col": "col1",
+    "texture": "00031602",
+    "objs": [
+      "panda_n",
+      "panda_M",
+      "panda_S",
+      "panda_D"
+    ]
+  },
+  "00031606": {
+    "upkId": "00031606",
+    "col": "col1",
+    "texture": "00031605",
+    "objs": [
+      "BAT_N",
+      "BAT_M",
+      "BAT_D",
+      "BAT_S"
+    ]
+  },
+  "00031613": {
+    "upkId": "00031613",
+    "col": "col2",
+    "texture": "00029658",
+    "objs": [
+      "60127_JinF_col2_n",
+      "60127_JinF_col2_m",
+      "60127_JinF_col2_d",
+      "60127_JinF_col2_s"
+    ]
+  },
+  "00031615": {
+    "upkId": "00031615",
+    "col": "col1",
+    "texture": "00031616",
+    "objs": [
+      "70046_JinM_col1_N",
+      "70046_JinM_col1_M",
+      "70046_JinM_col1_D",
+      "70046_JinM_col1_S"
+    ]
+  },
+  "00031619": {
+    "upkId": "00031619",
+    "col": "col1",
+    "texture": "00031621",
+    "objs": [
+      "70046_GonF_col1_N",
+      "70046_GonF_col1_M",
+      "70046_GonF_col1_D",
+      "70046_GonF_col1_S"
+    ]
+  },
+  "00031622": {
+    "upkId": "00031622",
+    "col": "col1",
+    "texture": "00031624",
+    "objs": [
+      "70046_KunN_col1_N",
+      "70046_KunN_col1_M",
+      "70046_KunN_col1_D",
+      "70046_KunN_col1_S"
+    ]
+  },
+  "00031630": {
+    "upkId": "00031630",
+    "col": "col2",
+    "texture": "00031472",
+    "objs": [
+      "Zuirak_col1_N",
+      "Zuirak_col1_M",
+      "Zuirak_col2_D",
+      "Zuirak_col2_S",
+      "Zuirak_col2_E"
+    ]
+  },
+  "00031634": {
+    "upkId": "00031634",
+    "col": "col1",
+    "texture": "00031633",
+    "objs": [
+      "Hair_JinF_053_D",
+      "Hair_JinF_053_N",
+      "040192_LynF_Col1_N",
+      "040192_LynF_Col1_M",
+      "040192_LynF_Col1_D",
+      "040192_LynF_Col1_S"
+    ]
+  },
+  "00031637": {
+    "upkId": "00031637",
+    "col": "col1",
+    "texture": "00031639",
+    "objs": [
+      "70046_LynF_col1_N",
+      "70046_LynF_col1_D",
+      "70046_LynF_col1_S"
+    ]
+  },
+  "00031642": {
+    "upkId": "00031642",
+    "col": "col1",
+    "texture": "00031643",
+    "objs": [
+      "AsuraEye_col1_N",
+      "AsuraEye_col1_M",
+      "AsuraEye_col1_D",
+      "AsuraEye_col1_S",
+      "AsuraEye_col1_E"
+    ]
+  },
+  "00031646": {
+    "upkId": "00031646",
+    "col": "col1",
+    "texture": "00031645",
+    "objs": [
+      "60137_LynM_Col1_N",
+      "60137_LynM_Col1_M",
+      "60137_LynM_Col1_D",
+      "60137_LynM_Col1_S"
+    ]
+  },
+  "00031648": {
+    "upkId": "00031648",
+    "col": "col2",
+    "texture": "00024035",
+    "objs": [
+      "Monster_Human_AncientMechTwinsA_col1_N",
+      "Monster_Human_AncientMechTwinsA_col1_M",
+      "Monster_Human_AncientMechTwinsA_col1_D",
+      "Monster_Human_AncientMechTwinsA_col1_S",
+      "Monster_Human_AncientMechTwinsB_col1_E",
+      "FX_AncientMechTwinsA_col1_Mask"
+    ]
+  },
+  "00031649": {
+    "upkId": "00031649",
+    "col": "col2",
+    "texture": "00024035",
+    "objs": [
+      "Monster_Human_AncientMechTwinsA_col1_N",
+      "Monster_Human_AncientMechTwinsA_col1_M",
+      "Monster_Human_AncientMechTwinsA_col1_D",
+      "Monster_Human_AncientMechTwinsA_col1_S",
+      "Monster_Human_AncientMechTwinsA_col1_E",
+      "FX_AncientMechTwinsA_col1_Mask"
+    ]
+  },
+  "00031653": {
+    "upkId": "00031653",
+    "col": "col1",
+    "texture": "00031651",
+    "objs": [
+      "030222_Autoscale_col1_N",
+      "030222_Autoscale_col1_M",
+      "030222_Autoscale_col1_D",
+      "030222_Autoscale_col1_S",
+      "030222_Autoscale_col1_E"
+    ]
+  },
+  "00031654": {
+    "upkId": "00031654",
+    "col": "col2",
+    "texture": "00024132",
+    "objs": [
+      "990176_Autoscale_col1_N",
+      "990176_Autoscale_col1_M",
+      "990176_Autoscale_col1_D",
+      "990176_Autoscale_col1_S",
+      "990176_Autoscale_col2_E",
+      "FX_Autoscale_col1_Mask"
+    ]
+  },
+  "00031655": {
+    "upkId": "00031655",
+    "col": "col2",
+    "texture": "00024136",
+    "objs": [
+      "Weapon_990177_col1_N",
+      "Weapon_990177_col1_M",
+      "Weapon_990177_col1_D",
+      "Weapon_990177_col1_S",
+      "Weapon_990177_col2_E",
+      "FX_990177_col1_Mask"
+    ]
+  },
+  "00031657": {
+    "upkId": "00031657",
+    "col": "col1",
+    "texture": "00031659",
+    "objs": [
+      "70046_GonM_col1_N",
+      "70046_GonM_col1_D",
+      "70046_GonM_col1_S"
+    ]
+  },
+  "00031661": {
+    "upkId": "00031661",
+    "col": "col1",
+    "texture": "00031663",
+    "objs": [
+      "70046_LynM_col1_N",
+      "70046_LynM_col1_M",
+      "70046_LynM_col1_D",
+      "70046_LynM_col1_S"
+    ]
+  },
+  "00031666": {
+    "upkId": "00031666",
+    "col": "col1",
+    "texture": "00009829",
+    "objs": [
+      "LynM_007_col1_D",
+      "LynM_007_col1_N"
+    ]
+  },
+  "00031669": {
+    "upkId": "00031669",
+    "col": "col1",
+    "texture": "00031668",
+    "objs": [
+      "120132_Autoscale_col1_N",
+      "120132_Autoscale_col1_M",
+      "120132_Autoscale_col1_D",
+      "120132_Autoscale_col1_S"
+    ]
+  },
+  "00031673": {
+    "upkId": "00031673",
+    "col": "col1",
+    "texture": "00031672",
+    "objs": [
+      "RuneMechaVehicle_col1_N",
+      "RuneMechaVehicle_col1_M",
+      "RuneMechaVehicle_col1_D",
+      "RuneMechaVehicle_col1_S",
+      "RuneMechaVehicle_col1_E"
+    ]
+  },
+  "00031675": {
+    "upkId": "00031675",
+    "col": "col3",
+    "texture": "00006814",
+    "objs": [
+      "Normal",
+      "Mask",
+      "40005_JinM_col3_D",
+      "40005_JinM_col3_S"
+    ]
+  },
+  "00031679": {
+    "upkId": "00031679",
+    "col": "col1",
+    "texture": "00031678",
+    "objs": [
+      "70048_JinF_col1_N",
+      "70048_JinF_col1_M",
+      "70048_JinF_col1_D",
+      "70048_JinF_col1_S"
+    ]
+  },
+  "00031681": {
+    "upkId": "00031681",
+    "col": "col3",
+    "texture": "00006873",
+    "objs": [
+      "N",
+      "m1",
+      "40005_JinF_col3_D",
+      "40005_JinF_col3_S"
+    ]
+  },
+  "00031682": {
+    "upkId": "00031682",
+    "col": "col3",
+    "texture": "00007256",
+    "objs": [
+      "Cloth_40005_GonM_col1_N",
+      "Cloth_40005_GonM_col1_M",
+      "40005_GonM_col3_D",
+      "40005_GonM_col3_S"
+    ]
+  },
+  "00031683": {
+    "upkId": "00031683",
+    "col": "col3",
+    "texture": "00007259",
+    "objs": [
+      "Cloth_40005_GonF_col1_N",
+      "Cloth_40005_GonF_col1_M",
+      "40005_GonF_col3_D",
+      "40005_GonF_col3_S"
+    ]
+  },
+  "00031686": {
+    "upkId": "00031686",
+    "col": "col1",
+    "texture": "00031685",
+    "objs": [
+      "70043_LynF_col1_N",
+      "70043_LynF_col1_M",
+      "70043_LynF_col1_D",
+      "70043_LynF_col1_S"
+    ]
+  },
+  "00031688": {
+    "upkId": "00031688",
+    "col": "col2",
+    "texture": "00031685",
+    "objs": [
+      "70043_LynF_col2_N",
+      "70043_LynF_col2_M",
+      "70043_LynF_col2_D",
+      "70043_LynF_col2_S"
+    ]
+  },
+  "00031693": {
+    "upkId": "00031693",
+    "col": "col1",
+    "texture": "00031691",
+    "objs": [
+      "060138_Autoscale_col1_N",
+      "060138_Autoscale_col1_M",
+      "060138_Autoscale_col1_D",
+      "060138_Autoscale_col1_S"
+    ]
+  },
+  "00031694": {
+    "upkId": "00031694",
+    "col": "col2",
+    "texture": "00029165",
+    "objs": [
+      "RuneMechaYacha_col1_N",
+      "RuneMechaYacha_col1_M",
+      "RuneMechaYacha_col2_D",
+      "RuneMechaYacha_col1_S",
+      "RuneMechaYacha_col1_E"
+    ]
+  },
+  "00031700": {
+    "upkId": "00031700",
+    "col": "col1",
+    "texture": "00031699",
+    "objs": [
+      "10001_GonM_col1_N",
+      "10001_GonM_col1_M",
+      "10001_GonM_col1_D",
+      "10001_GonM_col1_S"
+    ]
+  },
+  "00031703": {
+    "upkId": "00031703",
+    "col": "col1",
+    "texture": "00031702",
+    "objs": [
+      "10001_LynM_col1_N",
+      "10001_LynM_col1_M",
+      "10001_LynM_col1_D",
+      "10001_LynM_col1_S"
+    ]
+  },
+  "00031707": {
+    "upkId": "00031707",
+    "col": "col1",
+    "texture": "00031706",
+    "objs": [
+      "990187_RuneMechaYacha_col1_N",
+      "990187_RuneMechaYacha_col1_M",
+      "990187_RuneMechaYacha_col1_D",
+      "990187_RuneMechaYacha_col1_S"
+    ]
+  },
+  "00031715": {
+    "upkId": "00031715",
+    "col": "col1",
+    "texture": "00031714",
+    "objs": [
+      "60008_GonM_col1_N",
+      "60008_GonM_col1_M",
+      "60008_GonM_col1_D",
+      "60008_GonM_col1_S"
+    ]
+  },
+  "00031718": {
+    "upkId": "00031718",
+    "col": "col1",
+    "texture": "00031717",
+    "objs": [
+      "60008_LynM_col1_N",
+      "60008_LynM_col1_M",
+      "60008_LynM_col1_D",
+      "60008_LynM_col1_S"
+    ]
+  },
+  "00031723": {
+    "upkId": "00031723",
+    "col": "col1",
+    "texture": "00031721",
+    "objs": [
+      "FatManIron_col1_N",
+      "FatManIron_col1_M",
+      "FatManIron_col1_D",
+      "FatManIron_col1_S",
+      "FatManIron_col1_E"
+    ]
+  },
+  "00031730": {
+    "upkId": "00031730",
+    "col": "col1",
+    "texture": "00031729",
+    "objs": [
+      "FatManBronze_col1_N",
+      "FatManBronze_col1_M",
+      "FatManBronze_col1_D",
+      "FatManBronze_col1_S",
+      "FatManBronze_col1_E"
+    ]
+  },
+  "00031736": {
+    "upkId": "00031736",
+    "col": "col1",
+    "texture": "00031737",
+    "objs": [
+      "090077_JinM_Col1_N",
+      "090077_JinM_Col1_M",
+      "090077_JinM_Col1_D",
+      "090077_JinM_Col1_S",
+      "090077_JinM_Col1_E"
+    ]
+  },
+  "00031741": {
+    "upkId": "00031741",
+    "col": "col1",
+    "texture": "00031740",
+    "objs": [
+      "65044_GonM_col1_N",
+      "65044_GonM_col1_M",
+      "65044_GonM_col1_D",
+      "65044_GonM_col1_S"
+    ]
+  },
+  "00031745": {
+    "upkId": "00031745",
+    "col": "col1",
+    "texture": "00031743",
+    "objs": [
+      "65044_LynM_col1_N",
+      "65044_LynM_col1_M",
+      "65044_LynM_col1_D",
+      "65044_LynM_col1_S"
+    ]
+  },
+  "00031758": {
+    "upkId": "00031758",
+    "col": "col1",
+    "texture": "00031757",
+    "objs": [
+      "60138_JinM_col1_n",
+      "60138_JinM_col1_m",
+      "60138_JinM_col1_D",
+      "60138_JinM_col1_s"
+    ]
+  },
+  "00031759": {
+    "upkId": "00031759",
+    "col": "col2",
+    "texture": "00031757",
+    "objs": [
+      "60138_JinM_col2_n",
+      "60138_JinM_col2_m",
+      "60138_JinM_col2_D",
+      "60138_JinM_col2_s"
+    ]
+  },
+  "00031760": {
+    "upkId": "00031760",
+    "col": "col3",
+    "texture": "00031757",
+    "objs": [
+      "60138_JinM_col3_n",
+      "60138_JinM_col3_m",
+      "60138_JinM_col3_d",
+      "60138_JinM_col3_s"
+    ]
+  },
+  "00031763": {
+    "upkId": "00031763",
+    "col": "col1",
+    "texture": "00031762",
+    "objs": [
+      "60138_GonM_col1_n",
+      "60138_GonM_col1_m",
+      "60138_GonM_col1_d",
+      "60138_GonM_col1_s"
+    ]
+  },
+  "00031764": {
+    "upkId": "00031764",
+    "col": "col2",
+    "texture": "00031762",
+    "objs": [
+      "60138_GonM_col2_n",
+      "60138_GonM_col2_m",
+      "60138_GonM_col2_D",
+      "60138_GonM_col2_s"
+    ]
+  },
+  "00031765": {
+    "upkId": "00031765",
+    "col": "col3",
+    "texture": "00031762",
+    "objs": [
+      "60138_GonM_col3_n",
+      "60138_GonM_col3_m",
+      "60138_GonM_col3_D",
+      "60138_GonM_col3_s"
+    ]
+  },
+  "00031767": {
+    "upkId": "00031767",
+    "col": "col3",
+    "texture": "00029658",
+    "objs": [
+      "60127_JinF_col3_N",
+      "60127_JinF_col3_M",
+      "60127_JinF_col3_D",
+      "60127_JinF_col3_S"
+    ]
+  },
+  "00031768": {
+    "upkId": "00031768",
+    "col": "col3",
+    "texture": "00029671",
+    "objs": [
+      "60127_JinM_col3_N",
+      "60127_JinM_col3_M",
+      "60127_JinM_col3_D",
+      "60127_JinM_col3_S"
+    ]
+  },
+  "00031773": {
+    "upkId": "00031773",
+    "col": "col1",
+    "texture": "00002794",
+    "objs": [
+      "GonM_003_col1_d",
+      "GonM_003_col1_N"
+    ]
+  },
+  "00031775": {
+    "upkId": "00031775",
+    "col": "col1",
+    "texture": "00008774",
+    "objs": [
+      "JinM_015_col1_d",
+      "JinM_015_col1_n"
+    ]
+  },
+  "00031777": {
+    "upkId": "00031777",
+    "col": "col1",
+    "texture": "00003373",
+    "objs": [
+      "JinM_002_col1_d",
+      "JinM_002_col1_n"
+    ]
+  },
+  "00031780": {
+    "upkId": "00031780",
+    "col": "col2",
+    "texture": "00031308",
+    "objs": [
+      "70041_LynF_col1_N",
+      "70041_LynF_col1_M",
+      "70041_LynF_col2_D",
+      "70041_LynF_col2_S"
+    ]
+  },
+  "00031781": {
+    "upkId": "00031781",
+    "col": "col2",
+    "texture": "00023820",
+    "objs": [
+      "990120_ZakanArm_col1_N",
+      "ZakanArm_M",
+      "990120_ZakanArm_col1_D",
+      "990120_ZakanArm_col1_S",
+      "990120_ZakanArm_col1_E"
+    ]
+  },
+  "00031784": {
+    "upkId": "00031784",
+    "col": "col1",
+    "texture": "00031785",
+    "objs": [
+      "Goat_col1_N",
+      "Goat_col1_M",
+      "Goat_col1_S",
+      "Goat_col1_D"
+    ]
+  },
+  "00031788": {
+    "upkId": "00031788",
+    "col": "col1",
+    "texture": "00031787",
+    "objs": [
+      "Monster_Human_DemonEmperorFatB_col1_N",
+      "Monster_Human_DemonEmperorFatB_col1_M",
+      "Monster_Human_DemonEmperorFatB_col1_D",
+      "Monster_Human_DemonEmperorFatB_col1_S"
+    ]
+  },
+  "00031794": {
+    "upkId": "00031794",
+    "col": "col1",
+    "texture": "00031793",
+    "objs": [
+      "990165_DemonEmperorFatB_col1_N",
+      "990165_DemonEmperorFatB_col1_M",
+      "990165_DemonEmperorFatB_col1_D",
+      "990165_DemonEmperorFatB_col1_S",
+      "990165_DemonEmperorFatB_col1_E"
+    ]
+  },
+  "00031797": {
+    "upkId": "00031797",
+    "col": "col1",
+    "texture": "00031796",
+    "objs": [
+      "990166_DemonEmperorFatB_col1_N",
+      "990166_DemonEmperorFatB_col1_M",
+      "990166_DemonEmperorFatB_col1_D",
+      "990166_DemonEmperorFatB_col1_S"
+    ]
+  },
+  "00031800": {
+    "upkId": "00031800",
+    "col": "col1",
+    "texture": "00031799",
+    "objs": [
+      "990167_DemonEmperorFatB_col1_N",
+      "990167_DemonEmperorFatB_col1_M",
+      "990167_DemonEmperorFatB_col1_D",
+      "990167_DemonEmperorFatB_col1_S",
+      "990167_DemonEmperorFatB_col1_E"
+    ]
+  },
+  "00031802": {
+    "upkId": "00031802",
+    "col": "col3",
+    "texture": "00006978",
+    "objs": [
+      "40001_JinM_col3_N",
+      "40001_JinM_col3_M",
+      "40001_JinM_col3_D",
+      "40001_JinM_col3_S"
+    ]
+  },
+  "00031806": {
+    "upkId": "00031806",
+    "col": "col1",
+    "texture": "00031805",
+    "objs": [
+      "090078_JinM_col1_N",
+      "090078_JinM_col1_M",
+      "090078_JinM_col1_D",
+      "090078_JinM_col1_S",
+      "090078_JinM_col1_E"
+    ]
+  },
+  "00031808": {
+    "upkId": "00031808",
+    "col": "col4",
+    "texture": "00011289",
+    "objs": [
+      "54002_KunN_Col2_N",
+      "54002_KunN_Col4_M",
+      "54002_KunN_col4_D",
+      "54002_KunN_Col4_S",
+      "54002_KunN_Col2_E"
+    ]
+  },
+  "00031811": {
+    "upkId": "00031811",
+    "col": "col1",
+    "texture": "00031810",
+    "objs": [
+      "Weapon_990206_col1_N",
+      "Weapon_990206_col1_M",
+      "Weapon_990206_col1_D",
+      "Weapon_990206_col1_S"
+    ]
+  },
+  "00031815": {
+    "upkId": "00031815",
+    "col": "col1",
+    "texture": "00031814",
+    "objs": [
+      "Weapon_990207_col1_N",
+      "Weapon_990207_col1_M",
+      "Weapon_990207_col1_D",
+      "Weapon_990207_col1_S"
+    ]
+  },
+  "00031817": {
+    "upkId": "00031817",
+    "col": "col4",
+    "texture": "00013835",
+    "objs": [
+      "54002_JinM_N_col2",
+      "54002_JinM_Col4_M",
+      "54002_JinM_Col4_D",
+      "54002_JinM_Col4_S"
+    ]
+  },
+  "00031818": {
+    "upkId": "00031818",
+    "col": "col4",
+    "texture": "00016619",
+    "objs": [
+      "Cloth_54002_GonM_Col2_N",
+      "54002_GonM_Col4_M",
+      "54002_GonM_Col4_D",
+      "54002_GonM_Col4_S"
+    ]
+  },
+  "00031821": {
+    "upkId": "00031821",
+    "col": "col1",
+    "texture": "00031820",
+    "objs": [
+      "70043_JinM_col1_N",
+      "70043_JinM_col1_M",
+      "70043_JinM_col1_D",
+      "70043_JinM_col1_S"
+    ]
+  },
+  "00031823": {
+    "upkId": "00031823",
+    "col": "col4",
+    "texture": "00016724",
+    "objs": [
+      "54002_GonF_Col4_N",
+      "54002_GonF_Col4_M",
+      "54002_GonF_Col4_D",
+      "54002_GonF_Col4_S"
+    ]
+  },
+  "00031824": {
+    "upkId": "00031824",
+    "col": "col4",
+    "texture": "00013563",
+    "objs": [
+      "54002_JinF_col4_N",
+      "54002_JinF_col4_M",
+      "54002_JinF_col4_D",
+      "54002_JinF_col4_S"
+    ]
+  },
+  "00031825": {
+    "upkId": "00031825",
+    "col": "col4",
+    "texture": "00003790",
+    "objs": [
+      "ShamanHG_n",
+      "54002_LynM_Col4_M",
+      "54002_LynM_Col4_D",
+      "54002_LynM_Col4_S"
+    ]
+  },
+  "00031830": {
+    "upkId": "00031830",
+    "col": "col1",
+    "texture": "00031829",
+    "objs": [
+      "60138_JinF_col1_N",
+      "60138_JinF_col1_m",
+      "60138_JinF_col1_d",
+      "60138_JinF_col1_s"
+    ]
+  },
+  "00031831": {
+    "upkId": "00031831",
+    "col": "col2",
+    "texture": "00031829",
+    "objs": [
+      "60138_JinF_col3_n",
+      "60138_JinF_col2_m",
+      "60138_JinF_col2_D",
+      "60138_JinF_col2_s"
+    ]
+  },
+  "00031832": {
+    "upkId": "00031832",
+    "col": "col3",
+    "texture": "00031829",
+    "objs": [
+      "60138_JinF_col3_n",
+      "60138_JinF_col3_m",
+      "60138_JinF_col3_D",
+      "60138_JinF_col3_s"
+    ]
+  },
+  "00031848": {
+    "upkId": "00031848",
+    "col": "col1",
+    "texture": "00031849",
+    "objs": [
+      "990190_FatManGold2_col1_N",
+      "990190_FatManGold2_col1_M",
+      "990190_FatManGold2_col1_D",
+      "990190_FatManGold2_col1_S"
+    ]
+  },
+  "00031852": {
+    "upkId": "00031852",
+    "col": "col1",
+    "texture": "00031851",
+    "objs": [
+      "70043_LynM_col1_N",
+      "70043_LynM_col1_M",
+      "70043_LynM_col1_D",
+      "70043_LynM_col1_S"
+    ]
+  },
+  "00031854": {
+    "upkId": "00031854",
+    "col": "col1",
+    "texture": "00031858",
+    "objs": [
+      "60138_GonF_col1_N",
+      "60138_GonF_col1_M",
+      "60138_GonF_col1_D",
+      "60138_GonF_col1_S"
+    ]
+  },
+  "00031855": {
+    "upkId": "00031855",
+    "col": "col2",
+    "texture": "00031858",
+    "objs": [
+      "60138_GonF_col2_N",
+      "60138_GonF_col2_M",
+      "60138_GonF_col2_D",
+      "60138_GonF_col2_S"
+    ]
+  },
+  "00031856": {
+    "upkId": "00031856",
+    "col": "col3",
+    "texture": "00031858",
+    "objs": [
+      "60138_GonF_col3_N",
+      "60138_GonF_col3_M",
+      "60138_GonF_col3_D",
+      "60138_GonF_col3_S"
+    ]
+  },
+  "00031859": {
+    "upkId": "00031859",
+    "col": "col1",
+    "texture": "00031863",
+    "objs": [
+      "60138_KunN_col1_N",
+      "60138_KunN_col1_M",
+      "60138_KunN_col1_D",
+      "60138_KunN_col1_S"
+    ]
+  },
+  "00031860": {
+    "upkId": "00031860",
+    "col": "col2",
+    "texture": "00031863",
+    "objs": [
+      "60138_KunN_col2_N",
+      "60138_KunN_col2_M",
+      "60138_kunN_col2_D",
+      "60138_KunN_col2_S"
+    ]
+  },
+  "00031861": {
+    "upkId": "00031861",
+    "col": "col3",
+    "texture": "00031863",
+    "objs": [
+      "60138_KunN_col3_N",
+      "60138_KunN_col3_M",
+      "60138_KunN_col3_D",
+      "60138_KunN_col3_S"
+    ]
+  },
+  "00031866": {
+    "upkId": "00031866",
+    "col": "col1",
+    "texture": "00031865",
+    "objs": [
+      "54002_LynF_Col1_N",
+      "54002_LynF_Col1_M",
+      "54002_LynF_Col1_D",
+      "54002_LynF_Col1_S"
+    ]
+  },
+  "00031870": {
+    "upkId": "00031870",
+    "col": "col1",
+    "texture": "00031869",
+    "objs": [
+      "70043_GonM_col1_N",
+      "70043_GonM_col1_M",
+      "70043_GonM_col1_D",
+      "70043_GonM_col1_S"
+    ]
+  },
+  "00031879": {
+    "upkId": "00031879",
+    "col": "col1",
+    "texture": "00031878",
+    "objs": [
+      "Item_0064_col1_N",
+      "Item_0064_col1_M",
+      "Item_0064_col1_D",
+      "Item_0064_col1_S"
+    ]
+  },
+  "00031882": {
+    "upkId": "00031882",
+    "col": "col1",
+    "texture": "00031881",
+    "objs": [
+      "Item_0065_col1_N",
+      "Item_0065_col1_M",
+      "Item_0065_col1_D",
+      "Item_0065_col1_S"
+    ]
+  },
+  "00031893": {
+    "upkId": "00031893",
+    "col": "col1",
+    "texture": "00031892",
+    "objs": [
+      "60142_JinM_col1_n",
+      "60142_JinM_col1_m",
+      "60142_JinM_col1_D",
+      "60142_JinM_col1_s",
+      "60142_JinM_col1_e"
+    ]
+  },
+  "00031896": {
+    "upkId": "00031896",
+    "col": "col1",
+    "texture": "00031895",
+    "objs": [
+      "60142_GonM_col1_n",
+      "60142_GonM_col1_m",
+      "60142_GonM_col1_D",
+      "60142_GonM_col1_s",
+      "60142_GonM_col1_e"
+    ]
+  },
+  "00031899": {
+    "upkId": "00031899",
+    "col": "col1",
+    "texture": "00031898",
+    "objs": [
+      "60142_LynF_col1_n",
+      "60142_LynF_col1_m",
+      "60142_LynF_col1_d",
+      "60142_LynF_col1_s",
+      "60142_LynF_col1_E"
+    ]
+  },
+  "00031902": {
+    "upkId": "00031902",
+    "col": "col1",
+    "texture": "00031901",
+    "objs": [
+      "60142_LynM_col1_n",
+      "60142_LynM_col1_m",
+      "60142_LynM_col1_d",
+      "60142_LynM_col1_s",
+      "60142_LynM_col1_e"
+    ]
+  },
+  "00031907": {
+    "upkId": "00031907",
+    "col": "col1",
+    "texture": "00031906",
+    "objs": [
+      "DokkebiGonRaid_col1_N",
+      "DokkebiGonRaid_col1_M",
+      "DokkebiGonRaid_col1_D",
+      "DokkebiGonRaid_col1_S",
+      "DokkebiGonRaid_col1_E"
+    ]
+  },
+  "00031910": {
+    "upkId": "00031910",
+    "col": "col1",
+    "texture": "00031912",
+    "objs": [
+      "AncientRuneMechImprison_col1_N",
+      "AncientRuneMechImprison_col1_M",
+      "AncientRuneMechImprison_col1_D",
+      "AncientRuneMechImprison_col1_S",
+      "AncientRuneMechImprison_col1_E"
+    ]
+  },
+  "00031914": {
+    "upkId": "00031914",
+    "col": "col1",
+    "texture": "00031913",
+    "objs": [
+      "60142_JinF_col1_N",
+      "60142_JinF_col1_M",
+      "60142_JinF_col1_D",
+      "60142_JinF_col1_S",
+      "60142_JinF_col1_E"
+    ]
+  },
+  "00031917": {
+    "upkId": "00031917",
+    "col": "col1",
+    "texture": "00031916",
+    "objs": [
+      "60142_GonF_col1_N",
+      "60142_GonF_col1_M",
+      "60142_GonF_col1_D",
+      "60142_GonF_col1_S",
+      "60142_GonF_col1_E"
+    ]
+  },
+  "00031924": {
+    "upkId": "00031924",
+    "col": "col1",
+    "texture": "00031923",
+    "objs": [
+      "65040_KunN_col1_S",
+      "65040_KunN_col1_N",
+      "65040_KunN_col1_M",
+      "65040_KunN_col1_D"
+    ]
+  },
+  "00031927": {
+    "upkId": "00031927",
+    "col": "col1",
+    "texture": "00031926",
+    "objs": [
+      "65040_GonF_col1_N",
+      "65040_GonF_col1_M",
+      "65040_GonF_col1_D",
+      "65040_GonF_col1_S"
+    ]
+  },
+  "00031930": {
+    "upkId": "00031930",
+    "col": "col1",
+    "texture": "00031929",
+    "objs": [
+      "65040_LynF_col1_N",
+      "65040_LynF_col1_M",
+      "65040_LynF_col1_D",
+      "65040_LynF_col1_S"
+    ]
+  },
+  "00031936": {
+    "upkId": "00031936",
+    "col": "col1",
+    "texture": "00031935",
+    "objs": [
+      "Cloth_0031_col1_N",
+      "Cloth_0031_col1_M",
+      "Cloth_0031_col1_D",
+      "Cloth_0031_col1_S"
+    ]
+  },
+  "00031943": {
+    "upkId": "00031943",
+    "col": "col1",
+    "texture": "00031942",
+    "objs": [
+      "Hat_0031_col1_N",
+      "Hat_0031_col1_M",
+      "Hat_0031_col1_D",
+      "Hat_0031_col1_S"
+    ]
+  },
+  "00031952": {
+    "upkId": "00031952",
+    "col": "col1",
+    "texture": "00031951",
+    "objs": [
+      "60142_KunN_col1_E",
+      "60142_KunN_col1_S",
+      "60142_KunN_col1_N",
+      "60142_KunN_col1_M",
+      "60142_KunN_col1_D"
+    ]
+  },
+  "00031957": {
+    "upkId": "00031957",
+    "col": "col1",
+    "texture": "00031956",
+    "objs": [
+      "060031_LynF_col1_N",
+      "060031_LynF_col1_M",
+      "060031_LynF_col1_D",
+      "060031_LynF_col1_S"
+    ]
+  },
+  "00031962": {
+    "upkId": "00031962",
+    "col": "col1",
+    "texture": "00031961",
+    "objs": [
+      "Cloth_60090_GonM_col1_n",
+      "Cloth_60090_GonM_col1_m_1",
+      "Cloth_60090_GonM_col1_d",
+      "Cloth_60090_GonM_col1_s"
+    ]
+  },
+  "00031965": {
+    "upkId": "00031965",
+    "col": "col1",
+    "texture": "00031964",
+    "objs": [
+      "Cloth_60090_LynM_col1_n",
+      "Cloth_60090_LynM_col1_m_1",
+      "Cloth_60090_LynM_col1_d",
+      "Cloth_60090_LynM_col1_s"
+    ]
+  },
+  "00031969": {
+    "upkId": "00031969",
+    "col": "col1",
+    "texture": "00031968",
+    "objs": [
+      "65010_LynF_col1_N",
+      "65010_LynF_col1_M",
+      "65010_LynF_col1_D",
+      "65010_LynF_col1_S"
+    ]
+  },
+  "00031973": {
+    "upkId": "00031973",
+    "col": "col1",
+    "texture": "00031972",
+    "objs": [
+      "90002_LynM_col1_N",
+      "90002_LynM_col1_M",
+      "90002_LynM_col1_D",
+      "90002_LynM_col1_S"
+    ]
+  },
+  "00031983": {
+    "upkId": "00031983",
+    "col": "col1",
+    "texture": "00031982",
+    "objs": [
+      "60139_GonM_col1_N",
+      "60139_GonM_col1_M",
+      "60139_GonM_col1_D",
+      "60139_GonM_col1_S"
+    ]
+  },
+  "00031990": {
+    "upkId": "00031990",
+    "col": "col1",
+    "texture": "00031989",
+    "objs": [
+      "GonM_003_col1_d",
+      "GonM_003_col1_N",
+      "040194_GonM_Col1_N",
+      "040194_GonM_Col1_M",
+      "040194_GonM_Col1_D",
+      "040194_GonM_Col1_S"
+    ]
+  },
+  "00031994": {
+    "upkId": "00031994",
+    "col": "col1",
+    "texture": "00031995",
+    "objs": [
+      "AdamantineManRaid_col1_N",
+      "AdamantineManRaid_col1_M",
+      "AdamantineManRaid_col1_D",
+      "AdamantineManRaid_col1_S",
+      "AdamantineManRaid_col1_E"
+    ]
+  },
+  "00031999": {
+    "upkId": "00031999",
+    "col": "col1",
+    "texture": "00031998",
+    "objs": [
+      "70049_JinM_N_col1",
+      "70049_JinM_M_col1",
+      "70049_JinM_D_col1",
+      "70049_JinM_S_col1"
+    ]
+  },
+  "00032007": {
+    "upkId": "00032007",
+    "col": "col1",
+    "texture": "00032006",
+    "objs": [
+      "70001_GonF_col1_N",
+      "70001_GonF_col1_M",
+      "70001_GonF_col1_D",
+      "70001_GonF_col1_S"
+    ]
+  },
+  "00032010": {
+    "upkId": "00032010",
+    "col": "col1",
+    "texture": "00032009",
+    "objs": [
+      "70001_GonM_col1_N",
+      "70001_GonM_col1_M",
+      "70001_GonM_col1_D",
+      "70001_GonM_col1_S"
+    ]
+  },
+  "00032013": {
+    "upkId": "00032013",
+    "col": "col1",
+    "texture": "00032012",
+    "objs": [
+      "70001_KunN_col1_S",
+      "70001_KunN_col1_N",
+      "70001_KunN_col1_M",
+      "70001_KunN_col1_D"
+    ]
+  },
+  "00032016": {
+    "upkId": "00032016",
+    "col": "col1",
+    "texture": "00032015",
+    "objs": [
+      "70001_LynF_col1_N",
+      "70001_LynF_col1_M",
+      "70001_LynF_col1_D",
+      "70001_LynF_col1_S"
+    ]
+  },
+  "00032019": {
+    "upkId": "00032019",
+    "col": "col1",
+    "texture": "00032018",
+    "objs": [
+      "70001_LynM_col1_N",
+      "70001_LynM_col1_M",
+      "70001_LynM_col1_D",
+      "70001_LynM_col1_S"
+    ]
+  },
+  "00032028": {
+    "upkId": "00032028",
+    "col": "col1",
+    "texture": "00032027",
+    "objs": [
+      "AncientMechDragon_N_Col1",
+      "AncientMechDragon_M_Col1",
+      "AncientMechDragon_D_Col1",
+      "AncientMechDragon_S_Col1",
+      "AncientMechDragon_E_Col1"
+    ]
+  },
+  "00032030": {
+    "upkId": "00032030",
+    "col": "col3",
+    "texture": "00008025",
+    "objs": [
+      "N2",
+      "M2",
+      "40010_JinM_col3_D",
+      "40010_JinM_col3_S"
+    ]
+  },
+  "00032031": {
+    "upkId": "00032031",
+    "col": "col4",
+    "texture": "00014248",
+    "objs": [
+      "40010_GonF_N",
+      "40010_GonF_M",
+      "40010_GonF_col4_D",
+      "40010_GonF_col4_S"
+    ]
+  },
+  "00032035": {
+    "upkId": "00032035",
+    "col": "col1",
+    "texture": "00032034",
+    "objs": [
+      "Cloth_60035_JinM_col2_N",
+      "Cloth_60035_JinM_col2_M",
+      "Cloth_60035_JinM_col2_D",
+      "Cloth_60035_JinM_col2_S"
+    ]
+  },
+  "00032038": {
+    "upkId": "00032038",
+    "col": "col1",
+    "texture": "00032037",
+    "objs": [
+      "Cloth_60035_LynM_col1_N",
+      "Cloth_60035_LynM_col1_M",
+      "Cloth_60035_LynM_col1_D",
+      "Cloth_60035_LynM_col1_S"
+    ]
+  },
+  "00032042": {
+    "upkId": "00032042",
+    "col": "col1",
+    "texture": "00032041",
+    "objs": [
+      "110134_Autoscale_col1_N",
+      "110134_Autoscale_col1_M",
+      "110134_Autoscale_col1_D",
+      "110134_Autoscale_col1_S"
+    ]
+  },
+  "00032044": {
+    "upkId": "00032044",
+    "col": "col3",
+    "texture": "00014242",
+    "objs": [
+      "40010_JinF_N",
+      "40010_JinF_M",
+      "40010_JinF_col3_D",
+      "40010_JinF_col3_S"
+    ]
+  },
+  "00032045": {
+    "upkId": "00032045",
+    "col": "col3",
+    "texture": "00014251",
+    "objs": [
+      "40010_LynM_N",
+      "40010_LynM_M",
+      "40010_LynM_col3_D",
+      "40010_LynM_col3_S"
+    ]
+  },
+  "00032046": {
+    "upkId": "00032046",
+    "col": "col3",
+    "texture": "00014255",
+    "objs": [
+      "40010_KunN_col3_S",
+      "40010_KunN_N",
+      "40010_KunN_M",
+      "40010_KunN_col3_D"
+    ]
+  },
+  "00032051": {
+    "upkId": "00032051",
+    "col": "col4",
+    "texture": "00014245",
+    "objs": [
+      "40010_GonM_N",
+      "40010_GonM_M",
+      "40010_GonM_col4_D",
+      "40010_GonM_col4_S"
+    ]
+  },
+  "00032052": {
+    "upkId": "00032052",
+    "col": "col2",
+    "texture": "00031489",
+    "objs": [
+      "090076_GonF_col1_N",
+      "090076_GonF_col1_M",
+      "090076_GonF_col2_D",
+      "090076_GonF_col2_S",
+      "090076_GonF_col2_E"
+    ]
+  },
+  "00032056": {
+    "upkId": "00032056",
+    "col": "col2",
+    "texture": "00030705",
+    "objs": [
+      "DarkCarzyTribeNightB_col2_N",
+      "DarkCarzyTribeNightB_col2_M",
+      "DarkCarzyTribeNightB_col2_D",
+      "DarkCarzyTribeNightB_col2_S",
+      "DarkCarzyTribeNightB_col2_E"
+    ]
+  },
+  "00032057": {
+    "upkId": "00032057",
+    "col": "col2",
+    "texture": "00027328",
+    "objs": [
+      "Monster_Human_WoodenGigant_col1_N",
+      "Monster_Human_WoodenGigant_col2_M",
+      "Monster_Human_WoodenGigant_col2_D",
+      "Monster_Human_WoodenGigant_col2_S",
+      "Monster_Human_WoodenGigant_col2_E"
+    ]
+  },
+  "00032058": {
+    "upkId": "00032058",
+    "col": "col3",
+    "texture": "00030612",
+    "objs": [
+      "PigTribeCNight_col3_N",
+      "PigTribeCNight_col1_M",
+      "PigTribeCNight_col3_D",
+      "PigTribeCNight_col3_S",
+      "PigTribeCNight_col3_E"
+    ]
+  },
+  "00032059": {
+    "upkId": "00032059",
+    "col": "col5",
+    "texture": "00024006",
+    "objs": [
+      "DemonChungGak_col1_N",
+      "DemonChungGak_col3_M",
+      "DemonChungGak_col5_D",
+      "DemonChungGak_col5_S",
+      "DemonChungGak_col5_E"
+    ]
+  },
+  "00032060": {
+    "upkId": "00032060",
+    "col": "col6",
+    "texture": "00024006",
+    "objs": [
+      "DemonChungGak_col1_N",
+      "DemonChungGak_col4_M",
+      "DemonChungGak_col6_D",
+      "DemonChungGak_col6_S",
+      "DemonChungGak_col6_E"
+    ]
+  },
+  "00032067": {
+    "upkId": "00032067",
+    "col": "col1",
+    "texture": "00032066",
+    "objs": [
+      "Item_0066_col1_N",
+      "Item_0066_col1_M",
+      "Item_0066_col1_D",
+      "Item_0066_col1_S",
+      "Item_0066_col1_N2",
+      "Item_0066_col1_D2"
+    ]
+  },
+  "00032072": {
+    "upkId": "00032072",
+    "col": "col1",
+    "texture": "00032073",
+    "objs": [
+      "FrogTribeRaid_col1_N",
+      "FrogTribeRaid_col1_M",
+      "FrogTribeRaid_col1_D",
+      "FrogTribeRaid_col1_S"
+    ]
+  },
+  "00032074": {
+    "upkId": "00032074",
+    "col": "col4",
+    "texture": "00014477",
+    "objs": [
+      "SpiderQueen_col4_N",
+      "SpiderQueen_col6_M",
+      "SpiderQueen_col6_D",
+      "SpiderQueen_col6_S",
+      "SpiderQueen_col6_E",
+      "SpiderQueen_FX"
+    ]
+  },
+  "00032075": {
+    "upkId": "00032075",
+    "col": "col2",
+    "texture": "00030447",
+    "objs": [
+      "990213_Autoscale_col1_N",
+      "990213_Autoscale_col2_M",
+      "990213_Autoscale_col2_D",
+      "990213_Autoscale_col2_S",
+      "990213_Autoscale_col2_E"
+    ]
+  },
+  "00032076": {
+    "upkId": "00032076",
+    "col": "col2",
+    "texture": "00031194",
+    "objs": [
+      "990185_Autoscale_Col2_N",
+      "990185_Autoscale_Col2_M",
+      "990185_Autoscale_Col2_D",
+      "990185_Autoscale_Col2_S",
+      "990185_Autoscale_Col2_E"
+    ]
+  },
+  "00032077": {
+    "upkId": "00032077",
+    "col": "col2",
+    "texture": "00030691",
+    "objs": [
+      "990214_Autoscale_col1_N",
+      "990214_Autoscale_col2_M",
+      "990214_Autoscale_col2_D",
+      "990214_Autoscale_col2_S",
+      "990214_Autoscale_col2_E"
+    ]
+  },
+  "00032086": {
+    "upkId": "00032086",
+    "col": "col1",
+    "texture": "00032085",
+    "objs": [
+      "60124_GonF_col1_N",
+      "60124_GonF_col1_M",
+      "60124_GonF_col1_D",
+      "60124_GonF_col1_S"
+    ]
+  },
+  "00032097": {
+    "upkId": "00032097",
+    "col": "Col_Hair_Acc",
+    "texture": "00032096",
+    "objs": [
+      "040156_jinM_col1_N",
+      "040156_jinM_col1_S",
+      "040156_jinM_col1_M",
+      "040156_jinM_col1_D"
+    ]
+  },
+  "00032099": {
+    "upkId": "00032099",
+    "col": "col2",
+    "texture": "00032041",
+    "objs": [
+      "110134_Autoscale_col1_N",
+      "110134_Autoscale_col2_M",
+      "110134_Autoscale_col2_D",
+      "110134_Autoscale_col2_S"
+    ]
+  },
+  "00032100": {
+    "upkId": "00032100",
+    "col": "col3",
+    "texture": "00032041",
+    "objs": [
+      "110134_Autoscale_col1_N",
+      "110134_Autoscale_col3_M",
+      "110134_Autoscale_col3_D",
+      "110134_Autoscale_col3_S",
+      "110134_Autoscale_col3_E"
+    ]
+  },
+  "00032102": {
+    "upkId": "00032102",
+    "col": "col1",
+    "texture": "00032101",
+    "objs": [
+      "60124_KunN_col1_N",
+      "60124_KunN_col1_M",
+      "60124_KunN_col1_D",
+      "60124_KunN_col1_S"
+    ]
+  },
+  "00032105": {
+    "upkId": "00032105",
+    "col": "col1",
+    "texture": "00032104",
+    "objs": [
+      "60124_LynF_Col1_N",
+      "60124_LynF_Col1_M",
+      "60124_LynF_Col1_D",
+      "60124_LynF_Col1_S"
+    ]
+  },
+  "00032109": {
+    "upkId": "00032109",
+    "col": "col1",
+    "texture": "00032108",
+    "objs": [
+      "Cloth_65008_jinF_col1_N",
+      "Cloth_65008_jinF_col1_M",
+      "Cloth_65008_jinF_col1_D",
+      "Cloth_65008_jinF_col1_S"
+    ]
+  },
+  "00032111": {
+    "upkId": "00032111",
+    "col": "col3",
+    "texture": "00030751",
+    "objs": [
+      "990221_Autoscale_col1_N",
+      "990221_Autoscale_col1_M",
+      "990221_Autoscale_col3_D",
+      "990221_Autoscale_col3_S"
+    ]
+  },
+  "00032113": {
+    "upkId": "00032113",
+    "col": "Col_Hair_Acc",
+    "texture": "00032096",
+    "objs": [
+      "040156_jinM_col1_N",
+      "040156_jinM_col1_S",
+      "040156_jinM_col1_M",
+      "040156_jinM_col1_D"
+    ]
+  },
+  "00032115": {
+    "upkId": "00032115",
+    "col": "Col_Hair_Acc",
+    "texture": "00032096",
+    "objs": [
+      "040156_jinM_col1_N",
+      "040156_jinM_col1_S",
+      "040156_jinM_col1_M",
+      "040156_jinM_col1_D"
+    ]
+  },
+  "00032117": {
+    "upkId": "00032117",
+    "col": "Col_Hair_Acc",
+    "texture": "00032096",
+    "objs": [
+      "040156_jinM_col1_N",
+      "040156_jinM_col1_S",
+      "040156_jinM_col1_M",
+      "040156_jinM_col1_D"
+    ]
+  },
+  "00032119": {
+    "upkId": "00032119",
+    "col": "Col_Hair_Acc",
+    "texture": "00032096",
+    "objs": [
+      "040156_jinM_col1_N",
+      "040156_jinM_col1_S",
+      "040156_jinM_col1_M",
+      "040156_jinM_col1_D"
+    ]
+  },
+  "00032121": {
+    "upkId": "00032121",
+    "col": "Col_Hair_Acc",
+    "texture": "00032096",
+    "objs": [
+      "040156_jinM_col1_N",
+      "040156_jinM_col1_S",
+      "040156_jinM_col1_M",
+      "040156_jinM_col1_D"
+    ]
+  },
+  "00032124": {
+    "upkId": "00032124",
+    "col": "Col_Hair_Acc",
+    "texture": "00032096",
+    "objs": [
+      "040156_jinM_col1_N",
+      "040156_jinM_col1_S",
+      "040156_jinM_col1_M",
+      "040156_jinM_col1_D"
+    ]
+  },
+  "00032132": {
+    "upkId": "00032132",
+    "col": "col3",
+    "texture": "00011593",
+    "objs": [
+      "cloth_60032_JinF_col3_N",
+      "cloth_60032_JinF_col3_M",
+      "cloth_60032_JinF_col3_D",
+      "cloth_60032_JinF_col3_S"
+    ]
+  },
+  "00032136": {
+    "upkId": "00032136",
+    "col": "col1",
+    "texture": "00032135",
+    "objs": [
+      "65085_JinM_Col1_N",
+      "65085_JinM_Col1_M",
+      "65085_JinM_Col1_D",
+      "65085_JinM_Col1_S",
+      "65085_JinM_Col1_E"
+    ]
+  },
+  "00032139": {
+    "upkId": "00032139",
+    "col": "col1",
+    "texture": "00032138",
+    "objs": [
+      "65011_GonF_col1_N",
+      "65011_GonF_col1_M",
+      "65011_GonF_col1_D",
+      "65011_GonF_col1_S"
+    ]
+  },
+  "00032142": {
+    "upkId": "00032142",
+    "col": "col1",
+    "texture": "00032141",
+    "objs": [
+      "65011_KunN_col1_S",
+      "65011_KunN_col1_N",
+      "65011_KunN_col1_M",
+      "65011_KunN_col1_D"
+    ]
+  },
+  "00032145": {
+    "upkId": "00032145",
+    "col": "col1",
+    "texture": "00032144",
+    "objs": [
+      "65011_LynF_col1_N",
+      "65011_LynF_col1_M",
+      "65011_LynF_col1_D",
+      "65011_LynF_col1_S"
+    ]
+  },
+  "00032155": {
+    "upkId": "00032155",
+    "col": "col1",
+    "texture": "00032154",
+    "objs": [
+      "090081_LynM_Col1_N",
+      "090081_LynM_Col1_M",
+      "090081_LynM_Col1_D",
+      "090081_LynM_Col1_S"
+    ]
+  },
+  "00032157": {
+    "upkId": "00032157",
+    "col": "col9",
+    "texture": "00008163",
+    "objs": [
+      "60006_LynM_N3",
+      "60006_LynM_M1",
+      "60006_LynM_D9",
+      "60006_LynM_S3"
+    ]
+  },
+  "00032161": {
+    "upkId": "00032161",
+    "col": "col1",
+    "texture": "00032160",
+    "objs": [
+      "60143_GonF_col1_N",
+      "60143_GonF_col1_M",
+      "60143_GonF_col1_D",
+      "60143_GonF_col1_S"
+    ]
+  },
+  "00032165": {
+    "upkId": "00032165",
+    "col": "col1",
+    "texture": "00032164",
+    "objs": [
+      "60143_GonM_Col1_N",
+      "60143_GonM_Col1_M",
+      "60143_GonM_Col1_D",
+      "60143_GonM_Col1_S"
+    ]
+  },
+  "00032169": {
+    "upkId": "00032169",
+    "col": "col1",
+    "texture": "00031174",
+    "objs": [
+      "040176_col1_N",
+      "040176_col1_M",
+      "040176_col1_D",
+      "040176_col1_S"
+    ]
+  },
+  "00032170": {
+    "upkId": "00032170",
+    "col": "col5",
+    "texture": "00005727",
+    "objs": [
+      "Monster_Etc_HolyMushroom_col5_N",
+      "Monster_Etc_HolyMushroom_col5_M",
+      "Monster_Etc_HolyMushroom_col5_D",
+      "Monster_Etc_HolyMushroom_col5_S",
+      "HolyMushroom_FX_GL"
+    ]
+  },
+  "00032171": {
+    "upkId": "00032171",
+    "col": "col2",
+    "texture": "00031566",
+    "objs": [
+      "70001_JinF_col2_N",
+      "70001_JinF_col2_M",
+      "70001_JinF_col2_D",
+      "70001_JinF_col2_S"
+    ]
+  },
+  "00032174": {
+    "upkId": "00032174",
+    "col": "col1",
+    "texture": "00032173",
+    "objs": [
+      "60139_JinF_col1_N",
+      "60139_JinF_col1_M",
+      "60139_JinF_col1_D",
+      "60139_JinF_col1_S"
+    ]
+  },
+  "00032178": {
+    "upkId": "00032178",
+    "col": "col1",
+    "texture": "00032179",
+    "objs": [
+      "KittyBox_Col1_N",
+      "KittyBox_Col1_M",
+      "KittyBox_Col1_D",
+      "KittyBox_Col1_S"
+    ]
+  },
+  "00032180": {
+    "upkId": "00032180",
+    "col": "col3",
+    "texture": "00008928",
+    "objs": [
+      "40011_JinM_col3_N",
+      "40011_JinM_col3_M",
+      "40011_JinM_col3",
+      "40011_JinM_col3_S"
+    ]
+  },
+  "00032190": {
+    "upkId": "00032190",
+    "col": "col1",
+    "texture": "00032189",
+    "objs": [
+      "010101_JinM_col1_N",
+      "010101_JinM_col1_M",
+      "010101_JinM_col1_D",
+      "010101_JinM_col1_S",
+      "010101_JinM_col1_E"
+    ]
+  },
+  "00032192": {
+    "upkId": "00032192",
+    "col": "col1",
+    "texture": "00032189",
+    "objs": [
+      "010101_JinM_col1_N",
+      "010101_JinM_col1_M",
+      "010101_JinM_col1_D",
+      "010101_JinM_col1_S",
+      "010101_JinM_col1_E"
+    ]
+  },
+  "00032194": {
+    "upkId": "00032194",
+    "col": "col1",
+    "texture": "00032189",
+    "objs": [
+      "010101_JinM_col1_N",
+      "010101_JinM_col1_M",
+      "010101_JinM_col1_D",
+      "010101_JinM_col1_S",
+      "010101_JinM_col1_E"
+    ]
+  },
+  "00032196": {
+    "upkId": "00032196",
+    "col": "col1",
+    "texture": "00032189",
+    "objs": [
+      "010101_JinM_col1_N",
+      "010101_JinM_col1_M",
+      "010101_JinM_col1_D",
+      "010101_JinM_col1_S",
+      "010101_JinM_col1_E"
+    ]
+  },
+  "00032198": {
+    "upkId": "00032198",
+    "col": "col1",
+    "texture": "00032189",
+    "objs": [
+      "010101_JinM_col1_N",
+      "010101_JinM_col1_M",
+      "010101_JinM_col1_D",
+      "010101_JinM_col1_S",
+      "010101_JinM_col1_E"
+    ]
+  },
+  "00032200": {
+    "upkId": "00032200",
+    "col": "col1",
+    "texture": "00032189",
+    "objs": [
+      "010101_JinM_col1_N",
+      "010101_JinM_col1_M",
+      "010101_JinM_col1_D",
+      "010101_JinM_col1_S",
+      "010101_JinM_col1_E"
+    ]
+  },
+  "00032204": {
+    "upkId": "00032204",
+    "col": "col1",
+    "texture": "00032203",
+    "objs": [
+      "Hair_040194_JinF_Col1_D",
+      "Hair_040194_JinF_Col1_N",
+      "040194_JinF_Col1_N",
+      "040194_JinF_Col1_M",
+      "040194_JinF_Col1_D",
+      "040194_JinF_Col1_S"
+    ]
+  },
+  "00032209": {
+    "upkId": "00032209",
+    "col": "col1",
+    "texture": "00032208",
+    "objs": [
+      "010100_JinM_col1_n",
+      "010100_JinM_col1_M",
+      "010100_JinM_col1_d",
+      "010100_JinM_col1_S",
+      "010100_JinM_col1_E"
+    ]
+  },
+  "00032217": {
+    "upkId": "00032217",
+    "col": "col1",
+    "texture": "00032218",
+    "objs": [
+      "090080_JinM_col1_N",
+      "090080_JinM_col1_M",
+      "090080_JinM_col1_D",
+      "090080_JinM_col1_S"
+    ]
+  },
+  "00032224": {
+    "upkId": "00032224",
+    "col": "col1",
+    "texture": "00032223",
+    "objs": [
+      "060142_Autoscale_col1_N",
+      "060142_Autoscale_col1_M",
+      "060142_Autoscale_col1_D",
+      "060142_Autoscale_col1_S"
+    ]
+  },
+  "00032231": {
+    "upkId": "00032231",
+    "col": "col1",
+    "texture": "00002618",
+    "objs": [
+      "JinM_001_d",
+      "JinM_001_n"
+    ]
+  },
+  "00032235": {
+    "upkId": "00032235",
+    "col": "col1",
+    "texture": "00032234",
+    "objs": [
+      "JinM_053_col1_D",
+      "JinM_053_col1_N"
+    ]
+  },
+  "00032238": {
+    "upkId": "00032238",
+    "col": "col20",
+    "texture": "00011593",
+    "objs": [
+      "cloth_60032_JinF_col3_N",
+      "cloth_60032_JinF_col3_M",
+      "cloth_60032_JinF_col3_D",
+      "cloth_60032_JinF_col3_S"
+    ]
+  },
+  "00032241": {
+    "upkId": "00032241",
+    "col": "col1",
+    "texture": "00032240",
+    "objs": [
+      "990231_Autoscale_col1_N",
+      "990231_Autoscale_col1_M",
+      "990231_Autoscale_col1_D",
+      "990231_Autoscale_col1_S"
+    ]
+  },
+  "00032245": {
+    "upkId": "00032245",
+    "col": "col1",
+    "texture": "00032244",
+    "objs": [
+      "990232_Autoscale_col1_N",
+      "990232_Autoscale_col1_M",
+      "990232_Autoscale_col1_D",
+      "990232_Autoscale_col1_S"
+    ]
+  },
+  "00032249": {
+    "upkId": "00032249",
+    "col": "col1",
+    "texture": "00032248",
+    "objs": [
+      "990233_Autoscale_col1_N",
+      "990233_Autoscale_col1_M",
+      "990233_Autoscale_col1_D",
+      "990233_Autoscale_col1_S"
+    ]
+  },
+  "00032251": {
+    "upkId": "00032251",
+    "col": "col21",
+    "texture": "00008928",
+    "objs": [
+      "40011_JinM_col3_N",
+      "40011_JinM_col3_M",
+      "40011_JinM_col3",
+      "40011_JinM_col3_S"
+    ]
+  },
+  "00032252": {
+    "upkId": "00032252",
+    "col": "col1",
+    "texture": "00002618",
+    "objs": [
+      "JinM_001_d",
+      "JinM_001_n"
+    ]
+  },
+  "00032253": {
+    "upkId": "00032253",
+    "col": "col20",
+    "texture": "00032218",
+    "objs": [
+      "090080_JinM_col1_N",
+      "090080_JinM_col1_M",
+      "090080_JinM_col1_D",
+      "090080_JinM_col1_S"
+    ]
+  },
+  "00032261": {
+    "upkId": "00032261",
+    "col": "col2",
+    "texture": "00008925",
+    "objs": [
+      "40011_JinF_col2_N",
+      "40011_JinF_col2_M",
+      "40011_JinF_col2_D",
+      "40011_JinF_col2_S"
+    ]
+  },
+  "00032264": {
+    "upkId": "00032264",
+    "col": "col1",
+    "texture": "00032263",
+    "objs": [
+      "990223_Autoscale_col1_N",
+      "990223_Autoscale_col1_M",
+      "990223_Autoscale_col1_D",
+      "990223_Autoscale_col1_S",
+      "990223_Autoscale_col1_E"
+    ]
+  },
+  "00032268": {
+    "upkId": "00032268",
+    "col": "col1",
+    "texture": "00032218",
+    "objs": [
+      "090080_JinM_col1_N",
+      "090080_JinM_col1_M",
+      "090080_JinM_col1_D",
+      "090080_JinM_col1_S"
+    ]
+  },
+  "00032273": {
+    "upkId": "00032273",
+    "col": "col1",
+    "texture": "00003460",
+    "objs": [
+      "JinF_002_col1_D",
+      "JinF_002_col1_N"
+    ]
+  },
+  "00032277": {
+    "upkId": "00032277",
+    "col": "col1",
+    "texture": "00032276",
+    "objs": [
+      "Pengim_N",
+      "Pengim_M",
+      "Pengim_S",
+      "Pengim_D"
+    ]
+  },
+  "00032285": {
+    "upkId": "00032285",
+    "col": "col20",
+    "texture": "00008925",
+    "objs": [
+      "40011_JinF_col2_N",
+      "40011_JinF_col2_M",
+      "40011_JinF_col2_D",
+      "40011_JinF_col2_S"
+    ]
+  },
+  "00032287": {
+    "upkId": "00032287",
+    "col": "col20",
+    "texture": "00032218",
+    "objs": [
+      "090080_JinM_col1_N",
+      "090080_JinM_col1_M",
+      "090080_JinM_col1_D",
+      "090080_JinM_col1_S"
+    ]
+  },
+  "00032288": {
+    "upkId": "00032288",
+    "col": "col1",
+    "texture": "00003460",
+    "objs": [
+      "JinF_002_col1_D",
+      "JinF_002_col1_N"
+    ]
+  },
+  "00032291": {
+    "upkId": "00032291",
+    "col": "col1",
+    "texture": "00032293",
+    "objs": [
+      "60109_LynF_col1_N",
+      "60109_LynF_col1_M",
+      "60109_LynF_col1_D",
+      "60109_LynF_col1_S"
+    ]
+  },
+  "00032294": {
+    "upkId": "00032294",
+    "col": "col1",
+    "texture": "00032296",
+    "objs": [
+      "60109_LynM_col1_N",
+      "60109_LynM_col1_M",
+      "60109_LynM_col1_D",
+      "60109_LynM_col1_S"
+    ]
+  },
+  "00032306": {
+    "upkId": "00032306",
+    "col": "col1",
+    "texture": "00028879",
+    "objs": [
+      "Weapon_110113_col1_N",
+      "110113_Autoscale_col1_M",
+      "110113_Autoscale_col1_D",
+      "110113_Autoscale_col1_S",
+      "110113_Autoscale_col1_E"
+    ]
+  },
+  "00032308": {
+    "upkId": "00032308",
+    "col": "col1",
+    "texture": "00028853",
+    "objs": [
+      "120115_Autoscale_col1_N",
+      "120115_Autoscale_col1_M",
+      "120115_Autoscale_col1_D",
+      "120115_Autoscale_col1_S",
+      "120115_Autoscale_col1_E"
+    ]
+  },
+  "00032323": {
+    "upkId": "00032323",
+    "col": "col1",
+    "texture": "00028879",
+    "objs": [
+      "Weapon_110113_col1_N",
+      "110113_Autoscale_col1_M",
+      "110113_Autoscale_col1_D",
+      "110113_Autoscale_col1_S",
+      "110113_Autoscale_col1_E"
+    ]
+  },
+  "00032328": {
+    "upkId": "00032328",
+    "col": "col1",
+    "texture": "00028879",
+    "objs": [
+      "Weapon_110113_col1_N",
+      "110113_Autoscale_col1_M",
+      "110113_Autoscale_col1_D",
+      "110113_Autoscale_col1_S",
+      "110113_Autoscale_col1_E"
+    ]
+  },
+  "00032332": {
+    "upkId": "00032332",
+    "col": "col1",
+    "texture": "00028841",
+    "objs": [
+      "010214_Autoscale_N",
+      "010214_Autoscale_col1_M",
+      "010214_Autoscale_col1_D",
+      "010214_Autoscale_col1_S",
+      "010214_Autoscale_col1_E"
+    ]
+  },
+  "00032335": {
+    "upkId": "00032335",
+    "col": "col1",
+    "texture": "00028841",
+    "objs": [
+      "010214_Autoscale_N",
+      "010214_Autoscale_col1_M",
+      "010214_Autoscale_col1_D",
+      "010214_Autoscale_col1_S",
+      "010214_Autoscale_col1_E"
+    ]
+  },
+  "00032337": {
+    "upkId": "00032337",
+    "col": "col1",
+    "texture": "00028841",
+    "objs": [
+      "010214_Autoscale_N",
+      "010214_Autoscale_col1_M",
+      "010214_Autoscale_col1_D",
+      "010214_Autoscale_col1_S",
+      "010214_Autoscale_col1_E"
+    ]
+  },
+  "00032339": {
+    "upkId": "00032339",
+    "col": "col1",
+    "texture": "00028616",
+    "objs": [
+      "010206_Autoscale_col1_N",
+      "010206_Autoscale_col1_M",
+      "010206_Autoscale_col1_D",
+      "010206_Autoscale_col1_S",
+      "010206_Autoscale_col1_E"
+    ]
+  },
+  "00032341": {
+    "upkId": "00032341",
+    "col": "col1",
+    "texture": "00028616",
+    "objs": [
+      "010206_Autoscale_col1_N",
+      "010206_Autoscale_col1_M",
+      "010206_Autoscale_col1_D",
+      "010206_Autoscale_col1_S",
+      "010206_Autoscale_col1_E"
+    ]
+  },
+  "00032344": {
+    "upkId": "00032344",
+    "col": "col1",
+    "texture": "00028616",
+    "objs": [
+      "010206_Autoscale_col1_N",
+      "010206_Autoscale_col1_M",
+      "010206_Autoscale_col1_D",
+      "010206_Autoscale_col1_S",
+      "010206_Autoscale_col1_E"
+    ]
+  },
+  "00032346": {
+    "upkId": "00032346",
+    "col": "col1",
+    "texture": "00022938",
+    "objs": [
+      "010166_Autoscale_col1_N",
+      "010166_Autoscale_col1_M",
+      "010166_Autoscale_col1_D",
+      "010166_Autoscale_col1_S"
+    ]
+  },
+  "00032348": {
+    "upkId": "00032348",
+    "col": "col1",
+    "texture": "00028847",
+    "objs": [
+      "030206_autoscale_N",
+      "030206_Autoscale_col1_M",
+      "030206_Autoscale_col1_D",
+      "030206_Autoscale_col1_S",
+      "030206_Autoscale_col1_E"
+    ]
+  },
+  "00032349": {
+    "upkId": "00032349",
+    "col": "col1",
+    "texture": "00022938",
+    "objs": [
+      "010166_Autoscale_col1_N",
+      "010166_Autoscale_col1_M",
+      "010166_Autoscale_col1_D",
+      "010166_Autoscale_col1_S"
+    ]
+  },
+  "00032351": {
+    "upkId": "00032351",
+    "col": "col1",
+    "texture": "00028853",
+    "objs": [
+      "120115_Autoscale_col1_N",
+      "120115_Autoscale_col1_M",
+      "120115_Autoscale_col1_D",
+      "120115_Autoscale_col1_S",
+      "120115_Autoscale_col1_E"
+    ]
+  },
+  "00032353": {
+    "upkId": "00032353",
+    "col": "col1",
+    "texture": "00028847",
+    "objs": [
+      "030206_autoscale_N",
+      "030206_Autoscale_col1_M",
+      "030206_Autoscale_col1_D",
+      "030206_Autoscale_col1_S",
+      "030206_Autoscale_col1_E"
+    ]
+  },
+  "00032355": {
+    "upkId": "00032355",
+    "col": "col1",
+    "texture": "00022938",
+    "objs": [
+      "010166_Autoscale_col1_N",
+      "010166_Autoscale_col1_M",
+      "010166_Autoscale_col1_D",
+      "010166_Autoscale_col1_S"
+    ]
+  },
+  "00032358": {
+    "upkId": "00032358",
+    "col": "col1",
+    "texture": "00028847",
+    "objs": [
+      "030206_autoscale_N",
+      "030206_Autoscale_col1_M",
+      "030206_Autoscale_col1_D",
+      "030206_Autoscale_col1_S",
+      "030206_Autoscale_col1_E"
+    ]
+  },
+  "00032359": {
+    "upkId": "00032359",
+    "col": "col1",
+    "texture": "00028748",
+    "objs": [
+      "010209_Autoscale_col1_N",
+      "010209_Autoscale_col1_M",
+      "010209_Autoscale_col1_D",
+      "010209_Autoscale_col1_S"
+    ]
+  },
+  "00032362": {
+    "upkId": "00032362",
+    "col": "col1",
+    "texture": "00028622",
+    "objs": [
+      "030198_Autoscale_col1_N",
+      "030198_Autoscale_col1_M",
+      "030198_Autoscale_col1_D",
+      "030198_Autoscale_col1_S",
+      "030198_Autoscale_col1_E"
+    ]
+  },
+  "00032363": {
+    "upkId": "00032363",
+    "col": "col1",
+    "texture": "00028748",
+    "objs": [
+      "010209_Autoscale_col1_N",
+      "010209_Autoscale_col1_M",
+      "010209_Autoscale_col1_D",
+      "010209_Autoscale_col1_S"
+    ]
+  },
+  "00032366": {
+    "upkId": "00032366",
+    "col": "col1",
+    "texture": "00028622",
+    "objs": [
+      "030198_Autoscale_col1_N",
+      "030198_Autoscale_col1_M",
+      "030198_Autoscale_col1_D",
+      "030198_Autoscale_col1_S",
+      "030198_Autoscale_col1_E"
+    ]
+  },
+  "00032367": {
+    "upkId": "00032367",
+    "col": "col1",
+    "texture": "00028748",
+    "objs": [
+      "010209_Autoscale_col1_N",
+      "010209_Autoscale_col1_M",
+      "010209_Autoscale_col1_D",
+      "010209_Autoscale_col1_S"
+    ]
+  },
+  "00032370": {
+    "upkId": "00032370",
+    "col": "col1",
+    "texture": "00028622",
+    "objs": [
+      "030198_Autoscale_col1_N",
+      "030198_Autoscale_col1_M",
+      "030198_Autoscale_col1_D",
+      "030198_Autoscale_col1_S",
+      "030198_Autoscale_col1_E"
+    ]
+  },
+  "00032372": {
+    "upkId": "00032372",
+    "col": "col1",
+    "texture": "00022941",
+    "objs": [
+      "030158_Autoscale_col1_N",
+      "030158_Autoscale_col1_M",
+      "030158_Autoscale_col1_D",
+      "030158_Autoscale_col1_S"
+    ]
+  },
+  "00032374": {
+    "upkId": "00032374",
+    "col": "col1",
+    "texture": "00022941",
+    "objs": [
+      "030158_Autoscale_col1_N",
+      "030158_Autoscale_col1_M",
+      "030158_Autoscale_col1_D",
+      "030158_Autoscale_col1_S"
+    ]
+  },
+  "00032376": {
+    "upkId": "00032376",
+    "col": "col1",
+    "texture": "00022941",
+    "objs": [
+      "030158_Autoscale_col1_N",
+      "030158_Autoscale_col1_M",
+      "030158_Autoscale_col1_D",
+      "030158_Autoscale_col1_S"
+    ]
+  },
+  "00032378": {
+    "upkId": "00032378",
+    "col": "col1",
+    "texture": "00028754",
+    "objs": [
+      "030201_Autoscale_col1_N",
+      "030201_Autoscale_col1_M",
+      "030201_Autoscale_col1_D",
+      "030201_Autoscale_col1_S"
+    ]
+  },
+  "00032380": {
+    "upkId": "00032380",
+    "col": "col1",
+    "texture": "00028754",
+    "objs": [
+      "030201_Autoscale_col1_N",
+      "030201_Autoscale_col1_M",
+      "030201_Autoscale_col1_D",
+      "030201_Autoscale_col1_S"
+    ]
+  },
+  "00032382": {
+    "upkId": "00032382",
+    "col": "col1",
+    "texture": "00028754",
+    "objs": [
+      "030201_Autoscale_col1_N",
+      "030201_Autoscale_col1_M",
+      "030201_Autoscale_col1_D",
+      "030201_Autoscale_col1_S"
+    ]
+  },
+  "00032385": {
+    "upkId": "00032385",
+    "col": "col1",
+    "texture": "00028853",
+    "objs": [
+      "120115_Autoscale_col1_N",
+      "120115_Autoscale_col1_M",
+      "120115_Autoscale_col1_D",
+      "120115_Autoscale_col1_S",
+      "120115_Autoscale_col1_E"
+    ]
+  },
+  "00032388": {
+    "upkId": "00032388",
+    "col": "col1",
+    "texture": "00028631",
+    "objs": [
+      "120107_Autoscale_col1_N",
+      "120107_Autoscale_col1_M",
+      "120107_Autoscale_col1_D",
+      "120107_Autoscale_col1_S",
+      "120107_Autoscale_col1_E"
+    ]
+  },
+  "00032394": {
+    "upkId": "00032394",
+    "col": "col1",
+    "texture": "00028631",
+    "objs": [
+      "120107_Autoscale_col1_N",
+      "120107_Autoscale_col1_M",
+      "120107_Autoscale_col1_D",
+      "120107_Autoscale_col1_S",
+      "120107_Autoscale_col1_E"
+    ]
+  },
+  "00032397": {
+    "upkId": "00032397",
+    "col": "col1",
+    "texture": "00028631",
+    "objs": [
+      "120107_Autoscale_col1_N",
+      "120107_Autoscale_col1_M",
+      "120107_Autoscale_col1_D",
+      "120107_Autoscale_col1_S",
+      "120107_Autoscale_col1_E"
+    ]
+  },
+  "00032406": {
+    "upkId": "00032406",
+    "col": "col1",
+    "texture": "00028628",
+    "objs": [
+      "110105_Autoscale_col1_N",
+      "110105_Autoscale_col1_M",
+      "110105_Autoscale_col1_D",
+      "110105_Autoscale_col1_S",
+      "110105_Autoscale_col1_E"
+    ]
+  },
+  "00032410": {
+    "upkId": "00032410",
+    "col": "col1",
+    "texture": "00028628",
+    "objs": [
+      "110105_Autoscale_col1_N",
+      "110105_Autoscale_col1_M",
+      "110105_Autoscale_col1_D",
+      "110105_Autoscale_col1_S",
+      "110105_Autoscale_col1_E"
+    ]
+  },
+  "00032412": {
+    "upkId": "00032412",
+    "col": "col1",
+    "texture": "00028628",
+    "objs": [
+      "110105_Autoscale_col1_N",
+      "110105_Autoscale_col1_M",
+      "110105_Autoscale_col1_D",
+      "110105_Autoscale_col1_S",
+      "110105_Autoscale_col1_E"
+    ]
+  },
+  "00032415": {
+    "upkId": "00032415",
+    "col": "col1",
+    "texture": "00022949",
+    "objs": [
+      "110070_Autoscale_col1_N",
+      "110070_Autoscale_col1_M",
+      "110070_Autoscale_col1_D",
+      "110070_Autoscale_col1_S"
+    ]
+  },
+  "00032417": {
+    "upkId": "00032417",
+    "col": "col1",
+    "texture": "00023157",
+    "objs": [
+      "120067_Autoscale_col1_N",
+      "120067_Autoscale_col1_M",
+      "120067_Autoscale_col1_D",
+      "120067_Autoscale_col1_S"
+    ]
+  },
+  "00032418": {
+    "upkId": "00032418",
+    "col": "col1",
+    "texture": "00022949",
+    "objs": [
+      "110070_Autoscale_col1_N",
+      "110070_Autoscale_col1_M",
+      "110070_Autoscale_col1_D",
+      "110070_Autoscale_col1_S"
+    ]
+  },
+  "00032421": {
+    "upkId": "00032421",
+    "col": "col1",
+    "texture": "00022949",
+    "objs": [
+      "110070_Autoscale_col1_N",
+      "110070_Autoscale_col1_M",
+      "110070_Autoscale_col1_D",
+      "110070_Autoscale_col1_S"
+    ]
+  },
+  "00032423": {
+    "upkId": "00032423",
+    "col": "col1",
+    "texture": "00028760",
+    "objs": [
+      "110108_Autoscale_col1_N",
+      "110108_Autoscale_col1_M",
+      "110108_Autoscale_col1_D",
+      "110108_Autoscale_col1_S"
+    ]
+  },
+  "00032425": {
+    "upkId": "00032425",
+    "col": "col1",
+    "texture": "00028760",
+    "objs": [
+      "110108_Autoscale_col1_N",
+      "110108_Autoscale_col1_M",
+      "110108_Autoscale_col1_D",
+      "110108_Autoscale_col1_S"
+    ]
+  },
+  "00032428": {
+    "upkId": "00032428",
+    "col": "col1",
+    "texture": "00028760",
+    "objs": [
+      "110108_Autoscale_col1_N",
+      "110108_Autoscale_col1_M",
+      "110108_Autoscale_col1_D",
+      "110108_Autoscale_col1_S"
+    ]
+  },
+  "00032435": {
+    "upkId": "00032435",
+    "col": "col1",
+    "texture": "00023157",
+    "objs": [
+      "120067_Autoscale_col1_N",
+      "120067_Autoscale_col1_M",
+      "120067_Autoscale_col1_D",
+      "120067_Autoscale_col1_S"
+    ]
+  },
+  "00032442": {
+    "upkId": "00032442",
+    "col": "col1",
+    "texture": "00028850",
+    "objs": [
+      "060121_Autoscale_col1_N",
+      "060121_Autoscale_col1_M",
+      "060121_Autoscale_col1_D",
+      "060121_Autoscale_col1_S",
+      "060121_Autoscale_col1_E"
+    ]
+  },
+  "00032445": {
+    "upkId": "00032445",
+    "col": "col1",
+    "texture": "00028850",
+    "objs": [
+      "060121_Autoscale_col1_N",
+      "060121_Autoscale_col1_M",
+      "060121_Autoscale_col1_D",
+      "060121_Autoscale_col1_S",
+      "060121_Autoscale_col1_E"
+    ]
+  },
+  "00032448": {
+    "upkId": "00032448",
+    "col": "col1",
+    "texture": "00028850",
+    "objs": [
+      "060121_Autoscale_col1_N",
+      "060121_Autoscale_col1_M",
+      "060121_Autoscale_col1_D",
+      "060121_Autoscale_col1_S",
+      "060121_Autoscale_col1_E"
+    ]
+  },
+  "00032451": {
+    "upkId": "00032451",
+    "col": "col1",
+    "texture": "00028625",
+    "objs": [
+      "060113_Autoscale_col1_N",
+      "060113_Autoscale_col1_M",
+      "060113_Autoscale_col1_D",
+      "060113_Autoscale_col1_S",
+      "060113_Autoscale_col1_E"
+    ]
+  },
+  "00032454": {
+    "upkId": "00032454",
+    "col": "col1",
+    "texture": "00028625",
+    "objs": [
+      "060113_Autoscale_col1_N",
+      "060113_Autoscale_col1_M",
+      "060113_Autoscale_col1_D",
+      "060113_Autoscale_col1_S",
+      "060113_Autoscale_col1_E"
+    ]
+  },
+  "00032455": {
+    "upkId": "00032455",
+    "col": "col1",
+    "texture": "00028625",
+    "objs": [
+      "060113_Autoscale_col1_N",
+      "060113_Autoscale_col1_D",
+      "060113_Autoscale_col1_E",
+      "060113_Autoscale_col1_M",
+      "060113_Autoscale_col1_S"
+    ]
+  },
+  "00032457": {
+    "upkId": "00032457",
+    "col": "col1",
+    "texture": "00028625",
+    "objs": [
+      "060113_Autoscale_col1_N",
+      "060113_Autoscale_col1_M",
+      "060113_Autoscale_col1_D",
+      "060113_Autoscale_col1_S",
+      "060113_Autoscale_col1_E"
+    ]
+  },
+  "00032460": {
+    "upkId": "00032460",
+    "col": "col1",
+    "texture": "00022946",
+    "objs": [
+      "060073_Autoscale_col1_N",
+      "060073_Autoscale_col1_M",
+      "060073_Autoscale_col1_D",
+      "060073_Autoscale_col1_S"
+    ]
+  },
+  "00032464": {
+    "upkId": "00032464",
+    "col": "col1",
+    "texture": "00023157",
+    "objs": [
+      "120067_Autoscale_col1_N",
+      "120067_Autoscale_col1_M",
+      "120067_Autoscale_col1_D",
+      "120067_Autoscale_col1_S"
+    ]
+  },
+  "00032465": {
+    "upkId": "00032465",
+    "col": "col1",
+    "texture": "00022946",
+    "objs": [
+      "060073_Autoscale_col1_N",
+      "060073_Autoscale_col1_M",
+      "060073_Autoscale_col1_D",
+      "060073_Autoscale_col1_S"
+    ]
+  },
+  "00032470": {
+    "upkId": "00032470",
+    "col": "col1",
+    "texture": "00028757",
+    "objs": [
+      "060116_Autoscale_col1_N",
+      "060116_Autoscale_col1_M",
+      "060116_Autoscale_col1_D",
+      "060116_Autoscale_col1_S"
+    ]
+  },
+  "00032474": {
+    "upkId": "00032474",
+    "col": "col1",
+    "texture": "00022946",
+    "objs": [
+      "060073_Autoscale_col1_N",
+      "060073_Autoscale_col1_M",
+      "060073_Autoscale_col1_D",
+      "060073_Autoscale_col1_S"
+    ]
+  },
+  "00032478": {
+    "upkId": "00032478",
+    "col": "col1",
+    "texture": "00028757",
+    "objs": [
+      "060116_Autoscale_col1_N",
+      "060116_Autoscale_col1_M",
+      "060116_Autoscale_col1_D",
+      "060116_Autoscale_col1_S"
+    ]
+  },
+  "00032479": {
+    "upkId": "00032479",
+    "col": "col1",
+    "texture": "00028757",
+    "objs": [
+      "060116_Autoscale_col1_D",
+      "060116_Autoscale_col1_N",
+      "060116_Autoscale_col1_M",
+      "060116_Autoscale_col1_S"
+    ]
+  },
+  "00032480": {
+    "upkId": "00032480",
+    "col": "col1",
+    "texture": "00028263",
+    "objs": [
+      "020158_Autoscale_col1_N",
+      "020158_Autoscale_col1_M",
+      "020158_Autoscale_col1_D",
+      "020158_Autoscale_col1_S"
+    ]
+  },
+  "00032483": {
+    "upkId": "00032483",
+    "col": "col1",
+    "texture": "00028757",
+    "objs": [
+      "060116_Autoscale_col1_N",
+      "060116_Autoscale_col1_M",
+      "060116_Autoscale_col1_D",
+      "060116_Autoscale_col1_S"
+    ]
+  },
+  "00032484": {
+    "upkId": "00032484",
+    "col": "col1",
+    "texture": "00028263",
+    "objs": [
+      "020158_Autoscale_col1_N",
+      "020158_Autoscale_col1_M",
+      "020158_Autoscale_col1_D",
+      "020158_Autoscale_col1_S"
+    ]
+  },
+  "00032488": {
+    "upkId": "00032488",
+    "col": "col1",
+    "texture": "00028763",
+    "objs": [
+      "120110_Autoscale_col1_N",
+      "120110_Autoscale_col1_M",
+      "120110_Autoscale_col1_D",
+      "120110_Autoscale_col1_S"
+    ]
+  },
+  "00032497": {
+    "upkId": "00032497",
+    "col": "col1",
+    "texture": "00028763",
+    "objs": [
+      "120110_Autoscale_col1_N",
+      "120110_Autoscale_col1_M",
+      "120110_Autoscale_col1_D",
+      "120110_Autoscale_col1_S"
+    ]
+  },
+  "00032503": {
+    "upkId": "00032503",
+    "col": "col1",
+    "texture": "00028763",
+    "objs": [
+      "120110_Autoscale_col1_N",
+      "120110_Autoscale_col1_M",
+      "120110_Autoscale_col1_D",
+      "120110_Autoscale_col1_S"
+    ]
+  },
+  "00032515": {
+    "upkId": "00032515",
+    "col": "col1",
+    "texture": "00028263",
+    "objs": [
+      "020158_Autoscale_col1_N",
+      "020158_Autoscale_col1_M",
+      "020158_Autoscale_col1_D",
+      "020158_Autoscale_col1_S"
+    ]
+  },
+  "00032516": {
+    "upkId": "00032516",
+    "col": "col1",
+    "texture": "00028751",
+    "objs": [
+      "020200_Autoscale_col2_N",
+      "020200_Autoscale_col2_M",
+      "020200_Autoscale_col2_D",
+      "020200_Autoscale_col2_S"
+    ]
+  },
+  "00032517": {
+    "upkId": "00032517",
+    "col": "col1",
+    "texture": "00028751",
+    "objs": [
+      "020200_Autoscale_col2_N",
+      "020200_Autoscale_col2_M",
+      "020200_Autoscale_col2_D",
+      "020200_Autoscale_col2_S"
+    ]
+  },
+  "00032518": {
+    "upkId": "00032518",
+    "col": "col1",
+    "texture": "00028751",
+    "objs": [
+      "020200_Autoscale_col2_N",
+      "020200_Autoscale_col2_M",
+      "020200_Autoscale_col2_D",
+      "020200_Autoscale_col2_S"
+    ]
+  },
+  "00032519": {
+    "upkId": "00032519",
+    "col": "col1",
+    "texture": "00028844",
+    "objs": [
+      "020205_Autoscale_col1_N",
+      "020205_Autoscale_col1_M",
+      "020205_Autoscale_col1_D",
+      "020205_Autoscale_col1_S",
+      "020205_Autoscale_col1_E"
+    ]
+  },
+  "00032520": {
+    "upkId": "00032520",
+    "col": "col1",
+    "texture": "00028844",
+    "objs": [
+      "020205_Autoscale_col1_N",
+      "020205_Autoscale_col1_M",
+      "020205_Autoscale_col1_D",
+      "020205_Autoscale_col1_S",
+      "020205_Autoscale_col1_E"
+    ]
+  },
+  "00032521": {
+    "upkId": "00032521",
+    "col": "col1",
+    "texture": "00028844",
+    "objs": [
+      "020205_Autoscale_col1_N",
+      "020205_Autoscale_col1_M",
+      "020205_Autoscale_col1_D",
+      "020205_Autoscale_col1_S",
+      "020205_Autoscale_col1_E"
+    ]
+  },
+  "00032522": {
+    "upkId": "00032522",
+    "col": "col1",
+    "texture": "00028619",
+    "objs": [
+      "Weapon_020197_col1_N",
+      "Weapon_020197_col1_M",
+      "020197_Autoscale_col1_D",
+      "020197_Autoscale_col1_S",
+      "020197_Autoscale_col1_E"
+    ]
+  },
+  "00032523": {
+    "upkId": "00032523",
+    "col": "col1",
+    "texture": "00028619",
+    "objs": [
+      "Weapon_020197_col1_N",
+      "Weapon_020197_col1_M",
+      "020197_Autoscale_col1_D",
+      "020197_Autoscale_col1_S",
+      "020197_Autoscale_col1_E"
+    ]
+  },
+  "00032524": {
+    "upkId": "00032524",
+    "col": "col1",
+    "texture": "00028619",
+    "objs": [
+      "Weapon_020197_col1_N",
+      "Weapon_020197_col1_M",
+      "020197_Autoscale_col1_D",
+      "020197_Autoscale_col1_S",
+      "020197_Autoscale_col1_E"
+    ]
+  },
+  "00032540": {
+    "upkId": "00032540",
+    "col": "col1",
+    "texture": "00032539",
+    "objs": [
+      "10006_JinF_col1_N",
+      "10006_JinF_col1_M",
+      "10006_JinF_col1_D",
+      "10006_JinF_col1_S",
+      "10006_JinF_col1_E"
+    ]
+  },
+  "00032595": {
+    "upkId": "00032595",
+    "col": "col1",
+    "texture": "00032594",
+    "objs": [
+      "10006_GonF_col1_N",
+      "10006_GonF_col1_M",
+      "10006_GonF_col1_D",
+      "10006_GonF_col1_S"
+    ]
+  },
+  "00032599": {
+    "upkId": "00032599",
+    "col": "col1",
+    "texture": "00032598",
+    "objs": [
+      "10006_LynM_col1_N",
+      "10006_LynM_col1_M",
+      "10006_LynM_col1_D",
+      "10006_LynM_col1_S",
+      "10006_LynM_col1_E"
+    ]
+  },
+  "00032619": {
+    "upkId": "00032619",
+    "col": "col1",
+    "texture": "00032618",
+    "objs": [
+      "10006_LynF_col1_n",
+      "10006_LynF_col1_m",
+      "10006_LynF_col1_d",
+      "10006_LynF_col1_s",
+      "10006_LynF_col1_e"
+    ]
+  },
+  "00032626": {
+    "upkId": "00032626",
+    "col": "col1",
+    "texture": "00032625",
+    "objs": [
+      "10006_JinM_col1_N",
+      "10006_JinM_col1_M",
+      "10006_JinM_col1_D",
+      "10006_JinM_col1_S",
+      "10006_JinM_col1_E"
+    ]
+  },
+  "00032634": {
+    "upkId": "00032634",
+    "col": "col1",
+    "texture": "00032633",
+    "objs": [
+      "10006_KunN_E",
+      "10006_KunN_S",
+      "10006_KunN_N",
+      "10006_KunN_M",
+      "10006_KunN_D"
+    ]
+  },
+  "00032672": {
+    "upkId": "00032672",
+    "col": "col1",
+    "texture": "00032671",
+    "objs": [
+      "10006_GonM_col1_N",
+      "10006_GonM_col1_M",
+      "10006_GonM_col1_D",
+      "10006_GonM_col1_S",
+      "10006_GonM_col1_E"
+    ]
+  },
+  "00032687": {
+    "upkId": "00032687",
+    "col": "col1",
+    "texture": "00032686",
+    "objs": [
+      "110135_Autoscale_col1_N",
+      "110135_Autoscale_col1_M",
+      "110135_Autoscale_col1_D",
+      "110135_Autoscale_col1_S",
+      "110135_Autoscale_col1_E"
+    ]
+  },
+  "00032706": {
+    "upkId": "00032706",
+    "col": "col1",
+    "texture": "00032705",
+    "objs": [
+      "10009_LynF_col1_N",
+      "10009_LynF_col1_M",
+      "10009_LynF_col1_D",
+      "10009_LynF_col1_S",
+      "10009_LynF_col1_E"
+    ]
+  },
+  "00032712": {
+    "upkId": "00032712",
+    "col": "col1",
+    "texture": "00032711",
+    "objs": [
+      "10011_LynF_col1_N",
+      "10011_LynF_col1_D"
+    ]
+  },
+  "00032718": {
+    "upkId": "00032718",
+    "col": "col1",
+    "texture": "00023455",
+    "objs": [
+      "010174_Autoscale_col1_N",
+      "010174_Autoscale_col1_M",
+      "010174_Autoscale_col1_D",
+      "010174_Autoscale_col1_S"
+    ]
+  },
+  "00032721": {
+    "upkId": "00032721",
+    "col": "col1",
+    "texture": "00023455",
+    "objs": [
+      "010174_Autoscale_col1_N",
+      "010174_Autoscale_col1_M",
+      "010174_Autoscale_col1_D",
+      "010174_Autoscale_col1_S"
+    ]
+  },
+  "00032724": {
+    "upkId": "00032724",
+    "col": "col1",
+    "texture": "00023455",
+    "objs": [
+      "010174_Autoscale_col1_N",
+      "010174_Autoscale_col1_M",
+      "010174_Autoscale_col1_D",
+      "010174_Autoscale_col1_S"
+    ]
+  },
+  "00032730": {
+    "upkId": "00032730",
+    "col": "col1",
+    "texture": "00028784",
+    "objs": [
+      "010210_Autoscale_col1_N",
+      "010210_Autoscale_col1_M",
+      "010210_Autoscale_col1_D",
+      "010210_Autoscale_col1_S"
+    ]
+  },
+  "00032733": {
+    "upkId": "00032733",
+    "col": "col1",
+    "texture": "00028784",
+    "objs": [
+      "010210_Autoscale_col1_N",
+      "010210_Autoscale_col1_M",
+      "010210_Autoscale_col1_D",
+      "010210_Autoscale_col1_S"
+    ]
+  },
+  "00032736": {
+    "upkId": "00032736",
+    "col": "col1",
+    "texture": "00028784",
+    "objs": [
+      "010210_Autoscale_col1_N",
+      "010210_Autoscale_col1_M",
+      "010210_Autoscale_col1_D",
+      "010210_Autoscale_col1_S"
+    ]
+  },
+  "00032744": {
+    "upkId": "00032744",
+    "col": "col1",
+    "texture": "00028073",
+    "objs": [
+      "020166_Autoscale_col1_N",
+      "020166_Autoscale_col1_M",
+      "020166_Autoscale_col1_D",
+      "020166_Autoscale_col1_S"
+    ]
+  },
+  "00032745": {
+    "upkId": "00032745",
+    "col": "col1",
+    "texture": "00028073",
+    "objs": [
+      "020166_Autoscale_col1_N",
+      "020166_Autoscale_col1_M",
+      "020166_Autoscale_col1_D",
+      "020166_Autoscale_col1_S"
+    ]
+  },
+  "00032746": {
+    "upkId": "00032746",
+    "col": "col1",
+    "texture": "00028073",
+    "objs": [
+      "020166_Autoscale_col1_N",
+      "020166_Autoscale_col1_M",
+      "020166_Autoscale_col1_D",
+      "020166_Autoscale_col1_S"
+    ]
+  },
+  "00032747": {
+    "upkId": "00032747",
+    "col": "col1",
+    "texture": "00028785",
+    "objs": [
+      "020201_Autoscale_col1_N",
+      "020201_Autoscale_col1_M",
+      "020201_Autoscale_col1_D",
+      "020201_Autoscale_col1_S"
+    ]
+  },
+  "00032748": {
+    "upkId": "00032748",
+    "col": "col1",
+    "texture": "00028785",
+    "objs": [
+      "020201_Autoscale_col1_N",
+      "020201_Autoscale_col1_M",
+      "020201_Autoscale_col1_D",
+      "020201_Autoscale_col1_S"
+    ]
+  },
+  "00032749": {
+    "upkId": "00032749",
+    "col": "col1",
+    "texture": "00028785",
+    "objs": [
+      "020201_Autoscale_col1_N",
+      "020201_Autoscale_col1_M",
+      "020201_Autoscale_col1_D",
+      "020201_Autoscale_col1_S"
+    ]
+  },
+  "00032755": {
+    "upkId": "00032755",
+    "col": "col1",
+    "texture": "00032755",
+    "objs": [
+      "Gunttlet_mask"
+    ]
+  },
+  "00032762": {
+    "upkId": "00032762",
+    "col": "col1",
+    "texture": "00028084",
+    "objs": [
+      "030166_Autoscale_col1_N",
+      "030166_Autoscale_col1_M",
+      "030166_Autoscale_col1_D",
+      "030166_Autoscale_col1_S"
+    ]
+  },
+  "00032764": {
+    "upkId": "00032764",
+    "col": "col1",
+    "texture": "00028084",
+    "objs": [
+      "030166_Autoscale_col1_N",
+      "030166_Autoscale_col1_M",
+      "030166_Autoscale_col1_D",
+      "030166_Autoscale_col1_S"
+    ]
+  },
+  "00032766": {
+    "upkId": "00032766",
+    "col": "col1",
+    "texture": "00028084",
+    "objs": [
+      "030166_Autoscale_col1_N",
+      "030166_Autoscale_col1_M",
+      "030166_Autoscale_col1_D",
+      "030166_Autoscale_col1_S"
+    ]
+  },
+  "00032768": {
+    "upkId": "00032768",
+    "col": "col1",
+    "texture": "00028786",
+    "objs": [
+      "030202_Autoscale_col1_N",
+      "030202_Autoscale_col1_M",
+      "030202_Autoscale_col1_D",
+      "030202_Autoscale_col1_S"
+    ]
+  },
+  "00032770": {
+    "upkId": "00032770",
+    "col": "col1",
+    "texture": "00028786",
+    "objs": [
+      "030202_Autoscale_col1_N",
+      "030202_Autoscale_col1_M",
+      "030202_Autoscale_col1_D",
+      "030202_Autoscale_col1_S"
+    ]
+  },
+  "00032772": {
+    "upkId": "00032772",
+    "col": "col1",
+    "texture": "00028786",
+    "objs": [
+      "030202_Autoscale_col1_N",
+      "030202_Autoscale_col1_M",
+      "030202_Autoscale_col1_D",
+      "030202_Autoscale_col1_S"
+    ]
+  },
+  "00032773": {
+    "upkId": "00032773",
+    "col": "col1",
+    "texture": "00032773",
+    "objs": [
+      "T3_2_mask"
+    ]
+  },
+  "00032780": {
+    "upkId": "00032780",
+    "col": "col1",
+    "texture": "00028094",
+    "objs": [
+      "Weapon_110075_col1_N",
+      "Weapon_110075_col1_M",
+      "Weapon_110075_col1_D",
+      "Weapon_110075_col1_S"
+    ]
+  },
+  "00032781": {
+    "upkId": "00032781",
+    "col": "col1",
+    "texture": "00028094",
+    "objs": [
+      "Weapon_110075_col1_N",
+      "Weapon_110075_col1_M",
+      "Weapon_110075_col1_D",
+      "Weapon_110075_col1_S"
+    ]
+  },
+  "00032782": {
+    "upkId": "00032782",
+    "col": "col1",
+    "texture": "00028094",
+    "objs": [
+      "Weapon_110075_col1_N",
+      "Weapon_110075_col1_M",
+      "Weapon_110075_col1_D",
+      "Weapon_110075_col1_S"
+    ]
+  },
+  "00032783": {
+    "upkId": "00032783",
+    "col": "col1",
+    "texture": "00028789",
+    "objs": [
+      "Weapon_110109_col1_N",
+      "Weapon_110109_col1_M",
+      "Weapon_110109_col1_D",
+      "Weapon_110109_col1_S"
+    ]
+  },
+  "00032784": {
+    "upkId": "00032784",
+    "col": "col1",
+    "texture": "00028789",
+    "objs": [
+      "Weapon_110109_col1_N",
+      "Weapon_110109_col1_M",
+      "Weapon_110109_col1_D",
+      "Weapon_110109_col1_S"
+    ]
+  },
+  "00032785": {
+    "upkId": "00032785",
+    "col": "col1",
+    "texture": "00028789",
+    "objs": [
+      "Weapon_110109_col1_N",
+      "Weapon_110109_col1_M",
+      "Weapon_110109_col1_D",
+      "Weapon_110109_col1_S"
+    ]
+  },
+  "00032791": {
+    "upkId": "00032791",
+    "col": "col1",
+    "texture": "00032791",
+    "objs": [
+      "Axe_mask"
+    ]
+  },
+  "00032798": {
+    "upkId": "00032798",
+    "col": "col1",
+    "texture": "00028097",
+    "objs": [
+      "Weapon_060081_col1_N",
+      "Weapon_060081_col1_M",
+      "Weapon_060081_col1_D",
+      "Weapon_060081_col1_S"
+    ]
+  },
+  "00032800": {
+    "upkId": "00032800",
+    "col": "col1",
+    "texture": "00028097",
+    "objs": [
+      "Weapon_060081_col1_N",
+      "Weapon_060081_col1_M",
+      "Weapon_060081_col1_D",
+      "Weapon_060081_col1_S"
+    ]
+  },
+  "00032802": {
+    "upkId": "00032802",
+    "col": "col1",
+    "texture": "00028097",
+    "objs": [
+      "Weapon_060081_col1_N",
+      "Weapon_060081_col1_M",
+      "Weapon_060081_col1_D",
+      "Weapon_060081_col1_S"
+    ]
+  },
+  "00032804": {
+    "upkId": "00032804",
+    "col": "col1",
+    "texture": "00028787",
+    "objs": [
+      "Weapon_060117_col1_N",
+      "Weapon_060117_col1_M",
+      "Weapon_060117_col1_D",
+      "Weapon_060117_col1_S"
+    ]
+  },
+  "00032806": {
+    "upkId": "00032806",
+    "col": "col1",
+    "texture": "00028787",
+    "objs": [
+      "Weapon_060117_col1_N",
+      "Weapon_060117_col1_M",
+      "Weapon_060117_col1_D",
+      "Weapon_060117_col1_S"
+    ]
+  },
+  "00032808": {
+    "upkId": "00032808",
+    "col": "col1",
+    "texture": "00028787",
+    "objs": [
+      "Weapon_060117_col1_N",
+      "Weapon_060117_col1_M",
+      "Weapon_060117_col1_D",
+      "Weapon_060117_col1_S"
+    ]
+  },
+  "00032809": {
+    "upkId": "00032809",
+    "col": "col1",
+    "texture": "00032809",
+    "objs": [
+      "staff_mask"
+    ]
+  },
+  "00032816": {
+    "upkId": "00032816",
+    "col": "col1",
+    "texture": "00032813",
+    "objs": [
+      "050012_JinM_col1_N",
+      "050012_JinM_col1_M",
+      "050012_JinM_col1_D",
+      "050012_JinM_col1_S"
+    ]
+  },
+  "00032822": {
+    "upkId": "00032822",
+    "col": "col1",
+    "texture": "00028087",
+    "objs": [
+      "120075_Autoscale_col1_N",
+      "120075_Autoscale_col1_M",
+      "120075_Autoscale_col1_D",
+      "120075_Autoscale_col1_S"
+    ]
+  },
+  "00032823": {
+    "upkId": "00032823",
+    "col": "col1",
+    "texture": "00028087",
+    "objs": [
+      "120075_Autoscale_col1_N",
+      "120075_Autoscale_col1_M",
+      "120075_Autoscale_col1_D",
+      "120075_Autoscale_col1_S"
+    ]
+  },
+  "00032824": {
+    "upkId": "00032824",
+    "col": "col1",
+    "texture": "00028087",
+    "objs": [
+      "120075_Autoscale_col1_N",
+      "120075_Autoscale_col1_M",
+      "120075_Autoscale_col1_D",
+      "120075_Autoscale_col1_S"
+    ]
+  },
+  "00032826": {
+    "upkId": "00032826",
+    "col": "col1",
+    "texture": "00028087",
+    "objs": [
+      "120075_Autoscale_col1_N",
+      "120075_Autoscale_col1_M"
+    ]
+  },
+  "00032827": {
+    "upkId": "00032827",
+    "col": "col1",
+    "texture": "00028087",
+    "objs": [
+      "120075_Autoscale_col1_N",
+      "120075_Autoscale_col1_M"
+    ]
+  },
+  "00032833": {
+    "upkId": "00032833",
+    "col": "col1",
+    "texture": "00032833",
+    "objs": [
+      "T3_2_Dagger_mask"
+    ]
+  },
+  "00032834": {
+    "upkId": "00032834",
+    "col": "col1",
+    "texture": "00028087",
+    "objs": [
+      "120075_Autoscale_col1_N",
+      "120075_Autoscale_col1_M"
+    ]
+  },
+  "00032845": {
+    "upkId": "00032845",
+    "col": "col2",
+    "texture": "00009104",
+    "objs": [
+      "41007_JinM_col2_N",
+      "41007_JinM_col2_M",
+      "41007_JinM_col2_D",
+      "41007_JinM_col2_S"
+    ]
+  },
+  "00032848": {
+    "upkId": "00032848",
+    "col": "col1",
+    "texture": "00032847",
+    "objs": [
+      "010190_Autoscale_col1_N",
+      "010190_Autoscale_col1_M",
+      "010190_Autoscale_col1_D",
+      "010190_Autoscale_col1_S"
+    ]
+  },
+  "00032856": {
+    "upkId": "00032856",
+    "col": "col1",
+    "texture": "00032857",
+    "objs": [
+      "60133_GonM_col1_N",
+      "60133_GonM_col1_M",
+      "60133_GonM_col1_D",
+      "60133_GonM_col1_S"
+    ]
+  },
+  "00032859": {
+    "upkId": "00032859",
+    "col": "col1",
+    "texture": "00032861",
+    "objs": [
+      "60133_GonF_col1_N",
+      "60133_GonF_col1_M",
+      "60133_GonF_col1_D",
+      "60133_GonF_col1_S"
+    ]
+  },
+  "00032866": {
+    "upkId": "00032866",
+    "col": "col1",
+    "texture": "00032867",
+    "objs": [
+      "60133_LynM_col1_N",
+      "60133_LynM_col1_M",
+      "60133_LynM_col1_D",
+      "60133_LynM_col1_S"
+    ]
+  },
+  "00032869": {
+    "upkId": "00032869",
+    "col": "col1",
+    "texture": "00032870",
+    "objs": [
+      "60133_LynF_col1_N",
+      "60133_LynF_col1_M",
+      "60133_LynF_col1_D",
+      "60133_LynF_col1_S"
+    ]
+  },
+  "00032874": {
+    "upkId": "00032874",
+    "col": "col1",
+    "texture": "00008571",
+    "objs": [
+      "JinM_008_col1_d",
+      "JinM_008_col1_n"
+    ]
+  },
+  "00032878": {
+    "upkId": "00032878",
+    "col": "col1",
+    "texture": "00032877",
+    "objs": [
+      "030182_Autoscale_col1_N",
+      "030182_Autoscale_col1_M",
+      "030182_Autoscale_col1_D",
+      "030182_Autoscale_col1_S"
+    ]
+  },
+  "00032889": {
+    "upkId": "00032889",
+    "col": "col1",
+    "texture": "00032864",
+    "objs": [
+      "60133_KunN_col1_S",
+      "60133_KunN_col1_N",
+      "60133_KunN_col1_M",
+      "60133_KunN_col1_D"
+    ]
+  },
+  "00032890": {
+    "upkId": "00032890",
+    "col": "col1",
+    "texture": "00032888",
+    "objs": [
+      "010102_JinM_col1_N",
+      "010102_JinM_col1_M",
+      "010102_JinM_col1_D",
+      "010102_JinM_col1_S"
+    ]
+  },
+  "00032917": {
+    "upkId": "00032917",
+    "col": "col1",
+    "texture": "00032916",
+    "objs": [
+      "110089_Autoscale_col1_N",
+      "110089_Autoscale_col1_M",
+      "110089_Autoscale_col1_D",
+      "110089_Autoscale_col1_S"
+    ]
+  },
+  "00032921": {
+    "upkId": "00032921",
+    "col": "col1",
+    "texture": "00032920",
+    "objs": [
+      "120091_Autoscale_col1_N",
+      "120091_Autoscale_col1_M",
+      "120091_Autoscale_col1_D",
+      "120091_Autoscale_col1_S"
+    ]
+  },
+  "00032944": {
+    "upkId": "00032944",
+    "col": "col1",
+    "texture": "00032888",
+    "objs": [
+      "010102_JinM_col1_N",
+      "010102_JinM_col1_M",
+      "010102_JinM_col1_D",
+      "010102_JinM_col1_S"
+    ]
+  },
+  "00032945": {
+    "upkId": "00032945",
+    "col": "col1",
+    "texture": "00032888",
+    "objs": [
+      "010102_JinM_col1_N",
+      "010102_JinM_col1_M",
+      "010102_JinM_col1_D",
+      "010102_JinM_col1_S"
+    ]
+  },
+  "00032946": {
+    "upkId": "00032946",
+    "col": "col1",
+    "texture": "00032888",
+    "objs": [
+      "010102_JinM_col1_N",
+      "010102_JinM_col1_M",
+      "010102_JinM_col1_D",
+      "010102_JinM_col1_S"
+    ]
+  },
+  "00032947": {
+    "upkId": "00032947",
+    "col": "col1",
+    "texture": "00032888",
+    "objs": [
+      "010102_JinM_col1_N",
+      "010102_JinM_col1_M",
+      "010102_JinM_col1_D",
+      "010102_JinM_col1_S"
+    ]
+  },
+  "00032948": {
+    "upkId": "00032948",
+    "col": "col1",
+    "texture": "00032888",
+    "objs": [
+      "010102_JinM_col1_N",
+      "010102_JinM_col1_M",
+      "010102_JinM_col1_D",
+      "010102_JinM_col1_S"
+    ]
+  },
+  "00032951": {
+    "upkId": "00032951",
+    "col": "col1",
+    "texture": "00032950",
+    "objs": [
+      "020225_Autoscale_col1_N",
+      "020225_Autoscale_col1_M",
+      "020225_Autoscale_col1_D",
+      "020225_Autoscale_col1_S"
+    ]
+  },
+  "00032959": {
+    "upkId": "00032959",
+    "col": "col1",
+    "texture": "00032958",
+    "objs": [
+      "030226_Autoscale_col1_N",
+      "030226_Autoscale_col1_M",
+      "030226_Autoscale_col1_D",
+      "030226_Autoscale_col1_S"
+    ]
+  },
+  "00032962": {
+    "upkId": "00032962",
+    "col": "col1",
+    "texture": "00032961",
+    "objs": [
+      "060141_Autoscale_col1_N",
+      "060141_Autoscale_col1_M",
+      "060141_Autoscale_col1_D",
+      "060141_Autoscale_col1_S"
+    ]
+  },
+  "00032965": {
+    "upkId": "00032965",
+    "col": "col1",
+    "texture": "00032964",
+    "objs": [
+      "110133_Autoscale_col1_N",
+      "110133_Autoscale_col1_M",
+      "110133_Autoscale_col1_D",
+      "110133_Autoscale_col1_S"
+    ]
+  },
+  "00032968": {
+    "upkId": "00032968",
+    "col": "col1",
+    "texture": "00032967",
+    "objs": [
+      "120135_Autoscale_col1_N",
+      "120135_Autoscale_col1_M",
+      "120135_Autoscale_col1_D",
+      "120135_Autoscale_col1_S"
+    ]
+  },
+  "00032977": {
+    "upkId": "00032977",
+    "col": "col1",
+    "texture": "00032976",
+    "objs": [
+      "010178_Autoscale_col1_N",
+      "010178_Autoscale_col1_M",
+      "010178_Autoscale_col1_D",
+      "010178_Autoscale_col1_S",
+      "010178_Autoscale_col1_E"
+    ]
+  },
+  "00032982": {
+    "upkId": "00032982",
+    "col": "col1",
+    "texture": "00032981",
+    "objs": [
+      "060097_Autoscale_col1_N",
+      "060097_Autoscale_col1_M",
+      "060097_Autoscale_col1_D",
+      "060097_Autoscale_col1_S"
+    ]
+  },
+  "00032984": {
+    "upkId": "00032984",
+    "col": "col1",
+    "texture": "00032983",
+    "objs": [
+      "120079_Autoscale_col1_N",
+      "120079_Autoscale_col1_M",
+      "120079_Autoscale_col1_D",
+      "120079_Autoscale_col1_S",
+      "120079_Autoscale_col1_E"
+    ]
+  },
+  "00032987": {
+    "upkId": "00032987",
+    "col": "col1",
+    "texture": "00032986",
+    "objs": [
+      "110077_Autoscale_col1_N",
+      "110077_Autoscale_col1_M",
+      "110077_Autoscale_col1_D",
+      "110077_Autoscale_col1_S",
+      "110077_Autoscale_col1_E"
+    ]
+  },
+  "00032990": {
+    "upkId": "00032990",
+    "col": "col1",
+    "texture": "00032989",
+    "objs": [
+      "060085_Autoscale_col1_N",
+      "060085_Autoscale_col1_M",
+      "060085_Autoscale_col1_D",
+      "060085_Autoscale_col1_S",
+      "060085_Autoscale_col1_E"
+    ]
+  },
+  "00032999": {
+    "upkId": "00032999",
+    "col": "col1",
+    "texture": "00032997",
+    "objs": [
+      "030170_Autoscale_col1_N",
+      "030170_Autoscale_col1_M",
+      "030170_Autoscale_col1_D",
+      "030170_Autoscale_col1_S",
+      "030170_Autoscale_col1_E"
+    ]
+  },
+  "00033003": {
+    "upkId": "00033003",
+    "col": "col1",
+    "texture": "00033002",
+    "objs": [
+      "020170_Autoscale_col1_N",
+      "020170_Autoscale_col1_M",
+      "020170_Autoscale_col1_D",
+      "020170_Autoscale_col1_S",
+      "020170_Autoscale_col1_E"
+    ]
+  },
+  "00033014": {
+    "upkId": "00033014",
+    "col": "col1",
+    "texture": "00033015",
+    "objs": [
+      "10009_LynM_col1_N",
+      "10009_LynM_col1_M",
+      "10009_LynM_col1_D",
+      "10009_LynM_col1_S"
+    ]
+  },
+  "00033026": {
+    "upkId": "00033026",
+    "col": "col1",
+    "texture": "00028885",
+    "objs": [
+      "010194_Autoscale_col2_N",
+      "010194_Autoscale_col3_M",
+      "010194_Autoscale_col3_D",
+      "010194_Autoscale_col3_S"
+    ]
+  },
+  "00033027": {
+    "upkId": "00033027",
+    "col": "col1",
+    "texture": "00028885",
+    "objs": [
+      "010194_Autoscale_col2_N",
+      "010194_Autoscale_col3_M",
+      "010194_Autoscale_col3_D",
+      "010194_Autoscale_col3_S"
+    ]
+  },
+  "00033028": {
+    "upkId": "00033028",
+    "col": "col1",
+    "texture": "00028885",
+    "objs": [
+      "010194_Autoscale_col2_N",
+      "010194_Autoscale_col3_M",
+      "010194_Autoscale_col3_D",
+      "010194_Autoscale_col3_S"
+    ]
+  },
+  "00033034": {
+    "upkId": "00033034",
+    "col": "col1",
+    "texture": "00033033",
+    "objs": [
+      "Hat_0032_col1_N",
+      "Hat_0032_col1_M",
+      "Hat_0032_col1_D",
+      "Hat_0032_col1_S",
+      "Hat_0032_col1_EM"
+    ]
+  },
+  "00033039": {
+    "upkId": "00033039",
+    "col": "col1",
+    "texture": "00028911",
+    "objs": [
+      "020185_Autoscale_col1_N",
+      "020185_Autoscale_col3_M",
+      "020185_Autoscale_col3_D",
+      "020185_Autoscale_col3_S"
+    ]
+  },
+  "00033040": {
+    "upkId": "00033040",
+    "col": "col1",
+    "texture": "00028911",
+    "objs": [
+      "020185_Autoscale_col1_N",
+      "020185_Autoscale_col3_M",
+      "020185_Autoscale_col3_D",
+      "020185_Autoscale_col3_S"
+    ]
+  },
+  "00033048": {
+    "upkId": "00033048",
+    "col": "col1",
+    "texture": "00029216",
+    "objs": [
+      "weapon_060101_col1_N",
+      "weapon_060101_col3_M",
+      "weapon_060101_col3_D",
+      "weapon_060101_col3_S"
+    ]
+  },
+  "00033049": {
+    "upkId": "00033049",
+    "col": "col1",
+    "texture": "00029216",
+    "objs": [
+      "weapon_060101_col1_N",
+      "weapon_060101_col3_M",
+      "weapon_060101_col3_D",
+      "weapon_060101_col3_S"
+    ]
+  },
+  "00033050": {
+    "upkId": "00033050",
+    "col": "col1",
+    "texture": "00029216",
+    "objs": [
+      "weapon_060101_col1_N",
+      "weapon_060101_col3_M",
+      "weapon_060101_col3_D",
+      "weapon_060101_col3_S"
+    ]
+  },
+  "00033057": {
+    "upkId": "00033057",
+    "col": "col1",
+    "texture": "00028517",
+    "objs": [
+      "110093_Autoscale_col2_N",
+      "110093_Autoscale_col3_M",
+      "110093_Autoscale_col3_D",
+      "110093_Autoscale_col3_S"
+    ]
+  },
+  "00033058": {
+    "upkId": "00033058",
+    "col": "col1",
+    "texture": "00028517",
+    "objs": [
+      "110093_Autoscale_col2_N",
+      "110093_Autoscale_col3_M",
+      "110093_Autoscale_col3_D",
+      "110093_Autoscale_col3_S"
+    ]
+  },
+  "00033059": {
+    "upkId": "00033059",
+    "col": "col1",
+    "texture": "00028517",
+    "objs": [
+      "110093_Autoscale_col2_N",
+      "110093_Autoscale_col3_M",
+      "110093_Autoscale_col3_D",
+      "110093_Autoscale_col3_S"
+    ]
+  },
+  "00033066": {
+    "upkId": "00033066",
+    "col": "col1",
+    "texture": "00028915",
+    "objs": [
+      "120095_Autoscale_col3_N",
+      "120095_Autoscale_col3_M",
+      "120095_Autoscale_col3_D",
+      "120095_Autoscale_col3_S"
+    ]
+  },
+  "00033067": {
+    "upkId": "00033067",
+    "col": "col1",
+    "texture": "00028915",
+    "objs": [
+      "120095_Autoscale_col3_N",
+      "120095_Autoscale_col3_M",
+      "120095_Autoscale_col3_D",
+      "120095_Autoscale_col3_S"
+    ]
+  },
+  "00033068": {
+    "upkId": "00033068",
+    "col": "col1",
+    "texture": "00028915",
+    "objs": [
+      "120095_Autoscale_col3_N",
+      "120095_Autoscale_col3_M",
+      "120095_Autoscale_col3_D",
+      "120095_Autoscale_col3_S"
+    ]
+  },
+  "00033075": {
+    "upkId": "00033075",
+    "col": "col1",
+    "texture": "00028888",
+    "objs": [
+      "030186_Autoscale_col1_N",
+      "030186_Autoscale_col3_M",
+      "030186_Autoscale_col3_D",
+      "030186_Autoscale_col3_S"
+    ]
+  },
+  "00033076": {
+    "upkId": "00033076",
+    "col": "col1",
+    "texture": "00028888",
+    "objs": [
+      "030186_Autoscale_col1_N",
+      "030186_Autoscale_col3_M",
+      "030186_Autoscale_col3_D",
+      "030186_Autoscale_col3_S"
+    ]
+  },
+  "00033077": {
+    "upkId": "00033077",
+    "col": "col1",
+    "texture": "00028888",
+    "objs": [
+      "030186_Autoscale_col1_N",
+      "030186_Autoscale_col3_M",
+      "030186_Autoscale_col3_D",
+      "030186_Autoscale_col3_S"
+    ]
+  },
+  "00033086": {
+    "upkId": "00033086",
+    "col": "col1",
+    "texture": "00033084",
+    "objs": [
+      "010103_JinM_Col1_N",
+      "010103_JinM_Col1_M",
+      "010103_JinM_Col1_D",
+      "010103_JinM_Col1_S"
+    ]
+  },
+  "00033087": {
+    "upkId": "00033087",
+    "col": "col1",
+    "texture": "00033084",
+    "objs": [
+      "010103_JinM_Col1_N",
+      "010103_JinM_Col1_M",
+      "010103_JinM_Col1_D",
+      "010103_JinM_Col1_S"
+    ]
+  },
+  "00033094": {
+    "upkId": "00033094",
+    "col": "col1",
+    "texture": "00033093",
+    "objs": [
+      "10009_GonF_col1_n",
+      "10009_GonF_col1_M",
+      "10009_GonF_col1_D",
+      "10009_GonF_col1_S"
+    ]
+  },
+  "00033099": {
+    "upkId": "00033099",
+    "col": "col1",
+    "texture": "00002794",
+    "objs": [
+      "GonM_003_col1_d",
+      "GonM_003_col1_N"
+    ]
+  },
+  "00033108": {
+    "upkId": "00033108",
+    "col": "col1",
+    "texture": "00028885",
+    "objs": [
+      "010194_Autoscale_col2_N",
+      "010194_Autoscale_col2_M",
+      "010194_Autoscale_col2_D",
+      "010194_Autoscale_col2_S"
+    ]
+  },
+  "00033111": {
+    "upkId": "00033111",
+    "col": "col1",
+    "texture": "00028885",
+    "objs": [
+      "010194_Autoscale_col2_N",
+      "010194_Autoscale_col2_M",
+      "010194_Autoscale_col2_D",
+      "010194_Autoscale_col2_S"
+    ]
+  },
+  "00033114": {
+    "upkId": "00033114",
+    "col": "col1",
+    "texture": "00028885",
+    "objs": [
+      "010194_Autoscale_col2_N",
+      "010194_Autoscale_col2_M",
+      "010194_Autoscale_col2_D",
+      "010194_Autoscale_col2_S"
+    ]
+  },
+  "00033119": {
+    "upkId": "00033119",
+    "col": "col1",
+    "texture": "00033118",
+    "objs": [
+      "060035_GonF_col1_n",
+      "060035_GonF_col1_m",
+      "060035_GonF_col1_d",
+      "060035_GonF_col1_s"
+    ]
+  },
+  "00033125": {
+    "upkId": "00033125",
+    "col": "col1",
+    "texture": "00028911",
+    "objs": [
+      "020185_Autoscale_col1_N",
+      "020185_Autoscale_col2_M",
+      "020185_Autoscale_col2_D",
+      "020185_Autoscale_col2_S"
+    ]
+  },
+  "00033127": {
+    "upkId": "00033127",
+    "col": "col1",
+    "texture": "00028911",
+    "objs": [
+      "020185_Autoscale_col1_N",
+      "020185_Autoscale_col2_M",
+      "020185_Autoscale_col2_D",
+      "020185_Autoscale_col2_S"
+    ]
+  },
+  "00033129": {
+    "upkId": "00033129",
+    "col": "col1",
+    "texture": "00028911",
+    "objs": [
+      "020185_Autoscale_col1_N",
+      "020185_Autoscale_col2_M",
+      "020185_Autoscale_col2_D",
+      "020185_Autoscale_col2_S"
+    ]
+  },
+  "00033134": {
+    "upkId": "00033134",
+    "col": "col1",
+    "texture": "00028888",
+    "objs": [
+      "030186_Autoscale_col1_N",
+      "030186_Autoscale_col2_M",
+      "030186_Autoscale_col2_D",
+      "030186_Autoscale_col2_S"
+    ]
+  },
+  "00033136": {
+    "upkId": "00033136",
+    "col": "col1",
+    "texture": "00028888",
+    "objs": [
+      "030186_Autoscale_col1_N",
+      "030186_Autoscale_col2_M",
+      "030186_Autoscale_col2_D",
+      "030186_Autoscale_col2_S"
+    ]
+  },
+  "00033138": {
+    "upkId": "00033138",
+    "col": "col1",
+    "texture": "00028888",
+    "objs": [
+      "030186_Autoscale_col1_N",
+      "030186_Autoscale_col2_M",
+      "030186_Autoscale_col2_D",
+      "030186_Autoscale_col2_S"
+    ]
+  },
+  "00033139": {
+    "upkId": "00033139",
+    "col": "col1",
+    "texture": "00033139",
+    "objs": [
+      "PvE_030186_mask"
+    ]
+  },
+  "00033144": {
+    "upkId": "00033144",
+    "col": "col1",
+    "texture": "00029216",
+    "objs": [
+      "weapon_060101_col1_N",
+      "weapon_060101_col2_M",
+      "weapon_060101_col2_D",
+      "weapon_060101_col2_S"
+    ]
+  },
+  "00033146": {
+    "upkId": "00033146",
+    "col": "col1",
+    "texture": "00029216",
+    "objs": [
+      "weapon_060101_col1_N",
+      "weapon_060101_col2_M",
+      "weapon_060101_col2_D",
+      "weapon_060101_col2_S"
+    ]
+  },
+  "00033148": {
+    "upkId": "00033148",
+    "col": "col1",
+    "texture": "00029216",
+    "objs": [
+      "weapon_060101_col1_N",
+      "weapon_060101_col2_M",
+      "weapon_060101_col2_D",
+      "weapon_060101_col2_S"
+    ]
+  },
+  "00033153": {
+    "upkId": "00033153",
+    "col": "col1",
+    "texture": "00028517",
+    "objs": [
+      "110093_Autoscale_col2_N",
+      "110093_Autoscale_col2_M",
+      "110093_Autoscale_col2_D",
+      "110093_Autoscale_col2_S"
+    ]
+  },
+  "00033155": {
+    "upkId": "00033155",
+    "col": "col1",
+    "texture": "00028517",
+    "objs": [
+      "110093_Autoscale_col2_N",
+      "110093_Autoscale_col2_M",
+      "110093_Autoscale_col2_D",
+      "110093_Autoscale_col2_S"
+    ]
+  },
+  "00033157": {
+    "upkId": "00033157",
+    "col": "col1",
+    "texture": "00028517",
+    "objs": [
+      "110093_Autoscale_col2_N",
+      "110093_Autoscale_col2_M",
+      "110093_Autoscale_col2_D",
+      "110093_Autoscale_col2_S"
+    ]
+  },
+  "00033158": {
+    "upkId": "00033158",
+    "col": "col1",
+    "texture": "00033158",
+    "objs": [
+      "110093_mask"
+    ]
+  },
+  "00033162": {
+    "upkId": "00033162",
+    "col": "col1",
+    "texture": "00028915",
+    "objs": [
+      "120095_Autoscale_col2_N",
+      "120095_Autoscale_col2_M",
+      "120095_Autoscale_col2_D",
+      "120095_Autoscale_col2_S"
+    ]
+  },
+  "00033164": {
+    "upkId": "00033164",
+    "col": "col1",
+    "texture": "00028915",
+    "objs": [
+      "120095_Autoscale_col2_N",
+      "120095_Autoscale_col2_M",
+      "120095_Autoscale_col2_D",
+      "120095_Autoscale_col2_S"
+    ]
+  },
+  "00033166": {
+    "upkId": "00033166",
+    "col": "col1",
+    "texture": "00028915",
+    "objs": [
+      "120095_Autoscale_col2_N",
+      "120095_Autoscale_col2_M",
+      "120095_Autoscale_col2_D",
+      "120095_Autoscale_col2_S"
+    ]
+  },
+  "00033167": {
+    "upkId": "00033167",
+    "col": "col1",
+    "texture": "00033167",
+    "objs": [
+      "PvE_120095_mask"
+    ]
+  },
+  "00033176": {
+    "upkId": "00033176",
+    "col": "col1",
+    "texture": "00033172",
+    "objs": [
+      "10009_KunN_col1_N",
+      "10009_KunN_col1_m",
+      "10009_KunN_col1_D",
+      "10009_KunN_col1_S"
+    ]
+  },
+  "00033180": {
+    "upkId": "00033180",
+    "col": "col1",
+    "texture": "00033179",
+    "objs": [
+      "10009_JinF_col1_N",
+      "10009_JinF_col1_M",
+      "10009_JinF_col1_D",
+      "10009_JinF_col1_S",
+      "10009_JinF_col1_E"
+    ]
+  },
+  "00033183": {
+    "upkId": "00033183",
+    "col": "col1",
+    "texture": "00033084",
+    "objs": [
+      "010103_JinM_Col1_N",
+      "010103_JinM_Col1_M",
+      "010103_JinM_Col1_D",
+      "010103_JinM_Col1_S"
+    ]
+  },
+  "00033185": {
+    "upkId": "00033185",
+    "col": "col1",
+    "texture": "00033084",
+    "objs": [
+      "010103_JinM_Col1_N",
+      "010103_JinM_Col1_M",
+      "010103_JinM_Col1_D",
+      "010103_JinM_Col1_S"
+    ]
+  },
+  "00033187": {
+    "upkId": "00033187",
+    "col": "col1",
+    "texture": "00033084",
+    "objs": [
+      "010103_JinM_Col1_N",
+      "010103_JinM_Col1_M",
+      "010103_JinM_Col1_D",
+      "010103_JinM_Col1_S"
+    ]
+  },
+  "00033189": {
+    "upkId": "00033189",
+    "col": "col1",
+    "texture": "00033084",
+    "objs": [
+      "010103_JinM_Col1_N",
+      "010103_JinM_Col1_M",
+      "010103_JinM_Col1_D",
+      "010103_JinM_Col1_S"
+    ]
+  },
+  "00033194": {
+    "upkId": "00033194",
+    "col": "col1",
+    "texture": "00033195",
+    "objs": [
+      "060035_KunN_col1_N",
+      "060035_KunN_col1_M",
+      "060035_KunN_col1_D",
+      "060035_KunN_col1_S"
+    ]
+  },
+  "00033239": {
+    "upkId": "00033239",
+    "col": "col1",
+    "texture": "00033238",
+    "objs": [
+      "060035_JinF_col1_N",
+      "060035_JinF_col1_M",
+      "060035_JinF_col1_D",
+      "060035_JinF_col1_S"
+    ]
+  },
+  "00033246": {
+    "upkId": "00033246",
+    "col": "col1",
+    "texture": "00033245",
+    "objs": [
+      "060035_LynF_col1_n",
+      "060035_LynF_col1_m",
+      "060035_LynF_col1_d",
+      "060035_LynF_col1_s"
+    ]
+  },
+  "00033257": {
+    "upkId": "00033257",
+    "col": "col1",
+    "texture": "00033256",
+    "objs": [
+      "10009_GonM_col1_n",
+      "10009_GonM_col1_m",
+      "10009_GonM_col1_d",
+      "10009_GonM_col1_s"
+    ]
+  },
+  "00033261": {
+    "upkId": "00033261",
+    "col": "col1",
+    "texture": "00008896",
+    "objs": [
+      "GonM_011_col1_D",
+      "GonM_011_col1_n"
+    ]
+  },
+  "00033273": {
+    "upkId": "00033273",
+    "col": "col1",
+    "texture": "00033272",
+    "objs": [
+      "10009_JinM_col1_N",
+      "10009_JinM_col1_M",
+      "10009_JinM_col1_D",
+      "10009_JinM_col1_S",
+      "10009_JinM_col1_D_op"
+    ]
+  },
+  "00033308": {
+    "upkId": "00033308",
+    "col": "col1",
+    "texture": "00033307",
+    "objs": [
+      "10008_GonF_col1_N",
+      "10008_GonF_col1_M",
+      "10008_GonF_col1_D",
+      "10008_GonF_col1_S"
+    ]
+  },
+  "00033400": {
+    "upkId": "00033400",
+    "col": "col1",
+    "texture": "00024210",
+    "objs": [
+      "JinM_044_col1_D",
+      "JinM_044_col1_N"
+    ]
+  },
+  "00033487": {
+    "upkId": "00033487",
+    "col": "col1",
+    "texture": "00033486",
+    "objs": [
+      "10008_GonM_col1_N",
+      "10008_GonM_col1_M",
+      "10008_GonM_col1_D",
+      "10008_GonM_col1_S"
+    ]
+  },
+  "00033491": {
+    "upkId": "00033491",
+    "col": "col1",
+    "texture": "00033492",
+    "objs": [
+      "Summon_Cat_Cloth_0032_col1_N",
+      "Summon_Cat_Cloth_0032_col1_M",
+      "Summon_Cat_Cloth_0032_col1_D",
+      "Summon_Cat_Cloth_0032_col1_S"
+    ]
+  },
+  "00033495": {
+    "upkId": "00033495",
+    "col": "col1",
+    "texture": "00033496",
+    "objs": [
+      "Summon_Cat_Cloth_0033_col1_N",
+      "Summon_Cat_Cloth_0033_col1_M",
+      "Summon_Cat_Cloth_0033_col1_D",
+      "Summon_Cat_Cloth_0033_col1_S",
+      "Summon_Cat_Cloth_0033_col1_E"
+    ]
+  },
+  "00033503": {
+    "upkId": "00033503",
+    "col": "col1",
+    "texture": "00033504",
+    "objs": [
+      "Summon_Cat_Hat_0033_col1_N",
+      "Summon_Cat_Hat_0033_col1_M",
+      "Summon_Cat_Hat_0033_col1_D",
+      "Summon_Cat_Hat_0033_col1_S",
+      "Summon_Cat_Hat_0033_col1_E"
+    ]
+  },
+  "00033505": {
+    "upkId": "00033505",
+    "col": "col2",
+    "texture": "00028139",
+    "objs": [
+      "70027_JinM_col2_N",
+      "70027_JinM_col_M",
+      "70027_JinM_col2_D",
+      "70027_JinM_col2_S"
+    ]
+  },
+  "00033506": {
+    "upkId": "00033506",
+    "col": "col2",
+    "texture": "00027971",
+    "objs": [
+      "70027_JinF_col2_N",
+      "70027_JinF_col2_M",
+      "70027_JinF_col2_D",
+      "70027_JinF_col2_S"
+    ]
+  },
+  "00033507": {
+    "upkId": "00033507",
+    "col": "col2",
+    "texture": "00028076",
+    "objs": [
+      "70027_KunN_col2_S",
+      "70027_KunN_col2_N",
+      "70027_KunN_col2_M",
+      "70027_KunN_col2_D"
+    ]
+  },
+  "00033514": {
+    "upkId": "00033514",
+    "col": "col2",
+    "texture": "00028122",
+    "objs": [
+      "70027_LynF_col2_N",
+      "70027_LynF_col2_M",
+      "70027_LynF_col2_D",
+      "70027_LynF_col2_S"
+    ]
+  },
+  "00033515": {
+    "upkId": "00033515",
+    "col": "col2",
+    "texture": "00028217",
+    "objs": [
+      "70027_LynM_col2_N",
+      "70027_LynM_col2_M",
+      "70027_LynM_col2_D",
+      "70027_LynM_col2_S"
+    ]
+  },
+  "00033757": {
+    "upkId": "00033757",
+    "col": "col1",
+    "texture": "00033756",
+    "objs": [
+      "030228_Autoscale_col1_N",
+      "030228_Autoscale_col1_M",
+      "030228_Autoscale_col1_D",
+      "030228_Autoscale_col1_S",
+      "030228_Autoscale_col1_E"
+    ]
+  },
+  "00033778": {
+    "upkId": "00033778",
+    "col": "col1",
+    "texture": "00033777",
+    "objs": [
+      "020227_Autoscale_col1_N",
+      "020227_Autoscale_col1_M",
+      "020227_Autoscale_col1_D",
+      "020227_Autoscale_col1_S",
+      "020227_Autoscale_col1_E"
+    ]
+  },
+  "00033783": {
+    "upkId": "00033783",
+    "col": "col1",
+    "texture": "00033781",
+    "objs": [
+      "120137_Autoscale_col1_N",
+      "120137_Autoscale_col1_M",
+      "120137_Autoscale_col1_D",
+      "120137_Autoscale_col1_S"
+    ]
+  },
+  "00033791": {
+    "upkId": "00033791",
+    "col": "col1",
+    "texture": "00033790",
+    "objs": [
+      "060143_Autoscale_col1_N",
+      "060143_Autoscale_col1_M",
+      "060143_Autoscale_col1_D",
+      "060143_Autoscale_col1_S",
+      "060143_Autoscale_col1_E"
+    ]
+  },
+  "00033795": {
+    "upkId": "00033795",
+    "col": "col1",
+    "texture": "00033794",
+    "objs": [
+      "010236_Autoscale_col1_N",
+      "010236_Autoscale_col1_M",
+      "010236_Autoscale_col1_D",
+      "010236_Autoscale_col1_S",
+      "010236_Autoscale_col1_E"
     ]
   }
 }

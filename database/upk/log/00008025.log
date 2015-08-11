@@ -1,14 +1,46 @@
-Found 19856 game files (132 skipped)
-Loading package: 00008025.upk Ver: 573/1 Engine: 4205 Names: 36 Exports: 8 Imports: 2 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00008025.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 10 Imports: 2 Game: 801A
+Loading Texture2D 40010_JinM_col3_D from package 00008025.upk
+Loading Texture2D 40010_JinM_col3_S from package 00008025.upk
 Loading Texture2D D2 from package 00008025.upk
 Loading Texture2D DD from package 00008025.upk
-Loading Texture2D m2 from package 00008025.upk
+Loading Texture2D M2 from package 00008025.upk
 Loading Texture2D Mm from package 00008025.upk
 Loading Texture2D N2 from package 00008025.upk
 Loading Texture2D nn from package 00008025.upk
 Loading Texture2D S2 from package 00008025.upk
 Loading Texture2D SS from package 00008025.upk
-Loaded in 0.067 sec, 316 allocs, 1.41 MBytes serialized in 1937 calls.
+Loaded in 0.089 sec, 382 allocs, 1.76 MBytes serialized in 2372 calls.
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 40010_JinM_col3_D
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 40010_JinM_col3_S
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
 
 Object info:
 ============
@@ -42,7 +74,7 @@ ClassName: Texture2D ObjectName: DD
 
 Object info:
 ============
-ClassName: Texture2D ObjectName: m2
+ClassName: Texture2D ObjectName: M2
 
     SizeX = 512
     SizeY = 256

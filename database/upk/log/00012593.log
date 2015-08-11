@@ -1,9 +1,12 @@
-Found 19856 game files (132 skipped)
-Loading package: 00012593.upk Ver: 573/1 Engine: 4205 Names: 350 Exports: 3498 Imports: 140 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00012593.upk Ver: 573/1 Engine: 4205 Names: 371 Exports: 4027 Imports: 144 Game: 801A
 Loading Material3 AuraMaster_Spread_Ice from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Material3 Beam_001_6 from package 00012593.upk
+Loading Material3 Beam_001_6_mesh from package 00012593.upk
+Loading Material3 Beam_fractal01 from package 00012593.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 beam_gra001 from package 00012593.upk
 Loading Material3 beam_gra001_trans from package 00012593.upk
 Loading Material3 Beam_HalfmoonSlash_Cast from package 00012593.upk
@@ -20,6 +23,7 @@ Loading Material3 Beam_Test_M from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 CrocodileSharkTribeDSorcerer_HealSquad_NoiseTrs from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 electronic_beam_mtl from package 00012593.upk
 Loading Material3 gigantoad_trail01 from package 00012593.upk
 Loading Material3 gigantoad_trail01_mesh from package 00012593.upk
 Loading Material3 Iorak_Gun_Beam_Smoke from package 00012593.upk
@@ -42,11 +46,13 @@ Loading Material3 M01_Beam_Noise_soul from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M01_Beam_Noise_soul_add from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 M01_Beam_Noise_soul_mesh from package 00012593.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M01_Beam_Noise_soul_trans from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M01_Beam_Noise_soul_trans_01 from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Material3 M01_Beam_Noise_Trs from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M01_Beam_Noise_Trs2 from package 00012593.upk
@@ -91,6 +97,9 @@ Loading Material3 MunPa_Return_Beam_Sepia02 from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 MunPa_Return_Beam_Sepia03 from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 MuseongM_beam from package 00012593.upk
+WARNING: StructProperty "UMaterial3::WorldPositionOffset" was not found
+Loading Material3 MuseongM_trail01 from package 00012593.upk
 Loading Material3 Nail_CR from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Night_Capture_Beam01 from package 00012593.upk
@@ -116,7 +125,8 @@ Loading Material3 Sparkle32002_Wind_trail2 from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Sparkle32002_Wind_trail_Chain from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00023412.upk Ver: 573/1 Engine: 4205 Names: 911 Exports: 4969 Imports: 228 Game: 801A
+Loading package: 00023412.upk Ver: 573/1 Engine: 4205 Names: 881 Exports: 5043 Imports: 213 Game: 801A
+Loading Material3 Sun_beam from package 00012593.upk
 Loading Material3 Takgi_Breath_Beam01 from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Takgi_Breath_Beam01_loop from package 00012593.upk
@@ -149,6 +159,8 @@ Loading Material3 TransfomMini_beam2 from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 TransfomMini_Beam_thunder_3 from package 00012593.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 WP_Trail01 from package 00012593.upk
+WARNING: StructProperty "UMaterial3::WorldPositionOffset" was not found
 Loading MaterialInstanceConstant MunPa_Return_Beam_Sepia02_INST03 from package 00012593.upk
 Loading MaterialInstanceConstant MunPa_Return_Beam_Sepia03_INST04 from package 00012593.upk
 Loading MaterialInstanceConstant MunPa_Return_Beam_Sepia03_INST05 from package 00012593.upk
@@ -163,11 +175,12 @@ Loading Texture2D Noise_005 from package 00012963.upk
 Loading Texture2D Noise_Wave_000 from package 00012963.upk
 Loading Texture2D Gradient_Color_YellowToOrange_000 from package 00012963.upk
 Loading Texture2D Gradient_Line_R from package 00012963.upk
+Loading Texture2D Normal_Noise_004 from package 00012963.upk
+Loading Texture2D Glow_Trail_001 from package 00012963.upk
 Loading Texture2D Noise_006 from package 00012963.upk
 Loading Texture2D Unique_Stone_001 from package 00012963.upk
 Loading Texture2D Glow_004 from package 00012963.upk
 Loading Texture2D Gradient_Beam_005_YClamp from package 00012963.upk
-Loading Texture2D Glow_Trail_001 from package 00012963.upk
 Loading Texture2D Glow_Flair_001 from package 00012963.upk
 Loading Texture2D Noise_Crack_000 from package 00012963.upk
 Loading Texture2D Smoke_Fractal_002 from package 00012963.upk
@@ -181,6 +194,7 @@ Loading Texture2D Glow_Trail_000 from package 00012963.upk
 Loading Texture2D Smoke_Cloud_002 from package 00012963.upk
 Loading Texture2D Gradient_001_Left from package 00012963.upk
 Loading Texture2D Glow_008 from package 00012963.upk
+Loading Texture2D Gradient_Line_010 from package 00012963.upk
 Loading Texture2D Gradient_010 from package 00012963.upk
 Loading Texture2D Gradient_Line_001 from package 00012963.upk
 Loading Texture2D Takgi_Beam_001 from package 00012963.upk
@@ -213,13 +227,13 @@ Loading Texture2D Smoke_Cloud_005 from package 00012963.upk
 Loading Texture2D Smoke_Ice_000 from package 00012963.upk
 Loading Texture2D Gradient_Trail_000 from package 00012963.upk
 Loading Texture2D Gradient_Flow_000 from package 00012963.upk
+Loading Texture2D Gradient_Color_RedToOrange_000 from package 00012963.upk
 Loading Texture2D Gradient_Color_YtoG000_Tex from package 00012963.upk
 Loading Texture2D Glow_Twiri_001 from package 00012963.upk
 Loading Texture2D PilebunkerEmpire_Capture_lvy from package 00012963.upk
 Loading Texture2D Gradient_Color_PurpleToBlue_000 from package 00012963.upk
 Loading Texture2D Smoke_Inc_002 from package 00012963.upk
 Loading Texture2D Sparkle_Ink_001 from package 00012963.upk
-Loading Texture2D Gradient_Line_010 from package 00012963.upk
 Loading Texture2D Gradient_Line_R_clamp from package 00012963.upk
 Loading Texture2D Gradient_Beam_003 from package 00012963.upk
 Loading Texture2D Aura_Blood_003 from package 00012963.upk
@@ -245,7 +259,7 @@ Loading Texture2D Gradient_Color_Rainbow_003 from package 00012963.upk
 Loading Texture2D Smoke_Dusts_001 from package 00012963.upk
 Loading Texture2D Noise_010 from package 00012963.upk
 Loading Texture2D Noise_022 from package 00012963.upk
-Loaded in 0.79 sec, 5379 allocs, 2.89 MBytes serialized in 209542 calls.
+Loaded in 1.3 sec, 5473 allocs, 2.95 MBytes serialized in 221807 calls.
 
 Object info:
 ============
@@ -286,6 +300,53 @@ ClassName: Material3 ObjectName: Beam_001_6
         ReferencedTextures[1] = Texture2D'Noise_Wave_000'
         ReferencedTextures[2] = Texture2D'Gradient_Color_YellowToOrange_000'
         ReferencedTextures[3] = Texture2D'Gradient_Line_R'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Beam_001_6_mesh
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_005'
+        ReferencedTextures[1] = Texture2D'Noise_Wave_000'
+        ReferencedTextures[2] = Texture2D'Gradient_Color_YellowToOrange_000'
+        ReferencedTextures[3] = Texture2D'Gradient_Line_R'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Beam_fractal01
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Normal_Noise_004'
+        ReferencedTextures[1] = Texture2D'Noise_Wave_000'
+        ReferencedTextures[2] = Texture2D'Glow_Trail_001'
     }
     BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
@@ -510,6 +571,24 @@ ClassName: Material3 ObjectName: CrocodileSharkTribeDSorcerer_HealSquad_NoiseTrs
         ReferencedTextures[6] = Texture2D'Noise_Wave_000'
         ReferencedTextures[7] = Texture2D'Noise_Plazma_002'
     }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: electronic_beam_mtl
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'Noise_005', Texture2D'Gradient_Line_010' }
     BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
@@ -781,6 +860,29 @@ ClassName: Material3 ObjectName: M01_Beam_Noise_soul_add
         ReferencedTextures[2] = Texture2D'Gradient_Line_002'
         ReferencedTextures[3] = Texture2D'Gradient_Color_BlueToPurple_000'
         ReferencedTextures[4] = Texture2D'Gradient_001_Left'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: M01_Beam_Noise_soul_mesh
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Glow_Trail_000'
+        ReferencedTextures[1] = Texture2D'Glow_Trail_001'
+        ReferencedTextures[2] = Texture2D'Smoke_Fractal_002'
     }
     BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
@@ -1361,6 +1463,54 @@ ClassName: Material3 ObjectName: MunPa_Return_Beam_Sepia03
 
 Object info:
 ============
+ClassName: Material3 ObjectName: MuseongM_beam
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_005'
+        ReferencedTextures[1] = Texture2D'Gradient_Color_RedToOrange_000'
+        ReferencedTextures[2] = Texture2D'Gradient_Line_001'
+        ReferencedTextures[3] = Texture2D'Gradient_010'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: MuseongM_trail01
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_005'
+        ReferencedTextures[1] = Texture2D'Gradient_Color_RedToOrange_000'
+        ReferencedTextures[2] = Texture2D'Noise_Wave_000'
+        ReferencedTextures[3] = Texture2D'Glow_008'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
 ClassName: Material3 ObjectName: Nail_CR
 
     TwoSided = true
@@ -1711,6 +1861,31 @@ ClassName: Material3 ObjectName: Sparkle32002_Wind_trail_Chain
         ReferencedTextures[4] = Texture2D'DefaultTexture'
     }
     BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Sun_beam
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_005'
+        ReferencedTextures[1] = Texture2D'Gradient_Color_RedToOrange_000'
+        ReferencedTextures[2] = Texture2D'Gradient_Line_001'
+        ReferencedTextures[3] = Texture2D'Gradient_010'
+        ReferencedTextures[4] = Texture2D'Gradient_Line_R'
+    }
+    BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
     MobileBaseTexture = None
@@ -2115,6 +2290,30 @@ ClassName: Material3 ObjectName: TransfomMini_Beam_thunder_3
         ReferencedTextures[3] = Texture2D'MM_return_Ink_Cloud_Blending_Tex'
         ReferencedTextures[4] = Texture2D'Gradient_001_Right'
         ReferencedTextures[5] = Texture2D'Gradient_010'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: WP_Trail01
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_005'
+        ReferencedTextures[1] = Texture2D'Gradient_Color_RedToOrange_000'
+        ReferencedTextures[2] = Texture2D'Noise_Wave_000'
+        ReferencedTextures[3] = Texture2D'Glow_Trail_001'
     }
     BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333

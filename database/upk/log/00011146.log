@@ -1,5 +1,5 @@
-Found 19856 game files (132 skipped)
-Loading package: 00011146.upk Ver: 573/1 Engine: 4205 Names: 543 Exports: 548 Imports: 33 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00011146.upk Ver: 573/1 Engine: 4205 Names: 365 Exports: 556 Imports: 33 Game: 801A
 Loading AnimSet Feedback_Animset from package 00011146.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -439,6 +439,9 @@ WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
 WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+Loading AnimSequence AnimSequence_146 from package 00011146.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
 Loading AnimSequence AnimSequence_147 from package 00011146.upk
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
@@ -449,6 +452,12 @@ WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
 WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+Loading AnimSequence AnimSequence_149 from package 00011146.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+Loading AnimSequence AnimSequence_150 from package 00011146.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_17 from package 00011146.upk
 WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
@@ -931,6 +940,66 @@ Error: Command failed: ******** 00011146 ********
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** AnimSequence Feedback_Animset/AA_A_AssassinateX_Skl_Decapitation has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_AssassinateX_Skl_SpiderWeb has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_AssassinateX_Skl_ThunderDrop has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_BighitX_Skl_Downcounter has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_BighitX_Skl_Flytakedown has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_BighitX_Skl_skykick has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_BighitX_Skl_skytakedown has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_BighitX_Skl_triplekick has wrong CompressedTrackOffsets size (has 1384, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_BighitX_Skl_Violencepunch has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_DestructionX_SKL_Catch_Headbut has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_DestructionX_SKL_CatchGiant_Pound_Start has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_DestructionX_SKL_DropGiant_End has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_DestructionX_SKL_GaintSwing has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_DestructionX_SKL_Pickup_Idle has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_DestructionX_SKL_Pickup_Start has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_DestructionX_SKL_Pickup_Start_Down has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_DestructionX_SKL_PickupGiant_Idle has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_DestructionX_SKL_PickupGiant_Start has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_DestructionX_SKL_PickupGiant_Start_Down has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_DestructionX_SKL_Throw_Start has wrong CompressedTrackOffsets size (has 1384, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_HardX_Skl_MagneticSeal has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_MountX_Bat_End has wrong CompressedTrackOffsets size (has 1424, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_MountX_Bat_idle has wrong CompressedTrackOffsets size (has 1380, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_MountX_Skl_armbar has wrong CompressedTrackOffsets size (has 1384, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_MountX_Skl_Choke has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_MountX_Skl_Headbut has wrong CompressedTrackOffsets size (has 1384, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_MountX_Skl_pounding has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_MountX_Skl_pounding_First has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_MountX_Skl_Takedown has wrong CompressedTrackOffsets size (has 1380, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Damageback has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Damagefront has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_dead_Down has wrong CompressedTrackOffsets size (has 1384, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Dead_FrontDown_To_Die has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Dead_Knee_To_Die has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Dead_Mount_To_Die has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_deadStay_Back has wrong CompressedTrackOffsets size (has 1384, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_DeadStay_Front has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_DongcheonGak has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_DongcheonGak_GiantSwing has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Down_End has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Down_Front_End has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Down_Front_Looping has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Down_Front_Start has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Down_Looping has wrong CompressedTrackOffsets size (has 1424, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Down_Low_B_L_Start has wrong CompressedTrackOffsets size (has 1380, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Down_Low_B_R_Start has wrong CompressedTrackOffsets size (has 1380, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Down_Mid_B_Start has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Down_Mid_F_Start has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Down_Top_B_L_Start has wrong CompressedTrackOffsets size (has 1380, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Down_Top_B_R_Start has wrong CompressedTrackOffsets size (has 1380, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Fall_Looping has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Fall_Start has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Knee_B_Start has wrong CompressedTrackOffsets size (has 1384, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Knee_End has wrong CompressedTrackOffsets size (has 1384, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Knee_F_Start has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Knee_Looping has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
+*** AnimSequence Feedback_Animset/AA_A_None_Bat_Knee_Toknee_Start has wrong CompressedTrackOffsets size (has 1152, expected 272), removing track
 *** ERROR: Unknown rotation compression method: 255
 UAnimSet::ConvertAnims <- PostLoad:Feedback_Animset <- UObject::EndLoad <- LoadWholePackage:00011146 <- Main
 

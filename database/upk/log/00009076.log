@@ -1,16 +1,17 @@
-Found 19856 game files (132 skipped)
-Loading package: 00009076.upk Ver: 573/1 Engine: 4205 Names: 434 Exports: 435 Imports: 150 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00009076.upk Ver: 573/1 Engine: 4205 Names: 477 Exports: 480 Imports: 152 Game: 801A
 Loading Texture2D ArenaDungeonTooltip_01 from package 00009076.upk
 Loading Texture2D Bleeding from package 00009076.upk
 Loading Texture2D dash_block from package 00009076.upk
 Loading Texture2D defence_block from package 00009076.upk
+Loading Texture2D Duel_BattleFieldGradeIcon from package 00009076.upk
 Loading Texture2D Faction_01 from package 00009076.upk
 Loading Texture2D Faction_02 from package 00009076.upk
 Loading Texture2D Faction_SubCommon from package 00009076.upk
 Loading Texture2D fireseed from package 00009076.upk
 Loading Texture2D frostbite from package 00009076.upk
-Loading Texture2D GameUI_buttonicon from package 00009076.upk
 Loading Texture2D GameUI_DuelBack from package 00009076.upk
+Loading Texture2D GameUI_Gauge from package 00009076.upk
 Loading Texture2D GameUI_HeaderIcon from package 00009076.upk
 Loading Texture2D GameUI_New_Scene_00 from package 00009076.upk
 Loading Texture2D GameUI_New_Scene_01 from package 00009076.upk
@@ -56,7 +57,6 @@ Loading Texture2D Minimap_MarkingPosition from package 00009076.upk
 Loading Texture2D Party_Scalp from package 00009076.upk
 Loading Texture2D Party_Scalp_02 from package 00009076.upk
 Loading Texture2D poison from package 00009076.upk
-Loading Texture2D ScoringSystem_Bg from package 00009076.upk
 Loading Texture2D SkillArrow from package 00009076.upk
 Loading Texture2D Stylepoint_Number_01 from package 00009076.upk
 Loading Texture2D Stylepoint_Number_02 from package 00009076.upk
@@ -68,7 +68,7 @@ Loading Texture2D Tooltip_GaugeImagelevel_2_Resource from package 00009076.upk
 Loading Texture2D Tooltip_GaugeImagelevel_3_Resource from package 00009076.upk
 Loading Texture2D Tooltip_LevelDotImage from package 00009076.upk
 Loading Texture2D Venom from package 00009076.upk
-Loaded in 0.16 sec, 816 allocs, 16.69 MBytes serialized in 17367 calls.
+Loaded in 0.17 sec, 859 allocs, 17.45 MBytes serialized in 18336 calls.
 
 Object info:
 ============
@@ -122,6 +122,21 @@ ClassName: Texture2D ObjectName: defence_block
     SizeX = 32
     SizeY = 32
     Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Duel_BattleFieldGradeIcon
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_A8R8G8B8 (2)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
     TextureFileCacheName = None
@@ -207,7 +222,7 @@ ClassName: Texture2D ObjectName: frostbite
 
 Object info:
 ============
-ClassName: Texture2D ObjectName: GameUI_buttonicon
+ClassName: Texture2D ObjectName: GameUI_DuelBack
 
     SizeX = 512
     SizeY = 512
@@ -222,7 +237,7 @@ ClassName: Texture2D ObjectName: GameUI_buttonicon
 
 Object info:
 ============
-ClassName: Texture2D ObjectName: GameUI_DuelBack
+ClassName: Texture2D ObjectName: GameUI_Gauge
 
     SizeX = 512
     SizeY = 512
@@ -434,7 +449,7 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: GameUI_New_Scene_12
 
-    SizeX = 1024
+    SizeX = 2048
     SizeY = 1024
     Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
@@ -901,21 +916,6 @@ ClassName: Texture2D ObjectName: poison
 
     SizeX = 32
     SizeY = 32
-    Format = PF_DXT5 (7)
-    AddressX = TA_Clamp (1)
-    AddressY = TA_Clamp (1)
-    TextureFileCacheName = None
-    MipTailBaseIdx = 0
-    bForcePVRTC4 = false
-    UnpackMin[4] = { 0, 0, 0, 0 }
-    UnpackMax[4] = { 1, 1, 1, 1 }
-
-Object info:
-============
-ClassName: Texture2D ObjectName: ScoringSystem_Bg
-
-    SizeX = 1024
-    SizeY = 1024
     Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)

@@ -1,5 +1,5 @@
-Found 19856 game files (132 skipped)
-Loading package: 00011094.upk Ver: 573/1 Engine: 4205 Names: 221 Exports: 389 Imports: 63 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00011094.upk Ver: 573/1 Engine: 4205 Names: 240 Exports: 416 Imports: 75 Game: 801A
 Loading AnimSet Move_KungfuFighter_GonF_Animset from package 00011094.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -204,6 +204,21 @@ Loading AnimSequence AnimSequence_60 from package 00011094.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_61 from package 00011094.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSet Move_KungfuFighter_KunN_Animset from package 00011094.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+Loading AnimSequence AnimSequence_0 from package 00011094.upk
+WARNING: BoolProperty "UAnimSequence::bUseCustomAttachAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_1 from package 00011094.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_2 from package 00011094.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_58 from package 00011094.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_59 from package 00011094.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSet Swim_KungfuFighter_GonF_Animset from package 00011094.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -220,7 +235,15 @@ Loading AnimSet Swim_KungfuFighter_JinM_Animset from package 00011094.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
 WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+Loading AnimSet Swim_KungfuFighter_KunN_Animset from package 00011094.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
 Error: Command failed: ******** 00011094 ********
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
@@ -239,4 +262,6 @@ UAnimSet::ConvertAnims <- PostLoad:Move_KungfuFighter_GonF_Animset <- UObject::E
     at ChildProcess.exithandler (child_process.js:637:15)
     at ChildProcess.EventEmitter.emit (events.js:98:17)
     at maybeClose (child_process.js:743:16)
-    at Process.ChildProcess._handle.onexit (child_process.js:810:5)
+    at Socket.<anonymous> (child_process.js:956:11)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at Pipe.close (net.js:465:12)

@@ -1,8 +1,8 @@
-Found 19856 game files (132 skipped)
+Found 21310 game files (132 skipped)
 Loading package: 00031017.upk Ver: 573/1 Engine: 4205 Names: 410 Exports: 506 Imports: 155 Game: 801A
 Loading Material3 Sword_Body_MAT_Trans from package 00031017.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading MaterialInstanceConstant Sword_e_INST_White from package 00031017.upk
 Loading package: 00028326.upk Ver: 573/1 Engine: 4205 Names: 470 Exports: 914 Imports: 179 Game: 801A
 Loading MaterialInstanceConstant Sword_edge_INST_White from package 00031017.upk
@@ -62,7 +62,7 @@ Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.22 sec, 4545 allocs, 1.60 MBytes serialized in 236733 calls.
+Loaded in 0.23 sec, 4556 allocs, 1.60 MBytes serialized in 236964 calls.
 
 Object info:
 ============
@@ -101,7 +101,7 @@ ClassName: MaterialInstanceConstant ObjectName: Sword_e_INST_White
     {
         VectorParameterValues[0] =
         {
-            ParameterName = None
+            ParameterName = Color
             ParameterValue = { R=0.766744, G=0.585973, B=0.932277, A=1 }
         }
     }
@@ -137,7 +137,7 @@ ClassName: MaterialInstanceConstant ObjectName: Sword_edge_INST_White
         }
         VectorParameterValues[1] =
         {
-            ParameterName = None
+            ParameterName = Color
             ParameterValue = { R=0.63878, G=0.781751, B=0.932277, A=1 }
         }
     }
@@ -167,7 +167,7 @@ ClassName: MaterialInstanceConstant ObjectName: Sword_ee_INST_White
     {
         VectorParameterValues[0] =
         {
-            ParameterName = None
+            ParameterName = Color
             ParameterValue = { R=0.715466, G=0.835528, B=0.932277, A=1 }
         }
     }

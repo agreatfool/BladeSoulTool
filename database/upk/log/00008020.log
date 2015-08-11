@@ -1,10 +1,11 @@
-Found 19856 game files (132 skipped)
-Loading package: 00008020.upk Ver: 573/1 Engine: 4205 Names: 760 Exports: 8451 Imports: 121 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00008020.upk Ver: 573/1 Engine: 4205 Names: 787 Exports: 8839 Imports: 122 Game: 801A
 Loading Texture2D Game_ChatInputScene_Preview from package 00008020.upk
 Loading Texture2D Game_ChatOptionScene_Preview from package 00008020.upk
+Loading Texture2D Game_ChattingEmoticonScene_Preview from package 00008020.upk
 Loading Texture2D Game_ChattingScene_Preview from package 00008020.upk
 Loading Texture2D Game_ChattingSubScene_Preview from package 00008020.upk
-Loaded in 0.023 sec, 798 allocs, 0.64 MBytes serialized in 155514 calls.
+Loaded in 0.025 sec, 830 allocs, 0.67 MBytes serialized in 162646 calls.
 
 Object info:
 ============
@@ -24,6 +25,21 @@ ClassName: Texture2D ObjectName: Game_ChatInputScene_Preview
 Object info:
 ============
 ClassName: Texture2D ObjectName: Game_ChatOptionScene_Preview
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Game_ChattingEmoticonScene_Preview
 
     SizeX = 256
     SizeY = 256

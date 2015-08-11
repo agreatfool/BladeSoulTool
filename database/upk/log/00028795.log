@@ -1,23 +1,23 @@
-Found 19856 game files (132 skipped)
+Found 21310 game files (132 skipped)
 Loading package: 00028795.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 2 Game: 801A
 Loading Texture2D AnthroCrocodile_col1_D from package 00028795.upk
 Loading Texture2D AnthroCrocodile_col1_E from package 00028795.upk
 Loading Texture2D AnthroCrocodile_col1_M from package 00028795.upk
 Loading Texture2D AnthroCrocodile_col1_N from package 00028795.upk
 Loading Texture2D AnthroCrocodile_col1_S from package 00028795.upk
-Loaded in 0.051 sec, 226 allocs, 2.44 MBytes serialized in 1364 calls.
+Loaded in 0.064 sec, 214 allocs, 0.79 MBytes serialized in 1242 calls.
 
 Object info:
 ============
 ClassName: Texture2D ObjectName: AnthroCrocodile_col1_D
 
-    SizeX = 2048
-    SizeY = 1024
+    SizeX = 1024
+    SizeY = 512
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 11
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -41,13 +41,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: AnthroCrocodile_col1_M
 
-    SizeX = 2048
-    SizeY = 1024
-    Format = PF_DXT1 (5)
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 11
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -56,13 +56,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: AnthroCrocodile_col1_N
 
-    SizeX = 2048
-    SizeY = 1024
+    SizeX = 1024
+    SizeY = 512
     Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 11
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { -1, -1, -1, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -71,13 +71,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: AnthroCrocodile_col1_S
 
-    SizeX = 2048
-    SizeY = 1024
+    SizeX = 1024
+    SizeY = 512
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 11
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

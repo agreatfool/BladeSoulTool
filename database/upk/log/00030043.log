@@ -1,4 +1,4 @@
-Found 19856 game files (132 skipped)
+Found 21310 game files (132 skipped)
 Loading package: 00030043.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 7 Imports: 2 Game: 801A
 Loading Texture2D 70036_JinF_col1_D from package 00030043.upk
 Loading Texture2D 70036_JinF_col1_M from package 00030043.upk
@@ -7,7 +7,7 @@ Loading Texture2D 70036_JinF_col1_S from package 00030043.upk
 Loading Texture2D fur_D from package 00030043.upk
 Loading Texture2D fur_N from package 00030043.upk
 Loading Texture2D fur_S from package 00030043.upk
-Loaded in 0.068 sec, 289 allocs, 2.78 MBytes serialized in 1816 calls.
+Loaded in 0.073 sec, 286 allocs, 2.63 MBytes serialized in 1782 calls.
 
 Object info:
 ============
@@ -28,13 +28,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: 70036_JinF_col1_M
 
-    SizeX = 1024
-    SizeY = 1024
+    SizeX = 512
+    SizeY = 512
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

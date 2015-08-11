@@ -1,12 +1,12 @@
-Found 19856 game files (132 skipped)
-Loading package: 00012513.upk Ver: 573/1 Engine: 4205 Names: 321 Exports: 1369 Imports: 119 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00012513.upk Ver: 573/1 Engine: 4205 Names: 330 Exports: 1406 Imports: 125 Game: 801A
 Loading Material3 Assassin_Defualt_FX_Test from package 00012513.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Material3 Bee from package 00012513.upk
 Loading Material3 Cat_Coil from package 00012513.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Material3 CAt_Mine_MatM from package 00012513.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Dog_Plant from package 00012513.upk
@@ -30,6 +30,9 @@ WARNING: StructProperty "UMaterial3::WorldPositionOffset" was not found
 Loading Material3 Sumoned_Wing2 from package 00012513.upk
 Loading Material3 Sumoned_Wing3 from package 00012513.upk
 Loading Material3 Sumoned_Wing4 from package 00012513.upk
+Loading Material3 sunflower from package 00012513.upk
+WARNING: BoolProperty "UMaterial3::bUsedWithMaterialEffect" was not found
+Loading package: 00027530.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 8 Imports: 4 Game: 801A
 Loading Material3 Sword_s from package 00012513.upk
 Loading package: 00015362.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 2 Game: 801A
 Loading Material3 Test_T from package 00012513.upk
@@ -50,7 +53,7 @@ Loading MaterialInstanceConstant col1 from package 00012513.upk
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading StaticMesh3 Summoner_Missile_Mesh from package 00012513.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 934 Exports: 4850 Imports: 265 Game: 801A
 Loading Texture2D 030006_Mine_D_Cat from package 00012513.upk
 Loading Texture2D 030006_Mine_N_Cat from package 00012513.upk
 Loading Texture2D 030006_Mine_S_Cat from package 00012513.upk
@@ -115,6 +118,10 @@ Loading Texture2D Gradient_Needle2 from package 00012963.upk
 Loading Texture2D Gradient_Beam_006_Yclamp from package 00012963.upk
 Loading Texture2D Sparkle_Ink_000 from package 00012963.upk
 Loading Texture2D Ring_Skew_000 from package 00012963.upk
+Loading Texture2D 060026_JinM_col1_N from package 00027530.upk
+Loading Texture2D 060026_JinM_col1_D from package 00027530.upk
+Loading Texture2D Sunflower_glow from package 00012963.upk
+Loading Texture2D 060026_JinM_col1_M from package 00027530.upk
 Loading Texture2D Cat_Sword_Glow from package 00015362.upk
 Loading Texture2D Nm from package 00012963.upk
 Loading Texture2D Dm from package 00012963.upk
@@ -146,7 +153,7 @@ Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Cube000_Tex from package 00012892.upk
-Loaded in 0.78 sec, 6246 allocs, 3.63 MBytes serialized in 311305 calls.
+Loaded in 0.98 sec, 6465 allocs, 3.82 MBytes serialized in 315139 calls.
 
 Object info:
 ============
@@ -591,6 +598,32 @@ ClassName: Material3 ObjectName: Sumoned_Wing4
         ReferencedTextures[4] = Texture2D'Gradient_Needle2'
     }
     BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: sunflower
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'060026_JinM_col1_N'
+        ReferencedTextures[1] = Texture2D'060026_JinM_col1_D'
+        ReferencedTextures[2] = Texture2D'Sunflower_glow'
+        ReferencedTextures[3] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[4] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[5] = Texture2D'060026_JinM_col1_M'
+    }
+    BlendMode = BLEND_Masked (1)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
     MobileBaseTexture = None

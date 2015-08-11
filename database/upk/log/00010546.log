@@ -1,19 +1,24 @@
-Found 19856 game files (132 skipped)
-Loading package: 00010546.upk Ver: 573/1 Engine: 4205 Names: 56 Exports: 28 Imports: 2 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00010546.upk Ver: 573/1 Engine: 4205 Names: 61 Exports: 33 Imports: 2 Game: 801A
 Loading Texture2D DarkCrazyTribeBigA_D from package 00010546.upk
 Loading Texture2D DarkCrazyTribeBigA_D_col2 from package 00010546.upk
 Loading Texture2D DarkCrazyTribeBigA_D_Col6 from package 00010546.upk
+Loading Texture2D DarkCrazyTribeBigA_D_Col7 from package 00010546.upk
 Loading Texture2D DarkCrazyTribeBigA_E from package 00010546.upk
 Loading Texture2D DarkCrazyTribeBigA_E_col2 from package 00010546.upk
 Loading Texture2D DarkCrazyTribeBigA_E_Col6 from package 00010546.upk
+Loading Texture2D DarkCrazyTribeBigA_E_Col7 from package 00010546.upk
 Loading Texture2D DarkCrazyTribeBigA_FX_Line from package 00010546.upk
 Loading Texture2D DarkCrazyTribeBigA_M from package 00010546.upk
 Loading Texture2D DarkCrazyTribeBigA_M_Col6 from package 00010546.upk
+Loading Texture2D DarkCrazyTribeBigA_M_Col7 from package 00010546.upk
 Loading Texture2D DarkCrazyTribeBigA_N3 from package 00010546.upk
 Loading Texture2D DarkCrazyTribeBigA_N3_Col6 from package 00010546.upk
+Loading Texture2D DarkCrazyTribeBigA_N_Col7 from package 00010546.upk
 Loading Texture2D DarkCrazyTribeBigA_S from package 00010546.upk
 Loading Texture2D DarkCrazyTribeBigA_S_col2 from package 00010546.upk
 Loading Texture2D DarkCrazyTribeBigA_S_Col6 from package 00010546.upk
+Loading Texture2D DarkCrazyTribeBigA_S_Col7 from package 00010546.upk
 Loading Texture2D Monster_Human_DarkCrazyTribeBigA_col3_D from package 00010546.upk
 Loading Texture2D Monster_Human_DarkCrazyTribeBigA_col3_E from package 00010546.upk
 Loading Texture2D Monster_Human_DarkCrazyTribeBigA_col3_M from package 00010546.upk
@@ -28,7 +33,7 @@ Loading Texture2D Monster_Human_DarkCrazyTribeBigA_col5_D from package 00010546.
 Loading Texture2D Monster_Human_DarkCrazyTribeBigA_col5_E from package 00010546.upk
 Loading Texture2D Monster_Human_DarkCrazyTribeBigA_col5_M from package 00010546.upk
 Loading Texture2D Monster_Human_DarkCrazyTribeBigA_col5_S from package 00010546.upk
-Loaded in 0.23 sec, 988 allocs, 4.02 MBytes serialized in 6306 calls.
+Loaded in 0.28 sec, 1162 allocs, 4.78 MBytes serialized in 7421 calls.
 
 Object info:
 ============
@@ -63,6 +68,21 @@ ClassName: Texture2D ObjectName: DarkCrazyTribeBigA_D_col2
 Object info:
 ============
 ClassName: Texture2D ObjectName: DarkCrazyTribeBigA_D_Col6
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: DarkCrazyTribeBigA_D_Col7
 
     SizeX = 1024
     SizeY = 512
@@ -122,6 +142,21 @@ ClassName: Texture2D ObjectName: DarkCrazyTribeBigA_E_Col6
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: DarkCrazyTribeBigA_E_Col7
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: DarkCrazyTribeBigA_FX_Line
 
     SizeX = 512
@@ -167,6 +202,21 @@ ClassName: Texture2D ObjectName: DarkCrazyTribeBigA_M_Col6
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: DarkCrazyTribeBigA_M_Col7
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: DarkCrazyTribeBigA_N3
 
     SizeX = 1024
@@ -183,6 +233,21 @@ ClassName: Texture2D ObjectName: DarkCrazyTribeBigA_N3
 Object info:
 ============
 ClassName: Texture2D ObjectName: DarkCrazyTribeBigA_N3_Col6
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: DarkCrazyTribeBigA_N_Col7
 
     SizeX = 1024
     SizeY = 512
@@ -228,6 +293,21 @@ ClassName: Texture2D ObjectName: DarkCrazyTribeBigA_S_col2
 Object info:
 ============
 ClassName: Texture2D ObjectName: DarkCrazyTribeBigA_S_Col6
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: DarkCrazyTribeBigA_S_Col7
 
     SizeX = 1024
     SizeY = 512

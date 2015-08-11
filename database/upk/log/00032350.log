@@ -1,0 +1,307 @@
+Found 21310 game files (132 skipped)
+Loading package: 00032350.upk Ver: 573/1 Engine: 4205 Names: 256 Exports: 248 Imports: 92 Game: 801A
+Loading SkeletalMesh3 030230_Col1_T0_Autoscale from package 00032350.upk
+WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
+WARNING: ByteProperty "USkeletalMesh3::ItemPreviewLocType" was not found
+WARNING: FloatProperty "USkeletalMesh3::ItemPreviewLocLowerOffset" was not found
+Loading package: 00032348.upk Ver: 573/1 Engine: 4205 Names: 91 Exports: 1 Imports: 20 Game: 801A
+Loading SkeletalMesh3 030230_Col1_T1_Autoscale from package 00032350.upk
+WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
+WARNING: ByteProperty "USkeletalMesh3::ItemPreviewLocType" was not found
+WARNING: FloatProperty "USkeletalMesh3::ItemPreviewLocLowerOffset" was not found
+Loading SkeletalMesh3 030230_Col1_T2_Autoscale from package 00032350.upk
+WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
+WARNING: ByteProperty "USkeletalMesh3::ItemPreviewLocType" was not found
+WARNING: FloatProperty "USkeletalMesh3::ItemPreviewLocLowerOffset" was not found
+Loading SkeletalMesh3 030230_Col1_T3_Autoscale from package 00032350.upk
+WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
+WARNING: ByteProperty "USkeletalMesh3::ItemPreviewLocType" was not found
+WARNING: FloatProperty "USkeletalMesh3::ItemPreviewLocLowerOffset" was not found
+Loading SkeletalMesh3 030230_Col1_T4_Autoscale from package 00032350.upk
+WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
+WARNING: ByteProperty "USkeletalMesh3::ItemPreviewLocType" was not found
+WARNING: FloatProperty "USkeletalMesh3::ItemPreviewLocLowerOffset" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_259 from package 00032350.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_275 from package 00032350.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_291 from package 00032350.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_307 from package 00032350.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_323 from package 00032350.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading MaterialInstanceConstant col1 from package 00032348.upk
+Loading package: 00028847.upk Ver: 573/1 Engine: 4205 Names: 39 Exports: 10 Imports: 4 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading Texture2D 030206_autoscale_N from package 00028847.upk
+Loading Texture2D 030206_Autoscale_col1_M from package 00028847.upk
+Loading Texture2D 030206_Autoscale_col1_D from package 00028847.upk
+Loading Texture2D 030206_Autoscale_col1_S from package 00028847.upk
+Loading Texture2D lenscube_Y from package 00002640.upk
+Loading Texture2D 030206_Autoscale_col1_E from package 00028847.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.11 sec, 3057 allocs, 1.63 MBytes serialized in 344466 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 030230_Col1_T0_Autoscale
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[1] = { SkeletalMeshSocket'030230_Col1_T0_Autoscale.SkeletalMeshSocket_259' }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1531 }
+            }
+            NumVerts = 1071
+            IndexCount = 4593
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 2
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 030230_Col1_T1_Autoscale
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[1] = { SkeletalMeshSocket'030230_Col1_T1_Autoscale.SkeletalMeshSocket_275' }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1531 }
+            }
+            NumVerts = 1071
+            IndexCount = 4593
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 2
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 030230_Col1_T2_Autoscale
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[1] = { SkeletalMeshSocket'030230_Col1_T2_Autoscale.SkeletalMeshSocket_291' }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1531 }
+            }
+            NumVerts = 1071
+            IndexCount = 4593
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 2
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 030230_Col1_T3_Autoscale
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[1] = { SkeletalMeshSocket'030230_Col1_T3_Autoscale.SkeletalMeshSocket_307' }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1531 }
+            }
+            NumVerts = 1071
+            IndexCount = 4593
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 2
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 030230_Col1_T4_Autoscale
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[1] = { SkeletalMeshSocket'030230_Col1_T4_Autoscale.SkeletalMeshSocket_323' }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1531 }
+            }
+            NumVerts = 1071
+            IndexCount = 4593
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 2
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_259
+
+    SocketName = FX_Add
+    BoneName = FS_Bone
+    RelativeLocation = { X=-3.56, Y=-2.7, Z=-0.9 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_275
+
+    SocketName = FX_Add
+    BoneName = FS_Bone
+    RelativeLocation = { X=-3.56, Y=-2.7, Z=-0.9 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_291
+
+    SocketName = FX_Add
+    BoneName = FS_Bone
+    RelativeLocation = { X=-3.56, Y=-2.7, Z=-0.9 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_307
+
+    SocketName = FX_Add
+    BoneName = FS_Bone
+    RelativeLocation = { X=-3.56, Y=-2.7, Z=-0.9 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_323
+
+    SocketName = FX_Add
+    BoneName = FS_Bone
+    RelativeLocation = { X=-3.56, Y=-2.7, Z=-0.9 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }

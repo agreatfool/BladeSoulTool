@@ -1,5 +1,5 @@
-Found 19856 game files (132 skipped)
-Loading package: 00012610.upk Ver: 573/1 Engine: 4205 Names: 53 Exports: 25 Imports: 4 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00012610.upk Ver: 573/1 Engine: 4205 Names: 56 Exports: 28 Imports: 4 Game: 801A
 Loading Texture2D Monster_Etc_RuneMechBattle_col2_D from package 00012610.upk
 Loading Texture2D Monster_Etc_RuneMechBattle_col2_EM from package 00012610.upk
 Loading Texture2D Monster_Etc_RuneMechBattle_col2_S from package 00012610.upk
@@ -14,6 +14,9 @@ Loading Texture2D Monster_Etc_RuneMechBattle_col5_D from package 00012610.upk
 Loading Texture2D Monster_Etc_RuneMechBattle_col5_EM from package 00012610.upk
 Loading Texture2D Monster_Etc_RuneMechBattle_col5_S from package 00012610.upk
 Loading Texture2D Monster_Etc_RuneMechBattle_col6_EM from package 00012610.upk
+Loading Texture2D Monster_Etc_RuneMechBattle_col7_D from package 00012610.upk
+Loading Texture2D Monster_Etc_RuneMechBattle_col7_M from package 00012610.upk
+Loading Texture2D Monster_Etc_RuneMechBattle_col7_S from package 00012610.upk
 Loading Texture2D Monster_Etc_RuneMechBattle_D from package 00012610.upk
 Loading Texture2D Monster_Etc_RuneMechBattle_D_col6 from package 00012610.upk
 Loading Texture2D Monster_Etc_RuneMechBattle_EM from package 00012610.upk
@@ -22,7 +25,7 @@ Loading Texture2D Monster_Etc_RuneMechBattle_M from package 00012610.upk
 Loading Texture2D Monster_Etc_RuneMechBattle_N from package 00012610.upk
 Loading Texture2D Monster_Etc_RuneMechBattle_N6 from package 00012610.upk
 Loading Texture2D Monster_Etc_RuneMechBattle_S from package 00012610.upk
-Loaded in 0.15 sec, 739 allocs, 1.66 MBytes serialized in 4746 calls.
+Loaded in 0.2 sec, 835 allocs, 2.04 MBytes serialized in 5366 calls.
 
 Object info:
 ============
@@ -222,6 +225,51 @@ ClassName: Texture2D ObjectName: Monster_Etc_RuneMechBattle_col5_S
 Object info:
 ============
 ClassName: Texture2D ObjectName: Monster_Etc_RuneMechBattle_col6_EM
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Etc_RuneMechBattle_col7_D
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Etc_RuneMechBattle_col7_M
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Etc_RuneMechBattle_col7_S
 
     SizeX = 512
     SizeY = 512

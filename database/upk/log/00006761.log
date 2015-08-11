@@ -1,5 +1,38 @@
-Found 19856 game files (132 skipped)
-Loading package: 00006761.upk Ver: 573/1 Engine: 4205 Names: 490 Exports: 998 Imports: 33 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00006761.upk Ver: 573/1 Engine: 4205 Names: 501 Exports: 1071 Imports: 34 Game: 801A
+Loading AnimSet Skill_All_KunF_Animset from package 00006761.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+Loading AnimSequence AnimSequence_0 from package 00006761.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_1 from package 00006761.upk
+WARNING: FloatProperty "UAnimNotify_Sound::SoundVolume" was not found
+Loading AnimSequence AnimSequence_1 from package 00006761.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_96 from package 00006761.upk
+WARNING: FloatProperty "UAnimNotify_Sound::SoundVolume" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_97 from package 00006761.upk
+WARNING: FloatProperty "UAnimNotify_Sound::SoundVolume" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_98 from package 00006761.upk
+WARNING: FloatProperty "UAnimNotify_Sound::SoundVolume" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_99 from package 00006761.upk
+WARNING: FloatProperty "UAnimNotify_Sound::SoundVolume" was not found
+Loading AnimSequence AnimSequence_2 from package 00006761.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_23 from package 00006761.upk
+WARNING: FloatProperty "UAnimNotify_Sound::SoundVolume" was not found
+Loading AnimSequence AnimSequence_3 from package 00006761.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_24 from package 00006761.upk
+WARNING: FloatProperty "UAnimNotify_Sound::SoundVolume" was not found
+Loading AnimSequence AnimSequence_4 from package 00006761.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_0 from package 00006761.upk
+WARNING: FloatProperty "UAnimNotify_Sound::SoundVolume" was not found
+Loading AnimSequence AnimSequence_6 from package 00006761.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_18 from package 00006761.upk
 Loading AnimSet Skill_Bighit_F_Animset from package 00006761.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -68,6 +101,15 @@ Loading AnimSequence AnimSequence_121 from package 00006761.upk
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimNotify_Sound AnimNotify_Sound_45 from package 00006761.upk
+WARNING: FloatProperty "UAnimNotify_Sound::SoundVolume" was not found
+Loading AnimSequence AnimSequence_125 from package 00006761.upk
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_1 from package 00006761.upk
+Loading AnimNotify_Sound AnimNotify_Sound_2 from package 00006761.upk
+WARNING: FloatProperty "UAnimNotify_Sound::SoundVolume" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_3 from package 00006761.upk
+Loading AnimNotify_Sound AnimNotify_Sound_4 from package 00006761.upk
 WARNING: FloatProperty "UAnimNotify_Sound::SoundVolume" was not found
 Loading AnimSequence AnimSequence_13 from package 00006761.upk
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
@@ -441,6 +483,8 @@ Loading AnimSequence AnimSequence_7 from package 00006761.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
 Loading AnimNotify_Sound AnimNotify_Sound_0 from package 00006761.upk
+Loading AnimSequence AnimSequence_5 from package 00006761.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_0 from package 00006761.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_10 from package 00006761.upk
@@ -725,8 +769,12 @@ Error: Command failed: ******** 00006761 ********
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** ERROR: Unknown rotation compression method: 255
-UAnimSet::ConvertAnims <- PostLoad:Skill_Bighit_M_Animset <- UObject::EndLoad <- LoadWholePackage:00006761 <- Main
+UAnimSet::ConvertAnims <- PostLoad:Skill_All_KunF_Animset <- UObject::EndLoad <- LoadWholePackage:00006761 <- Main
 
 
     at ChildProcess.exithandler (child_process.js:637:15)

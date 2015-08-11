@@ -1,5 +1,7 @@
-Found 19856 game files (132 skipped)
-Loading package: 00007256.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 7 Imports: 2 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00007256.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 9 Imports: 2 Game: 801A
+Loading Texture2D 40005_GonM_col3_D from package 00007256.upk
+Loading Texture2D 40005_GonM_col3_S from package 00007256.upk
 Loading Texture2D Cloth_40005_GonM_col1_D2 from package 00007256.upk
 Loading Texture2D Cloth_40005_GonM_col1_M from package 00007256.upk
 Loading Texture2D Cloth_40005_GonM_col1_main_D from package 00007256.upk
@@ -7,7 +9,37 @@ Loading Texture2D Cloth_40005_GonM_col1_N from package 00007256.upk
 Loading Texture2D Cloth_40005_GonM_col1_N2 from package 00007256.upk
 Loading Texture2D Cloth_40005_GonM_col1_S from package 00007256.upk
 Loading Texture2D Cloth_40005_GonM_col1_S2 from package 00007256.upk
-Loaded in 0.053 sec, 283 allocs, 1.29 MBytes serialized in 1727 calls.
+Loaded in 0.082 sec, 349 allocs, 1.66 MBytes serialized in 2162 calls.
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 40005_GonM_col3_D
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 40005_GonM_col3_S
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
 
 Object info:
 ============

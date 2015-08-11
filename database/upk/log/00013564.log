@@ -1,7 +1,7 @@
-Found 19856 game files (132 skipped)
+Found 21310 game files (132 skipped)
 Loading package: 00013564.upk Ver: 573/1 Engine: 4205 Names: 94 Exports: 2 Imports: 23 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00013564.upk
-Loading package: 00013563.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 5 Imports: 2 Game: 801A
+Loading package: 00013563.upk Ver: 573/1 Engine: 4205 Names: 45 Exports: 15 Imports: 4 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D 54002_JinF_N from package 00013563.upk
@@ -12,7 +12,7 @@ Loading TextureCube lenscube from package 00002640.upk
 Loading Texture2D 54002_JinF_E from package 00013563.upk
 WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Material3 Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -26,26 +26,27 @@ Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D check from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.12 sec, 2799 allocs, 1.52 MBytes serialized in 162685 calls.
+Loaded in 0.15 sec, 2820 allocs, 1.53 MBytes serialized in 163225 calls.
 
 Object info:
 ============
 ClassName: MaterialInstanceConstant ObjectName: col1
 
-    ScalarParameterValues[12] =
+    ScalarParameterValues[13] =
     {
         ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=0 }
         ScalarParameterValues[1] = { ParameterName=Skin_glossiness, ParameterValue=80 }
         ScalarParameterValues[2] = { ParameterName=Wear_glossiness1, ParameterValue=5 }
         ScalarParameterValues[3] = { ParameterName=Wear_glossiness2, ParameterValue=50 }
         ScalarParameterValues[4] = { ParameterName=Skin_Spec_value, ParameterValue=2 }
-        ScalarParameterValues[5] = { ParameterName=HighLight_Value, ParameterValue=1.5 }
+        ScalarParameterValues[5] = { ParameterName=HighLight_Value, ParameterValue=5 }
         ScalarParameterValues[6] = { ParameterName=HighLight_glossiness, ParameterValue=100 }
         ScalarParameterValues[7] = { ParameterName=Emissive_value, ParameterValue=2 }
         ScalarParameterValues[8] = { ParameterName=Emissive_value2, ParameterValue=0 }
         ScalarParameterValues[9] = { ParameterName=Fresnel Value, ParameterValue=1 }
         ScalarParameterValues[10] = { ParameterName=Fresnel exponent, ParameterValue=30 }
         ScalarParameterValues[11] = { ParameterName=Specular_value, ParameterValue=2 }
+        ScalarParameterValues[12] = { ParameterName=Skin_Spec_value_X, ParameterValue=1 }
     }
     TextureParameterValues[6] =
     {
@@ -56,7 +57,7 @@ ClassName: MaterialInstanceConstant ObjectName: col1
         TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'lenscube' }
         TextureParameterValues[5] = { ParameterName=Emissive, ParameterValue=Texture2D'54002_JinF_E' }
     }
-    VectorParameterValues[8] =
+    VectorParameterValues[10] =
     {
         VectorParameterValues[0] =
         {
@@ -97,6 +98,16 @@ ClassName: MaterialInstanceConstant ObjectName: col1
         {
             ParameterName = Burn_Color
             ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = AC_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = AC_specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
         }
     }
     Parent = Material3'Body'

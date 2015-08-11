@@ -1,5 +1,5 @@
-Found 19856 game files (132 skipped)
-Loading package: 00006756.upk Ver: 573/1 Engine: 4205 Names: 336 Exports: 265 Imports: 52 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00006756.upk Ver: 573/1 Engine: 4205 Names: 339 Exports: 288 Imports: 52 Game: 801A
 Loading AnimSet Share_F_Animset from package 00006756.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -77,6 +77,12 @@ Loading AnimNotify_Sound AnimNotify_Sound_0 from package 00006756.upk
 Loading AnimNotify_Sound AnimNotify_Sound_1 from package 00006756.upk
 Loading AnimNotify_Sound AnimNotify_Sound_3 from package 00006756.upk
 Loading AnimNotify_Sound AnimNotify_Sound_4 from package 00006756.upk
+Loading AnimSequence AnimSequence_70 from package 00006756.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_1 from package 00006756.upk
+WARNING: FloatProperty "UAnimNotify_Sound::SoundVolume" was not found
 Loading AnimSet Share_M_Animset from package 00006756.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -300,6 +306,17 @@ Loading AnimNotify_Sound AnimNotify_Sound_0 from package 00006756.upk
 Loading AnimNotify_Sound AnimNotify_Sound_1 from package 00006756.upk
 Loading AnimNotify_Sound AnimNotify_Sound_2 from package 00006756.upk
 Loading AnimNotify_Sound AnimNotify_Sound_3 from package 00006756.upk
+Loading AnimSequence AnimSequence_68 from package 00006756.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_1 from package 00006756.upk
+Loading AnimSequence AnimSequence_69 from package 00006756.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_0 from package 00006756.upk
+WARNING: FloatProperty "UAnimNotify_Sound::SoundVolume" was not found
 Loading AnimSequence AnimSequence_9 from package 00006756.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
@@ -366,6 +383,9 @@ WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
 WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
 Error: Command failed: ******** 00006756 ********
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat

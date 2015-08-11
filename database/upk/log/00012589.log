@@ -1,8 +1,8 @@
-Found 19856 game files (132 skipped)
-Loading package: 00012589.upk Ver: 573/1 Engine: 4205 Names: 362 Exports: 2134 Imports: 157 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00012589.upk Ver: 573/1 Engine: 4205 Names: 381 Exports: 2312 Imports: 165 Game: 801A
 Loading Material3 Blob_Add_volume from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Material3 Blob_volume from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Blood_Sparkle001 from package 00012589.upk
@@ -19,7 +19,7 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Damage02_Poison_signal_stone from package 00012589.upk
 Loading Material3 Damage_Fire_Signal_Gradient004 from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Material3 Damage_Fire_Signal_Gradient004_4 from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Damage_Ice_signal_outside_m from package 00012589.upk
@@ -112,6 +112,12 @@ Loading Material3 ShockWave__Sword from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 ShockWave_Distortion_matM from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 SoulNPC_gem_3_trans from package 00012589.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 SoulNPC_Light02 from package 00012589.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 SoulNPC_Light03 from package 00012589.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 sparcle_sub01 from package 00012589.upk
 Loading Material3 Sparkle001_MatB from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -167,6 +173,7 @@ Loading Material3 Star_Shine_Mat from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Stone004_MatB from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 TwinsAB_Gaze_02 from package 00012589.upk
 Loading MaterialInstanceConstant BloodSplatter008_Ins000_MatB from package 00012589.upk
 Loading Texture2D Noise_020 from package 00012963.upk
 Loading Texture2D Noise_Fractal_002 from package 00012963.upk
@@ -253,6 +260,10 @@ Loading TextureCube Cube_D from package cubemap_001.upk
 Loading Texture2D Gradient_Line_000 from package 00012963.upk
 Loading Texture2D Noise_Bubble_000 from package 00012963.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D light_line from package 00012963.upk
+Loading Texture2D Glow_Flar_010 from package 00012963.upk
+Loading Texture2D Smoke_Dusts_001 from package 00012963.upk
+Loading Texture2D Glow_Flair_001 from package 00012963.upk
 Loading Texture2D Unique_Stone_001 from package 00012963.upk
 Loading Texture2D Sparkle_Sprite_003 from package 00012963.upk
 Loading Texture2D Noise_007 from package 00012963.upk
@@ -280,6 +291,8 @@ Loading Texture2D Noise_000 from package 00012963.upk
 Loading Texture2D Unique_Star_000 from package 00012963.upk
 Loading Texture2D Sparkle_Stone_000 from package 00012963.upk
 Loading Texture2D Sparkle_Stone_001 from package 00012963.upk
+Loading Texture2D Gradient_Beam_002 from package 00012963.upk
+Loading Texture2D Glow_009 from package 00012963.upk
 Loading Texture2D Blood_Splatter_008 from package 00012963.upk
 Loading Texture2D CubemapFace0 from package cubemap_001.upk
 Loading Texture2D CubemapFace1 from package cubemap_001.upk
@@ -287,7 +300,7 @@ Loading Texture2D CubemapFace2 from package cubemap_001.upk
 Loading Texture2D CubemapFace3 from package cubemap_001.upk
 Loading Texture2D CubemapFace4 from package cubemap_001.upk
 Loading Texture2D CubemapFace5 from package cubemap_001.upk
-Loaded in 1.1 sec, 5704 allocs, 2.82 MBytes serialized in 113864 calls.
+Loaded in 1.2 sec, 5937 allocs, 3.06 MBytes serialized in 119081 calls.
 
 Object info:
 ============
@@ -1547,6 +1560,85 @@ ClassName: Material3 ObjectName: ShockWave_Distortion_matM
 
 Object info:
 ============
+ClassName: Material3 ObjectName: SoulNPC_gem_3_trans
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[8] =
+    {
+        ReferencedTextures[0] = Texture2D'light_line'
+        ReferencedTextures[1] = Texture2D'Glow_Flar_010'
+        ReferencedTextures[2] = Texture2D'Noise_005'
+        ReferencedTextures[3] = Texture2D'Noise_Wave_000'
+        ReferencedTextures[4] = Texture2D'Smoke_Dusts_001'
+        ReferencedTextures[5] = Texture2D'Smoke_Fractal_002'
+        ReferencedTextures[6] = Texture2D'Gradient_Color_RedToOrange_000'
+        ReferencedTextures[7] = Texture2D'Glow_Flair_001'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: SoulNPC_Light02
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'Glow_Flar_004'
+        ReferencedTextures[1] = Texture2D'Glow_004'
+        ReferencedTextures[2] = Texture2D'Ring_001'
+        ReferencedTextures[3] = Texture2D'Glow_Twiri_000'
+        ReferencedTextures[4] = Texture2D'Glow_Flare_010'
+        ReferencedTextures[5] = Texture2D'Color_Ring_001'
+        ReferencedTextures[6] = Texture2D'Ring_ShockWave_001'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: SoulNPC_Light03
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Glow_008'
+        ReferencedTextures[1] = Texture2D'Flare_Stripe'
+        ReferencedTextures[2] = Texture2D'Color_Ring_001'
+        ReferencedTextures[3] = Texture2D'Ring_ShockWave_001'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
 ClassName: Material3 ObjectName: sparcle_sub01
 
     TwoSided = false
@@ -2115,6 +2207,34 @@ ClassName: Material3 ObjectName: Stone004_MatB
         ReferencedTextures[2] = Texture2D'DefaultTexture'
     }
     BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: TwinsAB_Gaze_02
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[8] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Beam_000'
+        ReferencedTextures[1] = Texture2D'Gradient_Beam_002'
+        ReferencedTextures[2] = Texture2D'Glow_Flar_010'
+        ReferencedTextures[3] = Texture2D'Noise_005'
+        ReferencedTextures[4] = Texture2D'Noise_Wave_000'
+        ReferencedTextures[5] = Texture2D'Smoke_Dusts_001'
+        ReferencedTextures[6] = Texture2D'Smoke_Fractal_002'
+        ReferencedTextures[7] = Texture2D'Glow_009'
+    }
+    BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
     MobileBaseTexture = None

@@ -1,5 +1,5 @@
-Found 19856 game files (132 skipped)
-Loading package: 00008603.upk Ver: 573/1 Engine: 4205 Names: 368 Exports: 414 Imports: 14 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00008603.upk Ver: 573/1 Engine: 4205 Names: 392 Exports: 458 Imports: 14 Game: 801A
 Loading Texture2D CN_BlueDiamond_Icon_1 from package 00008603.upk
 Loading Texture2D CN_BlueDiamond_Icon_2 from package 00008603.upk
 Loading Texture2D CN_BlueDiamond_Icon_3 from package 00008603.upk
@@ -58,6 +58,8 @@ Loading Texture2D Img_Nameplate_BossAggro_Yellow from package 00008603.upk
 Loading Texture2D Img_Nameplate_BossAggro_Yellow_Black from package 00008603.upk
 Loading Texture2D Img_Nameplate_BossAggro_Yellow_Red from package 00008603.upk
 Loading Texture2D Img_Nameplate_BossAggro_Yellow_White from package 00008603.upk
+Loading Texture2D Img_Party_battle_field_base_ally_alpha from package 00008603.upk
+Loading Texture2D Img_Party_battle_field_base_enemy_beta from package 00008603.upk
 Loading Texture2D Img_QuestIndicator_epic_comeplete_quest_128 from package 00008603.upk
 Loading Texture2D Img_QuestIndicator_epic_running_128 from package 00008603.upk
 Loading Texture2D Img_QuestIndicator_once_can_acquire_128 from package 00008603.upk
@@ -74,12 +76,21 @@ Loading Texture2D Nameplate_CN_VIP_GradeIcon1-7 from package 00008603.upk
 Loading Texture2D Nameplate_CN_VIP_GradeIcon1-8 from package 00008603.upk
 Loading Texture2D Nameplate_CN_VIP_GradeIcon1-9 from package 00008603.upk
 Loading Texture2D Nameplate_Convoy_Location from package 00008603.upk
+Loading Texture2D Nameplate_Faction_Challenge_repeat_acquire_nextlevel from package 00008603.upk
+Loading Texture2D Nameplate_Faction_Challenge_repeat_can_acquire from package 00008603.upk
+Loading Texture2D Nameplate_Faction_Challenge_repeat_comeplete_quest from package 00008603.upk
+Loading Texture2D Nameplate_Faction_Challenge_repeat_running from package 00008603.upk
 Loading Texture2D Nameplate_Faction_daily_repeat_acquire_nextlevel from package 00008603.upk
 Loading Texture2D Nameplate_Faction_daily_repeat_can_acquire from package 00008603.upk
 Loading Texture2D Nameplate_Faction_daily_repeat_comeplete_quest from package 00008603.upk
 Loading Texture2D Nameplate_Faction_daily_repeat_running from package 00008603.upk
 Loading Texture2D Nameplate_GB_VIP_GradeIcon1-1 from package 00008603.upk
+Loading Texture2D Nameplate_GB_VIP_GradeIcon1-2 from package 00008603.upk
 Loading Texture2D Nameplate_Hide_PcName from package 00008603.upk
+Loading Texture2D Nameplate_Normal_Challenge_repeat_acquire_nextlevel from package 00008603.upk
+Loading Texture2D Nameplate_Normal_Challenge_repeat_can_acquire from package 00008603.upk
+Loading Texture2D Nameplate_Normal_Challenge_repeat_comeplete_quest from package 00008603.upk
+Loading Texture2D Nameplate_Normal_Challenge_repeat_running from package 00008603.upk
 Loading Texture2D Nameplate_Normal_daily_repeat_acquire_nextlevel from package 00008603.upk
 Loading Texture2D Nameplate_Normal_daily_repeat_can_acquire from package 00008603.upk
 Loading Texture2D Nameplate_Normal_daily_repeat_comeplete_quest from package 00008603.upk
@@ -126,7 +137,7 @@ Loading Texture2D Nameplate_QuestIndicator_special_running from package 00008603
 Loading Texture2D Nameplate_QuestIndicator_vsboard_end from package 00008603.upk
 Loading Texture2D Nameplate_QuestIndicator_vsboard_repeat_start from package 00008603.upk
 Loading Texture2D Nameplate_QuestIndicator_vsboard_start from package 00008603.upk
-Loaded in 0.1 sec, 1058 allocs, 0.76 MBytes serialized in 20436 calls.
+Loaded in 0.16 sec, 1143 allocs, 0.85 MBytes serialized in 22372 calls.
 
 Object info:
 ============
@@ -1000,6 +1011,36 @@ ClassName: Texture2D ObjectName: Img_Nameplate_BossAggro_Yellow_White
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Img_Party_battle_field_base_ally_alpha
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Party_battle_field_base_enemy_beta
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Img_QuestIndicator_epic_comeplete_quest_128
 
     SizeX = 128
@@ -1240,6 +1281,66 @@ ClassName: Texture2D ObjectName: Nameplate_Convoy_Location
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Nameplate_Faction_Challenge_repeat_acquire_nextlevel
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Nameplate_Faction_Challenge_repeat_can_acquire
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Nameplate_Faction_Challenge_repeat_comeplete_quest
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Nameplate_Faction_Challenge_repeat_running
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Nameplate_Faction_daily_repeat_acquire_nextlevel
 
     SizeX = 64
@@ -1315,11 +1416,86 @@ ClassName: Texture2D ObjectName: Nameplate_GB_VIP_GradeIcon1-1
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Nameplate_GB_VIP_GradeIcon1-2
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Nameplate_Hide_PcName
 
     SizeX = 32
     SizeY = 32
     Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Nameplate_Normal_Challenge_repeat_acquire_nextlevel
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Nameplate_Normal_Challenge_repeat_can_acquire
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Nameplate_Normal_Challenge_repeat_comeplete_quest
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Nameplate_Normal_Challenge_repeat_running
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_A8R8G8B8 (2)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
     TextureFileCacheName = None

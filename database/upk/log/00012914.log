@@ -1,4 +1,4 @@
-Found 19856 game files (132 skipped)
+Found 21310 game files (132 skipped)
 Loading package: 00012914.upk Ver: 573/1 Engine: 4205 Names: 44 Exports: 16 Imports: 2 Game: 801A
 Loading Texture2D 60025_KunN_col2_D from package 00012914.upk
 Loading Texture2D 60025_KunN_col2_M from package 00012914.upk
@@ -16,7 +16,7 @@ Loading Texture2D 60025_KunN_N from package 00012914.upk
 Loading Texture2D 60025_KunN_N3 from package 00012914.upk
 Loading Texture2D 60025_KunN_S from package 00012914.upk
 Loading Texture2D 60025_KunN_S3 from package 00012914.upk
-Loaded in 0.14 sec, 595 allocs, 3.29 MBytes serialized in 3792 calls.
+Loaded in 0.15 sec, 586 allocs, 2.94 MBytes serialized in 3747 calls.
 
 Object info:
 ============
@@ -187,13 +187,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: 60025_KunN_M3
 
-    SizeX = 1024
-    SizeY = 512
+    SizeX = 512
+    SizeY = 256
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

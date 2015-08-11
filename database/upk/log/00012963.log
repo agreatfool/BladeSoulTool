@@ -1,5 +1,5 @@
-Found 19856 game files (132 skipped)
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Texture2D Aura_Blood_000 from package 00012963.upk
 Loading Texture2D Aura_Blood_001 from package 00012963.upk
 Loading Texture2D Aura_Blood_002 from package 00012963.upk
@@ -395,6 +395,8 @@ Loading Texture2D ImpactDecal007_Color_NRM from package 00012963.upk
 Loading Texture2D Ink_Water_Smoke_Tex from package 00012963.upk
 Loading Texture2D InsectTribeStagBeetle_Missile_mask from package 00012963.upk
 Loading Texture2D Jaket000_Tex from package 00012963.upk
+Loading Texture2D lava01 from package 00012963.upk
+Loading Texture2D lava01N from package 00012963.upk
 Loading Texture2D Leaf from package 00012963.upk
 Loading Texture2D Leaf_ from package 00012963.upk
 Loading Texture2D LensFlare_Nike_Tex from package 00012963.upk
@@ -640,6 +642,13 @@ Loading Texture2D SmokeMesh000_Tex from package 00012963.upk
 Loading Texture2D SmokeVolume01_Blending_Tex from package 00012963.upk
 Loading Texture2D SnakeSoldier_Hell_Healing_Text from package 00012963.upk
 Loading Texture2D SnakeSoldier_Hell_SwordDecal_Clamp from package 00012963.upk
+Loading Texture2D SoulNPC_BloodPan from package 00012963.upk
+Loading Texture2D SoulNPC_bloodPan_03 from package 00012963.upk
+Loading Texture2D SoulNPC_bloodPan_04blur from package 00012963.upk
+Loading Texture2D SoulNPC_bloodPan_N from package 00012963.upk
+Loading Texture2D SoulNPC_Capture_Jin01 from package 00012963.upk
+Loading Texture2D SoulNPC_Capture_Jin02_Text from package 00012963.upk
+Loading Texture2D SoulNPC_Capture_Text_blur from package 00012963.upk
 Loading Texture2D Sparkle_000 from package 00012963.upk
 Loading Texture2D Sparkle_001 from package 00012963.upk
 Loading Texture2D Sparkle_002 from package 00012963.upk
@@ -682,6 +691,7 @@ Loading Texture2D Sparkle_Stone_000 from package 00012963.upk
 Loading Texture2D Sparkle_Stone_001 from package 00012963.upk
 Loading Texture2D SpecularSkull_Diffuse from package 00012963.upk
 Loading Texture2D Spell_ from package 00012963.upk
+Loading Texture2D Sunflower_glow from package 00012963.upk
 Loading Texture2D Sword_Opa from package 00012963.upk
 Loading Texture2D Sword_Opa2 from package 00012963.upk
 Loading Texture2D SystemDecal2_Circle_Full_001 from package 00012963.upk
@@ -802,7 +812,7 @@ Loading Texture2D Waveform_001 from package 00012963.upk
 Loading Texture2D Wing from package 00012963.upk
 Loading Texture2D XXXXXXX from package 00012963.upk
 Loading TextureCube Cube_001 from package 00012963.upk
-Loaded in 5.9 sec, 23843 allocs, 40.65 MBytes serialized in 164738 calls.
+Loaded in 6.6 sec, 24150 allocs, 40.92 MBytes serialized in 166733 calls.
 
 Object info:
 ============
@@ -6697,6 +6707,36 @@ ClassName: Texture2D ObjectName: Jaket000_Tex
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: lava01
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: lava01N
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Leaf
 
     SizeX = 128
@@ -10282,6 +10322,111 @@ ClassName: Texture2D ObjectName: SnakeSoldier_Hell_SwordDecal_Clamp
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: SoulNPC_BloodPan
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SoulNPC_bloodPan_03
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_G8 (3)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SoulNPC_bloodPan_04blur
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_G8 (3)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SoulNPC_bloodPan_N
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SoulNPC_Capture_Jin01
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_G8 (3)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SoulNPC_Capture_Jin02_Text
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SoulNPC_Capture_Text_blur
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Sparkle_000
 
     SizeX = 128
@@ -10906,6 +11051,21 @@ ClassName: Texture2D ObjectName: Spell_
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
     MipTailBaseIdx = 7
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Sunflower_glow
+
+    SizeX = 256
+    SizeY = 128
+    Format = PF_G8 (3)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

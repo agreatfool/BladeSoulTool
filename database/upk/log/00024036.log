@@ -1,8 +1,8 @@
-Found 19856 game files (132 skipped)
-Loading package: 00024036.upk Ver: 573/1 Engine: 4205 Names: 180 Exports: 234 Imports: 48 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00024036.upk Ver: 573/1 Engine: 4205 Names: 190 Exports: 208 Imports: 51 Game: 801A
 Loading Material3 Basic_AncienMechTwinsAB_FX from package 00024036.upk
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00024036.upk
 Loading package: 00024035.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 7 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
@@ -20,13 +20,16 @@ Loading Texture2D Monster_Human_AncientMechTwinsA_col1_S from package 00024035.u
 Loading TextureCube MatelR3 from package 00002640.upk
 Loading Texture2D Monster_Human_AncientMechTwinsA_col1_E from package 00024035.upk
 Loading Texture2D FX_AncientMechTwinsA_col1_Mask from package 00024035.upk
+Loading Texture2D FireWork_Burst_Heart_03 from package 00012963.upk
+Loading Texture2D FireWork_Burst_Heart_04 from package 00012963.upk
+Loading Texture2D Noise_013 from package 00012963.upk
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.15 sec, 2920 allocs, 3.89 MBytes serialized in 167844 calls.
+Loaded in 0.2 sec, 3030 allocs, 4.11 MBytes serialized in 168367 calls.
 
 Object info:
 ============
@@ -59,7 +62,7 @@ Object info:
 ============
 ClassName: MaterialInstanceConstant ObjectName: col1
 
-    ScalarParameterValues[10] =
+    ScalarParameterValues[13] =
     {
         ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=10 }
         ScalarParameterValues[1] = { ParameterName=Glossiness1, ParameterValue=3 }
@@ -71,8 +74,11 @@ ClassName: MaterialInstanceConstant ObjectName: col1
         ScalarParameterValues[7] = { ParameterName=Emissive_value2, ParameterValue=1 }
         ScalarParameterValues[8] = { ParameterName=Fresnel Value, ParameterValue=1 }
         ScalarParameterValues[9] = { ParameterName=Fresnel exponent, ParameterValue=30 }
+        ScalarParameterValues[10] = { ParameterName=SubTract_Tex1_Alpha, ParameterValue=1 }
+        ScalarParameterValues[11] = { ParameterName=Strength, ParameterValue=1 }
+        ScalarParameterValues[12] = { ParameterName=SubTract_Tex2_Alpha, ParameterValue=1 }
     }
-    TextureParameterValues[7] =
+    TextureParameterValues[11] =
     {
         TextureParameterValues[0] =
         {
@@ -101,6 +107,10 @@ ClassName: MaterialInstanceConstant ObjectName: col1
             ParameterValue = Texture2D'Monster_Human_AncientMechTwinsA_col1_E'
         }
         TextureParameterValues[6] = { ParameterName=FX_Mask, ParameterValue=Texture2D'FX_AncientMechTwinsA_col1_Mask' }
+        TextureParameterValues[7] = { ParameterName=Lerp_Tex_A, ParameterValue=Texture2D'FireWork_Burst_Heart_03' }
+        TextureParameterValues[8] = { ParameterName=Subtract_Tex1, ParameterValue=Texture2D'FireWork_Burst_Heart_04' }
+        TextureParameterValues[9] = { ParameterName=Subtract_Tex2, ParameterValue=Texture2D'Noise_013' }
+        TextureParameterValues[10] = { ParameterName=Lerp_Tex_B, ParameterValue=Texture2D'Gradient_Line_003' }
     }
     VectorParameterValues[17] =
     {

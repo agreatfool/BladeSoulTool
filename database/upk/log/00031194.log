@@ -1,22 +1,101 @@
-Found 19856 game files (132 skipped)
-Loading package: 00031194.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 8 Imports: 4 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00031194.upk Ver: 573/1 Engine: 4205 Names: 40 Exports: 11 Imports: 4 Game: 801A
+Loading Texture2D 990185_Autoscale_Col2_D from package 00031194.upk
+Loading Texture2D 990185_Autoscale_Col2_E from package 00031194.upk
+Loading Texture2D 990185_Autoscale_Col2_M from package 00031194.upk
+Loading Texture2D 990185_Autoscale_Col2_N from package 00031194.upk
+Loading Texture2D 990185_Autoscale_Col2_S from package 00031194.upk
 Loading Texture2D Acc_990185_col1_D from package 00031194.upk
 Loading Texture2D Acc_990185_col1_M from package 00031194.upk
-Loading Texture2D Acc_990185_col1_N from package 00031194.upk
 Loading Texture2D Acc_990185_col1_S from package 00031194.upk
-Loaded in 0.03 sec, 192 allocs, 1.01 MBytes serialized in 1156 calls.
+Loaded in 0.062 sec, 308 allocs, 0.49 MBytes serialized in 1895 calls.
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990185_Autoscale_Col2_D
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990185_Autoscale_Col2_E
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990185_Autoscale_Col2_M
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990185_Autoscale_Col2_N
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990185_Autoscale_Col2_S
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
 
 Object info:
 ============
 ClassName: Texture2D ObjectName: Acc_990185_col1_D
 
-    SizeX = 1024
-    SizeY = 512
+    SizeX = 512
+    SizeY = 256
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -25,43 +104,28 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: Acc_990185_col1_M
 
-    SizeX = 1024
-    SizeY = 512
+    SizeX = 512
+    SizeY = 256
     Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
 
 Object info:
 ============
-ClassName: Texture2D ObjectName: Acc_990185_col1_N
-
-    SizeX = 1024
-    SizeY = 512
-    Format = PF_DXT1 (5)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
-    TextureFileCacheName = None
-    MipTailBaseIdx = 10
-    bForcePVRTC4 = false
-    UnpackMin[4] = { -1, -1, -1, 0 }
-    UnpackMax[4] = { 1, 1, 1, 1 }
-
-Object info:
-============
 ClassName: Texture2D ObjectName: Acc_990185_col1_S
 
-    SizeX = 1024
-    SizeY = 512
+    SizeX = 512
+    SizeY = 256
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

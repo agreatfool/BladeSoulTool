@@ -1,5 +1,5 @@
-Found 19856 game files (132 skipped)
-Loading package: 00008803.upk Ver: 573/1 Engine: 4205 Names: 42 Exports: 2 Imports: 10 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00008803.upk Ver: 573/1 Engine: 4205 Names: 44 Exports: 2 Imports: 10 Game: 801A
 Loading SkeletalMesh3 020006_Autoscale_L from package 00008803.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
@@ -13,7 +13,7 @@ Loading MaterialInstanceConstant col1 from package 00008802.upk
 Loading package: 00008801.upk Ver: 573/1 Engine: 4205 Names: 30 Exports: 3 Imports: 2 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Texture2D wp3003yh_n from package 00008801.upk
 Loading Texture2D check from package 00002620.upk
 Loading Texture2D wp3003yh_d from package 00008801.upk
@@ -31,7 +31,7 @@ Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.082 sec, 2768 allocs, 0.97 MBytes serialized in 194859 calls.
+Loaded in 0.15 sec, 2781 allocs, 0.97 MBytes serialized in 195122 calls.
 
 Object info:
 ============
@@ -71,7 +71,7 @@ ClassName: SkeletalMesh3 ObjectName: 020006_Autoscale_L
     MeshOrigin = { X=-0, Y=-0, Z=-0 }
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
-    BoneCount = 2
+    BoneCount = 3
 
 Object info:
 ============
@@ -111,4 +111,4 @@ ClassName: SkeletalMesh3 ObjectName: 020006_Autoscale_R
     MeshOrigin = { X=-0, Y=-0, Z=-0 }
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
-    BoneCount = 2
+    BoneCount = 3

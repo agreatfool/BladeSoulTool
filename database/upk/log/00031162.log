@@ -1,0 +1,283 @@
+Found 21310 game files (132 skipped)
+Loading package: 00031162.upk Ver: 573/1 Engine: 4205 Names: 177 Exports: 189 Imports: 16 Game: 801A
+Loading SkeletalMesh3 990184_FireGorilla from package 00031162.upk
+Loading package: 00031163.upk Ver: 573/1 Engine: 4205 Names: 177 Exports: 195 Imports: 48 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_100 from package 00031162.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_85 from package 00031162.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_86 from package 00031162.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_87 from package 00031162.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_88 from package 00031162.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_89 from package 00031162.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_90 from package 00031162.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_91 from package 00031162.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_92 from package 00031162.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_93 from package 00031162.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_94 from package 00031162.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_95 from package 00031162.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_96 from package 00031162.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_97 from package 00031162.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_98 from package 00031162.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_99 from package 00031162.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading MaterialInstanceConstant col1 from package 00031163.upk
+Loading package: 00031161.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 5 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00015763.upk Ver: 573/1 Engine: 4205 Names: 46 Exports: 15 Imports: 4 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading Texture2D 990181_FireGorilla_col1_N from package 00031161.upk
+Loading Texture2D 990181_FireGorilla_col1_M from package 00031161.upk
+Loading Texture2D 990181_FireGorilla_col1_D from package 00031161.upk
+Loading Texture2D 990181_FireGorilla_col1_S from package 00031161.upk
+Loading TextureCube Cube_D from package 00002640.upk
+Loading Texture2D Beast_FireGorillaB_FXmask from package 00015763.upk
+Loading Texture2D Fire_004 from package 00012963.upk
+Loading Texture2D 990181_FireGorilla_col1_E from package 00031161.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading Material3 FireGorillaA_ACC_Basic from package 00031163.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.17 sec, 3203 allocs, 2.34 MBytes serialized in 337222 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 990184_FireGorilla
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[16] =
+    {
+        Sockets[0] = SkeletalMeshSocket'990184_FireGorilla.SkeletalMeshSocket_85'
+        Sockets[1] = SkeletalMeshSocket'990184_FireGorilla.SkeletalMeshSocket_88'
+        Sockets[2] = SkeletalMeshSocket'990184_FireGorilla.SkeletalMeshSocket_89'
+        Sockets[3] = SkeletalMeshSocket'990184_FireGorilla.SkeletalMeshSocket_86'
+        Sockets[4] = SkeletalMeshSocket'990184_FireGorilla.SkeletalMeshSocket_90'
+        Sockets[5] = SkeletalMeshSocket'990184_FireGorilla.SkeletalMeshSocket_91'
+        Sockets[6] = SkeletalMeshSocket'990184_FireGorilla.SkeletalMeshSocket_87'
+        Sockets[7] = SkeletalMeshSocket'990184_FireGorilla.SkeletalMeshSocket_92'
+        Sockets[8] = SkeletalMeshSocket'990184_FireGorilla.SkeletalMeshSocket_93'
+        Sockets[9] = SkeletalMeshSocket'990184_FireGorilla.SkeletalMeshSocket_94'
+        Sockets[10] = SkeletalMeshSocket'990184_FireGorilla.SkeletalMeshSocket_95'
+        Sockets[11] = SkeletalMeshSocket'990184_FireGorilla.SkeletalMeshSocket_96'
+        Sockets[12] = SkeletalMeshSocket'990184_FireGorilla.SkeletalMeshSocket_97'
+        Sockets[13] = SkeletalMeshSocket'990184_FireGorilla.SkeletalMeshSocket_98'
+        Sockets[14] = SkeletalMeshSocket'990184_FireGorilla.SkeletalMeshSocket_99'
+        Sockets[15] = SkeletalMeshSocket'990184_FireGorilla.SkeletalMeshSocket_100'
+    }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=5481 }
+            }
+            NumVerts = 5293
+            IndexCount = 16443
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 92
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_100
+
+    SocketName = eye03
+    BoneName = Bip01Head
+    RelativeLocation = { X=25.611, Y=-33.4695, Z=13.2683 }
+    RelativeRotation = { Yaw=16496, Pitch=9488, Roll=-16384 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_85
+
+    SocketName = L_electronic01
+    BoneName = Bip01LForeArm
+    RelativeLocation = { X=62.7015, Y=-72.3669, Z=49.271 }
+    RelativeRotation = { Yaw=25131, Pitch=7924, Roll=27628 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_86
+
+    SocketName = R_electronic_particle01
+    BoneName = Bip01RForeArm
+    RelativeLocation = { X=62.3898, Y=-79.289, Z=-53.9991 }
+    RelativeRotation = { Yaw=10558, Pitch=-9451, Roll=20747 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_87
+
+    SocketName = R_electronic_particle02
+    BoneName = Bip01RUpperArm
+    RelativeLocation = { X=-29.4657, Y=-16.6938, Z=-37.5246 }
+    RelativeRotation = { Yaw=10141, Pitch=-7990, Roll=12330 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_88
+
+    SocketName = R_electronic01
+    BoneName = Bip01RForeArm
+    RelativeLocation = { X=62.7015, Y=-72.3669, Z=-49.271 }
+    RelativeRotation = { Yaw=-7636, Pitch=7924, Roll=-5139 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_89
+
+    SocketName = R_electronic02
+    BoneName = Bip01RForeArm
+    RelativeLocation = { X=62.7015, Y=-72.3669, Z=-49.271 }
+    RelativeRotation = { Yaw=-28900, Pitch=8558, Roll=-20746 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_90
+
+    SocketName = L_electronic_particle01
+    BoneName = Bip01LForeArm
+    RelativeLocation = { X=62.1559, Y=-79.1891, Z=54.0458 }
+    RelativeRotation = { Yaw=-22224, Pitch=-9432, Roll=-11956 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_91
+
+    SocketName = R_electronic03
+    BoneName = Bip01RForeArm
+    RelativeLocation = { X=-19.4076, Y=-64.9298, Z=-58.8471 }
+    RelativeRotation = { Yaw=14517, Pitch=-9201, Roll=17819 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_92
+
+    SocketName = L_electronic_particle02
+    BoneName = Bip01LUpperArm
+    RelativeLocation = { X=-29.4657, Y=-16.6938, Z=37.5246 }
+    RelativeRotation = { Yaw=11092, Pitch=6712, Roll=-12444 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_93
+
+    SocketName = L_electronic_particle03
+    BoneName = Bip01LThigh
+    RelativeLocation = { X=39.7654, Y=51.2185, Z=-51.0381 }
+    RelativeRotation = { Yaw=14592, Pitch=7419, Roll=14544 }
+    RelativeScale = { X=0.8, Y=0.8, Z=0.8 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_94
+
+    SocketName = R_electronic_particle03
+    BoneName = Bip01RThigh
+    RelativeLocation = { X=39.4786, Y=50.6078, Z=51.4209 }
+    RelativeRotation = { Yaw=-17340, Pitch=7496, Roll=-17546 }
+    RelativeScale = { X=0.8, Y=0.8, Z=0.8 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_95
+
+    SocketName = R_electronic_particle04
+    BoneName = Bip01RForeArm
+    RelativeLocation = { X=-21.3463, Y=-73.7665, Z=20.7246 }
+    RelativeRotation = { Yaw=-9751, Pitch=-13064, Roll=-24538 }
+    RelativeScale = { X=0.5, Y=0.5, Z=0.5 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_96
+
+    SocketName = R_electronic_particle05
+    BoneName = Bip01RForeArm
+    RelativeLocation = { X=-1.11816, Y=5.58296, Z=-83.3127 }
+    RelativeRotation = { Yaw=14112, Pitch=404, Roll=17393 }
+    RelativeScale = { X=0.5, Y=0.5, Z=0.5 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_97
+
+    SocketName = L_electronic_particle04
+    BoneName = Bip01LForeArm
+    RelativeLocation = { X=-21.2407, Y=-73.5091, Z=-20.9889 }
+    RelativeRotation = { Yaw=23097, Pitch=-13250, Roll=8302 }
+    RelativeScale = { X=0.5, Y=0.5, Z=0.5 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_98
+
+    SocketName = eye01
+    BoneName = Bip01Head
+    RelativeLocation = { X=37.3317, Y=-31.1609, Z=-0.0602542 }
+    RelativeRotation = { Yaw=19604, Pitch=15924, Roll=-16384 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_99
+
+    SocketName = eye02
+    BoneName = Bip01Head
+    RelativeLocation = { X=25.6082, Y=-33.2088, Z=-13.4302 }
+    RelativeRotation = { Yaw=-16272, Pitch=11101, Roll=16384 }
+    RelativeScale = { X=1, Y=1, Z=1 }

@@ -1,12 +1,28 @@
-Found 19856 game files (132 skipped)
-Loading package: 00008534.upk Ver: 573/1 Engine: 4205 Names: 716 Exports: 7403 Imports: 122 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00008534.upk Ver: 573/1 Engine: 4205 Names: 734 Exports: 7528 Imports: 126 Game: 801A
 Loading Texture2D Game_QuestJournalScene_Preview from package 00008534.upk
+Loading Texture2D Game_QuestMappingScene_Preview from package 00008534.upk
 Loading Texture2D Game_QuestQuickSlotScene_Preview from package 00008534.upk
-Loaded in 0.02 sec, 744 allocs, 0.56 MBytes serialized in 136405 calls.
+Loaded in 0.02 sec, 767 allocs, 0.58 MBytes serialized in 138797 calls.
 
 Object info:
 ============
 ClassName: Texture2D ObjectName: Game_QuestJournalScene_Preview
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Game_QuestMappingScene_Preview
 
     SizeX = 256
     SizeY = 256

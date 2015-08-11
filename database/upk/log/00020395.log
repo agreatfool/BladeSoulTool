@@ -1,5 +1,5 @@
-Found 19856 game files (132 skipped)
-Loading package: 00020395.upk Ver: 573/1 Engine: 4205 Names: 489 Exports: 479 Imports: 145 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00020395.upk Ver: 573/1 Engine: 4205 Names: 491 Exports: 487 Imports: 145 Game: 801A
 Loading AnimSet ChainKnuckleBandit_Animset from package 00020395.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::NonAniScaleBoneNames" was not found
@@ -150,6 +150,9 @@ WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_7 from package 00020395.upk
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_1 from package 00020395.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_10 from package 00020395.upk
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
@@ -178,6 +181,9 @@ Loading AnimSequence AnimSequence_16 from package 00020395.upk
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_19 from package 00020395.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_2 from package 00020395.upk
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_25 from package 00020395.upk
@@ -303,6 +309,8 @@ Error: Command failed: ******** 00020395 ********
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** ERROR: Unknown rotation compression method: 255
 UAnimSet::ConvertAnims <- PostLoad:ChainKnuckleBandit_Animset <- UObject::EndLoad <- LoadWholePackage:00020395 <- Main
 
@@ -310,6 +318,4 @@ UAnimSet::ConvertAnims <- PostLoad:ChainKnuckleBandit_Animset <- UObject::EndLoa
     at ChildProcess.exithandler (child_process.js:637:15)
     at ChildProcess.EventEmitter.emit (events.js:98:17)
     at maybeClose (child_process.js:743:16)
-    at Socket.<anonymous> (child_process.js:956:11)
-    at Socket.EventEmitter.emit (events.js:95:17)
-    at Pipe.close (net.js:465:12)
+    at Process.ChildProcess._handle.onexit (child_process.js:810:5)

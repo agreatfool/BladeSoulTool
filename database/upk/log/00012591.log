@@ -1,11 +1,11 @@
-Found 19856 game files (132 skipped)
-Loading package: 00012591.upk Ver: 573/1 Engine: 4205 Names: 139 Exports: 245 Imports: 52 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00012591.upk Ver: 573/1 Engine: 4205 Names: 146 Exports: 288 Imports: 54 Game: 801A
 Loading Material3 Flare002_MatB from package 00012591.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Material3 Glow_Streak004_MatB from package 00012591.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Material3 Glow_Streak005_MatB from package 00012591.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Glow_Streak006_MatB from package 00012591.upk
@@ -34,6 +34,7 @@ Loading Material3 ShockWave001_MatB from package 00012591.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 ShockWave002_MatB from package 00012591.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 shockwave003_MatB from package 00012591.upk
 Loading Material3 Test_ShockWave from package 00012591.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Texture2D Glow_ShockWave_005 from package 00012963.upk
@@ -60,7 +61,7 @@ Loading Texture2D Glow_ShockWave_002 from package 00012963.upk
 Loading Texture2D Glow_ShockWave_007 from package 00012963.upk
 Loading Texture2D Noise_003 from package 00012963.upk
 Loading Texture2D Glow_Flare_010_B from package 00012963.upk
-Loaded in 0.26 sec, 2258 allocs, 1.16 MBytes serialized in 37739 calls.
+Loaded in 0.28 sec, 2295 allocs, 1.16 MBytes serialized in 39128 calls.
 
 Object info:
 ============
@@ -366,6 +367,24 @@ ClassName: Material3 ObjectName: ShockWave002_MatB
     bDisableDepthTest = false
     bIsMasked = false
     ReferencedTextures[1] = { Texture2D'Glow_ShockWave_007' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: shockwave003_MatB
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Glow_ShockWave_002' }
     BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None

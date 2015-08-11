@@ -1,6 +1,7 @@
-Found 19856 game files (132 skipped)
-Loading package: 00010047.upk Ver: 573/1 Engine: 4205 Names: 291 Exports: 320 Imports: 36 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00010047.upk Ver: 573/1 Engine: 4205 Names: 338 Exports: 431 Imports: 36 Game: 801A
 Loading Texture2D GameUI_ItamCommend from package 00010047.upk
+Loading Texture2D GameUI_ItamGradeBack from package 00010047.upk
 Loading Texture2D GameUI_Jackpot from package 00010047.upk
 Loading Texture2D GameUI_window_03_new from package 00010047.upk
 Loading Texture2D Gem_Base from package 00010047.upk
@@ -14,14 +15,26 @@ Loading Texture2D Img_Party_BossAggro_Red from package 00010047.upk
 Loading Texture2D Img_Party_BossAggro_Silver from package 00010047.upk
 Loading Texture2D Img_Party_BossAggro_White from package 00010047.upk
 Loading Texture2D Img_Party_BossAggro_Yellow from package 00010047.upk
+Loading Texture2D Img_Spirit_Bind from package 00010047.upk
 Loading Texture2D Img_Spirit_Bomber from package 00010047.upk
+Loading Texture2D Img_Spirit_Bulletproof from package 00010047.upk
+Loading Texture2D Img_Spirit_Cross from package 00010047.upk
 Loading Texture2D Img_Spirit_Drain from package 00010047.upk
+Loading Texture2D Img_Spirit_Flash from package 00010047.upk
+Loading Texture2D Img_Spirit_Grab from package 00010047.upk
 Loading Texture2D Img_Spirit_Heal from package 00010047.upk
+Loading Texture2D Img_Spirit_Launcher from package 00010047.upk
+Loading Texture2D Img_Spirit_Phantom from package 00010047.upk
 Loading Texture2D Img_Spirit_Poison from package 00010047.upk
+Loading Texture2D Img_Spirit_Rage from package 00010047.upk
+Loading Texture2D Img_Spirit_RecoveryDown from package 00010047.upk
 Loading Texture2D Img_Spirit_Reflect from package 00010047.upk
+Loading Texture2D Img_Spirit_Shackles from package 00010047.upk
+Loading Texture2D Img_Spirit_Shove from package 00010047.upk
 Loading Texture2D Img_Spirit_Strong from package 00010047.upk
 Loading Texture2D Img_Spirit_Summoner from package 00010047.upk
 Loading Texture2D Img_Spirit_Teleport from package 00010047.upk
+Loading Texture2D Img_Spirit_Weak from package 00010047.upk
 Loading Texture2D ItemIcon_Bg_Grade_1 from package 00010047.upk
 Loading Texture2D ItemIcon_Bg_Grade_2 from package 00010047.upk
 Loading Texture2D ItemIcon_Bg_Grade_3 from package 00010047.upk
@@ -32,6 +45,7 @@ Loading Texture2D ItemIcon_Bg_Grade_7 from package 00010047.upk
 Loading Texture2D ItemIcon_Bg_Grade_8 from package 00010047.upk
 Loading Texture2D ItemIcon_Bg_Quest from package 00010047.upk
 Loading Texture2D ScoringSystem from package 00010047.upk
+Loading Texture2D ScoringSystem_02 from package 00010047.upk
 Loading Texture2D Talk_Balloon from package 00010047.upk
 Loading Texture2D Tooltip_Gem01_Disable_Image from package 00010047.upk
 Loading Texture2D Tooltip_Gem01_Image from package 00010047.upk
@@ -53,7 +67,7 @@ Loading Texture2D Tooltip_Gem09_Disable_Image from package 00010047.upk
 Loading Texture2D Tooltip_Gem09_Image from package 00010047.upk
 Loading Texture2D Tooltip_Gem10_Disable_Image from package 00010047.upk
 Loading Texture2D Tooltip_Gem10_Image from package 00010047.upk
-Loaded in 0.044 sec, 592 allocs, 0.37 MBytes serialized in 11624 calls.
+Loaded in 0.053 sec, 715 allocs, 0.52 MBytes serialized in 14998 calls.
 
 Object info:
 ============
@@ -62,6 +76,21 @@ ClassName: Texture2D ObjectName: GameUI_ItamCommend
     SizeX = 512
     SizeY = 512
     Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GameUI_ItamGradeBack
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
     TextureFileCacheName = None
@@ -267,7 +296,52 @@ ClassName: Texture2D ObjectName: Img_Party_BossAggro_Yellow
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Img_Spirit_Bind
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Img_Spirit_Bomber
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Spirit_Bulletproof
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Spirit_Cross
 
     SizeX = 32
     SizeY = 32
@@ -297,7 +371,67 @@ ClassName: Texture2D ObjectName: Img_Spirit_Drain
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Img_Spirit_Flash
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Spirit_Grab
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Img_Spirit_Heal
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Spirit_Launcher
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Spirit_Phantom
 
     SizeX = 32
     SizeY = 32
@@ -327,7 +461,67 @@ ClassName: Texture2D ObjectName: Img_Spirit_Poison
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Img_Spirit_Rage
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Spirit_RecoveryDown
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Img_Spirit_Reflect
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Spirit_Shackles
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Spirit_Shove
 
     SizeX = 32
     SizeY = 32
@@ -373,6 +567,21 @@ ClassName: Texture2D ObjectName: Img_Spirit_Summoner
 Object info:
 ============
 ClassName: Texture2D ObjectName: Img_Spirit_Teleport
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Spirit_Weak
 
     SizeX = 32
     SizeY = 32
@@ -523,6 +732,21 @@ ClassName: Texture2D ObjectName: ItemIcon_Bg_Quest
 Object info:
 ============
 ClassName: Texture2D ObjectName: ScoringSystem
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ScoringSystem_02
 
     SizeX = 512
     SizeY = 512

@@ -1,7 +1,7 @@
-Found 19856 game files (132 skipped)
+Found 21310 game files (132 skipped)
 Loading package: 00030813.upk Ver: 573/1 Engine: 4205 Names: 572 Exports: 1118 Imports: 211 Game: 801A
 Loading Material3 dash_material001 from package 00030813.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Material3 M01_Cycle_mat from package 00030813.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Sword_Body_MAT from package 00030813.upk
@@ -13,7 +13,7 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 T3_3_Dragon_Mat from package 00030813.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading package: 00019148.upk Ver: 573/1 Engine: 4205 Names: 655 Exports: 651 Imports: 231 Game: 801A
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Material3 zakan_trail_002 from package 00030813.upk
 Loading MaterialInstanceConstant FX_col1 from package 00030813.upk
 Loading package: 00028698.upk Ver: 573/1 Engine: 4205 Names: 31 Exports: 4 Imports: 2 Game: 801A
@@ -82,7 +82,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.33 sec, 5503 allocs, 2.02 MBytes serialized in 268343 calls.
+Loaded in 0.33 sec, 5531 allocs, 2.02 MBytes serialized in 268859 calls.
 
 Object info:
 ============
@@ -360,7 +360,7 @@ ClassName: MaterialInstanceConstant ObjectName: Sword_Body_INST
     {
         VectorParameterValues[0] =
         {
-            ParameterName = None
+            ParameterName = Color
             ParameterValue = { R=0.7, G=0.16666, B=1.16667, A=1 }
         }
     }

@@ -1,5 +1,5 @@
-Found 19856 game files (132 skipped)
-Loading package: 00014636.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 9 Imports: 4 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00014636.upk Ver: 573/1 Engine: 4205 Names: 39 Exports: 10 Imports: 4 Game: 801A
 Loading Texture2D Human_MuseongM_D from package 00014636.upk
 Loading Texture2D Human_MuseongM_E from package 00014636.upk
 Loading Texture2D Human_MuseongM_M from package 00014636.upk
@@ -7,7 +7,8 @@ Loading Texture2D Human_MuseongM_N from package 00014636.upk
 Loading Texture2D Human_MuseongM_S from package 00014636.upk
 Loading Texture2D Monster_Human_MuseongM_Col2_D from package 00014636.upk
 Loading Texture2D Monster_Human_MuseongM_Col2_S from package 00014636.upk
-Loaded in 0.06 sec, 283 allocs, 2.54 MBytes serialized in 1772 calls.
+Loading Texture2D MuseongM_FXmask from package 00014636.upk
+Loaded in 0.076 sec, 316 allocs, 2.63 MBytes serialized in 1976 calls.
 
 Object info:
 ============
@@ -110,6 +111,21 @@ ClassName: Texture2D ObjectName: Monster_Human_MuseongM_Col2_S
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
     MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: MuseongM_FXmask
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

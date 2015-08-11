@@ -1,4 +1,4 @@
-Found 19856 game files (132 skipped)
+Found 21310 game files (132 skipped)
 Loading package: 00010597.upk Ver: 573/1 Engine: 4205 Names: 212 Exports: 118 Imports: 22 Game: 801A
 Loading SkeletalMesh3 41005_GonM from package 00010597.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
@@ -28,7 +28,7 @@ Loading Texture2D 41005_GonM_D from package 00010595.upk
 Loading Texture2D 41005_GonM_S from package 00010595.upk
 Loading TextureCube cube_orb from package 00002640.upk
 Loading Material3 Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading TextureCube cube_cst1 from package 00002640.upk
 Loading Material3 Blend_OP from package 00002620.upk
 Loading Texture2D CubemapFace0 from package 00002640.upk
@@ -50,7 +50,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.16 sec, 3180 allocs, 2.15 MBytes serialized in 368115 calls.
+Loaded in 0.18 sec, 3189 allocs, 2.15 MBytes serialized in 368614 calls.
 
 Object info:
 ============
@@ -69,8 +69,8 @@ ClassName: SkeletalMesh3 ObjectName: 41005_GonM
         {
             DisplayFactor = 0.25
             LODHysteresis = 0.02
-            LODMaterialMap[2] = { 0, 1 }
-            bEnableShadowCasting[2] = { true, true }
+            LODMaterialMap[1] = { 0 }
+            bEnableShadowCasting[1] = { true }
         }
     }
     Sockets[0] = {}
@@ -86,19 +86,18 @@ ClassName: SkeletalMesh3 ObjectName: 41005_GonM
         {
             Sections[2] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=4866 }
-                Sections[1] = { Material=MaterialInstanceConstant'Op', FirstIndex=14598, NumFaces=18 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=4871 }
+                Sections[1] = { Material=MaterialInstanceConstant'Op', FirstIndex=14613, NumFaces=18 }
             }
-            NumVerts = 3720
-            IndexCount = 14652
+            NumVerts = 3723
+            IndexCount = 14667
             NumTexCoords = 1
         }
         Lods[1] =
         {
-            Sections[2] =
+            Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1465 }
-                Sections[1] = { Material=MaterialInstanceConstant'Op', FirstIndex=4395, NumFaces=6 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1471 }
             }
             NumVerts = 1506
             IndexCount = 4413

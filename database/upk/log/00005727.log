@@ -1,5 +1,5 @@
-Found 19856 game files (132 skipped)
-Loading package: 00005727.upk Ver: 573/1 Engine: 4205 Names: 44 Exports: 14 Imports: 2 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00005727.upk Ver: 573/1 Engine: 4205 Names: 48 Exports: 18 Imports: 2 Game: 801A
 Loading Texture2D GoldHolyMushroom_col2_FX_mask from package 00005727.upk
 Loading Texture2D HolyMushroom_FX_GL from package 00005727.upk
 Loading Texture2D Monster_Etc_HolyMushroom_col1_D from package 00005727.upk
@@ -14,7 +14,11 @@ Loading Texture2D Monster_Etc_HolyMushroom_col3_E from package 00005727.upk
 Loading Texture2D Monster_Etc_HolyMushroom_col4_D from package 00005727.upk
 Loading Texture2D Monster_Etc_HolyMushroom_col4_E from package 00005727.upk
 Loading Texture2D Monster_Etc_HolyMushroom_col4_S from package 00005727.upk
-Loaded in 0.095 sec, 483 allocs, 1.50 MBytes serialized in 3029 calls.
+Loading Texture2D Monster_Etc_HolyMushroom_col5_D from package 00005727.upk
+Loading Texture2D Monster_Etc_HolyMushroom_col5_M from package 00005727.upk
+Loading Texture2D Monster_Etc_HolyMushroom_col5_N from package 00005727.upk
+Loading Texture2D Monster_Etc_HolyMushroom_col5_S from package 00005727.upk
+Loaded in 0.14 sec, 615 allocs, 2.01 MBytes serialized in 3886 calls.
 
 Object info:
 ============
@@ -214,6 +218,66 @@ ClassName: Texture2D ObjectName: Monster_Etc_HolyMushroom_col4_E
 Object info:
 ============
 ClassName: Texture2D ObjectName: Monster_Etc_HolyMushroom_col4_S
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Etc_HolyMushroom_col5_D
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Etc_HolyMushroom_col5_M
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Etc_HolyMushroom_col5_N
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Etc_HolyMushroom_col5_S
 
     SizeX = 512
     SizeY = 512

@@ -1,4 +1,4 @@
-Found 19856 game files (132 skipped)
+Found 21310 game files (132 skipped)
 Loading package: 00031300.upk Ver: 573/1 Engine: 4205 Names: 210 Exports: 121 Imports: 21 Game: 801A
 Loading SkeletalMesh3 70041_KunN from package 00031300.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
@@ -27,7 +27,7 @@ Loading Texture2D 70041_KunN_col1_N from package 00031302.upk
 Loading Texture2D 70041_KunN_col1_M from package 00031302.upk
 Loading Texture2D 70041_KunN_col1_D from package 00031302.upk
 Loading Material3 body_kUN from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading TextureCube eye_s from package 00002640.upk
 Loading Material3 Blend_OP from package 00002620.upk
 Loading Texture2D CubemapFace0 from package 00002640.upk
@@ -48,7 +48,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.23 sec, 3188 allocs, 3.13 MBytes serialized in 506935 calls.
+Loaded in 0.21 sec, 3197 allocs, 3.13 MBytes serialized in 506599 calls.
 
 Object info:
 ============
@@ -65,10 +65,10 @@ ClassName: SkeletalMesh3 ObjectName: 70041_KunN
         }
         LODInfo[1] =
         {
-            DisplayFactor = 0
+            DisplayFactor = 0.25
             LODHysteresis = 0.02
-            LODMaterialMap[2] = { 0, 1 }
-            bEnableShadowCasting[2] = { true, true }
+            LODMaterialMap[1] = { 0 }
+            bEnableShadowCasting[1] = { true }
         }
     }
     Sockets[0] = {}
@@ -87,18 +87,17 @@ ClassName: SkeletalMesh3 ObjectName: 70041_KunN
                 Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=8485 }
                 Sections[1] = { Material=MaterialInstanceConstant'col1_1', FirstIndex=25455, NumFaces=120 }
             }
-            NumVerts = 6316
+            NumVerts = 6317
             IndexCount = 25815
             NumTexCoords = 1
         }
         Lods[1] =
         {
-            Sections[2] =
+            Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=2622 }
-                Sections[1] = { Material=MaterialInstanceConstant'col1_1', FirstIndex=7866, NumFaces=16 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=2638 }
             }
-            NumVerts = 2476
+            NumVerts = 2460
             IndexCount = 7914
             NumTexCoords = 1
         }

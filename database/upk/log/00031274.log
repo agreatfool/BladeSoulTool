@@ -1,0 +1,209 @@
+Found 21310 game files (132 skipped)
+Loading package: 00031274.upk Ver: 573/1 Engine: 4205 Names: 342 Exports: 302 Imports: 117 Game: 801A
+Loading Material3 Basic_03 from package 00031274.upk
+Loading package: 00031272.upk Ver: 573/1 Engine: 4205 Names: 31 Exports: 4 Imports: 2 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading package: cubemap_001.upk Ver: 573/1 Engine: 4205 Names: 177 Exports: 517 Imports: 34 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading SkeletalMesh3 Item_0061 from package 00031274.upk
+Loading package: 00031273.upk Ver: 573/1 Engine: 4205 Names: 89 Exports: 1 Imports: 19 Game: 801A
+Loading StaticMesh3 Item_0061_13_01 from package 00031274.upk
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 934 Exports: 4850 Imports: 265 Game: 801A
+Loading StaticMesh3 Item_0061_13_02 from package 00031274.upk
+Loading Texture2D Item_0062_col1_E_FX02 from package 00031274.upk
+Loading Texture2D Item_0061_col1_N from package 00031272.upk
+Loading Texture2D Unique_Stone_001 from package 00012963.upk
+Loading Texture2D Noise_006 from package 00012963.upk
+Loading Texture2D REFSKY-01 from package 00012963.upk
+Loading Texture2D Item_0061_col1_S from package 00031272.upk
+Loading Texture2D Normal_Stone_001 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
+Loading Texture2D Unique_Stone_000 from package 00012963.upk
+Loading Texture2D Unique_Ice_000 from package 00012963.upk
+Loading Texture2D Item_0061_col1_D from package 00031272.upk
+Loading TextureCube Stone_001_01_Cube from package cubemap_001.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading MaterialInstanceConstant col1 from package 00031273.upk
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Texture2D CubemapFace0 from package cubemap_001.upk
+Loading Texture2D CubemapFace1 from package cubemap_001.upk
+Loading Texture2D CubemapFace2 from package cubemap_001.upk
+Loading Texture2D CubemapFace3 from package cubemap_001.upk
+Loading Texture2D CubemapFace4 from package cubemap_001.upk
+Loading Texture2D CubemapFace5 from package cubemap_001.upk
+Loading Texture2D Item_0061_col1_M from package 00031272.upk
+Loading TextureCube lenscube_a from package 00002640.upk
+Loading Material3 Basic from package 00002620.upk
+Loading Texture2D Cube000_Tex from package 00012892.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.2 sec, 4499 allocs, 2.68 MBytes serialized in 310077 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Basic_03
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[13] =
+    {
+        ReferencedTextures[0] = Texture2D'Item_0061_col1_N'
+        ReferencedTextures[1] = Texture2D'Unique_Stone_001'
+        ReferencedTextures[2] = Texture2D'Item_0062_col1_E_FX02'
+        ReferencedTextures[3] = Texture2D'Noise_006'
+        ReferencedTextures[4] = Texture2D'REFSKY-01'
+        ReferencedTextures[5] = Texture2D'Item_0061_col1_S'
+        ReferencedTextures[6] = Texture2D'Normal_Stone_001'
+        ReferencedTextures[7] = Texture2D'Unique_Stone_000'
+        ReferencedTextures[8] = Texture2D'Unique_Ice_000'
+        ReferencedTextures[9] = Texture2D'Item_0061_col1_D'
+        ReferencedTextures[10] = TextureCube'Stone_001_01_Cube'
+        ReferencedTextures[11] = Texture2D'check_n'
+        ReferencedTextures[12] = Texture2D'check'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: Item_0061
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=508 }
+            }
+            NumVerts = 424
+            IndexCount = 1524
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Item_0061_13_01
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=1.4342, Y=0.0331993, Z=0.2548 }
+        BoxExtent = { X=3.4144, Y=13.1183, Z=12.9674 }
+        SphereRadius = 15.0766
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=508 }
+            }
+            NumVerts = 872
+            IndexCount = 1524
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Item_0061_13_02
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=1.8424, Y=-0.3415, Z=-10.031 }
+        BoxExtent = { X=2.3708, Y=12.8939, Z=12.8694 }
+        SphereRadius = 17.8813
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=504 }
+            }
+            NumVerts = 692
+            IndexCount = 1512
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Item_0062_col1_E_FX02
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }

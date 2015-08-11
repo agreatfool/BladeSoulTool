@@ -1,7 +1,11 @@
-Found 19856 game files (132 skipped)
-Loading package: 00008472.upk Ver: 573/1 Engine: 4205 Names: 46 Exports: 19 Imports: 8 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00008472.upk Ver: 573/1 Engine: 4205 Names: 50 Exports: 23 Imports: 8 Game: 801A
+Loading Texture2D AdamantineManA__col4_D from package 00008472.upk
+Loading Texture2D AdamantineManA__col4_S from package 00008472.upk
 Loading Texture2D AdamantineManA_col2_E from package 00008472.upk
 Loading Texture2D AdamantineManA_col2_M from package 00008472.upk
+Loading Texture2D AdamantineManA_col4_E from package 00008472.upk
+Loading Texture2D AdamantineManA_col4_M from package 00008472.upk
 Loading Texture2D AdamantineManA_D from package 00008472.upk
 Loading Texture2D AdamantineManA_D_col2 from package 00008472.upk
 Loading Texture2D AdamantineManA_E from package 00008472.upk
@@ -16,7 +20,37 @@ Loading Texture2D Monster_Human_AdamantineManA_col2_N from package 00008472.upk
 Loading Texture2D Monster_Human_AdamantineManA_col2_S from package 00008472.upk
 Loading Texture2D Monster_Human_AdamantineManA_col3_D from package 00008472.upk
 Loading Texture2D Monster_Human_AdamantineManA_col3_S from package 00008472.upk
-Loaded in 0.12 sec, 555 allocs, 2.58 MBytes serialized in 3663 calls.
+Loaded in 0.14 sec, 681 allocs, 2.78 MBytes serialized in 4460 calls.
+
+Object info:
+============
+ClassName: Texture2D ObjectName: AdamantineManA__col4_D
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: AdamantineManA__col4_S
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
 
 Object info:
 ============
@@ -44,6 +78,36 @@ ClassName: Texture2D ObjectName: AdamantineManA_col2_M
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
     MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: AdamantineManA_col4_E
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: AdamantineManA_col4_M
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

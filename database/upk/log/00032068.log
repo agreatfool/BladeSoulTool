@@ -1,0 +1,48 @@
+Found 21310 game files (132 skipped)
+Loading package: 00032068.upk Ver: 573/1 Engine: 4205 Names: 121 Exports: 14 Imports: 17 Game: 801A
+Loading AnimSet Item_0066_Anim from package 00032068.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+Loading AnimSequence AnimSequence_54 from package 00032068.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading SkeletalMesh3 Item_0066 from package 00032068.upk
+WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
+Loading package: 00032067.upk Ver: 573/1 Engine: 4205 Names: 91 Exports: 2 Imports: 21 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00032067.upk
+Loading package: 00032066.upk Ver: 573/1 Engine: 4205 Names: 43 Exports: 14 Imports: 4 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading MaterialInstanceConstant col1_1 from package 00032067.upk
+Loading Texture2D Item_0066_col1_N from package 00032066.upk
+Loading Texture2D Item_0066_col1_M from package 00032066.upk
+Loading Texture2D Item_0066_col1_D from package 00032066.upk
+Loading Texture2D Item_0066_col1_S from package 00032066.upk
+Loading TextureCube lenscube from package 00002640.upk
+Loading Texture2D check from package 00002620.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading Texture2D Item_0066_col1_N2 from package 00032066.upk
+Loading Texture2D Item_0066_col1_D2 from package 00032066.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Error: Command failed: ******** 00032068 ********
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** ERROR: Unknown rotation compression method: 255
+UAnimSet::ConvertAnims <- PostLoad:Item_0066_Anim <- UObject::EndLoad <- LoadWholePackage:00032068 <- Main
+
+
+    at ChildProcess.exithandler (child_process.js:637:15)
+    at ChildProcess.EventEmitter.emit (events.js:98:17)
+    at maybeClose (child_process.js:743:16)
+    at Socket.<anonymous> (child_process.js:956:11)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at Pipe.close (net.js:465:12)

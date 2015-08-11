@@ -1,0 +1,45 @@
+Found 21310 game files (132 skipped)
+Loading package: 00031000.upk Ver: 573/1 Engine: 4205 Names: 570 Exports: 4 Imports: 665 Game: 801A
+Loading AnimSet Warlock_F_AnimSet from package 00031000.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+Loading AnimSet Warlock_M_AnimSet from package 00031000.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+WARNING: AnimSet Warlock_F_AnimSet has 0 sequences, but empty TrackBoneNames
+WARNING: AnimSet Warlock_M_AnimSet has 0 sequences, but empty TrackBoneNames
+Loaded in 0.003 sec, 592 allocs, 0.04 MBytes serialized in 6526 calls.
+
+Object info:
+============
+ClassName: AnimSet ObjectName: Warlock_F_AnimSet
+
+    bAnimRotationOnly = true
+    TrackBoneNames[0] = {}
+    Sequences[0] = {}
+    UseTranslationBoneNames[0] = {}
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00002701.00001_JinM
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None
+
+Object info:
+============
+ClassName: AnimSet ObjectName: Warlock_M_AnimSet
+
+    bAnimRotationOnly = true
+    TrackBoneNames[0] = {}
+    Sequences[0] = {}
+    UseTranslationBoneNames[0] = {}
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00002701.00001_JinM
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None

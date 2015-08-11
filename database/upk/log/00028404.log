@@ -1,18 +1,13 @@
-Found 19856 game files (132 skipped)
-Loading package: 00028404.upk Ver: 573/1 Engine: 4205 Names: 103 Exports: 2 Imports: 23 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00028404.upk Ver: 573/1 Engine: 4205 Names: 98 Exports: 2 Imports: 18 Game: 801A
 Loading MaterialInstanceConstant col2 from package 00028404.upk
-Loading package: 00022077.upk Ver: 573/1 Engine: 4205 Names: 48 Exports: 13 Imports: 11 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading MaterialInstanceConstant col2_acc from package 00028404.upk
-Loading Texture2D 60100_LynM_col2_N from package 00022077.upk
-Loading Texture2D 60100_LynM_col2_M from package 00022077.upk
-Loading Texture2D 60100_LynM_col2_D from package 00022077.upk
-Loading Texture2D 60100_LynM_col2_S from package 00022077.upk
 Loading TextureCube lenscube from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Material3 Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading TextureCube Cube_D from package 00002640.upk
 Loading Material3 Blend_OP_TSx from package 00002620.upk
 Loading Texture2D CubemapFace0 from package 00002640.upk
@@ -33,7 +28,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.15 sec, 2936 allocs, 1.46 MBytes serialized in 164279 calls.
+Loaded in 0.13 sec, 2755 allocs, 0.85 MBytes serialized in 163155 calls.
 
 Object info:
 ============
@@ -57,10 +52,10 @@ ClassName: MaterialInstanceConstant ObjectName: col2
     }
     TextureParameterValues[6] =
     {
-        TextureParameterValues[0] = { ParameterName=Body_normal, ParameterValue=Texture2D'60100_LynM_col2_N' }
-        TextureParameterValues[1] = { ParameterName=Body_mask_RGB, ParameterValue=Texture2D'60100_LynM_col2_M' }
-        TextureParameterValues[2] = { ParameterName=Body_diffuse, ParameterValue=Texture2D'60100_LynM_col2_D' }
-        TextureParameterValues[3] = { ParameterName=Body_specular, ParameterValue=Texture2D'60100_LynM_col2_S' }
+        TextureParameterValues[0] = { ParameterName=Body_normal, ParameterValue=None }
+        TextureParameterValues[1] = { ParameterName=Body_mask_RGB, ParameterValue=None }
+        TextureParameterValues[2] = { ParameterName=Body_diffuse, ParameterValue=None }
+        TextureParameterValues[3] = { ParameterName=Body_specular, ParameterValue=None }
         TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'lenscube' }
         TextureParameterValues[5] = { ParameterName=Emissive, ParameterValue=Texture2D'check' }
     }
@@ -139,9 +134,9 @@ ClassName: MaterialInstanceConstant ObjectName: col2_acc
     }
     TextureParameterValues[4] =
     {
-        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'60100_LynM_col2_N' }
-        TextureParameterValues[1] = { ParameterName=Diffuse, ParameterValue=Texture2D'60100_LynM_col2_D' }
-        TextureParameterValues[2] = { ParameterName=Specular, ParameterValue=Texture2D'60100_LynM_col2_S' }
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=None }
+        TextureParameterValues[1] = { ParameterName=Diffuse, ParameterValue=None }
+        TextureParameterValues[2] = { ParameterName=Specular, ParameterValue=None }
         TextureParameterValues[3] = { ParameterName=Lens_spec_cube, ParameterValue=TextureCube'Cube_D' }
     }
     VectorParameterValues[3] =

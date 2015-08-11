@@ -1,4 +1,4 @@
-Found 19856 game files (132 skipped)
+Found 21310 game files (132 skipped)
 Loading package: 00027195.upk Ver: 573/1 Engine: 4205 Names: 85 Exports: 1 Imports: 21 Game: 801A
 Loading MaterialInstanceConstant col9 from package 00027195.upk
 Loading package: 00012031.upk Ver: 573/1 Engine: 4205 Names: 59 Exports: 31 Imports: 2 Game: 801A
@@ -8,10 +8,10 @@ Loading Texture2D Monster_Human_UnbalanceZombieB_col1_N from package 00012031.up
 Loading Texture2D Monster_Human_UnbalanceZombieB_col4_M from package 00012031.upk
 Loading Texture2D Monster_Human_UnbalanceZombieB_col9_D from package 00012031.upk
 Loading Texture2D Monster_Human_UnbalanceZombieB_col9_S from package 00012031.upk
-Loading TextureCube lenscube from package 00002640.upk
+Loading TextureCube MatelR6 from package 00002640.upk
 Loading Texture2D Monster_Human_UnbalanceZombieB_col9_E from package 00012031.upk
 Loading Material3 Basic_local_reflect from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -25,7 +25,7 @@ Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D check from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.13 sec, 2817 allocs, 2.46 MBytes serialized in 163058 calls.
+Loaded in 0.13 sec, 2810 allocs, 2.38 MBytes serialized in 163217 calls.
 
 Object info:
 ============
@@ -34,12 +34,12 @@ ClassName: MaterialInstanceConstant ObjectName: col9
     ScalarParameterValues[10] =
     {
         ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=0.5 }
-        ScalarParameterValues[1] = { ParameterName=Glossiness1, ParameterValue=4 }
-        ScalarParameterValues[2] = { ParameterName=Glossiness2, ParameterValue=80 }
-        ScalarParameterValues[3] = { ParameterName=Specular_value, ParameterValue=3 }
-        ScalarParameterValues[4] = { ParameterName=HighLight_Value, ParameterValue=5 }
-        ScalarParameterValues[5] = { ParameterName=HighLight_glossiness, ParameterValue=150 }
-        ScalarParameterValues[6] = { ParameterName=Emissive_value, ParameterValue=2 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness1, ParameterValue=2 }
+        ScalarParameterValues[2] = { ParameterName=Glossiness2, ParameterValue=100 }
+        ScalarParameterValues[3] = { ParameterName=Specular_value, ParameterValue=2 }
+        ScalarParameterValues[4] = { ParameterName=HighLight_Value, ParameterValue=4 }
+        ScalarParameterValues[5] = { ParameterName=HighLight_glossiness, ParameterValue=100 }
+        ScalarParameterValues[6] = { ParameterName=Emissive_value, ParameterValue=3 }
         ScalarParameterValues[7] = { ParameterName=Emissive_value2, ParameterValue=0 }
         ScalarParameterValues[8] = { ParameterName=Fresnel Value, ParameterValue=1 }
         ScalarParameterValues[9] = { ParameterName=Fresnel exponent, ParameterValue=30 }
@@ -66,7 +66,7 @@ ClassName: MaterialInstanceConstant ObjectName: col9
             ParameterName = Specular
             ParameterValue = Texture2D'Monster_Human_UnbalanceZombieB_col9_S'
         }
-        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'lenscube' }
+        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'MatelR6' }
         TextureParameterValues[5] =
         {
             ParameterName = Emissive
@@ -83,12 +83,12 @@ ClassName: MaterialInstanceConstant ObjectName: col9
         VectorParameterValues[1] =
         {
             ParameterName = Reflection_value
-            ParameterValue = { R=0.227137, G=0.383775, B=0.585973, A=1 }
+            ParameterValue = { R=0.176774, G=0.103634, B=0.056374, A=1 }
         }
         VectorParameterValues[2] =
         {
             ParameterName = HighLight_Color
-            ParameterValue = { R=0.415148, G=0.20836, B=0.63878, A=1 }
+            ParameterValue = { R=0.560499, G=0.7593, B=1, A=1 }
         }
         VectorParameterValues[3] =
         {

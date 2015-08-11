@@ -1,4 +1,4 @@
-Found 19856 game files (132 skipped)
+Found 21310 game files (132 skipped)
 Loading package: 00030050.upk Ver: 573/1 Engine: 4205 Names: 246 Exports: 257 Imports: 21 Game: 801A
 Loading SkeletalMesh3 70036_KunN from package 00030050.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
@@ -28,7 +28,7 @@ Loading Texture2D 70036_KunN_col1_S from package 00030049.upk
 Loading TextureCube Cube_Suicide2 from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Material3 body_reflect_view from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Texture2D fur_N from package 00030043.upk
 Loading Texture2D fur_D from package 00030043.upk
 Loading Texture2D fur_S from package 00030043.upk
@@ -52,7 +52,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.24 sec, 3383 allocs, 4.41 MBytes serialized in 667782 calls.
+Loaded in 0.23 sec, 3391 allocs, 4.44 MBytes serialized in 672738 calls.
 
 Object info:
 ============
@@ -71,8 +71,8 @@ ClassName: SkeletalMesh3 ObjectName: 70036_KunN
         {
             DisplayFactor = 0.25
             LODHysteresis = 0.02
-            LODMaterialMap[2] = { 0, 1 }
-            bEnableShadowCasting[2] = { true, true }
+            LODMaterialMap[1] = { 0 }
+            bEnableShadowCasting[1] = { true }
         }
     }
     Sockets[0] = {}
@@ -98,12 +98,11 @@ ClassName: SkeletalMesh3 ObjectName: 70036_KunN
         }
         Lods[1] =
         {
-            Sections[2] =
+            Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=2240 }
-                Sections[1] = { Material=MaterialInstanceConstant'fur_mat', FirstIndex=6720, NumFaces=490 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=2730 }
             }
-            NumVerts = 2950
+            NumVerts = 3106
             IndexCount = 8190
             NumTexCoords = 1
         }

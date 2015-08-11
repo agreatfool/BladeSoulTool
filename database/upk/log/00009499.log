@@ -1,5 +1,8 @@
-Found 19856 game files (132 skipped)
-Loading package: 00009499.upk Ver: 573/1 Engine: 4205 Names: 1574 Exports: 1578 Imports: 5 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00009499.upk Ver: 573/1 Engine: 4205 Names: 1759 Exports: 1778 Imports: 9 Game: 801A
+Loading Texture2D Img_Brazier_Blue from package 00009499.upk
+Loading Texture2D Img_Brazier_Gray from package 00009499.upk
+Loading Texture2D Img_Brazier_Red from package 00009499.upk
 Loading Texture2D JumpDestination from package 00009499.upk
 Loading Texture2D JumpDestination__over from package 00009499.upk
 Loading Texture2D Map_8Guild_BackCheong from package 00009499.upk
@@ -25,6 +28,7 @@ Loading Texture2D Map_attraction_borderline from package 00009499.upk
 Loading Texture2D Map_attraction_cannot_progress from package 00009499.upk
 Loading Texture2D Map_attraction_cannot_progress_over from package 00009499.upk
 Loading Texture2D Map_attraction_cannot_progress_Pressed from package 00009499.upk
+Loading Texture2D Map_attraction_completed from package 00009499.upk
 Loading Texture2D Map_attraction_end from package 00009499.upk
 Loading Texture2D Map_attraction_end_over from package 00009499.upk
 Loading Texture2D Map_attraction_end_Pressed from package 00009499.upk
@@ -70,6 +74,8 @@ Loading Texture2D Map_Convoy-Status-Borderline_32 from package 00009499.upk
 Loading Texture2D Map_Convoy_Location_Outglow from package 00009499.upk
 Loading Texture2D Map_Craft_NPC from package 00009499.upk
 Loading Texture2D Map_Craft_NPC_Outglow from package 00009499.upk
+Loading Texture2D Map_DragonFruit_Nomal from package 00009499.upk
+Loading Texture2D Map_DragonFruit_Nomal_over from package 00009499.upk
 Loading Texture2D Map_Dungeon_Blocked from package 00009499.upk
 Loading Texture2D Map_Dungeon_Blocked_over from package 00009499.upk
 Loading Texture2D Map_Dungeon_Blue from package 00009499.upk
@@ -138,6 +144,7 @@ Loading Texture2D Map_Enemy_Status_tired from package 00009499.upk
 Loading Texture2D Map_environmental-object from package 00009499.upk
 Loading Texture2D Map_Epic_borderline from package 00009499.upk
 Loading Texture2D Map_Epic_Borderline_over from package 00009499.upk
+Loading Texture2D Map_Epic_completed from package 00009499.upk
 Loading Texture2D Map_Epic_End from package 00009499.upk
 Loading Texture2D Map_Epic_end_over from package 00009499.upk
 Loading Texture2D Map_Epic_potential from package 00009499.upk
@@ -191,8 +198,23 @@ Loading Texture2D Map_Faction2_Flag_Borderline_over from package 00009499.upk
 Loading Texture2D Map_Faction2_Flag_over from package 00009499.upk
 Loading Texture2D Map_Faction_borderline from package 00009499.upk
 Loading Texture2D Map_Faction_borderline_over from package 00009499.upk
+Loading Texture2D Map_Faction_Challenge_repeat_borderline from package 00009499.upk
+Loading Texture2D Map_Faction_Challenge_repeat_borderline_over from package 00009499.upk
+Loading Texture2D Map_Faction_Challenge_repeat_done from package 00009499.upk
+Loading Texture2D Map_Faction_Challenge_repeat_end from package 00009499.upk
+Loading Texture2D Map_Faction_Challenge_repeat_end_over from package 00009499.upk
+Loading Texture2D Map_Faction_Challenge_repeat_end_Pressed from package 00009499.upk
+Loading Texture2D Map_Faction_Challenge_repeat_potential from package 00009499.upk
+Loading Texture2D Map_Faction_Challenge_repeat_potential_over from package 00009499.upk
+Loading Texture2D Map_Faction_Challenge_repeat_progress from package 00009499.upk
+Loading Texture2D Map_Faction_Challenge_repeat_progress_over from package 00009499.upk
+Loading Texture2D Map_Faction_Challenge_repeat_progress_Pressed from package 00009499.upk
+Loading Texture2D Map_Faction_Challenge_repeat_start from package 00009499.upk
+Loading Texture2D Map_Faction_Challenge_repeat_start_over from package 00009499.upk
+Loading Texture2D Map_Faction_completed from package 00009499.upk
 Loading Texture2D Map_Faction_daily_repeat_borderline from package 00009499.upk
 Loading Texture2D Map_Faction_daily_repeat_borderline_over from package 00009499.upk
+Loading Texture2D Map_Faction_daily_repeat_completed from package 00009499.upk
 Loading Texture2D Map_Faction_daily_repeat_end from package 00009499.upk
 Loading Texture2D Map_Faction_daily_repeat_end_over from package 00009499.upk
 Loading Texture2D Map_Faction_daily_repeat_end_Pressed from package 00009499.upk
@@ -203,19 +225,23 @@ Loading Texture2D Map_Faction_daily_repeat_progress_over from package 00009499.u
 Loading Texture2D Map_Faction_daily_repeat_progress_Pressed from package 00009499.upk
 Loading Texture2D Map_Faction_daily_repeat_start from package 00009499.upk
 Loading Texture2D Map_Faction_daily_repeat_start_over from package 00009499.upk
+Loading Texture2D Map_Faction_dayofweek_not_progress from package 00009499.upk
 Loading Texture2D Map_Faction_end from package 00009499.upk
 Loading Texture2D Map_Faction_end_over from package 00009499.upk
 Loading Texture2D Map_Faction_Neutral_Flag from package 00009499.upk
 Loading Texture2D Map_Faction_Neutral_Flag_Borderline from package 00009499.upk
 Loading Texture2D Map_Faction_Neutral_Flag_Borderline_over from package 00009499.upk
 Loading Texture2D Map_Faction_Neutral_Flag_over from package 00009499.upk
+Loading Texture2D Map_Faction_not_progress from package 00009499.upk
 Loading Texture2D Map_Faction_progress from package 00009499.upk
 Loading Texture2D Map_Faction_progress_over from package 00009499.upk
 Loading Texture2D Map_Faction_repeat_borderline from package 00009499.upk
 Loading Texture2D Map_Faction_repeat_borderline_over from package 00009499.upk
+Loading Texture2D Map_Faction_repeat_completed from package 00009499.upk
 Loading Texture2D Map_Faction_repeat_end from package 00009499.upk
 Loading Texture2D Map_Faction_repeat_end_over from package 00009499.upk
 Loading Texture2D Map_Faction_repeat_end_Pressed from package 00009499.upk
+Loading Texture2D Map_Faction_repeat_not_progress from package 00009499.upk
 Loading Texture2D Map_Faction_repeat_potential from package 00009499.upk
 Loading Texture2D Map_Faction_repeat_progress from package 00009499.upk
 Loading Texture2D Map_Faction_repeat_progress_over from package 00009499.upk
@@ -241,6 +267,8 @@ Loading Texture2D Map_factionboard_start_Borderline from package 00009499.upk
 Loading Texture2D Map_factionboard_start_Borderline_over from package 00009499.upk
 Loading Texture2D Map_factionboard_start_Over from package 00009499.upk
 Loading Texture2D Map_Festival_borderline from package 00009499.upk
+Loading Texture2D Map_Festival_completed from package 00009499.upk
+Loading Texture2D Map_Festival_daily_repeat_completed from package 00009499.upk
 Loading Texture2D Map_Festival_end from package 00009499.upk
 Loading Texture2D Map_Festival_end_over from package 00009499.upk
 Loading Texture2D Map_Festival_end_Pressed from package 00009499.upk
@@ -249,6 +277,7 @@ Loading Texture2D Map_Festival_progress from package 00009499.upk
 Loading Texture2D Map_Festival_progress_over from package 00009499.upk
 Loading Texture2D Map_Festival_progress_Pressed from package 00009499.upk
 Loading Texture2D Map_Festival_repeat_borderline from package 00009499.upk
+Loading Texture2D Map_Festival_repeat_completed from package 00009499.upk
 Loading Texture2D Map_Festival_repeat_end from package 00009499.upk
 Loading Texture2D Map_Festival_repeat_end_over from package 00009499.upk
 Loading Texture2D Map_Festival_repeat_end_Pressed from package 00009499.upk
@@ -317,6 +346,7 @@ Loading Texture2D Map_HolyMineral from package 00009499.upk
 Loading Texture2D Map_HolyMineral_over from package 00009499.upk
 Loading Texture2D Map_Job_borderline from package 00009499.upk
 Loading Texture2D Map_job_borderline_over from package 00009499.upk
+Loading Texture2D Map_Job_completed from package 00009499.upk
 Loading Texture2D Map_Job_End from package 00009499.upk
 Loading Texture2D Map_job_end_over from package 00009499.upk
 Loading Texture2D Map_job_potential from package 00009499.upk
@@ -361,6 +391,8 @@ Loading Texture2D Map_Mushroom_Blue from package 00009499.upk
 Loading Texture2D Map_Mushroom_Blue_over from package 00009499.upk
 Loading Texture2D Map_Mushroom_Gold from package 00009499.upk
 Loading Texture2D Map_Mushroom_Gold_over from package 00009499.upk
+Loading Texture2D Map_Mushroom_Kitty from package 00009499.upk
+Loading Texture2D Map_Mushroom_Kitty_over from package 00009499.upk
 Loading Texture2D Map_Mushroom_Nomal from package 00009499.upk
 Loading Texture2D Map_Mushroom_Nomal_over from package 00009499.upk
 Loading Texture2D Map_NewYear_event from package 00009499.upk
@@ -373,8 +405,23 @@ Loading Texture2D Map_nightmare_GuardStone_Borderline_over from package 00009499
 Loading Texture2D Map_nightmare_GuardStone_Over from package 00009499.upk
 Loading Texture2D Map_Normal_borderline from package 00009499.upk
 Loading Texture2D Map_Normal_borderline_over from package 00009499.upk
+Loading Texture2D Map_Normal_Challenge_repeat_borderline from package 00009499.upk
+Loading Texture2D Map_Normal_Challenge_repeat_borderline_over from package 00009499.upk
+Loading Texture2D Map_Normal_Challenge_repeat_done from package 00009499.upk
+Loading Texture2D Map_Normal_Challenge_repeat_end from package 00009499.upk
+Loading Texture2D Map_Normal_Challenge_repeat_end_over from package 00009499.upk
+Loading Texture2D Map_Normal_Challenge_repeat_end_Pressed from package 00009499.upk
+Loading Texture2D Map_Normal_Challenge_repeat_potential from package 00009499.upk
+Loading Texture2D Map_Normal_Challenge_repeat_potential_over from package 00009499.upk
+Loading Texture2D Map_Normal_Challenge_repeat_progress from package 00009499.upk
+Loading Texture2D Map_Normal_Challenge_repeat_progress_over from package 00009499.upk
+Loading Texture2D Map_Normal_Challenge_repeat_progress_Pressed from package 00009499.upk
+Loading Texture2D Map_Normal_Challenge_repeat_start from package 00009499.upk
+Loading Texture2D Map_Normal_Challenge_repeat_start_over from package 00009499.upk
+Loading Texture2D Map_Normal_completed from package 00009499.upk
 Loading Texture2D Map_Normal_daily_repeat_borderline from package 00009499.upk
 Loading Texture2D Map_Normal_daily_repeat_borderline_over from package 00009499.upk
+Loading Texture2D Map_Normal_daily_repeat_completed from package 00009499.upk
 Loading Texture2D Map_Normal_daily_repeat_end from package 00009499.upk
 Loading Texture2D Map_Normal_daily_repeat_end_over from package 00009499.upk
 Loading Texture2D Map_Normal_daily_repeat_end_Pressed from package 00009499.upk
@@ -464,6 +511,30 @@ Loading Texture2D Map_Party_6_Status_RecoveryPower from package 00009499.upk
 Loading Texture2D Map_Party_6_Status_RecoveryPower_02 from package 00009499.upk
 Loading Texture2D Map_Party_6_Status_tired from package 00009499.upk
 Loading Texture2D Map_Party_6_Status_tired_02 from package 00009499.upk
+Loading Texture2D Map_Party_battle_field_base_ally_on from package 00009499.upk
+Loading Texture2D Map_Party_battle_field_base_ally_on_borderline from package 00009499.upk
+Loading Texture2D Map_Party_battle_field_base_ally_on_over from package 00009499.upk
+Loading Texture2D Map_Party_battle_field_base_ally_progress from package 00009499.upk
+Loading Texture2D Map_Party_battle_field_base_ally_progress_borderline from package 00009499.upk
+Loading Texture2D Map_Party_battle_field_base_ally_progress_over from package 00009499.upk
+Loading Texture2D Map_Party_battle_field_base_enemy_on from package 00009499.upk
+Loading Texture2D Map_Party_battle_field_base_enemy_on_borderline from package 00009499.upk
+Loading Texture2D Map_Party_battle_field_base_enemy_on_over from package 00009499.upk
+Loading Texture2D Map_Party_battle_field_base_off from package 00009499.upk
+Loading Texture2D Map_Party_battle_field_base_off_borderline from package 00009499.upk
+Loading Texture2D Map_Party_battle_field_base_off_over from package 00009499.upk
+Loading Texture2D Map_Party_battle_field_start_ally_normal from package 00009499.upk
+Loading Texture2D Map_Party_battle_field_start_ally_over from package 00009499.upk
+Loading Texture2D Map_Party_battle_field_start_ally_pressed from package 00009499.upk
+Loading Texture2D Map_Party_battle_field_start_enemy_normal from package 00009499.upk
+Loading Texture2D Map_Party_battle_field_start_enemy_over from package 00009499.upk
+Loading Texture2D Map_Party_battle_field_start_enemy_pressed from package 00009499.upk
+Loading Texture2D Map_party_ghost_location_1 from package 00009499.upk
+Loading Texture2D Map_party_ghost_location_2 from package 00009499.upk
+Loading Texture2D Map_party_ghost_location_3 from package 00009499.upk
+Loading Texture2D Map_party_ghost_location_4 from package 00009499.upk
+Loading Texture2D Map_party_ghost_location_5 from package 00009499.upk
+Loading Texture2D Map_party_ghost_location_6 from package 00009499.upk
 Loading Texture2D Map_Party_Location_1 from package 00009499.upk
 Loading Texture2D Map_Party_Location_1_02 from package 00009499.upk
 Loading Texture2D Map_Party_Location_1_Outglow from package 00009499.upk
@@ -591,6 +662,7 @@ Loading Texture2D Map_Refine_Machine_Red_Neutral_borderline from package 0000949
 Loading Texture2D Map_Refine_Machine_Red_Neutral_over from package 00009499.upk
 Loading Texture2D Map_Repeat_borderline from package 00009499.upk
 Loading Texture2D Map_Repeat_borderline_over from package 00009499.upk
+Loading Texture2D Map_Repeat_completed from package 00009499.upk
 Loading Texture2D Map_Repeat_End from package 00009499.upk
 Loading Texture2D Map_Repeat_end_over from package 00009499.upk
 Loading Texture2D Map_Repeat_potential from package 00009499.upk
@@ -605,6 +677,17 @@ Loading Texture2D Map_Roulettle from package 00009499.upk
 Loading Texture2D Map_Roulettle_b from package 00009499.upk
 Loading Texture2D Map_Roulettle_b_over from package 00009499.upk
 Loading Texture2D Map_Roulettle_over from package 00009499.upk
+Loading Texture2D Map_side_episode_borderline from package 00009499.upk
+Loading Texture2D Map_side_episode_completed from package 00009499.upk
+Loading Texture2D Map_side_episode_end from package 00009499.upk
+Loading Texture2D Map_side_episode_end_over from package 00009499.upk
+Loading Texture2D Map_side_episode_end_Pressed from package 00009499.upk
+Loading Texture2D Map_side_episode_potential from package 00009499.upk
+Loading Texture2D Map_side_episode_progress from package 00009499.upk
+Loading Texture2D Map_side_episode_progress_over from package 00009499.upk
+Loading Texture2D Map_side_episode_progress_Pressed from package 00009499.upk
+Loading Texture2D Map_side_episode_start from package 00009499.upk
+Loading Texture2D Map_side_episode_start_over from package 00009499.upk
 Loading Texture2D Map_Skil_borderline from package 00009499.upk
 Loading Texture2D Map_Skil_end from package 00009499.upk
 Loading Texture2D Map_Skil_end_over from package 00009499.upk
@@ -620,6 +703,19 @@ Loading Texture2D Map_Soil from package 00009499.upk
 Loading Texture2D Map_Soil_over from package 00009499.upk
 Loading Texture2D Map_SoulStone_Big from package 00009499.upk
 Loading Texture2D Map_SoulStone_Big_over from package 00009499.upk
+Loading Texture2D Map_Special_borderline from package 00009499.upk
+Loading Texture2D Map_Special_borderline_over from package 00009499.upk
+Loading Texture2D Map_Special_completed from package 00009499.upk
+Loading Texture2D Map_Special_end from package 00009499.upk
+Loading Texture2D Map_Special_end_over from package 00009499.upk
+Loading Texture2D Map_Special_end_Pressed from package 00009499.upk
+Loading Texture2D Map_Special_potential from package 00009499.upk
+Loading Texture2D Map_Special_potential_over from package 00009499.upk
+Loading Texture2D Map_Special_progress from package 00009499.upk
+Loading Texture2D Map_Special_progress_over from package 00009499.upk
+Loading Texture2D Map_Special_progress_Pressed from package 00009499.upk
+Loading Texture2D Map_Special_start from package 00009499.upk
+Loading Texture2D Map_Special_start_over from package 00009499.upk
 Loading Texture2D Map_Spot_Battle from package 00009499.upk
 Loading Texture2D Map_Spot_Battle_over from package 00009499.upk
 Loading Texture2D Map_Status-Event from package 00009499.upk
@@ -638,6 +734,7 @@ Loading Texture2D Map_System_progress from package 00009499.upk
 Loading Texture2D Map_System_progress_over from package 00009499.upk
 Loading Texture2D Map_System_start from package 00009499.upk
 Loading Texture2D Map_System_start_over from package 00009499.upk
+Loading Texture2D Map_team_ghost_location from package 00009499.upk
 Loading Texture2D Map_team_Location from package 00009499.upk
 Loading Texture2D Map_team_Location_Borderline from package 00009499.upk
 Loading Texture2D Map_team_Location_Outglow from package 00009499.upk
@@ -751,7 +848,52 @@ Loading Texture2D Window_Teleport-point-possible-normal_128 from package 0000949
 Loading Texture2D Window_Teleport-point-possible-normal_32 from package 00009499.upk
 Loading Texture2D Window_Teleport-point-possible-over_32 from package 00009499.upk
 Loading Texture2D Window_Teleport-point-possible-pressed_32 from package 00009499.upk
-Loaded in 0.68 sec, 5623 allocs, 1.01 MBytes serialized in 99785 calls.
+Loaded in 0.72 sec, 6329 allocs, 1.20 MBytes serialized in 112855 calls.
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Brazier_Blue
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Brazier_Gray
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Brazier_Red
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
 
 Object info:
 ============
@@ -1116,6 +1258,21 @@ ClassName: Texture2D ObjectName: Map_attraction_cannot_progress_over
 Object info:
 ============
 ClassName: Texture2D ObjectName: Map_attraction_cannot_progress_Pressed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_attraction_completed
 
     SizeX = 32
     SizeY = 32
@@ -1791,6 +1948,36 @@ ClassName: Texture2D ObjectName: Map_Craft_NPC
 Object info:
 ============
 ClassName: Texture2D ObjectName: Map_Craft_NPC_Outglow
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_DragonFruit_Nomal
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_DragonFruit_Nomal_over
 
     SizeX = 32
     SizeY = 32
@@ -2825,6 +3012,21 @@ ClassName: Texture2D ObjectName: Map_Epic_Borderline_over
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Map_Epic_completed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Map_Epic_End
 
     SizeX = 32
@@ -3620,6 +3822,216 @@ ClassName: Texture2D ObjectName: Map_Faction_borderline_over
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Map_Faction_Challenge_repeat_borderline
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Faction_Challenge_repeat_borderline_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Faction_Challenge_repeat_done
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Faction_Challenge_repeat_end
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Faction_Challenge_repeat_end_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Faction_Challenge_repeat_end_Pressed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Faction_Challenge_repeat_potential
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Faction_Challenge_repeat_potential_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Faction_Challenge_repeat_progress
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Faction_Challenge_repeat_progress_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Faction_Challenge_repeat_progress_Pressed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Faction_Challenge_repeat_start
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Faction_Challenge_repeat_start_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Faction_completed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Map_Faction_daily_repeat_borderline
 
     SizeX = 32
@@ -3636,6 +4048,21 @@ ClassName: Texture2D ObjectName: Map_Faction_daily_repeat_borderline
 Object info:
 ============
 ClassName: Texture2D ObjectName: Map_Faction_daily_repeat_borderline_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Faction_daily_repeat_completed
 
     SizeX = 32
     SizeY = 32
@@ -3800,6 +4227,21 @@ ClassName: Texture2D ObjectName: Map_Faction_daily_repeat_start_over
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Map_Faction_dayofweek_not_progress
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Map_Faction_end
 
     SizeX = 32
@@ -3890,6 +4332,21 @@ ClassName: Texture2D ObjectName: Map_Faction_Neutral_Flag_over
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Map_Faction_not_progress
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Map_Faction_progress
 
     SizeX = 32
@@ -3950,6 +4407,21 @@ ClassName: Texture2D ObjectName: Map_Faction_repeat_borderline_over
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Map_Faction_repeat_completed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Map_Faction_repeat_end
 
     SizeX = 32
@@ -3981,6 +4453,21 @@ ClassName: Texture2D ObjectName: Map_Faction_repeat_end_over
 Object info:
 ============
 ClassName: Texture2D ObjectName: Map_Faction_repeat_end_Pressed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Faction_repeat_not_progress
 
     SizeX = 32
     SizeY = 32
@@ -4370,6 +4857,36 @@ ClassName: Texture2D ObjectName: Map_Festival_borderline
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Map_Festival_completed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Festival_daily_repeat_completed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Map_Festival_end
 
     SizeX = 32
@@ -4476,6 +4993,21 @@ ClassName: Texture2D ObjectName: Map_Festival_progress_Pressed
 Object info:
 ============
 ClassName: Texture2D ObjectName: Map_Festival_repeat_borderline
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Festival_repeat_completed
 
     SizeX = 32
     SizeY = 32
@@ -5510,6 +6042,21 @@ ClassName: Texture2D ObjectName: Map_job_borderline_over
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Map_Job_completed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Map_Job_End
 
     SizeX = 32
@@ -6170,6 +6717,36 @@ ClassName: Texture2D ObjectName: Map_Mushroom_Gold_over
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Map_Mushroom_Kitty
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Mushroom_Kitty_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Map_Mushroom_Nomal
 
     SizeX = 32
@@ -6350,6 +6927,216 @@ ClassName: Texture2D ObjectName: Map_Normal_borderline_over
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Map_Normal_Challenge_repeat_borderline
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Normal_Challenge_repeat_borderline_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Normal_Challenge_repeat_done
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Normal_Challenge_repeat_end
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Normal_Challenge_repeat_end_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Normal_Challenge_repeat_end_Pressed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Normal_Challenge_repeat_potential
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Normal_Challenge_repeat_potential_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Normal_Challenge_repeat_progress
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Normal_Challenge_repeat_progress_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Normal_Challenge_repeat_progress_Pressed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Normal_Challenge_repeat_start
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Normal_Challenge_repeat_start_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Normal_completed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Map_Normal_daily_repeat_borderline
 
     SizeX = 32
@@ -6366,6 +7153,21 @@ ClassName: Texture2D ObjectName: Map_Normal_daily_repeat_borderline
 Object info:
 ============
 ClassName: Texture2D ObjectName: Map_Normal_daily_repeat_borderline_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Normal_daily_repeat_completed
 
     SizeX = 32
     SizeY = 32
@@ -7701,6 +8503,366 @@ ClassName: Texture2D ObjectName: Map_Party_6_Status_tired
 Object info:
 ============
 ClassName: Texture2D ObjectName: Map_Party_6_Status_tired_02
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Party_battle_field_base_ally_on
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Party_battle_field_base_ally_on_borderline
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Party_battle_field_base_ally_on_over
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Party_battle_field_base_ally_progress
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Party_battle_field_base_ally_progress_borderline
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Party_battle_field_base_ally_progress_over
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Party_battle_field_base_enemy_on
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Party_battle_field_base_enemy_on_borderline
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Party_battle_field_base_enemy_on_over
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Party_battle_field_base_off
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Party_battle_field_base_off_borderline
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Party_battle_field_base_off_over
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Party_battle_field_start_ally_normal
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Party_battle_field_start_ally_over
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Party_battle_field_start_ally_pressed
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Party_battle_field_start_enemy_normal
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Party_battle_field_start_enemy_over
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Party_battle_field_start_enemy_pressed
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_party_ghost_location_1
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_party_ghost_location_2
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_party_ghost_location_3
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_party_ghost_location_4
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_party_ghost_location_5
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_party_ghost_location_6
 
     SizeX = 32
     SizeY = 32
@@ -9620,6 +10782,21 @@ ClassName: Texture2D ObjectName: Map_Repeat_borderline_over
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Map_Repeat_completed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Map_Repeat_End
 
     SizeX = 32
@@ -9816,6 +10993,171 @@ ClassName: Texture2D ObjectName: Map_Roulettle_b_over
 Object info:
 ============
 ClassName: Texture2D ObjectName: Map_Roulettle_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_side_episode_borderline
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_side_episode_completed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_side_episode_end
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_side_episode_end_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_side_episode_end_Pressed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_side_episode_potential
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_side_episode_progress
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_side_episode_progress_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_side_episode_progress_Pressed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_side_episode_start
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_side_episode_start_over
 
     SizeX = 32
     SizeY = 32
@@ -10041,6 +11383,201 @@ ClassName: Texture2D ObjectName: Map_SoulStone_Big
 Object info:
 ============
 ClassName: Texture2D ObjectName: Map_SoulStone_Big_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Special_borderline
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Special_borderline_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Special_completed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Special_end
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Special_end_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Special_end_Pressed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Special_potential
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Special_potential_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Special_progress
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Special_progress_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Special_progress_Pressed
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Special_start
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Special_start_over
 
     SizeX = 32
     SizeY = 32
@@ -10311,6 +11848,21 @@ ClassName: Texture2D ObjectName: Map_System_start
 Object info:
 ============
 ClassName: Texture2D ObjectName: Map_System_start_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_team_ghost_location
 
     SizeX = 32
     SizeY = 32

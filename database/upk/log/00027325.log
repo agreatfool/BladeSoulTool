@@ -1,4 +1,4 @@
-Found 19856 game files (132 skipped)
+Found 21310 game files (132 skipped)
 Loading package: 00027325.upk Ver: 573/1 Engine: 4205 Names: 215 Exports: 135 Imports: 22 Game: 801A
 Loading SkeletalMesh3 60121_JinM from package 00027325.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
@@ -27,7 +27,7 @@ Loading Texture2D 60121_JinM_col1_S from package 00027323.upk
 Loading TextureCube MatelR3 from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Material3 Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading TextureCube Cube from package 00026887.upk
 Loading Material3 Blend_OP from package 00002620.upk
 Loading Texture2D CubemapFace0 from package 00002640.upk
@@ -48,7 +48,7 @@ Loading Texture2D CubemapFace2 from package 00026887.upk
 Loading Texture2D CubemapFace3 from package 00026887.upk
 Loading Texture2D CubemapFace4 from package 00026887.upk
 Loading Texture2D CubemapFace5 from package 00026887.upk
-Loaded in 0.17 sec, 3236 allocs, 2.83 MBytes serialized in 409779 calls.
+Loaded in 0.17 sec, 3245 allocs, 2.83 MBytes serialized in 410149 calls.
 
 Object info:
 ============
@@ -67,8 +67,8 @@ ClassName: SkeletalMesh3 ObjectName: 60121_JinM
         {
             DisplayFactor = 0.25
             LODHysteresis = 0.02
-            LODMaterialMap[2] = { 0, 1 }
-            bEnableShadowCasting[2] = { true, true }
+            LODMaterialMap[1] = { 0 }
+            bEnableShadowCasting[1] = { true }
         }
     }
     Sockets[0] = {}
@@ -93,13 +93,12 @@ ClassName: SkeletalMesh3 ObjectName: 60121_JinM
         }
         Lods[1] =
         {
-            Sections[2] =
+            Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1645 }
-                Sections[1] = { Material=MaterialInstanceConstant'col1_1', FirstIndex=4935, NumFaces=76 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1725 }
             }
-            NumVerts = 1725
-            IndexCount = 5163
+            NumVerts = 1729
+            IndexCount = 5175
             NumTexCoords = 1
         }
     }

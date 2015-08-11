@@ -1,7 +1,7 @@
-Found 19856 game files (132 skipped)
-Loading package: 00012586.upk Ver: 573/1 Engine: 4205 Names: 450 Exports: 5354 Imports: 197 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00012586.upk Ver: 573/1 Engine: 4205 Names: 473 Exports: 5641 Imports: 206 Game: 801A
 Loading Material3 Blob_volume from package 00012586.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Material3 Check_Shine_001_Mat from package 00012586.upk
 Loading Material3 Chinese_VIP_Dash_KungfuFighter_VIP_Dragon_MAT from package 00012586.upk
 WARNING: BoolProperty "UMaterial3::bUsedWithMaterialEffect" was not found
@@ -26,7 +26,7 @@ Loading Material3 darkball_main01 from package 00012586.upk
 Loading Material3 darkball_main01_depth from package 00012586.upk
 Loading Material3 DemonBoss_Anger_body from package 00012586.upk
 Loading Material3 DistortBlur2_mat from package 00012586.upk
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Material3 Distortion001_MatB from package 00012586.upk
 Loading Material3 Distortion002_MatB from package 00012586.upk
 Loading Material3 Distortion005_MatB from package 00012586.upk
@@ -41,6 +41,8 @@ Loading Material3 fractal_spread01_app1 from package 00012586.upk
 Loading Material3 fractal_spread01_app1_depthalpha from package 00012586.upk
 Loading Material3 fractal_spread01_app1_distortion from package 00012586.upk
 Loading Material3 fractal_spread01_app2 from package 00012586.upk
+Loading Material3 fractalwave01 from package 00012586.upk
+Loading Material3 fractalwave02 from package 00012586.upk
 Loading Material3 Glass_Break from package 00012586.upk
 Loading Material3 GlowCore000_MatB from package 00012586.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -183,6 +185,8 @@ Loading Material3 Test_Marble from package 00012586.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Test_Marble02 from package 00012586.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 tornado from package 00012586.upk
+WARNING: StructProperty "UMaterial3::WorldPositionOffset" was not found
 Loading Material3 Transfom_AuraTrail001_MatM from package 00012586.upk
 Loading Material3 Transform_Beam_Noise from package 00012586.upk
 Loading Material3 UV_Panning000x2_MatB from package 00012586.upk
@@ -254,9 +258,14 @@ Loading Texture2D Smoke_ShockWave_002 from package 00012963.upk
 Loading Texture2D Smoke_Fractal_001 from package 00012963.upk
 Loading Texture2D Smoke_ShockWave_004 from package 00012963.upk
 Loading Texture2D Gradient_Beam_Clamp from package 00012963.upk
+Loading Texture2D Gradient_Color_RedToOrange_000 from package 00012963.upk
+Loading Texture2D Water_001_01_N_Wave3 from package 00012963.upk
+Loading Texture2D Gradient_Beam_007_Clamp from package 00012963.upk
+Loading Texture2D Env_Fx_LightningCloud_Lightning from package 00012963.upk
+Loading Texture2D Gradient_Beam_007 from package 00012963.upk
+Loading Texture2D Gradient_Line_005 from package 00012963.upk
 Loading Texture2D Gradient_Color_BtoS000_Tex from package 00012963.upk
 Loading Texture2D Noise_010 from package 00012963.upk
-Loading Texture2D Env_Fx_LightningCloud_Lightning from package 00012963.upk
 Loading Texture2D Noise_Glass_000 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_001 from package 00012963.upk
@@ -333,12 +342,14 @@ Loading Texture2D Glow_Twiri_002 from package 00012963.upk
 Loading Texture2D Smoke_Cloud_005 from package 00012963.upk
 Loading Texture2D Ring_Shockwave_003 from package 00012963.upk
 Loading Texture2D Smoke_011 from package 00012963.upk
-Loading Texture2D Gradient_Color_RedToOrange_000 from package 00012963.upk
 Loading Texture2D Takgi_Beam_001 from package 00012963.upk
 Loading Texture2D Smoke_ShockWave_000 from package 00012963.upk
 Loading Texture2D Smoke_ShockWave_001 from package 00012963.upk
 Loading Texture2D Noise_008 from package 00012963.upk
 Loading Texture2D Ring_002 from package 00012963.upk
+Loading Texture2D Normal_Noise_003 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
+Loading Texture2D Glow_007 from package 00012963.upk
 Loading Texture2D Glow_004 from package 00012963.upk
 Loading Texture2D Smoke_Dusts_001 from package 00012963.upk
 Loading Texture2D Decal_Mask_000 from package 00012963.upk
@@ -355,7 +366,7 @@ Loading Texture2D CubemapFace2 from package cubemap_001.upk
 Loading Texture2D CubemapFace3 from package cubemap_001.upk
 Loading Texture2D CubemapFace4 from package cubemap_001.upk
 Loading Texture2D CubemapFace5 from package cubemap_001.upk
-Loaded in 1.4 sec, 6413 allocs, 6.01 MBytes serialized in 171217 calls.
+Loaded in 1.5 sec, 6627 allocs, 6.09 MBytes serialized in 178293 calls.
 
 Object info:
 ============
@@ -1179,6 +1190,56 @@ ClassName: Material3 ObjectName: fractal_spread01_app2
     bDisableDepthTest = false
     bIsMasked = false
     ReferencedTextures[2] = { Texture2D'Noise_005', Texture2D'Noise_Plazma_002' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: fractalwave01
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_005'
+        ReferencedTextures[1] = Texture2D'Gradient_Color_RedToOrange_000'
+        ReferencedTextures[2] = Texture2D'Noise_Wave_000'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: fractalwave02
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'Water_001_01_N_Wave3'
+        ReferencedTextures[1] = Texture2D'Gradient_Color_RedToOrange_000'
+        ReferencedTextures[2] = Texture2D'Gradient_Beam_007_Clamp'
+        ReferencedTextures[3] = Texture2D'Env_Fx_LightningCloud_Lightning'
+        ReferencedTextures[4] = Texture2D'Gradient_Line_R_clamp'
+        ReferencedTextures[5] = Texture2D'Gradient_Beam_007'
+        ReferencedTextures[6] = Texture2D'Gradient_Line_005'
+    }
     BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
@@ -2993,6 +3054,24 @@ ClassName: Material3 ObjectName: Test_Marble02
     bDisableDepthTest = false
     bIsMasked = false
     ReferencedTextures[3] = { Texture2D'Smoke_Inc_001', Texture2D'Ring_002', Texture2D'Noise_Plazma_001' }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: tornado
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] = { Texture2D'Normal_Noise_003', Texture2D'Unique_Stone_001', Texture2D'Glow_007' }
     BlendMode = BLEND_Translucent (2)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None

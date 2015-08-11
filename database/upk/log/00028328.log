@@ -1,11 +1,11 @@
-Found 19856 game files (132 skipped)
-Loading package: 00028328.upk Ver: 573/1 Engine: 4205 Names: 402 Exports: 895 Imports: 145 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00028328.upk Ver: 573/1 Engine: 4205 Names: 401 Exports: 876 Imports: 145 Game: 801A
 Loading Material3 T3-5_Guntlet_edge from package 00028328.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading package: 00018320.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 10 Imports: 2 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading MaterialInstanceConstant T3-5_Guntlet_e_INST from package 00028328.upk
-Loading package: 00028330.upk Ver: 573/1 Engine: 4205 Names: 454 Exports: 497 Imports: 151 Game: 801A
+Loading package: 00028330.upk Ver: 573/1 Engine: 4205 Names: 453 Exports: 492 Imports: 151 Game: 801A
 Loading MaterialInstanceConstant T3-5_Guntlet_ee_INST from package 00028328.upk
 Loading package: 00028326.upk Ver: 573/1 Engine: 4205 Names: 470 Exports: 914 Imports: 179 Game: 801A
 Loading SkeletalMesh3 020191_Autoscale_L from package 00028328.upk
@@ -30,7 +30,7 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_274 from package 00028328.upk
 WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
 WARNING: BoolProperty "USkeletalMeshSocket::bParticleApplyAutoScale" was not found
 Loading StaticMesh3 T3-5_020191_Mesh_L from package 00028328.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 925 Exports: 4775 Imports: 262 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 934 Exports: 4850 Imports: 265 Game: 801A
 Loading StaticMesh3 T3-5_021091_Mesh_R from package 00028328.upk
 Loading Texture2D T3-5_020135_Mask from package 00028328.upk
 Loading Texture2D Weapon_020135_col1_N from package 00018320.upk
@@ -76,7 +76,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.25 sec, 5595 allocs, 2.51 MBytes serialized in 389515 calls.
+Loaded in 0.27 sec, 5613 allocs, 2.51 MBytes serialized in 390706 calls.
 
 Object info:
 ============
@@ -118,7 +118,7 @@ ClassName: MaterialInstanceConstant ObjectName: T3-5_Guntlet_e_INST
     {
         VectorParameterValues[0] =
         {
-            ParameterName = None
+            ParameterName = Color
             ParameterValue = { R=0.678431, G=0.160784, B=0.152941, A=1 }
         }
     }
@@ -148,7 +148,7 @@ ClassName: MaterialInstanceConstant ObjectName: T3-5_Guntlet_ee_INST
     {
         VectorParameterValues[0] =
         {
-            ParameterName = None
+            ParameterName = Color
             ParameterValue = { R=0.831373, G=0.286275, B=0.070588, A=1 }
         }
     }

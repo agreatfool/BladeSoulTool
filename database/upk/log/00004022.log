@@ -1,5 +1,5 @@
-Found 19856 game files (132 skipped)
-Loading package: 00004022.upk Ver: 573/1 Engine: 4205 Names: 90 Exports: 5 Imports: 6 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00004022.upk Ver: 573/1 Engine: 4205 Names: 135 Exports: 5 Imports: 6 Game: 801A
 Loading SkeletalMesh3 LynF_001 from package 00004022.upk
 Loading package: 00004021.upk Ver: 573/1 Engine: 4205 Names: 50 Exports: 2 Imports: 16 Game: 801A
 Loading SkeletalMesh3 X_LynF_001_hi from package 00004022.upk
@@ -15,7 +15,7 @@ Loading Texture2D face_m from package 00004020.upk
 Loading TextureCube eye2 from package 00002640.upk
 Loading Material3 Face_test3 from package 00007569.upk
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 134 Exports: 73 Imports: 11 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -45,7 +45,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.19 sec, 2449 allocs, 1.44 MBytes serialized in 309488 calls.
+Loaded in 0.23 sec, 2516 allocs, 1.48 MBytes serialized in 322957 calls.
 
 Object info:
 ============
@@ -58,26 +58,28 @@ ClassName: SkeletalMesh3 ObjectName: LynF_001
             DisplayFactor = 0
             LODHysteresis = 0.02
             LODMaterialMap[0] = {}
-            bEnableShadowCasting[1] = { true }
+            bEnableShadowCasting[3] = { true, true, true }
         }
     }
     Sockets[0] = {}
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
-    Materials[1] = { MaterialInstanceConstant'col1' }
+    Materials[3] = { MaterialInstanceConstant'col1', None, None }
 
 
     Lods[1] =
     {
         Lods[0] =
         {
-            Sections[1] =
+            Sections[3] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1742 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1168 }
+                Sections[1] = { Material=None, FirstIndex=3504, NumFaces=176 }
+                Sections[2] = { Material=None, FirstIndex=4032, NumFaces=650 }
             }
-            NumVerts = 1136
-            IndexCount = 5226
+            NumVerts = 1317
+            IndexCount = 5982
             NumTexCoords = 1
         }
     }
@@ -85,7 +87,7 @@ ClassName: SkeletalMesh3 ObjectName: LynF_001
     MeshOrigin = { X=-0, Y=-0, Z=-0 }
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
-    BoneCount = 61
+    BoneCount = 106
 
 Object info:
 ============

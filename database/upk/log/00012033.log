@@ -1,11 +1,12 @@
-Found 19856 game files (132 skipped)
-Loading package: 00012033.upk Ver: 573/1 Engine: 4205 Names: 264 Exports: 357 Imports: 27 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00012033.upk Ver: 573/1 Engine: 4205 Names: 268 Exports: 358 Imports: 27 Game: 801A
 Loading SkeletalMesh3 UnbalanceZombieB from package 00012033.upk
 WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PlayParticleSet" was not found
 WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::ShowEffectDistanceScale" was not found
 WARNING: ByteProperty "USkeletalMesh3::CommonPhysicsUseFlag" was not found
 Loading package: 00013335.upk Ver: 573/1 Engine: 4205 Names: 175 Exports: 146 Imports: 49 Game: 801A
 Loading SkeletalMeshSocket SkeletalMeshSocket_120 from package 00012033.upk
@@ -23,10 +24,12 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_222 from package 00012033.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_223 from package 00012033.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_225 from package 00012033.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_226 from package 00012033.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_89 from package 00012033.upk
+WARNING: BoolProperty "USkeletalMeshSocket::bParticleAttachPosOnly" was not found
 Loading MaterialInstanceConstant col2 from package 00013335.upk
 Loading package: 00012031.upk Ver: 573/1 Engine: 4205 Names: 59 Exports: 31 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading Texture2D Monster_Human_UnbalanceZombieB_col1_N from package 00012031.upk
 Loading Texture2D Monster_Human_UnbalanceZombieB_col2_M from package 00012031.upk
 Loading Texture2D Monster_Human_UnbalanceZombieB_col2_D from package 00012031.upk
@@ -49,7 +52,7 @@ Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Noise_Glass_000 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.15 sec, 3254 allocs, 3.06 MBytes serialized in 393907 calls.
+Loaded in 0.19 sec, 3270 allocs, 3.06 MBytes serialized in 394212 calls.
 
 Object info:
 ============
@@ -65,7 +68,7 @@ ClassName: SkeletalMesh3 ObjectName: UnbalanceZombieB
             bEnableShadowCasting[2] = { true, true }
         }
     }
-    Sockets[13] =
+    Sockets[14] =
     {
         Sockets[0] = SkeletalMeshSocket'UnbalanceZombieB.SkeletalMeshSocket_17'
         Sockets[1] = SkeletalMeshSocket'UnbalanceZombieB.SkeletalMeshSocket_14'
@@ -80,6 +83,7 @@ ClassName: SkeletalMesh3 ObjectName: UnbalanceZombieB
         Sockets[10] = SkeletalMeshSocket'UnbalanceZombieB.SkeletalMeshSocket_194'
         Sockets[11] = SkeletalMeshSocket'UnbalanceZombieB.SkeletalMeshSocket_120'
         Sockets[12] = SkeletalMeshSocket'UnbalanceZombieB.SkeletalMeshSocket_121'
+        Sockets[13] = SkeletalMeshSocket'UnbalanceZombieB.SkeletalMeshSocket_89'
     }
     bHasVertexColors = false
     EnableTwistBoneFixers = true
@@ -236,3 +240,13 @@ ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_226
     RelativeLocation = { X=0, Y=0, Z=0 }
     RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
     RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_89
+
+    SocketName = FX_Ghost_Bone
+    BoneName = Bip01
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=0.9, Y=0.9, Z=0.9 }

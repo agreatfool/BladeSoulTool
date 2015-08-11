@@ -1,8 +1,8 @@
-Found 19856 game files (132 skipped)
+Found 21310 game files (132 skipped)
 Loading package: 00026582.upk Ver: 573/1 Engine: 4205 Names: 204 Exports: 272 Imports: 55 Game: 801A
 Loading Material3 saintwildboarBasic from package 00026582.upk
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00026582.upk
 Loading package: 00026584.upk Ver: 573/1 Engine: 4205 Names: 40 Exports: 9 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
@@ -31,7 +31,7 @@ Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Texture2D Noise_Glass_000 from package 00012963.upk
-Loaded in 0.17 sec, 3026 allocs, 3.16 MBytes serialized in 169749 calls.
+Loaded in 0.2 sec, 3037 allocs, 3.16 MBytes serialized in 169980 calls.
 
 Object info:
 ============
@@ -73,7 +73,7 @@ ClassName: MaterialInstanceConstant ObjectName: col1
         ScalarParameterValues[5] = { ParameterName=HighLight_glossiness, ParameterValue=15 }
         ScalarParameterValues[6] = { ParameterName=Emissive_value, ParameterValue=3 }
         ScalarParameterValues[7] = { ParameterName=Emissive_value2, ParameterValue=3 }
-        ScalarParameterValues[8] = { ParameterName=Fresnel Value, ParameterValue=50 }
+        ScalarParameterValues[8] = { ParameterName=Fresnel Value, ParameterValue=15 }
         ScalarParameterValues[9] = { ParameterName=Fresnel exponent, ParameterValue=10 }
     }
     TextureParameterValues[10] =

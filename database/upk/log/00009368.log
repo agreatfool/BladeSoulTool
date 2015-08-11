@@ -1,5 +1,5 @@
-Found 19856 game files (132 skipped)
-Loading package: 00009368.upk Ver: 573/1 Engine: 4205 Names: 255 Exports: 156 Imports: 85 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00009368.upk Ver: 573/1 Engine: 4205 Names: 261 Exports: 162 Imports: 85 Game: 801A
 Loading Material3 animation from package 00009368.upk
 Loading Material3 FlipBookMaterial from package 00009368.upk
 WARNING: Unknown class "TextureFlipBook" for object "FlipBook"
@@ -15,6 +15,9 @@ Loading Texture2D intro4_texture from package 00009368.upk
 Loading Texture2D Loading_AniseDuelBack01 from package 00009368.upk
 Loading Texture2D Loading_ArenaBack01 from package 00009368.upk
 Loading Texture2D Loading_DuelBack01 from package 00009368.upk
+Loading Texture2D Loading_DuelBack03 from package 00009368.upk
+Loading Texture2D Loading_DuelBack04 from package 00009368.upk
+Loading Texture2D Loading_DuelBack05 from package 00009368.upk
 Loading Texture2D Loading_Enterworld1_01 from package 00009368.upk
 Loading Texture2D Loading_SuwalDungeonBack01 from package 00009368.upk
 Loading Texture2D LoadingBack01 from package 00009368.upk
@@ -35,7 +38,7 @@ Loading Texture2D nowloading3 from package 00009368.upk
 Loading Texture2D nowloading4 from package 00009368.upk
 Loading Texture2D nowloading5 from package 00009368.upk
 Loading Texture2D outro1_texture from package 00009368.upk
-Loaded in 0.092 sec, 459 allocs, 13.19 MBytes serialized in 7654 calls.
+Loaded in 0.1 sec, 480 allocs, 15.71 MBytes serialized in 8179 calls.
 
 Object info:
 ============
@@ -286,6 +289,51 @@ ClassName: Texture2D ObjectName: Loading_ArenaBack01
 Object info:
 ============
 ClassName: Texture2D ObjectName: Loading_DuelBack01
+
+    SizeX = 2048
+    SizeY = 2048
+    Format = PF_DXT1 (5)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Loading_DuelBack03
+
+    SizeX = 2048
+    SizeY = 2048
+    Format = PF_DXT1 (5)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Loading_DuelBack04
+
+    SizeX = 2048
+    SizeY = 2048
+    Format = PF_DXT1 (5)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Loading_DuelBack05
 
     SizeX = 2048
     SizeY = 2048

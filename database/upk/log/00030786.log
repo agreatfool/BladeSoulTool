@@ -1,5 +1,5 @@
-Found 19856 game files (132 skipped)
-Loading package: 00030786.upk Ver: 573/1 Engine: 4205 Names: 476 Exports: 832 Imports: 171 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00030786.upk Ver: 573/1 Engine: 4205 Names: 474 Exports: 772 Imports: 168 Game: 801A
 Loading MaterialInstanceConstant FX_col11 from package 00030786.upk
 Loading package: 00026440.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
 Loading package: 00028704.upk Ver: 573/1 Engine: 4205 Names: 31 Exports: 4 Imports: 2 Game: 801A
@@ -59,7 +59,7 @@ Loading Texture2D 030203_Autoscale_col1_D from package 00028704.upk
 Loading Material3 Basic_Base_IF_Masked_Mat from package 00028286.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1223 Exports: 1198 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00030793.upk
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
@@ -77,7 +77,7 @@ Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D 030203_Autoscale_col1_N from package 00028704.upk
 Loading Texture2D 030203_Autoscale_col1_M from package 00028704.upk
 Loading Material3 Ghost_Basic from package 00002620.upk
-Loaded in 0.29 sec, 4035 allocs, 1.98 MBytes serialized in 383445 calls.
+Loaded in 0.17 sec, 4044 allocs, 1.98 MBytes serialized in 382514 calls.
 
 Object info:
 ============
@@ -392,7 +392,7 @@ ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_470
 
     SocketName = FX_Add
     BoneName = FS_Bone
-    RelativeLocation = { X=0, Y=0.5, Z=0 }
+    RelativeLocation = { X=0, Y=0, Z=0 }
     RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
     RelativeScale = { X=1, Y=1, Z=1 }
 
@@ -412,7 +412,7 @@ ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_553
 
     SocketName = FX_Add
     BoneName = FS_Bone
-    RelativeLocation = { X=0, Y=0.5, Z=0 }
+    RelativeLocation = { X=0, Y=0, Z=0 }
     RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
     RelativeScale = { X=1, Y=1, Z=1 }
 
@@ -432,7 +432,7 @@ ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_570
 
     SocketName = FX_Add
     BoneName = FS_Bone
-    RelativeLocation = { X=0, Y=0.5, Z=0 }
+    RelativeLocation = { X=0, Y=0, Z=0 }
     RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
     RelativeScale = { X=1, Y=1, Z=1 }
 
@@ -452,7 +452,7 @@ ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_626
 
     SocketName = FX_Add
     BoneName = FS_Bone
-    RelativeLocation = { X=0, Y=0.5, Z=0 }
+    RelativeLocation = { X=0, Y=0, Z=0 }
     RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
     RelativeScale = { X=1, Y=1, Z=1 }
 
@@ -472,7 +472,7 @@ ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_640
 
     SocketName = FX_Add
     BoneName = FS_Bone
-    RelativeLocation = { X=0, Y=0.5, Z=0 }
+    RelativeLocation = { X=0, Y=0, Z=0 }
     RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
     RelativeScale = { X=1, Y=1, Z=1 }
 

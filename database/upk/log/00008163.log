@@ -1,11 +1,12 @@
-Found 19856 game files (132 skipped)
-Loading package: 00008163.upk Ver: 573/1 Engine: 4205 Names: 57 Exports: 28 Imports: 4 Game: 801A
+Found 21310 game files (132 skipped)
+Loading package: 00008163.upk Ver: 573/1 Engine: 4205 Names: 58 Exports: 29 Imports: 4 Game: 801A
 Loading Texture2D 60006_LynM_D1 from package 00008163.upk
 Loading Texture2D 60006_LynM_D3 from package 00008163.upk
 Loading Texture2D 60006_LynM_D4 from package 00008163.upk
 Loading Texture2D 60006_LynM_D5 from package 00008163.upk
 Loading Texture2D 60006_LynM_D6 from package 00008163.upk
 Loading Texture2D 60006_LynM_D8 from package 00008163.upk
+Loading Texture2D 60006_LynM_D9 from package 00008163.upk
 Loading Texture2D 60006_LynM_M1 from package 00008163.upk
 Loading Texture2D 60006_LynM_M4 from package 00008163.upk
 Loading Texture2D 60006_LynM_M5 from package 00008163.upk
@@ -20,7 +21,7 @@ Loading Texture2D 60006_LynM_S3 from package 00008163.upk
 Loading Texture2D 60006_LynM_S4 from package 00008163.upk
 Loading Texture2D 60006_LynM_S5 from package 00008163.upk
 Loading Texture2D 60006_LynM_S6 from package 00008163.upk
-Loaded in 0.14 sec, 679 allocs, 1.79 MBytes serialized in 4536 calls.
+Loaded in 0.16 sec, 712 allocs, 1.96 MBytes serialized in 4749 calls.
 
 Object info:
 ============
@@ -100,6 +101,21 @@ ClassName: Texture2D ObjectName: 60006_LynM_D6
 Object info:
 ============
 ClassName: Texture2D ObjectName: 60006_LynM_D8
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 60006_LynM_D9
 
     SizeX = 512
     SizeY = 512
