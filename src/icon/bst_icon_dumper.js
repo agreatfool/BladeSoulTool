@@ -92,6 +92,8 @@ BstIconDumper.prototype.process = function() {
         self.grunt.log.writeln('[BstIconDumper] Clear previous png outputs ...');
         self.util.deleteDir(BstConst.PATH_ICON_PNG);
         self.util.mkdir(BstConst.PATH_ICON_PNG);
+    } else {
+        self.util.mkdir(BstConst.PATH_ICON_PNG);
     }
 
     // 开始将tga转成png，方便预览
