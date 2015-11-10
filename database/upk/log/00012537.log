@@ -1,8 +1,8 @@
-Found 21310 game files (132 skipped)
-Loading package: 00012537.upk Ver: 573/1 Engine: 4205 Names: 813 Exports: 5696 Imports: 310 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00012537.upk Ver: 573/1 Engine: 4205 Names: 815 Exports: 5768 Imports: 310 Game: 801A
 Loading Material3 buff104_Defend_blue01 from package 00012537.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Material3 buff104_Defend_blue01_start_wind from package 00012537.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -59,7 +59,7 @@ Loading Material3 DashVIP_Test_Glow01 from package 00012537.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 DashVIP_Test_Glow02 from package 00012537.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00011426.upk Ver: 573/1 Engine: 4205 Names: 3014 Exports: 107427 Imports: 349 Game: 801A
+Loading package: 00011426.upk Ver: 573/1 Engine: 4205 Names: 3016 Exports: 107454 Imports: 349 Game: 801A
 Loading Material3 DashVIP_Test_Glow03 from package 00012537.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 DashVIP_Test_Glow04 from package 00012537.upk
@@ -87,7 +87,7 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Immunity_10sec from package 00012537.upk
 Loading Material3 Leaf000_MatB from package 00012537.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00007928.upk Ver: 573/1 Engine: 4205 Names: 915 Exports: 676 Imports: 114 Game: 801A
+Loading package: 00007928.upk Ver: 573/1 Engine: 4205 Names: 924 Exports: 685 Imports: 114 Game: 801A
 Loading Material3 M_Dragon_Panning_Blue_trans from package 00012537.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M_Dragon_Panning_M from package 00012537.upk
@@ -145,6 +145,8 @@ Loading Material3 M_RETURN_Ice_Smoke_Absorb_Mat from package 00012537.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M_Return_Trail_Beam_Noise from package 00012537.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 M_Return_Trail_Beam_Noise2 from package 00012537.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M_Return_Trail_Exe from package 00012537.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M_ReturnPortal_Beam_Noise_Trs1 from package 00012537.upk
@@ -201,6 +203,8 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Timmer_Circle_Unbeatable_M from package 00012537.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Timmer_Circle_Unbeatable_Velocity_PP from package 00012537.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 UV_Panning0081_MatM from package 00012537.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 UV_Panning008_MatM from package 00012537.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -427,7 +431,7 @@ Loading Texture2D CubemapFace2 from package cubemap_001.upk
 Loading Texture2D CubemapFace3 from package cubemap_001.upk
 Loading Texture2D CubemapFace4 from package cubemap_001.upk
 Loading Texture2D CubemapFace5 from package cubemap_001.upk
-Loaded in 1.5 sec, 11895 allocs, 15.01 MBytes serialized in 2194289 calls.
+Loaded in 1.6 sec, 11914 allocs, 15.02 MBytes serialized in 2196462 calls.
 
 Object info:
 ============
@@ -2294,6 +2298,30 @@ ClassName: Material3 ObjectName: M_Return_Trail_Beam_Noise
 
 Object info:
 ============
+ClassName: Material3 ObjectName: M_Return_Trail_Beam_Noise2
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'T_Gradation_g'
+        ReferencedTextures[1] = Texture2D'Smoke_Fractal_002'
+        ReferencedTextures[2] = Texture2D'Noise_Plazma_002'
+        ReferencedTextures[3] = Texture2D'Glow_Trail_001'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
 ClassName: Material3 ObjectName: M_Return_Trail_Exe
 
     TwoSided = false
@@ -3033,6 +3061,30 @@ ClassName: Material3 ObjectName: Timmer_Circle_Unbeatable_Velocity_PP
         ReferencedTextures[10] = Texture2D'Fire_000'
     }
     BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: UV_Panning0081_MatM
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Smoke_005'
+        ReferencedTextures[1] = Texture2D'Gradient_Beam_001'
+        ReferencedTextures[2] = Texture2D'Gradient_006'
+        ReferencedTextures[3] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Translucent (2)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
     MobileBaseTexture = None

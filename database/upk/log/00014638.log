@@ -1,5 +1,5 @@
-Found 21310 game files (132 skipped)
-Loading package: 00014638.upk Ver: 573/1 Engine: 4205 Names: 296 Exports: 672 Imports: 11 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00014638.upk Ver: 573/1 Engine: 4205 Names: 286 Exports: 664 Imports: 11 Game: 801A
 Loading SkeletalMesh3 MuseongM from package 00014638.upk
 WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
@@ -16,7 +16,7 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_86 from package 00014638.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_87 from package 00014638.upk
 Loading MaterialInstanceConstant Human_MuseongM from package 00014637.upk
 Loading package: 00014636.upk Ver: 573/1 Engine: 4205 Names: 39 Exports: 10 Imports: 4 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D Human_MuseongM_N from package 00014636.upk
 Loading Texture2D Human_MuseongM_M from package 00014636.upk
@@ -30,7 +30,7 @@ Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.12 sec, 2628 allocs, 3.19 MBytes serialized in 419431 calls.
+Loaded in 0.11 sec, 2620 allocs, 3.09 MBytes serialized in 387343 calls.
 
 Object info:
 ============
@@ -70,22 +70,22 @@ ClassName: SkeletalMesh3 ObjectName: MuseongM
         {
             Sections[3] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'Human_MuseongM', FirstIndex=0, NumFaces=6684 }
+                Sections[0] = { Material=MaterialInstanceConstant'Human_MuseongM', FirstIndex=0, NumFaces=5740 }
                 Sections[1] =
                 {
                     Material = MaterialInstanceConstant'Human_MuseongM'
-                    FirstIndex = 20052
-                    NumFaces = 1805
+                    FirstIndex = 17220
+                    NumFaces = 1599
                 }
                 Sections[2] =
                 {
                     Material = MaterialInstanceConstant'Human_MuseongM'
-                    FirstIndex = 25467
-                    NumFaces = 718
+                    FirstIndex = 22017
+                    NumFaces = 667
                 }
             }
-            NumVerts = 7217
-            IndexCount = 27621
+            NumVerts = 6276
+            IndexCount = 24018
             NumTexCoords = 1
         }
     }
@@ -93,7 +93,7 @@ ClassName: SkeletalMesh3 ObjectName: MuseongM
     MeshOrigin = { X=-0, Y=-0, Z=-0 }
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
-    BoneCount = 197
+    BoneCount = 188
 
 Object info:
 ============

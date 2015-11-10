@@ -1,11 +1,13 @@
-Found 21310 game files (132 skipped)
-Loading package: 00027869.upk Ver: 573/1 Engine: 4205 Names: 800 Exports: 17879 Imports: 244 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00027869.upk Ver: 573/1 Engine: 4205 Names: 821 Exports: 18539 Imports: 254 Game: 801A
+Loading Material3 M_tranform_Cooltimehighlight from package 00027869.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00011426.upk Ver: 573/1 Engine: 4205 Names: 3016 Exports: 107454 Imports: 349 Game: 801A
 Loading Material3 BG_FX_FlowerLeaf_002_Mat from package 00027869.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M_battle_flower_subUV_sacura_jpn from package 00027869.upk
 Loading Material3 M_check_complete_result_particle from package 00027869.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00011426.upk Ver: 573/1 Engine: 4205 Names: 3014 Exports: 107427 Imports: 349 Game: 801A
 Loading Material3 M_check_dolimpan_back2_jpn from package 00027869.upk
 Loading Material3 M_check_malpan_jpn from package 00027869.upk
 Loading Material3 M_check_malpan_pin_jpn from package 00027869.upk
@@ -28,7 +30,7 @@ Loading Material3 M_pvp_have_all_fx from package 00027869.upk
 Loading Material3 M_pvp_have_all_test from package 00027869.upk
 Loading Material3 M_QuestPanning_m_arrow from package 00027869.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Material3 M_refine_bg_backimg from package 00027869.upk
 Loading Material3 M_refine_icon_dragon from package 00027869.upk
@@ -39,6 +41,7 @@ Loading Material3 M_tagmatch_flag_red from package 00027869.upk
 Loading Material3 M_tagmatch_flag_red1 from package 00027869.upk
 Loading Material3 M_tagmatch_gage_active from package 00027869.upk
 Loading Material3 M_trainnig_progress from package 00027869.upk
+Loading Material3 M_transform_autoButton_slide from package 00027869.upk
 Loading Material3 M_transform_mark_arrow_ from package 00027869.upk
 Loading Material3 M_transform_mark_arrow_1 from package 00027869.upk
 Loading Material3 M_transform_mark_arrow_blur from package 00027869.upk
@@ -48,6 +51,7 @@ Loading Material3 M_transform_mark_arrow_circle_knife_batggi from package 000278
 Loading Material3 M_transform_mark_arrow_color from package 00027869.upk
 Loading Material3 M_transform_mark_arrow_line from package 00027869.upk
 Loading Material3 M_transform_mark_arrow_slim_blur from package 00027869.upk
+Loading Material3 M_transform_mark_arrow_stand from package 00027869.upk
 Loading Material3 M_youngok_icon from package 00027869.upk
 Loading Material3 Sparkle32000_MatM from package 00027869.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -72,7 +76,7 @@ Loading MaterialInstanceConstant M_nightWind_T25_INST from package 00027869.upk
 Loading MaterialInstanceConstant M_nightWind_T30_INST from package 00027869.upk
 Loading MaterialInstanceConstant M_nightWind_T5_INST from package 00027869.upk
 Loading StaticMesh3 BG_FX_Mesh_FlowerLeaf_002 from package 00027869.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 934 Exports: 4850 Imports: 265 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 935 Exports: 4882 Imports: 265 Game: 801A
 Loading Texture2D Sparkle_002 from package 00027869.upk
 Loading Texture2D T_BG_FX_FlowerLeaf_002_D from package 00027869.upk
 Loading Texture2D T_center_mark_img from package 00027869.upk
@@ -134,8 +138,10 @@ Loading Texture2D T_transform_arrow_top_slim_blure from package 00027869.upk
 Loading Texture2D T_transform_arrow_top_slim_clip from package 00027869.upk
 Loading Texture2D T_transform_arrow_top_slim_new_circle from package 00027869.upk
 Loading Texture2D T_transform_arrow_top_tie_blur from package 00027869.upk
+Loading Texture2D T_transform_mark_arrow_stand from package 00027869.upk
 Loading Texture2D T_Unique_Bone_D_000 from package 00027869.upk
 Loading Texture2D Tex_Inventory_ExpandBreak01 from package 00027869.upk
+Loading Texture2D Tex_skill_bar_UI_mask from package 00011426.upk
 Loading Texture2D Glow_008 from package 00011426.upk
 Loading Texture2D Smoke_Fractal_002 from package 00011426.upk
 Loading Texture2D Smoke_Dusts_003 from package 00011426.upk
@@ -147,6 +153,8 @@ Loading Texture2D DefaultTexture from package EngineResources.upk
 Loading Texture2D Tex_Glow_002 from package 00011426.upk
 Loading Texture2D Smoke_Fractal_002 from package 00012963.upk
 Loading Texture2D T_training_progress_128 from package 00011426.upk
+Loading Texture2D Tex_highlight_Gradient_004_ from package 00011426.upk
+Loading Texture2D T_newTreasureBox_slide_box from package 00011426.upk
 Loading Texture2D Fire_004 from package 00012963.upk
 Loading Texture2D Noise_010 from package 00012963.upk
 Loading Texture2D Gradient_Beam_007 from package 00012963.upk
@@ -156,7 +164,25 @@ Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Texture2D T_dolimpan_Number1_ara from package 00011426.upk
 Loading Texture2D Cube000_Tex from package 00012892.upk
-Loaded in 0.45 sec, 6969 allocs, 9.82 MBytes serialized in 2401012 calls.
+Loaded in 0.58 sec, 7067 allocs, 9.88 MBytes serialized in 2414773 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: M_tranform_Cooltimehighlight
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Texture.Tex_skill_bar_UI_mask' }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
 
 Object info:
 ============
@@ -695,6 +721,28 @@ ClassName: Material3 ObjectName: M_trainnig_progress
 
 Object info:
 ============
+ClassName: Material3 ObjectName: M_transform_autoButton_slide
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] =
+    {
+        ReferencedTextures[0] = Texture2D'Texture.Tex_highlight_Gradient_004_'
+        ReferencedTextures[1] = Texture2D'Textures.T_newTreasureBox_slide_box'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
 ClassName: Material3 ObjectName: M_transform_mark_arrow_
 
     TwoSided = false
@@ -845,6 +893,24 @@ ClassName: Material3 ObjectName: M_transform_mark_arrow_slim_blur
     bDisableDepthTest = false
     bIsMasked = false
     ReferencedTextures[1] = { Texture2D'Textures.T_transform_arrow_top_slim_blure' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: M_transform_mark_arrow_stand
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Textures.T_transform_mark_arrow_stand' }
     BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
@@ -2239,6 +2305,21 @@ ClassName: Texture2D ObjectName: T_transform_arrow_top_tie_blur
     Format = PF_DXT1 (5)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_transform_mark_arrow_stand
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false

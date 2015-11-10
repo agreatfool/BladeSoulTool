@@ -1,5 +1,5 @@
-Found 21310 game files (132 skipped)
-Loading package: 00030447.upk Ver: 573/1 Engine: 4205 Names: 41 Exports: 12 Imports: 4 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00030447.upk Ver: 573/1 Engine: 4205 Names: 47 Exports: 18 Imports: 4 Game: 801A
 Loading Texture2D 990213_Autoscale_col1_D from package 00030447.upk
 Loading Texture2D 990213_Autoscale_col1_M from package 00030447.upk
 Loading Texture2D 990213_Autoscale_col1_N from package 00030447.upk
@@ -8,7 +8,10 @@ Loading Texture2D 990213_Autoscale_col2_D from package 00030447.upk
 Loading Texture2D 990213_Autoscale_col2_E from package 00030447.upk
 Loading Texture2D 990213_Autoscale_col2_M from package 00030447.upk
 Loading Texture2D 990213_Autoscale_col2_S from package 00030447.upk
-Loaded in 0.062 sec, 309 allocs, 0.46 MBytes serialized in 1916 calls.
+Loading Texture2D 990213_Autoscale_col3_D from package 00030447.upk
+Loading Texture2D 990213_Autoscale_col3_E from package 00030447.upk
+Loading Texture2D 990213_Autoscale_col3_S from package 00030447.upk
+Loaded in 0.13 sec, 408 allocs, 0.62 MBytes serialized in 2596 calls.
 
 Object info:
 ============
@@ -118,6 +121,51 @@ ClassName: Texture2D ObjectName: 990213_Autoscale_col2_M
 Object info:
 ============
 ClassName: Texture2D ObjectName: 990213_Autoscale_col2_S
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990213_Autoscale_col3_D
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990213_Autoscale_col3_E
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990213_Autoscale_col3_S
 
     SizeX = 512
     SizeY = 256

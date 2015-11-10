@@ -1,14 +1,17 @@
-Found 21310 game files (132 skipped)
-Loading package: 00023734.upk Ver: 573/1 Engine: 4205 Names: 39 Exports: 8 Imports: 2 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00023734.upk Ver: 573/1 Engine: 4205 Names: 42 Exports: 11 Imports: 2 Game: 801A
 Loading Texture2D Zakan_col2_D from package 00023734.upk
 Loading Texture2D Zakan_col2_S from package 00023734.upk
+Loading Texture2D Zakan_col3_D from package 00023734.upk
+Loading Texture2D Zakan_col3_E from package 00023734.upk
+Loading Texture2D Zakan_col3_S from package 00023734.upk
 Loading Texture2D Zakan_D from package 00023734.upk
 Loading Texture2D Zakan_E from package 00023734.upk
 Loading Texture2D zakan_fx_mask from package 00023734.upk
 Loading Texture2D Zakan_M from package 00023734.upk
 Loading Texture2D Zakan_N from package 00023734.upk
 Loading Texture2D Zakan_S from package 00023734.upk
-Loaded in 0.11 sec, 328 allocs, 8.38 MBytes serialized in 2231 calls.
+Loaded in 0.17 sec, 439 allocs, 11.57 MBytes serialized in 3156 calls.
 
 Object info:
 ============
@@ -28,6 +31,51 @@ ClassName: Texture2D ObjectName: Zakan_col2_D
 Object info:
 ============
 ClassName: Texture2D ObjectName: Zakan_col2_S
+
+    SizeX = 2048
+    SizeY = 2048
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 11
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Zakan_col3_D
+
+    SizeX = 2048
+    SizeY = 2048
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 11
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Zakan_col3_E
+
+    SizeX = 2048
+    SizeY = 2048
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 11
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Zakan_col3_S
 
     SizeX = 2048
     SizeY = 2048

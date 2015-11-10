@@ -1,9 +1,10 @@
-Found 21310 game files (132 skipped)
-Loading package: 00031911.upk Ver: 573/1 Engine: 4205 Names: 63 Exports: 5 Imports: 8 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00031911.upk Ver: 573/1 Engine: 4205 Names: 65 Exports: 5 Imports: 8 Game: 801A
 Loading SkeletalMesh3 AncientRuneMechImprison from package 00031911.upk
 WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::PhysicalHitScale" was not found
 Loading package: 00031910.upk Ver: 573/1 Engine: 4205 Names: 91 Exports: 1 Imports: 20 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00031910.upk
 Loading package: 00031912.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 5 Imports: 2 Game: 801A
@@ -17,7 +18,7 @@ Loading TextureCube MatelR3 from package 00002640.upk
 Loading Texture2D AncientRuneMechImprison_col1_E from package 00031912.upk
 WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -30,7 +31,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.13 sec, 2845 allocs, 1.47 MBytes serialized in 233624 calls.
+Loaded in 0.15 sec, 2849 allocs, 1.47 MBytes serialized in 233667 calls.
 
 Object info:
 ============
@@ -61,7 +62,7 @@ ClassName: SkeletalMesh3 ObjectName: AncientRuneMechImprison
             {
                 Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=2604 }
             }
-            NumVerts = 2203
+            NumVerts = 2202
             IndexCount = 7812
             NumTexCoords = 1
         }
@@ -70,4 +71,4 @@ ClassName: SkeletalMesh3 ObjectName: AncientRuneMechImprison
     MeshOrigin = { X=-0, Y=-0, Z=-0 }
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
-    BoneCount = 9
+    BoneCount = 10

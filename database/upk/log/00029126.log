@@ -1,30 +1,85 @@
-Found 21310 game files (132 skipped)
-Loading package: 00029126.upk Ver: 573/1 Engine: 4205 Names: 91 Exports: 1 Imports: 20 Game: 801A
-Loading MaterialInstanceConstant col1 from package 00029126.upk
-Loading package: 00029125.upk Ver: 573/1 Engine: 4205 Names: 31 Exports: 5 Imports: 2 Game: 801A
-Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00029126.upk Ver: 573/1 Engine: 4205 Names: 205 Exports: 773 Imports: 55 Game: 801A
+Loading Material3 DemonEmperorFat_FX from package 00029126.upk
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading Texture2D DemonEmperorFat_col1_N from package 00029125.upk
-Loading Texture2D DemonEmperorFat_col1_M from package 00029125.upk
-Loading Texture2D DemonEmperorFat_col1_D from package 00029125.upk
-Loading Texture2D DemonEmperorFat_col1_S from package 00029125.upk
-Loading TextureCube cube_orb from package 00002640.upk
-Loading Texture2D DemonEmperorFat_col1_E from package 00029125.upk
-Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
-Loading Texture2D CubemapFace0 from package 00002640.upk
-Loading Texture2D CubemapFace1 from package 00002640.upk
-Loading Texture2D CubemapFace2 from package 00002640.upk
-Loading Texture2D CubemapFace3 from package 00002640.upk
-Loading Texture2D CubemapFace4 from package 00002640.upk
-Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading Material3 fX from package 00029126.upk
+Loading MaterialInstanceConstant col1 from package 00029126.upk
+Loading package: 00029125.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 7 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D check from package 00002620.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.16 sec, 2786 allocs, 3.71 MBytes serialized in 162799 calls.
+Loading Texture2D DemonEmperorFat_col1_N from package 00029125.upk
+Loading Texture2D DemonEmperorFat_col1_M from package 00029125.upk
+Loading Texture2D DemonEmperorFat_col1_D from package 00029125.upk
+Loading Texture2D DemonEmperorFat_col1_S from package 00029125.upk
+Loading TextureCube cube_orb from package 00002640.upk
+Loading Texture2D DemonEmperorFat_col1_E from package 00029125.upk
+Loading Texture2D DemonEmperorFat_FXMask from package 00029125.upk
+Loading Texture2D DemonEmperorFat_col1_D_fx from package 00029125.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.18 sec, 2973 allocs, 4.64 MBytes serialized in 178508 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: DemonEmperorFat_FX
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'check_n'
+        ReferencedTextures[1] = Texture2D'check'
+        ReferencedTextures[2] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[4] = Texture2D'Gradient_Wipe_BurnOut_Mask_TEST'
+        ReferencedTextures[5] = Texture2D'Gradient_Wipe_BurnOut_Mask'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: fX
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'check_n'
+        ReferencedTextures[1] = Texture2D'check'
+        ReferencedTextures[2] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[4] = Texture2D'Gradient_Wipe_BurnOut_Mask_TEST'
+        ReferencedTextures[5] = Texture2D'Gradient_Wipe_BurnOut_Mask'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
 
 Object info:
 ============
@@ -43,7 +98,7 @@ ClassName: MaterialInstanceConstant ObjectName: col1
         ScalarParameterValues[8] = { ParameterName=Fresnel Value, ParameterValue=1 }
         ScalarParameterValues[9] = { ParameterName=Fresnel exponent, ParameterValue=30 }
     }
-    TextureParameterValues[6] =
+    TextureParameterValues[8] =
     {
         TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'DemonEmperorFat_col1_N' }
         TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'DemonEmperorFat_col1_M' }
@@ -51,66 +106,163 @@ ClassName: MaterialInstanceConstant ObjectName: col1
         TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'DemonEmperorFat_col1_S' }
         TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'cube_orb' }
         TextureParameterValues[5] = { ParameterName=Emissive, ParameterValue=Texture2D'DemonEmperorFat_col1_E' }
+        TextureParameterValues[6] = { ParameterName=fX, ParameterValue=Texture2D'DemonEmperorFat_FXMask' }
+        TextureParameterValues[7] = { ParameterName=Diffuse_fx, ParameterValue=Texture2D'DemonEmperorFat_col1_D_fx' }
     }
-    VectorParameterValues[11] =
+    VectorParameterValues[30] =
     {
         VectorParameterValues[0] =
-        {
-            ParameterName = Mesh_trangition
-            ParameterValue = { R=0, G=0, B=0, A=1 }
-        }
-        VectorParameterValues[1] =
-        {
-            ParameterName = Reflection_value
-            ParameterValue = { R=1, G=1, B=1, A=1 }
-        }
-        VectorParameterValues[2] =
-        {
-            ParameterName = HighLight_Color
-            ParameterValue = { R=1, G=1, B=1, A=1 }
-        }
-        VectorParameterValues[3] =
-        {
-            ParameterName = Fresnel_color
-            ParameterValue = { R=0, G=0, B=0, A=1 }
-        }
-        VectorParameterValues[4] =
-        {
-            ParameterName = Fresnel_Power
-            ParameterValue = { R=0, G=0, B=0, A=1 }
-        }
-        VectorParameterValues[5] =
-        {
-            ParameterName = Burn_Color
-            ParameterValue = { R=0, G=0, B=0, A=1 }
-        }
-        VectorParameterValues[6] =
-        {
-            ParameterName = Glow_Trangition
-            ParameterValue = { R=0, G=0, B=0, A=1 }
-        }
-        VectorParameterValues[7] =
-        {
-            ParameterName = Fx_Glow_power
-            ParameterValue = { R=0, G=0, B=0, A=1 }
-        }
-        VectorParameterValues[8] =
-        {
-            ParameterName = Fx_Glow_color
-            ParameterValue = { R=0, G=0, B=0, A=1 }
-        }
-        VectorParameterValues[9] =
         {
             ParameterName = AC_color
             ParameterValue = { R=1, G=1, B=1, A=1 }
         }
-        VectorParameterValues[10] =
+        VectorParameterValues[1] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
         {
             ParameterName = AC_specular
             ParameterValue = { R=1, G=1, B=1, A=1 }
         }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = HighLight_Color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = Burn_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = Fx_Glow_power5
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = Glow_Trangition5
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[10] =
+        {
+            ParameterName = Fx_Glow_color5
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[11] =
+        {
+            ParameterName = Fx_Glow_power3
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[12] =
+        {
+            ParameterName = Glow_Trangition3
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[13] =
+        {
+            ParameterName = Fx_Glow_color3
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[14] =
+        {
+            ParameterName = Fx_Glow_power_Wr
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[15] =
+        {
+            ParameterName = Glow_Trangition_Wr
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[16] =
+        {
+            ParameterName = Fx_Glow_color_Wr
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[17] =
+        {
+            ParameterName = Fx_Glow_power4
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[18] =
+        {
+            ParameterName = Glow_Trangition4
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[19] =
+        {
+            ParameterName = Fx_Glow_color4
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[20] =
+        {
+            ParameterName = Fx_Glow_power_B
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[21] =
+        {
+            ParameterName = Glow_Trangition_B
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[22] =
+        {
+            ParameterName = Fx_Glow_color_B
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[23] =
+        {
+            ParameterName = Fx_Glow_power2
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[24] =
+        {
+            ParameterName = Glow_Trangition2
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[25] =
+        {
+            ParameterName = Fx_Glow_color2
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[26] =
+        {
+            ParameterName = Fx_Glow_power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[27] =
+        {
+            ParameterName = Glow_Trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[28] =
+        {
+            ParameterName = Fx_Glow_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[29] =
+        {
+            ParameterName = Diffuse_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
     }
-    Parent = Material3'Basic'
+    Parent = Material3'DemonEmperorFat_FX'
     FlattenedTexture = None
     MobileBaseTexture = None
     MobileNormalTexture = None

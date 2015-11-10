@@ -1,10 +1,14 @@
-Found 21310 game files (132 skipped)
-Loading package: 00029704.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 6 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00029704.upk Ver: 573/1 Engine: 4205 Names: 40 Exports: 9 Imports: 6 Game: 801A
 Loading Texture2D 60127_GonM_col1_d from package 00029704.upk
 Loading Texture2D 60127_GonM_col1_m from package 00029704.upk
 Loading Texture2D 60127_GonM_col1_n from package 00029704.upk
 Loading Texture2D 60127_GonM_col1_s from package 00029704.upk
-Loaded in 0.087 sec, 185 allocs, 1.06 MBytes serialized in 1088 calls.
+Loading Texture2D 60127_GonM_col2_D from package 00029704.upk
+Loading Texture2D 60127_GonM_col2_M from package 00029704.upk
+Loading Texture2D 60127_GonM_col2_N from package 00029704.upk
+Loading Texture2D 60127_GonM_col2_S from package 00029704.upk
+Loaded in 0.085 sec, 320 allocs, 1.99 MBytes serialized in 2004 calls.
 
 Object info:
 ============
@@ -58,6 +62,66 @@ ClassName: Texture2D ObjectName: 60127_GonM_col1_s
     SizeX = 512
     SizeY = 512
     Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 60127_GonM_col2_D
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 60127_GonM_col2_M
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 60127_GonM_col2_N
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 60127_GonM_col2_S
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None

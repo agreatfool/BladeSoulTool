@@ -1,9 +1,9 @@
-Found 21310 game files (132 skipped)
+Found 21975 game files (132 skipped)
 Loading package: 00003780.upk Ver: 573/1 Engine: 4205 Names: 459 Exports: 650 Imports: 36 Game: 801A
 Loading Material3 aaa from package 00003780.upk
 Loading SkeletalMesh3 aaa from package 00003780.upk
 Loading SkeletalMesh3 AnimTree_mesh from package 00003780.upk
-Loading package: 00002748.upk Ver: 573/1 Engine: 4205 Names: 79 Exports: 3 Imports: 19 Game: 801A
+Loading package: 00002748.upk Ver: 573/1 Engine: 4205 Names: 91 Exports: 1 Imports: 19 Game: 801A
 Loading package: 00002624.upk Ver: 573/1 Engine: 4205 Names: 54 Exports: 2 Imports: 18 Game: 801A
 Loading package: 00002692.upk Ver: 573/1 Engine: 4205 Names: 122 Exports: 5 Imports: 34 Game: 801A
 Loading SkeletalMesh3 JinF from package 00003780.upk
@@ -20,21 +20,23 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_0 from package 00003780.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_5 from package 00003780.upk
 Loading MaterialInstanceConstant col1 from package 00002748.upk
 Loading package: 00002745.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00002624.upk
 Loading package: 00002617.upk Ver: 573/1 Engine: 4205 Names: 34 Exports: 6 Imports: 4 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00002692.upk
 Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
 Loading package: 00008530.upk Ver: 573/1 Engine: 4205 Names: 30 Exports: 9 Imports: 2 Game: 801A
-Loading package: 00002688.upk Ver: 573/1 Engine: 4205 Names: 45 Exports: 16 Imports: 4 Game: 801A
+Loading package: 00002688.upk Ver: 573/1 Engine: 4205 Names: 48 Exports: 20 Imports: 4 Game: 801A
 Loading Material3 Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00004262.upk
 Loading package: 00004263.upk Ver: 573/1 Engine: 4205 Names: 41 Exports: 12 Imports: 4 Game: 801A
-Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading Texture2D MF001_n from package 00002745.upk
 Loading Texture2D MF001_m1 from package 00002745.upk
 Loading Texture2D MF001_d from package 00002745.upk
 Loading Texture2D MF001_S from package 00002745.upk
+Loading TextureCube lenscube_a from package 00002640.upk
+Loading Texture2D check from package 00002620.upk
 Loading Texture2D JinF_001_col1_D from package 00002617.upk
 Loading Texture2D JinF_001_col1_N from package 00002617.upk
 WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
@@ -53,13 +55,18 @@ Loading Texture2D Noise_Glass_000 from package 00012963.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loading Texture2D check from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D body_n from package 00004263.upk
 Loading Texture2D body_m1 from package 00004263.upk
 Loading Texture2D body_d from package 00004263.upk
 Loading Texture2D body_s from package 00004263.upk
 Loading TextureCube cube_orb from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Texture2D DefaultTexture from package EngineResources.upk
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
@@ -67,7 +74,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.47 sec, 4647 allocs, 7.33 MBytes serialized in 1399107 calls.
+Loaded in 0.42 sec, 4821 allocs, 7.40 MBytes serialized in 1400729 calls.
 
 Object info:
 ============

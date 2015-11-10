@@ -1,5 +1,5 @@
-Found 21310 game files (132 skipped)
-Loading package: 00012512.upk Ver: 573/1 Engine: 4205 Names: 565 Exports: 1552 Imports: 174 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00012512.upk Ver: 573/1 Engine: 4205 Names: 550 Exports: 1557 Imports: 173 Game: 801A
 Loading AnimSet Assassin_Butterfly_anim from package 00012512.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -25,7 +25,7 @@ WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
 Loading AnimSequence AnimSequence_0 from package 00012512.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading Material3 Asassin_BombSmoke_MatM from package 00012512.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading Material3 Assassin_BlashBack_MatM from package 00012512.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Assassin_Bomb_Decal from package 00012512.upk
@@ -35,7 +35,6 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Material3 Assassin_CaltLop000_MatM from package 00012512.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: cubemap_001.upk Ver: 573/1 Engine: 4205 Names: 177 Exports: 517 Imports: 34 Game: 801A
 Loading Material3 Assassin_Defualt_FX_Test from package 00012512.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Assassin_Defualt_FX_Test2 from package 00012512.upk
@@ -44,8 +43,9 @@ Loading Material3 Assassin_Defualt_FX_test3 from package 00012512.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Assassin_Doll000_MatM from package 00012512.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00007928.upk Ver: 573/1 Engine: 4205 Names: 915 Exports: 676 Imports: 114 Game: 801A
+Loading package: 00007928.upk Ver: 573/1 Engine: 4205 Names: 924 Exports: 685 Imports: 114 Game: 801A
 Loading Material3 Assassin_Flash_Loof_Scenmaterial from package 00012512.upk
+Loading Material3 Assassin_Flash_Loof_Scenmaterial_2 from package 00012512.upk
 Loading Material3 Assassin_Flower2_MatM from package 00012512.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Assassin_Flower_MatM from package 00012512.upk
@@ -116,6 +116,7 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Suriken000_MatB from package 00012512.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 TargetingMesh_Cone000_MatM from package 00012512.upk
+Loading MaterialInstanceConstant Assassin_Flash_Loof_Scenmaterial_2_INST from package 00012512.upk
 Loading MaterialInstanceConstant Assassin_Flash_Loof_Scenmaterial_INST from package 00012512.upk
 Loading MaterialInstanceConstant Assassin_Hide_PC_Lv1_INST from package 00012512.upk
 Loading MaterialInstanceConstant Assassin_Hide_PC_Lv1_Tail_INST from package 00012512.upk
@@ -129,7 +130,7 @@ Loading SkeletalMesh3 Asassin_Doll_Mesh from package 00012512.upk
 Loading SkeletalMesh3 Assassin_Butterfly_Mes from package 00012512.upk
 Loading SkeletalMesh3 Assassin_Tree_000 from package 00012512.upk
 Loading SkeletalMesh3 ShadowPenentration_Mesh from package 00012512.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 934 Exports: 4850 Imports: 265 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 935 Exports: 4882 Imports: 265 Game: 801A
 Loading StaticMesh3 Assassin_Caltlop000_Mes from package 00012512.upk
 Loading StaticMesh3 Assassin_Caltlop001_Mes from package 00012512.upk
 Loading StaticMesh3 Assassin_CaltLop_Area_Mes from package 00012512.upk
@@ -156,13 +157,6 @@ Loading Texture2D Assassin_Flower_D from package 00012512.upk
 Loading Texture2D Assassin_Flower_E from package 00012512.upk
 Loading Texture2D Assassin_Flower_N from package 00012512.upk
 Loading Texture2D Assassin_Flower_S from package 00012512.upk
-Loading TextureCube Assassin_SilverThread_Cube_Tex from package 00012512.upk
-Loading Texture2D CubemapFace0 from package 00012512.upk
-Loading Texture2D CubemapFace1 from package 00012512.upk
-Loading Texture2D CubemapFace2 from package 00012512.upk
-Loading Texture2D CubemapFace3 from package 00012512.upk
-Loading Texture2D CubemapFace4 from package 00012512.upk
-Loading Texture2D CubemapFace5 from package 00012512.upk
 Loading Texture2D Assassin_SilverThread_Tex from package 00012512.upk
 Loading Texture2D Assassin_Suriken_D_Tex from package 00012512.upk
 Loading Texture2D Assassin_Suriken_N_Tex from package 00012512.upk
@@ -170,6 +164,7 @@ Loading Texture2D Assassin_Suriken_S_Tex from package 00012512.upk
 Loading Texture2D SpiderWeb000_Tex from package 00012512.upk
 Loading Texture2D SpiderWeb001_Tex from package 00012512.upk
 Loading Texture2D Suriken000_Tex from package 00012512.upk
+Loading TextureCube Assassin_SilverThread_Cube_Tex from package 00012512.upk
 Loading Texture2D Gradient_Beam_005_Out from package 00012963.upk
 Loading Texture2D Jaket000_Tex from package 00012963.upk
 Loading Texture2D Smoke_Dark_000 from package 00012963.upk
@@ -183,7 +178,6 @@ Loading Texture2D Decal_Mask_000 from package 00012963.upk
 Loading Texture2D Noise_002 from package 00012963.upk
 Loading Texture2D DefaultTexture from package EngineResources.upk
 Loading Texture2D Unique_Stone_000_Reflect from package 00012963.upk
-Loading TextureCube Stone_001_01_Cube from package cubemap_001.upk
 Loading Texture2D Noise_005 from package 00012963.upk
 Loading Texture2D Smoke_Dust_001 from package 00012963.upk
 Loading Texture2D Aura_Ripple_000 from package 00012963.upk
@@ -248,12 +242,6 @@ Loading Texture2D Gradient_Beam_000 from package 00012963.upk
 Loading Texture2D Target_Cone_Out000_D_Tex from package 00007928.upk
 Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading Texture2D CubemapFace0 from package cubemap_001.upk
-Loading Texture2D CubemapFace1 from package cubemap_001.upk
-Loading Texture2D CubemapFace2 from package cubemap_001.upk
-Loading Texture2D CubemapFace3 from package cubemap_001.upk
-Loading Texture2D CubemapFace4 from package cubemap_001.upk
-Loading Texture2D CubemapFace5 from package cubemap_001.upk
 Loading Texture2D CubemapFace0 from package 00012963.upk
 Loading Texture2D CubemapFace1 from package 00012963.upk
 Loading Texture2D CubemapFace2 from package 00012963.upk
@@ -272,6 +260,4 @@ UAnimSet::ConvertAnims <- PostLoad:Assassin_Doll000_Anim <- UObject::EndLoad <- 
     at ChildProcess.exithandler (child_process.js:637:15)
     at ChildProcess.EventEmitter.emit (events.js:98:17)
     at maybeClose (child_process.js:743:16)
-    at Socket.<anonymous> (child_process.js:956:11)
-    at Socket.EventEmitter.emit (events.js:95:17)
-    at Pipe.close (net.js:465:12)
+    at Process.ChildProcess._handle.onexit (child_process.js:810:5)

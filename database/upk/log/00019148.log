@@ -1,4 +1,4 @@
-Found 21310 game files (132 skipped)
+Found 21975 game files (132 skipped)
 Loading package: 00019148.upk Ver: 573/1 Engine: 4205 Names: 655 Exports: 651 Imports: 231 Game: 801A
 Loading AnimSet MuSin_Animset from package 00019148.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
@@ -495,7 +495,7 @@ Loading package: 00002685.upk Ver: 573/1 Engine: 4205 Names: 142 Exports: 5 Impo
 Loading StaticMesh3 dash_hair from package 00019148.upk
 Loading package: 00013879.upk Ver: 573/1 Engine: 4205 Names: 57 Exports: 2 Imports: 20 Game: 801A
 Loading StaticMesh3 evade1_1 from package 00019148.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 934 Exports: 4850 Imports: 265 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 935 Exports: 4882 Imports: 265 Game: 801A
 Loading StaticMesh3 evade1_2 from package 00019148.upk
 Loading StaticMesh3 evade1_3 from package 00019148.upk
 Loading StaticMesh3 evade1_4 from package 00019148.upk
@@ -523,7 +523,7 @@ Loading Texture2D Specular from package 00013845.upk
 Loading TextureCube lenscube_a from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Material3 Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading Texture2D Normal from package 00002665.upk
 Loading Texture2D Nothing_A_n from package 00008613.upk
 Loading Texture2D Nothing_A from package 00008613.upk
@@ -642,4 +642,6 @@ UAnimSet::ConvertAnims <- PostLoad:MuSin_Animset <- UObject::EndLoad <- LoadWhol
     at ChildProcess.exithandler (child_process.js:637:15)
     at ChildProcess.EventEmitter.emit (events.js:98:17)
     at maybeClose (child_process.js:743:16)
-    at Process.ChildProcess._handle.onexit (child_process.js:810:5)
+    at Socket.<anonymous> (child_process.js:956:11)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at Pipe.close (net.js:465:12)

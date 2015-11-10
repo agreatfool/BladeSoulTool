@@ -1,5 +1,5 @@
-Found 21310 game files (132 skipped)
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading Texture2D Aura_Blood_000 from package 00012963.upk
 Loading Texture2D Aura_Blood_001 from package 00012963.upk
 Loading Texture2D Aura_Blood_002 from package 00012963.upk
@@ -329,6 +329,7 @@ Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Line_004 from package 00012963.upk
 Loading Texture2D Gradient_Line_005 from package 00012963.upk
 Loading Texture2D Gradient_Line_010 from package 00012963.upk
+Loading Texture2D Gradient_Line_010_loop from package 00012963.upk
 Loading Texture2D Gradient_Line_R from package 00012963.upk
 Loading Texture2D Gradient_Line_R_clamp from package 00012963.upk
 Loading Texture2D Gradient_Needle from package 00012963.upk
@@ -764,6 +765,7 @@ Loading Texture2D Trangition_PP from package 00012963.upk
 Loading Texture2D Transfort_signal from package 00012963.upk
 Loading Texture2D TT_return_cloud000_Tex_XClamp from package 00012963.upk
 Loading Texture2D TT_return_dragon_05_normal from package 00012963.upk
+Loading Texture2D TwinsA_creak from package 00012963.upk
 Loading Texture2D UI_QuestApproach_Range_Tex from package 00012963.upk
 Loading Texture2D Unique_Bone_D_000 from package 00012963.upk
 Loading Texture2D Unique_Bone_N_000 from package 00012963.upk
@@ -812,7 +814,7 @@ Loading Texture2D Waveform_001 from package 00012963.upk
 Loading Texture2D Wing from package 00012963.upk
 Loading Texture2D XXXXXXX from package 00012963.upk
 Loading TextureCube Cube_001 from package 00012963.upk
-Loaded in 6.6 sec, 24150 allocs, 40.92 MBytes serialized in 166733 calls.
+Loaded in 6.5 sec, 24213 allocs, 41.01 MBytes serialized in 167131 calls.
 
 Object info:
 ============
@@ -5713,6 +5715,21 @@ ClassName: Texture2D ObjectName: Gradient_Line_010
     Format = PF_G8 (3)
     AddressX = TA_Wrap (0)
     AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Gradient_Line_010_loop
+
+    SizeX = 64
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
     TextureFileCacheName = None
     MipTailBaseIdx = 8
     bForcePVRTC4 = false
@@ -12146,6 +12163,21 @@ ClassName: Texture2D ObjectName: TT_return_dragon_05_normal
     MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: TwinsA_creak
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
 
 Object info:

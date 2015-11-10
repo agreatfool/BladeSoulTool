@@ -1,12 +1,16 @@
-Found 21310 game files (132 skipped)
-Loading package: 00023820.upk Ver: 573/1 Engine: 4205 Names: 40 Exports: 9 Imports: 4 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00023820.upk Ver: 573/1 Engine: 4205 Names: 45 Exports: 13 Imports: 4 Game: 801A
 Loading Texture2D 990120_ZakanArm_col1_D from package 00023820.upk
 Loading Texture2D 990120_ZakanArm_col1_E from package 00023820.upk
 WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D 990120_ZakanArm_col1_N from package 00023820.upk
 Loading Texture2D 990120_ZakanArm_col1_S from package 00023820.upk
+Loading Texture2D 990120_ZakanArm_col3_D from package 00023820.upk
+Loading Texture2D 990120_ZakanArm_col3_E from package 00023820.upk
+Loading Texture2D 990120_ZakanArm_col3_N from package 00023820.upk
+Loading Texture2D 990120_ZakanArm_col3_S from package 00023820.upk
 Loading Texture2D ZakanArm_M from package 00023820.upk
-Loaded in 0.05 sec, 227 allocs, 0.99 MBytes serialized in 1378 calls.
+Loaded in 0.1 sec, 366 allocs, 1.83 MBytes serialized in 2296 calls.
 
 Object info:
 ============
@@ -56,6 +60,66 @@ ClassName: Texture2D ObjectName: 990120_ZakanArm_col1_N
 Object info:
 ============
 ClassName: Texture2D ObjectName: 990120_ZakanArm_col1_S
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990120_ZakanArm_col3_D
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990120_ZakanArm_col3_E
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990120_ZakanArm_col3_N
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990120_ZakanArm_col3_S
 
     SizeX = 1024
     SizeY = 512

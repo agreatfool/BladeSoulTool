@@ -1,4 +1,4 @@
-Found 21310 game files (132 skipped)
+Found 21975 game files (132 skipped)
 Loading package: 00005719.upk Ver: 573/1 Engine: 4205 Names: 222 Exports: 164 Imports: 22 Game: 801A
 Loading SkeletalMesh3 11001_KunN from package 00005719.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
@@ -14,25 +14,9 @@ WARNING: ArrayProperty "USkeletalMesh3::MeshScaleRatio" was not found
 WARNING: StructProperty "USkeletalMesh3::HeightRatio" was not found
 WARNING: StructProperty "USkeletalMesh3::HandRatio" was not found
 WARNING: ByteProperty "USkeletalMesh3::CommonPhysicsUseFlag" was not found
-Loading package: 00005718.upk Ver: 573/1 Engine: 4205 Names: 86 Exports: 1 Imports: 21 Game: 801A
-Loading MaterialInstanceConstant col1 from package 00005718.upk
-Loading package: 00005717.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 2 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading Texture2D 11001_KunN_N from package 00005717.upk
-Loading Texture2D 11001_KunN_M from package 00005717.upk
-Loading Texture2D 11001_KunN_D from package 00005717.upk
-Loading Texture2D 11001_KunN_S from package 00005717.upk
-Loading Texture2D 11001_KunN_D_ex from package 00005717.upk
-Loading Material3 body_kUN from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
-Loading Texture2D check_n from package 00002620.upk
-Loading Texture2D Noise_Glass_000 from package 00012963.upk
-Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
-Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
-Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loading Texture2D check from package 00002620.upk
-Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.12 sec, 2571 allocs, 2.70 MBytes serialized in 430413 calls.
+Loading package: 00005718.upk Ver: 573/1 Engine: 4205 Names: 0 Exports: 0 Imports: 0 Game: 801A
+WARNING: Import(col1) was not found in package 00005718
+Loaded in 0.025 sec, 292 allocs, 0.85 MBytes serialized in 280077 calls.
 
 Object info:
 ============
@@ -59,7 +43,7 @@ ClassName: SkeletalMesh3 ObjectName: 11001_KunN
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
-    Materials[1] = { MaterialInstanceConstant'col1' }
+    Materials[1] = { None }
 
 
     Lods[2] =
@@ -68,8 +52,8 @@ ClassName: SkeletalMesh3 ObjectName: 11001_KunN
         {
             Sections[2] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=5962 }
-                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=17886, NumFaces=119 }
+                Sections[0] = { Material=None, FirstIndex=0, NumFaces=5962 }
+                Sections[1] = { Material=None, FirstIndex=17886, NumFaces=119 }
             }
             NumVerts = 5125
             IndexCount = 18243
@@ -79,7 +63,7 @@ ClassName: SkeletalMesh3 ObjectName: 11001_KunN
         {
             Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=2360 }
+                Sections[0] = { Material=None, FirstIndex=0, NumFaces=2360 }
             }
             NumVerts = 2235
             IndexCount = 7080

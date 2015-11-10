@@ -1,5 +1,5 @@
-Found 21310 game files (132 skipped)
-Loading package: 00009076.upk Ver: 573/1 Engine: 4205 Names: 477 Exports: 480 Imports: 152 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00009076.upk Ver: 573/1 Engine: 4205 Names: 504 Exports: 507 Imports: 152 Game: 801A
 Loading Texture2D ArenaDungeonTooltip_01 from package 00009076.upk
 Loading Texture2D Bleeding from package 00009076.upk
 Loading Texture2D dash_block from package 00009076.upk
@@ -13,6 +13,7 @@ Loading Texture2D frostbite from package 00009076.upk
 Loading Texture2D GameUI_DuelBack from package 00009076.upk
 Loading Texture2D GameUI_Gauge from package 00009076.upk
 Loading Texture2D GameUI_HeaderIcon from package 00009076.upk
+Loading Texture2D GameUI_HeaderIcon_02 from package 00009076.upk
 Loading Texture2D GameUI_New_Scene_00 from package 00009076.upk
 Loading Texture2D GameUI_New_Scene_01 from package 00009076.upk
 Loading Texture2D GameUI_New_Scene_02 from package 00009076.upk
@@ -31,11 +32,20 @@ Loading Texture2D GameUI_New_Scene_14 from package 00009076.upk
 Loading Texture2D GameUI_Scene_03_alpha from package 00009076.upk
 Loading Texture2D HUD_Icon_Menu_Test_nocomp from package 00009076.upk
 Loading Texture2D HUD_laser from package 00009076.upk
+Loading Texture2D Img_AttendanceStamp from package 00009076.upk
+Loading Texture2D Img_DailiyQuest from package 00009076.upk
+Loading Texture2D Img_Duel from package 00009076.upk
+Loading Texture2D Img_dungeon_daily from package 00009076.upk
 Loading Texture2D Img_Faction_Common from package 00009076.upk
 Loading Texture2D Img_FactionScoreIcon from package 00009076.upk
 Loading Texture2D Img_FactionScoreIcon_Full from package 00009076.upk
 Loading Texture2D Img_FactionScoreIcon_Half from package 00009076.upk
 Loading Texture2D Img_FactionScoreIcon_Zero from package 00009076.upk
+Loading Texture2D Img_GuildBattleField from package 00009076.upk
+Loading Texture2D Img_NpcPeaktime from package 00009076.upk
+Loading Texture2D Img_random_store from package 00009076.upk
+Loading Texture2D Img_ZoneTriggerEvent from package 00009076.upk
+Loading Texture2D ItemTransform_convert_Icon from package 00009076.upk
 Loading Texture2D Job_Img_Assassin_40 from package 00009076.upk
 Loading Texture2D Job_Img_BladeMaster_40 from package 00009076.upk
 Loading Texture2D Job_Img_Destroyer_40 from package 00009076.upk
@@ -57,6 +67,7 @@ Loading Texture2D Minimap_MarkingPosition from package 00009076.upk
 Loading Texture2D Party_Scalp from package 00009076.upk
 Loading Texture2D Party_Scalp_02 from package 00009076.upk
 Loading Texture2D poison from package 00009076.upk
+Loading Texture2D RandomStore_BG from package 00009076.upk
 Loading Texture2D SkillArrow from package 00009076.upk
 Loading Texture2D Stylepoint_Number_01 from package 00009076.upk
 Loading Texture2D Stylepoint_Number_02 from package 00009076.upk
@@ -68,7 +79,7 @@ Loading Texture2D Tooltip_GaugeImagelevel_2_Resource from package 00009076.upk
 Loading Texture2D Tooltip_GaugeImagelevel_3_Resource from package 00009076.upk
 Loading Texture2D Tooltip_LevelDotImage from package 00009076.upk
 Loading Texture2D Venom from package 00009076.upk
-Loaded in 0.17 sec, 859 allocs, 17.45 MBytes serialized in 18336 calls.
+Loaded in 0.17 sec, 941 allocs, 17.80 MBytes serialized in 19939 calls.
 
 Object info:
 ============
@@ -256,6 +267,21 @@ ClassName: Texture2D ObjectName: GameUI_HeaderIcon
 
     SizeX = 1024
     SizeY = 1024
+    Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GameUI_HeaderIcon_02
+
+    SizeX = 512
+    SizeY = 512
     Format = PF_A8R8G8B8 (2)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
@@ -537,6 +563,66 @@ ClassName: Texture2D ObjectName: HUD_laser
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: Img_AttendanceStamp
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_DailiyQuest
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_Duel
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_dungeon_daily
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: Img_Faction_Common
 
     SizeX = 32
@@ -598,6 +684,81 @@ ClassName: Texture2D ObjectName: Img_FactionScoreIcon_Half
 Object info:
 ============
 ClassName: Texture2D ObjectName: Img_FactionScoreIcon_Zero
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_GuildBattleField
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_NpcPeaktime
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_random_store
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Img_ZoneTriggerEvent
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ItemTransform_convert_Icon
 
     SizeX = 32
     SizeY = 32
@@ -917,6 +1078,21 @@ ClassName: Texture2D ObjectName: poison
     SizeX = 32
     SizeY = 32
     Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: RandomStore_BG
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_A8R8G8B8 (2)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
     TextureFileCacheName = None

@@ -1,10 +1,11 @@
-Found 21310 game files (132 skipped)
-Loading package: 00031457.upk Ver: 573/1 Engine: 4205 Names: 141 Exports: 95 Imports: 13 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00031457.upk Ver: 573/1 Engine: 4205 Names: 152 Exports: 96 Imports: 19 Game: 801A
 Loading SkeletalMesh3 GolemLeaderLava from package 00031457.upk
+WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
 WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
-Loading package: 00031456.upk Ver: 573/1 Engine: 4205 Names: 90 Exports: 1 Imports: 19 Game: 801A
+Loading package: 00031456.upk Ver: 573/1 Engine: 4205 Names: 193 Exports: 277 Imports: 54 Game: 801A
 Loading SkeletalMeshSocket SkeletalMeshSocket_85 from package 00031457.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_86 from package 00031457.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_87 from package 00031457.upk
@@ -14,34 +15,41 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_90 from package 00031457.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_91 from package 00031457.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_92 from package 00031457.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_93 from package 00031457.upk
-WARNING: BoolProperty "USkeletalMeshSocket::bParticleAttachPosOnly" was not found
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+WARNING: BoolProperty "USkeletalMeshSocket::bParticleApplyAutoScale" was not found
 Loading SkeletalMeshSocket SkeletalMeshSocket_94 from package 00031457.upk
 WARNING: ObjectProperty "USkeletalMeshSocket::PreviewSkelMesh" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_95 from package 00031457.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+WARNING: BoolProperty "USkeletalMeshSocket::bParticleAttachPosOnly" was not found
 Loading MaterialInstanceConstant col1 from package 00031456.upk
 Loading package: 00031455.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D GolemLeaderLava_col1_N from package 00031455.upk
+Loading Texture2D GolemLeaderLava_col1_E from package 00031455.upk
 Loading Texture2D GolemLeaderLava_col1_M from package 00031455.upk
 Loading Texture2D GolemLeaderLava_col1_D from package 00031455.upk
 Loading Texture2D GolemLeaderLava_col1_S from package 00031455.upk
 Loading TextureCube Cube_D from package 00002640.upk
-Loading Texture2D GolemLeaderLava_col1_E from package 00031455.upk
-Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading Material3 GolemLeaderLava_fx from package 00031456.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Distortion_000 from package 00012963.upk
 Loading Texture2D check from package 00002620.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D lava01 from package 00012963.upk
+Loading Texture2D lava01N from package 00012963.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.17 sec, 2936 allocs, 3.87 MBytes serialized in 487414 calls.
+Loaded in 0.19 sec, 3141 allocs, 4.03 MBytes serialized in 493907 calls.
 
 Object info:
 ============
@@ -57,7 +65,7 @@ ClassName: SkeletalMesh3 ObjectName: GolemLeaderLava
             bEnableShadowCasting[1] = { true }
         }
     }
-    Sockets[10] =
+    Sockets[11] =
     {
         Sockets[0] = SkeletalMeshSocket'GolemLeaderLava.SkeletalMeshSocket_85'
         Sockets[1] = SkeletalMeshSocket'GolemLeaderLava.SkeletalMeshSocket_86'
@@ -69,6 +77,7 @@ ClassName: SkeletalMesh3 ObjectName: GolemLeaderLava
         Sockets[7] = SkeletalMeshSocket'GolemLeaderLava.SkeletalMeshSocket_92'
         Sockets[8] = SkeletalMeshSocket'GolemLeaderLava.SkeletalMeshSocket_93'
         Sockets[9] = SkeletalMeshSocket'GolemLeaderLava.SkeletalMeshSocket_94'
+        Sockets[10] = SkeletalMeshSocket'GolemLeaderLava.SkeletalMeshSocket_95'
     }
     bHasVertexColors = false
     EnableTwistBoneFixers = true
@@ -181,7 +190,7 @@ ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_93
 
     SocketName = ATTACH_EFFECT
     BoneName = Bip01
-    RelativeLocation = { X=10, Y=0, Z=0 }
+    RelativeLocation = { X=0, Y=0, Z=0 }
     RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
     RelativeScale = { X=1, Y=1, Z=1 }
 
@@ -191,6 +200,16 @@ ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_94
 
     SocketName = WeaponR
     BoneName = WeaponR
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_95
+
+    SocketName = Root
+    BoneName = Root
     RelativeLocation = { X=0, Y=0, Z=0 }
     RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
     RelativeScale = { X=1, Y=1, Z=1 }

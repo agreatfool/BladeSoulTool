@@ -1,8 +1,8 @@
-Found 21310 game files (132 skipped)
-Loading package: 00012581.upk Ver: 573/1 Engine: 4205 Names: 376 Exports: 3501 Imports: 163 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00012581.upk Ver: 573/1 Engine: 4205 Names: 382 Exports: 3629 Imports: 165 Game: 801A
 Loading Material3 Aura_OutRing_mat_FireBall from package 00012581.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Material3 Aura_OutRing_mat_FireBall_masked from package 00012581.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -32,6 +32,8 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Fire_Anger_3 from package 00012581.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Fire_Anger_4 from package 00012581.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Fire_Anger_4_transition from package 00012581.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Fire_blending_Mat from package 00012581.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -204,6 +206,12 @@ Loading Texture2D Wave_ss from package cine_effect_texture.upk
 Loading Texture2D Env_Fx_Storm from package 00012963.upk
 Loading Texture2D Smoke_002 from package 00012963.upk
 Loading Texture2D Noise_005 from package 00012963.upk
+Loading Texture2D lava01 from package 00012963.upk
+Loading Texture2D Noise_Distortion_000 from package 00012963.upk
+Loading Texture2D lava01N from package 00012963.upk
+Loading Texture2D Gradient_001_Left from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Smoke_Dusts_001 from package 00012963.upk
 Loading Texture2D Smoke_013 from package 00012963.upk
 Loading Texture2D Smoke_Cloud_002 from package 00012963.upk
@@ -224,7 +232,6 @@ Loading Texture2D Gradient_Line_004 from package 00012963.upk
 Loading Texture2D Smoke_Cloud_005 from package 00012963.upk
 Loading Texture2D T_MukHwa_e2 from package 00012963.upk
 Loading Texture2D Smoke_Dark_000 from package 00012963.upk
-Loading Texture2D Noise_Distortion_000 from package 00012963.upk
 Loading Texture2D Smoke_ShockWave_002 from package 00012963.upk
 Loading Texture2D Smoke_ShockWave_004 from package 00012963.upk
 Loading Texture2D Noise_Fractal_001 from package 00012963.upk
@@ -233,7 +240,6 @@ Loading Texture2D Smoke_014 from package 00012963.upk
 Loading Texture2D Sparkle_Ink_008 from package 00012963.upk
 Loading Texture2D Aura_Ripple_000 from package 00012963.upk
 Loading Texture2D Gradient_Beam_007 from package 00012963.upk
-Loading Texture2D Gradient_001_Left from package 00012963.upk
 Loading Texture2D T_Liquid_SM_NanoBlack_Mask_01 from package 00012963.upk
 Loading Texture2D Unique_Waterfall_000_Mask from package 00012963.upk
 Loading Texture2D Gradient_Beam_004 from package 00012963.upk
@@ -268,8 +274,6 @@ Loading Texture2D Noise_003 from package 00012963.upk
 Loading Texture2D Fire_Torch_Sample_001_D from package 00012963.upk
 Loading Texture2D Fire_003 from package 00012963.upk
 Loading Texture2D Noise_Swarm_000 from package 00012963.upk
-Loading Texture2D lava01N from package 00012963.upk
-Loading Texture2D lava01 from package 00012963.upk
 Loading Texture2D Noise_Bubble_000 from package 00012963.upk
 Loading Texture2D Noise_Fractal_002 from package 00012963.upk
 Loading Texture2D Smoke_Pattern_000_128 from package 00012963.upk
@@ -286,14 +290,13 @@ Loading Texture2D Fire_Sprite_007 from package 00012963.upk
 Loading Texture2D Noise_Fractal_000 from package 00012963.upk
 Loading Texture2D Noise_Swarm_001 from package 00012963.upk
 Loading Texture2D Noise_Ripple_000 from package 00012963.upk
-Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Noise_Fractal_003 from package 00012963.upk
 Loading Texture2D Noise_Fractal_004 from package 00012963.upk
 Loading Texture2D Prop_Fire_001_05_Mask1 from package prop_fire_001.upk
 Loading Texture2D Fire_Flash_Sprite_000 from package 00012963.upk
 Loading Texture2D Noise_010 from package 00012963.upk
 Loading Texture2D Gradient_001 from package 00012963.upk
-Loaded in 1.5 sec, 5822 allocs, 5.94 MBytes serialized in 128715 calls.
+Loaded in 1.3 sec, 5861 allocs, 6.03 MBytes serialized in 131379 calls.
 
 Object info:
 ============
@@ -654,6 +657,35 @@ ClassName: Material3 ObjectName: Fire_Anger_4
     }
     BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Fire_Anger_4_transition
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[9] =
+    {
+        ReferencedTextures[0] = Texture2D'lava01'
+        ReferencedTextures[1] = Texture2D'Noise_Distortion_000'
+        ReferencedTextures[2] = Texture2D'lava01N'
+        ReferencedTextures[3] = Texture2D'Noise_017'
+        ReferencedTextures[4] = Texture2D'Normal_Stone_001'
+        ReferencedTextures[5] = Texture2D'Noise_Plazma_002'
+        ReferencedTextures[6] = Texture2D'Gradient_001_Left'
+        ReferencedTextures[7] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[8] = Texture2D'Gradient_Line_003'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 11
     FlattenedTexture = None
     MobileBaseTexture = None
     MobileNormalTexture = None

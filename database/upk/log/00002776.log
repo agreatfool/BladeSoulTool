@@ -1,14 +1,14 @@
-Found 21310 game files (132 skipped)
+Found 21975 game files (132 skipped)
 Loading package: 00002776.upk Ver: 573/1 Engine: 4205 Names: 207 Exports: 93 Imports: 22 Game: 801A
 Loading SkeletalMesh3 GonM_001 from package 00002776.upk
 Loading package: 00002774.upk Ver: 573/1 Engine: 4205 Names: 141 Exports: 5 Imports: 36 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00002774.upk
-Loading package: 00002775.upk Ver: 573/1 Engine: 4205 Names: 51 Exports: 20 Imports: 9 Game: 801A
+Loading package: 00002775.upk Ver: 573/1 Engine: 4205 Names: 59 Exports: 28 Imports: 9 Game: 801A
 Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
 Loading package: 00008478.upk Ver: 573/1 Engine: 4205 Names: 50 Exports: 23 Imports: 2 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading MaterialInstanceConstant eye from package 00002774.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading package: 00007428.upk Ver: 573/1 Engine: 4205 Names: 130 Exports: 48 Imports: 19 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading MaterialInstanceConstant Beard from package 00002774.upk
@@ -56,7 +56,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.26 sec, 4010 allocs, 1.32 MBytes serialized in 252392 calls.
+Loaded in 0.24 sec, 4018 allocs, 1.32 MBytes serialized in 252589 calls.
 
 Object info:
 ============
@@ -75,8 +75,8 @@ ClassName: SkeletalMesh3 ObjectName: GonM_001
         {
             DisplayFactor = 0.25
             LODHysteresis = 0.02
-            LODMaterialMap[3] = { 0, 1, 2 }
-            bEnableShadowCasting[3] = { true, true, true }
+            LODMaterialMap[2] = { 0, 1 }
+            bEnableShadowCasting[2] = { true, true }
         }
     }
     Sockets[0] = {}
@@ -107,11 +107,10 @@ ClassName: SkeletalMesh3 ObjectName: GonM_001
         }
         Lods[1] =
         {
-            Sections[3] =
+            Sections[2] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=454 }
-                Sections[1] = { Material=MaterialInstanceConstant'eye', FirstIndex=1362, NumFaces=48 }
-                Sections[2] = { Material=MaterialInstanceConstant'Beard', FirstIndex=1506, NumFaces=161 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=502 }
+                Sections[1] = { Material=MaterialInstanceConstant'Beard', FirstIndex=1506, NumFaces=161 }
             }
             NumVerts = 492
             IndexCount = 1989

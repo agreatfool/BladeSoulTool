@@ -1,5 +1,19 @@
-Found 21310 game files (132 skipped)
-Loading package: 00032414.upk Ver: 573/1 Engine: 4205 Names: 245 Exports: 128 Imports: 85 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00032414.upk Ver: 573/1 Engine: 4205 Names: 369 Exports: 336 Imports: 127 Game: 801A
+Loading Material3 PvP_Axe_Body_Trans from package 00032414.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading Material3 PvP_Axe_e_Add from package 00032414.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 PvP_Axe_e_Trans from package 00032414.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 PvP_Axe_edge from package 00032414.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading MaterialInstanceConstant Axe_e_INST from package 00032414.upk
+Loading package: 00028628.upk Ver: 573/1 Engine: 4205 Names: 43 Exports: 11 Imports: 4 Game: 801A
+Loading package: 00030842.upk Ver: 573/1 Engine: 4205 Names: 465 Exports: 1298 Imports: 182 Game: 801A
+Loading MaterialInstanceConstant PvP_Axe_ee_INST from package 00032414.upk
+Loading package: 00032509.upk Ver: 573/1 Engine: 4205 Names: 310 Exports: 459 Imports: 110 Game: 801A
 Loading SkeletalMesh3 110141_Autoscale from package 00032414.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
@@ -9,12 +23,34 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_142 from package 00032414.upk
 WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
 Loading SkeletalMeshSocket SkeletalMeshSocket_146 from package 00032414.upk
 WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
-Loading MaterialInstanceConstant col1 from package 00032412.upk
-Loading package: 00028628.upk Ver: 573/1 Engine: 4205 Names: 43 Exports: 11 Imports: 4 Game: 801A
-Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading Texture2D Noise_006 from package 00012963.upk
+Loading Texture2D Noise_Plazma_002 from package 00012963.upk
+Loading Texture2D Gradient_Line_R from package 00012963.upk
+Loading Texture2D Ref_Cool from package 00012963.upk
+Loading Texture2D Unique_Stone_001 from package 00012963.upk
+Loading Texture2D Axe_alpha from package 00012963.upk
+Loading Texture2D Noise_013 from package 00012963.upk
+Loading Texture2D Axe_Edge_alpha from package 00012963.upk
+Loading Texture2D Dragon_body_outside_NRM from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
+Loading Texture2D Normal_Noise_000 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
+Loading Texture2D Gradient_004 from package 00012963.upk
+Loading Texture2D Gradient_Beam_007 from package 00012963.upk
 Loading Texture2D 110105_Autoscale_col1_N from package 00028628.upk
+Loading Material3 T3-5_Dagger_e from package 00030842.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00018336.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 10 Imports: 2 Game: 801A
+Loading Material3 Guntlet_ee from package 00032509.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00028844.upk Ver: 573/1 Engine: 4205 Names: 39 Exports: 10 Imports: 4 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00032412.upk
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading Texture2D 120046_Autoscale_col2_D from package 00018336.upk
+Loading Texture2D 120046_Autoscale_col1_N1 from package 00018336.upk
+Loading Texture2D Gradient_Flow_000 from package 00012963.upk
+Loading Texture2D 020205_Autoscale_col1_D from package 00028844.upk
 Loading Texture2D 110105_Autoscale_col1_M from package 00028628.upk
 Loading Texture2D 110105_Autoscale_col1_D from package 00028628.upk
 Loading Texture2D 110105_Autoscale_col1_S from package 00028628.upk
@@ -34,7 +70,171 @@ Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.13 sec, 3062 allocs, 1.21 MBytes serialized in 212182 calls.
+Loaded in 0.27 sec, 4555 allocs, 1.95 MBytes serialized in 256882 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: PvP_Axe_Body_Trans
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_006'
+        ReferencedTextures[1] = Texture2D'Noise_Plazma_002'
+        ReferencedTextures[2] = Texture2D'Gradient_Line_R'
+        ReferencedTextures[3] = Texture2D'Ref_Cool'
+        ReferencedTextures[4] = Texture2D'Unique_Stone_001'
+        ReferencedTextures[5] = Texture2D'Axe_alpha'
+        ReferencedTextures[6] = Texture2D'Noise_013'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: PvP_Axe_e_Add
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_006'
+        ReferencedTextures[1] = Texture2D'Ref_Cool'
+        ReferencedTextures[2] = Texture2D'Unique_Stone_001'
+        ReferencedTextures[3] = Texture2D'Axe_alpha'
+        ReferencedTextures[4] = Texture2D'Noise_Plazma_002'
+        ReferencedTextures[5] = Texture2D'Gradient_Line_R'
+        ReferencedTextures[6] = Texture2D'Noise_013'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: PvP_Axe_e_Trans
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_006'
+        ReferencedTextures[1] = Texture2D'Ref_Cool'
+        ReferencedTextures[2] = Texture2D'Unique_Stone_001'
+        ReferencedTextures[3] = Texture2D'Axe_alpha'
+        ReferencedTextures[4] = Texture2D'Noise_Plazma_002'
+        ReferencedTextures[5] = Texture2D'Gradient_Line_R'
+        ReferencedTextures[6] = Texture2D'Noise_013'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: PvP_Axe_edge
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'Axe_Edge_alpha'
+        ReferencedTextures[1] = Texture2D'Dragon_body_outside_NRM'
+        ReferencedTextures[2] = Texture2D'Normal_Noise_000'
+        ReferencedTextures[3] = Texture2D'Noise_006'
+        ReferencedTextures[4] = Texture2D'Ref_Cool'
+        ReferencedTextures[5] = Texture2D'Gradient_004'
+        ReferencedTextures[6] = Texture2D'Gradient_Beam_007'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: Axe_e_INST
+
+    ScalarParameterValues[0] = {}
+    TextureParameterValues[2] =
+    {
+        TextureParameterValues[0] = { ParameterName=N_Mask, ParameterValue=Texture2D'110105_Autoscale_col1_N' }
+        TextureParameterValues[1] = { ParameterName=D_Mask, ParameterValue=Texture2D'Axe_alpha' }
+    }
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Color
+            ParameterValue = { R=0.585973, G=0.766744, B=0.932277, A=1 }
+        }
+    }
+    Parent = Material3'T3-5_Dagger_e'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: PvP_Axe_ee_INST
+
+    ScalarParameterValues[1] =
+    {
+        ScalarParameterValues[0] = { ParameterName=LerpG, ParameterValue=0 }
+    }
+    TextureParameterValues[1] =
+    {
+        TextureParameterValues[0] = { ParameterName=Mask_alpha, ParameterValue=Texture2D'Axe_alpha' }
+    }
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Color
+            ParameterValue = { R=0.715466, G=0.835528, B=0.932277, A=1 }
+        }
+    }
+    Parent = Material3'Guntlet_ee'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
 
 Object info:
 ============

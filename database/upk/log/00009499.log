@@ -1,5 +1,5 @@
-Found 21310 game files (132 skipped)
-Loading package: 00009499.upk Ver: 573/1 Engine: 4205 Names: 1759 Exports: 1778 Imports: 9 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00009499.upk Ver: 573/1 Engine: 4205 Names: 1783 Exports: 1802 Imports: 9 Game: 801A
 Loading Texture2D Img_Brazier_Blue from package 00009499.upk
 Loading Texture2D Img_Brazier_Gray from package 00009499.upk
 Loading Texture2D Img_Brazier_Red from package 00009499.upk
@@ -76,6 +76,18 @@ Loading Texture2D Map_Craft_NPC from package 00009499.upk
 Loading Texture2D Map_Craft_NPC_Outglow from package 00009499.upk
 Loading Texture2D Map_DragonFruit_Nomal from package 00009499.upk
 Loading Texture2D Map_DragonFruit_Nomal_over from package 00009499.upk
+Loading Texture2D Map_Dungeon_blacksmith_foothold_03 from package 00009499.upk
+Loading Texture2D Map_Dungeon_blacksmith_foothold_03_over from package 00009499.upk
+Loading Texture2D Map_Dungeon_blacksmith_foothold_06 from package 00009499.upk
+Loading Texture2D Map_Dungeon_blacksmith_foothold_06_over from package 00009499.upk
+Loading Texture2D Map_Dungeon_blacksmith_foothold_09 from package 00009499.upk
+Loading Texture2D Map_Dungeon_blacksmith_foothold_09_over from package 00009499.upk
+Loading Texture2D Map_Dungeon_blacksmith_foothold_12 from package 00009499.upk
+Loading Texture2D Map_Dungeon_blacksmith_foothold_12_over from package 00009499.upk
+Loading Texture2D Map_Dungeon_blacksmith_off from package 00009499.upk
+Loading Texture2D Map_Dungeon_blacksmith_off_over from package 00009499.upk
+Loading Texture2D Map_Dungeon_blacksmith_on from package 00009499.upk
+Loading Texture2D Map_Dungeon_blacksmith_on_over from package 00009499.upk
 Loading Texture2D Map_Dungeon_Blocked from package 00009499.upk
 Loading Texture2D Map_Dungeon_Blocked_over from package 00009499.upk
 Loading Texture2D Map_Dungeon_Blue from package 00009499.upk
@@ -848,7 +860,7 @@ Loading Texture2D Window_Teleport-point-possible-normal_128 from package 0000949
 Loading Texture2D Window_Teleport-point-possible-normal_32 from package 00009499.upk
 Loading Texture2D Window_Teleport-point-possible-over_32 from package 00009499.upk
 Loading Texture2D Window_Teleport-point-possible-pressed_32 from package 00009499.upk
-Loaded in 0.72 sec, 6329 allocs, 1.20 MBytes serialized in 112855 calls.
+Loaded in 0.79 sec, 6419 allocs, 1.22 MBytes serialized in 114415 calls.
 
 Object info:
 ============
@@ -1978,6 +1990,186 @@ ClassName: Texture2D ObjectName: Map_DragonFruit_Nomal
 Object info:
 ============
 ClassName: Texture2D ObjectName: Map_DragonFruit_Nomal_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Dungeon_blacksmith_foothold_03
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Dungeon_blacksmith_foothold_03_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Dungeon_blacksmith_foothold_06
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Dungeon_blacksmith_foothold_06_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Dungeon_blacksmith_foothold_09
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Dungeon_blacksmith_foothold_09_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Dungeon_blacksmith_foothold_12
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Dungeon_blacksmith_foothold_12_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Dungeon_blacksmith_off
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Dungeon_blacksmith_off_over
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Dungeon_blacksmith_on
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Map_Dungeon_blacksmith_on_over
 
     SizeX = 32
     SizeY = 32

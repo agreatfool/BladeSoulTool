@@ -1,4 +1,4 @@
-Found 21310 game files (132 skipped)
+Found 21975 game files (132 skipped)
 Loading package: 00002683.upk Ver: 573/1 Engine: 4205 Names: 196 Exports: 115 Imports: 19 Game: 801A
 Loading SkeletalMesh3 JinM_001 from package 00002683.upk
 Loading package: 00002685.upk Ver: 573/1 Engine: 4205 Names: 142 Exports: 5 Imports: 36 Game: 801A
@@ -8,7 +8,7 @@ Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Impor
 Loading package: 00008621.upk Ver: 573/1 Engine: 4205 Names: 48 Exports: 18 Imports: 4 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading MaterialInstanceConstant eye from package 00002685.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading package: 00007428.upk Ver: 573/1 Engine: 4205 Names: 130 Exports: 48 Imports: 19 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading MaterialInstanceConstant Beard from package 00002685.upk
@@ -56,7 +56,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.22 sec, 4135 allocs, 1.31 MBytes serialized in 249132 calls.
+Loaded in 0.24 sec, 4134 allocs, 1.31 MBytes serialized in 249161 calls.
 
 Object info:
 ============
@@ -66,7 +66,7 @@ ClassName: SkeletalMesh3 ObjectName: JinM_001
     {
         LODInfo[0] =
         {
-            DisplayFactor = 0
+            DisplayFactor = 3.7
             LODHysteresis = 0.02
             LODMaterialMap[0] = {}
             bEnableShadowCasting[3] = { true, true, true }
@@ -75,8 +75,8 @@ ClassName: SkeletalMesh3 ObjectName: JinM_001
         {
             DisplayFactor = 0.25
             LODHysteresis = 0.02
-            LODMaterialMap[3] = { 0, 1, 2 }
-            bEnableShadowCasting[3] = { true, true, true }
+            LODMaterialMap[2] = { 0, 1 }
+            bEnableShadowCasting[2] = { true, true }
         }
     }
     Sockets[0] = {}
@@ -107,11 +107,10 @@ ClassName: SkeletalMesh3 ObjectName: JinM_001
         }
         Lods[1] =
         {
-            Sections[3] =
+            Sections[2] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=434 }
-                Sections[1] = { Material=MaterialInstanceConstant'eye', FirstIndex=1302, NumFaces=48 }
-                Sections[2] = { Material=MaterialInstanceConstant'Beard', FirstIndex=1446, NumFaces=168 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=482 }
+                Sections[1] = { Material=MaterialInstanceConstant'Beard', FirstIndex=1446, NumFaces=168 }
             }
             NumVerts = 487
             IndexCount = 1950

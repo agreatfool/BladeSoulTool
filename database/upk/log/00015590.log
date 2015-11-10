@@ -1,5 +1,5 @@
-Found 21310 game files (132 skipped)
-Loading package: 00015590.upk Ver: 573/1 Engine: 4205 Names: 980 Exports: 1227 Imports: 38 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00015590.upk Ver: 573/1 Engine: 4205 Names: 1002 Exports: 1250 Imports: 38 Game: 801A
 Loading Texture2D ArenaOnAir_combo from package 00015590.upk
 Loading Texture2D ArenaOnAir_Effect_Down from package 00015590.upk
 Loading Texture2D ArenaOnAir_Effect_Down_global from package 00015590.upk
@@ -76,6 +76,7 @@ Loading Texture2D GameUI_ItemGrowthResult_Great from package 00015590.upk
 Loading Texture2D GameUI_ItemGrowthResult_MaxLevel from package 00015590.upk
 Loading Texture2D GameUI_ItemGrowthResult_Normal from package 00015590.upk
 Loading Texture2D GameUI_ItemGrowthResult_SealSuccess from package 00015590.upk
+Loading Texture2D GameUI_ItemGrowthResult_TransformFail from package 00015590.upk
 Loading Texture2D GameUI_ItemGrowthResult_TransformSuccess from package 00015590.upk
 Loading Texture2D GameUI_ItemGrowthResultSub_Awaken from package 00015590.upk
 Loading Texture2D GameUI_ItemGrowthResultSub_Growth from package 00015590.upk
@@ -514,13 +515,33 @@ Loading Texture2D SlotSkill_Defence from package 00015590.upk
 Loading Texture2D SlotSkill_Distance from package 00015590.upk
 Loading Texture2D SlotSkill_Protection from package 00015590.upk
 Loading Texture2D SystemMenu_ShortcutKey from package 00015590.upk
+Loading Texture2D T_battle_text_1 from package 00015590.upk
+Loading Texture2D T_battle_text_2 from package 00015590.upk
+Loading Texture2D T_battle_text_draw from package 00015590.upk
+Loading Texture2D T_battle_text_invalidity from package 00015590.upk
+Loading Texture2D T_battle_text_lost from package 00015590.upk
+Loading Texture2D T_battle_text_lost_final from package 00015590.upk
+Loading Texture2D T_battle_text_start from package 00015590.upk
+Loading Texture2D T_battle_text_win from package 00015590.upk
+Loading Texture2D T_battle_text_win_final from package 00015590.upk
+Loading Texture2D T_faction_stage_result_txt_hon1 from package 00015590.upk
+Loading Texture2D T_faction_stage_result_txt_hon2 from package 00015590.upk
+Loading Texture2D T_faction_stage_result_txt_mu1 from package 00015590.upk
+Loading Texture2D T_faction_stage_result_txt_mu2 from package 00015590.upk
+Loading Texture2D T_text_new_blood01 from package 00015590.upk
+Loading Texture2D T_text_new_destroy01 from package 00015590.upk
+Loading Texture2D T_text_new_fire01 from package 00015590.upk
+Loading Texture2D T_text_new_nuke from package 00015590.upk
+Loading Texture2D T_text_new_thunder01 from package 00015590.upk
+Loading Texture2D T_text_new_thunder02 from package 00015590.upk
+Loading Texture2D T_text_new_thunder03 from package 00015590.upk
 Loading Texture2D TextIconSlot_Item from package 00015590.upk
 Loading Texture2D TextIconSlot_Item_64x64 from package 00015590.upk
 Loading Texture2D TextIconSlot_Skill from package 00015590.upk
 Loading Texture2D TextIconSlot_Skill_64x64 from package 00015590.upk
 Loading Texture2D Tooltip_Max from package 00015590.upk
 Loading Texture2D Tooltip_Max2 from package 00015590.upk
-Loaded in 0.53 sec, 3790 allocs, 4.13 MBytes serialized in 71870 calls.
+Loaded in 0.49 sec, 3923 allocs, 4.38 MBytes serialized in 74842 calls.
 
 Object info:
 ============
@@ -559,8 +580,8 @@ ClassName: Texture2D ObjectName: ArenaOnAir_Effect_Down_global
     SizeX = 512
     SizeY = 256
     Format = PF_A8R8G8B8 (2)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -589,8 +610,8 @@ ClassName: Texture2D ObjectName: ArenaOnAir_Effect_Groggy_global
     SizeX = 512
     SizeY = 256
     Format = PF_A8R8G8B8 (2)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -619,8 +640,8 @@ ClassName: Texture2D ObjectName: ArenaOnAir_Effect_swoon_global
     SizeX = 512
     SizeY = 256
     Format = PF_A8R8G8B8 (2)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -649,8 +670,8 @@ ClassName: Texture2D ObjectName: ArenaOnAir_Effect_Syncope_global
     SizeX = 512
     SizeY = 256
     Format = PF_A8R8G8B8 (2)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -1144,8 +1165,8 @@ ClassName: Texture2D ObjectName: GameUI_FactionStage_Superiority
     SizeX = 64
     SizeY = 32
     Format = PF_A8R8G8B8 (2)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -1294,8 +1315,8 @@ ClassName: Texture2D ObjectName: GameUI_ItemGrowthLevel_1
     SizeX = 32
     SizeY = 32
     Format = PF_A8R8G8B8 (2)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -1309,8 +1330,8 @@ ClassName: Texture2D ObjectName: GameUI_ItemGrowthLevel_10
     SizeX = 32
     SizeY = 32
     Format = PF_A8R8G8B8 (2)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -1324,8 +1345,8 @@ ClassName: Texture2D ObjectName: GameUI_ItemGrowthLevel_2
     SizeX = 32
     SizeY = 32
     Format = PF_A8R8G8B8 (2)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -1339,8 +1360,8 @@ ClassName: Texture2D ObjectName: GameUI_ItemGrowthLevel_3
     SizeX = 32
     SizeY = 32
     Format = PF_A8R8G8B8 (2)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -1354,8 +1375,8 @@ ClassName: Texture2D ObjectName: GameUI_ItemGrowthLevel_4
     SizeX = 32
     SizeY = 32
     Format = PF_A8R8G8B8 (2)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -1369,8 +1390,8 @@ ClassName: Texture2D ObjectName: GameUI_ItemGrowthLevel_5
     SizeX = 32
     SizeY = 32
     Format = PF_A8R8G8B8 (2)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -1384,8 +1405,8 @@ ClassName: Texture2D ObjectName: GameUI_ItemGrowthLevel_6
     SizeX = 32
     SizeY = 32
     Format = PF_A8R8G8B8 (2)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -1399,8 +1420,8 @@ ClassName: Texture2D ObjectName: GameUI_ItemGrowthLevel_7
     SizeX = 32
     SizeY = 32
     Format = PF_A8R8G8B8 (2)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -1414,8 +1435,8 @@ ClassName: Texture2D ObjectName: GameUI_ItemGrowthLevel_8
     SizeX = 32
     SizeY = 32
     Format = PF_A8R8G8B8 (2)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -1429,8 +1450,8 @@ ClassName: Texture2D ObjectName: GameUI_ItemGrowthLevel_9
     SizeX = 32
     SizeY = 32
     Format = PF_A8R8G8B8 (2)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -1489,8 +1510,8 @@ ClassName: Texture2D ObjectName: GameUI_ItemGrowthResult_AppearanceChangeSuccess
     SizeX = 256
     SizeY = 128
     Format = PF_DXT5 (7)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -1504,8 +1525,8 @@ ClassName: Texture2D ObjectName: GameUI_ItemGrowthResult_AppearanceRemoveSuccess
     SizeX = 256
     SizeY = 128
     Format = PF_DXT5 (7)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -1664,6 +1685,21 @@ ClassName: Texture2D ObjectName: GameUI_ItemGrowthResult_SealSuccess
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: GameUI_ItemGrowthResult_TransformFail
+
+    SizeX = 512
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: GameUI_ItemGrowthResult_TransformSuccess
 
     SizeX = 256
@@ -1759,8 +1795,8 @@ ClassName: Texture2D ObjectName: GameUI_Tag_Level
     SizeX = 512
     SizeY = 512
     Format = PF_DXT5 (7)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -1789,8 +1825,8 @@ ClassName: Texture2D ObjectName: GameUI_Tag_Mouse_128
     SizeX = 128
     SizeY = 128
     Format = PF_DXT5 (7)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -1819,8 +1855,8 @@ ClassName: Texture2D ObjectName: GameUI_Tag_MouseL_128
     SizeX = 128
     SizeY = 128
     Format = PF_DXT5 (7)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -1849,8 +1885,8 @@ ClassName: Texture2D ObjectName: GameUI_Tag_MouseR_128
     SizeX = 128
     SizeY = 128
     Format = PF_DXT5 (7)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -1879,8 +1915,8 @@ ClassName: Texture2D ObjectName: GameUI_Tag_MouseWH_128
     SizeX = 128
     SizeY = 128
     Format = PF_DXT5 (7)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -2329,8 +2365,8 @@ ClassName: Texture2D ObjectName: GB_Grocery_BM_vip1-1
     SizeX = 64
     SizeY = 64
     Format = PF_DXT5 (7)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -2344,8 +2380,8 @@ ClassName: Texture2D ObjectName: GB_Grocery_Evolution_1-1
     SizeX = 64
     SizeY = 64
     Format = PF_DXT5 (7)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -6424,8 +6460,8 @@ ClassName: Texture2D ObjectName: Party_Scalp_GM
     SizeX = 64
     SizeY = 64
     Format = PF_A8R8G8B8 (2)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -6454,8 +6490,8 @@ ClassName: Texture2D ObjectName: PartyAuction_Bidding
     SizeX = 64
     SizeY = 64
     Format = PF_A8R8G8B8 (2)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -6469,8 +6505,8 @@ ClassName: Texture2D ObjectName: PartyAuction_GiveUp
     SizeX = 64
     SizeY = 64
     Format = PF_A8R8G8B8 (2)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -6484,8 +6520,8 @@ ClassName: Texture2D ObjectName: PartyAuction_Success
     SizeX = 64
     SizeY = 64
     Format = PF_A8R8G8B8 (2)
-    AddressX = TA_Wrap (0)
-    AddressY = TA_Wrap (0)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
     TextureFileCacheName = None
     MipTailBaseIdx = 0
     bForcePVRTC4 = false
@@ -8224,6 +8260,306 @@ ClassName: Texture2D ObjectName: SystemMenu_ShortcutKey
     SizeX = 64
     SizeY = 64
     Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_battle_text_1
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_battle_text_2
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_battle_text_draw
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_battle_text_invalidity
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_battle_text_lost
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_battle_text_lost_final
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_battle_text_start
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_battle_text_win
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_battle_text_win_final
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_faction_stage_result_txt_hon1
+
+    SizeX = 512
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_faction_stage_result_txt_hon2
+
+    SizeX = 512
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_faction_stage_result_txt_mu1
+
+    SizeX = 512
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_faction_stage_result_txt_mu2
+
+    SizeX = 512
+    SizeY = 128
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_text_new_blood01
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_text_new_destroy01
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_text_new_fire01
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_text_new_nuke
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_text_new_thunder01
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_text_new_thunder02
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_text_new_thunder03
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
     TextureFileCacheName = None

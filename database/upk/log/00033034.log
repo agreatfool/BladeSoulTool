@@ -1,4 +1,4 @@
-Found 21310 game files (132 skipped)
+Found 21975 game files (132 skipped)
 Loading package: 00033034.upk Ver: 573/1 Engine: 4205 Names: 113 Exports: 2 Imports: 26 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00033034.upk
 Loading package: 00033033.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 10 Imports: 4 Game: 801A
@@ -12,8 +12,8 @@ Loading Texture2D Hat_0032_col1_S from package 00033033.upk
 Loading TextureCube lenscube from package 00002640.upk
 Loading Texture2D Hat_0032_col1_EM from package 00033033.upk
 Loading Material3 Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
-Loading Texture2D Cube_D1 from package 00002640.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading TextureCube cube_cst from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading TextureCube Cube_Suicide2 from package 00002640.upk
 Loading Material3 Blend_Bead from package 00002620.upk
@@ -35,6 +35,12 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading TextureCube Cube_D from package 00002640.upk
 Loading TextureCube eye_s from package 00002640.upk
 Loading Texture2D CubemapFace0 from package 00002640.upk
@@ -49,7 +55,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.27 sec, 3316 allocs, 2.67 MBytes serialized in 167306 calls.
+Loaded in 0.4 sec, 3453 allocs, 2.71 MBytes serialized in 168254 calls.
 
 Object info:
 ============
@@ -150,7 +156,7 @@ ClassName: MaterialInstanceConstant ObjectName: col1_1
     {
         ScalarParameterValues[0] = { ParameterName=Refracion, ParameterValue=0.5 }
         ScalarParameterValues[1] = { ParameterName=Specular_Fresnel exponent, ParameterValue=0.08 }
-        ScalarParameterValues[2] = { ParameterName=HighLight_Value, ParameterValue=8 }
+        ScalarParameterValues[2] = { ParameterName=HighLight_Value, ParameterValue=0.1 }
         ScalarParameterValues[3] = { ParameterName=Diffuse_Fresnel exponent, ParameterValue=2 }
         ScalarParameterValues[4] = { ParameterName=Diffuse_IN_value, ParameterValue=0.15 }
         ScalarParameterValues[5] = { ParameterName=Specular_value, ParameterValue=4 }
@@ -163,7 +169,7 @@ ClassName: MaterialInstanceConstant ObjectName: col1_1
     TextureParameterValues[8] =
     {
         TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'Hat_0032_col1_N' }
-        TextureParameterValues[1] = { ParameterName=HighLight_cube, ParameterValue=Texture2D'Cube_D1' }
+        TextureParameterValues[1] = { ParameterName=HighLight_cube, ParameterValue=TextureCube'cube_cst' }
         TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'Hat_0032_col1_D' }
         TextureParameterValues[3] = { ParameterName=Mask_GB, ParameterValue=Texture2D'Hat_0032_col1_M' }
         TextureParameterValues[4] = { ParameterName=Specular, ParameterValue=Texture2D'Hat_0032_col1_S' }

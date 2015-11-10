@@ -1,0 +1,69 @@
+Found 21975 game files (132 skipped)
+Loading package: 00032692.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 2 Imports: 5 Game: 801A
+Loading SkeletalMesh3 Monster_Etc_LifeFlowerNew from package 00032692.upk
+Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_108 from package 00032692.upk
+WARNING: BoolProperty "USkeletalMeshSocket::bParticleAttachPosOnly" was not found
+Loading MaterialInstanceConstant NothingMAT from package 00008613.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading Texture2D Nothing_A_n from package 00008613.upk
+Loading Texture2D Nothing_A from package 00008613.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.056 sec, 2162 allocs, 0.70 MBytes serialized in 149599 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: Monster_Etc_LifeFlowerNew
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[1] = { SkeletalMeshSocket'Monster_Etc_LifeFlowerNew.SkeletalMeshSocket_108' }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'NothingMAT' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'NothingMAT', FirstIndex=0, NumFaces=2 }
+            }
+            NumVerts = 6
+            IndexCount = 6
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 1
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_108
+
+    SocketName = flower
+    BoneName = Root
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }

@@ -1,5 +1,5 @@
-Found 21310 game files (132 skipped)
-Loading package: 00008603.upk Ver: 573/1 Engine: 4205 Names: 392 Exports: 458 Imports: 14 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00008603.upk Ver: 573/1 Engine: 4205 Names: 400 Exports: 466 Imports: 14 Game: 801A
 Loading Texture2D CN_BlueDiamond_Icon_1 from package 00008603.upk
 Loading Texture2D CN_BlueDiamond_Icon_2 from package 00008603.upk
 Loading Texture2D CN_BlueDiamond_Icon_3 from package 00008603.upk
@@ -130,6 +130,10 @@ Loading Texture2D Nameplate_QuestIndicator_once_comeplete_quest from package 000
 Loading Texture2D Nameplate_QuestIndicator_once_running from package 00008603.upk
 Loading Texture2D Nameplate_QuestIndicator_repeat_can_acquire from package 00008603.upk
 Loading Texture2D Nameplate_QuestIndicator_repeat_running from package 00008603.upk
+Loading Texture2D Nameplate_QuestIndicator_side_episode_acquire_nextlevel from package 00008603.upk
+Loading Texture2D Nameplate_QuestIndicator_side_episode_can_acquire from package 00008603.upk
+Loading Texture2D Nameplate_QuestIndicator_side_episode_comeplete_quest from package 00008603.upk
+Loading Texture2D Nameplate_QuestIndicator_side_episode_running from package 00008603.upk
 Loading Texture2D Nameplate_QuestIndicator_special_acquire_nextlevel from package 00008603.upk
 Loading Texture2D Nameplate_QuestIndicator_special_can_acquire from package 00008603.upk
 Loading Texture2D Nameplate_QuestIndicator_special_comeplete_quest from package 00008603.upk
@@ -137,7 +141,7 @@ Loading Texture2D Nameplate_QuestIndicator_special_running from package 00008603
 Loading Texture2D Nameplate_QuestIndicator_vsboard_end from package 00008603.upk
 Loading Texture2D Nameplate_QuestIndicator_vsboard_repeat_start from package 00008603.upk
 Loading Texture2D Nameplate_QuestIndicator_vsboard_start from package 00008603.upk
-Loaded in 0.16 sec, 1143 allocs, 0.85 MBytes serialized in 22372 calls.
+Loaded in 0.11 sec, 1171 allocs, 0.86 MBytes serialized in 22892 calls.
 
 Object info:
 ============
@@ -2081,6 +2085,66 @@ ClassName: Texture2D ObjectName: Nameplate_QuestIndicator_repeat_running
     SizeX = 64
     SizeY = 64
     Format = PF_A8R8G8B8 (2)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Nameplate_QuestIndicator_side_episode_acquire_nextlevel
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Nameplate_QuestIndicator_side_episode_can_acquire
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Nameplate_QuestIndicator_side_episode_comeplete_quest
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Nameplate_QuestIndicator_side_episode_running
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
     TextureFileCacheName = None

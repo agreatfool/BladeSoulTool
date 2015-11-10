@@ -1,4 +1,4 @@
-Found 21310 game files (132 skipped)
+Found 21975 game files (132 skipped)
 Loading package: 00026784.upk Ver: 573/1 Engine: 4205 Names: 155 Exports: 153 Imports: 12 Game: 801A
 Loading SkeletalMesh3 090040_LynF from package 00026784.upk
 Loading package: 00026783.upk Ver: 573/1 Engine: 4205 Names: 125 Exports: 1 Imports: 22 Game: 801A
@@ -15,7 +15,7 @@ Loading Texture2D 090040_JinF_col1_M from package 00026740.upk
 Loading Texture2D 090040_JinF_col1_D from package 00026740.upk
 Loading Texture2D Mask_ck from package 00025178.upk
 Loading Material3 Moonpa_Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -29,7 +29,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.17 sec, 3115 allocs, 1.74 MBytes serialized in 222327 calls.
+Loaded in 0.17 sec, 3117 allocs, 1.75 MBytes serialized in 222533 calls.
 
 Object info:
 ============
@@ -58,10 +58,10 @@ ClassName: SkeletalMesh3 ObjectName: 090040_LynF
         {
             Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1962 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1968 }
             }
-            NumVerts = 1302
-            IndexCount = 5886
+            NumVerts = 1306
+            IndexCount = 5904
             NumTexCoords = 1
         }
     }

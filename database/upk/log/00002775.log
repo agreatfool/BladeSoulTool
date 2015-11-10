@@ -1,5 +1,5 @@
-Found 21310 game files (132 skipped)
-Loading package: 00002775.upk Ver: 573/1 Engine: 4205 Names: 51 Exports: 20 Imports: 9 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00002775.upk Ver: 573/1 Engine: 4205 Names: 59 Exports: 28 Imports: 9 Game: 801A
 Loading Texture2D GonM_Face001_d from package 00002775.upk
 Loading Texture2D GonM_Face001_n from package 00002775.upk
 Loading Texture2D GonM_Face002_d from package 00002775.upk
@@ -7,12 +7,18 @@ Loading Texture2D GonM_Face002_n from package 00002775.upk
 Loading Texture2D GonM_Face003_n from package 00002775.upk
 Loading Texture2D GonM_Face005_d from package 00002775.upk
 Loading Texture2D GonM_Face005_n from package 00002775.upk
+Loading Texture2D GonM_Face006_d from package 00002775.upk
+Loading Texture2D GonM_Face006_n from package 00002775.upk
+Loading Texture2D GonM_Face007_d from package 00002775.upk
+Loading Texture2D GonM_Face007_n from package 00002775.upk
+Loading Texture2D GonM_Face008_d from package 00002775.upk
+Loading Texture2D GonM_Face008_n from package 00002775.upk
 Loading Texture2D GonM_Face_d003 from package 00002775.upk
 Loading Texture2D GonM_Face_d004 from package 00002775.upk
 Loading Texture2D GonM_Face_m from package 00002775.upk
 Loading Texture2D GonM_Face_n004 from package 00002775.upk
 Loading Texture2D GonM_Face_s from package 00002775.upk
-Loaded in 0.1 sec, 447 allocs, 0.63 MBytes serialized in 3023 calls.
+Loaded in 0.14 sec, 653 allocs, 1.01 MBytes serialized in 4427 calls.
 
 Object info:
 ============
@@ -107,6 +113,96 @@ ClassName: Texture2D ObjectName: GonM_Face005_d
 Object info:
 ============
 ClassName: Texture2D ObjectName: GonM_Face005_n
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GonM_Face006_d
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GonM_Face006_n
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GonM_Face007_d
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GonM_Face007_n
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GonM_Face008_d
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: GonM_Face008_n
 
     SizeX = 512
     SizeY = 256

@@ -1,15 +1,24 @@
-Found 21310 game files (132 skipped)
-Loading package: 00020753.upk Ver: 573/1 Engine: 4205 Names: 1996 Exports: 69622 Imports: 792 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00020753.upk Ver: 573/1 Engine: 4205 Names: 2048 Exports: 70490 Imports: 819 Game: 801A
 Loading Material3 FireDecal001_MatM_Blue from package 00020753.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading Material3 MeshDecal_crack01 from package 00020753.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Texture2D Normal_Stone_001 from package 00012963.upk
 WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Decal_DarkSmoke_000 from package 00012963.upk
 Loading Texture2D Noise_013 from package 00012963.upk
 Loading Texture2D Noise_007 from package 00012963.upk
 Loading Texture2D Sparkle_005 from package 00012963.upk
-Loaded in 0.21 sec, 3400 allocs, 5.22 MBytes serialized in 1291289 calls.
+Loading Texture2D lava01 from package 00012963.upk
+Loading Texture2D Damage02_Fire_Decal_mask3 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D TwinsA_creak from package 00012963.upk
+Loading Texture2D Normal_Ground_crack from package 00012963.upk
+Loading Texture2D Decal_Crack_004_Des from package 00012963.upk
+Loading Texture2D Gradient_009 from package 00012963.upk
+Loaded in 0.27 sec, 3656 allocs, 5.56 MBytes serialized in 1308605 calls.
 
 Object info:
 ============
@@ -25,6 +34,33 @@ ClassName: Material3 ObjectName: FireDecal001_MatM_Blue
         ReferencedTextures[2] = Texture2D'Noise_013'
         ReferencedTextures[3] = Texture2D'Noise_007'
         ReferencedTextures[4] = Texture2D'Sparkle_005'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: MeshDecal_crack01
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'lava01'
+        ReferencedTextures[1] = Texture2D'Damage02_Fire_Decal_mask3'
+        ReferencedTextures[2] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[3] = Texture2D'TwinsA_creak'
+        ReferencedTextures[4] = Texture2D'Normal_Ground_crack'
+        ReferencedTextures[5] = Texture2D'Decal_Crack_004_Des'
+        ReferencedTextures[6] = Texture2D'Gradient_009'
     }
     BlendMode = BLEND_Translucent (2)
     OpacityMaskClipValue = 0.333

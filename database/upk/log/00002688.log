@@ -1,18 +1,22 @@
-Found 21310 game files (132 skipped)
-Loading package: 00002688.upk Ver: 573/1 Engine: 4205 Names: 45 Exports: 16 Imports: 4 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00002688.upk Ver: 573/1 Engine: 4205 Names: 48 Exports: 20 Imports: 4 Game: 801A
 Loading Texture2D Diffuse_001 from package 00002688.upk
 Loading Texture2D diffuse_002 from package 00002688.upk
 Loading Texture2D diffuse_003 from package 00002688.upk
 Loading Texture2D Diffuse_004 from package 00002688.upk
 Loading Texture2D diffuse_005 from package 00002688.upk
+Loading Texture2D diffuse_006 from package 00002688.upk
+Loading Texture2D diffuse_007 from package 00002688.upk
 Loading Texture2D Mask from package 00002688.upk
 Loading Texture2D Normal_001 from package 00002688.upk
 Loading Texture2D normal_002 from package 00002688.upk
 Loading Texture2D normal_003 from package 00002688.upk
 Loading Texture2D normal_004 from package 00002688.upk
 Loading Texture2D normal_005 from package 00002688.upk
+Loading Texture2D normal_006 from package 00002688.upk
+Loading Texture2D normal_007 from package 00002688.upk
 Loading Texture2D Specular from package 00002688.upk
-Loaded in 0.097 sec, 453 allocs, 1.14 MBytes serialized in 2962 calls.
+Loaded in 0.14 sec, 596 allocs, 1.94 MBytes serialized in 3919 calls.
 
 Object info:
 ============
@@ -77,6 +81,36 @@ ClassName: Texture2D ObjectName: Diffuse_004
 Object info:
 ============
 ClassName: Texture2D ObjectName: diffuse_005
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: diffuse_006
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: diffuse_007
 
     SizeX = 1024
     SizeY = 512
@@ -167,6 +201,36 @@ ClassName: Texture2D ObjectName: normal_004
 Object info:
 ============
 ClassName: Texture2D ObjectName: normal_005
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: normal_006
+
+    SizeX = 1024
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: normal_007
 
     SizeX = 1024
     SizeY = 512

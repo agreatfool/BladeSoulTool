@@ -1,16 +1,19 @@
-Found 21310 game files (132 skipped)
-Loading package: 00030895.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 10 Imports: 2 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00030895.upk Ver: 573/1 Engine: 4205 Names: 41 Exports: 13 Imports: 2 Game: 801A
 Loading Texture2D PileBunkerNight_D from package 00030895.upk
 Loading Texture2D PileBunkerNight_D3 from package 00030895.upk
+Loading Texture2D PileBunkerNight_D4 from package 00030895.upk
 Loading Texture2D PileBunkerNight_E from package 00030895.upk
 Loading Texture2D PileBunkerNight_E3 from package 00030895.upk
+Loading Texture2D PileBunkerNight_E4 from package 00030895.upk
 Loading Texture2D PileBunkerNight_E_col2 from package 00030895.upk
 Loading Texture2D PileBunkerNight_M1 from package 00030895.upk
 Loading Texture2D PileBunkerNight_M2 from package 00030895.upk
 Loading Texture2D PileBunkerNight_N from package 00030895.upk
 Loading Texture2D PileBunkerNight_S from package 00030895.upk
 Loading Texture2D PileBunkerNight_S3 from package 00030895.upk
-Loaded in 0.091 sec, 382 allocs, 3.05 MBytes serialized in 2365 calls.
+Loading Texture2D PileBunkerNight_S4 from package 00030895.upk
+Loaded in 0.44 sec, 481 allocs, 3.87 MBytes serialized in 3025 calls.
 
 Object info:
 ============
@@ -30,6 +33,21 @@ ClassName: Texture2D ObjectName: PileBunkerNight_D
 Object info:
 ============
 ClassName: Texture2D ObjectName: PileBunkerNight_D3
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PileBunkerNight_D4
 
     SizeX = 1024
     SizeY = 1024
@@ -68,6 +86,21 @@ ClassName: Texture2D ObjectName: PileBunkerNight_E3
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
     MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PileBunkerNight_E4
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -150,6 +183,21 @@ ClassName: Texture2D ObjectName: PileBunkerNight_S
 Object info:
 ============
 ClassName: Texture2D ObjectName: PileBunkerNight_S3
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PileBunkerNight_S4
 
     SizeX = 1024
     SizeY = 1024

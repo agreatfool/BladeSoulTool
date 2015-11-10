@@ -1,4 +1,4 @@
-Found 21310 game files (132 skipped)
+Found 21975 game files (132 skipped)
 Loading package: 00032261.upk Ver: 573/1 Engine: 4205 Names: 91 Exports: 1 Imports: 19 Game: 801A
 Loading MaterialInstanceConstant col2 from package 00032261.upk
 Loading package: 00008925.upk Ver: 573/1 Engine: 4205 Names: 36 Exports: 8 Imports: 2 Game: 801A
@@ -11,7 +11,7 @@ Loading Texture2D 40011_JinF_col2_S from package 00008925.upk
 Loading TextureCube lenscube_a from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Material3 Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -24,7 +24,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.13 sec, 2776 allocs, 1.60 MBytes serialized in 162808 calls.
+Loaded in 0.17 sec, 2778 allocs, 1.60 MBytes serialized in 162850 calls.
 
 Object info:
 ============
@@ -33,10 +33,10 @@ ClassName: MaterialInstanceConstant ObjectName: col2
     ScalarParameterValues[13] =
     {
         ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=0 }
-        ScalarParameterValues[1] = { ParameterName=Skin_glossiness, ParameterValue=3.5 }
+        ScalarParameterValues[1] = { ParameterName=Skin_glossiness, ParameterValue=80 }
         ScalarParameterValues[2] = { ParameterName=Wear_glossiness1, ParameterValue=7 }
         ScalarParameterValues[3] = { ParameterName=Wear_glossiness2, ParameterValue=30 }
-        ScalarParameterValues[4] = { ParameterName=Skin_Spec_value, ParameterValue=1 }
+        ScalarParameterValues[4] = { ParameterName=Skin_Spec_value, ParameterValue=2 }
         ScalarParameterValues[5] = { ParameterName=HighLight_Value, ParameterValue=5 }
         ScalarParameterValues[6] = { ParameterName=HighLight_glossiness, ParameterValue=100 }
         ScalarParameterValues[7] = { ParameterName=Emissive_value, ParameterValue=2 }

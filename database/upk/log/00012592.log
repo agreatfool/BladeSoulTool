@@ -1,15 +1,15 @@
-Found 21310 game files (132 skipped)
-Loading package: 00012592.upk Ver: 573/1 Engine: 4205 Names: 678 Exports: 7614 Imports: 285 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00012592.upk Ver: 573/1 Engine: 4205 Names: 684 Exports: 7895 Imports: 287 Game: 801A
 Loading Material3 Assassin_Mine000 from package 00012592.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading Material3 Assassin_Mine_Area000_MatM from package 00012592.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Assassin_Warp_Area000_MatM from package 00012592.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Aura_CaltLop000_MatM from package 00012592.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012512.upk Ver: 573/1 Engine: 4205 Names: 565 Exports: 1552 Imports: 174 Game: 801A
+Loading package: 00012512.upk Ver: 573/1 Engine: 4205 Names: 550 Exports: 1557 Imports: 173 Game: 801A
 Loading package: cubemap_001.upk Ver: 573/1 Engine: 4205 Names: 177 Exports: 517 Imports: 34 Game: 801A
 Loading Material3 AuraMaster_IceStorm_Area000_MatM from package 00012592.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -215,6 +215,10 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Thorn_Needle_Deacal from package 00012592.upk
 Loading Material3 Timmer_Circle_loop from package 00012592.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Timmer_Circle_Unbeatable1 from package 00012592.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Timmer_Circle_Unbeatable_Velocity1 from package 00012592.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Tutorial_Area_Decal_MatM from package 00012592.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Tutorial_RevivalArea000_MatM from package 00012592.upk
@@ -286,6 +290,8 @@ Loading Texture2D Smoke_Dust_000 from package 00012963.upk
 Loading Texture2D Gradient_001 from package 00012963.upk
 Loading Texture2D Noise_011 from package 00012963.upk
 Loading Texture2D Ring_Sharp_000 from package 00012963.upk
+Loading Texture2D Normal_JinGak_Shock_002 from package 00012963.upk
+Loading Texture2D Normal_JinGak_Shock_001 from package 00012963.upk
 Loading Texture2D Glow_Trail_002 from package 00012963.upk
 Loading Texture2D Noise_013_normal from package 00012963.upk
 Loading Texture2D Ice_Ring_Normal_Tex from package 00012963.upk
@@ -349,7 +355,6 @@ Loading Texture2D Glow_008 from package 00012963.upk
 Loading Texture2D Glow_ink_000 from package 00012963.upk
 Loading Texture2D Decal_Crack_000 from package 00012963.upk
 Loading Texture2D Normal_JinGak_Shock_000 from package 00012963.upk
-Loading Texture2D Normal_JinGak_Shock_001 from package 00012963.upk
 Loading Texture2D Decal_Crack_003_Des from package 00012963.upk
 Loading Texture2D Normal_Punch_000 from package 00012963.upk
 Loading Texture2D Decal_Punch_001_Des from package 00012963.upk
@@ -434,7 +439,7 @@ Loading Texture2D CubemapFace2 from package cubemap_001.upk
 Loading Texture2D CubemapFace3 from package cubemap_001.upk
 Loading Texture2D CubemapFace4 from package cubemap_001.upk
 Loading Texture2D CubemapFace5 from package cubemap_001.upk
-Loaded in 2.4 sec, 10155 allocs, 11.11 MBytes serialized in 446633 calls.
+Loaded in 1.9 sec, 10181 allocs, 11.19 MBytes serialized in 452148 calls.
 
 Object info:
 ============
@@ -881,7 +886,13 @@ ClassName: Material3 ObjectName: Damage_Fire_Signal_Decal_d_04_2
     TwoSided = false
     bDisableDepthTest = false
     bIsMasked = false
-    ReferencedTextures[2] = { Texture2D'Decal_Round_Crack_002_Des', Texture2D'Glow_Trail_002' }
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Normal_JinGak_Shock_002'
+        ReferencedTextures[1] = Texture2D'Normal_JinGak_Shock_001'
+        ReferencedTextures[2] = Texture2D'Decal_Round_Crack_002_Des'
+        ReferencedTextures[3] = Texture2D'Glow_Trail_002'
+    }
     BlendMode = BLEND_Translucent (2)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
@@ -3177,6 +3188,70 @@ ClassName: Material3 ObjectName: Timmer_Circle_loop
         ReferencedTextures[2] = Texture2D'SystemDecal_Circle_Line'
         ReferencedTextures[3] = Texture2D'Glow_009'
         ReferencedTextures[4] = Texture2D'Ring_Thick_000'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Timmer_Circle_Unbeatable1
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[13] =
+    {
+        ReferencedTextures[0] = Texture2D'Smoke_Dust_000'
+        ReferencedTextures[1] = Texture2D'Gradient_002'
+        ReferencedTextures[2] = Texture2D'SystemDecal_Circle_Line'
+        ReferencedTextures[3] = Texture2D'Glow_009'
+        ReferencedTextures[4] = Texture2D'Ring_Thick_000'
+        ReferencedTextures[5] = Texture2D'Noise_005'
+        ReferencedTextures[6] = Texture2D'Ring_Smoke_000'
+        ReferencedTextures[7] = Texture2D'SystemDecal2_Circle_Full_001'
+        ReferencedTextures[8] = Texture2D'SystemDecal_Circle_blur'
+        ReferencedTextures[9] = Texture2D'Ring_Double_002'
+        ReferencedTextures[10] = Texture2D'Noise_010'
+        ReferencedTextures[11] = Texture2D'Noise_Distortion_000'
+        ReferencedTextures[12] = Texture2D'Fire_000'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Timmer_Circle_Unbeatable_Velocity1
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[11] =
+    {
+        ReferencedTextures[0] = Texture2D'Smoke_Inc_001'
+        ReferencedTextures[1] = Texture2D'SystemDecal_Circle_ring'
+        ReferencedTextures[2] = Texture2D'SystemDecal_Mask01'
+        ReferencedTextures[3] = Texture2D'Noise_005'
+        ReferencedTextures[4] = Texture2D'Ring_Smoke_000'
+        ReferencedTextures[5] = Texture2D'SystemDecal2_Circle_Full_001'
+        ReferencedTextures[6] = Texture2D'SystemDecal_Circle_ray_01'
+        ReferencedTextures[7] = Texture2D'Noise_010'
+        ReferencedTextures[8] = Texture2D'SystemDecal_Circle_blur'
+        ReferencedTextures[9] = Texture2D'Noise_Distortion_000'
+        ReferencedTextures[10] = Texture2D'Fire_000'
     }
     BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333

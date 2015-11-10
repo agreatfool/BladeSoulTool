@@ -1,5 +1,5 @@
-Found 21310 game files (132 skipped)
-Loading package: 00029865.upk Ver: 573/1 Engine: 4205 Names: 1457 Exports: 43107 Imports: 276 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00029865.upk Ver: 573/1 Engine: 4205 Names: 1521 Exports: 49814 Imports: 282 Game: 801A
 Loading AnimSet Bam_Animset_duel from package 00029865.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -144,7 +144,7 @@ Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports:
 Loading Material3 Summon_Hole from package 00029865.upk
 Loading Material3 M_Battle_Text_1break from package 00029865.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1234 Exports: 1209 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading Material3 M_Battle_Text_1break_china from package 00029865.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M_Battle_Text_1break_eng from package 00029865.upk
@@ -159,6 +159,8 @@ Loading Material3 M_battle_text_draw_eng from package 00029865.upk
 Loading Material3 M_battle_text_draw_jpn from package 00029865.upk
 Loading Material3 M_battle_text_draw_taiwan from package 00029865.upk
 Loading Material3 M_battle_text_invalidity_china from package 00029865.upk
+Loading Material3 M_battle_text_invalidity_jpn from package 00029865.upk
+Loading Material3 M_battle_text_invalidity_taiwan from package 00029865.upk
 Loading Material3 M_battle_text_lost_china from package 00029865.upk
 Loading Material3 M_battle_text_lost_eng from package 00029865.upk
 Loading Material3 M_battle_text_lost_final_china from package 00029865.upk
@@ -168,7 +170,7 @@ Loading Material3 M_battle_text_lost_final_taiwan from package 00029865.upk
 Loading Material3 M_battle_text_lost_jpn from package 00029865.upk
 Loading Material3 M_battle_text_lost_taiwan from package 00029865.upk
 Loading Material3 M_battle_text_start_china from package 00029865.upk
-Loading package: 00011426.upk Ver: 573/1 Engine: 4205 Names: 3014 Exports: 107427 Imports: 349 Game: 801A
+Loading package: 00011426.upk Ver: 573/1 Engine: 4205 Names: 3016 Exports: 107454 Imports: 349 Game: 801A
 Loading Material3 M_battle_text_start_eng from package 00029865.upk
 Loading Material3 M_battle_text_start_jpn from package 00029865.upk
 Loading Material3 M_battle_text_start_taiwan from package 00029865.upk
@@ -275,7 +277,7 @@ Loading StaticMesh3 Sphere_Hemi_ZAxis000_Mes_duel from package 00029865.upk
 Loading StaticMesh3 Swordtrail_expand_duel from package 00029865.upk
 Loading StaticMesh3 Thornbus_Needle_duel from package 00029865.upk
 Loading StaticMesh3 geosphere_spiral001 from package 00029865.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 934 Exports: 4850 Imports: 265 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 935 Exports: 4882 Imports: 265 Game: 801A
 Loading StaticMesh3 Sphere_Hemi_-ZAxis000_Mes_UV2 from package 00029865.upk
 Loading Texture2D Fire_Sprite_002_duel from package 00029865.upk
 Loading Texture2D Fire_Sprite_005_duel from package 00029865.upk
@@ -505,6 +507,8 @@ Loading Texture2D T_battle_text_draw_eng_west from package 00029865.upk
 Loading Texture2D T_battle_text_draw_jpn from package 00029865.upk
 Loading Texture2D T_battle_text_draw_taiwan from package 00029865.upk
 Loading Texture2D T_battle_text_invalidity_china from package 00029865.upk
+Loading Texture2D T_battle_text_invalidity_jpn from package 00029865.upk
+Loading Texture2D T_battle_text_invalidity_taiwan from package 00029865.upk
 Loading Texture2D T_battle_text_lost_china from package 00029865.upk
 Loading Texture2D T_battle_text_lost_eng from package 00029865.upk
 Loading Texture2D T_battle_text_lost_final_china from package 00029865.upk
@@ -629,6 +633,4 @@ UAnimSet::ConvertAnims <- PostLoad:Bam_Animset_duel <- UObject::EndLoad <- LoadW
     at ChildProcess.exithandler (child_process.js:637:15)
     at ChildProcess.EventEmitter.emit (events.js:98:17)
     at maybeClose (child_process.js:743:16)
-    at Socket.<anonymous> (child_process.js:956:11)
-    at Socket.EventEmitter.emit (events.js:95:17)
-    at Pipe.close (net.js:465:12)
+    at Process.ChildProcess._handle.onexit (child_process.js:810:5)

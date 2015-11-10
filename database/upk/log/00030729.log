@@ -1,5 +1,5 @@
-Found 21310 game files (132 skipped)
-Loading package: 00030729.upk Ver: 573/1 Engine: 4205 Names: 45 Exports: 16 Imports: 4 Game: 801A
+Found 21975 game files (132 skipped)
+Loading package: 00030729.upk Ver: 573/1 Engine: 4205 Names: 49 Exports: 20 Imports: 4 Game: 801A
 Loading Texture2D AdamantineManNight_col1_D from package 00030729.upk
 Loading Texture2D AdamantineManNight_col1_E from package 00030729.upk
 Loading Texture2D AdamantineManNight_col1_M from package 00030729.upk
@@ -8,7 +8,11 @@ Loading Texture2D AdamantineManNight_col1_S from package 00030729.upk
 Loading Texture2D AdamantineManNight_col2_D from package 00030729.upk
 Loading Texture2D AdamantineManNight_col2_E from package 00030729.upk
 Loading Texture2D AdamantineManNight_col2_S from package 00030729.upk
-Loaded in 0.083 sec, 343 allocs, 4.60 MBytes serialized in 2298 calls.
+Loading Texture2D Monster_Human_AdamantineManNight_col3_D from package 00030729.upk
+Loading Texture2D Monster_Human_AdamantineManNight_col3_E from package 00030729.upk
+Loading Texture2D Monster_Human_AdamantineManNight_col3_M from package 00030729.upk
+Loading Texture2D Monster_Human_AdamantineManNight_col3_S from package 00030729.upk
+Loaded in 0.14 sec, 493 allocs, 6.63 MBytes serialized in 3354 calls.
 
 Object info:
 ============
@@ -122,6 +126,66 @@ ClassName: Texture2D ObjectName: AdamantineManNight_col2_S
     SizeX = 2048
     SizeY = 1024
     Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 11
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_AdamantineManNight_col3_D
+
+    SizeX = 2048
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 11
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_AdamantineManNight_col3_E
+
+    SizeX = 2048
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 11
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_AdamantineManNight_col3_M
+
+    SizeX = 2048
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 11
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_AdamantineManNight_col3_S
+
+    SizeX = 2048
+    SizeY = 1024
+    Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None

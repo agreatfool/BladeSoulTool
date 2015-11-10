@@ -1,0 +1,395 @@
+Found 21975 game files (132 skipped)
+Loading package: 00001002.upk Ver: 573/1 Engine: 4205 Names: 268 Exports: 63 Imports: 20 Game: 801A
+Loading Material3 MeshMaterial from package 00001002.upk
+Loading MaterialInstanceConstant MeshMaterial_INST from package 00001002.upk
+Loading MaterialInstanceConstant MeshMaterialSelected_INST from package 00001002.upk
+Loading MaterialInstanceConstant TeleportSwitchMat_INST from package 00001002.upk
+Loading StaticMesh3 Box from package 00001002.upk
+Loading Texture2D Airdash_end from package 00001002.upk
+Loading Texture2D Airdash_Start from package 00001002.upk
+Loading Texture2D ArchetypeSprite from package 00001002.upk
+Loading Texture2D AreaFlag from package 00001002.upk
+Loading Texture2D CampFireSprite from package 00001002.upk
+Loading Texture2D EnvImage from package 00001002.upk
+Loading Texture2D Gather_Icon from package 00001002.upk
+Loading Texture2D Icon_MoveActionPoint from package 00001002.upk
+Loading Texture2D PhAT_StartSim from package 00001002.upk
+Loading Texture2D PhAT_WorldSpace from package 00001002.upk
+Loading Texture2D PinInfo from package 00001002.upk
+Loading Texture2D S_Player from package 00001002.upk
+Loading Texture2D StartWayPointICon from package 00001002.upk
+Loading Texture2D tel32 from package 00001002.upk
+Loading Texture2D telsw32 from package 00001002.upk
+Loading Texture2D WayPointIcon from package 00001002.upk
+Loaded in 0.067 sec, 637 allocs, 0.03 MBytes serialized in 4939 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: MeshMaterial
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[0] = {}
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: MeshMaterial_INST
+
+    ScalarParameterValues[1] =
+    {
+        ScalarParameterValues[0] = { ParameterName=None, ParameterValue=0.4 }
+    }
+    TextureParameterValues[0] = {}
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = ColorValue
+            ParameterValue = { R=0.166872, G=0.38891, B=0.010398, A=1 }
+        }
+    }
+    Parent = Material3'MeshMaterial'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: MeshMaterialSelected_INST
+
+    ScalarParameterValues[1] =
+    {
+        ScalarParameterValues[0] = { ParameterName=None, ParameterValue=0.3 }
+    }
+    TextureParameterValues[0] = {}
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = ColorValue
+            ParameterValue = { R=1, G=0.005028, B=0.008373, A=1 }
+        }
+    }
+    Parent = Material3'MeshMaterial'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: TeleportSwitchMat_INST
+
+    ScalarParameterValues[1] =
+    {
+        ScalarParameterValues[0] = { ParameterName=None, ParameterValue=0.5 }
+    }
+    TextureParameterValues[0] = {}
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = ColorValue
+            ParameterValue = { R=0.003697, G=0.899385, B=0.234895, A=1 }
+        }
+    }
+    Parent = Material3'MeshMaterial'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Box
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=0 }
+        BoxExtent = { X=8, Y=8, Z=8 }
+        SphereRadius = 13.8564
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=None, FirstIndex=0, NumFaces=12 }
+            }
+            NumVerts = 48
+            IndexCount = 36
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Airdash_end
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 5
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Airdash_Start
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 5
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: ArchetypeSprite
+
+    SizeX = 64
+    SizeY = 64
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 6
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: AreaFlag
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 5
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: CampFireSprite
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 5
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: EnvImage
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 5
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Gather_Icon
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 5
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Icon_MoveActionPoint
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 5
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PhAT_StartSim
+
+    SizeX = 16
+    SizeY = 16
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 4
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PhAT_WorldSpace
+
+    SizeX = 16
+    SizeY = 16
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 4
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PinInfo
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 5
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: S_Player
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 5
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: StartWayPointICon
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 5
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: tel32
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 5
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: telsw32
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 5
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: WayPointIcon
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 5
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
