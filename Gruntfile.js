@@ -299,7 +299,6 @@ module.exports = function(grunt) {
     grunt.registerTask('build', [
         'build_preparer',
         'icon_dumper',
-        'png_optimizer',
         'upk_preparer',
         'upk_scanner',
         'upk_parser',
