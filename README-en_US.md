@@ -157,3 +157,4 @@ GPLv2
 * 2015-03-16: v2.0.3: Update database
 * 2015-08-11: v2.0.4: Update database
 * 2015-11-10: v2.0.5: Update database
+* 2015-11-13: v2.0.6: Update databases, Fix database issue of polluted client
