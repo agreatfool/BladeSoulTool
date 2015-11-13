@@ -1867,6 +1867,18 @@
       "Monster_Human_DarkCrazyTribeB_W_S"
     ]
   },
+  "00005718": {
+    "upkId": "00005718",
+    "col": "col1",
+    "texture": "00005717",
+    "objs": [
+      "11001_KunN_N",
+      "11001_KunN_M",
+      "11001_KunN_D",
+      "11001_KunN_S",
+      "11001_KunN_D_ex"
+    ]
+  },
   "00005722": {
     "upkId": "00005722",
     "col": "col1",
@@ -4622,12 +4634,12 @@
   "00007840": {
     "upkId": "00007840",
     "col": "col1",
-    "texture": "00030946",
+    "texture": "00007839",
     "objs": [
-      "70035_JinF_col1_N",
-      "70035_JinF_col1_M",
-      "70035_JinF_col1_D",
-      "70035_JinF_col1_S"
+      "50003_N",
+      "50003_M",
+      "50003_D",
+      "50003_s"
     ]
   },
   "00007846": {
@@ -16794,7 +16806,13 @@
   "00013150": {
     "upkId": "00013150",
     "col": "col1",
-    "texture": null
+    "texture": "00013149",
+    "objs": [
+      "00001_KunN_s",
+      "00001_KunN_n",
+      "00001_KunN_m",
+      "00001_KunN_d"
+    ]
   },
   "00013152": {
     "upkId": "00013152",
@@ -20279,7 +20297,7 @@
     "col": "col2",
     "texture": "00008184",
     "objs": [
-      "n2",
+      "N2",
       "M2",
       "D2",
       "S2"
@@ -20357,7 +20375,7 @@
     "texture": "00013380",
     "objs": [
       "n2",
-      "M2",
+      "m2",
       "D2",
       "S2"
     ]
@@ -22768,6 +22786,18 @@
       "60069_JinF_col1_D",
       "60069_JinF_col1_S",
       "60069_JinF_col1_E"
+    ]
+  },
+  "00015475": {
+    "upkId": "00015475",
+    "col": "col1",
+    "texture": "00015474",
+    "objs": [
+      "050005_JinF_N",
+      "050005_JinF_M",
+      "050005_JinF_D",
+      "050005_JinF_S",
+      "050005_JinF_E"
     ]
   },
   "00015480": {
@@ -27598,12 +27628,12 @@
   "00016969": {
     "upkId": "00016969",
     "col": "col1",
-    "texture": "00032888",
+    "texture": "00016968",
     "objs": [
-      "010102_JinM_col1_N",
-      "010102_JinM_col1_M",
-      "010102_JinM_col1_D",
-      "010102_JinM_col1_S"
+      "040053_JinF_col1_N",
+      "040053_JinF_col1_M",
+      "040053_JinF_col1_D",
+      "040053_JinF_col1_S"
     ]
   },
   "00017003": {
@@ -38571,7 +38601,7 @@
     "col": "col20",
     "texture": "00008184",
     "objs": [
-      "n2",
+      "N2",
       "M2",
       "D2",
       "S2"
@@ -52009,7 +52039,13 @@
   "00024650": {
     "upkId": "00024650",
     "col": "col3",
-    "texture": null
+    "texture": "00015043",
+    "objs": [
+      "60050_JinF_col3_N",
+      "60050_JinF_Col3_M",
+      "60050_JinF_Col3_D",
+      "60050_JinF_col3_S"
+    ]
   },
   "00024653": {
     "upkId": "00024653",
@@ -52140,7 +52176,13 @@
   "00024692": {
     "upkId": "00024692",
     "col": "col3",
-    "texture": null
+    "texture": "00014359",
+    "objs": [
+      "60050_GonF_Col3_N",
+      "60050_GonF_Col3_M",
+      "60050_GonF_Col3_D",
+      "60050_GonF_Col3_S"
+    ]
   },
   "00024698": {
     "upkId": "00024698",
@@ -61270,7 +61312,9 @@
     "texture": "00008184",
     "objs": [
       "N",
-      "M"
+      "M",
+      "Cloth_50004_JinF_Col3_D",
+      "Cloth_50004_JinF_Col3_S"
     ]
   },
   "00027448": {
@@ -61302,6 +61346,7 @@
     "objs": [
       "Cloth_51003_GonF_col1_N",
       "Cloth_51003_GonF_col1_M",
+      "Cloth_51003_GonF_col3_D",
       "Cloth_51003_GonF_col1_S"
     ]
   },
@@ -62385,7 +62430,10 @@
     "col": "col6",
     "texture": "00006856",
     "objs": [
-      "Cloth_80008_GonF_col1_M"
+      "Cloth_80008_GonF_col6_N",
+      "Cloth_80008_GonF_col1_M",
+      "Cloth_80008_GonF_col6_D",
+      "Cloth_80008_GonF_col6_S"
     ]
   },
   "00027827": {
@@ -62994,7 +63042,9 @@
     "texture": "00008343",
     "objs": [
       "Cloth_51003_JinF_col1_N",
-      "Cloth_51003_JinF_col1_M"
+      "Cloth_51003_JinF_col1_M",
+      "Cloth_51003_JinF_col3_D",
+      "Cloth_51003_JinF_col3_S"
     ]
   },
   "00027933": {
@@ -66880,8 +66930,10 @@
     "col": "col3",
     "texture": "00013188",
     "objs": [
+      "50003_KunN_col3_S",
       "Cloth_50003_KunN_col1_N",
-      "Cloth_50003_KunN_col1_M"
+      "Cloth_50003_KunN_col1_M",
+      "50003_KunN_col3_D"
     ]
   },
   "00029153": {
@@ -66890,7 +66942,9 @@
     "texture": "00013189",
     "objs": [
       "Cloth_50003_GonF_col1_N",
-      "Cloth_50003_GonF_col1_M"
+      "Cloth_50003_GonF_col1_M",
+      "50003_GonF_col3_D",
+      "50003_GonF_col3_S"
     ]
   },
   "00029154": {
@@ -66909,7 +66963,10 @@
     "col": "col3",
     "texture": "00014289",
     "objs": [
-      "50003_LynF_col2_M"
+      "50003_LynF_col3_N",
+      "50003_LynF_col2_M",
+      "50003_LynF_col3_D",
+      "50003_LynF_col3_S"
     ]
   },
   "00029156": {
@@ -66939,7 +66996,10 @@
     "col": "col4",
     "texture": "00013188",
     "objs": [
-      "Cloth_50003_KunN_col1_M"
+      "50003_KunN_col4_S",
+      "50003_KunN_col4_N",
+      "Cloth_50003_KunN_col1_M",
+      "50003_KunN_col4_D"
     ]
   },
   "00029159": {
@@ -66947,7 +67007,10 @@
     "col": "col4",
     "texture": "00013189",
     "objs": [
-      "Cloth_50003_GonF_col1_M"
+      "50003_GonF_col4_N",
+      "Cloth_50003_GonF_col1_M",
+      "50003_GonF_col4_D",
+      "50003_GonF_col4_S"
     ]
   },
   "00029160": {
@@ -66964,7 +67027,13 @@
   "00029161": {
     "upkId": "00029161",
     "col": "col4",
-    "texture": null
+    "texture": "00014289",
+    "objs": [
+      "50003_LynF_col4_N",
+      "50003_LynF_col3_M",
+      "50003_LynF_col4_D",
+      "50003_LynF_col4_S"
+    ]
   },
   "00029164": {
     "upkId": "00029164",

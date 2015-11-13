@@ -1,5 +1,5 @@
-Found 21975 game files (132 skipped)
-Loading package: 00007841.upk Ver: 573/1 Engine: 4205 Names: 260 Exports: 274 Imports: 22 Game: 801A
+Found 21974 game files (0 skipped)
+Loading package: 00007841.upk Ver: 573/1 Engine: 4205 Names: 394 Exports: 361 Imports: 77 Game: 801A
 Loading SkeletalMesh3 50003_JinF from package 00007841.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
 WARNING: FloatProperty "USkeletalMesh3::EffectScale" was not found
@@ -15,32 +15,28 @@ WARNING: ArrayProperty "USkeletalMesh3::MeshScaleRatio" was not found
 WARNING: StructProperty "USkeletalMesh3::HeightRatio" was not found
 WARNING: StructProperty "USkeletalMesh3::HandRatio" was not found
 WARNING: ByteProperty "USkeletalMesh3::CommonPhysicsUseFlag" was not found
-Loading package: 00030947.upk Ver: 573/1 Engine: 4205 Names: 92 Exports: 1 Imports: 20 Game: 801A
-Loading MaterialInstanceConstant col1 from package 00030947.upk
-Loading package: 00030946.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 8 Imports: 4 Game: 801A
-Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00007840.upk Ver: 573/1 Engine: 4205 Names: 84 Exports: 2 Imports: 21 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_230 from package 00007841.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_231 from package 00007841.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+Loading MaterialInstanceConstant col1 from package 00007840.upk
+Loading package: 00007839.upk Ver: 573/1 Engine: 4205 Names: 48 Exports: 19 Imports: 4 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading Texture2D 70035_JinF_col1_N from package 00030946.upk
-Loading Texture2D 70035_JinF_col1_M from package 00030946.upk
-Loading Texture2D 70035_JinF_col1_D from package 00030946.upk
-Loading Texture2D 70035_JinF_col1_S from package 00030946.upk
-Loading TextureCube lenscube from package 00002640.upk
-Loading Texture2D check from package 00002620.upk
+Loading Texture2D 50003_N from package 00007839.upk
+Loading Texture2D 50003_M from package 00007839.upk
+Loading Texture2D 50003_D from package 00007839.upk
+Loading Texture2D 50003_s from package 00007839.upk
 Loading Material3 Body from package 00002620.upk
 Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
-Loading Texture2D CubemapFace0 from package 00002640.upk
-Loading Texture2D CubemapFace1 from package 00002640.upk
-Loading Texture2D CubemapFace2 from package 00002640.upk
-Loading Texture2D CubemapFace3 from package 00002640.upk
-Loading Texture2D CubemapFace4 from package 00002640.upk
-Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D Noise_Glass_000 from package 00012963.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.17 sec, 3095 allocs, 3.94 MBytes serialized in 669313 calls.
+Loaded in 0.1 sec, 2728 allocs, 2.13 MBytes serialized in 363670 calls.
 
 Object info:
 ============
@@ -50,7 +46,7 @@ ClassName: SkeletalMesh3 ObjectName: 50003_JinF
     {
         LODInfo[0] =
         {
-            DisplayFactor = 0
+            DisplayFactor = 0.25
             LODHysteresis = 0.02
             LODMaterialMap[0] = {}
             bEnableShadowCasting[2] = { true, true }
@@ -63,7 +59,11 @@ ClassName: SkeletalMesh3 ObjectName: 50003_JinF
             bEnableShadowCasting[1] = { true }
         }
     }
-    Sockets[0] = {}
+    Sockets[2] =
+    {
+        Sockets[0] = SkeletalMeshSocket'50003_JinF.SkeletalMeshSocket_230'
+        Sockets[1] = SkeletalMeshSocket'50003_JinF.SkeletalMeshSocket_231'
+    }
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
@@ -76,21 +76,21 @@ ClassName: SkeletalMesh3 ObjectName: 50003_JinF
         {
             Sections[2] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=11335 }
-                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=34005, NumFaces=1335 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=5418 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=16254, NumFaces=64 }
             }
-            NumVerts = 9162
-            IndexCount = 38010
+            NumVerts = 4159
+            IndexCount = 16446
             NumTexCoords = 1
         }
         Lods[1] =
         {
             Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=3887 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1421 }
             }
-            NumVerts = 3733
-            IndexCount = 11661
+            NumVerts = 1347
+            IndexCount = 4263
             NumTexCoords = 1
         }
     }
@@ -98,4 +98,24 @@ ClassName: SkeletalMesh3 ObjectName: 50003_JinF
     MeshOrigin = { X=-0, Y=-0, Z=-0 }
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
-    BoneCount = 133
+    BoneCount = 106
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_230
+
+    SocketName = Arm_socket_effect
+    BoneName = Bip01RUpperArm
+    RelativeLocation = { X=11.3617, Y=0.0396802, Z=-1.65798 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_231
+
+    SocketName = Leg_socket_effect
+    BoneName = Bip01RThigh
+    RelativeLocation = { X=19.6745, Y=-0.251243, Z=-1.18145 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }

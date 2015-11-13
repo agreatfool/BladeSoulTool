@@ -5263,7 +5263,10 @@
       "80008_GonF_N2",
       "80008_GonF_S2",
       "Cloth_80008_GonF_col1_M",
-      "Cloth_80008_GonF_col3_N"
+      "Cloth_80008_GonF_col3_N",
+      "Cloth_80008_GonF_col6_D",
+      "Cloth_80008_GonF_col6_N",
+      "Cloth_80008_GonF_col6_S"
     ],
     "materials": {
       "col1": "00006858",
@@ -6626,6 +6629,7 @@
       "50003_S_col4"
     ],
     "materials": {
+      "col1": "00007840",
       "col3": "00009376",
       "col2": "00009377",
       "col4": "00009391",
@@ -7470,12 +7474,14 @@
   "00008184": {
     "upkId": "00008184",
     "objs": [
+      "Cloth_50004_JinF_Col3_D",
+      "Cloth_50004_JinF_Col3_S",
       "D",
       "D2",
       "M",
       "M2",
       "N",
-      "n2",
+      "N2",
       "S",
       "S2"
     ],
@@ -7837,7 +7843,9 @@
       "Cloth_51003_GonF_col1_D",
       "Cloth_51003_GonF_col1_M",
       "Cloth_51003_GonF_col1_N",
-      "Cloth_51003_GonF_col1_S"
+      "Cloth_51003_GonF_col1_S",
+      "Cloth_51003_GonF_col3_D",
+      "Cloth_51003_GonF_col3_S"
     ],
     "materials": {
       "col1": "00008337",
@@ -7875,7 +7883,9 @@
       "Cloth_51003_JinF_col1_D",
       "Cloth_51003_JinF_col1_M",
       "Cloth_51003_JinF_col1_N",
-      "Cloth_51003_JinF_col1_S"
+      "Cloth_51003_JinF_col1_S",
+      "Cloth_51003_JinF_col3_D",
+      "Cloth_51003_JinF_col3_S"
     ],
     "materials": {
       "col1": "00008344",
@@ -30203,6 +30213,12 @@
       "50003_KunN_col2_M",
       "50003_KunN_col2_N",
       "50003_KunN_col2_S",
+      "50003_KunN_col3_D",
+      "50003_KunN_col3_S",
+      "50003_KunN_col4_D",
+      "50003_KunN_col4_M",
+      "50003_KunN_col4_N",
+      "50003_KunN_col4_S",
       "Cloth_50003_KunN_col1_D",
       "Cloth_50003_KunN_col1_M",
       "Cloth_50003_KunN_col1_N",
@@ -30222,6 +30238,11 @@
       "50003_GonF_col2_M",
       "50003_GonF_col2_N",
       "50003_GonF_col2_S",
+      "50003_GonF_col3_D",
+      "50003_GonF_col3_S",
+      "50003_GonF_col4_D",
+      "50003_GonF_col4_N",
+      "50003_GonF_col4_S",
       "Cloth_50003_GonF_col1_D",
       "Cloth_50003_GonF_col1_M",
       "Cloth_50003_GonF_col1_N",
@@ -30857,7 +30878,7 @@
       "D",
       "D2",
       "M",
-      "M2",
+      "m2",
       "n1",
       "n2",
       "S",
@@ -32491,6 +32512,13 @@
       "50003_LynF_col2_M",
       "50003_LynF_col2_N",
       "50003_LynF_col2_S",
+      "50003_LynF_col3_D",
+      "50003_LynF_col3_M",
+      "50003_LynF_col3_N",
+      "50003_LynF_col3_S",
+      "50003_LynF_col4_D",
+      "50003_LynF_col4_N",
+      "50003_LynF_col4_S",
       "Cloth_50003_LynF_D",
       "Cloth_50003_LynF_M",
       "Cloth_50003_LynF_N",
@@ -32499,7 +32527,8 @@
     "materials": {
       "col1": "00014290",
       "col2": "00016428",
-      "col3": "00029155"
+      "col3": "00029155",
+      "col4": "00029161"
     }
   },
   "00014294": {
@@ -32727,6 +32756,10 @@
     "objs": [
       "60050_GonF_co2_D",
       "60050_GonF_co2_S",
+      "60050_GonF_Col3_D",
+      "60050_GonF_Col3_M",
+      "60050_GonF_Col3_N",
+      "60050_GonF_Col3_S",
       "60050_GonF_D",
       "60050_GonF_M",
       "60050_GonF_N",
@@ -32734,7 +32767,8 @@
     ],
     "materials": {
       "col1": "00014360",
-      "col2": "00017201"
+      "col2": "00017201",
+      "col3": "00024692"
     }
   },
   "00014363": {
@@ -34631,6 +34665,10 @@
     "objs": [
       "60050_JinF_Col2_D",
       "60050_JinF_Col2_S",
+      "60050_JinF_Col3_D",
+      "60050_JinF_Col3_M",
+      "60050_JinF_col3_N",
+      "60050_JinF_col3_S",
       "60050_JinF_D",
       "60050_JinF_M",
       "60050_JinF_N",
@@ -34638,7 +34676,8 @@
     ],
     "materials": {
       "col1": "00015044",
-      "col2": "00017204"
+      "col2": "00017204",
+      "col3": "00024650"
     }
   },
   "00015046": {
@@ -35839,7 +35878,9 @@
       "050005_JinF_N",
       "050005_JinF_S"
     ],
-    "materials": {}
+    "materials": {
+      "col1": "00015475"
+    }
   },
   "00015479": {
     "upkId": "00015479",
@@ -39586,7 +39627,9 @@
       "040053_JinF_col1_N",
       "040053_JinF_col1_S"
     ],
-    "materials": {}
+    "materials": {
+      "col1": "00016969"
+    }
   },
   "00017002": {
     "upkId": "00017002",
