@@ -82,7 +82,7 @@ BstUpkViewer.prototype.start = function(partType, elementId) {
     var displayModel = function() {
         // 将upk文件使用umodel进行可视化
         var worker = cp.exec(
-            'umodel.exe -view -meshes -path=' + self.working3DPath + ' -game=bns ' + element['skeleton'],
+            'umodel.exe -view -meshes -path="' + self.working3DPath + '" -game=bns ' + element['skeleton'],
             {"cwd": './resources/umodel/'}
         );
         worker.stdout.on('data', function (data) { self.util.logChildProcessStdout(data); });
