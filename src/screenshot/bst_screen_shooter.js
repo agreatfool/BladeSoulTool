@@ -142,7 +142,7 @@ BstScreenShooter.prototype.processSingle = function(type, element) {
     // 将upk文件使用umodel进行可视化
     var handleUmodel = function() {
         var worker = cp.exec(
-            'umodel.exe -view -meshes -path=' + path.dirname(skeletonPath) + ' -game=bns ' + element['skeleton'],
+            'umodel.exe -view -meshes -path="' + path.dirname(skeletonPath) + '" -game=bns ' + element['skeleton'],
             {"cwd": './resources/umodel/'}
         );
         worker.stdout.on('data', function (data) { self.util.logChildProcessStdout(data); });

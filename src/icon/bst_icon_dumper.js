@@ -47,7 +47,7 @@ BstIconDumper.prototype.start = function() {
     var iconUpkPath = self.util.findUpkPath(BstConst.ICON_UPK_ID);
     var umodelWorkingPath = path.dirname(iconUpkPath);
 
-    var exec = 'umodel.exe -export -path=' + umodelWorkingPath + ' -game=bns -out=output ' + BstConst.ICON_UPK_ID;
+    var exec = 'umodel.exe -export -path="' + umodelWorkingPath + '" -game=bns -out=output ' + BstConst.ICON_UPK_ID;
     self.grunt.log.writeln('[BstIconDumper] Dump command: ' + exec);
     cp.exec(exec, {"cwd": path.join(self.gruntWorkingPath, 'resources/umodel'), "maxBuffer": 5 * 1024 * 1024}, // max buff 5M
         function(error) {
