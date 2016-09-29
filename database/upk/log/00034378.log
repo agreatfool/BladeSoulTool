@@ -1,0 +1,153 @@
+Found 27000 game files (27 skipped)
+Loading package: 00034378.upk Ver: 573/1 Engine: 4205 Names: 59 Exports: 2 Imports: 17 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00034378.upk
+Loading package: 00034379.upk Ver: 573/1 Engine: 4205 Names: 29 Exports: 2 Imports: 2 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading MaterialInstanceConstant col1_1 from package 00034378.upk
+Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
+Loading Texture2D GonF_105_col1_N from package 00034379.upk
+Loading Texture2D GonF_105_col1_D from package 00034379.upk
+Loading Material3 Beard_Fur from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading Texture2D Nothing_A from package 00008613.upk
+Loading Material3 Beard_Ac from package 00002620.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loaded in 0.054 sec, 2287 allocs, 1.74 MBytes serialized in 151334 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[5] =
+    {
+        ScalarParameterValues[0] = { ParameterName=long, ParameterValue=0.4 }
+        ScalarParameterValues[1] = { ParameterName=Hair_Glossiness, ParameterValue=5 }
+        ScalarParameterValues[2] = { ParameterName=Fresnel Value, ParameterValue=0.6 }
+        ScalarParameterValues[3] = { ParameterName=Fresnel exponent, ParameterValue=6 }
+        ScalarParameterValues[4] = { ParameterName=Specular_value, ParameterValue=0.3 }
+    }
+    TextureParameterValues[2] =
+    {
+        TextureParameterValues[0] = { ParameterName=Hair_normal, ParameterValue=Texture2D'GonF_105_col1_N' }
+        TextureParameterValues[1] = { ParameterName=Hair_Diffuse, ParameterValue=Texture2D'GonF_105_col1_D' }
+    }
+    VectorParameterValues[6] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = hair_color_S
+            ParameterValue = { R=0.774227, G=0.722673, B=0.560499, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = hair_color_L
+            ParameterValue = { R=0.25084, G=0.183549, B=0.116576, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = hair_color_D
+            ParameterValue = { R=0.003697, G=0.001963, B=0.000992, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+    }
+    Parent = Material3'Beard_Fur'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1_1
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Ac_Glossiness, ParameterValue=5 }
+        ScalarParameterValues[1] = { ParameterName=Hair_Glossiness, ParameterValue=3 }
+        ScalarParameterValues[2] = { ParameterName=beard_hide, ParameterValue=0 }
+    }
+    TextureParameterValues[3] =
+    {
+        TextureParameterValues[0] = { ParameterName=Hair_Diffuse, ParameterValue=Texture2D'GonF_105_col1_D' }
+        TextureParameterValues[1] = { ParameterName=Hair_normal, ParameterValue=Texture2D'GonF_105_col1_N' }
+        TextureParameterValues[2] = { ParameterName=Hide, ParameterValue=Texture2D'Nothing_A' }
+    }
+    VectorParameterValues[9] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = hair_color_S
+            ParameterValue = { R=0.948965, G=0.796917, B=0.420508, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = hair_color_L
+            ParameterValue = { R=0.859174, G=0.535642, B=0.201096, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = hair_color_D
+            ParameterValue = { R=0.166872, G=0.12753, B=0.121986, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Ac_color_S
+            ParameterValue = { R=2, G=1.5, B=1.2, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = Ac_color_L
+            ParameterValue = { R=0.415148, G=0.464741, B=0.766744, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = Ac_color_D
+            ParameterValue = { R=0.101145, G=0.101145, B=0.101145, A=1 }
+        }
+    }
+    Parent = Material3'Beard_Ac'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

@@ -1,17 +1,23 @@
-Found 21974 game files (0 skipped)
-Loading package: 00014443.upk Ver: 573/1 Engine: 4205 Names: 1164 Exports: 17627 Imports: 473 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00014443.upk Ver: 573/1 Engine: 4205 Names: 1240 Exports: 18103 Imports: 504 Game: 801A
 Loading Material3 Dst_volume_fall_2_opt from package 00014443.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading Material3 tornado from package 00014443.upk
+WARNING: StructProperty "UMaterial3::WorldPositionOffset" was not found
 Loading Material3 zzz_Gem__mesh from package 00014443.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading StaticMesh3 BGFX_Blackhole_001 from package 00014443.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 935 Exports: 4882 Imports: 265 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 929 Exports: 4955 Imports: 320 Game: 801A
 Loading StaticMesh3 BGFX_BuffTree_001 from package 00014443.upk
-Loading package: 00012586.upk Ver: 573/1 Engine: 4205 Names: 476 Exports: 5713 Imports: 207 Game: 801A
+Loading package: 00012586.upk Ver: 573/1 Engine: 4205 Names: 519 Exports: 7131 Imports: 223 Game: 801A
 Loading Texture2D Glow_Flair_001 from package 00012963.upk
 Loading Texture2D Unique_WarterFall_001_Normal from package 00012963.upk
 Loading Texture2D Smoke_Dusts_002 from package 00012963.upk
+Loading Texture2D Normal_Noise_003 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
+Loading Texture2D Unique_Stone_001 from package 00012963.upk
+Loading Texture2D Glow_007 from package 00012963.upk
 Loading Texture2D Noise_003 from package 00012963.upk
 Loading Texture2D Noise_Wave_000 from package 00012963.upk
 Loading Texture2D Gradient_001 from package 00012963.upk
@@ -23,14 +29,13 @@ Loading Material3 BGFX_Blackhole_001_Mat from package 00012892.upk
 Loading Material3 BGFX_Blackhole_001_Out_Mat from package 00012892.upk
 Loading Material3 fractal_spread01_app2 from package 00012586.upk
 Loading Texture2D Noise_011 from package 00012963.upk
-Loading Texture2D Unique_Stone_001 from package 00012963.upk
 Loading Texture2D Gradient_Trail_003 from package 00012963.upk
 Loading Texture2D BG_SandfallNoise_001_D from package 00012963.upk
 Loading Texture2D Noise_006 from package 00012963.upk
 Loading Texture2D Noise_005 from package 00012963.upk
 Loading Texture2D Gradient_009 from package 00012963.upk
 Loading Texture2D Noise_Plazma_002 from package 00012963.upk
-Loaded in 0.19 sec, 4388 allocs, 3.27 MBytes serialized in 687123 calls.
+Loaded in 0.2 sec, 4577 allocs, 3.35 MBytes serialized in 724583 calls.
 
 Object info:
 ============
@@ -45,6 +50,24 @@ ClassName: Material3 ObjectName: Dst_volume_fall_2_opt
         ReferencedTextures[1] = Texture2D'Unique_WarterFall_001_Normal'
         ReferencedTextures[2] = Texture2D'Smoke_Dusts_002'
     }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: tornado
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] = { Texture2D'Normal_Noise_003', Texture2D'Unique_Stone_001', Texture2D'Glow_007' }
     BlendMode = BLEND_Translucent (2)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None

@@ -1,6 +1,16 @@
-Found 21974 game files (0 skipped)
-Loading package: 00010080.upk Ver: 573/1 Engine: 4205 Names: 1209 Exports: 22776 Imports: 527 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00010080.upk Ver: 573/1 Engine: 4205 Names: 1327 Exports: 24797 Imports: 572 Game: 801A
 Loading Material3 bird_color_copy from package 00010080.upk
+Loading Material3 CTF_shield from package 00010080.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading package: 00012850.upk Ver: 573/1 Engine: 4205 Names: 1729 Exports: 26051 Imports: 651 Game: 801A
+Loading Material3 CTF_shield2 from package 00010080.upk
+Loading package: cubemap_001.upk Ver: 573/1 Engine: 4205 Names: 179 Exports: 525 Imports: 34 Game: 801A
+Loading Material3 Gadget_CTF_Pipe_beam01 from package 00010080.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Gadget_CTF_Pipe_beam02 from package 00010080.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Gadget_CTF_Pipe_Fresnel from package 00010080.upk
 Loading Material3 Gadget_Club000_MatM from package 00010080.upk
 Loading Material3 Gadget_Club000_MatM_black from package 00010080.upk
 Loading Material3 Gadget_Counts from package 00010080.upk
@@ -17,7 +27,6 @@ Loading Material3 Gadget_Stone_MatM from package 00010080.upk
 Loading Material3 Gadget_Sword000_MatM from package 00010080.upk
 Loading Material3 Prop_Blacksmith_Anvil_Mat from package 00010080.upk
 Loading Material3 QuestFX_Glittering from package 00010080.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading Material3 Z_M from package 00010080.upk
 Loading StaticMesh3 Arrow from package 00010080.upk
 Loading package: 00003014.upk Ver: 573/1 Engine: 4205 Names: 93 Exports: 2 Imports: 21 Game: 801A
@@ -56,6 +65,26 @@ Loading Texture2D Prop_Blacksmith_Anvil_D from package 00010080.upk
 Loading Texture2D Prop_Blacksmith_Anvil_N from package 00010080.upk
 Loading Texture2D Prop_Blacksmith_Anvil_S from package 00010080.upk
 Loading Texture2D Z from package 00010080.upk
+Loading Texture2D Noise_009 from package 00012963.upk
+Loading Texture2D SaintTurtle_piece_N from package 00012850.upk
+Loading Texture2D SaintTurtle_piece from package 00012850.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Normal_Noise_000 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
+Loading Texture2D Noise_005 from package 00012963.upk
+Loading Texture2D Noise_Wave_000 from package 00012963.upk
+Loading Texture2D Ref_Cool from package 00012963.upk
+Loading Texture2D Smoke_Cloud_005 from package 00012963.upk
+Loading Texture2D Blur_Point_Tex from package 00012963.upk
+Loading Texture2D Gradient_001 from package 00012963.upk
+Loading TextureCube Cube_D from package cubemap_001.upk
+Loading Texture2D Gradient_Beam_005 from package 00012963.upk
+Loading Texture2D Beam from package 00012963.upk
+Loading Texture2D Glow_Trail_001 from package 00012963.upk
+Loading Texture2D Gradient_Beam_006_Yclamp from package 00012963.upk
+Loading Texture2D Noise_Plazma_002 from package 00012963.upk
+Loading Texture2D Smoke_Fractal_002 from package 00012963.upk
 Loading Texture2D Drop_Bottle_n from package 00005604.upk
 Loading Texture2D Drop_Bottle_d from package 00005604.upk
 Loading Texture2D StoneLamp_n from package 00004468.upk
@@ -67,7 +96,6 @@ Loading Texture2D Unique_WaterFall_002_Normal from package 00012963.upk
 Loading Texture2D Unique_WarterFall_001 from package 00012963.upk
 Loading Texture2D Noise_013 from package 00012963.upk
 Loading Texture2D Noise_Distortion_000 from package 00012963.upk
-Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading MaterialInstanceConstant col1 from package 00003014.upk
 Loading package: 00003003.upk Ver: 573/1 Engine: 4205 Names: 31 Exports: 4 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
@@ -75,13 +103,18 @@ Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 I
 Loading MaterialInstanceConstant col1_1 from package 00004469.upk
 Loading MaterialInstanceConstant col1 from package 00009475.upk
 Loading package: 00009474.upk Ver: 573/1 Engine: 4205 Names: 46 Exports: 10 Imports: 6 Game: 801A
+Loading Texture2D CubemapFace0 from package cubemap_001.upk
+Loading Texture2D CubemapFace1 from package cubemap_001.upk
+Loading Texture2D CubemapFace2 from package cubemap_001.upk
+Loading Texture2D CubemapFace3 from package cubemap_001.upk
+Loading Texture2D CubemapFace4 from package cubemap_001.upk
+Loading Texture2D CubemapFace5 from package cubemap_001.upk
 Loading Texture2D WP1002WS_n from package 00003003.upk
 Loading Texture2D WP1002WS_M from package 00003003.upk
 Loading Texture2D WP1002WS_d from package 00003003.upk
 Loading Texture2D WP1002WS_s from package 00003003.upk
 Loading TextureCube mirror2 from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
-Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Material3 Basic from package 00002620.upk
 Loading TextureCube Cube_D from package 00002640.upk
 Loading Texture2D StoneLamp_FX_Glow from package 00004468.upk
@@ -105,7 +138,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.43 sec, 5865 allocs, 4.21 MBytes serialized in 677005 calls.
+Loaded in 0.68 sec, 8510 allocs, 6.52 MBytes serialized in 1207633 calls.
 
 Object info:
 ============
@@ -115,6 +148,129 @@ ClassName: Material3 ObjectName: bird_color_copy
     bDisableDepthTest = false
     bIsMasked = false
     ReferencedTextures[0] = {}
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: CTF_shield
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_009'
+        ReferencedTextures[1] = Texture2D'SaintTurtle_piece_N'
+        ReferencedTextures[2] = Texture2D'SaintTurtle_piece'
+        ReferencedTextures[3] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[4] = Texture2D'Gradient_Line_003'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: CTF_shield2
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[13] =
+    {
+        ReferencedTextures[0] = Texture2D'Normal_Noise_000'
+        ReferencedTextures[1] = Texture2D'Noise_005'
+        ReferencedTextures[2] = Texture2D'Noise_Wave_000'
+        ReferencedTextures[3] = Texture2D'Ref_Cool'
+        ReferencedTextures[4] = Texture2D'Noise_009'
+        ReferencedTextures[5] = Texture2D'SaintTurtle_piece'
+        ReferencedTextures[6] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[7] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[8] = Texture2D'SaintTurtle_piece_N'
+        ReferencedTextures[9] = Texture2D'Smoke_Cloud_005'
+        ReferencedTextures[10] = Texture2D'Blur_Point_Tex'
+        ReferencedTextures[11] = Texture2D'Gradient_001'
+        ReferencedTextures[12] = TextureCube'Cube_D'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Gadget_CTF_Pipe_beam01
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Beam_005'
+        ReferencedTextures[1] = Texture2D'Beam'
+        ReferencedTextures[2] = Texture2D'Glow_Trail_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Beam_006_Yclamp'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Gadget_CTF_Pipe_beam02
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_Plazma_002'
+        ReferencedTextures[1] = Texture2D'Smoke_Fractal_002'
+        ReferencedTextures[2] = Texture2D'Glow_Trail_001'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Gadget_CTF_Pipe_Fresnel
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'Smoke_Fractal_002', Texture2D'Noise_Wave_000' }
     BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None

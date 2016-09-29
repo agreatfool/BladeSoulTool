@@ -1,5 +1,13 @@
-Found 21974 game files (0 skipped)
-Loading package: 00009393.upk Ver: 573/1 Engine: 4205 Names: 590 Exports: 239 Imports: 37 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00009393.upk Ver: 573/1 Engine: 4205 Names: 654 Exports: 243 Imports: 39 Game: 801A
+Loading AnimSet Assassin_Skill_Animset from package 00009393.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+Loading AnimSequence AnimSequence_0 from package 00009393.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
 Loading AnimSet Cat_NATK_1 from package 00009393.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -98,12 +106,15 @@ Loading SkeletalMesh3 cat_Box from package 00009393.upk
 Loading SkeletalMesh3 Chinese_Sprint_Dragon from package 00009393.upk
 Loading SkeletalMesh3 coil from package 00009393.upk
 Loading SkeletalMesh3 Dealer01 from package 00009393.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 935 Exports: 4882 Imports: 265 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 929 Exports: 4955 Imports: 320 Game: 801A
+Loading SkeletalMesh3 ElectricBomb from package 00009393.upk
+Loading package: 00035458.upk Ver: 573/1 Engine: 4205 Names: 318 Exports: 2171 Imports: 122 Game: 801A
 Loading SkeletalMesh3 Epic_Item_Scroll from package 00009393.upk
 Loading SkeletalMesh3 HongMunDragon_Mesh from package 00009393.upk
 Loading SkeletalMesh3 LegendWeapon_Dragon from package 00009393.upk
 Loading SkeletalMesh3 Rosary_Mesh from package 00009393.upk
 Loading SkeletalMesh3 SorcererA_HandR from package 00009393.upk
+Loading SkeletalMesh3 SoulDash_Mesh from package 00009393.upk
 Loading SkeletalMesh3 Summon_Dealer_Torso from package 00009393.upk
 Loading SkeletalMesh3 Summon_Dealer_UV_Planar from package 00009393.upk
 Loading SkeletalMesh3 sunflower_Mesh from package 00009393.upk
@@ -125,19 +136,27 @@ Loading Texture2D Dm from package 00008545.upk
 Loading Texture2D SM from package 00008545.upk
 Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading MaterialInstanceConstant col1 from package 00027532.upk
-Loading package: 00027530.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 8 Imports: 4 Game: 801A
+Loading package: 00023713.upk Ver: 573/1 Engine: 4205 Names: 96 Exports: 71 Imports: 4 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00035458.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading Texture2D Cube000_Tex from package 00012892.upk
+Loading MaterialInstanceConstant col1 from package 00027532.upk
+Loading package: 00027530.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 8 Imports: 4 Game: 801A
+Loading Texture2D Cube000_Tex from package 00023713.upk
+Loading Texture2D ElectricBomd_N from package 00012963.upk
+Loading Texture2D ElectricBomd_M from package 00012963.upk
+Loading Texture2D ElectricBomd_D from package 00012963.upk
+Loading Texture2D ElectricBomd_S from package 00012963.upk
+Loading TextureCube lenscube_a from package 00002640.upk
+Loading Texture2D ElectricBomd_E from package 00012963.upk
+Loading Material3 Basic from package 00002620.upk
 Loading Texture2D 060026_JinM_col1_N from package 00027530.upk
 Loading Texture2D 060026_JinM_col1_M from package 00027530.upk
 Loading Texture2D 060026_JinM_col1_D from package 00027530.upk
 Loading Texture2D 060026_JinM_col1_S from package 00027530.upk
 Loading TextureCube Cube_D from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
-Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -149,6 +168,12 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
 Error: Command failed: ******** 00009393 ********
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
@@ -175,8 +200,9 @@ Error: Command failed: ******** 00009393 ********
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** ERROR: Unknown rotation compression method: 255
-UAnimSet::ConvertAnims <- PostLoad:Chinese_VIP_Sprint_Dragon <- UObject::EndLoad <- LoadWholePackage:00009393 <- Main
+UAnimSet::ConvertAnims <- PostLoad:Assassin_Skill_Animset <- UObject::EndLoad <- LoadWholePackage:00009393 <- Main
 
 
     at ChildProcess.exithandler (child_process.js:637:15)

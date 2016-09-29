@@ -1,0 +1,440 @@
+Found 27000 game files (27 skipped)
+Loading package: 00034433.upk Ver: 573/1 Engine: 4205 Names: 793 Exports: 11463 Imports: 344 Game: 801A
+Loading StaticMesh3 BackPos_Mesh01 from package 00034433.upk
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 929 Exports: 4955 Imports: 320 Game: 801A
+Loading StaticMesh3 Breakaway_Mesh01 from package 00034433.upk
+Loading StaticMesh3 FinalAttack_Exec01 from package 00034433.upk
+Loading StaticMesh3 RealAttack_Exec02 from package 00034433.upk
+Loading StaticMesh3 RealAttack_Mesh01 from package 00034433.upk
+Loading StaticMesh3 RearAttack_Exec01 from package 00034433.upk
+Loading StaticMesh3 RearAttack_Fire01 from package 00034433.upk
+Loading StaticMesh3 RearAttact_Fire02 from package 00034433.upk
+Loading StaticMesh3 RunPose_Mesh01 from package 00034433.upk
+Loading StaticMesh3 RunPose_Mesh02 from package 00034433.upk
+Loading StaticMesh3 RunPose_Mesh03 from package 00034433.upk
+Loading StaticMesh3 Vision_Mesh01 from package 00034433.upk
+Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00023713.upk Ver: 573/1 Engine: 4205 Names: 96 Exports: 71 Imports: 4 Game: 801A
+Loading Texture2D Cube000_Tex from package 00023713.upk
+Loaded in 0.11 sec, 2090 allocs, 3.17 MBytes serialized in 757637 calls.
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: BackPos_Mesh01
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-5.02302, Y=-19.4064, Z=44.2765 }
+        BoxExtent = { X=58.0732, Y=44.7968, Z=40.2212 }
+        SphereRadius = 76.5914
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=1036 }
+            }
+            NumVerts = 1930
+            IndexCount = 3108
+            NumTexCoords = 2
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Breakaway_Mesh01
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=55.2806, Y=-13.9664, Z=40.17 }
+        BoxExtent = { X=64.0038, Y=29.8826, Z=40.2805 }
+        SphereRadius = 76.0834
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=975 }
+            }
+            NumVerts = 1522
+            IndexCount = 2925
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FinalAttack_Exec01
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=40.298, Y=6.98567, Z=49.2761 }
+        BoxExtent = { X=39.8917, Y=43.0655, Z=48.3762 }
+        SphereRadius = 69.0096
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=1026 }
+            }
+            NumVerts = 1568
+            IndexCount = 3078
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: RealAttack_Exec02
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-6.82578, Y=10.1893, Z=53.9882 }
+        BoxExtent = { X=29.304, Y=28.8901, Z=49.7659 }
+        SphereRadius = 56.3506
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=985 }
+            }
+            NumVerts = 2506
+            IndexCount = 2955
+            NumTexCoords = 2
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: RealAttack_Mesh01
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.571667, Y=1.74525, Z=49.259 }
+        BoxExtent = { X=31.7237, Y=44.1191, Z=49.4155 }
+        SphereRadius = 67.5199
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=1036 }
+            }
+            NumVerts = 1558
+            IndexCount = 3108
+            NumTexCoords = 2
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: RearAttack_Exec01
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-9.69999, Y=-3.18528, Z=51.1137 }
+        BoxExtent = { X=32.5454, Y=35.3366, Z=45.9211 }
+        SphereRadius = 61.2626
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=1037 }
+            }
+            NumVerts = 2486
+            IndexCount = 3111
+            NumTexCoords = 2
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: RearAttack_Fire01
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-4.76038, Y=7.34596, Z=42.1971 }
+        BoxExtent = { X=27.6531, Y=37.2025, Z=42.2107 }
+        SphereRadius = 56.7898
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=7348 }
+            }
+            NumVerts = 9858
+            IndexCount = 22044
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: RearAttact_Fire02
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=29.6099, Y=2.00805, Z=46.3751 }
+        BoxExtent = { X=67.1868, Y=27.1289, Z=46.9479 }
+        SphereRadius = 82.0944
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=1023 }
+            }
+            NumVerts = 2544
+            IndexCount = 3069
+            NumTexCoords = 2
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: RunPose_Mesh01
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=4.55134, Y=-0.688417, Z=45.9657 }
+        BoxExtent = { X=47.5032, Y=28.5324, Z=43.7765 }
+        SphereRadius = 59.7016
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=1036 }
+            }
+            NumVerts = 1590
+            IndexCount = 3108
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: RunPose_Mesh02
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-3.93747, Y=5.56661, Z=46.0149 }
+        BoxExtent = { X=53.1356, Y=31.0295, Z=43.604 }
+        SphereRadius = 64.0043
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=987 }
+            }
+            NumVerts = 1512
+            IndexCount = 2961
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: RunPose_Mesh03
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=4.72917, Y=1.73926, Z=45.3418 }
+        BoxExtent = { X=47.3159, Y=28.5847, Z=43.9435 }
+        SphereRadius = 59.6592
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=1036 }
+            }
+            NumVerts = 1578
+            IndexCount = 3108
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Vision_Mesh01
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=64.3554, Y=-6.20098, Z=45.6062 }
+        BoxExtent = { X=56.3323, Y=18.1627, Z=45.8109 }
+        SphereRadius = 70.6548
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=984 }
+            }
+            NumVerts = 1520
+            IndexCount = 2952
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1

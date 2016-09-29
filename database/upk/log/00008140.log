@@ -1,10 +1,11 @@
-Found 21974 game files (0 skipped)
-Loading package: 00008140.upk Ver: 573/1 Engine: 4205 Names: 596 Exports: 3930 Imports: 103 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00008140.upk Ver: 573/1 Engine: 4205 Names: 612 Exports: 4313 Imports: 84 Game: 801A
 Loading Texture2D Game_ExchangeFactionCoinScene_Preview from package 00008140.upk
 Loading Texture2D Game_NpcTalkBackgroundScene_Preview from package 00008140.upk
 Loading Texture2D Game_NpcTalkScene_Preview from package 00008140.upk
+Loading Texture2D Game_TalkStateGuildScene_Preview from package 00008140.upk
 Loading Texture2D GameUI_NpcTalkQuestScene_Preview from package 00008140.upk
-Loaded in 0.011 sec, 634 allocs, 0.33 MBytes serialized in 73518 calls.
+Loaded in 0.024 sec, 655 allocs, 0.37 MBytes serialized in 80387 calls.
 
 Object info:
 ============
@@ -39,6 +40,21 @@ ClassName: Texture2D ObjectName: Game_NpcTalkBackgroundScene_Preview
 Object info:
 ============
 ClassName: Texture2D ObjectName: Game_NpcTalkScene_Preview
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Game_TalkStateGuildScene_Preview
 
     SizeX = 256
     SizeY = 256

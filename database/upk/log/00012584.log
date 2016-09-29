@@ -1,10 +1,10 @@
-Found 21974 game files (0 skipped)
-Loading package: 00012584.upk Ver: 573/1 Engine: 4205 Names: 224 Exports: 1648 Imports: 79 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00012584.upk Ver: 573/1 Engine: 4205 Names: 226 Exports: 1718 Imports: 79 Game: 801A
 Loading Material3 Ice000_Diffuse from package 00012584.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading package: stone_001.upk Ver: 573/1 Engine: 4205 Names: 361 Exports: 154 Imports: 41 Game: 801A
-Loading package: cubemap_001.upk Ver: 573/1 Engine: 4205 Names: 177 Exports: 517 Imports: 34 Game: 801A
+Loading package: cubemap_001.upk Ver: 573/1 Engine: 4205 Names: 179 Exports: 525 Imports: 34 Game: 801A
 Loading Material3 Ice000_Mat_RE from package 00012584.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Ice000_MatM from package 00012584.upk
@@ -13,10 +13,14 @@ Loading Material3 Ice000_MatM_Masked from package 00012584.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Ice000_MatM_Masked_Strong from package 00012584.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Ice000Thin_Mat_RE from package 00012584.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Ice000Thin_MatM_Masked from package 00012584.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Ice_Ball_Mat from package 00012584.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Ice_Dot from package 00012584.upk
-Loading package: 00025242.upk Ver: 573/1 Engine: 4205 Names: 488 Exports: 2699 Imports: 209 Game: 801A
+Loading package: 00025242.upk Ver: 573/1 Engine: 4205 Names: 506 Exports: 3284 Imports: 215 Game: 801A
 Loading Material3 Ice_Matt_Trangition from package 00012584.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Ice_Smoke_Absorb_Mat from package 00012584.upk
@@ -130,7 +134,7 @@ Loading Texture2D CubemapFace2 from package cubemap_001.upk
 Loading Texture2D CubemapFace3 from package cubemap_001.upk
 Loading Texture2D CubemapFace4 from package cubemap_001.upk
 Loading Texture2D CubemapFace5 from package cubemap_001.upk
-Loaded in 0.59 sec, 3861 allocs, 2.71 MBytes serialized in 133819 calls.
+Loaded in 0.39 sec, 3915 allocs, 2.76 MBytes serialized in 146643 calls.
 
 Object info:
 ============
@@ -224,6 +228,51 @@ ClassName: Material3 ObjectName: Ice000_MatM_Masked
 Object info:
 ============
 ClassName: Material3 ObjectName: Ice000_MatM_Masked_Strong
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] = { Texture2D'Normal_Stone_000', Texture2D'Unique_Ice_000', Texture2D'Noise_005' }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Ice000Thin_Mat_RE
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_Wave_000_Normal'
+        ReferencedTextures[1] = Texture2D'Normal_Noise_000'
+        ReferencedTextures[2] = Texture2D'Noise_017'
+        ReferencedTextures[3] = Texture2D'Noise_006'
+        ReferencedTextures[4] = Texture2D'REFSKY-01'
+        ReferencedTextures[5] = Texture2D'Unique_Stone_001'
+        ReferencedTextures[6] = TextureCube'Stone_001_01_Cube'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Ice000Thin_MatM_Masked
 
     TwoSided = false
     bDisableDepthTest = false

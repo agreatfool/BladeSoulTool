@@ -1,14 +1,39 @@
-Found 21974 game files (0 skipped)
-Loading package: 00032237.upk Ver: 573/1 Engine: 4205 Names: 384 Exports: 1164 Imports: 132 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00032237.upk Ver: 573/1 Engine: 4205 Names: 504 Exports: 1958 Imports: 188 Game: 801A
+Loading Material3 GlowGray001_MatB_Fakedepth from package 00032237.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Material3 M01_Start001 from package 00032237.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Material3 M02_SharpRing001 from package 00032237.upk
-Loading Texture2D Unique_Star_000 from package 00012963.upk
+Loading Material3 Pet_FireGorillaEvolve_Mat01 from package 00032237.upk
+Loading package: prop_fire_001.upk Ver: 573/1 Engine: 4205 Names: 334 Exports: 136 Imports: 32 Game: 801A
+Loading Texture2D Glow_002 from package 00012963.upk
 Loading Texture2D DefaultTexture from package EngineResources.upk
+Loading Texture2D Unique_Star_000 from package 00012963.upk
 Loading Texture2D Ring_ShockWave_001 from package 00012963.upk
-Loaded in 0.03 sec, 1884 allocs, 0.25 MBytes serialized in 51360 calls.
+Loading Texture2D Noise_003 from package 00012963.upk
+Loading Texture2D Prop_Fire_001_05_Mask1 from package prop_fire_001.upk
+Loaded in 0.051 sec, 2456 allocs, 0.39 MBytes serialized in 71372 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: GlowGray001_MatB_Fakedepth
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'Glow_002', Texture2D'DefaultTexture' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
 
 Object info:
 ============
@@ -36,6 +61,24 @@ ClassName: Material3 ObjectName: M02_SharpRing001
     bDisableDepthTest = false
     bIsMasked = false
     ReferencedTextures[1] = { Texture2D'Ring_ShockWave_001' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Pet_FireGorillaEvolve_Mat01
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'Noise_003', Texture2D'Prop_Fire_001_05_Mask1' }
     BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None

@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00019930.upk Ver: 573/1 Engine: 4205 Names: 532 Exports: 984 Imports: 124 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00019930.upk Ver: 573/1 Engine: 4205 Names: 548 Exports: 996 Imports: 128 Game: 801A
 Loading AnimSet SnowmanB_AnimSet from package 00019930.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::NonAniScaleBoneNames" was not found
@@ -8,6 +8,15 @@ WARNING: ArrayProperty "UAnimSet::DynamicFixedBones" was not found
 WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
 WARNING: ArrayProperty "UAnimSet::PhysicalHitBoneNames" was not found
 WARNING: ArrayProperty "UAnimSet::IgnoreAnimBoneNames" was not found
+Loading AnimSequence AnimSequence_83 from package 00019930.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_0 from package 00019930.upk
 Loading AnimSequence AnimSequence_0 from package 00019930.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_1 from package 00019930.upk
@@ -209,6 +218,22 @@ Loading AnimSequence AnimSequence_80 from package 00019930.upk
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_81 from package 00019930.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+Loading AnimSequence AnimSequence_82 from package 00019930.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
 Loading AnimSequence AnimSequence_9 from package 00019930.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSet SnowmanBoss_GuiHon_AnimSet from package 00019930.upk
@@ -676,6 +701,9 @@ Error: Command failed: ******** 00019930 ********
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** ERROR: Unknown rotation compression method: 255
 UAnimSet::ConvertAnims <- PostLoad:SnowmanB_AnimSet <- UObject::EndLoad <- LoadWholePackage:00019930 <- Main
 
@@ -683,4 +711,6 @@ UAnimSet::ConvertAnims <- PostLoad:SnowmanB_AnimSet <- UObject::EndLoad <- LoadW
     at ChildProcess.exithandler (child_process.js:637:15)
     at ChildProcess.EventEmitter.emit (events.js:98:17)
     at maybeClose (child_process.js:743:16)
-    at Process.ChildProcess._handle.onexit (child_process.js:810:5)
+    at Socket.<anonymous> (child_process.js:956:11)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at Pipe.close (net.js:465:12)

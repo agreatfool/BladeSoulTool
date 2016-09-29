@@ -1,0 +1,340 @@
+Found 27000 game files (27 skipped)
+Loading package: 00039608.upk Ver: 573/1 Engine: 4205 Names: 351 Exports: 1552 Imports: 125 Game: 801A
+Loading SkeletalMesh3 020308_Autoscale_L from package 00039608.upk
+WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
+WARNING: ByteProperty "USkeletalMesh3::ItemPreviewLocType" was not found
+Loading package: 00039600.upk Ver: 573/1 Engine: 4205 Names: 89 Exports: 1 Imports: 19 Game: 801A
+Loading SkeletalMesh3 020308_Autoscale_R from package 00039608.upk
+WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
+WARNING: ByteProperty "USkeletalMesh3::ItemPreviewLocType" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_189 from package 00039608.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+WARNING: BoolProperty "USkeletalMeshSocket::bParticleApplyAutoScale" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_228 from package 00039608.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+WARNING: BoolProperty "USkeletalMeshSocket::bParticleApplyAutoScale" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_194 from package 00039608.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+WARNING: BoolProperty "USkeletalMeshSocket::bParticleApplyAutoScale" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_206 from package 00039608.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+WARNING: BoolProperty "USkeletalMeshSocket::bParticleApplyAutoScale" was not found
+Loading StaticMesh3 020222_L from package 00039608.upk
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 929 Exports: 4955 Imports: 320 Game: 801A
+Loading StaticMesh3 020222_R from package 00039608.upk
+Loading StaticMesh3 020308_L_deco from package 00039608.upk
+Loading StaticMesh3 020308_R_deco from package 00039608.upk
+Loading Texture2D FX_Mask from package 00039608.upk
+Loading MaterialInstanceConstant col1 from package 00039600.upk
+Loading package: 00038999.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 8 Imports: 4 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00023713.upk Ver: 573/1 Engine: 4205 Names: 96 Exports: 71 Imports: 4 Game: 801A
+Loading Texture2D 020299_Autoscale_col1_N from package 00038999.upk
+Loading Texture2D 020299_Autoscale_col1_M from package 00038999.upk
+Loading Texture2D 020299_Autoscale_col1_D from package 00038999.upk
+Loading Texture2D 020299_Autoscale_col1_S from package 00038999.upk
+Loading TextureCube lenscube from package 00002640.upk
+Loading Texture2D check from package 00002620.upk
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading Texture2D Cube000_Tex from package 00023713.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.14 sec, 4359 allocs, 2.91 MBytes serialized in 594587 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 020308_Autoscale_L
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[2] =
+    {
+        Sockets[0] = SkeletalMeshSocket'020308_Autoscale_L.SkeletalMeshSocket_228'
+        Sockets[1] = SkeletalMeshSocket'020308_Autoscale_L.SkeletalMeshSocket_189'
+    }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=2387 }
+            }
+            NumVerts = 1942
+            IndexCount = 7161
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 3
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 020308_Autoscale_R
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[2] =
+    {
+        Sockets[0] = SkeletalMeshSocket'020308_Autoscale_R.SkeletalMeshSocket_194'
+        Sockets[1] = SkeletalMeshSocket'020308_Autoscale_R.SkeletalMeshSocket_206'
+    }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=2387 }
+            }
+            NumVerts = 1942
+            IndexCount = 7161
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 3
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_189
+
+    SocketName = FX_Trail
+    BoneName = Bip01LHand
+    RelativeLocation = { X=-0.0109971, Y=-0.0190363, Z=0 }
+    RelativeRotation = { Yaw=-5461, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_228
+
+    SocketName = FX_Add
+    BoneName = Bip01LHand
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_194
+
+    SocketName = FX_Add
+    BoneName = Bip01RHand
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_206
+
+    SocketName = FX_Trail
+    BoneName = Bip01RHand
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: 020222_L
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.207801, Y=3.8876, Z=-0.61215 }
+        BoxExtent = { X=8.9252, Y=3.7849, Z=4.50705 }
+        SphereRadius = 9.85271
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=2386 }
+            }
+            NumVerts = 3878
+            IndexCount = 7158
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: 020222_R
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.20775, Y=3.8876, Z=0.61215 }
+        BoxExtent = { X=8.92515, Y=3.7849, Z=4.50705 }
+        SphereRadius = 9.85267
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=2386 }
+            }
+            NumVerts = 3878
+            IndexCount = 7158
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: 020308_L_deco
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.213901, Y=3.9417, Z=-0.65015 }
+        BoxExtent = { X=8.9079, Y=3.6994, Z=4.43475 }
+        SphereRadius = 9.85618
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=1468 }
+            }
+            NumVerts = 2344
+            IndexCount = 4404
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: 020308_R_deco
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.23075, Y=3.9387, Z=0.6452 }
+        BoxExtent = { X=8.93645, Y=3.727, Z=4.4467 }
+        SphereRadius = 9.88203
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=1468 }
+            }
+            NumVerts = 2336
+            IndexCount = 4404
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FX_Mask
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }

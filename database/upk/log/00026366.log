@@ -1,24 +1,23 @@
-Found 21974 game files (0 skipped)
-Loading package: 00026366.upk Ver: 573/1 Engine: 4205 Names: 142 Exports: 2 Imports: 27 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00026366.upk Ver: 573/1 Engine: 4205 Names: 141 Exports: 2 Imports: 26 Game: 801A
 Loading MaterialInstanceConstant Col_Acc from package 00026366.upk
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading MaterialInstanceConstant Col_Face_Acc from package 00026366.upk
 Loading package: 00026347.upk Ver: 573/1 Engine: 4205 Names: 31 Exports: 4 Imports: 2 Game: 801A
-Loading package: 00025178.upk Ver: 573/1 Engine: 4205 Names: 69 Exports: 39 Imports: 2 Game: 801A
 Loading Texture2D Lens_n from package 00002620.upk
 Loading TextureCube mirror2 from package 00002640.upk
 Loading TextureCube eye_s from package 00002640.upk
 Loading Material3 Lens from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading Texture2D 010080_JinF_col1_N from package 00026347.upk
 Loading TextureCube MatelW1 from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Texture2D 010080_JinF_col1_S from package 00026347.upk
 Loading Texture2D 010080_JinF_col1_M from package 00026347.upk
 Loading Texture2D 010080_JinF_col1_D from package 00026347.upk
-Loading Texture2D Mask_ck from package 00025178.upk
 Loading Material3 Moonpa_Body from package 00002620.upk
+Loading package: 00025178.upk Ver: 573/1 Engine: 4205 Names: 69 Exports: 39 Imports: 2 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -44,7 +43,7 @@ Loading Texture2D Mask_Default from package 00025178.upk
 Loading Texture2D Noise_Glass_000 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.2 sec, 3266 allocs, 1.57 MBytes serialized in 167852 calls.
+Loaded in 0.15 sec, 3261 allocs, 1.43 MBytes serialized in 168259 calls.
 
 Object info:
 ============
@@ -150,8 +149,8 @@ ClassName: MaterialInstanceConstant ObjectName: Col_Face_Acc
         TextureParameterValues[3] = { ParameterName=S, ParameterValue=Texture2D'010080_JinF_col1_S' }
         TextureParameterValues[4] = { ParameterName=M, ParameterValue=Texture2D'010080_JinF_col1_M' }
         TextureParameterValues[5] = { ParameterName=D, ParameterValue=Texture2D'010080_JinF_col1_D' }
-        TextureParameterValues[6] = { ParameterName=Top_Pattern, ParameterValue=Texture2D'Mask_ck' }
-        TextureParameterValues[7] = { ParameterName=Under_Pattern, ParameterValue=Texture2D'Mask_ck' }
+        TextureParameterValues[6] = { ParameterName=Top_Pattern, ParameterValue=None }
+        TextureParameterValues[7] = { ParameterName=Under_Pattern, ParameterValue=None }
     }
     VectorParameterValues[27] =
     {
@@ -198,12 +197,12 @@ ClassName: MaterialInstanceConstant ObjectName: Col_Face_Acc
         VectorParameterValues[8] =
         {
             ParameterName = Top_S
-            ParameterValue = { R=0.234895, G=0.180144, B=0.12753, A=1 }
+            ParameterValue = { R=0, G=0, B=0, A=1 }
         }
         VectorParameterValues[9] =
         {
             ParameterName = Top_L
-            ParameterValue = { R=0.016068, G=0.016068, B=0.016068, A=1 }
+            ParameterValue = { R=0.093876, G=0.093876, B=0.093876, A=1 }
         }
         VectorParameterValues[10] =
         {
@@ -288,7 +287,7 @@ ClassName: MaterialInstanceConstant ObjectName: Col_Face_Acc
         VectorParameterValues[26] =
         {
             ParameterName = Pattern_Size
-            ParameterValue = { R=2, G=2, B=2, A=2 }
+            ParameterValue = { R=0.7, G=0.7, B=2, A=2 }
         }
     }
     Parent = Material3'Moonpa_Body'

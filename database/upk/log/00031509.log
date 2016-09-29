@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00031509.upk Ver: 573/1 Engine: 4205 Names: 36 Exports: 8 Imports: 2 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00031509.upk Ver: 573/1 Engine: 4205 Names: 40 Exports: 12 Imports: 2 Game: 801A
 Loading Texture2D 70043_GonF_col1_D from package 00031509.upk
 Loading Texture2D 70043_GonF_col1_M from package 00031509.upk
 Loading Texture2D 70043_GonF_col1_N from package 00031509.upk
@@ -8,7 +8,11 @@ Loading Texture2D 70043_GonF_col2_D from package 00031509.upk
 Loading Texture2D 70043_GonF_col2_M from package 00031509.upk
 Loading Texture2D 70043_GonF_col2_N from package 00031509.upk
 Loading Texture2D 70043_GonF_col2_S from package 00031509.upk
-Loaded in 0.079 sec, 322 allocs, 2.62 MBytes serialized in 2038 calls.
+Loading Texture2D 70043_GonF_col3_D from package 00031509.upk
+Loading Texture2D 70043_GonF_col3_M from package 00031509.upk
+Loading Texture2D 70043_GonF_col3_N from package 00031509.upk
+Loading Texture2D 70043_GonF_col3_S from package 00031509.upk
+Loaded in 0.1 sec, 460 allocs, 3.94 MBytes serialized in 2986 calls.
 
 Object info:
 ============
@@ -118,6 +122,66 @@ ClassName: Texture2D ObjectName: 70043_GonF_col2_N
 Object info:
 ============
 ClassName: Texture2D ObjectName: 70043_GonF_col2_S
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 70043_GonF_col3_D
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 70043_GonF_col3_M
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 70043_GonF_col3_N
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 70043_GonF_col3_S
 
     SizeX = 1024
     SizeY = 1024

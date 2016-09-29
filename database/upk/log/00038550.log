@@ -1,0 +1,128 @@
+Found 27000 game files (27 skipped)
+Loading package: 00038550.upk Ver: 573/1 Engine: 4205 Names: 36 Exports: 6 Imports: 5 Game: 801A
+Loading AnimSet weaponNPC_Autoscale_AnimSet from package 00038550.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+Loading AnimSequence AnimSequence_0 from package 00038550.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_1 from package 00038550.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_2 from package 00038550.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_3 from package 00038550.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loaded in 0.015 sec, 93 allocs, 0.00 MBytes serialized in 561 calls.
+
+Object info:
+============
+ClassName: AnimSequence ObjectName: AnimSequence_0
+
+    SequenceName = BK_B_None_Mov_Idle
+    SequenceLength = 0.1
+    NumFrames = 3
+    RateScale = 1
+    bNoLoopingInterpolation = false
+    RawAnimData[0] = {}
+    TranslationCompressionFormat = ACF_None (0)
+    RotationCompressionFormat = <unknown> (255)
+    KeyEncodingFormat = AKF_ConstantKeyLerp (0)
+    CompressedTrackOffsets[8] = { 0, 1, 12, 1, 24, 1, 36, 1 }
+    bIsAdditive = false
+    AdditiveRefName = None
+    KeyFrameData[0] = {}
+    m_pBioAnimSetData = None
+    CompressedTrackTimeOffsets[0] = {}
+    Tracks[0] = {}
+    TrackOffsets[0] = {}
+
+Object info:
+============
+ClassName: AnimSet ObjectName: weaponNPC_Autoscale_AnimSet
+
+    bAnimRotationOnly = false
+    TrackBoneNames[2] = { Root, Bip01 }
+    Sequences[4] =
+    {
+        Sequences[0] = AnimSequence'weaponNPC_Autoscale_AnimSet.AnimSequence_2'
+        Sequences[1] = AnimSequence'weaponNPC_Autoscale_AnimSet.AnimSequence_3'
+        Sequences[2] = AnimSequence'weaponNPC_Autoscale_AnimSet.AnimSequence_0'
+        Sequences[3] = AnimSequence'weaponNPC_Autoscale_AnimSet.AnimSequence_1'
+    }
+    UseTranslationBoneNames[0] = {}
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00038315.weaponNPC_Autoscale
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None
+
+Object info:
+============
+ClassName: AnimSequence ObjectName: AnimSequence_1
+
+    SequenceName = BK_B_None_Skl_ElecShock
+    SequenceLength = 0.1
+    NumFrames = 3
+    RateScale = 1
+    bNoLoopingInterpolation = false
+    RawAnimData[0] = {}
+    TranslationCompressionFormat = ACF_None (0)
+    RotationCompressionFormat = <unknown> (255)
+    KeyEncodingFormat = AKF_ConstantKeyLerp (0)
+    CompressedTrackOffsets[8] = { 0, 1, 12, 1, 24, 1, 36, 1 }
+    bIsAdditive = false
+    AdditiveRefName = None
+    KeyFrameData[0] = {}
+    m_pBioAnimSetData = None
+    CompressedTrackTimeOffsets[0] = {}
+    Tracks[0] = {}
+    TrackOffsets[0] = {}
+
+Object info:
+============
+ClassName: AnimSequence ObjectName: AnimSequence_2
+
+    SequenceName = BK_A_None_Bat_Dead
+    SequenceLength = 0.1
+    NumFrames = 3
+    RateScale = 1
+    bNoLoopingInterpolation = false
+    RawAnimData[0] = {}
+    TranslationCompressionFormat = ACF_None (0)
+    RotationCompressionFormat = <unknown> (255)
+    KeyEncodingFormat = AKF_ConstantKeyLerp (0)
+    CompressedTrackOffsets[8] = { 0, 1, 12, 1, 24, 1, 36, 1 }
+    bIsAdditive = false
+    AdditiveRefName = None
+    KeyFrameData[0] = {}
+    m_pBioAnimSetData = None
+    CompressedTrackTimeOffsets[0] = {}
+    Tracks[0] = {}
+    TrackOffsets[0] = {}
+
+Object info:
+============
+ClassName: AnimSequence ObjectName: AnimSequence_3
+
+    SequenceName = BK_A_None_Bat_DeadStay
+    SequenceLength = 0.0333333
+    NumFrames = 1
+    RateScale = 1
+    bNoLoopingInterpolation = false
+    RawAnimData[0] = {}
+    TranslationCompressionFormat = ACF_None (0)
+    RotationCompressionFormat = <unknown> (255)
+    KeyEncodingFormat = AKF_ConstantKeyLerp (0)
+    CompressedTrackOffsets[8] = { 0, 1, 12, 1, 24, 1, 36, 1 }
+    bIsAdditive = false
+    AdditiveRefName = None
+    KeyFrameData[0] = {}
+    m_pBioAnimSetData = None
+    CompressedTrackTimeOffsets[0] = {}
+    Tracks[0] = {}
+    TrackOffsets[0] = {}

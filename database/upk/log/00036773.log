@@ -1,0 +1,97 @@
+Found 27000 game files (27 skipped)
+Loading package: 00036773.upk Ver: 573/1 Engine: 4205 Names: 73 Exports: 1 Imports: 19 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00036773.upk
+Loading package: 00036691.upk Ver: 573/1 Engine: 4205 Names: 29 Exports: 3 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading package: 00035757.upk Ver: 573/1 Engine: 4205 Names: 147 Exports: 66 Imports: 40 Game: 801A
+Loading Texture2D 090116_JinF_col1_N from package 00036691.upk
+Loading Texture2D 090116_JinF_col1_D from package 00036691.upk
+Loading Texture2D 090116_JinF_col1_s from package 00036691.upk
+Loading TextureCube eye3 from package 00002640.upk
+Loading Texture2D Unique_SpiderWeb_001 from package 00012963.upk
+Loading Texture2D 090098_JinF_col1_D_re_mask from package 00012963.upk
+Loading Material3 Blend_OP_FX from package 00035757.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loaded in 0.079 sec, 2854 allocs, 1.12 MBytes serialized in 164370 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[4] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Opacity, ParameterValue=1 }
+        ScalarParameterValues[1] = { ParameterName=Fresnel_Exp, ParameterValue=3 }
+        ScalarParameterValues[2] = { ParameterName=Specular_value, ParameterValue=2 }
+        ScalarParameterValues[3] = { ParameterName=Lens_spec_Power, ParameterValue=0.25 }
+    }
+    TextureParameterValues[6] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'090116_JinF_col1_N' }
+        TextureParameterValues[1] = { ParameterName=Diffuse, ParameterValue=Texture2D'090116_JinF_col1_D' }
+        TextureParameterValues[2] = { ParameterName=Specular, ParameterValue=Texture2D'090116_JinF_col1_s' }
+        TextureParameterValues[3] = { ParameterName=Lens_spec_cube, ParameterValue=TextureCube'eye3' }
+        TextureParameterValues[4] = { ParameterName=Pattan_Texture, ParameterValue=Texture2D'Unique_SpiderWeb_001' }
+        TextureParameterValues[5] =
+        {
+            ParameterName = Glow_Mask_Texture
+            ParameterValue = Texture2D'090098_JinF_col1_D_re_mask'
+        }
+    }
+    VectorParameterValues[7] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = color_Value
+            ParameterValue = { R=1.3, G=1, B=3, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Bright_value
+            ParameterValue = { R=0.5, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Desaturation_value
+            ParameterValue = { R=-0.3, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = GlowLine_Power_value
+            ParameterValue = { R=0.9, G=0, B=0, A=1 }
+        }
+    }
+    Parent = Material3'Blend_OP_FX'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None

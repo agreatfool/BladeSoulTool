@@ -1,4 +1,4 @@
-Found 21974 game files (0 skipped)
+Found 27000 game files (27 skipped)
 Loading package: 00029618.upk Ver: 573/1 Engine: 4205 Names: 101 Exports: 21 Imports: 17 Game: 801A
 Loading SkeletalMesh3 060112_Autoscale from package 00029618.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
@@ -16,7 +16,7 @@ Loading Texture2D 060112_Autoscale_col1_S from package 00029620.upk
 Loading TextureCube lenscube from package 00002640.upk
 Loading Texture2D 060112_Autoscale_col1_E from package 00029620.upk
 Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -29,7 +29,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.12 sec, 2904 allocs, 1.21 MBytes serialized in 212360 calls.
+Loaded in 0.11 sec, 2932 allocs, 1.21 MBytes serialized in 212990 calls.
 
 Object info:
 ============
@@ -60,7 +60,7 @@ ClassName: SkeletalMesh3 ObjectName: 060112_Autoscale
             {
                 Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1786 }
             }
-            NumVerts = 1524
+            NumVerts = 1525
             IndexCount = 5358
             NumTexCoords = 1
         }

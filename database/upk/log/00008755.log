@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00008755.upk Ver: 573/1 Engine: 4205 Names: 41 Exports: 13 Imports: 2 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00008755.upk Ver: 573/1 Engine: 4205 Names: 43 Exports: 15 Imports: 2 Game: 801A
 Loading Texture2D Monster_Beast_Juno_col1_D from package 00008755.upk
 Loading Texture2D Monster_Beast_Juno_col1_M from package 00008755.upk
 Loading Texture2D Monster_Beast_Juno_col1_N from package 00008755.upk
@@ -13,7 +13,9 @@ Loading Texture2D Monster_Beast_Juno_col3_S from package 00008755.upk
 Loading Texture2D Monster_Beast_Juno_col4_d from package 00008755.upk
 Loading Texture2D Monster_Beast_Juno_col4_em from package 00008755.upk
 Loading Texture2D Monster_Beast_Juno_col4_s from package 00008755.upk
-Loaded in 0.091 sec, 439 allocs, 1.06 MBytes serialized in 2771 calls.
+Loading Texture2D Monster_Beast_Juno_col5_D from package 00008755.upk
+Loading Texture2D Monster_Beast_Juno_col5_S from package 00008755.upk
+Loaded in 0.094 sec, 499 allocs, 1.28 MBytes serialized in 3174 calls.
 
 Object info:
 ============
@@ -198,6 +200,36 @@ ClassName: Texture2D ObjectName: Monster_Beast_Juno_col4_em
 Object info:
 ============
 ClassName: Texture2D ObjectName: Monster_Beast_Juno_col4_s
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Beast_Juno_col5_D
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Beast_Juno_col5_S
 
     SizeX = 512
     SizeY = 512

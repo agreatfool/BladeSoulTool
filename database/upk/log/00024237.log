@@ -1,9 +1,12 @@
-Found 21974 game files (0 skipped)
-Loading package: 00024237.upk Ver: 573/1 Engine: 4205 Names: 179 Exports: 166 Imports: 13 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00024237.upk Ver: 573/1 Engine: 4205 Names: 186 Exports: 166 Imports: 16 Game: 801A
 Loading SkeletalMesh3 AncientMechTwinsB from package 00024237.upk
+WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
 WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
+WARNING: BoolProperty "USkeletalMesh3::bForceCharacterLight" was not found
+WARNING: FloatProperty "USkeletalMesh3::PhysicalHitScale" was not found
 Loading package: 00024577.upk Ver: 573/1 Engine: 4205 Names: 100 Exports: 1 Imports: 23 Game: 801A
 Loading SkeletalMeshSocket SkeletalMeshSocket_114 from package 00024237.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_115 from package 00024237.upk
@@ -40,7 +43,7 @@ Loading Texture2D Monster_Human_AncientMechTwinsB_col1_E from package 00024035.u
 Loading Texture2D FX_AncientMechTwinsA_col1_Mask from package 00024035.upk
 Loading Material3 Basic_AncienMechTwinsAB_FX from package 00024036.upk
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -54,7 +57,7 @@ Loading Texture2D Noise_Plazma_000 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.17 sec, 3294 allocs, 4.66 MBytes serialized in 390891 calls.
+Loaded in 0.14 sec, 3329 allocs, 4.66 MBytes serialized in 391558 calls.
 
 Object info:
 ============

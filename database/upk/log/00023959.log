@@ -1,7 +1,7 @@
-Found 21974 game files (0 skipped)
-Loading package: 00023959.upk Ver: 573/1 Engine: 4205 Names: 822 Exports: 2284 Imports: 275 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00023959.upk Ver: 573/1 Engine: 4205 Names: 1179 Exports: 3400 Imports: 499 Game: 801A
 Loading Material3 BeyeondMat2 from package 00023959.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading package: 00014636.upk Ver: 573/1 Engine: 4205 Names: 39 Exports: 10 Imports: 4 Game: 801A
 Loading Material3 BeyondMat from package 00023959.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -13,6 +13,8 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 GhostMat2 from package 00023959.upk
 Loading Material3 GhostMode_mtl01 from package 00023959.upk
 Loading Material3 GhostMode_mtl02 from package 00023959.upk
+Loading Material3 GhostMode_normal from package 00023959.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Material3 InVisibleMat from package 00023959.upk
 Loading MaterialInstanceConstant GhostMat2_Beyond_INST from package 00023959.upk
 Loading MaterialInstanceConstant ghostmode_mtl from package 00023959.upk
@@ -33,13 +35,15 @@ Loading Texture2D Noise_Wave_000 from package 00012963.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_005 from package 00012963.upk
 Loading TextureCube Illusion_cube_1 from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D CubemapFace0 from package 00012963.upk
 Loading Texture2D CubemapFace1 from package 00012963.upk
 Loading Texture2D CubemapFace2 from package 00012963.upk
 Loading Texture2D CubemapFace3 from package 00012963.upk
 Loading Texture2D CubemapFace4 from package 00012963.upk
 Loading Texture2D CubemapFace5 from package 00012963.upk
-Loaded in 0.12 sec, 2672 allocs, 1.22 MBytes serialized in 76541 calls.
+Loaded in 0.13 sec, 3667 allocs, 1.79 MBytes serialized in 221639 calls.
 
 Object info:
 ============
@@ -192,6 +196,24 @@ ClassName: Material3 ObjectName: GhostMode_mtl02
         ReferencedTextures[5] = TextureCube'Illusion_cube_1'
     }
     BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: GhostMode_normal
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[3] = { Texture2D'Smoke_Pattern_001', Texture2D'check', Texture2D'Gradient_Line_003' }
+    BlendMode = BLEND_Masked (1)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
     MobileBaseTexture = None

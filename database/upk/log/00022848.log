@@ -1,9 +1,9 @@
-Found 21974 game files (0 skipped)
-Loading package: 00022848.upk Ver: 573/1 Engine: 4205 Names: 90 Exports: 1 Imports: 19 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00022848.upk Ver: 573/1 Engine: 4205 Names: 91 Exports: 1 Imports: 20 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00022848.upk
 Loading package: 00022850.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 5 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00022777.upk Ver: 573/1 Engine: 4205 Names: 171 Exports: 149 Imports: 46 Game: 801A
 Loading Texture2D 990172_Autoscale_col1_N from package 00022850.upk
 Loading Texture2D 990172_Autoscale_col1_M from package 00022850.upk
 Loading Texture2D 990172_Autoscale_col1_D from package 00022850.upk
@@ -11,8 +11,9 @@ Loading Texture2D 990172_Autoscale_col1_S from package 00022850.upk
 Loading TextureCube Cube_D from package 00002640.upk
 Loading Texture2D 990172_Autoscale_col1_E from package 00022850.upk
 WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
-Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading Material3 AncientGolemLeader_FX from package 00022777.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -25,7 +26,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.12 sec, 2758 allocs, 1.19 MBytes serialized in 162649 calls.
+Loaded in 0.093 sec, 2966 allocs, 1.21 MBytes serialized in 166811 calls.
 
 Object info:
 ============
@@ -111,7 +112,7 @@ ClassName: MaterialInstanceConstant ObjectName: col1
             ParameterValue = { R=1, G=1, B=1, A=1 }
         }
     }
-    Parent = Material3'Basic'
+    Parent = Material3'AncientGolemLeader_FX'
     FlattenedTexture = None
     MobileBaseTexture = None
     MobileNormalTexture = None

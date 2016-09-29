@@ -1,15 +1,15 @@
-Found 21974 game files (0 skipped)
-Loading package: 00033115.upk Ver: 573/1 Engine: 4205 Names: 455 Exports: 499 Imports: 164 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00033115.upk Ver: 573/1 Engine: 4205 Names: 455 Exports: 482 Imports: 162 Game: 801A
 Loading Material3 PvE_Sword_EdgeDeco from package 00033115.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading MaterialInstanceConstant PvE_Sword_edge_INST from package 00033115.upk
-Loading package: 00028326.upk Ver: 573/1 Engine: 4205 Names: 470 Exports: 914 Imports: 179 Game: 801A
+Loading package: 00028326.upk Ver: 573/1 Engine: 4205 Names: 473 Exports: 914 Imports: 179 Game: 801A
 Loading MaterialInstanceConstant PvE_Sword_EdgeDeco_bora from package 00033115.upk
 Loading MaterialInstanceConstant PvE_sword_ee_INST from package 00033115.upk
-Loading package: 00032509.upk Ver: 573/1 Engine: 4205 Names: 310 Exports: 459 Imports: 110 Game: 801A
+Loading package: 00032509.upk Ver: 573/1 Engine: 4205 Names: 318 Exports: 463 Imports: 112 Game: 801A
 Loading MaterialInstanceConstant PvE_weapon_deco_INST from package 00033115.upk
-Loading package: 00032737.upk Ver: 573/1 Engine: 4205 Names: 384 Exports: 233 Imports: 123 Game: 801A
+Loading package: 00032737.upk Ver: 573/1 Engine: 4205 Names: 387 Exports: 233 Imports: 123 Game: 801A
 Loading SkeletalMesh3 010262_Autoscale from package 00033115.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
@@ -19,7 +19,7 @@ WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not 
 Loading SkeletalMeshSocket SkeletalMeshSocket_121 from package 00033115.upk
 WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
 Loading StaticMesh3 PvE_sword_01 from package 00033115.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 935 Exports: 4882 Imports: 265 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 929 Exports: 4955 Imports: 320 Game: 801A
 Loading StaticMesh3 PvE_sword_02 from package 00033115.upk
 Loading StaticMesh3 PvE_sword_03 from package 00033115.upk
 Loading Texture2D PvE_010194_mask from package 00033115.upk
@@ -42,6 +42,7 @@ Loading package: 00028885.upk Ver: 573/1 Engine: 4205 Names: 42 Exports: 14 Impo
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00023713.upk Ver: 573/1 Engine: 4205 Names: 96 Exports: 71 Imports: 4 Game: 801A
 Loading Texture2D Dragon_body_outside_NRM from package 00012963.upk
 WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Normal_Noise_000 from package 00012963.upk
@@ -58,7 +59,7 @@ Loading Texture2D 010194_Autoscale_col2_D from package 00028885.upk
 Loading Texture2D 010194_Autoscale_col2_S from package 00028885.upk
 Loading TextureCube lenscube from package 00002640.upk
 Loading Material3 Basic from package 00002620.upk
-Loading Texture2D Cube000_Tex from package 00012892.upk
+Loading Texture2D Cube000_Tex from package 00023713.upk
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -70,7 +71,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.25 sec, 5951 allocs, 2.56 MBytes serialized in 432631 calls.
+Loaded in 0.19 sec, 6088 allocs, 2.56 MBytes serialized in 436336 calls.
 
 Object info:
 ============

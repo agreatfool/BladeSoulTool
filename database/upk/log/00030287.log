@@ -1,4 +1,4 @@
-Found 21974 game files (0 skipped)
+Found 27000 game files (27 skipped)
 Loading package: 00030287.upk Ver: 573/1 Engine: 4205 Names: 216 Exports: 149 Imports: 21 Game: 801A
 Loading SkeletalMesh3 70030_LynF from package 00030287.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
@@ -32,7 +32,7 @@ Loading Texture2D 70030_LynF_col1_S from package 00030284.upk
 Loading TextureCube MatelR3 from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Material3 Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading Texture2D Fur_Tape1_N from package 00029398.upk
 Loading Texture2D Fur_Tape1_D from package 00029398.upk
 Loading Material3 Beard_Fur from package 00002620.upk
@@ -56,7 +56,7 @@ Loading Texture2D CubemapFace2 from package 00026887.upk
 Loading Texture2D CubemapFace3 from package 00026887.upk
 Loading Texture2D CubemapFace4 from package 00026887.upk
 Loading Texture2D CubemapFace5 from package 00026887.upk
-Loaded in 0.21 sec, 3367 allocs, 3.92 MBytes serialized in 753138 calls.
+Loaded in 0.18 sec, 3395 allocs, 3.92 MBytes serialized in 754054 calls.
 
 Object info:
 ============
@@ -101,7 +101,7 @@ ClassName: SkeletalMesh3 ObjectName: 70030_LynF
                 Sections[1] = { Material=MaterialInstanceConstant'col1_fur', FirstIndex=15396, NumFaces=3912 }
                 Sections[2] = { Material=MaterialInstanceConstant'Op', FirstIndex=27132, NumFaces=1357 }
             }
-            NumVerts = 12106
+            NumVerts = 12105
             IndexCount = 31203
             NumTexCoords = 1
         }
@@ -111,7 +111,7 @@ ClassName: SkeletalMesh3 ObjectName: 70030_LynF
             {
                 Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=3309 }
             }
-            NumVerts = 3634
+            NumVerts = 3645
             IndexCount = 9927
             NumTexCoords = 1
         }

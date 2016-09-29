@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00019291.upk Ver: 573/1 Engine: 4205 Names: 319 Exports: 22 Imports: 132 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00019291.upk Ver: 573/1 Engine: 4205 Names: 327 Exports: 23 Imports: 132 Game: 801A
 Loading AnimSet AdamantineManAsmall_animset from package 00019291.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::NonAniScaleBoneNames" was not found
@@ -7,6 +7,10 @@ WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
 WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
 WARNING: ArrayProperty "UAnimSet::PhysicalHitBoneNames" was not found
 WARNING: ArrayProperty "UAnimSet::IgnoreAnimBoneNames" was not found
+Loading AnimSequence AnimSequence_0 from package 00019291.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
 Loading AnimSequence AnimSequence_23 from package 00019291.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
@@ -22,6 +26,7 @@ WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
 WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
 Error: Command failed: ******** 00019291 ********
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat

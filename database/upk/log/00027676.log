@@ -1,4 +1,4 @@
-Found 21974 game files (0 skipped)
+Found 27000 game files (27 skipped)
 Loading package: 00027676.upk Ver: 573/1 Engine: 4205 Names: 217 Exports: 146 Imports: 22 Game: 801A
 Loading SkeletalMesh3 60121_LynF from package 00027676.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
@@ -30,7 +30,7 @@ Loading Texture2D 60121_LynF_col1_S from package 00027674.upk
 Loading TextureCube MatelR3 from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Material3 Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading TextureCube Cube from package 00026887.upk
 Loading Material3 Blend_OP from package 00002620.upk
 Loading Texture2D CubemapFace0 from package 00002640.upk
@@ -51,7 +51,7 @@ Loading Texture2D CubemapFace2 from package 00026887.upk
 Loading Texture2D CubemapFace3 from package 00026887.upk
 Loading Texture2D CubemapFace4 from package 00026887.upk
 Loading Texture2D CubemapFace5 from package 00026887.upk
-Loaded in 0.18 sec, 3250 allocs, 2.93 MBytes serialized in 420242 calls.
+Loaded in 0.14 sec, 3278 allocs, 2.94 MBytes serialized in 421321 calls.
 
 Object info:
 ============
@@ -87,11 +87,11 @@ ClassName: SkeletalMesh3 ObjectName: 60121_LynF
         {
             Sections[2] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=5487 }
-                Sections[1] = { Material=MaterialInstanceConstant'col1_1', FirstIndex=16461, NumFaces=572 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=5509 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1_1', FirstIndex=16527, NumFaces=572 }
             }
-            NumVerts = 4678
-            IndexCount = 18177
+            NumVerts = 4689
+            IndexCount = 18243
             NumTexCoords = 1
         }
         Lods[1] =

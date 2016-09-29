@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00008008.upk Ver: 573/1 Engine: 4205 Names: 330 Exports: 492 Imports: 6 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00008008.upk Ver: 573/1 Engine: 4205 Names: 387 Exports: 494 Imports: 6 Game: 801A
 Loading AnimSet IronTuttle_animset from package 00008008.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -7,8 +7,10 @@ WARNING: ArrayProperty "UAnimSet::DynamicFixedBones" was not found
 WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
 WARNING: ArrayProperty "UAnimSet::PhysicalHitBoneNames" was not found
 Loading AnimSequence AnimSequence_0 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_1 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_100 from package 00008008.upk
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
@@ -24,10 +26,12 @@ WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_104 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_105 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
@@ -37,32 +41,43 @@ WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
 Loading AnimSequence AnimSequence_107 from package 00008008.upk
-WARNING: BoolProperty "UAnimSequence::bUseCustomAttachAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
 Loading AnimSequence AnimSequence_109 from package 00008008.upk
-WARNING: BoolProperty "UAnimSequence::bUseCustomAttachAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_11 from package 00008008.upk
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
 Loading AnimSequence AnimSequence_110 from package 00008008.upk
-WARNING: BoolProperty "UAnimSequence::bUseCustomAttachAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_111 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_112 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_12 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_13 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_15 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_16 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_17 from package 00008008.upk
@@ -79,6 +94,7 @@ WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
 Loading AnimSequence AnimSequence_2 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_23 from package 00008008.upk
@@ -104,6 +120,7 @@ WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
 Loading AnimSequence AnimSequence_31 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_33 from package 00008008.upk
@@ -139,8 +156,11 @@ WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
 Loading AnimSequence AnimSequence_4 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
 Loading AnimSequence AnimSequence_40 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_42 from package 00008008.upk
@@ -153,14 +173,17 @@ WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_44 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_46 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_47 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
@@ -239,23 +262,28 @@ WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_63 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_64 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_65 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_67 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
 Loading AnimSequence AnimSequence_68 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
@@ -265,6 +293,7 @@ WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
 Loading AnimSequence AnimSequence_70 from package 00008008.upk
+WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
@@ -398,6 +427,8 @@ WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
 Error: Command failed: ******** 00008008 ********
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat

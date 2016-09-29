@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00011127.upk Ver: 573/1 Engine: 4205 Names: 306 Exports: 598 Imports: 82 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00011127.upk Ver: 573/1 Engine: 4205 Names: 305 Exports: 598 Imports: 82 Game: 801A
 Loading AnimSet Move_ForceMaster_GonF_Animset from package 00011127.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -626,4 +626,6 @@ UAnimSet::ConvertAnims <- PostLoad:Move_ForceMaster_GonF_Animset <- UObject::End
     at ChildProcess.exithandler (child_process.js:637:15)
     at ChildProcess.EventEmitter.emit (events.js:98:17)
     at maybeClose (child_process.js:743:16)
-    at Process.ChildProcess._handle.onexit (child_process.js:810:5)
+    at Socket.<anonymous> (child_process.js:956:11)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at Pipe.close (net.js:465:12)

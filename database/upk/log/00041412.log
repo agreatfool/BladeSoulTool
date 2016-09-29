@@ -1,0 +1,50 @@
+Found 27000 game files (27 skipped)
+Loading package: 00041412.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 3 Imports: 5 Game: 801A
+Loading AnimSet IceFireMarbleNew2_AnimSet from package 00041412.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+Loading AnimSequence AnimSequence_0 from package 00041412.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loaded in 0.019 sec, 71 allocs, 0.00 MBytes serialized in 356 calls.
+
+Object info:
+============
+ClassName: AnimSequence ObjectName: AnimSequence_0
+
+    SequenceName = AA_A_None_Soc_Spawn
+    SequenceLength = 1
+    NumFrames = 30
+    RateScale = 1
+    bNoLoopingInterpolation = false
+    RawAnimData[0] = {}
+    TranslationCompressionFormat = ACF_None (0)
+    RotationCompressionFormat = <unknown> (255)
+    KeyEncodingFormat = AKF_ConstantKeyLerp (0)
+    CompressedTrackOffsets[4] = { 0, 30, 360, 1 }
+    bIsAdditive = false
+    AdditiveRefName = None
+    KeyFrameData[0] = {}
+    m_pBioAnimSetData = None
+    CompressedTrackTimeOffsets[0] = {}
+    Tracks[0] = {}
+    TrackOffsets[0] = {}
+
+Object info:
+============
+ClassName: AnimSet ObjectName: IceFireMarbleNew2_AnimSet
+
+    bAnimRotationOnly = true
+    TrackBoneNames[1] = { Root }
+    Sequences[1] = { AnimSequence'IceFireMarbleNew2_AnimSet.AnimSequence_0' }
+    UseTranslationBoneNames[1] = { Root }
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00035887.Monster_Etc_IceFireMarbleNew2
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None

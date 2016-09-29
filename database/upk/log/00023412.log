@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00023412.upk Ver: 573/1 Engine: 4205 Names: 805 Exports: 4334 Imports: 191 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00023412.upk Ver: 573/1 Engine: 4205 Names: 807 Exports: 4378 Imports: 191 Game: 801A
 Loading AnimSet TrailAnim_A01_Anim from package 00023412.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -10,7 +10,7 @@ WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading Material3 Basic_Base_IF_Masked_Mat from package 00023412.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading Material3 Basic_Base_IF_Mat from package 00023412.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Basic_Base_IF_Translucent_Mat from package 00023412.upk
@@ -58,6 +58,7 @@ Loading Material3 Warlock_Laser_Mat01 from package 00023412.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Warlock_Laser_Mat02 from package 00023412.upk
 WARNING: StructProperty "UMaterial3::WorldPositionOffset" was not found
+Loading Material3 Warlock_Laser_Mat03 from package 00023412.upk
 Loading Material3 Warlock_Nuke360_Mat01 from package 00023412.upk
 Loading Material3 Warlock_Nuke360_Mat02 from package 00023412.upk
 WARNING: StructProperty "UMaterial3::WorldPositionOffset" was not found
@@ -136,7 +137,7 @@ Loading MaterialInstanceConstant Warlock_Signal_INSTMat01 from package 00023412.
 Loading MaterialInstanceConstant Warlock_SummonPoint_INSTMat01 from package 00023412.upk
 Loading SkeletalMesh3 TrailAnim_A01_Anim from package 00023412.upk
 Loading StaticMesh3 Octagon_Defualt__Mesh from package 00023412.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 935 Exports: 4882 Imports: 265 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 929 Exports: 4955 Imports: 320 Game: 801A
 Loading StaticMesh3 Octagon_reverse__01Mesh from package 00023412.upk
 Loading StaticMesh3 Octagon_reverse__Mesh from package 00023412.upk
 Loading StaticMesh3 Warlock_Bat_Mesh01 from package 00023412.upk
@@ -269,6 +270,7 @@ Loading Texture2D SorcererDWolf_col1_D from package 00026127.upk
 Loading Texture2D Gradient_Color_PtoP001_Tex from package 00012963.upk
 Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00023713.upk Ver: 573/1 Engine: 4205 Names: 96 Exports: 71 Imports: 4 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -281,8 +283,8 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loading Texture2D Cube000_Tex from package 00012892.upk
-Loaded in 0.96 sec, 9312 allocs, 7.47 MBytes serialized in 909168 calls.
+Loading Texture2D Cube000_Tex from package 00023713.upk
+Loaded in 0.75 sec, 9436 allocs, 7.36 MBytes serialized in 913926 calls.
 
 Object info:
 ============
@@ -971,6 +973,29 @@ ClassName: Material3 ObjectName: Warlock_Laser_Mat02
         ReferencedTextures[2] = Texture2D'Noise_003'
         ReferencedTextures[3] = Texture2D'Smoke_Dust_001'
         ReferencedTextures[4] = Texture2D'Warlock_ChannelingAttack_DiffuseTex01'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Warlock_Laser_Mat03
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_003'
+        ReferencedTextures[1] = Texture2D'Smoke_Dust_001'
+        ReferencedTextures[2] = Texture2D'Warlock_ChannelingAttack_DiffuseTex01'
     }
     BlendMode = BLEND_Translucent (2)
     OpacityMaskClipValue = 0.333

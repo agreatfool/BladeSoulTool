@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00033643.upk Ver: 573/1 Engine: 4205 Names: 115 Exports: 46 Imports: 20 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00033643.upk Ver: 573/1 Engine: 4205 Names: 128 Exports: 48 Imports: 24 Game: 801A
 Loading SkeletalMesh3 020255_Autoscale_L from package 00033643.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
@@ -9,6 +9,12 @@ Loading SkeletalMesh3 020255_Autoscale_R from package 00033643.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
 WARNING: ByteProperty "USkeletalMesh3::ItemPreviewLocType" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_111 from package 00033643.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+WARNING: BoolProperty "USkeletalMeshSocket::bParticleApplyAutoScale" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_118 from package 00033643.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
+WARNING: BoolProperty "USkeletalMeshSocket::bParticleApplyAutoScale" was not found
 Loading MaterialInstanceConstant col1 from package 00033646.upk
 Loading package: 00027061.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
@@ -20,7 +26,7 @@ Loading Texture2D 020172_Autoscale_col1_S from package 00027061.upk
 Loading TextureCube lenscube_a from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -32,7 +38,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.12 sec, 2914 allocs, 1.29 MBytes serialized in 242562 calls.
+Loaded in 0.094 sec, 2961 allocs, 1.29 MBytes serialized in 243373 calls.
 
 Object info:
 ============
@@ -48,7 +54,7 @@ ClassName: SkeletalMesh3 ObjectName: 020255_Autoscale_L
             bEnableShadowCasting[1] = { true }
         }
     }
-    Sockets[0] = {}
+    Sockets[1] = { SkeletalMeshSocket'020255_Autoscale_L.SkeletalMeshSocket_111' }
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
@@ -88,7 +94,7 @@ ClassName: SkeletalMesh3 ObjectName: 020255_Autoscale_R
             bEnableShadowCasting[1] = { true }
         }
     }
-    Sockets[0] = {}
+    Sockets[1] = { SkeletalMeshSocket'020255_Autoscale_R.SkeletalMeshSocket_118' }
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
@@ -113,3 +119,23 @@ ClassName: SkeletalMesh3 ObjectName: 020255_Autoscale_R
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
     BoneCount = 6
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_111
+
+    SocketName = FX_Add
+    BoneName = BoneGT_L
+    RelativeLocation = { X=-9.86358, Y=-1.1871, Z=0 }
+    RelativeRotation = { Yaw=1274, Pitch=0, Roll=16384 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_118
+
+    SocketName = FX_Add
+    BoneName = BoneGT_R
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }

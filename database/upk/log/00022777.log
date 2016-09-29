@@ -1,30 +1,56 @@
-Found 21974 game files (0 skipped)
-Loading package: 00022777.upk Ver: 573/1 Engine: 4205 Names: 91 Exports: 1 Imports: 20 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00022777.upk Ver: 573/1 Engine: 4205 Names: 171 Exports: 149 Imports: 46 Game: 801A
+Loading Material3 AncientGolemLeader_FX from package 00022777.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00022777.upk
 Loading package: 00022776.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading Texture2D AncientGolemLeader_col1_N from package 00022776.upk
-Loading Texture2D AncientGolemLeader_col1_M from package 00022776.upk
-Loading Texture2D AncientGolemLeader_col1_D from package 00022776.upk
-Loading Texture2D AncientGolemLeader_col1_S from package 00022776.upk
-Loading TextureCube MatelR3 from package 00002640.upk
-Loading Texture2D AncientGolemLeader_col1_E from package 00022776.upk
-Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
-Loading Texture2D CubemapFace0 from package 00002640.upk
-Loading Texture2D CubemapFace1 from package 00002640.upk
-Loading Texture2D CubemapFace2 from package 00002640.upk
-Loading Texture2D CubemapFace3 from package 00002640.upk
-Loading Texture2D CubemapFace4 from package 00002640.upk
-Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D check from package 00002620.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.12 sec, 2766 allocs, 2.21 MBytes serialized in 162737 calls.
+Loading Texture2D AncientGolemLeader_col1_N from package 00022776.upk
+Loading Texture2D AncientGolemLeader_col1_M from package 00022776.upk
+Loading Texture2D AncientGolemLeader_col1_D from package 00022776.upk
+Loading Texture2D AncientGolemLeader_col1_S from package 00022776.upk
+Loading TextureCube MatelR3 from package 00002640.upk
+Loading Texture2D AncientGolemLeader_col1_E from package 00022776.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.097 sec, 2874 allocs, 2.23 MBytes serialized in 166429 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: AncientGolemLeader_FX
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'check_n'
+        ReferencedTextures[1] = Texture2D'check'
+        ReferencedTextures[2] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[4] = Texture2D'Gradient_Wipe_BurnOut_Mask_TEST'
+        ReferencedTextures[5] = Texture2D'Gradient_Wipe_BurnOut_Mask'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
 
 Object info:
 ============
@@ -110,7 +136,7 @@ ClassName: MaterialInstanceConstant ObjectName: col1
             ParameterValue = { R=1, G=1, B=1, A=1 }
         }
     }
-    Parent = Material3'Basic'
+    Parent = Material3'AncientGolemLeader_FX'
     FlattenedTexture = None
     MobileBaseTexture = None
     MobileNormalTexture = None

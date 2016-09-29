@@ -1,9 +1,11 @@
-Found 21974 game files (0 skipped)
-Loading package: 00012585.upk Ver: 573/1 Engine: 4205 Names: 323 Exports: 2314 Imports: 123 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00012585.upk Ver: 573/1 Engine: 4205 Names: 366 Exports: 2875 Imports: 142 Game: 801A
+Loading Material3 AncientMechTwins_LightSpot from package 00012585.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Material3 arua_Line_mix_mat from package 00012585.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
-Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Material3 arua_Line_mix_mat2 from package 00012585.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 AuraTrail001_MatM from package 00012585.upk
@@ -17,6 +19,8 @@ WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Blood_arua_mix4_mat from package 00012585.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Dagger_edge from package 00012585.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 DarkWind_witch_Asura_Beam from package 00012585.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 DeathMess_Matt from package 00012585.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -38,9 +42,16 @@ Loading Material3 Ink_Blending_Mat4 from package 00012585.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Ink_Particle_Mat from package 00012585.upk
 Loading Material3 Ink_Particle_Mat_NoDepthBias from package 00012585.upk
+Loading Material3 IronBoxer_LightSpot from package 00012585.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 JukPaeWang_sword_aura_matM01 from package 00012585.upk
+Loading Material3 JukPaeWang_sword_aura_matM02 from package 00012585.upk
 Loading Material3 LineBlueBlur01_mat from package 00012585.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 LineBlueBlur01_mat_Wing from package 00012585.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Login_soulfighter_energe from package 00012585.upk
+Loading Material3 Login_SoulFighter_Marble007 from package 00012585.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 M_DistortionMatB_01 from package 00012585.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -130,10 +141,13 @@ Loading MaterialInstanceConstant Sword_ee_INST_Red from package 00012585.upk
 Loading MaterialInstanceConstant Sword_ee_INST_White from package 00012585.upk
 Loading MaterialInstanceConstant Test_TakgiBuff_Aura_INST from package 00012585.upk
 Loading MaterialInstanceConstant Test_Takgibuff_wind_Inst_Bora from package 00012585.upk
+Loading Texture2D Gradient_007 from package 00012963.upk
+Loading Texture2D Gradient_Line_010 from package 00012963.upk
+Loading Texture2D Gradient_Light_Line_000_V from package 00012963.upk
+Loading Texture2D DefaultTexture from package EngineResources.upk
 Loading Texture2D Glow_Twiri_000 from package 00012963.upk
 Loading Texture2D Gradient_Half_000 from package 00012963.upk
 Loading Texture2D Gradient_Beam_002 from package 00012963.upk
-Loading Texture2D DefaultTexture from package EngineResources.upk
 Loading Texture2D Smoke_Blur_000 from package 00012963.upk
 Loading Texture2D Smoke_Cloud_005 from package 00012963.upk
 Loading Texture2D Noise_006 from package 00012963.upk
@@ -158,7 +172,13 @@ Loading Texture2D Aura_Blood_000 from package 00012963.upk
 Loading Texture2D Glow_008 from package 00012963.upk
 Loading Texture2D Dagger_Opa2 from package 00012963.upk
 Loading Texture2D Gradient_Beam_001 from package 00012963.upk
+Loading Texture2D Gradient_Color_BlueToPurple_001 from package 00012963.upk
+Loading Texture2D Noise_005 from package 00012963.upk
+Loading Texture2D Gradient_001_Left from package 00012963.upk
 Loading Texture2D Noise_Wave_000 from package 00012963.upk
+Loading Texture2D Takgi_Beam_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_010_loop from package 00012963.upk
+Loading Texture2D Gradient_Line_001_YClamp from package 00012963.upk
 Loading Texture2D Glow_Flair_001 from package 00012963.upk
 Loading Texture2D Ring_Smoke_000 from package 00012963.upk
 Loading Texture2D Noise_007 from package 00012963.upk
@@ -171,11 +191,18 @@ Loading Texture2D Env_Fx_LightningCloud_Lightning from package 00012963.upk
 Loading Texture2D Smoke_Inc_002 from package 00012963.upk
 Loading Texture2D Aura_Blood_002 from package 00012963.upk
 Loading Texture2D Aura_Blood_001 from package 00012963.upk
-Loading Texture2D Gradient_001_Left from package 00012963.upk
 Loading Texture2D Smoke_Inc_000 from package 00012963.upk
+Loading Texture2D Smoke_Dust_002 from package 00012963.upk
+Loading Texture2D Normal_Noise_001 from package 00012963.upk
+Loading Texture2D Gradient_005 from package 00012963.upk
 Loading Texture2D Aura_BlurBlue_000 from package 00012963.upk
 Loading Texture2D Gradient_Color_Rainbow_000 from package 00012963.upk
 Loading Texture2D Env_Fx_ResinMask from package 00012963.upk
+Loading Texture2D Noise_Water_000 from package 00012963.upk
+Loading Texture2D Fire_Sprite_006 from package 00012963.upk
+Loading Texture2D Unique_Star_000 from package 00012963.upk
+Loading Texture2D Unique_Tutorial_000 from package 00012963.upk
+Loading Texture2D Noise_Glow_000 from package 00012963.upk
 Loading Texture2D Gradient_Beam_005_YClamp from package 00012963.upk
 Loading Texture2D Smoke_Fractal_002 from package 00012963.upk
 Loading Texture2D Glow_ShockWave_004 from package 00012963.upk
@@ -185,11 +212,8 @@ Loading Texture2D Ring_Skew_000 from package 00012963.upk
 Loading Texture2D Smoke_009 from package 00012963.upk
 Loading Texture2D Sparkle_Ink_007 from package 00012963.upk
 Loading Texture2D Gradient_010 from package 00012963.upk
-Loading Texture2D Gradient_005 from package 00012963.upk
 Loading Texture2D Glow_ShockWave_008 from package 00012963.upk
-Loading Texture2D Gradient_Color_BlueToPurple_001 from package 00012963.upk
 Loading Texture2D Ring_Bubble_000 from package 00012963.upk
-Loading Texture2D Noise_005 from package 00012963.upk
 Loading Texture2D Noise_003 from package 00012963.upk
 Loading Texture2D Ring_Thick_000 from package 00012963.upk
 Loading Texture2D Ring_ShockWave_001 from package 00012963.upk
@@ -203,7 +227,6 @@ Loading Texture2D Noise_018 from package 00012963.upk
 Loading Texture2D Ring_Double_001 from package 00012963.upk
 Loading Texture2D Sword_Opa from package 00012963.upk
 Loading Texture2D Smoke_000 from package 00012963.upk
-Loading Texture2D Noise_Water_000 from package 00012963.upk
 Loading Texture2D Glow_Twiri_001 from package 00012963.upk
 Loading Texture2D Gradient_Color_BtoS000_Tex from package 00012963.upk
 Loading Texture2D Sparkle_005 from package 00012963.upk
@@ -211,7 +234,31 @@ Loading Texture2D Unique_Stone_000 from package 00012963.upk
 Loading Texture2D Unique_Bone_N_000 from package 00012963.upk
 Loading Texture2D Smoke_Ice_000 from package 00012963.upk
 Loading Texture2D Fire_004 from package 00012963.upk
-Loaded in 1 sec, 4087 allocs, 2.11 MBytes serialized in 90431 calls.
+Loaded in 0.55 sec, 4512 allocs, 2.76 MBytes serialized in 103986 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: AncientMechTwins_LightSpot
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_007'
+        ReferencedTextures[1] = Texture2D'Gradient_Line_010'
+        ReferencedTextures[2] = Texture2D'Gradient_Light_Line_000_V'
+        ReferencedTextures[3] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
 
 Object info:
 ============
@@ -409,6 +456,33 @@ ClassName: Material3 ObjectName: Dagger_edge
         ReferencedTextures[6] = Texture2D'Gradient_Beam_001'
     }
     BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: DarkWind_witch_Asura_Beam
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Color_BlueToPurple_001'
+        ReferencedTextures[1] = Texture2D'Noise_005'
+        ReferencedTextures[2] = Texture2D'Gradient_001_Left'
+        ReferencedTextures[3] = Texture2D'Noise_Wave_000'
+        ReferencedTextures[4] = Texture2D'Takgi_Beam_001'
+        ReferencedTextures[5] = Texture2D'Gradient_Line_010_loop'
+        ReferencedTextures[6] = Texture2D'Gradient_Line_001_YClamp'
+    }
+    BlendMode = BLEND_Translucent (2)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
     MobileBaseTexture = None
@@ -661,6 +735,72 @@ ClassName: Material3 ObjectName: Ink_Particle_Mat_NoDepthBias
 
 Object info:
 ============
+ClassName: Material3 ObjectName: IronBoxer_LightSpot
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_007'
+        ReferencedTextures[1] = Texture2D'Gradient_Line_010'
+        ReferencedTextures[2] = Texture2D'Gradient_Light_Line_000_V'
+        ReferencedTextures[3] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: JukPaeWang_sword_aura_matM01
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] = { Texture2D'Noise_005', Texture2D'Smoke_Dust_002', Texture2D'Normal_Noise_001' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: JukPaeWang_sword_aura_matM02
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_005'
+        ReferencedTextures[1] = Texture2D'Smoke_Dust_002'
+        ReferencedTextures[2] = Texture2D'Normal_Noise_001'
+        ReferencedTextures[3] = Texture2D'Gradient_005'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
 ClassName: Material3 ObjectName: LineBlueBlur01_mat
 
     TwoSided = true
@@ -690,6 +830,50 @@ ClassName: Material3 ObjectName: LineBlueBlur01_mat_Wing
         ReferencedTextures[1] = Texture2D'Gradient_Color_Rainbow_000'
         ReferencedTextures[2] = Texture2D'Env_Fx_ResinMask'
         ReferencedTextures[3] = Texture2D'DefaultTexture'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Login_soulfighter_energe
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'Noise_Water_000', Texture2D'Fire_Sprite_006' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Login_SoulFighter_Marble007
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'Unique_Star_000'
+        ReferencedTextures[1] = Texture2D'Noise_Water_000'
+        ReferencedTextures[2] = Texture2D'Unique_Tutorial_000'
+        ReferencedTextures[3] = Texture2D'Noise_Glow_000'
+        ReferencedTextures[4] = Texture2D'Gradient_Half_000'
+        ReferencedTextures[5] = Texture2D'DefaultTexture'
     }
     BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333

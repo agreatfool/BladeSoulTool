@@ -1,4 +1,4 @@
-Found 21974 game files (0 skipped)
+Found 27000 game files (27 skipped)
 Loading package: 00029487.upk Ver: 573/1 Engine: 4205 Names: 240 Exports: 190 Imports: 21 Game: 801A
 Loading SkeletalMesh3 60125_GonM from package 00029487.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
@@ -18,7 +18,7 @@ WARNING: ByteProperty "USkeletalMesh3::CommonPhysicsUseFlag" was not found
 WARNING: FloatProperty "USkeletalMesh3::PhysicalHitScale" was not found
 Loading package: 00029486.upk Ver: 573/1 Engine: 4205 Names: 91 Exports: 1 Imports: 19 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00029486.upk
-Loading package: 00029485.upk Ver: 573/1 Engine: 4205 Names: 31 Exports: 4 Imports: 2 Game: 801A
+Loading package: 00029485.upk Ver: 573/1 Engine: 4205 Names: 40 Exports: 11 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D 60125_GonM_col1_N from package 00029485.upk
@@ -28,7 +28,7 @@ Loading Texture2D 60125_GonM_col1_S from package 00029485.upk
 Loading TextureCube lenscube_a from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Material3 Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -41,7 +41,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.15 sec, 3045 allocs, 4.03 MBytes serialized in 546936 calls.
+Loaded in 0.13 sec, 3082 allocs, 4.04 MBytes serialized in 547134 calls.
 
 Object info:
 ============
@@ -77,11 +77,11 @@ ClassName: SkeletalMesh3 ObjectName: 60125_GonM
         {
             Sections[2] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=6088 }
-                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=18264, NumFaces=3754 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=6060 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=18180, NumFaces=3754 }
             }
-            NumVerts = 7208
-            IndexCount = 29526
+            NumVerts = 7195
+            IndexCount = 29442
             NumTexCoords = 1
         }
         Lods[1] =

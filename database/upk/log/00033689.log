@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00033689.upk Ver: 573/1 Engine: 4205 Names: 322 Exports: 517 Imports: 5 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00033689.upk Ver: 573/1 Engine: 4205 Names: 322 Exports: 569 Imports: 5 Game: 801A
 Loading Texture2D GameUI_Tag_Mouse from package 00033689.upk
 Loading Texture2D GameUI_Tag_Mouse_128 from package 00033689.upk
 Loading Texture2D GameUI_Tag_MouseL from package 00033689.upk
@@ -9,31 +9,57 @@ Loading Texture2D GameUI_Tag_MouseR_128 from package 00033689.upk
 Loading Texture2D GameUI_Tag_MouseWH from package 00033689.upk
 Loading Texture2D GameUI_Tag_MouseWH_128 from package 00033689.upk
 Loading Texture2D JOYBTN_A from package 00033689.upk
+Loading Texture2D JOYBTN_A_32 from package 00033689.upk
 Loading Texture2D JOYBTN_B from package 00033689.upk
+Loading Texture2D JOYBTN_B_32 from package 00033689.upk
 Loading Texture2D JOYBTN_BACK from package 00033689.upk
+Loading Texture2D JOYBTN_BACK_32 from package 00033689.upk
 Loading Texture2D JOYBTN_DPAD_DOWN from package 00033689.upk
+Loading Texture2D JOYBTN_DPAD_DOWN_32 from package 00033689.upk
 Loading Texture2D JOYBTN_DPAD_LEFT from package 00033689.upk
+Loading Texture2D JOYBTN_DPAD_LEFT_32 from package 00033689.upk
 Loading Texture2D JOYBTN_DPAD_RIGHT from package 00033689.upk
+Loading Texture2D JOYBTN_DPAD_RIGHT_32 from package 00033689.upk
 Loading Texture2D JOYBTN_DPAD_UP from package 00033689.upk
+Loading Texture2D JOYBTN_DPAD_UP_32 from package 00033689.upk
 Loading Texture2D JOYBTN_FUNC1 from package 00033689.upk
+Loading Texture2D JOYBTN_FUNC1_32 from package 00033689.upk
 Loading Texture2D JOYBTN_FUNC2 from package 00033689.upk
+Loading Texture2D JOYBTN_FUNC2_32 from package 00033689.upk
 Loading Texture2D JOYBTN_LEFTSHOULDER from package 00033689.upk
+Loading Texture2D JOYBTN_LEFTSHOULDER_32 from package 00033689.upk
 Loading Texture2D JOYBTN_LEFTSTICK_DOWN from package 00033689.upk
+Loading Texture2D JOYBTN_LEFTSTICK_DOWN_32 from package 00033689.upk
 Loading Texture2D JOYBTN_LEFTSTICK_LEFT from package 00033689.upk
+Loading Texture2D JOYBTN_LEFTSTICK_LEFT_32 from package 00033689.upk
 Loading Texture2D JOYBTN_LEFTSTICK_RIGHT from package 00033689.upk
+Loading Texture2D JOYBTN_LEFTSTICK_RIGHT_32 from package 00033689.upk
 Loading Texture2D JOYBTN_LEFTSTICK_UP from package 00033689.upk
+Loading Texture2D JOYBTN_LEFTSTICK_UP_32 from package 00033689.upk
 Loading Texture2D JOYBTN_LEFTTHUMBSTICK from package 00033689.upk
+Loading Texture2D JOYBTN_LEFTTHUMBSTICK_32 from package 00033689.upk
 Loading Texture2D JOYBTN_LEFTTRIGGER from package 00033689.upk
+Loading Texture2D JOYBTN_LEFTTRIGGER_32 from package 00033689.upk
 Loading Texture2D JOYBTN_RIGHTSHOULDER from package 00033689.upk
+Loading Texture2D JOYBTN_RIGHTSHOULDER_32 from package 00033689.upk
 Loading Texture2D JOYBTN_RIGHTSTICK_DOWN from package 00033689.upk
+Loading Texture2D JOYBTN_RIGHTSTICK_DOWN_32 from package 00033689.upk
 Loading Texture2D JOYBTN_RIGHTSTICK_LEFT from package 00033689.upk
+Loading Texture2D JOYBTN_RIGHTSTICK_LEFT_32 from package 00033689.upk
 Loading Texture2D JOYBTN_RIGHTSTICK_RIGHT from package 00033689.upk
+Loading Texture2D JOYBTN_RIGHTSTICK_RIGHT_32 from package 00033689.upk
 Loading Texture2D JOYBTN_RIGHTSTICK_UP from package 00033689.upk
+Loading Texture2D JOYBTN_RIGHTSTICK_UP_32 from package 00033689.upk
 Loading Texture2D JOYBTN_RIGHTTHUMBSTICK from package 00033689.upk
+Loading Texture2D JOYBTN_RIGHTTHUMBSTICK_32 from package 00033689.upk
 Loading Texture2D JOYBTN_RIGHTTRIGGER from package 00033689.upk
+Loading Texture2D JOYBTN_RIGHTTRIGGER_32 from package 00033689.upk
 Loading Texture2D JOYBTN_START from package 00033689.upk
+Loading Texture2D JOYBTN_START_32 from package 00033689.upk
 Loading Texture2D JOYBTN_X from package 00033689.upk
+Loading Texture2D JOYBTN_X_32 from package 00033689.upk
 Loading Texture2D JOYBTN_Y from package 00033689.upk
+Loading Texture2D JOYBTN_Y_32 from package 00033689.upk
 Loading Texture2D Key_Alphabet_A from package 00033689.upk
 Loading Texture2D Key_Alphabet_A_128 from package 00033689.upk
 Loading Texture2D Key_Alphabet_B from package 00033689.upk
@@ -262,7 +288,7 @@ Loading Texture2D Key_Tab from package 00033689.upk
 Loading Texture2D Key_Tab_128 from package 00033689.upk
 Loading Texture2D Key_Tab_Big from package 00033689.upk
 Loading Texture2D Key_Tab_Big_128 from package 00033689.upk
-Loaded in 0.2 sec, 1746 allocs, 0.94 MBytes serialized in 33392 calls.
+Loaded in 0.17 sec, 1882 allocs, 0.97 MBytes serialized in 36616 calls.
 
 Object info:
 ============
@@ -401,10 +427,40 @@ ClassName: Texture2D ObjectName: JOYBTN_A
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: JOYBTN_A_32
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: JOYBTN_B
 
     SizeX = 64
     SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: JOYBTN_B_32
+
+    SizeX = 32
+    SizeY = 32
     Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
@@ -431,10 +487,40 @@ ClassName: Texture2D ObjectName: JOYBTN_BACK
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: JOYBTN_BACK_32
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: JOYBTN_DPAD_DOWN
 
     SizeX = 64
     SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: JOYBTN_DPAD_DOWN_32
+
+    SizeX = 32
+    SizeY = 32
     Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
@@ -461,10 +547,40 @@ ClassName: Texture2D ObjectName: JOYBTN_DPAD_LEFT
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: JOYBTN_DPAD_LEFT_32
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: JOYBTN_DPAD_RIGHT
 
     SizeX = 64
     SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: JOYBTN_DPAD_RIGHT_32
+
+    SizeX = 32
+    SizeY = 32
     Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
@@ -491,10 +607,40 @@ ClassName: Texture2D ObjectName: JOYBTN_DPAD_UP
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: JOYBTN_DPAD_UP_32
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: JOYBTN_FUNC1
 
     SizeX = 64
     SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: JOYBTN_FUNC1_32
+
+    SizeX = 32
+    SizeY = 32
     Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
@@ -521,10 +667,40 @@ ClassName: Texture2D ObjectName: JOYBTN_FUNC2
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: JOYBTN_FUNC2_32
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: JOYBTN_LEFTSHOULDER
 
     SizeX = 64
     SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: JOYBTN_LEFTSHOULDER_32
+
+    SizeX = 32
+    SizeY = 32
     Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
@@ -551,10 +727,40 @@ ClassName: Texture2D ObjectName: JOYBTN_LEFTSTICK_DOWN
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: JOYBTN_LEFTSTICK_DOWN_32
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: JOYBTN_LEFTSTICK_LEFT
 
     SizeX = 64
     SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: JOYBTN_LEFTSTICK_LEFT_32
+
+    SizeX = 32
+    SizeY = 32
     Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
@@ -581,10 +787,40 @@ ClassName: Texture2D ObjectName: JOYBTN_LEFTSTICK_RIGHT
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: JOYBTN_LEFTSTICK_RIGHT_32
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: JOYBTN_LEFTSTICK_UP
 
     SizeX = 64
     SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: JOYBTN_LEFTSTICK_UP_32
+
+    SizeX = 32
+    SizeY = 32
     Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
@@ -611,10 +847,40 @@ ClassName: Texture2D ObjectName: JOYBTN_LEFTTHUMBSTICK
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: JOYBTN_LEFTTHUMBSTICK_32
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: JOYBTN_LEFTTRIGGER
 
     SizeX = 64
     SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: JOYBTN_LEFTTRIGGER_32
+
+    SizeX = 32
+    SizeY = 32
     Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
@@ -641,10 +907,40 @@ ClassName: Texture2D ObjectName: JOYBTN_RIGHTSHOULDER
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: JOYBTN_RIGHTSHOULDER_32
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: JOYBTN_RIGHTSTICK_DOWN
 
     SizeX = 64
     SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: JOYBTN_RIGHTSTICK_DOWN_32
+
+    SizeX = 32
+    SizeY = 32
     Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
@@ -671,10 +967,40 @@ ClassName: Texture2D ObjectName: JOYBTN_RIGHTSTICK_LEFT
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: JOYBTN_RIGHTSTICK_LEFT_32
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: JOYBTN_RIGHTSTICK_RIGHT
 
     SizeX = 64
     SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: JOYBTN_RIGHTSTICK_RIGHT_32
+
+    SizeX = 32
+    SizeY = 32
     Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
@@ -701,10 +1027,40 @@ ClassName: Texture2D ObjectName: JOYBTN_RIGHTSTICK_UP
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: JOYBTN_RIGHTSTICK_UP_32
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: JOYBTN_RIGHTTHUMBSTICK
 
     SizeX = 64
     SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: JOYBTN_RIGHTTHUMBSTICK_32
+
+    SizeX = 32
+    SizeY = 32
     Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
@@ -731,10 +1087,40 @@ ClassName: Texture2D ObjectName: JOYBTN_RIGHTTRIGGER
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: JOYBTN_RIGHTTRIGGER_32
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: JOYBTN_START
 
     SizeX = 64
     SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: JOYBTN_START_32
+
+    SizeX = 32
+    SizeY = 32
     Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
@@ -761,10 +1147,40 @@ ClassName: Texture2D ObjectName: JOYBTN_X
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: JOYBTN_X_32
+
+    SizeX = 32
+    SizeY = 32
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: JOYBTN_Y
 
     SizeX = 64
     SizeY = 64
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: JOYBTN_Y_32
+
+    SizeX = 32
+    SizeY = 32
     Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)

@@ -1,7 +1,7 @@
-Found 21974 game files (0 skipped)
-Loading package: 00032791.upk Ver: 573/1 Engine: 4205 Names: 316 Exports: 157 Imports: 99 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00032791.upk Ver: 573/1 Engine: 4205 Names: 319 Exports: 157 Imports: 99 Game: 801A
 Loading MaterialInstanceConstant T3_2_Axe01 from package 00032791.upk
-Loading package: 00028250.upk Ver: 573/1 Engine: 4205 Names: 417 Exports: 746 Imports: 155 Game: 801A
+Loading package: 00028250.upk Ver: 573/1 Engine: 4205 Names: 418 Exports: 699 Imports: 155 Game: 801A
 Loading SkeletalMesh3 110155_Autoscale from package 00032791.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
@@ -12,17 +12,18 @@ WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not 
 Loading SkeletalMeshSocket SkeletalMeshSocket_234 from package 00032791.upk
 WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
 Loading StaticMesh3 T3_2_Axe_01 from package 00032791.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 935 Exports: 4882 Imports: 265 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 929 Exports: 4955 Imports: 320 Game: 801A
 Loading StaticMesh3 T3_2_Axe_02 from package 00032791.upk
 Loading Texture2D Axe_mask from package 00032791.upk
 Loading Material3 legend_weapon from package 00028250.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00032785.upk
 Loading package: 00028789.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 8 Imports: 4 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00023713.upk Ver: 573/1 Engine: 4205 Names: 96 Exports: 71 Imports: 4 Game: 801A
 Loading Texture2D Noise_005 from package 00012963.upk
 Loading Texture2D Noise_006 from package 00012963.upk
 Loading Texture2D Noise_Wave_000 from package 00012963.upk
@@ -35,7 +36,7 @@ Loading Texture2D Weapon_110109_col1_S from package 00028789.upk
 Loading TextureCube lenscube from package 00002640.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Material3 Ghost_Basic from package 00002620.upk
-Loading Texture2D Cube000_Tex from package 00012892.upk
+Loading Texture2D Cube000_Tex from package 00023713.upk
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -46,7 +47,7 @@ Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.18 sec, 4670 allocs, 2.38 MBytes serialized in 403330 calls.
+Loaded in 0.14 sec, 4794 allocs, 2.18 MBytes serialized in 406371 calls.
 
 Object info:
 ============
@@ -212,13 +213,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: Axe_mask
 
-    SizeX = 1024
-    SizeY = 512
+    SizeX = 256
+    SizeY = 128
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 8
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

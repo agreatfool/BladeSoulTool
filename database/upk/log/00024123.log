@@ -1,18 +1,17 @@
-Found 21974 game files (0 skipped)
-Loading package: 00024123.upk Ver: 573/1 Engine: 4205 Names: 60 Exports: 5 Imports: 10 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00024123.upk Ver: 573/1 Engine: 4205 Names: 60 Exports: 5 Imports: 9 Game: 801A
 Loading SkeletalMesh3 040122_LynM from package 00024123.upk
-Loading package: 00004043.upk Ver: 573/1 Engine: 4205 Names: 56 Exports: 2 Imports: 20 Game: 801A
-Loading package: 00024124.upk Ver: 573/1 Engine: 4205 Names: 89 Exports: 1 Imports: 19 Game: 801A
-Loading MaterialInstanceConstant col1 from package 00004043.upk
+Loading package: 00024124.upk Ver: 573/1 Engine: 4205 Names: 107 Exports: 2 Imports: 26 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00024124.upk
 Loading package: 00004041.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 4 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading MaterialInstanceConstant col1 from package 00024124.upk
+Loading MaterialInstanceConstant col1_Acc from package 00024124.upk
 Loading package: 00024106.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 7 Imports: 4 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading Texture2D LynM_001_col1_D from package 00004041.upk
 Loading Texture2D LynM_001_col1_n from package 00004041.upk
 Loading Material3 Beard_Ac from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
 Loading Texture2D 040122_JinM_col1_N from package 00024106.upk
 Loading Texture2D 040122_JinM_col1_M from package 00024106.upk
@@ -36,7 +35,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.15 sec, 3180 allocs, 1.55 MBytes serialized in 239349 calls.
+Loaded in 0.21 sec, 3162 allocs, 1.55 MBytes serialized in 239696 calls.
 
 Object info:
 ============
@@ -56,7 +55,7 @@ ClassName: SkeletalMesh3 ObjectName: 040122_LynM
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
-    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'col1' }
+    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'col1_Acc' }
 
 
     Lods[1] =
@@ -66,7 +65,7 @@ ClassName: SkeletalMesh3 ObjectName: 040122_LynM
             Sections[2] =
             {
                 Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=820 }
-                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=2460, NumFaces=1589 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1_Acc', FirstIndex=2460, NumFaces=1589 }
             }
             NumVerts = 2315
             IndexCount = 7227

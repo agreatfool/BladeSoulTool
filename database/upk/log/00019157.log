@@ -1,4 +1,4 @@
-Found 21974 game files (0 skipped)
+Found 27000 game files (27 skipped)
 Loading package: 00019157.upk Ver: 573/1 Engine: 4205 Names: 438 Exports: 731 Imports: 26 Game: 801A
 Loading AnimSet TalkSocial_Community_GonF from package 00019157.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
@@ -793,4 +793,6 @@ UAnimSet::ConvertAnims <- PostLoad:TalkSocial_Community_GonF <- UObject::EndLoad
     at ChildProcess.exithandler (child_process.js:637:15)
     at ChildProcess.EventEmitter.emit (events.js:98:17)
     at maybeClose (child_process.js:743:16)
-    at Process.ChildProcess._handle.onexit (child_process.js:810:5)
+    at Socket.<anonymous> (child_process.js:956:11)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at Pipe.close (net.js:465:12)

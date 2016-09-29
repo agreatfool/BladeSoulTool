@@ -1,11 +1,15 @@
-Found 21974 game files (0 skipped)
-Loading package: 00013865.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 5 Imports: 2 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00013865.upk Ver: 573/1 Engine: 4205 Names: 41 Exports: 10 Imports: 4 Game: 801A
 Loading Texture2D 990034_col1_d from package 00013865.upk
 Loading Texture2D 990034_col1_FX_Line from package 00013865.upk
 Loading Texture2D 990034_col1_m from package 00013865.upk
 Loading Texture2D 990034_col1_n from package 00013865.upk
 Loading Texture2D 990034_col1_s from package 00013865.upk
-Loaded in 0.038 sec, 204 allocs, 0.60 MBytes serialized in 1196 calls.
+Loading Texture2D 990034_NaHanThunder_col9_d from package 00013865.upk
+Loading Texture2D 990034_NaHanThunder_col9_M from package 00013865.upk
+Loading Texture2D 990034_NaHanThunder_col9_n from package 00013865.upk
+Loading Texture2D 990034_NaHanThunder_col9_S from package 00013865.upk
+Loaded in 0.07 sec, 317 allocs, 1.00 MBytes serialized in 2026 calls.
 
 Object info:
 ============
@@ -70,6 +74,66 @@ ClassName: Texture2D ObjectName: 990034_col1_n
 Object info:
 ============
 ClassName: Texture2D ObjectName: 990034_col1_s
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990034_NaHanThunder_col9_d
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990034_NaHanThunder_col9_M
+
+    SizeX = 16
+    SizeY = 16
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 4
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990034_NaHanThunder_col9_n
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990034_NaHanThunder_col9_S
 
     SizeX = 512
     SizeY = 512

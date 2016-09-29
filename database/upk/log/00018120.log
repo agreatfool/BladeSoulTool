@@ -1,30 +1,118 @@
-Found 21974 game files (0 skipped)
-Loading package: 00018120.upk Ver: 573/1 Engine: 4205 Names: 91 Exports: 1 Imports: 20 Game: 801A
-Loading MaterialInstanceConstant col1 from package 00018120.upk
-Loading package: 00018119.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 2 Game: 801A
-Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00018120.upk Ver: 573/1 Engine: 4205 Names: 201 Exports: 426 Imports: 52 Game: 801A
+Loading Material3 AncientAdamantineMan_FX_Col1 from package 00018120.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading package: 00018119.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 7 Imports: 2 Game: 801A
+Loading Material3 Basic_FX from package 00018120.upk
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading Material3 Emichange_Basic_FX from package 00018120.upk
+Loading MaterialInstanceConstant col1 from package 00018120.upk
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading Texture2D Monster_Human_AncientAdamantineMan_col1_FX from package 00018120.upk
+Loading Texture2D Monster_Human_AncientAdamantineMan_col1_FX2 from package 00018120.upk
+Loading Texture2D Noise_018 from package 00012963.upk
+Loading Texture2D Noise_009 from package 00012963.upk
+Loading Texture2D Normal_Noise_003 from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
+Loading Texture2D Noise_Ripple_000_Inverse from package 00012963.upk
+Loading Texture2D Monster_Human_AncientAdamantineMan_col1_D from package 00018119.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D Monster_Human_AncientAdamantineMan_col1_N from package 00018119.upk
 Loading Texture2D Monster_Human_AncientAdamantineMan_col1_M from package 00018119.upk
-Loading Texture2D Monster_Human_AncientAdamantineMan_col1_D from package 00018119.upk
 Loading Texture2D Monster_Human_AncientAdamantineMan_col1_S from package 00018119.upk
 Loading TextureCube cube_cst from package 00002640.upk
 Loading Texture2D Monster_Human_AncientAdamantineMan_col1_E from package 00018119.upk
-Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loading Texture2D check_n from package 00002620.upk
-Loading Texture2D check from package 00002620.upk
-Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
-Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
-Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.14 sec, 2802 allocs, 4.44 MBytes serialized in 162911 calls.
+Loaded in 0.14 sec, 3122 allocs, 4.71 MBytes serialized in 173301 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: AncientAdamantineMan_FX_Col1
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_018'
+        ReferencedTextures[1] = Texture2D'Noise_009'
+        ReferencedTextures[2] = Texture2D'Normal_Noise_003'
+        ReferencedTextures[3] = Texture2D'Noise_Ripple_000_Inverse'
+        ReferencedTextures[4] = Texture2D'Monster_Human_AncientAdamantineMan_col1_D'
+        ReferencedTextures[5] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[6] = Texture2D'Gradient_Line_003'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Basic_FX
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'check_n'
+        ReferencedTextures[1] = Texture2D'check'
+        ReferencedTextures[2] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[4] = Texture2D'Gradient_Wipe_BurnOut_Mask_TEST'
+        ReferencedTextures[5] = Texture2D'Gradient_Wipe_BurnOut_Mask'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Emichange_Basic_FX
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'check_n'
+        ReferencedTextures[1] = Texture2D'check'
+        ReferencedTextures[2] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[4] = Texture2D'Gradient_Wipe_BurnOut_Mask_TEST'
+        ReferencedTextures[5] = Texture2D'Gradient_Wipe_BurnOut_Mask'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
 
 Object info:
 ============
@@ -43,7 +131,7 @@ ClassName: MaterialInstanceConstant ObjectName: col1
         ScalarParameterValues[8] = { ParameterName=Fresnel Value, ParameterValue=1 }
         ScalarParameterValues[9] = { ParameterName=Fresnel exponent, ParameterValue=30 }
     }
-    TextureParameterValues[6] =
+    TextureParameterValues[9] =
     {
         TextureParameterValues[0] =
         {
@@ -60,67 +148,108 @@ ClassName: MaterialInstanceConstant ObjectName: col1
             ParameterName = Diffuse
             ParameterValue = Texture2D'Monster_Human_AncientAdamantineMan_col1_D'
         }
-        TextureParameterValues[3] =
+        TextureParameterValues[3] = { ParameterName=Mask_FX_Texture, ParameterValue=Texture2D'Smoke_Pattern_001' }
+        TextureParameterValues[4] =
         {
             ParameterName = Specular
             ParameterValue = Texture2D'Monster_Human_AncientAdamantineMan_col1_S'
         }
-        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'cube_cst' }
-        TextureParameterValues[5] =
+        TextureParameterValues[5] = { ParameterName=rf_cube, ParameterValue=TextureCube'cube_cst' }
+        TextureParameterValues[6] =
         {
             ParameterName = Emissive
             ParameterValue = Texture2D'Monster_Human_AncientAdamantineMan_col1_E'
         }
+        TextureParameterValues[7] =
+        {
+            ParameterName = FX_Add
+            ParameterValue = Texture2D'Monster_Human_AncientAdamantineMan_col1_FX'
+        }
+        TextureParameterValues[8] =
+        {
+            ParameterName = Fx_Add2
+            ParameterValue = Texture2D'Monster_Human_AncientAdamantineMan_col1_FX2'
+        }
     }
-    VectorParameterValues[9] =
+    VectorParameterValues[15] =
     {
         VectorParameterValues[0] =
+        {
+            ParameterName = AC_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[1] =
         {
             ParameterName = Mesh_trangition
             ParameterValue = { R=0, G=0, B=0, A=1 }
         }
-        VectorParameterValues[1] =
-        {
-            ParameterName = Reflection_value
-            ParameterValue = { R=2, G=2, B=2, A=1 }
-        }
         VectorParameterValues[2] =
         {
-            ParameterName = HighLight_Color
+            ParameterName = AC_specular
             ParameterValue = { R=1, G=1, B=1, A=1 }
         }
         VectorParameterValues[3] =
         {
-            ParameterName = Fresnel_color
-            ParameterValue = { R=0, G=0, B=0, A=1 }
+            ParameterName = Reflection_value
+            ParameterValue = { R=2, G=2, B=2, A=1 }
         }
         VectorParameterValues[4] =
         {
-            ParameterName = Fresnel_Power
-            ParameterValue = { R=0, G=0, B=0, A=1 }
+            ParameterName = HighLight_Color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
         }
         VectorParameterValues[5] =
         {
-            ParameterName = Burn_Color
+            ParameterName = Fresnel_color
             ParameterValue = { R=0, G=0, B=0, A=1 }
         }
         VectorParameterValues[6] =
         {
-            ParameterName = Glow_Trangition
+            ParameterName = Fresnel_Power
             ParameterValue = { R=0, G=0, B=0, A=1 }
         }
         VectorParameterValues[7] =
         {
-            ParameterName = Fx_Glow_power
+            ParameterName = Burn_Color
             ParameterValue = { R=0, G=0, B=0, A=1 }
         }
         VectorParameterValues[8] =
         {
+            ParameterName = Fx_Glow_power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = Glow_Trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[10] =
+        {
             ParameterName = Fx_Glow_color
             ParameterValue = { R=0, G=0, B=0, A=1 }
         }
+        VectorParameterValues[11] =
+        {
+            ParameterName = Fx_Glow_color_A
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[12] =
+        {
+            ParameterName = Glow_Trangition_A
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[13] =
+        {
+            ParameterName = Fx_Glow_power_A
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[14] =
+        {
+            ParameterName = Off
+            ParameterValue = { R=2, G=0, B=0, A=1 }
+        }
     }
-    Parent = Material3'Basic'
+    Parent = Material3'Emichange_Basic_FX'
     FlattenedTexture = None
     MobileBaseTexture = None
     MobileNormalTexture = None
@@ -128,3 +257,33 @@ ClassName: MaterialInstanceConstant ObjectName: col1
     MobileSpecularPower = 16
     MobileSpecularMask = MSM_Constant (0)
     MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_AncientAdamantineMan_col1_FX
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Human_AncientAdamantineMan_col1_FX2
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }

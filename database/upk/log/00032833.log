@@ -1,17 +1,17 @@
-Found 21974 game files (0 skipped)
-Loading package: 00032833.upk Ver: 573/1 Engine: 4205 Names: 464 Exports: 869 Imports: 178 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00032833.upk Ver: 573/1 Engine: 4205 Names: 467 Exports: 869 Imports: 178 Game: 801A
 Loading MaterialInstanceConstant dagger_ee_INST from package 00032833.upk
-Loading package: 00032509.upk Ver: 573/1 Engine: 4205 Names: 310 Exports: 459 Imports: 110 Game: 801A
+Loading package: 00032509.upk Ver: 573/1 Engine: 4205 Names: 318 Exports: 463 Imports: 112 Game: 801A
 Loading MaterialInstanceConstant Guntlet_ee_INST from package 00032833.upk
 Loading MaterialInstanceConstant T3-2_Dagger_e_INST from package 00032833.upk
 Loading package: 00028087.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 9 Imports: 4 Game: 801A
 Loading package: 00028788.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
-Loading package: 00030842.upk Ver: 573/1 Engine: 4205 Names: 465 Exports: 1298 Imports: 182 Game: 801A
+Loading package: 00030842.upk Ver: 573/1 Engine: 4205 Names: 468 Exports: 1298 Imports: 182 Game: 801A
 Loading MaterialInstanceConstant T3_2_dagger01 from package 00032833.upk
-Loading package: 00032737.upk Ver: 573/1 Engine: 4205 Names: 384 Exports: 233 Imports: 123 Game: 801A
+Loading package: 00032737.upk Ver: 573/1 Engine: 4205 Names: 387 Exports: 233 Imports: 123 Game: 801A
 Loading MaterialInstanceConstant T3_2_dagger_edge_INST from package 00032833.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
-Loading package: 00028326.upk Ver: 573/1 Engine: 4205 Names: 470 Exports: 914 Imports: 179 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading package: 00028326.upk Ver: 573/1 Engine: 4205 Names: 473 Exports: 914 Imports: 179 Game: 801A
 Loading SkeletalMesh3 120157_1_Autoscale from package 00032833.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
@@ -27,7 +27,7 @@ WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not 
 Loading SkeletalMeshSocket SkeletalMeshSocket_188 from package 00032833.upk
 WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
 Loading StaticMesh3 T3_2_Dagger1_02 from package 00032833.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 935 Exports: 4882 Imports: 265 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 929 Exports: 4955 Imports: 320 Game: 801A
 Loading StaticMesh3 T3_2_Dagger1_03_text2 from package 00032833.upk
 Loading StaticMesh3 T3_2_Dagger1_04 from package 00032833.upk
 Loading StaticMesh3 T3_2_Dagger1_edge from package 00032833.upk
@@ -52,6 +52,7 @@ Loading MaterialInstanceConstant col1 from package 00032827.upk
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00023713.upk Ver: 573/1 Engine: 4205 Names: 96 Exports: 71 Imports: 4 Game: 801A
 Loading Texture2D Noise_006 from package 00012963.upk
 Loading Texture2D Ref_Cool from package 00012963.upk
 Loading Texture2D Unique_Stone_001 from package 00012963.upk
@@ -75,7 +76,7 @@ Loading Texture2D 120111_Autoscale_col1_S from package 00028788.upk
 Loading TextureCube lenscube from package 00002640.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Material3 Ghost_Basic from package 00002620.upk
-Loading Texture2D Cube000_Tex from package 00012892.upk
+Loading Texture2D Cube000_Tex from package 00023713.upk
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -86,7 +87,7 @@ Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.27 sec, 6689 allocs, 3.00 MBytes serialized in 452696 calls.
+Loaded in 0.21 sec, 6829 allocs, 2.98 MBytes serialized in 456726 calls.
 
 Object info:
 ============
@@ -585,13 +586,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: T3_2_Dagger_mask
 
-    SizeX = 512
-    SizeY = 256
+    SizeX = 256
+    SizeY = 128
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 9
+    MipTailBaseIdx = 8
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

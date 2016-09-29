@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00009108.upk Ver: 573/1 Engine: 4205 Names: 124 Exports: 77 Imports: 9 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00009108.upk Ver: 573/1 Engine: 4205 Names: 127 Exports: 78 Imports: 10 Game: 801A
 Loading Texture2D Assasin_CharSelect_002 from package 00009108.upk
 Loading Texture2D BladeMaster_CharSelect_002 from package 00009108.upk
 Loading Texture2D common_001 from package 00009108.upk
@@ -10,9 +10,6 @@ Loading Texture2D GonF_001 from package 00009108.upk
 Loading Texture2D GonF_002 from package 00009108.upk
 Loading Texture2D GonM_001 from package 00009108.upk
 Loading Texture2D GonM_002 from package 00009108.upk
-Loading Texture2D GuildSkill_UniformCostume from package 00009108.upk
-Loading Texture2D GuildSkill_UniformFace from package 00009108.upk
-Loading Texture2D GuildSkill_UniformHead from package 00009108.upk
 Loading Texture2D GuildUniform_DesignerPreset_001 from package 00009108.upk
 Loading Texture2D GuildUniform_Face_001 from package 00009108.upk
 Loading Texture2D GuildUniform_Head_001 from package 00009108.upk
@@ -43,10 +40,11 @@ Loading Texture2D LynF_001 from package 00009108.upk
 Loading Texture2D LynF_002 from package 00009108.upk
 Loading Texture2D LynM_001 from package 00009108.upk
 Loading Texture2D LynM_002 from package 00009108.upk
+Loading Texture2D SoulFighter_CharSelect_002 from package 00009108.upk
 Loading Texture2D Summoner_CharSelect_002 from package 00009108.upk
 Loading Texture2D SwordMaster_CharSelect_002 from package 00009108.upk
 Loading Texture2D Warlock_CharSelect_002 from package 00009108.upk
-Loaded in 0.076 sec, 414 allocs, 4.34 MBytes serialized in 6671 calls.
+Loaded in 0.069 sec, 407 allocs, 4.78 MBytes serialized in 6529 calls.
 
 Object info:
 ============
@@ -190,51 +188,6 @@ ClassName: Texture2D ObjectName: GonM_002
     SizeX = 1024
     SizeY = 1024
     Format = PF_DXT5 (7)
-    AddressX = TA_Clamp (1)
-    AddressY = TA_Clamp (1)
-    TextureFileCacheName = None
-    MipTailBaseIdx = 0
-    bForcePVRTC4 = false
-    UnpackMin[4] = { 0, 0, 0, 0 }
-    UnpackMax[4] = { 1, 1, 1, 1 }
-
-Object info:
-============
-ClassName: Texture2D ObjectName: GuildSkill_UniformCostume
-
-    SizeX = 64
-    SizeY = 64
-    Format = PF_DXT1 (5)
-    AddressX = TA_Clamp (1)
-    AddressY = TA_Clamp (1)
-    TextureFileCacheName = None
-    MipTailBaseIdx = 0
-    bForcePVRTC4 = false
-    UnpackMin[4] = { 0, 0, 0, 0 }
-    UnpackMax[4] = { 1, 1, 1, 1 }
-
-Object info:
-============
-ClassName: Texture2D ObjectName: GuildSkill_UniformFace
-
-    SizeX = 64
-    SizeY = 64
-    Format = PF_DXT1 (5)
-    AddressX = TA_Clamp (1)
-    AddressY = TA_Clamp (1)
-    TextureFileCacheName = None
-    MipTailBaseIdx = 0
-    bForcePVRTC4 = false
-    UnpackMin[4] = { 0, 0, 0, 0 }
-    UnpackMax[4] = { 1, 1, 1, 1 }
-
-Object info:
-============
-ClassName: Texture2D ObjectName: GuildSkill_UniformHead
-
-    SizeX = 64
-    SizeY = 64
-    Format = PF_DXT1 (5)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)
     TextureFileCacheName = None
@@ -684,6 +637,21 @@ ClassName: Texture2D ObjectName: LynM_002
 
     SizeX = 1024
     SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Clamp (1)
+    AddressY = TA_Clamp (1)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: SoulFighter_CharSelect_002
+
+    SizeX = 64
+    SizeY = 64
     Format = PF_DXT5 (7)
     AddressX = TA_Clamp (1)
     AddressY = TA_Clamp (1)

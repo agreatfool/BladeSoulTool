@@ -1,8 +1,8 @@
-Found 21974 game files (0 skipped)
-Loading package: 00001029.upk Ver: 573/1 Engine: 4205 Names: 366 Exports: 321 Imports: 27 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00001029.upk Ver: 573/1 Engine: 4205 Names: 377 Exports: 333 Imports: 27 Game: 801A
 Loading Material3 Ice_ball_Absorb_Mat from package 00001029.upk
 Loading StaticMesh3 Aura_Simple001_Mes from package 00001029.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 935 Exports: 4882 Imports: 265 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 929 Exports: 4955 Imports: 320 Game: 801A
 Loading StaticMesh3 Aura_Simple002_Mes from package 00001029.upk
 Loading StaticMesh3 Aura_wave2_UV_Mes from package 00001029.upk
 Loading StaticMesh3 Aura_wave_Mes from package 00001029.upk
@@ -12,7 +12,11 @@ Loading StaticMesh3 AuraTrail_002_Mes from package 00001029.upk
 Loading StaticMesh3 BeamMesh_01 from package 00001029.upk
 Loading StaticMesh3 Blood_Line_01_Mes from package 00001029.upk
 Loading StaticMesh3 Bone_01 from package 00001029.upk
+Loading StaticMesh3 Box from package 00001029.upk
+Loading StaticMesh3 box2 from package 00001029.upk
+Loading StaticMesh3 box3 from package 00001029.upk
 Loading StaticMesh3 buff104_arm02 from package 00001029.upk
+Loading StaticMesh3 Cat_01 from package 00001029.upk
 Loading StaticMesh3 Circle001_Mes from package 00001029.upk
 Loading StaticMesh3 Circle005_Mes from package 00001029.upk
 Loading StaticMesh3 Circle006_Left_Mes from package 00001029.upk
@@ -63,6 +67,8 @@ Loading StaticMesh3 Damage_Ice_signal_mesh01 from package 00001029.upk
 Loading StaticMesh3 Damage_Ice_signal_mesh02 from package 00001029.upk
 Loading StaticMesh3 Damage_Ice_signal_mesh03 from package 00001029.upk
 Loading StaticMesh3 Damage_Ice_signal_outside from package 00001029.upk
+Loading StaticMesh3 DarkWind_witch_CossMeshTEST from package 00001029.upk
+Loading StaticMesh3 DarkWind_witch_sector from package 00001029.upk
 Loading StaticMesh3 Demon_Expolsion from package 00001029.upk
 Loading StaticMesh3 Demon_Face from package 00001029.upk
 Loading StaticMesh3 Demon_Head from package 00001029.upk
@@ -92,6 +98,7 @@ Loading StaticMesh3 Foots from package 00001029.upk
 Loading StaticMesh3 Foots2 from package 00001029.upk
 Loading StaticMesh3 Force_T from package 00001029.upk
 Loading StaticMesh3 Fragle_3 from package 00001029.upk
+Loading StaticMesh3 FX_Head_Mark from package 00001029.upk
 Loading StaticMesh3 fx_windblow04_mesh_Dup_2337 from package 00001029.upk
 Loading StaticMesh3 gem_mesh from package 00001029.upk
 Loading StaticMesh3 geosphere001 from package 00001029.upk
@@ -214,7 +221,11 @@ Loading StaticMesh3 tornado from package 00001029.upk
 Loading StaticMesh3 tornado01 from package 00001029.upk
 Loading StaticMesh3 tornado02 from package 00001029.upk
 Loading StaticMesh3 tornado06 from package 00001029.upk
+Loading StaticMesh3 Torus from package 00001029.upk
 Loading StaticMesh3 torus003 from package 00001029.upk
+Loading StaticMesh3 torus004 from package 00001029.upk
+Loading StaticMesh3 Torus2 from package 00001029.upk
+Loading StaticMesh3 Torus3 from package 00001029.upk
 Loading StaticMesh3 TrailGumiho000_Mes from package 00001029.upk
 Loading StaticMesh3 TrailGumiho001_Mes from package 00001029.upk
 Loading StaticMesh3 TrailMesh0010 from package 00001029.upk
@@ -259,6 +270,7 @@ Loading StaticMesh3 Wave_Cylinder000_Mes from package 00001029.upk
 Loading StaticMesh3 Wave_HemiSphere000_Mes from package 00001029.upk
 Loading StaticMesh3 WaveBig_Mes from package 00001029.upk
 Loading StaticMesh3 WayPoint_Ring_X_Mes from package 00001029.upk
+Loading StaticMesh3 WeaponLaserMesh from package 00001029.upk
 Loading StaticMesh3 Wheel from package 00001029.upk
 Loading StaticMesh3 Wheel_Ax from package 00001029.upk
 Loading StaticMesh3 Wheel_Ax2 from package 00001029.upk
@@ -266,8 +278,9 @@ Loading StaticMesh3 wheel_Ax3 from package 00001029.upk
 Loading StaticMesh3 Wind000_Mes from package 00001029.upk
 Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading Texture2D Cube000_Tex from package 00012892.upk
-Loaded in 0.36 sec, 6125 allocs, 8.82 MBytes serialized in 2003085 calls.
+Loading package: 00023713.upk Ver: 573/1 Engine: 4205 Names: 96 Exports: 71 Imports: 4 Game: 801A
+Loading Texture2D Cube000_Tex from package 00023713.upk
+Loaded in 0.2 sec, 6456 allocs, 9.64 MBytes serialized in 2198914 calls.
 
 Object info:
 ============
@@ -639,6 +652,111 @@ ClassName: StaticMesh3 ObjectName: Bone_01
 
 Object info:
 ============
+ClassName: StaticMesh3 ObjectName: Box
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=50 }
+        BoxExtent = { X=50, Y=50, Z=50 }
+        SphereRadius = 86.6025
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=8 }
+            }
+            NumVerts = 32
+            IndexCount = 24
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: box2
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=1.54455 }
+        BoxExtent = { X=50, Y=50, Z=1.54455 }
+        SphereRadius = 70.7275
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=8 }
+            }
+            NumVerts = 32
+            IndexCount = 24
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: box3
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=50 }
+        BoxExtent = { X=360, Y=360, Z=50 }
+        SphereRadius = 368.375
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=24 }
+            }
+            NumVerts = 96
+            IndexCount = 72
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
 ClassName: StaticMesh3 ObjectName: buff104_arm02
 
     BodySetup = None
@@ -668,6 +786,41 @@ ClassName: StaticMesh3 ObjectName: buff104_arm02
             NumVerts = 160
             IndexCount = 360
             NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Cat_01
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-6.5415, Y=-13.7749, Z=41.4415 }
+        BoxExtent = { X=15.535, Y=12.4513, Z=17.2919 }
+        SphereRadius = 25.5974
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=3642 }
+            }
+            NumVerts = 5146
+            IndexCount = 10926
+            NumTexCoords = 2
         }
     }
     LodCount = 1
@@ -2424,6 +2577,76 @@ ClassName: StaticMesh3 ObjectName: Damage_Ice_signal_outside
 
 Object info:
 ============
+ClassName: StaticMesh3 ObjectName: DarkWind_witch_CossMeshTEST
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=-74.9967, Z=0 }
+        BoxExtent = { X=37.5, Y=75, Z=37.5 }
+        SphereRadius = 83.8526
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=4 }
+            }
+            NumVerts = 16
+            IndexCount = 12
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: DarkWind_witch_sector
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=21.6603, Y=-21.5951, Z=0 }
+        BoxExtent = { X=21.6603, Y=21.5951, Z=0 }
+        SphereRadius = 30.5862
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=38 }
+            }
+            NumVerts = 60
+            IndexCount = 114
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
 ClassName: StaticMesh3 ObjectName: Demon_Expolsion
 
     BodySetup = None
@@ -3433,6 +3656,41 @@ ClassName: StaticMesh3 ObjectName: Fragle_3
             NumVerts = 140
             IndexCount = 192
             NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: FX_Head_Mark
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=3.3504, Y=0, Z=15.5734 }
+        BoxExtent = { X=29.9803, Y=27.1974, Z=34.7213 }
+        SphereRadius = 38.8495
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=2169 }
+            }
+            NumVerts = 3134
+            IndexCount = 6507
+            NumTexCoords = 2
         }
     }
     LodCount = 1
@@ -7632,6 +7890,41 @@ ClassName: StaticMesh3 ObjectName: tornado06
 
 Object info:
 ============
+ClassName: StaticMesh3 ObjectName: Torus
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=-0.157497, Z=1.97545 }
+        BoxExtent = { X=41.9321, Y=41.8896, Z=4.81175 }
+        SphereRadius = 42.518
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=400 }
+            }
+            NumVerts = 520
+            IndexCount = 1200
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
 ClassName: StaticMesh3 ObjectName: torus003
 
     BodySetup = None
@@ -7660,6 +7953,111 @@ ClassName: StaticMesh3 ObjectName: torus003
             }
             NumVerts = 228
             IndexCount = 540
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: torus004
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.333351, Y=0.868153, Z=34.0319 }
+        BoxExtent = { X=48.7638, Y=46.2868, Z=56.788 }
+        SphereRadius = 64.4018
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=172 }
+            }
+            NumVerts = 232
+            IndexCount = 516
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Torus2
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-1.39909, Y=1.48856, Z=1.4325 }
+        BoxExtent = { X=141.039, Y=141.128, Z=6.3183 }
+        SphereRadius = 143.668
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=494 }
+            }
+            NumVerts = 636
+            IndexCount = 1482
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Torus3
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=1.52783, Y=-1.72342, Z=2.17515 }
+        BoxExtent = { X=270.014, Y=270.24, Z=8.19555 }
+        SphereRadius = 277.873
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=960 }
+            }
+            NumVerts = 1220
+            IndexCount = 2880
             NumTexCoords = 1
         }
     }
@@ -9200,6 +9598,41 @@ ClassName: StaticMesh3 ObjectName: WayPoint_Ring_X_Mes
             }
             NumVerts = 340
             IndexCount = 576
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: WeaponLaserMesh
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0.0522995, Y=-0.0523014, Z=25.3554 }
+        BoxExtent = { X=18.7916, Y=18.7916, Z=25 }
+        SphereRadius = 31.275
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=8 }
+            }
+            NumVerts = 32
+            IndexCount = 24
             NumTexCoords = 1
         }
     }

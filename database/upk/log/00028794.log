@@ -1,100 +1,601 @@
-Found 19856 game files (132 skipped)
-Loading package: 00028794.upk Ver: 573/1 Engine: 4205 Names: 83 Exports: 1 Imports: 2 Game: 801A
-Loading AnimSet AnthroCrocodile_AnimSet from package 00028794.upk
+Found 27000 game files (27 skipped)
+Loading package: 00028794.upk Ver: 573/1 Engine: 4205 Names: 365 Exports: 390 Imports: 14 Game: 801A
+Loading AnimSet AnthroCrocodileA_AnimSet from package 00028794.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
 WARNING: ArrayProperty "UAnimSet::PhysicalHitBoneNames" was not found
-Loaded in 0.003 sec, 108 allocs, 0.00 MBytes serialized in 500 calls.
+Loading AnimSequence AnimSequence_28 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_0 from package 00028794.upk
+WARNING: FloatProperty "UAnimNotify_Sound::SoundVolume" was not found
+Loading AnimSequence AnimSequence_1 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_10 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_11 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_12 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_13 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_14 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_15 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_16 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_17 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_18 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_19 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_2 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_20 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_21 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_22 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_23 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_24 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_25 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_26 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_27 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_29 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_3 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_30 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_31 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_32 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_33 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_34 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_35 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_36 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_37 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_38 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_39 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_4 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_40 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_41 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_42 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_43 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_44 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_45 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_46 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_47 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_48 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_49 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_5 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_50 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_51 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_52 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_53 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_54 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_55 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_56 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_57 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bUseCustomAttachAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_58 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_59 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_6 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_60 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_61 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_62 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_63 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_64 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_65 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_66 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_67 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_68 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_69 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseAdjustAniScale" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponRLocType" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_7 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_70 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_71 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_73 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_74 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_75 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_76 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreFootAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_78 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_80 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_81 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_82 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_83 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_85 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+Loading AnimSequence AnimSequence_86 from package 00028794.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::WeaponLLocType" was not found
+Error: Command failed: ******** 00028794 ********
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** ERROR: Unknown rotation compression method: 255
+UAnimSet::ConvertAnims <- PostLoad:AnthroCrocodileA_AnimSet <- UObject::EndLoad <- LoadWholePackage:00028794 <- Main
 
-Object info:
-============
-ClassName: AnimSet ObjectName: AnthroCrocodile_AnimSet
 
-    bAnimRotationOnly = true
-    TrackBoneNames[65] =
-    {
-        TrackBoneNames[0] = Root
-        TrackBoneNames[1] = Bip01
-        TrackBoneNames[2] = Bip01Pelvis
-        TrackBoneNames[3] = Bip01Spine
-        TrackBoneNames[4] = Bip01Spine1
-        TrackBoneNames[5] = Bip01Spine2
-        TrackBoneNames[6] = Bip01Neck
-        TrackBoneNames[7] = Bip01Neck1
-        TrackBoneNames[8] = Bip01-Neck2
-        TrackBoneNames[9] = Bip01Head
-        TrackBoneNames[10] = Bip01Mouse
-        TrackBoneNames[11] = Bip01Mouse1
-        TrackBoneNames[12] = Bip01LClavicle
-        TrackBoneNames[13] = Bip01LUpperArm
-        TrackBoneNames[14] = Bip01LForeArm
-        TrackBoneNames[15] = Bip01LHand
-        TrackBoneNames[16] = Bip01LFinger0
-        TrackBoneNames[17] = Bip01LFinger01
-        TrackBoneNames[18] = Bip01LFinger02
-        TrackBoneNames[19] = Bip01LFinger1
-        TrackBoneNames[20] = Bip01LFinger11
-        TrackBoneNames[21] = Bip01LFinger12
-        TrackBoneNames[22] = Bip01LFinger2
-        TrackBoneNames[23] = Bip01LFinger21
-        TrackBoneNames[24] = Bip01LFinger22
-        TrackBoneNames[25] = Bip01LFinger3
-        TrackBoneNames[26] = Bip01LFinger31
-        TrackBoneNames[27] = Bip01LFinger32
-        TrackBoneNames[28] = WeaponL
-        TrackBoneNames[29] = Weapon_03
-        TrackBoneNames[30] = BoneShoulderTwistL01
-        TrackBoneNames[31] = Bip01RClavicle
-        TrackBoneNames[32] = Bip01RUpperArm
-        TrackBoneNames[33] = Bip01RForeArm
-        TrackBoneNames[34] = Bip01RHand
-        TrackBoneNames[35] = Bip01RFinger0
-        TrackBoneNames[36] = Bip01RFinger01
-        TrackBoneNames[37] = Bip01RFinger02
-        TrackBoneNames[38] = Bip01RFinger1
-        TrackBoneNames[39] = Bip01RFinger11
-        TrackBoneNames[40] = Bip01RFinger12
-        TrackBoneNames[41] = Bip01RFinger2
-        TrackBoneNames[42] = Bip01RFinger21
-        TrackBoneNames[43] = Bip01RFinger22
-        TrackBoneNames[44] = Bip01RFinger3
-        TrackBoneNames[45] = Bip01RFinger31
-        TrackBoneNames[46] = Bip01RFinger32
-        TrackBoneNames[47] = WeaponR
-        TrackBoneNames[48] = Weapon_02
-        TrackBoneNames[49] = BoneShoulderTwistR01
-        TrackBoneNames[50] = Bip01LThigh
-        TrackBoneNames[51] = Bip01LCalf
-        TrackBoneNames[52] = Bip01LFoot
-        TrackBoneNames[53] = Bip01LToe0
-        TrackBoneNames[54] = Bip01LToe01
-        TrackBoneNames[55] = Bip01RThigh
-        TrackBoneNames[56] = Bip01RCalf
-        TrackBoneNames[57] = Bip01RFoot
-        TrackBoneNames[58] = Bip01RToe0
-        TrackBoneNames[59] = Bip01RToe01
-        TrackBoneNames[60] = Bip01Tail
-        TrackBoneNames[61] = Bip01Tail1
-        TrackBoneNames[62] = Bip01Tail2
-        TrackBoneNames[63] = Bip01Tail3
-        TrackBoneNames[64] = Bip01-Tail4
-    }
-    Sequences[0] = {}
-    UseTranslationBoneNames[8] =
-    {
-        UseTranslationBoneNames[0] = Bip01
-        UseTranslationBoneNames[1] = Bip01Tail
-        UseTranslationBoneNames[2] = Bip01Spine
-        UseTranslationBoneNames[3] = Bip01Neck
-        UseTranslationBoneNames[4] = Bip01Head
-        UseTranslationBoneNames[5] = Bip01RClavicle
-        UseTranslationBoneNames[6] = Bip01LClavicle
-        UseTranslationBoneNames[7] = Bip01Mouse
-    }
-    ForceMeshTranslationBoneNames[0] = {}
-    PreviewSkelMeshName = 00028793.AnthroCrocodile
-    BulkDataBlocks[0] = {}
-    KeyFrameSize = 0
-    RotationChannels = 0
-    TranslationChannels = 0
-    m_pBioAnimSetData = None
+    at ChildProcess.exithandler (child_process.js:637:15)
+    at ChildProcess.EventEmitter.emit (events.js:98:17)
+    at maybeClose (child_process.js:743:16)
+    at Process.ChildProcess._handle.onexit (child_process.js:810:5)

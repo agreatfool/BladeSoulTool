@@ -1,0 +1,138 @@
+Found 27000 game files (27 skipped)
+Loading package: 00037282.upk Ver: 573/1 Engine: 4205 Names: 138 Exports: 155 Imports: 12 Game: 801A
+Loading SkeletalMesh3 Pohwaran from package 00037282.upk
+WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
+WARNING: ByteProperty "USkeletalMesh3::ItemPreviewLocType" was not found
+Loading package: 00037280.upk Ver: 573/1 Engine: 4205 Names: 144 Exports: 104 Imports: 36 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_100 from package 00037282.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_101 from package 00037282.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_102 from package 00037282.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_103 from package 00037282.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_98 from package 00037282.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_99 from package 00037282.upk
+Loading MaterialInstanceConstant col1 from package 00037280.upk
+Loading package: 00037279.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 10 Imports: 10 Game: 801A
+Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
+Loading MaterialInstanceConstant col1-1 from package 00037280.upk
+Loading Texture2D Pohwaran_col1_d2 from package 00037279.upk
+Loading Texture2D Nothing_A_n from package 00008613.upk
+Loading Material3 Pet from package 00037280.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading Texture2D Pohwaran_W from package 00037279.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loaded in 0.057 sec, 2548 allocs, 1.05 MBytes serialized in 210545 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: Pohwaran
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[2] = { true, true }
+        }
+    }
+    Sockets[6] =
+    {
+        Sockets[0] = SkeletalMeshSocket'Pohwaran.SkeletalMeshSocket_98'
+        Sockets[1] = SkeletalMeshSocket'Pohwaran.SkeletalMeshSocket_99'
+        Sockets[2] = SkeletalMeshSocket'Pohwaran.SkeletalMeshSocket_100'
+        Sockets[3] = SkeletalMeshSocket'Pohwaran.SkeletalMeshSocket_101'
+        Sockets[4] = SkeletalMeshSocket'Pohwaran.SkeletalMeshSocket_102'
+        Sockets[5] = SkeletalMeshSocket'Pohwaran.SkeletalMeshSocket_103'
+    }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'col1-1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1305 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1-1', FirstIndex=3915, NumFaces=345 }
+            }
+            NumVerts = 1642
+            IndexCount = 4950
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 52
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_100
+
+    SocketName = WeaponL
+    BoneName = WeaponL
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_101
+
+    SocketName = WeaponR
+    BoneName = WeaponR
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_102
+
+    SocketName = trail_start
+    BoneName = Gun_Bone02
+    RelativeLocation = { X=-3.14614, Y=4.50477, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_103
+
+    SocketName = trail_end
+    BoneName = Gun_Bone03
+    RelativeLocation = { X=9.98471, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_98
+
+    SocketName = Trail_R
+    BoneName = Bip01RHand
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_99
+
+    SocketName = Trail_L
+    BoneName = Bip01LHand
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }

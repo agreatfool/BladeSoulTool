@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00033149.upk Ver: 573/1 Engine: 4205 Names: 314 Exports: 441 Imports: 125 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00033149.upk Ver: 573/1 Engine: 4205 Names: 317 Exports: 441 Imports: 125 Game: 801A
 Loading SkeletalMesh3 060169_Autoscale from package 00033149.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
@@ -10,7 +10,7 @@ WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not 
 Loading SkeletalMeshSocket SkeletalMeshSocket_108 from package 00033149.upk
 WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
 Loading StaticMesh3 Staff from package 00033149.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 935 Exports: 4882 Imports: 265 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 929 Exports: 4955 Imports: 320 Game: 801A
 Loading StaticMesh3 staff02 from package 00033149.upk
 Loading MaterialInstanceConstant col1 from package 00033148.upk
 Loading package: 00029216.upk Ver: 573/1 Engine: 4205 Names: 41 Exports: 13 Imports: 2 Game: 801A
@@ -18,14 +18,15 @@ Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Im
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00023713.upk Ver: 573/1 Engine: 4205 Names: 96 Exports: 71 Imports: 4 Game: 801A
 Loading Texture2D weapon_060101_col1_N from package 00029216.upk
 Loading Texture2D weapon_060101_col2_M from package 00029216.upk
 Loading Texture2D weapon_060101_col2_D from package 00029216.upk
 Loading Texture2D weapon_060101_col2_S from package 00029216.upk
 Loading TextureCube lenscube from package 00002640.upk
 Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
-Loading Texture2D Cube000_Tex from package 00012892.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading Texture2D Cube000_Tex from package 00023713.upk
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -38,7 +39,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.13 sec, 4099 allocs, 1.88 MBytes serialized in 374032 calls.
+Loaded in 0.11 sec, 4228 allocs, 1.90 MBytes serialized in 377951 calls.
 
 Object info:
 ============

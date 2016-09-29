@@ -1,7 +1,9 @@
-Found 21974 game files (0 skipped)
-Loading package: 00013263.upk Ver: 573/1 Engine: 4205 Names: 529 Exports: 5194 Imports: 127 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00013263.upk Ver: 573/1 Engine: 4205 Names: 636 Exports: 6196 Imports: 143 Game: 801A
+Loading Material3 AncientMechDragon_Trail_Mat from package 00013263.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading Material3 Fencer_RRR_Slash_mat from package 00013263.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading Material3 Fire_aura_trail_mat3 from package 00013263.upk
 Loading Material3 fx_SoulSword_mat from package 00013263.upk
 Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
@@ -34,9 +36,15 @@ Loading Material3 NPC_Blunt_Slash_Red from package 00013263.upk
 Loading Material3 Summoner_InfinityMissile_Missile from package 00013263.upk
 Loading Material3 Summoner_Rose_Missile from package 00013263.upk
 Loading Material3 Summoner_Rose_Missile_NoDisotion from package 00013263.upk
+Loading Material3 MechGorilla_RopeMat01 from package 00013263.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00012850.upk Ver: 573/1 Engine: 4205 Names: 1729 Exports: 26051 Imports: 651 Game: 801A
+Loading Material3 RuneMechaYacha2_Fire_trail_mat_Blue from package 00013263.upk
 Loading MaterialInstanceConstant Fencer_Escape_Exe_INST from package 00013263.upk
 Loading MaterialInstanceConstant TwinsA_Trail_Red_INST from package 00013263.upk
 Loading Texture2D Gradient_001_Left from package 00012963.upk
+Loading Texture2D Smoke_Inc_002 from package 00012963.upk
+Loading Texture2D Sparkle_Ink_001 from package 00012963.upk
 Loading Texture2D Normal_Noise_002 from package 00012963.upk
 Loading Texture2D Gradient_Color_BlueToPurple_000 from package 00012963.upk
 Loading Texture2D Gradient_Trail_002 from package 00012963.upk
@@ -79,7 +87,31 @@ Loading Texture2D Glow_ink_000 from package 00012963.upk
 Loading Texture2D Gradient_Color_RedToPurple_000 from package 00012963.upk
 Loading Texture2D Gradient_Color_YtoG000_Tex from package 00012963.upk
 Loading Texture2D Glow_Trail_000 from package 00012963.upk
-Loaded in 0.28 sec, 3201 allocs, 1.56 MBytes serialized in 133412 calls.
+Loading Texture2D MechGorilla_RopeTex01 from package 00012850.upk
+Loaded in 0.29 sec, 5167 allocs, 3.57 MBytes serialized in 631968 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: AncientMechDragon_Trail_Mat
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_001_Left'
+        ReferencedTextures[1] = Texture2D'Smoke_Inc_002'
+        ReferencedTextures[2] = Texture2D'Sparkle_Ink_001'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
 
 Object info:
 ============
@@ -881,6 +913,48 @@ ClassName: Material3 ObjectName: Summoner_Rose_Missile_NoDisotion
         ReferencedTextures[5] = Texture2D'Normal_Noise_002'
     }
     BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: MechGorilla_RopeMat01
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'MechGorilla_RopeTex01' }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: RuneMechaYacha2_Fire_trail_mat_Blue
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'T_Liquid_SM_NanoBlack_Mask_01'
+        ReferencedTextures[1] = Texture2D'Gradient_001_Left'
+        ReferencedTextures[2] = Texture2D'Unique_Waterfall_000_Mask'
+        ReferencedTextures[3] = Texture2D'Gradient_Beam_004'
+    }
+    BlendMode = BLEND_Masked (1)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
     MobileBaseTexture = None

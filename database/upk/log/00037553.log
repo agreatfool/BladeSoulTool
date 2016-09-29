@@ -1,0 +1,454 @@
+Found 27000 game files (27 skipped)
+Loading package: 00037553.upk Ver: 573/1 Engine: 4205 Names: 204 Exports: 296 Imports: 19 Game: 801A
+Loading SkeletalMesh3 RuneMechaNakWonDaeSung from package 00037553.upk
+WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
+WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
+Loading package: 00037552.upk Ver: 573/1 Engine: 4205 Names: 183 Exports: 298 Imports: 47 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_100 from package 00037553.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_101 from package 00037553.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_102 from package 00037553.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_123 from package 00037553.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_132 from package 00037553.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_176 from package 00037553.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_92 from package 00037553.upk
+WARNING: ObjectProperty "USkeletalMeshSocket::PreviewSkelMesh" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_93 from package 00037553.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_94 from package 00037553.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_95 from package 00037553.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_97 from package 00037553.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_98 from package 00037553.upk
+WARNING: BoolProperty "USkeletalMeshSocket::bParticleAttachPosOnly" was not found
+Loading SkeletalMeshSocket SkeletalMeshSocket_99 from package 00037553.upk
+Loading StaticMesh3 MechGorilla_A01Mesh from package 00037553.upk
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 929 Exports: 4955 Imports: 320 Game: 801A
+Loading StaticMesh3 MechGorilla_A02Mesh from package 00037553.upk
+Loading StaticMesh3 MechGorilla_A03Mesh from package 00037553.upk
+Loading StaticMesh3 MechGorilla_A04Mesh from package 00037553.upk
+Loading StaticMesh3 MechGorilla_A05Mesh from package 00037553.upk
+Loading StaticMesh3 MechGorilla_BaseMesh from package 00037553.upk
+Loading MaterialInstanceConstant col1 from package 00037552.upk
+Loading package: 00037551.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 5 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00023713.upk Ver: 573/1 Engine: 4205 Names: 96 Exports: 71 Imports: 4 Game: 801A
+Loading Texture2D RuneMechaNakwonDaeSung_col1_N from package 00037551.upk
+Loading Texture2D RuneMechaNakwonDaeSung_col1_M from package 00037551.upk
+Loading Texture2D RuneMechaNakwonDaeSung_col1_D from package 00037551.upk
+Loading Texture2D RuneMechaNakwonDaeSung_col1_S from package 00037551.upk
+Loading TextureCube cube_orb from package 00002640.upk
+Loading Texture2D RuneMechaNakwonDaeSung_col1_E from package 00037551.upk
+Loading Material3 FX_RuneMechaNakwonDaeSung_col1_C from package 00037552.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading Texture2D Cube000_Tex from package 00023713.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.15 sec, 4346 allocs, 4.95 MBytes serialized in 596379 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: RuneMechaNakWonDaeSung
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[13] =
+    {
+        Sockets[0] = SkeletalMeshSocket'RuneMechaNakWonDaeSung.SkeletalMeshSocket_92'
+        Sockets[1] = SkeletalMeshSocket'RuneMechaNakWonDaeSung.SkeletalMeshSocket_93'
+        Sockets[2] = SkeletalMeshSocket'RuneMechaNakWonDaeSung.SkeletalMeshSocket_94'
+        Sockets[3] = SkeletalMeshSocket'RuneMechaNakWonDaeSung.SkeletalMeshSocket_95'
+        Sockets[4] = SkeletalMeshSocket'RuneMechaNakWonDaeSung.SkeletalMeshSocket_97'
+        Sockets[5] = SkeletalMeshSocket'RuneMechaNakWonDaeSung.SkeletalMeshSocket_98'
+        Sockets[6] = SkeletalMeshSocket'RuneMechaNakWonDaeSung.SkeletalMeshSocket_99'
+        Sockets[7] = SkeletalMeshSocket'RuneMechaNakWonDaeSung.SkeletalMeshSocket_100'
+        Sockets[8] = SkeletalMeshSocket'RuneMechaNakWonDaeSung.SkeletalMeshSocket_101'
+        Sockets[9] = SkeletalMeshSocket'RuneMechaNakWonDaeSung.SkeletalMeshSocket_102'
+        Sockets[10] = SkeletalMeshSocket'RuneMechaNakWonDaeSung.SkeletalMeshSocket_123'
+        Sockets[11] = SkeletalMeshSocket'RuneMechaNakWonDaeSung.SkeletalMeshSocket_132'
+        Sockets[12] = SkeletalMeshSocket'RuneMechaNakWonDaeSung.SkeletalMeshSocket_176'
+    }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=9500 }
+            }
+            NumVerts = 9112
+            IndexCount = 28500
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 87
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_100
+
+    SocketName = Mount_Socket
+    BoneName = Bip01Spine1
+    RelativeLocation = { X=0, Y=-8.30923, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=-16384 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_101
+
+    SocketName = Mount_Ambar_Socket
+    BoneName = Bip01LClavicle
+    RelativeLocation = { X=30, Y=-29, Z=5 }
+    RelativeRotation = { Yaw=-285, Pitch=9970, Roll=22850 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_102
+
+    SocketName = Mount_Choke_Socket
+    BoneName = Root
+    RelativeLocation = { X=16.5, Y=-8.6, Z=62 }
+    RelativeRotation = { Yaw=32768, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_123
+
+    SocketName = WeaponL
+    BoneName = WeaponL
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_132
+
+    SocketName = Core
+    BoneName = Bip01
+    RelativeLocation = { X=42.1567, Y=0, Z=49.5815 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_176
+
+    SocketName = SW_L_A
+    BoneName = Bone_Weapon
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_92
+
+    SocketName = WeaponR
+    BoneName = WeaponR
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_93
+
+    SocketName = Catch_Neck
+    BoneName = Bip01Neck
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_94
+
+    SocketName = Catch_Back
+    BoneName = Bip01Spine2
+    RelativeLocation = { X=-3, Y=33, Z=-4.5 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_95
+
+    SocketName = socket_force
+    BoneName = Root
+    RelativeLocation = { X=90, Y=45, Z=-35 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_97
+
+    SocketName = Decap_Socket
+    BoneName = Bip01Neck
+    RelativeLocation = { X=21.6805, Y=13.8299, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_98
+
+    SocketName = ATTACH_EFFECT
+    BoneName = Bip01
+    RelativeLocation = { X=10, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_99
+
+    SocketName = target_high
+    BoneName = Bip01Head
+    RelativeLocation = { X=0, Y=-10, Z=10 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MechGorilla_A01Mesh
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=7.31226, Y=-29.2222, Z=16.9756 }
+        BoxExtent = { X=6.74625, Y=18.5568, Z=8.50368 }
+        SphereRadius = 20.421
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=57 }
+            }
+            NumVerts = 138
+            IndexCount = 171
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MechGorilla_A02Mesh
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-32.2425, Y=-11.7044, Z=14.844 }
+        BoxExtent = { X=17.3071, Y=14.023, Z=5.99955 }
+        SphereRadius = 21.7036
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=69 }
+            }
+            NumVerts = 284
+            IndexCount = 207
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MechGorilla_A03Mesh
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-33.7434, Y=-3.91911, Z=3.56175 }
+        BoxExtent = { X=20.8897, Y=10.3674, Z=5.71551 }
+        SphereRadius = 22.6747
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=69 }
+            }
+            NumVerts = 156
+            IndexCount = 207
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MechGorilla_A04Mesh
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-34.1552, Y=-6.52394, Z=-8.29905 }
+        BoxExtent = { X=21.4381, Y=11.4946, Z=5.55133 }
+        SphereRadius = 23.8676
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=69 }
+            }
+            NumVerts = 278
+            IndexCount = 207
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MechGorilla_A05Mesh
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-30.0716, Y=-12.2412, Z=-18.7228 }
+        BoxExtent = { X=15.0919, Y=15.2164, Z=7.33608 }
+        SphereRadius = 20.2943
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=69 }
+            }
+            NumVerts = 266
+            IndexCount = 207
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: MechGorilla_BaseMesh
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=1.69886, Y=0.577459, Z=-1.79793 }
+        BoxExtent = { X=18.7313, Y=16.8208, Z=25.2507 }
+        SphereRadius = 33.7115
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=127 }
+            }
+            NumVerts = 752
+            IndexCount = 381
+            NumTexCoords = 3
+        }
+    }
+    LodCount = 1

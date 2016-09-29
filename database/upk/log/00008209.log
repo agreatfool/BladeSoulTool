@@ -1,4 +1,4 @@
-Found 21974 game files (0 skipped)
+Found 27000 game files (27 skipped)
 Loading package: 00008209.upk Ver: 573/1 Engine: 4205 Names: 227 Exports: 169 Imports: 19 Game: 801A
 Loading SkeletalMesh3 53003_GonM from package 00008209.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
@@ -16,18 +16,18 @@ WARNING: StructProperty "USkeletalMesh3::HeightRatio" was not found
 WARNING: StructProperty "USkeletalMesh3::HandRatio" was not found
 WARNING: ByteProperty "USkeletalMesh3::CommonPhysicsUseFlag" was not found
 WARNING: FloatProperty "USkeletalMesh3::PhysicalHitScale" was not found
-Loading package: 00008208.upk Ver: 573/1 Engine: 4205 Names: 81 Exports: 2 Imports: 21 Game: 801A
-Loading MaterialInstanceConstant col1 from package 00008208.upk
-Loading package: 00008207.upk Ver: 573/1 Engine: 4205 Names: 36 Exports: 8 Imports: 2 Game: 801A
+Loading package: 00035561.upk Ver: 573/1 Engine: 4205 Names: 101 Exports: 9 Imports: 22 Game: 801A
+Loading MaterialInstanceConstant col5 from package 00035561.upk
+Loading package: 00008207.upk Ver: 573/1 Engine: 4205 Names: 45 Exports: 16 Imports: 4 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading Texture2D Cloth_53003_GonM_col1_N from package 00008207.upk
-Loading Texture2D Cloth_53003_GonM_col1_M from package 00008207.upk
-Loading Texture2D Cloth_53003_GonM_col1_D from package 00008207.upk
-Loading Texture2D Cloth_53003_GonM_col1_S from package 00008207.upk
-Loading TextureCube mirror2 from package 00002640.upk
-Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading Texture2D 53003_GonM_col5_N from package 00008207.upk
+Loading Texture2D 53003_GonM_col5_M from package 00008207.upk
+Loading Texture2D 53003_GonM_col5_D from package 00008207.upk
+Loading Texture2D 53003_GonM_col5_S from package 00008207.upk
+Loading TextureCube MatelR4 from package 00002640.upk
+Loading Material3 Body from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -35,12 +35,13 @@ Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Texture2D check_n from package 00002620.upk
-Loading Texture2D check from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
-Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.13 sec, 3023 allocs, 2.09 MBytes serialized in 355503 calls.
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loaded in 0.14 sec, 3098 allocs, 2.53 MBytes serialized in 357208 calls.
 
 Object info:
 ============
@@ -67,7 +68,7 @@ ClassName: SkeletalMesh3 ObjectName: 53003_GonM
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
-    Materials[1] = { MaterialInstanceConstant'col1' }
+    Materials[1] = { MaterialInstanceConstant'col5' }
 
 
     Lods[2] =
@@ -76,8 +77,8 @@ ClassName: SkeletalMesh3 ObjectName: 53003_GonM
         {
             Sections[2] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=4828 }
-                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=14484, NumFaces=94 }
+                Sections[0] = { Material=MaterialInstanceConstant'col5', FirstIndex=0, NumFaces=4828 }
+                Sections[1] = { Material=MaterialInstanceConstant'col5', FirstIndex=14484, NumFaces=94 }
             }
             NumVerts = 3580
             IndexCount = 14766
@@ -87,7 +88,7 @@ ClassName: SkeletalMesh3 ObjectName: 53003_GonM
         {
             Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1474 }
+                Sections[0] = { Material=MaterialInstanceConstant'col5', FirstIndex=0, NumFaces=1474 }
             }
             NumVerts = 1257
             IndexCount = 4422

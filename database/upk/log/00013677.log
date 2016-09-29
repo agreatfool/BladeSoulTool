@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00013677.upk Ver: 573/1 Engine: 4205 Names: 46 Exports: 16 Imports: 2 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00013677.upk Ver: 573/1 Engine: 4205 Names: 49 Exports: 19 Imports: 2 Game: 801A
 Loading Texture2D Monster_Beast_WolfB_col1_D from package 00013677.upk
 Loading Texture2D Monster_Beast_WolfB_col1_E from package 00013677.upk
 WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
@@ -19,7 +19,10 @@ Loading Texture2D Monster_Beast_WolfB_col4_E from package 00013677.upk
 WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D Monster_Beast_WolfB_col4_M from package 00013677.upk
 Loading Texture2D Monster_Beast_WolfB_col4_S from package 00013677.upk
-Loaded in 0.11 sec, 543 allocs, 1.45 MBytes serialized in 3472 calls.
+Loading Texture2D Monster_Beast_WolfB_col5_D from package 00013677.upk
+Loading Texture2D Monster_Beast_WolfB_col5_E from package 00013677.upk
+Loading Texture2D Monster_Beast_WolfB_col5_s from package 00013677.upk
+Loaded in 0.1 sec, 642 allocs, 1.70 MBytes serialized in 4085 calls.
 
 Object info:
 ============
@@ -249,6 +252,51 @@ ClassName: Texture2D ObjectName: Monster_Beast_WolfB_col4_M
 Object info:
 ============
 ClassName: Texture2D ObjectName: Monster_Beast_WolfB_col4_S
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Beast_WolfB_col5_D
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Beast_WolfB_col5_E
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: Monster_Beast_WolfB_col5_s
 
     SizeX = 512
     SizeY = 512

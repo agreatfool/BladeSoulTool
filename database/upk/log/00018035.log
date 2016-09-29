@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00018035.upk Ver: 573/1 Engine: 4205 Names: 566 Exports: 548 Imports: 77 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00018035.upk Ver: 573/1 Engine: 4205 Names: 565 Exports: 552 Imports: 77 Game: 801A
 Loading AnimSet RuneMechaCGiant_AnimSet from package 00018035.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -333,9 +333,9 @@ WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_109 from package 00018035.upk
-WARNING: BoolProperty "UAnimSequence::bServiced" was not found
-WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
-Loading AnimSequence AnimSequence_110 from package 00018035.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bUseSlopeRotation" was not found
+WARNING: BoolProperty "UAnimSequence::bUseCustomForceAnim" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
 Loading AnimSequence AnimSequence_17 from package 00018035.upk
@@ -446,7 +446,6 @@ WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_89 from package 00018035.upk
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Error: Command failed: ******** 00018035 ********
-*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat

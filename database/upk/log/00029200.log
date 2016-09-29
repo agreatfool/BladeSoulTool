@@ -1,29 +1,56 @@
-Found 21974 game files (0 skipped)
-Loading package: 00029200.upk Ver: 573/1 Engine: 4205 Names: 89 Exports: 1 Imports: 19 Game: 801A
-Loading MaterialInstanceConstant col1 from package 00029200.upk
-Loading package: 00029199.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
-Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00029200.upk Ver: 573/1 Engine: 4205 Names: 172 Exports: 158 Imports: 48 Game: 801A
+Loading Material3 Basic_FXGlow_TEST from package 00029200.upk
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00029199.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00029200.upk
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Weapon_990190_col1_S from package 00029199.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D Weapon_990190_col1_N from package 00029199.upk
 Loading Texture2D Weapon_990190_col1_M from package 00029199.upk
 Loading Texture2D Weapon_990190_col1_D from package 00029199.upk
-Loading Texture2D Weapon_990190_col1_S from package 00029199.upk
 Loading TextureCube lenscube from package 00002640.upk
-Loading Texture2D check from package 00002620.upk
-Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loading Texture2D check_n from package 00002620.upk
-Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
-Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
-Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.11 sec, 2737 allocs, 1.05 MBytes serialized in 162486 calls.
+Loaded in 0.087 sec, 2848 allocs, 1.07 MBytes serialized in 166371 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Basic_FXGlow_TEST
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'check_n'
+        ReferencedTextures[1] = Texture2D'check'
+        ReferencedTextures[2] = Texture2D'Weapon_990190_col1_S'
+        ReferencedTextures[3] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[4] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[5] = Texture2D'Gradient_Wipe_BurnOut_Mask_TEST'
+        ReferencedTextures[6] = Texture2D'Gradient_Wipe_BurnOut_Mask'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
 
 Object info:
 ============
@@ -49,7 +76,7 @@ ClassName: MaterialInstanceConstant ObjectName: col1
         TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'Weapon_990190_col1_D' }
         TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'Weapon_990190_col1_S' }
         TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'lenscube' }
-        TextureParameterValues[5] = { ParameterName=Emissive, ParameterValue=Texture2D'check' }
+        TextureParameterValues[5] = { ParameterName=Emissive, ParameterValue=Texture2D'Weapon_990190_col1_S' }
     }
     VectorParameterValues[11] =
     {
@@ -109,7 +136,7 @@ ClassName: MaterialInstanceConstant ObjectName: col1
             ParameterValue = { R=1, G=1, B=1, A=1 }
         }
     }
-    Parent = Material3'Basic'
+    Parent = Material3'Basic_FXGlow_TEST'
     FlattenedTexture = None
     MobileBaseTexture = None
     MobileNormalTexture = None

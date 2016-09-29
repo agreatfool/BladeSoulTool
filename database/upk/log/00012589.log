@@ -1,8 +1,8 @@
-Found 21974 game files (0 skipped)
-Loading package: 00012589.upk Ver: 573/1 Engine: 4205 Names: 381 Exports: 2312 Imports: 165 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00012589.upk Ver: 573/1 Engine: 4205 Names: 395 Exports: 2371 Imports: 173 Game: 801A
 Loading Material3 Blob_Add_volume from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading Material3 Blob_volume from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Blood_Sparkle001 from package 00012589.upk
@@ -23,6 +23,9 @@ Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports:
 Loading Material3 Damage_Fire_Signal_Gradient004_4 from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Damage_Ice_signal_outside_m from package 00012589.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 DarkWind_witch_Gradient003_MatB from package 00012589.upk
+WARNING: BoolProperty "UMaterial3::bUsedWithMaterialEffect" was not found
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Fire_002_mat from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -99,7 +102,7 @@ Loading Material3 ShockWave__mesh from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 ShockWave__mesh1 from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: cubemap_001.upk Ver: 573/1 Engine: 4205 Names: 177 Exports: 517 Imports: 34 Game: 801A
+Loading package: cubemap_001.upk Ver: 573/1 Engine: 4205 Names: 179 Exports: 525 Imports: 34 Game: 801A
 Loading Material3 ShockWave__mesh2 from package 00012589.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 ShockWave__mesh23 from package 00012589.upk
@@ -206,6 +209,7 @@ Loading Texture2D Normal_Stone_001 from package 00012963.upk
 WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Noise_Distortion_000 from package 00012963.upk
 Loading Texture2D Gradient_001_Left from package 00012963.upk
+Loading Texture2D Gradient_005 from package 00012963.upk
 Loading Texture2D Smoke_Dark_000 from package 00012963.upk
 Loading Texture2D Glow_Flair_000 from package 00012963.upk
 Loading Texture2D Glow_008 from package 00012963.upk
@@ -228,7 +232,6 @@ Loading Texture2D Glow_001 from package 00012963.upk
 Loading Texture2D Glow_Flar_004 from package 00012963.upk
 Loading Texture2D Sparkle_Ink_006 from package 00012963.upk
 Loading Texture2D Gradient_004 from package 00012963.upk
-Loading Texture2D Gradient_005 from package 00012963.upk
 Loading Texture2D Gradient_Color_BlueToPurple_000 from package 00012963.upk
 Loading Texture2D Gradient_Color_YellowToOrange_000 from package 00012963.upk
 Loading Texture2D Env_Fx_SandFall from package 00012963.upk
@@ -300,7 +303,7 @@ Loading Texture2D CubemapFace2 from package cubemap_001.upk
 Loading Texture2D CubemapFace3 from package cubemap_001.upk
 Loading Texture2D CubemapFace4 from package cubemap_001.upk
 Loading Texture2D CubemapFace5 from package cubemap_001.upk
-Loaded in 1.3 sec, 5939 allocs, 3.06 MBytes serialized in 119123 calls.
+Loaded in 0.76 sec, 5970 allocs, 2.80 MBytes serialized in 121063 calls.
 
 Object info:
 ============
@@ -522,6 +525,24 @@ ClassName: Material3 ObjectName: Damage_Ice_signal_outside_m
         ReferencedTextures[2] = Texture2D'Gradient_001_Left'
     }
     BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: DarkWind_witch_Gradient003_MatB
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[2] = { Texture2D'Gradient_005', Texture2D'DefaultTexture' }
+    BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
     MobileBaseTexture = None

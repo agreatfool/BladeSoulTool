@@ -1,0 +1,32 @@
+Found 27000 game files (27 skipped)
+Loading package: 00041062.upk Ver: 573/1 Engine: 4205 Names: 61 Exports: 8 Imports: 11 Game: 801A
+Loading AnimSet Jeokpaewang_RollingSpike_AnimSet from package 00041062.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+Loading AnimSequence AnimSequence_4 from package 00041062.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_2 from package 00041062.upk
+Loading AnimSequence AnimSequence_5 from package 00041062.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_3 from package 00041062.upk
+Loading AnimSequence AnimSequence_6 from package 00041062.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_4 from package 00041062.upk
+Error: Command failed: ******** 00041062 ********
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** ERROR: Unknown rotation compression method: 255
+UAnimSet::ConvertAnims <- PostLoad:Jeokpaewang_RollingSpike_AnimSet <- UObject::EndLoad <- LoadWholePackage:00041062 <- Main
+
+
+    at ChildProcess.exithandler (child_process.js:637:15)
+    at ChildProcess.EventEmitter.emit (events.js:98:17)
+    at maybeClose (child_process.js:743:16)
+    at Process.ChildProcess._handle.onexit (child_process.js:810:5)

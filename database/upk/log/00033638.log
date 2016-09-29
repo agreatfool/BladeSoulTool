@@ -1,8 +1,9 @@
-Found 21974 game files (0 skipped)
-Loading package: 00033638.upk Ver: 573/1 Engine: 4205 Names: 126 Exports: 28 Imports: 19 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00033638.upk Ver: 573/1 Engine: 4205 Names: 129 Exports: 26 Imports: 19 Game: 801A
 Loading AnimSet GhostChick_AnimSet from package 00033638.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
 Loading AnimSequence AnimSequence_0 from package 00033638.upk
 WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
@@ -16,10 +17,6 @@ Loading AnimSequence AnimSequence_11 from package 00033638.upk
 WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimNotify_Sound AnimNotify_Sound_28 from package 00033638.upk
-WARNING: IntProperty "UAnimNotify_Sound::RandomSkipPercent" was not found
-Loading AnimSequence AnimSequence_15 from package 00033638.upk
-WARNING: BoolProperty "UAnimSequence::bServiced" was not found
-Loading AnimNotify_Sound AnimNotify_Sound_34 from package 00033638.upk
 WARNING: IntProperty "UAnimNotify_Sound::RandomSkipPercent" was not found
 Loading AnimSequence AnimSequence_2 from package 00033638.upk
 WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
@@ -54,7 +51,6 @@ Loading AnimSequence AnimSequence_10 from package 00033638.upk
 WARNING: BoolProperty "UAnimSequence::bUseDynamicFixedBone" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Error: Command failed: ******** 00033638 ********
-*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat

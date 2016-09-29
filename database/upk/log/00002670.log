@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00002670.upk Ver: 573/1 Engine: 4205 Names: 48 Exports: 18 Imports: 4 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00002670.upk Ver: 573/1 Engine: 4205 Names: 47 Exports: 18 Imports: 4 Game: 801A
 Loading Texture2D GonF_Face_D001 from package 00002670.upk
 Loading Texture2D GonF_Face_D002 from package 00002670.upk
 Loading Texture2D GonF_Face_D003 from package 00002670.upk
@@ -16,7 +16,7 @@ Loading Texture2D GonF_Face_n005 from package 00002670.upk
 Loading Texture2D GonF_Face_n006 from package 00002670.upk
 Loading Texture2D GonF_Face_n007 from package 00002670.upk
 Loading Texture2D GonF_Face_s from package 00002670.upk
-Loaded in 0.17 sec, 584 allocs, 1.36 MBytes serialized in 3819 calls.
+Loaded in 0.09 sec, 577 allocs, 1.06 MBytes serialized in 3796 calls.
 
 Object info:
 ============
@@ -97,13 +97,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: GonF_Face_D006
 
-    SizeX = 1024
-    SizeY = 512
+    SizeX = 512
+    SizeY = 256
     Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -112,13 +112,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: GonF_Face_D007
 
-    SizeX = 1024
-    SizeY = 512
+    SizeX = 512
+    SizeY = 256
     Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

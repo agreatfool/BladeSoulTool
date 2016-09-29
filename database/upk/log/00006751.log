@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00006751.upk Ver: 573/1 Engine: 4205 Names: 810 Exports: 10 Imports: 1029 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00006751.upk Ver: 573/1 Engine: 4205 Names: 825 Exports: 10 Imports: 1058 Game: 801A
 Loading AnimSet KungfuFighter_GonF_Animset from package 00006751.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
@@ -30,7 +30,7 @@ WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
 WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
 WARNING: ArrayProperty "UAnimSet::PhysicalHitBoneNames" was not found
 WARNING: ArrayProperty "UAnimSet::WeaponSlotSocketNames" was not found
-Loaded in 0.004 sec, 863 allocs, 0.06 MBytes serialized in 10892 calls.
+Loaded in 0.003 sec, 878 allocs, 0.06 MBytes serialized in 11148 calls.
 
 Object info:
 ============
@@ -121,7 +121,7 @@ ClassName: AnimSet ObjectName: KungfuFighter_GonF_Animset
         UseTranslationBoneNames[8] = AdB01RKneeBone
     }
     ForceMeshTranslationBoneNames[0] = {}
-    PreviewSkelMeshName = 00002701.00001_JinM
+    PreviewSkelMeshName = 00002654.00001_GonF
     BulkDataBlocks[0] = {}
     KeyFrameSize = 0
     RotationChannels = 0
@@ -514,7 +514,7 @@ ClassName: AnimSet ObjectName: KungfuFighter_KunN_Animset
         UseTranslationBoneNames[8] = AdB01RKneeBone
     }
     ForceMeshTranslationBoneNames[0] = {}
-    PreviewSkelMeshName = None
+    PreviewSkelMeshName = 00003445.00001_KunN
     BulkDataBlocks[0] = {}
     KeyFrameSize = 0
     RotationChannels = 0

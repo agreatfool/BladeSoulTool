@@ -1,11 +1,12 @@
-Found 21974 game files (0 skipped)
-Loading package: 00032263.upk Ver: 573/1 Engine: 4205 Names: 39 Exports: 10 Imports: 4 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00032263.upk Ver: 573/1 Engine: 4205 Names: 40 Exports: 11 Imports: 4 Game: 801A
 Loading Texture2D 990223_Autoscale_col1_D from package 00032263.upk
 Loading Texture2D 990223_Autoscale_col1_E from package 00032263.upk
 Loading Texture2D 990223_Autoscale_col1_M from package 00032263.upk
 Loading Texture2D 990223_Autoscale_col1_N from package 00032263.upk
 Loading Texture2D 990223_Autoscale_col1_S from package 00032263.upk
-Loaded in 0.035 sec, 208 allocs, 0.22 MBytes serialized in 1294 calls.
+Loading Texture2D FX_Mask from package 00032263.upk
+Loaded in 0.047 sec, 235 allocs, 0.22 MBytes serialized in 1472 calls.
 
 Object info:
 ============
@@ -78,6 +79,21 @@ ClassName: Texture2D ObjectName: 990223_Autoscale_col1_S
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
     MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FX_Mask
+
+    SizeX = 128
+    SizeY = 64
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 7
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

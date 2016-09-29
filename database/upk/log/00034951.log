@@ -1,0 +1,76 @@
+Found 27000 game files (27 skipped)
+Loading package: 00034951.upk Ver: 573/1 Engine: 4205 Names: 111 Exports: 69 Imports: 13 Game: 801A
+Loading SkeletalMesh3 040214_JinM from package 00034951.upk
+Loading package: 00034950.upk Ver: 573/1 Engine: 4205 Names: 109 Exports: 2 Imports: 25 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00034950.upk
+Loading package: 00034949.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 6 Imports: 2 Game: 801A
+Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading MaterialInstanceConstant col1_1 from package 00034950.upk
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading Texture2D 040214_JinM_col1_D from package 00034949.upk
+Loading Texture2D 040214_JinM_col1_N from package 00034949.upk
+Loading Texture2D Nothing_A from package 00008613.upk
+Loading Material3 Beard_Ac from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading Texture2D 040214_JinM_N2 from package 00034949.upk
+Loading Texture2D 040214_JinM_M2 from package 00034949.upk
+Loading Texture2D 040214_JinM_D2 from package 00034949.upk
+Loading Texture2D 040214_JinM_S2 from package 00034949.upk
+Loading TextureCube lenscube from package 00002640.upk
+Loading Texture2D check from package 00002620.upk
+Loading Material3 Body from package 00002620.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.12 sec, 3144 allocs, 2.15 MBytes serialized in 350301 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 040214_JinM
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[2] = { true, true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'col1_1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1_1', FirstIndex=0, NumFaces=3977 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=11931, NumFaces=491 }
+            }
+            NumVerts = 5122
+            IndexCount = 13404
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 21

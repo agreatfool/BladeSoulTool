@@ -1,0 +1,75 @@
+Found 27000 game files (27 skipped)
+Loading package: 00035134.upk Ver: 573/1 Engine: 4205 Names: 100 Exports: 13 Imports: 18 Game: 801A
+Loading SkeletalMesh3 060176_Autoscale from package 00035134.upk
+WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
+WARNING: ByteProperty "USkeletalMesh3::ItemPreviewLocType" was not found
+Loading package: 00035133.upk Ver: 573/1 Engine: 4205 Names: 102 Exports: 4 Imports: 23 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00035133.upk
+Loading package: 00035132.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading MaterialInstanceConstant col1_fur from package 00035133.upk
+Loading Texture2D 060176_Autoscale_col1_N from package 00035132.upk
+Loading Texture2D 060176_Autoscale_col1_M from package 00035132.upk
+Loading Texture2D 060176_Autoscale_col1_D from package 00035132.upk
+Loading Texture2D 060176_Autoscale_col1_S from package 00035132.upk
+Loading TextureCube lenscube from package 00002640.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Material3 Basic from package 00002620.upk
+Loading Material3 Fur_Ac from package 00002620.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loaded in 0.12 sec, 2947 allocs, 1.19 MBytes serialized in 196609 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 060176_Autoscale
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[2] = { true, true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'col1_fur' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=572 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1_fur', FirstIndex=1716, NumFaces=614 }
+            }
+            NumVerts = 989
+            IndexCount = 3558
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 4

@@ -1,0 +1,196 @@
+Found 27000 game files (27 skipped)
+Loading package: 00041071.upk Ver: 573/1 Engine: 4205 Names: 57 Exports: 8 Imports: 8 Game: 801A
+Loading AnimSet Jeokpaewang_SpikeWall_AnimSet from package 00041071.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+Loading AnimSequence AnimSequence_11 from package 00041071.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_7 from package 00041071.upk
+Loading AnimSequence AnimSequence_9 from package 00041071.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_6 from package 00041071.upk
+Loading AnimSequence AnimSequence_10 from package 00041071.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_7 from package 00041071.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loading AnimSequence AnimSequence_8 from package 00041071.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
+Loaded in 0.01 sec, 147 allocs, 0.01 MBytes serialized in 811 calls.
+
+Object info:
+============
+ClassName: AnimNotify_Sound ObjectName: AnimNotify_Sound_7
+
+    Sound = None
+    Volume = 1
+    Radius = 0
+    Random = 0
+    DefaultWalkSound[3] = { None, None, None }
+    DefaultRunSound[3] = { None, None, None }
+    GrassWalkSound[3] = { None, None, None }
+    GrassRunSound[3] = { None, None, None }
+    WaterWalkSound[3] = { None, None, None }
+    WaterRunSound[3] = { None, None, None }
+    DefaultActorWalkSound[3] = { None, None, None }
+    DefaultActorRunSound[3] = { None, None, None }
+
+Object info:
+============
+ClassName: AnimSequence ObjectName: AnimSequence_11
+
+    SequenceName = BK_B_None_Skl_SpearWall_Exec3
+    SequenceLength = 1
+    NumFrames = 30
+    RateScale = 1
+    bNoLoopingInterpolation = false
+    RawAnimData[0] = {}
+    TranslationCompressionFormat = ACF_None (0)
+    RotationCompressionFormat = <unknown> (255)
+    KeyEncodingFormat = AKF_ConstantKeyLerp (0)
+    CompressedTrackOffsets[16] = { 0, 1, 12, 1, 24, 30, 384, 1, 396, 1, 408, 1, 420, 1, 432, 1 }
+    bIsAdditive = false
+    AdditiveRefName = None
+    KeyFrameData[0] = {}
+    m_pBioAnimSetData = None
+    CompressedTrackTimeOffsets[0] = {}
+    Tracks[0] = {}
+    TrackOffsets[0] = {}
+
+Object info:
+============
+ClassName: AnimSet ObjectName: Jeokpaewang_SpikeWall_AnimSet
+
+    bAnimRotationOnly = true
+    TrackBoneNames[4] = { Root, Bip01, Bip01Pelvis, Bip01Spine }
+    Sequences[5] =
+    {
+        Sequences[0] = AnimSequence'Jeokpaewang_SpikeWall_AnimSet.AnimSequence_7'
+        Sequences[1] = AnimSequence'Jeokpaewang_SpikeWall_AnimSet.AnimSequence_8'
+        Sequences[2] = AnimSequence'Jeokpaewang_SpikeWall_AnimSet.AnimSequence_9'
+        Sequences[3] = AnimSequence'Jeokpaewang_SpikeWall_AnimSet.AnimSequence_10'
+        Sequences[4] = AnimSequence'Jeokpaewang_SpikeWall_AnimSet.AnimSequence_11'
+    }
+    UseTranslationBoneNames[1] = { Bip01 }
+    ForceMeshTranslationBoneNames[0] = {}
+    PreviewSkelMeshName = 00040993.Jeokpaewang_SpikeWall_001
+    BulkDataBlocks[0] = {}
+    KeyFrameSize = 0
+    RotationChannels = 0
+    TranslationChannels = 0
+    m_pBioAnimSetData = None
+
+Object info:
+============
+ClassName: AnimNotify_Sound ObjectName: AnimNotify_Sound_6
+
+    Sound = None
+    Volume = 1
+    Radius = 0
+    Random = 0
+    DefaultWalkSound[3] = { None, None, None }
+    DefaultRunSound[3] = { None, None, None }
+    GrassWalkSound[3] = { None, None, None }
+    GrassRunSound[3] = { None, None, None }
+    WaterWalkSound[3] = { None, None, None }
+    WaterRunSound[3] = { None, None, None }
+    DefaultActorWalkSound[3] = { None, None, None }
+    DefaultActorRunSound[3] = { None, None, None }
+
+Object info:
+============
+ClassName: AnimSequence ObjectName: AnimSequence_9
+
+    SequenceName = BK_B_None_Skl_SpearWall_Exec1
+    SequenceLength = 1.6
+    NumFrames = 48
+    RateScale = 1
+    bNoLoopingInterpolation = false
+    RawAnimData[0] = {}
+    TranslationCompressionFormat = ACF_None (0)
+    RotationCompressionFormat = <unknown> (255)
+    KeyEncodingFormat = AKF_ConstantKeyLerp (0)
+    CompressedTrackOffsets[16] = { 0, 1, 12, 1, 24, 48, 600, 1, 612, 1, 624, 1, 636, 1, 648, 1 }
+    bIsAdditive = false
+    AdditiveRefName = None
+    KeyFrameData[0] = {}
+    m_pBioAnimSetData = None
+    CompressedTrackTimeOffsets[0] = {}
+    Tracks[0] = {}
+    TrackOffsets[0] = {}
+
+Object info:
+============
+ClassName: AnimSequence ObjectName: AnimSequence_10
+
+    SequenceName = BK_B_None_Skl_SpearWall_Exec2
+    SequenceLength = 1
+    NumFrames = 30
+    RateScale = 1
+    bNoLoopingInterpolation = false
+    RawAnimData[0] = {}
+    TranslationCompressionFormat = ACF_None (0)
+    RotationCompressionFormat = <unknown> (255)
+    KeyEncodingFormat = AKF_ConstantKeyLerp (0)
+    CompressedTrackOffsets[16] = { 0, 1, 12, 1, 24, 1, 36, 1, 48, 1, 60, 1, 72, 1, 84, 1 }
+    bIsAdditive = false
+    AdditiveRefName = None
+    KeyFrameData[0] = {}
+    m_pBioAnimSetData = None
+    CompressedTrackTimeOffsets[0] = {}
+    Tracks[0] = {}
+    TrackOffsets[0] = {}
+
+Object info:
+============
+ClassName: AnimSequence ObjectName: AnimSequence_7
+
+    SequenceName = BK_B_None_Mov_Idle
+    SequenceLength = 0.0666667
+    NumFrames = 2
+    RateScale = 1
+    bNoLoopingInterpolation = false
+    RawAnimData[0] = {}
+    TranslationCompressionFormat = ACF_None (0)
+    RotationCompressionFormat = <unknown> (255)
+    KeyEncodingFormat = AKF_ConstantKeyLerp (0)
+    CompressedTrackOffsets[16] = { 0, 1, 12, 1, 24, 1, 36, 1, 48, 1, 60, 1, 72, 1, 84, 1 }
+    bIsAdditive = false
+    AdditiveRefName = None
+    KeyFrameData[0] = {}
+    m_pBioAnimSetData = None
+    CompressedTrackTimeOffsets[0] = {}
+    Tracks[0] = {}
+    TrackOffsets[0] = {}
+
+Object info:
+============
+ClassName: AnimSequence ObjectName: AnimSequence_8
+
+    SequenceName = BK_B_None_Skl_SpearWall_Cast
+    SequenceLength = 0.2
+    NumFrames = 6
+    RateScale = 1
+    bNoLoopingInterpolation = false
+    RawAnimData[0] = {}
+    TranslationCompressionFormat = ACF_None (0)
+    RotationCompressionFormat = <unknown> (255)
+    KeyEncodingFormat = AKF_ConstantKeyLerp (0)
+    CompressedTrackOffsets[16] = { 0, 1, 12, 1, 24, 1, 36, 1, 48, 1, 60, 1, 72, 1, 84, 1 }
+    bIsAdditive = false
+    AdditiveRefName = None
+    KeyFrameData[0] = {}
+    m_pBioAnimSetData = None
+    CompressedTrackTimeOffsets[0] = {}
+    Tracks[0] = {}
+    TrackOffsets[0] = {}

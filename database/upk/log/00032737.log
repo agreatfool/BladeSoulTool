@@ -1,10 +1,10 @@
-Found 21974 game files (0 skipped)
-Loading package: 00032737.upk Ver: 573/1 Engine: 4205 Names: 384 Exports: 233 Imports: 123 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00032737.upk Ver: 573/1 Engine: 4205 Names: 387 Exports: 233 Imports: 123 Game: 801A
 Loading Material3 weapon_deco from package 00032737.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading MaterialInstanceConstant T3-2_Sword_edge_INST from package 00032737.upk
-Loading package: 00028326.upk Ver: 573/1 Engine: 4205 Names: 470 Exports: 914 Imports: 179 Game: 801A
+Loading package: 00028326.upk Ver: 573/1 Engine: 4205 Names: 473 Exports: 914 Imports: 179 Game: 801A
 Loading MaterialInstanceConstant T3_1_sword01 from package 00032737.upk
 Loading SkeletalMesh3 010256_Autoscale from package 00032737.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
@@ -15,7 +15,7 @@ WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not 
 Loading SkeletalMeshSocket SkeletalMeshSocket_122 from package 00032737.upk
 WARNING: ObjectProperty "USkeletalMeshSocket::DependencyParticleSystem" was not found
 Loading StaticMesh3 T3_2_Sword_mesh01 from package 00032737.upk
-Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 935 Exports: 4882 Imports: 265 Game: 801A
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 929 Exports: 4955 Imports: 320 Game: 801A
 Loading StaticMesh3 T3_2_Sword_mesh02 from package 00032737.upk
 Loading StaticMesh3 T3_2_Sword_mesh04_deco from package 00032737.upk
 Loading Texture2D T3_2_Sword_mask from package 00032737.upk
@@ -32,6 +32,7 @@ Loading package: 00028784.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 8 Impor
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00023713.upk Ver: 573/1 Engine: 4205 Names: 96 Exports: 71 Imports: 4 Game: 801A
 Loading Texture2D Dragon_body_outside_NRM from package 00012963.upk
 WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Normal_Noise_000 from package 00012963.upk
@@ -46,7 +47,7 @@ Loading Texture2D 010210_Autoscale_col1_S from package 00028784.upk
 Loading TextureCube lenscube from package 00002640.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Material3 Ghost_Basic from package 00002620.upk
-Loading Texture2D Cube000_Tex from package 00012892.upk
+Loading Texture2D Cube000_Tex from package 00023713.upk
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -57,7 +58,7 @@ Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.21 sec, 4983 allocs, 1.94 MBytes serialized in 361062 calls.
+Loaded in 0.16 sec, 5112 allocs, 1.94 MBytes serialized in 364977 calls.
 
 Object info:
 ============

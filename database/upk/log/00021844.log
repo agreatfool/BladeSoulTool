@@ -1,10 +1,36 @@
-Found 21974 game files (0 skipped)
-Loading package: 00021844.upk Ver: 573/1 Engine: 4205 Names: 63 Exports: 5 Imports: 11 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00021844.upk Ver: 573/1 Engine: 4205 Names: 66 Exports: 5 Imports: 13 Game: 801A
 Loading SkeletalMesh3 060067_Autoscale from package 00021844.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
 WARNING: ByteProperty "USkeletalMesh3::ItemPreviewLocType" was not found
-Loaded in 0.008 sec, 107 allocs, 0.24 MBytes serialized in 70548 calls.
+Loading package: 00021845.upk Ver: 573/1 Engine: 4205 Names: 91 Exports: 1 Imports: 20 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00021845.upk
+Loading package: 00021843.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 5 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading Texture2D 060067_Autoscale_col1_N from package 00021843.upk
+Loading Texture2D 060067_Autoscale_col1_M from package 00021843.upk
+Loading Texture2D 060067_Autoscale_col1_D from package 00021843.upk
+Loading Texture2D 060067_Autoscale_col1_S from package 00021843.upk
+Loading TextureCube lenscube from package 00002640.upk
+Loading Texture2D 060067_Autoscale_col1_E from package 00021843.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading Material3 Basic from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loaded in 0.12 sec, 2899 allocs, 1.27 MBytes serialized in 233885 calls.
 
 Object info:
 ============
@@ -24,7 +50,7 @@ ClassName: SkeletalMesh3 ObjectName: 060067_Autoscale
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
-    Materials[1] = { None }
+    Materials[1] = { MaterialInstanceConstant'col1' }
 
 
     Lods[1] =
@@ -33,7 +59,7 @@ ClassName: SkeletalMesh3 ObjectName: 060067_Autoscale
         {
             Sections[1] =
             {
-                Sections[0] = { Material=None, FirstIndex=0, NumFaces=2432 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=2432 }
             }
             NumVerts = 2250
             IndexCount = 7296

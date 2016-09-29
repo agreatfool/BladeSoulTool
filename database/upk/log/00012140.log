@@ -1,4 +1,4 @@
-Found 21974 game files (0 skipped)
+Found 27000 game files (27 skipped)
 Loading package: 00012140.upk Ver: 573/1 Engine: 4205 Names: 194 Exports: 100 Imports: 19 Game: 801A
 Loading SkeletalMesh3 65023_LynF from package 00012140.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
@@ -16,17 +16,19 @@ WARNING: ArrayProperty "USkeletalMesh3::MeshScaleRatio" was not found
 WARNING: StructProperty "USkeletalMesh3::HeightRatio" was not found
 WARNING: StructProperty "USkeletalMesh3::HandRatio" was not found
 WARNING: ByteProperty "USkeletalMesh3::CommonPhysicsUseFlag" was not found
-Loading package: 00012139.upk Ver: 573/1 Engine: 4205 Names: 64 Exports: 1 Imports: 13 Game: 801A
+Loading package: 00012139.upk Ver: 573/1 Engine: 4205 Names: 91 Exports: 1 Imports: 19 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00012139.upk
-Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading package: 00012138.upk Ver: 573/1 Engine: 4205 Names: 41 Exports: 12 Imports: 4 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading TextureCube lenscube_a from package 00002640.upk
+Loading Texture2D 65023_LynF_N from package 00012138.upk
+Loading Texture2D 65023_LynF_M from package 00012138.upk
 Loading Texture2D 65023_LynF_D from package 00012138.upk
 Loading Texture2D 65023_LynF_S from package 00012138.upk
-Loading Texture2D 65023_LynF_M from package 00012138.upk
-Loading Texture2D 65023_LynF_N from package 00012138.upk
-Loading Material3 body_bk from package 00002620.upk
+Loading TextureCube lenscube_a from package 00002640.upk
+Loading Texture2D check from package 00002620.upk
+Loading Material3 Body from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -34,8 +36,12 @@ Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Texture2D check_n from package 00002620.upk
-Loading Texture2D check from package 00002620.upk
-Loaded in 0.097 sec, 1618 allocs, 1.77 MBytes serialized in 254545 calls.
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loaded in 0.11 sec, 3061 allocs, 2.02 MBytes serialized in 282337 calls.
 
 Object info:
 ============

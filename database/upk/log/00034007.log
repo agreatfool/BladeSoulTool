@@ -1,0 +1,223 @@
+Found 27000 game files (27 skipped)
+Loading package: 00034007.upk Ver: 573/1 Engine: 4205 Names: 75 Exports: 14 Imports: 17 Game: 801A
+Loading SkeletalMesh3 990235_Autoscale from package 00034007.upk
+WARNING: ObjectProperty "USkeletalMesh3::PhysMaterialOverride" was not found
+Loading package: 00034006.upk Ver: 573/1 Engine: 4205 Names: 183 Exports: 286 Imports: 50 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_131 from package 00034007.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_132 from package 00034007.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_94 from package 00034007.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_95 from package 00034007.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_96 from package 00034007.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_97 from package 00034007.upk
+Loading StaticMesh3 ChameleonTribeB_Weapon01 from package 00034007.upk
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 929 Exports: 4955 Imports: 320 Game: 801A
+Loading StaticMesh3 SpawnMesh from package 00034007.upk
+Loading MaterialInstanceConstant col1 from package 00034006.upk
+Loading package: 00034005.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00023713.upk Ver: 573/1 Engine: 4205 Names: 96 Exports: 71 Imports: 4 Game: 801A
+Loading Texture2D 990235_Autoscale_col1_N from package 00034005.upk
+Loading Texture2D 990235_Autoscale_col1_M from package 00034005.upk
+Loading Texture2D 990235_Autoscale_col1_D from package 00034005.upk
+Loading Texture2D 990235_Autoscale_col1_S from package 00034005.upk
+Loading TextureCube lenscube from package 00002640.upk
+Loading Texture2D FX_Mask from package 00034005.upk
+Loading Texture2D Noise_009 from package 00012963.upk
+Loading Material3 Basic_FX from package 00034006.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading Texture2D Cube000_Tex from package 00023713.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D Gradient_Line_005 from package 00012963.upk
+Loaded in 0.12 sec, 4161 allocs, 1.84 MBytes serialized in 343734 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 990235_Autoscale
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[1] = { true }
+        }
+    }
+    Sockets[6] =
+    {
+        Sockets[0] = SkeletalMeshSocket'990235_Autoscale.SkeletalMeshSocket_94'
+        Sockets[1] = SkeletalMeshSocket'990235_Autoscale.SkeletalMeshSocket_95'
+        Sockets[2] = SkeletalMeshSocket'990235_Autoscale.SkeletalMeshSocket_96'
+        Sockets[3] = SkeletalMeshSocket'990235_Autoscale.SkeletalMeshSocket_97'
+        Sockets[4] = SkeletalMeshSocket'990235_Autoscale.SkeletalMeshSocket_131'
+        Sockets[5] = SkeletalMeshSocket'990235_Autoscale.SkeletalMeshSocket_132'
+    }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[1] = { MaterialInstanceConstant'col1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1600 }
+            }
+            NumVerts = 1188
+            IndexCount = 4800
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 1
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_131
+
+    SocketName = FX_trail_end
+    BoneName = WeaponRoot
+    RelativeLocation = { X=-18.25, Y=0, Z=-76.75 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_132
+
+    SocketName = FX_trail_Start
+    BoneName = WeaponRoot
+    RelativeLocation = { X=9.82281, Y=0, Z=-74.5 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_94
+
+    SocketName = trail_start1
+    BoneName = WeaponRoot
+    RelativeLocation = { X=0, Y=0, Z=32.25 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_95
+
+    SocketName = trail_end1
+    BoneName = WeaponRoot
+    RelativeLocation = { X=7.99994, Y=0, Z=68.5 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_96
+
+    SocketName = trail_start
+    BoneName = WeaponRoot
+    RelativeLocation = { X=0, Y=0, Z=-56.25 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_97
+
+    SocketName = trail_end
+    BoneName = WeaponRoot
+    RelativeLocation = { X=0, Y=0, Z=-99.25 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: ChameleonTribeB_Weapon01
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-2.2718, Y=0, Z=0.0242996 }
+        BoxExtent = { X=19.2578, Y=3.3757, Z=20.1228 }
+        SphereRadius = 24.3902
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=794 }
+            }
+            NumVerts = 1194
+            IndexCount = 2382
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: SpawnMesh
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=0, Y=0, Z=0 }
+        BoxExtent = { X=21.3546, Y=3.3757, Z=69.3081 }
+        SphereRadius = 69.358
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=728 }
+            }
+            NumVerts = 2050
+            IndexCount = 2184
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1

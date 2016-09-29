@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00017417.upk Ver: 573/1 Engine: 4205 Names: 58 Exports: 27 Imports: 4 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00017417.upk Ver: 573/1 Engine: 4205 Names: 61 Exports: 30 Imports: 4 Game: 801A
 Loading Texture2D baydo_d from package 00017417.upk
 Loading Texture2D baydo_M from package 00017417.upk
 Loading Texture2D baydo_N from package 00017417.upk
@@ -7,12 +7,14 @@ Loading Texture2D baydo_s from package 00017417.upk
 Loading Texture2D RuneMechaCGiant_D from package 00017417.upk
 Loading Texture2D RuneMechaCGiant_D_col2 from package 00017417.upk
 Loading Texture2D RuneMechaCGiant_D_col3 from package 00017417.upk
+Loading Texture2D RuneMechaCGiant_D_col4 from package 00017417.upk
 Loading Texture2D RuneMechaCGiant_E from package 00017417.upk
 WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D RuneMechaCGiant_E_col2 from package 00017417.upk
 WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
 Loading Texture2D RuneMechaCGiant_E_col3 from package 00017417.upk
 WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading Texture2D RuneMechaCGiant_E_col4 from package 00017417.upk
 Loading Texture2D RuneMechaCGiant_FX_Line from package 00017417.upk
 Loading Texture2D RuneMechaCGiant_M from package 00017417.upk
 Loading Texture2D RuneMechaCGiant_N from package 00017417.upk
@@ -21,7 +23,8 @@ Loading Texture2D RuneMechaCGiant_N_col3 from package 00017417.upk
 Loading Texture2D RuneMechaCGiant_S from package 00017417.upk
 Loading Texture2D RuneMechaCGiant_S_col2 from package 00017417.upk
 Loading Texture2D RuneMechaCGiant_S_col3 from package 00017417.upk
-Loaded in 0.17 sec, 682 allocs, 5.52 MBytes serialized in 4622 calls.
+Loading Texture2D RuneMechaCGiant_S_col4 from package 00017417.upk
+Loaded in 0.16 sec, 784 allocs, 6.39 MBytes serialized in 5310 calls.
 
 Object info:
 ============
@@ -130,6 +133,21 @@ ClassName: Texture2D ObjectName: RuneMechaCGiant_D_col3
 
 Object info:
 ============
+ClassName: Texture2D ObjectName: RuneMechaCGiant_D_col4
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
 ClassName: Texture2D ObjectName: RuneMechaCGiant_E
 
     SizeX = 1024
@@ -161,6 +179,21 @@ ClassName: Texture2D ObjectName: RuneMechaCGiant_E_col2
 Object info:
 ============
 ClassName: Texture2D ObjectName: RuneMechaCGiant_E_col3
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: RuneMechaCGiant_E_col4
 
     SizeX = 1024
     SizeY = 1024
@@ -291,4 +324,19 @@ ClassName: Texture2D ObjectName: RuneMechaCGiant_S_col3
     MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: RuneMechaCGiant_S_col4
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

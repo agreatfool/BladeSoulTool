@@ -1,11 +1,11 @@
-Found 21974 game files (0 skipped)
-Loading package: 00005413.upk Ver: 573/1 Engine: 4205 Names: 604 Exports: 5533 Imports: 149 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00005413.upk Ver: 573/1 Engine: 4205 Names: 621 Exports: 5713 Imports: 154 Game: 801A
 Loading Material3 fx_cloudblow_mat_Dup_2388_Dup_2207_Dup from package 00005413.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Material3 Assassin_MistSlash_Slash_MatB from package 00005413.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading Material3 AuraMaster_EnergyMissile_Cast_Trl from package 00005413.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Beam_HalfmoonSlash_Cast from package 00005413.upk
@@ -100,16 +100,18 @@ Loading Texture2D Smoke_Fractal_002 from package 00012963.upk
 Loading Texture2D T_Liquid_SM_NanoBlack_Mask_01 from package 00012963.upk
 Loading Texture2D Unique_Waterfall_000_Mask from package 00012963.upk
 Loading Texture2D Gradient_Beam_004 from package 00012963.upk
+Loading Texture2D Gradient_Line_005 from package 00012963.upk
 Loading Texture2D Noise_003 from package 00012963.upk
 Loading Texture2D Ring_Thick_000 from package 00012963.upk
 Loading Texture2D Gradient_Trail_001 from package 00012963.upk
 Loading Texture2D Noise_Wave_000_Normal from package 00012963.upk
 WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
 Loading Texture2D Noise_007 from package 00012963.upk
+Loading Texture2D Smoke_003 from package 00012963.upk
 Loading Texture2D Noise_001 from package 00012963.upk
 Loading Texture2D Glow_002 from package 00012963.upk
 Loading Texture2D Fire_002 from package 00012963.upk
-Loaded in 0.3 sec, 3244 allocs, 1.44 MBytes serialized in 139521 calls.
+Loaded in 0.54 sec, 3333 allocs, 1.41 MBytes serialized in 143759 calls.
 
 Object info:
 ============
@@ -276,7 +278,13 @@ ClassName: Material3 ObjectName: Fencer_BloodSlash002_MatB
     TwoSided = false
     bDisableDepthTest = false
     bIsMasked = false
-    ReferencedTextures[0] = {}
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Color_BlueToPurple_000'
+        ReferencedTextures[1] = Texture2D'Gradient_Trail_004'
+        ReferencedTextures[2] = Texture2D'Gradient_Light_Line_000_V'
+        ReferencedTextures[3] = Texture2D'Gradient_Trail_000'
+    }
     BlendMode = BLEND_Additive (3)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
@@ -441,7 +449,12 @@ ClassName: Material3 ObjectName: shadow_tail_mat
     TwoSided = true
     bDisableDepthTest = false
     bIsMasked = false
-    ReferencedTextures[1] = { Texture2D'DefaultTexture' }
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'Gradient_Line_005'
+        ReferencedTextures[1] = Texture2D'Gradient_Light_Line_000'
+        ReferencedTextures[2] = Texture2D'DefaultTexture'
+    }
     BlendMode = BLEND_Translucent (2)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
@@ -719,7 +732,13 @@ ClassName: Material3 ObjectName: Trail_Skill_CriticalSlash
     TwoSided = false
     bDisableDepthTest = false
     bIsMasked = true
-    ReferencedTextures[2] = { Texture2D'Smoke_Cloud_001', Texture2D'Noise_001' }
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Smoke_003'
+        ReferencedTextures[1] = Texture2D'Smoke_Cloud_001'
+        ReferencedTextures[2] = Texture2D'Noise_001'
+        ReferencedTextures[3] = Texture2D'Smoke_005'
+    }
     BlendMode = BLEND_Masked (1)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None
@@ -804,7 +823,13 @@ ClassName: Material3 ObjectName: TrailNormalSword003_MatM
     TwoSided = false
     bDisableDepthTest = false
     bIsMasked = false
-    ReferencedTextures[2] = { Texture2D'Gradient_Trail_001', Texture2D'DefaultTexture' }
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Noise_006'
+        ReferencedTextures[1] = Texture2D'Gradient_Light_Line_000'
+        ReferencedTextures[2] = Texture2D'Gradient_Trail_001'
+        ReferencedTextures[3] = Texture2D'DefaultTexture'
+    }
     BlendMode = BLEND_Translucent (2)
     OpacityMaskClipValue = 0.333
     FlattenedTexture = None

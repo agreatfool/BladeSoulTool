@@ -1,0 +1,228 @@
+Found 27000 game files (27 skipped)
+Loading package: 00040417.upk Ver: 573/1 Engine: 4205 Names: 117 Exports: 4 Imports: 25 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00040417.upk
+Loading package: 00040416.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading package: 00020528.upk Ver: 573/1 Engine: 4205 Names: 173 Exports: 152 Imports: 46 Game: 801A
+Loading StaticMesh3 Flazard_FireSword_FX from package 00040417.upk
+Loading package: 00040420.upk Ver: 573/1 Engine: 4205 Names: 103 Exports: 2 Imports: 22 Game: 801A
+Loading StaticMesh3 Flazard_IceSword_FX from package 00040417.upk
+Loading Texture2D FX_Add from package 00040417.upk
+Loading Texture2D 990270_Autoscale_col1_N from package 00040416.upk
+Loading Texture2D 990270_Autoscale_col1_M from package 00040416.upk
+Loading Texture2D 990270_Autoscale_col1_D from package 00040416.upk
+Loading Texture2D 990270_Autoscale_col1_S from package 00040416.upk
+Loading TextureCube lenscube_a from package 00002640.upk
+Loading Texture2D 990270_Autoscale_col1_E from package 00040416.upk
+Loading Material3 Basic_flazard_sword_ice from package 00020528.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00040420.upk
+Loading package: 00040419.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 2 Game: 801A
+Loading package: 00020532.upk Ver: 573/1 Engine: 4205 Names: 173 Exports: 152 Imports: 47 Game: 801A
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D 990271_Autoscale_col1_N from package 00040419.upk
+Loading Texture2D 990271_Autoscale_col1_M from package 00040419.upk
+Loading Texture2D 990271_Autoscale_col1_D from package 00040419.upk
+Loading Texture2D 990271_Autoscale_col1_S from package 00040419.upk
+Loading TextureCube MatelR1 from package 00002640.upk
+Loading Texture2D 990271_Autoscale_col1_E from package 00040419.upk
+Loading Texture2D FX_Add from package 00040420.upk
+Loading Material3 Basic_Flazard_FireSword from package 00020532.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.19 sec, 3746 allocs, 2.01 MBytes serialized in 264759 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[10] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=0.5 }
+        ScalarParameterValues[1] = { ParameterName=Glossiness1, ParameterValue=8 }
+        ScalarParameterValues[2] = { ParameterName=Glossiness2, ParameterValue=50 }
+        ScalarParameterValues[3] = { ParameterName=Specular_value, ParameterValue=2 }
+        ScalarParameterValues[4] = { ParameterName=HighLight_Value, ParameterValue=5 }
+        ScalarParameterValues[5] = { ParameterName=HighLight_glossiness, ParameterValue=150 }
+        ScalarParameterValues[6] = { ParameterName=Emissive_value, ParameterValue=1 }
+        ScalarParameterValues[7] = { ParameterName=Emissive_value2, ParameterValue=0 }
+        ScalarParameterValues[8] = { ParameterName=Fresnel Value, ParameterValue=1 }
+        ScalarParameterValues[9] = { ParameterName=Fresnel exponent, ParameterValue=30 }
+    }
+    TextureParameterValues[7] =
+    {
+        TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'990270_Autoscale_col1_N' }
+        TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'990270_Autoscale_col1_M' }
+        TextureParameterValues[2] = { ParameterName=Diffuse, ParameterValue=Texture2D'990270_Autoscale_col1_D' }
+        TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'990270_Autoscale_col1_S' }
+        TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'lenscube_a' }
+        TextureParameterValues[5] = { ParameterName=Emissive, ParameterValue=Texture2D'990270_Autoscale_col1_E' }
+        TextureParameterValues[6] = { ParameterName=FX_Add, ParameterValue=Texture2D'FX_Add' }
+    }
+    VectorParameterValues[11] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=0.080219, G=0.21952, B=0.965815, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = HighLight_Color
+            ParameterValue = { R=0.505432, G=0.56681, B=0.907547, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0.006585, G=0.031551, B=0.027755, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Burn_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = Glow_Trangition_W
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = Fx_Glow_power_W
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = Fx_Glow_color_W
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = AC_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[10] =
+        {
+            ParameterName = AC_specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+    }
+    Parent = Material3'Basic_flazard_sword_ice'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Flazard_FireSword_FX
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=1.843, Y=0, Z=-38.6906 }
+        BoxExtent = { X=39.564, Y=25.5321, Z=82.3259 }
+        SphereRadius = 84.6549
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=2492 }
+            }
+            NumVerts = 3520
+            IndexCount = 7476
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: Flazard_IceSword_FX
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=6.6728, Y=0, Z=46.2987 }
+        BoxExtent = { X=29.1147, Y=12.8832, Z=78.3064 }
+        SphereRadius = 82.9075
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1516 }
+            }
+            NumVerts = 2224
+            IndexCount = 4548
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: FX_Add
+
+    SizeX = 512
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }

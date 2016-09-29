@@ -1,0 +1,439 @@
+Found 27000 game files (27 skipped)
+Loading package: 00034562.upk Ver: 573/1 Engine: 4205 Names: 221 Exports: 581 Imports: 68 Game: 801A
+Loading Material3 JinTaePyeong_Body from package 00034562.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading Material3 JinTaePyeong_Body_1 from package 00034562.upk
+Loading Material3 Fx_JinTaePyeong_ParentMat from package 00034562.upk
+Loading MaterialInstanceConstant col1 from package 00034562.upk
+Loading package: 00024015.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 2 Game: 801A
+Loading package: 00034561.upk Ver: 573/1 Engine: 4205 Names: 37 Exports: 8 Imports: 4 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading MaterialInstanceConstant col1_1 from package 00034562.upk
+Loading MaterialInstanceConstant col1_FX from package 00034562.upk
+Loading Texture2D 65076_JinM_col1_FX_Mask from package 00034562.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Dragon_body_outside_NRM from package 00012963.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
+Loading Texture2D Dragon_body_outside from package 00012963.upk
+Loading Texture2D Noise_Wave_000 from package 00012963.upk
+Loading Texture2D MuseongM_decal03_n from package 00012963.upk
+Loading Texture2D 65076_JinM_col1_N from package 00024015.upk
+Loading Texture2D 65076_JinM_col1_M from package 00034561.upk
+Loading Texture2D 65076_JinM_col1_D from package 00024015.upk
+Loading Texture2D JinTaePyeong_mask from package 00034561.upk
+Loading Texture2D 65076_JinM_col1_S from package 00024015.upk
+Loading TextureCube mirror2 from package 00002640.upk
+Loading Texture2D 65076_JinM_col1_E from package 00024015.upk
+WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
+Loading Texture2D Attach_col1_N from package 00034561.upk
+Loading Texture2D Attach_col1_M from package 00034561.upk
+Loading Texture2D Attach_col1_D from package 00034561.upk
+Loading Texture2D Attach_col1_S from package 00034561.upk
+Loading TextureCube lenscube_a from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.2 sec, 3501 allocs, 4.99 MBytes serialized in 179904 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: JinTaePyeong_Body
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[8] =
+    {
+        ReferencedTextures[0] = Texture2D'check_n'
+        ReferencedTextures[1] = Texture2D'Noise_Glass_000'
+        ReferencedTextures[2] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Wipe_BurnOut_Mask_TEST'
+        ReferencedTextures[4] = Texture2D'Gradient_Wipe_BurnOut_Mask'
+        ReferencedTextures[5] = Texture2D'check'
+        ReferencedTextures[6] = Texture2D'65076_JinM_col1_FX_Mask'
+        ReferencedTextures[7] = Texture2D'Gradient_Line_003'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: JinTaePyeong_Body_1
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[8] =
+    {
+        ReferencedTextures[0] = Texture2D'check_n'
+        ReferencedTextures[1] = Texture2D'Noise_Glass_000'
+        ReferencedTextures[2] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Wipe_BurnOut_Mask_TEST'
+        ReferencedTextures[4] = Texture2D'Gradient_Wipe_BurnOut_Mask'
+        ReferencedTextures[5] = Texture2D'check'
+        ReferencedTextures[6] = None
+        ReferencedTextures[7] = Texture2D'Gradient_Line_003'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Fx_JinTaePyeong_ParentMat
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Dragon_body_outside_NRM'
+        ReferencedTextures[1] = Texture2D'Dragon_body_outside'
+        ReferencedTextures[2] = Texture2D'Noise_Wave_000'
+        ReferencedTextures[3] = Texture2D'MuseongM_decal03_n'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1
+
+    ScalarParameterValues[16] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=0 }
+        ScalarParameterValues[1] = { ParameterName=Trangition_Gold_Offset, ParameterValue=1.12 }
+        ScalarParameterValues[2] = { ParameterName=HighLight_Value_gold, ParameterValue=7.5 }
+        ScalarParameterValues[3] = { ParameterName=HighLight_glossiness_gold, ParameterValue=15 }
+        ScalarParameterValues[4] = { ParameterName=Skin_glossiness, ParameterValue=5 }
+        ScalarParameterValues[5] = { ParameterName=Wear_glossiness1, ParameterValue=10 }
+        ScalarParameterValues[6] = { ParameterName=Wear_glossiness2, ParameterValue=1 }
+        ScalarParameterValues[7] = { ParameterName=Skin_Spec_value_X, ParameterValue=1 }
+        ScalarParameterValues[8] = { ParameterName=Skin_Spec_value, ParameterValue=1 }
+        ScalarParameterValues[9] = { ParameterName=Specular_value, ParameterValue=2 }
+        ScalarParameterValues[10] = { ParameterName=HighLight_Value, ParameterValue=2 }
+        ScalarParameterValues[11] = { ParameterName=HighLight_glossiness, ParameterValue=80 }
+        ScalarParameterValues[12] = { ParameterName=Emissive_value, ParameterValue=2 }
+        ScalarParameterValues[13] = { ParameterName=Emissive_value2, ParameterValue=2 }
+        ScalarParameterValues[14] = { ParameterName=Fresnel Value, ParameterValue=1 }
+        ScalarParameterValues[15] = { ParameterName=Fresnel exponent, ParameterValue=2 }
+    }
+    TextureParameterValues[8] =
+    {
+        TextureParameterValues[0] = { ParameterName=Body_normal, ParameterValue=Texture2D'65076_JinM_col1_N' }
+        TextureParameterValues[1] = { ParameterName=Body_mask_RGB, ParameterValue=Texture2D'65076_JinM_col1_M' }
+        TextureParameterValues[2] = { ParameterName=Body_diffuse, ParameterValue=Texture2D'65076_JinM_col1_D' }
+        TextureParameterValues[3] = { ParameterName=Hand_mesh_Opacity, ParameterValue=Texture2D'JinTaePyeong_mask' }
+        TextureParameterValues[4] =
+        {
+            ParameterName = Mask_FX_Texture
+            ParameterValue = Texture2D'65076_JinM_col1_FX_Mask'
+        }
+        TextureParameterValues[5] = { ParameterName=Body_specular, ParameterValue=Texture2D'65076_JinM_col1_S' }
+        TextureParameterValues[6] = { ParameterName=rf_cube, ParameterValue=TextureCube'mirror2' }
+        TextureParameterValues[7] = { ParameterName=Emissive, ParameterValue=Texture2D'65076_JinM_col1_E' }
+    }
+    VectorParameterValues[15] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = AC_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Opacity_power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Mesh_trangition_Gold
+            ParameterValue = { R=0, G=0.9, B=0, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = UVTiling
+            ParameterValue = { R=1, G=1, B=0, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Gold_Opacity
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = HighLight_Color_gold
+            ParameterValue = { R=0.8, G=0.5, B=0.1, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = Skin_Specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = AC_specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=0.56681, G=0.404541, B=0.329729, A=1 }
+        }
+        VectorParameterValues[10] =
+        {
+            ParameterName = HighLight_Color
+            ParameterValue = { R=0.302126, G=0.242796, B=0.078057, A=1 }
+        }
+        VectorParameterValues[11] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[12] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[13] =
+        {
+            ParameterName = Burn_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[14] =
+        {
+            ParameterName = skin_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+    }
+    Parent = Material3'JinTaePyeong_Body'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1_1
+
+    ScalarParameterValues[16] =
+    {
+        ScalarParameterValues[0] = { ParameterName=Transmission_value, ParameterValue=0 }
+        ScalarParameterValues[1] = { ParameterName=Skin_glossiness, ParameterValue=5 }
+        ScalarParameterValues[2] = { ParameterName=Wear_glossiness1, ParameterValue=6 }
+        ScalarParameterValues[3] = { ParameterName=Wear_glossiness2, ParameterValue=50 }
+        ScalarParameterValues[4] = { ParameterName=Trangition_Gold_Offset, ParameterValue=1 }
+        ScalarParameterValues[5] = { ParameterName=HighLight_Value_gold, ParameterValue=7.5 }
+        ScalarParameterValues[6] = { ParameterName=HighLight_glossiness_gold, ParameterValue=15 }
+        ScalarParameterValues[7] = { ParameterName=Skin_Spec_value_X, ParameterValue=1 }
+        ScalarParameterValues[8] = { ParameterName=Skin_Spec_value, ParameterValue=1 }
+        ScalarParameterValues[9] = { ParameterName=Specular_value, ParameterValue=2 }
+        ScalarParameterValues[10] = { ParameterName=HighLight_Value, ParameterValue=3 }
+        ScalarParameterValues[11] = { ParameterName=HighLight_glossiness, ParameterValue=100 }
+        ScalarParameterValues[12] = { ParameterName=Emissive_value, ParameterValue=2 }
+        ScalarParameterValues[13] = { ParameterName=Emissive_value2, ParameterValue=0 }
+        ScalarParameterValues[14] = { ParameterName=Fresnel Value, ParameterValue=1 }
+        ScalarParameterValues[15] = { ParameterName=Fresnel exponent, ParameterValue=30 }
+    }
+    TextureParameterValues[7] =
+    {
+        TextureParameterValues[0] = { ParameterName=Body_normal, ParameterValue=Texture2D'Attach_col1_N' }
+        TextureParameterValues[1] = { ParameterName=Body_mask_RGB, ParameterValue=Texture2D'Attach_col1_M' }
+        TextureParameterValues[2] = { ParameterName=Body_diffuse, ParameterValue=Texture2D'Attach_col1_D' }
+        TextureParameterValues[3] =
+        {
+            ParameterName = Mask_FX_Texture
+            ParameterValue = Texture2D'65076_JinM_col1_FX_Mask'
+        }
+        TextureParameterValues[4] = { ParameterName=Body_specular, ParameterValue=Texture2D'Attach_col1_S' }
+        TextureParameterValues[5] = { ParameterName=rf_cube, ParameterValue=TextureCube'lenscube_a' }
+        TextureParameterValues[6] = { ParameterName=Emissive, ParameterValue=None }
+    }
+    VectorParameterValues[14] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = AC_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Mesh_trangition
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = Mesh_trangition_Gold
+            ParameterValue = { R=0, G=12, B=0, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Gold_Opacity
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = HighLight_Color_gold
+            ParameterValue = { R=0.8, G=0.5, B=0.1, A=1 }
+        }
+        VectorParameterValues[5] =
+        {
+            ParameterName = Skin_Specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[6] =
+        {
+            ParameterName = AC_specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[7] =
+        {
+            ParameterName = Reflection_value
+            ParameterValue = { R=0.56681, G=0.404541, B=0.329729, A=1 }
+        }
+        VectorParameterValues[8] =
+        {
+            ParameterName = HighLight_Color
+            ParameterValue = { R=0.302126, G=0.242796, B=0.078057, A=1 }
+        }
+        VectorParameterValues[9] =
+        {
+            ParameterName = Fresnel_color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[10] =
+        {
+            ParameterName = Fresnel_Power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[11] =
+        {
+            ParameterName = Burn_Color
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[12] =
+        {
+            ParameterName = skin_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[13] =
+        {
+            ParameterName = UVTiling
+            ParameterValue = { R=1, G=1, B=0, A=1 }
+        }
+    }
+    Parent = Material3'JinTaePyeong_Body_1'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: col1_FX
+
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] = { ParameterName=HighLight_Value_gold, ParameterValue=7.5 }
+        ScalarParameterValues[1] = { ParameterName=HighLight_glossiness_gold, ParameterValue=15 }
+        ScalarParameterValues[2] = { ParameterName=Mask, ParameterValue=1 }
+    }
+    TextureParameterValues[0] = {}
+    VectorParameterValues[5] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterName = UVTiling
+            ParameterValue = { R=5, G=1, B=0, A=1 }
+        }
+        VectorParameterValues[1] =
+        {
+            ParameterName = Opacity_power
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+        }
+        VectorParameterValues[2] =
+        {
+            ParameterName = Color_arm
+            ParameterValue = { R=1.3, G=1, B=0, A=1 }
+        }
+        VectorParameterValues[3] =
+        {
+            ParameterName = Color_arm2
+            ParameterValue = { R=0.5, G=0.4, B=0.1, A=1 }
+        }
+        VectorParameterValues[4] =
+        {
+            ParameterName = Mask
+            ParameterValue = { R=-1, G=0, B=0.2, A=1 }
+        }
+    }
+    Parent = Material3'Material.Fx_JinTaePyeong_ParentMat'
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 65076_JinM_col1_FX_Mask
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }

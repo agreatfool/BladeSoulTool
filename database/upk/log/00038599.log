@@ -1,0 +1,114 @@
+Found 27000 game files (27 skipped)
+Loading package: 00038599.upk Ver: 573/1 Engine: 4205 Names: 133 Exports: 74 Imports: 15 Game: 801A
+Loading SkeletalMesh3 Taejanggeum from package 00038599.upk
+WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
+WARNING: ByteProperty "USkeletalMesh3::ItemPreviewLocType" was not found
+Loading package: 00037803.upk Ver: 573/1 Engine: 4205 Names: 69 Exports: 1 Imports: 15 Game: 801A
+Loading SkeletalMeshSocket SkeletalMeshSocket_137 from package 00038599.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_138 from package 00038599.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_139 from package 00038599.upk
+Loading SkeletalMeshSocket SkeletalMeshSocket_140 from package 00038599.upk
+Loading MaterialInstanceConstant col1 from package 00037803.upk
+Loading package: 00037802.upk Ver: 573/1 Engine: 4205 Names: 20 Exports: 1 Imports: 2 Game: 801A
+Loading package: 00008613.upk Ver: 573/1 Engine: 4205 Names: 95 Exports: 6 Imports: 12 Game: 801A
+Loading package: 00037280.upk Ver: 573/1 Engine: 4205 Names: 144 Exports: 104 Imports: 36 Game: 801A
+Loading Texture2D Taejanggeum_col1_d from package 00037802.upk
+Loading Texture2D Nothing_A_n from package 00008613.upk
+Loading Material3 Pet from package 00037280.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loaded in 0.051 sec, 2563 allocs, 0.98 MBytes serialized in 202218 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: Taejanggeum
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[2] = { true, true }
+        }
+    }
+    Sockets[4] =
+    {
+        Sockets[0] = SkeletalMeshSocket'Taejanggeum.SkeletalMeshSocket_137'
+        Sockets[1] = SkeletalMeshSocket'Taejanggeum.SkeletalMeshSocket_138'
+        Sockets[2] = SkeletalMeshSocket'Taejanggeum.SkeletalMeshSocket_139'
+        Sockets[3] = SkeletalMeshSocket'Taejanggeum.SkeletalMeshSocket_140'
+    }
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[2] = { MaterialInstanceConstant'col1', None }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1430 }
+                Sections[1] = { Material=None, FirstIndex=4290, NumFaces=178 }
+            }
+            NumVerts = 1256
+            IndexCount = 4824
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 46
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_137
+
+    SocketName = Trail_R
+    BoneName = Bip01RHand
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_138
+
+    SocketName = Trail_L
+    BoneName = Bip01LHand
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_139
+
+    SocketName = B_Spine_BR00
+    BoneName = B_Spine_BR00
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }
+
+Object info:
+============
+ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_140
+
+    SocketName = B_Pelvis_BR01
+    BoneName = B_Pelvis_BR01
+    RelativeLocation = { X=0, Y=0, Z=0 }
+    RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+    RelativeScale = { X=1, Y=1, Z=1 }

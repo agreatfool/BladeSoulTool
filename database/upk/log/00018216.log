@@ -1,9 +1,28 @@
-Found 21974 game files (0 skipped)
-Loading package: 00018216.upk Ver: 573/1 Engine: 4205 Names: 91 Exports: 1 Imports: 20 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00018216.upk Ver: 573/1 Engine: 4205 Names: 197 Exports: 236 Imports: 51 Game: 801A
+Loading Material3 Basic_FX from package 00018216.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading Material3 HammerTest3 from package 00018216.upk
 Loading MaterialInstanceConstant col1 from package 00018216.upk
 Loading package: 00018215.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 5 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading StaticMesh3 AncientAdamantineMan_hammer from package 00018216.upk
+Loading package: 00012892.upk Ver: 573/1 Engine: 4205 Names: 929 Exports: 4955 Imports: 320 Game: 801A
+Loading StaticMesh3 New_Hammer from package 00018216.upk
+Loading Texture2D 990126_Autoscale_col1_FX from package 00018216.upk
+Loading Texture2D New_Unwrap from package 00018216.upk
+Loading Texture2D New_Unwrap_E from package 00018216.upk
+Loading Texture2D New_Unwrap_FX from package 00018216.upk
+Loading Texture2D New_Unwrap_M from package 00018216.upk
+Loading Texture2D New_Unwrap_N from package 00018216.upk
+Loading Texture2D New_Unwrap_S from package 00018216.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D 990126_Autoscale_col1_N from package 00018215.upk
 Loading Texture2D 990126_Autoscale_col1_M from package 00018215.upk
 Loading Texture2D 990126_Autoscale_col1_D from package 00018215.upk
@@ -11,21 +30,70 @@ Loading Texture2D 990126_Autoscale_col1_S from package 00018215.upk
 Loading TextureCube MatelR3 from package 00002640.upk
 Loading Texture2D 990126_Autoscale_col1_E from package 00018215.upk
 WARNING: ByteProperty "UTexture2D::ManualLoadSwitchSettings" was not found
-Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading Material3 001_Mesh_Default_MatM from package 00012892.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading package: 00023713.upk Ver: 573/1 Engine: 4205 Names: 96 Exports: 71 Imports: 4 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loading Texture2D check_n from package 00002620.upk
-Loading Texture2D check from package 00002620.upk
-Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
-Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
-Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.11 sec, 2756 allocs, 1.01 MBytes serialized in 162589 calls.
+Loading Texture2D Cube000_Tex from package 00023713.upk
+Loaded in 0.14 sec, 4208 allocs, 1.85 MBytes serialized in 309890 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Basic_FX
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'check_n'
+        ReferencedTextures[1] = Texture2D'check'
+        ReferencedTextures[2] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[4] = Texture2D'Gradient_Wipe_BurnOut_Mask_TEST'
+        ReferencedTextures[5] = Texture2D'Gradient_Wipe_BurnOut_Mask'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: HammerTest3
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = true
+    ReferencedTextures[7] =
+    {
+        ReferencedTextures[0] = Texture2D'New_Unwrap_N'
+        ReferencedTextures[1] = Texture2D'New_Unwrap_FX'
+        ReferencedTextures[2] = Texture2D'Smoke_Pattern_001'
+        ReferencedTextures[3] = Texture2D'Gradient_Line_003'
+        ReferencedTextures[4] = Texture2D'New_Unwrap_E'
+        ReferencedTextures[5] = Texture2D'New_Unwrap'
+        ReferencedTextures[6] = Texture2D'New_Unwrap_S'
+    }
+    BlendMode = BLEND_Masked (1)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
 
 Object info:
 ============
@@ -44,7 +112,7 @@ ClassName: MaterialInstanceConstant ObjectName: col1
         ScalarParameterValues[8] = { ParameterName=Fresnel Value, ParameterValue=1 }
         ScalarParameterValues[9] = { ParameterName=Fresnel exponent, ParameterValue=30 }
     }
-    TextureParameterValues[6] =
+    TextureParameterValues[7] =
     {
         TextureParameterValues[0] = { ParameterName=Normal, ParameterValue=Texture2D'990126_Autoscale_col1_N' }
         TextureParameterValues[1] = { ParameterName=Mask_GB, ParameterValue=Texture2D'990126_Autoscale_col1_M' }
@@ -52,12 +120,13 @@ ClassName: MaterialInstanceConstant ObjectName: col1
         TextureParameterValues[3] = { ParameterName=Specular, ParameterValue=Texture2D'990126_Autoscale_col1_S' }
         TextureParameterValues[4] = { ParameterName=rf_cube, ParameterValue=TextureCube'MatelR3' }
         TextureParameterValues[5] = { ParameterName=Emissive, ParameterValue=Texture2D'990126_Autoscale_col1_E' }
+        TextureParameterValues[6] = { ParameterName=FX_Add, ParameterValue=Texture2D'990126_Autoscale_col1_FX' }
     }
-    VectorParameterValues[9] =
+    VectorParameterValues[11] =
     {
         VectorParameterValues[0] =
         {
-            ParameterName = Mesh_trangition
+            ParameterName = Mesh_trangition_W
             ParameterValue = { R=0, G=0, B=0, A=1 }
         }
         VectorParameterValues[1] =
@@ -72,12 +141,12 @@ ClassName: MaterialInstanceConstant ObjectName: col1
         }
         VectorParameterValues[3] =
         {
-            ParameterName = Fresnel_color
+            ParameterName = Fresnel_color_W
             ParameterValue = { R=0, G=0, B=0, A=1 }
         }
         VectorParameterValues[4] =
         {
-            ParameterName = Fresnel_Power
+            ParameterName = Fresnel_Power_W
             ParameterValue = { R=0, G=0, B=0, A=1 }
         }
         VectorParameterValues[5] =
@@ -87,21 +156,31 @@ ClassName: MaterialInstanceConstant ObjectName: col1
         }
         VectorParameterValues[6] =
         {
-            ParameterName = Glow_Trangition
+            ParameterName = Glow_Trangition_W
             ParameterValue = { R=0, G=0, B=0, A=1 }
         }
         VectorParameterValues[7] =
         {
-            ParameterName = Fx_Glow_power
+            ParameterName = Fx_Glow_power_W
             ParameterValue = { R=0, G=0, B=0, A=1 }
         }
         VectorParameterValues[8] =
         {
-            ParameterName = Fx_Glow_color
+            ParameterName = Fx_Glow_color_W
             ParameterValue = { R=0, G=0, B=0, A=1 }
         }
+        VectorParameterValues[9] =
+        {
+            ParameterName = AC_color
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
+        VectorParameterValues[10] =
+        {
+            ParameterName = AC_specular
+            ParameterValue = { R=1, G=1, B=1, A=1 }
+        }
     }
-    Parent = Material3'Basic'
+    Parent = Material3'Basic_FX'
     FlattenedTexture = None
     MobileBaseTexture = None
     MobileNormalTexture = None
@@ -109,3 +188,178 @@ ClassName: MaterialInstanceConstant ObjectName: col1
     MobileSpecularPower = 16
     MobileSpecularMask = MSM_Constant (0)
     MobileMaskTexture = None
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: AncientAdamantineMan_hammer
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.00654984, Y=0, Z=0.45615 }
+        BoxExtent = { X=16.5219, Y=9.2551, Z=35.7301 }
+        SphereRadius = 37.2433
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=1002 }
+            }
+            NumVerts = 1446
+            IndexCount = 3006
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: StaticMesh3 ObjectName: New_Hammer
+
+    BodySetup = None
+    UseSimpleLineCollision = false
+    UseSimpleBoxCollision = false
+    UseSimpleRigidBodyCollision = false
+    UseFullPrecisionUVs = false
+    Bounds =
+    {
+        Origin = { X=-0.00654984, Y=0, Z=0.45615 }
+        BoxExtent = { X=16.5219, Y=9.2551, Z=35.7301 }
+        SphereRadius = 37.2433
+    }
+    CanCompressPositions = false
+    CanStripNormalsAndTangents = false
+    InternalVersion = 18
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[1] =
+            {
+                Sections[0] = { Material=Material3'001_Mesh_Default_MatM', FirstIndex=0, NumFaces=994 }
+            }
+            NumVerts = 1414
+            IndexCount = 2982
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990126_Autoscale_col1_FX
+
+    SizeX = 256
+    SizeY = 128
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: New_Unwrap
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: New_Unwrap_E
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: New_Unwrap_FX
+
+    SizeX = 128
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: New_Unwrap_M
+
+    SizeX = 128
+    SizeY = 256
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 8
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: New_Unwrap_N
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: New_Unwrap_S
+
+    SizeX = 256
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }

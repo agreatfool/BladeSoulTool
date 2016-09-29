@@ -1,5 +1,9 @@
-Found 21974 game files (0 skipped)
-Loading package: 00013839.upk Ver: 573/1 Engine: 4205 Names: 53 Exports: 24 Imports: 4 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00013839.upk Ver: 573/1 Engine: 4205 Names: 57 Exports: 28 Imports: 4 Game: 801A
+Loading Texture2D NaHanBase_col9_D from package 00013839.upk
+Loading Texture2D NaHanBase_col9_M from package 00013839.upk
+Loading Texture2D NaHanBase_col9_N from package 00013839.upk
+Loading Texture2D NaHanBase_col9_S from package 00013839.upk
 Loading Texture2D nahanbase_D from package 00013839.upk
 Loading Texture2D nahanbase_D2 from package 00013839.upk
 Loading Texture2D nahanbase_D3 from package 00013839.upk
@@ -15,7 +19,67 @@ Loading Texture2D nahanbase_S from package 00013839.upk
 Loading Texture2D nahanbase_S2 from package 00013839.upk
 Loading Texture2D nahanbase_S3 from package 00013839.upk
 Loading Texture2D nahanbase_S4 from package 00013839.upk
-Loaded in 0.13 sec, 542 allocs, 3.82 MBytes serialized in 3613 calls.
+Loaded in 0.17 sec, 668 allocs, 5.29 MBytes serialized in 4474 calls.
+
+Object info:
+============
+ClassName: Texture2D ObjectName: NaHanBase_col9_D
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: NaHanBase_col9_M
+
+    SizeX = 16
+    SizeY = 16
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 4
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: NaHanBase_col9_N
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: NaHanBase_col9_S
+
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 10
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
 
 Object info:
 ============

@@ -1,4 +1,4 @@
-Found 21974 game files (0 skipped)
+Found 27000 game files (27 skipped)
 Loading package: 00031356.upk Ver: 573/1 Engine: 4205 Names: 54 Exports: 17 Imports: 3 Game: 801A
 Loading Texture2D 60132_JinF_col1_D from package 00031356.upk
 Loading Texture2D 60132_JinF_col1_M from package 00031356.upk
@@ -17,7 +17,7 @@ Loading Texture2D cube_FR from package 00031356.upk
 Loading Texture2D cube_LF from package 00031356.upk
 Loading Texture2D cube_RT from package 00031356.upk
 Loading Texture2D cube_Up from package 00031356.upk
-Loaded in 0.098 sec, 486 allocs, 1.72 MBytes serialized in 3260 calls.
+Loaded in 0.097 sec, 489 allocs, 2.25 MBytes serialized in 3294 calls.
 
 Object info:
 ============
@@ -38,13 +38,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: 60132_JinF_col1_M
 
-    SizeX = 512
-    SizeY = 512
+    SizeX = 1024
+    SizeY = 1024
     Format = PF_DXT5 (7)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 9
+    MipTailBaseIdx = 10
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

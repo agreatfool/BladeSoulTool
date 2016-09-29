@@ -1,11 +1,12 @@
-Found 21974 game files (0 skipped)
-Loading package: 00013739.upk Ver: 573/1 Engine: 4205 Names: 158 Exports: 132 Imports: 21 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00013739.upk Ver: 573/1 Engine: 4205 Names: 159 Exports: 132 Imports: 21 Game: 801A
 Loading SkeletalMesh3 YuranM from package 00013739.upk
 WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
 WARNING: ObjectProperty "USkeletalMesh3::PlayParticleSet" was not found
 WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
+WARNING: FloatProperty "USkeletalMesh3::PhysicalHitScale" was not found
 Loading package: 00013738.upk Ver: 573/1 Engine: 4205 Names: 214 Exports: 543 Imports: 58 Game: 801A
 Loading SkeletalMeshSocket SkeletalMeshSocket_47 from package 00013739.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_48 from package 00013739.upk
@@ -20,7 +21,7 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_95 from package 00013739.upk
 Loading MaterialInstanceConstant col1 from package 00013738.upk
 Loading package: 00013737.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 10 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading MaterialInstanceConstant Col1_A from package 00013738.upk
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D N_Map from package 00013737.upk
@@ -70,7 +71,7 @@ Loading Texture2D CubemapFace2 from package 00002640.upk
 Loading Texture2D CubemapFace3 from package 00002640.upk
 Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
-Loaded in 0.4 sec, 3759 allocs, 6.82 MBytes serialized in 523972 calls.
+Loaded in 0.27 sec, 3788 allocs, 6.82 MBytes serialized in 524587 calls.
 
 Object info:
 ============
@@ -189,7 +190,7 @@ Object info:
 ============
 ClassName: SkeletalMeshSocket ObjectName: SkeletalMeshSocket_90
 
-    SocketName = bodytarget
+    SocketName = BodyTarget
     BoneName = Bip01Spine
     RelativeLocation = { X=0, Y=0, Z=0 }
     RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }

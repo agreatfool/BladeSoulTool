@@ -1,45 +1,27 @@
-Found 21974 game files (0 skipped)
-Loading package: 00031000.upk Ver: 573/1 Engine: 4205 Names: 570 Exports: 4 Imports: 665 Game: 801A
-Loading AnimSet Warlock_F_AnimSet from package 00031000.upk
-WARNING: BoolProperty "UAnimSet::bServiced" was not found
-WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
-WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+Found 27000 game files (27 skipped)
+Loading package: 00031000.upk Ver: 573/1 Engine: 4205 Names: 673 Exports: 12 Imports: 679 Game: 801A
 Loading AnimSet Warlock_M_AnimSet from package 00031000.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
 WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
-WARNING: AnimSet Warlock_F_AnimSet has 0 sequences, but empty TrackBoneNames
-WARNING: AnimSet Warlock_M_AnimSet has 0 sequences, but empty TrackBoneNames
-Loaded in 0.002 sec, 592 allocs, 0.04 MBytes serialized in 6526 calls.
+Loading AnimSequence AnimSequence_1 from package 00031000.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_0 from package 00031000.upk
+WARNING: FloatProperty "UAnimNotify_Sound::SoundVolume" was not found
+Loading AnimSequence AnimSequence_0 from package 00031000.upk
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSet Warlock_F_AnimSet from package 00031000.upk
+WARNING: BoolProperty "UAnimSet::bServiced" was not found
+WARNING: ArrayProperty "UAnimSet::AdjustAniScaleBoneNames" was not found
+WARNING: ArrayProperty "UAnimSet::RefSequences" was not found
+Error: Command failed: ******** 00031000 ********
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** ERROR: Unknown rotation compression method: 255
+UAnimSet::ConvertAnims <- PostLoad:Warlock_M_AnimSet <- UObject::EndLoad <- LoadWholePackage:00031000 <- Main
 
-Object info:
-============
-ClassName: AnimSet ObjectName: Warlock_F_AnimSet
 
-    bAnimRotationOnly = true
-    TrackBoneNames[0] = {}
-    Sequences[0] = {}
-    UseTranslationBoneNames[0] = {}
-    ForceMeshTranslationBoneNames[0] = {}
-    PreviewSkelMeshName = 00002701.00001_JinM
-    BulkDataBlocks[0] = {}
-    KeyFrameSize = 0
-    RotationChannels = 0
-    TranslationChannels = 0
-    m_pBioAnimSetData = None
-
-Object info:
-============
-ClassName: AnimSet ObjectName: Warlock_M_AnimSet
-
-    bAnimRotationOnly = true
-    TrackBoneNames[0] = {}
-    Sequences[0] = {}
-    UseTranslationBoneNames[0] = {}
-    ForceMeshTranslationBoneNames[0] = {}
-    PreviewSkelMeshName = 00002701.00001_JinM
-    BulkDataBlocks[0] = {}
-    KeyFrameSize = 0
-    RotationChannels = 0
-    TranslationChannels = 0
-    m_pBioAnimSetData = None
+    at ChildProcess.exithandler (child_process.js:637:15)
+    at ChildProcess.EventEmitter.emit (events.js:98:17)
+    at maybeClose (child_process.js:743:16)
+    at Process.ChildProcess._handle.onexit (child_process.js:810:5)

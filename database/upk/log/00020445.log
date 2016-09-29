@@ -1,4 +1,4 @@
-Found 21974 game files (0 skipped)
+Found 27000 game files (27 skipped)
 Loading package: 00020445.upk Ver: 573/1 Engine: 4205 Names: 229 Exports: 181 Imports: 20 Game: 801A
 Loading SkeletalMesh3 65071_JinF from package 00020445.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
@@ -27,7 +27,7 @@ Loading Texture2D 65071_JinF_Col1_S from package 00020443.upk
 Loading TextureCube cube_orb from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Material3 Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -40,7 +40,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.15 sec, 3063 allocs, 3.16 MBytes serialized in 429948 calls.
+Loaded in 0.14 sec, 3095 allocs, 3.37 MBytes serialized in 457091 calls.
 
 Object info:
 ============
@@ -76,21 +76,21 @@ ClassName: SkeletalMesh3 ObjectName: 65071_JinF
         {
             Sections[2] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=6414 }
-                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=19242, NumFaces=585 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=7633 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=22899, NumFaces=223 }
             }
-            NumVerts = 5065
-            IndexCount = 20997
+            NumVerts = 5587
+            IndexCount = 23568
             NumTexCoords = 1
         }
         Lods[1] =
         {
             Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1953 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=2096 }
             }
-            NumVerts = 1747
-            IndexCount = 5859
+            NumVerts = 1904
+            IndexCount = 6288
             NumTexCoords = 1
         }
     }

@@ -1,8 +1,14 @@
-Found 21974 game files (0 skipped)
-Loading package: 00012582.upk Ver: 573/1 Engine: 4205 Names: 263 Exports: 966 Imports: 113 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00012582.upk Ver: 573/1 Engine: 4205 Names: 299 Exports: 1414 Imports: 125 Game: 801A
+Loading Material3 AddMat_Lightning from package 00012582.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading Material3 AncientMechDragon_Electric_Decal_matM from package 00012582.upk
+Loading Material3 AncientMechDragon_Electric_Decal_matM02 from package 00012582.upk
+Loading Material3 AncientMechDragon_Electric_Decal_matM03_sine from package 00012582.upk
+Loading Material3 AncientMechDragon_LightningSmash_Area from package 00012582.upk
+Loading Material3 BladeMaster_Electric_Decal from package 00012582.upk
 Loading Material3 electric_ani_mat_gradient from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
 Loading package: EngineResources.upk Ver: 573/1 Engine: 4205 Names: 151 Exports: 86 Imports: 11 Game: 801A
 Loading Material3 Electric_Damage_01m from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
@@ -63,6 +69,8 @@ Loading Material3 Lightning_Sprite001_Part from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Lightning_Sprite002_MatM from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
+Loading Material3 Lightning_Sprite002a_MatB from package 00012582.upk
+WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 Lightning_Sprite002a_MatM from package 00012582.upk
 WARNING: BoolProperty "UMaterial3::bAcceptRenderDecal" was not found
 Loading Material3 LightningUV002_MatM from package 00012582.upk
@@ -90,6 +98,17 @@ Loading MaterialInstanceConstant Electric_sample_003_INST from package 00012582.
 Loading MaterialInstanceConstant Electric_sample_004_INST from package 00012582.upk
 Loading MaterialInstanceConstant Electric_sample_005_INST from package 00012582.upk
 Loading MaterialInstanceConstant Electric_sample_006_INST from package 00012582.upk
+Loading Texture2D Env_Fx_Storm from package 00012963.upk
+Loading Texture2D Electric_tile from package 00012963.upk
+Loading Texture2D Electric_Damage_02 from package 00012963.upk
+Loading Texture2D Noise_Wave_000 from package 00012963.upk
+Loading Texture2D Noise_010 from package 00012963.upk
+Loading Texture2D Gradient_Beam_007 from package 00012963.upk
+Loading Texture2D Noise_Plazma_000 from package 00012963.upk
+Loading Texture2D Gradient_001 from package 00012963.upk
+Loading Texture2D lava01 from package 00012963.upk
+Loading Texture2D SystemDecal_Shape_donut_001_02 from package 00012963.upk
+Loading Texture2D SystemDecal_Circle_ring from package 00012963.upk
 Loading Texture2D Noise_006 from package 00012963.upk
 Loading Texture2D Gradient_Color_WhiteToPurple_000 from package 00012963.upk
 Loading Texture2D Smoke_Cloud_003 from package 00012963.upk
@@ -98,7 +117,6 @@ Loading Texture2D Gradient_Half_000 from package 00012963.upk
 Loading Texture2D Glow_003 from package 00012963.upk
 Loading Texture2D DefaultTexture from package EngineResources.upk
 Loading Texture2D Electric_Damage_01 from package 00012963.upk
-Loading Texture2D Electric_Damage_02 from package 00012963.upk
 Loading Texture2D Electric1_sample_007 from package 00012963.upk
 Loading Texture2D Electric_Lightning_Straight_03 from package 00012963.upk
 Loading Texture2D Electric1_sample_001 from package 00012963.upk
@@ -117,7 +135,6 @@ Loading Texture2D Smoke_Blur_000 from package 00012963.upk
 Loading Texture2D Noise_002 from package 00012963.upk
 Loading Texture2D Gradient_Line_001_YClamp from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loading Texture2D Electric_tile from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D Gradient_Beam_007_Clamp from package 00012963.upk
 Loading Texture2D Gradient_Line_001 from package 00012963.upk
@@ -133,7 +150,6 @@ Loading Texture2D Electric_Sprite_000 from package 00012963.upk
 Loading Texture2D Electric_Sprite_Part from package 00012963.upk
 Loading Texture2D Electric_Sprite_001 from package 00012963.upk
 Loading Texture2D Noise_011 from package 00012963.upk
-Loading Texture2D Noise_010 from package 00012963.upk
 Loading Texture2D Gradient_002 from package 00012963.upk
 Loading Texture2D Noise_Glass_000 from package 00012963.upk
 Loading Texture2D Glow_008 from package 00012963.upk
@@ -158,7 +174,149 @@ Loading Texture2D Electric1_sample_003 from package 00012963.upk
 Loading Texture2D Electric1_sample_004 from package 00012963.upk
 Loading Texture2D Electric1_sample_005 from package 00012963.upk
 Loading Texture2D Electric1_Sample_006 from package 00012963.upk
-Loaded in 1.1 sec, 3812 allocs, 12.02 MBytes serialized in 63013 calls.
+Loaded in 0.91 sec, 4117 allocs, 12.44 MBytes serialized in 73721 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: AddMat_Lightning
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'Env_Fx_Storm'
+        ReferencedTextures[1] = Texture2D'Electric_tile'
+        ReferencedTextures[2] = Texture2D'Electric_Damage_02'
+        ReferencedTextures[3] = Texture2D'Noise_Wave_000'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: AncientMechDragon_Electric_Decal_matM
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'Electric_tile'
+        ReferencedTextures[1] = Texture2D'Noise_010'
+        ReferencedTextures[2] = Texture2D'Gradient_Beam_007'
+        ReferencedTextures[3] = Texture2D'Noise_Plazma_000'
+        ReferencedTextures[4] = Texture2D'Gradient_001'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: AncientMechDragon_Electric_Decal_matM02
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] = { Texture2D'Noise_010', Texture2D'Electric_tile', Texture2D'Gradient_Beam_007' }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: AncientMechDragon_Electric_Decal_matM03_sine
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'Electric_tile'
+        ReferencedTextures[1] = Texture2D'Noise_010'
+        ReferencedTextures[2] = Texture2D'Gradient_Beam_007'
+        ReferencedTextures[3] = Texture2D'Noise_Plazma_000'
+        ReferencedTextures[4] = Texture2D'Gradient_001'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: AncientMechDragon_LightningSmash_Area
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'Electric_tile'
+        ReferencedTextures[1] = Texture2D'Electric_Damage_02'
+        ReferencedTextures[2] = Texture2D'lava01'
+        ReferencedTextures[3] = Texture2D'SystemDecal_Shape_donut_001_02'
+        ReferencedTextures[4] = Texture2D'SystemDecal_Circle_ring'
+    }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: BladeMaster_Electric_Decal
+
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[5] =
+    {
+        ReferencedTextures[0] = Texture2D'Electric_tile'
+        ReferencedTextures[1] = Texture2D'Noise_010'
+        ReferencedTextures[2] = Texture2D'Gradient_Beam_007'
+        ReferencedTextures[3] = Texture2D'Noise_Plazma_000'
+        ReferencedTextures[4] = Texture2D'Gradient_001'
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
 
 Object info:
 ============
@@ -794,6 +952,24 @@ ClassName: Material3 ObjectName: Lightning_Sprite001_Part
 Object info:
 ============
 ClassName: Material3 ObjectName: Lightning_Sprite002_MatM
+
+    TwoSided = true
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'Electric_Sprite_001' }
+    BlendMode = BLEND_Additive (3)
+    OpacityMaskClipValue = 0.333
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+
+Object info:
+============
+ClassName: Material3 ObjectName: Lightning_Sprite002a_MatB
 
     TwoSided = true
     bDisableDepthTest = false

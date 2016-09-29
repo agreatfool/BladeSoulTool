@@ -1,0 +1,76 @@
+Found 27000 game files (27 skipped)
+Loading package: 00034237.upk Ver: 573/1 Engine: 4205 Names: 59 Exports: 5 Imports: 9 Game: 801A
+Loading SkeletalMesh3 040212_GonM from package 00034237.upk
+Loading package: 00034236.upk Ver: 573/1 Engine: 4205 Names: 104 Exports: 2 Imports: 24 Game: 801A
+Loading MaterialInstanceConstant col1 from package 00034236.upk
+Loading package: 00018632.upk Ver: 573/1 Engine: 4205 Names: 28 Exports: 2 Imports: 2 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
+Loading MaterialInstanceConstant col1_1 from package 00034236.upk
+Loading package: 00034048.upk Ver: 573/1 Engine: 4205 Names: 38 Exports: 10 Imports: 2 Game: 801A
+Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
+Loading Texture2D GonM_028_N from package 00018632.upk
+WARNING: BoolProperty "UTexture2D::bDisableLoadSwitch" was not found
+Loading Texture2D GonM_028_D from package 00018632.upk
+Loading Material3 Beard_Fur from package 00002620.upk
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
+Loading Texture2D 040212_JinM_col1_N from package 00034048.upk
+Loading Texture2D 040212_JinM_col1_M from package 00034048.upk
+Loading Texture2D 040212_JinM_col1_D from package 00034048.upk
+Loading Texture2D 040212_JinM_col1_S from package 00034048.upk
+Loading TextureCube lenscube_a from package 00002640.upk
+Loading Material3 Basic_local_reflect from package 00002620.upk
+Loading Texture2D check_n from package 00002620.upk
+Loading Texture2D Noise_Glass_000 from package 00012963.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
+Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
+Loading Texture2D check from package 00002620.upk
+Loading Texture2D Gradient_Line_003 from package 00012963.upk
+Loading Texture2D CubemapFace0 from package 00002640.upk
+Loading Texture2D CubemapFace1 from package 00002640.upk
+Loading Texture2D CubemapFace2 from package 00002640.upk
+Loading Texture2D CubemapFace3 from package 00002640.upk
+Loading Texture2D CubemapFace4 from package 00002640.upk
+Loading Texture2D CubemapFace5 from package 00002640.upk
+Loaded in 0.11 sec, 3021 allocs, 2.27 MBytes serialized in 182700 calls.
+
+Object info:
+============
+ClassName: SkeletalMesh3 ObjectName: 040212_GonM
+
+    LODInfo[1] =
+    {
+        LODInfo[0] =
+        {
+            DisplayFactor = 0
+            LODHysteresis = 0.02
+            LODMaterialMap[0] = {}
+            bEnableShadowCasting[2] = { true, true }
+        }
+    }
+    Sockets[0] = {}
+    bHasVertexColors = false
+    EnableTwistBoneFixers = true
+    EnableClavicleFixer = true
+    Materials[2] = { MaterialInstanceConstant'col1', MaterialInstanceConstant'col1_1' }
+
+
+    Lods[1] =
+    {
+        Lods[0] =
+        {
+            Sections[2] =
+            {
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=230 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1_1', FirstIndex=690, NumFaces=579 }
+            }
+            NumVerts = 509
+            IndexCount = 2427
+            NumTexCoords = 1
+        }
+    }
+    LodCount = 1
+    MeshOrigin = { X=-0, Y=-0, Z=-0 }
+    MeshScale = { X=1, Y=1, Z=1 }
+    RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
+    BoneCount = 9

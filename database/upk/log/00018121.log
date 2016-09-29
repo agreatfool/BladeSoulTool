@@ -1,13 +1,12 @@
-Found 21974 game files (0 skipped)
-Loading package: 00018121.upk Ver: 573/1 Engine: 4205 Names: 239 Exports: 292 Imports: 18 Game: 801A
-Loading SkeletalMesh3 Monster_Human_AncientAdamantineMan_col1 from package 00018121.upk
+Found 27000 game files (27 skipped)
+Loading package: 00018121.upk Ver: 573/1 Engine: 4205 Names: 214 Exports: 290 Imports: 16 Game: 801A
+Loading SkeletalMesh3 AncientAdamantineMan from package 00018121.upk
 WARNING: ObjectProperty "USkeletalMesh3::PlaySoundSet" was not found
 WARNING: FloatProperty "USkeletalMesh3::AnimNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::NormalNameHeight" was not found
 WARNING: FloatProperty "USkeletalMesh3::LowNameHeight" was not found
-Loading package: 00018120.upk Ver: 573/1 Engine: 4205 Names: 91 Exports: 1 Imports: 20 Game: 801A
+Loading package: 00018120.upk Ver: 573/1 Engine: 4205 Names: 201 Exports: 426 Imports: 52 Game: 801A
 Loading SkeletalMeshSocket SkeletalMeshSocket_32 from package 00018121.upk
-WARNING: ObjectProperty "USkeletalMeshSocket::PreviewSkelMesh" was not found
 Loading SkeletalMeshSocket SkeletalMeshSocket_33 from package 00018121.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_34 from package 00018121.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_35 from package 00018121.upk
@@ -19,17 +18,20 @@ Loading SkeletalMeshSocket SkeletalMeshSocket_40 from package 00018121.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_41 from package 00018121.upk
 Loading SkeletalMeshSocket SkeletalMeshSocket_42 from package 00018121.upk
 Loading MaterialInstanceConstant col1 from package 00018120.upk
-Loading package: 00018119.upk Ver: 573/1 Engine: 4205 Names: 33 Exports: 5 Imports: 2 Game: 801A
+Loading package: 00018119.upk Ver: 573/1 Engine: 4205 Names: 35 Exports: 7 Imports: 2 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D Monster_Human_AncientAdamantineMan_col1_N from package 00018119.upk
 Loading Texture2D Monster_Human_AncientAdamantineMan_col1_M from package 00018119.upk
 Loading Texture2D Monster_Human_AncientAdamantineMan_col1_D from package 00018119.upk
+Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Monster_Human_AncientAdamantineMan_col1_S from package 00018119.upk
 Loading TextureCube cube_cst from package 00002640.upk
 Loading Texture2D Monster_Human_AncientAdamantineMan_col1_E from package 00018119.upk
-Loading Material3 Basic from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading Texture2D Monster_Human_AncientAdamantineMan_col1_FX from package 00018120.upk
+Loading Texture2D Monster_Human_AncientAdamantineMan_col1_FX2 from package 00018120.upk
+Loading Material3 Emichange_Basic_FX from package 00018120.upk
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -38,15 +40,14 @@ Loading Texture2D CubemapFace4 from package 00002640.upk
 Loading Texture2D CubemapFace5 from package 00002640.upk
 Loading Texture2D check_n from package 00002620.upk
 Loading Texture2D check from package 00002620.upk
-Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loaded in 0.16 sec, 3092 allocs, 5.22 MBytes serialized in 400539 calls.
+Loaded in 0.19 sec, 3275 allocs, 5.29 MBytes serialized in 409087 calls.
 
 Object info:
 ============
-ClassName: SkeletalMesh3 ObjectName: Monster_Human_AncientAdamantineMan_col1
+ClassName: SkeletalMesh3 ObjectName: AncientAdamantineMan
 
     LODInfo[1] =
     {
@@ -60,17 +61,17 @@ ClassName: SkeletalMesh3 ObjectName: Monster_Human_AncientAdamantineMan_col1
     }
     Sockets[11] =
     {
-        Sockets[0] = SkeletalMeshSocket'Monster_Human_AncientAdamantineMan_col1.SkeletalMeshSocket_32'
-        Sockets[1] = SkeletalMeshSocket'Monster_Human_AncientAdamantineMan_col1.SkeletalMeshSocket_33'
-        Sockets[2] = SkeletalMeshSocket'Monster_Human_AncientAdamantineMan_col1.SkeletalMeshSocket_34'
-        Sockets[3] = SkeletalMeshSocket'Monster_Human_AncientAdamantineMan_col1.SkeletalMeshSocket_35'
-        Sockets[4] = SkeletalMeshSocket'Monster_Human_AncientAdamantineMan_col1.SkeletalMeshSocket_36'
-        Sockets[5] = SkeletalMeshSocket'Monster_Human_AncientAdamantineMan_col1.SkeletalMeshSocket_37'
-        Sockets[6] = SkeletalMeshSocket'Monster_Human_AncientAdamantineMan_col1.SkeletalMeshSocket_38'
-        Sockets[7] = SkeletalMeshSocket'Monster_Human_AncientAdamantineMan_col1.SkeletalMeshSocket_39'
-        Sockets[8] = SkeletalMeshSocket'Monster_Human_AncientAdamantineMan_col1.SkeletalMeshSocket_40'
-        Sockets[9] = SkeletalMeshSocket'Monster_Human_AncientAdamantineMan_col1.SkeletalMeshSocket_41'
-        Sockets[10] = SkeletalMeshSocket'Monster_Human_AncientAdamantineMan_col1.SkeletalMeshSocket_42'
+        Sockets[0] = SkeletalMeshSocket'AncientAdamantineMan.SkeletalMeshSocket_32'
+        Sockets[1] = SkeletalMeshSocket'AncientAdamantineMan.SkeletalMeshSocket_33'
+        Sockets[2] = SkeletalMeshSocket'AncientAdamantineMan.SkeletalMeshSocket_34'
+        Sockets[3] = SkeletalMeshSocket'AncientAdamantineMan.SkeletalMeshSocket_35'
+        Sockets[4] = SkeletalMeshSocket'AncientAdamantineMan.SkeletalMeshSocket_36'
+        Sockets[5] = SkeletalMeshSocket'AncientAdamantineMan.SkeletalMeshSocket_37'
+        Sockets[6] = SkeletalMeshSocket'AncientAdamantineMan.SkeletalMeshSocket_38'
+        Sockets[7] = SkeletalMeshSocket'AncientAdamantineMan.SkeletalMeshSocket_39'
+        Sockets[8] = SkeletalMeshSocket'AncientAdamantineMan.SkeletalMeshSocket_40'
+        Sockets[9] = SkeletalMeshSocket'AncientAdamantineMan.SkeletalMeshSocket_41'
+        Sockets[10] = SkeletalMeshSocket'AncientAdamantineMan.SkeletalMeshSocket_42'
     }
     bHasVertexColors = false
     EnableTwistBoneFixers = true
@@ -84,10 +85,10 @@ ClassName: SkeletalMesh3 ObjectName: Monster_Human_AncientAdamantineMan_col1
         {
             Sections[2] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=8676 }
-                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=26028, NumFaces=272 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=8429 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=25287, NumFaces=519 }
             }
-            NumVerts = 6162
+            NumVerts = 6216
             IndexCount = 26844
             NumTexCoords = 1
         }
@@ -96,7 +97,7 @@ ClassName: SkeletalMesh3 ObjectName: Monster_Human_AncientAdamantineMan_col1
     MeshOrigin = { X=-0, Y=-0, Z=-0 }
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
-    BoneCount = 127
+    BoneCount = 105
 
 Object info:
 ============

@@ -1,4 +1,4 @@
-Found 21974 game files (0 skipped)
+Found 27000 game files (27 skipped)
 Loading package: 00024143.upk Ver: 573/1 Engine: 4205 Names: 223 Exports: 154 Imports: 22 Game: 801A
 Loading SkeletalMesh3 70006_JinF from package 00024143.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
@@ -17,7 +17,7 @@ WARNING: StructProperty "USkeletalMesh3::HandRatio" was not found
 WARNING: ByteProperty "USkeletalMesh3::CommonPhysicsUseFlag" was not found
 Loading package: 00024142.upk Ver: 573/1 Engine: 4205 Names: 92 Exports: 1 Imports: 20 Game: 801A
 Loading MaterialInstanceConstant col1 from package 00024142.upk
-Loading package: 00024141.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
+Loading package: 00024141.upk Ver: 573/1 Engine: 4205 Names: 36 Exports: 8 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D 70006_JinF_col1_N from package 00024141.upk
@@ -27,7 +27,7 @@ Loading Texture2D 70006_JinF_col1_S from package 00024141.upk
 Loading TextureCube lenscube_c from package 00002640.upk
 Loading Texture2D check from package 00002620.upk
 Loading Material3 Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -40,7 +40,7 @@ Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.15 sec, 3053 allocs, 3.05 MBytes serialized in 451582 calls.
+Loaded in 0.14 sec, 3085 allocs, 3.04 MBytes serialized in 446382 calls.
 
 Object info:
 ============
@@ -76,11 +76,11 @@ ClassName: SkeletalMesh3 ObjectName: 70006_JinF
         {
             Sections[2] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=7001 }
-                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=21003, NumFaces=33 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=6915 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=20745, NumFaces=33 }
             }
-            NumVerts = 5414
-            IndexCount = 21102
+            NumVerts = 5241
+            IndexCount = 20844
             NumTexCoords = 1
         }
         Lods[1] =

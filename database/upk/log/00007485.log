@@ -1,4 +1,4 @@
-Found 21974 game files (0 skipped)
+Found 27000 game files (27 skipped)
 Loading package: 00007485.upk Ver: 573/1 Engine: 4205 Names: 41 Exports: 13 Imports: 2 Game: 801A
 Loading Texture2D Cloth_80014_JinM_D from package 00007485.upk
 Loading Texture2D Cloth_80014_JinM_D2 from package 00007485.upk
@@ -13,7 +13,7 @@ Loading Texture2D JinM_80014_col4_s from package 00007485.upk
 Loading Texture2D Metal_diffuse from package 00007485.upk
 Loading Texture2D Metal_Mask from package 00007485.upk
 Loading Texture2D Metal_Specular from package 00007485.upk
-Loaded in 0.11 sec, 481 allocs, 2.29 MBytes serialized in 2998 calls.
+Loaded in 0.098 sec, 484 allocs, 3.04 MBytes serialized in 3032 calls.
 
 Object info:
 ============
@@ -79,13 +79,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: Cloth_80014_JinM_N
 
-    SizeX = 1024
-    SizeY = 512
+    SizeX = 2048
+    SizeY = 1024
     Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 11
     bForcePVRTC4 = false
     UnpackMin[4] = { -1, -1, -1, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

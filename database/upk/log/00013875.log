@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00013875.upk Ver: 573/1 Engine: 4205 Names: 40 Exports: 9 Imports: 4 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00013875.upk Ver: 573/1 Engine: 4205 Names: 44 Exports: 13 Imports: 4 Game: 801A
 Loading Texture2D 990033_NaHanWind_col1_d from package 00013875.upk
 Loading Texture2D 990033_NaHanWind_col1_FX_Line from package 00013875.upk
 Loading Texture2D 990033_NaHanWind_col1_m from package 00013875.upk
@@ -7,7 +7,11 @@ Loading Texture2D 990033_NaHanWind_col1_n from package 00013875.upk
 Loading Texture2D 990033_NaHanWind_col1_s from package 00013875.upk
 Loading Texture2D 990033_NaHanWind_col2_D from package 00013875.upk
 Loading Texture2D 990033_NaHanWind_col2_s from package 00013875.upk
-Loaded in 0.05 sec, 267 allocs, 0.83 MBytes serialized in 1658 calls.
+Loading Texture2D 990033_NaHanWind_col9_d from package 00013875.upk
+Loading Texture2D 990033_NaHanWind_col9_M from package 00013875.upk
+Loading Texture2D 990033_NaHanWind_col9_N from package 00013875.upk
+Loading Texture2D 990033_NaHanWind_col9_S from package 00013875.upk
+Loaded in 0.062 sec, 378 allocs, 1.23 MBytes serialized in 2450 calls.
 
 Object info:
 ============
@@ -106,6 +110,66 @@ ClassName: Texture2D ObjectName: 990033_NaHanWind_col2_s
     SizeX = 512
     SizeY = 512
     Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990033_NaHanWind_col9_d
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990033_NaHanWind_col9_M
+
+    SizeX = 16
+    SizeY = 16
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 4
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990033_NaHanWind_col9_N
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 9
+    bForcePVRTC4 = false
+    UnpackMin[4] = { -1, -1, -1, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: 990033_NaHanWind_col9_S
+
+    SizeX = 512
+    SizeY = 512
+    Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None

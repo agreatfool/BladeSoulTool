@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00003436.upk Ver: 573/1 Engine: 4205 Names: 45 Exports: 16 Imports: 2 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00003436.upk Ver: 573/1 Engine: 4205 Names: 44 Exports: 16 Imports: 2 Game: 801A
 Loading Texture2D kunF_face_D from package 00003436.upk
 Loading Texture2D kunF_face_D002 from package 00003436.upk
 Loading Texture2D kunF_face_D003 from package 00003436.upk
@@ -16,7 +16,7 @@ Loading Texture2D kunF_face_n005 from package 00003436.upk
 Loading Texture2D kunF_face_n006 from package 00003436.upk
 Loading Texture2D kunF_face_n008 from package 00003436.upk
 Loading Texture2D kunF_face_s from package 00003436.upk
-Loaded in 0.12 sec, 584 allocs, 1.54 MBytes serialized in 3776 calls.
+Loaded in 0.1 sec, 577 allocs, 1.22 MBytes serialized in 3753 calls.
 
 Object info:
 ============
@@ -97,13 +97,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: kunF_face_D006
 
-    SizeX = 1024
-    SizeY = 512
+    SizeX = 512
+    SizeY = 256
     Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }
@@ -112,13 +112,13 @@ Object info:
 ============
 ClassName: Texture2D ObjectName: kunF_face_D008
 
-    SizeX = 1024
-    SizeY = 512
+    SizeX = 512
+    SizeY = 256
     Format = PF_DXT1 (5)
     AddressX = TA_Wrap (0)
     AddressY = TA_Wrap (0)
     TextureFileCacheName = None
-    MipTailBaseIdx = 10
+    MipTailBaseIdx = 9
     bForcePVRTC4 = false
     UnpackMin[4] = { 0, 0, 0, 0 }
     UnpackMax[4] = { 1, 1, 1, 1 }

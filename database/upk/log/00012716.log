@@ -1,5 +1,5 @@
-Found 16186 game files (0 skipped)
-Loading package: 00012716.upk Ver: 573/1 Engine: 4205 Names: 233 Exports: 185 Imports: 20 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00012716.upk Ver: 573/1 Engine: 4205 Names: 231 Exports: 177 Imports: 20 Game: 801A
 Loading SkeletalMesh3 60023_JinF from package 00012716.upk
 WARNING: FloatProperty "USkeletalMesh3::AutoScale" was not found
 WARNING: FloatProperty "USkeletalMesh3::EffectScale" was not found
@@ -19,14 +19,14 @@ Loading package: 00012715.upk Ver: 573/1 Engine: 4205 Names: 86 Exports: 1 Impor
 Loading MaterialInstanceConstant col1 from package 00012715.upk
 Loading package: 00012714.upk Ver: 573/1 Engine: 4205 Names: 32 Exports: 4 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
-Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 500 Exports: 5733 Imports: 89 Game: 801A
+Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
 Loading Texture2D Cloth_60023_JinF_col1_N from package 00012714.upk
 Loading Texture2D Cloth_60023_JinF_col1_M from package 00012714.upk
 Loading Texture2D Cloth_60023_JinF_col1_D from package 00012714.upk
 Loading Texture2D Cloth_60023_JinF_col1_S from package 00012714.upk
 Loading TextureCube lenscube from package 00002640.upk
 Loading Material3 Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1199 Exports: 1162 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -40,7 +40,7 @@ Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
 Loading Texture2D check from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.12 sec, 2958 allocs, 2.25 MBytes serialized in 384722 calls.
+Loaded in 0.12 sec, 3086 allocs, 2.35 MBytes serialized in 402828 calls.
 
 Object info:
 ============
@@ -59,8 +59,8 @@ ClassName: SkeletalMesh3 ObjectName: 60023_JinF
         {
             DisplayFactor = 0.25
             LODHysteresis = 0.02
-            LODMaterialMap[1] = { 0 }
-            bEnableShadowCasting[1] = { true }
+            LODMaterialMap[2] = { 0, 0 }
+            bEnableShadowCasting[2] = { true, true }
         }
     }
     Sockets[0] = {}
@@ -76,21 +76,22 @@ ClassName: SkeletalMesh3 ObjectName: 60023_JinF
         {
             Sections[2] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=5299 }
-                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=15897, NumFaces=493 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=5331 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=15993, NumFaces=461 }
             }
-            NumVerts = 4394
+            NumVerts = 4396
             IndexCount = 17376
             NumTexCoords = 1
         }
         Lods[1] =
         {
-            Sections[1] =
+            Sections[2] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1737 }
+                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1700 }
+                Sections[1] = { Material=MaterialInstanceConstant'col1', FirstIndex=5100, NumFaces=55 }
             }
-            NumVerts = 1692
-            IndexCount = 5211
+            NumVerts = 1705
+            IndexCount = 5265
             NumTexCoords = 1
         }
     }
@@ -98,4 +99,4 @@ ClassName: SkeletalMesh3 ObjectName: 60023_JinF
     MeshOrigin = { X=-0, Y=-0, Z=-0 }
     MeshScale = { X=1, Y=1, Z=1 }
     RotOrigin = { Yaw=0, Pitch=0, Roll=0 }
-    BoneCount = 108
+    BoneCount = 106

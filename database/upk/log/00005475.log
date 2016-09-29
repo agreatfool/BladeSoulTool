@@ -1,4 +1,4 @@
-Found 21974 game files (0 skipped)
+Found 27000 game files (27 skipped)
 Loading package: 00005475.upk Ver: 573/1 Engine: 4205 Names: 207 Exports: 117 Imports: 21 Game: 801A
 Loading SkeletalMesh3 51002_JinM from package 00005475.upk
 WARNING: ObjectProperty "USkeletalMesh3::MeshFactorSet" was not found
@@ -13,18 +13,19 @@ WARNING: ArrayProperty "USkeletalMesh3::MeshScaleRatio" was not found
 WARNING: StructProperty "USkeletalMesh3::HeightRatio" was not found
 WARNING: StructProperty "USkeletalMesh3::HandRatio" was not found
 WARNING: ByteProperty "USkeletalMesh3::CommonPhysicsUseFlag" was not found
-Loading package: 00005474.upk Ver: 573/1 Engine: 4205 Names: 87 Exports: 2 Imports: 24 Game: 801A
-Loading MaterialInstanceConstant col1 from package 00005474.upk
+Loading package: 00013413.upk Ver: 573/1 Engine: 4205 Names: 93 Exports: 1 Imports: 21 Game: 801A
+Loading MaterialInstanceConstant col2 from package 00013413.upk
 Loading package: 00005473.upk Ver: 573/1 Engine: 4205 Names: 36 Exports: 8 Imports: 2 Game: 801A
 Loading package: 00002640.upk Ver: 573/1 Engine: 4205 Names: 340 Exports: 556 Imports: 5 Game: 801A
 Loading package: 00002620.upk Ver: 573/1 Engine: 4205 Names: 560 Exports: 6612 Imports: 96 Game: 801A
-Loading Texture2D JinM_51002_Body5_N from package 00005473.upk
-Loading Texture2D JinM_51002_Body5_M from package 00005473.upk
-Loading Texture2D JinM_51002_Body5_D from package 00005473.upk
-Loading Texture2D JinM_51002_Body5_S from package 00005473.upk
+Loading Texture2D JinM_51002_Body5_N2 from package 00005473.upk
+Loading Texture2D JinM_51002_Body5_M2 from package 00005473.upk
+Loading Texture2D JinM_51002_Body5_D2 from package 00005473.upk
+Loading Texture2D JinM_51002_Body5_S2 from package 00005473.upk
 Loading TextureCube cube_orb from package 00002640.upk
+Loading Texture2D check from package 00002620.upk
 Loading Material3 Body from package 00002620.upk
-Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1236 Exports: 1211 Imports: 10 Game: 801A
+Loading package: 00012963.upk Ver: 573/1 Engine: 4205 Names: 1264 Exports: 1240 Imports: 10 Game: 801A
 Loading Texture2D CubemapFace0 from package 00002640.upk
 Loading Texture2D CubemapFace1 from package 00002640.upk
 Loading Texture2D CubemapFace2 from package 00002640.upk
@@ -36,9 +37,8 @@ Loading Texture2D Noise_Glass_000 from package 00012963.upk
 Loading Texture2D Smoke_Pattern_001 from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask_TEST from package 00012963.upk
 Loading Texture2D Gradient_Wipe_BurnOut_Mask from package 00012963.upk
-Loading Texture2D check from package 00002620.upk
 Loading Texture2D Gradient_Line_003 from package 00012963.upk
-Loaded in 0.14 sec, 3033 allocs, 2.34 MBytes serialized in 429121 calls.
+Loaded in 0.18 sec, 3068 allocs, 2.40 MBytes serialized in 430321 calls.
 
 Object info:
 ============
@@ -65,7 +65,7 @@ ClassName: SkeletalMesh3 ObjectName: 51002_JinM
     bHasVertexColors = false
     EnableTwistBoneFixers = true
     EnableClavicleFixer = true
-    Materials[1] = { MaterialInstanceConstant'col1' }
+    Materials[1] = { MaterialInstanceConstant'col2' }
 
 
     Lods[2] =
@@ -74,7 +74,7 @@ ClassName: SkeletalMesh3 ObjectName: 51002_JinM
         {
             Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=6245 }
+                Sections[0] = { Material=MaterialInstanceConstant'col2', FirstIndex=0, NumFaces=6245 }
             }
             NumVerts = 5181
             IndexCount = 18735
@@ -84,7 +84,7 @@ ClassName: SkeletalMesh3 ObjectName: 51002_JinM
         {
             Sections[1] =
             {
-                Sections[0] = { Material=MaterialInstanceConstant'col1', FirstIndex=0, NumFaces=1855 }
+                Sections[0] = { Material=MaterialInstanceConstant'col2', FirstIndex=0, NumFaces=1855 }
             }
             NumVerts = 1862
             IndexCount = 5565

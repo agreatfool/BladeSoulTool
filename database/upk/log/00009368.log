@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00009368.upk Ver: 573/1 Engine: 4205 Names: 261 Exports: 162 Imports: 85 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00009368.upk Ver: 573/1 Engine: 4205 Names: 266 Exports: 167 Imports: 85 Game: 801A
 Loading Material3 animation from package 00009368.upk
 Loading Material3 FlipBookMaterial from package 00009368.upk
 WARNING: Unknown class "TextureFlipBook" for object "FlipBook"
@@ -30,6 +30,9 @@ Loading Texture2D LoadingTip_Arena from package 00009368.upk
 Loading Texture2D LoadingTip_Duel from package 00009368.upk
 Loading Texture2D LoadingTip_Duel_Icon_001 from package 00009368.upk
 Loading Texture2D LoadingTip_Duel_Icon_002 from package 00009368.upk
+Loading Texture2D LoadingTip_Duel_Icon_03 from package 00009368.upk
+Loading Texture2D LoadingTip_Duel_Icon_04 from package 00009368.upk
+Loading Texture2D LoadingTip_Duel_Icon_05 from package 00009368.upk
 Loading Texture2D loding_roll from package 00009368.upk
 Loading Texture2D nowloading from package 00009368.upk
 Loading Texture2D nowloading1 from package 00009368.upk
@@ -38,7 +41,7 @@ Loading Texture2D nowloading3 from package 00009368.upk
 Loading Texture2D nowloading4 from package 00009368.upk
 Loading Texture2D nowloading5 from package 00009368.upk
 Loading Texture2D outro1_texture from package 00009368.upk
-Loaded in 0.098 sec, 480 allocs, 15.71 MBytes serialized in 8179 calls.
+Loaded in 0.085 sec, 500 allocs, 15.82 MBytes serialized in 8479 calls.
 
 Object info:
 ============
@@ -514,6 +517,51 @@ ClassName: Texture2D ObjectName: LoadingTip_Duel_Icon_001
 Object info:
 ============
 ClassName: Texture2D ObjectName: LoadingTip_Duel_Icon_002
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: LoadingTip_Duel_Icon_03
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: LoadingTip_Duel_Icon_04
+
+    SizeX = 256
+    SizeY = 256
+    Format = PF_DXT5 (7)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+
+Object info:
+============
+ClassName: Texture2D ObjectName: LoadingTip_Duel_Icon_05
 
     SizeX = 256
     SizeY = 256

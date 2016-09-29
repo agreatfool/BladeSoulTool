@@ -1,5 +1,5 @@
-Found 21974 game files (0 skipped)
-Loading package: 00022446.upk Ver: 573/1 Engine: 4205 Names: 514 Exports: 601 Imports: 154 Game: 801A
+Found 27000 game files (27 skipped)
+Loading package: 00022446.upk Ver: 573/1 Engine: 4205 Names: 522 Exports: 618 Imports: 157 Game: 801A
 Loading AnimSet ChainKnuckleBanditA_Animset from package 00022446.upk
 WARNING: BoolProperty "UAnimSet::bServiced" was not found
 WARNING: ArrayProperty "UAnimSet::NonAniScaleBoneNames" was not found
@@ -575,6 +575,10 @@ Loading AnimNotify_Sound AnimNotify_Sound_4 from package 00022446.upk
 WARNING: FloatProperty "UAnimNotify_Sound::SoundVolume" was not found
 Loading AnimNotify_Sound AnimNotify_Sound_5 from package 00022446.upk
 WARNING: FloatProperty "UAnimNotify_Sound::SoundVolume" was not found
+Loading AnimSequence AnimSequence_66 from package 00022446.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimNotify_Sound AnimNotify_Sound_0 from package 00022446.upk
 Loading AnimSequence AnimSequence_8 from package 00022446.upk
 WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
@@ -622,7 +626,13 @@ WARNING: BoolProperty "UAnimSequence::bServiced" was not found
 Loading AnimSequence AnimSequence_37 from package 00022446.upk
 WARNING: BoolProperty "UAnimSequence::bNotUseIgnoreBoneInfo" was not found
 WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+Loading AnimSequence AnimSequence_65 from package 00022446.upk
+WARNING: BoolProperty "UAnimSequence::bIgnoreAimControl" was not found
+WARNING: BoolProperty "UAnimSequence::bServiced" was not found
+WARNING: ByteProperty "UAnimSequence::NamePlateControlMode" was not found
 Error: Command failed: ******** 00022446 ********
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
+*** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
 *** unknown member ACF_ZOnlyRLE of enum AnimationCompressionFormat
