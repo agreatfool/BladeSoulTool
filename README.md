@@ -117,7 +117,90 @@
 * 请在正常的改模步骤之后点击该按钮，软件将会向服务器发送一条错误报告
 * 正常的改模步骤：选择原始模型，选择目标模型，点击替换按钮，等待成功提示框弹出
 
-## 5. 申明
+## 5. 如何更新工具数据库
+### 5.1 前言
+因个人原因，我对项目的维护周期间隔会比较长，无法很好兼顾到剑灵每一个版本的更新。某些急需服装数据的玩家就有自行更新数据库的需求，以获得第一时间的换装数据。因此我会在这里附上如何进行该工具的数据更新的教程，以便有需求的玩家可以自行操作。
+
+但该工具的更新工作我没有做比较友好的界面封装，都是执行原始的命令行脚本，因此强烈建议没有程序经验的玩家`不要`自行更新。如果一定要更新的话，请备份好database文件夹下的所有内容，以便出了问题可以还原。
+
+### 5.2 文件结构
+所有和数据及截图相关的内容都存放在工具根目录的`database`文件夹下：
+
+* attach：饰品
+	* data：数据资料
+	* pics：模型截图，半成品阶段，未压缩（一般是空的）
+	* pics-cps：模型截图，成品，压缩完成
+* costume：服装
+	* data：数据资料
+	* pics：模型截图，半成品阶段，未压缩（一般是空的）
+	* pics-cps：模型截图，成品，压缩完成
+* icon：图标
+	* png 图标，半成品，未压缩（一般是空的）
+	* png-cps 图标，成品，压缩完成
+	* tga 从客户端解包出来的 tga格式图标文件（一般是空的）
+* upk：unreal模型数据
+	* data：模型解包整理后的数据
+	* log：模型解包分析的原始数据
+* weapon：武器
+	* data：数据资料
+	* pics：模型截图，半成品阶段，未压缩（一般是空的）
+	* pics-cps：模型截图，成品，压缩完成
+
+### 5.3 操作列表
+该软件的实际操作行为都以JavaScript编写，使用Grunt作为运行执行容器，目前可执行的操作行为有以下：
+
+* build_preparer：删除老的截图（pics文件夹），创建截图文件夹
+* icon_dumper：将游戏中的icon解包，并将资源从tga转换成png，这一步中不对图片进行压缩
+* upk_preparer：将腾讯文件夹下的资源文件拷贝到韩版的主目录下，保证后续只需要读一个文件夹，然后解包xml.dat
+* upk_scanner：扫描所有的客户端upk资源文件，并将解析的内容输出成log格式文件，一个UPK一个日志
+* upk_parser：分析之前扫描出来的客户端upk日志文件，将内容整理分类，写成数据库json
+* shooter：将模型拍照，生成缩略图（pics文件夹）
+* png_optimizer：将之前拍照的缩略图和图标图像文件进行压缩，缩减体积（pics-cps文件夹）
+* compress：打包工具成zip包
+
+记住这些名字和用途，后面有用
+
+### 5.4 更新操作
+* 更新剑灵客户端到最新版本，或重新安装客户端
+* 保证客户端里的所有upk模型文件都是原始的，不要保留任何已经修改的模型，否则会污染后面做的数据库
+* 可能的话，备份剑灵游戏根目录的`contents`文件夹
+* 使用剑灵神灯去秋裤
+* 编辑工具根目录的`run.bat`文件
+* 将`grunt %action% --stack --verbose & pause > nul`中的`%action%`改成5.3所列的操作名
+* 按5.3列出的顺序一步步执行
+* 将图片资料拷贝到VS文件夹下（这样本地才可见）
+	* 拷贝`database/attach/pics-cps`下的文件到`VS_GUI/BladeSoulTool/tmp/attach`
+	* 拷贝`database/costume/pics-cps`下的文件到`VS_GUI/BladeSoulTool/tmp/costume`
+	* 拷贝`database/weapon/pics-cps`下的文件到`VS_GUI/BladeSoulTool/tmp/weapon `
+	* 拷贝`database/icon/png-cps`下的文件到`VS_GUI/BladeSoulTool/tmp/icon`
+
+这样本机的更新就完成了，可以使用最新的数据库了
+
+另，如果有Linux/Unix机器的话，可以使用根目录的`bladesoultool_optipng.sh`脚本进行png图片的压缩工作，效率会更高（免去`png_optimizer`这步）。使用的时候请自行改动脚本内的路径地址。
+
+### 5.5 操作正确执行的截图
+* build_preparer：![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/action-01-build_preparer.png)
+* icon_dumper：![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/action-02-icon_dumper.png)
+* upk_preparer：![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/action-03-upk_preparer.png)
+* upk_scanner：![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/action-04-upk_scanner.png)
+* upk_parser：![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/action-05-upk_parser.png)
+* shooter：无，只要以`Done, without errors.`结尾即表示无错
+* png_optimizer：无，只要以`Done, without errors.`结尾即表示无错
+
+### 5.6 发布
+这里简单列下如果需要进行发布的话，需要做些什么：
+
+* 首先完成5.4所列的所有内容
+* 编辑README文档，更新改动内容描述
+* 更新`config/setting.json`文件中的`version`（客户端的版本号）
+* 在命令行下运行`grunt compress`创建工具的压缩包，解压并附带上密码重新压缩一遍，命名为`BladeSoulTool_vx.x.x.zip`
+* 将`VS_GUI/BladeSoulTool/tmp`文件夹压缩，命名为`BladeSoulTool_ImageResources_vx.x.x.zip`
+* 将这两个文件上传到网盘上
+* 更新网站帖子，更新改动内容描述
+* 编辑`VERSION.txt`文件内的版本号，并提交到git
+* 在上面这步完成后，客户端就会收到通知（正式发布行为），因此需要确定好上面的所有内容之后才执行这步操作
+
+## 6. 申明
 发布申明：<br/>
 作者：Jonathan，论坛id：xenojoshua，支持团队：17173剑灵模型组<br />
 我只会在17173发布，其他任何地方提供的下载皆为转载！<br />
@@ -132,13 +215,13 @@
 License：<br />
 该软件以GPLv2许可发布分享，他人修改代码后不得闭源，且新增代码必须使用相同的许可证。
 
-## 6. FAQ & Tips
+## 7. FAQ & Tips
 * 不要使用那些col为col20的模型
 
-## 7. 后续工作
+## 8. 后续工作
 * 添加收藏列表，方便快速查找自己需要、常用的模型
 
-## 8. 更新列表
+## 9. 更新列表
 * 2014-06-06：发布版本v1.0.0
 * 2014-06-06：更新版本v1.0.1：修复3D模型预览的log文件未打包问题
 * 2014-06-11：更新版本v1.0.2：添加新版本通知功能，修正滚动条问题
@@ -160,3 +243,4 @@ License：<br />
 * 2015-08-11：更新版本v2.0.4：更新数据库
 * 2015-11-10：更新版本v2.0.5：更新数据库
 * 2015-11-13：更新版本v2.0.6：更新数据库，修正上一个版本被污染的客户端导致的问题
+* 2016-09-29：更新版本v2.0.7：更新数据库，添加数据库更新教程
