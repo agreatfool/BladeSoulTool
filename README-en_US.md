@@ -118,7 +118,66 @@ Execute the bat file at the root dir `BladeSoulTool.bat` to open the software
 * Please finish the replace action, and click this button, software will make a report to server
 * Replace action: select the origin model, select target model, click the replace button
 
-## 5. Announcement
+## 5. How to update database
+### 5.1 Directory
+* attach
+	* data: model data
+	* pics: model screenshot (not compressed)
+	* pics-cps：model screenshot (compressed)
+* costume
+	* data: model data
+	* pics: model screenshot (not compressed)
+	* pics-cps: model screenshot (compressed)
+* icon
+	* png: png icon (not compressed)
+	* png-cps: png icon (compressed)
+	* tga: tga icon
+* upk: unreal model data
+	* data: upk model data
+	* log: upk model parsed log files
+* weapon
+	* data: model data
+	* pics: model screenshot (not compressed)
+	* pics-cps: model screenshot (compressed)
+
+### 5.3 Actions
+* build_preparer: Remove old screenshots (pics)
+* icon_dumper: Dump icon files from upk, and convert from tga to png
+* upk_preparer: Move local country upk files into main dir, and dedat xml.dat file
+* upk_scanner: Scan all upk files, output parsed info into log files
+* upk_parser: Parse log files, make raw data info into json database files
+* shooter: Take screenshot of all models (pics)
+* png_optimizer: Compress all png images (pics-cps)
+* compress: Pack tool into zip file
+
+### 5.4 How to update
+* Update or reinstall your Blade Soul game client
+* Make sure all upk files in the client are all original, otherwise the database made later would be polluted
+* Backup `contents` dir, if possible
+* Edit file `run.bat`
+* Edit string: `grunt %action% --stack --verbose & pause > nul`, replace `%action%` with the actions listed in point 5.3
+* Do operations follow the steps listed in point 5.3
+* Copy screenshots into local dir (make it visible locally)
+	* Copy files under `database/attach/pics-cps` into `VS_GUI/BladeSoulTool/tmp/attach`
+	* Copy files under `database/costume/pics-cps` into `VS_GUI/BladeSoulTool/tmp/costume`
+	* Copy files under `database/weapon/pics-cps` into `VS_GUI/BladeSoulTool/tmp/weapon `
+	* Copy files under `database/icon/png-cps` into `VS_GUI/BladeSoulTool/tmp/icon`
+
+Done.
+
+If you have Linux/Unix machine, execute script `bladesoultool_optipng.sh` to do compress works, it's much more fast (Skip `png_optimizer` step in 5.4).
+Do edit the dir string in the script.
+
+### 5.5 Correct screenshot
+* build_preparer：![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/action-01-build_preparer.png)
+* icon_dumper：![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/action-02-icon_dumper.png)
+* upk_preparer：![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/action-03-upk_preparer.png)
+* upk_scanner：![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/action-04-upk_scanner.png)
+* upk_parser：![](https://raw.githubusercontent.com/agreatfool/BladeSoulTool/master/documents/images/v2/action-05-upk_parser.png)
+* shooter：N/A, `Done, without errors.` is fine.
+* png_optimizer：N/A, `Done, without errors.` is fine.
+
+## 6. Announcement
 Publish Announcement: <br/>
 Author: Jonathan, forum id: xenojoshua, support team: 17173 bns mod group<br/>
 I will only release on forum 17173, any others are all repost!<br/>
@@ -134,13 +193,13 @@ Contact me if you want to spread to some place.<br/>
 License: <br/>
 GPLv2
 
-## 6. FAQ & Tips
+## 7. FAQ & Tips
 * Don't use those model has col20
 
-## 7. TODO List
+## 8. TODO List
 * Add favorite list
 
-## 8. Change Log
+## 9. Change Log
 * 2014-06-06: v1.0.0 release
 * 2014-06-06: v1.0.1: Fix 3D view log not zipped
 * 2014-06-11: v1.0.2: Add new version notification functionality, fix scroll bar issue
@@ -158,3 +217,4 @@ GPLv2
 * 2015-08-11: v2.0.4: Update database
 * 2015-11-10: v2.0.5: Update database
 * 2015-11-13: v2.0.6: Update databases, Fix database issue of polluted client
+* 2016-09-29: v2.0.7: Update database, Add self update tutorial doc
