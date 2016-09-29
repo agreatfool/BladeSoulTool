@@ -894,7 +894,7 @@
     "skeleton": "00005475",
     "texture": "00005473",
     "material": "00005474",
-    "col1Material": "00005474",
+    "col1Material": "00013413",
     "col": "col1",
     "core": "51002_JinM",
     "code": "51002",
@@ -905,7 +905,7 @@
     "skeleton": "00005475",
     "texture": "00005473",
     "material": "00013413",
-    "col1Material": "00005474",
+    "col1Material": "00013413",
     "col": "col2",
     "core": "51002_JinM",
     "code": "51002",
@@ -2070,7 +2070,7 @@
   "40005_JinM_col1": {
     "skeleton": "00006817",
     "texture": "00006814",
-    "material": "00006816",
+    "material": "00038540",
     "col1Material": "00006816",
     "col": "col1",
     "core": "40005_JinM",
@@ -2106,6 +2106,17 @@
     "material": "00031675",
     "col1Material": "00006816",
     "col": "col3",
+    "core": "40005_JinM",
+    "code": "40005",
+    "race": "JinM",
+    "pic": "Costume_40005_JinM.png"
+  },
+  "40005_JinM_col4": {
+    "skeleton": "00006817",
+    "texture": "00006814",
+    "material": "00037955",
+    "col1Material": "00006816",
+    "col": "col4",
     "core": "40005_JinM",
     "code": "40005",
     "race": "JinM",
@@ -2315,6 +2326,17 @@
     "material": "00031681",
     "col1Material": "00006874",
     "col": "col3",
+    "core": "40005_JinF",
+    "code": "40005",
+    "race": "JinF",
+    "pic": "Costume_40005_JinM.png"
+  },
+  "40005_JinF_col4": {
+    "skeleton": "00006875",
+    "texture": "00006873",
+    "material": "00038307",
+    "col1Material": "00006874",
+    "col": "col4",
     "core": "40005_JinF",
     "code": "40005",
     "race": "JinF",
@@ -3013,6 +3035,17 @@
     "race": "GonM",
     "pic": "Costume_40005_JinM.png"
   },
+  "40005_GonM_col4": {
+    "skeleton": "00007258",
+    "texture": "00007256",
+    "material": "00038308",
+    "col1Material": "00007257",
+    "col": "col4",
+    "core": "40005_GonM",
+    "code": "40005",
+    "race": "GonM",
+    "pic": "Costume_40005_JinM.png"
+  },
   "40005_GonF_col1": {
     "skeleton": "00007261",
     "texture": "00007259",
@@ -3052,6 +3085,17 @@
     "material": "00031683",
     "col1Material": "00007260",
     "col": "col3",
+    "core": "40005_GonF",
+    "code": "40005",
+    "race": "GonF",
+    "pic": "Costume_40005_JinM.png"
+  },
+  "40005_GonF_col4": {
+    "skeleton": "00007261",
+    "texture": "00007259",
+    "material": "00038309",
+    "col1Material": "00007260",
+    "col": "col4",
     "core": "40005_GonF",
     "code": "40005",
     "race": "GonF",
@@ -3113,10 +3157,10 @@
     "pic": "costume_20002_col1_All.png"
   },
   "21002_GonF_col1": {
-    "skeleton": "00021102",
-    "texture": "00021100",
-    "material": "00021101",
-    "col1Material": "00021101",
+    "skeleton": "00007369",
+    "texture": "00007367",
+    "material": "00007368",
+    "col1Material": "00007368",
     "col": "col1",
     "core": "21002_GonF",
     "code": "21002",
@@ -3157,10 +3201,10 @@
     "pic": "costume_21002_col1_All.png"
   },
   "21002_GonM_col1": {
-    "skeleton": "00021099",
-    "texture": "00021097",
-    "material": "00021098",
-    "col1Material": "00021098",
+    "skeleton": "00007450",
+    "texture": "00007448",
+    "material": "00007449",
+    "col1Material": "00007449",
     "col": "col1",
     "core": "21002_GonM",
     "code": "21002",
@@ -4047,6 +4091,17 @@
     "race": "JinM",
     "pic": "Costume_53003_JinM.png"
   },
+  "53003_JinM_col5": {
+    "skeleton": "00007879",
+    "texture": "00007878",
+    "material": "00035559",
+    "col1Material": "00007880",
+    "col": "col5",
+    "core": "53003_JinM",
+    "code": "53003",
+    "race": "JinM",
+    "pic": "Costume_53003_JinM.png"
+  },
   "40008_JinM_col1": {
     "skeleton": "00007885",
     "texture": "00007883",
@@ -4707,11 +4762,22 @@
     "race": "JinF",
     "pic": "Costume_53003_JinM.png"
   },
+  "53003_JinF_col5": {
+    "skeleton": "00008206",
+    "texture": "00008204",
+    "material": "00035560",
+    "col1Material": "00008205",
+    "col": "col5",
+    "core": "53003_JinF",
+    "code": "53003",
+    "race": "JinF",
+    "pic": "Costume_53003_JinM.png"
+  },
   "53003_GonM_col1": {
     "skeleton": "00008209",
     "texture": "00008207",
     "material": "00008208",
-    "col1Material": "00008208",
+    "col1Material": "00035561",
     "col": "col1",
     "core": "53003_GonM",
     "code": "53003",
@@ -4722,8 +4788,19 @@
     "skeleton": "00008209",
     "texture": "00008207",
     "material": "00023806",
-    "col1Material": "00008208",
+    "col1Material": "00035561",
     "col": "col2",
+    "core": "53003_GonM",
+    "code": "53003",
+    "race": "GonM",
+    "pic": "Costume_53003_JinM.png"
+  },
+  "53003_GonM_col5": {
+    "skeleton": "00008209",
+    "texture": "00008207",
+    "material": "00035561",
+    "col1Material": "00035561",
+    "col": "col5",
     "core": "53003_GonM",
     "code": "53003",
     "race": "GonM",
@@ -4751,6 +4828,17 @@
     "race": "GonF",
     "pic": "Costume_53003_JinM.png"
   },
+  "53003_GonF_col5": {
+    "skeleton": "00008212",
+    "texture": "00008210",
+    "material": "00035562",
+    "col1Material": "00008211",
+    "col": "col5",
+    "core": "53003_GonF",
+    "code": "53003",
+    "race": "GonF",
+    "pic": "Costume_53003_JinM.png"
+  },
   "53003_LynM_col1": {
     "skeleton": "00008215",
     "texture": "00008213",
@@ -4773,6 +4861,17 @@
     "race": "LynM",
     "pic": "Costume_53003_JinM.png"
   },
+  "53003_LynM_col5": {
+    "skeleton": "00008215",
+    "texture": "00008213",
+    "material": "00035563",
+    "col1Material": "00008214",
+    "col": "col5",
+    "core": "53003_LynM",
+    "code": "53003",
+    "race": "LynM",
+    "pic": "Costume_53003_JinM.png"
+  },
   "53003_KunN_col1": {
     "skeleton": "00008219",
     "texture": "00008217",
@@ -4790,6 +4889,17 @@
     "material": "00023808",
     "col1Material": "00008218",
     "col": "col2",
+    "core": "53003_KunN",
+    "code": "53003",
+    "race": "KunN",
+    "pic": "Costume_53003_JinM.png"
+  },
+  "53003_KunN_col5": {
+    "skeleton": "00008219",
+    "texture": "00008217",
+    "material": "00035564",
+    "col1Material": "00008218",
+    "col": "col5",
     "core": "53003_KunN",
     "code": "53003",
     "race": "KunN",
@@ -6236,6 +6346,28 @@
     "race": "JinM",
     "pic": "costume_60010_JinM.png"
   },
+  "60010_JinM_col5": {
+    "skeleton": "00009010",
+    "texture": "00009008",
+    "material": "00036569",
+    "col1Material": "00009009",
+    "col": "col5",
+    "core": "60010_JinM",
+    "code": "60010",
+    "race": "JinM",
+    "pic": "costume_60010_JinM.png"
+  },
+  "60010_JinM_col6": {
+    "skeleton": "00009010",
+    "texture": "00009008",
+    "material": "00036815",
+    "col1Material": "00009009",
+    "col": "col6",
+    "core": "60010_JinM",
+    "code": "60010",
+    "race": "JinM",
+    "pic": "costume_60010_JinM.png"
+  },
   "80005_KunN_col1": {
     "skeleton": "00009022",
     "texture": "00009020",
@@ -6324,6 +6456,17 @@
     "race": "GonM",
     "pic": "Costume_65024_JinM_col2.png"
   },
+  "65024_GonM_col3": {
+    "skeleton": "00009086",
+    "texture": "00009084",
+    "material": "00035288",
+    "col1Material": "00009085",
+    "col": "col3",
+    "core": "65024_GonM",
+    "code": "65024",
+    "race": "GonM",
+    "pic": "Costume_65024_JinM_col3.png"
+  },
   "41005_JinF_col1": {
     "skeleton": "00009091",
     "texture": "00009089",
@@ -6400,6 +6543,28 @@
     "code": "60010",
     "race": "KunN",
     "pic": "Costume_60010_col2_All.png"
+  },
+  "60010_KunN_col5": {
+    "skeleton": "00009121",
+    "texture": "00009119",
+    "material": "00036571",
+    "col1Material": "00009120",
+    "col": "col5",
+    "core": "60010_KunN",
+    "code": "60010",
+    "race": "KunN",
+    "pic": "costume_60010_All.png"
+  },
+  "60010_KunN_col6": {
+    "skeleton": "00009121",
+    "texture": "00009119",
+    "material": "00036803",
+    "col1Material": "00009120",
+    "col": "col6",
+    "core": "60010_KunN",
+    "code": "60010",
+    "race": "KunN",
+    "pic": "costume_60010_All.png"
   },
   "65012_JinF_col1": {
     "skeleton": "00009127",
@@ -6841,6 +7006,17 @@
     "race": "JinF",
     "pic": null
   },
+  "65011_JinF_col2": {
+    "skeleton": "00009622",
+    "texture": "00009620",
+    "material": "00029864",
+    "col1Material": "00009621",
+    "col": "col2",
+    "core": "65011_JinF",
+    "code": "65011",
+    "race": "JinF",
+    "pic": null
+  },
   "60010_GonM_col1": {
     "skeleton": "00009629",
     "texture": "00009627",
@@ -6874,6 +7050,28 @@
     "race": "GonM",
     "pic": "costume_60010_All.png"
   },
+  "60010_GonM_col5": {
+    "skeleton": "00009629",
+    "texture": "00009627",
+    "material": "00036572",
+    "col1Material": "00009628",
+    "col": "col5",
+    "core": "60010_GonM",
+    "code": "60010",
+    "race": "GonM",
+    "pic": "costume_60010_All.png"
+  },
+  "60010_GonM_col6": {
+    "skeleton": "00009629",
+    "texture": "00009627",
+    "material": "00036804",
+    "col1Material": "00009628",
+    "col": "col6",
+    "core": "60010_GonM",
+    "code": "60010",
+    "race": "GonM",
+    "pic": "costume_60010_All.png"
+  },
   "60010_GonF_col1": {
     "skeleton": "00009632",
     "texture": "00009630",
@@ -6895,6 +7093,28 @@
     "code": "60010",
     "race": "GonF",
     "pic": "Costume_60010_col2_All.png"
+  },
+  "60010_GonF_col5": {
+    "skeleton": "00009632",
+    "texture": "00009630",
+    "material": "00036573",
+    "col1Material": "00009631",
+    "col": "col5",
+    "core": "60010_GonF",
+    "code": "60010",
+    "race": "GonF",
+    "pic": "costume_60010_All.png"
+  },
+  "60010_GonF_col6": {
+    "skeleton": "00009632",
+    "texture": "00009630",
+    "material": "00036801",
+    "col1Material": "00009631",
+    "col": "col6",
+    "core": "60010_GonF",
+    "code": "60010",
+    "race": "GonF",
+    "pic": "costume_60010_All.png"
   },
   "60010_JinF_col1": {
     "skeleton": "00009635",
@@ -6929,6 +7149,28 @@
     "race": "JinF",
     "pic": "costume_60010_All.png"
   },
+  "60010_JinF_col5": {
+    "skeleton": "00009635",
+    "texture": "00009633",
+    "material": "00035838",
+    "col1Material": "00009634",
+    "col": "col5",
+    "core": "60010_JinF",
+    "code": "60010",
+    "race": "JinF",
+    "pic": "costume_60010_All.png"
+  },
+  "60010_JinF_col6": {
+    "skeleton": "00009635",
+    "texture": "00009633",
+    "material": "00035839",
+    "col1Material": "00009634",
+    "col": "col6",
+    "core": "60010_JinF",
+    "code": "60010",
+    "race": "JinF",
+    "pic": "costume_60010_All.png"
+  },
   "60010_LynM_col1": {
     "skeleton": "00009638",
     "texture": "00009636",
@@ -6957,6 +7199,28 @@
     "material": "00027104",
     "col1Material": "00009637",
     "col": "col4",
+    "core": "60010_LynM",
+    "code": "60010",
+    "race": "LynM",
+    "pic": "costume_60010_All.png"
+  },
+  "60010_LynM_col5": {
+    "skeleton": "00009638",
+    "texture": "00009636",
+    "material": "00036574",
+    "col1Material": "00009637",
+    "col": "col5",
+    "core": "60010_LynM",
+    "code": "60010",
+    "race": "LynM",
+    "pic": "costume_60010_All.png"
+  },
+  "60010_LynM_col6": {
+    "skeleton": "00009638",
+    "texture": "00009636",
+    "material": "00036805",
+    "col1Material": "00009637",
+    "col": "col6",
     "core": "60010_LynM",
     "code": "60010",
     "race": "LynM",
@@ -9232,7 +9496,7 @@
     "skeleton": "00010842",
     "texture": "00010840",
     "material": "00010841",
-    "col1Material": "00010841",
+    "col1Material": "00013468",
     "col": "col1",
     "core": "51002_LynM",
     "code": "51002",
@@ -9243,7 +9507,7 @@
     "skeleton": "00010842",
     "texture": "00010840",
     "material": "00013468",
-    "col1Material": "00010841",
+    "col1Material": "00013468",
     "col": "col2",
     "core": "51002_LynM",
     "code": "51002",
@@ -9971,6 +10235,28 @@
     "material": "00011477",
     "col1Material": "00011477",
     "col": "col1",
+    "core": "60028_JinF",
+    "code": "60028",
+    "race": "JinF",
+    "pic": null
+  },
+  "60028_JinF_col2": {
+    "skeleton": "00011478",
+    "texture": "00011476",
+    "material": "00039798",
+    "col1Material": "00011477",
+    "col": "col2",
+    "core": "60028_JinF",
+    "code": "60028",
+    "race": "JinF",
+    "pic": null
+  },
+  "60028_JinF_col9": {
+    "skeleton": "00011478",
+    "texture": "00011476",
+    "material": "00041296",
+    "col1Material": "00011477",
+    "col": "col9",
     "core": "60028_JinF",
     "code": "60028",
     "race": "JinF",
@@ -11340,6 +11626,17 @@
     "race": "JinM",
     "pic": null
   },
+  "60037_JinM_col2": {
+    "skeleton": "00012471",
+    "texture": "00012469",
+    "material": "00036034",
+    "col1Material": "00012470",
+    "col": "col2",
+    "core": "60037_JinM",
+    "code": "60037",
+    "race": "JinM",
+    "pic": null
+  },
   "60009_KunN_col1": {
     "skeleton": "00012475",
     "texture": "00012473",
@@ -12208,6 +12505,17 @@
     "code": "65024",
     "race": "JinM",
     "pic": "Costume_65024_JinM_col2.png"
+  },
+  "65024_JinM_col3": {
+    "skeleton": "00012974",
+    "texture": "00012972",
+    "material": "00035289",
+    "col1Material": "00012973",
+    "col": "col3",
+    "core": "65024_JinM",
+    "code": "65024",
+    "race": "JinM",
+    "pic": "Costume_65024_JinM_col3.png"
   },
   "51001_KunN_col1": {
     "skeleton": "00012988",
@@ -15344,6 +15652,28 @@
     "race": "JinM",
     "pic": null
   },
+  "40017_JinM_col5": {
+    "skeleton": "00014809",
+    "texture": "00014807",
+    "material": "00040620",
+    "col1Material": "00014808",
+    "col": "col5",
+    "core": "40017_JinM",
+    "code": "40017",
+    "race": "JinM",
+    "pic": null
+  },
+  "40017_JinM_col9": {
+    "skeleton": "00014809",
+    "texture": "00014807",
+    "material": "00040939",
+    "col1Material": "00014808",
+    "col": "col9",
+    "core": "40017_JinM",
+    "code": "40017",
+    "race": "JinM",
+    "pic": null
+  },
   "22002_JinM_col1": {
     "skeleton": "00014813",
     "texture": "00014811",
@@ -17445,6 +17775,17 @@
     "race": "JinF",
     "pic": "Costume_65024_JinM_col2.png"
   },
+  "65024_JinF_col3": {
+    "skeleton": "00016664",
+    "texture": "00016663",
+    "material": "00035290",
+    "col1Material": "00016662",
+    "col": "col3",
+    "core": "65024_JinF",
+    "code": "65024",
+    "race": "JinF",
+    "pic": "Costume_65024_JinM_col3.png"
+  },
   "65024_GonF_col1": {
     "skeleton": "00016667",
     "texture": "00016666",
@@ -17466,6 +17807,17 @@
     "code": "65024",
     "race": "GonF",
     "pic": "Costume_65024_JinM_col2.png"
+  },
+  "65024_GonF_col3": {
+    "skeleton": "00016667",
+    "texture": "00016666",
+    "material": "00035291",
+    "col1Material": "00016665",
+    "col": "col3",
+    "core": "65024_GonF",
+    "code": "65024",
+    "race": "GonF",
+    "pic": "Costume_65024_JinM_col3.png"
   },
   "65024_KunN_col1": {
     "skeleton": "00016670",
@@ -17489,6 +17841,17 @@
     "race": "KunN",
     "pic": "Costume_65024_JinM_col2.png"
   },
+  "65024_KunN_col3": {
+    "skeleton": "00016670",
+    "texture": "00016669",
+    "material": "00035292",
+    "col1Material": "00016668",
+    "col": "col3",
+    "core": "65024_KunN",
+    "code": "65024",
+    "race": "KunN",
+    "pic": "Costume_65024_JinM_col3.png"
+  },
   "65024_LynM_col1": {
     "skeleton": "00016673",
     "texture": "00016672",
@@ -17510,6 +17873,17 @@
     "code": "65024",
     "race": "LynM",
     "pic": "Costume_65024_JinM_col2.png"
+  },
+  "65024_LynM_col3": {
+    "skeleton": "00016673",
+    "texture": "00016672",
+    "material": "00035293",
+    "col1Material": "00016671",
+    "col": "col3",
+    "core": "65024_LynM",
+    "code": "65024",
+    "race": "LynM",
+    "pic": "Costume_65024_JinM_col3.png"
   },
   "65031_LynF_col1": {
     "skeleton": "00016680",
@@ -17836,6 +18210,17 @@
     "material": "00017730",
     "col1Material": "00016803",
     "col": "col2",
+    "core": "60065_GonM",
+    "code": "60065",
+    "race": "GonM",
+    "pic": null
+  },
+  "60065_GonM_col3": {
+    "skeleton": "00016805",
+    "texture": "00016804",
+    "material": "00039759",
+    "col1Material": "00016803",
+    "col": "col3",
     "core": "60065_GonM",
     "code": "60065",
     "race": "GonM",
@@ -20558,6 +20943,17 @@
     "race": "JinF",
     "pic": null
   },
+  "65071_JinF_col2": {
+    "skeleton": "00020445",
+    "texture": "00020443",
+    "material": "00029777",
+    "col1Material": "00020444",
+    "col": "col2",
+    "core": "65071_JinF",
+    "code": "65071",
+    "race": "JinF",
+    "pic": null
+  },
   "60055_JinM_col1": {
     "skeleton": "00020483",
     "texture": "00020481",
@@ -20865,6 +21261,28 @@
     "code": "60097",
     "race": "GonM",
     "pic": "Costume_60097_JinM_col1.png"
+  },
+  "65073_GonM_col1": {
+    "skeleton": "00021099",
+    "texture": "00021097",
+    "material": "00021098",
+    "col1Material": "00021098",
+    "col": "col1",
+    "core": "65073_GonM",
+    "code": "65073",
+    "race": "GonM",
+    "pic": "Costume_65073_jinM_col1.png"
+  },
+  "65073_GonF_col1": {
+    "skeleton": "00021102",
+    "texture": "00021100",
+    "material": "00021101",
+    "col1Material": "00021101",
+    "col": "col1",
+    "core": "65073_GonF",
+    "code": "65073",
+    "race": "GonF",
+    "pic": "Costume_65073_jinM_col1.png"
   },
   "60097_JinF_col1": {
     "skeleton": "00021107",
@@ -21422,6 +21840,17 @@
     "material": "00022008",
     "col1Material": "00022008",
     "col": "col1",
+    "core": "65040_JinM",
+    "code": "65040",
+    "race": "JinM",
+    "pic": "Costume_65040_JinF_col1.png"
+  },
+  "65040_JinM_col2": {
+    "skeleton": "00022009",
+    "texture": "00022007",
+    "material": "00037409",
+    "col1Material": "00022008",
+    "col": "col2",
     "core": "65040_JinM",
     "code": "65040",
     "race": "JinM",
@@ -22153,6 +22582,50 @@
     "race": "LynF",
     "pic": "costume_60096_JinM_col1.png"
   },
+  "60059_JinM_col1": {
+    "skeleton": "00023282",
+    "texture": "00023280",
+    "material": "00023281",
+    "col1Material": "00023281",
+    "col": "col1",
+    "core": "60059_JinM",
+    "code": "60059",
+    "race": "JinM",
+    "pic": null
+  },
+  "60059_LynM_col1": {
+    "skeleton": "00023286",
+    "texture": "00023283",
+    "material": "00023284",
+    "col1Material": "00023284",
+    "col": "col1",
+    "core": "60059_LynM",
+    "code": "60059",
+    "race": "LynM",
+    "pic": null
+  },
+  "60059_GonF_col1": {
+    "skeleton": "00023289",
+    "texture": "00023287",
+    "material": "00027980",
+    "col1Material": "00023288",
+    "col": "col1",
+    "core": "60059_GonF",
+    "code": "60059",
+    "race": "GonF",
+    "pic": null
+  },
+  "65010_JinF_col1": {
+    "skeleton": "00023297",
+    "texture": "00023295",
+    "material": "00023296",
+    "col1Material": "00023296",
+    "col": "col1",
+    "core": "65010_JinF",
+    "code": "65010",
+    "race": "JinF",
+    "pic": "Costume_65010_GonF.png"
+  },
   "65044_GonF_col1": {
     "skeleton": "00023341",
     "texture": "00023339",
@@ -22197,6 +22670,39 @@
     "race": "GonF",
     "pic": null
   },
+  "60103_GonF_col2": {
+    "skeleton": "00023446",
+    "texture": "00023444",
+    "material": "00041894",
+    "col1Material": "00023445",
+    "col": "col2",
+    "core": "60103_GonF",
+    "code": "60103",
+    "race": "GonF",
+    "pic": null
+  },
+  "60103_GonM_col1": {
+    "skeleton": "00023461",
+    "texture": "00023459",
+    "material": "00023460",
+    "col1Material": "00023460",
+    "col": "col1",
+    "core": "60103_GonM",
+    "code": "60103",
+    "race": "GonM",
+    "pic": null
+  },
+  "60103_GonM_col2": {
+    "skeleton": "00023461",
+    "texture": "00023459",
+    "material": "00041895",
+    "col1Material": "00023460",
+    "col": "col2",
+    "core": "60103_GonM",
+    "code": "60103",
+    "race": "GonM",
+    "pic": null
+  },
   "60108_LynM_col1": {
     "skeleton": "00023509",
     "texture": "00023508",
@@ -22214,6 +22720,17 @@
     "material": "00023520",
     "col1Material": "00023520",
     "col": "col1",
+    "core": "60109_JinF",
+    "code": "60109",
+    "race": "JinF",
+    "pic": "Costume_60109_JinM_col1.png"
+  },
+  "60109_JinF_col2": {
+    "skeleton": "00023522",
+    "texture": "00023521",
+    "material": "00033916",
+    "col1Material": "00023520",
+    "col": "col2",
     "core": "60109_JinF",
     "code": "60109",
     "race": "JinF",
@@ -22258,6 +22775,17 @@
     "material": "00023550",
     "col1Material": "00023550",
     "col": "col1",
+    "core": "60107_JinF",
+    "code": "60107",
+    "race": "JinF",
+    "pic": "costume_60107_JinF_col1.png"
+  },
+  "60107_JinF_col2": {
+    "skeleton": "00023552",
+    "texture": "00023551",
+    "material": "00031197",
+    "col1Material": "00023550",
+    "col": "col2",
     "core": "60107_JinF",
     "code": "60107",
     "race": "JinF",
@@ -22324,6 +22852,17 @@
     "material": "00023613",
     "col1Material": "00023613",
     "col": "col1",
+    "core": "60105_KunN",
+    "code": "60105",
+    "race": "KunN",
+    "pic": "costume_60105_KunN_col1.png"
+  },
+  "60105_KunN_col2": {
+    "skeleton": "00023614",
+    "texture": "00023612",
+    "material": "00039757",
+    "col1Material": "00023613",
+    "col": "col2",
     "core": "60105_KunN",
     "code": "60105",
     "race": "KunN",
@@ -22494,6 +23033,17 @@
     "race": "JinF",
     "pic": "costume_60105_KunN_col1.png"
   },
+  "60105_JinF_col2": {
+    "skeleton": "00023857",
+    "texture": "00023855",
+    "material": "00030995",
+    "col1Material": "00023856",
+    "col": "col2",
+    "core": "60105_JinF",
+    "code": "60105",
+    "race": "JinF",
+    "pic": "costume_60105_KunN_col1.png"
+  },
   "60107_GonF_col1": {
     "skeleton": "00023864",
     "texture": "00023865",
@@ -22505,12 +23055,34 @@
     "race": "GonF",
     "pic": "costume_60107_JinF_col1.png"
   },
+  "60107_GonF_col2": {
+    "skeleton": "00023864",
+    "texture": "00023865",
+    "material": "00037809",
+    "col1Material": "00023866",
+    "col": "col2",
+    "core": "60107_GonF",
+    "code": "60107",
+    "race": "GonF",
+    "pic": "costume_60107_JinF_col1.png"
+  },
   "60105_GonF_col1": {
     "skeleton": "00023870",
     "texture": "00023868",
     "material": "00023869",
     "col1Material": "00023869",
     "col": "col1",
+    "core": "60105_GonF",
+    "code": "60105",
+    "race": "GonF",
+    "pic": "costume_60105_KunN_col1.png"
+  },
+  "60105_GonF_col2": {
+    "skeleton": "00023870",
+    "texture": "00023868",
+    "material": "00039756",
+    "col1Material": "00023869",
+    "col": "col2",
     "core": "60105_GonF",
     "code": "60105",
     "race": "GonF",
@@ -22533,6 +23105,17 @@
     "material": "00023909",
     "col1Material": "00023909",
     "col": "col1",
+    "core": "60105_LynF",
+    "code": "60105",
+    "race": "LynF",
+    "pic": "costume_60105_KunN_col1.png"
+  },
+  "60105_LynF_col2": {
+    "skeleton": "00023910",
+    "texture": "00023912",
+    "material": "00039755",
+    "col1Material": "00023909",
+    "col": "col2",
     "core": "60105_LynF",
     "code": "60105",
     "race": "LynF",
@@ -22648,12 +23231,34 @@
     "race": "LynF",
     "pic": "costume_60107_JinF_col1.png"
   },
+  "60107_LynF_col2": {
+    "skeleton": "00024130",
+    "texture": "00024128",
+    "material": "00037810",
+    "col1Material": "00024129",
+    "col": "col2",
+    "core": "60107_LynF",
+    "code": "60107",
+    "race": "LynF",
+    "pic": "costume_60107_JinF_col1.png"
+  },
   "70006_JinF_col1": {
     "skeleton": "00024143",
     "texture": "00024141",
     "material": "00024142",
     "col1Material": "00024142",
     "col": "col1",
+    "core": "70006_JinF",
+    "code": "70006",
+    "race": "JinF",
+    "pic": "Costume_70006_col1_All.png"
+  },
+  "70006_JinF_col2": {
+    "skeleton": "00024143",
+    "texture": "00024141",
+    "material": "00030046",
+    "col1Material": "00024142",
+    "col": "col2",
     "core": "70006_JinF",
     "code": "70006",
     "race": "JinF",
@@ -22764,6 +23369,17 @@
     "material": "00024170",
     "col1Material": "00024170",
     "col": "col1",
+    "core": "60107_KunN",
+    "code": "60107",
+    "race": "KunN",
+    "pic": "costume_60107_JinF_col1.png"
+  },
+  "60107_KunN_col2": {
+    "skeleton": "00024171",
+    "texture": "00024169",
+    "material": "00037811",
+    "col1Material": "00024170",
+    "col": "col2",
     "core": "60107_KunN",
     "code": "60107",
     "race": "KunN",
@@ -23033,12 +23649,34 @@
     "race": "KunN",
     "pic": "Costume_70006_col1_All.png"
   },
+  "70006_KunN_col2": {
+    "skeleton": "00024871",
+    "texture": "00024867",
+    "material": "00037748",
+    "col1Material": "00024868",
+    "col": "col2",
+    "core": "70006_KunN",
+    "code": "70006",
+    "race": "KunN",
+    "pic": "Costume_70006_col1_All.png"
+  },
   "70006_LynM_col1": {
     "skeleton": "00024879",
     "texture": "00024877",
     "material": "00024878",
     "col1Material": "00024878",
     "col": "col1",
+    "core": "70006_LynM",
+    "code": "70006",
+    "race": "LynM",
+    "pic": "Costume_70006_col1_All.png"
+  },
+  "70006_LynM_col2": {
+    "skeleton": "00024879",
+    "texture": "00024877",
+    "material": "00037749",
+    "col1Material": "00024878",
+    "col": "col2",
     "core": "70006_LynM",
     "code": "70006",
     "race": "LynM",
@@ -23066,10 +23704,21 @@
     "race": "GonF",
     "pic": "Costume_70006_col1_All.png"
   },
+  "70006_GonF_col2": {
+    "skeleton": "00024898",
+    "texture": "00024896",
+    "material": "00037746",
+    "col1Material": "00024897",
+    "col": "col2",
+    "core": "70006_GonF",
+    "code": "70006",
+    "race": "GonF",
+    "pic": "Costume_70006_col1_All.png"
+  },
   "60104_GonM_col1": {
     "skeleton": "00024901",
     "texture": "00024900",
-    "material": "00024899",
+    "material": "00037797",
     "col1Material": "00024899",
     "col": "col1",
     "core": "60104_GonM",
@@ -23088,6 +23737,17 @@
     "race": "JinM",
     "pic": "Costume_70006_col1_All.png"
   },
+  "70006_JinM_col2": {
+    "skeleton": "00024906",
+    "texture": "00024904",
+    "material": "00037745",
+    "col1Material": "00024905",
+    "col": "col2",
+    "core": "70006_JinM",
+    "code": "70006",
+    "race": "JinM",
+    "pic": "Costume_70006_col1_All.png"
+  },
   "70006_GonM_col1": {
     "skeleton": "00024913",
     "texture": "00024911",
@@ -23099,12 +23759,34 @@
     "race": "GonM",
     "pic": "Costume_70006_col1_All.png"
   },
+  "70006_GonM_col2": {
+    "skeleton": "00024913",
+    "texture": "00024911",
+    "material": "00037747",
+    "col1Material": "00024912",
+    "col": "col2",
+    "core": "70006_GonM",
+    "code": "70006",
+    "race": "GonM",
+    "pic": "Costume_70006_col1_All.png"
+  },
   "70006_LynF_col1": {
     "skeleton": "00024923",
     "texture": "00024921",
     "material": "00024922",
     "col1Material": "00024922",
     "col": "col1",
+    "core": "70006_LynF",
+    "code": "70006",
+    "race": "LynF",
+    "pic": "Costume_70006_col1_All.png"
+  },
+  "70006_LynF_col2": {
+    "skeleton": "00024923",
+    "texture": "00024921",
+    "material": "00037750",
+    "col1Material": "00024922",
+    "col": "col2",
     "core": "70006_LynF",
     "code": "70006",
     "race": "LynF",
@@ -23138,6 +23820,17 @@
     "material": "00024942",
     "col1Material": "00024942",
     "col": "col1",
+    "core": "70009_JinM",
+    "code": "70009",
+    "race": "JinM",
+    "pic": "Costume_70009_col1_All.png"
+  },
+  "70009_JinM_col2": {
+    "skeleton": "00024943",
+    "texture": "00024941",
+    "material": "00037372",
+    "col1Material": "00024942",
+    "col": "col2",
     "core": "70009_JinM",
     "code": "70009",
     "race": "JinM",
@@ -23363,6 +24056,17 @@
     "race": "JinM",
     "pic": "Costume_60116_JinF_col1.png"
   },
+  "60116_JinM_col2": {
+    "skeleton": "00025183",
+    "texture": "00025182",
+    "material": "00032542",
+    "col1Material": "00025181",
+    "col": "col2",
+    "core": "60116_JinM",
+    "code": "60116",
+    "race": "JinM",
+    "pic": "Costume_60116_JinM_col2.png"
+  },
   "60116_JinM_col3": {
     "skeleton": "00025183",
     "texture": "00025182",
@@ -23373,6 +24077,17 @@
     "code": "60116",
     "race": "JinM",
     "pic": "Costume_60116_JinF_col3.png"
+  },
+  "60116_JinM_col4": {
+    "skeleton": "00025183",
+    "texture": "00025182",
+    "material": "00037911",
+    "col1Material": "00025181",
+    "col": "col4",
+    "core": "60116_JinM",
+    "code": "60116",
+    "race": "JinM",
+    "pic": "Costume_60116_JinM_col2.png"
   },
   "65081_JinF_col1": {
     "skeleton": "00025281",
@@ -23417,6 +24132,28 @@
     "code": "60116",
     "race": "JinF",
     "pic": "Costume_60116_JinF_col3.png"
+  },
+  "60116_JinF_col2": {
+    "skeleton": "00025374",
+    "texture": "00025373",
+    "material": "00032602",
+    "col1Material": "00025372",
+    "col": "col2",
+    "core": "60116_JinF",
+    "code": "60116",
+    "race": "JinF",
+    "pic": "Costume_60116_JinM_col2.png"
+  },
+  "60116_JinF_col4": {
+    "skeleton": "00025374",
+    "texture": "00025373",
+    "material": "00037910",
+    "col1Material": "00025372",
+    "col": "col4",
+    "core": "60116_JinF",
+    "code": "60116",
+    "race": "JinF",
+    "pic": "Costume_60116_JinF_col1.png"
   },
   "70015_JinM_col1": {
     "skeleton": "00025599",
@@ -24400,7 +25137,7 @@
   "70009_JinF_col1": {
     "skeleton": "00025989",
     "texture": "00025988",
-    "material": "00025987",
+    "material": "00037371",
     "col1Material": "00025987",
     "col": "col1",
     "core": "70009_JinF",
@@ -24491,6 +25228,17 @@
     "material": "00026269",
     "col1Material": "00026269",
     "col": "col1",
+    "core": "60101_KunN",
+    "code": "60101",
+    "race": "KunN",
+    "pic": "Costume_60101_JinF_col1.png"
+  },
+  "60101_KunN_col2": {
+    "skeleton": "00026270",
+    "texture": "00026268",
+    "material": "00040054",
+    "col1Material": "00026269",
+    "col": "col2",
     "core": "60101_KunN",
     "code": "60101",
     "race": "KunN",
@@ -24705,6 +25453,17 @@
     "race": "GonM",
     "pic": "Costume_60101_JinF_col1.png"
   },
+  "60101_GonM_col2": {
+    "skeleton": "00026481",
+    "texture": "00026482",
+    "material": "00040374",
+    "col1Material": "00026483",
+    "col": "col2",
+    "core": "60101_GonM",
+    "code": "60101",
+    "race": "GonM",
+    "pic": "Costume_60101_JinF_col1.png"
+  },
   "65040_jinF_col1": {
     "skeleton": "00026666",
     "texture": "00026664",
@@ -24715,6 +25474,50 @@
     "code": "65040",
     "race": "JinF",
     "pic": "Costume_65040_JinF_col1.png"
+  },
+  "65040_jinF_col2": {
+    "skeleton": "00026666",
+    "texture": "00026664",
+    "material": "00037410",
+    "col1Material": "00026665",
+    "col": "col2",
+    "core": "65040_jinF",
+    "code": "65040",
+    "race": "JinF",
+    "pic": "Costume_65040_JinF_col1.png"
+  },
+  "65014_KunN_col1": {
+    "skeleton": "00026735",
+    "texture": "00026733",
+    "material": "00026734",
+    "col1Material": "00026734",
+    "col": "col1",
+    "core": "65014_KunN",
+    "code": "65014",
+    "race": "KunN",
+    "pic": null
+  },
+  "65014_GonF_col1": {
+    "skeleton": "00026828",
+    "texture": "00026826",
+    "material": "00026827",
+    "col1Material": "00026827",
+    "col": "col1",
+    "core": "65014_GonF",
+    "code": "65014",
+    "race": "GonF",
+    "pic": null
+  },
+  "65014_LynF_col1": {
+    "skeleton": "00026871",
+    "texture": "00026869",
+    "material": "00026870",
+    "col1Material": "00026870",
+    "col": "col1",
+    "core": "65014_LynF",
+    "code": "65014",
+    "race": "LynF",
+    "pic": null
   },
   "60072_GonM_col1": {
     "skeleton": "00026875",
@@ -24804,6 +25607,17 @@
     "race": "JinM",
     "pic": "Costume_60121_JinM_col1.png"
   },
+  "60120_JinM_col1": {
+    "skeleton": "00027394",
+    "texture": "00027396",
+    "material": "00027395",
+    "col1Material": "00027395",
+    "col": "col1",
+    "core": "60120_JinM",
+    "code": "60120",
+    "race": "JinM",
+    "pic": null
+  },
   "65082_JinM_col1": {
     "skeleton": "00027463",
     "texture": "00027461",
@@ -24813,6 +25627,17 @@
     "core": "65082_JinM",
     "code": "65082",
     "race": "JinM",
+    "pic": null
+  },
+  "60120_JinF_col1": {
+    "skeleton": "00027546",
+    "texture": "00027544",
+    "material": "00027545",
+    "col1Material": "00027545",
+    "col": "col1",
+    "core": "60120_JinF",
+    "code": "60120",
+    "race": "JinF",
     "pic": null
   },
   "60121_LynF_col1": {
@@ -24859,6 +25684,17 @@
     "race": "GonF",
     "pic": "Costume_60121_JinM_col1.png"
   },
+  "60023_JinM_col1": {
+    "skeleton": "00027701",
+    "texture": "00027699",
+    "material": "00027700",
+    "col1Material": "00027700",
+    "col": "col1",
+    "core": "60023_JinM",
+    "code": "60023",
+    "race": "JinM",
+    "pic": null
+  },
   "60121_KunN_col1": {
     "skeleton": "00027710",
     "texture": "00027708",
@@ -24881,6 +25717,28 @@
     "race": "JinM",
     "pic": "Costume_70026_JinM_col1.png"
   },
+  "60023_GonM_col1": {
+    "skeleton": "00027946",
+    "texture": "00027944",
+    "material": "00027945",
+    "col1Material": "00027945",
+    "col": "col1",
+    "core": "60023_GonM",
+    "code": "60023",
+    "race": "GonM",
+    "pic": null
+  },
+  "65010_KunN_col1": {
+    "skeleton": "00027955",
+    "texture": "00027954",
+    "material": "00027953",
+    "col1Material": "00027953",
+    "col": "col1",
+    "core": "65010_KunN",
+    "code": "65010",
+    "race": "KunN",
+    "pic": "Costume_65010_GonF.png"
+  },
   "70027_JinF_col1": {
     "skeleton": "00027973",
     "texture": "00027971",
@@ -24902,6 +25760,39 @@
     "code": "70027",
     "race": "JinF",
     "pic": "Costume_70027_JinF_col2.png"
+  },
+  "60059_JinF_col1": {
+    "skeleton": "00027977",
+    "texture": "00027975",
+    "material": "00027976",
+    "col1Material": "00027976",
+    "col": "col1",
+    "core": "60059_JinF",
+    "code": "60059",
+    "race": "JinF",
+    "pic": null
+  },
+  "60059_KunN_col1": {
+    "skeleton": "00027981",
+    "texture": "00023287",
+    "material": "00027980",
+    "col1Material": "00027980",
+    "col": "col1",
+    "core": "60059_KunN",
+    "code": "60059",
+    "race": "KunN",
+    "pic": null
+  },
+  "60059_LynF_col1": {
+    "skeleton": "00027985",
+    "texture": "00027983",
+    "material": "00027984",
+    "col1Material": "00027984",
+    "col": "col1",
+    "core": "60059_LynF",
+    "code": "60059",
+    "race": "LynF",
+    "pic": null
   },
   "65077_JinF_col1": {
     "skeleton": "00028052",
@@ -25188,6 +26079,17 @@
     "code": "70028",
     "race": "JinM",
     "pic": "Costume_70028_JinM_col2.png"
+  },
+  "60124_JinF_col1": {
+    "skeleton": "00029065",
+    "texture": "00029067",
+    "material": "00029066",
+    "col1Material": "00029066",
+    "col": "col1",
+    "core": "60124_JinF",
+    "code": "60124",
+    "race": "JinF",
+    "pic": null
   },
   "70028_JinF_col1": {
     "skeleton": "00029072",
@@ -25486,6 +26388,17 @@
     "race": "KunN",
     "pic": "Costume_60123_JinF_col2.png"
   },
+  "60008_JinM_col1": {
+    "skeleton": "00029266",
+    "texture": "00029264",
+    "material": "00029265",
+    "col1Material": "00029265",
+    "col": "col1",
+    "core": "60008_JinM",
+    "code": "60008",
+    "race": "JinM",
+    "pic": null
+  },
   "60123_GonF_col1": {
     "skeleton": "00029270",
     "texture": "00029268",
@@ -25518,6 +26431,28 @@
     "code": "60125",
     "race": "JinM",
     "pic": "Costume_60125_JinM_col1.png"
+  },
+  "60125_JinM_col2": {
+    "skeleton": "00029371",
+    "texture": "00029372",
+    "material": "00033011",
+    "col1Material": "00029373",
+    "col": "col2",
+    "core": "60125_JinM",
+    "code": "60125",
+    "race": "JinM",
+    "pic": "Costume_60125_JinM_col2.png"
+  },
+  "60125_JinM_col3": {
+    "skeleton": "00029371",
+    "texture": "00029372",
+    "material": "00035509",
+    "col1Material": "00029373",
+    "col": "col3",
+    "core": "60125_JinM",
+    "code": "60125",
+    "race": "JinM",
+    "pic": "Costume_60125_JinM_col3.png"
   },
   "70026_GonF_col1": {
     "skeleton": "00029386",
@@ -25607,16 +26542,49 @@
     "race": "GonM",
     "pic": "Costume_60125_JinM_col1.png"
   },
+  "60125_GonM_col2": {
+    "skeleton": "00029487",
+    "texture": "00029485",
+    "material": "00035400",
+    "col1Material": "00029486",
+    "col": "col2",
+    "core": "60125_GonM",
+    "code": "60125",
+    "race": "GonM",
+    "pic": "Costume_60125_JinM_col2.png"
+  },
   "60125_JinF_col1": {
     "skeleton": "00029524",
     "texture": "00029523",
     "material": "00029522",
-    "col1Material": "00029522",
+    "col1Material": "00032623",
     "col": "col1",
     "core": "60125_JinF",
     "code": "60125",
     "race": "JinF",
     "pic": "Costume_60125_JinM_col1.png"
+  },
+  "60125_JinF_col2": {
+    "skeleton": "00029524",
+    "texture": "00029523",
+    "material": "00032623",
+    "col1Material": "00032623",
+    "col": "col2",
+    "core": "60125_JinF",
+    "code": "60125",
+    "race": "JinF",
+    "pic": "Costume_60125_JinM_col2.png"
+  },
+  "60125_JinF_col3": {
+    "skeleton": "00029524",
+    "texture": "00029523",
+    "material": "00035315",
+    "col1Material": "00032623",
+    "col": "col3",
+    "core": "60125_JinF",
+    "code": "60125",
+    "race": "JinF",
+    "pic": "Costume_60125_JinM_col3.png"
   },
   "60125_LynM_col1": {
     "skeleton": "00029534",
@@ -25628,6 +26596,28 @@
     "code": "60125",
     "race": "LynM",
     "pic": "Costume_60125_JinM_col1.png"
+  },
+  "60125_LynM_col2": {
+    "skeleton": "00029534",
+    "texture": "00029532",
+    "material": "00035401",
+    "col1Material": "00029531",
+    "col": "col2",
+    "core": "60125_LynM",
+    "code": "60125",
+    "race": "LynM",
+    "pic": "Costume_60125_JinM_col2.png"
+  },
+  "60125_LynM_col3": {
+    "skeleton": "00029534",
+    "texture": "00029532",
+    "material": "00035469",
+    "col1Material": "00029531",
+    "col": "col3",
+    "core": "60125_LynM",
+    "code": "60125",
+    "race": "LynM",
+    "pic": "Costume_60125_JinM_col3.png"
   },
   "70031_JinM_col1": {
     "skeleton": "00029629",
@@ -25783,6 +26773,28 @@
     "race": "KunN",
     "pic": "Costume_60125_JinM_col1.png"
   },
+  "60125_KunN_col3": {
+    "skeleton": "00029714",
+    "texture": "00029712",
+    "material": "00035342",
+    "col1Material": "00029713",
+    "col": "col3",
+    "core": "60125_KunN",
+    "code": "60125",
+    "race": "KunN",
+    "pic": "Costume_60125_JinM_col3.png"
+  },
+  "60125_KunN_col2": {
+    "skeleton": "00029714",
+    "texture": "00029712",
+    "material": "00035405",
+    "col1Material": "00029713",
+    "col": "col2",
+    "core": "60125_KunN",
+    "code": "60125",
+    "race": "KunN",
+    "pic": "Costume_60125_JinM_col2.png"
+  },
   "70031_GonM_col1": {
     "skeleton": "00029719",
     "texture": "00029717",
@@ -25805,6 +26817,28 @@
     "race": "LynF",
     "pic": "Costume_60125_JinM_col1.png"
   },
+  "60125_LynF_col3": {
+    "skeleton": "00029723",
+    "texture": "00029722",
+    "material": "00035343",
+    "col1Material": "00029721",
+    "col": "col3",
+    "core": "60125_LynF",
+    "code": "60125",
+    "race": "LynF",
+    "pic": "Costume_60125_JinM_col3.png"
+  },
+  "60125_LynF_col2": {
+    "skeleton": "00029723",
+    "texture": "00029722",
+    "material": "00035403",
+    "col1Material": "00029721",
+    "col": "col2",
+    "core": "60125_LynF",
+    "code": "60125",
+    "race": "LynF",
+    "pic": "Costume_60125_JinM_col2.png"
+  },
   "70030_JinF_col1": {
     "skeleton": "00029725",
     "texture": "00029728",
@@ -25826,6 +26860,28 @@
     "code": "60125",
     "race": "GonF",
     "pic": "Costume_60125_JinM_col1.png"
+  },
+  "60125_GonF_col3": {
+    "skeleton": "00029740",
+    "texture": "00029739",
+    "material": "00035330",
+    "col1Material": "00029741",
+    "col": "col3",
+    "core": "60125_GonF",
+    "code": "60125",
+    "race": "GonF",
+    "pic": "Costume_60125_JinM_col3.png"
+  },
+  "60125_GonF_col2": {
+    "skeleton": "00029740",
+    "texture": "00029739",
+    "material": "00035404",
+    "col1Material": "00029741",
+    "col": "col2",
+    "core": "60125_GonF",
+    "code": "60125",
+    "race": "GonF",
+    "pic": "Costume_60125_JinM_col2.png"
   },
   "70031_LynM_col1": {
     "skeleton": "00029749",
@@ -25904,6 +26960,17 @@
     "race": "LynM",
     "pic": "Costume_65031_JinF_col1.png"
   },
+  "60023_LynM_col1": {
+    "skeleton": "00029833",
+    "texture": "00029832",
+    "material": "00029831",
+    "col1Material": "00029831",
+    "col": "col1",
+    "core": "60023_LynM",
+    "code": "60023",
+    "race": "LynM",
+    "pic": null
+  },
   "60128_JinM_col1": {
     "skeleton": "00029863",
     "texture": "00029861",
@@ -25913,6 +26980,72 @@
     "core": "60128_JinM",
     "code": "60128",
     "race": "JinM",
+    "pic": null
+  },
+  "60103_JinF_col1": {
+    "skeleton": "00029871",
+    "texture": "00029870",
+    "material": "00029869",
+    "col1Material": "00029869",
+    "col": "col1",
+    "core": "60103_JinF",
+    "code": "60103",
+    "race": "JinF",
+    "pic": null
+  },
+  "60103_JinF_col2": {
+    "skeleton": "00029871",
+    "texture": "00029870",
+    "material": "00041896",
+    "col1Material": "00029869",
+    "col": "col2",
+    "core": "60103_JinF",
+    "code": "60103",
+    "race": "JinF",
+    "pic": null
+  },
+  "60103_KunN_col1": {
+    "skeleton": "00029874",
+    "texture": "00029873",
+    "material": "00029872",
+    "col1Material": "00029872",
+    "col": "col1",
+    "core": "60103_KunN",
+    "code": "60103",
+    "race": "KunN",
+    "pic": null
+  },
+  "60103_KunN_col2": {
+    "skeleton": "00029874",
+    "texture": "00029873",
+    "material": "00041897",
+    "col1Material": "00029872",
+    "col": "col2",
+    "core": "60103_KunN",
+    "code": "60103",
+    "race": "KunN",
+    "pic": null
+  },
+  "60103_LynF_col1": {
+    "skeleton": "00029875",
+    "texture": "00029876",
+    "material": "00029877",
+    "col1Material": "00029877",
+    "col": "col1",
+    "core": "60103_LynF",
+    "code": "60103",
+    "race": "LynF",
+    "pic": null
+  },
+  "60103_LynF_col2": {
+    "skeleton": "00029875",
+    "texture": "00029876",
+    "material": "00041898",
+    "col1Material": "00029877",
+    "col": "col2",
+    "core": "60103_LynF",
+    "code": "60103",
+    "race": "LynF",
     "pic": null
   },
   "70031_JinF_col1": {
@@ -26064,6 +27197,17 @@
     "material": "00030157",
     "col1Material": "00030157",
     "col": "col1",
+    "core": "60109_JinM",
+    "code": "60109",
+    "race": "JinM",
+    "pic": "Costume_60109_JinM_col1.png"
+  },
+  "60109_JinM_col2": {
+    "skeleton": "00030158",
+    "texture": "00030156",
+    "material": "00036705",
+    "col1Material": "00030157",
+    "col": "col2",
     "core": "60109_JinM",
     "code": "60109",
     "race": "JinM",
@@ -26234,6 +27378,17 @@
     "race": "JinM",
     "pic": "Costume_70036_JinF_col1.png"
   },
+  "65083_JinF_col1": {
+    "skeleton": "00030503",
+    "texture": "00030500",
+    "material": "00030504",
+    "col1Material": "00030504",
+    "col": "col1",
+    "core": "65083_JinF",
+    "code": "65083",
+    "race": "JinF",
+    "pic": null
+  },
   "70033_JinM_col1": {
     "skeleton": "00030510",
     "texture": "00030512",
@@ -26254,6 +27409,17 @@
     "core": "70033_LynM",
     "code": "70033",
     "race": "LynM",
+    "pic": null
+  },
+  "65083_GonM_col1": {
+    "skeleton": "00030549",
+    "texture": "00030548",
+    "material": "00030550",
+    "col1Material": "00030550",
+    "col": "col1",
+    "core": "65083_GonM",
+    "code": "65083",
+    "race": "GonM",
     "pic": null
   },
   "60117_KunN_col1": {
@@ -26344,6 +27510,50 @@
     "race": "JinM",
     "pic": null
   },
+  "60129_JinM_col4": {
+    "skeleton": "00030716",
+    "texture": "00030714",
+    "material": "00036181",
+    "col1Material": "00030715",
+    "col": "col4",
+    "core": "60129_JinM",
+    "code": "60129",
+    "race": "JinM",
+    "pic": null
+  },
+  "60129_JinM_col5": {
+    "skeleton": "00030716",
+    "texture": "00030714",
+    "material": "00036224",
+    "col1Material": "00030715",
+    "col": "col5",
+    "core": "60129_JinM",
+    "code": "60129",
+    "race": "JinM",
+    "pic": null
+  },
+  "60129_JinM_col6": {
+    "skeleton": "00030716",
+    "texture": "00030714",
+    "material": "00036229",
+    "col1Material": "00030715",
+    "col": "col6",
+    "core": "60129_JinM",
+    "code": "60129",
+    "race": "JinM",
+    "pic": null
+  },
+  "60129_JinM_col7": {
+    "skeleton": "00030716",
+    "texture": "00030714",
+    "material": "00041807",
+    "col1Material": "00030715",
+    "col": "col7",
+    "core": "60129_JinM",
+    "code": "60129",
+    "race": "JinM",
+    "pic": null
+  },
   "60130_JinM_col1": {
     "skeleton": "00030725",
     "texture": "00030723",
@@ -26366,12 +27576,34 @@
     "race": "JinM",
     "pic": "Costume_60101_JinF_col1.png"
   },
+  "60101_JinM_col2": {
+    "skeleton": "00030734",
+    "texture": "00030735",
+    "material": "00040364",
+    "col1Material": "00030736",
+    "col": "col2",
+    "core": "60101_JinM",
+    "code": "60101",
+    "race": "JinM",
+    "pic": "Costume_60101_JinF_col1.png"
+  },
   "60101_JinF_col1": {
     "skeleton": "00030738",
     "texture": "00030737",
     "material": "00030739",
     "col1Material": "00030739",
     "col": "col1",
+    "core": "60101_JinF",
+    "code": "60101",
+    "race": "JinF",
+    "pic": "Costume_60101_JinF_col1.png"
+  },
+  "60101_JinF_col2": {
+    "skeleton": "00030738",
+    "texture": "00030737",
+    "material": "00040365",
+    "col1Material": "00030739",
+    "col": "col2",
     "core": "60101_JinF",
     "code": "60101",
     "race": "JinF",
@@ -26388,12 +27620,34 @@
     "race": "GonF",
     "pic": "Costume_60101_JinF_col1.png"
   },
+  "60101_GonF_col2": {
+    "skeleton": "00030741",
+    "texture": "00030740",
+    "material": "00040352",
+    "col1Material": "00030742",
+    "col": "col2",
+    "core": "60101_GonF",
+    "code": "60101",
+    "race": "GonF",
+    "pic": "Costume_60101_JinF_col1.png"
+  },
   "60101_LynM_col1": {
     "skeleton": "00030744",
     "texture": "00030743",
     "material": "00030745",
     "col1Material": "00030745",
     "col": "col1",
+    "core": "60101_LynM",
+    "code": "60101",
+    "race": "LynM",
+    "pic": "Costume_60101_JinF_col1.png"
+  },
+  "60101_LynM_col2": {
+    "skeleton": "00030744",
+    "texture": "00030743",
+    "material": "00040375",
+    "col1Material": "00030745",
+    "col": "col2",
     "core": "60101_LynM",
     "code": "60101",
     "race": "LynM",
@@ -26443,6 +27697,50 @@
     "race": "JinF",
     "pic": null
   },
+  "60129_JinF_col4": {
+    "skeleton": "00030863",
+    "texture": "00030861",
+    "material": "00036172",
+    "col1Material": "00030862",
+    "col": "col4",
+    "core": "60129_JinF",
+    "code": "60129",
+    "race": "JinF",
+    "pic": null
+  },
+  "60129_JinF_col5": {
+    "skeleton": "00030863",
+    "texture": "00030861",
+    "material": "00036219",
+    "col1Material": "00030862",
+    "col": "col5",
+    "core": "60129_JinF",
+    "code": "60129",
+    "race": "JinF",
+    "pic": null
+  },
+  "60129_JinF_col6": {
+    "skeleton": "00030863",
+    "texture": "00030861",
+    "material": "00036230",
+    "col1Material": "00030862",
+    "col": "col6",
+    "core": "60129_JinF",
+    "code": "60129",
+    "race": "JinF",
+    "pic": null
+  },
+  "60129_JinF_col7": {
+    "skeleton": "00030863",
+    "texture": "00030861",
+    "material": "00041740",
+    "col1Material": "00030862",
+    "col": "col7",
+    "core": "60129_JinF",
+    "code": "60129",
+    "race": "JinF",
+    "pic": null
+  },
   "60129_GonM_col1": {
     "skeleton": "00030880",
     "texture": "00030878",
@@ -26476,6 +27774,50 @@
     "race": "GonM",
     "pic": null
   },
+  "60129_GonM_col4": {
+    "skeleton": "00030880",
+    "texture": "00030878",
+    "material": "00036231",
+    "col1Material": "00030879",
+    "col": "col4",
+    "core": "60129_GonM",
+    "code": "60129",
+    "race": "GonM",
+    "pic": null
+  },
+  "60129_GonM_col5": {
+    "skeleton": "00030880",
+    "texture": "00030878",
+    "material": "00036232",
+    "col1Material": "00030879",
+    "col": "col5",
+    "core": "60129_GonM",
+    "code": "60129",
+    "race": "GonM",
+    "pic": null
+  },
+  "60129_GonM_col6": {
+    "skeleton": "00030880",
+    "texture": "00030878",
+    "material": "00036233",
+    "col1Material": "00030879",
+    "col": "col6",
+    "core": "60129_GonM",
+    "code": "60129",
+    "race": "GonM",
+    "pic": null
+  },
+  "60129_GonM_col7": {
+    "skeleton": "00030880",
+    "texture": "00030878",
+    "material": "00041808",
+    "col1Material": "00030879",
+    "col": "col7",
+    "core": "60129_GonM",
+    "code": "60129",
+    "race": "GonM",
+    "pic": null
+  },
   "60129_LynM_col1": {
     "skeleton": "00030883",
     "texture": "00030881",
@@ -26504,6 +27846,50 @@
     "material": "00031056",
     "col1Material": "00030882",
     "col": "col3",
+    "core": "60129_LynM",
+    "code": "60129",
+    "race": "LynM",
+    "pic": null
+  },
+  "60129_LynM_col4": {
+    "skeleton": "00030883",
+    "texture": "00030881",
+    "material": "00036234",
+    "col1Material": "00030882",
+    "col": "col4",
+    "core": "60129_LynM",
+    "code": "60129",
+    "race": "LynM",
+    "pic": null
+  },
+  "60129_LynM_col5": {
+    "skeleton": "00030883",
+    "texture": "00030881",
+    "material": "00036235",
+    "col1Material": "00030882",
+    "col": "col5",
+    "core": "60129_LynM",
+    "code": "60129",
+    "race": "LynM",
+    "pic": null
+  },
+  "60129_LynM_col6": {
+    "skeleton": "00030883",
+    "texture": "00030881",
+    "material": "00036236",
+    "col1Material": "00030882",
+    "col": "col6",
+    "core": "60129_LynM",
+    "code": "60129",
+    "race": "LynM",
+    "pic": null
+  },
+  "60129_LynM_col7": {
+    "skeleton": "00030883",
+    "texture": "00030881",
+    "material": "00041809",
+    "col1Material": "00030882",
+    "col": "col7",
     "core": "60129_LynM",
     "code": "60129",
     "race": "LynM",
@@ -26564,6 +27950,50 @@
     "race": "GonF",
     "pic": null
   },
+  "60129_GonF_col4": {
+    "skeleton": "00030940",
+    "texture": "00030938",
+    "material": "00036196",
+    "col1Material": "00030939",
+    "col": "col4",
+    "core": "60129_GonF",
+    "code": "60129",
+    "race": "GonF",
+    "pic": null
+  },
+  "60129_GonF_col5": {
+    "skeleton": "00030940",
+    "texture": "00030938",
+    "material": "00036237",
+    "col1Material": "00030939",
+    "col": "col5",
+    "core": "60129_GonF",
+    "code": "60129",
+    "race": "GonF",
+    "pic": null
+  },
+  "60129_GonF_col6": {
+    "skeleton": "00030940",
+    "texture": "00030938",
+    "material": "00036238",
+    "col1Material": "00030939",
+    "col": "col6",
+    "core": "60129_GonF",
+    "code": "60129",
+    "race": "GonF",
+    "pic": null
+  },
+  "60129_GonF_col7": {
+    "skeleton": "00030940",
+    "texture": "00030938",
+    "material": "00041741",
+    "col1Material": "00030939",
+    "col": "col7",
+    "core": "60129_GonF",
+    "code": "60129",
+    "race": "GonF",
+    "pic": null
+  },
   "60129_LynF_col1": {
     "skeleton": "00030943",
     "texture": "00030941",
@@ -26597,6 +28027,50 @@
     "race": "LynF",
     "pic": null
   },
+  "60129_LynF_col4": {
+    "skeleton": "00030943",
+    "texture": "00030941",
+    "material": "00036239",
+    "col1Material": "00030942",
+    "col": "col4",
+    "core": "60129_LynF",
+    "code": "60129",
+    "race": "LynF",
+    "pic": null
+  },
+  "60129_LynF_col5": {
+    "skeleton": "00030943",
+    "texture": "00030941",
+    "material": "00036240",
+    "col1Material": "00030942",
+    "col": "col5",
+    "core": "60129_LynF",
+    "code": "60129",
+    "race": "LynF",
+    "pic": null
+  },
+  "60129_LynF_col6": {
+    "skeleton": "00030943",
+    "texture": "00030941",
+    "material": "00036241",
+    "col1Material": "00030942",
+    "col": "col6",
+    "core": "60129_LynF",
+    "code": "60129",
+    "race": "LynF",
+    "pic": null
+  },
+  "60129_LynF_col7": {
+    "skeleton": "00030943",
+    "texture": "00030941",
+    "material": "00041743",
+    "col1Material": "00030942",
+    "col": "col7",
+    "core": "60129_LynF",
+    "code": "60129",
+    "race": "LynF",
+    "pic": null
+  },
   "70035_JinF_col1": {
     "skeleton": "00030948",
     "texture": "00030946",
@@ -26605,6 +28079,17 @@
     "col": "col1",
     "core": "70035_JinF",
     "code": "70035",
+    "race": "JinF",
+    "pic": null
+  },
+  "60131_JinF_col1": {
+    "skeleton": "00030962",
+    "texture": "00030960",
+    "material": "00030961",
+    "col1Material": "00030961",
+    "col": "col1",
+    "core": "60131_JinF",
+    "code": "60131",
     "race": "JinF",
     "pic": null
   },
@@ -26619,6 +28104,17 @@
     "race": "GonM",
     "pic": "Costume_60116_JinF_col1.png"
   },
+  "60116_GonM_col2": {
+    "skeleton": "00030970",
+    "texture": "00030968",
+    "material": "00032603",
+    "col1Material": "00030969",
+    "col": "col2",
+    "core": "60116_GonM",
+    "code": "60116",
+    "race": "GonM",
+    "pic": "Costume_60116_JinM_col2.png"
+  },
   "60116_GonM_col3": {
     "skeleton": "00030970",
     "texture": "00030968",
@@ -26629,6 +28125,17 @@
     "code": "60116",
     "race": "GonM",
     "pic": "Costume_60116_JinF_col3.png"
+  },
+  "60116_GonM_col4": {
+    "skeleton": "00030970",
+    "texture": "00030968",
+    "material": "00037953",
+    "col1Material": "00030969",
+    "col": "col4",
+    "core": "60116_GonM",
+    "code": "60116",
+    "race": "GonM",
+    "pic": "Costume_60116_JinF_col1.png"
   },
   "60116_GonF_col1": {
     "skeleton": "00030973",
@@ -26641,6 +28148,17 @@
     "race": "GonF",
     "pic": "Costume_60116_JinF_col1.png"
   },
+  "60116_GonF_col2": {
+    "skeleton": "00030973",
+    "texture": "00030971",
+    "material": "00032604",
+    "col1Material": "00030972",
+    "col": "col2",
+    "core": "60116_GonF",
+    "code": "60116",
+    "race": "GonF",
+    "pic": "Costume_60116_JinM_col2.png"
+  },
   "60116_GonF_col3": {
     "skeleton": "00030973",
     "texture": "00030971",
@@ -26651,6 +28169,17 @@
     "code": "60116",
     "race": "GonF",
     "pic": "Costume_60116_JinF_col3.png"
+  },
+  "60116_GonF_col4": {
+    "skeleton": "00030973",
+    "texture": "00030971",
+    "material": "00037941",
+    "col1Material": "00030972",
+    "col": "col4",
+    "core": "60116_GonF",
+    "code": "60116",
+    "race": "GonF",
+    "pic": "Costume_60116_JinF_col1.png"
   },
   "60116_KunN_col1": {
     "skeleton": "00030975",
@@ -26663,6 +28192,17 @@
     "race": "KunN",
     "pic": "Costume_60116_JinF_col1.png"
   },
+  "60116_KunN_col2": {
+    "skeleton": "00030975",
+    "texture": "00030974",
+    "material": "00032605",
+    "col1Material": "00030976",
+    "col": "col2",
+    "core": "60116_KunN",
+    "code": "60116",
+    "race": "KunN",
+    "pic": "Costume_60116_JinM_col2.png"
+  },
   "60116_KunN_col3": {
     "skeleton": "00030975",
     "texture": "00030974",
@@ -26673,6 +28213,17 @@
     "code": "60116",
     "race": "KunN",
     "pic": "Costume_60116_JinF_col3.png"
+  },
+  "60116_KunN_col4": {
+    "skeleton": "00030975",
+    "texture": "00030974",
+    "material": "00037951",
+    "col1Material": "00030976",
+    "col": "col4",
+    "core": "60116_KunN",
+    "code": "60116",
+    "race": "KunN",
+    "pic": "Costume_60116_JinF_col1.png"
   },
   "60116_LynF_col1": {
     "skeleton": "00030979",
@@ -26685,6 +28236,17 @@
     "race": "LynF",
     "pic": "Costume_60116_JinF_col1.png"
   },
+  "60116_LynF_col2": {
+    "skeleton": "00030979",
+    "texture": "00030977",
+    "material": "00032606",
+    "col1Material": "00030978",
+    "col": "col2",
+    "core": "60116_LynF",
+    "code": "60116",
+    "race": "LynF",
+    "pic": "Costume_60116_JinM_col2.png"
+  },
   "60116_LynF_col3": {
     "skeleton": "00030979",
     "texture": "00030977",
@@ -26695,6 +28257,17 @@
     "code": "60116",
     "race": "LynF",
     "pic": "Costume_60116_JinF_col3.png"
+  },
+  "60116_LynF_col4": {
+    "skeleton": "00030979",
+    "texture": "00030977",
+    "material": "00037952",
+    "col1Material": "00030978",
+    "col": "col4",
+    "core": "60116_LynF",
+    "code": "60116",
+    "race": "LynF",
+    "pic": "Costume_60116_JinF_col1.png"
   },
   "60116_LynM_col1": {
     "skeleton": "00030982",
@@ -26707,6 +28280,17 @@
     "race": "LynM",
     "pic": "Costume_60116_JinF_col1.png"
   },
+  "60116_LynM_col2": {
+    "skeleton": "00030982",
+    "texture": "00030980",
+    "material": "00032607",
+    "col1Material": "00030981",
+    "col": "col2",
+    "core": "60116_LynM",
+    "code": "60116",
+    "race": "LynM",
+    "pic": "Costume_60116_JinM_col2.png"
+  },
   "60116_LynM_col3": {
     "skeleton": "00030982",
     "texture": "00030980",
@@ -26717,6 +28301,17 @@
     "code": "60116",
     "race": "LynM",
     "pic": "Costume_60116_JinF_col3.png"
+  },
+  "60116_LynM_col4": {
+    "skeleton": "00030982",
+    "texture": "00030980",
+    "material": "00037961",
+    "col1Material": "00030981",
+    "col": "col4",
+    "core": "60116_LynM",
+    "code": "60116",
+    "race": "LynM",
+    "pic": "Costume_60116_JinF_col1.png"
   },
   "60129_KunN_col1": {
     "skeleton": "00030999",
@@ -26750,6 +28345,72 @@
     "code": "60129",
     "race": "KunN",
     "pic": null
+  },
+  "60129_KunN_col4": {
+    "skeleton": "00030999",
+    "texture": "00030997",
+    "material": "00036242",
+    "col1Material": "00030998",
+    "col": "col4",
+    "core": "60129_KunN",
+    "code": "60129",
+    "race": "KunN",
+    "pic": null
+  },
+  "60129_KunN_col5": {
+    "skeleton": "00030999",
+    "texture": "00030997",
+    "material": "00036243",
+    "col1Material": "00030998",
+    "col": "col5",
+    "core": "60129_KunN",
+    "code": "60129",
+    "race": "KunN",
+    "pic": null
+  },
+  "60129_KunN_col6": {
+    "skeleton": "00030999",
+    "texture": "00030997",
+    "material": "00036244",
+    "col1Material": "00030998",
+    "col": "col6",
+    "core": "60129_KunN",
+    "code": "60129",
+    "race": "KunN",
+    "pic": null
+  },
+  "60129_KunN_col7": {
+    "skeleton": "00030999",
+    "texture": "00030997",
+    "material": "00041742",
+    "col1Material": "00030998",
+    "col": "col7",
+    "core": "60129_KunN",
+    "code": "60129",
+    "race": "KunN",
+    "pic": null
+  },
+  "70039_JinM_col1": {
+    "skeleton": "00031009",
+    "texture": "00031004",
+    "material": "00031008",
+    "col1Material": "00031008",
+    "col": "col1",
+    "core": "70039_JinM",
+    "code": "70039",
+    "race": "JinM",
+    "pic": "Costume_70039_JinM_col1.png"
+  },
+  "10001_JinM_col1": {
+    "skeleton": "00031078",
+    "texture": "00031076",
+    "material": "00031077",
+    "col1Material": "00031077",
+    "col": "col1",
+    "core": "10001_JinM",
+    "code": "10001",
+    "race": "JinM",
+    "pic": "Costume_10001_JinF.png"
   },
   "70034_GonF_col1": {
     "skeleton": "00031082",
@@ -26938,6 +28599,28 @@
     "race": "LynF",
     "pic": "Costume_70042_JinF_col1.png"
   },
+  "60132_JinF_col1": {
+    "skeleton": "00031358",
+    "texture": "00031356",
+    "material": "00031357",
+    "col1Material": "00031357",
+    "col": "col1",
+    "core": "60132_JinF",
+    "code": "60132",
+    "race": "JinF",
+    "pic": "Costume_60132_JinF_col3.png"
+  },
+  "60132_JinM_col1": {
+    "skeleton": "00031387",
+    "texture": "00031385",
+    "material": "00031386",
+    "col1Material": "00031386",
+    "col": "col1",
+    "core": "60132_JinM",
+    "code": "60132",
+    "race": "JinM",
+    "pic": "Costume_60132_jinM_col3.png"
+  },
   "70042_JinF_col1": {
     "skeleton": "00031396",
     "texture": "00031394",
@@ -26993,6 +28676,17 @@
     "race": "JinM",
     "pic": "Costume_60133_JinF_col1.png"
   },
+  "70039_JinF_col1": {
+    "skeleton": "00031434",
+    "texture": "00031432",
+    "material": "00031433",
+    "col1Material": "00031433",
+    "col": "col1",
+    "core": "70039_JinF",
+    "code": "70039",
+    "race": "JinF",
+    "pic": "Costume_70039_JinM_col1.png"
+  },
   "70042_KunN_col1": {
     "skeleton": "00031439",
     "texture": "00031437",
@@ -27037,6 +28731,39 @@
     "race": "JinM",
     "pic": null
   },
+  "70043_GonF_col1": {
+    "skeleton": "00031512",
+    "texture": "00031509",
+    "material": "00031510",
+    "col1Material": "00031510",
+    "col": "col1",
+    "core": "70043_GonF",
+    "code": "70043",
+    "race": "GonF",
+    "pic": "Costume_70043_JinM_col1.png"
+  },
+  "70043_GonF_col2": {
+    "skeleton": "00031512",
+    "texture": "00031509",
+    "material": "00031511",
+    "col1Material": "00031510",
+    "col": "col2",
+    "core": "70043_GonF",
+    "code": "70043",
+    "race": "GonF",
+    "pic": "Costume_70043_JinM_col1.png"
+  },
+  "70043_GonF_col3": {
+    "skeleton": "00031512",
+    "texture": "00031509",
+    "material": "00038848",
+    "col1Material": "00031510",
+    "col": "col3",
+    "core": "70043_GonF",
+    "code": "70043",
+    "race": "GonF",
+    "pic": "Costume_70043_JinM_col1.png"
+  },
   "70041_JinM_col1": {
     "skeleton": "00031519",
     "texture": "00031517",
@@ -27059,6 +28786,39 @@
     "race": "GonM",
     "pic": null
   },
+  "70043_JinF_col1": {
+    "skeleton": "00031530",
+    "texture": "00031528",
+    "material": "00031529",
+    "col1Material": "00031529",
+    "col": "col1",
+    "core": "70043_JinF",
+    "code": "70043",
+    "race": "JinF",
+    "pic": "Costume_70043_JinM_col1.png"
+  },
+  "70043_JinF_col2": {
+    "skeleton": "00031530",
+    "texture": "00031528",
+    "material": "00031531",
+    "col1Material": "00031529",
+    "col": "col2",
+    "core": "70043_JinF",
+    "code": "70043",
+    "race": "JinF",
+    "pic": "Costume_70043_JinM_col1.png"
+  },
+  "70043_JinF_col3": {
+    "skeleton": "00031530",
+    "texture": "00031528",
+    "material": "00038847",
+    "col1Material": "00031529",
+    "col": "col3",
+    "core": "70043_JinF",
+    "code": "70043",
+    "race": "JinF",
+    "pic": "Costume_70043_JinM_col1.png"
+  },
   "70046_JinF_col1": {
     "skeleton": "00031549",
     "texture": "00031551",
@@ -27069,6 +28829,61 @@
     "code": "70046",
     "race": "JinF",
     "pic": null
+  },
+  "60137_LyNF_col1": {
+    "skeleton": "00031560",
+    "texture": "00031558",
+    "material": "00031559",
+    "col1Material": "00031559",
+    "col": "col1",
+    "core": "60137_LyNF",
+    "code": "60137",
+    "race": "LynF",
+    "pic": "Costume_60137_LynM_col1.png"
+  },
+  "60124_JinM_col1": {
+    "skeleton": "00031564",
+    "texture": "00031562",
+    "material": "00031563",
+    "col1Material": "00031563",
+    "col": "col1",
+    "core": "60124_JinM",
+    "code": "60124",
+    "race": "JinM",
+    "pic": null
+  },
+  "70043_KunN_col1": {
+    "skeleton": "00031591",
+    "texture": "00031589",
+    "material": "00031590",
+    "col1Material": "00031590",
+    "col": "col1",
+    "core": "70043_KunN",
+    "code": "70043",
+    "race": "KunN",
+    "pic": "Costume_70043_JinM_col1.png"
+  },
+  "70043_KunN_col2": {
+    "skeleton": "00031591",
+    "texture": "00031589",
+    "material": "00031592",
+    "col1Material": "00031590",
+    "col": "col2",
+    "core": "70043_KunN",
+    "code": "70043",
+    "race": "KunN",
+    "pic": "Costume_70043_JinM_col1.png"
+  },
+  "70043_KunN_col3": {
+    "skeleton": "00031591",
+    "texture": "00031589",
+    "material": "00038849",
+    "col1Material": "00031590",
+    "col": "col3",
+    "core": "70043_KunN",
+    "code": "70043",
+    "race": "KunN",
+    "pic": "Costume_70043_JinM_col1.png"
   },
   "70046_JinM_col1": {
     "skeleton": "00031614",
@@ -27114,6 +28929,17 @@
     "race": "LynF",
     "pic": null
   },
+  "60137_LynM_col1": {
+    "skeleton": "00031647",
+    "texture": "00031645",
+    "material": "00031646",
+    "col1Material": "00031646",
+    "col": "col1",
+    "core": "60137_LynM",
+    "code": "60137",
+    "race": "LynM",
+    "pic": "Costume_60137_LynM_col1.png"
+  },
   "70046_GonM_col1": {
     "skeleton": "00031658",
     "texture": "00031659",
@@ -27133,6 +28959,94 @@
     "col": "col1",
     "core": "70046_LynM",
     "code": "70046",
+    "race": "LynM",
+    "pic": null
+  },
+  "70048_JinF_col1": {
+    "skeleton": "00031680",
+    "texture": "00031678",
+    "material": "00031679",
+    "col1Material": "00031679",
+    "col": "col1",
+    "core": "70048_JinF",
+    "code": "70048",
+    "race": "JinF",
+    "pic": null
+  },
+  "70043_LynF_col1": {
+    "skeleton": "00031687",
+    "texture": "00031685",
+    "material": "00031686",
+    "col1Material": "00031686",
+    "col": "col1",
+    "core": "70043_LynF",
+    "code": "70043",
+    "race": "LynF",
+    "pic": "Costume_70043_JinM_col1.png"
+  },
+  "70043_LynF_col2": {
+    "skeleton": "00031687",
+    "texture": "00031685",
+    "material": "00031688",
+    "col1Material": "00031686",
+    "col": "col2",
+    "core": "70043_LynF",
+    "code": "70043",
+    "race": "LynF",
+    "pic": "Costume_70043_JinM_col1.png"
+  },
+  "70043_LynF_col3": {
+    "skeleton": "00031687",
+    "texture": "00031685",
+    "material": "00038850",
+    "col1Material": "00031686",
+    "col": "col3",
+    "core": "70043_LynF",
+    "code": "70043",
+    "race": "LynF",
+    "pic": "Costume_70043_JinM_col1.png"
+  },
+  "10001_GonM_col1": {
+    "skeleton": "00031701",
+    "texture": "00031699",
+    "material": "00031700",
+    "col1Material": "00031700",
+    "col": "col1",
+    "core": "10001_GonM",
+    "code": "10001",
+    "race": "GonM",
+    "pic": "Costume_10001_JinF.png"
+  },
+  "10001_LynM_col1": {
+    "skeleton": "00031704",
+    "texture": "00031702",
+    "material": "00031703",
+    "col1Material": "00031703",
+    "col": "col1",
+    "core": "10001_LynM",
+    "code": "10001",
+    "race": "LynM",
+    "pic": "Costume_10001_JinF.png"
+  },
+  "60008_GonM_col1": {
+    "skeleton": "00031716",
+    "texture": "00031714",
+    "material": "00031715",
+    "col1Material": "00031715",
+    "col": "col1",
+    "core": "60008_GonM",
+    "code": "60008",
+    "race": "GonM",
+    "pic": null
+  },
+  "60008_LynM_col1": {
+    "skeleton": "00031719",
+    "texture": "00031717",
+    "material": "00031718",
+    "col1Material": "00031718",
+    "col": "col1",
+    "core": "60008_LynM",
+    "code": "60008",
     "race": "LynM",
     "pic": null
   },
@@ -27202,6 +29116,39 @@
     "race": "GonM",
     "pic": null
   },
+  "70043_JinM_col1": {
+    "skeleton": "00031822",
+    "texture": "00031820",
+    "material": "00031821",
+    "col1Material": "00031821",
+    "col": "col1",
+    "core": "70043_JinM",
+    "code": "70043",
+    "race": "JinM",
+    "pic": "Costume_70043_JinM_col1.png"
+  },
+  "70043_JinM_col2": {
+    "skeleton": "00031822",
+    "texture": "00031820",
+    "material": "00036346",
+    "col1Material": "00031821",
+    "col": "col2",
+    "core": "70043_JinM",
+    "code": "70043",
+    "race": "JinM",
+    "pic": "Costume_70043_JinM_col1.png"
+  },
+  "70043_JinM_col3": {
+    "skeleton": "00031822",
+    "texture": "00031820",
+    "material": "00038851",
+    "col1Material": "00031821",
+    "col": "col3",
+    "core": "70043_JinM",
+    "code": "70043",
+    "race": "JinM",
+    "pic": "Costume_70043_JinM_col1.png"
+  },
   "60138_JinF_col1": {
     "skeleton": "00031833",
     "texture": "00031829",
@@ -27234,6 +29181,39 @@
     "code": "60138",
     "race": "JinF",
     "pic": null
+  },
+  "70043_LynM_col1": {
+    "skeleton": "00031853",
+    "texture": "00031851",
+    "material": "00031852",
+    "col1Material": "00031852",
+    "col": "col1",
+    "core": "70043_LynM",
+    "code": "70043",
+    "race": "LynM",
+    "pic": "Costume_70043_JinM_col1.png"
+  },
+  "70043_LynM_col2": {
+    "skeleton": "00031853",
+    "texture": "00031851",
+    "material": "00036349",
+    "col1Material": "00031852",
+    "col": "col2",
+    "core": "70043_LynM",
+    "code": "70043",
+    "race": "LynM",
+    "pic": "Costume_70043_JinM_col1.png"
+  },
+  "70043_LynM_col3": {
+    "skeleton": "00031853",
+    "texture": "00031851",
+    "material": "00038852",
+    "col1Material": "00031852",
+    "col": "col3",
+    "core": "70043_LynM",
+    "code": "70043",
+    "race": "LynM",
+    "pic": "Costume_70043_JinM_col1.png"
   },
   "60138_GonF_col1": {
     "skeleton": "00031857",
@@ -27311,6 +29291,39 @@
     "code": "54002",
     "race": "LynF",
     "pic": "costume_54002_JinM_col1.png"
+  },
+  "70043_GonM_col1": {
+    "skeleton": "00031871",
+    "texture": "00031869",
+    "material": "00031870",
+    "col1Material": "00031870",
+    "col": "col1",
+    "core": "70043_GonM",
+    "code": "70043",
+    "race": "GonM",
+    "pic": "Costume_70043_JinM_col1.png"
+  },
+  "70043_GonM_col2": {
+    "skeleton": "00031871",
+    "texture": "00031869",
+    "material": "00036350",
+    "col1Material": "00031870",
+    "col": "col2",
+    "core": "70043_GonM",
+    "code": "70043",
+    "race": "GonM",
+    "pic": "Costume_70043_JinM_col1.png"
+  },
+  "70043_GonM_col3": {
+    "skeleton": "00031871",
+    "texture": "00031869",
+    "material": "00038853",
+    "col1Material": "00031870",
+    "col": "col3",
+    "core": "70043_GonM",
+    "code": "70043",
+    "race": "GonM",
+    "pic": "Costume_70043_JinM_col1.png"
   },
   "60142_JinM_col1": {
     "skeleton": "00031894",
@@ -27411,6 +29424,17 @@
     "race": "LynF",
     "pic": "Costume_65040_JinF_col1.png"
   },
+  "70048_GonF_col1": {
+    "skeleton": "00031950",
+    "texture": "00031948",
+    "material": "00031949",
+    "col1Material": "00031949",
+    "col": "col1",
+    "core": "70048_GonF",
+    "code": "70048",
+    "race": "GonF",
+    "pic": null
+  },
   "60142_KunN_col1": {
     "skeleton": "00031953",
     "texture": "00031951",
@@ -27422,6 +29446,83 @@
     "race": "KunN",
     "pic": "Costume_60142_JinM_col1.png"
   },
+  "65010_LynF_col1": {
+    "skeleton": "00031970",
+    "texture": "00031968",
+    "material": "00031969",
+    "col1Material": "00031969",
+    "col": "col1",
+    "core": "65010_LynF",
+    "code": "65010",
+    "race": "LynF",
+    "pic": "Costume_65010_GonF.png"
+  },
+  "60139_GonM_col1": {
+    "skeleton": "00031984",
+    "texture": "00031982",
+    "material": "00031983",
+    "col1Material": "00031983",
+    "col": "col1",
+    "core": "60139_GonM",
+    "code": "60139",
+    "race": "GonM",
+    "pic": null
+  },
+  "70049_JinM_col1": {
+    "skeleton": "00032000",
+    "texture": "00031998",
+    "material": "00031999",
+    "col1Material": "00031999",
+    "col": "col1",
+    "core": "70049_JinM",
+    "code": "70049",
+    "race": "JinM",
+    "pic": null
+  },
+  "60124_GonM_col1": {
+    "skeleton": "00032064",
+    "texture": "00032062",
+    "material": "00032063",
+    "col1Material": "00032063",
+    "col": "col1",
+    "core": "60124_GonM",
+    "code": "60124",
+    "race": "GonM",
+    "pic": null
+  },
+  "60124_GonF_col1": {
+    "skeleton": "00032087",
+    "texture": "00032085",
+    "material": "00032086",
+    "col1Material": "00032086",
+    "col": "col1",
+    "core": "60124_GonF",
+    "code": "60124",
+    "race": "GonF",
+    "pic": null
+  },
+  "60124_KunN_col1": {
+    "skeleton": "00032103",
+    "texture": "00032101",
+    "material": "00032102",
+    "col1Material": "00032102",
+    "col": "col1",
+    "core": "60124_KunN",
+    "code": "60124",
+    "race": "KunN",
+    "pic": null
+  },
+  "60124_LynF_col1": {
+    "skeleton": "00032106",
+    "texture": "00032104",
+    "material": "00032105",
+    "col1Material": "00032105",
+    "col": "col1",
+    "core": "60124_LynF",
+    "code": "60124",
+    "race": "LynF",
+    "pic": null
+  },
   "65085_JinM_col1": {
     "skeleton": "00032137",
     "texture": "00032135",
@@ -27432,6 +29533,61 @@
     "code": "65085",
     "race": "JinM",
     "pic": "Costume_65085_jinF_col1.png"
+  },
+  "65011_GonF_col1": {
+    "skeleton": "00032140",
+    "texture": "00032138",
+    "material": "00032139",
+    "col1Material": "00032139",
+    "col": "col1",
+    "core": "65011_GonF",
+    "code": "65011",
+    "race": "GonF",
+    "pic": null
+  },
+  "65011_KunN_col1": {
+    "skeleton": "00032143",
+    "texture": "00032141",
+    "material": "00032142",
+    "col1Material": "00032142",
+    "col": "col1",
+    "core": "65011_KunN",
+    "code": "65011",
+    "race": "KunN",
+    "pic": null
+  },
+  "65011_LynF_col1": {
+    "skeleton": "00032146",
+    "texture": "00032144",
+    "material": "00032145",
+    "col1Material": "00032145",
+    "col": "col1",
+    "core": "65011_LynF",
+    "code": "65011",
+    "race": "LynF",
+    "pic": null
+  },
+  "60124_LynM_col1": {
+    "skeleton": "00032150",
+    "texture": "00032148",
+    "material": "00032149",
+    "col1Material": "00032149",
+    "col": "col1",
+    "core": "60124_LynM",
+    "code": "60124",
+    "race": "LynM",
+    "pic": null
+  },
+  "60139_JinF_col1": {
+    "skeleton": "00032175",
+    "texture": "00032173",
+    "material": "00032174",
+    "col1Material": "00032174",
+    "col": "col1",
+    "core": "60139_JinF",
+    "code": "60139",
+    "race": "JinF",
+    "pic": null
   },
   "10005_JinF_col1": {
     "skeleton": "00032284",
@@ -27455,6 +29611,17 @@
     "race": "LynF",
     "pic": "Costume_60109_JinM_col1.png"
   },
+  "60109_LynF_col2": {
+    "skeleton": "00032292",
+    "texture": "00032293",
+    "material": "00036704",
+    "col1Material": "00032291",
+    "col": "col2",
+    "core": "60109_LynF",
+    "code": "60109",
+    "race": "LynF",
+    "pic": "Costume_60109_JinM_col1.png"
+  },
   "60109_LynM_col1": {
     "skeleton": "00032295",
     "texture": "00032296",
@@ -27466,12 +29633,78 @@
     "race": "LynM",
     "pic": "Costume_60109_JinM_col1.png"
   },
+  "60109_LynM_col2": {
+    "skeleton": "00032295",
+    "texture": "00032296",
+    "material": "00036736",
+    "col1Material": "00032294",
+    "col": "col2",
+    "core": "60109_LynM",
+    "code": "60109",
+    "race": "LynM",
+    "pic": "Costume_60109_JinM_col1.png"
+  },
+  "65085_JinF_col1": {
+    "skeleton": "00032533",
+    "texture": "00032531",
+    "material": "00032532",
+    "col1Material": "00032532",
+    "col": "col1",
+    "core": "65085_JinF",
+    "code": "65085",
+    "race": "JinF",
+    "pic": "Costume_65085_jinF_col1.png"
+  },
   "10006_JinF_col1": {
     "skeleton": "00032541",
     "texture": "00032539",
     "material": "00032540",
     "col1Material": "00032540",
     "col": "col1",
+    "core": "10006_JinF",
+    "code": "10006",
+    "race": "JinF",
+    "pic": null
+  },
+  "10006_JinF_col2": {
+    "skeleton": "00032541",
+    "texture": "00032539",
+    "material": "00035285",
+    "col1Material": "00032540",
+    "col": "col2",
+    "core": "10006_JinF",
+    "code": "10006",
+    "race": "JinF",
+    "pic": null
+  },
+  "10006_JinF_col3": {
+    "skeleton": "00032541",
+    "texture": "00032539",
+    "material": "00037954",
+    "col1Material": "00032540",
+    "col": "col3",
+    "core": "10006_JinF",
+    "code": "10006",
+    "race": "JinF",
+    "pic": null
+  },
+  "10006_JinF_col4": {
+    "skeleton": "00032541",
+    "texture": "00032539",
+    "material": "00038032",
+    "col1Material": "00032540",
+    "col": "col4",
+    "core": "10006_JinF",
+    "code": "10006",
+    "race": "JinF",
+    "pic": null
+  },
+  "10006_JinF_col5": {
+    "skeleton": "00032541",
+    "texture": "00032539",
+    "material": "00038045",
+    "col1Material": "00032540",
+    "col": "col5",
     "core": "10006_JinF",
     "code": "10006",
     "race": "JinF",
@@ -27532,6 +29765,17 @@
     "race": "LynM",
     "pic": "Costume_60130_jinM_col1.png"
   },
+  "65018_JinM_col1": {
+    "skeleton": "00032590",
+    "texture": "00032592",
+    "material": "00032591",
+    "col1Material": "00032591",
+    "col": "col1",
+    "core": "65018_JinM",
+    "code": "65018",
+    "race": "JinM",
+    "pic": null
+  },
   "10006_GonF_col1": {
     "skeleton": "00032596",
     "texture": "00032594",
@@ -27543,12 +29787,34 @@
     "race": "GonF",
     "pic": null
   },
+  "10006_GonF_col2": {
+    "skeleton": "00032596",
+    "texture": "00032594",
+    "material": "00035297",
+    "col1Material": "00032595",
+    "col": "col2",
+    "core": "10006_GonF",
+    "code": "10006",
+    "race": "GonF",
+    "pic": null
+  },
   "10006_LynM_col1": {
     "skeleton": "00032600",
     "texture": "00032598",
     "material": "00032599",
     "col1Material": "00032599",
     "col": "col1",
+    "core": "10006_LynM",
+    "code": "10006",
+    "race": "LynM",
+    "pic": null
+  },
+  "10006_LynM_col2": {
+    "skeleton": "00032600",
+    "texture": "00032598",
+    "material": "00035287",
+    "col1Material": "00032599",
+    "col": "col2",
     "core": "10006_LynM",
     "code": "10006",
     "race": "LynM",
@@ -27576,12 +29842,67 @@
     "race": "LynF",
     "pic": null
   },
+  "10006_LynF_col2": {
+    "skeleton": "00032621",
+    "texture": "00032618",
+    "material": "00035295",
+    "col1Material": "00032619",
+    "col": "col2",
+    "core": "10006_LynF",
+    "code": "10006",
+    "race": "LynF",
+    "pic": null
+  },
   "10006_JinM_col1": {
     "skeleton": "00032627",
     "texture": "00032625",
     "material": "00032626",
     "col1Material": "00032626",
     "col": "col1",
+    "core": "10006_JinM",
+    "code": "10006",
+    "race": "JinM",
+    "pic": null
+  },
+  "10006_JinM_col2": {
+    "skeleton": "00032627",
+    "texture": "00032625",
+    "material": "00035284",
+    "col1Material": "00032626",
+    "col": "col2",
+    "core": "10006_JinM",
+    "code": "10006",
+    "race": "JinM",
+    "pic": null
+  },
+  "10006_JinM_col4": {
+    "skeleton": "00032627",
+    "texture": "00032625",
+    "material": "00037721",
+    "col1Material": "00032626",
+    "col": "col4",
+    "core": "10006_JinM",
+    "code": "10006",
+    "race": "JinM",
+    "pic": null
+  },
+  "10006_JinM_col3": {
+    "skeleton": "00032627",
+    "texture": "00032625",
+    "material": "00037907",
+    "col1Material": "00032626",
+    "col": "col3",
+    "core": "10006_JinM",
+    "code": "10006",
+    "race": "JinM",
+    "pic": null
+  },
+  "10006_JinM_col5": {
+    "skeleton": "00032627",
+    "texture": "00032625",
+    "material": "00038046",
+    "col1Material": "00032626",
+    "col": "col5",
     "core": "10006_JinM",
     "code": "10006",
     "race": "JinM",
@@ -27598,12 +29919,89 @@
     "race": "KunN",
     "pic": null
   },
+  "10006_KunN_col2": {
+    "skeleton": "00032635",
+    "texture": "00032633",
+    "material": "00035298",
+    "col1Material": "00032634",
+    "col": "col2",
+    "core": "10006_KunN",
+    "code": "10006",
+    "race": "KunN",
+    "pic": null
+  },
+  "65085_GonF_col1": {
+    "skeleton": "00032643",
+    "texture": "00032641",
+    "material": "00032642",
+    "col1Material": "00032642",
+    "col": "col1",
+    "core": "65085_GonF",
+    "code": "65085",
+    "race": "GonF",
+    "pic": "Costume_65085_jinF_col1.png"
+  },
+  "65085_GonM_col1": {
+    "skeleton": "00032646",
+    "texture": "00032644",
+    "material": "00032645",
+    "col1Material": "00032645",
+    "col": "col1",
+    "core": "65085_GonM",
+    "code": "65085",
+    "race": "GonM",
+    "pic": "Costume_65085_jinF_col1.png"
+  },
+  "65085_LynM_col1": {
+    "skeleton": "00032649",
+    "texture": "00032647",
+    "material": "00032648",
+    "col1Material": "00032648",
+    "col": "col1",
+    "core": "65085_LynM",
+    "code": "65085",
+    "race": "LynM",
+    "pic": "Costume_65085_jinF_col1.png"
+  },
+  "65085_KunN_col1": {
+    "skeleton": "00032664",
+    "texture": "00032662",
+    "material": "00032663",
+    "col1Material": "00032663",
+    "col": "col1",
+    "core": "65085_KunN",
+    "code": "65085",
+    "race": "KunN",
+    "pic": "Costume_65085_jinF_col1.png"
+  },
+  "65085_LynF_col1": {
+    "skeleton": "00032667",
+    "texture": "00032665",
+    "material": "00032666",
+    "col1Material": "00032666",
+    "col": "col1",
+    "core": "65085_LynF",
+    "code": "65085",
+    "race": "LynF",
+    "pic": "Costume_65085_jinF_col1.png"
+  },
   "10006_GonM_col1": {
     "skeleton": "00032673",
     "texture": "00032671",
     "material": "00032672",
     "col1Material": "00032672",
     "col": "col1",
+    "core": "10006_GonM",
+    "code": "10006",
+    "race": "GonM",
+    "pic": null
+  },
+  "10006_GonM_col2": {
+    "skeleton": "00032673",
+    "texture": "00032671",
+    "material": "00035283",
+    "col1Material": "00032672",
+    "col": "col2",
     "core": "10006_GonM",
     "code": "10006",
     "race": "GonM",
@@ -27620,6 +30018,39 @@
     "race": "LynF",
     "pic": "Costume_10005_JinM_col1.png"
   },
+  "60140_JinF_col1": {
+    "skeleton": "00032682",
+    "texture": "00032680",
+    "material": "00032681",
+    "col1Material": "00032681",
+    "col": "col1",
+    "core": "60140_JinF",
+    "code": "60140",
+    "race": "JinF",
+    "pic": null
+  },
+  "60140_JinF_col3": {
+    "skeleton": "00032682",
+    "texture": "00032680",
+    "material": "00033527",
+    "col1Material": "00032681",
+    "col": "col3",
+    "core": "60140_JinF",
+    "code": "60140",
+    "race": "JinF",
+    "pic": null
+  },
+  "60140_JinF_col2": {
+    "skeleton": "00032682",
+    "texture": "00032680",
+    "material": "00033573",
+    "col1Material": "00032681",
+    "col": "col2",
+    "core": "60140_JinF",
+    "code": "60140",
+    "race": "JinF",
+    "pic": null
+  },
   "10009_LynF_col1": {
     "skeleton": "00032707",
     "texture": "00032705",
@@ -27631,12 +30062,34 @@
     "race": "LynF",
     "pic": "Costume_10009_LynF_col1.png"
   },
+  "10009_LynF_col2": {
+    "skeleton": "00032707",
+    "texture": "00032705",
+    "material": "00041107",
+    "col1Material": "00032706",
+    "col": "col2",
+    "core": "10009_LynF",
+    "code": "10009",
+    "race": "LynF",
+    "pic": "Costume_10009_LynF_col1.png"
+  },
   "10011_LynF_col1": {
     "skeleton": "00032713",
     "texture": "00032711",
     "material": "00032712",
     "col1Material": "00032712",
     "col": "col1",
+    "core": "10011_LynF",
+    "code": "10011",
+    "race": "LynF",
+    "pic": "Costume_10011_LynF_col1.png"
+  },
+  "10011_LynF_col2": {
+    "skeleton": "00032713",
+    "texture": "00032711",
+    "material": "00041098",
+    "col1Material": "00032712",
+    "col": "col2",
     "core": "10011_LynF",
     "code": "10011",
     "race": "LynF",
@@ -27708,12 +30161,34 @@
     "race": "LynM",
     "pic": "Costume_10009_LynM_col1.png"
   },
+  "10009_LynM_col2": {
+    "skeleton": "00033013",
+    "texture": "00033015",
+    "material": "00041045",
+    "col1Material": "00033014",
+    "col": "col2",
+    "core": "10009_LynM",
+    "code": "10009",
+    "race": "LynM",
+    "pic": "Costume_10009_LynM_col1.png"
+  },
   "10009_GonF_col1": {
     "skeleton": "00033095",
     "texture": "00033093",
     "material": "00033094",
     "col1Material": "00033094",
     "col": "col1",
+    "core": "10009_GonF",
+    "code": "10009",
+    "race": "GonF",
+    "pic": "Costume_10009_GonF_col1.png"
+  },
+  "10009_GonF_col2": {
+    "skeleton": "00033095",
+    "texture": "00033093",
+    "material": "00041046",
+    "col1Material": "00033094",
+    "col": "col2",
     "core": "10009_GonF",
     "code": "10009",
     "race": "GonF",
@@ -27730,12 +30205,34 @@
     "race": "KunN",
     "pic": "Costume_10009_KunN_col1.png"
   },
+  "10009_KunN_col2": {
+    "skeleton": "00033177",
+    "texture": "00033172",
+    "material": "00041047",
+    "col1Material": "00033176",
+    "col": "col2",
+    "core": "10009_KunN",
+    "code": "10009",
+    "race": "KunN",
+    "pic": "Costume_10009_KunN_col1.png"
+  },
   "10009_JinF_col1": {
     "skeleton": "00033181",
     "texture": "00033179",
     "material": "00033180",
     "col1Material": "00033180",
     "col": "col1",
+    "core": "10009_JinF",
+    "code": "10009",
+    "race": "JinF",
+    "pic": "Costume_10009_JinF_col1.png"
+  },
+  "10009_JinF_col2": {
+    "skeleton": "00033181",
+    "texture": "00033179",
+    "material": "00041052",
+    "col1Material": "00033180",
+    "col": "col2",
     "core": "10009_JinF",
     "code": "10009",
     "race": "JinF",
@@ -27785,6 +30282,17 @@
     "race": "GonM",
     "pic": "Costume_10009_GonM_col1.png"
   },
+  "10009_GonM_col2": {
+    "skeleton": "00033258",
+    "texture": "00033256",
+    "material": "00041055",
+    "col1Material": "00033257",
+    "col": "col2",
+    "core": "10009_GonM",
+    "code": "10009",
+    "race": "GonM",
+    "pic": "Costume_10009_GonM_col1.png"
+  },
   "10009_JinM_col1": {
     "skeleton": "00033274",
     "texture": "00033272",
@@ -27795,6 +30303,39 @@
     "code": "10009",
     "race": "JinM",
     "pic": "Costume_10009_JinM_col1.png"
+  },
+  "60140_JinM_col1": {
+    "skeleton": "00033278",
+    "texture": "00033276",
+    "material": "00033277",
+    "col1Material": "00033277",
+    "col": "col1",
+    "core": "60140_JinM",
+    "code": "60140",
+    "race": "JinM",
+    "pic": null
+  },
+  "60140_JinM_col2": {
+    "skeleton": "00033278",
+    "texture": "00033276",
+    "material": "00035642",
+    "col1Material": "00033277",
+    "col": "col2",
+    "core": "60140_JinM",
+    "code": "60140",
+    "race": "JinM",
+    "pic": null
+  },
+  "60140_JinM_col3": {
+    "skeleton": "00033278",
+    "texture": "00033276",
+    "material": "00035643",
+    "col1Material": "00033277",
+    "col": "col3",
+    "core": "60140_JinM",
+    "code": "60140",
+    "race": "JinM",
+    "pic": null
   },
   "10008_GonF_col1": {
     "skeleton": "00033309",
@@ -27807,6 +30348,17 @@
     "race": "GonF",
     "pic": "Costume_10008_GonF_col1.png"
   },
+  "10014_JinF_col1": {
+    "skeleton": "00033314",
+    "texture": "00033310",
+    "material": "00033311",
+    "col1Material": "00033311",
+    "col": "col1",
+    "core": "10014_JinF",
+    "code": "10014",
+    "race": "JinF",
+    "pic": "Costume_10014_LynF_col1.png"
+  },
   "10015_LynF_col1": {
     "skeleton": "00033319",
     "texture": "00033321",
@@ -27818,6 +30370,17 @@
     "race": "LynF",
     "pic": "Costume_10015_jinF_col1.png"
   },
+  "10014_GonF_col1": {
+    "skeleton": "00033326",
+    "texture": "00033324",
+    "material": "00033325",
+    "col1Material": "00033325",
+    "col": "col1",
+    "core": "10014_GonF",
+    "code": "10014",
+    "race": "GonF",
+    "pic": "Costume_10014_LynF_col1.png"
+  },
   "10015_JinF_col1": {
     "skeleton": "00033330",
     "texture": "00033329",
@@ -27828,6 +30391,28 @@
     "code": "10015",
     "race": "JinF",
     "pic": "Costume_10015_jinF_col1.png"
+  },
+  "10014_KunN_col1": {
+    "skeleton": "00033334",
+    "texture": "00033332",
+    "material": "00033333",
+    "col1Material": "00033333",
+    "col": "col1",
+    "core": "10014_KunN",
+    "code": "10014",
+    "race": "KunN",
+    "pic": "Costume_10014_LynF_col1.png"
+  },
+  "10014_LynF_col1": {
+    "skeleton": "00033338",
+    "texture": "00033336",
+    "material": "00033337",
+    "col1Material": "00033337",
+    "col": "col1",
+    "core": "10014_LynF",
+    "code": "10014",
+    "race": "LynF",
+    "pic": "Costume_10014_LynF_col1.png"
   },
   "10015_KunN_col1": {
     "skeleton": "00033341",
@@ -27851,6 +30436,83 @@
     "race": "GonF",
     "pic": "Costume_10015_jinF_col1.png"
   },
+  "60140_GonF_col1": {
+    "skeleton": "00033427",
+    "texture": "00033425",
+    "material": "00033426",
+    "col1Material": "00033426",
+    "col": "col1",
+    "core": "60140_GonF",
+    "code": "60140",
+    "race": "GonF",
+    "pic": null
+  },
+  "60140_GonF_col2": {
+    "skeleton": "00033427",
+    "texture": "00033425",
+    "material": "00035598",
+    "col1Material": "00033426",
+    "col": "col2",
+    "core": "60140_GonF",
+    "code": "60140",
+    "race": "GonF",
+    "pic": null
+  },
+  "60140_GonF_col3": {
+    "skeleton": "00033427",
+    "texture": "00033425",
+    "material": "00035599",
+    "col1Material": "00033426",
+    "col": "col3",
+    "core": "60140_GonF",
+    "code": "60140",
+    "race": "GonF",
+    "pic": null
+  },
+  "10014_JinM_col1": {
+    "skeleton": "00033433",
+    "texture": "00033431",
+    "material": "00033432",
+    "col1Material": "00033432",
+    "col": "col1",
+    "core": "10014_JinM",
+    "code": "10014",
+    "race": "JinM",
+    "pic": "Costume_10014_LynF_col1.png"
+  },
+  "10014_GonM_col1": {
+    "skeleton": "00033440",
+    "texture": "00033438",
+    "material": "00033439",
+    "col1Material": "00033439",
+    "col": "col1",
+    "core": "10014_GonM",
+    "code": "10014",
+    "race": "GonM",
+    "pic": "Costume_10014_LynF_col1.png"
+  },
+  "10013_JinM_col1": {
+    "skeleton": "00033445",
+    "texture": "00033443",
+    "material": "00033444",
+    "col1Material": "00033444",
+    "col": "col1",
+    "core": "10013_JinM",
+    "code": "10013",
+    "race": "JinM",
+    "pic": "Costume_10013_JinM_col1.png"
+  },
+  "10014_LynM_col1": {
+    "skeleton": "00033453",
+    "texture": "00033450",
+    "material": "00033452",
+    "col1Material": "00033452",
+    "col": "col1",
+    "core": "10014_LynM",
+    "code": "10014",
+    "race": "LynM",
+    "pic": "Costume_10014_LynF_col1.png"
+  },
   "10008_GonM_col1": {
     "skeleton": "00033488",
     "texture": "00033486",
@@ -27861,6 +30523,160 @@
     "code": "10008",
     "race": "GonM",
     "pic": "Costume_10008_GonM_col1.png"
+  },
+  "10013_JinF_col1": {
+    "skeleton": "00033519",
+    "texture": "00033517",
+    "material": "00033518",
+    "col1Material": "00033518",
+    "col": "col1",
+    "core": "10013_JinF",
+    "code": "10013",
+    "race": "JinF",
+    "pic": "Costume_10013_JinM_col1.png"
+  },
+  "60139_JinM_col1": {
+    "skeleton": "00033551",
+    "texture": "00033549",
+    "material": "00033550",
+    "col1Material": "00033550",
+    "col": "col1",
+    "core": "60139_JinM",
+    "code": "60139",
+    "race": "JinM",
+    "pic": null
+  },
+  "60139_LynM_col1": {
+    "skeleton": "00033554",
+    "texture": "00033552",
+    "material": "00033553",
+    "col1Material": "00033553",
+    "col": "col1",
+    "core": "60139_LynM",
+    "code": "60139",
+    "race": "LynM",
+    "pic": null
+  },
+  "60139_GonF_col1": {
+    "skeleton": "00033560",
+    "texture": "00033558",
+    "material": "00033559",
+    "col1Material": "00033559",
+    "col": "col1",
+    "core": "60139_GonF",
+    "code": "60139",
+    "race": "GonF",
+    "pic": null
+  },
+  "60139_LynF_col1": {
+    "skeleton": "00033563",
+    "texture": "00033561",
+    "material": "00033562",
+    "col1Material": "00033562",
+    "col": "col1",
+    "core": "60139_LynF",
+    "code": "60139",
+    "race": "LynF",
+    "pic": null
+  },
+  "60139_KunN_col1": {
+    "skeleton": "00033566",
+    "texture": "00033564",
+    "material": "00033565",
+    "col1Material": "00033565",
+    "col": "col1",
+    "core": "60139_KunN",
+    "code": "60139",
+    "race": "KunN",
+    "pic": null
+  },
+  "60140_LynM_col1": {
+    "skeleton": "00033572",
+    "texture": "00033570",
+    "material": "00033571",
+    "col1Material": "00033571",
+    "col": "col1",
+    "core": "60140_LynM",
+    "code": "60140",
+    "race": "LynM",
+    "pic": null
+  },
+  "60140_LynM_col2": {
+    "skeleton": "00033572",
+    "texture": "00033570",
+    "material": "00035602",
+    "col1Material": "00033571",
+    "col": "col2",
+    "core": "60140_LynM",
+    "code": "60140",
+    "race": "LynM",
+    "pic": null
+  },
+  "60140_LynM_col3": {
+    "skeleton": "00033572",
+    "texture": "00033570",
+    "material": "00035603",
+    "col1Material": "00033571",
+    "col": "col3",
+    "core": "60140_LynM",
+    "code": "60140",
+    "race": "LynM",
+    "pic": null
+  },
+  "10012_JinF_col1": {
+    "skeleton": "00033589",
+    "texture": "00033587",
+    "material": "00033592",
+    "col1Material": "00033588",
+    "col": "col1",
+    "core": "10012_JinF",
+    "code": "10012",
+    "race": "JinF",
+    "pic": "Costume_10012_JinM_col1.png"
+  },
+  "10010_JinM_col1": {
+    "skeleton": "00033728",
+    "texture": "00033726",
+    "material": "00033727",
+    "col1Material": "00033727",
+    "col": "col1",
+    "core": "10010_JinM",
+    "code": "10010",
+    "race": "JinM",
+    "pic": null
+  },
+  "60140_LynF_col1": {
+    "skeleton": "00033732",
+    "texture": "00033730",
+    "material": "00033731",
+    "col1Material": "00033731",
+    "col": "col1",
+    "core": "60140_LynF",
+    "code": "60140",
+    "race": "LynF",
+    "pic": null
+  },
+  "60140_LynF_col2": {
+    "skeleton": "00033732",
+    "texture": "00033730",
+    "material": "00035600",
+    "col1Material": "00033731",
+    "col": "col2",
+    "core": "60140_LynF",
+    "code": "60140",
+    "race": "LynF",
+    "pic": null
+  },
+  "60140_LynF_col3": {
+    "skeleton": "00033732",
+    "texture": "00033730",
+    "material": "00035601",
+    "col1Material": "00033731",
+    "col": "col3",
+    "core": "60140_LynF",
+    "code": "60140",
+    "race": "LynF",
+    "pic": null
   },
   "10016_JinM_col1": {
     "skeleton": "00033763",
@@ -27873,16 +30689,115 @@
     "race": "JinM",
     "pic": "Costume_10016_jinF_col1.png"
   },
+  "10016_JinM_col3": {
+    "skeleton": "00033763",
+    "texture": "00033761",
+    "material": "00039406",
+    "col1Material": "00033762",
+    "col": "col3",
+    "core": "10016_JinM",
+    "code": "10016",
+    "race": "JinM",
+    "pic": "Costume_10016_jinF_col1.png"
+  },
   "10016_JinF_col1": {
     "skeleton": "00033775",
     "texture": "00033773",
-    "material": "00033837",
+    "material": "00039407",
     "col1Material": "00033774",
     "col": "col1",
     "core": "10016_JinF",
     "code": "10016",
     "race": "JinF",
     "pic": "Costume_10016_jinF_col1.png"
+  },
+  "60140_KunN_col1": {
+    "skeleton": "00033802",
+    "texture": "00033800",
+    "material": "00033801",
+    "col1Material": "00033801",
+    "col": "col1",
+    "core": "60140_KunN",
+    "code": "60140",
+    "race": "KunN",
+    "pic": null
+  },
+  "60140_KunN_col2": {
+    "skeleton": "00033802",
+    "texture": "00033800",
+    "material": "00035604",
+    "col1Material": "00033801",
+    "col": "col2",
+    "core": "60140_KunN",
+    "code": "60140",
+    "race": "KunN",
+    "pic": null
+  },
+  "60140_KunN_col3": {
+    "skeleton": "00033802",
+    "texture": "00033800",
+    "material": "00035605",
+    "col1Material": "00033801",
+    "col": "col3",
+    "core": "60140_KunN",
+    "code": "60140",
+    "race": "KunN",
+    "pic": null
+  },
+  "60140_GonM_col1": {
+    "skeleton": "00033805",
+    "texture": "00033803",
+    "material": "00033804",
+    "col1Material": "00033804",
+    "col": "col1",
+    "core": "60140_GonM",
+    "code": "60140",
+    "race": "GonM",
+    "pic": null
+  },
+  "60140_GonM_col2": {
+    "skeleton": "00033805",
+    "texture": "00033803",
+    "material": "00035644",
+    "col1Material": "00033804",
+    "col": "col2",
+    "core": "60140_GonM",
+    "code": "60140",
+    "race": "GonM",
+    "pic": null
+  },
+  "60140_GonM_col3": {
+    "skeleton": "00033805",
+    "texture": "00033803",
+    "material": "00035645",
+    "col1Material": "00033804",
+    "col": "col3",
+    "core": "60140_GonM",
+    "code": "60140",
+    "race": "GonM",
+    "pic": null
+  },
+  "10012_JinM_col1": {
+    "skeleton": "00033807",
+    "texture": "00033809",
+    "material": "00034833",
+    "col1Material": "00033808",
+    "col": "col1",
+    "core": "10012_JinM",
+    "code": "10012",
+    "race": "JinM",
+    "pic": "Costume_10012_JinM_col1.png"
+  },
+  "10012_JinM_col2": {
+    "skeleton": "00033807",
+    "texture": "00033809",
+    "material": "00037906",
+    "col1Material": "00033808",
+    "col": "col2",
+    "core": "10012_JinM",
+    "code": "10012",
+    "race": "JinM",
+    "pic": "Costume_10012_JinM_col1.png"
   },
   "10016_GonF_col1": {
     "skeleton": "00033829",
@@ -27895,10 +30810,21 @@
     "race": "GonF",
     "pic": "Costume_10016_jinF_col1.png"
   },
+  "10016_GonF_col3": {
+    "skeleton": "00033829",
+    "texture": "00033827",
+    "material": "00041489",
+    "col1Material": "00033828",
+    "col": "col3",
+    "core": "10016_GonF",
+    "code": "10016",
+    "race": "GonF",
+    "pic": "Costume_10016_jinF_col1.png"
+  },
   "10016_KunN_col1": {
     "skeleton": "00033838",
     "texture": "00033773",
-    "material": "00033837",
+    "material": "00039407",
     "col1Material": "00033837",
     "col": "col1",
     "core": "10016_KunN",
@@ -27950,12 +30876,34 @@
     "race": "GonM",
     "pic": "Costume_10016_jinF_col1.png"
   },
+  "10016_GonM_col3": {
+    "skeleton": "00033894",
+    "texture": "00033896",
+    "material": "00041493",
+    "col1Material": "00033895",
+    "col": "col3",
+    "core": "10016_GonM",
+    "code": "10016",
+    "race": "GonM",
+    "pic": "Costume_10016_jinF_col1.png"
+  },
   "10016_LynF_col1": {
     "skeleton": "00033901",
     "texture": "00033899",
     "material": "00033900",
     "col1Material": "00033900",
     "col": "col1",
+    "core": "10016_LynF",
+    "code": "10016",
+    "race": "LynF",
+    "pic": "Costume_10016_jinF_col1.png"
+  },
+  "10016_LynF_col3": {
+    "skeleton": "00033901",
+    "texture": "00033899",
+    "material": "00041494",
+    "col1Material": "00033900",
+    "col": "col3",
     "core": "10016_LynF",
     "code": "10016",
     "race": "LynF",
@@ -27972,6 +30920,61 @@
     "race": "LynM",
     "pic": "Costume_10016_jinF_col1.png"
   },
+  "10016_LynM_col3": {
+    "skeleton": "00033913",
+    "texture": "00033911",
+    "material": "00041495",
+    "col1Material": "00033912",
+    "col": "col3",
+    "core": "10016_LynM",
+    "code": "10016",
+    "race": "LynM",
+    "pic": "Costume_10016_jinF_col1.png"
+  },
+  "60109_KunN_col1": {
+    "skeleton": "00033939",
+    "texture": "00033937",
+    "material": "00033938",
+    "col1Material": "00033938",
+    "col": "col1",
+    "core": "60109_KunN",
+    "code": "60109",
+    "race": "KunN",
+    "pic": "Costume_60109_JinM_col1.png"
+  },
+  "60109_KunN_col2": {
+    "skeleton": "00033939",
+    "texture": "00033937",
+    "material": "00036703",
+    "col1Material": "00033938",
+    "col": "col2",
+    "core": "60109_KunN",
+    "code": "60109",
+    "race": "KunN",
+    "pic": "Costume_60109_JinM_col1.png"
+  },
+  "60109_GonM_col1": {
+    "skeleton": "00033942",
+    "texture": "00033940",
+    "material": "00033941",
+    "col1Material": "00033941",
+    "col": "col1",
+    "core": "60109_GonM",
+    "code": "60109",
+    "race": "GonM",
+    "pic": "Costume_60109_JinM_col1.png"
+  },
+  "60109_GonM_col2": {
+    "skeleton": "00033942",
+    "texture": "00033940",
+    "material": "00036735",
+    "col1Material": "00033941",
+    "col": "col2",
+    "core": "60109_GonM",
+    "code": "60109",
+    "race": "GonM",
+    "pic": "Costume_60109_JinM_col1.png"
+  },
   "10008_LynF_col1": {
     "skeleton": "00033962",
     "texture": "00033960",
@@ -27982,6 +30985,347 @@
     "code": "10008",
     "race": "LynF",
     "pic": "Costume_10008_GonF_col1.png"
+  },
+  "60109_GonF_col1": {
+    "skeleton": "00033971",
+    "texture": "00033969",
+    "material": "00033970",
+    "col1Material": "00033970",
+    "col": "col1",
+    "core": "60109_GonF",
+    "code": "60109",
+    "race": "GonF",
+    "pic": "Costume_60109_JinM_col1.png"
+  },
+  "60109_GonF_col2": {
+    "skeleton": "00033971",
+    "texture": "00033969",
+    "material": "00036702",
+    "col1Material": "00033970",
+    "col": "col2",
+    "core": "60109_GonF",
+    "code": "60109",
+    "race": "GonF",
+    "pic": "Costume_60109_JinM_col1.png"
+  },
+  "10017_JinF_col1": {
+    "skeleton": "00034021",
+    "texture": "00034019",
+    "material": "00034020",
+    "col1Material": "00034020",
+    "col": "col1",
+    "core": "10017_JinF",
+    "code": "10017",
+    "race": "JinF",
+    "pic": "Costume_10017_JinM_col1.png"
+  },
+  "10017_JinF_col2": {
+    "skeleton": "00034021",
+    "texture": "00034019",
+    "material": "00034028",
+    "col1Material": "00034020",
+    "col": "col2",
+    "core": "10017_JinF",
+    "code": "10017",
+    "race": "JinF",
+    "pic": "Costume_10017_JinM_col2.png"
+  },
+  "10017_JinM_col1": {
+    "skeleton": "00034051",
+    "texture": "00034048",
+    "material": "00034049",
+    "col1Material": "00034049",
+    "col": "col1",
+    "core": "10017_JinM",
+    "code": "10017",
+    "race": "JinM",
+    "pic": "Costume_10017_JinM_col1.png"
+  },
+  "10017_JinM_col2": {
+    "skeleton": "00034051",
+    "texture": "00034048",
+    "material": "00034050",
+    "col1Material": "00034049",
+    "col": "col2",
+    "core": "10017_JinM",
+    "code": "10017",
+    "race": "JinM",
+    "pic": "Costume_10017_JinM_col2.png"
+  },
+  "10017_GonF_col1": {
+    "skeleton": "00034092",
+    "texture": "00034086",
+    "material": "00034091",
+    "col1Material": "00034091",
+    "col": "col1",
+    "core": "10017_GonF",
+    "code": "10017",
+    "race": "GonF",
+    "pic": "Costume_10017_JinM_col1.png"
+  },
+  "10017_GonF_col2": {
+    "skeleton": "00034092",
+    "texture": "00034086",
+    "material": "00034180",
+    "col1Material": "00034091",
+    "col": "col2",
+    "core": "10017_GonF",
+    "code": "10017",
+    "race": "GonF",
+    "pic": "Costume_10017_JinM_col2.png"
+  },
+  "65084_JinM_col1": {
+    "skeleton": "00034096",
+    "texture": "00034094",
+    "material": "00034095",
+    "col1Material": "00034095",
+    "col": "col1",
+    "core": "65084_JinM",
+    "code": "65084",
+    "race": "JinM",
+    "pic": null
+  },
+  "10017_KunN_col1": {
+    "skeleton": "00034104",
+    "texture": "00034102",
+    "material": "00034103",
+    "col1Material": "00034103",
+    "col": "col1",
+    "core": "10017_KunN",
+    "code": "10017",
+    "race": "KunN",
+    "pic": "Costume_10017_JinM_col1.png"
+  },
+  "10017_KunN_col2": {
+    "skeleton": "00034104",
+    "texture": "00034102",
+    "material": "00034181",
+    "col1Material": "00034103",
+    "col": "col2",
+    "core": "10017_KunN",
+    "code": "10017",
+    "race": "KunN",
+    "pic": "Costume_10017_JinM_col2.png"
+  },
+  "10017_LynF_col1": {
+    "skeleton": "00034107",
+    "texture": "00034105",
+    "material": "00034106",
+    "col1Material": "00034106",
+    "col": "col1",
+    "core": "10017_LynF",
+    "code": "10017",
+    "race": "LynF",
+    "pic": "Costume_10017_JinM_col1.png"
+  },
+  "10017_LynF_col2": {
+    "skeleton": "00034107",
+    "texture": "00034105",
+    "material": "00034182",
+    "col1Material": "00034106",
+    "col": "col2",
+    "core": "10017_LynF",
+    "code": "10017",
+    "race": "LynF",
+    "pic": "Costume_10017_JinM_col2.png"
+  },
+  "65072_GonF_col1": {
+    "skeleton": "00034126",
+    "texture": "00034124",
+    "material": "00034125",
+    "col1Material": "00034125",
+    "col": "col1",
+    "core": "65072_GonF",
+    "code": "65072",
+    "race": "GonF",
+    "pic": "Costume_65072_jinM_col1.png"
+  },
+  "65072_KunN_col1": {
+    "skeleton": "00034131",
+    "texture": "00034129",
+    "material": "00034130",
+    "col1Material": "00034130",
+    "col": "col1",
+    "core": "65072_KunN",
+    "code": "65072",
+    "race": "KunN",
+    "pic": "Costume_65072_jinM_col1.png"
+  },
+  "65072_LynF_col1": {
+    "skeleton": "00034134",
+    "texture": "00034132",
+    "material": "00034133",
+    "col1Material": "00034133",
+    "col": "col1",
+    "core": "65072_LynF",
+    "code": "65072",
+    "race": "LynF",
+    "pic": "Costume_65072_jinM_col1.png"
+  },
+  "10003_JinF_col1": {
+    "skeleton": "00034169",
+    "texture": "00034167",
+    "material": "00034168",
+    "col1Material": "00034168",
+    "col": "col1",
+    "core": "10003_JinF",
+    "code": "10003",
+    "race": "JinF",
+    "pic": null
+  },
+  "10002_GonF_col1": {
+    "skeleton": "00034174",
+    "texture": "00034176",
+    "material": "00034175",
+    "col1Material": "00034175",
+    "col": "col1",
+    "core": "10002_GonF",
+    "code": "10002",
+    "race": "GonF",
+    "pic": null
+  },
+  "10017_GonM_col1": {
+    "skeleton": "00034233",
+    "texture": "00034231",
+    "material": "00034232",
+    "col1Material": "00034232",
+    "col": "col1",
+    "core": "10017_GonM",
+    "code": "10017",
+    "race": "GonM",
+    "pic": "Costume_10017_JinM_col1.png"
+  },
+  "10017_GonM_col2": {
+    "skeleton": "00034233",
+    "texture": "00034231",
+    "material": "00034234",
+    "col1Material": "00034232",
+    "col": "col2",
+    "core": "10017_GonM",
+    "code": "10017",
+    "race": "GonM",
+    "pic": "Costume_10017_JinM_col2.png"
+  },
+  "60132_GonF_col1": {
+    "skeleton": "00034247",
+    "texture": "00034245",
+    "material": "00034246",
+    "col1Material": "00034246",
+    "col": "col1",
+    "core": "60132_GonF",
+    "code": "60132",
+    "race": "GonF",
+    "pic": "Costume_60132_JinF_col3.png"
+  },
+  "60132_KunN_col1": {
+    "skeleton": "00034266",
+    "texture": "00034265",
+    "material": "00034267",
+    "col1Material": "00034267",
+    "col": "col1",
+    "core": "60132_KunN",
+    "code": "60132",
+    "race": "KunN",
+    "pic": "Costume_60132_JinF_col3.png"
+  },
+  "60132_GonM_col1": {
+    "skeleton": "00034271",
+    "texture": "00034269",
+    "material": "00034270",
+    "col1Material": "00034270",
+    "col": "col1",
+    "core": "60132_GonM",
+    "code": "60132",
+    "race": "GonM",
+    "pic": "Costume_60132_JinF_col3.png"
+  },
+  "65073_KunN_col1": {
+    "skeleton": "00034284",
+    "texture": "00034261",
+    "material": "00034262",
+    "col1Material": "00034262",
+    "col": "col1",
+    "core": "65073_KunN",
+    "code": "65073",
+    "race": "KunN",
+    "pic": "Costume_65073_jinM_col1.png"
+  },
+  "65073_JinF_col1": {
+    "skeleton": "00034290",
+    "texture": "00034291",
+    "material": "00034292",
+    "col1Material": "00034292",
+    "col": "col1",
+    "core": "65073_JinF",
+    "code": "65073",
+    "race": "JinF",
+    "pic": "Costume_65073_jinM_col1.png"
+  },
+  "65073_JinM_col1": {
+    "skeleton": "00034295",
+    "texture": "00034293",
+    "material": "00034294",
+    "col1Material": "00034294",
+    "col": "col1",
+    "core": "65073_JinM",
+    "code": "65073",
+    "race": "JinM",
+    "pic": "Costume_65073_jinM_col1.png"
+  },
+  "65073_LynM_col1": {
+    "skeleton": "00034298",
+    "texture": "00034297",
+    "material": "00034296",
+    "col1Material": "00034296",
+    "col": "col1",
+    "core": "65073_LynM",
+    "code": "65073",
+    "race": "LynM",
+    "pic": "Costume_65073_jinM_col1.png"
+  },
+  "60132_LynF_col1": {
+    "skeleton": "00034318",
+    "texture": "00034272",
+    "material": "00034273",
+    "col1Material": "00034273",
+    "col": "col1",
+    "core": "60132_LynF",
+    "code": "60132",
+    "race": "LynF",
+    "pic": "Costume_60132_JinF_col3.png"
+  },
+  "60132_LynM_col1": {
+    "skeleton": "00034325",
+    "texture": "00034275",
+    "material": "00034276",
+    "col1Material": "00034276",
+    "col": "col1",
+    "core": "60132_LynM",
+    "code": "60132",
+    "race": "LynM",
+    "pic": "Costume_60132_JinF_col3.png"
+  },
+  "10017_LynM_col1": {
+    "skeleton": "00034358",
+    "texture": "00034355",
+    "material": "00034356",
+    "col1Material": "00034356",
+    "col": "col1",
+    "core": "10017_LynM",
+    "code": "10017",
+    "race": "LynM",
+    "pic": "Costume_10017_JinM_col1.png"
+  },
+  "10017_LynM_col2": {
+    "skeleton": "00034358",
+    "texture": "00034355",
+    "material": "00034357",
+    "col1Material": "00034356",
+    "col": "col2",
+    "core": "10017_LynM",
+    "code": "10017",
+    "race": "LynM",
+    "pic": "Costume_10017_JinM_col2.png"
   },
   "70029_KunN_col1": {
     "skeleton": "00034439",
@@ -28038,6 +31382,61 @@
     "race": "LynM",
     "pic": "Costume_70029_JinF_col1.png"
   },
+  "10012_GonF_col1": {
+    "skeleton": "00034462",
+    "texture": "00034461",
+    "material": "00034479",
+    "col1Material": "00034460",
+    "col": "col1",
+    "core": "10012_GonF",
+    "code": "10012",
+    "race": "GonF",
+    "pic": "Costume_10012_JinM_col1.png"
+  },
+  "10012_KunN_col1": {
+    "skeleton": "00034465",
+    "texture": "00034464",
+    "material": "00034480",
+    "col1Material": "00034463",
+    "col": "col1",
+    "core": "10012_KunN",
+    "code": "10012",
+    "race": "KunN",
+    "pic": "Costume_10012_JinM_col1.png"
+  },
+  "10012_LynF_col1": {
+    "skeleton": "00034468",
+    "texture": "00034467",
+    "material": "00034481",
+    "col1Material": "00034466",
+    "col": "col1",
+    "core": "10012_LynF",
+    "code": "10012",
+    "race": "LynF",
+    "pic": "Costume_10012_JinM_col1.png"
+  },
+  "10012_GonM_col1": {
+    "skeleton": "00034471",
+    "texture": "00034474",
+    "material": "00034470",
+    "col1Material": "00034470",
+    "col": "col1",
+    "core": "10012_GonM",
+    "code": "10012",
+    "race": "GonM",
+    "pic": "Costume_10012_JinM_col1.png"
+  },
+  "10012_LynM_col1": {
+    "skeleton": "00034473",
+    "texture": "00034475",
+    "material": "00034472",
+    "col1Material": "00034472",
+    "col": "col1",
+    "core": "10012_LynM",
+    "code": "10012",
+    "race": "LynM",
+    "pic": "Costume_10012_JinM_col1.png"
+  },
   "70047_JinF_col1": {
     "skeleton": "00034520",
     "texture": "00034518",
@@ -28071,6 +31470,105 @@
     "race": "KunN",
     "pic": "Costume_70047_KunN_col1.png"
   },
+  "10013_GonF_col1": {
+    "skeleton": "00034534",
+    "texture": "00034532",
+    "material": "00034533",
+    "col1Material": "00034533",
+    "col": "col1",
+    "core": "10013_GonF",
+    "code": "10013",
+    "race": "GonF",
+    "pic": "Costume_10013_JinM_col1.png"
+  },
+  "10013_GonM_col1": {
+    "skeleton": "00034537",
+    "texture": "00034535",
+    "material": "00034536",
+    "col1Material": "00034536",
+    "col": "col1",
+    "core": "10013_GonM",
+    "code": "10013",
+    "race": "GonM",
+    "pic": "Costume_10013_JinM_col1.png"
+  },
+  "10013_KunN_col1": {
+    "skeleton": "00034540",
+    "texture": "00034538",
+    "material": "00034539",
+    "col1Material": "00034539",
+    "col": "col1",
+    "core": "10013_KunN",
+    "code": "10013",
+    "race": "KunN",
+    "pic": "Costume_10013_JinM_col1.png"
+  },
+  "10013_LynF_col1": {
+    "skeleton": "00034543",
+    "texture": "00034541",
+    "material": "00034542",
+    "col1Material": "00034542",
+    "col": "col1",
+    "core": "10013_LynF",
+    "code": "10013",
+    "race": "LynF",
+    "pic": "Costume_10013_JinM_col1.png"
+  },
+  "10013_LynM_col1": {
+    "skeleton": "00034546",
+    "texture": "00034544",
+    "material": "00034545",
+    "col1Material": "00034545",
+    "col": "col1",
+    "core": "10013_LynM",
+    "code": "10013",
+    "race": "LynM",
+    "pic": "Costume_10013_JinM_col1.png"
+  },
+  "10018_JinM_col1": {
+    "skeleton": "00034554",
+    "texture": "00034552",
+    "material": "00034553",
+    "col1Material": "00034553",
+    "col": "col1",
+    "core": "10018_JinM",
+    "code": "10018",
+    "race": "JinM",
+    "pic": null
+  },
+  "10022_JinM_col1": {
+    "skeleton": "00034559",
+    "texture": "00034557",
+    "material": "00034558",
+    "col1Material": "00034558",
+    "col": "col1",
+    "core": "10022_JinM",
+    "code": "10022",
+    "race": "JinM",
+    "pic": null
+  },
+  "10004_Jinf_col1": {
+    "skeleton": "00034584",
+    "texture": "00034586",
+    "material": "00034585",
+    "col1Material": "00034585",
+    "col": "col1",
+    "core": "10004_Jinf",
+    "code": "10004",
+    "race": "JinF",
+    "pic": null
+  },
+  "10018_JinF_col1": {
+    "skeleton": "00034606",
+    "texture": "00034604",
+    "material": "00034605",
+    "col1Material": "00034605",
+    "col": "col1",
+    "core": "10018_JinF",
+    "code": "10018",
+    "race": "JinF",
+    "pic": null
+  },
   "70047_LynF_col1": {
     "skeleton": "00034612",
     "texture": "00034614",
@@ -28081,6 +31579,17 @@
     "code": "70047",
     "race": "LynF",
     "pic": "Costume_70047_GonF_col1.png"
+  },
+  "10023_JinM_col1": {
+    "skeleton": "00034795",
+    "texture": "00034796",
+    "material": "00034794",
+    "col1Material": "00034794",
+    "col": "col1",
+    "core": "10023_JinM",
+    "code": "10023",
+    "race": "JinM",
+    "pic": null
   },
   "10024_LynM_col1": {
     "skeleton": "00034819",
@@ -28093,6 +31602,61 @@
     "race": "LynM",
     "pic": "Costume_10024_JinF_col1.png"
   },
+  "70039_GonM_col1": {
+    "skeleton": "00034826",
+    "texture": "00034827",
+    "material": "00034828",
+    "col1Material": "00034828",
+    "col": "col1",
+    "core": "70039_GonM",
+    "code": "70039",
+    "race": "GonM",
+    "pic": "Costume_70039_JinM_col1.png"
+  },
+  "70039_GonF_col1": {
+    "skeleton": "00034829",
+    "texture": "00034831",
+    "material": "00034830",
+    "col1Material": "00034830",
+    "col": "col1",
+    "core": "70039_GonF",
+    "code": "70039",
+    "race": "GonF",
+    "pic": "Costume_70039_JinM_col1.png"
+  },
+  "70039_KunN_col1": {
+    "skeleton": "00034863",
+    "texture": "00034861",
+    "material": "00034862",
+    "col1Material": "00034862",
+    "col": "col1",
+    "core": "70039_KunN",
+    "code": "70039",
+    "race": "KunN",
+    "pic": "Costume_70039_JinM_col1.png"
+  },
+  "70039_LynF_col1": {
+    "skeleton": "00034866",
+    "texture": "00034864",
+    "material": "00034865",
+    "col1Material": "00034865",
+    "col": "col1",
+    "core": "70039_LynF",
+    "code": "70039",
+    "race": "LynF",
+    "pic": "Costume_70039_JinM_col1.png"
+  },
+  "70039_LynM_col1": {
+    "skeleton": "00034869",
+    "texture": "00034867",
+    "material": "00034868",
+    "col1Material": "00034868",
+    "col": "col1",
+    "core": "70039_LynM",
+    "code": "70039",
+    "race": "LynM",
+    "pic": "Costume_70039_JinM_col1.png"
+  },
   "10024_LynF_col1": {
     "skeleton": "00034901",
     "texture": "00034899",
@@ -28103,6 +31667,39 @@
     "code": "10024",
     "race": "LynF",
     "pic": "Costume_10024_JinF_col1.png"
+  },
+  "65011_JinM_col1": {
+    "skeleton": "00034944",
+    "texture": "00034942",
+    "material": "00034943",
+    "col1Material": "00034943",
+    "col": "col1",
+    "core": "65011_JinM",
+    "code": "65011",
+    "race": "JinM",
+    "pic": null
+  },
+  "10018_GonF_col1": {
+    "skeleton": "00034955",
+    "texture": "00034953",
+    "material": "00034954",
+    "col1Material": "00034954",
+    "col": "col1",
+    "core": "10018_GonF",
+    "code": "10018",
+    "race": "GonF",
+    "pic": null
+  },
+  "10023_JinF_col1": {
+    "skeleton": "00034964",
+    "texture": "00034966",
+    "material": "00034965",
+    "col1Material": "00034965",
+    "col": "col1",
+    "core": "10023_JinF",
+    "code": "10023",
+    "race": "JinF",
+    "pic": null
   },
   "10024_JinM_col1": {
     "skeleton": "00034969",
@@ -28115,6 +31712,39 @@
     "race": "JinM",
     "pic": "Costume_10024_JinF_col1.png"
   },
+  "10025_JinF_col1": {
+    "skeleton": "00034982",
+    "texture": "00034980",
+    "material": "00034981",
+    "col1Material": "00034981",
+    "col": "col1",
+    "core": "10025_JinF",
+    "code": "10025",
+    "race": "JinF",
+    "pic": "Costume_10025_JinM_col1.png"
+  },
+  "10018_GonM_col1": {
+    "skeleton": "00034993",
+    "texture": "00034995",
+    "material": "00034994",
+    "col1Material": "00034994",
+    "col": "col1",
+    "core": "10018_GonM",
+    "code": "10018",
+    "race": "GonM",
+    "pic": null
+  },
+  "10018_LynF_col1": {
+    "skeleton": "00035003",
+    "texture": "00035001",
+    "material": "00035002",
+    "col1Material": "00035002",
+    "col": "col1",
+    "core": "10018_LynF",
+    "code": "10018",
+    "race": "LynF",
+    "pic": null
+  },
   "10024_GonM_col1": {
     "skeleton": "00035006",
     "texture": "00035004",
@@ -28125,6 +31755,28 @@
     "code": "10024",
     "race": "GonM",
     "pic": "Costume_10024_JinF_col1.png"
+  },
+  "10025_JinM_col1": {
+    "skeleton": "00035021",
+    "texture": "00035018",
+    "material": "00035020",
+    "col1Material": "00035020",
+    "col": "col1",
+    "core": "10025_JinM",
+    "code": "10025",
+    "race": "JinM",
+    "pic": "Costume_10025_JinM_col1.png"
+  },
+  "10018_LynM_col1": {
+    "skeleton": "00035034",
+    "texture": "00035032",
+    "material": "00035033",
+    "col1Material": "00035033",
+    "col": "col1",
+    "core": "10018_LynM",
+    "code": "10018",
+    "race": "LynM",
+    "pic": null
   },
   "10024_JinF_col1": {
     "skeleton": "00035041",
@@ -28137,6 +31789,39 @@
     "race": "JinF",
     "pic": "Costume_10024_JinF_col1.png"
   },
+  "10023_LynF_col1": {
+    "skeleton": "00035049",
+    "texture": "00035047",
+    "material": "00035048",
+    "col1Material": "00035048",
+    "col": "col1",
+    "core": "10023_LynF",
+    "code": "10023",
+    "race": "LynF",
+    "pic": null
+  },
+  "10018_KunN_col1": {
+    "skeleton": "00035077",
+    "texture": "00035075",
+    "material": "00035076",
+    "col1Material": "00035076",
+    "col": "col1",
+    "core": "10018_KunN",
+    "code": "10018",
+    "race": "KunN",
+    "pic": null
+  },
+  "65014_JinM_col1": {
+    "skeleton": "00035091",
+    "texture": "00035089",
+    "material": "00035090",
+    "col1Material": "00035090",
+    "col": "col1",
+    "core": "65014_JinM",
+    "code": "65014",
+    "race": "JinM",
+    "pic": null
+  },
   "10024_GonF_col1": {
     "skeleton": "00035103",
     "texture": "00035101",
@@ -28148,6 +31833,28 @@
     "race": "GonF",
     "pic": "Costume_10024_JinF_col1.png"
   },
+  "10023_KunN_col1": {
+    "skeleton": "00035105",
+    "texture": "00035106",
+    "material": "00035107",
+    "col1Material": "00035107",
+    "col": "col1",
+    "core": "10023_KunN",
+    "code": "10023",
+    "race": "KunN",
+    "pic": null
+  },
+  "10023_GonF_col1": {
+    "skeleton": "00035121",
+    "texture": "00035122",
+    "material": "00035123",
+    "col1Material": "00035123",
+    "col": "col1",
+    "core": "10023_GonF",
+    "code": "10023",
+    "race": "GonF",
+    "pic": null
+  },
   "10024_KunN_col1": {
     "skeleton": "00035130",
     "texture": "00035128",
@@ -28158,5 +31865,3063 @@
     "code": "10024",
     "race": "KunN",
     "pic": "Costume_10024_JinF_col1.png"
+  },
+  "10023_GonM_col1": {
+    "skeleton": "00035173",
+    "texture": "00035171",
+    "material": "00035172",
+    "col1Material": "00035172",
+    "col": "col1",
+    "core": "10023_GonM",
+    "code": "10023",
+    "race": "GonM",
+    "pic": null
+  },
+  "10023_LynM_col1": {
+    "skeleton": "00035176",
+    "texture": "00035174",
+    "material": "00035175",
+    "col1Material": "00035175",
+    "col": "col1",
+    "core": "10023_LynM",
+    "code": "10023",
+    "race": "LynM",
+    "pic": null
+  },
+  "10010_JinF_col1": {
+    "skeleton": "00035232",
+    "texture": "00035230",
+    "material": "00035231",
+    "col1Material": "00035231",
+    "col": "col1",
+    "core": "10010_JinF",
+    "code": "10010",
+    "race": "JinF",
+    "pic": null
+  },
+  "10010_GonM_col1": {
+    "skeleton": "00035235",
+    "texture": "00035233",
+    "material": "00035234",
+    "col1Material": "00035234",
+    "col": "col1",
+    "core": "10010_GonM",
+    "code": "10010",
+    "race": "GonM",
+    "pic": null
+  },
+  "10010_GonF_col1": {
+    "skeleton": "00035238",
+    "texture": "00035236",
+    "material": "00035237",
+    "col1Material": "00035237",
+    "col": "col1",
+    "core": "10010_GonF",
+    "code": "10010",
+    "race": "GonF",
+    "pic": null
+  },
+  "10010_LynM_col1": {
+    "skeleton": "00035242",
+    "texture": "00035240",
+    "material": "00035241",
+    "col1Material": "00035241",
+    "col": "col1",
+    "core": "10010_LynM",
+    "code": "10010",
+    "race": "LynM",
+    "pic": null
+  },
+  "10010_LynF_col1": {
+    "skeleton": "00035245",
+    "texture": "00035243",
+    "material": "00035244",
+    "col1Material": "00035244",
+    "col": "col1",
+    "core": "10010_LynF",
+    "code": "10010",
+    "race": "LynF",
+    "pic": null
+  },
+  "10010_KunN_col1": {
+    "skeleton": "00035248",
+    "texture": "00035246",
+    "material": "00035247",
+    "col1Material": "00035247",
+    "col": "col1",
+    "core": "10010_KunN",
+    "code": "10010",
+    "race": "KunN",
+    "pic": null
+  },
+  "10025_GonF_col1": {
+    "skeleton": "00035270",
+    "texture": "00035268",
+    "material": "00035269",
+    "col1Material": "00035269",
+    "col": "col1",
+    "core": "10025_GonF",
+    "code": "10025",
+    "race": "GonF",
+    "pic": "Costume_10025_JinM_col1.png"
+  },
+  "10025_GonM_col1": {
+    "skeleton": "00035273",
+    "texture": "00035271",
+    "material": "00035272",
+    "col1Material": "00035272",
+    "col": "col1",
+    "core": "10025_GonM",
+    "code": "10025",
+    "race": "GonM",
+    "pic": "Costume_10025_JinM_col1.png"
+  },
+  "10025_LynM_col1": {
+    "skeleton": "00035276",
+    "texture": "00035274",
+    "material": "00035275",
+    "col1Material": "00035275",
+    "col": "col1",
+    "core": "10025_LynM",
+    "code": "10025",
+    "race": "LynM",
+    "pic": "Costume_10025_JinM_col1.png"
+  },
+  "10025_LynF_col1": {
+    "skeleton": "00035279",
+    "texture": "00035277",
+    "material": "00035278",
+    "col1Material": "00035278",
+    "col": "col1",
+    "core": "10025_LynF",
+    "code": "10025",
+    "race": "LynF",
+    "pic": "Costume_10025_JinM_col1.png"
+  },
+  "10025_KunN_col1": {
+    "skeleton": "00035282",
+    "texture": "00035280",
+    "material": "00035281",
+    "col1Material": "00035281",
+    "col": "col1",
+    "core": "10025_KunN",
+    "code": "10025",
+    "race": "KunN",
+    "pic": "Costume_10025_JinM_col1.png"
+  },
+  "10020_LynM_col1": {
+    "skeleton": "00035499",
+    "texture": "00035497",
+    "material": "00035498",
+    "col1Material": "00035498",
+    "col": "col1",
+    "core": "10020_LynM",
+    "code": "10020",
+    "race": "LynM",
+    "pic": null
+  },
+  "10020_LynF_col1": {
+    "skeleton": "00035502",
+    "texture": "00035500",
+    "material": "00035501",
+    "col1Material": "00035501",
+    "col": "col1",
+    "core": "10020_LynF",
+    "code": "10020",
+    "race": "LynF",
+    "pic": null
+  },
+  "10026_JinF_col1": {
+    "skeleton": "00035528",
+    "texture": "00035526",
+    "material": "00035527",
+    "col1Material": "00035527",
+    "col": "col1",
+    "core": "10026_JinF",
+    "code": "10026",
+    "race": "JinF",
+    "pic": "Costume_10026_JinM_col1.png"
+  },
+  "10026_JinM_col1": {
+    "skeleton": "00035531",
+    "texture": "00035529",
+    "material": "00035530",
+    "col1Material": "00035530",
+    "col": "col1",
+    "core": "10026_JinM",
+    "code": "10026",
+    "race": "JinM",
+    "pic": "Costume_10026_JinM_col1.png"
+  },
+  "10026_GonF_col1": {
+    "skeleton": "00035534",
+    "texture": "00035532",
+    "material": "00035533",
+    "col1Material": "00035533",
+    "col": "col1",
+    "core": "10026_GonF",
+    "code": "10026",
+    "race": "GonF",
+    "pic": "Costume_10026_JinM_col1.png"
+  },
+  "10026_GonM_col1": {
+    "skeleton": "00035537",
+    "texture": "00035535",
+    "material": "00035536",
+    "col1Material": "00035536",
+    "col": "col1",
+    "core": "10026_GonM",
+    "code": "10026",
+    "race": "GonM",
+    "pic": "Costume_10026_JinM_col1.png"
+  },
+  "10026_KunN_col1": {
+    "skeleton": "00035540",
+    "texture": "00035538",
+    "material": "00035539",
+    "col1Material": "00035539",
+    "col": "col1",
+    "core": "10026_KunN",
+    "code": "10026",
+    "race": "KunN",
+    "pic": "Costume_10026_JinM_col1.png"
+  },
+  "10026_LynF_col1": {
+    "skeleton": "00035543",
+    "texture": "00035541",
+    "material": "00035542",
+    "col1Material": "00035542",
+    "col": "col1",
+    "core": "10026_LynF",
+    "code": "10026",
+    "race": "LynF",
+    "pic": "Costume_10026_JinM_col1.png"
+  },
+  "10026_LynM_col1": {
+    "skeleton": "00035546",
+    "texture": "00035544",
+    "material": "00035545",
+    "col1Material": "00035545",
+    "col": "col1",
+    "core": "10026_LynM",
+    "code": "10026",
+    "race": "LynM",
+    "pic": "Costume_10026_JinM_col1.png"
+  },
+  "60120_GonM_col1": {
+    "skeleton": "00035555",
+    "texture": "00035553",
+    "material": "00035554",
+    "col1Material": "00035554",
+    "col": "col1",
+    "core": "60120_GonM",
+    "code": "60120",
+    "race": "GonM",
+    "pic": null
+  },
+  "60120_GonF_col1": {
+    "skeleton": "00035558",
+    "texture": "00035556",
+    "material": "00035557",
+    "col1Material": "00035557",
+    "col": "col1",
+    "core": "60120_GonF",
+    "code": "60120",
+    "race": "GonF",
+    "pic": null
+  },
+  "10020_JinM_col1": {
+    "skeleton": "00035590",
+    "texture": "00035588",
+    "material": "00035589",
+    "col1Material": "00035589",
+    "col": "col1",
+    "core": "10020_JinM",
+    "code": "10020",
+    "race": "JinM",
+    "pic": null
+  },
+  "65083_JinM_col1": {
+    "skeleton": "00035613",
+    "texture": "00035611",
+    "material": "00035612",
+    "col1Material": "00035612",
+    "col": "col1",
+    "core": "65083_JinM",
+    "code": "65083",
+    "race": "JinM",
+    "pic": null
+  },
+  "65083_GonF_col1": {
+    "skeleton": "00035616",
+    "texture": "00035614",
+    "material": "00035615",
+    "col1Material": "00035615",
+    "col": "col1",
+    "core": "65083_GonF",
+    "code": "65083",
+    "race": "GonF",
+    "pic": null
+  },
+  "65083_LynM_col1": {
+    "skeleton": "00035619",
+    "texture": "00035617",
+    "material": "00035618",
+    "col1Material": "00035618",
+    "col": "col1",
+    "core": "65083_LynM",
+    "code": "65083",
+    "race": "LynM",
+    "pic": null
+  },
+  "65083_LynF_col1": {
+    "skeleton": "00035622",
+    "texture": "00035620",
+    "material": "00035621",
+    "col1Material": "00035621",
+    "col": "col1",
+    "core": "65083_LynF",
+    "code": "65083",
+    "race": "LynF",
+    "pic": null
+  },
+  "65083_KunN_col1": {
+    "skeleton": "00035625",
+    "texture": "00035623",
+    "material": "00035624",
+    "col1Material": "00035624",
+    "col": "col1",
+    "core": "65083_KunN",
+    "code": "65083",
+    "race": "KunN",
+    "pic": null
+  },
+  "10029_Jinf_col1": {
+    "skeleton": "00035639",
+    "texture": "00035640",
+    "material": "00035641",
+    "col1Material": "00035641",
+    "col": "col1",
+    "core": "10029_Jinf",
+    "code": "10029",
+    "race": "JinF",
+    "pic": null
+  },
+  "10027_JinF_col1": {
+    "skeleton": "00035653",
+    "texture": "00035651",
+    "material": "00035652",
+    "col1Material": "00035652",
+    "col": "col1",
+    "core": "10027_JinF",
+    "code": "10027",
+    "race": "JinF",
+    "pic": null
+  },
+  "10020_JinF_col1": {
+    "skeleton": "00035810",
+    "texture": "00035808",
+    "material": "00035826",
+    "col1Material": "00035809",
+    "col": "col1",
+    "core": "10020_JinF",
+    "code": "10020",
+    "race": "JinF",
+    "pic": null
+  },
+  "10020_GonF_col1": {
+    "skeleton": "00035820",
+    "texture": "00035818",
+    "material": "00035819",
+    "col1Material": "00035819",
+    "col": "col1",
+    "core": "10020_GonF",
+    "code": "10020",
+    "race": "GonF",
+    "pic": null
+  },
+  "10020_KunN_col1": {
+    "skeleton": "00035827",
+    "texture": "00035808",
+    "material": "00035826",
+    "col1Material": "00035826",
+    "col": "col1",
+    "core": "10020_KunN",
+    "code": "10020",
+    "race": "KunN",
+    "pic": null
+  },
+  "10029_LynF_col1": {
+    "skeleton": "00035863",
+    "texture": "00035865",
+    "material": "00035864",
+    "col1Material": "00035864",
+    "col": "col1",
+    "core": "10029_LynF",
+    "code": "10029",
+    "race": "LynF",
+    "pic": null
+  },
+  "60120_KunN_col1": {
+    "skeleton": "00035872",
+    "texture": "00035870",
+    "material": "00035871",
+    "col1Material": "00035871",
+    "col": "col1",
+    "core": "60120_KunN",
+    "code": "60120",
+    "race": "KunN",
+    "pic": null
+  },
+  "60120_LynM_col1": {
+    "skeleton": "00035877",
+    "texture": "00035875",
+    "material": "00035876",
+    "col1Material": "00035876",
+    "col": "col1",
+    "core": "60120_LynM",
+    "code": "60120",
+    "race": "LynM",
+    "pic": null
+  },
+  "60120_LynF_col1": {
+    "skeleton": "00035880",
+    "texture": "00035878",
+    "material": "00035879",
+    "col1Material": "00035879",
+    "col": "col1",
+    "core": "60120_LynF",
+    "code": "60120",
+    "race": "LynF",
+    "pic": null
+  },
+  "10027_KunN_col1": {
+    "skeleton": "00035895",
+    "texture": "00035893",
+    "material": "00035894",
+    "col1Material": "00035894",
+    "col": "col1",
+    "core": "10027_KunN",
+    "code": "10027",
+    "race": "KunN",
+    "pic": null
+  },
+  "10029_GonF_col1": {
+    "skeleton": "00035900",
+    "texture": "00035898",
+    "material": "00035899",
+    "col1Material": "00035899",
+    "col": "col1",
+    "core": "10029_GonF",
+    "code": "10029",
+    "race": "GonF",
+    "pic": null
+  },
+  "10029_KunN_col1": {
+    "skeleton": "00035903",
+    "texture": "00035901",
+    "material": "00035902",
+    "col1Material": "00035902",
+    "col": "col1",
+    "core": "10029_KunN",
+    "code": "10029",
+    "race": "KunN",
+    "pic": null
+  },
+  "10020_GonM_col1": {
+    "skeleton": "00035905",
+    "texture": "00035848",
+    "material": "00035849",
+    "col1Material": "00035849",
+    "col": "col1",
+    "core": "10020_GonM",
+    "code": "10020",
+    "race": "GonM",
+    "pic": null
+  },
+  "10027_GonF_col1": {
+    "skeleton": "00035913",
+    "texture": "00035911",
+    "material": "00035912",
+    "col1Material": "00035912",
+    "col": "col1",
+    "core": "10027_GonF",
+    "code": "10027",
+    "race": "GonF",
+    "pic": null
+  },
+  "10029_JinM_col1": {
+    "skeleton": "00035949",
+    "texture": "00035951",
+    "material": "00035950",
+    "col1Material": "00035950",
+    "col": "col1",
+    "core": "10029_JinM",
+    "code": "10029",
+    "race": "JinM",
+    "pic": null
+  },
+  "10027_LynF_col1": {
+    "skeleton": "00035963",
+    "texture": "00035961",
+    "material": "00035962",
+    "col1Material": "00035962",
+    "col": "col1",
+    "core": "10027_LynF",
+    "code": "10027",
+    "race": "LynF",
+    "pic": null
+  },
+  "10027_JinM_col1": {
+    "skeleton": "00035967",
+    "texture": "00035965",
+    "material": "00035966",
+    "col1Material": "00035966",
+    "col": "col1",
+    "core": "10027_JinM",
+    "code": "10027",
+    "race": "JinM",
+    "pic": null
+  },
+  "10027_LynM_col1": {
+    "skeleton": "00035996",
+    "texture": "00035994",
+    "material": "00035995",
+    "col1Material": "00035995",
+    "col": "col1",
+    "core": "10027_LynM",
+    "code": "10027",
+    "race": "LynM",
+    "pic": null
+  },
+  "10029_LynM_col1": {
+    "skeleton": "00036015",
+    "texture": "00036014",
+    "material": "00036016",
+    "col1Material": "00036016",
+    "col": "col1",
+    "core": "10029_LynM",
+    "code": "10029",
+    "race": "LynM",
+    "pic": null
+  },
+  "10029_GonM_col1": {
+    "skeleton": "00036017",
+    "texture": "00036019",
+    "material": "00036018",
+    "col1Material": "00036018",
+    "col": "col1",
+    "core": "10029_GonM",
+    "code": "10029",
+    "race": "GonM",
+    "pic": null
+  },
+  "10027_GonM_col1": {
+    "skeleton": "00036058",
+    "texture": "00036056",
+    "material": "00036057",
+    "col1Material": "00036057",
+    "col": "col1",
+    "core": "10027_GonM",
+    "code": "10027",
+    "race": "GonM",
+    "pic": null
+  },
+  "65070_GonF_col1": {
+    "skeleton": "00036095",
+    "texture": "00036093",
+    "material": "00036094",
+    "col1Material": "00036094",
+    "col": "col1",
+    "core": "65070_GonF",
+    "code": "65070",
+    "race": "GonF",
+    "pic": null
+  },
+  "65070_KunN_col1": {
+    "skeleton": "00036098",
+    "texture": "00036096",
+    "material": "00036097",
+    "col1Material": "00036097",
+    "col": "col1",
+    "core": "65070_KunN",
+    "code": "65070",
+    "race": "KunN",
+    "pic": null
+  },
+  "65070_LynF_col1": {
+    "skeleton": "00036101",
+    "texture": "00036099",
+    "material": "00036100",
+    "col1Material": "00036100",
+    "col": "col1",
+    "core": "65070_LynF",
+    "code": "65070",
+    "race": "LynF",
+    "pic": null
+  },
+  "60065_JinF_col1": {
+    "skeleton": "00036103",
+    "texture": "00036083",
+    "material": "00036102",
+    "col1Material": "00036102",
+    "col": "col1",
+    "core": "60065_JinF",
+    "code": "60065",
+    "race": "JinF",
+    "pic": null
+  },
+  "60065_JinF_col3": {
+    "skeleton": "00036103",
+    "texture": "00036083",
+    "material": "00039760",
+    "col1Material": "00036102",
+    "col": "col3",
+    "core": "60065_JinF",
+    "code": "60065",
+    "race": "JinF",
+    "pic": null
+  },
+  "60065_GonF_col1": {
+    "skeleton": "00036106",
+    "texture": "00036104",
+    "material": "00036105",
+    "col1Material": "00036105",
+    "col": "col1",
+    "core": "60065_GonF",
+    "code": "60065",
+    "race": "GonF",
+    "pic": null
+  },
+  "60065_GonF_col3": {
+    "skeleton": "00036106",
+    "texture": "00036104",
+    "material": "00039761",
+    "col1Material": "00036105",
+    "col": "col3",
+    "core": "60065_GonF",
+    "code": "60065",
+    "race": "GonF",
+    "pic": null
+  },
+  "60065_LynF_col1": {
+    "skeleton": "00036109",
+    "texture": "00036107",
+    "material": "00036108",
+    "col1Material": "00036108",
+    "col": "col1",
+    "core": "60065_LynF",
+    "code": "60065",
+    "race": "LynF",
+    "pic": null
+  },
+  "60065_LynF_col3": {
+    "skeleton": "00036109",
+    "texture": "00036107",
+    "material": "00039762",
+    "col1Material": "00036108",
+    "col": "col3",
+    "core": "60065_LynF",
+    "code": "60065",
+    "race": "LynF",
+    "pic": null
+  },
+  "60065_KunN_col1": {
+    "skeleton": "00036112",
+    "texture": "00036110",
+    "material": "00036111",
+    "col1Material": "00036111",
+    "col": "col1",
+    "core": "60065_KunN",
+    "code": "60065",
+    "race": "KunN",
+    "pic": null
+  },
+  "60065_KunN_col3": {
+    "skeleton": "00036112",
+    "texture": "00036110",
+    "material": "00039763",
+    "col1Material": "00036111",
+    "col": "col3",
+    "core": "60065_KunN",
+    "code": "60065",
+    "race": "KunN",
+    "pic": null
+  },
+  "65071_JinM_col1": {
+    "skeleton": "00036223",
+    "texture": "00036221",
+    "material": "00036222",
+    "col1Material": "00036222",
+    "col": "col1",
+    "core": "65071_JinM",
+    "code": "65071",
+    "race": "JinM",
+    "pic": null
+  },
+  "10037_JinF_col1": {
+    "skeleton": "00036274",
+    "texture": "00036272",
+    "material": "00036273",
+    "col1Material": "00036273",
+    "col": "col1",
+    "core": "10037_JinF",
+    "code": "10037",
+    "race": "JinF",
+    "pic": null
+  },
+  "10037_GonF_col1": {
+    "skeleton": "00036277",
+    "texture": "00036275",
+    "material": "00036276",
+    "col1Material": "00036276",
+    "col": "col1",
+    "core": "10037_GonF",
+    "code": "10037",
+    "race": "GonF",
+    "pic": null
+  },
+  "10037_KunN_col1": {
+    "skeleton": "00036280",
+    "texture": "00036278",
+    "material": "00036279",
+    "col1Material": "00036279",
+    "col": "col1",
+    "core": "10037_KunN",
+    "code": "10037",
+    "race": "KunN",
+    "pic": null
+  },
+  "60065_JinM_col1": {
+    "skeleton": "00036283",
+    "texture": "00036281",
+    "material": "00036282",
+    "col1Material": "00036282",
+    "col": "col1",
+    "core": "60065_JinM",
+    "code": "60065",
+    "race": "JinM",
+    "pic": null
+  },
+  "60065_JinM_col3": {
+    "skeleton": "00036283",
+    "texture": "00036281",
+    "material": "00039764",
+    "col1Material": "00036282",
+    "col": "col3",
+    "core": "60065_JinM",
+    "code": "60065",
+    "race": "JinM",
+    "pic": null
+  },
+  "60065_LynM_col1": {
+    "skeleton": "00036286",
+    "texture": "00036284",
+    "material": "00036285",
+    "col1Material": "00036285",
+    "col": "col1",
+    "core": "60065_LynM",
+    "code": "60065",
+    "race": "LynM",
+    "pic": null
+  },
+  "60065_LynM_col3": {
+    "skeleton": "00036286",
+    "texture": "00036284",
+    "material": "00039766",
+    "col1Material": "00036285",
+    "col": "col3",
+    "core": "60065_LynM",
+    "code": "60065",
+    "race": "LynM",
+    "pic": null
+  },
+  "10035_JinF_col1": {
+    "skeleton": "00036327",
+    "texture": "00036325",
+    "material": "00036326",
+    "col1Material": "00036326",
+    "col": "col1",
+    "core": "10035_JinF",
+    "code": "10035",
+    "race": "JinF",
+    "pic": null
+  },
+  "10037_LynF_col1": {
+    "skeleton": "00036335",
+    "texture": "00036333",
+    "material": "00036334",
+    "col1Material": "00036334",
+    "col": "col1",
+    "core": "10037_LynF",
+    "code": "10037",
+    "race": "LynF",
+    "pic": null
+  },
+  "10033_LynF_col1": {
+    "skeleton": "00036348",
+    "texture": "00036345",
+    "material": "00036347",
+    "col1Material": "00036347",
+    "col": "col1",
+    "core": "10033_LynF",
+    "code": "10033",
+    "race": "LynF",
+    "pic": null
+  },
+  "10035_JinM_col1": {
+    "skeleton": "00036354",
+    "texture": "00036352",
+    "material": "00036353",
+    "col1Material": "00036353",
+    "col": "col1",
+    "core": "10035_JinM",
+    "code": "10035",
+    "race": "JinM",
+    "pic": null
+  },
+  "10033_JinM_col1": {
+    "skeleton": "00036369",
+    "texture": "00036367",
+    "material": "00036368",
+    "col1Material": "00036368",
+    "col": "col1",
+    "core": "10033_JinM",
+    "code": "10033",
+    "race": "JinM",
+    "pic": null
+  },
+  "10033_JinF_col1": {
+    "skeleton": "00036481",
+    "texture": "00036483",
+    "material": "00036482",
+    "col1Material": "00036482",
+    "col": "col1",
+    "core": "10033_JinF",
+    "code": "10033",
+    "race": "JinF",
+    "pic": null
+  },
+  "10036_KunN_col1": {
+    "skeleton": "00036582",
+    "texture": "00036580",
+    "material": "00036581",
+    "col1Material": "00036581",
+    "col": "col1",
+    "core": "10036_KunN",
+    "code": "10036",
+    "race": "KunN",
+    "pic": null
+  },
+  "10036_JinF_col1": {
+    "skeleton": "00036585",
+    "texture": "00036583",
+    "material": "00036584",
+    "col1Material": "00036584",
+    "col": "col1",
+    "core": "10036_JinF",
+    "code": "10036",
+    "race": "JinF",
+    "pic": null
+  },
+  "10036_GonF_col1": {
+    "skeleton": "00036830",
+    "texture": "00036828",
+    "material": "00036829",
+    "col1Material": "00036829",
+    "col": "col1",
+    "core": "10036_GonF",
+    "code": "10036",
+    "race": "GonF",
+    "pic": null
+  },
+  "10036_LynF_col1": {
+    "skeleton": "00036837",
+    "texture": "00036835",
+    "material": "00036836",
+    "col1Material": "00036836",
+    "col": "col1",
+    "core": "10036_LynF",
+    "code": "10036",
+    "race": "LynF",
+    "pic": null
+  },
+  "10044_JinM_col1": {
+    "skeleton": "00036863",
+    "texture": "00036865",
+    "material": "00036864",
+    "col1Material": "00036864",
+    "col": "col1",
+    "core": "10044_JinM",
+    "code": "10044",
+    "race": "JinM",
+    "pic": null
+  },
+  "10044_Jinf_col1": {
+    "skeleton": "00036867",
+    "texture": "00036868",
+    "material": "00036866",
+    "col1Material": "00036866",
+    "col": "col1",
+    "core": "10044_Jinf",
+    "code": "10044",
+    "race": "JinF",
+    "pic": null
+  },
+  "10044_GonM_col1": {
+    "skeleton": "00036869",
+    "texture": "00036871",
+    "material": "00036870",
+    "col1Material": "00036870",
+    "col": "col1",
+    "core": "10044_GonM",
+    "code": "10044",
+    "race": "GonM",
+    "pic": null
+  },
+  "10044_GonF_col1": {
+    "skeleton": "00036872",
+    "texture": "00036874",
+    "material": "00036873",
+    "col1Material": "00036873",
+    "col": "col1",
+    "core": "10044_GonF",
+    "code": "10044",
+    "race": "GonF",
+    "pic": null
+  },
+  "10044_KunN_col1": {
+    "skeleton": "00036875",
+    "texture": "00036876",
+    "material": "00036877",
+    "col1Material": "00036877",
+    "col": "col1",
+    "core": "10044_KunN",
+    "code": "10044",
+    "race": "KunN",
+    "pic": null
+  },
+  "10044_LynM_col1": {
+    "skeleton": "00036878",
+    "texture": "00036880",
+    "material": "00036879",
+    "col1Material": "00036879",
+    "col": "col1",
+    "core": "10044_LynM",
+    "code": "10044",
+    "race": "LynM",
+    "pic": null
+  },
+  "10044_LynF_col1": {
+    "skeleton": "00036881",
+    "texture": "00036883",
+    "material": "00036882",
+    "col1Material": "00036882",
+    "col": "col1",
+    "core": "10044_LynF",
+    "code": "10044",
+    "race": "LynF",
+    "pic": null
+  },
+  "10033_GonM_col1": {
+    "skeleton": "00036888",
+    "texture": "00036886",
+    "material": "00036887",
+    "col1Material": "00036887",
+    "col": "col1",
+    "core": "10033_GonM",
+    "code": "10033",
+    "race": "GonM",
+    "pic": null
+  },
+  "10033_LynM_col1": {
+    "skeleton": "00036891",
+    "texture": "00036889",
+    "material": "00036890",
+    "col1Material": "00036890",
+    "col": "col1",
+    "core": "10033_LynM",
+    "code": "10033",
+    "race": "LynM",
+    "pic": null
+  },
+  "10035_GonF_col1": {
+    "skeleton": "00036920",
+    "texture": "00036918",
+    "material": "00036919",
+    "col1Material": "00036919",
+    "col": "col1",
+    "core": "10035_GonF",
+    "code": "10035",
+    "race": "GonF",
+    "pic": null
+  },
+  "10035_LynF_col1": {
+    "skeleton": "00036923",
+    "texture": "00036921",
+    "material": "00036922",
+    "col1Material": "00036922",
+    "col": "col1",
+    "core": "10035_LynF",
+    "code": "10035",
+    "race": "LynF",
+    "pic": null
+  },
+  "10035_KunN_col1": {
+    "skeleton": "00036926",
+    "texture": "00036924",
+    "material": "00036925",
+    "col1Material": "00036925",
+    "col": "col1",
+    "core": "10035_KunN",
+    "code": "10035",
+    "race": "KunN",
+    "pic": null
+  },
+  "10035_LynM_col1": {
+    "skeleton": "00036942",
+    "texture": "00036940",
+    "material": "00036941",
+    "col1Material": "00036941",
+    "col": "col1",
+    "core": "10035_LynM",
+    "code": "10035",
+    "race": "LynM",
+    "pic": null
+  },
+  "10033_KunN_col1": {
+    "skeleton": "00036947",
+    "texture": "00036945",
+    "material": "00036946",
+    "col1Material": "00036946",
+    "col": "col1",
+    "core": "10033_KunN",
+    "code": "10033",
+    "race": "KunN",
+    "pic": null
+  },
+  "10033_GonF_col1": {
+    "skeleton": "00036950",
+    "texture": "00036948",
+    "material": "00036949",
+    "col1Material": "00036949",
+    "col": "col1",
+    "core": "10033_GonF",
+    "code": "10033",
+    "race": "GonF",
+    "pic": null
+  },
+  "10035_GonM_col1": {
+    "skeleton": "00036954",
+    "texture": "00036952",
+    "material": "00036953",
+    "col1Material": "00036953",
+    "col": "col1",
+    "core": "10035_GonM",
+    "code": "10035",
+    "race": "GonM",
+    "pic": null
+  },
+  "10040_KunN_col1": {
+    "skeleton": "00036963",
+    "texture": "00036961",
+    "material": "00036962",
+    "col1Material": "00036962",
+    "col": "col1",
+    "core": "10040_KunN",
+    "code": "10040",
+    "race": "KunN",
+    "pic": null
+  },
+  "10039_JinM_col1": {
+    "skeleton": "00036979",
+    "texture": "00036977",
+    "material": "00036978",
+    "col1Material": "00036978",
+    "col": "col1",
+    "core": "10039_JinM",
+    "code": "10039",
+    "race": "JinM",
+    "pic": null
+  },
+  "10039_JinF_col1": {
+    "skeleton": "00036980",
+    "texture": "00036982",
+    "material": "00036981",
+    "col1Material": "00036981",
+    "col": "col1",
+    "core": "10039_JinF",
+    "code": "10039",
+    "race": "JinF",
+    "pic": null
+  },
+  "10039_GonM_col1": {
+    "skeleton": "00036987",
+    "texture": "00036983",
+    "material": "00036986",
+    "col1Material": "00036986",
+    "col": "col1",
+    "core": "10039_GonM",
+    "code": "10039",
+    "race": "GonM",
+    "pic": null
+  },
+  "10039_LynM_col1": {
+    "skeleton": "00036988",
+    "texture": "00036984",
+    "material": "00036985",
+    "col1Material": "00036985",
+    "col": "col1",
+    "core": "10039_LynM",
+    "code": "10039",
+    "race": "LynM",
+    "pic": null
+  },
+  "10039_GonF_col1": {
+    "skeleton": "00036990",
+    "texture": "00036992",
+    "material": "00036991",
+    "col1Material": "00036991",
+    "col": "col1",
+    "core": "10039_GonF",
+    "code": "10039",
+    "race": "GonF",
+    "pic": null
+  },
+  "10039_KunN_col1": {
+    "skeleton": "00036995",
+    "texture": "00036993",
+    "material": "00036994",
+    "col1Material": "00036994",
+    "col": "col1",
+    "core": "10039_KunN",
+    "code": "10039",
+    "race": "KunN",
+    "pic": null
+  },
+  "10039_LynF_col1": {
+    "skeleton": "00037000",
+    "texture": "00036998",
+    "material": "00036999",
+    "col1Material": "00036999",
+    "col": "col1",
+    "core": "10039_LynF",
+    "code": "10039",
+    "race": "LynF",
+    "pic": null
+  },
+  "10040_JinF_col1": {
+    "skeleton": "00037005",
+    "texture": "00037180",
+    "material": "00037004",
+    "col1Material": "00037004",
+    "col": "col1",
+    "core": "10040_JinF",
+    "code": "10040",
+    "race": "JinF",
+    "pic": null
+  },
+  "10041_GonF_col1": {
+    "skeleton": "00037098",
+    "texture": "00037091",
+    "material": "00037097",
+    "col1Material": "00037097",
+    "col": "col1",
+    "core": "10041_GonF",
+    "code": "10041",
+    "race": "GonF",
+    "pic": null
+  },
+  "10041_KunN_col1": {
+    "skeleton": "00037111",
+    "texture": "00037109",
+    "material": "00037110",
+    "col1Material": "00037110",
+    "col": "col1",
+    "core": "10041_KunN",
+    "code": "10041",
+    "race": "KunN",
+    "pic": null
+  },
+  "65014_GonM_col1": {
+    "skeleton": "00037130",
+    "texture": "00037128",
+    "material": "00037129",
+    "col1Material": "00037129",
+    "col": "col1",
+    "core": "65014_GonM",
+    "code": "65014",
+    "race": "GonM",
+    "pic": null
+  },
+  "65014_LynM_col1": {
+    "skeleton": "00037133",
+    "texture": "00037131",
+    "material": "00037132",
+    "col1Material": "00037132",
+    "col": "col1",
+    "core": "65014_LynM",
+    "code": "65014",
+    "race": "LynM",
+    "pic": null
+  },
+  "10030_JinF_col1": {
+    "skeleton": "00037142",
+    "texture": "00037418",
+    "material": "00037141",
+    "col1Material": "00037141",
+    "col": "col1",
+    "core": "10030_JinF",
+    "code": "10030",
+    "race": "JinF",
+    "pic": null
+  },
+  "10030_JinF_col2": {
+    "skeleton": "00037142",
+    "texture": "00037418",
+    "material": "00040567",
+    "col1Material": "00037141",
+    "col": "col2",
+    "core": "10030_JinF",
+    "code": "10030",
+    "race": "JinF",
+    "pic": null
+  },
+  "10022_LynM_col1": {
+    "skeleton": "00037167",
+    "texture": "00037165",
+    "material": "00037166",
+    "col1Material": "00037166",
+    "col": "col1",
+    "core": "10022_LynM",
+    "code": "10022",
+    "race": "LynM",
+    "pic": null
+  },
+  "10022_GonM_col1": {
+    "skeleton": "00037170",
+    "texture": "00037168",
+    "material": "00037169",
+    "col1Material": "00037169",
+    "col": "col1",
+    "core": "10022_GonM",
+    "code": "10022",
+    "race": "GonM",
+    "pic": null
+  },
+  "10040_GonF_col1": {
+    "skeleton": "00037182",
+    "texture": "00037179",
+    "material": "00037181",
+    "col1Material": "00037181",
+    "col": "col1",
+    "core": "10040_GonF",
+    "code": "10040",
+    "race": "GonF",
+    "pic": null
+  },
+  "10040_LynF_col1": {
+    "skeleton": "00037185",
+    "texture": "00037183",
+    "material": "00037184",
+    "col1Material": "00037184",
+    "col": "col1",
+    "core": "10040_LynF",
+    "code": "10040",
+    "race": "LynF",
+    "pic": null
+  },
+  "65011_GonM_col1": {
+    "skeleton": "00037209",
+    "texture": "00037207",
+    "material": "00037208",
+    "col1Material": "00037208",
+    "col": "col1",
+    "core": "65011_GonM",
+    "code": "65011",
+    "race": "GonM",
+    "pic": null
+  },
+  "65011_LynM_col1": {
+    "skeleton": "00037212",
+    "texture": "00037210",
+    "material": "00037211",
+    "col1Material": "00037211",
+    "col": "col1",
+    "core": "65011_LynM",
+    "code": "65011",
+    "race": "LynM",
+    "pic": null
+  },
+  "10041_JinF_col1": {
+    "skeleton": "00037249",
+    "texture": "00037247",
+    "material": "00037248",
+    "col1Material": "00037248",
+    "col": "col1",
+    "core": "10041_JinF",
+    "code": "10041",
+    "race": "JinF",
+    "pic": null
+  },
+  "10046_JinM_col1": {
+    "skeleton": "00037382",
+    "texture": "00037380",
+    "material": "00037381",
+    "col1Material": "00037381",
+    "col": "col1",
+    "core": "10046_JinM",
+    "code": "10046",
+    "race": "JinM",
+    "pic": null
+  },
+  "10046_GonM_col1": {
+    "skeleton": "00037387",
+    "texture": "00037385",
+    "material": "00037386",
+    "col1Material": "00037386",
+    "col": "col1",
+    "core": "10046_GonM",
+    "code": "10046",
+    "race": "GonM",
+    "pic": null
+  },
+  "10046_LynM_col1": {
+    "skeleton": "00037390",
+    "texture": "00037388",
+    "material": "00037389",
+    "col1Material": "00037389",
+    "col": "col1",
+    "core": "10046_LynM",
+    "code": "10046",
+    "race": "LynM",
+    "pic": null
+  },
+  "10041_JinM_col1": {
+    "skeleton": "00037402",
+    "texture": "00037403",
+    "material": "00037404",
+    "col1Material": "00037404",
+    "col": "col1",
+    "core": "10041_JinM",
+    "code": "10041",
+    "race": "JinM",
+    "pic": null
+  },
+  "10030_JinM_col1": {
+    "skeleton": "00037417",
+    "texture": "00037416",
+    "material": "00037138",
+    "col1Material": "00037138",
+    "col": "col1",
+    "core": "10030_JinM",
+    "code": "10030",
+    "race": "JinM",
+    "pic": null
+  },
+  "10030_JinM_col2": {
+    "skeleton": "00037417",
+    "texture": "00037416",
+    "material": "00040566",
+    "col1Material": "00037138",
+    "col": "col2",
+    "core": "10030_JinM",
+    "code": "10030",
+    "race": "JinM",
+    "pic": null
+  },
+  "10041_GonM_col1": {
+    "skeleton": "00037422",
+    "texture": "00037421",
+    "material": "00037420",
+    "col1Material": "00037420",
+    "col": "col1",
+    "core": "10041_GonM",
+    "code": "10041",
+    "race": "GonM",
+    "pic": null
+  },
+  "10041_LynM_col1": {
+    "skeleton": "00037429",
+    "texture": "00037427",
+    "material": "00037428",
+    "col1Material": "00037428",
+    "col": "col1",
+    "core": "10041_LynM",
+    "code": "10041",
+    "race": "LynM",
+    "pic": null
+  },
+  "10047_GonF_col1": {
+    "skeleton": "00037524",
+    "texture": "00037522",
+    "material": "00037523",
+    "col1Material": "00037523",
+    "col": "col1",
+    "core": "10047_GonF",
+    "code": "10047",
+    "race": "GonF",
+    "pic": null
+  },
+  "10043_JinM_col1": {
+    "skeleton": "00037529",
+    "texture": "00037527",
+    "material": "00037528",
+    "col1Material": "00037528",
+    "col": "col1",
+    "core": "10043_JinM",
+    "code": "10043",
+    "race": "JinM",
+    "pic": null
+  },
+  "10041_LynF_col1": {
+    "skeleton": "00037533",
+    "texture": "00037531",
+    "material": "00037532",
+    "col1Material": "00037532",
+    "col": "col1",
+    "core": "10041_LynF",
+    "code": "10041",
+    "race": "LynF",
+    "pic": null
+  },
+  "10043_GonM_col1": {
+    "skeleton": "00037559",
+    "texture": "00037557",
+    "material": "00037558",
+    "col1Material": "00037558",
+    "col": "col1",
+    "core": "10043_GonM",
+    "code": "10043",
+    "race": "GonM",
+    "pic": null
+  },
+  "10043_LynM_col1": {
+    "skeleton": "00037562",
+    "texture": "00037560",
+    "material": "00037561",
+    "col1Material": "00037561",
+    "col": "col1",
+    "core": "10043_LynM",
+    "code": "10043",
+    "race": "LynM",
+    "pic": null
+  },
+  "10047_JinM_col1": {
+    "skeleton": "00037584",
+    "texture": "00037582",
+    "material": "00037583",
+    "col1Material": "00037583",
+    "col": "col1",
+    "core": "10047_JinM",
+    "code": "10047",
+    "race": "JinM",
+    "pic": null
+  },
+  "10047_GonM_col1": {
+    "skeleton": "00037694",
+    "texture": "00037692",
+    "material": "00037693",
+    "col1Material": "00037693",
+    "col": "col1",
+    "core": "10047_GonM",
+    "code": "10047",
+    "race": "GonM",
+    "pic": null
+  },
+  "10047_LynF_col1": {
+    "skeleton": "00037720",
+    "texture": "00037718",
+    "material": "00037719",
+    "col1Material": "00037719",
+    "col": "col1",
+    "core": "10047_LynF",
+    "code": "10047",
+    "race": "LynF",
+    "pic": null
+  },
+  "10047_LynM_col1": {
+    "skeleton": "00037724",
+    "texture": "00037722",
+    "material": "00037723",
+    "col1Material": "00037723",
+    "col": "col1",
+    "core": "10047_LynM",
+    "code": "10047",
+    "race": "LynM",
+    "pic": null
+  },
+  "10030_LynM_col1": {
+    "skeleton": "00037767",
+    "texture": "00037765",
+    "material": "00037766",
+    "col1Material": "00037766",
+    "col": "col1",
+    "core": "10030_LynM",
+    "code": "10030",
+    "race": "LynM",
+    "pic": null
+  },
+  "10030_LynM_col2": {
+    "skeleton": "00037767",
+    "texture": "00037765",
+    "material": "00040961",
+    "col1Material": "00037766",
+    "col": "col2",
+    "core": "10030_LynM",
+    "code": "10030",
+    "race": "LynM",
+    "pic": null
+  },
+  "10030_GonM_col1": {
+    "skeleton": "00037770",
+    "texture": "00037768",
+    "material": "00037769",
+    "col1Material": "00037769",
+    "col": "col1",
+    "core": "10030_GonM",
+    "code": "10030",
+    "race": "GonM",
+    "pic": null
+  },
+  "10030_GonM_col2": {
+    "skeleton": "00037770",
+    "texture": "00037768",
+    "material": "00040568",
+    "col1Material": "00037769",
+    "col": "col2",
+    "core": "10030_GonM",
+    "code": "10030",
+    "race": "GonM",
+    "pic": null
+  },
+  "10030_GonF_col1": {
+    "skeleton": "00037777",
+    "texture": "00037771",
+    "material": "00037774",
+    "col1Material": "00037774",
+    "col": "col1",
+    "core": "10030_GonF",
+    "code": "10030",
+    "race": "GonF",
+    "pic": null
+  },
+  "10030_GonF_col2": {
+    "skeleton": "00037777",
+    "texture": "00037771",
+    "material": "00040569",
+    "col1Material": "00037774",
+    "col": "col2",
+    "core": "10030_GonF",
+    "code": "10030",
+    "race": "GonF",
+    "pic": null
+  },
+  "10030_KunN_col1": {
+    "skeleton": "00037778",
+    "texture": "00037772",
+    "material": "00037775",
+    "col1Material": "00037775",
+    "col": "col1",
+    "core": "10030_KunN",
+    "code": "10030",
+    "race": "KunN",
+    "pic": null
+  },
+  "10030_KunN_col2": {
+    "skeleton": "00037778",
+    "texture": "00037772",
+    "material": "00040570",
+    "col1Material": "00037775",
+    "col": "col2",
+    "core": "10030_KunN",
+    "code": "10030",
+    "race": "KunN",
+    "pic": null
+  },
+  "10030_LynF_col1": {
+    "skeleton": "00037779",
+    "texture": "00037773",
+    "material": "00037776",
+    "col1Material": "00037776",
+    "col": "col1",
+    "core": "10030_LynF",
+    "code": "10030",
+    "race": "LynF",
+    "pic": null
+  },
+  "10030_LynF_col2": {
+    "skeleton": "00037779",
+    "texture": "00037773",
+    "material": "00040960",
+    "col1Material": "00037776",
+    "col": "col2",
+    "core": "10030_LynF",
+    "code": "10030",
+    "race": "LynF",
+    "pic": null
+  },
+  "90013_GonM_col2": {
+    "skeleton": "00037786",
+    "texture": "00037788",
+    "material": "00038044",
+    "col1Material": "00037787",
+    "col": "col2",
+    "core": "90013_GonM",
+    "code": "90013",
+    "race": "GonM",
+    "pic": null
+  },
+  "90013_GonM_col3": {
+    "skeleton": "00037786",
+    "texture": "00037788",
+    "material": "00038512",
+    "col1Material": "00037787",
+    "col": "col3",
+    "core": "90013_GonM",
+    "code": "90013",
+    "race": "GonM",
+    "pic": null
+  },
+  "90013_GonM_col4": {
+    "skeleton": "00037786",
+    "texture": "00037788",
+    "material": "00038513",
+    "col1Material": "00037787",
+    "col": "col4",
+    "core": "90013_GonM",
+    "code": "90013",
+    "race": "GonM",
+    "pic": null
+  },
+  "90013_GonM_col5": {
+    "skeleton": "00037786",
+    "texture": "00037788",
+    "material": "00038514",
+    "col1Material": "00037787",
+    "col": "col5",
+    "core": "90013_GonM",
+    "code": "90013",
+    "race": "GonM",
+    "pic": null
+  },
+  "10047_KunN_col1": {
+    "skeleton": "00037795",
+    "texture": "00037793",
+    "material": "00037794",
+    "col1Material": "00037794",
+    "col": "col1",
+    "core": "10047_KunN",
+    "code": "10047",
+    "race": "KunN",
+    "pic": null
+  },
+  "10047_JinF_col1": {
+    "skeleton": "00037806",
+    "texture": "00037804",
+    "material": "00037805",
+    "col1Material": "00037805",
+    "col": "col1",
+    "core": "10047_JinF",
+    "code": "10047",
+    "race": "JinF",
+    "pic": null
+  },
+  "60131_JinM_col1": {
+    "skeleton": "00037840",
+    "texture": "00037818",
+    "material": "00037839",
+    "col1Material": "00037839",
+    "col": "col1",
+    "core": "60131_JinM",
+    "code": "60131",
+    "race": "JinM",
+    "pic": null
+  },
+  "60131_GonF_col1": {
+    "skeleton": "00037843",
+    "texture": "00037841",
+    "material": "00037842",
+    "col1Material": "00037842",
+    "col": "col1",
+    "core": "60131_GonF",
+    "code": "60131",
+    "race": "GonF",
+    "pic": null
+  },
+  "60131_GonM_col1": {
+    "skeleton": "00037846",
+    "texture": "00037844",
+    "material": "00037845",
+    "col1Material": "00037845",
+    "col": "col1",
+    "core": "60131_GonM",
+    "code": "60131",
+    "race": "GonM",
+    "pic": null
+  },
+  "60131_KunN_col1": {
+    "skeleton": "00037849",
+    "texture": "00037847",
+    "material": "00037848",
+    "col1Material": "00037848",
+    "col": "col1",
+    "core": "60131_KunN",
+    "code": "60131",
+    "race": "KunN",
+    "pic": null
+  },
+  "60131_LynM_col1": {
+    "skeleton": "00037852",
+    "texture": "00037850",
+    "material": "00037851",
+    "col1Material": "00037851",
+    "col": "col1",
+    "core": "60131_LynM",
+    "code": "60131",
+    "race": "LynM",
+    "pic": null
+  },
+  "60131_LynF_col1": {
+    "skeleton": "00037855",
+    "texture": "00037853",
+    "material": "00037854",
+    "col1Material": "00037854",
+    "col": "col1",
+    "core": "60131_LynF",
+    "code": "60131",
+    "race": "LynF",
+    "pic": null
+  },
+  "60103_JinM_col1": {
+    "skeleton": "00037859",
+    "texture": "00037857",
+    "material": "00037858",
+    "col1Material": "00037858",
+    "col": "col1",
+    "core": "60103_JinM",
+    "code": "60103",
+    "race": "JinM",
+    "pic": null
+  },
+  "60103_JinM_col2": {
+    "skeleton": "00037859",
+    "texture": "00037857",
+    "material": "00038311",
+    "col1Material": "00037858",
+    "col": "col2",
+    "core": "60103_JinM",
+    "code": "60103",
+    "race": "JinM",
+    "pic": null
+  },
+  "10046_JinF_col1": {
+    "skeleton": "00037998",
+    "texture": "00037996",
+    "material": "00037997",
+    "col1Material": "00037997",
+    "col": "col1",
+    "core": "10046_JinF",
+    "code": "10046",
+    "race": "JinF",
+    "pic": null
+  },
+  "10051_JinM_col1": {
+    "skeleton": "00038011",
+    "texture": "00038009",
+    "material": "00038010",
+    "col1Material": "00038010",
+    "col": "col1",
+    "core": "10051_JinM",
+    "code": "10051",
+    "race": "JinM",
+    "pic": null
+  },
+  "10051_GonM_col1": {
+    "skeleton": "00038039",
+    "texture": "00038037",
+    "material": "00038038",
+    "col1Material": "00038038",
+    "col": "col1",
+    "core": "10051_GonM",
+    "code": "10051",
+    "race": "GonM",
+    "pic": null
+  },
+  "10051_LynM_col1": {
+    "skeleton": "00038043",
+    "texture": "00038041",
+    "material": "00038042",
+    "col1Material": "00038042",
+    "col": "col1",
+    "core": "10051_LynM",
+    "code": "10051",
+    "race": "LynM",
+    "pic": null
+  },
+  "10052_JinF_col1": {
+    "skeleton": "00038067",
+    "texture": "00038065",
+    "material": "00038066",
+    "col1Material": "00038066",
+    "col": "col1",
+    "core": "10052_JinF",
+    "code": "10052",
+    "race": "JinF",
+    "pic": null
+  },
+  "10052_GonF_col1": {
+    "skeleton": "00038068",
+    "texture": "00038119",
+    "material": "00038070",
+    "col1Material": "00038070",
+    "col": "col1",
+    "core": "10052_GonF",
+    "code": "10052",
+    "race": "GonF",
+    "pic": null
+  },
+  "10052_JinM_col1": {
+    "skeleton": "00038072",
+    "texture": "00038081",
+    "material": "00038071",
+    "col1Material": "00038071",
+    "col": "col1",
+    "core": "10052_JinM",
+    "code": "10052",
+    "race": "JinM",
+    "pic": null
+  },
+  "10052_GonM_col1": {
+    "skeleton": "00038074",
+    "texture": "00038118",
+    "material": "00038073",
+    "col1Material": "00038073",
+    "col": "col1",
+    "core": "10052_GonM",
+    "code": "10052",
+    "race": "GonM",
+    "pic": null
+  },
+  "10052_KunN_col1": {
+    "skeleton": "00038076",
+    "texture": "00038080",
+    "material": "00038075",
+    "col1Material": "00038075",
+    "col": "col1",
+    "core": "10052_KunN",
+    "code": "10052",
+    "race": "KunN",
+    "pic": null
+  },
+  "10052_LynM_col1": {
+    "skeleton": "00038078",
+    "texture": "00038079",
+    "material": "00038077",
+    "col1Material": "00038077",
+    "col": "col1",
+    "core": "10052_LynM",
+    "code": "10052",
+    "race": "LynM",
+    "pic": null
+  },
+  "60103_LynM_col1": {
+    "skeleton": "00038085",
+    "texture": "00038083",
+    "material": "00038084",
+    "col1Material": "00038084",
+    "col": "col1",
+    "core": "60103_LynM",
+    "code": "60103",
+    "race": "LynM",
+    "pic": null
+  },
+  "60103_LynM_col2": {
+    "skeleton": "00038085",
+    "texture": "00038083",
+    "material": "00041899",
+    "col1Material": "00038084",
+    "col": "col2",
+    "core": "60103_LynM",
+    "code": "60103",
+    "race": "LynM",
+    "pic": null
+  },
+  "70049_LynM_col1": {
+    "skeleton": "00038124",
+    "texture": "00038122",
+    "material": "00038123",
+    "col1Material": "00038123",
+    "col": "col1",
+    "core": "70049_LynM",
+    "code": "70049",
+    "race": "LynM",
+    "pic": null
+  },
+  "70049_GonM_col1": {
+    "skeleton": "00038127",
+    "texture": "00038125",
+    "material": "00038126",
+    "col1Material": "00038126",
+    "col": "col1",
+    "core": "70049_GonM",
+    "code": "70049",
+    "race": "GonM",
+    "pic": null
+  },
+  "70048_KunN_col1": {
+    "skeleton": "00038148",
+    "texture": "00038145",
+    "material": "00038147",
+    "col1Material": "00038147",
+    "col": "col1",
+    "core": "70048_KunN",
+    "code": "70048",
+    "race": "KunN",
+    "pic": null
+  },
+  "70048_LynF_col1": {
+    "skeleton": "00038151",
+    "texture": "00038149",
+    "material": "00038150",
+    "col1Material": "00038150",
+    "col": "col1",
+    "core": "70048_LynF",
+    "code": "70048",
+    "race": "LynF",
+    "pic": null
+  },
+  "10046_GonF_col1": {
+    "skeleton": "00038168",
+    "texture": "00038166",
+    "material": "00038167",
+    "col1Material": "00038167",
+    "col": "col1",
+    "core": "10046_GonF",
+    "code": "10046",
+    "race": "GonF",
+    "pic": null
+  },
+  "10046_KunN_col1": {
+    "skeleton": "00038175",
+    "texture": "00038173",
+    "material": "00038174",
+    "col1Material": "00038174",
+    "col": "col1",
+    "core": "10046_KunN",
+    "code": "10046",
+    "race": "KunN",
+    "pic": null
+  },
+  "10053_JinM_col1": {
+    "skeleton": "00038190",
+    "texture": "00038188",
+    "material": "00038189",
+    "col1Material": "00038189",
+    "col": "col1",
+    "core": "10053_JinM",
+    "code": "10053",
+    "race": "JinM",
+    "pic": null
+  },
+  "10053_JinF_col1": {
+    "skeleton": "00038198",
+    "texture": "00038196",
+    "material": "00038197",
+    "col1Material": "00038197",
+    "col": "col1",
+    "core": "10053_JinF",
+    "code": "10053",
+    "race": "JinF",
+    "pic": null
+  },
+  "10046_LynF_col1": {
+    "skeleton": "00038249",
+    "texture": "00038247",
+    "material": "00038248",
+    "col1Material": "00038248",
+    "col": "col1",
+    "core": "10046_LynF",
+    "code": "10046",
+    "race": "LynF",
+    "pic": null
+  },
+  "10053_GonF_col1": {
+    "skeleton": "00038252",
+    "texture": "00038250",
+    "material": "00038251",
+    "col1Material": "00038251",
+    "col": "col1",
+    "core": "10053_GonF",
+    "code": "10053",
+    "race": "GonF",
+    "pic": null
+  },
+  "10054_JinF_col1": {
+    "skeleton": "00038278",
+    "texture": "00038275",
+    "material": "00038277",
+    "col1Material": "00038277",
+    "col": "col1",
+    "core": "10054_JinF",
+    "code": "10054",
+    "race": "JinF",
+    "pic": null
+  },
+  "10054_GonF_col1": {
+    "skeleton": "00038281",
+    "texture": "00038279",
+    "material": "00038280",
+    "col1Material": "00038280",
+    "col": "col1",
+    "core": "10054_GonF",
+    "code": "10054",
+    "race": "GonF",
+    "pic": null
+  },
+  "10054_KunN_col1": {
+    "skeleton": "00038284",
+    "texture": "00038282",
+    "material": "00038283",
+    "col1Material": "00038283",
+    "col": "col1",
+    "core": "10054_KunN",
+    "code": "10054",
+    "race": "KunN",
+    "pic": null
+  },
+  "10054_LynF_col1": {
+    "skeleton": "00038287",
+    "texture": "00038285",
+    "material": "00038286",
+    "col1Material": "00038286",
+    "col": "col1",
+    "core": "10054_LynF",
+    "code": "10054",
+    "race": "LynF",
+    "pic": null
+  },
+  "10055_JinF_col1": {
+    "skeleton": "00038386",
+    "texture": "00038384",
+    "material": "00038385",
+    "col1Material": "00038385",
+    "col": "col1",
+    "core": "10055_JinF",
+    "code": "10055",
+    "race": "JinF",
+    "pic": null
+  },
+  "10055_JinM_col1": {
+    "skeleton": "00038532",
+    "texture": "00038530",
+    "material": "00038531",
+    "col1Material": "00038531",
+    "col": "col1",
+    "core": "10055_JinM",
+    "code": "10055",
+    "race": "JinM",
+    "pic": null
+  },
+  "10055_LynM_col1": {
+    "skeleton": "00038535",
+    "texture": "00038533",
+    "material": "00038534",
+    "col1Material": "00038534",
+    "col": "col1",
+    "core": "10055_LynM",
+    "code": "10055",
+    "race": "LynM",
+    "pic": null
+  },
+  "10055_GonM_col1": {
+    "skeleton": "00038538",
+    "texture": "00038536",
+    "material": "00038537",
+    "col1Material": "00038537",
+    "col": "col1",
+    "core": "10055_GonM",
+    "code": "10055",
+    "race": "GonM",
+    "pic": null
+  },
+  "10055_GonF_col1": {
+    "skeleton": "00038548",
+    "texture": "00038546",
+    "material": "00038547",
+    "col1Material": "00038547",
+    "col": "col1",
+    "core": "10055_GonF",
+    "code": "10055",
+    "race": "GonF",
+    "pic": null
+  },
+  "10053_GonM_col1": {
+    "skeleton": "00038553",
+    "texture": "00038551",
+    "material": "00038552",
+    "col1Material": "00038552",
+    "col": "col1",
+    "core": "10053_GonM",
+    "code": "10053",
+    "race": "GonM",
+    "pic": null
+  },
+  "10055_KunN_col1": {
+    "skeleton": "00038556",
+    "texture": "00038554",
+    "material": "00038555",
+    "col1Material": "00038555",
+    "col": "col1",
+    "core": "10055_KunN",
+    "code": "10055",
+    "race": "KunN",
+    "pic": null
+  },
+  "10050_JinF_col1": {
+    "skeleton": "00038568",
+    "texture": "00038566",
+    "material": "00038567",
+    "col1Material": "00038567",
+    "col": "col1",
+    "core": "10050_JinF",
+    "code": "10050",
+    "race": "JinF",
+    "pic": null
+  },
+  "10050_JinM_col1": {
+    "skeleton": "00038571",
+    "texture": "00038569",
+    "material": "00038570",
+    "col1Material": "00038570",
+    "col": "col1",
+    "core": "10050_JinM",
+    "code": "10050",
+    "race": "JinM",
+    "pic": null
+  },
+  "10050_GonF_col1": {
+    "skeleton": "00038574",
+    "texture": "00038572",
+    "material": "00038573",
+    "col1Material": "00038573",
+    "col": "col1",
+    "core": "10050_GonF",
+    "code": "10050",
+    "race": "GonF",
+    "pic": null
+  },
+  "10050_KunN_col1": {
+    "skeleton": "00038577",
+    "texture": "00038575",
+    "material": "00038576",
+    "col1Material": "00038576",
+    "col": "col1",
+    "core": "10050_KunN",
+    "code": "10050",
+    "race": "KunN",
+    "pic": null
+  },
+  "10050_LynF_col1": {
+    "skeleton": "00038580",
+    "texture": "00038578",
+    "material": "00038579",
+    "col1Material": "00038579",
+    "col": "col1",
+    "core": "10050_LynF",
+    "code": "10050",
+    "race": "LynF",
+    "pic": null
+  },
+  "10050_GonM_col1": {
+    "skeleton": "00038583",
+    "texture": "00038581",
+    "material": "00038582",
+    "col1Material": "00038582",
+    "col": "col1",
+    "core": "10050_GonM",
+    "code": "10050",
+    "race": "GonM",
+    "pic": null
+  },
+  "10050_LynM_col1": {
+    "skeleton": "00038586",
+    "texture": "00038584",
+    "material": "00038585",
+    "col1Material": "00038585",
+    "col": "col1",
+    "core": "10050_LynM",
+    "code": "10050",
+    "race": "LynM",
+    "pic": null
+  },
+  "10055_LynF_col1": {
+    "skeleton": "00038598",
+    "texture": "00038596",
+    "material": "00038597",
+    "col1Material": "00038597",
+    "col": "col1",
+    "core": "10055_LynF",
+    "code": "10055",
+    "race": "LynF",
+    "pic": null
+  },
+  "10053_LynM_col1": {
+    "skeleton": "00038757",
+    "texture": "00038754",
+    "material": "00038756",
+    "col1Material": "00038756",
+    "col": "col1",
+    "core": "10053_LynM",
+    "code": "10053",
+    "race": "LynM",
+    "pic": null
+  },
+  "10053_LynF_col1": {
+    "skeleton": "00038846",
+    "texture": "00038844",
+    "material": "00038845",
+    "col1Material": "00038845",
+    "col": "col1",
+    "core": "10053_LynF",
+    "code": "10053",
+    "race": "LynF",
+    "pic": null
+  },
+  "65071_GonM_col1": {
+    "skeleton": "00038887",
+    "texture": "00038885",
+    "material": "00038886",
+    "col1Material": "00038886",
+    "col": "col1",
+    "core": "65071_GonM",
+    "code": "65071",
+    "race": "GonM",
+    "pic": null
+  },
+  "65071_LynM_col1": {
+    "skeleton": "00038890",
+    "texture": "00038888",
+    "material": "00038889",
+    "col1Material": "00038889",
+    "col": "col1",
+    "core": "65071_LynM",
+    "code": "65071",
+    "race": "LynM",
+    "pic": null
+  },
+  "10053_KunN_col1": {
+    "skeleton": "00038942",
+    "texture": "00038940",
+    "material": "00038941",
+    "col1Material": "00038941",
+    "col": "col1",
+    "core": "10053_KunN",
+    "code": "10053",
+    "race": "KunN",
+    "pic": null
+  },
+  "10056_JinF_col1": {
+    "skeleton": "00038947",
+    "texture": "00038945",
+    "material": "00038946",
+    "col1Material": "00038946",
+    "col": "col1",
+    "core": "10056_JinF",
+    "code": "10056",
+    "race": "JinF",
+    "pic": null
+  },
+  "10056_JinM_col1": {
+    "skeleton": "00039171",
+    "texture": "00039169",
+    "material": "00039170",
+    "col1Material": "00039170",
+    "col": "col1",
+    "core": "10056_JinM",
+    "code": "10056",
+    "race": "JinM",
+    "pic": null
+  },
+  "10057_JinF_col1": {
+    "skeleton": "00039209",
+    "texture": "00039207",
+    "material": "00039212",
+    "col1Material": "00039208",
+    "col": "col1",
+    "core": "10057_JinF",
+    "code": "10057",
+    "race": "JinF",
+    "pic": null
+  },
+  "10056_GonF_col1": {
+    "skeleton": "00039235",
+    "texture": "00039233",
+    "material": "00039234",
+    "col1Material": "00039234",
+    "col": "col1",
+    "core": "10056_GonF",
+    "code": "10056",
+    "race": "GonF",
+    "pic": null
+  },
+  "10056_KunN_col1": {
+    "skeleton": "00039238",
+    "texture": "00039236",
+    "material": "00039237",
+    "col1Material": "00039237",
+    "col": "col1",
+    "core": "10056_KunN",
+    "code": "10056",
+    "race": "KunN",
+    "pic": null
+  },
+  "10056_LynF_col1": {
+    "skeleton": "00039250",
+    "texture": "00039248",
+    "material": "00039249",
+    "col1Material": "00039249",
+    "col": "col1",
+    "core": "10056_LynF",
+    "code": "10056",
+    "race": "LynF",
+    "pic": null
+  },
+  "10056_GonM_col1": {
+    "skeleton": "00039515",
+    "texture": "00039513",
+    "material": "00039514",
+    "col1Material": "00039514",
+    "col": "col1",
+    "core": "10056_GonM",
+    "code": "10056",
+    "race": "GonM",
+    "pic": null
+  },
+  "10056_LynM_col1": {
+    "skeleton": "00039518",
+    "texture": "00039516",
+    "material": "00039517",
+    "col1Material": "00039517",
+    "col": "col1",
+    "core": "10056_LynM",
+    "code": "10056",
+    "race": "LynM",
+    "pic": null
+  },
+  "65071_GonF_col1": {
+    "skeleton": "00039721",
+    "texture": "00039722",
+    "material": "00039723",
+    "col1Material": "00039723",
+    "col": "col1",
+    "core": "65071_GonF",
+    "code": "65071",
+    "race": "GonF",
+    "pic": null
+  },
+  "65071_KunN_col1": {
+    "skeleton": "00039725",
+    "texture": "00039726",
+    "material": "00039727",
+    "col1Material": "00039727",
+    "col": "col1",
+    "core": "65071_KunN",
+    "code": "65071",
+    "race": "KunN",
+    "pic": null
+  },
+  "65071_LynF_col1": {
+    "skeleton": "00039729",
+    "texture": "00039730",
+    "material": "00039731",
+    "col1Material": "00039731",
+    "col": "col1",
+    "core": "65071_LynF",
+    "code": "65071",
+    "race": "LynF",
+    "pic": null
+  },
+  "10060_JinM_col1": {
+    "skeleton": "00039769",
+    "texture": "00039770",
+    "material": "00039771",
+    "col1Material": "00039771",
+    "col": "col1",
+    "core": "10060_JinM",
+    "code": "10060",
+    "race": "JinM",
+    "pic": null
+  },
+  "10060_JinF_col1": {
+    "skeleton": "00039773",
+    "texture": "00039774",
+    "material": "00039775",
+    "col1Material": "00039775",
+    "col": "col1",
+    "core": "10060_JinF",
+    "code": "10060",
+    "race": "JinF",
+    "pic": null
+  },
+  "10060_GonM_col1": {
+    "skeleton": "00039777",
+    "texture": "00039778",
+    "material": "00039779",
+    "col1Material": "00039779",
+    "col": "col1",
+    "core": "10060_GonM",
+    "code": "10060",
+    "race": "GonM",
+    "pic": null
+  },
+  "10060_GonF_col1": {
+    "skeleton": "00039781",
+    "texture": "00039782",
+    "material": "00039932",
+    "col1Material": "00039783",
+    "col": "col1",
+    "core": "10060_GonF",
+    "code": "10060",
+    "race": "GonF",
+    "pic": null
+  },
+  "10060_KunN_col1": {
+    "skeleton": "00039785",
+    "texture": "00039786",
+    "material": "00039936",
+    "col1Material": "00039787",
+    "col": "col1",
+    "core": "10060_KunN",
+    "code": "10060",
+    "race": "KunN",
+    "pic": null
+  },
+  "10060_LynM_col1": {
+    "skeleton": "00039789",
+    "texture": "00039790",
+    "material": "00039791",
+    "col1Material": "00039791",
+    "col": "col1",
+    "core": "10060_LynM",
+    "code": "10060",
+    "race": "LynM",
+    "pic": null
+  },
+  "10060_LynF_col1": {
+    "skeleton": "00039793",
+    "texture": "00039794",
+    "material": "00039795",
+    "col1Material": "00039795",
+    "col": "col1",
+    "core": "10060_LynF",
+    "code": "10060",
+    "race": "LynF",
+    "pic": null
+  },
+  "10064_JinM_col1": {
+    "skeleton": "00039803",
+    "texture": "00039804",
+    "material": "00039805",
+    "col1Material": "00039805",
+    "col": "col1",
+    "core": "10064_JinM",
+    "code": "10064",
+    "race": "JinM",
+    "pic": null
+  },
+  "10064_GonM_col1": {
+    "skeleton": "00039807",
+    "texture": "00039808",
+    "material": "00039809",
+    "col1Material": "00039809",
+    "col": "col1",
+    "core": "10064_GonM",
+    "code": "10064",
+    "race": "GonM",
+    "pic": null
+  },
+  "10064_LynM_col1": {
+    "skeleton": "00039811",
+    "texture": "00039812",
+    "material": "00039813",
+    "col1Material": "00039813",
+    "col": "col1",
+    "core": "10064_LynM",
+    "code": "10064",
+    "race": "LynM",
+    "pic": null
+  },
+  "10063_JinM_col1": {
+    "skeleton": "00039839",
+    "texture": "00039840",
+    "material": "00039841",
+    "col1Material": "00039841",
+    "col": "col1",
+    "core": "10063_JinM",
+    "code": "10063",
+    "race": "JinM",
+    "pic": null
+  },
+  "10063_GonM_col1": {
+    "skeleton": "00039843",
+    "texture": "00039844",
+    "material": "00039845",
+    "col1Material": "00039845",
+    "col": "col1",
+    "core": "10063_GonM",
+    "code": "10063",
+    "race": "GonM",
+    "pic": null
+  },
+  "10063_LynM_col1": {
+    "skeleton": "00039853",
+    "texture": "00039851",
+    "material": "00039852",
+    "col1Material": "00039852",
+    "col": "col1",
+    "core": "10063_LynM",
+    "code": "10063",
+    "race": "LynM",
+    "pic": null
+  },
+  "10058_GonF_col1": {
+    "skeleton": "00039860",
+    "texture": "00039861",
+    "material": "00039862",
+    "col1Material": "00039862",
+    "col": "col1",
+    "core": "10058_GonF",
+    "code": "10058",
+    "race": "GonF",
+    "pic": null
+  },
+  "10058_KunN_body_bk": {
+    "skeleton": "00039864",
+    "texture": "00039865",
+    "material": "00039866",
+    "col1Material": "00039866",
+    "col": "body_bk",
+    "core": "10058_KunN",
+    "code": "10058",
+    "race": "KunN",
+    "pic": null
+  },
+  "60028_GonF_col1": {
+    "skeleton": "00039885",
+    "texture": "00039883",
+    "material": "00039884",
+    "col1Material": "00039884",
+    "col": "col1",
+    "core": "60028_GonF",
+    "code": "60028",
+    "race": "GonF",
+    "pic": null
+  },
+  "60028_GonF_col2": {
+    "skeleton": "00039885",
+    "texture": "00039883",
+    "material": "00039886",
+    "col1Material": "00039884",
+    "col": "col2",
+    "core": "60028_GonF",
+    "code": "60028",
+    "race": "GonF",
+    "pic": null
+  },
+  "10057_JinM_col1": {
+    "skeleton": "00039961",
+    "texture": "00039962",
+    "material": "00039963",
+    "col1Material": "00039963",
+    "col": "col1",
+    "core": "10057_JinM",
+    "code": "10057",
+    "race": "JinM",
+    "pic": null
+  },
+  "10059_JinM_col1": {
+    "skeleton": "00039995",
+    "texture": "00039996",
+    "material": "00039997",
+    "col1Material": "00039997",
+    "col": "col1",
+    "core": "10059_JinM",
+    "code": "10059",
+    "race": "JinM",
+    "pic": null
+  },
+  "10059_JinF_col1": {
+    "skeleton": "00039999",
+    "texture": "00040000",
+    "material": "00040001",
+    "col1Material": "00040001",
+    "col": "col1",
+    "core": "10059_JinF",
+    "code": "10059",
+    "race": "JinF",
+    "pic": null
+  },
+  "10059_GonM_col1": {
+    "skeleton": "00040003",
+    "texture": "00040004",
+    "material": "00040005",
+    "col1Material": "00040005",
+    "col": "col1",
+    "core": "10059_GonM",
+    "code": "10059",
+    "race": "GonM",
+    "pic": null
+  },
+  "10059_GonF_col1": {
+    "skeleton": "00040007",
+    "texture": "00040008",
+    "material": "00040009",
+    "col1Material": "00040009",
+    "col": "col1",
+    "core": "10059_GonF",
+    "code": "10059",
+    "race": "GonF",
+    "pic": null
+  },
+  "10059_KunN_col1": {
+    "skeleton": "00040011",
+    "texture": "00040012",
+    "material": "00040013",
+    "col1Material": "00040013",
+    "col": "col1",
+    "core": "10059_KunN",
+    "code": "10059",
+    "race": "KunN",
+    "pic": null
+  },
+  "10059_LynM_col1": {
+    "skeleton": "00040015",
+    "texture": "00040016",
+    "material": "00040017",
+    "col1Material": "00040017",
+    "col": "col1",
+    "core": "10059_LynM",
+    "code": "10059",
+    "race": "LynM",
+    "pic": null
+  },
+  "10059_LynF_col1": {
+    "skeleton": "00040019",
+    "texture": "00040020",
+    "material": "00040021",
+    "col1Material": "00040021",
+    "col": "col1",
+    "core": "10059_LynF",
+    "code": "10059",
+    "race": "LynF",
+    "pic": null
+  },
+  "60028_KunN_col1": {
+    "skeleton": "00040026",
+    "texture": "00040023",
+    "material": "00040024",
+    "col1Material": "00040024",
+    "col": "col1",
+    "core": "60028_KunN",
+    "code": "60028",
+    "race": "KunN",
+    "pic": null
+  },
+  "60028_KunN_col2": {
+    "skeleton": "00040026",
+    "texture": "00040023",
+    "material": "00040025",
+    "col1Material": "00040024",
+    "col": "col2",
+    "core": "60028_KunN",
+    "code": "60028",
+    "race": "KunN",
+    "pic": null
+  },
+  "60028_LynF_col1": {
+    "skeleton": "00040059",
+    "texture": "00040056",
+    "material": "00040346",
+    "col1Material": "00040057",
+    "col": "col1",
+    "core": "60028_LynF",
+    "code": "60028",
+    "race": "LynF",
+    "pic": null
+  },
+  "60028_LynF_col2": {
+    "skeleton": "00040059",
+    "texture": "00040056",
+    "material": "00040058",
+    "col1Material": "00040057",
+    "col": "col2",
+    "core": "60028_LynF",
+    "code": "60028",
+    "race": "LynF",
+    "pic": null
+  },
+  "60028_LynF_col3": {
+    "skeleton": "00040059",
+    "texture": "00040056",
+    "material": "00040343",
+    "col1Material": "00040057",
+    "col": "col3",
+    "core": "60028_LynF",
+    "code": "60028",
+    "race": "LynF",
+    "pic": null
+  },
+  "10065_LynF_col1": {
+    "skeleton": "00040225",
+    "texture": "00040226",
+    "material": "00040227",
+    "col1Material": "00040227",
+    "col": "col1",
+    "core": "10065_LynF",
+    "code": "10065",
+    "race": "LynF",
+    "pic": null
+  },
+  "10058_JinF_col1": {
+    "skeleton": "00040323",
+    "texture": "00040321",
+    "material": "00040322",
+    "col1Material": "00040322",
+    "col": "col1",
+    "core": "10058_JinF",
+    "code": "10058",
+    "race": "JinF",
+    "pic": null
+  },
+  "10057_GonF_col1": {
+    "skeleton": "00040372",
+    "texture": "00040371",
+    "material": "00040390",
+    "col1Material": "00040373",
+    "col": "col1",
+    "core": "10057_GonF",
+    "code": "10057",
+    "race": "GonF",
+    "pic": null
+  },
+  "10057_KunN_col1": {
+    "skeleton": "00040379",
+    "texture": "00040377",
+    "material": "00040393",
+    "col1Material": "00040378",
+    "col": "col1",
+    "core": "10057_KunN",
+    "code": "10057",
+    "race": "KunN",
+    "pic": null
+  },
+  "10057_LynF_col1": {
+    "skeleton": "00040383",
+    "texture": "00040381",
+    "material": "00040396",
+    "col1Material": "00040382",
+    "col": "col1",
+    "core": "10057_LynF",
+    "code": "10057",
+    "race": "LynF",
+    "pic": null
+  },
+  "10057_GonM_col1": {
+    "skeleton": "00040401",
+    "texture": "00040399",
+    "material": "00040408",
+    "col1Material": "00040400",
+    "col": "col1",
+    "core": "10057_GonM",
+    "code": "10057",
+    "race": "GonM",
+    "pic": null
+  },
+  "10057_LynM_col1": {
+    "skeleton": "00040405",
+    "texture": "00040403",
+    "material": "00040410",
+    "col1Material": "00040404",
+    "col": "col1",
+    "core": "10057_LynM",
+    "code": "10057",
+    "race": "LynM",
+    "pic": null
+  },
+  "10058_LynF_col1": {
+    "skeleton": "00040442",
+    "texture": "00040440",
+    "material": "00040441",
+    "col1Material": "00040441",
+    "col": "col1",
+    "core": "10058_LynF",
+    "code": "10058",
+    "race": "LynF",
+    "pic": null
+  },
+  "10069_LynF_col1": {
+    "skeleton": "00041042",
+    "texture": "00041040",
+    "material": "00041041",
+    "col1Material": "00041041",
+    "col": "col1",
+    "core": "10069_LynF",
+    "code": "10069",
+    "race": "LynF",
+    "pic": null
+  },
+  "10061_JinM_col1": {
+    "skeleton": "00041061",
+    "texture": "00041059",
+    "material": "00041060",
+    "col1Material": "00041060",
+    "col": "col1",
+    "core": "10061_JinM",
+    "code": "10061",
+    "race": "JinM",
+    "pic": null
+  },
+  "10067_JinM_col1": {
+    "skeleton": "00041185",
+    "texture": "00041186",
+    "material": "00041187",
+    "col1Material": "00041187",
+    "col": "col1",
+    "core": "10067_JinM",
+    "code": "10067",
+    "race": "JinM",
+    "pic": null
+  },
+  "10067_JinF_col1": {
+    "skeleton": "00041189",
+    "texture": "00041190",
+    "material": "00041191",
+    "col1Material": "00041191",
+    "col": "col1",
+    "core": "10067_JinF",
+    "code": "10067",
+    "race": "JinF",
+    "pic": null
+  },
+  "10067_GonM_col1": {
+    "skeleton": "00041193",
+    "texture": "00041194",
+    "material": "00041195",
+    "col1Material": "00041195",
+    "col": "col1",
+    "core": "10067_GonM",
+    "code": "10067",
+    "race": "GonM",
+    "pic": null
+  },
+  "10067_GonF_col1": {
+    "skeleton": "00041197",
+    "texture": "00041198",
+    "material": "00041199",
+    "col1Material": "00041199",
+    "col": "col1",
+    "core": "10067_GonF",
+    "code": "10067",
+    "race": "GonF",
+    "pic": null
+  },
+  "10067_KunN_col1": {
+    "skeleton": "00041201",
+    "texture": "00041202",
+    "material": "00041203",
+    "col1Material": "00041203",
+    "col": "col1",
+    "core": "10067_KunN",
+    "code": "10067",
+    "race": "KunN",
+    "pic": null
+  },
+  "10067_LynM_col1": {
+    "skeleton": "00041205",
+    "texture": "00041206",
+    "material": "00041207",
+    "col1Material": "00041207",
+    "col": "col1",
+    "core": "10067_LynM",
+    "code": "10067",
+    "race": "LynM",
+    "pic": null
+  },
+  "10067_LynF_col1": {
+    "skeleton": "00041209",
+    "texture": "00041497",
+    "material": "00041211",
+    "col1Material": "00041211",
+    "col": "col1",
+    "core": "10067_LynF",
+    "code": "10067",
+    "race": "LynF",
+    "pic": null
+  },
+  "10070_JinM_col1": {
+    "skeleton": "00041304",
+    "texture": "00041305",
+    "material": "00041308",
+    "col1Material": "00041308",
+    "col": "col1",
+    "core": "10070_JinM",
+    "code": "10070",
+    "race": "JinM",
+    "pic": null
+  },
+  "10066_JinM_col1": {
+    "skeleton": "00041559",
+    "texture": "00041560",
+    "material": "00041561",
+    "col1Material": "00041561",
+    "col": "col1",
+    "core": "10066_JinM",
+    "code": "10066",
+    "race": "JinM",
+    "pic": null
+  },
+  "10066_JinF_col1": {
+    "skeleton": "00041563",
+    "texture": "00041564",
+    "material": "00041565",
+    "col1Material": "00041565",
+    "col": "col1",
+    "core": "10066_JinF",
+    "code": "10066",
+    "race": "JinF",
+    "pic": null
+  },
+  "10066_GonM_col1": {
+    "skeleton": "00041567",
+    "texture": "00041568",
+    "material": "00041569",
+    "col1Material": "00041569",
+    "col": "col1",
+    "core": "10066_GonM",
+    "code": "10066",
+    "race": "GonM",
+    "pic": null
+  },
+  "10066_GonF_col1": {
+    "skeleton": "00041571",
+    "texture": "00041572",
+    "material": "00041573",
+    "col1Material": "00041573",
+    "col": "col1",
+    "core": "10066_GonF",
+    "code": "10066",
+    "race": "GonF",
+    "pic": null
+  },
+  "10066_KunN_col1": {
+    "skeleton": "00041575",
+    "texture": "00041576",
+    "material": "00041577",
+    "col1Material": "00041577",
+    "col": "col1",
+    "core": "10066_KunN",
+    "code": "10066",
+    "race": "KunN",
+    "pic": null
+  },
+  "10066_LynM_col1": {
+    "skeleton": "00041579",
+    "texture": "00041580",
+    "material": "00041581",
+    "col1Material": "00041581",
+    "col": "col1",
+    "core": "10066_LynM",
+    "code": "10066",
+    "race": "LynM",
+    "pic": null
+  },
+  "10066_LynF_col1": {
+    "skeleton": "00041583",
+    "texture": "00041584",
+    "material": "00041585",
+    "col1Material": "00041585",
+    "col": "col1",
+    "core": "10066_LynF",
+    "code": "10066",
+    "race": "LynF",
+    "pic": null
+  },
+  "10073_JinM_col1": {
+    "skeleton": "00041904",
+    "texture": "00041905",
+    "material": "00041906",
+    "col1Material": "00041906",
+    "col": "col1",
+    "core": "10073_JinM",
+    "code": "10073",
+    "race": "JinM",
+    "pic": null
+  },
+  "10073_JinF_col1": {
+    "skeleton": "00041908",
+    "texture": "00041909",
+    "material": "00041910",
+    "col1Material": "00041910",
+    "col": "col1",
+    "core": "10073_JinF",
+    "code": "10073",
+    "race": "JinF",
+    "pic": null
+  },
+  "10073_GonM_col1": {
+    "skeleton": "00041912",
+    "texture": "00041913",
+    "material": "00041914",
+    "col1Material": "00041914",
+    "col": "col1",
+    "core": "10073_GonM",
+    "code": "10073",
+    "race": "GonM",
+    "pic": null
+  },
+  "10073_GonF_col1": {
+    "skeleton": "00041916",
+    "texture": "00041917",
+    "material": "00041918",
+    "col1Material": "00041918",
+    "col": "col1",
+    "core": "10073_GonF",
+    "code": "10073",
+    "race": "GonF",
+    "pic": null
+  },
+  "10073_KunN_col1": {
+    "skeleton": "00041920",
+    "texture": "00041921",
+    "material": "00041922",
+    "col1Material": "00041922",
+    "col": "col1",
+    "core": "10073_KunN",
+    "code": "10073",
+    "race": "KunN",
+    "pic": null
+  },
+  "10073_LynM_col1": {
+    "skeleton": "00041924",
+    "texture": "00041925",
+    "material": "00041926",
+    "col1Material": "00041926",
+    "col": "col1",
+    "core": "10073_LynM",
+    "code": "10073",
+    "race": "LynM",
+    "pic": null
+  },
+  "10073_LynF_col1": {
+    "skeleton": "00041928",
+    "texture": "00041929",
+    "material": "00041930",
+    "col1Material": "00041930",
+    "col": "col1",
+    "core": "10073_LynF",
+    "code": "10073",
+    "race": "LynF",
+    "pic": null
   }
 }
